@@ -1,0 +1,48 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  skills:
+    name: skills + manifests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tier 0 static checks
+        run: ./scripts/check-skills.sh
+      - name: Eval JSON well-formed
+        run: |
+          for f in plugins/*/evals/*/*.json; do
+            jq -e . "$f" >/dev/null || { echo "invalid JSON: $f"; exit 1; }
+          done
+      - name: Eval runners compile
+        run: python3 -m py_compile tools/eval/run_triggers.py tools/eval/run_cases.py
+      - name: Shell scripts parse
+        run: sh -n install.sh scripts/check-skills.sh
+
+  markdown:
+    name: markdown lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npx --yes markdownlint-cli2 "**/*.md"
+
+  claude-validate:
+    name: claude plugin validate
+    runs-on: ubuntu-latest
+    # Best-effort until the CLI is proven to run unauthenticated in CI;
+    # promote to blocking once it has a green track record.
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install -g @anthropic-ai/claude-code
+      - run: claude plugin validate .

@@ -1,0 +1,51 @@
+name: evals
+
+# Tier 1 (trigger accuracy) and Tier 2 (behavioral) evals run real headless
+# Claude sessions, so they cost tokens and need ANTHROPIC_API_KEY — manual only.
+on:
+  workflow_dispatch:
+    inputs:
+      skill:
+        description: Only evaluate this skill (blank = all)
+        required: false
+        type: string
+      tier:
+        description: Which tiers to run
+        required: true
+        default: triggers
+        type: choice
+        options: [triggers, cases, both]
+
+jobs:
+  evals:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install -g @anthropic-ai/claude-code
+      - name: Install terraform + tflint for deterministic grading
+        if: ${{ inputs.tier != 'triggers' }}
+        run: |
+          sudo snap install terraform --classic || true
+          curl -s https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash || true
+      - name: Tier 1 — trigger accuracy
+        if: ${{ inputs.tier == 'triggers' || inputs.tier == 'both' }}
+        run: |
+          python3 tools/eval/run_triggers.py \
+            ${{ inputs.skill && format('--skill {0}', inputs.skill) || '' }}
+      - name: Tier 2 — behavioral cases
+        if: ${{ inputs.tier == 'cases' || inputs.tier == 'both' }}
+        run: |
+          python3 tools/eval/run_cases.py \
+            ${{ inputs.skill && format('--skill {0}', inputs.skill) || '' }}
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evals-results
+          path: evals-results/
+          if-no-files-found: ignore
