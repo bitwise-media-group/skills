@@ -19,7 +19,7 @@ harness-reported usage of the live session.
 
 ## Anthropic
 
-### terraform
+### golang
 
 | Model | Triggers | Cases | Input tokens | Est. input cost (USD) |
 | --- | --- | --- | --- | --- |
@@ -28,7 +28,25 @@ harness-reported usage of the live session.
 | Claude Opus 4.8 (`claude-opus-4-8`) | — | — | — | — |
 | Claude Fable 5 (`claude-fable-5`) | — | — | — | — |
 
+### terraform
+
+| Model | Triggers | Cases | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- |
+| Claude Haiku 4.5 (`claude-haiku-4-5`) | 24/35 | — | 33,924 | $0.0339 |
+| Claude Sonnet 4.6 (`claude-sonnet-4-6`) | 26/35 | — | 33,924 | $0.1018 |
+| Claude Opus 4.8 (`claude-opus-4-8`) | 26/35 | — | 45,860 | $0.2293 |
+| Claude Fable 5 (`claude-fable-5`) | 35/35 | — | 45,860 | $0.4586 |
+
 ## OpenAI
+
+### golang
+
+| Model | Triggers | Cases | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- |
+| GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | — | — | — | — |
+| GPT-5.4 Mini (`gpt-5.4-mini`) | — | — | — | — |
+| GPT-5.4 (`gpt-5.4`) | — | — | — | — |
+| GPT-5.5 (`gpt-5.5`) | — | — | — | — |
 
 ### terraform
 
@@ -40,6 +58,15 @@ harness-reported usage of the live session.
 | GPT-5.5 (`gpt-5.5`) | — | — | — | — |
 
 ## Google
+
+### golang
+
+| Model | Triggers | Cases | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- |
+| Gemini 3.1 Flash-Lite (`gemini-3.1-flash-lite`) | — | — | — | — |
+| Gemini 3 Flash (preview) (`gemini-3-flash-preview`) | — | — | — | — |
+| Gemini 3.5 Flash (`gemini-3.5-flash`) | — | — | — | — |
+| Gemini 3.1 Pro (preview) (`gemini-3.1-pro-preview`) | — | — | — | — |
 
 ### terraform
 

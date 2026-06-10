@@ -21,19 +21,247 @@ harness-reported usage of the live session.
 
 ### Claude Haiku 4.5 (`claude-haiku-4-5`)
 
-No results recorded for this model yet — see [Regenerating](#regenerating).
+#### Triggers — terraform-module
+
+Last run 2026-06-10T00:26:09+00:00, 3 runs per query.
+
+| Query | Expected | Rate | Result | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- | --- |
+| Create a new Terraform module for an ECR registry mirror | yes | 1.00 | PASS | 673 | $0.0007 |
+| Scaffold modules/eks-cluster with the standard file layout | yes | 1.00 | PASS | 673 | $0.0007 |
+| Add a new module under modules/ for managing IAM roles | yes | 1.00 | PASS | 673 | $0.0007 |
+| Restructure this Terraform module to follow our standard layout | yes | 0.00 | FAIL | 673 | $0.0007 |
+| Start a terraform module for the VPC — just the skeleton, no resource… | yes | 1.00 | PASS | 677 | $0.0007 |
+| Scaffold a new npm package with the usual project files | no | 0.00 | PASS | 672 | $0.0007 |
+| Add a new module to this Python project | no | 0.00 | PASS | 669 | $0.0007 |
+| Why does my terraform module fail validation? | no | 0.00 | PASS | 669 | $0.0007 |
+| What's the right type for a variable holding unique subnet IDs? | no | 0.00 | PASS | 675 | $0.0007 |
+| Write a docker-compose file for local development | no | 0.00 | PASS | 670 | $0.0007 |
+| **Total** | | | **9/10** | **6,724** | **$0.0067** |
+
+#### Triggers — terraform-style
+
+Last run 2026-06-10T00:47:10+00:00, 3 runs per query.
+
+| Query | Expected | Rate | Result | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- | --- |
+| Add outputs for the OIDC provider ARN and URL to my Terraform module | yes | 0.00 | FAIL | 1,485 | $0.0015 |
+| Review this variables.tf — anything you'd change about the variable t… | yes | 0.00 | FAIL | 1,482 | $0.0015 |
+| Should this be a list(string) or set(string) in Terraform? | yes | 0.00 | FAIL | 1,484 | $0.0015 |
+| Refactor modules/vpc so its outputs are easier to consume from the ro… | yes | 0.00 | FAIL | 1,483 | $0.0015 |
+| What should I name the aws_iam_role resource inside my module? | yes | 1.00 | PASS | 1,483 | $0.0015 |
+| Add an optional proxy configuration input to our Terraform module | yes | 0.00 | FAIL | 1,478 | $0.0015 |
+| Standing up a second copy of this Terraform stack fails with IAM name… | yes | 0.00 | FAIL | 1,488 | $0.0015 |
+| Clean up main.tf in the eks module — it gates everything with count | yes | 0.00 | FAIL | 1,482 | $0.0015 |
+| Write a Kubernetes deployment manifest for the runner controller | no | 0.00 | PASS | 1,477 | $0.0015 |
+| Why is my Packer HCL template failing to parse? | no | 0.00 | PASS | 1,481 | $0.0015 |
+| Run terraform fmt and tflint over the repo before I commit | no | 0.00 | PASS | 1,480 | $0.0015 |
+| Scaffold a brand new Terraform module called ecr-mirror with the stan… | no | 0.00 | PASS | 1,484 | $0.0015 |
+| How do I migrate Terraform state from a local backend to S3? | no | 0.00 | PASS | 1,482 | $0.0015 |
+| Explain the difference between terraform plan and terraform apply | no | 0.00 | PASS | 1,477 | $0.0015 |
+| **Total** | | | **7/14** | **20,746** | **$0.0207** |
+
+#### Triggers — terraform-validate
+
+Last run 2026-06-10T01:20:15+00:00, 3 runs per query.
+
+| Query | Expected | Rate | Result | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- | --- |
+| I just edited main.tf — make sure the terraform still validates | yes | 1.00 | PASS | 590 | $0.0006 |
+| Run the linter over the terraform modules | yes | 1.00 | PASS | 585 | $0.0006 |
+| Format and validate the Terraform before we commit | yes | 1.00 | PASS | 586 | $0.0006 |
+| tflint is failing in CI — reproduce it locally and fix the findings | yes | 0.00 | FAIL | 592 | $0.0006 |
+| Check the terraform code in modules/ for errors | yes | 0.00 | FAIL | 586 | $0.0006 |
+| Set up tflint for this repository | yes | 0.33 | FAIL | 585 | $0.0006 |
+| Validate this JSON file against its schema | no | 0.00 | PASS | 585 | $0.0006 |
+| Run the Go test suite and report failures | no | 0.00 | PASS | 585 | $0.0006 |
+| What is the difference between terraform validate and terraform plan? | no | 0.00 | PASS | 588 | $0.0006 |
+| Write a new variables.tf for the cluster module | no | 0.00 | PASS | 587 | $0.0006 |
+| Lint the markdown files under docs/ | no | 0.00 | PASS | 585 | $0.0006 |
+| **Total** | | | **8/11** | **6,454** | **$0.0065** |
 
 ### Claude Sonnet 4.6 (`claude-sonnet-4-6`)
 
-No results recorded for this model yet — see [Regenerating](#regenerating).
+#### Triggers — terraform-module
+
+Last run 2026-06-10T00:30:20+00:00, 3 runs per query.
+
+| Query | Expected | Rate | Result | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- | --- |
+| Create a new Terraform module for an ECR registry mirror | yes | 1.00 | PASS | 673 | $0.0020 |
+| Scaffold modules/eks-cluster with the standard file layout | yes | 1.00 | PASS | 673 | $0.0020 |
+| Add a new module under modules/ for managing IAM roles | yes | 1.00 | PASS | 673 | $0.0020 |
+| Restructure this Terraform module to follow our standard layout | yes | 0.00 | FAIL | 673 | $0.0020 |
+| Start a terraform module for the VPC — just the skeleton, no resource… | yes | 1.00 | PASS | 677 | $0.0020 |
+| Scaffold a new npm package with the usual project files | no | 0.00 | PASS | 672 | $0.0020 |
+| Add a new module to this Python project | no | 0.00 | PASS | 669 | $0.0020 |
+| Why does my terraform module fail validation? | no | 0.00 | PASS | 669 | $0.0020 |
+| What's the right type for a variable holding unique subnet IDs? | no | 0.00 | PASS | 675 | $0.0020 |
+| Write a docker-compose file for local development | no | 0.00 | PASS | 670 | $0.0020 |
+| **Total** | | | **9/10** | **6,724** | **$0.0202** |
+
+#### Triggers — terraform-style
+
+Last run 2026-06-10T00:59:54+00:00, 3 runs per query.
+
+| Query | Expected | Rate | Result | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- | --- |
+| Add outputs for the OIDC provider ARN and URL to my Terraform module | yes | 0.00 | FAIL | 1,485 | $0.0045 |
+| Review this variables.tf — anything you'd change about the variable t… | yes | 0.00 | FAIL | 1,482 | $0.0044 |
+| Should this be a list(string) or set(string) in Terraform? | yes | 1.00 | PASS | 1,484 | $0.0045 |
+| Refactor modules/vpc so its outputs are easier to consume from the ro… | yes | 0.00 | FAIL | 1,483 | $0.0044 |
+| What should I name the aws_iam_role resource inside my module? | yes | 1.00 | PASS | 1,483 | $0.0044 |
+| Add an optional proxy configuration input to our Terraform module | yes | 0.00 | FAIL | 1,478 | $0.0044 |
+| Standing up a second copy of this Terraform stack fails with IAM name… | yes | 0.00 | FAIL | 1,488 | $0.0045 |
+| Clean up main.tf in the eks module — it gates everything with count | yes | 0.00 | FAIL | 1,482 | $0.0044 |
+| Write a Kubernetes deployment manifest for the runner controller | no | 0.00 | PASS | 1,477 | $0.0044 |
+| Why is my Packer HCL template failing to parse? | no | 0.00 | PASS | 1,481 | $0.0044 |
+| Run terraform fmt and tflint over the repo before I commit | no | 0.00 | PASS | 1,480 | $0.0044 |
+| Scaffold a brand new Terraform module called ecr-mirror with the stan… | no | 0.00 | PASS | 1,484 | $0.0045 |
+| How do I migrate Terraform state from a local backend to S3? | no | 0.00 | PASS | 1,482 | $0.0044 |
+| Explain the difference between terraform plan and terraform apply | no | 0.00 | PASS | 1,477 | $0.0044 |
+| **Total** | | | **8/14** | **20,746** | **$0.0622** |
+
+#### Triggers — terraform-validate
+
+Last run 2026-06-10T01:24:16+00:00, 3 runs per query.
+
+| Query | Expected | Rate | Result | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- | --- |
+| I just edited main.tf — make sure the terraform still validates | yes | 1.00 | PASS | 590 | $0.0018 |
+| Run the linter over the terraform modules | yes | 1.00 | PASS | 585 | $0.0018 |
+| Format and validate the Terraform before we commit | yes | 1.00 | PASS | 586 | $0.0018 |
+| tflint is failing in CI — reproduce it locally and fix the findings | yes | 0.33 | FAIL | 592 | $0.0018 |
+| Check the terraform code in modules/ for errors | yes | 0.00 | FAIL | 586 | $0.0018 |
+| Set up tflint for this repository | yes | 1.00 | PASS | 585 | $0.0018 |
+| Validate this JSON file against its schema | no | 0.00 | PASS | 585 | $0.0018 |
+| Run the Go test suite and report failures | no | 0.00 | PASS | 585 | $0.0018 |
+| What is the difference between terraform validate and terraform plan? | no | 0.00 | PASS | 588 | $0.0018 |
+| Write a new variables.tf for the cluster module | no | 0.00 | PASS | 587 | $0.0018 |
+| Lint the markdown files under docs/ | no | 0.00 | PASS | 585 | $0.0018 |
+| **Total** | | | **9/11** | **6,454** | **$0.0194** |
 
 ### Claude Opus 4.8 (`claude-opus-4-8`)
 
-No results recorded for this model yet — see [Regenerating](#regenerating).
+#### Triggers — terraform-module
+
+Last run 2026-06-10T00:35:40+00:00, 3 runs per query.
+
+| Query | Expected | Rate | Result | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- | --- |
+| Create a new Terraform module for an ECR registry mirror | yes | 1.00 | PASS | 923 | $0.0046 |
+| Scaffold modules/eks-cluster with the standard file layout | yes | 1.00 | PASS | 925 | $0.0046 |
+| Add a new module under modules/ for managing IAM roles | yes | 0.67 | PASS | 922 | $0.0046 |
+| Restructure this Terraform module to follow our standard layout | yes | 1.00 | PASS | 922 | $0.0046 |
+| Start a terraform module for the VPC — just the skeleton, no resource… | yes | 1.00 | PASS | 929 | $0.0046 |
+| Scaffold a new npm package with the usual project files | no | 0.00 | PASS | 920 | $0.0046 |
+| Add a new module to this Python project | no | 0.00 | PASS | 914 | $0.0046 |
+| Why does my terraform module fail validation? | no | 0.00 | PASS | 917 | $0.0046 |
+| What's the right type for a variable holding unique subnet IDs? | no | 0.00 | PASS | 924 | $0.0046 |
+| Write a docker-compose file for local development | no | 0.00 | PASS | 916 | $0.0046 |
+| **Total** | | | **10/10** | **9,212** | **$0.0461** |
+
+#### Triggers — terraform-style
+
+Last run 2026-06-10T01:08:16+00:00, 3 runs per query.
+
+| Query | Expected | Rate | Result | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- | --- |
+| Add outputs for the OIDC provider ARN and URL to my Terraform module | yes | 0.00 | FAIL | 1,974 | $0.0099 |
+| Review this variables.tf — anything you'd change about the variable t… | yes | 0.00 | FAIL | 1,969 | $0.0098 |
+| Should this be a list(string) or set(string) in Terraform? | yes | 1.00 | PASS | 1,968 | $0.0098 |
+| Refactor modules/vpc so its outputs are easier to consume from the ro… | yes | 0.00 | FAIL | 1,972 | $0.0099 |
+| What should I name the aws_iam_role resource inside my module? | yes | 1.00 | PASS | 1,967 | $0.0098 |
+| Add an optional proxy configuration input to our Terraform module | yes | 0.00 | FAIL | 1,967 | $0.0098 |
+| Standing up a second copy of this Terraform stack fails with IAM name… | yes | 0.00 | FAIL | 1,979 | $0.0099 |
+| Clean up main.tf in the eks module — it gates everything with count | yes | 0.00 | FAIL | 1,969 | $0.0098 |
+| Write a Kubernetes deployment manifest for the runner controller | no | 0.00 | PASS | 1,969 | $0.0098 |
+| Why is my Packer HCL template failing to parse? | no | 0.00 | PASS | 1,965 | $0.0098 |
+| Run terraform fmt and tflint over the repo before I commit | no | 0.00 | PASS | 1,968 | $0.0098 |
+| Scaffold a brand new Terraform module called ecr-mirror with the stan… | no | 0.00 | PASS | 1,975 | $0.0099 |
+| How do I migrate Terraform state from a local backend to S3? | no | 0.00 | PASS | 1,968 | $0.0098 |
+| Explain the difference between terraform plan and terraform apply | no | 0.00 | PASS | 1,966 | $0.0098 |
+| **Total** | | | **8/14** | **27,576** | **$0.1379** |
+
+#### Triggers — terraform-validate
+
+Last run 2026-06-10T01:30:46+00:00, 3 runs per query.
+
+| Query | Expected | Rate | Result | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- | --- |
+| I just edited main.tf — make sure the terraform still validates | yes | 1.00 | PASS | 829 | $0.0041 |
+| Run the linter over the terraform modules | yes | 0.00 | FAIL | 822 | $0.0041 |
+| Format and validate the Terraform before we commit | yes | 1.00 | PASS | 824 | $0.0041 |
+| tflint is failing in CI — reproduce it locally and fix the findings | yes | 0.33 | FAIL | 833 | $0.0042 |
+| Check the terraform code in modules/ for errors | yes | 0.00 | FAIL | 825 | $0.0041 |
+| Set up tflint for this repository | yes | 1.00 | PASS | 820 | $0.0041 |
+| Validate this JSON file against its schema | no | 0.00 | PASS | 822 | $0.0041 |
+| Run the Go test suite and report failures | no | 0.00 | PASS | 822 | $0.0041 |
+| What is the difference between terraform validate and terraform plan? | no | 0.00 | PASS | 828 | $0.0041 |
+| Write a new variables.tf for the cluster module | no | 0.00 | PASS | 825 | $0.0041 |
+| Lint the markdown files under docs/ | no | 0.00 | PASS | 822 | $0.0041 |
+| **Total** | | | **8/11** | **9,072** | **$0.0454** |
 
 ### Claude Fable 5 (`claude-fable-5`)
 
-No results recorded for this model yet — see [Regenerating](#regenerating).
+#### Triggers — terraform-module
+
+Last run 2026-06-10T00:41:56+00:00, 3 runs per query.
+
+| Query | Expected | Rate | Result | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- | --- |
+| Create a new Terraform module for an ECR registry mirror | yes | 1.00 | PASS | 923 | $0.0092 |
+| Scaffold modules/eks-cluster with the standard file layout | yes | 1.00 | PASS | 925 | $0.0092 |
+| Add a new module under modules/ for managing IAM roles | yes | 1.00 | PASS | 922 | $0.0092 |
+| Restructure this Terraform module to follow our standard layout | yes | 1.00 | PASS | 922 | $0.0092 |
+| Start a terraform module for the VPC — just the skeleton, no resource… | yes | 1.00 | PASS | 929 | $0.0093 |
+| Scaffold a new npm package with the usual project files | no | 0.00 | PASS | 920 | $0.0092 |
+| Add a new module to this Python project | no | 0.00 | PASS | 914 | $0.0091 |
+| Why does my terraform module fail validation? | no | 0.00 | PASS | 917 | $0.0092 |
+| What's the right type for a variable holding unique subnet IDs? | no | 0.00 | PASS | 924 | $0.0092 |
+| Write a docker-compose file for local development | no | 0.00 | PASS | 916 | $0.0092 |
+| **Total** | | | **10/10** | **9,212** | **$0.0921** |
+
+#### Triggers — terraform-style
+
+Last run 2026-06-10T01:16:47+00:00, 3 runs per query.
+
+| Query | Expected | Rate | Result | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- | --- |
+| Add outputs for the OIDC provider ARN and URL to my Terraform module | yes | 0.67 | PASS | 1,974 | $0.0197 |
+| Review this variables.tf — anything you'd change about the variable t… | yes | 1.00 | PASS | 1,969 | $0.0197 |
+| Should this be a list(string) or set(string) in Terraform? | yes | 1.00 | PASS | 1,968 | $0.0197 |
+| Refactor modules/vpc so its outputs are easier to consume from the ro… | yes | 1.00 | PASS | 1,972 | $0.0197 |
+| What should I name the aws_iam_role resource inside my module? | yes | 1.00 | PASS | 1,967 | $0.0197 |
+| Add an optional proxy configuration input to our Terraform module | yes | 1.00 | PASS | 1,967 | $0.0197 |
+| Standing up a second copy of this Terraform stack fails with IAM name… | yes | 1.00 | PASS | 1,979 | $0.0198 |
+| Clean up main.tf in the eks module — it gates everything with count | yes | 1.00 | PASS | 1,969 | $0.0197 |
+| Write a Kubernetes deployment manifest for the runner controller | no | 0.00 | PASS | 1,969 | $0.0197 |
+| Why is my Packer HCL template failing to parse? | no | 0.00 | PASS | 1,965 | $0.0197 |
+| Run terraform fmt and tflint over the repo before I commit | no | 0.00 | PASS | 1,968 | $0.0197 |
+| Scaffold a brand new Terraform module called ecr-mirror with the stan… | no | 0.00 | PASS | 1,975 | $0.0198 |
+| How do I migrate Terraform state from a local backend to S3? | no | 0.00 | PASS | 1,968 | $0.0197 |
+| Explain the difference between terraform plan and terraform apply | no | 0.00 | PASS | 1,966 | $0.0197 |
+| **Total** | | | **14/14** | **27,576** | **$0.2758** |
+
+#### Triggers — terraform-validate
+
+Last run 2026-06-10T01:36:33+00:00, 3 runs per query.
+
+| Query | Expected | Rate | Result | Input tokens | Est. input cost (USD) |
+| --- | --- | --- | --- | --- | --- |
+| I just edited main.tf — make sure the terraform still validates | yes | 1.00 | PASS | 829 | $0.0083 |
+| Run the linter over the terraform modules | yes | 1.00 | PASS | 822 | $0.0082 |
+| Format and validate the Terraform before we commit | yes | 1.00 | PASS | 824 | $0.0082 |
+| tflint is failing in CI — reproduce it locally and fix the findings | yes | 1.00 | PASS | 833 | $0.0083 |
+| Check the terraform code in modules/ for errors | yes | 1.00 | PASS | 825 | $0.0083 |
+| Set up tflint for this repository | yes | 1.00 | PASS | 820 | $0.0082 |
+| Validate this JSON file against its schema | no | 0.00 | PASS | 822 | $0.0082 |
+| Run the Go test suite and report failures | no | 0.00 | PASS | 822 | $0.0082 |
+| What is the difference between terraform validate and terraform plan? | no | 0.00 | PASS | 828 | $0.0083 |
+| Write a new variables.tf for the cluster module | no | 0.00 | PASS | 825 | $0.0083 |
+| Lint the markdown files under docs/ | no | 0.00 | PASS | 822 | $0.0082 |
+| **Total** | | | **11/11** | **9,072** | **$0.0907** |
 
 ## OpenAI
 
