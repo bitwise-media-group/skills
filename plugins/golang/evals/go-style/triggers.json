@@ -1,0 +1,15 @@
+[
+  { "query": "Refactor this Go code to wrap errors properly", "should_trigger": true },
+  { "query": "Add structured logging to my Go service", "should_trigger": true },
+  { "query": "Review this Go package for idiomatic style", "should_trigger": true },
+  { "query": "How should I handle errors in this Go function?", "should_trigger": true },
+  { "query": "Add a POST endpoint to my Go server using the stdlib router", "should_trigger": true },
+  { "query": "Convert these log.Printf calls to slog", "should_trigger": true },
+  { "query": "Should this Go interface live in the consumer or the producer package?", "should_trigger": true },
+  { "query": "Write table-driven tests for this Go function", "should_trigger": false },
+  { "query": "Set up GoReleaser for my Go project", "should_trigger": false },
+  { "query": "Scaffold a new Go service with cmd and internal directories", "should_trigger": false },
+  { "query": "Refactor this Rust code to use idiomatic error handling", "should_trigger": false },
+  { "query": "What's new in the latest Go release?", "should_trigger": false },
+  { "query": "Add structured logging to my Express app", "should_trigger": false }
+]

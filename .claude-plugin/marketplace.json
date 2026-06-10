@@ -7,6 +7,12 @@
   "description": "Bitwise Media Group skills and plugins for coding agents.",
   "plugins": [
     {
+      "name": "golang",
+      "source": "./plugins/golang",
+      "description": "Modern Go development — stdlib-first style, table-driven tests and fuzzing, canonical project layout, GoReleaser releases.",
+      "keywords": ["go", "golang", "testing", "goreleaser"]
+    },
+    {
       "name": "terraform",
       "source": "./plugins/terraform",
       "description": "Terraform style conventions, module scaffolding, and fmt/validate/tflint workflows.",

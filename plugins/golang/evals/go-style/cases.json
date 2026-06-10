@@ -1,0 +1,36 @@
+[
+  {
+    "id": "wrap-errors-slog",
+    "prompt": "Refactor internal/config/config.go to our Go house style — fix the error handling and the logging.",
+    "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+    "files": {
+      "go.mod": "module example.com/styledemo\n\ngo 1.24\n",
+      "internal/config/config.go": "package config\n\nimport (\n\t\"encoding/json\"\n\t\"fmt\"\n\t\"log\"\n\t\"os\"\n)\n\n// Config holds the service settings.\ntype Config struct {\n\tAddr string `json:\"addr\"`\n}\n\n// Load reads and parses the config file at path.\nfunc Load(path string) (*Config, error) {\n\tdata, err := os.ReadFile(path)\n\tif err != nil {\n\t\treturn nil, fmt.Errorf(\"Failed to read config: %v\", err)\n\t}\n\tvar cfg Config\n\tif err := json.Unmarshal(data, &cfg); err != nil {\n\t\treturn nil, fmt.Errorf(\"Failed to parse config: %v\", err)\n\t}\n\tlog.Printf(\"loaded config from %s\", path)\n\treturn &cfg, nil\n}\n"
+    },
+    "assertions": [
+      { "type": "regex", "path": "internal/config/config.go", "pattern": "%w" },
+      { "type": "not_regex", "path": "internal/config/config.go", "pattern": "Failed to" },
+      { "type": "not_regex", "path": "internal/config/config.go", "pattern": "log\\.Printf" },
+      { "type": "regex", "path": "internal/config/config.go", "pattern": "log/slog" },
+      { "type": "command", "run": "go vet ./...", "requires": "go" },
+      { "type": "command", "run": "test -z \"$(gofmt -l .)\"", "requires": "gofmt" }
+    ]
+  },
+  {
+    "id": "stdlib-handler",
+    "prompt": "Extend cmd/api/main.go: add a GET /healthz endpoint and a POST /items endpoint using the standard library only, with request logging per our Go house style.",
+    "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+    "files": {
+      "go.mod": "module example.com/apidemo\n\ngo 1.24\n",
+      "cmd/api/main.go": "package main\n\nimport (\n\t\"log\"\n\t\"net/http\"\n)\n\nfunc main() {\n\tmux := http.NewServeMux()\n\tlog.Fatal(http.ListenAndServe(\":8080\", mux))\n}\n"
+    },
+    "assertions": [
+      { "type": "regex", "path": "cmd/api/main.go", "pattern": "NewServeMux" },
+      { "type": "regex", "path": "cmd/api/main.go", "pattern": "POST /items" },
+      { "type": "regex", "path": "cmd/api/main.go", "pattern": "slog" },
+      { "type": "not_regex", "path": "cmd/api/main.go", "pattern": "gorilla|go-chi|gin-gonic|httprouter" },
+      { "type": "command", "run": "go vet ./...", "requires": "go" },
+      { "type": "command", "run": "test -z \"$(gofmt -l .)\"", "requires": "gofmt" }
+    ]
+  }
+]

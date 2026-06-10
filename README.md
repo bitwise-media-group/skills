@@ -8,6 +8,17 @@ under `plugins/<plugin>/skills/`, and are delivered to each tool through its nat
 
 ## Plugins
 
+### golang
+
+Modern, stdlib-first Go development conventions.
+
+| Skill        | What it does                                                                                                                                |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| `go-style`   | House style for Go: `%w` error wrapping, sentinels, `log/slog`, context threading, consumer interfaces, stdlib `net/http`, flag/env config. |
+| `go-testing` | Table-driven tests with subtests, stdlib assertions, hand-written fakes, `httptest`, and native fuzz targets with seed corpora.             |
+| `go-project` | Scaffolds the canonical layout: `cmd/` + `internal/`, a pinned tools module (`go -C tools`), and a Makefile with the `pr` gate.             |
+| `go-release` | GoReleaser v2 with version ldflags, SBOMs, multi-arch images, SHA-pinned CI (`-race`, `govulncheck`), and Dependabot coverage.              |
+
 ### terraform
 
 Conventions and workflows for authoring reusable Terraform modules.

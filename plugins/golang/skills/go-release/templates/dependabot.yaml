@@ -1,0 +1,63 @@
+# Dependabot config — save as .github/dependabot.yaml. Daily checks with a
+# 7-day cooldown; minor and patch bumps are grouped into one PR per ecosystem.
+# tools/go.mod gets its own gomod entry so developer-tool bumps never ride
+# along with application dependency PRs. Add docker (and others) as the repo
+# grows those ecosystems.
+version: 2
+
+updates:
+    - package-ecosystem: github-actions
+      directory: /
+      schedule:
+          interval: daily
+      cooldown:
+          default-days: 7
+      groups:
+          all-minor-and-patch:
+              patterns:
+                  - "*"
+              update-types:
+                  - minor
+                  - patch
+
+    - package-ecosystem: gomod
+      directory: /
+      schedule:
+          interval: daily
+      cooldown:
+          default-days: 7
+      groups:
+          all-minor-and-patch:
+              patterns:
+                  - "*"
+              update-types:
+                  - minor
+                  - patch
+
+    - package-ecosystem: gomod
+      directory: /tools
+      schedule:
+          interval: daily
+      cooldown:
+          default-days: 7
+      groups:
+          tools:
+              patterns:
+                  - "*"
+              update-types:
+                  - minor
+                  - patch
+
+    - package-ecosystem: npm
+      directory: /
+      schedule:
+          interval: daily
+      cooldown:
+          default-days: 7
+      groups:
+          all-minor-and-patch:
+              patterns:
+                  - "*"
+              update-types:
+                  - minor
+                  - patch

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "project-scaffold",
+    "prompt": "Scaffold a new Go service called orderd (module example.com/orderd) with our canonical layout: cmd entrypoint, a tools module for pinned developer CLIs, and a Makefile with the standard targets including the pr gate. Skeleton only — no business logic yet.",
+    "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+    "assertions": [
+      { "type": "file_exists", "path": "go.mod" },
+      { "type": "file_exists", "path": "cmd/orderd/main.go" },
+      { "type": "file_exists", "path": "tools/go.mod" },
+      { "type": "file_exists", "path": "Makefile" },
+      { "type": "regex", "path": "go.mod", "pattern": "^module example\\.com/orderd" },
+      { "type": "regex", "path": "tools/go.mod", "pattern": "^module .+/tools" },
+      { "type": "regex", "path": "Makefile", "pattern": "^pr:" },
+      { "type": "regex", "path": "Makefile", "pattern": "go (-C tools tool|tool -modfile=tools/go\\.mod)" },
+      { "type": "not_regex", "path": "Makefile", "pattern": "TOOLBIN|tools/\\.bin|GOBIN" },
+      { "type": "regex", "path": "cmd/orderd/main.go", "pattern": "func run\\(" },
+      { "type": "command", "run": "go vet ./...", "requires": "go" },
+      { "type": "command", "run": "test -z \"$(gofmt -l cmd)\"", "requires": "gofmt" }
+    ]
+  },
+  {
+    "id": "pin-tool",
+    "prompt": "Pin goreleaser (github.com/goreleaser/goreleaser/v2) as a developer tool in this repo and add a Makefile snapshot target that runs it, following our Go tooling conventions. Edit the files directly — no need to run go commands.",
+    "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+    "files": {
+      "go.mod": "module example.com/pindemo\n\ngo 1.24\n",
+      "cmd/app/main.go": "package main\n\nfunc main() {}\n",
+      "tools/go.mod": "module example.com/pindemo/tools\n\ngo 1.24\n\ntool github.com/google/addlicense\n",
+      "Makefile": "license:\n\tgo -C tools tool addlicense -f \"$(CURDIR)/LICENSE\" -v \"$(CURDIR)/cmd\" \"$(CURDIR)/internal\"\n"
+    },
+    "assertions": [
+      { "type": "regex", "path": "tools/go.mod", "pattern": "goreleaser" },
+      { "type": "regex", "path": "Makefile", "pattern": "go tool -modfile=tools/go\\.mod goreleaser" },
+      { "type": "not_regex", "path": "Makefile", "pattern": "TOOLBIN|tools/\\.bin|GOBIN" },
+      { "type": "not_regex", "path": "go.mod", "pattern": "goreleaser" }
+    ]
+  }
+]

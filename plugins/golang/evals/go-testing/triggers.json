@@ -1,0 +1,15 @@
+[
+  { "query": "Write tests for this Go package", "should_trigger": true },
+  { "query": "Add table-driven tests for this Go parser", "should_trigger": true },
+  { "query": "Add a Go fuzz test for this parsing function", "should_trigger": true },
+  { "query": "Test this Go HTTP handler", "should_trigger": true },
+  { "query": "How do I run a single fuzz target with go test?", "should_trigger": true },
+  { "query": "Review my Go tests — should I be using testify here?", "should_trigger": true },
+  { "query": "Add a seed corpus to this Go fuzz target", "should_trigger": true },
+  { "query": "Write pytest tests for this module", "should_trigger": false },
+  { "query": "Refactor this Go function to wrap errors with %w", "should_trigger": false },
+  { "query": "Set up the GitHub Actions release workflow for our Go repo", "should_trigger": false },
+  { "query": "Write Jest tests for this React component", "should_trigger": false },
+  { "query": "Scaffold a new Go project with a Makefile", "should_trigger": false },
+  { "query": "Why is my JavaScript integration test flaky?", "should_trigger": false }
+]

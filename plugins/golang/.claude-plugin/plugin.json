@@ -1,0 +1,11 @@
+{
+  "name": "golang",
+  "version": "0.1.0",
+  "description": "Modern Go development — stdlib-first code style, table-driven tests and native fuzzing, canonical project layout with pinned tooling, and GoReleaser-based release engineering.",
+  "author": {
+    "name": "Bitwise Media Group",
+    "email": "deavon@bitwisemedia.co.uk"
+  },
+  "license": "MIT",
+  "keywords": ["go", "golang", "slog", "testing", "fuzzing", "goreleaser"]
+}

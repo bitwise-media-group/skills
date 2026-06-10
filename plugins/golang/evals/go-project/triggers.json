@@ -1,0 +1,15 @@
+[
+  { "query": "Scaffold a new Go service called payments", "should_trigger": true },
+  { "query": "Set up a new Go project with cmd and internal layout", "should_trigger": true },
+  { "query": "Add a tools module to pin our Go developer tooling", "should_trigger": true },
+  { "query": "Create a Makefile for this Go repo with the standard targets", "should_trigger": true },
+  { "query": "Pin addlicense and goreleaser as developer tools in this Go repo", "should_trigger": true },
+  { "query": "Restructure this Go repository to the standard layout", "should_trigger": true },
+  { "query": "Where should this shared Go code live — pkg or internal?", "should_trigger": true },
+  { "query": "Scaffold a new npm package with the usual project files", "should_trigger": false },
+  { "query": "Create a new Terraform module with the standard layout", "should_trigger": false },
+  { "query": "Set up the GitHub Actions release workflow for this Go repo", "should_trigger": false },
+  { "query": "Write a fuzz test for this Go parser", "should_trigger": false },
+  { "query": "Initialize a Python project with uv", "should_trigger": false },
+  { "query": "Add error wrapping to this Go function", "should_trigger": false }
+]
