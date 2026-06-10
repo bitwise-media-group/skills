@@ -49,6 +49,9 @@ Usage:
   --new skips skill/model entries whose stored results are already complete —
   a result is incomplete when its timing, input, output, or cost values are
   missing. Skills, models, and cases with no stored result always run.
+  Entries whose only gaps are token counts the counting API cannot produce
+  (unsupported model, missing credential) are also skipped — rerunning could
+  never fill them.
 
 Results merge into evals-results/cases-<skill>.json (one entry per model,
 persisted as each model finishes), then tools/eval/report.py regenerates
@@ -96,32 +99,40 @@ def eval_sets(skill_filter):
         yield plugin_dir, skill, json.loads(cases.read_text())
 
 
-def needs_run(entry, cases, model, execute):
-    """Whether --new should (re)run this skill/model: True when any current
-    case has no stored result, or a stored result is missing its timing
-    (run_seconds), input (input_tokens, measured input), output (passed,
-    measured output tokens), or cost (est_input_cost_usd, measured cost)
-    values. Fields a run could never fill are exempt: costs for models
-    without published pricing, and the execution fields when this invocation
-    is count-only."""
+def skip_reason(entry, cases, model, execute, probe_count):
+    """Why --new may skip this skill/model, or None when a (re)run is needed.
+    A rerun is needed when any current case has no stored result, or a
+    stored result is missing its timing (run_seconds), input (input_tokens,
+    measured input), output (passed, measured output tokens), or cost
+    (est_input_cost_usd, measured cost) values. Fields a run could never
+    fill are exempt: costs for models without published pricing, the
+    execution fields when this invocation is count-only, and the token-count
+    fields when probe_count(case) shows the counting API cannot count for
+    this model (unsupported model, missing credential) — rerunning would
+    leave them missing anyway."""
     stored = {r.get("id"): r for r in (entry or {}).get("results") or []}
     priced = model["input"] is not None and model["output"] is not None
+    uncounted = None
     for case in cases:
         result = stored.get(case["id"])
         if result is None:
-            return True
-        required = [result.get("input_tokens")]
-        if model["input"] is not None:
-            required.append(result.get("est_input_cost_usd"))
+            return None
         if execute:
             measured = result.get("measured") or {}
-            required += [result.get("passed"), result.get("run_seconds"),
-                         measured.get("input_tokens"), measured.get("output_tokens")]
+            run_fields = [result.get("passed"), result.get("run_seconds"),
+                          measured.get("input_tokens"), measured.get("output_tokens")]
             if priced:
-                required.append(measured.get("cost_usd"))
-        if any(value is None for value in required):
-            return True
-    return False
+                run_fields.append(measured.get("cost_usd"))
+            if any(value is None for value in run_fields):
+                return None
+        counted = [result.get("input_tokens")]
+        if model["input"] is not None:
+            counted.append(result.get("est_input_cost_usd"))
+        if uncounted is None and any(value is None for value in counted):
+            uncounted = case
+    if uncounted is None:
+        return "results complete"
+    return None if probe_count(uncounted) else "token counts unavailable"
 
 
 def make_workspace(plugin_dir, files):
@@ -312,7 +323,7 @@ def main():
                     help="skip agent runs; only compute token usage per model")
     ap.add_argument("--new", action="store_true",
                     help="only run evals whose stored results are missing "
-                         "timing, input, output, or cost values")
+                         "timing, input, output, or cost values a rerun could fill")
     args = ap.parse_args()
 
     if not args.count_only:
@@ -334,11 +345,16 @@ def main():
             runner_available = provider_key in CASE_RUNNERS \
                 and shutil.which(providers.PROVIDERS[provider_key]["runner"]) is not None
             execute = runner_available and not args.count_only
-            if args.new and not needs_run(
-                data["models"].get(model["id"]), cases, model, execute,
-            ):
-                print(f"\n=== {skill} / {model['id']} (skip: results complete) ===")
-                continue
+            if args.new:
+                reason = skip_reason(
+                    data["models"].get(model["id"]), cases, model, execute,
+                    lambda case: counter.count(
+                        provider_key, model["id"], f"{skill_md}\n\n{case['prompt']}",
+                    ) is not None,
+                )
+                if reason:
+                    print(f"\n=== {skill} / {model['id']} (skip: {reason}) ===")
+                    continue
             if not execute and not args.count_only:
                 print(f"  warn: no behavioral runner for {model['id']}; "
                       f"token counts only", file=sys.stderr)
