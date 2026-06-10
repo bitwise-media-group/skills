@@ -43,7 +43,9 @@ marginal context a triggering eval loads), priced at the model's published input
 Cells show an em dash when a model has not been evaluated or counted yet, and `n/a` where the
 provider has not published pricing. Behavioral (Tier 2) runs additionally record the
 harness-reported usage of the live session — total input tokens (including cache writes and
-reads), output tokens, and cost.\
+reads), output tokens, and cost. Executed runs also record wall-clock agent runtime ("Avg
+run"/"Run" columns): per-query averages across runs for triggers, per-case agent time
+(grading excluded) for cases — model speed varies widely.\
 """
 
 REGENERATE = """\
@@ -79,6 +81,10 @@ def fmt_cost(cost, tokens, model):
 
 def fmt_frac(passed, total):
     return "—" if passed is None else f"{passed}/{total}"
+
+
+def fmt_secs(seconds):
+    return "—" if seconds is None else f"{seconds:.1f}s"
 
 
 def fmt_measured_tokens(input_tokens, output_tokens):
@@ -140,6 +146,17 @@ def rollup(kind, skills, model_id):
     return passed, total, tokens, cost
 
 
+def rollup_avg_seconds(kind, skills, model_id):
+    """Average agent run seconds across skills, weighted by eval count."""
+    total_secs = weight = 0
+    for skill in skills:
+        summary = (model_entry(kind, skill, model_id) or {}).get("summary", {})
+        if summary.get("avg_run_seconds") is not None:
+            total_secs += summary["avg_run_seconds"] * summary["total"]
+            weight += summary["total"]
+    return round(total_secs / weight, 1) if weight else None
+
+
 def rollup_measured(skills, model_id):
     """Aggregate measured case usage (input, output, cost) across skills."""
     tokens_in = tokens_out = cost = None
@@ -175,30 +192,32 @@ def root_report(layout):
                 "",
                 "#### Triggers",
                 "",
-                "| Model | Passed | Input tokens | Est. input cost (USD) |",
-                "| --- | --- | --- | --- |",
+                "| Model | Passed | Avg run | Input tokens | Est. input cost (USD) |",
+                "| --- | --- | --- | --- | --- |",
             ]
             for model in provider["models"]:
                 passed, total, tokens, cost = rollup("triggers", trigger_skills, model["id"])
+                avg = rollup_avg_seconds("triggers", trigger_skills, model["id"])
                 lines.append(
                     f"| {model['display']} (`{model['id']}`) "
-                    f"| {fmt_frac(passed, total)} "
+                    f"| {fmt_frac(passed, total)} | {fmt_secs(avg)} "
                     f"| {fmt_tokens(tokens)} | {fmt_cost(cost, tokens, model)} |"
                 )
             lines += [
                 "",
                 "#### Cases",
                 "",
-                "| Model | Passed | Input tokens | Est. input cost (USD) "
+                "| Model | Passed | Avg run | Input tokens | Est. input cost (USD) "
                 "| Measured tokens (in/out) | Measured cost (USD) |",
-                "| --- | --- | --- | --- | --- | --- |",
+                "| --- | --- | --- | --- | --- | --- | --- |",
             ]
             for model in provider["models"]:
                 passed, total, tokens, cost = rollup("cases", case_skills, model["id"])
+                avg = rollup_avg_seconds("cases", case_skills, model["id"])
                 m_in, m_out, m_cost = rollup_measured(case_skills, model["id"])
                 lines.append(
                     f"| {model['display']} (`{model['id']}`) "
-                    f"| {fmt_frac(passed, total)} "
+                    f"| {fmt_frac(passed, total)} | {fmt_secs(avg)} "
                     f"| {fmt_tokens(tokens)} | {fmt_cost(cost, tokens, model)} "
                     f"| {fmt_measured_tokens(m_in, m_out)} | {fmt_usd(m_cost)} |"
                 )
@@ -213,20 +232,22 @@ def trigger_table(skill, entry, model):
         "",
         _run_note(entry),
         "",
-        "| Query | Expected | Rate | Result | Input tokens | Est. input cost (USD) |",
-        "| --- | --- | --- | --- | --- | --- |",
+        "| Query | Expected | Rate | Result | Avg run | Input tokens | Est. input cost (USD) |",
+        "| --- | --- | --- | --- | --- | --- | --- |",
     ]
     for r in entry["results"]:
         rate = "—" if r["trigger_rate"] is None else f"{r['trigger_rate']:.2f}"
         result = "—" if r["passed"] is None else ("PASS" if r["passed"] else "FAIL")
         lines.append(
             f"| {cell(r['query'])} | {'yes' if r['should_trigger'] else 'no'} "
-            f"| {rate} | {result} | {fmt_tokens(r['input_tokens'])} "
+            f"| {rate} | {result} | {fmt_secs(r.get('avg_run_seconds'))} "
+            f"| {fmt_tokens(r['input_tokens'])} "
             f"| {fmt_cost(r['est_input_cost_usd'], r['input_tokens'], model)} |"
         )
     summary = entry["summary"]
     lines.append(
         f"| **Total** | | | **{fmt_frac(summary['passed'], summary['total'])}** "
+        f"| **{fmt_secs(summary.get('avg_run_seconds'))}** "
         f"| **{fmt_tokens(summary['input_tokens'])}** "
         f"| **{fmt_cost(summary['est_input_cost_usd'], summary['input_tokens'], model)}** |"
     )
@@ -240,15 +261,16 @@ def case_table(skill, entry, model):
         "",
         _run_note(entry),
         "",
-        "| Case | Result | Input tokens | Est. input cost (USD) "
+        "| Case | Result | Run | Input tokens | Est. input cost (USD) "
         "| Measured tokens (in/out) | Measured cost (USD) |",
-        "| --- | --- | --- | --- | --- | --- |",
+        "| --- | --- | --- | --- | --- | --- | --- |",
     ]
     for r in entry["results"]:
         result = "—" if r["passed"] is None else ("PASS" if r["passed"] else "FAIL")
         measured = r.get("measured") or {}
         lines.append(
-            f"| {cell(r['id'])} | {result} | {fmt_tokens(r['input_tokens'])} "
+            f"| {cell(r['id'])} | {result} | {fmt_secs(r.get('run_seconds'))} "
+            f"| {fmt_tokens(r['input_tokens'])} "
             f"| {fmt_cost(r['est_input_cost_usd'], r['input_tokens'], model)} "
             f"| {fmt_measured_tokens(measured.get('input_tokens'), measured.get('output_tokens'))} "
             f"| {fmt_usd(measured.get('cost_usd'))} |"
@@ -256,6 +278,7 @@ def case_table(skill, entry, model):
     summary = entry["summary"]
     lines.append(
         f"| **Total** | **{fmt_frac(summary['passed'], summary['total'])}** "
+        f"| **{fmt_secs(summary.get('avg_run_seconds'))}** "
         f"| **{fmt_tokens(summary['input_tokens'])}** "
         f"| **{fmt_cost(summary['est_input_cost_usd'], summary['input_tokens'], model)}** "
         f"| **{fmt_measured_tokens(summary.get('measured_input_tokens'), summary.get('measured_output_tokens'))}** "

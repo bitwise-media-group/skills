@@ -12,8 +12,9 @@ Each selected model also gets a token-usage figure per case: the provider's
 token-counting API counts the skill's SKILL.md plus the case prompt, priced at
 the model's input rate (see tools/eval/providers.py). Executed runs additionally
 record the harness-reported usage of the live session — total input tokens
-(including cache writes/reads), output tokens, and cost — per case, with
-per-model totals in the summary.
+(including cache writes/reads), output tokens, cost, and the wall-clock
+seconds of the agent run (grading excluded) — per case, with per-model
+totals in the summary.
 
 Runners per provider: Anthropic -> `claude -p`, OpenAI -> `codex exec`.
 Google models are token-counted only (no behavioral runner yet). The LLM judge
@@ -58,6 +59,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
@@ -241,7 +243,11 @@ def run_case(plugin_dir, skill, case, provider_key, model, args):
     runner = CASE_RUNNERS[provider_key]
     ws = make_workspace(plugin_dir, case.get("files"))
     try:
+        start = time.monotonic()
         output, measured = runner(ws, case, model["id"], args.timeout)
+        # Agent run only — grading (and the claude-backed LLM judge) would
+        # pollute the model-speed signal.
+        run_seconds = round(time.monotonic() - start, 1)
         graded, lines = [], []
         for assertion in case["assertions"]:
             passed, evidence = grade(assertion, ws, output, args.timeout)
@@ -256,7 +262,7 @@ def run_case(plugin_dir, skill, case, provider_key, model, args):
         if measured:
             measured["cost_usd"] = measured.get("cost_usd") \
                 or providers.usage_cost_usd(model, measured)
-        return case_passed, graded, measured
+        return case_passed, graded, measured, run_seconds
     finally:
         shutil.rmtree(ws, ignore_errors=True)
 
@@ -311,6 +317,7 @@ def main():
                     "id": case["id"],
                     "passed": None,
                     "assertions": None,
+                    "run_seconds": None,
                     "input_tokens": tokens,
                     "est_input_cost_usd": providers.input_cost_usd(model, tokens),
                     "measured": None,
@@ -323,14 +330,16 @@ def main():
                         for i, case in enumerate(cases)
                     }
                     for future in as_completed(futures):
-                        passed, graded, measured = future.result()
+                        passed, graded, measured, run_seconds = future.result()
                         any_failed |= not passed
                         results[futures[future]].update(
-                            {"passed": passed, "assertions": graded, "measured": measured})
+                            {"passed": passed, "assertions": graded,
+                             "measured": measured, "run_seconds": run_seconds})
 
             executed = [r for r in results if r["passed"] is not None]
             token_counts = [r["input_tokens"] for r in results if r["input_tokens"] is not None]
             costs = [r["est_input_cost_usd"] for r in results if r["est_input_cost_usd"] is not None]
+            run_times = [r["run_seconds"] for r in executed if r["run_seconds"] is not None]
             usages = [r["measured"] for r in results if r["measured"]]
             measured_in = [u["input_tokens"] for u in usages if u.get("input_tokens") is not None]
             measured_out = [u["output_tokens"] for u in usages if u.get("output_tokens") is not None]
@@ -344,6 +353,7 @@ def main():
                 "summary": {
                     "passed": sum(r["passed"] for r in executed) if executed else None,
                     "total": len(results),
+                    "avg_run_seconds": round(sum(run_times) / len(run_times), 1) if run_times else None,
                     "input_tokens": sum(token_counts) if token_counts else None,
                     "est_input_cost_usd": round(sum(costs), 6) if costs else None,
                     "measured_input_tokens": sum(measured_in) if measured_in else None,
@@ -352,7 +362,8 @@ def main():
                 },
             }
             if executed:
-                print(f"  {sum(r['passed'] for r in executed)}/{len(results)} cases passed")
+                avg = f", avg run {sum(run_times) / len(run_times):.1f}s" if run_times else ""
+                print(f"  {sum(r['passed'] for r in executed)}/{len(results)} cases passed{avg}")
             # Persist after every model so an interrupted sweep keeps the
             # models that already finished.
             out.write_text(json.dumps(data, indent=2) + "\n")

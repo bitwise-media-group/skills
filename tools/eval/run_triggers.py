@@ -12,7 +12,8 @@ trigger rate agrees with `should_trigger` (threshold 0.5).
 Each selected model also gets a token-usage figure per query: the provider's
 token-counting API is asked to count the skill's SKILL.md plus the query — the
 marginal context a triggering eval loads — and the count is priced at the model's
-input rate (see tools/eval/providers.py).
+input rate (see tools/eval/providers.py). Executed queries also record the
+average wall-clock seconds per run, since model speed varies widely.
 
 Runners per provider: Anthropic -> `claude -p`, OpenAI -> `codex exec`,
 Google -> `gemini -p`. Models whose runner CLI is missing are token-counted only.
@@ -176,31 +177,41 @@ TRIGGER_RUNNERS = {
 
 def run_queries(runner, ws, skill, model_id, cases, results, args):
     """Execute every query's runs concurrently (--jobs at a time), fill each
-    result's trigger_rate/passed in place, and print verdicts as queries
-    finish. Sharing the workspace is safe: trigger sessions are read-only.
-    Returns True when any query failed."""
+    result's trigger_rate/passed/avg_run_seconds in place, and print verdicts
+    as queries finish. Sharing the workspace is safe: trigger sessions are
+    read-only. Returns True when any query failed."""
+    def timed(query):
+        start = time.monotonic()
+        hit = runner(ws, query, skill, model_id, args.timeout)
+        return hit, time.monotonic() - start
+
     hits = [0] * len(cases)
+    elapsed = [0.0] * len(cases)
     remaining = [args.runs] * len(cases)
     failed = False
     with ThreadPoolExecutor(max_workers=args.jobs) as pool:
         futures = {
-            pool.submit(runner, ws, case["query"], skill, model_id, args.timeout): i
+            pool.submit(timed, case["query"]): i
             for i, case in enumerate(cases)
             for _ in range(args.runs)
         }
         for future in as_completed(futures):
             i = futures[future]
-            hits[i] += bool(future.result())
+            hit, seconds = future.result()
+            hits[i] += bool(hit)
+            elapsed[i] += seconds
             remaining[i] -= 1
             if remaining[i]:
                 continue
             rate = hits[i] / args.runs
+            avg = elapsed[i] / args.runs
             expected = cases[i]["should_trigger"]
             passed = (rate >= 0.5) if expected else (rate < 0.5)
             failed |= not passed
-            results[i].update({"trigger_rate": rate, "passed": passed})
+            results[i].update({"trigger_rate": rate, "passed": passed,
+                               "avg_run_seconds": round(avg, 1)})
             marker = "PASS" if passed else "FAIL"
-            print(f"  [{marker}] rate={rate:.2f} "
+            print(f"  [{marker}] rate={rate:.2f} avg={avg:.1f}s "
                   f"expect={'+' if expected else '-'} {cases[i]['query'][:70]}")
     return failed
 
@@ -254,6 +265,7 @@ def main():
                         "should_trigger": case["should_trigger"],
                         "trigger_rate": None,
                         "passed": None,
+                        "avg_run_seconds": None,
                         "input_tokens": tokens,
                         "est_input_cost_usd": providers.input_cost_usd(model, tokens),
                     })
@@ -265,6 +277,7 @@ def main():
                 executed = [r for r in results if r["passed"] is not None]
                 token_counts = [r["input_tokens"] for r in results if r["input_tokens"] is not None]
                 costs = [r["est_input_cost_usd"] for r in results if r["est_input_cost_usd"] is not None]
+                run_times = [r["avg_run_seconds"] for r in executed if r["avg_run_seconds"] is not None]
                 data["models"][model["id"]] = {
                     "provider": provider_key,
                     "display": model["display"],
@@ -275,12 +288,14 @@ def main():
                     "summary": {
                         "passed": sum(r["passed"] for r in executed) if executed else None,
                         "total": len(results),
+                        "avg_run_seconds": round(sum(run_times) / len(run_times), 1) if run_times else None,
                         "input_tokens": sum(token_counts) if token_counts else None,
                         "est_input_cost_usd": round(sum(costs), 6) if costs else None,
                     },
                 }
                 if executed:
-                    print(f"  {sum(r['passed'] for r in executed)}/{len(results)} queries passed")
+                    avg = f", avg run {sum(run_times) / len(run_times):.1f}s" if run_times else ""
+                    print(f"  {sum(r['passed'] for r in executed)}/{len(results)} queries passed{avg}")
                 # Persist after every model so an interrupted sweep keeps the
                 # models that already finished.
                 out.write_text(json.dumps(data, indent=2) + "\n")
