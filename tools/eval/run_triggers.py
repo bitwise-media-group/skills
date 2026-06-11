@@ -227,19 +227,65 @@ def triggered_codex(ws, query, skill, model, timeout):
 
 
 def triggered_gemini(ws, query, skill, model, timeout):
-    """Best-effort: gemini CLI output mentions the skill's SKILL.md path."""
-    cmd = ["gemini", "-p", query, "-m", model, "--output-format", "json"]
-    proc = subprocess.Popen(
-        cmd,
-        cwd=ws,
-        stdin=subprocess.DEVNULL,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.DEVNULL,
-        text=True,
+    """True if a stream-json tool_use event activates `skill`.
+
+    Gemini surfaces skills through an `activate_skill` tool whose parameter is
+    the skill *name* (a read_file of the SKILL.md path counts as a fallback),
+    and only `--output-format stream-json` emits tool_use events at all — the
+    plain `json` format is just {response, stats}. --skip-trust keeps headless
+    runs alive when the folder-trust feature is enabled: an untrusted
+    workspace is a fatal error there, and temp workspaces are never trusted."""
+    cmd = [
+        "gemini",
+        "-p",
+        query,
+        "-m",
+        model,
+        "--output-format",
+        "stream-json",
+        "--skip-trust",
+    ]
+    with tempfile.TemporaryFile(
+        mode="w+",
         errors="replace",
-    )
-    needle = f"skills/{skill}/SKILL.md"
-    return _scan_jsonl(proc, time.monotonic() + timeout, lambda line: needle in line)
+        dir=os.environ.get("TMPDIR"),
+    ) as stderr_log:
+        proc = subprocess.Popen(
+            cmd,
+            cwd=ws,
+            stdin=subprocess.DEVNULL,
+            stdout=subprocess.PIPE,
+            stderr=stderr_log,
+            text=True,
+            errors="replace",
+        )
+
+        def hit(line):
+            try:
+                event = json.loads(line)
+            except json.JSONDecodeError:
+                return False
+            if event.get("type") == "result" and event.get("status") == "error":
+                message = (event.get("error") or {}).get("message") or ""
+                print(
+                    f"  warn: gemini run errored; counted as no-trigger: "
+                    f"{message[:200]}",
+                    file=sys.stderr,
+                )
+                return False
+            if event.get("type") != "tool_use":
+                return False
+            payload = json.dumps(event.get("parameters") or {})
+            if event.get("tool_name") == "activate_skill" and skill in payload:
+                return True
+            return f"skills/{skill}/SKILL.md" in payload
+
+        return _scan_jsonl(
+            proc,
+            time.monotonic() + timeout,
+            hit,
+            stderr_log=stderr_log,
+        )
 
 
 TRIGGER_RUNNERS = {
