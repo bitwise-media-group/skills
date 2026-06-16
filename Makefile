@@ -2,16 +2,19 @@
 #
 # Node CLIs run straight from node_modules so package-lock.json is the source
 # of truth (no npx, no globals). Go developer CLIs are pinned in tools/go.mod
-# and run via `go tool` (see tools/README.md).
+# and run via `go tool` (see tools/README.md). Evals run through the evolve
+# CLI (github.com/bitwise-media-group/evolve); EVOLVE points at a sibling
+# checkout's binary for now and will become a pinned go-tool later.
 #
 # Tier 1-2 pass-throughs:
 #   SKILL=name   restrict to one skill (make eval-trigger SKILL=terraform-style)
-#   MODELS=spec  provider names / model ids / "all" (default: anthropic)
+#   MODELS=spec  provider names / model ids / "all" (default: all)
 #   RUNS=n       Tier-1 runs per query
 #   JOBS=n       concurrent agent runs (default: ceil(cpus/2))
 #   NEW=1        only run evals whose stored results are missing/incomplete
 
 NPMBIN := ./node_modules/.bin
+EVOLVE ?= ../evolve/evolve
 
 MODELS ?= all
 SKILL_FLAG = $(if $(SKILL),--skill $(SKILL))
@@ -24,7 +27,6 @@ NEW_FLAG   = $(if $(NEW),--new)
 LICENSE_HOLDER := 'Bitwise Media Group'
 LICENSE_IGNORE := -ignore '.git/**' \
 	-ignore 'node_modules/**' \
-	-ignore 'evals-results/**' \
 	-ignore '.claude/**' \
 	-ignore 'plugins/**' \
 	-ignore 'commit.sh'
@@ -44,18 +46,19 @@ license: ## inject SPDX license headers (addlicense, pinned in tools/go.mod)
 	@ go tool addlicense -l mit -c $(LICENSE_HOLDER) -s=only $(LICENSE_IGNORE) .
 
 eval-static: ## Tier 0 - frontmatter, manifests, version sync
-	python3 tools/eval/run_checks.py
+	$(EVOLVE) run checks --strict
 
 eval-trigger: ## Tier 1 - trigger accuracy + token usage
-	python3 tools/eval/run_triggers.py --models "$(MODELS)" $(SKILL_FLAG) $(RUNS_FLAG) $(JOBS_FLAG) $(NEW_FLAG)
+	$(EVOLVE) run triggers --models "$(MODELS)" $(SKILL_FLAG) $(RUNS_FLAG) $(JOBS_FLAG) $(NEW_FLAG)
 
-eval-behavior: ## Tier 2 - behavioral cases + token usage
-	python3 tools/eval/run_cases.py --models "$(MODELS)" $(SKILL_FLAG) $(JOBS_FLAG) $(NEW_FLAG)
+eval-behavior: ## Tier 2 - behavioral evals + token usage
+	$(EVOLVE) run evals --models "$(MODELS)" $(SKILL_FLAG) $(JOBS_FLAG) $(NEW_FLAG)
 
-eval: eval-static eval-trigger eval-behavior ## all three tiers
+eval: ## all three tiers, then regenerate reports
+	$(EVOLVE) run all --models "$(MODELS)" $(SKILL_FLAG) $(RUNS_FLAG) $(JOBS_FLAG) $(NEW_FLAG)
 
-report: ## regenerate EVALUATION.md files from evals-results/
-	python3 tools/eval/report.py
+report: ## regenerate the EVALUATION files from stored results
+	$(EVOLVE) report
 
 # Install the pinned npm dev tools (prettier, markdownlint) exactly as locked
 # in package-lock.json. Re-runs only when package.json / package-lock.json change.

@@ -1,18 +1,58 @@
-[
-  { "query": "Set up GoReleaser for this Go project", "should_trigger": true },
-  {
-    "query": "Add a release workflow that publishes binaries and container images for our Go service",
-    "should_trigger": true
-  },
-  { "query": "Stamp the version and commit into the Go binary at build time", "should_trigger": true },
-  { "query": "Add GitHub Actions CI for this Go repo", "should_trigger": true },
-  { "query": "Configure Dependabot for our Go modules and GitHub Actions", "should_trigger": true },
-  { "query": "Publish multi-arch Docker images from our Go release pipeline", "should_trigger": true },
-  { "query": "Add SBOM generation to the Go release build", "should_trigger": true },
-  { "query": "Set up semantic-release for my npm package", "should_trigger": false },
-  { "query": "Write a Dockerfile for my Python app", "should_trigger": false },
-  { "query": "Scaffold a new Go project with a Makefile", "should_trigger": false },
-  { "query": "Fix the failing Go unit test in CI", "should_trigger": false },
-  { "query": "Write table-driven tests before we cut the release", "should_trigger": false },
-  { "query": "Set up release-please for this TypeScript repo", "should_trigger": false }
-]
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "go-release",
+  "triggers": [
+    {
+      "query": "Set up GoReleaser for this Go project",
+      "should_trigger": true
+    },
+    {
+      "query": "Add a release workflow that publishes binaries and container images for our Go service",
+      "should_trigger": true
+    },
+    {
+      "query": "Stamp the version and commit into the Go binary at build time",
+      "should_trigger": true
+    },
+    {
+      "query": "Add GitHub Actions CI for this Go repo",
+      "should_trigger": true
+    },
+    {
+      "query": "Configure Dependabot for our Go modules and GitHub Actions",
+      "should_trigger": true
+    },
+    {
+      "query": "Publish multi-arch Docker images from our Go release pipeline",
+      "should_trigger": true
+    },
+    {
+      "query": "Add SBOM generation to the Go release build",
+      "should_trigger": true
+    },
+    {
+      "query": "Set up semantic-release for my npm package",
+      "should_trigger": false
+    },
+    {
+      "query": "Write a Dockerfile for my Python app",
+      "should_trigger": false
+    },
+    {
+      "query": "Scaffold a new Go project with a Makefile",
+      "should_trigger": false
+    },
+    {
+      "query": "Fix the failing Go unit test in CI",
+      "should_trigger": false
+    },
+    {
+      "query": "Write table-driven tests before we cut the release",
+      "should_trigger": false
+    },
+    {
+      "query": "Set up release-please for this TypeScript repo",
+      "should_trigger": false
+    }
+  ]
+}

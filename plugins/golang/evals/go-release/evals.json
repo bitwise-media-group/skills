@@ -1,0 +1,97 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "go-release",
+  "evals": [
+    {
+      "id": "goreleaser-setup",
+      "prompt": "Set up GoReleaser for this repo per our Go release conventions: version metadata stamped into internal/version, SBOMs, and a snapshot-friendly config.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+      "files": ["files/go.mod", "files/cmd/shipd/main.go", "files/LICENSE"],
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": ".goreleaser.yaml"
+        },
+        {
+          "type": "regex",
+          "path": ".goreleaser.yaml",
+          "pattern": "CGO_ENABLED=0"
+        },
+        {
+          "type": "regex",
+          "path": ".goreleaser.yaml",
+          "pattern": "-trimpath"
+        },
+        {
+          "type": "regex",
+          "path": ".goreleaser.yaml",
+          "pattern": "internal/version\\.Version="
+        },
+        {
+          "type": "regex",
+          "path": ".goreleaser.yaml",
+          "pattern": "sboms:"
+        },
+        {
+          "type": "file_exists",
+          "path": "internal/version/version.go"
+        },
+        {
+          "type": "regex",
+          "path": "internal/version/version.go",
+          "pattern": "BuildDate"
+        },
+        {
+          "type": "command",
+          "run": "go vet ./...",
+          "requires": "go"
+        },
+        {
+          "type": "command",
+          "run": "goreleaser check",
+          "requires": "goreleaser"
+        }
+      ]
+    },
+    {
+      "id": "ci-dependabot",
+      "prompt": "Add GitHub Actions CI (.github/workflows/ci.yaml) and Dependabot config (.github/dependabot.yaml) for this Go repo per our release conventions. The repo has a separate tools module at tools/.",
+      "files": ["files/go.mod", "files/cmd/shipd/main.go", "files/tools/go.mod"],
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": ".github/workflows/ci.yaml"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/ci.yaml",
+          "pattern": "go-version-file: go.mod"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/ci.yaml",
+          "pattern": "go test -race"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/ci.yaml",
+          "pattern": "govulncheck"
+        },
+        {
+          "type": "file_exists",
+          "path": ".github/dependabot.yaml"
+        },
+        {
+          "type": "regex",
+          "path": ".github/dependabot.yaml",
+          "pattern": "package-ecosystem: gomod"
+        },
+        {
+          "type": "regex",
+          "path": ".github/dependabot.yaml",
+          "pattern": "directory: /tools"
+        }
+      ]
+    }
+  ]
+}

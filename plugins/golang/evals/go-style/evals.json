@@ -1,0 +1,167 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "go-style",
+  "evals": [
+    {
+      "id": "wrap-errors-slog",
+      "prompt": "Refactor internal/config/config.go to our Go house style \u2014 fix the error handling and the logging.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+      "files": ["fixtures/styledemo/go.mod", "files/internal/config/config.go"],
+      "assertions": [
+        {
+          "type": "regex",
+          "path": "internal/config/config.go",
+          "pattern": "%w"
+        },
+        {
+          "type": "not_regex",
+          "path": "internal/config/config.go",
+          "pattern": "Failed to"
+        },
+        {
+          "type": "not_regex",
+          "path": "internal/config/config.go",
+          "pattern": "log\\.Printf"
+        },
+        {
+          "type": "regex",
+          "path": "internal/config/config.go",
+          "pattern": "log/slog"
+        },
+        {
+          "type": "command",
+          "run": "go vet ./...",
+          "requires": "go"
+        },
+        {
+          "type": "command",
+          "run": "test -z \"$(gofmt -l .)\"",
+          "requires": "gofmt"
+        }
+      ]
+    },
+    {
+      "id": "stdlib-handler",
+      "prompt": "Extend cmd/api/main.go: add a GET /healthz endpoint and a POST /items endpoint using the standard library only, with request logging per our Go house style.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+      "files": ["fixtures/apidemo/go.mod", "files/cmd/api/main.go"],
+      "assertions": [
+        {
+          "type": "regex",
+          "path": "cmd/api/main.go",
+          "pattern": "NewServeMux"
+        },
+        {
+          "type": "regex",
+          "path": "cmd/api/main.go",
+          "pattern": "POST /items"
+        },
+        {
+          "type": "regex",
+          "path": "cmd/api/main.go",
+          "pattern": "slog"
+        },
+        {
+          "type": "not_regex",
+          "path": "cmd/api/main.go",
+          "pattern": "gorilla|go-chi|gin-gonic|httprouter"
+        },
+        {
+          "type": "command",
+          "run": "go vet ./...",
+          "requires": "go"
+        },
+        {
+          "type": "command",
+          "run": "test -z \"$(gofmt -l .)\"",
+          "requires": "gofmt"
+        }
+      ]
+    },
+    {
+      "id": "cli-subcommand",
+      "prompt": "Add a serve subcommand to this CLI in internal/cli/serve.go: it takes a --port flag (default 8080) that can also be set via the MYCLI_PORT environment variable, following our Go house style for CLI tools. Edit the files directly \u2014 no need to run go commands or download dependencies.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+      "files": ["fixtures/clidemo/go.mod", "files/cmd/mycli/main.go", "files/internal/cli/root.go"],
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": "internal/cli/serve.go"
+        },
+        {
+          "type": "regex",
+          "path": "internal/cli/serve.go",
+          "pattern": "cobra\\.Command"
+        },
+        {
+          "type": "regex",
+          "path": "internal/cli/serve.go",
+          "pattern": "RunE"
+        },
+        {
+          "type": "regex",
+          "path": "internal/cli/serve.go",
+          "pattern": "viper"
+        },
+        {
+          "type": "regex",
+          "path": "internal/cli/serve.go",
+          "pattern": "port"
+        },
+        {
+          "type": "not_regex",
+          "path": "internal/cli/serve.go",
+          "pattern": "os\\.Exit"
+        }
+      ]
+    },
+    {
+      "id": "string-builder-loop",
+      "prompt": "Refactor internal/spec/spec.go to our Go house style \u2014 modernize the string and slice handling throughout.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+      "files": ["fixtures/specdemo/go.mod", "files/internal/spec/spec.go"],
+      "assertions": [
+        {
+          "type": "regex",
+          "path": "internal/spec/spec.go",
+          "pattern": "strings\\.(Builder|Join)"
+        },
+        {
+          "type": "regex",
+          "path": "internal/spec/spec.go",
+          "pattern": "strings\\.FieldsSeq"
+        },
+        {
+          "type": "regex",
+          "path": "internal/spec/spec.go",
+          "pattern": "slices\\.Contains"
+        },
+        {
+          "type": "not_regex",
+          "path": "internal/spec/spec.go",
+          "pattern": "spec \\+="
+        },
+        {
+          "type": "not_regex",
+          "path": "internal/spec/spec.go",
+          "pattern": "WriteString\\([^)]*\\+"
+        },
+        {
+          "type": "not_regex",
+          "path": "internal/spec/spec.go",
+          "pattern": "range strings\\.Fields\\("
+        },
+        {
+          "type": "command",
+          "run": "go vet ./...",
+          "requires": "go"
+        },
+        {
+          "type": "command",
+          "run": "test -z \"$(gofmt -l .)\"",
+          "requires": "gofmt"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "schema": 2,
+  "tool_version": "v0.2.0-3-g1fedb24",
+  "latest_run": "2026-06-16T08:30:28Z",
+  "plugins": {
+    "golang": {
+      "triggers": {
+        "anthropic/claude-fable-5": {
+          "provider": "anthropic",
+          "display": "Claude Fable 5",
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 12.8,
+          "estimate": {
+            "input_tokens": 19016,
+            "input_cost_usd": 0.19016
+          }
+        },
+        "anthropic/claude-haiku-4-5": {
+          "provider": "anthropic",
+          "display": "Claude Haiku 4.5",
+          "passed": 7,
+          "failed": 7,
+          "total": 14,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 9.8,
+          "estimate": {
+            "input_tokens": 14052,
+            "input_cost_usd": 0.014052
+          }
+        },
+        "anthropic/claude-opus-4-8": {
+          "provider": "anthropic",
+          "display": "Claude Opus 4.8",
+          "passed": 13,
+          "failed": 1,
+          "total": 14,
+          "pass_rate": 0.928571,
+          "avg_run_seconds": 9.3,
+          "estimate": {
+            "input_tokens": 19016,
+            "input_cost_usd": 0.09508
+          }
+        },
+        "anthropic/claude-sonnet-4-6": {
+          "provider": "anthropic",
+          "display": "Claude Sonnet 4.6",
+          "passed": 10,
+          "failed": 4,
+          "total": 14,
+          "pass_rate": 0.714286,
+          "avg_run_seconds": 17.5,
+          "estimate": {
+            "input_tokens": 14052,
+            "input_cost_usd": 0.042156
+          }
+        },
+        "google/gemini-3.1-flash-lite": {
+          "provider": "google",
+          "display": "Gemini 3.1 Flash-Lite",
+          "passed": 7,
+          "failed": 7,
+          "total": 14,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 111.1,
+          "estimate": {
+            "input_tokens": 13587,
+            "input_cost_usd": 0.003398
+          }
+        },
+        "openai/gpt-5.3-codex-spark": {
+          "provider": "openai",
+          "display": "GPT-5.3 Codex Spark",
+          "passed": 12,
+          "failed": 2,
+          "total": 14,
+          "pass_rate": 0.857143,
+          "avg_run_seconds": 21.2
+        },
+        "openai/gpt-5.4": {
+          "provider": "openai",
+          "display": "GPT-5.4",
+          "passed": 13,
+          "failed": 1,
+          "total": 14,
+          "pass_rate": 0.928571,
+          "avg_run_seconds": 32.1,
+          "estimate": {
+            "input_tokens": 12675,
+            "input_cost_usd": 0.031689
+          }
+        },
+        "openai/gpt-5.4-mini": {
+          "provider": "openai",
+          "display": "GPT-5.4 Mini",
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 30.4,
+          "estimate": {
+            "input_tokens": 12675,
+            "input_cost_usd": 0.009506
+          }
+        },
+        "openai/gpt-5.5": {
+          "provider": "openai",
+          "display": "GPT-5.5",
+          "passed": 12,
+          "failed": 2,
+          "total": 14,
+          "pass_rate": 0.857143,
+          "avg_run_seconds": 38.4,
+          "estimate": {
+            "input_tokens": 12675,
+            "input_cost_usd": 0.063375
+          }
+        }
+      },
+      "evals": {
+        "anthropic/claude-sonnet-4-6": {
+          "provider": "anthropic",
+          "display": "Claude Sonnet 4.6",
+          "passed": 2,
+          "failed": 1,
+          "total": 3,
+          "pass_rate": 0.666667,
+          "avg_run_seconds": 68.7,
+          "estimate": {
+            "input_tokens": 3065,
+            "input_cost_usd": 0.009195
+          },
+          "measured": {
+            "input_tokens": 532715,
+            "output_tokens": 7762,
+            "cost_usd": 0.823403
+          }
+        }
+      }
+    }
+  }
+}

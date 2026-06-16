@@ -1,22 +1,62 @@
-[
-  { "query": "Add outputs for the OIDC provider ARN and URL to my Terraform module", "should_trigger": true },
-  { "query": "Review this variables.tf — anything you'd change about the variable types?", "should_trigger": true },
-  { "query": "Should this be a list(string) or set(string) in Terraform?", "should_trigger": true },
-  { "query": "Refactor modules/vpc so its outputs are easier to consume from the root", "should_trigger": true },
-  { "query": "What should I name the aws_iam_role resource inside my module?", "should_trigger": true },
-  { "query": "Add an optional proxy configuration input to our Terraform module", "should_trigger": true },
-  {
-    "query": "Standing up a second copy of this Terraform stack fails with IAM name collisions — fix the module",
-    "should_trigger": true
-  },
-  { "query": "Clean up main.tf in the eks module — it gates everything with count", "should_trigger": true },
-  { "query": "Write a Kubernetes deployment manifest for the runner controller", "should_trigger": false },
-  { "query": "Why is my Packer HCL template failing to parse?", "should_trigger": false },
-  { "query": "Run terraform fmt and tflint over the repo before I commit", "should_trigger": false },
-  {
-    "query": "Scaffold a brand new Terraform module called ecr-mirror with the standard files",
-    "should_trigger": false
-  },
-  { "query": "How do I migrate Terraform state from a local backend to S3?", "should_trigger": false },
-  { "query": "Explain the difference between terraform plan and terraform apply", "should_trigger": false }
-]
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "terraform-style",
+  "triggers": [
+    {
+      "query": "Add outputs for the OIDC provider ARN and URL to my Terraform module",
+      "should_trigger": true
+    },
+    {
+      "query": "Review this variables.tf \u2014 anything you'd change about the variable types?",
+      "should_trigger": true
+    },
+    {
+      "query": "Should this be a list(string) or set(string) in Terraform?",
+      "should_trigger": true
+    },
+    {
+      "query": "Refactor modules/vpc so its outputs are easier to consume from the root",
+      "should_trigger": true
+    },
+    {
+      "query": "What should I name the aws_iam_role resource inside my module?",
+      "should_trigger": true
+    },
+    {
+      "query": "Add an optional proxy configuration input to our Terraform module",
+      "should_trigger": true
+    },
+    {
+      "query": "Standing up a second copy of this Terraform stack fails with IAM name collisions \u2014 fix the module",
+      "should_trigger": true
+    },
+    {
+      "query": "Clean up main.tf in the eks module \u2014 it gates everything with count",
+      "should_trigger": true
+    },
+    {
+      "query": "Write a Kubernetes deployment manifest for the runner controller",
+      "should_trigger": false
+    },
+    {
+      "query": "Why is my Packer HCL template failing to parse?",
+      "should_trigger": false
+    },
+    {
+      "query": "Run terraform fmt and tflint over the repo before I commit",
+      "should_trigger": false
+    },
+    {
+      "query": "Scaffold a brand new Terraform module called ecr-mirror with the standard files",
+      "should_trigger": false
+    },
+    {
+      "query": "How do I migrate Terraform state from a local backend to S3?",
+      "should_trigger": false
+    },
+    {
+      "query": "Explain the difference between terraform plan and terraform apply",
+      "should_trigger": false
+    }
+  ]
+}

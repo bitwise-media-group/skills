@@ -63,7 +63,8 @@ Symlinked installs update on `git pull`. Alternatively,
 
 ## Evals
 
-Each skill ships with eval cases under `plugins/<plugin>/evals/<skill>/`:
+Each skill ships with evals under `plugins/<plugin>/evals/<skill>/`, run through the
+[evolve](https://github.com/bitwise-media-group/evolve) CLI (the `EVOLVE` make variable selects the binary):
 
 - **Tier 0 — static lint** (`make eval-static`): frontmatter, manifests, version sync. Runs in CI on every push.
 - **Tier 1 — trigger accuracy** (`make eval-trigger`): does the skill activate for the right prompts and stay quiet for
@@ -72,10 +73,10 @@ Each skill ships with eval cases under `plugins/<plugin>/evals/<skill>/`:
   deterministically (`terraform validate`, `tflint`, file/regex checks) with an optional LLM judge for subjective
   assertions.
 
-Tiers 1–2 run per provider model (`--models anthropic|openai|google|all` or specific model ids) and record token usage
-per eval via the provider token-counting APIs. Results and token cost are committed to [`EVALUATION.md`](EVALUATION.md)
-(plugin-level rollup) and `plugins/<plugin>/EVALUATION.md` (per-eval detail), regenerated automatically after every run
-(`python3 tools/eval/report.py` rebuilds them on demand).
+Tiers 1–2 run per provider model (`MODELS=anthropic|openai|google|all` or specific model ids) and record token usage per
+eval via the provider token-counting APIs. Results land in each skill's committed `results.json`; `make report`
+(`evolve report`) renders them into [`EVALUATION.md`](EVALUATION.md) + `EVALUATION.json` (plugin-level rollup) and
+`plugins/<plugin>/EVALUATION.md` (per-eval detail).
 
 Tiers 1–2 cost tokens and run via the manual `evals` GitHub workflow or locally.
 

@@ -1,13 +1,50 @@
-[
-  { "query": "I just edited main.tf — make sure the terraform still validates", "should_trigger": true },
-  { "query": "Run the linter over the terraform modules", "should_trigger": true },
-  { "query": "Format and validate the Terraform before we commit", "should_trigger": true },
-  { "query": "tflint is failing in CI — reproduce it locally and fix the findings", "should_trigger": true },
-  { "query": "Check the terraform code in modules/ for errors", "should_trigger": true },
-  { "query": "Set up tflint for this repository", "should_trigger": true },
-  { "query": "Validate this JSON file against its schema", "should_trigger": false },
-  { "query": "Run the Go test suite and report failures", "should_trigger": false },
-  { "query": "What is the difference between terraform validate and terraform plan?", "should_trigger": false },
-  { "query": "Write a new variables.tf for the cluster module", "should_trigger": false },
-  { "query": "Lint the markdown files under docs/", "should_trigger": false }
-]
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "terraform-validate",
+  "triggers": [
+    {
+      "query": "I just edited main.tf \u2014 make sure the terraform still validates",
+      "should_trigger": true
+    },
+    {
+      "query": "Run the linter over the terraform modules",
+      "should_trigger": true
+    },
+    {
+      "query": "Format and validate the Terraform before we commit",
+      "should_trigger": true
+    },
+    {
+      "query": "tflint is failing in CI \u2014 reproduce it locally and fix the findings",
+      "should_trigger": true
+    },
+    {
+      "query": "Check the terraform code in modules/ for errors",
+      "should_trigger": true
+    },
+    {
+      "query": "Set up tflint for this repository",
+      "should_trigger": true
+    },
+    {
+      "query": "Validate this JSON file against its schema",
+      "should_trigger": false
+    },
+    {
+      "query": "Run the Go test suite and report failures",
+      "should_trigger": false
+    },
+    {
+      "query": "What is the difference between terraform validate and terraform plan?",
+      "should_trigger": false
+    },
+    {
+      "query": "Write a new variables.tf for the cluster module",
+      "should_trigger": false
+    },
+    {
+      "query": "Lint the markdown files under docs/",
+      "should_trigger": false
+    }
+  ]
+}

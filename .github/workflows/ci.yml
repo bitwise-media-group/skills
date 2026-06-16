@@ -14,15 +14,18 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
+            - uses: actions/setup-go@v5
+              with:
+                  go-version: stable
+            - name: Install evolve
+              run: go install github.com/bitwise-media-group/evolve/cmd/evolve@latest
             - name: Tier 0 static checks
-              run: python3 tools/eval/run_checks.py
+              run: evolve run checks --strict
             - name: Eval JSON well-formed
               run: |
                   for f in plugins/*/evals/*/*.json; do
                     jq -e . "$f" >/dev/null || { echo "invalid JSON: $f"; exit 1; }
                   done
-            - name: Eval tooling compiles
-              run: python3 -m py_compile tools/eval/*.py
             - name: Shell scripts parse
               run: sh -n install.sh
 

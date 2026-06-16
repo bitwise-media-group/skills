@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "go-testing",
+  "evals": [
+    {
+      "id": "table-driven",
+      "prompt": "Write tests for the Clamp function in clamp.go following our Go testing conventions.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+      "files": ["fixtures/testdemo/go.mod", "files/clamp.go"],
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": "clamp_test.go"
+        },
+        {
+          "type": "regex",
+          "path": "clamp_test.go",
+          "pattern": "\\[\\]struct"
+        },
+        {
+          "type": "regex",
+          "path": "clamp_test.go",
+          "pattern": "t\\.Run\\("
+        },
+        {
+          "type": "not_regex",
+          "path": "clamp_test.go",
+          "pattern": "testify|gomega"
+        },
+        {
+          "type": "command",
+          "run": "go test ./...",
+          "requires": "go"
+        }
+      ]
+    },
+    {
+      "id": "fuzz-target",
+      "prompt": "Add a fuzz test with a seed corpus for the Parse function to parse_test.go, following our Go fuzzing conventions.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+      "files": ["fixtures/fuzzdemo/go.mod", "files/parse.go"],
+      "assertions": [
+        {
+          "type": "regex",
+          "path": "parse_test.go",
+          "pattern": "func Fuzz"
+        },
+        {
+          "type": "regex",
+          "path": "parse_test.go",
+          "pattern": "f\\.Add\\("
+        },
+        {
+          "type": "regex",
+          "path": "parse_test.go",
+          "pattern": "f\\.Fuzz\\("
+        },
+        {
+          "type": "not_regex",
+          "path": "parse_test.go",
+          "pattern": "testify|gomega"
+        },
+        {
+          "type": "command",
+          "run": "go test ./...",
+          "requires": "go"
+        }
+      ]
+    }
+  ]
+}

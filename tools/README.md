@@ -2,10 +2,12 @@
 
 Developer tooling for this repo:
 
-- `eval/` — the three-tier eval harness (see the Evals section in the repo README).
 - `go.mod` / `go.sum` — a standalone Go [tool module](https://go.dev/doc/modules/managing-dependencies#tools) that pins
   the Go developer CLIs, so their versions are tracked without leaking into the rest of the project. There is no Go
   application here — only `tool` directives.
+
+The three-tier eval harness is [evolve](https://github.com/bitwise-media-group/evolve) (see the Evals section in the
+repo README), invoked through the `EVOLVE` Makefile variable until it is pinned here as a Go tool.
 
 ## Pinned Go tools
 

@@ -11,8 +11,8 @@ signing handoff) applies on top of this file.
 - One plugin per directory under `plugins/<plugin>/`. Skills are the canonical source of truth at
   `plugins/<plugin>/skills/<skill-name>/SKILL.md` — they exist exactly once; every distribution channel (Claude/Codex
   marketplaces, `install.sh` symlinks) points at this tree.
-- Eval cases live at `plugins/<plugin>/evals/<skill-name>/` (`triggers.json`, `cases.json`), **not** inside the skill
-  directory, so installed skills stay lean.
+- Evals live at `plugins/<plugin>/evals/<skill-name>/` (`triggers.json`, `evals.json`, fixtures, and the committed
+  `results.json` the sweeps write), **not** inside the skill directory, so installed skills stay lean.
 - Skill directory name must equal the frontmatter `name`.
 - Skill names are globally namespaced by prefix (e.g. `terraform-style`, not `style`) because Codex/Antigravity/OpenCode
   install skills into flat shared directories.
@@ -28,8 +28,8 @@ Every plugin carries two manifests; the repo carries two marketplace manifests:
 
 Rules:
 
-- **Versions stay in sync** between the two plugin manifests (enforced by `tools/eval/run_checks.py`). Codex requires
-  strict semver.
+- **Versions stay in sync** between the two plugin manifests (enforced by `evolve run checks`). Codex requires strict
+  semver.
 - Marketplace `source` paths are explicit and `./`-prefixed (`"./plugins/terraform"`). Do not use Claude's
   `metadata.pluginRoot` — Codex fallback-reads Claude's manifest and resolves sources against the repo root.
 - **Never add a `hooks/` directory to a plugin.** Codex default-discovers `hooks/hooks.json` with an incompatible
@@ -56,15 +56,21 @@ per tool.
 
 ## Evals
 
-- Every new skill ships with `evals/<skill>/triggers.json` (10–20 `{query, should_trigger}` entries; negatives must be
-  near-misses) and `cases.json` (2–5 behavioral cases with assertions).
-- Changing a skill `description` ⇒ rerun Tier 1: `python3 tools/eval/run_triggers.py`.
+Evals run through the [evolve](https://github.com/bitwise-media-group/evolve) CLI (`.evolve.json` holds the repo config;
+the `EVOLVE` make variable points at a sibling checkout's binary for now):
+
+- Every new skill ships with `evals/<skill>/triggers.json` (10–20 `{query, should_trigger}` entries inside the
+  `{"skill_name", "triggers"}` envelope; negatives must be near-misses) and `evals.json` (2–5 behavioral evals with
+  assertions, `{"skill_name", "evals"}` envelope). Schemas live in evolve's `schemas/` directory.
+- Eval `files` are fixture paths, never inline content. A path under `files/` stages into the workspace at its path
+  relative to `files/`; anything else stages by basename (e.g. `fixtures/<name>/go.mod` for per-eval `go.mod` files that
+  would collide under `files/`).
+- Changing a skill `description` ⇒ rerun Tier 1: `make eval-trigger`.
 - Prefer deterministic assertions (`terraform validate`, `tflint`, file/regex checks) over LLM-judged ones.
-- Eval results and token cost are committed reports: `EVALUATION.md` (plugin-level rollup) and
-  `plugins/<plugin>/EVALUATION.md` (per-eval detail), one section per provider (Anthropic, OpenAI, Google). The runners
-  regenerate both via `tools/eval/report.py` from the raw results in `evals-results/` (committed alongside the reports)
-  — never edit the reports by hand. Token usage comes from each provider's token-counting API; the model/pricing matrix
-  lives in `tools/eval/providers.py`.
+- Results and token cost are committed: `evals/<skill>/results.json` (raw, rewritten per-model by the sweeps),
+  `EVALUATION.md` + `EVALUATION.json` (root rollup), and `plugins/<plugin>/EVALUATION.md` (per-eval detail).
+  `evolve report` (`make report`) regenerates the reports from the stored results — never edit them by hand. Token usage
+  comes from each provider's token-counting API; `evolve models` prints the model/pricing matrix.
 
 ## Validation
 
@@ -80,8 +86,9 @@ make lint                         # markdown style (120-col, config in .markdown
 
 Node CLIs run from `node_modules/.bin` (locked by `package-lock.json` — no npx, no globals); Go developer CLIs are
 pinned in `tools/go.mod` and run via `go tool` (resolved through the root `go.work`). The Makefile also wraps Tiers 1–2
-(`make eval-trigger`, `make eval-behavior`, `make eval` for all three tiers; pass `SKILL=`, `MODELS=`, `RUNS=`, `JOBS=`)
-and `make report` for the EVALUATION.md files.
+(`make eval-trigger`, `make eval-behavior`, `make eval` for all tiers plus reports; pass `SKILL=`, `MODELS=`, `RUNS=`,
+`JOBS=`) and `make report` for the EVALUATION files — all through the `evolve` binary selected by `EVOLVE=` (default
+`../evolve/evolve`, a pinned go-tool later).
 
 ## Markdown style
 

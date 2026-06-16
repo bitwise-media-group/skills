@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "terraform-style",
+  "evals": [
+    {
+      "id": "style-grouped-variable",
+      "prompt": "In the Terraform module at modules/widget, add two inputs: the set of private subnet IDs the widget spans, and an optional endpoint_access configuration (private defaults to true, public defaults to false, plus the CIDRs allowed to reach a public endpoint). Follow the repository's Terraform conventions.",
+      "files": [
+        "files/modules/widget/terraform.tf",
+        "files/modules/widget/main.tf",
+        "files/modules/widget/variables.tf",
+        "files/modules/widget/outputs.tf"
+      ],
+      "assertions": [
+        {
+          "type": "regex",
+          "path": "modules/widget/variables.tf",
+          "pattern": "set\\(string\\)"
+        },
+        {
+          "type": "regex",
+          "path": "modules/widget/variables.tf",
+          "pattern": "optional\\("
+        },
+        {
+          "type": "regex",
+          "path": "modules/widget/variables.tf",
+          "pattern": "default\\s*=\\s*\\{\\}"
+        },
+        {
+          "type": "not_regex",
+          "path": "modules/widget/variables.tf",
+          "pattern": "list\\(string\\)"
+        },
+        {
+          "type": "command",
+          "run": "terraform init -backend=false -input=false >/dev/null && terraform validate",
+          "cwd": "modules/widget",
+          "requires": "terraform"
+        }
+      ]
+    },
+    {
+      "id": "style-toggle-resource",
+      "prompt": "Add an optional CloudWatch log group to the Terraform module at modules/widget: created only when a new logging_enabled variable is true, retaining logs for 30 days, named after var.name. Follow the repository's Terraform conventions.",
+      "files": [
+        "files/modules/widget/terraform.tf",
+        "files/modules/widget/main.tf",
+        "files/modules/widget/variables.tf"
+      ],
+      "assertions": [
+        {
+          "type": "regex",
+          "path": "modules/widget/main.tf",
+          "pattern": "for_each\\s*=\\s*toset\\("
+        },
+        {
+          "type": "not_regex",
+          "path": "modules/widget/main.tf",
+          "pattern": "count\\s*="
+        },
+        {
+          "type": "not_regex",
+          "path": "modules/widget/main.tf",
+          "pattern": "resource\\s+\"[a-z0-9_]+\"\\s+\"this\""
+        },
+        {
+          "type": "command",
+          "run": "terraform init -backend=false -input=false >/dev/null && terraform validate",
+          "cwd": "modules/widget",
+          "requires": "terraform"
+        }
+      ]
+    }
+  ]
+}

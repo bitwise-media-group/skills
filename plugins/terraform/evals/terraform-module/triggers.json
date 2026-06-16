@@ -1,12 +1,46 @@
-[
-  { "query": "Create a new Terraform module for an ECR registry mirror", "should_trigger": true },
-  { "query": "Scaffold modules/eks-cluster with the standard file layout", "should_trigger": true },
-  { "query": "Add a new module under modules/ for managing IAM roles", "should_trigger": true },
-  { "query": "Restructure this Terraform module to follow our standard layout", "should_trigger": true },
-  { "query": "Start a terraform module for the VPC — just the skeleton, no resources yet", "should_trigger": true },
-  { "query": "Scaffold a new npm package with the usual project files", "should_trigger": false },
-  { "query": "Add a new module to this Python project", "should_trigger": false },
-  { "query": "Why does my terraform module fail validation?", "should_trigger": false },
-  { "query": "What's the right type for a variable holding unique subnet IDs?", "should_trigger": false },
-  { "query": "Write a docker-compose file for local development", "should_trigger": false }
-]
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "terraform-module",
+  "triggers": [
+    {
+      "query": "Create a new Terraform module for an ECR registry mirror",
+      "should_trigger": true
+    },
+    {
+      "query": "Scaffold modules/eks-cluster with the standard file layout",
+      "should_trigger": true
+    },
+    {
+      "query": "Add a new module under modules/ for managing IAM roles",
+      "should_trigger": true
+    },
+    {
+      "query": "Restructure this Terraform module to follow our standard layout",
+      "should_trigger": true
+    },
+    {
+      "query": "Start a terraform module for the VPC \u2014 just the skeleton, no resources yet",
+      "should_trigger": true
+    },
+    {
+      "query": "Scaffold a new npm package with the usual project files",
+      "should_trigger": false
+    },
+    {
+      "query": "Add a new module to this Python project",
+      "should_trigger": false
+    },
+    {
+      "query": "Why does my terraform module fail validation?",
+      "should_trigger": false
+    },
+    {
+      "query": "What's the right type for a variable holding unique subnet IDs?",
+      "should_trigger": false
+    },
+    {
+      "query": "Write a docker-compose file for local development",
+      "should_trigger": false
+    }
+  ]
+}

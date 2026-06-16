@@ -19,7 +19,7 @@ on:
                 required: true
                 default: triggers
                 type: choice
-                options: [triggers, cases, both]
+                options: [triggers, evals, both]
             models:
                 description: Models to evaluate (provider names, model ids, or "all")
                 required: true
@@ -41,6 +41,11 @@ jobs:
             - uses: actions/setup-node@v4
               with:
                   node-version: 22
+            - uses: actions/setup-go@v5
+              with:
+                  go-version: stable
+            - name: Install evolve
+              run: go install github.com/bitwise-media-group/evolve/cmd/evolve@latest
             - run: npm install -g @anthropic-ai/claude-code @openai/codex @google/gemini-cli
             - name: Install terraform + tflint for deterministic grading
               if: ${{ inputs.tier != 'triggers' }}
@@ -50,22 +55,26 @@ jobs:
             - name: Tier 1 — trigger accuracy
               if: ${{ inputs.tier == 'triggers' || inputs.tier == 'both' }}
               run: |
-                  python3 tools/eval/run_triggers.py \
+                  evolve run triggers \
                     --models '${{ inputs.models }}' \
                     ${{ inputs.skill && format('--skill {0}', inputs.skill) || '' }}
-            - name: Tier 2 — behavioral cases
-              if: ${{ inputs.tier == 'cases' || inputs.tier == 'both' }}
+            - name: Tier 2 — behavioral evals
+              if: ${{ inputs.tier == 'evals' || inputs.tier == 'both' }}
               run: |
-                  python3 tools/eval/run_cases.py \
+                  evolve run evals \
                     --models '${{ inputs.models }}' \
                     ${{ inputs.skill && format('--skill {0}', inputs.skill) || '' }}
+            - name: Regenerate reports
+              if: always()
+              run: evolve report
             - name: Upload results and reports
               if: always()
               uses: actions/upload-artifact@v4
               with:
-                  name: evals-results
+                  name: eval-results
                   path: |
-                      evals-results/
+                      plugins/*/evals/*/results.json
                       EVALUATION.md
+                      EVALUATION.json
                       plugins/*/EVALUATION.md
                   if-no-files-found: ignore

@@ -1,0 +1,228 @@
+{
+  "schema": 2,
+  "plugin": "golang",
+  "skill": "go-project",
+  "evals": {
+    "anthropic/claude-haiku-4-5": {
+      "provider": "anthropic",
+      "model": "claude-haiku-4-5",
+      "display": "Claude Haiku 4.5",
+      "tool_version": "v0.2.0-3-g1fedb24-dirty",
+      "ran_at": "2026-06-16T11:19:00Z",
+      "executed": true,
+      "timeout_seconds": 600,
+      "pricing": {
+        "input_per_mtok": 1,
+        "output_per_mtok": 5
+      },
+      "results": [
+        {
+          "id": "project-scaffold",
+          "passed": false,
+          "estimate": {
+            "input_tokens": 1352,
+            "input_cost_usd": 0.001352
+          },
+          "measured": {
+            "input_tokens": 315977,
+            "output_tokens": 2799,
+            "cost_usd": 0.121788
+          },
+          "expectations": [
+            {
+              "type": "file_exists",
+              "path": "go.mod",
+              "text": "file go.mod exists",
+              "passed": false,
+              "evidence": "go.mod missing",
+              "source": "assertion"
+            },
+            {
+              "type": "file_exists",
+              "path": "cmd/orderd/main.go",
+              "text": "file cmd/orderd/main.go exists",
+              "passed": false,
+              "evidence": "cmd/orderd/main.go missing",
+              "source": "assertion"
+            },
+            {
+              "type": "file_exists",
+              "path": "tools/go.mod",
+              "text": "file tools/go.mod exists",
+              "passed": false,
+              "evidence": "tools/go.mod missing",
+              "source": "assertion"
+            },
+            {
+              "type": "file_exists",
+              "path": "Makefile",
+              "text": "file Makefile exists",
+              "passed": false,
+              "evidence": "Makefile missing",
+              "source": "assertion"
+            },
+            {
+              "type": "regex",
+              "path": "go.mod",
+              "pattern": "^module example\\.com/orderd",
+              "text": "go.mod matches /^module example\\.com/orderd/",
+              "passed": false,
+              "evidence": "go.mod missing",
+              "source": "assertion"
+            },
+            {
+              "type": "regex",
+              "path": "tools/go.mod",
+              "pattern": "^module .+/tools",
+              "text": "tools/go.mod matches /^module .+/tools/",
+              "passed": false,
+              "evidence": "tools/go.mod missing",
+              "source": "assertion"
+            },
+            {
+              "type": "regex",
+              "path": "Makefile",
+              "pattern": "^pr:",
+              "text": "Makefile matches /^pr:/",
+              "passed": false,
+              "evidence": "Makefile missing",
+              "source": "assertion"
+            },
+            {
+              "type": "regex",
+              "path": "Makefile",
+              "pattern": "go tool -modfile=tools/go\\.mod",
+              "text": "Makefile matches /go tool -modfile=tools/go\\.mod/",
+              "passed": false,
+              "evidence": "Makefile missing",
+              "source": "assertion"
+            },
+            {
+              "type": "not_regex",
+              "path": "Makefile",
+              "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
+              "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
+              "passed": false,
+              "evidence": "Makefile missing",
+              "source": "assertion"
+            },
+            {
+              "type": "regex",
+              "path": "cmd/orderd/main.go",
+              "pattern": "func run\\(",
+              "text": "cmd/orderd/main.go matches /func run\\(/",
+              "passed": false,
+              "evidence": "cmd/orderd/main.go missing",
+              "source": "assertion"
+            },
+            {
+              "type": "command",
+              "run": "go vet ./...",
+              "requires": "go",
+              "text": "command `go vet ./...` exits 0",
+              "passed": false,
+              "evidence": "exit 1: pattern ./...: directory prefix . does not contain main module or its selected dependencies",
+              "source": "assertion"
+            },
+            {
+              "type": "command",
+              "run": "test -z \"$(gofmt -l cmd)\"",
+              "requires": "gofmt",
+              "text": "command `test -z \"$(gofmt -l cmd)\"` exits 0",
+              "passed": true,
+              "evidence": "exit 0: lstat cmd: no such file or directory",
+              "source": "assertion"
+            }
+          ],
+          "summary": {
+            "passed": 1,
+            "failed": 11,
+            "total": 12,
+            "pass_rate": 0.083333
+          },
+          "timing": {
+            "total_tokens": 318776,
+            "executor_duration_seconds": 37.3
+          }
+        },
+        {
+          "id": "pin-tool",
+          "passed": true,
+          "estimate": {
+            "input_tokens": 1349,
+            "input_cost_usd": 0.001349
+          },
+          "measured": {
+            "input_tokens": 163415,
+            "output_tokens": 1055,
+            "cost_usd": 0.090932
+          },
+          "expectations": [
+            {
+              "type": "regex",
+              "path": "tools/go.mod",
+              "pattern": "goreleaser",
+              "text": "tools/go.mod matches /goreleaser/",
+              "passed": true,
+              "evidence": "goreleaser",
+              "source": "assertion"
+            },
+            {
+              "type": "regex",
+              "path": "Makefile",
+              "pattern": "go tool -modfile=tools/go\\.mod goreleaser",
+              "text": "Makefile matches /go tool -modfile=tools/go\\.mod goreleaser/",
+              "passed": true,
+              "evidence": "go tool -modfile=tools/go.mod goreleaser",
+              "source": "assertion"
+            },
+            {
+              "type": "not_regex",
+              "path": "Makefile",
+              "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
+              "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
+              "passed": true,
+              "evidence": "no match",
+              "source": "assertion"
+            },
+            {
+              "type": "not_regex",
+              "path": "go.mod",
+              "pattern": "goreleaser",
+              "text": "go.mod does not match /goreleaser/",
+              "passed": true,
+              "evidence": "no match",
+              "source": "assertion"
+            }
+          ],
+          "summary": {
+            "passed": 4,
+            "failed": 0,
+            "total": 4,
+            "pass_rate": 1
+          },
+          "timing": {
+            "total_tokens": 164470,
+            "executor_duration_seconds": 17.6
+          }
+        }
+      ],
+      "summary": {
+        "passed": 1,
+        "failed": 1,
+        "total": 2,
+        "pass_rate": 0.5,
+        "avg_run_seconds": 27.5,
+        "estimate": {
+          "input_tokens": 2701,
+          "input_cost_usd": 0.002701
+        },
+        "measured": {
+          "input_tokens": 479392,
+          "output_tokens": 3854,
+          "cost_usd": 0.21272
+        }
+      }
+    }
+  }
+}

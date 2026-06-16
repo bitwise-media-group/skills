@@ -1,16 +1,62 @@
-[
-  { "query": "Add doc comments to the exported functions in this Go package", "should_trigger": true },
-  { "query": "Write a package comment for internal/clientmap", "should_trigger": true },
-  { "query": "Should the package comment go in doc.go or at the top of an existing file?", "should_trigger": true },
-  { "query": "Document the exported API of this Go module", "should_trigger": true },
-  { "query": "Generate markdown CLI docs for my cobra tool", "should_trigger": true },
-  { "query": "Make my Go CLI's documentation consumable by LLMs", "should_trigger": true },
-  { "query": "Review this Go package for missing godoc comments", "should_trigger": true },
-  { "query": "Add a doc.go to this package", "should_trigger": true },
-  { "query": "Write a README for this Go project", "should_trigger": false },
-  { "query": "Add inline comments explaining how this Go algorithm works", "should_trigger": false },
-  { "query": "Write table-driven tests for this Go function", "should_trigger": false },
-  { "query": "Scaffold a new Go service with cmd and internal layout", "should_trigger": false },
-  { "query": "Add docstrings to this Python module", "should_trigger": false },
-  { "query": "Generate OpenAPI docs for my Go REST API", "should_trigger": false }
-]
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "go-docs",
+  "triggers": [
+    {
+      "query": "Add doc comments to the exported functions in this Go package",
+      "should_trigger": true
+    },
+    {
+      "query": "Write a package comment for internal/clientmap",
+      "should_trigger": true
+    },
+    {
+      "query": "Should the package comment go in doc.go or at the top of an existing file?",
+      "should_trigger": true
+    },
+    {
+      "query": "Document the exported API of this Go module",
+      "should_trigger": true
+    },
+    {
+      "query": "Generate markdown CLI docs for my cobra tool",
+      "should_trigger": true
+    },
+    {
+      "query": "Make my Go CLI's documentation consumable by LLMs",
+      "should_trigger": true
+    },
+    {
+      "query": "Review this Go package for missing godoc comments",
+      "should_trigger": true
+    },
+    {
+      "query": "Add a doc.go to this package",
+      "should_trigger": true
+    },
+    {
+      "query": "Write a README for this Go project",
+      "should_trigger": false
+    },
+    {
+      "query": "Add inline comments explaining how this Go algorithm works",
+      "should_trigger": false
+    },
+    {
+      "query": "Write table-driven tests for this Go function",
+      "should_trigger": false
+    },
+    {
+      "query": "Scaffold a new Go service with cmd and internal layout",
+      "should_trigger": false
+    },
+    {
+      "query": "Add docstrings to this Python module",
+      "should_trigger": false
+    },
+    {
+      "query": "Generate OpenAPI docs for my Go REST API",
+      "should_trigger": false
+    }
+  ]
+}

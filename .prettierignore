@@ -1,6 +1,9 @@
-# tools/eval/report.py owns the generated evaluation reports.
+# evolve owns the generated evaluation reports and results files — their
+# output is deterministic, so reformatting would fight the tool.
 EVALUATION.md
+EVALUATION.json
 plugins/*/EVALUATION.md
+plugins/*/evals/*/results.json
 
 # Prettier folds long frontmatter scalars onto multiple lines, but the skill
 # `description` must stay single-line: it is the only activation signal and

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "terraform-validate",
+  "evals": [
+    {
+      "id": "validate-fix-module",
+      "prompt": "Validate the Terraform in this repository and fix whatever the validation workflow finds, so it is clean before commit.",
+      "files": [
+        "files/modules/widget/terraform.tf",
+        "files/modules/widget/main.tf",
+        "files/modules/widget/variables.tf"
+      ],
+      "assertions": [
+        {
+          "type": "command",
+          "run": "terraform fmt -recursive -check",
+          "requires": "terraform"
+        },
+        {
+          "type": "command",
+          "run": "terraform init -backend=false -input=false >/dev/null && terraform validate",
+          "cwd": "modules/widget",
+          "requires": "terraform"
+        },
+        {
+          "type": "regex",
+          "path": "modules/widget/main.tf",
+          "pattern": "aws_s3_bucket"
+        }
+      ]
+    },
+    {
+      "id": "validate-seed-tflint",
+      "prompt": "Set up tflint for this Terraform repository with our standard rules, then run the validation workflow over modules/gadget and report what it finds.",
+      "files": [
+        "files/modules/gadget/terraform.tf",
+        "files/modules/gadget/main.tf",
+        "files/modules/gadget/variables.tf"
+      ],
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": ".tflint.hcl"
+        },
+        {
+          "type": "regex",
+          "path": ".tflint.hcl",
+          "pattern": "terraform_documented_variables"
+        },
+        {
+          "type": "regex",
+          "path": ".tflint.hcl",
+          "pattern": "preset\\s*=\\s*\"recommended\""
+        }
+      ]
+    }
+  ]
+}

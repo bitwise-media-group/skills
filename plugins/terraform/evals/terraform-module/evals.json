@@ -1,0 +1,95 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "terraform-module",
+  "evals": [
+    {
+      "id": "module-scaffold",
+      "prompt": "Scaffold a new Terraform module at modules/ecr-mirror for an ECR pull-through cache mirror. Create the canonical skeleton only \u2014 no real resources yet beyond placeholders \u2014 with the AWS provider pinned to major version 5.",
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": "modules/ecr-mirror/terraform.tf"
+        },
+        {
+          "type": "file_exists",
+          "path": "modules/ecr-mirror/main.tf"
+        },
+        {
+          "type": "file_exists",
+          "path": "modules/ecr-mirror/variables.tf"
+        },
+        {
+          "type": "file_exists",
+          "path": "modules/ecr-mirror/outputs.tf"
+        },
+        {
+          "type": "file_exists",
+          "path": "modules/ecr-mirror/README.md"
+        },
+        {
+          "type": "file_absent",
+          "path": "modules/ecr-mirror/versions.tf"
+        },
+        {
+          "type": "regex",
+          "path": "modules/ecr-mirror/terraform.tf",
+          "pattern": "required_version"
+        },
+        {
+          "type": "regex",
+          "path": "modules/ecr-mirror/terraform.tf",
+          "pattern": "required_providers"
+        },
+        {
+          "type": "regex",
+          "path": "modules/ecr-mirror/README.md",
+          "pattern": "## Usage"
+        },
+        {
+          "type": "not_regex",
+          "path": "modules/ecr-mirror/main.tf",
+          "pattern": "resource\\s+\"[a-z0-9_]+\"\\s+\"this\""
+        }
+      ]
+    },
+    {
+      "id": "module-restructure",
+      "prompt": "Restructure the Terraform module at modules/legacy to the standard canonical file layout, without changing its behavior.",
+      "files": ["files/modules/legacy/versions.tf", "files/modules/legacy/main.tf"],
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": "modules/legacy/terraform.tf"
+        },
+        {
+          "type": "file_absent",
+          "path": "modules/legacy/versions.tf"
+        },
+        {
+          "type": "file_exists",
+          "path": "modules/legacy/variables.tf"
+        },
+        {
+          "type": "file_exists",
+          "path": "modules/legacy/outputs.tf"
+        },
+        {
+          "type": "regex",
+          "path": "modules/legacy/variables.tf",
+          "pattern": "variable \"name\""
+        },
+        {
+          "type": "regex",
+          "path": "modules/legacy/outputs.tf",
+          "pattern": "output \"bucket\""
+        },
+        {
+          "type": "command",
+          "run": "terraform init -backend=false -input=false >/dev/null && terraform validate",
+          "cwd": "modules/legacy",
+          "requires": "terraform"
+        }
+      ]
+    }
+  ]
+}

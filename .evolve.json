@@ -1,0 +1,6 @@
+{
+  "layout": "marketplace",
+  "checks": {
+    "license": "MIT"
+  }
+}

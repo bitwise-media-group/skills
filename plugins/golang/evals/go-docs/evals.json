@@ -1,0 +1,132 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "go-docs",
+  "evals": [
+    {
+      "id": "doc-multi-file-package",
+      "prompt": "Add the missing documentation to internal/keyval per our Go documentation conventions.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+      "files": ["fixtures/docdemo/go.mod", "files/internal/keyval/store.go", "files/internal/keyval/parse.go"],
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": "internal/keyval/doc.go"
+        },
+        {
+          "type": "regex",
+          "path": "internal/keyval/doc.go",
+          "pattern": "^// Package keyval "
+        },
+        {
+          "type": "regex",
+          "path": "internal/keyval/store.go",
+          "pattern": "^// Store "
+        },
+        {
+          "type": "regex",
+          "path": "internal/keyval/store.go",
+          "pattern": "^// NewStore "
+        },
+        {
+          "type": "regex",
+          "path": "internal/keyval/store.go",
+          "pattern": "^// Get "
+        },
+        {
+          "type": "regex",
+          "path": "internal/keyval/parse.go",
+          "pattern": "^// Parse "
+        },
+        {
+          "type": "not_regex",
+          "path": "internal/keyval/store.go",
+          "pattern": "^// Package"
+        },
+        {
+          "type": "not_regex",
+          "path": "internal/keyval/parse.go",
+          "pattern": "^// Package"
+        },
+        {
+          "type": "command",
+          "run": "go vet ./...",
+          "requires": "go"
+        },
+        {
+          "type": "command",
+          "run": "test -z \"$(gofmt -l .)\"",
+          "requires": "gofmt"
+        }
+      ]
+    },
+    {
+      "id": "doc-single-file-package",
+      "prompt": "Add the missing documentation to internal/version per our Go documentation conventions.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+      "files": ["fixtures/docdemo/go.mod", "files/internal/version/version.go"],
+      "assertions": [
+        {
+          "type": "file_absent",
+          "path": "internal/version/doc.go"
+        },
+        {
+          "type": "regex",
+          "path": "internal/version/version.go",
+          "pattern": "^// Package version "
+        },
+        {
+          "type": "regex",
+          "path": "internal/version/version.go",
+          "pattern": "^// .+\\nvar \\("
+        },
+        {
+          "type": "command",
+          "run": "go vet ./...",
+          "requires": "go"
+        },
+        {
+          "type": "command",
+          "run": "test -z \"$(gofmt -l .)\"",
+          "requires": "gofmt"
+        }
+      ]
+    },
+    {
+      "id": "cobra-docgen",
+      "prompt": "Wire up LLM-ready CLI reference generation for this cobra tool following our Go documentation conventions: a docgen helper at internal/tools/docgen and a docs Makefile target. Edit the files directly \u2014 no need to run go commands or download dependencies.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+      "files": ["fixtures/clidemo/go.mod", "files/cmd/mycli/main.go", "files/internal/cli/root.go", "files/Makefile"],
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": "internal/tools/docgen/main.go"
+        },
+        {
+          "type": "regex",
+          "path": "internal/tools/docgen/main.go",
+          "pattern": "spf13/cobra/doc"
+        },
+        {
+          "type": "regex",
+          "path": "internal/tools/docgen/main.go",
+          "pattern": "DisableAutoGenTag"
+        },
+        {
+          "type": "regex",
+          "path": "internal/tools/docgen/main.go",
+          "pattern": "GenMarkdownTree"
+        },
+        {
+          "type": "regex",
+          "path": "internal/cli/root.go",
+          "pattern": "func Root\\(\\) \\*cobra\\.Command"
+        },
+        {
+          "type": "regex",
+          "path": "Makefile",
+          "pattern": "go run \\./internal/tools/docgen"
+        }
+      ]
+    }
+  ]
+}
