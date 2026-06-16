@@ -1,0 +1,35 @@
+# Copyright 2026 Bitwise Media Group
+# SPDX-License-Identifier: MIT
+
+# release-please drives per-plugin releases from Conventional Commits. It keeps a
+# single release PR up to date; merging it bumps the changed plugin's version in
+# both manifests (.claude-plugin + .codex-plugin), updates that plugin's
+# CHANGELOG, tags it `<plugin>-vX.Y.Z`, and cuts a GitHub release. The package set
+# and current versions live in release-please-config.json and
+# .release-please-manifest.json.
+#
+# Note: PRs opened with GITHUB_TOKEN do not trigger other workflows, so `ci` does
+# not run on the release PR on its own. To get CI (and the `/merge` flow) on the
+# release PR, mint a GitHub App token — the repo already has the FF Merge App
+# credentials (vars.FF_MERGE_CLIENT_ID / secrets.FF_MERGE_PRIVATE_KEY) — via
+# actions/create-github-app-token and pass it as `token` below instead.
+name: release
+
+on:
+    push:
+        branches: [main]
+
+permissions: {}
+
+jobs:
+    release-please:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write # create tags + releases, push the release-PR branch
+            pull-requests: write # open and update the release PR
+        steps:
+            - uses: googleapis/release-please-action@5c625bfb5d1ff62eadeeb3772007f7f66fdcf071 # v4.4.1
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  config-file: release-please-config.json
+                  manifest-file: .release-please-manifest.json

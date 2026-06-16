@@ -1,0 +1,4 @@
+{
+  "plugins/golang": "0.2.0",
+  "plugins/terraform": "0.1.0"
+}
