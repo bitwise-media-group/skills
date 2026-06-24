@@ -1,11 +1,17 @@
 # Copyright 2026 Bitwise Media Group
 # SPDX-License-Identifier: MIT
 
-# Caller for Dependabot auto-merge. When Dependabot opens a PR the reusable
-# workflow approves it if it is a minor or patch update; when the PR's CI finishes
-# green it fast-forwards it into the base branch (preserving Dependabot's signed
-# commits, via the same `ff-merge` action as the `/merge` flow). Major updates are
-# never approved, so they wait for a human.
+# Caller for Dependabot auto-merge. When a Dependabot PR's CI finishes green the
+# reusable workflow approves it if it is a minor or patch update, then fast-forwards
+# it into the base branch (preserving Dependabot's signed commits, via the same
+# `ff-merge` action as the `/merge` flow). Major updates are never approved, so they
+# wait for a human.
+#
+# Just workflow_run — an event that adds no check run to the PR, so it leaves no
+# skipped-job clutter (and needs no pull_request_target). The reusable workflow reads
+# the minor/patch-vs-major policy from Dependabot's signed commit. `ci` is this
+# repo's only required PR check (evals.yml is workflow_dispatch-only). check_suite is
+# NOT usable here — GitHub does not fire it for a repo's own Actions CI.
 #
 # Requires .github/dependabot.yaml (present) so Dependabot opens PRs, and branch
 # protection that requires PR review (so the approval sets the review decision) —
@@ -17,14 +23,7 @@
 
 name: Dependabot auto-merge
 
-# Both triggers are required. pull_request_target approves on open; workflow_run
-# fast-forwards once CI is green. check_suite is NOT usable here — GitHub does not
-# fire it for a repo's own Actions CI. `ci` is this repo's only required PR check
-# (evals.yml is workflow_dispatch-only). pull_request_target is safe here: the
-# reusable workflow never checks out or runs PR code.
 on:
-    pull_request_target:
-        types: [opened, reopened, synchronize]
     workflow_run:
         workflows: [ci]
         types: [completed]
@@ -34,7 +33,7 @@ permissions: {}
 
 jobs:
     auto-merge:
-        uses: bitwise-media-group/github-workflows/.github/workflows/dependabot-merge.yaml@077a003a620f49bd0062c73fc761dbea05d7fb70 # v1.1.0
+        uses: bitwise-media-group/github-workflows/.github/workflows/dependabot-merge.yaml@ef97ca56a3a90f9f35556402e0c7478307edcbb9 # v3.0.0
         with:
             app-client-id: ${{ vars.FF_MERGE_CLIENT_ID }}
             # update-types: '["version-update:semver-patch", "version-update:semver-minor"]' # default

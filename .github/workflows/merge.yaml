@@ -1,36 +1,44 @@
 # Copyright 2026 Bitwise Media Group
 # SPDX-License-Identifier: MIT
 
-# Caller for the org-wide fast-forward `/merge` flow. A maintainer comments
-# `/merge` on an approved, green PR and it is fast-forwarded into the base branch,
-# preserving every commit's original signature (so release-please still sees each
-# Conventional Commit). This file owns only the trigger; the first-pass gate and
-# all authoritative checks (write access, approval, passing checks, genuine
-# fast-forward) live in the reusable workflow.
+# Caller for the org's fast-forward merge flow — both `/merge` (merge an approved,
+# green PR now) and set-and-forget auto-merge (`/auto-merge`, or add the
+# `auto-merge` label, and it fast-forwards the moment it is approved and every
+# required check is green) in one workflow. Both preserve each commit's signature
+# via the same `ff-merge` action, so release-please still sees each Conventional
+# Commit. This replaces the previous split merge.yaml + auto-merge.yaml — v3 unifies
+# them into a single reusable workflow.
 #
-# issue_comment runs in the base-repo context, so secrets are available even for
-# fork PRs.
+# Every trigger here is one that does NOT attach a check run to the PR
+# (issue_comment, workflow_run, schedule), so the merge machinery leaves no
+# skipped-job clutter on the PR's checks list. The approval signal is carried by the
+# companion merge-review-ack.yaml (its single job is the only check this system
+# adds) and re-enters via workflow_run. `ci` is this repo's only required PR check
+# (evals.yml is workflow_dispatch-only); ff-merge re-verifies all checks regardless.
+# The schedule sweeps armed PRs as a backstop.
 #
 # Prerequisites (one-time, org-wide — see bitwise-media-group/ff-merge):
 #   - org variable FF_MERGE_CLIENT_ID and org secret FF_MERGE_PRIVATE_KEY
 #   - the "FF Merge" App installed on this repo and in the ruleset bypass list
 
-name: Fast-forward merge
+name: Merge
 
 on:
     issue_comment:
         types: [created]
+    workflow_run:
+        workflows: [ci, "Merge Review Ack"]
+        types: [completed]
+    schedule:
+        - cron: "17 * * * *"
 
 # the App token does the privileged work; the job's GITHUB_TOKEN needs nothing
 permissions: {}
 
 jobs:
-    fast-forward:
-        # The reusable workflow gates on a /merge comment from an org member and
-        # re-verifies write access authoritatively, so no per-repo gate is needed.
-        uses: bitwise-media-group/github-workflows/.github/workflows/merge.yaml@077a003a620f49bd0062c73fc761dbea05d7fb70 # v1.1.0
+    merge:
+        uses: bitwise-media-group/github-workflows/.github/workflows/merge.yaml@ef97ca56a3a90f9f35556402e0c7478307edcbb9 # v3.0.0
         with:
-            pr-number: ${{ github.event.issue.number }}
             app-client-id: ${{ vars.FF_MERGE_CLIENT_ID }}
         secrets:
             app-private-key: ${{ secrets.FF_MERGE_PRIVATE_KEY }}
