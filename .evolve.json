@@ -1,6 +1,25 @@
 {
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/refs/heads/main/docs/config/config.schema.json",
   "layout": "marketplace",
+  "harnesses": ["claude", "codex"],
+  "models": [
+    "anthropic/claude-haiku-4-5",
+    "anthropic/claude-sonnet-4-6",
+    "anthropic/claude-opus-4-8",
+    "openai/gpt-5.4",
+    "openai/gpt-5.5"
+  ],
   "checks": {
     "license": "MIT"
+  },
+  "sandbox": {
+    "protected_roots": ["~/Repos"]
+  },
+  "stale_results": "keep",
+  "report": {
+    "thresholds": {
+      "triggers_min_pass_rate": 0.55,
+      "evals_min_pass_rate": 0.8
+    }
   }
 }
