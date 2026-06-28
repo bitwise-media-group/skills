@@ -1,6 +1,6 @@
 ---
 name: go-docs
-description: Go documentation conventions — a doc comment on every exported function, struct, type, and package, package comments in a dedicated doc.go for multi-file packages, godoc style (complete sentences beginning with the identifier's name), and LLM-ready CLI reference generation for cobra tools via a docgen helper built on cobra/doc. Use when writing or reviewing doc comments or godoc in Go code, documenting an exported Go API, package, function, or struct, deciding where a package comment or doc.go belongs, or generating markdown CLI documentation for a cobra-based Go tool.
+description: Go documentation conventions — a doc comment on every exported function, struct, type, and package, package comments in a dedicated doc.go for multi-file packages, godoc style (complete sentences beginning with the identifier's name), and LLM-ready CLI reference generation for cobra tools via a docgen helper built on cobra/doc. Use when writing or reviewing doc comments or godoc in Go code, adding a doc.go or writing a package comment for a Go package, documenting an exported Go API, package, function, or struct, deciding where a package comment or doc.go belongs, or generating markdown CLI documentation for a cobra-based Go tool. Not for OpenAPI/REST API specs.
 license: MIT
 ---
 

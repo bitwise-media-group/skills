@@ -77,7 +77,17 @@
         {
           "type": "regex",
           "path": "internal/version/version.go",
-          "pattern": "^// .+\\nvar \\("
+          "pattern": "^[\\t ]*// Version "
+        },
+        {
+          "type": "regex",
+          "path": "internal/version/version.go",
+          "pattern": "^[\\t ]*// Commit "
+        },
+        {
+          "type": "regex",
+          "path": "internal/version/version.go",
+          "pattern": "^[\\t ]*// BuildDate "
         },
         {
           "type": "command",

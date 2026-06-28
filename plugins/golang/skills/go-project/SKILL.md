@@ -1,6 +1,6 @@
 ---
 name: go-project
-description: Scaffold a Go project with the canonical layout — cmd/ entrypoints with a thin main, private packages under internal/, a separate tools module pinning Go developer CLIs (invoked directly via go tool, no GOBIN), Node tools pinned in package.json and run from node_modules/.bin, and a Makefile whose pr target runs the full local gate. Use when creating a new Go project, service, or repository, restructuring an existing Go repo to the standard layout, pinning Go or Node developer tooling, or adding standard Makefile targets (pr, fmt, vet, test, fuzz, build) to a Go codebase.
+description: Scaffold a Go project with the canonical layout — cmd/ entrypoints with a thin main, private packages under internal/ (no pkg/), a separate tools module pinning Go developer CLIs (invoked directly via go tool -modfile=tools/go.mod, no GOBIN), Node tools pinned in package.json and run from node_modules/.bin, and a Makefile whose pr target runs the full local gate. Use when creating a new Go project, service, or repository, or restructuring an existing Go repo to the standard layout; pinning Go or Node developer tooling or adding a tools module to an existing repo; creating or adding a Makefile with the standard targets (pr, fmt, vet, test, fuzz, build); or deciding where Go code should live (internal vs pkg).
 license: MIT
 ---
 
@@ -73,7 +73,8 @@ Copy [templates/Makefile](templates/Makefile) and set `APP`. It provides:
   pass before every commit.
 - Direct `go tool -modfile=tools/go.mod` invocations of the pinned CLIs (`addlicense`,
   `goreleaser`) — the build cache compiles and reuses them, so there is no `GOBIN` and nothing to
-  install.
+  install. Never emit a `GOBIN`, `TOOLBIN`, a `tools/.bin` directory, or a `-C tools tool` step —
+  the pinned CLIs are always run via `go tool -modfile=tools/go.mod <name>`.
 - Version metadata (`git describe`, short SHA, build date) stamped via `-ldflags -X` into
   `internal/version` — the same import path GoReleaser injects on release (see the `go-release`
   skill).

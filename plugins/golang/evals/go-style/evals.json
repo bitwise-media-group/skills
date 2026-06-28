@@ -162,6 +162,44 @@
           "requires": "gofmt"
         }
       ]
+    },
+    {
+      "id": "minmax-clamp",
+      "prompt": "Refactor internal/layout/layout.go to our Go house style — modernize the bounds checks that floor and clamp the pane dimensions.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(go *) Bash(gofmt *) Bash(mkdir *)",
+      "files": ["fixtures/layoutdemo/go.mod", "files/internal/layout/layout.go"],
+      "assertions": [
+        {
+          "type": "regex",
+          "path": "internal/layout/layout.go",
+          "pattern": "max\\("
+        },
+        {
+          "type": "regex",
+          "path": "internal/layout/layout.go",
+          "pattern": "min\\("
+        },
+        {
+          "type": "not_regex",
+          "path": "internal/layout/layout.go",
+          "pattern": "if paneH < 3"
+        },
+        {
+          "type": "not_regex",
+          "path": "internal/layout/layout.go",
+          "pattern": "if v < lo"
+        },
+        {
+          "type": "command",
+          "run": "go vet ./...",
+          "requires": "go"
+        },
+        {
+          "type": "command",
+          "run": "test -z \"$(gofmt -l .)\"",
+          "requires": "gofmt"
+        }
+      ]
     }
   ]
 }

@@ -40,6 +40,11 @@ updates:
       interval: daily
     cooldown:
       default-days: 7
+    # A Go `tool` module records its pinned CLIs (and their deps) as `// indirect`
+    # requires; the default direct-only allow filter then skips the whole group.
+    # `dependency-type: all` opts them back in.
+    allow:
+      - dependency-type: all
     groups:
       tools:
         patterns:

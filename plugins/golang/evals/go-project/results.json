@@ -1,226 +1,3894 @@
 {
-  "schema": 2,
+  "schema": 5,
   "plugin": "golang",
   "skill": "go-project",
-  "evals": {
+  "models": {
     "anthropic/claude-haiku-4-5": {
-      "provider": "anthropic",
-      "model": "claude-haiku-4-5",
-      "display": "Claude Haiku 4.5",
-      "tool_version": "v0.2.0-3-g1fedb24-dirty",
-      "ran_at": "2026-06-16T11:19:00Z",
-      "executed": true,
-      "timeout_seconds": 600,
-      "pricing": {
-        "input_per_mtok": 1,
-        "output_per_mtok": 5
-      },
-      "results": [
-        {
-          "id": "project-scaffold",
-          "passed": false,
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:36:58Z",
+        "executed": true,
+        "content_hash": "c261a84695b86f7833be00c898bfeae8dcd7fe089bf48af0b09d64821e5dc745",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Scaffold a new Go service called payments",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.7,
+            "estimate": {
+              "input_tokens": 1389,
+              "input_cost_usd": 0.001389
+            },
+            "spec_hash": "923c320916348e60b10a2911ba62612ac7aff2d6ba6fc31a5bb3f79594569040"
+          },
+          {
+            "query": "Set up a new Go project with cmd and internal layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.9,
+            "estimate": {
+              "input_tokens": 1392,
+              "input_cost_usd": 0.001392
+            },
+            "spec_hash": "e8ac000d492d8b1b80b3cf4a74142070a1df425f1f4955e40c70858f5bffacdb"
+          },
+          {
+            "query": "Add a tools module to pin our Go developer tooling",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7,
+            "estimate": {
+              "input_tokens": 1392,
+              "input_cost_usd": 0.001392
+            },
+            "spec_hash": "89463aec84161dca40917fe61b450aa75546d41638ee8bb9dc77d88b67a025d6"
+          },
+          {
+            "query": "Create a Makefile for this Go repo with the standard targets",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 1394,
+              "input_cost_usd": 0.001394
+            },
+            "spec_hash": "6dc1a7fcd318828f3dc1acf429d1cc6b106f536feeea807ef218a185c46fec72"
+          },
+          {
+            "query": "Pin addlicense and goreleaser as developer tools in this Go repo",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.3,
+            "estimate": {
+              "input_tokens": 1396,
+              "input_cost_usd": 0.001396
+            },
+            "spec_hash": "5abb7fd029e3c11f6f0d0aa205d1674b744cefb8b3280d148d0dc65f38f866f6"
+          },
+          {
+            "query": "Restructure this Go repository to the standard layout",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 1391,
+              "input_cost_usd": 0.001391
+            },
+            "spec_hash": "b2d25036f8bfaf1a2120c72b2003185f9ea6f6a7e12dcaff3e9a626521ebb10f"
+          },
+          {
+            "query": "Where should this shared Go code live — pkg or internal?",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7,
+            "estimate": {
+              "input_tokens": 1393,
+              "input_cost_usd": 0.001393
+            },
+            "spec_hash": "490c4bb77bc3694a56a456f791f98c80ff09346012f8a4d564083ed36ac51540"
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 29.6,
+            "estimate": {
+              "input_tokens": 1392,
+              "input_cost_usd": 0.001392
+            },
+            "spec_hash": "abfe1a218d2de2b83a4c9a565295a366cdc2acfa7b083b31478d05195fee972b"
+          },
+          {
+            "query": "Create a new Terraform module with the standard layout",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1391,
+              "input_cost_usd": 0.001391
+            },
+            "spec_hash": "b000b297a6e4ad4d2a14b943cdac670f126f222d61baa76d2a12d5d4609bd3f3"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for this Go repo",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 1392,
+              "input_cost_usd": 0.001392
+            },
+            "spec_hash": "b26599e039d2280ca598c3440fc8c5b452bbcc9c00eecfa20c3087220479c835"
+          },
+          {
+            "query": "Write a fuzz test for this Go parser",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "estimate": {
+              "input_tokens": 1390,
+              "input_cost_usd": 0.00139
+            },
+            "spec_hash": "a238f57e0c20286acd60fd4fdaa0374476242b9c8fab963d665581d4c14fb768"
+          },
+          {
+            "query": "Initialize a Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.7,
+            "estimate": {
+              "input_tokens": 1388,
+              "input_cost_usd": 0.001388
+            },
+            "spec_hash": "e67a4855c282fab64927f2f6c3ad8395b102129226d9d06ce39fe01be94feecb"
+          },
+          {
+            "query": "Add error wrapping to this Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.1,
+            "estimate": {
+              "input_tokens": 1389,
+              "input_cost_usd": 0.001389
+            },
+            "spec_hash": "88789016564ce590b6103111b3c2836cfd9c33da7b1b77f531f66ca2ce581fbb"
+          }
+        ],
+        "summary": {
+          "passed": 9,
+          "failed": 4,
+          "total": 13,
+          "pass_rate": 0.692308,
+          "avg_run_seconds": 9.4,
           "estimate": {
-            "input_tokens": 1352,
-            "input_cost_usd": 0.001352
+            "input_tokens": 18089,
+            "input_cost_usd": 0.018089
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:10:32Z",
+          "summary": {
+            "passed": 8,
+            "failed": 5,
+            "total": 13,
+            "pass_rate": 0.615385,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 18089,
+              "input_cost_usd": 0.018089
+            }
+          },
+          "results": [
+            {
+              "query": "Add a tools module to pin our Go developer tooling",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9,
+              "estimate": {
+                "input_tokens": 1392,
+                "input_cost_usd": 0.001392
+              }
+            },
+            {
+              "query": "Add error wrapping to this Go function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.1,
+              "estimate": {
+                "input_tokens": 1389,
+                "input_cost_usd": 0.001389
+              }
+            },
+            {
+              "query": "Create a Makefile for this Go repo with the standard targets",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.4,
+              "estimate": {
+                "input_tokens": 1394,
+                "input_cost_usd": 0.001394
+              }
+            },
+            {
+              "query": "Create a new Terraform module with the standard layout",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.6,
+              "estimate": {
+                "input_tokens": 1391,
+                "input_cost_usd": 0.001391
+              }
+            },
+            {
+              "query": "Initialize a Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.7,
+              "estimate": {
+                "input_tokens": 1388,
+                "input_cost_usd": 0.001388
+              }
+            },
+            {
+              "query": "Pin addlicense and goreleaser as developer tools in this Go repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.2,
+              "estimate": {
+                "input_tokens": 1396,
+                "input_cost_usd": 0.001396
+              }
+            },
+            {
+              "query": "Restructure this Go repository to the standard layout",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.6,
+              "estimate": {
+                "input_tokens": 1391,
+                "input_cost_usd": 0.001391
+              }
+            },
+            {
+              "query": "Scaffold a new Go service called payments",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.7,
+              "estimate": {
+                "input_tokens": 1389,
+                "input_cost_usd": 0.001389
+              }
+            },
+            {
+              "query": "Scaffold a new npm package with the usual project files",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 29.6,
+              "estimate": {
+                "input_tokens": 1392,
+                "input_cost_usd": 0.001392
+              }
+            },
+            {
+              "query": "Set up a new Go project with cmd and internal layout",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.9,
+              "estimate": {
+                "input_tokens": 1392,
+                "input_cost_usd": 0.001392
+              }
+            },
+            {
+              "query": "Set up the GitHub Actions release workflow for this Go repo",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.4,
+              "estimate": {
+                "input_tokens": 1392,
+                "input_cost_usd": 0.001392
+              }
+            },
+            {
+              "query": "Where should this shared Go code live — pkg or internal?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8,
+              "estimate": {
+                "input_tokens": 1393,
+                "input_cost_usd": 0.001393
+              }
+            },
+            {
+              "query": "Write a fuzz test for this Go parser",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.4,
+              "estimate": {
+                "input_tokens": 1390,
+                "input_cost_usd": 0.00139
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:37:49Z",
+        "executed": true,
+        "content_hash": "e228453170215c3fbed89e0d70588f24a1a6f1bbb510fd9740814eb4f93ea0fa",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "project-scaffold",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 1442,
+              "input_cost_usd": 0.001442
+            },
+            "measured": {
+              "input_tokens": 42,
+              "cache_read_input_tokens": 338621,
+              "cache_creation_input_tokens": 21731,
+              "output_tokens": 3231,
+              "cost_usd": 0.094172
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "go.mod",
+                "text": "file go.mod exists",
+                "passed": false,
+                "evidence": "go.mod missing",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "cmd/orderd/main.go",
+                "text": "file cmd/orderd/main.go exists",
+                "passed": false,
+                "evidence": "cmd/orderd/main.go missing",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "tools/go.mod",
+                "text": "file tools/go.mod exists",
+                "passed": false,
+                "evidence": "tools/go.mod missing",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "Makefile",
+                "text": "file Makefile exists",
+                "passed": false,
+                "evidence": "Makefile missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "go.mod",
+                "pattern": "^module example\\.com/orderd",
+                "text": "go.mod matches /^module example\\.com/orderd/",
+                "passed": false,
+                "evidence": "go.mod missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tools/go.mod",
+                "pattern": "^module .+/tools",
+                "text": "tools/go.mod matches /^module .+/tools/",
+                "passed": false,
+                "evidence": "tools/go.mod missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "^pr:",
+                "text": "Makefile matches /^pr:/",
+                "passed": false,
+                "evidence": "Makefile missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "go tool -modfile=tools/go\\.mod",
+                "text": "Makefile matches /go tool -modfile=tools/go\\.mod/",
+                "passed": false,
+                "evidence": "Makefile missing",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Makefile",
+                "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
+                "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
+                "passed": false,
+                "evidence": "Makefile missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "cmd/orderd/main.go",
+                "pattern": "func run\\(",
+                "text": "cmd/orderd/main.go matches /func run\\(/",
+                "passed": false,
+                "evidence": "cmd/orderd/main.go missing",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": false,
+                "evidence": "exit 1: pattern ./...: directory prefix . does not contain main module or its selected dependencies",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l cmd)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l cmd)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: lstat cmd: no such file or directory",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 1,
+              "failed": 11,
+              "total": 12,
+              "pass_rate": 0.083333
+            },
+            "timing": {
+              "total_tokens": 363625,
+              "executor_duration_seconds": 50.6
+            },
+            "spec_hash": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+          },
+          {
+            "id": "pin-tool",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1439,
+              "input_cost_usd": 0.001439
+            },
+            "measured": {
+              "input_tokens": 36,
+              "cache_read_input_tokens": 110022,
+              "cache_creation_input_tokens": 16807,
+              "output_tokens": 1117,
+              "cost_usd": 0.05089
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "tools/go.mod",
+                "pattern": "goreleaser",
+                "text": "tools/go.mod matches /goreleaser/",
+                "passed": true,
+                "evidence": "goreleaser",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "go tool -modfile=tools/go\\.mod goreleaser",
+                "text": "Makefile matches /go tool -modfile=tools/go\\.mod goreleaser/",
+                "passed": true,
+                "evidence": "go tool -modfile=tools/go.mod goreleaser",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Makefile",
+                "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
+                "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "go.mod",
+                "pattern": "goreleaser",
+                "text": "go.mod does not match /goreleaser/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 127982,
+              "executor_duration_seconds": 17.3
+            },
+            "spec_hash": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 34,
+          "estimate": {
+            "input_tokens": 2881,
+            "input_cost_usd": 0.002881
           },
           "measured": {
-            "input_tokens": 315977,
-            "output_tokens": 2799,
-            "cost_usd": 0.121788
-          },
-          "expectations": [
-            {
-              "type": "file_exists",
-              "path": "go.mod",
-              "text": "file go.mod exists",
-              "passed": false,
-              "evidence": "go.mod missing",
-              "source": "assertion"
-            },
-            {
-              "type": "file_exists",
-              "path": "cmd/orderd/main.go",
-              "text": "file cmd/orderd/main.go exists",
-              "passed": false,
-              "evidence": "cmd/orderd/main.go missing",
-              "source": "assertion"
-            },
-            {
-              "type": "file_exists",
-              "path": "tools/go.mod",
-              "text": "file tools/go.mod exists",
-              "passed": false,
-              "evidence": "tools/go.mod missing",
-              "source": "assertion"
-            },
-            {
-              "type": "file_exists",
-              "path": "Makefile",
-              "text": "file Makefile exists",
-              "passed": false,
-              "evidence": "Makefile missing",
-              "source": "assertion"
-            },
-            {
-              "type": "regex",
-              "path": "go.mod",
-              "pattern": "^module example\\.com/orderd",
-              "text": "go.mod matches /^module example\\.com/orderd/",
-              "passed": false,
-              "evidence": "go.mod missing",
-              "source": "assertion"
-            },
-            {
-              "type": "regex",
-              "path": "tools/go.mod",
-              "pattern": "^module .+/tools",
-              "text": "tools/go.mod matches /^module .+/tools/",
-              "passed": false,
-              "evidence": "tools/go.mod missing",
-              "source": "assertion"
-            },
-            {
-              "type": "regex",
-              "path": "Makefile",
-              "pattern": "^pr:",
-              "text": "Makefile matches /^pr:/",
-              "passed": false,
-              "evidence": "Makefile missing",
-              "source": "assertion"
-            },
-            {
-              "type": "regex",
-              "path": "Makefile",
-              "pattern": "go tool -modfile=tools/go\\.mod",
-              "text": "Makefile matches /go tool -modfile=tools/go\\.mod/",
-              "passed": false,
-              "evidence": "Makefile missing",
-              "source": "assertion"
-            },
-            {
-              "type": "not_regex",
-              "path": "Makefile",
-              "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
-              "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
-              "passed": false,
-              "evidence": "Makefile missing",
-              "source": "assertion"
-            },
-            {
-              "type": "regex",
-              "path": "cmd/orderd/main.go",
-              "pattern": "func run\\(",
-              "text": "cmd/orderd/main.go matches /func run\\(/",
-              "passed": false,
-              "evidence": "cmd/orderd/main.go missing",
-              "source": "assertion"
-            },
-            {
-              "type": "command",
-              "run": "go vet ./...",
-              "requires": "go",
-              "text": "command `go vet ./...` exits 0",
-              "passed": false,
-              "evidence": "exit 1: pattern ./...: directory prefix . does not contain main module or its selected dependencies",
-              "source": "assertion"
-            },
-            {
-              "type": "command",
-              "run": "test -z \"$(gofmt -l cmd)\"",
-              "requires": "gofmt",
-              "text": "command `test -z \"$(gofmt -l cmd)\"` exits 0",
-              "passed": true,
-              "evidence": "exit 0: lstat cmd: no such file or directory",
-              "source": "assertion"
-            }
-          ],
+            "input_tokens": 78,
+            "cache_read_input_tokens": 448643,
+            "cache_creation_input_tokens": 38538,
+            "output_tokens": 4348,
+            "cost_usd": 0.145062
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T14:03:09Z",
           "summary": {
             "passed": 1,
-            "failed": 11,
-            "total": 12,
-            "pass_rate": 0.083333
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 16.4,
+            "measured": {
+              "input_tokens": 56,
+              "cache_read_input_tokens": 168414,
+              "cache_creation_input_tokens": 33040,
+              "output_tokens": 3112,
+              "cost_usd": 0.099841
+            }
           },
-          "timing": {
-            "total_tokens": 318776,
-            "executor_duration_seconds": 37.3
+          "results": [
+            {
+              "id": "pin-tool",
+              "passed": true,
+              "measured": {
+                "input_tokens": 32,
+                "cache_read_input_tokens": 109541,
+                "cache_creation_input_tokens": 16102,
+                "output_tokens": 1143,
+                "cost_usd": 0.049558
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 13.2
+              },
+              "fingerprint": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+            },
+            {
+              "id": "project-scaffold",
+              "passed": false,
+              "measured": {
+                "input_tokens": 24,
+                "cache_read_input_tokens": 58873,
+                "cache_creation_input_tokens": 16938,
+                "output_tokens": 1969,
+                "cost_usd": 0.050283
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.583333
+              },
+              "timing": {
+                "executor_duration_seconds": 19.5
+              },
+              "fingerprint": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:11:18Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 32,
+            "estimate": {
+              "input_tokens": 2881,
+              "input_cost_usd": 0.002881
+            },
+            "measured": {
+              "input_tokens": 98,
+              "cache_read_input_tokens": 559493,
+              "cache_creation_input_tokens": 38969,
+              "output_tokens": 4612,
+              "cost_usd": 0.158349
+            }
+          },
+          "results": [
+            {
+              "id": "pin-tool",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1439,
+                "input_cost_usd": 0.001439
+              },
+              "measured": {
+                "input_tokens": 36,
+                "cache_read_input_tokens": 110022,
+                "cache_creation_input_tokens": 16807,
+                "output_tokens": 1117,
+                "cost_usd": 0.05089
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 17.3
+              }
+            },
+            {
+              "id": "project-scaffold",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1442,
+                "input_cost_usd": 0.001442
+              },
+              "measured": {
+                "input_tokens": 62,
+                "cache_read_input_tokens": 449471,
+                "cache_creation_input_tokens": 22162,
+                "output_tokens": 3495,
+                "cost_usd": 0.107459
+              },
+              "summary": {
+                "passed": 1,
+                "failed": 0,
+                "total": 12,
+                "pass_rate": 0.083333
+              },
+              "timing": {
+                "executor_duration_seconds": 46.7
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:38:18Z",
+        "executed": true,
+        "content_hash": "c261a84695b86f7833be00c898bfeae8dcd7fe089bf48af0b09d64821e5dc745",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Scaffold a new Go service called payments",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 1871,
+              "input_cost_usd": 0.009355
+            },
+            "spec_hash": "923c320916348e60b10a2911ba62612ac7aff2d6ba6fc31a5bb3f79594569040"
+          },
+          {
+            "query": "Set up a new Go project with cmd and internal layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.7,
+            "estimate": {
+              "input_tokens": 1875,
+              "input_cost_usd": 0.009375
+            },
+            "spec_hash": "e8ac000d492d8b1b80b3cf4a74142070a1df425f1f4955e40c70858f5bffacdb"
+          },
+          {
+            "query": "Add a tools module to pin our Go developer tooling",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.2,
+            "estimate": {
+              "input_tokens": 1875,
+              "input_cost_usd": 0.009375
+            },
+            "spec_hash": "89463aec84161dca40917fe61b450aa75546d41638ee8bb9dc77d88b67a025d6"
+          },
+          {
+            "query": "Create a Makefile for this Go repo with the standard targets",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.1,
+            "estimate": {
+              "input_tokens": 1877,
+              "input_cost_usd": 0.009385
+            },
+            "spec_hash": "6dc1a7fcd318828f3dc1acf429d1cc6b106f536feeea807ef218a185c46fec72"
+          },
+          {
+            "query": "Pin addlicense and goreleaser as developer tools in this Go repo",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.4,
+            "estimate": {
+              "input_tokens": 1882,
+              "input_cost_usd": 0.00941
+            },
+            "spec_hash": "5abb7fd029e3c11f6f0d0aa205d1674b744cefb8b3280d148d0dc65f38f866f6"
+          },
+          {
+            "query": "Restructure this Go repository to the standard layout",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10,
+            "estimate": {
+              "input_tokens": 1873,
+              "input_cost_usd": 0.009365
+            },
+            "spec_hash": "b2d25036f8bfaf1a2120c72b2003185f9ea6f6a7e12dcaff3e9a626521ebb10f"
+          },
+          {
+            "query": "Where should this shared Go code live — pkg or internal?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.7,
+            "estimate": {
+              "input_tokens": 1876,
+              "input_cost_usd": 0.00938
+            },
+            "spec_hash": "490c4bb77bc3694a56a456f791f98c80ff09346012f8a4d564083ed36ac51540"
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.5,
+            "estimate": {
+              "input_tokens": 1874,
+              "input_cost_usd": 0.00937
+            },
+            "spec_hash": "abfe1a218d2de2b83a4c9a565295a366cdc2acfa7b083b31478d05195fee972b"
+          },
+          {
+            "query": "Create a new Terraform module with the standard layout",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18,
+            "estimate": {
+              "input_tokens": 1873,
+              "input_cost_usd": 0.009365
+            },
+            "spec_hash": "b000b297a6e4ad4d2a14b943cdac670f126f222d61baa76d2a12d5d4609bd3f3"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for this Go repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.3,
+            "estimate": {
+              "input_tokens": 1879,
+              "input_cost_usd": 0.009395
+            },
+            "spec_hash": "b26599e039d2280ca598c3440fc8c5b452bbcc9c00eecfa20c3087220479c835"
+          },
+          {
+            "query": "Write a fuzz test for this Go parser",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.3,
+            "estimate": {
+              "input_tokens": 1872,
+              "input_cost_usd": 0.00936
+            },
+            "spec_hash": "a238f57e0c20286acd60fd4fdaa0374476242b9c8fab963d665581d4c14fb768"
+          },
+          {
+            "query": "Initialize a Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.7,
+            "estimate": {
+              "input_tokens": 1869,
+              "input_cost_usd": 0.009345
+            },
+            "spec_hash": "e67a4855c282fab64927f2f6c3ad8395b102129226d9d06ce39fe01be94feecb"
+          },
+          {
+            "query": "Add error wrapping to this Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.8,
+            "estimate": {
+              "input_tokens": 1870,
+              "input_cost_usd": 0.00935
+            },
+            "spec_hash": "88789016564ce590b6103111b3c2836cfd9c33da7b1b77f531f66ca2ce581fbb"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 1,
+          "total": 13,
+          "pass_rate": 0.923077,
+          "avg_run_seconds": 12.6,
+          "estimate": {
+            "input_tokens": 24366,
+            "input_cost_usd": 0.12183
           }
         },
-        {
-          "id": "pin-tool",
-          "passed": true,
+        "previous": {
+          "ran_at": "2026-06-22T20:13:15Z",
+          "summary": {
+            "passed": 12,
+            "failed": 1,
+            "total": 13,
+            "pass_rate": 0.923077,
+            "avg_run_seconds": 12.7,
+            "estimate": {
+              "input_tokens": 24366,
+              "input_cost_usd": 0.12183
+            }
+          },
+          "results": [
+            {
+              "query": "Add a tools module to pin our Go developer tooling",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.2,
+              "estimate": {
+                "input_tokens": 1875,
+                "input_cost_usd": 0.009375
+              }
+            },
+            {
+              "query": "Add error wrapping to this Go function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.8,
+              "estimate": {
+                "input_tokens": 1870,
+                "input_cost_usd": 0.00935
+              }
+            },
+            {
+              "query": "Create a Makefile for this Go repo with the standard targets",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.1,
+              "estimate": {
+                "input_tokens": 1877,
+                "input_cost_usd": 0.009385
+              }
+            },
+            {
+              "query": "Create a new Terraform module with the standard layout",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 18,
+              "estimate": {
+                "input_tokens": 1873,
+                "input_cost_usd": 0.009365
+              }
+            },
+            {
+              "query": "Initialize a Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 17.7,
+              "estimate": {
+                "input_tokens": 1869,
+                "input_cost_usd": 0.009345
+              }
+            },
+            {
+              "query": "Pin addlicense and goreleaser as developer tools in this Go repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 14.9,
+              "estimate": {
+                "input_tokens": 1882,
+                "input_cost_usd": 0.00941
+              }
+            },
+            {
+              "query": "Restructure this Go repository to the standard layout",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10,
+              "estimate": {
+                "input_tokens": 1873,
+                "input_cost_usd": 0.009365
+              }
+            },
+            {
+              "query": "Scaffold a new Go service called payments",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.9,
+              "estimate": {
+                "input_tokens": 1871,
+                "input_cost_usd": 0.009355
+              }
+            },
+            {
+              "query": "Scaffold a new npm package with the usual project files",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 17.5,
+              "estimate": {
+                "input_tokens": 1874,
+                "input_cost_usd": 0.00937
+              }
+            },
+            {
+              "query": "Set up a new Go project with cmd and internal layout",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.7,
+              "estimate": {
+                "input_tokens": 1875,
+                "input_cost_usd": 0.009375
+              }
+            },
+            {
+              "query": "Set up the GitHub Actions release workflow for this Go repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 17.3,
+              "estimate": {
+                "input_tokens": 1879,
+                "input_cost_usd": 0.009395
+              }
+            },
+            {
+              "query": "Where should this shared Go code live — pkg or internal?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.7,
+              "estimate": {
+                "input_tokens": 1876,
+                "input_cost_usd": 0.00938
+              }
+            },
+            {
+              "query": "Write a fuzz test for this Go parser",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.3,
+              "estimate": {
+                "input_tokens": 1872,
+                "input_cost_usd": 0.00936
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:46:07Z",
+        "executed": true,
+        "content_hash": "e228453170215c3fbed89e0d70588f24a1a6f1bbb510fd9740814eb4f93ea0fa",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "project-scaffold",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 1947,
+              "input_cost_usd": 0.009735
+            },
+            "measured": {
+              "input_tokens": 4125,
+              "cache_read_input_tokens": 793085,
+              "cache_creation_input_tokens": 46383,
+              "output_tokens": 31002,
+              "cost_usd": 1.656698
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "go.mod",
+                "text": "file go.mod exists",
+                "passed": true,
+                "evidence": "go.mod exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "cmd/orderd/main.go",
+                "text": "file cmd/orderd/main.go exists",
+                "passed": true,
+                "evidence": "cmd/orderd/main.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "tools/go.mod",
+                "text": "file tools/go.mod exists",
+                "passed": true,
+                "evidence": "tools/go.mod exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "Makefile",
+                "text": "file Makefile exists",
+                "passed": true,
+                "evidence": "Makefile exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "go.mod",
+                "pattern": "^module example\\.com/orderd",
+                "text": "go.mod matches /^module example\\.com/orderd/",
+                "passed": true,
+                "evidence": "module example.com/orderd",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tools/go.mod",
+                "pattern": "^module .+/tools",
+                "text": "tools/go.mod matches /^module .+/tools/",
+                "passed": true,
+                "evidence": "module example.com/orderd/tools",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "^pr:",
+                "text": "Makefile matches /^pr:/",
+                "passed": true,
+                "evidence": "pr:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "go tool -modfile=tools/go\\.mod",
+                "text": "Makefile matches /go tool -modfile=tools/go\\.mod/",
+                "passed": true,
+                "evidence": "go tool -modfile=tools/go.mod",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Makefile",
+                "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
+                "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
+                "passed": false,
+                "evidence": "GOBIN",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "cmd/orderd/main.go",
+                "pattern": "func run\\(",
+                "text": "cmd/orderd/main.go matches /func run\\(/",
+                "passed": true,
+                "evidence": "func run(",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l cmd)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l cmd)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 11,
+              "failed": 1,
+              "total": 12,
+              "pass_rate": 0.916667
+            },
+            "timing": {
+              "total_tokens": 874595,
+              "executor_duration_seconds": 468.2
+            },
+            "spec_hash": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+          },
+          {
+            "id": "pin-tool",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1940,
+              "input_cost_usd": 0.0097
+            },
+            "measured": {
+              "input_tokens": 2885,
+              "cache_read_input_tokens": 120065,
+              "cache_creation_input_tokens": 17716,
+              "output_tokens": 7217,
+              "cost_usd": 0.432685
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "tools/go.mod",
+                "pattern": "goreleaser",
+                "text": "tools/go.mod matches /goreleaser/",
+                "passed": true,
+                "evidence": "goreleaser",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "go tool -modfile=tools/go\\.mod goreleaser",
+                "text": "Makefile matches /go tool -modfile=tools/go\\.mod goreleaser/",
+                "passed": true,
+                "evidence": "go tool -modfile=tools/go.mod goreleaser",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Makefile",
+                "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
+                "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "go.mod",
+                "pattern": "goreleaser",
+                "text": "go.mod does not match /goreleaser/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 147883,
+              "executor_duration_seconds": 95.7
+            },
+            "spec_hash": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 282,
           "estimate": {
-            "input_tokens": 1349,
-            "input_cost_usd": 0.001349
+            "input_tokens": 3887,
+            "input_cost_usd": 0.019435
           },
           "measured": {
-            "input_tokens": 163415,
-            "output_tokens": 1055,
-            "cost_usd": 0.090932
-          },
-          "expectations": [
-            {
-              "type": "regex",
-              "path": "tools/go.mod",
-              "pattern": "goreleaser",
-              "text": "tools/go.mod matches /goreleaser/",
-              "passed": true,
-              "evidence": "goreleaser",
-              "source": "assertion"
-            },
-            {
-              "type": "regex",
-              "path": "Makefile",
-              "pattern": "go tool -modfile=tools/go\\.mod goreleaser",
-              "text": "Makefile matches /go tool -modfile=tools/go\\.mod goreleaser/",
-              "passed": true,
-              "evidence": "go tool -modfile=tools/go.mod goreleaser",
-              "source": "assertion"
-            },
-            {
-              "type": "not_regex",
-              "path": "Makefile",
-              "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
-              "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
-              "passed": true,
-              "evidence": "no match",
-              "source": "assertion"
-            },
-            {
-              "type": "not_regex",
-              "path": "go.mod",
-              "pattern": "goreleaser",
-              "text": "go.mod does not match /goreleaser/",
-              "passed": true,
-              "evidence": "no match",
-              "source": "assertion"
-            }
-          ],
+            "input_tokens": 7010,
+            "cache_read_input_tokens": 913150,
+            "cache_creation_input_tokens": 64099,
+            "output_tokens": 38219,
+            "cost_usd": 2.089383
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T15:04:36Z",
           "summary": {
-            "passed": 4,
+            "passed": 1,
             "failed": 0,
-            "total": 4,
-            "pass_rate": 1
+            "errored": 1,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 262.1,
+            "measured": {
+              "input_tokens": 2623,
+              "cache_read_input_tokens": 85274,
+              "cache_creation_input_tokens": 10405,
+              "output_tokens": 4197,
+              "cost_usd": 0.26538
+            }
           },
-          "timing": {
-            "total_tokens": 164470,
-            "executor_duration_seconds": 17.6
+          "results": [
+            {
+              "id": "pin-tool",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2623,
+                "cache_read_input_tokens": 85274,
+                "cache_creation_input_tokens": 10405,
+                "output_tokens": 4197,
+                "cost_usd": 0.26538
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 54.1
+              },
+              "fingerprint": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+            },
+            {
+              "id": "project-scaffold",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 470
+              },
+              "fingerprint": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:16:15Z",
+          "summary": {
+            "passed": 1,
+            "failed": 0,
+            "errored": 1,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 137.7,
+            "estimate": {
+              "input_tokens": 3887,
+              "input_cost_usd": 0.019435
+            },
+            "measured": {
+              "input_tokens": 2885,
+              "cache_read_input_tokens": 120065,
+              "cache_creation_input_tokens": 17716,
+              "output_tokens": 7217,
+              "cost_usd": 0.432685
+            }
+          },
+          "results": [
+            {
+              "id": "pin-tool",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1940,
+                "input_cost_usd": 0.0097
+              },
+              "measured": {
+                "input_tokens": 2885,
+                "cache_read_input_tokens": 120065,
+                "cache_creation_input_tokens": 17716,
+                "output_tokens": 7217,
+                "cost_usd": 0.432685
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 95.7
+              }
+            },
+            {
+              "id": "project-scaffold",
+              "runtime_error": "errored",
+              "estimate": {
+                "input_tokens": 1947,
+                "input_cost_usd": 0.009735
+              },
+              "timing": {
+                "executor_duration_seconds": 179.7
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:38:05Z",
+        "executed": true,
+        "content_hash": "c261a84695b86f7833be00c898bfeae8dcd7fe089bf48af0b09d64821e5dc745",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Scaffold a new Go service called payments",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "estimate": {
+              "input_tokens": 1389,
+              "input_cost_usd": 0.004167
+            },
+            "spec_hash": "923c320916348e60b10a2911ba62612ac7aff2d6ba6fc31a5bb3f79594569040"
+          },
+          {
+            "query": "Set up a new Go project with cmd and internal layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "estimate": {
+              "input_tokens": 1392,
+              "input_cost_usd": 0.004176
+            },
+            "spec_hash": "e8ac000d492d8b1b80b3cf4a74142070a1df425f1f4955e40c70858f5bffacdb"
+          },
+          {
+            "query": "Add a tools module to pin our Go developer tooling",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6,
+            "estimate": {
+              "input_tokens": 1392,
+              "input_cost_usd": 0.004176
+            },
+            "spec_hash": "89463aec84161dca40917fe61b450aa75546d41638ee8bb9dc77d88b67a025d6"
+          },
+          {
+            "query": "Create a Makefile for this Go repo with the standard targets",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 1394,
+              "input_cost_usd": 0.004182
+            },
+            "spec_hash": "6dc1a7fcd318828f3dc1acf429d1cc6b106f536feeea807ef218a185c46fec72"
+          },
+          {
+            "query": "Pin addlicense and goreleaser as developer tools in this Go repo",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.2,
+            "estimate": {
+              "input_tokens": 1396,
+              "input_cost_usd": 0.004188
+            },
+            "spec_hash": "5abb7fd029e3c11f6f0d0aa205d1674b744cefb8b3280d148d0dc65f38f866f6"
+          },
+          {
+            "query": "Restructure this Go repository to the standard layout",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 32.6,
+            "estimate": {
+              "input_tokens": 1391,
+              "input_cost_usd": 0.004173
+            },
+            "spec_hash": "b2d25036f8bfaf1a2120c72b2003185f9ea6f6a7e12dcaff3e9a626521ebb10f"
+          },
+          {
+            "query": "Where should this shared Go code live — pkg or internal?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 1393,
+              "input_cost_usd": 0.004179
+            },
+            "spec_hash": "490c4bb77bc3694a56a456f791f98c80ff09346012f8a4d564083ed36ac51540"
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18.6,
+            "estimate": {
+              "input_tokens": 1392,
+              "input_cost_usd": 0.004176
+            },
+            "spec_hash": "abfe1a218d2de2b83a4c9a565295a366cdc2acfa7b083b31478d05195fee972b"
+          },
+          {
+            "query": "Create a new Terraform module with the standard layout",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.7,
+            "estimate": {
+              "input_tokens": 1391,
+              "input_cost_usd": 0.004173
+            },
+            "spec_hash": "b000b297a6e4ad4d2a14b943cdac670f126f222d61baa76d2a12d5d4609bd3f3"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for this Go repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12,
+            "estimate": {
+              "input_tokens": 1392,
+              "input_cost_usd": 0.004176
+            },
+            "spec_hash": "b26599e039d2280ca598c3440fc8c5b452bbcc9c00eecfa20c3087220479c835"
+          },
+          {
+            "query": "Write a fuzz test for this Go parser",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 1390,
+              "input_cost_usd": 0.00417
+            },
+            "spec_hash": "a238f57e0c20286acd60fd4fdaa0374476242b9c8fab963d665581d4c14fb768"
+          },
+          {
+            "query": "Initialize a Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18.1,
+            "estimate": {
+              "input_tokens": 1388,
+              "input_cost_usd": 0.004164
+            },
+            "spec_hash": "e67a4855c282fab64927f2f6c3ad8395b102129226d9d06ce39fe01be94feecb"
+          },
+          {
+            "query": "Add error wrapping to this Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.5,
+            "estimate": {
+              "input_tokens": 1389,
+              "input_cost_usd": 0.004167
+            },
+            "spec_hash": "88789016564ce590b6103111b3c2836cfd9c33da7b1b77f531f66ca2ce581fbb"
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 2,
+          "total": 13,
+          "pass_rate": 0.846154,
+          "avg_run_seconds": 11.9,
+          "estimate": {
+            "input_tokens": 18089,
+            "input_cost_usd": 0.054267
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:12:54Z",
+          "summary": {
+            "passed": 11,
+            "failed": 2,
+            "total": 13,
+            "pass_rate": 0.846154,
+            "avg_run_seconds": 12.1,
+            "estimate": {
+              "input_tokens": 18089,
+              "input_cost_usd": 0.054267
+            }
+          },
+          "results": [
+            {
+              "query": "Add a tools module to pin our Go developer tooling",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6,
+              "estimate": {
+                "input_tokens": 1392,
+                "input_cost_usd": 0.004176
+              }
+            },
+            {
+              "query": "Add error wrapping to this Go function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.5,
+              "estimate": {
+                "input_tokens": 1389,
+                "input_cost_usd": 0.004167
+              }
+            },
+            {
+              "query": "Create a Makefile for this Go repo with the standard targets",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10,
+              "estimate": {
+                "input_tokens": 1394,
+                "input_cost_usd": 0.004182
+              }
+            },
+            {
+              "query": "Create a new Terraform module with the standard layout",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.7,
+              "estimate": {
+                "input_tokens": 1391,
+                "input_cost_usd": 0.004173
+              }
+            },
+            {
+              "query": "Initialize a Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 18.1,
+              "estimate": {
+                "input_tokens": 1388,
+                "input_cost_usd": 0.004164
+              }
+            },
+            {
+              "query": "Pin addlicense and goreleaser as developer tools in this Go repo",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.2,
+              "estimate": {
+                "input_tokens": 1396,
+                "input_cost_usd": 0.004188
+              }
+            },
+            {
+              "query": "Restructure this Go repository to the standard layout",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 32.6,
+              "estimate": {
+                "input_tokens": 1391,
+                "input_cost_usd": 0.004173
+              }
+            },
+            {
+              "query": "Scaffold a new Go service called payments",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.1,
+              "estimate": {
+                "input_tokens": 1389,
+                "input_cost_usd": 0.004167
+              }
+            },
+            {
+              "query": "Scaffold a new npm package with the usual project files",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 18.6,
+              "estimate": {
+                "input_tokens": 1392,
+                "input_cost_usd": 0.004176
+              }
+            },
+            {
+              "query": "Set up a new Go project with cmd and internal layout",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.3,
+              "estimate": {
+                "input_tokens": 1392,
+                "input_cost_usd": 0.004176
+              }
+            },
+            {
+              "query": "Set up the GitHub Actions release workflow for this Go repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12,
+              "estimate": {
+                "input_tokens": 1392,
+                "input_cost_usd": 0.004176
+              }
+            },
+            {
+              "query": "Where should this shared Go code live — pkg or internal?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.7,
+              "estimate": {
+                "input_tokens": 1393,
+                "input_cost_usd": 0.004179
+              }
+            },
+            {
+              "query": "Write a fuzz test for this Go parser",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.2,
+              "estimate": {
+                "input_tokens": 1390,
+                "input_cost_usd": 0.00417
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "tool_version": "v0.2.1-39-g047d0db",
+        "ran_at": "2026-06-21T14:46:46Z",
+        "executed": true,
+        "content_hash": "e228453170215c3fbed89e0d70588f24a1a6f1bbb510fd9740814eb4f93ea0fa",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "project-scaffold",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1442,
+              "input_cost_usd": 0.004326
+            },
+            "measured": {
+              "input_tokens": 10,
+              "cache_read_input_tokens": 150968,
+              "cache_creation_input_tokens": 17618,
+              "output_tokens": 6505,
+              "cost_usd": 0.249254
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "go.mod",
+                "text": "file go.mod exists",
+                "passed": true,
+                "evidence": "go.mod exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "cmd/orderd/main.go",
+                "text": "file cmd/orderd/main.go exists",
+                "passed": true,
+                "evidence": "cmd/orderd/main.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "tools/go.mod",
+                "text": "file tools/go.mod exists",
+                "passed": true,
+                "evidence": "tools/go.mod exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "Makefile",
+                "text": "file Makefile exists",
+                "passed": true,
+                "evidence": "Makefile exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "go.mod",
+                "pattern": "^module example\\.com/orderd",
+                "text": "go.mod matches /^module example\\.com/orderd/",
+                "passed": true,
+                "evidence": "module example.com/orderd",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tools/go.mod",
+                "pattern": "^module .+/tools",
+                "text": "tools/go.mod matches /^module .+/tools/",
+                "passed": true,
+                "evidence": "module example.com/orderd/tools",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "^pr:",
+                "text": "Makefile matches /^pr:/",
+                "passed": true,
+                "evidence": "pr:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "go tool -modfile=tools/go\\.mod",
+                "text": "Makefile matches /go tool -modfile=tools/go\\.mod/",
+                "passed": true,
+                "evidence": "go tool -modfile=tools/go.mod",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Makefile",
+                "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
+                "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "cmd/orderd/main.go",
+                "pattern": "func run\\(",
+                "text": "cmd/orderd/main.go matches /func run\\(/",
+                "passed": true,
+                "evidence": "func run(",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l cmd)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l cmd)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 12,
+              "failed": 0,
+              "total": 12,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 175101,
+              "executor_duration_seconds": 105.6
+            },
+            "spec_hash": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+          },
+          {
+            "id": "pin-tool",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1439,
+              "input_cost_usd": 0.004317
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 141443,
+              "cache_creation_input_tokens": 10296,
+              "output_tokens": 2434,
+              "cost_usd": 0.141396
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "tools/go.mod",
+                "pattern": "goreleaser",
+                "text": "tools/go.mod matches /goreleaser/",
+                "passed": true,
+                "evidence": "goreleaser",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "go tool -modfile=tools/go\\.mod goreleaser",
+                "text": "Makefile matches /go tool -modfile=tools/go\\.mod goreleaser/",
+                "passed": true,
+                "evidence": "go tool -modfile=tools/go.mod goreleaser",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Makefile",
+                "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
+                "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "go.mod",
+                "pattern": "goreleaser",
+                "text": "go.mod does not match /goreleaser/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 154181,
+              "executor_duration_seconds": 47.5
+            },
+            "spec_hash": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 76.6,
+          "estimate": {
+            "input_tokens": 2881,
+            "input_cost_usd": 0.008643
+          },
+          "measured": {
+            "input_tokens": 18,
+            "cache_read_input_tokens": 292411,
+            "cache_creation_input_tokens": 27914,
+            "output_tokens": 8939,
+            "cost_usd": 0.39065
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T14:10:20Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 133.2,
+            "measured": {
+              "input_tokens": 21,
+              "cache_read_input_tokens": 462398,
+              "cache_creation_input_tokens": 29901,
+              "output_tokens": 13556,
+              "cost_usd": 0.543055
+            }
+          },
+          "results": [
+            {
+              "id": "pin-tool",
+              "passed": true,
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 143375,
+                "cache_creation_input_tokens": 10556,
+                "output_tokens": 2694,
+                "cost_usd": 0.167658
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 73.8
+              },
+              "fingerprint": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+            },
+            {
+              "id": "project-scaffold",
+              "passed": false,
+              "measured": {
+                "input_tokens": 13,
+                "cache_read_input_tokens": 319023,
+                "cache_creation_input_tokens": 19345,
+                "output_tokens": 10862,
+                "cost_usd": 0.375397
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 192.5
+              },
+              "fingerprint": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T14:10:20Z",
+          "summary": {
+            "passed": 1,
+            "failed": 0,
+            "errored": 1,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 86.2,
+            "estimate": {
+              "input_tokens": 2881,
+              "input_cost_usd": 0.008643
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 141443,
+              "cache_creation_input_tokens": 10296,
+              "output_tokens": 2434,
+              "cost_usd": 0.141396
+            }
+          },
+          "results": [
+            {
+              "id": "pin-tool",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1439,
+                "input_cost_usd": 0.004317
+              },
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 141443,
+                "cache_creation_input_tokens": 10296,
+                "output_tokens": 2434,
+                "cost_usd": 0.141396
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 47.5
+              }
+            },
+            {
+              "id": "project-scaffold",
+              "runtime_error": "errored",
+              "estimate": {
+                "input_tokens": 1442,
+                "input_cost_usd": 0.004326
+              },
+              "timing": {
+                "executor_duration_seconds": 124.9
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.1-pro": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:24:48Z",
+        "executed": true,
+        "content_hash": "c261a84695b86f7833be00c898bfeae8dcd7fe089bf48af0b09d64821e5dc745",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "Scaffold a new Go service called payments",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "923c320916348e60b10a2911ba62612ac7aff2d6ba6fc31a5bb3f79594569040"
+          },
+          {
+            "query": "Set up a new Go project with cmd and internal layout",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "e8ac000d492d8b1b80b3cf4a74142070a1df425f1f4955e40c70858f5bffacdb"
+          },
+          {
+            "query": "Add a tools module to pin our Go developer tooling",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "89463aec84161dca40917fe61b450aa75546d41638ee8bb9dc77d88b67a025d6"
+          },
+          {
+            "query": "Create a Makefile for this Go repo with the standard targets",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "6dc1a7fcd318828f3dc1acf429d1cc6b106f536feeea807ef218a185c46fec72"
+          },
+          {
+            "query": "Pin addlicense and goreleaser as developer tools in this Go repo",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "5abb7fd029e3c11f6f0d0aa205d1674b744cefb8b3280d148d0dc65f38f866f6"
+          },
+          {
+            "query": "Restructure this Go repository to the standard layout",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "b2d25036f8bfaf1a2120c72b2003185f9ea6f6a7e12dcaff3e9a626521ebb10f"
+          },
+          {
+            "query": "Where should this shared Go code live — pkg or internal?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "490c4bb77bc3694a56a456f791f98c80ff09346012f8a4d564083ed36ac51540"
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "abfe1a218d2de2b83a4c9a565295a366cdc2acfa7b083b31478d05195fee972b"
+          },
+          {
+            "query": "Create a new Terraform module with the standard layout",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "b000b297a6e4ad4d2a14b943cdac670f126f222d61baa76d2a12d5d4609bd3f3"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for this Go repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "b26599e039d2280ca598c3440fc8c5b452bbcc9c00eecfa20c3087220479c835"
+          },
+          {
+            "query": "Write a fuzz test for this Go parser",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "a238f57e0c20286acd60fd4fdaa0374476242b9c8fab963d665581d4c14fb768"
+          },
+          {
+            "query": "Initialize a Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "e67a4855c282fab64927f2f6c3ad8395b102129226d9d06ce39fe01be94feecb"
+          },
+          {
+            "query": "Add error wrapping to this Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "88789016564ce590b6103111b3c2836cfd9c33da7b1b77f531f66ca2ce581fbb"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 7,
+          "total": 13,
+          "pass_rate": 0.461538,
+          "avg_run_seconds": 5.4
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.3.0-dirty",
+        "ran_at": "2026-06-23T15:29:26Z",
+        "executed": true,
+        "content_hash": "e228453170215c3fbed89e0d70588f24a1a6f1bbb510fd9740814eb4f93ea0fa",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "project-scaffold",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.5
+            },
+            "spec_hash": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+          },
+          {
+            "id": "pin-tool",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.8
+            },
+            "spec_hash": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5.7
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:24:59Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.7
+          },
+          "results": [
+            {
+              "id": "pin-tool",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.7
+              },
+              "fingerprint": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+            },
+            {
+              "id": "project-scaffold",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.6
+              },
+              "fingerprint": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-23T14:24:59Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.6
+          },
+          "results": [
+            {
+              "id": "pin-tool",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.5
+              }
+            },
+            {
+              "id": "project-scaffold",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.6
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.5-flash": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:23:43Z",
+        "executed": true,
+        "content_hash": "c261a84695b86f7833be00c898bfeae8dcd7fe089bf48af0b09d64821e5dc745",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "query": "Scaffold a new Go service called payments",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "923c320916348e60b10a2911ba62612ac7aff2d6ba6fc31a5bb3f79594569040"
+          },
+          {
+            "query": "Set up a new Go project with cmd and internal layout",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "e8ac000d492d8b1b80b3cf4a74142070a1df425f1f4955e40c70858f5bffacdb"
+          },
+          {
+            "query": "Add a tools module to pin our Go developer tooling",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "89463aec84161dca40917fe61b450aa75546d41638ee8bb9dc77d88b67a025d6"
+          },
+          {
+            "query": "Create a Makefile for this Go repo with the standard targets",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "6dc1a7fcd318828f3dc1acf429d1cc6b106f536feeea807ef218a185c46fec72"
+          },
+          {
+            "query": "Pin addlicense and goreleaser as developer tools in this Go repo",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "5abb7fd029e3c11f6f0d0aa205d1674b744cefb8b3280d148d0dc65f38f866f6"
+          },
+          {
+            "query": "Restructure this Go repository to the standard layout",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "b2d25036f8bfaf1a2120c72b2003185f9ea6f6a7e12dcaff3e9a626521ebb10f"
+          },
+          {
+            "query": "Where should this shared Go code live — pkg or internal?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "490c4bb77bc3694a56a456f791f98c80ff09346012f8a4d564083ed36ac51540"
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "abfe1a218d2de2b83a4c9a565295a366cdc2acfa7b083b31478d05195fee972b"
+          },
+          {
+            "query": "Create a new Terraform module with the standard layout",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "spec_hash": "b000b297a6e4ad4d2a14b943cdac670f126f222d61baa76d2a12d5d4609bd3f3"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for this Go repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "b26599e039d2280ca598c3440fc8c5b452bbcc9c00eecfa20c3087220479c835"
+          },
+          {
+            "query": "Write a fuzz test for this Go parser",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "a238f57e0c20286acd60fd4fdaa0374476242b9c8fab963d665581d4c14fb768"
+          },
+          {
+            "query": "Initialize a Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.6,
+            "spec_hash": "e67a4855c282fab64927f2f6c3ad8395b102129226d9d06ce39fe01be94feecb"
+          },
+          {
+            "query": "Add error wrapping to this Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.1,
+            "spec_hash": "88789016564ce590b6103111b3c2836cfd9c33da7b1b77f531f66ca2ce581fbb"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 7,
+          "total": 13,
+          "pass_rate": 0.461538,
+          "avg_run_seconds": 5.3
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.3.0-dirty",
+        "ran_at": "2026-06-23T15:29:21Z",
+        "executed": true,
+        "content_hash": "e228453170215c3fbed89e0d70588f24a1a6f1bbb510fd9740814eb4f93ea0fa",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "id": "project-scaffold",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.3
+            },
+            "spec_hash": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+          },
+          {
+            "id": "pin-tool",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.3
+            },
+            "spec_hash": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5.3
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:23:54Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.4
+          },
+          "results": [
+            {
+              "id": "pin-tool",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.5
+              },
+              "fingerprint": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+            },
+            {
+              "id": "project-scaffold",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.2
+              },
+              "fingerprint": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-23T15:28:50Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.8
+          },
+          "results": [
+            {
+              "id": "pin-tool",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.8
+              }
+            },
+            {
+              "id": "project-scaffold",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.7
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "tool_version": "v0.2.1-50-g8743990-dirty",
+        "ran_at": "2026-06-22T20:16:43Z",
+        "executed": true,
+        "content_hash": "c261a84695b86f7833be00c898bfeae8dcd7fe089bf48af0b09d64821e5dc745",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Scaffold a new Go service called payments",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 1171,
+              "input_cost_usd": 0.002928
+            }
+          },
+          {
+            "query": "Set up a new Go project with cmd and internal layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.6,
+            "estimate": {
+              "input_tokens": 1174,
+              "input_cost_usd": 0.002935
+            }
+          },
+          {
+            "query": "Add a tools module to pin our Go developer tooling",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 1173,
+              "input_cost_usd": 0.002933
+            }
+          },
+          {
+            "query": "Create a Makefile for this Go repo with the standard targets",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.7,
+            "estimate": {
+              "input_tokens": 1175,
+              "input_cost_usd": 0.002938
+            }
+          },
+          {
+            "query": "Pin addlicense and goreleaser as developer tools in this Go repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19,
+            "estimate": {
+              "input_tokens": 1177,
+              "input_cost_usd": 0.002943
+            }
+          },
+          {
+            "query": "Restructure this Go repository to the standard layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.8,
+            "estimate": {
+              "input_tokens": 1172,
+              "input_cost_usd": 0.00293
+            }
+          },
+          {
+            "query": "Where should this shared Go code live — pkg or internal?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.5,
+            "estimate": {
+              "input_tokens": 1261,
+              "input_cost_usd": 0.003153
+            },
+            "spec_hash": "490c4bb77bc3694a56a456f791f98c80ff09346012f8a4d564083ed36ac51540"
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1174,
+              "input_cost_usd": 0.002935
+            }
+          },
+          {
+            "query": "Create a new Terraform module with the standard layout",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 111,
+            "estimate": {
+              "input_tokens": 1172,
+              "input_cost_usd": 0.00293
+            }
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for this Go repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 72.2,
+            "estimate": {
+              "input_tokens": 1175,
+              "input_cost_usd": 0.002938
+            }
+          },
+          {
+            "query": "Write a fuzz test for this Go parser",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 81.7,
+            "estimate": {
+              "input_tokens": 1171,
+              "input_cost_usd": 0.002928
+            }
+          },
+          {
+            "query": "Initialize a Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 86.8,
+            "estimate": {
+              "input_tokens": 1169,
+              "input_cost_usd": 0.002922
+            }
+          },
+          {
+            "query": "Add error wrapping to this Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.4,
+            "estimate": {
+              "input_tokens": 1170,
+              "input_cost_usd": 0.002925
+            }
+          }
+        ],
+        "summary": {
+          "passed": 13,
+          "failed": 0,
+          "total": 13,
+          "pass_rate": 1,
+          "avg_run_seconds": 45,
+          "estimate": {
+            "input_tokens": 15334,
+            "input_cost_usd": 0.038338
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-20T00:18:16Z",
+          "summary": {
+            "passed": 12,
+            "failed": 1,
+            "total": 13,
+            "pass_rate": 0.923077,
+            "avg_run_seconds": 44,
+            "estimate": {
+              "input_tokens": 15248,
+              "input_cost_usd": 0.038123
+            }
+          },
+          "results": [
+            {
+              "query": "Add a tools module to pin our Go developer tooling",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.3,
+              "estimate": {
+                "input_tokens": 1173,
+                "input_cost_usd": 0.002933
+              }
+            },
+            {
+              "query": "Add error wrapping to this Go function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 20.4,
+              "estimate": {
+                "input_tokens": 1170,
+                "input_cost_usd": 0.002925
+              }
+            },
+            {
+              "query": "Create a Makefile for this Go repo with the standard targets",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.7,
+              "estimate": {
+                "input_tokens": 1175,
+                "input_cost_usd": 0.002938
+              }
+            },
+            {
+              "query": "Create a new Terraform module with the standard layout",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 111,
+              "estimate": {
+                "input_tokens": 1172,
+                "input_cost_usd": 0.00293
+              }
+            },
+            {
+              "query": "Initialize a Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 86.8,
+              "estimate": {
+                "input_tokens": 1169,
+                "input_cost_usd": 0.002922
+              }
+            },
+            {
+              "query": "Pin addlicense and goreleaser as developer tools in this Go repo",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 19,
+              "estimate": {
+                "input_tokens": 1177,
+                "input_cost_usd": 0.002943
+              }
+            },
+            {
+              "query": "Restructure this Go repository to the standard layout",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.8,
+              "estimate": {
+                "input_tokens": 1172,
+                "input_cost_usd": 0.00293
+              }
+            },
+            {
+              "query": "Scaffold a new Go service called payments",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.6,
+              "estimate": {
+                "input_tokens": 1171,
+                "input_cost_usd": 0.002928
+              }
+            },
+            {
+              "query": "Scaffold a new npm package with the usual project files",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 120,
+              "estimate": {
+                "input_tokens": 1174,
+                "input_cost_usd": 0.002935
+              }
+            },
+            {
+              "query": "Set up a new Go project with cmd and internal layout",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.6,
+              "estimate": {
+                "input_tokens": 1174,
+                "input_cost_usd": 0.002935
+              }
+            },
+            {
+              "query": "Set up the GitHub Actions release workflow for this Go repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 72.2,
+              "estimate": {
+                "input_tokens": 1175,
+                "input_cost_usd": 0.002938
+              }
+            },
+            {
+              "query": "Where should this shared Go code live — pkg or internal?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.9,
+              "estimate": {
+                "input_tokens": 1175,
+                "input_cost_usd": 0.002938
+              }
+            },
+            {
+              "query": "Write a fuzz test for this Go parser",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 81.7,
+              "estimate": {
+                "input_tokens": 1171,
+                "input_cost_usd": 0.002928
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "tool_version": "v0.2.1-39-g047d0db",
+        "ran_at": "2026-06-21T15:11:36Z",
+        "executed": true,
+        "content_hash": "e228453170215c3fbed89e0d70588f24a1a6f1bbb510fd9740814eb4f93ea0fa",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "project-scaffold",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1304,
+              "input_cost_usd": 0.00326
+            },
+            "measured": {
+              "input_tokens": 59752,
+              "cache_read_input_tokens": 836224,
+              "output_tokens": 9407,
+              "cost_usd": 2.381045
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "go.mod",
+                "text": "file go.mod exists",
+                "passed": true,
+                "evidence": "go.mod exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "cmd/orderd/main.go",
+                "text": "file cmd/orderd/main.go exists",
+                "passed": true,
+                "evidence": "cmd/orderd/main.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "tools/go.mod",
+                "text": "file tools/go.mod exists",
+                "passed": true,
+                "evidence": "tools/go.mod exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "Makefile",
+                "text": "file Makefile exists",
+                "passed": true,
+                "evidence": "Makefile exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "go.mod",
+                "pattern": "^module example\\.com/orderd",
+                "text": "go.mod matches /^module example\\.com/orderd/",
+                "passed": true,
+                "evidence": "module example.com/orderd",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tools/go.mod",
+                "pattern": "^module .+/tools",
+                "text": "tools/go.mod matches /^module .+/tools/",
+                "passed": true,
+                "evidence": "module example.com/orderd/tools",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "^pr:",
+                "text": "Makefile matches /^pr:/",
+                "passed": true,
+                "evidence": "pr:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "go tool -modfile=tools/go\\.mod",
+                "text": "Makefile matches /go tool -modfile=tools/go\\.mod/",
+                "passed": true,
+                "evidence": "go tool -modfile=tools/go.mod",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Makefile",
+                "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
+                "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "cmd/orderd/main.go",
+                "pattern": "func run\\(",
+                "text": "cmd/orderd/main.go matches /func run\\(/",
+                "passed": true,
+                "evidence": "func run(",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l cmd)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l cmd)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 12,
+              "failed": 0,
+              "total": 12,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 905383,
+              "executor_duration_seconds": 233.1
+            },
+            "spec_hash": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+          },
+          {
+            "id": "pin-tool",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1303,
+              "input_cost_usd": 0.003258
+            },
+            "measured": {
+              "input_tokens": 20914,
+              "cache_read_input_tokens": 130176,
+              "output_tokens": 2799,
+              "cost_usd": 0.41971
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "tools/go.mod",
+                "pattern": "goreleaser",
+                "text": "tools/go.mod matches /goreleaser/",
+                "passed": true,
+                "evidence": "goreleaser",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "go tool -modfile=tools/go\\.mod goreleaser",
+                "text": "Makefile matches /go tool -modfile=tools/go\\.mod goreleaser/",
+                "passed": true,
+                "evidence": "go tool -modfile=tools/go.mod goreleaser",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Makefile",
+                "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
+                "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "go.mod",
+                "pattern": "goreleaser",
+                "text": "go.mod does not match /goreleaser/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 153889,
+              "executor_duration_seconds": 72.3
+            },
+            "spec_hash": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 152.7,
+          "estimate": {
+            "input_tokens": 2607,
+            "input_cost_usd": 0.006518
+          },
+          "measured": {
+            "input_tokens": 80666,
+            "cache_read_input_tokens": 966400,
+            "output_tokens": 12206,
+            "cost_usd": 2.800755
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T15:11:36Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 123.8,
+            "measured": {
+              "input_tokens": 82401,
+              "cache_read_input_tokens": 889600,
+              "output_tokens": 9450,
+              "cost_usd": 2.571753
+            }
+          },
+          "results": [
+            {
+              "id": "pin-tool",
+              "passed": true,
+              "measured": {
+                "input_tokens": 29869,
+                "cache_read_input_tokens": 85888,
+                "output_tokens": 2626,
+                "cost_usd": 0.328783
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 61.8
+              },
+              "fingerprint": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+            },
+            {
+              "id": "project-scaffold",
+              "passed": false,
+              "measured": {
+                "input_tokens": 52532,
+                "cache_read_input_tokens": 803712,
+                "output_tokens": 6824,
+                "cost_usd": 2.24297
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.916667
+              },
+              "timing": {
+                "executor_duration_seconds": 185.7
+              },
+              "fingerprint": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T00:22:27Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 152.3,
+            "estimate": {
+              "input_tokens": 2435,
+              "input_cost_usd": 0.006088
+            },
+            "measured": {
+              "input_tokens": 138987,
+              "cache_read_input_tokens": 1389184,
+              "output_tokens": 13851,
+              "cost_usd": 4.028193
+            }
+          },
+          "results": [
+            {
+              "id": "pin-tool",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1217,
+                "input_cost_usd": 0.003043
+              },
+              "measured": {
+                "input_tokens": 37388,
+                "cache_read_input_tokens": 123008,
+                "output_tokens": 2485,
+                "cost_usd": 0.438265
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 55
+              }
+            },
+            {
+              "id": "project-scaffold",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1218,
+                "input_cost_usd": 0.003045
+              },
+              "measured": {
+                "input_tokens": 101599,
+                "cache_read_input_tokens": 1266176,
+                "output_tokens": 11366,
+                "cost_usd": 3.589928
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 249.5
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "tool_version": "v0.2.1-18-ga772ab7-dirty",
+        "ran_at": "2026-06-20T00:29:44Z",
+        "executed": true,
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Scaffold a new Go service called payments",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.9,
+            "estimate": {
+              "input_tokens": 1171,
+              "input_cost_usd": 0.005855
+            }
+          },
+          {
+            "query": "Set up a new Go project with cmd and internal layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.1,
+            "estimate": {
+              "input_tokens": 1174,
+              "input_cost_usd": 0.00587
+            }
+          },
+          {
+            "query": "Add a tools module to pin our Go developer tooling",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.5,
+            "estimate": {
+              "input_tokens": 1173,
+              "input_cost_usd": 0.005865
+            }
+          },
+          {
+            "query": "Create a Makefile for this Go repo with the standard targets",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.5,
+            "estimate": {
+              "input_tokens": 1175,
+              "input_cost_usd": 0.005875
+            }
+          },
+          {
+            "query": "Pin addlicense and goreleaser as developer tools in this Go repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.8,
+            "estimate": {
+              "input_tokens": 1177,
+              "input_cost_usd": 0.005885
+            }
+          },
+          {
+            "query": "Restructure this Go repository to the standard layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.3,
+            "estimate": {
+              "input_tokens": 1172,
+              "input_cost_usd": 0.00586
+            }
+          },
+          {
+            "query": "Where should this shared Go code live — pkg or internal?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.1,
+            "estimate": {
+              "input_tokens": 1175,
+              "input_cost_usd": 0.005875
+            }
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 62.7,
+            "estimate": {
+              "input_tokens": 1174,
+              "input_cost_usd": 0.00587
+            }
+          },
+          {
+            "query": "Create a new Terraform module with the standard layout",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 95.2,
+            "estimate": {
+              "input_tokens": 1172,
+              "input_cost_usd": 0.00586
+            }
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for this Go repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1175,
+              "input_cost_usd": 0.005875
+            }
+          },
+          {
+            "query": "Write a fuzz test for this Go parser",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 88.9,
+            "estimate": {
+              "input_tokens": 1171,
+              "input_cost_usd": 0.005855
+            }
+          },
+          {
+            "query": "Initialize a Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 42.5,
+            "estimate": {
+              "input_tokens": 1169,
+              "input_cost_usd": 0.005845
+            }
+          },
+          {
+            "query": "Add error wrapping to this Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 69.6,
+            "estimate": {
+              "input_tokens": 1170,
+              "input_cost_usd": 0.00585
+            }
+          }
+        ],
+        "summary": {
+          "passed": 13,
+          "failed": 0,
+          "total": 13,
+          "pass_rate": 1,
+          "avg_run_seconds": 41.3,
+          "estimate": {
+            "input_tokens": 15248,
+            "input_cost_usd": 0.07624
           }
         }
-      ],
-      "summary": {
-        "passed": 1,
-        "failed": 1,
-        "total": 2,
-        "pass_rate": 0.5,
-        "avg_run_seconds": 27.5,
-        "estimate": {
-          "input_tokens": 2701,
-          "input_cost_usd": 0.002701
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:49:05Z",
+        "executed": true,
+        "content_hash": "e228453170215c3fbed89e0d70588f24a1a6f1bbb510fd9740814eb4f93ea0fa",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
         },
-        "measured": {
-          "input_tokens": 479392,
-          "output_tokens": 3854,
-          "cost_usd": 0.21272
+        "results": [
+          {
+            "id": "project-scaffold",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1304,
+              "input_cost_usd": 0.00652
+            },
+            "measured": {
+              "input_tokens": 84702,
+              "cache_read_input_tokens": 576640,
+              "output_tokens": 7181,
+              "cost_usd": 3.52214
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "go.mod",
+                "text": "file go.mod exists",
+                "passed": true,
+                "evidence": "go.mod exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "cmd/orderd/main.go",
+                "text": "file cmd/orderd/main.go exists",
+                "passed": true,
+                "evidence": "cmd/orderd/main.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "tools/go.mod",
+                "text": "file tools/go.mod exists",
+                "passed": true,
+                "evidence": "tools/go.mod exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "Makefile",
+                "text": "file Makefile exists",
+                "passed": true,
+                "evidence": "Makefile exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "go.mod",
+                "pattern": "^module example\\.com/orderd",
+                "text": "go.mod matches /^module example\\.com/orderd/",
+                "passed": true,
+                "evidence": "module example.com/orderd",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tools/go.mod",
+                "pattern": "^module .+/tools",
+                "text": "tools/go.mod matches /^module .+/tools/",
+                "passed": true,
+                "evidence": "module example.com/orderd/tools",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "^pr:",
+                "text": "Makefile matches /^pr:/",
+                "passed": true,
+                "evidence": "pr:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "go tool -modfile=tools/go\\.mod",
+                "text": "Makefile matches /go tool -modfile=tools/go\\.mod/",
+                "passed": true,
+                "evidence": "go tool -modfile=tools/go.mod",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Makefile",
+                "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
+                "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "cmd/orderd/main.go",
+                "pattern": "func run\\(",
+                "text": "cmd/orderd/main.go matches /func run\\(/",
+                "passed": true,
+                "evidence": "func run(",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l cmd)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l cmd)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 12,
+              "failed": 0,
+              "total": 12,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 668523,
+              "executor_duration_seconds": 177.9
+            },
+            "spec_hash": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+          },
+          {
+            "id": "pin-tool",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1303,
+              "input_cost_usd": 0.006515
+            },
+            "measured": {
+              "input_tokens": 80520,
+              "cache_read_input_tokens": 191232,
+              "output_tokens": 4605,
+              "cost_usd": 1.49691
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "tools/go.mod",
+                "pattern": "goreleaser",
+                "text": "tools/go.mod matches /goreleaser/",
+                "passed": true,
+                "evidence": "goreleaser",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "go tool -modfile=tools/go\\.mod goreleaser",
+                "text": "Makefile matches /go tool -modfile=tools/go\\.mod goreleaser/",
+                "passed": true,
+                "evidence": "go tool -modfile=tools/go.mod goreleaser",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Makefile",
+                "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN",
+                "text": "Makefile does not match /-C tools tool|TOOLBIN|tools/\\.bin|GOBIN/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "go.mod",
+                "pattern": "goreleaser",
+                "text": "go.mod does not match /goreleaser/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 276357,
+              "executor_duration_seconds": 110
+            },
+            "spec_hash": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 144,
+          "estimate": {
+            "input_tokens": 2607,
+            "input_cost_usd": 0.013035
+          },
+          "measured": {
+            "input_tokens": 165222,
+            "cache_read_input_tokens": 767872,
+            "output_tokens": 11786,
+            "cost_usd": 5.01905
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T15:36:11Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 100.7,
+            "measured": {
+              "input_tokens": 38995,
+              "cache_read_input_tokens": 468992,
+              "output_tokens": 6847,
+              "cost_usd": 2.745345
+            }
+          },
+          "results": [
+            {
+              "id": "pin-tool",
+              "passed": true,
+              "measured": {
+                "input_tokens": 11028,
+                "cache_read_input_tokens": 77696,
+                "output_tokens": 2166,
+                "cost_usd": 0.5086
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 66.9
+              },
+              "fingerprint": "7e5f220140bceb98ed915769bd5befb375f9b6ed08e2d7924e8027c847df8d57"
+            },
+            {
+              "id": "project-scaffold",
+              "passed": false,
+              "measured": {
+                "input_tokens": 27967,
+                "cache_read_input_tokens": 391296,
+                "output_tokens": 4681,
+                "cost_usd": 2.236745
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.916667
+              },
+              "timing": {
+                "executor_duration_seconds": 134.4
+              },
+              "fingerprint": "42184e748ebe16a5a37e28dd35f82e330a69dbb2d8016df8cef54a9f45f05cf2"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:19:39Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 143.1,
+            "estimate": {
+              "input_tokens": 2607,
+              "input_cost_usd": 0.013035
+            },
+            "measured": {
+              "input_tokens": 130893,
+              "cache_read_input_tokens": 732928,
+              "output_tokens": 11801,
+              "cost_usd": 4.673135
+            }
+          },
+          "results": [
+            {
+              "id": "pin-tool",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1303,
+                "input_cost_usd": 0.006515
+              },
+              "measured": {
+                "input_tokens": 80520,
+                "cache_read_input_tokens": 191232,
+                "output_tokens": 4605,
+                "cost_usd": 1.49691
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 110
+              }
+            },
+            {
+              "id": "project-scaffold",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1304,
+                "input_cost_usd": 0.00652
+              },
+              "measured": {
+                "input_tokens": 50373,
+                "cache_read_input_tokens": 541696,
+                "output_tokens": 7196,
+                "cost_usd": 3.176225
+              },
+              "summary": {
+                "passed": 11,
+                "failed": 0,
+                "total": 12,
+                "pass_rate": 0.916667
+              },
+              "timing": {
+                "executor_duration_seconds": 176.1
+              }
+            }
+          ]
         }
       }
     }

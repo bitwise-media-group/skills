@@ -1,6 +1,6 @@
 ---
 name: go-style
-description: Modern Go code style for stdlib-first programs — error wrapping with %w, sentinel errors, structured logging with log/slog, context threading, consumer-defined interfaces, nil-safe constructors, net/http servers with method-pattern routing, flag/env configuration for services, and cobra commands with viper configuration for CLI tools. Use when writing, reviewing, or refactoring Go code (.go files, packages, services), adding error handling or logging to a Go program, building a Go CLI tool or subcommands (cobra, viper), or deciding how to shape interfaces, constructors, configuration, or HTTP handlers in Go.
+description: Modern Go code style for stdlib-first programs — error wrapping with %w, sentinel errors, structured logging with log/slog, context threading, consumer-defined interfaces, nil-safe constructors, net/http servers with method-pattern routing, flag/env configuration for services, and cobra commands with viper configuration for CLI tools. Use when writing, reviewing, or refactoring any Go code (.go files, packages, services, CLIs): handling or wrapping errors in Go, adding structured logging to a Go program, threading context, shaping interfaces or constructors, adding a net/http handler, endpoint, or route, configuring flags and env vars, or building a Go CLI tool or subcommand with cobra and viper. For Go only — not other languages.
 license: MIT
 ---
 
@@ -198,7 +198,30 @@ if slices.Contains(tokens, "all") {
 The remaining loop is fine — it transforms per element. Replace loops whose entire body is a
 comparison; use `slices.Sort`/`slices.SortFunc` over `sort.Slice` for the same reason.
 
-## 13. Keep `go fmt` and `go vet` clean
+## 13. Clamp scalars with the `min`/`max` builtins, not comparison guards
+
+The `min`/`max` builtins (Go 1.21+) return the smallest or largest of two or more ordered values
+— the scalar companions to `slices.Min`/`slices.Max`. An `if` that compares a value against a
+bound and overwrites it is a clamp; write the assignment it already is:
+
+```go
+paneH := max(d.h-footerH-headerH, 3) // floor each pane dimension at its minimum
+paneW := max((d.w-2)/2, 10)
+```
+
+not the guard it started as:
+
+```go
+paneH := d.h - footerH - headerH
+if paneH < 3 {
+	paneH = 3
+}
+```
+
+`max(x, lo)` floors `x`, `min(x, hi)` caps it, and `min(max(x, lo), hi)` clamps to a range.
+`gopls`'s `minmax` analyzer flags the guard form.
+
+## 14. Keep `go fmt` and `go vet` clean
 
 Code is always `gofmt`-formatted (`go fmt ./...`) and passes `go vet ./...`. Comments state
 constraints and invariants the code cannot express — never what the next line does.
