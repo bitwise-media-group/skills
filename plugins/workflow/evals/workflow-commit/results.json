@@ -1,0 +1,1836 @@
+{
+  "schema": 5,
+  "plugin": "workflow",
+  "skill": "workflow-commit",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:17:14Z",
+        "executed": true,
+        "content_hash": "3a7a68d9afb65d698e53d4405fa74da2cd8028c47329e85dd9245d807a3eb578",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Commit these changes",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.9,
+            "spec_hash": "840476f60123653c3f8f1990f75e4e60b216c130e781eba5b51ce6e8e6175968"
+          },
+          {
+            "query": "Create a commit for my staged files with a conventional commit message",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.1,
+            "spec_hash": "0a4e79ef312d4de2a1e192ac32b8e6d4a6cf67c399cec0c9aef2e5f6f6a54c72"
+          },
+          {
+            "query": "Stage and commit the work you just did",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8,
+            "spec_hash": "b69c1b69d3db730929dd7fdd15b1bf59eb549a0a2e13513bf5140969e4b020b9"
+          },
+          {
+            "query": "I'm working in an agent worktree — commit your changes and prepare the script to re-sign them",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.8,
+            "spec_hash": "1eef6dc0573919b1aec3cc3c8300d312d17680f4fdfa466259ca3d4f17281256"
+          },
+          {
+            "query": "Split this diff into a few logical commits and commit them",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.1,
+            "spec_hash": "43edad994eb962511d4ca5e467a80566116206391e15c531362b54e3513b8339"
+          },
+          {
+            "query": "Write a commit message for this change and commit it",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.3,
+            "spec_hash": "a81f316f5781298a991a22abc363532993ebd9dc3fc78327ea6d1398db2a3abb"
+          },
+          {
+            "query": "Push my branch to origin",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.3,
+            "spec_hash": "2367af4237ab762e0cdb0986e31d8332a9a4a5a4d9e624d04366f40e4fbf7a96"
+          },
+          {
+            "query": "Open a pull request for these changes",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "spec_hash": "6917d8ef46329bb589063bcabe6f78f8c35a786a2ac19319497e5d66d02d3fab"
+          },
+          {
+            "query": "Rebase my last three commits onto main",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6,
+            "spec_hash": "734a34c1734c7bcd2f6707092f14ea9a98737ff5be4297893aee1fc221bfbec7"
+          },
+          {
+            "query": "Amend the message on my last commit",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.6,
+            "spec_hash": "9b9d8c83ad4eea6bac7ab33ea65fadba626086c0f0b5b284ef86d5fc2e8b3396"
+          },
+          {
+            "query": "Set up commit signing with a GPG key",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "spec_hash": "82c7994d5aa596bdfda333f06cc9acbab8c0f569e1b8951ac5a7db70cb306aef"
+          },
+          {
+            "query": "Squash the last two commits into one",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "spec_hash": "982bb03b5c6784df0a464a28f159257aa95729aa257ace8555e57413f7fcd60f"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 6,
+          "total": 12,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 7.8
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:17:43Z",
+        "executed": true,
+        "content_hash": "1a8b4052d4fe4f58cd74d11647ad79af56276f53d1e8d4242414b434ffc8bf4d",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "handoff-main-checkout",
+            "passed": false,
+            "measured": {
+              "input_tokens": 29,
+              "cache_read_input_tokens": 79750,
+              "cache_creation_input_tokens": 15576,
+              "output_tokens": 716,
+              "cost_usd": 0.043406
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "commit.sh",
+                "text": "file commit.sh exists",
+                "passed": false,
+                "evidence": "commit.sh missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "#!/usr/bin/env sh",
+                "text": "commit.sh matches /#!/usr/bin/env sh/",
+                "passed": false,
+                "evidence": "commit.sh missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "set -eu",
+                "text": "commit.sh matches /set -eu/",
+                "passed": false,
+                "evidence": "commit.sh missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "git commit",
+                "text": "commit.sh matches /git commit/",
+                "passed": false,
+                "evidence": "commit.sh missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "(feat|fix|docs|chore|refactor|test|ci|build|perf|style)(\\([a-z0-9-]+\\))?:",
+                "text": "commit.sh matches /(feat|fix|docs|chore|refactor|test|ci|build|perf|style)(\\([a-z0-9-]+\\))?:/",
+                "passed": false,
+                "evidence": "commit.sh missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "rm -- \"\\$0\"",
+                "text": "commit.sh matches /rm -- \"\\$0\"/",
+                "passed": false,
+                "evidence": "commit.sh missing",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 0,
+              "failed": 6,
+              "total": 6,
+              "pass_rate": 0
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 3
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 96071,
+              "executor_duration_seconds": 19
+            },
+            "spec_hash": "5dee980807d7d94b5b1345580eb0b935b04ad6ffdc3fd9e9509e7dd4b0c2ce83"
+          },
+          {
+            "id": "conventional-fix-type",
+            "passed": true,
+            "measured": {
+              "input_tokens": 15,
+              "cache_read_input_tokens": 32224,
+              "cache_creation_input_tokens": 15372,
+              "output_tokens": 458,
+              "cost_usd": 0.036913
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "commit.sh",
+                "text": "file commit.sh exists",
+                "passed": true,
+                "evidence": "commit.sh exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "fix(\\([a-z0-9-]+\\))?:",
+                "text": "commit.sh matches /fix(\\([a-z0-9-]+\\))?:/",
+                "passed": true,
+                "evidence": "fix(auth):",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "rm -- \"\\$0\"",
+                "text": "commit.sh matches /rm -- \"\\$0\"/",
+                "passed": true,
+                "evidence": "rm -- \"$0\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Write": 1
+              },
+              "total_tool_calls": 1
+            },
+            "timing": {
+              "total_tokens": 48069,
+              "executor_duration_seconds": 8.2
+            },
+            "spec_hash": "12a5ce833b67c1f4906ba13e3dfa9585fea6a44903363c6d0e5041d119cfd46f"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 13.6,
+          "measured": {
+            "input_tokens": 44,
+            "cache_read_input_tokens": 111974,
+            "cache_creation_input_tokens": 30948,
+            "output_tokens": 1174,
+            "cost_usd": 0.080319
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-25T16:17:43Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 10.2,
+            "measured": {
+              "input_tokens": 25,
+              "cache_read_input_tokens": 48336,
+              "cache_creation_input_tokens": 22470,
+              "output_tokens": 1522,
+              "cost_usd": 0.05873
+            }
+          },
+          "results": [
+            {
+              "id": "handoff-main-checkout",
+              "passed": false,
+              "measured": {
+                "input_tokens": 10,
+                "cache_read_input_tokens": 16112,
+                "cache_creation_input_tokens": 7480,
+                "output_tokens": 880,
+                "cost_usd": 0.021661
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 6,
+                "total": 6,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 10.2
+              },
+              "fingerprint": "5dee980807d7d94b5b1345580eb0b935b04ad6ffdc3fd9e9509e7dd4b0c2ce83"
+            },
+            {
+              "id": "conventional-fix-type",
+              "passed": true,
+              "measured": {
+                "input_tokens": 15,
+                "cache_read_input_tokens": 32224,
+                "cache_creation_input_tokens": 14990,
+                "output_tokens": 642,
+                "cost_usd": 0.037069
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 10.2
+              },
+              "fingerprint": "12a5ce833b67c1f4906ba13e3dfa9585fea6a44903363c6d0e5041d119cfd46f"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:23:26Z",
+        "executed": true,
+        "content_hash": "3a7a68d9afb65d698e53d4405fa74da2cd8028c47329e85dd9245d807a3eb578",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Commit these changes",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.2,
+            "spec_hash": "840476f60123653c3f8f1990f75e4e60b216c130e781eba5b51ce6e8e6175968"
+          },
+          {
+            "query": "Create a commit for my staged files with a conventional commit message",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.1,
+            "spec_hash": "0a4e79ef312d4de2a1e192ac32b8e6d4a6cf67c399cec0c9aef2e5f6f6a54c72"
+          },
+          {
+            "query": "Stage and commit the work you just did",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.4,
+            "spec_hash": "b69c1b69d3db730929dd7fdd15b1bf59eb549a0a2e13513bf5140969e4b020b9"
+          },
+          {
+            "query": "I'm working in an agent worktree — commit your changes and prepare the script to re-sign them",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "1eef6dc0573919b1aec3cc3c8300d312d17680f4fdfa466259ca3d4f17281256"
+          },
+          {
+            "query": "Split this diff into a few logical commits and commit them",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13,
+            "spec_hash": "43edad994eb962511d4ca5e467a80566116206391e15c531362b54e3513b8339"
+          },
+          {
+            "query": "Write a commit message for this change and commit it",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.6,
+            "spec_hash": "a81f316f5781298a991a22abc363532993ebd9dc3fc78327ea6d1398db2a3abb"
+          },
+          {
+            "query": "Push my branch to origin",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.3,
+            "spec_hash": "2367af4237ab762e0cdb0986e31d8332a9a4a5a4d9e624d04366f40e4fbf7a96"
+          },
+          {
+            "query": "Open a pull request for these changes",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.4,
+            "spec_hash": "6917d8ef46329bb589063bcabe6f78f8c35a786a2ac19319497e5d66d02d3fab"
+          },
+          {
+            "query": "Rebase my last three commits onto main",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.2,
+            "spec_hash": "734a34c1734c7bcd2f6707092f14ea9a98737ff5be4297893aee1fc221bfbec7"
+          },
+          {
+            "query": "Amend the message on my last commit",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13,
+            "spec_hash": "9b9d8c83ad4eea6bac7ab33ea65fadba626086c0f0b5b284ef86d5fc2e8b3396"
+          },
+          {
+            "query": "Set up commit signing with a GPG key",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 72.3,
+            "spec_hash": "82c7994d5aa596bdfda333f06cc9acbab8c0f569e1b8951ac5a7db70cb306aef"
+          },
+          {
+            "query": "Squash the last two commits into one",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.2,
+            "spec_hash": "982bb03b5c6784df0a464a28f159257aa95729aa257ace8555e57413f7fcd60f"
+          }
+        ],
+        "summary": {
+          "passed": 9,
+          "failed": 3,
+          "total": 12,
+          "pass_rate": 0.75,
+          "avg_run_seconds": 15.7
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:26:11Z",
+        "executed": true,
+        "content_hash": "1a8b4052d4fe4f58cd74d11647ad79af56276f53d1e8d4242414b434ffc8bf4d",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "handoff-main-checkout",
+            "passed": true,
+            "measured": {
+              "input_tokens": 2902,
+              "cache_read_input_tokens": 141949,
+              "cache_creation_input_tokens": 15531,
+              "output_tokens": 5980,
+              "cost_usd": 0.390965
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "commit.sh",
+                "text": "file commit.sh exists",
+                "passed": true,
+                "evidence": "commit.sh exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "#!/usr/bin/env sh",
+                "text": "commit.sh matches /#!/usr/bin/env sh/",
+                "passed": true,
+                "evidence": "#!/usr/bin/env sh",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "set -eu",
+                "text": "commit.sh matches /set -eu/",
+                "passed": true,
+                "evidence": "set -eu",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "git commit",
+                "text": "commit.sh matches /git commit/",
+                "passed": true,
+                "evidence": "git commit",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "(feat|fix|docs|chore|refactor|test|ci|build|perf|style)(\\([a-z0-9-]+\\))?:",
+                "text": "commit.sh matches /(feat|fix|docs|chore|refactor|test|ci|build|perf|style)(\\([a-z0-9-]+\\))?:/",
+                "passed": true,
+                "evidence": "feat(util):",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "rm -- \"\\$0\"",
+                "text": "commit.sh matches /rm -- \"\\$0\"/",
+                "passed": true,
+                "evidence": "rm -- \"$0\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 4,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 166362,
+              "executor_duration_seconds": 98.6
+            },
+            "spec_hash": "5dee980807d7d94b5b1345580eb0b935b04ad6ffdc3fd9e9509e7dd4b0c2ce83"
+          },
+          {
+            "id": "conventional-fix-type",
+            "passed": true,
+            "measured": {
+              "input_tokens": 2773,
+              "cache_read_input_tokens": 140938,
+              "cache_creation_input_tokens": 12920,
+              "output_tokens": 1877,
+              "cost_usd": 0.261101
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "commit.sh",
+                "text": "file commit.sh exists",
+                "passed": true,
+                "evidence": "commit.sh exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "fix(\\([a-z0-9-]+\\))?:",
+                "text": "commit.sh matches /fix(\\([a-z0-9-]+\\))?:/",
+                "passed": true,
+                "evidence": "fix(auth):",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "rm -- \"\\$0\"",
+                "text": "commit.sh matches /rm -- \"\\$0\"/",
+                "passed": true,
+                "evidence": "rm -- \"$0\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 3,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 158508,
+              "executor_duration_seconds": 34.7
+            },
+            "spec_hash": "12a5ce833b67c1f4906ba13e3dfa9585fea6a44903363c6d0e5041d119cfd46f"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 66.7,
+          "measured": {
+            "input_tokens": 5675,
+            "cache_read_input_tokens": 282887,
+            "cache_creation_input_tokens": 28451,
+            "output_tokens": 7857,
+            "cost_usd": 0.652066
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-25T16:26:11Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 56.8,
+            "measured": {
+              "input_tokens": 5018,
+              "cache_read_input_tokens": 213699,
+              "cache_creation_input_tokens": 20106,
+              "output_tokens": 6124,
+              "cost_usd": 0.487401
+            }
+          },
+          "results": [
+            {
+              "id": "handoff-main-checkout",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2509,
+                "cache_read_input_tokens": 110845,
+                "cache_creation_input_tokens": 11805,
+                "output_tokens": 3645,
+                "cost_usd": 0.277812
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 66
+              },
+              "fingerprint": "5dee980807d7d94b5b1345580eb0b935b04ad6ffdc3fd9e9509e7dd4b0c2ce83"
+            },
+            {
+              "id": "conventional-fix-type",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2509,
+                "cache_read_input_tokens": 102854,
+                "cache_creation_input_tokens": 8301,
+                "output_tokens": 2479,
+                "cost_usd": 0.209589
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 47.5
+              },
+              "fingerprint": "12a5ce833b67c1f4906ba13e3dfa9585fea6a44903363c6d0e5041d119cfd46f"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:19:25Z",
+        "executed": true,
+        "content_hash": "3a7a68d9afb65d698e53d4405fa74da2cd8028c47329e85dd9245d807a3eb578",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Commit these changes",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "spec_hash": "840476f60123653c3f8f1990f75e4e60b216c130e781eba5b51ce6e8e6175968"
+          },
+          {
+            "query": "Create a commit for my staged files with a conventional commit message",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.2,
+            "spec_hash": "0a4e79ef312d4de2a1e192ac32b8e6d4a6cf67c399cec0c9aef2e5f6f6a54c72"
+          },
+          {
+            "query": "Stage and commit the work you just did",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "spec_hash": "b69c1b69d3db730929dd7fdd15b1bf59eb549a0a2e13513bf5140969e4b020b9"
+          },
+          {
+            "query": "I'm working in an agent worktree — commit your changes and prepare the script to re-sign them",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.4,
+            "spec_hash": "1eef6dc0573919b1aec3cc3c8300d312d17680f4fdfa466259ca3d4f17281256"
+          },
+          {
+            "query": "Split this diff into a few logical commits and commit them",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.6,
+            "spec_hash": "43edad994eb962511d4ca5e467a80566116206391e15c531362b54e3513b8339"
+          },
+          {
+            "query": "Write a commit message for this change and commit it",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.2,
+            "spec_hash": "a81f316f5781298a991a22abc363532993ebd9dc3fc78327ea6d1398db2a3abb"
+          },
+          {
+            "query": "Push my branch to origin",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.9,
+            "spec_hash": "2367af4237ab762e0cdb0986e31d8332a9a4a5a4d9e624d04366f40e4fbf7a96"
+          },
+          {
+            "query": "Open a pull request for these changes",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10,
+            "spec_hash": "6917d8ef46329bb589063bcabe6f78f8c35a786a2ac19319497e5d66d02d3fab"
+          },
+          {
+            "query": "Rebase my last three commits onto main",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.4,
+            "spec_hash": "734a34c1734c7bcd2f6707092f14ea9a98737ff5be4297893aee1fc221bfbec7"
+          },
+          {
+            "query": "Amend the message on my last commit",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.8,
+            "spec_hash": "9b9d8c83ad4eea6bac7ab33ea65fadba626086c0f0b5b284ef86d5fc2e8b3396"
+          },
+          {
+            "query": "Set up commit signing with a GPG key",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 35.4,
+            "spec_hash": "82c7994d5aa596bdfda333f06cc9acbab8c0f569e1b8951ac5a7db70cb306aef"
+          },
+          {
+            "query": "Squash the last two commits into one",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.8,
+            "spec_hash": "982bb03b5c6784df0a464a28f159257aa95729aa257ace8555e57413f7fcd60f"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 2,
+          "total": 12,
+          "pass_rate": 0.833333,
+          "avg_run_seconds": 10.9
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:20:49Z",
+        "executed": true,
+        "content_hash": "1a8b4052d4fe4f58cd74d11647ad79af56276f53d1e8d4242414b434ffc8bf4d",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "handoff-main-checkout",
+            "passed": true,
+            "measured": {
+              "input_tokens": 7,
+              "cache_read_input_tokens": 111081,
+              "cache_creation_input_tokens": 9444,
+              "output_tokens": 1633,
+              "cost_usd": 0.115174
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "commit.sh",
+                "text": "file commit.sh exists",
+                "passed": true,
+                "evidence": "commit.sh exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "#!/usr/bin/env sh",
+                "text": "commit.sh matches /#!/usr/bin/env sh/",
+                "passed": true,
+                "evidence": "#!/usr/bin/env sh",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "set -eu",
+                "text": "commit.sh matches /set -eu/",
+                "passed": true,
+                "evidence": "set -eu",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "git commit",
+                "text": "commit.sh matches /git commit/",
+                "passed": true,
+                "evidence": "git commit",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "(feat|fix|docs|chore|refactor|test|ci|build|perf|style)(\\([a-z0-9-]+\\))?:",
+                "text": "commit.sh matches /(feat|fix|docs|chore|refactor|test|ci|build|perf|style)(\\([a-z0-9-]+\\))?:/",
+                "passed": true,
+                "evidence": "docs(util):",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "rm -- \"\\$0\"",
+                "text": "commit.sh matches /rm -- \"\\$0\"/",
+                "passed": true,
+                "evidence": "rm -- \"$0\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 4,
+                "Write": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 122165,
+              "executor_duration_seconds": 44.8
+            },
+            "spec_hash": "5dee980807d7d94b5b1345580eb0b935b04ad6ffdc3fd9e9509e7dd4b0c2ce83"
+          },
+          {
+            "id": "conventional-fix-type",
+            "passed": true,
+            "measured": {
+              "input_tokens": 5,
+              "cache_read_input_tokens": 62320,
+              "cache_creation_input_tokens": 8189,
+              "output_tokens": 572,
+              "cost_usd": 0.077067
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "commit.sh",
+                "text": "file commit.sh exists",
+                "passed": true,
+                "evidence": "commit.sh exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "fix(\\([a-z0-9-]+\\))?:",
+                "text": "commit.sh matches /fix(\\([a-z0-9-]+\\))?:/",
+                "passed": true,
+                "evidence": "fix(auth):",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "rm -- \"\\$0\"",
+                "text": "commit.sh matches /rm -- \"\\$0\"/",
+                "passed": true,
+                "evidence": "rm -- \"$0\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 2
+            },
+            "timing": {
+              "total_tokens": 71086,
+              "executor_duration_seconds": 17.4
+            },
+            "spec_hash": "12a5ce833b67c1f4906ba13e3dfa9585fea6a44903363c6d0e5041d119cfd46f"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 31.1,
+          "measured": {
+            "input_tokens": 12,
+            "cache_read_input_tokens": 173401,
+            "cache_creation_input_tokens": 17633,
+            "output_tokens": 2205,
+            "cost_usd": 0.192241
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-25T16:20:49Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 27.3,
+            "measured": {
+              "input_tokens": 12,
+              "cache_read_input_tokens": 176754,
+              "cache_creation_input_tokens": 18450,
+              "output_tokens": 1740,
+              "cost_usd": 0.191175
+            }
+          },
+          "results": [
+            {
+              "id": "handoff-main-checkout",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7,
+                "cache_read_input_tokens": 114932,
+                "cache_creation_input_tokens": 10574,
+                "output_tokens": 1283,
+                "cost_usd": 0.11787
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 39.1
+              },
+              "fingerprint": "5dee980807d7d94b5b1345580eb0b935b04ad6ffdc3fd9e9509e7dd4b0c2ce83"
+            },
+            {
+              "id": "conventional-fix-type",
+              "passed": true,
+              "measured": {
+                "input_tokens": 5,
+                "cache_read_input_tokens": 61822,
+                "cache_creation_input_tokens": 7876,
+                "output_tokens": 457,
+                "cost_usd": 0.073305
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 15.4
+              },
+              "fingerprint": "12a5ce833b67c1f4906ba13e3dfa9585fea6a44903363c6d0e5041d119cfd46f"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:32:03Z",
+        "executed": true,
+        "content_hash": "3a7a68d9afb65d698e53d4405fa74da2cd8028c47329e85dd9245d807a3eb578",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Commit these changes",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.6,
+            "spec_hash": "840476f60123653c3f8f1990f75e4e60b216c130e781eba5b51ce6e8e6175968"
+          },
+          {
+            "query": "Create a commit for my staged files with a conventional commit message",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.1,
+            "spec_hash": "0a4e79ef312d4de2a1e192ac32b8e6d4a6cf67c399cec0c9aef2e5f6f6a54c72"
+          },
+          {
+            "query": "Stage and commit the work you just did",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.6,
+            "spec_hash": "b69c1b69d3db730929dd7fdd15b1bf59eb549a0a2e13513bf5140969e4b020b9"
+          },
+          {
+            "query": "I'm working in an agent worktree — commit your changes and prepare the script to re-sign them",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.5,
+            "spec_hash": "1eef6dc0573919b1aec3cc3c8300d312d17680f4fdfa466259ca3d4f17281256"
+          },
+          {
+            "query": "Split this diff into a few logical commits and commit them",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.2,
+            "spec_hash": "43edad994eb962511d4ca5e467a80566116206391e15c531362b54e3513b8339"
+          },
+          {
+            "query": "Write a commit message for this change and commit it",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11,
+            "spec_hash": "a81f316f5781298a991a22abc363532993ebd9dc3fc78327ea6d1398db2a3abb"
+          },
+          {
+            "query": "Push my branch to origin",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 53,
+            "spec_hash": "2367af4237ab762e0cdb0986e31d8332a9a4a5a4d9e624d04366f40e4fbf7a96"
+          },
+          {
+            "query": "Open a pull request for these changes",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 56.5,
+            "spec_hash": "6917d8ef46329bb589063bcabe6f78f8c35a786a2ac19319497e5d66d02d3fab"
+          },
+          {
+            "query": "Rebase my last three commits onto main",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 70.9,
+            "spec_hash": "734a34c1734c7bcd2f6707092f14ea9a98737ff5be4297893aee1fc221bfbec7"
+          },
+          {
+            "query": "Amend the message on my last commit",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 28.8,
+            "spec_hash": "9b9d8c83ad4eea6bac7ab33ea65fadba626086c0f0b5b284ef86d5fc2e8b3396"
+          },
+          {
+            "query": "Set up commit signing with a GPG key",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "spec_hash": "82c7994d5aa596bdfda333f06cc9acbab8c0f569e1b8951ac5a7db70cb306aef"
+          },
+          {
+            "query": "Squash the last two commits into one",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 40.3,
+            "spec_hash": "982bb03b5c6784df0a464a28f159257aa95729aa257ace8555e57413f7fcd60f"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 2,
+          "total": 12,
+          "pass_rate": 0.833333,
+          "avg_run_seconds": 37.9
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:34:37Z",
+        "executed": true,
+        "content_hash": "1a8b4052d4fe4f58cd74d11647ad79af56276f53d1e8d4242414b434ffc8bf4d",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "handoff-main-checkout",
+            "passed": true,
+            "measured": {
+              "input_tokens": 39381,
+              "cache_read_input_tokens": 431360,
+              "output_tokens": 2636,
+              "cost_usd": 1.216393
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "commit.sh",
+                "text": "file commit.sh exists",
+                "passed": true,
+                "evidence": "commit.sh exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "#!/usr/bin/env sh",
+                "text": "commit.sh matches /#!/usr/bin/env sh/",
+                "passed": true,
+                "evidence": "#!/usr/bin/env sh",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "set -eu",
+                "text": "commit.sh matches /set -eu/",
+                "passed": true,
+                "evidence": "set -eu",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "git commit",
+                "text": "commit.sh matches /git commit/",
+                "passed": true,
+                "evidence": "git commit",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "(feat|fix|docs|chore|refactor|test|ci|build|perf|style)(\\([a-z0-9-]+\\))?:",
+                "text": "commit.sh matches /(feat|fix|docs|chore|refactor|test|ci|build|perf|style)(\\([a-z0-9-]+\\))?:/",
+                "passed": true,
+                "evidence": "fix(util):",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "rm -- \"\\$0\"",
+                "text": "commit.sh matches /rm -- \"\\$0\"/",
+                "passed": true,
+                "evidence": "rm -- \"$0\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 14,
+                "file_change": 1
+              },
+              "total_tool_calls": 15
+            },
+            "timing": {
+              "total_tokens": 473377,
+              "executor_duration_seconds": 87.7
+            },
+            "spec_hash": "5dee980807d7d94b5b1345580eb0b935b04ad6ffdc3fd9e9509e7dd4b0c2ce83"
+          },
+          {
+            "id": "conventional-fix-type",
+            "passed": true,
+            "measured": {
+              "input_tokens": 40619,
+              "cache_read_input_tokens": 192128,
+              "output_tokens": 2938,
+              "cost_usd": 0.625938
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "commit.sh",
+                "text": "file commit.sh exists",
+                "passed": true,
+                "evidence": "commit.sh exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "fix(\\([a-z0-9-]+\\))?:",
+                "text": "commit.sh matches /fix(\\([a-z0-9-]+\\))?:/",
+                "passed": true,
+                "evidence": "fix(auth):",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "rm -- \"\\$0\"",
+                "text": "commit.sh matches /rm -- \"\\$0\"/",
+                "passed": true,
+                "evidence": "rm -- \"$0\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 13,
+                "file_change": 1
+              },
+              "total_tool_calls": 14
+            },
+            "timing": {
+              "total_tokens": 235685,
+              "executor_duration_seconds": 81.7
+            },
+            "spec_hash": "12a5ce833b67c1f4906ba13e3dfa9585fea6a44903363c6d0e5041d119cfd46f"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 84.7,
+          "measured": {
+            "input_tokens": 80000,
+            "cache_read_input_tokens": 623488,
+            "output_tokens": 5574,
+            "cost_usd": 1.842331
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-25T16:34:37Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 63.8,
+            "measured": {
+              "input_tokens": 75151,
+              "cache_read_input_tokens": 347392,
+              "output_tokens": 4754,
+              "cost_usd": 1.127668
+            }
+          },
+          "results": [
+            {
+              "id": "handoff-main-checkout",
+              "passed": true,
+              "measured": {
+                "input_tokens": 33249,
+                "cache_read_input_tokens": 166656,
+                "output_tokens": 1952,
+                "cost_usd": 0.529043
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 54.9
+              },
+              "fingerprint": "5dee980807d7d94b5b1345580eb0b935b04ad6ffdc3fd9e9509e7dd4b0c2ce83"
+            },
+            {
+              "id": "conventional-fix-type",
+              "passed": true,
+              "measured": {
+                "input_tokens": 41902,
+                "cache_read_input_tokens": 180736,
+                "output_tokens": 2802,
+                "cost_usd": 0.598625
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 72.7
+              },
+              "fingerprint": "12a5ce833b67c1f4906ba13e3dfa9585fea6a44903363c6d0e5041d119cfd46f"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:40:35Z",
+        "executed": true,
+        "content_hash": "3a7a68d9afb65d698e53d4405fa74da2cd8028c47329e85dd9245d807a3eb578",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Commit these changes",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.1,
+            "spec_hash": "840476f60123653c3f8f1990f75e4e60b216c130e781eba5b51ce6e8e6175968"
+          },
+          {
+            "query": "Create a commit for my staged files with a conventional commit message",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "spec_hash": "0a4e79ef312d4de2a1e192ac32b8e6d4a6cf67c399cec0c9aef2e5f6f6a54c72"
+          },
+          {
+            "query": "Stage and commit the work you just did",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.1,
+            "spec_hash": "b69c1b69d3db730929dd7fdd15b1bf59eb549a0a2e13513bf5140969e4b020b9"
+          },
+          {
+            "query": "I'm working in an agent worktree — commit your changes and prepare the script to re-sign them",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "spec_hash": "1eef6dc0573919b1aec3cc3c8300d312d17680f4fdfa466259ca3d4f17281256"
+          },
+          {
+            "query": "Split this diff into a few logical commits and commit them",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "spec_hash": "43edad994eb962511d4ca5e467a80566116206391e15c531362b54e3513b8339"
+          },
+          {
+            "query": "Write a commit message for this change and commit it",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.8,
+            "spec_hash": "a81f316f5781298a991a22abc363532993ebd9dc3fc78327ea6d1398db2a3abb"
+          },
+          {
+            "query": "Push my branch to origin",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 96.2,
+            "spec_hash": "2367af4237ab762e0cdb0986e31d8332a9a4a5a4d9e624d04366f40e4fbf7a96"
+          },
+          {
+            "query": "Open a pull request for these changes",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 32.2,
+            "spec_hash": "6917d8ef46329bb589063bcabe6f78f8c35a786a2ac19319497e5d66d02d3fab"
+          },
+          {
+            "query": "Rebase my last three commits onto main",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 112.9,
+            "spec_hash": "734a34c1734c7bcd2f6707092f14ea9a98737ff5be4297893aee1fc221bfbec7"
+          },
+          {
+            "query": "Amend the message on my last commit",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 24.8,
+            "spec_hash": "9b9d8c83ad4eea6bac7ab33ea65fadba626086c0f0b5b284ef86d5fc2e8b3396"
+          },
+          {
+            "query": "Set up commit signing with a GPG key",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 92.6,
+            "spec_hash": "82c7994d5aa596bdfda333f06cc9acbab8c0f569e1b8951ac5a7db70cb306aef"
+          },
+          {
+            "query": "Squash the last two commits into one",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 16.4,
+            "spec_hash": "982bb03b5c6784df0a464a28f159257aa95729aa257ace8555e57413f7fcd60f"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 2,
+          "total": 12,
+          "pass_rate": 0.833333,
+          "avg_run_seconds": 36.2
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:42:17Z",
+        "executed": true,
+        "content_hash": "1a8b4052d4fe4f58cd74d11647ad79af56276f53d1e8d4242414b434ffc8bf4d",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "handoff-main-checkout",
+            "passed": true,
+            "measured": {
+              "input_tokens": 32608,
+              "cache_read_input_tokens": 53120,
+              "output_tokens": 1003,
+              "cost_usd": 0.45873
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "commit.sh",
+                "text": "file commit.sh exists",
+                "passed": true,
+                "evidence": "commit.sh exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "#!/usr/bin/env sh",
+                "text": "commit.sh matches /#!/usr/bin/env sh/",
+                "passed": true,
+                "evidence": "#!/usr/bin/env sh",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "set -eu",
+                "text": "commit.sh matches /set -eu/",
+                "passed": true,
+                "evidence": "set -eu",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "git commit",
+                "text": "commit.sh matches /git commit/",
+                "passed": true,
+                "evidence": "git commit",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "(feat|fix|docs|chore|refactor|test|ci|build|perf|style)(\\([a-z0-9-]+\\))?:",
+                "text": "commit.sh matches /(feat|fix|docs|chore|refactor|test|ci|build|perf|style)(\\([a-z0-9-]+\\))?:/",
+                "passed": true,
+                "evidence": "chore:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "rm -- \"\\$0\"",
+                "text": "commit.sh matches /rm -- \"\\$0\"/",
+                "passed": true,
+                "evidence": "rm -- \"$0\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 4,
+                "file_change": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 86731,
+              "executor_duration_seconds": 43.6
+            },
+            "spec_hash": "5dee980807d7d94b5b1345580eb0b935b04ad6ffdc3fd9e9509e7dd4b0c2ce83"
+          },
+          {
+            "id": "conventional-fix-type",
+            "passed": true,
+            "measured": {
+              "input_tokens": 36253,
+              "cache_read_input_tokens": 91776,
+              "output_tokens": 1812,
+              "cost_usd": 0.694505
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "commit.sh",
+                "text": "file commit.sh exists",
+                "passed": true,
+                "evidence": "commit.sh exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "fix(\\([a-z0-9-]+\\))?:",
+                "text": "commit.sh matches /fix(\\([a-z0-9-]+\\))?:/",
+                "passed": true,
+                "evidence": "fix(auth):",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "commit.sh",
+                "pattern": "rm -- \"\\$0\"",
+                "text": "commit.sh matches /rm -- \"\\$0\"/",
+                "passed": true,
+                "evidence": "rm -- \"$0\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 11,
+                "file_change": 1
+              },
+              "total_tool_calls": 12
+            },
+            "timing": {
+              "total_tokens": 129841,
+              "executor_duration_seconds": 51.2
+            },
+            "spec_hash": "12a5ce833b67c1f4906ba13e3dfa9585fea6a44903363c6d0e5041d119cfd46f"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 47.4,
+          "measured": {
+            "input_tokens": 68861,
+            "cache_read_input_tokens": 144896,
+            "output_tokens": 2815,
+            "cost_usd": 1.153235
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-25T16:42:17Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 33.3,
+            "measured": {
+              "input_tokens": 37382,
+              "cache_read_input_tokens": 132864,
+              "output_tokens": 2120,
+              "cost_usd": 0.91483
+            }
+          },
+          "results": [
+            {
+              "id": "handoff-main-checkout",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6231,
+                "cache_read_input_tokens": 40576,
+                "output_tokens": 276,
+                "cost_usd": 0.242315
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 16.6
+              },
+              "fingerprint": "5dee980807d7d94b5b1345580eb0b935b04ad6ffdc3fd9e9509e7dd4b0c2ce83"
+            },
+            {
+              "id": "conventional-fix-type",
+              "passed": true,
+              "measured": {
+                "input_tokens": 31151,
+                "cache_read_input_tokens": 92288,
+                "output_tokens": 1844,
+                "cost_usd": 0.672515
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 49.9
+              },
+              "fingerprint": "12a5ce833b67c1f4906ba13e3dfa9585fea6a44903363c6d0e5041d119cfd46f"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

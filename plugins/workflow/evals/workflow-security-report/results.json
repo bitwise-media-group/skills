@@ -1,0 +1,1784 @@
+{
+  "schema": 5,
+  "plugin": "workflow",
+  "skill": "workflow-security-report",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:43:22Z",
+        "executed": true,
+        "content_hash": "98803a6c46ad6888c29aa9696028550f0db2c2ce29bcde7ee1c3ce8d5adab7d0",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Triage code-scanning finding 7 and recommend whether to dismiss it",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "spec_hash": "31b340e1d124f1208a1b0a50dfcb82c09453b84585242f45927f91c1ea98da15"
+          },
+          {
+            "query": "Write a security report for CodeQL alert 12 explaining why it's a false positive",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "e3b09f92e823eab970d3c9e8e2b7805bccd4898231c0619152c4b43aedf941d8"
+          },
+          {
+            "query": "Dismiss finding 3 as a false positive and record the report",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.2,
+            "spec_hash": "e869656322e1079dca826b6202815e83fdf5e2b0216808e663ae5ad42f66c849"
+          },
+          {
+            "query": "Document the disposition of https://github.com/acme/widgets/security/code-scanning/5",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "19a8b9c7a9386e2cf899dbf65ba3d3d8bec9a74876419b8449261e2c55b03dc3"
+          },
+          {
+            "query": "Add a triage report for the new code-scanning alert and update the index",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.2,
+            "spec_hash": "da1330a400ac37c9787f96e14b78aa7750f175242bad475e33d135a67b555825"
+          },
+          {
+            "query": "Should I remediate or dismiss CodeQL finding 9? Write up the analysis.",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "17e1430bdc850f39387b941780dfa6b58eb3ec55905c0bb62d2ae05210beb20b"
+          },
+          {
+            "query": "Triage this Dependabot alert about a vulnerable dependency",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6,
+            "spec_hash": "9dcd6694abbf09cd5273ee23ce8ecd628fd0fbd72aee221e110a5928a141bdc5"
+          },
+          {
+            "query": "Rotate the leaked API key that secret scanning found",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "spec_hash": "469d279cf9cf31bbe49ff2f4884f35b60e5ccfdf3b6368cb6f6a1a3d4d718ef1"
+          },
+          {
+            "query": "Run CodeQL analysis on this repository",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.2,
+            "spec_hash": "186697c80c1191b3b5098f031e621d8f53ff01844c936d94282c909568f1a7a7"
+          },
+          {
+            "query": "Write a threat model for our API",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.8,
+            "spec_hash": "484a01a185e3bfa785cfb18431345e0e4ed57426058fb16aba6407ac133e8a09"
+          },
+          {
+            "query": "Review this pull request for security issues",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.9,
+            "spec_hash": "2d8708f2a6b6a36047199f62a0a2b500ef46edf7a9e287581d6e0a3f47e8b2dc"
+          },
+          {
+            "query": "Fix the SQL injection in the login handler",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.4,
+            "spec_hash": "4e2e67ff8e253e11df215a50f04996094d495bd088676959bf044c7ec6432ac8"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 2,
+          "total": 12,
+          "pass_rate": 0.833333,
+          "avg_run_seconds": 6.8
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:44:53Z",
+        "executed": true,
+        "content_hash": "5f62c3ce73ded0873de78a4f30d2c36870c1df7dd185aa6f3015268babb667a8",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "report-and-index-from-details",
+            "passed": false,
+            "measured": {
+              "input_tokens": 33,
+              "cache_read_input_tokens": 82051,
+              "cache_creation_input_tokens": 19187,
+              "output_tokens": 2387,
+              "cost_usd": 0.059466
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "security/code-scanning/9.md",
+                "text": "file security/code-scanning/9.md exists",
+                "passed": false,
+                "evidence": "security/code-scanning/9.md missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "# Code scanning finding 9",
+                "text": "security/code-scanning/9.md matches /# Code scanning finding 9/",
+                "passed": false,
+                "evidence": "security/code-scanning/9.md missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "go/allocation-size-overflow",
+                "text": "security/code-scanning/9.md matches /go/allocation-size-overflow/",
+                "passed": false,
+                "evidence": "security/code-scanning/9.md missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b/",
+                "text": "security/code-scanning/9.md matches /blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b//",
+                "passed": false,
+                "evidence": "security/code-scanning/9.md missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "\\*\\*False positive\\*\\*",
+                "text": "security/code-scanning/9.md matches /\\*\\*False positive\\*\\*/",
+                "passed": false,
+                "evidence": "security/code-scanning/9.md missing",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "security/code-scanning/index.md",
+                "text": "file security/code-scanning/index.md exists",
+                "passed": false,
+                "evidence": "security/code-scanning/index.md missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/index.md",
+                "pattern": "\\./9\\.md",
+                "text": "security/code-scanning/index.md matches /\\./9\\.md/",
+                "passed": false,
+                "evidence": "security/code-scanning/index.md missing",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 0,
+              "failed": 7,
+              "total": 7,
+              "pass_rate": 0
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Skill": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 103658,
+              "executor_duration_seconds": 49.1
+            },
+            "spec_hash": "25573b69d644a61ac6c89ea95a9127311a2caf9fbb68bbd00b853c079ddc4d6e"
+          },
+          {
+            "id": "refuse-closed-finding",
+            "passed": true,
+            "measured": {
+              "input_tokens": 20,
+              "cache_read_input_tokens": 40035,
+              "cache_creation_input_tokens": 9090,
+              "output_tokens": 831,
+              "cost_usd": 0.027173
+            },
+            "expectations": [
+              {
+                "type": "file_absent",
+                "path": "security/code-scanning/5.md",
+                "text": "file security/code-scanning/5.md is absent",
+                "passed": true,
+                "evidence": "security/code-scanning/5.md missing",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 1,
+              "failed": 0,
+              "total": 1,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Skill": 1
+              },
+              "total_tool_calls": 1
+            },
+            "timing": {
+              "total_tokens": 49976,
+              "executor_duration_seconds": 11.8
+            },
+            "spec_hash": "f111e7638d017f3f96f247471c1232a4c62f685c0d228de2567a3bea2bd76461"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 30.5,
+          "measured": {
+            "input_tokens": 53,
+            "cache_read_input_tokens": 122086,
+            "cache_creation_input_tokens": 28277,
+            "output_tokens": 3218,
+            "cost_usd": 0.086639
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-25T16:44:53Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 35.8,
+            "measured": {
+              "input_tokens": 64,
+              "cache_read_input_tokens": 257302,
+              "cache_creation_input_tokens": 33398,
+              "output_tokens": 3047,
+              "cost_usd": 0.109554
+            }
+          },
+          "results": [
+            {
+              "id": "report-and-index-from-details",
+              "passed": false,
+              "measured": {
+                "input_tokens": 33,
+                "cache_read_input_tokens": 153466,
+                "cache_creation_input_tokens": 17201,
+                "output_tokens": 1935,
+                "cost_usd": 0.060376
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 7,
+                "total": 7,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 42.3
+              },
+              "fingerprint": "25573b69d644a61ac6c89ea95a9127311a2caf9fbb68bbd00b853c079ddc4d6e"
+            },
+            {
+              "id": "refuse-closed-finding",
+              "passed": true,
+              "measured": {
+                "input_tokens": 31,
+                "cache_read_input_tokens": 103836,
+                "cache_creation_input_tokens": 16197,
+                "output_tokens": 1112,
+                "cost_usd": 0.049178
+              },
+              "summary": {
+                "passed": 1,
+                "failed": 0,
+                "total": 1,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 29.3
+              },
+              "fingerprint": "f111e7638d017f3f96f247471c1232a4c62f685c0d228de2567a3bea2bd76461"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:53:09Z",
+        "executed": true,
+        "content_hash": "98803a6c46ad6888c29aa9696028550f0db2c2ce29bcde7ee1c3ce8d5adab7d0",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Triage code-scanning finding 7 and recommend whether to dismiss it",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.3,
+            "spec_hash": "31b340e1d124f1208a1b0a50dfcb82c09453b84585242f45927f91c1ea98da15"
+          },
+          {
+            "query": "Write a security report for CodeQL alert 12 explaining why it's a false positive",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "spec_hash": "e3b09f92e823eab970d3c9e8e2b7805bccd4898231c0619152c4b43aedf941d8"
+          },
+          {
+            "query": "Dismiss finding 3 as a false positive and record the report",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "e869656322e1079dca826b6202815e83fdf5e2b0216808e663ae5ad42f66c849"
+          },
+          {
+            "query": "Document the disposition of https://github.com/acme/widgets/security/code-scanning/5",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "19a8b9c7a9386e2cf899dbf65ba3d3d8bec9a74876419b8449261e2c55b03dc3"
+          },
+          {
+            "query": "Add a triage report for the new code-scanning alert and update the index",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.3,
+            "spec_hash": "da1330a400ac37c9787f96e14b78aa7750f175242bad475e33d135a67b555825"
+          },
+          {
+            "query": "Should I remediate or dismiss CodeQL finding 9? Write up the analysis.",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.6,
+            "spec_hash": "17e1430bdc850f39387b941780dfa6b58eb3ec55905c0bb62d2ae05210beb20b"
+          },
+          {
+            "query": "Triage this Dependabot alert about a vulnerable dependency",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.3,
+            "spec_hash": "9dcd6694abbf09cd5273ee23ce8ecd628fd0fbd72aee221e110a5928a141bdc5"
+          },
+          {
+            "query": "Rotate the leaked API key that secret scanning found",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14,
+            "spec_hash": "469d279cf9cf31bbe49ff2f4884f35b60e5ccfdf3b6368cb6f6a1a3d4d718ef1"
+          },
+          {
+            "query": "Run CodeQL analysis on this repository",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.1,
+            "spec_hash": "186697c80c1191b3b5098f031e621d8f53ff01844c936d94282c909568f1a7a7"
+          },
+          {
+            "query": "Write a threat model for our API",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 68.6,
+            "spec_hash": "484a01a185e3bfa785cfb18431345e0e4ed57426058fb16aba6407ac133e8a09"
+          },
+          {
+            "query": "Review this pull request for security issues",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.5,
+            "spec_hash": "2d8708f2a6b6a36047199f62a0a2b500ef46edf7a9e287581d6e0a3f47e8b2dc"
+          },
+          {
+            "query": "Fix the SQL injection in the login handler",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.4,
+            "spec_hash": "4e2e67ff8e253e11df215a50f04996094d495bd088676959bf044c7ec6432ac8"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 0,
+          "total": 12,
+          "pass_rate": 1,
+          "avg_run_seconds": 13.8
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:56:28Z",
+        "executed": true,
+        "content_hash": "5f62c3ce73ded0873de78a4f30d2c36870c1df7dd185aa6f3015268babb667a8",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "report-and-index-from-details",
+            "passed": true,
+            "measured": {
+              "input_tokens": 2928,
+              "cache_read_input_tokens": 146812,
+              "cache_creation_input_tokens": 17998,
+              "output_tokens": 7757,
+              "cost_usd": 0.462875
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "security/code-scanning/9.md",
+                "text": "file security/code-scanning/9.md exists",
+                "passed": true,
+                "evidence": "security/code-scanning/9.md exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "# Code scanning finding 9",
+                "text": "security/code-scanning/9.md matches /# Code scanning finding 9/",
+                "passed": true,
+                "evidence": "# Code scanning finding 9",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "go/allocation-size-overflow",
+                "text": "security/code-scanning/9.md matches /go/allocation-size-overflow/",
+                "passed": true,
+                "evidence": "go/allocation-size-overflow",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b/",
+                "text": "security/code-scanning/9.md matches /blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b//",
+                "passed": true,
+                "evidence": "blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b/",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "\\*\\*False positive\\*\\*",
+                "text": "security/code-scanning/9.md matches /\\*\\*False positive\\*\\*/",
+                "passed": true,
+                "evidence": "**False positive**",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "security/code-scanning/index.md",
+                "text": "file security/code-scanning/index.md exists",
+                "passed": true,
+                "evidence": "security/code-scanning/index.md exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/index.md",
+                "pattern": "\\./9\\.md",
+                "text": "security/code-scanning/index.md matches /\\./9\\.md/",
+                "passed": true,
+                "evidence": "./9.md",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Read": 3,
+                "Skill": 1,
+                "Write": 2
+              },
+              "total_tool_calls": 7
+            },
+            "timing": {
+              "total_tokens": 175495,
+              "executor_duration_seconds": 96.1
+            },
+            "spec_hash": "25573b69d644a61ac6c89ea95a9127311a2caf9fbb68bbd00b853c079ddc4d6e"
+          },
+          {
+            "id": "refuse-closed-finding",
+            "passed": true,
+            "measured": {
+              "input_tokens": 2791,
+              "cache_read_input_tokens": 34582,
+              "cache_creation_input_tokens": 8078,
+              "output_tokens": 883,
+              "cost_usd": 0.134915
+            },
+            "expectations": [
+              {
+                "type": "file_absent",
+                "path": "security/code-scanning/5.md",
+                "text": "file security/code-scanning/5.md is absent",
+                "passed": true,
+                "evidence": "security/code-scanning/5.md missing",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 1,
+              "failed": 0,
+              "total": 1,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Skill": 1
+              },
+              "total_tool_calls": 1
+            },
+            "timing": {
+              "total_tokens": 46334,
+              "executor_duration_seconds": 14.6
+            },
+            "spec_hash": "f111e7638d017f3f96f247471c1232a4c62f685c0d228de2567a3bea2bd76461"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 55.4,
+          "measured": {
+            "input_tokens": 5719,
+            "cache_read_input_tokens": 181394,
+            "cache_creation_input_tokens": 26076,
+            "output_tokens": 8640,
+            "cost_usd": 0.59779
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-25T16:56:28Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 89.8,
+            "measured": {
+              "input_tokens": 5026,
+              "cache_read_input_tokens": 304080,
+              "cache_creation_input_tokens": 24052,
+              "output_tokens": 11822,
+              "cost_usd": 0.714973
+            }
+          },
+          "results": [
+            {
+              "id": "report-and-index-from-details",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2513,
+                "cache_read_input_tokens": 153806,
+                "cache_creation_input_tokens": 12757,
+                "output_tokens": 6684,
+                "cost_usd": 0.385062
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 7,
+                "total": 7,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 102.7
+              },
+              "fingerprint": "25573b69d644a61ac6c89ea95a9127311a2caf9fbb68bbd00b853c079ddc4d6e"
+            },
+            {
+              "id": "refuse-closed-finding",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2513,
+                "cache_read_input_tokens": 150274,
+                "cache_creation_input_tokens": 11295,
+                "output_tokens": 5138,
+                "cost_usd": 0.329911
+              },
+              "summary": {
+                "passed": 1,
+                "failed": 0,
+                "total": 1,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 76.8
+              },
+              "fingerprint": "f111e7638d017f3f96f247471c1232a4c62f685c0d228de2567a3bea2bd76461"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:47:43Z",
+        "executed": true,
+        "content_hash": "98803a6c46ad6888c29aa9696028550f0db2c2ce29bcde7ee1c3ce8d5adab7d0",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Triage code-scanning finding 7 and recommend whether to dismiss it",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "31b340e1d124f1208a1b0a50dfcb82c09453b84585242f45927f91c1ea98da15"
+          },
+          {
+            "query": "Write a security report for CodeQL alert 12 explaining why it's a false positive",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.3,
+            "spec_hash": "e3b09f92e823eab970d3c9e8e2b7805bccd4898231c0619152c4b43aedf941d8"
+          },
+          {
+            "query": "Dismiss finding 3 as a false positive and record the report",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.2,
+            "spec_hash": "e869656322e1079dca826b6202815e83fdf5e2b0216808e663ae5ad42f66c849"
+          },
+          {
+            "query": "Document the disposition of https://github.com/acme/widgets/security/code-scanning/5",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.3,
+            "spec_hash": "19a8b9c7a9386e2cf899dbf65ba3d3d8bec9a74876419b8449261e2c55b03dc3"
+          },
+          {
+            "query": "Add a triage report for the new code-scanning alert and update the index",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.1,
+            "spec_hash": "da1330a400ac37c9787f96e14b78aa7750f175242bad475e33d135a67b555825"
+          },
+          {
+            "query": "Should I remediate or dismiss CodeQL finding 9? Write up the analysis.",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4,
+            "spec_hash": "17e1430bdc850f39387b941780dfa6b58eb3ec55905c0bb62d2ae05210beb20b"
+          },
+          {
+            "query": "Triage this Dependabot alert about a vulnerable dependency",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.3,
+            "spec_hash": "9dcd6694abbf09cd5273ee23ce8ecd628fd0fbd72aee221e110a5928a141bdc5"
+          },
+          {
+            "query": "Rotate the leaked API key that secret scanning found",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.8,
+            "spec_hash": "469d279cf9cf31bbe49ff2f4884f35b60e5ccfdf3b6368cb6f6a1a3d4d718ef1"
+          },
+          {
+            "query": "Run CodeQL analysis on this repository",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.2,
+            "spec_hash": "186697c80c1191b3b5098f031e621d8f53ff01844c936d94282c909568f1a7a7"
+          },
+          {
+            "query": "Write a threat model for our API",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 77,
+            "spec_hash": "484a01a185e3bfa785cfb18431345e0e4ed57426058fb16aba6407ac133e8a09"
+          },
+          {
+            "query": "Review this pull request for security issues",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.6,
+            "spec_hash": "2d8708f2a6b6a36047199f62a0a2b500ef46edf7a9e287581d6e0a3f47e8b2dc"
+          },
+          {
+            "query": "Fix the SQL injection in the login handler",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.5,
+            "spec_hash": "4e2e67ff8e253e11df215a50f04996094d495bd088676959bf044c7ec6432ac8"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 0,
+          "total": 12,
+          "pass_rate": 1,
+          "avg_run_seconds": 14
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T16:50:25Z",
+        "executed": true,
+        "content_hash": "5f62c3ce73ded0873de78a4f30d2c36870c1df7dd185aa6f3015268babb667a8",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "report-and-index-from-details",
+            "passed": true,
+            "measured": {
+              "input_tokens": 10,
+              "cache_read_input_tokens": 152926,
+              "cache_creation_input_tokens": 17196,
+              "output_tokens": 5840,
+              "cost_usd": 0.237613
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "security/code-scanning/9.md",
+                "text": "file security/code-scanning/9.md exists",
+                "passed": true,
+                "evidence": "security/code-scanning/9.md exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "# Code scanning finding 9",
+                "text": "security/code-scanning/9.md matches /# Code scanning finding 9/",
+                "passed": true,
+                "evidence": "# Code scanning finding 9",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "go/allocation-size-overflow",
+                "text": "security/code-scanning/9.md matches /go/allocation-size-overflow/",
+                "passed": true,
+                "evidence": "go/allocation-size-overflow",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b/",
+                "text": "security/code-scanning/9.md matches /blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b//",
+                "passed": true,
+                "evidence": "blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b/",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "\\*\\*False positive\\*\\*",
+                "text": "security/code-scanning/9.md matches /\\*\\*False positive\\*\\*/",
+                "passed": true,
+                "evidence": "**False positive**",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "security/code-scanning/index.md",
+                "text": "file security/code-scanning/index.md exists",
+                "passed": true,
+                "evidence": "security/code-scanning/index.md exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/index.md",
+                "pattern": "\\./9\\.md",
+                "text": "security/code-scanning/index.md matches /\\./9\\.md/",
+                "passed": true,
+                "evidence": "./9.md",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Glob": 2,
+                "Read": 3,
+                "Skill": 1,
+                "Write": 2
+              },
+              "total_tool_calls": 8
+            },
+            "timing": {
+              "total_tokens": 175972,
+              "executor_duration_seconds": 106.3
+            },
+            "spec_hash": "25573b69d644a61ac6c89ea95a9127311a2caf9fbb68bbd00b853c079ddc4d6e"
+          },
+          {
+            "id": "refuse-closed-finding",
+            "passed": true,
+            "measured": {
+              "input_tokens": 6,
+              "cache_read_input_tokens": 38891,
+              "cache_creation_input_tokens": 9464,
+              "output_tokens": 926,
+              "cost_usd": 0.083198
+            },
+            "expectations": [
+              {
+                "type": "file_absent",
+                "path": "security/code-scanning/5.md",
+                "text": "file security/code-scanning/5.md is absent",
+                "passed": true,
+                "evidence": "security/code-scanning/5.md missing",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 1,
+              "failed": 0,
+              "total": 1,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Skill": 1
+              },
+              "total_tool_calls": 1
+            },
+            "timing": {
+              "total_tokens": 49287,
+              "executor_duration_seconds": 21.8
+            },
+            "spec_hash": "f111e7638d017f3f96f247471c1232a4c62f685c0d228de2567a3bea2bd76461"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 64.1,
+          "measured": {
+            "input_tokens": 16,
+            "cache_read_input_tokens": 191817,
+            "cache_creation_input_tokens": 26660,
+            "output_tokens": 6766,
+            "cost_usd": 0.320811
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-25T16:50:25Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 48.5,
+            "measured": {
+              "input_tokens": 14,
+              "cache_read_input_tokens": 223802,
+              "cache_creation_input_tokens": 18830,
+              "output_tokens": 4521,
+              "cost_usd": 0.249721
+            }
+          },
+          "results": [
+            {
+              "id": "report-and-index-from-details",
+              "passed": false,
+              "measured": {
+                "input_tokens": 9,
+                "cache_read_input_tokens": 161586,
+                "cache_creation_input_tokens": 10805,
+                "output_tokens": 2625,
+                "cost_usd": 0.153627
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 7,
+                "total": 7,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 55.2
+              },
+              "fingerprint": "25573b69d644a61ac6c89ea95a9127311a2caf9fbb68bbd00b853c079ddc4d6e"
+            },
+            {
+              "id": "refuse-closed-finding",
+              "passed": true,
+              "measured": {
+                "input_tokens": 5,
+                "cache_read_input_tokens": 62216,
+                "cache_creation_input_tokens": 8025,
+                "output_tokens": 1896,
+                "cost_usd": 0.096094
+              },
+              "summary": {
+                "passed": 1,
+                "failed": 0,
+                "total": 1,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 41.8
+              },
+              "fingerprint": "f111e7638d017f3f96f247471c1232a4c62f685c0d228de2567a3bea2bd76461"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T17:04:56Z",
+        "executed": true,
+        "content_hash": "98803a6c46ad6888c29aa9696028550f0db2c2ce29bcde7ee1c3ce8d5adab7d0",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Triage code-scanning finding 7 and recommend whether to dismiss it",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "spec_hash": "31b340e1d124f1208a1b0a50dfcb82c09453b84585242f45927f91c1ea98da15"
+          },
+          {
+            "query": "Write a security report for CodeQL alert 12 explaining why it's a false positive",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.6,
+            "spec_hash": "e3b09f92e823eab970d3c9e8e2b7805bccd4898231c0619152c4b43aedf941d8"
+          },
+          {
+            "query": "Dismiss finding 3 as a false positive and record the report",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9,
+            "spec_hash": "e869656322e1079dca826b6202815e83fdf5e2b0216808e663ae5ad42f66c849"
+          },
+          {
+            "query": "Document the disposition of https://github.com/acme/widgets/security/code-scanning/5",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "spec_hash": "19a8b9c7a9386e2cf899dbf65ba3d3d8bec9a74876419b8449261e2c55b03dc3"
+          },
+          {
+            "query": "Add a triage report for the new code-scanning alert and update the index",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.9,
+            "spec_hash": "da1330a400ac37c9787f96e14b78aa7750f175242bad475e33d135a67b555825"
+          },
+          {
+            "query": "Should I remediate or dismiss CodeQL finding 9? Write up the analysis.",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.6,
+            "spec_hash": "17e1430bdc850f39387b941780dfa6b58eb3ec55905c0bb62d2ae05210beb20b"
+          },
+          {
+            "query": "Triage this Dependabot alert about a vulnerable dependency",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 90.5,
+            "spec_hash": "9dcd6694abbf09cd5273ee23ce8ecd628fd0fbd72aee221e110a5928a141bdc5"
+          },
+          {
+            "query": "Rotate the leaked API key that secret scanning found",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 109.6,
+            "spec_hash": "469d279cf9cf31bbe49ff2f4884f35b60e5ccfdf3b6368cb6f6a1a3d4d718ef1"
+          },
+          {
+            "query": "Run CodeQL analysis on this repository",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 91.1,
+            "spec_hash": "186697c80c1191b3b5098f031e621d8f53ff01844c936d94282c909568f1a7a7"
+          },
+          {
+            "query": "Write a threat model for our API",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 109.2,
+            "spec_hash": "484a01a185e3bfa785cfb18431345e0e4ed57426058fb16aba6407ac133e8a09"
+          },
+          {
+            "query": "Review this pull request for security issues",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 74.3,
+            "spec_hash": "2d8708f2a6b6a36047199f62a0a2b500ef46edf7a9e287581d6e0a3f47e8b2dc"
+          },
+          {
+            "query": "Fix the SQL injection in the login handler",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 96.6,
+            "spec_hash": "4e2e67ff8e253e11df215a50f04996094d495bd088676959bf044c7ec6432ac8"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 0,
+          "total": 12,
+          "pass_rate": 1,
+          "avg_run_seconds": 52.3
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T17:09:48Z",
+        "executed": true,
+        "content_hash": "5f62c3ce73ded0873de78a4f30d2c36870c1df7dd185aa6f3015268babb667a8",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "report-and-index-from-details",
+            "passed": true,
+            "measured": {
+              "input_tokens": 38856,
+              "cache_read_input_tokens": 228352,
+              "output_tokens": 5732,
+              "cost_usd": 0.754
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "security/code-scanning/9.md",
+                "text": "file security/code-scanning/9.md exists",
+                "passed": true,
+                "evidence": "security/code-scanning/9.md exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "# Code scanning finding 9",
+                "text": "security/code-scanning/9.md matches /# Code scanning finding 9/",
+                "passed": true,
+                "evidence": "# Code scanning finding 9",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "go/allocation-size-overflow",
+                "text": "security/code-scanning/9.md matches /go/allocation-size-overflow/",
+                "passed": true,
+                "evidence": "go/allocation-size-overflow",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b/",
+                "text": "security/code-scanning/9.md matches /blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b//",
+                "passed": true,
+                "evidence": "blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b/",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "\\*\\*False positive\\*\\*",
+                "text": "security/code-scanning/9.md matches /\\*\\*False positive\\*\\*/",
+                "passed": true,
+                "evidence": "**False positive**",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "security/code-scanning/index.md",
+                "text": "file security/code-scanning/index.md exists",
+                "passed": true,
+                "evidence": "security/code-scanning/index.md exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/index.md",
+                "pattern": "\\./9\\.md",
+                "text": "security/code-scanning/index.md matches /\\./9\\.md/",
+                "passed": true,
+                "evidence": "./9.md",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 26,
+                "file_change": 1
+              },
+              "total_tool_calls": 27
+            },
+            "timing": {
+              "total_tokens": 272940,
+              "executor_duration_seconds": 126.7
+            },
+            "spec_hash": "25573b69d644a61ac6c89ea95a9127311a2caf9fbb68bbd00b853c079ddc4d6e"
+          },
+          {
+            "id": "refuse-closed-finding",
+            "passed": true,
+            "measured": {
+              "input_tokens": 17488,
+              "cache_read_input_tokens": 62848,
+              "output_tokens": 1557,
+              "cost_usd": 0.224195
+            },
+            "expectations": [
+              {
+                "type": "file_absent",
+                "path": "security/code-scanning/5.md",
+                "text": "file security/code-scanning/5.md is absent",
+                "passed": true,
+                "evidence": "security/code-scanning/5.md missing",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 1,
+              "failed": 0,
+              "total": 1,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 6
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 81893,
+              "executor_duration_seconds": 46.7
+            },
+            "spec_hash": "f111e7638d017f3f96f247471c1232a4c62f685c0d228de2567a3bea2bd76461"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 86.7,
+          "measured": {
+            "input_tokens": 56344,
+            "cache_read_input_tokens": 291200,
+            "output_tokens": 7289,
+            "cost_usd": 0.978195
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-25T17:09:48Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 142.4,
+            "measured": {
+              "input_tokens": 68805,
+              "cache_read_input_tokens": 807808,
+              "output_tokens": 11583,
+              "cost_usd": 2.365278
+            }
+          },
+          "results": [
+            {
+              "id": "report-and-index-from-details",
+              "passed": false,
+              "measured": {
+                "input_tokens": 44773,
+                "cache_read_input_tokens": 638592,
+                "output_tokens": 6994,
+                "cost_usd": 1.813323
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 7,
+                "total": 7,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 165.6
+              },
+              "fingerprint": "25573b69d644a61ac6c89ea95a9127311a2caf9fbb68bbd00b853c079ddc4d6e"
+            },
+            {
+              "id": "refuse-closed-finding",
+              "passed": true,
+              "measured": {
+                "input_tokens": 24032,
+                "cache_read_input_tokens": 169216,
+                "output_tokens": 4589,
+                "cost_usd": 0.551955
+              },
+              "summary": {
+                "passed": 1,
+                "failed": 0,
+                "total": 1,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 119.1
+              },
+              "fingerprint": "f111e7638d017f3f96f247471c1232a4c62f685c0d228de2567a3bea2bd76461"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T17:18:18Z",
+        "executed": true,
+        "content_hash": "98803a6c46ad6888c29aa9696028550f0db2c2ce29bcde7ee1c3ce8d5adab7d0",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Triage code-scanning finding 7 and recommend whether to dismiss it",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "31b340e1d124f1208a1b0a50dfcb82c09453b84585242f45927f91c1ea98da15"
+          },
+          {
+            "query": "Write a security report for CodeQL alert 12 explaining why it's a false positive",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.9,
+            "spec_hash": "e3b09f92e823eab970d3c9e8e2b7805bccd4898231c0619152c4b43aedf941d8"
+          },
+          {
+            "query": "Dismiss finding 3 as a false positive and record the report",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "e869656322e1079dca826b6202815e83fdf5e2b0216808e663ae5ad42f66c849"
+          },
+          {
+            "query": "Document the disposition of https://github.com/acme/widgets/security/code-scanning/5",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7,
+            "spec_hash": "19a8b9c7a9386e2cf899dbf65ba3d3d8bec9a74876419b8449261e2c55b03dc3"
+          },
+          {
+            "query": "Add a triage report for the new code-scanning alert and update the index",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "spec_hash": "da1330a400ac37c9787f96e14b78aa7750f175242bad475e33d135a67b555825"
+          },
+          {
+            "query": "Should I remediate or dismiss CodeQL finding 9? Write up the analysis.",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.7,
+            "spec_hash": "17e1430bdc850f39387b941780dfa6b58eb3ec55905c0bb62d2ae05210beb20b"
+          },
+          {
+            "query": "Triage this Dependabot alert about a vulnerable dependency",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 64.1,
+            "spec_hash": "9dcd6694abbf09cd5273ee23ce8ecd628fd0fbd72aee221e110a5928a141bdc5"
+          },
+          {
+            "query": "Rotate the leaked API key that secret scanning found",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 96.9,
+            "spec_hash": "469d279cf9cf31bbe49ff2f4884f35b60e5ccfdf3b6368cb6f6a1a3d4d718ef1"
+          },
+          {
+            "query": "Run CodeQL analysis on this repository",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "spec_hash": "186697c80c1191b3b5098f031e621d8f53ff01844c936d94282c909568f1a7a7"
+          },
+          {
+            "query": "Write a threat model for our API",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 85.4,
+            "spec_hash": "484a01a185e3bfa785cfb18431345e0e4ed57426058fb16aba6407ac133e8a09"
+          },
+          {
+            "query": "Review this pull request for security issues",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 86.2,
+            "spec_hash": "2d8708f2a6b6a36047199f62a0a2b500ef46edf7a9e287581d6e0a3f47e8b2dc"
+          },
+          {
+            "query": "Fix the SQL injection in the login handler",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 88.5,
+            "spec_hash": "4e2e67ff8e253e11df215a50f04996094d495bd088676959bf044c7ec6432ac8"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 2,
+          "total": 12,
+          "pass_rate": 0.833333,
+          "avg_run_seconds": 48.6
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-25T17:21:30Z",
+        "executed": true,
+        "content_hash": "5f62c3ce73ded0873de78a4f30d2c36870c1df7dd185aa6f3015268babb667a8",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "report-and-index-from-details",
+            "passed": true,
+            "measured": {
+              "input_tokens": 41217,
+              "cache_read_input_tokens": 179968,
+              "output_tokens": 4150,
+              "cost_usd": 1.230425
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "security/code-scanning/9.md",
+                "text": "file security/code-scanning/9.md exists",
+                "passed": true,
+                "evidence": "security/code-scanning/9.md exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "# Code scanning finding 9",
+                "text": "security/code-scanning/9.md matches /# Code scanning finding 9/",
+                "passed": true,
+                "evidence": "# Code scanning finding 9",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "go/allocation-size-overflow",
+                "text": "security/code-scanning/9.md matches /go/allocation-size-overflow/",
+                "passed": true,
+                "evidence": "go/allocation-size-overflow",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b/",
+                "text": "security/code-scanning/9.md matches /blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b//",
+                "passed": true,
+                "evidence": "blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b/",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/9.md",
+                "pattern": "\\*\\*False positive\\*\\*",
+                "text": "security/code-scanning/9.md matches /\\*\\*False positive\\*\\*/",
+                "passed": true,
+                "evidence": "**False positive**",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "security/code-scanning/index.md",
+                "text": "file security/code-scanning/index.md exists",
+                "passed": true,
+                "evidence": "security/code-scanning/index.md exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "security/code-scanning/index.md",
+                "pattern": "\\./9\\.md",
+                "text": "security/code-scanning/index.md matches /\\./9\\.md/",
+                "passed": true,
+                "evidence": "./9.md",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 19,
+                "file_change": 1
+              },
+              "total_tool_calls": 20
+            },
+            "timing": {
+              "total_tokens": 225335,
+              "executor_duration_seconds": 96.7
+            },
+            "spec_hash": "25573b69d644a61ac6c89ea95a9127311a2caf9fbb68bbd00b853c079ddc4d6e"
+          },
+          {
+            "id": "refuse-closed-finding",
+            "passed": true,
+            "measured": {
+              "input_tokens": 7109,
+              "cache_read_input_tokens": 25856,
+              "output_tokens": 502,
+              "cost_usd": 0.179885
+            },
+            "expectations": [
+              {
+                "type": "file_absent",
+                "path": "security/code-scanning/5.md",
+                "text": "file security/code-scanning/5.md is absent",
+                "passed": true,
+                "evidence": "security/code-scanning/5.md missing",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 1,
+              "failed": 0,
+              "total": 1,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 1
+              },
+              "total_tool_calls": 1
+            },
+            "timing": {
+              "total_tokens": 33467,
+              "executor_duration_seconds": 12.8
+            },
+            "spec_hash": "f111e7638d017f3f96f247471c1232a4c62f685c0d228de2567a3bea2bd76461"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 54.8,
+          "measured": {
+            "input_tokens": 48326,
+            "cache_read_input_tokens": 205824,
+            "output_tokens": 4652,
+            "cost_usd": 1.41031
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-25T17:21:30Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 128.9,
+            "measured": {
+              "input_tokens": 110219,
+              "cache_read_input_tokens": 484352,
+              "output_tokens": 8831,
+              "cost_usd": 3.237785
+            }
+          },
+          "results": [
+            {
+              "id": "report-and-index-from-details",
+              "passed": false,
+              "measured": {
+                "input_tokens": 61122,
+                "cache_read_input_tokens": 193024,
+                "output_tokens": 3451,
+                "cost_usd": 1.37426
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 3,
+                "total": 7,
+                "pass_rate": 0.571429
+              },
+              "timing": {
+                "executor_duration_seconds": 78.5
+              },
+              "fingerprint": "25573b69d644a61ac6c89ea95a9127311a2caf9fbb68bbd00b853c079ddc4d6e"
+            },
+            {
+              "id": "refuse-closed-finding",
+              "passed": true,
+              "measured": {
+                "input_tokens": 49097,
+                "cache_read_input_tokens": 291328,
+                "output_tokens": 5380,
+                "cost_usd": 1.863525
+              },
+              "summary": {
+                "passed": 1,
+                "failed": 0,
+                "total": 1,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 179.3
+              },
+              "fingerprint": "f111e7638d017f3f96f247471c1232a4c62f685c0d228de2567a3bea2bd76461"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

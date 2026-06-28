@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "workflow-skill-evals",
+  "triggers": [
+    { "query": "Generate an evolve eval suite for my new skill", "should_trigger": true },
+    { "query": "Write triggers and behavioral evals for the terraform-style skill", "should_trigger": true },
+    { "query": "Author a triggers.json and evals.json for this SKILL.md", "should_trigger": true },
+    { "query": "Scaffold trigger-accuracy tests so I can measure whether my skill activates", "should_trigger": true },
+    { "query": "Add behavioral evals that check my skill actually does its job", "should_trigger": true },
+    { "query": "My triggers file only has positives — add some near-miss negatives", "should_trigger": true },
+    { "query": "How should I evaluate whether my agent skill fires on the right prompts?", "should_trigger": true },
+    { "query": "Commit my staged changes with a Conventional Commit message", "should_trigger": false },
+    { "query": "Triage CodeQL finding 7 and write the triage report", "should_trigger": false },
+    { "query": "Run the evals for the python-docs skill and show me the results", "should_trigger": false },
+    { "query": "Sweep all the skills with evolve and regenerate the EVALUATION report", "should_trigger": false },
+    { "query": "Write pytest unit tests for the parse function in kv.py", "should_trigger": false },
+    { "query": "Compare Haiku and Sonnet quality on our existing eval suite", "should_trigger": false },
+    { "query": "Write a new SKILL.md for a skill that formats SQL", "should_trigger": false },
+    { "query": "Evaluate which cloud provider is cheapest for our workload", "should_trigger": false }
+  ]
+}

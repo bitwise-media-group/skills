@@ -1,0 +1,21 @@
+{
+  "name": "workflow",
+  "version": "0.2.0",
+  "description": "Developer-workflow commands and skills — sandbox-safe Conventional commits with a commit.sh handoff, immutable code-scanning triage reports with SHA-pinned permalinks, and generation of evolve evaluation suites (triggers + behavioral evals) for agent skills.",
+  "author": {
+    "name": "Bitwise Media Group",
+    "email": "deavon@bitwisemedia.co.uk"
+  },
+  "license": "MIT",
+  "keywords": [
+    "git",
+    "commit",
+    "conventional-commits",
+    "security",
+    "code-scanning",
+    "codeql",
+    "evals",
+    "evolve",
+    "evaluation"
+  ]
+}

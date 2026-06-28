@@ -1,0 +1,54 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "workflow-security-report",
+  "triggers": [
+    {
+      "query": "Triage code-scanning finding 7 and recommend whether to dismiss it",
+      "should_trigger": true
+    },
+    {
+      "query": "Write a security report for CodeQL alert 12 explaining why it's a false positive",
+      "should_trigger": true
+    },
+    {
+      "query": "Dismiss finding 3 as a false positive and record the report",
+      "should_trigger": true
+    },
+    {
+      "query": "Document the disposition of https://github.com/acme/widgets/security/code-scanning/5",
+      "should_trigger": true
+    },
+    {
+      "query": "Add a triage report for the new code-scanning alert and update the index",
+      "should_trigger": true
+    },
+    {
+      "query": "Should I remediate or dismiss CodeQL finding 9? Write up the analysis.",
+      "should_trigger": true
+    },
+    {
+      "query": "Triage this Dependabot alert about a vulnerable dependency",
+      "should_trigger": false
+    },
+    {
+      "query": "Rotate the leaked API key that secret scanning found",
+      "should_trigger": false
+    },
+    {
+      "query": "Run CodeQL analysis on this repository",
+      "should_trigger": false
+    },
+    {
+      "query": "Write a threat model for our API",
+      "should_trigger": false
+    },
+    {
+      "query": "Review this pull request for security issues",
+      "should_trigger": false
+    },
+    {
+      "query": "Fix the SQL injection in the login handler",
+      "should_trigger": false
+    }
+  ]
+}

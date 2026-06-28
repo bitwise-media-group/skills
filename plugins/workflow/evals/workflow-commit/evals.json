@@ -1,0 +1,61 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "workflow-commit",
+  "evals": [
+    {
+      "id": "handoff-main-checkout",
+      "prompt": "You are an agent in a sandbox that cannot sign git commits, working in the main checkout (not a worktree) of a repository. You have just edited README.md and src/util.py. Because signing fails in the sandbox, do not commit yourself — produce the commit.sh handoff script at the repository root that the user will run outside the sandbox to create the commit(s), using a Conventional Commit message.",
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": "commit.sh"
+        },
+        {
+          "type": "regex",
+          "path": "commit.sh",
+          "pattern": "#!/usr/bin/env sh"
+        },
+        {
+          "type": "regex",
+          "path": "commit.sh",
+          "pattern": "set -eu"
+        },
+        {
+          "type": "regex",
+          "path": "commit.sh",
+          "pattern": "git commit"
+        },
+        {
+          "type": "regex",
+          "path": "commit.sh",
+          "pattern": "(feat|fix|docs|chore|refactor|test|ci|build|perf|style)(\\([a-z0-9-]+\\))?:"
+        },
+        {
+          "type": "regex",
+          "path": "commit.sh",
+          "pattern": "rm -- \"\\$0\""
+        }
+      ]
+    },
+    {
+      "id": "conventional-fix-type",
+      "prompt": "You cannot sign git commits in this sandbox, and you are in the main checkout of a repository. You just fixed a null-pointer bug in src/auth.py. Generate the commit.sh handoff script the user will run to make the commit. Do not commit yourself.",
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": "commit.sh"
+        },
+        {
+          "type": "regex",
+          "path": "commit.sh",
+          "pattern": "fix(\\([a-z0-9-]+\\))?:"
+        },
+        {
+          "type": "regex",
+          "path": "commit.sh",
+          "pattern": "rm -- \"\\$0\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3576 @@
+{
+  "schema": 5,
+  "plugin": "workflow",
+  "skill": "workflow-skill-evals",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-28T05:18:33Z",
+        "executed": true,
+        "content_hash": "c825040b9ce82e4eb0e99f8a2895232c3472671a653afe7614a3aa40fb27a8cb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Generate an evolve eval suite for my new skill",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 2349,
+              "input_cost_usd": 0.002349
+            },
+            "spec_hash": "5bfcc3cf77a1d577766e46fc2b04cd9f3dfc2a46dc28c3b6219948f09ad03078"
+          },
+          {
+            "query": "Write triggers and behavioral evals for the terraform-style skill",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.9,
+            "estimate": {
+              "input_tokens": 2351,
+              "input_cost_usd": 0.002351
+            },
+            "spec_hash": "dd523dca2d9c8e03a95b75e2ac999764eb0c2d708c80e17c9d6f6354ae7d4bf2"
+          },
+          {
+            "query": "Author a triggers.json and evals.json for this SKILL.md",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.4,
+            "estimate": {
+              "input_tokens": 2355,
+              "input_cost_usd": 0.002355
+            },
+            "spec_hash": "1f95b5d8dbfc7383c969c6f3082cee37fdcf15e2d926213067bb07df2032b7ce"
+          },
+          {
+            "query": "Scaffold trigger-accuracy tests so I can measure whether my skill activates",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.1,
+            "estimate": {
+              "input_tokens": 2354,
+              "input_cost_usd": 0.002354
+            },
+            "spec_hash": "d5a5f82331944106d74a64120ed185e6a41eccbc1d6a4fd3e46a441ab4cdcd5a"
+          },
+          {
+            "query": "Add behavioral evals that check my skill actually does its job",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 2351,
+              "input_cost_usd": 0.002351
+            },
+            "spec_hash": "fdda3bbd9da55f1dfe925abe94efd0429467285b1df0f2e4827471be545a566d"
+          },
+          {
+            "query": "My triggers file only has positives — add some near-miss negatives",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 2354,
+              "input_cost_usd": 0.002354
+            },
+            "spec_hash": "c75aba2259ccfdb50af1999ac876ba3659adfa428f9bbd012f9a52028399cc94"
+          },
+          {
+            "query": "How should I evaluate whether my agent skill fires on the right prompts?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.7,
+            "estimate": {
+              "input_tokens": 2354,
+              "input_cost_usd": 0.002354
+            },
+            "spec_hash": "4406bc8b0211af50dbbcf653fa95b756fe029841def11b62c1dcd22bc8782047"
+          },
+          {
+            "query": "Commit my staged changes with a Conventional Commit message",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.6,
+            "estimate": {
+              "input_tokens": 2351,
+              "input_cost_usd": 0.002351
+            },
+            "spec_hash": "f7c21b487c67584c62e712ff0831cc4f79bb73a5039df74184636e93a278163a"
+          },
+          {
+            "query": "Triage CodeQL finding 7 and write the triage report",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 2354,
+              "input_cost_usd": 0.002354
+            },
+            "spec_hash": "b36af525147d7ae4e40089f3bca19d548ef3bbe4e8e0d050f82be6547bf01790"
+          },
+          {
+            "query": "Run the evals for the python-docs skill and show me the results",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 2354,
+              "input_cost_usd": 0.002354
+            },
+            "spec_hash": "761d960171cceba8fa6218e9317f52852281b01125f654f4d70f91fe9d47cabe"
+          },
+          {
+            "query": "Sweep all the skills with evolve and regenerate the EVALUATION report",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.9,
+            "estimate": {
+              "input_tokens": 2354,
+              "input_cost_usd": 0.002354
+            },
+            "spec_hash": "660b9166c3cf8887d70395ec2ba2dc1fa61f5a544fe35137ffce9b450617a42f"
+          },
+          {
+            "query": "Write pytest unit tests for the parse function in kv.py",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "estimate": {
+              "input_tokens": 2352,
+              "input_cost_usd": 0.002352
+            },
+            "spec_hash": "c3d1656b0a4293dc15d9eb232735a9eb08b613c98c29cbedebd24fc06ae60f9a"
+          },
+          {
+            "query": "Compare Haiku and Sonnet quality on our existing eval suite",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.2,
+            "estimate": {
+              "input_tokens": 2353,
+              "input_cost_usd": 0.002353
+            },
+            "spec_hash": "def37b0aff68f9a1795b186d04fc7bcf50fbcebcaebf5280c1e2ca2ac1f03c39"
+          },
+          {
+            "query": "Write a new SKILL.md for a skill that formats SQL",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.2,
+            "estimate": {
+              "input_tokens": 2352,
+              "input_cost_usd": 0.002352
+            },
+            "spec_hash": "862654ab7d95b74769c36da8e3c1f6d2fa625dab4dbf3d266b9795229a89ee24"
+          },
+          {
+            "query": "Evaluate which cloud provider is cheapest for our workload",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.2,
+            "estimate": {
+              "input_tokens": 2351,
+              "input_cost_usd": 0.002351
+            },
+            "spec_hash": "7182b960bf74ef26854006cdf7ce97c63f4a7e583d5af02db69a8473cd13dca6"
+          }
+        ],
+        "summary": {
+          "passed": 9,
+          "failed": 6,
+          "total": 15,
+          "pass_rate": 0.6,
+          "avg_run_seconds": 9.2,
+          "estimate": {
+            "input_tokens": 35289,
+            "input_cost_usd": 0.035289
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-27T11:22:40Z",
+          "summary": {
+            "passed": 8,
+            "failed": 7,
+            "total": 15,
+            "pass_rate": 0.533333,
+            "avg_run_seconds": 8.7
+          },
+          "results": [
+            {
+              "query": "Generate an evolve eval suite for my new skill",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.6,
+              "spec_hash": "5bfcc3cf77a1d577766e46fc2b04cd9f3dfc2a46dc28c3b6219948f09ad03078"
+            },
+            {
+              "query": "Write triggers and behavioral evals for the terraform-style skill",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.4,
+              "spec_hash": "dd523dca2d9c8e03a95b75e2ac999764eb0c2d708c80e17c9d6f6354ae7d4bf2"
+            },
+            {
+              "query": "Author a triggers.json and evals.json for this SKILL.md",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.1,
+              "spec_hash": "1f95b5d8dbfc7383c969c6f3082cee37fdcf15e2d926213067bb07df2032b7ce"
+            },
+            {
+              "query": "Scaffold trigger-accuracy tests so I can measure whether my skill activates",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9,
+              "spec_hash": "d5a5f82331944106d74a64120ed185e6a41eccbc1d6a4fd3e46a441ab4cdcd5a"
+            },
+            {
+              "query": "Add behavioral evals that check my skill actually does its job",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.9,
+              "spec_hash": "fdda3bbd9da55f1dfe925abe94efd0429467285b1df0f2e4827471be545a566d"
+            },
+            {
+              "query": "My triggers file only has positives — add some near-miss negatives",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.4,
+              "spec_hash": "c75aba2259ccfdb50af1999ac876ba3659adfa428f9bbd012f9a52028399cc94"
+            },
+            {
+              "query": "How should I evaluate whether my agent skill fires on the right prompts?",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 12,
+              "spec_hash": "4406bc8b0211af50dbbcf653fa95b756fe029841def11b62c1dcd22bc8782047"
+            },
+            {
+              "query": "Commit my staged changes with a Conventional Commit message",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.3,
+              "spec_hash": "f7c21b487c67584c62e712ff0831cc4f79bb73a5039df74184636e93a278163a"
+            },
+            {
+              "query": "Triage CodeQL finding 7 and write the triage report",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.4,
+              "spec_hash": "b36af525147d7ae4e40089f3bca19d548ef3bbe4e8e0d050f82be6547bf01790"
+            },
+            {
+              "query": "Run the evals for the python-docs skill and show me the results",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.5,
+              "spec_hash": "761d960171cceba8fa6218e9317f52852281b01125f654f4d70f91fe9d47cabe"
+            },
+            {
+              "query": "Sweep all the skills with evolve and regenerate the EVALUATION report",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.5,
+              "spec_hash": "660b9166c3cf8887d70395ec2ba2dc1fa61f5a544fe35137ffce9b450617a42f"
+            },
+            {
+              "query": "Write pytest unit tests for the parse function in kv.py",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.6,
+              "spec_hash": "c3d1656b0a4293dc15d9eb232735a9eb08b613c98c29cbedebd24fc06ae60f9a"
+            },
+            {
+              "query": "Compare Haiku and Sonnet quality on our existing eval suite",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.5,
+              "spec_hash": "def37b0aff68f9a1795b186d04fc7bcf50fbcebcaebf5280c1e2ca2ac1f03c39"
+            },
+            {
+              "query": "Write a new SKILL.md for a skill that formats SQL",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.8,
+              "spec_hash": "862654ab7d95b74769c36da8e3c1f6d2fa625dab4dbf3d266b9795229a89ee24"
+            },
+            {
+              "query": "Evaluate which cloud provider is cheapest for our workload",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.3,
+              "spec_hash": "7182b960bf74ef26854006cdf7ce97c63f4a7e583d5af02db69a8473cd13dca6"
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-28T06:47:00Z",
+        "executed": true,
+        "content_hash": "249c18cead72479d1c8014bfb25131b7b97689189d9d7bb931c4ecd368291d58",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "author-suite-from-skill",
+            "name": "Author a full eval suite from a SKILL.md",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2431,
+              "input_cost_usd": 0.002431
+            },
+            "measured": {
+              "input_tokens": 32,
+              "cache_read_input_tokens": 91295,
+              "cache_creation_input_tokens": 38527,
+              "output_tokens": 2735,
+              "cost_usd": 0.100568
+            },
+            "expectations": [
+              {
+                "type": "llm",
+                "text": "The generated triggers include near-miss negatives that are close to the greeting or messaging domain, not only unrelated prompts.",
+                "passed": true,
+                "evidence": "Near-miss negatives include 'Write a welcome message' (missing name), 'Create a birthday greeting for Alice' (wrong greeting type), 'Generate an apology letter for Bob', 'Write a thank you note to the",
+                "source": "expectation"
+              },
+              {
+                "type": "file_exists",
+                "path": "evals/demo-greeter/triggers.json",
+                "text": "file evals/demo-greeter/triggers.json exists",
+                "passed": true,
+                "evidence": "evals/demo-greeter/triggers.json exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "evals/demo-greeter/evals.json",
+                "text": "file evals/demo-greeter/evals.json exists",
+                "passed": true,
+                "evidence": "evals/demo-greeter/evals.json exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "evals/demo-greeter/triggers.json",
+                "pattern": "should_trigger",
+                "text": "evals/demo-greeter/triggers.json matches /should_trigger/",
+                "passed": true,
+                "evidence": "should_trigger",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert any(x['should_trigger'] for x in t) and any(not x['should_trigger'] for x in t)\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert any(x['should_trigger'] for x in t) and any(not x['should_trigger'] for x in t)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; assert e and all('id' in c and 'prompt' in c for c in e)\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; assert e and all('id' in c and 'prompt' in c for c in e)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; det={'file_exists','file_absent','regex','not_regex','command','tool_call'}; assert any(isinstance(a,dict) and a.get('type') in det for c in e for a in c.get('assertions',[]))\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; det={'file_exists','file_absent','regex','not_regex','command','tool_call'}; assert any(isinstance(a,dict) and a.get('type') in det for c in e for a in c.get('assertions',[]))\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Read": 1,
+                "Skill": 1,
+                "Write": 2
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 132589,
+              "executor_duration_seconds": 35.6
+            },
+            "spec_hash": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+          },
+          {
+            "id": "balance-positives-only-triggers",
+            "name": "Balance a positives-only triggers file with near-miss negatives",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2413,
+              "input_cost_usd": 0.002413
+            },
+            "measured": {
+              "input_tokens": 35,
+              "cache_read_input_tokens": 105677,
+              "cache_creation_input_tokens": 17302,
+              "output_tokens": 1559,
+              "cost_usd": 0.053666
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if not x['should_trigger'])\u003e=3\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if not x['should_trigger'])\u003e=3\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if x['should_trigger'])\u003e=3\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if x['should_trigger'])\u003e=3\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Edit": 1,
+                "Read": 4
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 124573,
+              "executor_duration_seconds": 16.1
+            },
+            "spec_hash": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 25.9,
+          "estimate": {
+            "input_tokens": 4844,
+            "input_cost_usd": 0.004844
+          },
+          "measured": {
+            "input_tokens": 67,
+            "cache_read_input_tokens": 196972,
+            "cache_creation_input_tokens": 55829,
+            "output_tokens": 4294,
+            "cost_usd": 0.154234
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-28T06:47:00Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 26,
+            "measured": {
+              "input_tokens": 60,
+              "cache_read_input_tokens": 244981,
+              "cache_creation_input_tokens": 51580,
+              "output_tokens": 4894,
+              "cost_usd": 0.153524
+            }
+          },
+          "results": [
+            {
+              "id": "author-suite-from-skill",
+              "passed": false,
+              "measured": {
+                "input_tokens": 38,
+                "cache_read_input_tokens": 204683,
+                "cache_creation_input_tokens": 18979,
+                "output_tokens": 3524,
+                "cost_usd": 0.076761
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 1,
+                "total": 7,
+                "pass_rate": 0.857143
+              },
+              "timing": {
+                "executor_duration_seconds": 37.3
+              },
+              "fingerprint": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+            },
+            {
+              "id": "balance-positives-only-triggers",
+              "passed": true,
+              "measured": {
+                "input_tokens": 22,
+                "cache_read_input_tokens": 40298,
+                "cache_creation_input_tokens": 32601,
+                "output_tokens": 1370,
+                "cost_usd": 0.076763
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 14.7
+              },
+              "fingerprint": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-28T05:19:21Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 24.1,
+            "estimate": {
+              "input_tokens": 4844,
+              "input_cost_usd": 0.004844
+            },
+            "measured": {
+              "input_tokens": 54,
+              "cache_read_input_tokens": 131828,
+              "cache_creation_input_tokens": 71560,
+              "output_tokens": 3970,
+              "cost_usd": 0.177543
+            }
+          },
+          "results": [
+            {
+              "id": "author-suite-from-skill",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 2431,
+                "input_cost_usd": 0.002431
+              },
+              "measured": {
+                "input_tokens": 32,
+                "cache_read_input_tokens": 91295,
+                "cache_creation_input_tokens": 38527,
+                "output_tokens": 2735,
+                "cost_usd": 0.100568
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 35.6
+              }
+            },
+            {
+              "id": "balance-positives-only-triggers",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 2413,
+                "input_cost_usd": 0.002413
+              },
+              "measured": {
+                "input_tokens": 22,
+                "cache_read_input_tokens": 40533,
+                "cache_creation_input_tokens": 33033,
+                "output_tokens": 1235,
+                "cost_usd": 0.076975
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 1,
+                "total": 3,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 12.6
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-28T05:27:41Z",
+        "executed": true,
+        "content_hash": "c825040b9ce82e4eb0e99f8a2895232c3472671a653afe7614a3aa40fb27a8cb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Generate an evolve eval suite for my new skill",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "estimate": {
+              "input_tokens": 3145,
+              "input_cost_usd": 0.015725
+            },
+            "spec_hash": "5bfcc3cf77a1d577766e46fc2b04cd9f3dfc2a46dc28c3b6219948f09ad03078"
+          },
+          {
+            "query": "Write triggers and behavioral evals for the terraform-style skill",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10,
+            "estimate": {
+              "input_tokens": 3150,
+              "input_cost_usd": 0.01575
+            },
+            "spec_hash": "dd523dca2d9c8e03a95b75e2ac999764eb0c2d708c80e17c9d6f6354ae7d4bf2"
+          },
+          {
+            "query": "Author a triggers.json and evals.json for this SKILL.md",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.6,
+            "estimate": {
+              "input_tokens": 3150,
+              "input_cost_usd": 0.01575
+            },
+            "spec_hash": "1f95b5d8dbfc7383c969c6f3082cee37fdcf15e2d926213067bb07df2032b7ce"
+          },
+          {
+            "query": "Scaffold trigger-accuracy tests so I can measure whether my skill activates",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 3156,
+              "input_cost_usd": 0.01578
+            },
+            "spec_hash": "d5a5f82331944106d74a64120ed185e6a41eccbc1d6a4fd3e46a441ab4cdcd5a"
+          },
+          {
+            "query": "Add behavioral evals that check my skill actually does its job",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.9,
+            "estimate": {
+              "input_tokens": 3147,
+              "input_cost_usd": 0.015735
+            },
+            "spec_hash": "fdda3bbd9da55f1dfe925abe94efd0429467285b1df0f2e4827471be545a566d"
+          },
+          {
+            "query": "My triggers file only has positives — add some near-miss negatives",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.3,
+            "estimate": {
+              "input_tokens": 3148,
+              "input_cost_usd": 0.01574
+            },
+            "spec_hash": "c75aba2259ccfdb50af1999ac876ba3659adfa428f9bbd012f9a52028399cc94"
+          },
+          {
+            "query": "How should I evaluate whether my agent skill fires on the right prompts?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7,
+            "estimate": {
+              "input_tokens": 3152,
+              "input_cost_usd": 0.01576
+            },
+            "spec_hash": "4406bc8b0211af50dbbcf653fa95b756fe029841def11b62c1dcd22bc8782047"
+          },
+          {
+            "query": "Commit my staged changes with a Conventional Commit message",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 3147,
+              "input_cost_usd": 0.015735
+            },
+            "spec_hash": "f7c21b487c67584c62e712ff0831cc4f79bb73a5039df74184636e93a278163a"
+          },
+          {
+            "query": "Triage CodeQL finding 7 and write the triage report",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.9,
+            "estimate": {
+              "input_tokens": 3148,
+              "input_cost_usd": 0.01574
+            },
+            "spec_hash": "b36af525147d7ae4e40089f3bca19d548ef3bbe4e8e0d050f82be6547bf01790"
+          },
+          {
+            "query": "Run the evals for the python-docs skill and show me the results",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.9,
+            "estimate": {
+              "input_tokens": 3147,
+              "input_cost_usd": 0.015735
+            },
+            "spec_hash": "761d960171cceba8fa6218e9317f52852281b01125f654f4d70f91fe9d47cabe"
+          },
+          {
+            "query": "Sweep all the skills with evolve and regenerate the EVALUATION report",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.5,
+            "estimate": {
+              "input_tokens": 3154,
+              "input_cost_usd": 0.01577
+            },
+            "spec_hash": "660b9166c3cf8887d70395ec2ba2dc1fa61f5a544fe35137ffce9b450617a42f"
+          },
+          {
+            "query": "Write pytest unit tests for the parse function in kv.py",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 29.2,
+            "estimate": {
+              "input_tokens": 3148,
+              "input_cost_usd": 0.01574
+            },
+            "spec_hash": "c3d1656b0a4293dc15d9eb232735a9eb08b613c98c29cbedebd24fc06ae60f9a"
+          },
+          {
+            "query": "Compare Haiku and Sonnet quality on our existing eval suite",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.5,
+            "estimate": {
+              "input_tokens": 3152,
+              "input_cost_usd": 0.01576
+            },
+            "spec_hash": "def37b0aff68f9a1795b186d04fc7bcf50fbcebcaebf5280c1e2ca2ac1f03c39"
+          },
+          {
+            "query": "Write a new SKILL.md for a skill that formats SQL",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 24,
+            "estimate": {
+              "input_tokens": 3149,
+              "input_cost_usd": 0.015745
+            },
+            "spec_hash": "862654ab7d95b74769c36da8e3c1f6d2fa625dab4dbf3d266b9795229a89ee24"
+          },
+          {
+            "query": "Evaluate which cloud provider is cheapest for our workload",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 24.9,
+            "estimate": {
+              "input_tokens": 3149,
+              "input_cost_usd": 0.015745
+            },
+            "spec_hash": "7182b960bf74ef26854006cdf7ce97c63f4a7e583d5af02db69a8473cd13dca6"
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 1,
+          "total": 15,
+          "pass_rate": 0.933333,
+          "avg_run_seconds": 13.6,
+          "estimate": {
+            "input_tokens": 47242,
+            "input_cost_usd": 0.23621
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-27T11:38:11Z",
+          "summary": {
+            "passed": 14,
+            "failed": 1,
+            "total": 15,
+            "pass_rate": 0.933333,
+            "avg_run_seconds": 14.9
+          },
+          "results": [
+            {
+              "query": "Generate an evolve eval suite for my new skill",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.8,
+              "spec_hash": "5bfcc3cf77a1d577766e46fc2b04cd9f3dfc2a46dc28c3b6219948f09ad03078"
+            },
+            {
+              "query": "Write triggers and behavioral evals for the terraform-style skill",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.3,
+              "spec_hash": "dd523dca2d9c8e03a95b75e2ac999764eb0c2d708c80e17c9d6f6354ae7d4bf2"
+            },
+            {
+              "query": "Author a triggers.json and evals.json for this SKILL.md",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.7,
+              "spec_hash": "1f95b5d8dbfc7383c969c6f3082cee37fdcf15e2d926213067bb07df2032b7ce"
+            },
+            {
+              "query": "Scaffold trigger-accuracy tests so I can measure whether my skill activates",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.6,
+              "spec_hash": "d5a5f82331944106d74a64120ed185e6a41eccbc1d6a4fd3e46a441ab4cdcd5a"
+            },
+            {
+              "query": "Add behavioral evals that check my skill actually does its job",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.4,
+              "spec_hash": "fdda3bbd9da55f1dfe925abe94efd0429467285b1df0f2e4827471be545a566d"
+            },
+            {
+              "query": "My triggers file only has positives — add some near-miss negatives",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 12.1,
+              "spec_hash": "c75aba2259ccfdb50af1999ac876ba3659adfa428f9bbd012f9a52028399cc94"
+            },
+            {
+              "query": "How should I evaluate whether my agent skill fires on the right prompts?",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.3,
+              "spec_hash": "4406bc8b0211af50dbbcf653fa95b756fe029841def11b62c1dcd22bc8782047"
+            },
+            {
+              "query": "Commit my staged changes with a Conventional Commit message",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12,
+              "spec_hash": "f7c21b487c67584c62e712ff0831cc4f79bb73a5039df74184636e93a278163a"
+            },
+            {
+              "query": "Triage CodeQL finding 7 and write the triage report",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.1,
+              "spec_hash": "b36af525147d7ae4e40089f3bca19d548ef3bbe4e8e0d050f82be6547bf01790"
+            },
+            {
+              "query": "Run the evals for the python-docs skill and show me the results",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.5,
+              "spec_hash": "761d960171cceba8fa6218e9317f52852281b01125f654f4d70f91fe9d47cabe"
+            },
+            {
+              "query": "Sweep all the skills with evolve and regenerate the EVALUATION report",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 17.7,
+              "spec_hash": "660b9166c3cf8887d70395ec2ba2dc1fa61f5a544fe35137ffce9b450617a42f"
+            },
+            {
+              "query": "Write pytest unit tests for the parse function in kv.py",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 29.4,
+              "spec_hash": "c3d1656b0a4293dc15d9eb232735a9eb08b613c98c29cbedebd24fc06ae60f9a"
+            },
+            {
+              "query": "Compare Haiku and Sonnet quality on our existing eval suite",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.5,
+              "spec_hash": "def37b0aff68f9a1795b186d04fc7bcf50fbcebcaebf5280c1e2ca2ac1f03c39"
+            },
+            {
+              "query": "Write a new SKILL.md for a skill that formats SQL",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 29.9,
+              "spec_hash": "862654ab7d95b74769c36da8e3c1f6d2fa625dab4dbf3d266b9795229a89ee24"
+            },
+            {
+              "query": "Evaluate which cloud provider is cheapest for our workload",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 28.7,
+              "spec_hash": "7182b960bf74ef26854006cdf7ce97c63f4a7e583d5af02db69a8473cd13dca6"
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-28T06:49:33Z",
+        "executed": true,
+        "content_hash": "249c18cead72479d1c8014bfb25131b7b97689189d9d7bb931c4ecd368291d58",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "author-suite-from-skill",
+            "name": "Author a full eval suite from a SKILL.md",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 3265,
+              "input_cost_usd": 0.016325
+            },
+            "measured": {
+              "input_tokens": 3098,
+              "cache_read_input_tokens": 282103,
+              "cache_creation_input_tokens": 76778,
+              "output_tokens": 15127,
+              "cost_usd": 1.308185
+            },
+            "expectations": [
+              {
+                "type": "llm",
+                "text": "The generated triggers include near-miss negatives that are close to the greeting or messaging domain, not only unrelated prompts.",
+                "passed": true,
+                "evidence": "The negatives include cases closely adjacent to the greeting/messaging domain: 'Write a goodbye message for Alice and save it to a file' (same task, wrong sentiment), 'Add a startup greeting to my Exp",
+                "source": "expectation"
+              },
+              {
+                "type": "file_exists",
+                "path": "evals/demo-greeter/triggers.json",
+                "text": "file evals/demo-greeter/triggers.json exists",
+                "passed": true,
+                "evidence": "evals/demo-greeter/triggers.json exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "evals/demo-greeter/evals.json",
+                "text": "file evals/demo-greeter/evals.json exists",
+                "passed": true,
+                "evidence": "evals/demo-greeter/evals.json exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "evals/demo-greeter/triggers.json",
+                "pattern": "should_trigger",
+                "text": "evals/demo-greeter/triggers.json matches /should_trigger/",
+                "passed": true,
+                "evidence": "should_trigger",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert any(x['should_trigger'] for x in t) and any(not x['should_trigger'] for x in t)\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert any(x['should_trigger'] for x in t) and any(not x['should_trigger'] for x in t)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; assert e and all('id' in c and 'prompt' in c for c in e)\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; assert e and all('id' in c and 'prompt' in c for c in e)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; det={'file_exists','file_absent','regex','not_regex','command','tool_call'}; assert any(isinstance(a,dict) and a.get('type') in det for c in e for a in c.get('assertions',[]))\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; det={'file_exists','file_absent','regex','not_regex','command','tool_call'}; assert any(isinstance(a,dict) and a.get('type') in det for c in e for a in c.get('assertions',[]))\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 6,
+                "Read": 4,
+                "Skill": 1,
+                "ToolSearch": 1,
+                "WebFetch": 2,
+                "Write": 2
+              },
+              "total_tool_calls": 16
+            },
+            "timing": {
+              "total_tokens": 377106,
+              "executor_duration_seconds": 213.7
+            },
+            "spec_hash": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+          },
+          {
+            "id": "balance-positives-only-triggers",
+            "name": "Balance a positives-only triggers file with near-miss negatives",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 3232,
+              "input_cost_usd": 0.01616
+            },
+            "measured": {
+              "input_tokens": 2828,
+              "cache_read_input_tokens": 88292,
+              "cache_creation_input_tokens": 13729,
+              "output_tokens": 4544,
+              "cost_usd": 0.30984
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if not x['should_trigger'])\u003e=3\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if not x['should_trigger'])\u003e=3\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if x['should_trigger'])\u003e=3\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if x['should_trigger'])\u003e=3\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 109393,
+              "executor_duration_seconds": 67.1
+            },
+            "spec_hash": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 140.4,
+          "estimate": {
+            "input_tokens": 6497,
+            "input_cost_usd": 0.032485
+          },
+          "measured": {
+            "input_tokens": 5926,
+            "cache_read_input_tokens": 370395,
+            "cache_creation_input_tokens": 90507,
+            "output_tokens": 19671,
+            "cost_usd": 1.618025
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-28T06:49:33Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 162.5,
+            "measured": {
+              "input_tokens": 5284,
+              "cache_read_input_tokens": 371050,
+              "cache_creation_input_tokens": 53544,
+              "output_tokens": 24930,
+              "cost_usd": 1.371971
+            }
+          },
+          "results": [
+            {
+              "id": "author-suite-from-skill",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2779,
+                "cache_read_input_tokens": 330012,
+                "cache_creation_input_tokens": 29514,
+                "output_tokens": 22408,
+                "cost_usd": 1.034918
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 3,
+                "total": 7,
+                "pass_rate": 0.571429
+              },
+              "timing": {
+                "executor_duration_seconds": 290.2
+              },
+              "fingerprint": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+            },
+            {
+              "id": "balance-positives-only-triggers",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2505,
+                "cache_read_input_tokens": 41038,
+                "cache_creation_input_tokens": 24030,
+                "output_tokens": 2522,
+                "cost_usd": 0.337053
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 34.8
+              },
+              "fingerprint": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-28T05:31:24Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 132.5,
+            "estimate": {
+              "input_tokens": 6497,
+              "input_cost_usd": 0.032485
+            },
+            "measured": {
+              "input_tokens": 5926,
+              "cache_read_input_tokens": 351947,
+              "cache_creation_input_tokens": 105155,
+              "output_tokens": 18696,
+              "cost_usd": 1.730901
+            }
+          },
+          "results": [
+            {
+              "id": "author-suite-from-skill",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 3265,
+                "input_cost_usd": 0.016325
+              },
+              "measured": {
+                "input_tokens": 3098,
+                "cache_read_input_tokens": 282103,
+                "cache_creation_input_tokens": 76778,
+                "output_tokens": 15127,
+                "cost_usd": 1.308185
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 213.7
+              }
+            },
+            {
+              "id": "balance-positives-only-triggers",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 3232,
+                "input_cost_usd": 0.01616
+              },
+              "measured": {
+                "input_tokens": 2828,
+                "cache_read_input_tokens": 69844,
+                "cache_creation_input_tokens": 28377,
+                "output_tokens": 3569,
+                "cost_usd": 0.422716
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 51.2
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-28T05:21:17Z",
+        "executed": true,
+        "content_hash": "c825040b9ce82e4eb0e99f8a2895232c3472671a653afe7614a3aa40fb27a8cb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Generate an evolve eval suite for my new skill",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "estimate": {
+              "input_tokens": 2349,
+              "input_cost_usd": 0.007047
+            },
+            "spec_hash": "5bfcc3cf77a1d577766e46fc2b04cd9f3dfc2a46dc28c3b6219948f09ad03078"
+          },
+          {
+            "query": "Write triggers and behavioral evals for the terraform-style skill",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.7,
+            "estimate": {
+              "input_tokens": 2351,
+              "input_cost_usd": 0.007053
+            },
+            "spec_hash": "dd523dca2d9c8e03a95b75e2ac999764eb0c2d708c80e17c9d6f6354ae7d4bf2"
+          },
+          {
+            "query": "Author a triggers.json and evals.json for this SKILL.md",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "estimate": {
+              "input_tokens": 2355,
+              "input_cost_usd": 0.007065
+            },
+            "spec_hash": "1f95b5d8dbfc7383c969c6f3082cee37fdcf15e2d926213067bb07df2032b7ce"
+          },
+          {
+            "query": "Scaffold trigger-accuracy tests so I can measure whether my skill activates",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.6,
+            "estimate": {
+              "input_tokens": 2354,
+              "input_cost_usd": 0.007062
+            },
+            "spec_hash": "d5a5f82331944106d74a64120ed185e6a41eccbc1d6a4fd3e46a441ab4cdcd5a"
+          },
+          {
+            "query": "Add behavioral evals that check my skill actually does its job",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.3,
+            "estimate": {
+              "input_tokens": 2351,
+              "input_cost_usd": 0.007053
+            },
+            "spec_hash": "fdda3bbd9da55f1dfe925abe94efd0429467285b1df0f2e4827471be545a566d"
+          },
+          {
+            "query": "My triggers file only has positives — add some near-miss negatives",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.1,
+            "estimate": {
+              "input_tokens": 2354,
+              "input_cost_usd": 0.007062
+            },
+            "spec_hash": "c75aba2259ccfdb50af1999ac876ba3659adfa428f9bbd012f9a52028399cc94"
+          },
+          {
+            "query": "How should I evaluate whether my agent skill fires on the right prompts?",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.3,
+            "estimate": {
+              "input_tokens": 2354,
+              "input_cost_usd": 0.007062
+            },
+            "spec_hash": "4406bc8b0211af50dbbcf653fa95b756fe029841def11b62c1dcd22bc8782047"
+          },
+          {
+            "query": "Commit my staged changes with a Conventional Commit message",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.4,
+            "estimate": {
+              "input_tokens": 2351,
+              "input_cost_usd": 0.007053
+            },
+            "spec_hash": "f7c21b487c67584c62e712ff0831cc4f79bb73a5039df74184636e93a278163a"
+          },
+          {
+            "query": "Triage CodeQL finding 7 and write the triage report",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.2,
+            "estimate": {
+              "input_tokens": 2354,
+              "input_cost_usd": 0.007062
+            },
+            "spec_hash": "b36af525147d7ae4e40089f3bca19d548ef3bbe4e8e0d050f82be6547bf01790"
+          },
+          {
+            "query": "Run the evals for the python-docs skill and show me the results",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.7,
+            "estimate": {
+              "input_tokens": 2354,
+              "input_cost_usd": 0.007062
+            },
+            "spec_hash": "761d960171cceba8fa6218e9317f52852281b01125f654f4d70f91fe9d47cabe"
+          },
+          {
+            "query": "Sweep all the skills with evolve and regenerate the EVALUATION report",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 2354,
+              "input_cost_usd": 0.007062
+            },
+            "spec_hash": "660b9166c3cf8887d70395ec2ba2dc1fa61f5a544fe35137ffce9b450617a42f"
+          },
+          {
+            "query": "Write pytest unit tests for the parse function in kv.py",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8,
+            "estimate": {
+              "input_tokens": 2352,
+              "input_cost_usd": 0.007056
+            },
+            "spec_hash": "c3d1656b0a4293dc15d9eb232735a9eb08b613c98c29cbedebd24fc06ae60f9a"
+          },
+          {
+            "query": "Compare Haiku and Sonnet quality on our existing eval suite",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.8,
+            "estimate": {
+              "input_tokens": 2353,
+              "input_cost_usd": 0.007059
+            },
+            "spec_hash": "def37b0aff68f9a1795b186d04fc7bcf50fbcebcaebf5280c1e2ca2ac1f03c39"
+          },
+          {
+            "query": "Write a new SKILL.md for a skill that formats SQL",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17,
+            "estimate": {
+              "input_tokens": 2352,
+              "input_cost_usd": 0.007056
+            },
+            "spec_hash": "862654ab7d95b74769c36da8e3c1f6d2fa625dab4dbf3d266b9795229a89ee24"
+          },
+          {
+            "query": "Evaluate which cloud provider is cheapest for our workload",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18.1,
+            "estimate": {
+              "input_tokens": 2351,
+              "input_cost_usd": 0.007053
+            },
+            "spec_hash": "7182b960bf74ef26854006cdf7ce97c63f4a7e583d5af02db69a8473cd13dca6"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 3,
+          "total": 15,
+          "pass_rate": 0.8,
+          "avg_run_seconds": 9.5,
+          "estimate": {
+            "input_tokens": 35289,
+            "input_cost_usd": 0.105867
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-27T11:26:22Z",
+          "summary": {
+            "passed": 12,
+            "failed": 3,
+            "total": 15,
+            "pass_rate": 0.8,
+            "avg_run_seconds": 10.4
+          },
+          "results": [
+            {
+              "query": "Generate an evolve eval suite for my new skill",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.8,
+              "spec_hash": "5bfcc3cf77a1d577766e46fc2b04cd9f3dfc2a46dc28c3b6219948f09ad03078"
+            },
+            {
+              "query": "Write triggers and behavioral evals for the terraform-style skill",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.3,
+              "spec_hash": "dd523dca2d9c8e03a95b75e2ac999764eb0c2d708c80e17c9d6f6354ae7d4bf2"
+            },
+            {
+              "query": "Author a triggers.json and evals.json for this SKILL.md",
+              "should_trigger": true,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.4,
+              "spec_hash": "1f95b5d8dbfc7383c969c6f3082cee37fdcf15e2d926213067bb07df2032b7ce"
+            },
+            {
+              "query": "Scaffold trigger-accuracy tests so I can measure whether my skill activates",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.6,
+              "spec_hash": "d5a5f82331944106d74a64120ed185e6a41eccbc1d6a4fd3e46a441ab4cdcd5a"
+            },
+            {
+              "query": "Add behavioral evals that check my skill actually does its job",
+              "should_trigger": true,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8,
+              "spec_hash": "fdda3bbd9da55f1dfe925abe94efd0429467285b1df0f2e4827471be545a566d"
+            },
+            {
+              "query": "My triggers file only has positives — add some near-miss negatives",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.1,
+              "spec_hash": "c75aba2259ccfdb50af1999ac876ba3659adfa428f9bbd012f9a52028399cc94"
+            },
+            {
+              "query": "How should I evaluate whether my agent skill fires on the right prompts?",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 14.1,
+              "spec_hash": "4406bc8b0211af50dbbcf653fa95b756fe029841def11b62c1dcd22bc8782047"
+            },
+            {
+              "query": "Commit my staged changes with a Conventional Commit message",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.3,
+              "spec_hash": "f7c21b487c67584c62e712ff0831cc4f79bb73a5039df74184636e93a278163a"
+            },
+            {
+              "query": "Triage CodeQL finding 7 and write the triage report",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.8,
+              "spec_hash": "b36af525147d7ae4e40089f3bca19d548ef3bbe4e8e0d050f82be6547bf01790"
+            },
+            {
+              "query": "Run the evals for the python-docs skill and show me the results",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9,
+              "spec_hash": "761d960171cceba8fa6218e9317f52852281b01125f654f4d70f91fe9d47cabe"
+            },
+            {
+              "query": "Sweep all the skills with evolve and regenerate the EVALUATION report",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.5,
+              "spec_hash": "660b9166c3cf8887d70395ec2ba2dc1fa61f5a544fe35137ffce9b450617a42f"
+            },
+            {
+              "query": "Write pytest unit tests for the parse function in kv.py",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8,
+              "spec_hash": "c3d1656b0a4293dc15d9eb232735a9eb08b613c98c29cbedebd24fc06ae60f9a"
+            },
+            {
+              "query": "Compare Haiku and Sonnet quality on our existing eval suite",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.5,
+              "spec_hash": "def37b0aff68f9a1795b186d04fc7bcf50fbcebcaebf5280c1e2ca2ac1f03c39"
+            },
+            {
+              "query": "Write a new SKILL.md for a skill that formats SQL",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.2,
+              "spec_hash": "862654ab7d95b74769c36da8e3c1f6d2fa625dab4dbf3d266b9795229a89ee24"
+            },
+            {
+              "query": "Evaluate which cloud provider is cheapest for our workload",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 21.8,
+              "spec_hash": "7182b960bf74ef26854006cdf7ce97c63f4a7e583d5af02db69a8473cd13dca6"
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-28T06:47:51Z",
+        "executed": true,
+        "content_hash": "249c18cead72479d1c8014bfb25131b7b97689189d9d7bb931c4ecd368291d58",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "author-suite-from-skill",
+            "name": "Author a full eval suite from a SKILL.md",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2431,
+              "input_cost_usd": 0.007293
+            },
+            "measured": {
+              "input_tokens": 13,
+              "cache_read_input_tokens": 282647,
+              "cache_creation_input_tokens": 39748,
+              "output_tokens": 8390,
+              "cost_usd": 0.491272
+            },
+            "expectations": [
+              {
+                "type": "llm",
+                "text": "The generated triggers include near-miss negatives that are close to the greeting or messaging domain, not only unrelated prompts.",
+                "passed": true,
+                "evidence": "Negatives include near-misses in the greeting/messaging domain: 'Print Hello World to the console' (same verb, wrong output target), 'Write a hello world example in Python' (hello but code not file), ",
+                "source": "expectation"
+              },
+              {
+                "type": "file_exists",
+                "path": "evals/demo-greeter/triggers.json",
+                "text": "file evals/demo-greeter/triggers.json exists",
+                "passed": true,
+                "evidence": "evals/demo-greeter/triggers.json exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "evals/demo-greeter/evals.json",
+                "text": "file evals/demo-greeter/evals.json exists",
+                "passed": true,
+                "evidence": "evals/demo-greeter/evals.json exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "evals/demo-greeter/triggers.json",
+                "pattern": "should_trigger",
+                "text": "evals/demo-greeter/triggers.json matches /should_trigger/",
+                "passed": true,
+                "evidence": "should_trigger",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert any(x['should_trigger'] for x in t) and any(not x['should_trigger'] for x in t)\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert any(x['should_trigger'] for x in t) and any(not x['should_trigger'] for x in t)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; assert e and all('id' in c and 'prompt' in c for c in e)\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; assert e and all('id' in c and 'prompt' in c for c in e)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; det={'file_exists','file_absent','regex','not_regex','command','tool_call'}; assert any(isinstance(a,dict) and a.get('type') in det for c in e for a in c.get('assertions',[]))\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; det={'file_exists','file_absent','regex','not_regex','command','tool_call'}; assert any(isinstance(a,dict) and a.get('type') in det for c in e for a in c.get('assertions',[]))\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Agent": 1,
+                "Bash": 1,
+                "Glob": 3,
+                "Read": 4,
+                "Skill": 1,
+                "ToolSearch": 1,
+                "WebFetch": 3,
+                "Write": 3
+              },
+              "total_tool_calls": 17
+            },
+            "timing": {
+              "total_tokens": 330798,
+              "executor_duration_seconds": 215
+            },
+            "spec_hash": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+          },
+          {
+            "id": "balance-positives-only-triggers",
+            "name": "Balance a positives-only triggers file with near-miss negatives",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2413,
+              "input_cost_usd": 0.007239
+            },
+            "measured": {
+              "input_tokens": 5,
+              "cache_read_input_tokens": 62610,
+              "cache_creation_input_tokens": 9212,
+              "output_tokens": 1262,
+              "cost_usd": 0.093659
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if not x['should_trigger'])\u003e=3\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if not x['should_trigger'])\u003e=3\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if x['should_trigger'])\u003e=3\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if x['should_trigger'])\u003e=3\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Read": 2
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 73089,
+              "executor_duration_seconds": 23.9
+            },
+            "spec_hash": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 119.5,
+          "estimate": {
+            "input_tokens": 4844,
+            "input_cost_usd": 0.014532
+          },
+          "measured": {
+            "input_tokens": 18,
+            "cache_read_input_tokens": 345257,
+            "cache_creation_input_tokens": 48960,
+            "output_tokens": 9652,
+            "cost_usd": 0.584931
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-28T06:47:51Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 135.4,
+            "measured": {
+              "input_tokens": 24,
+              "cache_read_input_tokens": 656071,
+              "cache_creation_input_tokens": 45401,
+              "output_tokens": 16721,
+              "cost_usd": 0.721455
+            }
+          },
+          "results": [
+            {
+              "id": "author-suite-from-skill",
+              "passed": true,
+              "measured": {
+                "input_tokens": 19,
+                "cache_read_input_tokens": 593923,
+                "cache_creation_input_tokens": 36369,
+                "output_tokens": 15403,
+                "cost_usd": 0.62817
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 244.1
+              },
+              "fingerprint": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+            },
+            {
+              "id": "balance-positives-only-triggers",
+              "passed": true,
+              "measured": {
+                "input_tokens": 5,
+                "cache_read_input_tokens": 62148,
+                "cache_creation_input_tokens": 9032,
+                "output_tokens": 1318,
+                "cost_usd": 0.093285
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 26.6
+              },
+              "fingerprint": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-28T05:25:00Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 122.3,
+            "estimate": {
+              "input_tokens": 4844,
+              "input_cost_usd": 0.014532
+            },
+            "measured": {
+              "input_tokens": 18,
+              "cache_read_input_tokens": 329700,
+              "cache_creation_input_tokens": 64522,
+              "output_tokens": 9650,
+              "cost_usd": 0.673606
+            }
+          },
+          "results": [
+            {
+              "id": "author-suite-from-skill",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 2431,
+                "input_cost_usd": 0.007293
+              },
+              "measured": {
+                "input_tokens": 13,
+                "cache_read_input_tokens": 282647,
+                "cache_creation_input_tokens": 39748,
+                "output_tokens": 8390,
+                "cost_usd": 0.491272
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 215
+              }
+            },
+            {
+              "id": "balance-positives-only-triggers",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 2413,
+                "input_cost_usd": 0.007239
+              },
+              "measured": {
+                "input_tokens": 5,
+                "cache_read_input_tokens": 47053,
+                "cache_creation_input_tokens": 24774,
+                "output_tokens": 1260,
+                "cost_usd": 0.182334
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 1,
+                "total": 3,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 29.5
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-28T05:38:24Z",
+        "executed": true,
+        "content_hash": "c825040b9ce82e4eb0e99f8a2895232c3472671a653afe7614a3aa40fb27a8cb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Generate an evolve eval suite for my new skill",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.6,
+            "estimate": {
+              "input_tokens": 2078,
+              "input_cost_usd": 0.005195
+            },
+            "spec_hash": "5bfcc3cf77a1d577766e46fc2b04cd9f3dfc2a46dc28c3b6219948f09ad03078"
+          },
+          {
+            "query": "Write triggers and behavioral evals for the terraform-style skill",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 2080,
+              "input_cost_usd": 0.0052
+            },
+            "spec_hash": "dd523dca2d9c8e03a95b75e2ac999764eb0c2d708c80e17c9d6f6354ae7d4bf2"
+          },
+          {
+            "query": "Author a triggers.json and evals.json for this SKILL.md",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 2082,
+              "input_cost_usd": 0.005205
+            },
+            "spec_hash": "1f95b5d8dbfc7383c969c6f3082cee37fdcf15e2d926213067bb07df2032b7ce"
+          },
+          {
+            "query": "Scaffold trigger-accuracy tests so I can measure whether my skill activates",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 2083,
+              "input_cost_usd": 0.005208
+            },
+            "spec_hash": "d5a5f82331944106d74a64120ed185e6a41eccbc1d6a4fd3e46a441ab4cdcd5a"
+          },
+          {
+            "query": "Add behavioral evals that check my skill actually does its job",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.9,
+            "estimate": {
+              "input_tokens": 2081,
+              "input_cost_usd": 0.005203
+            },
+            "spec_hash": "fdda3bbd9da55f1dfe925abe94efd0429467285b1df0f2e4827471be545a566d"
+          },
+          {
+            "query": "My triggers file only has positives — add some near-miss negatives",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.2,
+            "estimate": {
+              "input_tokens": 2082,
+              "input_cost_usd": 0.005205
+            },
+            "spec_hash": "c75aba2259ccfdb50af1999ac876ba3659adfa428f9bbd012f9a52028399cc94"
+          },
+          {
+            "query": "How should I evaluate whether my agent skill fires on the right prompts?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.2,
+            "estimate": {
+              "input_tokens": 2083,
+              "input_cost_usd": 0.005208
+            },
+            "spec_hash": "4406bc8b0211af50dbbcf653fa95b756fe029841def11b62c1dcd22bc8782047"
+          },
+          {
+            "query": "Commit my staged changes with a Conventional Commit message",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 64.9,
+            "estimate": {
+              "input_tokens": 2078,
+              "input_cost_usd": 0.005195
+            },
+            "spec_hash": "f7c21b487c67584c62e712ff0831cc4f79bb73a5039df74184636e93a278163a"
+          },
+          {
+            "query": "Triage CodeQL finding 7 and write the triage report",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 110.2,
+            "estimate": {
+              "input_tokens": 2082,
+              "input_cost_usd": 0.005205
+            },
+            "spec_hash": "b36af525147d7ae4e40089f3bca19d548ef3bbe4e8e0d050f82be6547bf01790"
+          },
+          {
+            "query": "Run the evals for the python-docs skill and show me the results",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 50.8,
+            "estimate": {
+              "input_tokens": 2084,
+              "input_cost_usd": 0.00521
+            },
+            "spec_hash": "761d960171cceba8fa6218e9317f52852281b01125f654f4d70f91fe9d47cabe"
+          },
+          {
+            "query": "Sweep all the skills with evolve and regenerate the EVALUATION report",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 51.4,
+            "estimate": {
+              "input_tokens": 2082,
+              "input_cost_usd": 0.005205
+            },
+            "spec_hash": "660b9166c3cf8887d70395ec2ba2dc1fa61f5a544fe35137ffce9b450617a42f"
+          },
+          {
+            "query": "Write pytest unit tests for the parse function in kv.py",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 78.2,
+            "estimate": {
+              "input_tokens": 2080,
+              "input_cost_usd": 0.0052
+            },
+            "spec_hash": "c3d1656b0a4293dc15d9eb232735a9eb08b613c98c29cbedebd24fc06ae60f9a"
+          },
+          {
+            "query": "Compare Haiku and Sonnet quality on our existing eval suite",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 48.3,
+            "estimate": {
+              "input_tokens": 2081,
+              "input_cost_usd": 0.005203
+            },
+            "spec_hash": "def37b0aff68f9a1795b186d04fc7bcf50fbcebcaebf5280c1e2ca2ac1f03c39"
+          },
+          {
+            "query": "Write a new SKILL.md for a skill that formats SQL",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 35.4,
+            "estimate": {
+              "input_tokens": 2081,
+              "input_cost_usd": 0.005203
+            },
+            "spec_hash": "862654ab7d95b74769c36da8e3c1f6d2fa625dab4dbf3d266b9795229a89ee24"
+          },
+          {
+            "query": "Evaluate which cloud provider is cheapest for our workload",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 30.3,
+            "estimate": {
+              "input_tokens": 2078,
+              "input_cost_usd": 0.005195
+            },
+            "spec_hash": "7182b960bf74ef26854006cdf7ce97c63f4a7e583d5af02db69a8473cd13dca6"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 3,
+          "total": 15,
+          "pass_rate": 0.8,
+          "avg_run_seconds": 35.4,
+          "estimate": {
+            "input_tokens": 31215,
+            "input_cost_usd": 0.07804
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-27T14:53:24Z",
+          "summary": {
+            "passed": 13,
+            "failed": 2,
+            "total": 15,
+            "pass_rate": 0.866667,
+            "avg_run_seconds": 38.1,
+            "estimate": {
+              "input_tokens": 31080,
+              "input_cost_usd": 0.077705
+            }
+          },
+          "results": [
+            {
+              "query": "Generate an evolve eval suite for my new skill",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.6,
+              "estimate": {
+                "input_tokens": 2069,
+                "input_cost_usd": 0.005173
+              },
+              "spec_hash": "5bfcc3cf77a1d577766e46fc2b04cd9f3dfc2a46dc28c3b6219948f09ad03078"
+            },
+            {
+              "query": "Write triggers and behavioral evals for the terraform-style skill",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.6,
+              "estimate": {
+                "input_tokens": 2071,
+                "input_cost_usd": 0.005178
+              },
+              "spec_hash": "dd523dca2d9c8e03a95b75e2ac999764eb0c2d708c80e17c9d6f6354ae7d4bf2"
+            },
+            {
+              "query": "Author a triggers.json and evals.json for this SKILL.md",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.8,
+              "estimate": {
+                "input_tokens": 2073,
+                "input_cost_usd": 0.005183
+              },
+              "spec_hash": "1f95b5d8dbfc7383c969c6f3082cee37fdcf15e2d926213067bb07df2032b7ce"
+            },
+            {
+              "query": "Scaffold trigger-accuracy tests so I can measure whether my skill activates",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.7,
+              "estimate": {
+                "input_tokens": 2074,
+                "input_cost_usd": 0.005185
+              },
+              "spec_hash": "d5a5f82331944106d74a64120ed185e6a41eccbc1d6a4fd3e46a441ab4cdcd5a"
+            },
+            {
+              "query": "Add behavioral evals that check my skill actually does its job",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.5,
+              "estimate": {
+                "input_tokens": 2072,
+                "input_cost_usd": 0.00518
+              },
+              "spec_hash": "fdda3bbd9da55f1dfe925abe94efd0429467285b1df0f2e4827471be545a566d"
+            },
+            {
+              "query": "My triggers file only has positives — add some near-miss negatives",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14,
+              "estimate": {
+                "input_tokens": 2073,
+                "input_cost_usd": 0.005183
+              },
+              "spec_hash": "c75aba2259ccfdb50af1999ac876ba3659adfa428f9bbd012f9a52028399cc94"
+            },
+            {
+              "query": "How should I evaluate whether my agent skill fires on the right prompts?",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.2,
+              "estimate": {
+                "input_tokens": 2074,
+                "input_cost_usd": 0.005185
+              },
+              "spec_hash": "4406bc8b0211af50dbbcf653fa95b756fe029841def11b62c1dcd22bc8782047"
+            },
+            {
+              "query": "Commit my staged changes with a Conventional Commit message",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 52.3,
+              "estimate": {
+                "input_tokens": 2069,
+                "input_cost_usd": 0.005173
+              },
+              "spec_hash": "f7c21b487c67584c62e712ff0831cc4f79bb73a5039df74184636e93a278163a"
+            },
+            {
+              "query": "Triage CodeQL finding 7 and write the triage report",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 106.4,
+              "estimate": {
+                "input_tokens": 2073,
+                "input_cost_usd": 0.005183
+              },
+              "spec_hash": "b36af525147d7ae4e40089f3bca19d548ef3bbe4e8e0d050f82be6547bf01790"
+            },
+            {
+              "query": "Run the evals for the python-docs skill and show me the results",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.9,
+              "estimate": {
+                "input_tokens": 2075,
+                "input_cost_usd": 0.005188
+              },
+              "spec_hash": "761d960171cceba8fa6218e9317f52852281b01125f654f4d70f91fe9d47cabe"
+            },
+            {
+              "query": "Sweep all the skills with evolve and regenerate the EVALUATION report",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 12.7,
+              "estimate": {
+                "input_tokens": 2073,
+                "input_cost_usd": 0.005183
+              },
+              "spec_hash": "660b9166c3cf8887d70395ec2ba2dc1fa61f5a544fe35137ffce9b450617a42f"
+            },
+            {
+              "query": "Write pytest unit tests for the parse function in kv.py",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 104.2,
+              "estimate": {
+                "input_tokens": 2071,
+                "input_cost_usd": 0.005178
+              },
+              "spec_hash": "c3d1656b0a4293dc15d9eb232735a9eb08b613c98c29cbedebd24fc06ae60f9a"
+            },
+            {
+              "query": "Compare Haiku and Sonnet quality on our existing eval suite",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 120,
+              "estimate": {
+                "input_tokens": 2072,
+                "input_cost_usd": 0.00518
+              },
+              "spec_hash": "def37b0aff68f9a1795b186d04fc7bcf50fbcebcaebf5280c1e2ca2ac1f03c39"
+            },
+            {
+              "query": "Write a new SKILL.md for a skill that formats SQL",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 53.9,
+              "estimate": {
+                "input_tokens": 2072,
+                "input_cost_usd": 0.00518
+              },
+              "spec_hash": "862654ab7d95b74769c36da8e3c1f6d2fa625dab4dbf3d266b9795229a89ee24"
+            },
+            {
+              "query": "Evaluate which cloud provider is cheapest for our workload",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 33.8,
+              "estimate": {
+                "input_tokens": 2069,
+                "input_cost_usd": 0.005173
+              },
+              "spec_hash": "7182b960bf74ef26854006cdf7ce97c63f4a7e583d5af02db69a8473cd13dca6"
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-28T06:50:56Z",
+        "executed": true,
+        "content_hash": "249c18cead72479d1c8014bfb25131b7b97689189d9d7bb931c4ecd368291d58",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "author-suite-from-skill",
+            "name": "Author a full eval suite from a SKILL.md",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2147,
+              "input_cost_usd": 0.005368
+            },
+            "measured": {
+              "input_tokens": 24304,
+              "cache_read_input_tokens": 114944,
+              "output_tokens": 4566,
+              "cost_usd": 0.41661
+            },
+            "expectations": [
+              {
+                "type": "llm",
+                "text": "The generated triggers include near-miss negatives that are close to the greeting or messaging domain, not only unrelated prompts.",
+                "passed": true,
+                "evidence": "Near-miss negatives include greeting/messaging-adjacent cases: wrong output medium ('Print a greeting in the terminal'), wrong filename ('Create welcome.txt'), wrong intent ('farewell note'), wrong fi",
+                "source": "expectation"
+              },
+              {
+                "type": "file_exists",
+                "path": "evals/demo-greeter/triggers.json",
+                "text": "file evals/demo-greeter/triggers.json exists",
+                "passed": true,
+                "evidence": "evals/demo-greeter/triggers.json exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "evals/demo-greeter/evals.json",
+                "text": "file evals/demo-greeter/evals.json exists",
+                "passed": true,
+                "evidence": "evals/demo-greeter/evals.json exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "evals/demo-greeter/triggers.json",
+                "pattern": "should_trigger",
+                "text": "evals/demo-greeter/triggers.json matches /should_trigger/",
+                "passed": true,
+                "evidence": "should_trigger",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert any(x['should_trigger'] for x in t) and any(not x['should_trigger'] for x in t)\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert any(x['should_trigger'] for x in t) and any(not x['should_trigger'] for x in t)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; assert e and all('id' in c and 'prompt' in c for c in e)\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; assert e and all('id' in c and 'prompt' in c for c in e)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; det={'file_exists','file_absent','regex','not_regex','command','tool_call'}; assert any(isinstance(a,dict) and a.get('type') in det for c in e for a in c.get('assertions',[]))\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; det={'file_exists','file_absent','regex','not_regex','command','tool_call'}; assert any(isinstance(a,dict) and a.get('type') in det for c in e for a in c.get('assertions',[]))\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 12,
+                "file_change": 1
+              },
+              "total_tool_calls": 13
+            },
+            "timing": {
+              "total_tokens": 143814,
+              "executor_duration_seconds": 121.9
+            },
+            "spec_hash": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+          },
+          {
+            "id": "balance-positives-only-triggers",
+            "name": "Balance a positives-only triggers file with near-miss negatives",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2137,
+              "input_cost_usd": 0.005343
+            },
+            "measured": {
+              "input_tokens": 16417,
+              "cache_read_input_tokens": 96000,
+              "output_tokens": 1767,
+              "cost_usd": 0.307548
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if not x['should_trigger'])\u003e=3\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if not x['should_trigger'])\u003e=3\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if x['should_trigger'])\u003e=3\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if x['should_trigger'])\u003e=3\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 5,
+                "file_change": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 114184,
+              "executor_duration_seconds": 43.6
+            },
+            "spec_hash": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 82.8,
+          "estimate": {
+            "input_tokens": 4284,
+            "input_cost_usd": 0.010711
+          },
+          "measured": {
+            "input_tokens": 40721,
+            "cache_read_input_tokens": 210944,
+            "output_tokens": 6333,
+            "cost_usd": 0.724158
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-28T06:50:56Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 107.5,
+            "measured": {
+              "input_tokens": 92213,
+              "cache_read_input_tokens": 566400,
+              "output_tokens": 8614,
+              "cost_usd": 1.775743
+            }
+          },
+          "results": [
+            {
+              "id": "author-suite-from-skill",
+              "passed": false,
+              "measured": {
+                "input_tokens": 80227,
+                "cache_read_input_tokens": 476544,
+                "output_tokens": 7153,
+                "cost_usd": 1.499223
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 2,
+                "total": 7,
+                "pass_rate": 0.714286
+              },
+              "timing": {
+                "executor_duration_seconds": 175.1
+              },
+              "fingerprint": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+            },
+            {
+              "id": "balance-positives-only-triggers",
+              "passed": true,
+              "measured": {
+                "input_tokens": 11986,
+                "cache_read_input_tokens": 89856,
+                "output_tokens": 1461,
+                "cost_usd": 0.27652
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 39.9
+              },
+              "fingerprint": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-28T05:40:36Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 85.1,
+            "estimate": {
+              "input_tokens": 4284,
+              "input_cost_usd": 0.010711
+            },
+            "measured": {
+              "input_tokens": 41012,
+              "cache_read_input_tokens": 219136,
+              "output_tokens": 6701,
+              "cost_usd": 0.750885
+            }
+          },
+          "results": [
+            {
+              "id": "author-suite-from-skill",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 2147,
+                "input_cost_usd": 0.005368
+              },
+              "measured": {
+                "input_tokens": 24304,
+                "cache_read_input_tokens": 114944,
+                "output_tokens": 4566,
+                "cost_usd": 0.41661
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 121.9
+              }
+            },
+            {
+              "id": "balance-positives-only-triggers",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 2137,
+                "input_cost_usd": 0.005343
+              },
+              "measured": {
+                "input_tokens": 16708,
+                "cache_read_input_tokens": 104192,
+                "output_tokens": 2135,
+                "cost_usd": 0.334275
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 48.2
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-28T05:47:26Z",
+        "executed": true,
+        "content_hash": "c825040b9ce82e4eb0e99f8a2895232c3472671a653afe7614a3aa40fb27a8cb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Generate an evolve eval suite for my new skill",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 2078,
+              "input_cost_usd": 0.01039
+            },
+            "spec_hash": "5bfcc3cf77a1d577766e46fc2b04cd9f3dfc2a46dc28c3b6219948f09ad03078"
+          },
+          {
+            "query": "Write triggers and behavioral evals for the terraform-style skill",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.5,
+            "estimate": {
+              "input_tokens": 2080,
+              "input_cost_usd": 0.0104
+            },
+            "spec_hash": "dd523dca2d9c8e03a95b75e2ac999764eb0c2d708c80e17c9d6f6354ae7d4bf2"
+          },
+          {
+            "query": "Author a triggers.json and evals.json for this SKILL.md",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.8,
+            "estimate": {
+              "input_tokens": 2082,
+              "input_cost_usd": 0.01041
+            },
+            "spec_hash": "1f95b5d8dbfc7383c969c6f3082cee37fdcf15e2d926213067bb07df2032b7ce"
+          },
+          {
+            "query": "Scaffold trigger-accuracy tests so I can measure whether my skill activates",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.8,
+            "estimate": {
+              "input_tokens": 2083,
+              "input_cost_usd": 0.010415
+            },
+            "spec_hash": "d5a5f82331944106d74a64120ed185e6a41eccbc1d6a4fd3e46a441ab4cdcd5a"
+          },
+          {
+            "query": "Add behavioral evals that check my skill actually does its job",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6,
+            "estimate": {
+              "input_tokens": 2081,
+              "input_cost_usd": 0.010405
+            },
+            "spec_hash": "fdda3bbd9da55f1dfe925abe94efd0429467285b1df0f2e4827471be545a566d"
+          },
+          {
+            "query": "My triggers file only has positives — add some near-miss negatives",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 2082,
+              "input_cost_usd": 0.01041
+            },
+            "spec_hash": "c75aba2259ccfdb50af1999ac876ba3659adfa428f9bbd012f9a52028399cc94"
+          },
+          {
+            "query": "How should I evaluate whether my agent skill fires on the right prompts?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.3,
+            "estimate": {
+              "input_tokens": 2083,
+              "input_cost_usd": 0.010415
+            },
+            "spec_hash": "4406bc8b0211af50dbbcf653fa95b756fe029841def11b62c1dcd22bc8782047"
+          },
+          {
+            "query": "Commit my staged changes with a Conventional Commit message",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 58.7,
+            "estimate": {
+              "input_tokens": 2078,
+              "input_cost_usd": 0.01039
+            },
+            "spec_hash": "f7c21b487c67584c62e712ff0831cc4f79bb73a5039df74184636e93a278163a"
+          },
+          {
+            "query": "Triage CodeQL finding 7 and write the triage report",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 114.9,
+            "estimate": {
+              "input_tokens": 2082,
+              "input_cost_usd": 0.01041
+            },
+            "spec_hash": "b36af525147d7ae4e40089f3bca19d548ef3bbe4e8e0d050f82be6547bf01790"
+          },
+          {
+            "query": "Run the evals for the python-docs skill and show me the results",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 88.8,
+            "estimate": {
+              "input_tokens": 2084,
+              "input_cost_usd": 0.01042
+            },
+            "spec_hash": "761d960171cceba8fa6218e9317f52852281b01125f654f4d70f91fe9d47cabe"
+          },
+          {
+            "query": "Sweep all the skills with evolve and regenerate the EVALUATION report",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 35.7,
+            "estimate": {
+              "input_tokens": 2082,
+              "input_cost_usd": 0.01041
+            },
+            "spec_hash": "660b9166c3cf8887d70395ec2ba2dc1fa61f5a544fe35137ffce9b450617a42f"
+          },
+          {
+            "query": "Write pytest unit tests for the parse function in kv.py",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 54,
+            "estimate": {
+              "input_tokens": 2080,
+              "input_cost_usd": 0.0104
+            },
+            "spec_hash": "c3d1656b0a4293dc15d9eb232735a9eb08b613c98c29cbedebd24fc06ae60f9a"
+          },
+          {
+            "query": "Compare Haiku and Sonnet quality on our existing eval suite",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 29.2,
+            "estimate": {
+              "input_tokens": 2081,
+              "input_cost_usd": 0.010405
+            },
+            "spec_hash": "def37b0aff68f9a1795b186d04fc7bcf50fbcebcaebf5280c1e2ca2ac1f03c39"
+          },
+          {
+            "query": "Write a new SKILL.md for a skill that formats SQL",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 77.7,
+            "estimate": {
+              "input_tokens": 2081,
+              "input_cost_usd": 0.010405
+            },
+            "spec_hash": "862654ab7d95b74769c36da8e3c1f6d2fa625dab4dbf3d266b9795229a89ee24"
+          },
+          {
+            "query": "Evaluate which cloud provider is cheapest for our workload",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10,
+            "estimate": {
+              "input_tokens": 2078,
+              "input_cost_usd": 0.01039
+            },
+            "spec_hash": "7182b960bf74ef26854006cdf7ce97c63f4a7e583d5af02db69a8473cd13dca6"
+          }
+        ],
+        "summary": {
+          "passed": 13,
+          "failed": 2,
+          "total": 15,
+          "pass_rate": 0.866667,
+          "avg_run_seconds": 34.7,
+          "estimate": {
+            "input_tokens": 31215,
+            "input_cost_usd": 0.156075
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-27T15:03:15Z",
+          "summary": {
+            "passed": 12,
+            "failed": 3,
+            "total": 15,
+            "pass_rate": 0.8,
+            "avg_run_seconds": 30.1,
+            "estimate": {
+              "input_tokens": 31080,
+              "input_cost_usd": 0.1554
+            }
+          },
+          "results": [
+            {
+              "query": "Generate an evolve eval suite for my new skill",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.7,
+              "estimate": {
+                "input_tokens": 2069,
+                "input_cost_usd": 0.010345
+              },
+              "spec_hash": "5bfcc3cf77a1d577766e46fc2b04cd9f3dfc2a46dc28c3b6219948f09ad03078"
+            },
+            {
+              "query": "Write triggers and behavioral evals for the terraform-style skill",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.2,
+              "estimate": {
+                "input_tokens": 2071,
+                "input_cost_usd": 0.010355
+              },
+              "spec_hash": "dd523dca2d9c8e03a95b75e2ac999764eb0c2d708c80e17c9d6f6354ae7d4bf2"
+            },
+            {
+              "query": "Author a triggers.json and evals.json for this SKILL.md",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7,
+              "estimate": {
+                "input_tokens": 2073,
+                "input_cost_usd": 0.010365
+              },
+              "spec_hash": "1f95b5d8dbfc7383c969c6f3082cee37fdcf15e2d926213067bb07df2032b7ce"
+            },
+            {
+              "query": "Scaffold trigger-accuracy tests so I can measure whether my skill activates",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.4,
+              "estimate": {
+                "input_tokens": 2074,
+                "input_cost_usd": 0.01037
+              },
+              "spec_hash": "d5a5f82331944106d74a64120ed185e6a41eccbc1d6a4fd3e46a441ab4cdcd5a"
+            },
+            {
+              "query": "Add behavioral evals that check my skill actually does its job",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.1,
+              "estimate": {
+                "input_tokens": 2072,
+                "input_cost_usd": 0.01036
+              },
+              "spec_hash": "fdda3bbd9da55f1dfe925abe94efd0429467285b1df0f2e4827471be545a566d"
+            },
+            {
+              "query": "My triggers file only has positives — add some near-miss negatives",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.1,
+              "estimate": {
+                "input_tokens": 2073,
+                "input_cost_usd": 0.010365
+              },
+              "spec_hash": "c75aba2259ccfdb50af1999ac876ba3659adfa428f9bbd012f9a52028399cc94"
+            },
+            {
+              "query": "How should I evaluate whether my agent skill fires on the right prompts?",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.4,
+              "estimate": {
+                "input_tokens": 2074,
+                "input_cost_usd": 0.01037
+              },
+              "spec_hash": "4406bc8b0211af50dbbcf653fa95b756fe029841def11b62c1dcd22bc8782047"
+            },
+            {
+              "query": "Commit my staged changes with a Conventional Commit message",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 35.7,
+              "estimate": {
+                "input_tokens": 2069,
+                "input_cost_usd": 0.010345
+              },
+              "spec_hash": "f7c21b487c67584c62e712ff0831cc4f79bb73a5039df74184636e93a278163a"
+            },
+            {
+              "query": "Triage CodeQL finding 7 and write the triage report",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 117.4,
+              "estimate": {
+                "input_tokens": 2073,
+                "input_cost_usd": 0.010365
+              },
+              "spec_hash": "b36af525147d7ae4e40089f3bca19d548ef3bbe4e8e0d050f82be6547bf01790"
+            },
+            {
+              "query": "Run the evals for the python-docs skill and show me the results",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 50.3,
+              "estimate": {
+                "input_tokens": 2075,
+                "input_cost_usd": 0.010375
+              },
+              "spec_hash": "761d960171cceba8fa6218e9317f52852281b01125f654f4d70f91fe9d47cabe"
+            },
+            {
+              "query": "Sweep all the skills with evolve and regenerate the EVALUATION report",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 32.4,
+              "estimate": {
+                "input_tokens": 2073,
+                "input_cost_usd": 0.010365
+              },
+              "spec_hash": "660b9166c3cf8887d70395ec2ba2dc1fa61f5a544fe35137ffce9b450617a42f"
+            },
+            {
+              "query": "Write pytest unit tests for the parse function in kv.py",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 48.7,
+              "estimate": {
+                "input_tokens": 2071,
+                "input_cost_usd": 0.010355
+              },
+              "spec_hash": "c3d1656b0a4293dc15d9eb232735a9eb08b613c98c29cbedebd24fc06ae60f9a"
+            },
+            {
+              "query": "Compare Haiku and Sonnet quality on our existing eval suite",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 35.6,
+              "estimate": {
+                "input_tokens": 2072,
+                "input_cost_usd": 0.01036
+              },
+              "spec_hash": "def37b0aff68f9a1795b186d04fc7bcf50fbcebcaebf5280c1e2ca2ac1f03c39"
+            },
+            {
+              "query": "Write a new SKILL.md for a skill that formats SQL",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 73.3,
+              "estimate": {
+                "input_tokens": 2072,
+                "input_cost_usd": 0.01036
+              },
+              "spec_hash": "862654ab7d95b74769c36da8e3c1f6d2fa625dab4dbf3d266b9795229a89ee24"
+            },
+            {
+              "query": "Evaluate which cloud provider is cheapest for our workload",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.5,
+              "estimate": {
+                "input_tokens": 2069,
+                "input_cost_usd": 0.010345
+              },
+              "spec_hash": "7182b960bf74ef26854006cdf7ce97c63f4a7e583d5af02db69a8473cd13dca6"
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-28T06:52:05Z",
+        "executed": true,
+        "content_hash": "249c18cead72479d1c8014bfb25131b7b97689189d9d7bb931c4ecd368291d58",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "author-suite-from-skill",
+            "name": "Author a full eval suite from a SKILL.md",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2147,
+              "input_cost_usd": 0.010735
+            },
+            "measured": {
+              "input_tokens": 57935,
+              "cache_read_input_tokens": 571136,
+              "output_tokens": 6706,
+              "cost_usd": 3.346535
+            },
+            "expectations": [
+              {
+                "type": "llm",
+                "text": "The generated triggers include near-miss negatives that are close to the greeting or messaging domain, not only unrelated prompts.",
+                "passed": true,
+                "evidence": "Near-miss negatives are domain-adjacent: 'Say hello to Ada in the chat, no file needed', 'Draft a welcome email for Priya', 'Write a Python CLI greeter that prints Hello, name', 'Generate a birthday c",
+                "source": "expectation"
+              },
+              {
+                "type": "file_exists",
+                "path": "evals/demo-greeter/triggers.json",
+                "text": "file evals/demo-greeter/triggers.json exists",
+                "passed": true,
+                "evidence": "evals/demo-greeter/triggers.json exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "evals/demo-greeter/evals.json",
+                "text": "file evals/demo-greeter/evals.json exists",
+                "passed": true,
+                "evidence": "evals/demo-greeter/evals.json exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "evals/demo-greeter/triggers.json",
+                "pattern": "should_trigger",
+                "text": "evals/demo-greeter/triggers.json matches /should_trigger/",
+                "passed": true,
+                "evidence": "should_trigger",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert any(x['should_trigger'] for x in t) and any(not x['should_trigger'] for x in t)\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert any(x['should_trigger'] for x in t) and any(not x['should_trigger'] for x in t)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; assert e and all('id' in c and 'prompt' in c for c in e)\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; assert e and all('id' in c and 'prompt' in c for c in e)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; det={'file_exists','file_absent','regex','not_regex','command','tool_call'}; assert any(isinstance(a,dict) and a.get('type') in det for c in e for a in c.get('assertions',[]))\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; det={'file_exists','file_absent','regex','not_regex','command','tool_call'}; assert any(isinstance(a,dict) and a.get('type') in det for c in e for a in c.get('assertions',[]))\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 27,
+                "file_change": 2
+              },
+              "total_tool_calls": 29
+            },
+            "timing": {
+              "total_tokens": 635777,
+              "executor_duration_seconds": 144.9
+            },
+            "spec_hash": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+          },
+          {
+            "id": "balance-positives-only-triggers",
+            "name": "Balance a positives-only triggers file with near-miss negatives",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2137,
+              "input_cost_usd": 0.010685
+            },
+            "measured": {
+              "input_tokens": 22595,
+              "cache_read_input_tokens": 68480,
+              "output_tokens": 1511,
+              "cost_usd": 0.500705
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if not x['should_trigger'])\u003e=3\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if not x['should_trigger'])\u003e=3\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if x['should_trigger'])\u003e=3\"",
+                "requires": "python3",
+                "text": "command `python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if x['should_trigger'])\u003e=3\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 4,
+                "file_change": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 92586,
+              "executor_duration_seconds": 37.4
+            },
+            "spec_hash": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 91.2,
+          "estimate": {
+            "input_tokens": 4284,
+            "input_cost_usd": 0.02142
+          },
+          "measured": {
+            "input_tokens": 80530,
+            "cache_read_input_tokens": 639616,
+            "output_tokens": 8217,
+            "cost_usd": 3.84724
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-28T06:52:05Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 98.5,
+            "measured": {
+              "input_tokens": 56576,
+              "cache_read_input_tokens": 549376,
+              "output_tokens": 8534,
+              "cost_usd": 3.28578
+            }
+          },
+          "results": [
+            {
+              "id": "author-suite-from-skill",
+              "passed": true,
+              "measured": {
+                "input_tokens": 41970,
+                "cache_read_input_tokens": 482944,
+                "output_tokens": 7282,
+                "cost_usd": 2.84303
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 166.5
+              },
+              "fingerprint": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+            },
+            {
+              "id": "balance-positives-only-triggers",
+              "passed": true,
+              "measured": {
+                "input_tokens": 14606,
+                "cache_read_input_tokens": 66432,
+                "output_tokens": 1252,
+                "cost_usd": 0.44275
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 30.5
+              },
+              "fingerprint": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-28T05:50:00Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 99.5,
+            "estimate": {
+              "input_tokens": 4284,
+              "input_cost_usd": 0.02142
+            },
+            "measured": {
+              "input_tokens": 85510,
+              "cache_read_input_tokens": 686464,
+              "output_tokens": 8962,
+              "cost_usd": 4.12873
+            }
+          },
+          "results": [
+            {
+              "id": "author-suite-from-skill",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 2147,
+                "input_cost_usd": 0.010735
+              },
+              "measured": {
+                "input_tokens": 57935,
+                "cache_read_input_tokens": 571136,
+                "output_tokens": 6706,
+                "cost_usd": 3.346535
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 144.9
+              }
+            },
+            {
+              "id": "balance-positives-only-triggers",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 2137,
+                "input_cost_usd": 0.010685
+              },
+              "measured": {
+                "input_tokens": 27575,
+                "cache_read_input_tokens": 115328,
+                "output_tokens": 2256,
+                "cost_usd": 0.782195
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 54
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

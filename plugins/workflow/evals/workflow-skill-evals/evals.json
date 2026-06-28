@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "workflow-skill-evals",
+  "evals": [
+    {
+      "id": "author-suite-from-skill",
+      "name": "Author a full eval suite from a SKILL.md",
+      "prompt": "The skill at skills/demo-greeter/SKILL.md needs an evolve evaluation suite. Author Tier 1 triggers in evals/demo-greeter/triggers.json and Tier 2 behavioral evals in evals/demo-greeter/evals.json. Balance the triggers with positive and near-miss negative queries, and make the behavioral evals prefer deterministic assertions over the LLM judge.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill WebFetch Bash(python3 *) Bash(mkdir *)",
+      "files": ["files/skills/demo-greeter/SKILL.md"],
+      "expectations": [
+        "The generated triggers include near-miss negatives that are close to the greeting or messaging domain, not only unrelated prompts."
+      ],
+      "assertions": [
+        { "type": "file_exists", "path": "evals/demo-greeter/triggers.json" },
+        { "type": "file_exists", "path": "evals/demo-greeter/evals.json" },
+        { "type": "regex", "path": "evals/demo-greeter/triggers.json", "pattern": "should_trigger" },
+        {
+          "type": "command",
+          "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert any(x['should_trigger'] for x in t) and any(not x['should_trigger'] for x in t)\"",
+          "requires": "python3"
+        },
+        {
+          "type": "command",
+          "run": "python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; assert e and all('id' in c and 'prompt' in c for c in e)\"",
+          "requires": "python3"
+        },
+        {
+          "type": "command",
+          "run": "python3 -c \"import json; e=json.load(open('evals/demo-greeter/evals.json'))['evals']; det={'file_exists','file_absent','regex','not_regex','command','tool_call'}; assert any(isinstance(a,dict) and a.get('type') in det for c in e for a in c.get('assertions',[]))\"",
+          "requires": "python3"
+        }
+      ]
+    },
+    {
+      "id": "balance-positives-only-triggers",
+      "name": "Balance a positives-only triggers file with near-miss negatives",
+      "prompt": "The skill at skills/demo-greeter/SKILL.md already has a triggers file at evals/demo-greeter/triggers.json, but it contains only positive cases. Balance it by adding near-miss negative queries (should_trigger false) that are close to the skill's domain but should not activate it. Keep the existing positives.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(python3 *)",
+      "files": ["files/skills/demo-greeter/SKILL.md", "files/evals/demo-greeter/triggers.json"],
+      "assertions": [
+        {
+          "type": "command",
+          "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if not x['should_trigger'])>=3\"",
+          "requires": "python3"
+        },
+        {
+          "type": "command",
+          "run": "python3 -c \"import json; t=json.load(open('evals/demo-greeter/triggers.json'))['triggers']; assert sum(1 for x in t if x['should_trigger'])>=3\"",
+          "requires": "python3"
+        }
+      ]
+    }
+  ]
+}

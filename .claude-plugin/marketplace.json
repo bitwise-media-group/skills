@@ -35,6 +35,22 @@
       "source": "./plugins/dotnet",
       "description": "Modern .NET — stdlib-first C# style, SDK-style projects with CPM, xUnit testing, XML-doc conventions, NuGet trusted-publishing releases, ASP.NET Core minimal APIs, EF Core, and performance diagnostics.",
       "keywords": ["dotnet", "csharp", "aspnetcore", "efcore", "xunit", "nuget"]
+    },
+    {
+      "name": "workflow",
+      "source": "./plugins/workflow",
+      "description": "Developer-workflow commands and skills — sandbox-safe Conventional commits with a commit.sh handoff, immutable code-scanning triage reports with SHA-pinned permalinks, and generation of evolve evaluation suites (triggers + behavioral evals) for agent skills.",
+      "keywords": [
+        "git",
+        "commit",
+        "conventional-commits",
+        "security",
+        "code-scanning",
+        "codeql",
+        "evals",
+        "evolve",
+        "evaluation"
+      ]
     }
   ]
 }

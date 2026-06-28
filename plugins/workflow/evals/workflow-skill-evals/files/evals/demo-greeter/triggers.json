@@ -1,0 +1,10 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "demo-greeter",
+  "triggers": [
+    { "query": "Greet Ada and write the welcome banner to GREETING.txt", "should_trigger": true },
+    { "query": "Write a personalized hello message for Grace to a file", "should_trigger": true },
+    { "query": "Generate a friendly welcome banner for our new hire", "should_trigger": true },
+    { "query": "Say hello to Linus in GREETING.txt", "should_trigger": true }
+  ]
+}

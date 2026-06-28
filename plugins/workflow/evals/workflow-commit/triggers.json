@@ -1,0 +1,54 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "workflow-commit",
+  "triggers": [
+    {
+      "query": "Commit these changes",
+      "should_trigger": true
+    },
+    {
+      "query": "Create a commit for my staged files with a conventional commit message",
+      "should_trigger": true
+    },
+    {
+      "query": "Stage and commit the work you just did",
+      "should_trigger": true
+    },
+    {
+      "query": "I'm working in an agent worktree — commit your changes and prepare the script to re-sign them",
+      "should_trigger": true
+    },
+    {
+      "query": "Split this diff into a few logical commits and commit them",
+      "should_trigger": true
+    },
+    {
+      "query": "Write a commit message for this change and commit it",
+      "should_trigger": true
+    },
+    {
+      "query": "Push my branch to origin",
+      "should_trigger": false
+    },
+    {
+      "query": "Open a pull request for these changes",
+      "should_trigger": false
+    },
+    {
+      "query": "Rebase my last three commits onto main",
+      "should_trigger": false
+    },
+    {
+      "query": "Amend the message on my last commit",
+      "should_trigger": false
+    },
+    {
+      "query": "Set up commit signing with a GPG key",
+      "should_trigger": false
+    },
+    {
+      "query": "Squash the last two commits into one",
+      "should_trigger": false
+    }
+  ]
+}

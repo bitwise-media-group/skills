@@ -1,0 +1,12 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "<skill-name>",
+  "triggers": [
+    { "query": "<a real phrasing a user types when they want this skill — imperative>", "should_trigger": true },
+    { "query": "<another positive, phrased as a question>", "should_trigger": true },
+    { "query": "<another positive, phrased as a review-style ask>", "should_trigger": true },
+    { "query": "<a sibling skill's headline positive — near-miss>", "should_trigger": false },
+    { "query": "<the same task, but in the wrong language or framework>", "should_trigger": false },
+    { "query": "<an unrelated task that merely shares a keyword>", "should_trigger": false }
+  ]
+}

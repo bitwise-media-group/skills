@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "<skill-name>",
+  "evals": [
+    {
+      "id": "<lowercase-kebab-id>",
+      "prompt": "<the real task you hand the agent>",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(<scoped commands>)",
+      "files": ["files/<path/the/agent/reads>", "fixtures/<name>/<shared-scaffold>"],
+      "expectations": ["<a holistic claim only prose can judge>"],
+      "assertions": [
+        { "type": "file_exists", "path": "<expected output path>" },
+        { "type": "regex", "path": "<output path>", "pattern": "<RE2 pattern, backslashes doubled>" },
+        { "type": "not_regex", "path": "<output path>", "pattern": "<anti-pattern that must be absent>" },
+        { "type": "command", "run": "<toolchain check over the output>", "requires": "<binary>" }
+      ]
+    }
+  ]
+}

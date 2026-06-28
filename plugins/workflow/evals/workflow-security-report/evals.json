@@ -1,0 +1,55 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "workflow-security-report",
+  "evals": [
+    {
+      "id": "report-and-index-from-details",
+      "prompt": "The repository is acme/widgets. Triage code-scanning finding https://github.com/acme/widgets/security/code-scanning/9 and write its triage report recommending dismissal as a false positive, then update the index. The finding has already been fetched — do not call gh. Its gh api JSON is: {\"number\":9,\"state\":\"open\",\"html_url\":\"https://github.com/acme/widgets/security/code-scanning/9\",\"created_at\":\"2026-06-20T10:00:00Z\",\"rule\":{\"id\":\"go/allocation-size-overflow\",\"description\":\"Size computation for allocation may overflow\",\"severity\":\"warning\",\"security_severity_level\":\"high\",\"tags\":[\"security\",\"external/cwe/cwe-190\"]},\"tool\":{\"name\":\"CodeQL\",\"version\":\"2.25.6\"},\"most_recent_instance\":{\"commit_sha\":\"1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b\",\"location\":{\"path\":\"internal/buffer/buffer.go\",\"start_line\":42,\"end_line\":42,\"start_column\":20,\"end_column\":39}}}. The flagged line is: out := make([]byte, 0, len(a)+len(b)) — both a and b are already-decoded slices held in memory, so the capacity cannot overflow on a 64-bit build.",
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": "security/code-scanning/9.md"
+        },
+        {
+          "type": "regex",
+          "path": "security/code-scanning/9.md",
+          "pattern": "# Code scanning finding 9"
+        },
+        {
+          "type": "regex",
+          "path": "security/code-scanning/9.md",
+          "pattern": "go/allocation-size-overflow"
+        },
+        {
+          "type": "regex",
+          "path": "security/code-scanning/9.md",
+          "pattern": "blob/1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d7e8f9a0b/"
+        },
+        {
+          "type": "regex",
+          "path": "security/code-scanning/9.md",
+          "pattern": "\\*\\*False positive\\*\\*"
+        },
+        {
+          "type": "file_exists",
+          "path": "security/code-scanning/index.md"
+        },
+        {
+          "type": "regex",
+          "path": "security/code-scanning/index.md",
+          "pattern": "\\./9\\.md"
+        }
+      ]
+    },
+    {
+      "id": "refuse-closed-finding",
+      "prompt": "The repository is acme/widgets. Triage code-scanning finding 5 and write its report. The finding has already been fetched — do not call gh. Its gh api JSON is: {\"number\":5,\"state\":\"dismissed\",\"html_url\":\"https://github.com/acme/widgets/security/code-scanning/5\",\"created_at\":\"2026-05-01T10:00:00Z\",\"rule\":{\"id\":\"go/allocation-size-overflow\",\"description\":\"Size computation for allocation may overflow\",\"severity\":\"warning\",\"security_severity_level\":\"high\",\"tags\":[\"security\",\"external/cwe/cwe-190\"]},\"tool\":{\"name\":\"CodeQL\",\"version\":\"2.25.6\"},\"most_recent_instance\":{\"commit_sha\":\"0000000000000000000000000000000000000000\",\"location\":{\"path\":\"internal/buffer/buffer.go\",\"start_line\":42,\"end_line\":42,\"start_column\":20,\"end_column\":39}}}.",
+      "assertions": [
+        {
+          "type": "file_absent",
+          "path": "security/code-scanning/5.md"
+        }
+      ]
+    }
+  ]
+}

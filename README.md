@@ -43,6 +43,19 @@ Modern Python on the Astral toolchain (`uv`, `ruff`, `ty`/`pyright`).
 | `python-docs`    | Google-style docstrings enforced via ruff `D` rules, and LLM-ready CLI reference generation for Typer/Click tools.                                  |
 | `python-release` | `uv build` + `uv publish` via PyPI Trusted Publishing, SHA-pinned CI (`ruff`/`ty`/`pytest`), tag-driven releases, and Dependabot coverage.          |
 
+### workflow
+
+Developer-workflow commands and skills, layered on the global Conventional-Commits and `commit.sh` conventions.
+
+| Skill                      | What it does                                                                                                                                                                                            |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `workflow-commit`          | Conventional Commit messages with a sandbox-safe `commit.sh` handoff: commit unsigned inside a worktree and re-sign via the script, or generate the `git add`/`git commit` script in the main checkout. |
+| `workflow-security-report` | Triage a code-scanning (CodeQL) finding fetched via `gh`: an immutable report and index row with SHA-pinned permalinks, recommending remediation or dismissal.                                          |
+| `workflow-skill-evals`     | Generate an evolve evaluation suite for an agent skill: Tier 1 triggers and Tier 2 behavioral evals under `evals/<skill>/`, deterministic-first, tracking the upstream evolve guide and JSON Schemas.   |
+
+The plugin also ships matching Claude Code commands — `/commit` and `/security-report` — as thin entry points to these
+skills.
+
 ## Installation
 
 ### Claude Code
