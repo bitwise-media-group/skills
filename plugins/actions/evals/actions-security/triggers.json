@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "actions-security",
+  "triggers": [
+    {
+      "query": "Harden this GitHub Actions workflow and lock down its permissions",
+      "should_trigger": true
+    },
+    {
+      "query": "Pin all the actions in our workflows to commit SHAs",
+      "should_trigger": true
+    },
+    {
+      "query": "Is it safe to use pull_request_target here, or will a fork PR steal our secrets?",
+      "should_trigger": true
+    },
+    {
+      "query": "This workflow echoes a PR title into a run step — is that a script-injection risk?",
+      "should_trigger": true
+    },
+    {
+      "query": "Set least-privilege permissions for this CI job",
+      "should_trigger": true
+    },
+    {
+      "query": "Review .github/workflows for security issues",
+      "should_trigger": true
+    },
+    {
+      "query": "Should we use OIDC instead of storing long-lived AWS keys as secrets?",
+      "should_trigger": true
+    },
+    {
+      "query": "A fork PR workflow needs to label the PR — how do I do that without exposing the write token?",
+      "should_trigger": true
+    },
+    {
+      "query": "Add a matrix across Python versions to this workflow",
+      "should_trigger": false
+    },
+    {
+      "query": "Run actionlint and zizmor and fix the findings",
+      "should_trigger": false
+    },
+    {
+      "query": "Wire up the reusable CI workflow for this repo",
+      "should_trigger": false
+    },
+    {
+      "query": "Write a Dockerfile that runs as a non-root user",
+      "should_trigger": false
+    },
+    {
+      "query": "How do I manage secrets in Terraform?",
+      "should_trigger": false
+    },
+    {
+      "query": "Format this YAML file with prettier",
+      "should_trigger": false
+    }
+  ]
+}

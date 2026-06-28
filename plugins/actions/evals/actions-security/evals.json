@@ -1,0 +1,45 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "actions-security",
+  "evals": [
+    {
+      "id": "remove-pull-request-target",
+      "prompt": "This PR build workflow runs untrusted fork code under pull_request_target. Rework it to be safe for fork pull requests, following our security posture (it should still build the PR's code, but not in a privileged context).",
+      "files": ["files/.github/workflows/pr-build.yaml"],
+      "assertions": [
+        {
+          "type": "not_regex",
+          "path": ".github/workflows/pr-build.yaml",
+          "pattern": "pull_request_target"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/pr-build.yaml",
+          "pattern": "pull_request:"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/pr-build.yaml",
+          "pattern": "permissions:"
+        }
+      ]
+    },
+    {
+      "id": "fix-expression-injection",
+      "prompt": "Fix the expression-injection risk in this workflow's run step without changing when the workflow runs. The PR title is attacker-controlled and must not be interpolated into the shell.",
+      "files": ["files/.github/workflows/echo-title.yaml"],
+      "assertions": [
+        {
+          "type": "regex",
+          "path": ".github/workflows/echo-title.yaml",
+          "pattern": "env:"
+        },
+        {
+          "type": "not_regex",
+          "path": ".github/workflows/echo-title.yaml",
+          "pattern": "run:.*\\$\\{\\{"
+        }
+      ]
+    }
+  ]
+}

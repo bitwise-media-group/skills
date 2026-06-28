@@ -3,6 +3,14 @@
   "always-update": true,
   "tag-separator": "--",
   "packages": {
+    "plugins/actions": {
+      "release-type": "simple",
+      "component": "actions",
+      "extra-files": [
+        { "type": "json", "path": ".claude-plugin/plugin.json", "jsonpath": "$.version" },
+        { "type": "json", "path": ".codex-plugin/plugin.json", "jsonpath": "$.version" }
+      ]
+    },
     "plugins/golang": {
       "release-type": "simple",
       "component": "golang",

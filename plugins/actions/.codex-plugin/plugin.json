@@ -1,0 +1,15 @@
+{
+  "name": "actions",
+  "version": "0.1.0",
+  "description": "GitHub Actions skills — least-privilege workflow style with truthy/falsey expressions, security hardening (SHA-pinning, no pull_request_target), wiring the bitwise reusable-workflow library, and an actionlint/zizmor validation loop.",
+  "author": {
+    "name": "Bitwise Media Group",
+    "email": "deavon@bitwisemedia.co.uk"
+  },
+  "license": "MIT",
+  "keywords": ["github-actions", "ci", "workflows", "security", "actionlint", "zizmor"],
+  "interface": {
+    "displayName": "GitHub Actions",
+    "shortDescription": "Workflow style, security hardening, reusable workflows, and an actionlint/zizmor loop."
+  }
+}

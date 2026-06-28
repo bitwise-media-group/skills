@@ -1,0 +1,35 @@
+# Caller workflow -- copy to `.github/workflows/ci.yaml` in any repo. It owns the
+# push/pull_request triggers; all the work lives in the reusable ci workflow,
+# which runs the canonical Makefile gates (lint, build, test) as one job each and
+# sets up only the toolchains the repo has (a root go.mod -> go, package.json ->
+# node).
+#
+# The repo must provide a Makefile with targets lint / build / test (test emitting
+# coverage/cobertura-coverage.xml, optionally coverage/junit.xml) and -- if you
+# set e2e: true -- e2e. Stub any that don't apply as a no-op (e.g. `build: ; @:`).
+# Add product-specific jobs (integration, ...) alongside the `ci` job here; a
+# caller can mix a reusable-workflow job with normal jobs.
+#
+# Pin @v2 to a release tag or full commit SHA -- see README "Pinning".
+
+name: Continuous integration
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: ["main", "releases/*"]
+
+# the reusable workflow's jobs only need contents:read; grant just that ceiling
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    uses: bitwise-media-group/github-workflows/.github/workflows/ci.yaml@v2
+    # with:
+    #   go-version-file: go.mod   # default (Go repos)
+    #   cache-dependency-path: |  # default is go.sum; list every lockfile that affects the build
+    #     go.sum
+    #     tools/go.sum
+    #   e2e: true                 # also run the `make e2e` job (off by default)

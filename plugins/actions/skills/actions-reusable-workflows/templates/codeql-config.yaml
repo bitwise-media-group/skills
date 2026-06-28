@@ -1,0 +1,17 @@
+# Copy to `.github/codeql/codeql-config.yaml` and reference it from the codeql
+# caller's `config-file` input. Needed for repos with a bundled dist/ (Node
+# actions): its sources are analysed via src/, so scanning the bundle only
+# surfaces false positives from vendored dependencies -- exclude it.
+#
+# Security only: the security-extended suite runs the security queries (a
+# superset of the default) without the maintainability/reliability "quality"
+# queries. Do NOT enable the repo-level "Code quality" default-setup feature
+# (Settings > Security > Code quality): it ignores this config file and would
+# scan the committed dist/ bundle.
+name: "CodeQL config"
+
+queries:
+  - uses: security-extended
+
+paths-ignore:
+  - dist

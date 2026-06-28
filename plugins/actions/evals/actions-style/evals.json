@@ -1,0 +1,58 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "actions-style",
+  "evals": [
+    {
+      "id": "reusable-boolean-input",
+      "prompt": "Author a reusable GitHub Actions workflow at .github/workflows/build.yaml with `on: workflow_call`, a boolean input `publish` that defaults to false, and a single job whose final step publishes only when `publish` is true. Follow our house style: a top-level permissions block granting least privilege, and gate the publish step on the boolean input directly.",
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": ".github/workflows/build.yaml"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/build.yaml",
+          "pattern": "workflow_call"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/build.yaml",
+          "pattern": "type:\\s*boolean"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/build.yaml",
+          "pattern": "permissions:"
+        },
+        {
+          "type": "not_regex",
+          "path": ".github/workflows/build.yaml",
+          "pattern": "==\\s*['\"](true|false)['\"]"
+        },
+        {
+          "type": "not_regex",
+          "path": ".github/workflows/build.yaml",
+          "pattern": "pull_request_target"
+        }
+      ]
+    },
+    {
+      "id": "fix-string-boolean",
+      "prompt": "Clean up the boolean expression in this workflow to our house style. `run_tests` is already declared as a boolean input, so gate the step on it directly rather than comparing it to a string.",
+      "files": ["files/.github/workflows/deploy.yaml"],
+      "assertions": [
+        {
+          "type": "not_regex",
+          "path": ".github/workflows/deploy.yaml",
+          "pattern": "==\\s*['\"](true|false)['\"]"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/deploy.yaml",
+          "pattern": "if:.*inputs\\.run_tests"
+        }
+      ]
+    }
+  ]
+}

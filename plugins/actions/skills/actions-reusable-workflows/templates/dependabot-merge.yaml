@@ -1,0 +1,44 @@
+# Caller workflow — copy to `.github/workflows/dependabot-merge.yaml` in a
+# consuming repo to auto-approve and fast-forward Dependabot's minor/patch PRs.
+#
+# How it works: when Dependabot opens a PR this approves it if it is a minor or
+# patch update; when the PR's CI finishes green it fast-forwards the PR into the
+# base branch (preserving Dependabot's signed commits, via the same `ff-merge`
+# action as the `/merge` flow). Major updates are never approved, so they wait for
+# a human.
+#
+# Requires a `.github/dependabot.yaml` so Dependabot opens PRs, and branch
+# protection that requires PR review (so the approval sets the review decision) —
+# the same assumption as the `/merge` flow.
+#
+# Prerequisites (one-time, org-wide — see bitwise-media-group/ff-merge):
+#   - org variable FF_MERGE_CLIENT_ID and org secret FF_MERGE_PRIVATE_KEY
+#   - the "FF Merge" App installed on this repo and in the ruleset bypass list
+#
+# Pin @v2 to a release tag or full commit SHA — see README "Pinning".
+name: Dependabot auto-merge
+
+# Both triggers are required. pull_request_target approves on open; workflow_run
+# fast-forwards once CI is green. check_suite is NOT usable here — GitHub does not
+# fire it for a repo's own Actions CI. List in `workflows:` every workflow that
+# must pass before merging; whichever finishes last triggers the merge attempt.
+# pull_request_target is safe here: the reusable workflow never checks out or runs
+# PR code.
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+  workflow_run:
+    workflows: ["CI"] # replace with your CI workflow name(s) — all that must be green
+    types: [completed]
+
+# the App token does the privileged work; the caller grants nothing
+permissions: {}
+
+jobs:
+  auto-merge:
+    uses: bitwise-media-group/github-workflows/.github/workflows/dependabot-merge.yaml@v2
+    with:
+      app-client-id: ${{ vars.FF_MERGE_CLIENT_ID }}
+      # update-types: '["version-update:semver-patch", "version-update:semver-minor"]' # default
+    secrets:
+      app-private-key: ${{ secrets.FF_MERGE_PRIVATE_KEY }}

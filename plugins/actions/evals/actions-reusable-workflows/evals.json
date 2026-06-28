@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "actions-reusable-workflows",
+  "evals": [
+    {
+      "id": "wire-ci",
+      "prompt": "Set up continuous integration for this repository using our shared reusable workflows. Add the CI caller workflow at .github/workflows/ci.yaml that runs on pushes and pull requests to main.",
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": ".github/workflows/ci.yaml"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/ci.yaml",
+          "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/ci.yaml",
+          "pattern": "contents:\\s*read"
+        },
+        {
+          "type": "not_regex",
+          "path": ".github/workflows/ci.yaml",
+          "pattern": "pull_request_target"
+        }
+      ]
+    },
+    {
+      "id": "wire-release-vanity",
+      "prompt": "This is a reusable-actions repository whose consumers pin @v1. Add the release caller workflow at .github/workflows/release.yaml using our reusable release workflow, with vanity tags enabled.",
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": ".github/workflows/release.yaml"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/release.yaml",
+          "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/release.yaml",
+          "pattern": "vanity-tags:\\s*true"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/release.yaml",
+          "pattern": "contents:\\s*write"
+        }
+      ]
+    },
+    {
+      "id": "wire-codeql",
+      "prompt": "Add the reusable CodeQL analysis caller workflow at .github/workflows/codeql.yaml for this repository.",
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": ".github/workflows/codeql.yaml"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/codeql.yaml",
+          "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/codeql.yaml",
+          "pattern": "security-events:\\s*write"
+        }
+      ]
+    }
+  ]
+}

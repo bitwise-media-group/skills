@@ -1,0 +1,35 @@
+# Caller workflow -- copy to `.github/workflows/codeql.yaml` in any repo. It owns
+# the triggers and grants the analyze permissions; the reusable codeql workflow
+# detects languages at the repo root and scans actions (build-free), plus go (via
+# autobuild) when a root go.mod exists and javascript-typescript (build-free) when
+# package.json exists.
+#
+# Pin @v2 to a release tag or full commit SHA -- see README "Pinning".
+
+name: CodeQL analysis
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: ["main", "releases/*"]
+  schedule:
+    - cron: "28 20 * * 4"
+
+# ceiling for the reusable workflow's analyze job
+permissions:
+  # upload analysis results to code scanning
+  security-events: write
+  # fetch internal or private CodeQL packs
+  packages: read
+  # only required for workflows in private repositories
+  actions: read
+  # check out the repository
+  contents: read
+
+jobs:
+  analyze:
+    uses: bitwise-media-group/github-workflows/.github/workflows/codeql.yaml@v2
+    # with:
+    #   go-version-file: go.mod                          # default
+    #   config-file: ./.github/codeql/codeql-config.yaml # a repo with a bundled dist/ should exclude it

@@ -1,0 +1,48 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "actions-validate",
+  "evals": [
+    {
+      "id": "seed-zizmor-config",
+      "prompt": "Set up zizmor for this repository: seed our standard zizmor configuration file at the repository root.",
+      "assertions": [
+        {
+          "type": "file_exists",
+          "path": "zizmor.yml"
+        },
+        {
+          "type": "regex",
+          "path": "zizmor.yml",
+          "pattern": "rules:"
+        }
+      ]
+    },
+    {
+      "id": "validate-and-fix",
+      "prompt": "Validate the workflow in this repository and fix what the validation tools report. There is an expression-injection issue: an attacker-controlled branch name is interpolated into a run step.",
+      "files": ["files/.github/workflows/build.yaml"],
+      "assertions": [
+        {
+          "type": "command",
+          "run": "actionlint",
+          "requires": "actionlint"
+        },
+        {
+          "type": "command",
+          "run": "zizmor --offline .github/workflows/",
+          "requires": "zizmor"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/build.yaml",
+          "pattern": "env:"
+        },
+        {
+          "type": "not_regex",
+          "path": ".github/workflows/build.yaml",
+          "pattern": "run:.*\\$\\{\\{"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# Caller workflow — copy to `.github/workflows/merge-notice.yaml` in a consuming
+# repo. When a PR is opened it posts a one-time comment explaining the repo
+# merges via `/merge` (see merge.yaml). Optional but friendly for contributors
+# who don't yet know the convention.
+#
+# pull_request_target (not pull_request) so the notice also reaches fork PRs; the
+# reusable workflow only posts a static comment with a pull-requests:write token,
+# so the elevated context is safe. No secret needed.
+#
+# Pin @v2 to a release tag or full commit SHA — see README "Pinning".
+
+name: Fast-forward merge notice
+
+on:
+  pull_request_target:
+    types: [opened]
+
+# the reusable workflow comments with GITHUB_TOKEN; grant just that
+permissions:
+  pull-requests: write
+
+jobs:
+  notice:
+    uses: bitwise-media-group/github-workflows/.github/workflows/merge-notice.yaml@v2
+    with:
+      pr-number: ${{ github.event.pull_request.number }}

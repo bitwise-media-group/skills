@@ -1,0 +1,15 @@
+name: Echo title
+
+on:
+  pull_request:
+    types: [opened]
+
+permissions:
+  contents: read
+
+jobs:
+  echo:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Print title
+        run: echo "PR title is ${{ github.event.pull_request.title }}"

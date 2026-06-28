@@ -1,0 +1,58 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "actions-validate",
+  "triggers": [
+    {
+      "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+      "should_trigger": true
+    },
+    {
+      "query": "Run actionlint over .github/workflows and fix the errors",
+      "should_trigger": true
+    },
+    {
+      "query": "Audit our workflows with zizmor",
+      "should_trigger": true
+    },
+    {
+      "query": "Lint and security-check the workflow I just edited",
+      "should_trigger": true
+    },
+    {
+      "query": "Set up actionlint and zizmor for this repository",
+      "should_trigger": true
+    },
+    {
+      "query": "My workflow fails to parse in CI — check and fix it locally",
+      "should_trigger": true
+    },
+    {
+      "query": "Run the workflow linter before I commit these .github/workflows changes",
+      "should_trigger": true
+    },
+    {
+      "query": "Write a new release workflow using the reusable library",
+      "should_trigger": false
+    },
+    {
+      "query": "Explain why pull_request_target is dangerous",
+      "should_trigger": false
+    },
+    {
+      "query": "Add a build matrix to this workflow",
+      "should_trigger": false
+    },
+    {
+      "query": "Validate this Terraform configuration with tflint",
+      "should_trigger": false
+    },
+    {
+      "query": "Run the Go test suite and report failures",
+      "should_trigger": false
+    },
+    {
+      "query": "Lint the markdown files under docs/",
+      "should_trigger": false
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "actions-reusable-workflows",
+  "triggers": [
+    {
+      "query": "Set up CI for this repo using our shared reusable workflows",
+      "should_trigger": true
+    },
+    {
+      "query": "Add the reusable CodeQL workflow to this project",
+      "should_trigger": true
+    },
+    {
+      "query": "Wire up releases using the bitwise release workflow with vanity tags",
+      "should_trigger": true
+    },
+    {
+      "query": "Add Dependabot auto-merge using our shared workflow",
+      "should_trigger": true
+    },
+    {
+      "query": "Enable the /merge fast-forward flow in this repo",
+      "should_trigger": true
+    },
+    {
+      "query": "Scaffold .github/ with our standard CI and release automation",
+      "should_trigger": true
+    },
+    {
+      "query": "Which reusable workflow do I call for releases, and what permissions does the caller grant?",
+      "should_trigger": true
+    },
+    {
+      "query": "Add a caller that uses bitwise-media-group/github-workflows ci.yaml",
+      "should_trigger": true
+    },
+    {
+      "query": "Write a CI workflow from scratch with a custom build matrix",
+      "should_trigger": false
+    },
+    {
+      "query": "Harden the permissions in this workflow",
+      "should_trigger": false
+    },
+    {
+      "query": "Run actionlint over the workflows and fix the errors",
+      "should_trigger": false
+    },
+    {
+      "query": "Create a Terraform module for an ECR registry",
+      "should_trigger": false
+    },
+    {
+      "query": "Add a Jenkins pipeline for this project",
+      "should_trigger": false
+    },
+    {
+      "query": "Explain how GitHub Actions expression truthiness works",
+      "should_trigger": false
+    }
+  ]
+}
