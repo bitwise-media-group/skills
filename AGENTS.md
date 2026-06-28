@@ -57,7 +57,7 @@ per tool.
 ## Evals
 
 Evals run through the [evolve](https://github.com/bitwise-media-group/evolve) CLI (`.evolve.json` holds the repo config;
-the `EVOLVE` make variable points at a sibling checkout's binary for now):
+`go tool evolve`, pinned in `tools/go.mod`):
 
 - Every new skill ships with `evals/<skill>/triggers.json` (10–20 `{query, should_trigger}` entries inside the
   `{"skill_name", "triggers"}` envelope; negatives must be near-misses) and `evals.json` (2–5 behavioral evals with
@@ -65,7 +65,7 @@ the `EVOLVE` make variable points at a sibling checkout's binary for now):
 - Eval `files` are fixture paths, never inline content. A path under `files/` stages into the workspace at its path
   relative to `files/`; anything else stages by basename (e.g. `fixtures/<name>/go.mod` for per-eval `go.mod` files that
   would collide under `files/`).
-- Changing a skill `description` ⇒ rerun Tier 1: `make eval-trigger`.
+- Changing a skill `description` ⇒ rerun Tier 1: `make triggers`.
 - Prefer deterministic assertions (`terraform validate`, `tflint`, file/regex checks) over LLM-judged ones.
 - Results and token cost are committed: `evals/<skill>/results.json` (raw, rewritten per-model by the sweeps),
   `EVALUATION.md` + `EVALUATION.json` (root rollup), and `plugins/<plugin>/EVALUATION.md` (per-eval detail).
@@ -77,18 +77,15 @@ the `EVOLVE` make variable points at a sibling checkout's binary for now):
 Run before committing:
 
 ```sh
-make fmt                          # prettier, pinned via package.json (SKILL.md is prettier-ignored)
-make license                      # SPDX license headers via addlicense, pinned in tools/go.mod
-make eval-static                  # Tier 0: frontmatter, manifests, version sync
-claude plugin validate .          # Claude marketplace/plugin schema
-make lint                         # markdown style (120-col, config in .markdownlint-cli2.yaml)
+make fmt                          # prettier + addlicense SPDX headers (SKILL.md is prettier-ignored)
+make lint                         # markdownlint + evolve Tier 0 checks + eval JSON + license + plugin validate
 ```
 
-Node CLIs run from `node_modules/.bin` (locked by `package-lock.json` — no npx, no globals); Go developer CLIs are
-pinned in `tools/go.mod` and run via `go tool` (resolved through the root `go.work`). The Makefile also wraps Tiers 1–2
-(`make eval-trigger`, `make eval-behavior`, `make eval` for all tiers plus reports; pass `SKILL=`, `MODELS=`, `RUNS=`,
-`JOBS=`) and `make report` for the EVALUATION files — all through the `evolve` binary selected by `EVOLVE=` (default
-`../evolve/evolve`, a pinned go-tool later).
+Node CLIs run from `node_modules/.bin` (locked by `package-lock.json` — no npx, no globals); Go developer CLIs —
+including `evolve` and `addlicense` — are pinned in `tools/go.mod` and run via `go tool` (resolved through the root
+`go.work`). The behavioral tiers run through `evolve` too: `make triggers` (Tier 1), `make evals` (Tier 2), `make all`
+(all tiers plus reports), and `make report` to regenerate the EVALUATION files. Filter or tune a run with evolve's own
+flags: `go tool evolve run triggers --skill <name> --models <ids> --runs <n> --jobs <n>`.
 
 ## Markdown style
 

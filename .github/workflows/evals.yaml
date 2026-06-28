@@ -8,69 +8,69 @@ name: evals
 # Anthropic models run via `claude`, OpenAI via `codex`, Google via `gemini`;
 # models whose CLI/key is unavailable get token counts only.
 on:
-    workflow_dispatch:
-        inputs:
-            skill:
-                description: Only evaluate this skill (blank = all)
-                required: false
-                type: string
-            tier:
-                description: Which tiers to run
-                required: true
-                default: triggers
-                type: choice
-                options: [triggers, evals, both]
-            models:
-                description: Models to evaluate (provider names, model ids, or "all")
-                required: true
-                default: anthropic
-                type: string
+  workflow_dispatch:
+    inputs:
+      skill:
+        description: Only evaluate this skill (blank = all)
+        required: false
+        type: string
+      tier:
+        description: Which tiers to run
+        required: true
+        default: triggers
+        type: choice
+        options: [triggers, evals, both]
+      models:
+        description: Models to evaluate (provider names, model ids, or "all")
+        required: true
+        default: anthropic
+        type: string
 
 jobs:
-    evals:
-        runs-on: ubuntu-latest
-        env:
-            # Either Anthropic credential works: the claude CLI and the token-counting
-            # client accept an API key or a long-lived OAuth token (claude setup-token).
-            ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-            CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-            OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-            GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        steps:
-            - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
-            - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
-              with:
-                  node-version: 22
-            - uses: bitwise-media-group/setup-evolve@c1355d0d46a9ade667bd40c64e45ea838ab4daf8 # v1
-            - run: npm install -g @anthropic-ai/claude-code @openai/codex @google/gemini-cli
-            - name: Install terraform + tflint for deterministic grading
-              if: ${{ inputs.tier != 'triggers' }}
-              run: |
-                  sudo snap install terraform --classic || true
-                  curl -s https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash || true
-            - name: Tier 1 — trigger accuracy
-              if: ${{ inputs.tier == 'triggers' || inputs.tier == 'both' }}
-              run: |
-                  evolve run triggers \
-                    --models '${{ inputs.models }}' \
-                    ${{ inputs.skill && format('--skill {0}', inputs.skill) || '' }}
-            - name: Tier 2 — behavioral evals
-              if: ${{ inputs.tier == 'evals' || inputs.tier == 'both' }}
-              run: |
-                  evolve run evals \
-                    --models '${{ inputs.models }}' \
-                    ${{ inputs.skill && format('--skill {0}', inputs.skill) || '' }}
-            - name: Regenerate reports
-              if: always()
-              run: evolve report
-            - name: Upload results and reports
-              if: always()
-              uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-              with:
-                  name: eval-results
-                  path: |
-                      plugins/*/evals/*/results.json
-                      EVALUATION.md
-                      EVALUATION.json
-                      plugins/*/EVALUATION.md
-                  if-no-files-found: ignore
+  evals:
+    runs-on: ubuntu-latest
+    env:
+      # Either Anthropic credential works: the claude CLI and the token-counting
+      # client accept an API key or a long-lived OAuth token (claude setup-token).
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+      - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
+        with:
+          node-version: 22
+      - uses: bitwise-media-group/setup-evolve@c1355d0d46a9ade667bd40c64e45ea838ab4daf8 # v1
+      - run: npm install -g @anthropic-ai/claude-code @openai/codex @google/gemini-cli
+      - name: Install terraform + tflint for deterministic grading
+        if: ${{ inputs.tier != 'triggers' }}
+        run: |
+          sudo snap install terraform --classic || true
+          curl -s https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash || true
+      - name: Tier 1 — trigger accuracy
+        if: ${{ inputs.tier == 'triggers' || inputs.tier == 'both' }}
+        run: |
+          evolve run triggers \
+            --models '${{ inputs.models }}' \
+            ${{ inputs.skill && format('--skill {0}', inputs.skill) || '' }}
+      - name: Tier 2 — behavioral evals
+        if: ${{ inputs.tier == 'evals' || inputs.tier == 'both' }}
+        run: |
+          evolve run evals \
+            --models '${{ inputs.models }}' \
+            ${{ inputs.skill && format('--skill {0}', inputs.skill) || '' }}
+      - name: Regenerate reports
+        if: always()
+        run: evolve report
+      - name: Upload results and reports
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: eval-results
+          path: |
+            plugins/*/evals/*/results.json
+            EVALUATION.md
+            EVALUATION.json
+            plugins/*/EVALUATION.md
+          if-no-files-found: ignore

@@ -64,19 +64,18 @@ Symlinked installs update on `git pull`. Alternatively,
 ## Evals
 
 Each skill ships with evals under `plugins/<plugin>/evals/<skill>/`, run through the
-[evolve](https://github.com/bitwise-media-group/evolve) CLI (the `EVOLVE` make variable selects the binary):
+[evolve](https://github.com/bitwise-media-group/evolve) CLI (`go tool evolve`, pinned in `tools/go.mod`):
 
-- **Tier 0 — static lint** (`make eval-static`): frontmatter, manifests, version sync. Runs in CI on every push.
-- **Tier 1 — trigger accuracy** (`make eval-trigger`): does the skill activate for the right prompts and stay quiet for
+- **Tier 0 — static lint** (run inside `make lint`): frontmatter, manifests, version sync. Runs in CI on every push.
+- **Tier 1 — trigger accuracy** (`make triggers`): does the skill activate for the right prompts and stay quiet for
   near-misses? Real headless `claude -p` sessions.
-- **Tier 2 — behavioral** (`make eval-behavior`): does following the skill produce correct artifacts? Graded
-  deterministically (`terraform validate`, `tflint`, file/regex checks) with an optional LLM judge for subjective
-  assertions.
+- **Tier 2 — behavioral** (`make evals`): does following the skill produce correct artifacts? Graded deterministically
+  (`terraform validate`, `tflint`, file/regex checks) with an optional LLM judge for subjective assertions.
 
-Tiers 1–2 run per provider model (`MODELS=anthropic|openai|google|all` or specific model ids) and record token usage per
-eval via the provider token-counting APIs. Results land in each skill's committed `results.json`; `make report`
-(`evolve report`) renders them into [`EVALUATION.md`](EVALUATION.md) + `EVALUATION.json` (plugin-level rollup) and
-`plugins/<plugin>/EVALUATION.md` (per-eval detail).
+Tiers 1–2 run per provider model (evolve's `--models anthropic|openai|google|all`, or specific model ids; default from
+`.evolve.json`) and record token usage per eval via the provider token-counting APIs. Results land in each skill's
+committed `results.json`; `make report` (`evolve report`) renders them into [`EVALUATION.md`](EVALUATION.md) +
+`EVALUATION.json` (plugin-level rollup) and `plugins/<plugin>/EVALUATION.md` (per-eval detail).
 
 Tiers 1–2 cost tokens and run via the manual `evals` GitHub workflow or locally.
 

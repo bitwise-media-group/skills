@@ -4,8 +4,16 @@
   "type": "module",
   "description": "Lint and formatting tools for the skills marketplace.",
   "license": "MIT",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "npm run lint:md && npm run lint:plugin",
+    "lint:md": "markdownlint-cli2 '**/*.md'",
+    "lint:plugin": "claude plugin validate .",
+    "lint:fix": "markdownlint-cli2 --fix '**/*.md'"
+  },
   "devDependencies": {
     "markdownlint-cli2": "^0.22.1",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "@anthropic-ai/claude-code": "^2.1.185"
   }
 }

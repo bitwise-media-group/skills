@@ -23,20 +23,20 @@ name: Dependabot auto-merge
 # (evals.yml is workflow_dispatch-only). pull_request_target is safe here: the
 # reusable workflow never checks out or runs PR code.
 on:
-    pull_request_target:
-        types: [opened, reopened, synchronize]
-    workflow_run:
-        workflows: [ci]
-        types: [completed]
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+  workflow_run:
+    workflows: [ci]
+    types: [completed]
 
 # the App token does the privileged work; the caller grants nothing
 permissions: {}
 
 jobs:
-    auto-merge:
-        uses: bitwise-media-group/github-workflows/.github/workflows/dependabot-merge.yaml@077a003a620f49bd0062c73fc761dbea05d7fb70 # v1.1.0
-        with:
-            app-client-id: ${{ vars.FF_MERGE_CLIENT_ID }}
-            # update-types: '["version-update:semver-patch", "version-update:semver-minor"]' # default
-        secrets:
-            app-private-key: ${{ secrets.FF_MERGE_PRIVATE_KEY }}
+  auto-merge:
+    uses: bitwise-media-group/github-workflows/.github/workflows/dependabot-merge.yaml@077a003a620f49bd0062c73fc761dbea05d7fb70 # v1.1.0
+    with:
+      app-client-id: ${{ vars.FF_MERGE_CLIENT_ID }}
+      # update-types: '["version-update:semver-patch", "version-update:semver-minor"]' # default
+    secrets:
+      app-private-key: ${{ secrets.FF_MERGE_PRIVATE_KEY }}
