@@ -1,6 +1,6 @@
 ---
 name: go-release
-description: Release engineering for Go projects — GoReleaser v2 with version ldflags into an internal/version package, SBOMs and multi-arch container images, tag-triggered GitHub Actions releases, CI running build/vet/test -race/govulncheck with SHA-pinned actions, and Dependabot coverage for gomod, tools, npm, and Actions. Use when setting up releases or GoReleaser for a Go project, writing GitHub Actions CI or release workflows for a Go repository, stamping version metadata into a Go binary at build time, or adding Dependabot coverage to a Go repo.
+description: Release engineering for Go projects — GoReleaser v2 with version ldflags into an internal/version package, SBOMs and multi-arch container images, tag-triggered GitHub Actions releases, CI running build/vet/test -race/govulncheck with SHA-pinned actions, and Dependabot coverage for gomod, tools, npm, and Actions. Use when adding GitHub Actions CI for a Go repository; writing a release workflow that publishes Go binaries, SBOMs, and multi-arch container images; setting up GoReleaser for a Go project; stamping version metadata into a Go binary at build time; or adding Dependabot coverage to a Go repo. Not for scaffolding a new Go project or its Makefile.
 license: MIT
 ---
 

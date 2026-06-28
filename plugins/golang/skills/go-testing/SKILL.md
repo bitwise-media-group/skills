@@ -1,6 +1,6 @@
 ---
 name: go-testing
-description: Go testing conventions — table-driven tests with t.Run subtests, plain stdlib assertions (no testify or assertion frameworks), hand-written fakes behind small interfaces, t.Helper() helpers, httptest for HTTP handlers, and native fuzz targets (testing.F) with seed corpora. Use when writing or reviewing Go tests (_test.go files), testing a Go HTTP handler, adding a fuzz test or seed corpus to a Go package, or choosing go test flags for a Makefile or CI (-race, -fuzz, -fuzztime).
+description: Use when writing, reviewing, or running Go tests in _test.go files — writing tests for a Go package, adding table-driven tests with t.Run subtests, testing a Go HTTP handler with httptest, adding a Go fuzz test or seed corpus, running or choosing go test flags (-race, -fuzz, -fuzztime), or deciding whether to use testify. Covers Go testing conventions: table-driven tests, plain stdlib assertions (no testify or assertion frameworks), hand-written fakes behind small interfaces, t.Helper() helpers, httptest for handlers, and native fuzz targets (testing.F) with seed corpora.
 license: MIT
 ---
 

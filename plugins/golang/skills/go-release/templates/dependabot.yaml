@@ -6,58 +6,63 @@
 version: 2
 
 updates:
-    - package-ecosystem: github-actions
-      directory: /
-      schedule:
-          interval: daily
-      cooldown:
-          default-days: 7
-      groups:
-          all-minor-and-patch:
-              patterns:
-                  - "*"
-              update-types:
-                  - minor
-                  - patch
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 7
+    groups:
+      all-minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
 
-    - package-ecosystem: gomod
-      directory: /
-      schedule:
-          interval: daily
-      cooldown:
-          default-days: 7
-      groups:
-          all-minor-and-patch:
-              patterns:
-                  - "*"
-              update-types:
-                  - minor
-                  - patch
+  - package-ecosystem: gomod
+    directory: /
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 7
+    groups:
+      all-minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
 
-    - package-ecosystem: gomod
-      directory: /tools
-      schedule:
-          interval: daily
-      cooldown:
-          default-days: 7
-      groups:
-          tools:
-              patterns:
-                  - "*"
-              update-types:
-                  - minor
-                  - patch
+  - package-ecosystem: gomod
+    directory: /tools
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 7
+    # A Go `tool` module records its pinned CLIs (and their deps) as `// indirect`
+    # requires; the default direct-only allow filter then skips the whole group.
+    # `dependency-type: all` opts them back in.
+    allow:
+      - dependency-type: all
+    groups:
+      tools:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
 
-    - package-ecosystem: npm
-      directory: /
-      schedule:
-          interval: daily
-      cooldown:
-          default-days: 7
-      groups:
-          all-minor-and-patch:
-              patterns:
-                  - "*"
-              update-types:
-                  - minor
-                  - patch
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 7
+    groups:
+      all-minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch

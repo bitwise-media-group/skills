@@ -256,6 +256,35 @@ Keep the explicit loop when the body does real per-element work — transforming
 collections, or interleaving effects — and when a helper would need contortions (a closure capturing three locals) to
 express what a four-line loop says plainly.
 
+## `min`/`max`: why the builtins beat comparison guards
+
+Go 1.21 added `min` and `max` as predeclared builtins — distinct from the `slices.Min`/`slices.Max` functions, which
+take a slice; the builtins take a variadic list of ordered arguments. They subsume one of the oldest idioms in
+imperative code: declare a value, then nudge it back inside a bound with an `if`.
+
+```go
+paneH := d.h - footerH - headerH
+if paneH < 3 {
+	paneH = 3
+}
+```
+
+That is four lines the reader has to execute mentally to learn one fact — `paneH` is at least 3.
+`paneH := max(d.h-footerH-headerH, 3)` states the fact directly. Three shapes cover every clamp:
+
+- `max(x, lo)` — raise to a floor; the result is never below `lo`.
+- `min(x, hi)` — cap at a ceiling; the result is never above `hi`.
+- `min(max(x, lo), hi)` — confine to the inclusive range `[lo, hi]`.
+
+They are generic over `cmp.Ordered`, so the same calls work for `int`, `float64`, `time.Duration`, or `string`, and they
+accept more than two arguments (`max(a, b, c)`) when several candidates compete. `gopls`'s `minmax` modernizer rewrites
+the guard form for you — `gopls modernize` or the editor quick-fix applies it across a package, which is the diagnostic
+("if statement can be modernized using max") you see in-editor.
+
+One caveat for floating-point: the builtins follow the Go spec's NaN and signed-zero rules, which can differ in those
+corner cases from a hand-rolled comparison. For integer clamps — the overwhelming majority of real uses — the builtin
+and the guard are exactly equivalent, and the builtin is the one to write.
+
 ## Dependencies: stdlib-first
 
 `net/http`, `log/slog`, `encoding/json`, `testing`, and `database/sql` cover most service needs. Every dependency is a

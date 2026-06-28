@@ -2,221 +2,910 @@
 
 # golang evaluations
 
-## Anthropic — `claude-fable-5`
+## go-docs
 
-### Triggers — go-docs
+### Triggers
 
-Last run 2026-06-12T21:53:46Z (evolve v0.1.0-12-g64deaa5, timeout 120s), 3 runs per query.
+#### Add doc comments to the exported functions in this Go package (expected: yes)
 
-| Query | Expected | Rate | Result | Avg run | Input tokens | Est. cost |
-| --- | --- | --- | --- | --- | --- | --- |
-| Add doc comments to the exported functions in this Go packag… | yes | 3/3 | PASS | 6.7s | 1,360 | $0.0136 |
-| Write a package comment for internal/clientmap | yes | 3/3 | PASS | 6.8s | 1,357 | $0.0136 |
-| Should the package comment go in doc.go or at the top of an … | yes | 3/3 | PASS | 5.7s | 1,365 | $0.0137 |
-| Document the exported API of this Go module | yes | 3/3 | PASS | 9.6s | 1,354 | $0.0135 |
-| Generate markdown CLI docs for my cobra tool | yes | 3/3 | PASS | 6.4s | 1,361 | $0.0136 |
-| Make my Go CLI's documentation consumable by LLMs | yes | 3/3 | PASS | 7.0s | 1,363 | $0.0136 |
-| Review this Go package for missing godoc comments | yes | 3/3 | PASS | 7.1s | 1,357 | $0.0136 |
-| Add a doc.go to this package | yes | 3/3 | PASS | 8.2s | 1,353 | $0.0135 |
-| Write a README for this Go project | no | 0/3 | PASS | 15.2s | 1,352 | $0.0135 |
-| Add inline comments explaining how this Go algorithm works | no | 0/3 | PASS | 18.2s | 1,361 | $0.0136 |
-| Write table-driven tests for this Go function | no | 0/3 | PASS | 22.5s | 1,356 | $0.0136 |
-| Scaffold a new Go service with cmd and internal layout | no | 0/3 | PASS | 29.1s | 1,362 | $0.0136 |
-| Add docstrings to this Python module | no | 0/3 | PASS | 17.3s | 1,354 | $0.0135 |
-| Generate OpenAPI docs for my Go REST API | no | 0/3 | PASS | 19.5s | 1,361 | $0.0136 |
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 6.4s | 1,029 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 9.5s | 1,396 | $0.0070 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 10.4s | 1,029 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 2/3 | +0% | 40.2s | 907 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 9.5s | 907 | $0.0045 |
 
-## Anthropic — `claude-haiku-4-5`
+#### Write a package comment for internal/clientmap (expected: yes)
 
-### Triggers — go-docs
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 6.4s | 1,027 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 8.2s | 1,393 | $0.0070 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 2/3 | +0% | 6.3s | 1,027 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 14.5s | 904 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 7.4s | 904 | $0.0045 |
 
-Last run 2026-06-16T08:26:10Z (evolve 0.2.0, timeout 120s), 3 runs per query.
+#### Should the package comment go in doc.go or at the top of an existing file? (expected: yes)
 
-| Query | Expected | Rate | Result | Avg run | Input tokens | Est. cost |
-| --- | --- | --- | --- | --- | --- | --- |
-| Add doc comments to the exported functions in this Go packag… | yes | 0/3 | FAIL | 8.6s | 1,005 | $0.0010 |
-| Write a package comment for internal/clientmap | yes | 0/3 | FAIL | 7.7s | 1,003 | $0.0010 |
-| Should the package comment go in doc.go or at the top of an … | yes | 2/3 | PASS | 43.8s | 1,012 | $0.0010 |
-| Document the exported API of this Go module | yes | 0/3 | FAIL | 8.1s | 1,002 | $0.0010 |
-| Generate markdown CLI docs for my cobra tool | yes | 1/3 | FAIL | 7.1s | 1,002 | $0.0010 |
-| Make my Go CLI's documentation consumable by LLMs | yes | 1/3 | FAIL | 9.2s | 1,006 | $0.0010 |
-| Review this Go package for missing godoc comments | yes | 0/3 | FAIL | 6.0s | 1,003 | $0.0010 |
-| Add a doc.go to this package | yes | 0/3 | FAIL | 6.0s | 1,002 | $0.0010 |
-| Write a README for this Go project | no | 0/3 | PASS | 10.7s | 1,001 | $0.0010 |
-| Add inline comments explaining how this Go algorithm works | no | 0/3 | PASS | 3.5s | 1,003 | $0.0010 |
-| Write table-driven tests for this Go function | no | 0/3 | PASS | 3.4s | 1,003 | $0.0010 |
-| Scaffold a new Go service with cmd and internal layout | no | 0/3 | PASS | 10.1s | 1,005 | $0.0010 |
-| Add docstrings to this Python module | no | 0/3 | PASS | 4.6s | 1,002 | $0.0010 |
-| Generate OpenAPI docs for my Go REST API | no | 0/3 | PASS | 7.8s | 1,003 | $0.0010 |
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | +0% | 9.6s | 1,036 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 5.4s | 1,401 | $0.0070 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 5.9s | 1,036 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 7.7s | 913 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 4.6s | 913 | $0.0046 |
 
-## Anthropic — `claude-opus-4-8`
+#### Document the exported API of this Go module (expected: yes)
 
-### Triggers — go-docs
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 7.3s | 1,026 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 12.6s | 1,390 | $0.0069 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 5.0s | 1,026 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 12.5s | 904 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 8.3s | 904 | $0.0045 |
 
-Last run 2026-06-12T21:51:22Z (evolve v0.1.0-12-g64deaa5, timeout 120s), 3 runs per query.
+#### Generate markdown CLI docs for my cobra tool (expected: yes)
 
-| Query | Expected | Rate | Result | Avg run | Input tokens | Est. cost |
-| --- | --- | --- | --- | --- | --- | --- |
-| Add doc comments to the exported functions in this Go packag… | yes | 3/3 | PASS | 5.1s | 1,360 | $0.0068 |
-| Write a package comment for internal/clientmap | yes | 3/3 | PASS | 6.0s | 1,357 | $0.0068 |
-| Should the package comment go in doc.go or at the top of an … | yes | 3/3 | PASS | 3.2s | 1,365 | $0.0068 |
-| Document the exported API of this Go module | yes | 0/3 | FAIL | 13.1s | 1,354 | $0.0068 |
-| Generate markdown CLI docs for my cobra tool | yes | 3/3 | PASS | 4.4s | 1,361 | $0.0068 |
-| Make my Go CLI's documentation consumable by LLMs | yes | 3/3 | PASS | 5.1s | 1,363 | $0.0068 |
-| Review this Go package for missing godoc comments | yes | 3/3 | PASS | 6.8s | 1,357 | $0.0068 |
-| Add a doc.go to this package | yes | 3/3 | PASS | 7.8s | 1,353 | $0.0068 |
-| Write a README for this Go project | no | 0/3 | PASS | 10.9s | 1,352 | $0.0068 |
-| Add inline comments explaining how this Go algorithm works | no | 0/3 | PASS | 12.9s | 1,361 | $0.0068 |
-| Write table-driven tests for this Go function | no | 0/3 | PASS | 15.3s | 1,356 | $0.0068 |
-| Scaffold a new Go service with cmd and internal layout | no | 0/3 | PASS | 16.6s | 1,362 | $0.0068 |
-| Add docstrings to this Python module | no | 0/3 | PASS | 10.2s | 1,354 | $0.0068 |
-| Generate OpenAPI docs for my Go REST API | no | 0/3 | PASS | 13.3s | 1,361 | $0.0068 |
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 1/3 | +33% | 8.1s | 1,026 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 8.1s | 1,397 | $0.0070 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 4.2s | 1,026 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 11.9s | 904 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 9.2s | 904 | $0.0045 |
 
-## Anthropic — `claude-sonnet-4-6`
+#### Make my Go CLI's documentation consumable by LLMs (expected: yes)
 
-### Triggers — go-docs
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 1/3 | +33% | 8.2s | 1,030 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 6.9s | 1,399 | $0.0070 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 4.1s | 1,030 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 12.5s | 908 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 8.1s | 908 | $0.0045 |
 
-Last run 2026-06-12T21:49:37Z (evolve v0.1.0-12-g64deaa5, timeout 120s), 3 runs per query.
+#### Review this Go package for missing godoc comments (expected: yes)
 
-| Query | Expected | Rate | Result | Avg run | Input tokens | Est. cost |
-| --- | --- | --- | --- | --- | --- | --- |
-| Add doc comments to the exported functions in this Go packag… | yes | 0/3 | FAIL | 12.0s | 1,005 | $0.0030 |
-| Write a package comment for internal/clientmap | yes | 1/3 | FAIL | 8.5s | 1,003 | $0.0030 |
-| Should the package comment go in doc.go or at the top of an … | yes | 3/3 | PASS | 3.3s | 1,012 | $0.0030 |
-| Document the exported API of this Go module | yes | 1/3 | FAIL | 6.8s | 1,002 | $0.0030 |
-| Generate markdown CLI docs for my cobra tool | yes | 3/3 | PASS | 3.5s | 1,002 | $0.0030 |
-| Make my Go CLI's documentation consumable by LLMs | yes | 3/3 | PASS | 4.7s | 1,006 | $0.0030 |
-| Review this Go package for missing godoc comments | yes | 3/3 | PASS | 3.0s | 1,003 | $0.0030 |
-| Add a doc.go to this package | yes | 0/3 | FAIL | 8.4s | 1,002 | $0.0030 |
-| Write a README for this Go project | no | 1/3 | PASS | 59.2s | 1,001 | $0.0030 |
-| Add inline comments explaining how this Go algorithm works | no | 0/3 | PASS | 6.4s | 1,003 | $0.0030 |
-| Write table-driven tests for this Go function | no | 0/3 | PASS | 8.4s | 1,003 | $0.0030 |
-| Scaffold a new Go service with cmd and internal layout | no | 0/3 | PASS | 13.0s | 1,005 | $0.0030 |
-| Add docstrings to this Python module | no | 0/3 | PASS | 7.3s | 1,002 | $0.0030 |
-| Generate OpenAPI docs for my Go REST API | no | 0/3 | PASS | 99.9s | 1,003 | $0.0030 |
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 6.6s | 1,027 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 2/3 | +0% | 9.2s | 1,393 | $0.0070 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 4.8s | 1,027 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 9.7s | 905 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 5.0s | 905 | $0.0045 |
 
-### Evals — go-docs
+#### Add a doc.go to this package (expected: yes)
 
-Last run 2026-06-16T08:30:28Z (evolve 0.2.0, timeout 600s).
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 6.1s | 1,026 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 7.5s | 1,389 | $0.0069 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 11.0s | 1,026 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 32.1s | 903 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 11.8s | 903 | $0.0045 |
 
-| Eval | Result | Run | Input tokens | Est. cost | Measured in/out | Measured cost |
-| --- | --- | --- | --- | --- | --- | --- |
-| doc-multi-file-package | PASS | 33.4s | 1,009 | $0.0030 | 190,950/1,539 | $0.2455 |
-| doc-single-file-package | FAIL | 28.1s | 1,008 | $0.0030 | 134,713/1,194 | $0.2188 |
-| cobra-docgen | PASS | 144.7s | 1,048 | $0.0031 | 207,052/5,029 | $0.3591 |
+#### Write a README for this Go project (expected: no)
 
-- `doc-single-file-package` failed `internal/version/version.go matches /^// .+\nvar \(/`: no match
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 7.5s | 1,025 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 10.8s | 1,388 | $0.0069 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 60.4s | 1,025 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 120.0s | 903 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 1/3 | +0% | 83.2s | 903 | $0.0045 |
 
-## Google — `gemini-3.1-flash-lite`
+#### Add inline comments explaining how this Go algorithm works (expected: no)
 
-### Triggers — go-docs
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 4.2s | 1,027 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 10.8s | 1,397 | $0.0070 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 8.0s | 1,027 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 50.1s | 905 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +67% | 120.0s | 928 | $0.0046 |
 
-Last run 2026-06-12T22:39:14Z (evolve v0.1.0-12-g64deaa5, timeout 120s), 3 runs per query.
+#### Write table-driven tests for this Go function (expected: no)
 
-| Query | Expected | Rate | Result | Avg run | Input tokens | Est. cost |
-| --- | --- | --- | --- | --- | --- | --- |
-| Add doc comments to the exported functions in this Go packag… | yes | 2/3 | PASS | 30.8s | 972 | $0.0002 |
-| Write a package comment for internal/clientmap | yes | 0/3 | FAIL | 84.0s | 970 | $0.0002 |
-| Should the package comment go in doc.go or at the top of an … | yes | 0/3 | FAIL | 120.0s | 979 | $0.0002 |
-| Document the exported API of this Go module | yes | 0/3 | FAIL | 120.0s | 969 | $0.0002 |
-| Generate markdown CLI docs for my cobra tool | yes | 0/3 | FAIL | 120.0s | 969 | $0.0002 |
-| Make my Go CLI's documentation consumable by LLMs | yes | 0/3 | FAIL | 120.0s | 972 | $0.0002 |
-| Review this Go package for missing godoc comments | yes | 0/3 | FAIL | 120.0s | 970 | $0.0002 |
-| Add a doc.go to this package | yes | 0/3 | FAIL | 120.0s | 969 | $0.0002 |
-| Write a README for this Go project | no | 0/3 | PASS | 120.0s | 968 | $0.0002 |
-| Add inline comments explaining how this Go algorithm works | no | 0/3 | PASS | 120.0s | 970 | $0.0002 |
-| Write table-driven tests for this Go function | no | 0/3 | PASS | 120.0s | 970 | $0.0002 |
-| Scaffold a new Go service with cmd and internal layout | no | 0/3 | PASS | 120.0s | 972 | $0.0002 |
-| Add docstrings to this Python module | no | 0/3 | PASS | 120.0s | 968 | $0.0002 |
-| Generate OpenAPI docs for my Go REST API | no | 0/3 | PASS | 120.0s | 969 | $0.0002 |
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 3.3s | 1,027 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 19.7s | 1,392 | $0.0070 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 7.4s | 1,027 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 36.6s | 904 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 1/3 | +0% | 99.5s | 904 | $0.0045 |
 
-## OpenAI — `gpt-5.3-codex-spark`
+#### Scaffold a new Go service with cmd and internal layout (expected: no)
 
-### Triggers — go-docs
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 10.8s | 1,029 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 15.1s | 1,398 | $0.0070 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 12.7s | 1,029 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 120.0s | 907 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 1/3 | +67% | 99.5s | 930 | $0.0046 |
 
-Last run 2026-06-12T21:59:18Z (evolve v0.1.0-12-g64deaa5, timeout 120s), 3 runs per query.
+#### Add docstrings to this Python module (expected: no)
 
-| Query | Expected | Rate | Result | Avg run | Input tokens | Est. cost |
-| --- | --- | --- | --- | --- | --- | --- |
-| Add doc comments to the exported functions in this Go packag… | yes | 2/3 | PASS | 22.2s | — | n/a |
-| Write a package comment for internal/clientmap | yes | 2/3 | PASS | 10.6s | — | n/a |
-| Should the package comment go in doc.go or at the top of an … | yes | 1/3 | FAIL | 5.0s | — | n/a |
-| Document the exported API of this Go module | yes | 2/3 | PASS | 26.4s | — | n/a |
-| Generate markdown CLI docs for my cobra tool | yes | 3/3 | PASS | 29.9s | — | n/a |
-| Make my Go CLI's documentation consumable by LLMs | yes | 2/3 | PASS | 11.2s | — | n/a |
-| Review this Go package for missing godoc comments | yes | 2/3 | PASS | 11.7s | — | n/a |
-| Add a doc.go to this package | yes | 0/3 | FAIL | 19.9s | — | n/a |
-| Write a README for this Go project | no | 0/3 | PASS | 28.3s | — | n/a |
-| Add inline comments explaining how this Go algorithm works | no | 0/3 | PASS | 15.9s | — | n/a |
-| Write table-driven tests for this Go function | no | 0/3 | PASS | 15.0s | — | n/a |
-| Scaffold a new Go service with cmd and internal layout | no | 0/3 | PASS | 40.6s | — | n/a |
-| Add docstrings to this Python module | no | 0/3 | PASS | 16.3s | — | n/a |
-| Generate OpenAPI docs for my Go REST API | no | 0/3 | PASS | 43.2s | — | n/a |
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 4.7s | 1,026 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 16.0s | 1,390 | $0.0069 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 7.5s | 1,026 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 26.8s | 903 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +0% | 44.9s | 903 | $0.0045 |
 
-## OpenAI — `gpt-5.4`
+#### Generate OpenAPI docs for my Go REST API (expected: no)
 
-### Triggers — go-docs
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 6.9s | 1,027 | $0.0010 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 13.6s | 1,397 | $0.0070 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 32.7s | 1,027 | $0.0031 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +67% | 73.8s | 928 | $0.0023 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +67% | 120.0s | 928 | $0.0046 |
 
-Last run 2026-06-12T22:11:27Z (evolve v0.1.0-12-g64deaa5, timeout 120s), 3 runs per query.
+### Evals
 
-| Query | Expected | Rate | Result | Avg run | Input tokens | Est. cost |
-| --- | --- | --- | --- | --- | --- | --- |
-| Add doc comments to the exported functions in this Go packag… | yes | 3/3 | PASS | 11.3s | 907 | $0.0023 |
-| Write a package comment for internal/clientmap | yes | 3/3 | PASS | 26.3s | 904 | $0.0023 |
-| Should the package comment go in doc.go or at the top of an … | yes | 3/3 | PASS | 6.4s | 913 | $0.0023 |
-| Document the exported API of this Go module | yes | 3/3 | PASS | 12.6s | 904 | $0.0023 |
-| Generate markdown CLI docs for my cobra tool | yes | 3/3 | PASS | 8.6s | 904 | $0.0023 |
-| Make my Go CLI's documentation consumable by LLMs | yes | 3/3 | PASS | 9.6s | 908 | $0.0023 |
-| Review this Go package for missing godoc comments | yes | 3/3 | PASS | 9.2s | 905 | $0.0023 |
-| Add a doc.go to this package | yes | 3/3 | PASS | 14.3s | 903 | $0.0023 |
-| Write a README for this Go project | no | 0/3 | PASS | 74.1s | 903 | $0.0023 |
-| Add inline comments explaining how this Go algorithm works | no | 1/3 | PASS | 40.5s | 905 | $0.0023 |
-| Write table-driven tests for this Go function | no | 0/3 | PASS | 79.3s | 904 | $0.0023 |
-| Scaffold a new Go service with cmd and internal layout | no | 0/3 | PASS | 99.1s | 907 | $0.0023 |
-| Add docstrings to this Python module | no | 0/3 | PASS | 26.9s | 903 | $0.0023 |
-| Generate OpenAPI docs for my Go REST API | no | 3/3 | FAIL | 31.0s | 905 | $0.0023 |
+#### doc-multi-file-package
 
-## OpenAI — `gpt-5.4-mini`
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +0% | +40% | 23.1s | 1,033 | $0.0010 | 37/1,219 | 108,694/18,660 | $0.0549 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +30% | 56.3s | 1,405 | $0.0070 | 2,859/2,803 | 166,365/10,390 | $0.2720 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +30% | 21.9s | 1,033 | $0.0031 | 8/899 | 116,855/9,777 | $0.1078 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 31.1s | 933 | $0.0023 | 9,094/1,189 | 74,624/— | $0.2271 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 60.8s | 933 | $0.0047 | 17,372/1,437 | 96,000/— | $0.6100 |
 
-### Triggers — go-docs
+#### doc-single-file-package
 
-Last run 2026-06-12T22:05:11Z (evolve v0.1.0-12-g64deaa5, timeout 120s), 3 runs per query.
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +0% | +14% | 11.7s | 1,032 | $0.0010 | 27/700 | 83,632/15,608 | $0.0437 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +0% | 38.5s | 1,403 | $0.0070 | 2,859/2,122 | 163,185/9,374 | $0.2433 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +43% | +0% | 37.2s | 1,032 | $0.0031 | 8/1,878 | 116,417/10,371 | $0.1259 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +14% | 28.5s | 932 | $0.0023 | 17,762/1,082 | 66,432/— | $0.2267 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +43% | +0% | 35.0s | 932 | $0.0047 | 12,297/1,482 | 106,240/— | $0.6371 |
 
-| Query | Expected | Rate | Result | Avg run | Input tokens | Est. cost |
-| --- | --- | --- | --- | --- | --- | --- |
-| Add doc comments to the exported functions in this Go packag… | yes | 3/3 | PASS | 11.1s | 907 | $0.0007 |
-| Write a package comment for internal/clientmap | yes | 3/3 | PASS | 7.1s | 904 | $0.0007 |
-| Should the package comment go in doc.go or at the top of an … | yes | 3/3 | PASS | 6.5s | 913 | $0.0007 |
-| Document the exported API of this Go module | yes | 3/3 | PASS | 9.6s | 904 | $0.0007 |
-| Generate markdown CLI docs for my cobra tool | yes | 3/3 | PASS | 8.5s | 904 | $0.0007 |
-| Make my Go CLI's documentation consumable by LLMs | yes | 3/3 | PASS | 8.8s | 908 | $0.0007 |
-| Review this Go package for missing godoc comments | yes | 3/3 | PASS | 8.1s | 905 | $0.0007 |
-| Add a doc.go to this package | yes | 3/3 | PASS | 9.5s | 903 | $0.0007 |
-| Write a README for this Go project | no | 0/3 | PASS | 55.4s | 903 | $0.0007 |
-| Add inline comments explaining how this Go algorithm works | no | 0/3 | PASS | 55.0s | 905 | $0.0007 |
-| Write table-driven tests for this Go function | no | 0/3 | PASS | 42.0s | 904 | $0.0007 |
-| Scaffold a new Go service with cmd and internal layout | no | 1/3 | PASS | 83.7s | 907 | $0.0007 |
-| Add docstrings to this Python module | no | 0/3 | PASS | 23.4s | 903 | $0.0007 |
-| Generate OpenAPI docs for my Go REST API | no | 0/3 | PASS | 96.2s | 905 | $0.0007 |
+#### cobra-docgen
 
-## OpenAI — `gpt-5.5`
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +33% | +67% | 44.4s | 1,072 | $0.0011 | 74/2,612 | 312,667/29,720 | $0.1045 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +67% | 79.9s | 1,462 | $0.0073 | 2,865/5,418 | 261,434/14,153 | $0.4227 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +67% | 76.3s | 1,072 | $0.0032 | 10/2,791 | 178,277/13,301 | $0.2037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +17% | 46.2s | 968 | $0.0024 | 15,099/2,173 | 52,224/— | $0.2009 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +33% | 91.6s | 968 | $0.0048 | 44,170/3,923 | 145,792/— | $1.0675 |
 
-### Triggers — go-docs
+## go-project
 
-Last run 2026-06-12T22:18:59Z (evolve v0.1.0-12-g64deaa5, timeout 120s), 3 runs per query.
+### Triggers
 
-| Query | Expected | Rate | Result | Avg run | Input tokens | Est. cost |
-| --- | --- | --- | --- | --- | --- | --- |
-| Add doc comments to the exported functions in this Go packag… | yes | 3/3 | PASS | 7.7s | 907 | $0.0045 |
-| Write a package comment for internal/clientmap | yes | 3/3 | PASS | 17.9s | 904 | $0.0045 |
-| Should the package comment go in doc.go or at the top of an … | yes | 3/3 | PASS | 6.3s | 913 | $0.0046 |
-| Document the exported API of this Go module | yes | 3/3 | PASS | 6.2s | 904 | $0.0045 |
-| Generate markdown CLI docs for my cobra tool | yes | 3/3 | PASS | 6.7s | 904 | $0.0045 |
-| Make my Go CLI's documentation consumable by LLMs | yes | 3/3 | PASS | 8.2s | 908 | $0.0045 |
-| Review this Go package for missing godoc comments | yes | 3/3 | PASS | 7.5s | 905 | $0.0045 |
-| Add a doc.go to this package | yes | 3/3 | PASS | 9.0s | 903 | $0.0045 |
-| Write a README for this Go project | no | 0/3 | PASS | 102.5s | 903 | $0.0045 |
-| Add inline comments explaining how this Go algorithm works | no | 0/3 | PASS | 77.7s | 905 | $0.0045 |
-| Write table-driven tests for this Go function | no | 0/3 | PASS | 83.7s | 904 | $0.0045 |
-| Scaffold a new Go service with cmd and internal layout | no | 2/3 | FAIL | 62.8s | 907 | $0.0045 |
-| Add docstrings to this Python module | no | 2/3 | FAIL | 35.2s | 903 | $0.0045 |
-| Generate OpenAPI docs for my Go REST API | no | 0/3 | PASS | 106.0s | 905 | $0.0045 |
+#### Scaffold a new Go service called payments (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 3/3 | +0% | 6.7s | 1,389 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 6.9s | 1,871 | $0.0094 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 5.1s | 1,389 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 11.6s | 1,171 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 7.9s | 1,171 | $0.0059 |
+
+#### Set up a new Go project with cmd and internal layout (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 3/3 | +0% | 7.9s | 1,392 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 6.7s | 1,875 | $0.0094 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 5.3s | 1,392 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 10.6s | 1,174 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 8.1s | 1,174 | $0.0059 |
+
+#### Add a tools module to pin our Go developer tooling (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | +33% | 7.0s | 1,392 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 8.2s | 1,875 | $0.0094 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 6.0s | 1,392 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 11.3s | 1,173 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 9.5s | 1,173 | $0.0059 |
+
+#### Create a Makefile for this Go repo with the standard targets (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 7.7s | 1,394 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 2/3 | +0% | 10.1s | 1,877 | $0.0094 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 7.4s | 1,394 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 9.7s | 1,175 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 11.5s | 1,175 | $0.0059 |
+
+#### Pin addlicense and goreleaser as developer tools in this Go repo (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 8.3s | 1,396 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 13.4s | 1,882 | $0.0094 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 2/3 | +0% | 6.2s | 1,396 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 19.0s | 1,177 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 7.8s | 1,177 | $0.0059 |
+
+#### Restructure this Go repository to the standard layout (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | -33% | 11.3s | 1,391 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 2/3 | +0% | 10.0s | 1,873 | $0.0094 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 2/3 | +0% | 32.6s | 1,391 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 10.8s | 1,172 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 7.3s | 1,172 | $0.0059 |
+
+#### Where should this shared Go code live — pkg or internal? (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 1/3 | +33% | 7.0s | 1,393 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 6.7s | 1,876 | $0.0094 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 7.7s | 1,393 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +100% | 19.5s | 1,261 | $0.0032 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 6.1s | 1,175 | $0.0059 |
+
+#### Scaffold a new npm package with the usual project files (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 29.6s | 1,392 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 17.5s | 1,874 | $0.0094 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 18.6s | 1,392 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 120.0s | 1,174 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 62.7s | 1,174 | $0.0059 |
+
+#### Create a new Terraform module with the standard layout (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 8.6s | 1,391 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 18.0s | 1,873 | $0.0094 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 14.7s | 1,391 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 111.0s | 1,172 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 95.2s | 1,172 | $0.0059 |
+
+#### Set up the GitHub Actions release workflow for this Go repo (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 1/3 | +0% | 9.4s | 1,392 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 17.3s | 1,879 | $0.0094 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 12.0s | 1,392 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 72.2s | 1,175 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 120.0s | 1,175 | $0.0059 |
+
+#### Write a fuzz test for this Go parser (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 5.4s | 1,390 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 15.3s | 1,872 | $0.0094 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 11.2s | 1,390 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 81.7s | 1,171 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 1/3 | — | 88.9s | 1,171 | $0.0059 |
+
+#### Initialize a Python project with uv (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 8.7s | 1,388 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 17.7s | 1,869 | $0.0093 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 18.1s | 1,388 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 86.8s | 1,169 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 42.5s | 1,169 | $0.0058 |
+
+#### Add error wrapping to this Go function (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 4.1s | 1,389 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 15.8s | 1,870 | $0.0094 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 9.5s | 1,389 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 20.4s | 1,170 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 69.6s | 1,170 | $0.0059 |
+
+### Evals
+
+#### project-scaffold
+
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | +0% | -50% | 50.6s | 1,442 | $0.0014 | 42/3,231 | 338,621/21,731 | $0.0942 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | — | — | 468.2s | 1,947 | $0.0097 | 4,125/31,002 | 793,085/46,383 | $1.6567 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | — | +25% | 105.6s | 1,442 | $0.0043 | 10/6,505 | 150,968/17,618 | $0.2493 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +8% | 233.1s | 1,304 | $0.0033 | 59,752/9,407 | 836,224/— | $2.3810 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +8% | +8% | 177.9s | 1,304 | $0.0065 | 84,702/7,181 | 576,640/— | $3.5221 |
+
+- `claude-haiku-4-5` failed `file go.mod exists`: go.mod missing
+
+- `claude-haiku-4-5` failed `file cmd/orderd/main.go exists`: cmd/orderd/main.go missing
+
+- `claude-haiku-4-5` failed `file tools/go.mod exists`: tools/go.mod missing
+
+- `claude-haiku-4-5` failed `file Makefile exists`: Makefile missing
+
+- `claude-haiku-4-5` failed `go.mod matches /^module example\.com/orderd/`: go.mod missing
+
+- `claude-haiku-4-5` failed `tools/go.mod matches /^module .+/tools/`: tools/go.mod missing
+
+- `claude-haiku-4-5` failed `Makefile matches /^pr:/`: Makefile missing
+
+- `claude-haiku-4-5` failed `Makefile matches /go tool -modfile=tools/go\.mod/`: Makefile missing
+
+- `claude-haiku-4-5` failed `Makefile does not match /-C tools tool|TOOLBIN|tools/\.bin|GOBIN/`: Makefile missing
+
+- `claude-haiku-4-5` failed `cmd/orderd/main.go matches /func run\(/`: cmd/orderd/main.go missing
+
+- `claude-haiku-4-5` failed `command `go vet ./...` exits 0`: exit 1: pattern ./...: directory prefix . does not contain main module or its selected dependencies
+
+- `claude-opus-4-8` failed `Makefile does not match /-C tools tool|TOOLBIN|tools/\.bin|GOBIN/`: GOBIN
+
+#### pin-tool
+
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +0% | +0% | 17.3s | 1,439 | $0.0014 | 36/1,117 | 110,022/16,807 | $0.0509 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +0% | 95.7s | 1,940 | $0.0097 | 2,885/7,217 | 120,065/17,716 | $0.4327 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 47.5s | 1,439 | $0.0043 | 8/2,434 | 141,443/10,296 | $0.1414 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 72.3s | 1,303 | $0.0033 | 20,914/2,799 | 130,176/— | $0.4197 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 110.0s | 1,303 | $0.0065 | 80,520/4,605 | 191,232/— | $1.4969 |
+
+## go-release
+
+### Triggers
+
+#### Set up GoReleaser for this Go project (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | +0% | 7.5s | 1,228 | $0.0012 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 6.0s | 1,709 | $0.0085 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | — | 4.2s | 1,228 | $0.0037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 12.8s | 1,061 | $0.0027 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 11.2s | 1,061 | $0.0053 |
+
+#### Add a release workflow that publishes binaries and container images for our Go service (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 1/3 | +33% | 9.7s | 1,234 | $0.0012 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 7.5s | 1,717 | $0.0086 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | — | 4.9s | 1,234 | $0.0037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 10.5s | 1,065 | $0.0027 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 8.8s | 1,065 | $0.0053 |
+
+#### Stamp the version and commit into the Go binary at build time (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | +0% | 8.0s | 1,231 | $0.0012 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 5.7s | 1,713 | $0.0086 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | — | 5.7s | 1,231 | $0.0037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 11.7s | 1,063 | $0.0027 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 13.6s | 1,063 | $0.0053 |
+
+#### Add GitHub Actions CI for this Go repo (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 8.3s | 1,226 | $0.0012 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 2/3 | +0% | 8.1s | 1,712 | $0.0086 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | — | 3.8s | 1,226 | $0.0037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 11.9s | 1,060 | $0.0027 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 9.2s | 1,060 | $0.0053 |
+
+#### Configure Dependabot for our Go modules and GitHub Actions (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 9.4s | 1,230 | $0.0012 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 2/3 | +33% | 8.7s | 1,717 | $0.0086 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | — | 3.6s | 1,230 | $0.0037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 18.6s | 1,062 | $0.0027 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 8.6s | 1,062 | $0.0053 |
+
+#### Publish multi-arch Docker images from our Go release pipeline (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | +33% | 10.2s | 1,230 | $0.0012 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 2/3 | +0% | 10.5s | 1,716 | $0.0086 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | — | 4.5s | 1,230 | $0.0037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 11.0s | 1,062 | $0.0027 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 9.2s | 1,062 | $0.0053 |
+
+#### Add SBOM generation to the Go release build (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 9.0s | 1,228 | $0.0012 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 8.7s | 1,709 | $0.0085 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | — | 3.7s | 1,228 | $0.0037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 18.5s | 1,060 | $0.0027 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 7.0s | 1,060 | $0.0053 |
+
+#### Set up semantic-release for my npm package (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 7.9s | 1,227 | $0.0012 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 11.3s | 1,708 | $0.0085 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | — | 14.7s | 1,227 | $0.0037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 120.0s | 1,059 | $0.0026 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 120.0s | 1,059 | $0.0053 |
+
+#### Write a Dockerfile for my Python app (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 5.3s | 1,226 | $0.0012 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 13.1s | 1,709 | $0.0085 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | — | 10.6s | 1,226 | $0.0037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 28.3s | 1,059 | $0.0026 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 67.8s | 1,059 | $0.0053 |
+
+#### Scaffold a new Go project with a Makefile (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 9.5s | 1,229 | $0.0012 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 15.9s | 1,711 | $0.0086 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | — | 12.5s | 1,229 | $0.0037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +67% | 120.0s | 1,089 | $0.0027 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 1/3 | — | 106.0s | 1,061 | $0.0053 |
+
+#### Fix the failing Go unit test in CI (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 6.4s | 1,226 | $0.0012 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 12.1s | 1,709 | $0.0085 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | — | 15.3s | 1,226 | $0.0037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 113.7s | 1,059 | $0.0026 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 1/3 | — | 83.7s | 1,059 | $0.0053 |
+
+#### Write table-driven tests before we cut the release (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 8.7s | 1,228 | $0.0012 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 10.2s | 1,709 | $0.0085 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | — | 8.0s | 1,228 | $0.0037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 102.2s | 1,060 | $0.0027 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 120.0s | 1,060 | $0.0053 |
+
+#### Set up release-please for this TypeScript repo (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 8.9s | 1,228 | $0.0012 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 13.8s | 1,710 | $0.0086 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | — | 12.0s | 1,228 | $0.0037 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 120.0s | 1,061 | $0.0027 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 1/3 | — | 89.4s | 1,061 | $0.0053 |
+
+### Evals
+
+#### goreleaser-setup
+
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | +0% | +11% | 67.2s | 1,254 | $0.0013 | 60/4,447 | 461,586/22,683 | $0.1145 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +22% | 308.9s | 1,748 | $0.0087 | 3,469/22,553 | 649,994/87,252 | $1.7793 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +33% | 97.8s | 1,254 | $0.0038 | 10/5,947 | 183,446/18,457 | $0.2557 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +22% | 298.6s | 1,111 | $0.0028 | 35,358/10,937 | 594,560/— | $1.7389 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +22% | 311.5s | 1,111 | $0.0056 | 34,636/7,351 | 518,272/— | $2.9851 |
+
+- `claude-haiku-4-5` failed `command `goreleaser check` exits 0`: exit 1: : field image_templates not found in type config.DockerV2     │   line 54: field use not found in type config.DockerV2     │   line 55: field build_…
+
+#### ci-dependabot
+
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +0% | +57% | 28.6s | 1,265 | $0.0013 | 47/2,584 | 131,923/22,177 | $0.0712 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +29% | 60.8s | 1,769 | $0.0088 | 2,884/4,381 | 110,899/13,268 | $0.3127 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +14% | 63.0s | 1,265 | $0.0038 | 101/2,206 | 141,156/12,438 | $0.1653 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | FAIL | -14% | +57% | 89.7s | 1,122 | $0.0028 | 16,617/4,123 | 127,488/— | $0.4221 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +29% | 108.4s | 1,122 | $0.0056 | 37,435/4,093 | 199,680/— | $1.3084 |
+
+- `gpt-5.4` failed `.github/workflows/ci.yaml matches /go-version-file: go.mod/`: no match
+
+## go-style
+
+### Triggers
+
+#### Refactor this Go code to wrap errors properly (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 4.8s | 2,651 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 11.5s | 3,512 | $0.0176 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 8.6s | 2,651 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 19.4s | 2,241 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 8.0s | 2,241 | $0.0112 |
+
+#### Add structured logging to my Go service (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 5.8s | 2,648 | $0.0026 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 2/3 | +0% | 9.9s | 3,507 | $0.0175 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 3.7s | 2,648 | $0.0079 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 16.4s | 2,239 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 10.3s | 2,239 | $0.0112 |
+
+#### Review this Go package for idiomatic style (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 4.6s | 2,650 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 14.0s | 3,509 | $0.0175 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 14.6s | 2,650 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 10.2s | 2,240 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 6.5s | 2,240 | $0.0112 |
+
+#### How should I handle errors in this Go function? (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 4.3s | 2,651 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 14.5s | 3,509 | $0.0175 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 2/3 | +0% | 5.6s | 2,651 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | FAIL | 0/3 | +0% | 14.5s | 2,268 | $0.0057 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 4.7s | 2,242 | $0.0112 |
+
+#### Add a POST endpoint to my Go server using the stdlib router (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 6.4s | 2,653 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 8.1s | 3,517 | $0.0176 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 2/3 | +0% | 10.2s | 2,653 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 12.4s | 2,245 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 9.6s | 2,245 | $0.0112 |
+
+#### Convert these log.Printf calls to slog (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 4.7s | 2,650 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 17.2s | 3,510 | $0.0175 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 12.2s | 2,650 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 26.2s | 2,239 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 15.7s | 2,239 | $0.0112 |
+
+#### Should this Go interface live in the consumer or the producer package? (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 7.1s | 2,654 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 2/3 | +0% | 11.5s | 3,515 | $0.0176 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 2/3 | +0% | 5.6s | 2,654 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | FAIL | 0/3 | -33% | 7.7s | 2,271 | $0.0057 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 4.7s | 2,245 | $0.0112 |
+
+#### Build a Go CLI tool with subcommands — which framework should I use? (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 9.4s | 2,657 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 2/3 | +0% | 11.8s | 3,519 | $0.0176 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 9.7s | 2,657 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 2/3 | +0% | 19.1s | 2,247 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 4.7s | 2,247 | $0.0112 |
+
+#### Add a serve subcommand to my Go CLI (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 8.8s | 2,651 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 17.2s | 3,512 | $0.0176 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 98.9s | 2,651 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 14.9s | 2,241 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 9.7s | 2,241 | $0.0112 |
+
+#### How do I bind environment variables to flags in my Go CLI's configuration? (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | +0% | 5.3s | 2,656 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 6.5s | 3,520 | $0.0176 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 5.0s | 2,656 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 7.8s | 2,247 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 4.7s | 2,247 | $0.0112 |
+
+#### Generate markdown documentation for my cobra CLI (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 8.6s | 2,648 | $0.0026 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 13.4s | 3,513 | $0.0176 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 67.8s | 2,648 | $0.0079 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 120.0s | 2,239 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 1/3 | +0% | 103.5s | 2,239 | $0.0112 |
+
+#### Write table-driven tests for this Go function (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 3.9s | 2,650 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 14.8s | 3,509 | $0.0175 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 8.2s | 2,650 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 55.6s | 2,240 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +0% | 102.3s | 2,240 | $0.0112 |
+
+#### Set up GoReleaser for my Go project (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 10.3s | 2,651 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 13.5s | 3,510 | $0.0175 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 14.2s | 2,651 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 120.0s | 2,242 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +0% | 90.2s | 2,242 | $0.0112 |
+
+#### Scaffold a new Go service with cmd and internal directories (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 13.3s | 2,652 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 15.9s | 3,515 | $0.0176 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 14.7s | 2,652 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 120.0s | 2,243 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +0% | 30.7s | 2,243 | $0.0112 |
+
+#### Refactor this Rust code to use idiomatic error handling (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 3.4s | 2,655 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 11.3s | 3,515 | $0.0176 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 7.1s | 2,655 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 17.7s | 2,243 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +0% | 30.8s | 2,243 | $0.0112 |
+
+#### What's new in the latest Go release? (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 12.9s | 2,650 | $0.0027 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 20.9s | 3,507 | $0.0175 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 18.8s | 2,650 | $0.0080 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 27.4s | 2,240 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +0% | 35.3s | 2,240 | $0.0112 |
+
+#### Add structured logging to my Express app (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 7.5s | 2,648 | $0.0026 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 12.5s | 3,507 | $0.0175 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 7.8s | 2,648 | $0.0079 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 33.9s | 2,239 | $0.0056 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +100% | 120.0s | 2,265 | $0.0113 |
+
+### Evals
+
+#### wrap-errors-slog
+
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +17% | +17% | 45.6s | 2,665 | $0.0027 | 32/2,906 | 83,964/22,298 | $0.0682 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +0% | 54.7s | 3,526 | $0.0176 | 2,882/3,696 | 204,780/13,070 | $0.3405 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 42.3s | 2,665 | $0.0080 | 8/2,157 | 120,900/12,513 | $0.1443 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +17% | +17% | 36.3s | 2,278 | $0.0057 | 8,666/1,516 | 71,552/— | $0.2233 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +17% | 40.4s | 2,278 | $0.0114 | 19,734/1,420 | 71,040/— | $0.4965 |
+
+#### stdlib-handler
+
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +0% | +33% | 14.3s | 2,679 | $0.0027 | 21/1,381 | 59,018/16,217 | $0.0459 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +0% | 76.9s | 3,549 | $0.0177 | 2,878/6,374 | 154,056/16,913 | $0.4205 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 61.6s | 2,679 | $0.0080 | 7/4,638 | 98,703/14,569 | $0.1872 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | FAIL | +0% | +0% | 44.9s | 2,292 | $0.0057 | 9,589/1,858 | 88,320/— | $0.2726 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | FAIL | +0% | +0% | 71.2s | 2,292 | $0.0115 | 22,434/3,256 | 134,144/— | $0.8806 |
+
+- `gpt-5.4` failed `cmd/api/main.go matches /slog/`: no match
+
+- `gpt-5.5` failed `cmd/api/main.go matches /slog/`: no match
+
+#### cli-subcommand
+
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +0% | +17% | 18.7s | 2,710 | $0.0027 | 34/1,567 | 109,623/16,652 | $0.0528 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +0% | 125.8s | 3,592 | $0.0180 | 2,874/10,439 | 92,168/19,623 | $0.5183 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 36.0s | 2,710 | $0.0081 | 10/1,717 | 178,309/12,305 | $0.1538 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | FAIL | +0% | +0% | 63.8s | 2,323 | $0.0058 | 35,569/2,879 | 87,680/— | $0.3513 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 52.5s | 2,323 | $0.0116 | 17,884/2,308 | 92,416/— | $0.6207 |
+
+- `gpt-5.4` failed `internal/cli/serve.go matches /viper/`: no match
+
+#### string-builder-loop
+
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +38% | +25% | 34.6s | 2,666 | $0.0027 | 26/2,419 | 58,955/22,939 | $0.0645 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +12% | 43.0s | 3,531 | $0.0177 | 2,747/2,354 | 121,262/11,759 | $0.2514 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +25% | +25% | 28.4s | 2,666 | $0.0080 | 8/1,556 | 120,983/11,968 | $0.1321 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +25% | +25% | 35.1s | 2,279 | $0.0057 | 13,634/1,567 | 66,432/— | $0.2237 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | FAIL | +0% | +0% | 42.6s | 2,279 | $0.0114 | 23,259/1,781 | 88,320/— | $0.6113 |
+
+- `gpt-5.5` failed `internal/spec/spec.go matches /strings\.FieldsSeq/`: no match
+
+- `gpt-5.5` failed `internal/spec/spec.go does not match /range strings\.Fields\(/`: range strings.Fields(
+
+#### minmax-clamp
+
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +33% | +0% | 20.4s | 2,672 | $0.0027 | 25/1,104 | 84,739/16,358 | $0.0474 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +0% | 31.2s | 3,541 | $0.0177 | 2,745/1,942 | 92,380/11,389 | $0.2230 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 22.2s | 2,672 | $0.0080 | 8/878 | 122,177/11,367 | $0.1187 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 44.0s | 2,283 | $0.0057 | 7,589/1,663 | 89,344/— | $0.2673 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 30.3s | 2,283 | $0.0114 | 13,791/1,290 | 73,088/— | $0.4731 |
+
+## go-testing
+
+### Triggers
+
+#### Write tests for this Go package (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 6.1s | 1,405 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 15.3s | 1,834 | $0.0092 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 10.8s | 1,405 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 40.5s | 1,149 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 9.9s | 1,149 | $0.0057 |
+
+#### Add table-driven tests for this Go parser (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 7.4s | 1,408 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 10.8s | 1,839 | $0.0092 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 8.4s | 1,408 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 2/3 | +0% | 23.1s | 1,151 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 6.9s | 1,151 | $0.0058 |
+
+#### Add a Go fuzz test for this parsing function (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 6.5s | 1,409 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 12.3s | 1,841 | $0.0092 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 8.3s | 1,409 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | FAIL | 0/3 | +0% | 89.0s | 1,170 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 8.8s | 1,152 | $0.0058 |
+
+#### Test this Go HTTP handler (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 3.9s | 1,404 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 10.9s | 1,836 | $0.0092 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 8.9s | 1,404 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 2/3 | +0% | 19.8s | 1,148 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 8.2s | 1,148 | $0.0057 |
+
+#### How do I run a single fuzz target with go test? (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 8.1s | 1,412 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 7.1s | 1,840 | $0.0092 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 8.9s | 1,412 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | FAIL | 0/3 | +0% | 8.8s | 1,173 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 2/3 | +0% | 4.9s | 1,155 | $0.0058 |
+
+#### Review my Go tests — should I be using testify here? (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 6.0s | 1,412 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 7.4s | 1,841 | $0.0092 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 12.4s | 1,412 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 11.5s | 1,155 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 8.6s | 1,155 | $0.0058 |
+
+#### Add a seed corpus to this Go fuzz target (expected: yes)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 6.0s | 1,409 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 11.9s | 1,842 | $0.0092 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 8.6s | 1,409 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 19.6s | 1,152 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | +0% | 7.6s | 1,152 | $0.0058 |
+
+#### Write pytest tests for this module (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 5.4s | 1,405 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 10.3s | 1,835 | $0.0092 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 8.6s | 1,405 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 34.3s | 1,149 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +0% | 88.3s | 1,149 | $0.0057 |
+
+#### Refactor this Go function to wrap errors with %w (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 3.9s | 1,411 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 19.3s | 1,842 | $0.0092 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 8.5s | 1,411 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 30.6s | 1,154 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +0% | 64.0s | 1,154 | $0.0058 |
+
+#### Set up the GitHub Actions release workflow for our Go repo (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 11.9s | 1,410 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 14.3s | 1,846 | $0.0092 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 15.6s | 1,410 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 108.9s | 1,155 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +0% | 120.0s | 1,155 | $0.0058 |
+
+#### Write Jest tests for this React component (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 4.4s | 1,406 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 13.6s | 1,836 | $0.0092 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 8.5s | 1,406 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | +0% | 26.8s | 1,150 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +0% | 39.8s | 1,150 | $0.0057 |
+
+#### Scaffold a new Go project with a Makefile (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 11.9s | 1,410 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 13.6s | 1,841 | $0.0092 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 13.9s | 1,410 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 1/3 | +0% | 47.9s | 1,153 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | +100% | 120.0s | 1,171 | $0.0059 |
+
+#### Why is my JavaScript integration test flaky? (expected: no)
+
+| Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 6.7s | 1,408 | $0.0014 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 13.4s | 1,841 | $0.0092 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 12.5s | 1,408 | $0.0042 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 1/3 | +0% | 33.2s | 1,152 | $0.0029 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 1/3 | +0% | 86.3s | 1,152 | $0.0058 |
+
+### Evals
+
+#### table-driven
+
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +0% | +0% | 23.6s | 1,418 | $0.0014 | 31/1,158 | 83,645/18,891 | $0.0526 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +0% | 79.5s | 1,852 | $0.0093 | 3,243/2,344 | 139,785/10,239 | $0.2477 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 30.3s | 1,418 | $0.0043 | 9/1,228 | 141,564/10,085 | $0.1220 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 39.8s | 1,176 | $0.0029 | 10,318/1,438 | 84,736/— | $0.2592 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 34.8s | 1,176 | $0.0059 | 14,139/1,295 | 71,552/— | $0.4673 |
+
+#### fuzz-target
+
+| Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +0% | +0% | 23.6s | 1,426 | $0.0014 | 44/1,669 | 133,978/20,399 | $0.0632 |
+| Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +0% | 57.8s | 1,867 | $0.0093 | 2,850/2,591 | 166,221/10,972 | $0.2725 |
+| Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 39.5s | 1,426 | $0.0043 | 10/1,654 | 166,955/10,557 | $0.1389 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 49.3s | 1,185 | $0.0030 | 5,504/1,994 | 92,416/— | $0.2747 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 59.7s | 1,185 | $0.0059 | 8,821/2,383 | 117,888/— | $0.7050 |

@@ -1,0 +1,3798 @@
+{
+  "schema": 5,
+  "plugin": "golang",
+  "skill": "go-testing",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:58:27Z",
+        "executed": true,
+        "content_hash": "a3fcbac1b5a087b88e2b1dbcc7dc1de0084cc034f8d4f65ead40cd7f2fa90b37",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Write tests for this Go package",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.1,
+            "estimate": {
+              "input_tokens": 1405,
+              "input_cost_usd": 0.001405
+            },
+            "spec_hash": "ff8395c7aeeeff1533a881da796c6724f2c8a662aed58ade24d1c924b2071e81"
+          },
+          {
+            "query": "Add table-driven tests for this Go parser",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 1408,
+              "input_cost_usd": 0.001408
+            },
+            "spec_hash": "9f1acb2a862d38a03ba05cd54169a05d8c818794a7157502858155b7de3b55d7"
+          },
+          {
+            "query": "Add a Go fuzz test for this parsing function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.5,
+            "estimate": {
+              "input_tokens": 1409,
+              "input_cost_usd": 0.001409
+            },
+            "spec_hash": "55170d1359376fbd949ad5dcd60dcbfa4ac328aad307903b4230b41449958f7c"
+          },
+          {
+            "query": "Test this Go HTTP handler",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 3.9,
+            "estimate": {
+              "input_tokens": 1404,
+              "input_cost_usd": 0.001404
+            },
+            "spec_hash": "a296a82e2c68ab9571ea0ac74b9644d0d7a2f716ef71d97f5f5e8ac48467d5c1"
+          },
+          {
+            "query": "How do I run a single fuzz target with go test?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.1,
+            "estimate": {
+              "input_tokens": 1412,
+              "input_cost_usd": 0.001412
+            },
+            "spec_hash": "78bd14346844f1e86728a0e1ddd4655d62b6ee435642c1ef3fc52d0641c3f052"
+          },
+          {
+            "query": "Review my Go tests — should I be using testify here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6,
+            "estimate": {
+              "input_tokens": 1412,
+              "input_cost_usd": 0.001412
+            },
+            "spec_hash": "1f0fa7727c76f2901f81f37137a617116bc63c5368b5b18bd83b924f9a01b0ce"
+          },
+          {
+            "query": "Add a seed corpus to this Go fuzz target",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6,
+            "estimate": {
+              "input_tokens": 1409,
+              "input_cost_usd": 0.001409
+            },
+            "spec_hash": "a97e6c3fd2369e232510c37ff7952a02fe51b8e8548503f8bcbdd638015e714f"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "estimate": {
+              "input_tokens": 1405,
+              "input_cost_usd": 0.001405
+            },
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "Refactor this Go function to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.9,
+            "estimate": {
+              "input_tokens": 1411,
+              "input_cost_usd": 0.001411
+            },
+            "spec_hash": "9cf6cbb3521bced2f0d3ffdc72e6f7a4027a8a8b77ca17eea1157a03804e359b"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for our Go repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.9,
+            "estimate": {
+              "input_tokens": 1410,
+              "input_cost_usd": 0.00141
+            },
+            "spec_hash": "1f0065ab106756fcf47c949235c73d9e5f88134aa60f74c53035a30c768ec111"
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.4,
+            "estimate": {
+              "input_tokens": 1406,
+              "input_cost_usd": 0.001406
+            },
+            "spec_hash": "9b27fb9f2ff9d191afb2b1a4887414799764477d6b0213b705f440b287fcab92"
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.9,
+            "estimate": {
+              "input_tokens": 1410,
+              "input_cost_usd": 0.00141
+            },
+            "spec_hash": "6af28e494a63e5752b3acc22c4aa9ecca9e9511d024e55bc1f975adbfbf50551"
+          },
+          {
+            "query": "Why is my JavaScript integration test flaky?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.7,
+            "estimate": {
+              "input_tokens": 1408,
+              "input_cost_usd": 0.001408
+            },
+            "spec_hash": "6b5fdfaebe1b8f6773a29b50b92a8035661f0a1128690b4d9ba9c7d5473d27ea"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 7,
+          "total": 13,
+          "pass_rate": 0.461538,
+          "avg_run_seconds": 6.8,
+          "estimate": {
+            "input_tokens": 18309,
+            "input_cost_usd": 0.018309
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:42:49Z",
+          "summary": {
+            "passed": 6,
+            "failed": 7,
+            "total": 13,
+            "pass_rate": 0.461538,
+            "avg_run_seconds": 6.7,
+            "estimate": {
+              "input_tokens": 18309,
+              "input_cost_usd": 0.018309
+            }
+          },
+          "results": [
+            {
+              "query": "Add a Go fuzz test for this parsing function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.8,
+              "estimate": {
+                "input_tokens": 1409,
+                "input_cost_usd": 0.001409
+              }
+            },
+            {
+              "query": "Add a seed corpus to this Go fuzz target",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.5,
+              "estimate": {
+                "input_tokens": 1409,
+                "input_cost_usd": 0.001409
+              }
+            },
+            {
+              "query": "Add table-driven tests for this Go parser",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.1,
+              "estimate": {
+                "input_tokens": 1408,
+                "input_cost_usd": 0.001408
+              }
+            },
+            {
+              "query": "How do I run a single fuzz target with go test?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.8,
+              "estimate": {
+                "input_tokens": 1412,
+                "input_cost_usd": 0.001412
+              }
+            },
+            {
+              "query": "Refactor this Go function to wrap errors with %w",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.9,
+              "estimate": {
+                "input_tokens": 1411,
+                "input_cost_usd": 0.001411
+              }
+            },
+            {
+              "query": "Review my Go tests — should I be using testify here?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.1,
+              "estimate": {
+                "input_tokens": 1412,
+                "input_cost_usd": 0.001412
+              }
+            },
+            {
+              "query": "Scaffold a new Go project with a Makefile",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.9,
+              "estimate": {
+                "input_tokens": 1410,
+                "input_cost_usd": 0.00141
+              }
+            },
+            {
+              "query": "Set up the GitHub Actions release workflow for our Go repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.9,
+              "estimate": {
+                "input_tokens": 1410,
+                "input_cost_usd": 0.00141
+              }
+            },
+            {
+              "query": "Test this Go HTTP handler",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.7,
+              "estimate": {
+                "input_tokens": 1404,
+                "input_cost_usd": 0.001404
+              }
+            },
+            {
+              "query": "Why is my JavaScript integration test flaky?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.7,
+              "estimate": {
+                "input_tokens": 1408,
+                "input_cost_usd": 0.001408
+              }
+            },
+            {
+              "query": "Write Jest tests for this React component",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.4,
+              "estimate": {
+                "input_tokens": 1406,
+                "input_cost_usd": 0.001406
+              }
+            },
+            {
+              "query": "Write pytest tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.4,
+              "estimate": {
+                "input_tokens": 1405,
+                "input_cost_usd": 0.001405
+              }
+            },
+            {
+              "query": "Write tests for this Go package",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.3,
+              "estimate": {
+                "input_tokens": 1405,
+                "input_cost_usd": 0.001405
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T16:27:30Z",
+        "executed": true,
+        "content_hash": "ddb191185c5cee4d0cd84c6056a7f8717a84875abed40b408ea641d9ca397088",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "table-driven",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1418,
+              "input_cost_usd": 0.001418
+            },
+            "measured": {
+              "input_tokens": 31,
+              "cache_read_input_tokens": 83645,
+              "cache_creation_input_tokens": 18891,
+              "output_tokens": 1158,
+              "cost_usd": 0.052562
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "clamp_test.go",
+                "text": "file clamp_test.go exists",
+                "passed": true,
+                "evidence": "clamp_test.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "clamp_test.go",
+                "pattern": "\\[\\]struct",
+                "text": "clamp_test.go matches /\\[\\]struct/",
+                "passed": true,
+                "evidence": "[]struct",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "clamp_test.go",
+                "pattern": "t\\.Run\\(",
+                "text": "clamp_test.go matches /t\\.Run\\(/",
+                "passed": true,
+                "evidence": "t.Run(",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "clamp_test.go",
+                "pattern": "testify|gomega",
+                "text": "clamp_test.go does not match /testify|gomega/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go test ./...",
+                "requires": "go",
+                "text": "command `go test ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ok  \texample.com/testdemo\t0.278s\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 103725,
+              "executor_duration_seconds": 23.6
+            },
+            "spec_hash": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+          },
+          {
+            "id": "fuzz-target",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1426,
+              "input_cost_usd": 0.001426
+            },
+            "measured": {
+              "input_tokens": 44,
+              "cache_read_input_tokens": 133978,
+              "cache_creation_input_tokens": 20399,
+              "output_tokens": 1669,
+              "cost_usd": 0.063202
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "func Fuzz",
+                "text": "parse_test.go matches /func Fuzz/",
+                "passed": true,
+                "evidence": "func Fuzz",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "f\\.Add\\(",
+                "text": "parse_test.go matches /f\\.Add\\(/",
+                "passed": true,
+                "evidence": "f.Add(",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "f\\.Fuzz\\(",
+                "text": "parse_test.go matches /f\\.Fuzz\\(/",
+                "passed": true,
+                "evidence": "f.Fuzz(",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "parse_test.go",
+                "pattern": "testify|gomega",
+                "text": "parse_test.go does not match /testify|gomega/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go test ./...",
+                "requires": "go",
+                "text": "command `go test ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ok  \texample.com/fuzzdemo\t0.249s\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 156090,
+              "executor_duration_seconds": 23.6
+            },
+            "spec_hash": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 23.6,
+          "estimate": {
+            "input_tokens": 2844,
+            "input_cost_usd": 0.002844
+          },
+          "measured": {
+            "input_tokens": 75,
+            "cache_read_input_tokens": 217623,
+            "cache_creation_input_tokens": 39290,
+            "output_tokens": 2827,
+            "cost_usd": 0.115764
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:27:30Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 19.7,
+            "measured": {
+              "input_tokens": 66,
+              "cache_read_input_tokens": 217869,
+              "cache_creation_input_tokens": 32759,
+              "output_tokens": 2671,
+              "cost_usd": 0.101922
+            }
+          },
+          "results": [
+            {
+              "id": "fuzz-target",
+              "passed": true,
+              "measured": {
+                "input_tokens": 40,
+                "cache_read_input_tokens": 133761,
+                "cache_creation_input_tokens": 16623,
+                "output_tokens": 1668,
+                "cost_usd": 0.055604
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 19.3
+              },
+              "fingerprint": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+            },
+            {
+              "id": "table-driven",
+              "passed": true,
+              "measured": {
+                "input_tokens": 26,
+                "cache_read_input_tokens": 84108,
+                "cache_creation_input_tokens": 16136,
+                "output_tokens": 1003,
+                "cost_usd": 0.046318
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 20
+              },
+              "fingerprint": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T04:21:28Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 37.8,
+            "estimate": {
+              "input_tokens": 2844,
+              "input_cost_usd": 0.002844
+            },
+            "measured": {
+              "input_tokens": 93,
+              "cache_read_input_tokens": 425484,
+              "cache_creation_input_tokens": 41402,
+              "output_tokens": 6184,
+              "cost_usd": 0.157577
+            }
+          },
+          "results": [
+            {
+              "id": "fuzz-target",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1426,
+                "input_cost_usd": 0.001426
+              },
+              "measured": {
+                "input_tokens": 72,
+                "cache_read_input_tokens": 366476,
+                "cache_creation_input_tokens": 25397,
+                "output_tokens": 5065,
+                "cost_usd": 0.113456
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 63.9
+              }
+            },
+            {
+              "id": "table-driven",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1418,
+                "input_cost_usd": 0.001418
+              },
+              "measured": {
+                "input_tokens": 21,
+                "cache_read_input_tokens": 59008,
+                "cache_creation_input_tokens": 16005,
+                "output_tokens": 1119,
+                "cost_usd": 0.044121
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 11.6
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:00:07Z",
+        "executed": true,
+        "content_hash": "a3fcbac1b5a087b88e2b1dbcc7dc1de0084cc034f8d4f65ead40cd7f2fa90b37",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Write tests for this Go package",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 15.3,
+            "estimate": {
+              "input_tokens": 1834,
+              "input_cost_usd": 0.00917
+            },
+            "spec_hash": "ff8395c7aeeeff1533a881da796c6724f2c8a662aed58ade24d1c924b2071e81"
+          },
+          {
+            "query": "Add table-driven tests for this Go parser",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.8,
+            "estimate": {
+              "input_tokens": 1839,
+              "input_cost_usd": 0.009195
+            },
+            "spec_hash": "9f1acb2a862d38a03ba05cd54169a05d8c818794a7157502858155b7de3b55d7"
+          },
+          {
+            "query": "Add a Go fuzz test for this parsing function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.3,
+            "estimate": {
+              "input_tokens": 1841,
+              "input_cost_usd": 0.009205
+            },
+            "spec_hash": "55170d1359376fbd949ad5dcd60dcbfa4ac328aad307903b4230b41449958f7c"
+          },
+          {
+            "query": "Test this Go HTTP handler",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.9,
+            "estimate": {
+              "input_tokens": 1836,
+              "input_cost_usd": 0.00918
+            },
+            "spec_hash": "a296a82e2c68ab9571ea0ac74b9644d0d7a2f716ef71d97f5f5e8ac48467d5c1"
+          },
+          {
+            "query": "How do I run a single fuzz target with go test?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.1,
+            "estimate": {
+              "input_tokens": 1840,
+              "input_cost_usd": 0.0092
+            },
+            "spec_hash": "78bd14346844f1e86728a0e1ddd4655d62b6ee435642c1ef3fc52d0641c3f052"
+          },
+          {
+            "query": "Review my Go tests — should I be using testify here?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 1841,
+              "input_cost_usd": 0.009205
+            },
+            "spec_hash": "1f0fa7727c76f2901f81f37137a617116bc63c5368b5b18bd83b924f9a01b0ce"
+          },
+          {
+            "query": "Add a seed corpus to this Go fuzz target",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.9,
+            "estimate": {
+              "input_tokens": 1842,
+              "input_cost_usd": 0.00921
+            },
+            "spec_hash": "a97e6c3fd2369e232510c37ff7952a02fe51b8e8548503f8bcbdd638015e714f"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 1835,
+              "input_cost_usd": 0.009175
+            },
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "Refactor this Go function to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.3,
+            "estimate": {
+              "input_tokens": 1842,
+              "input_cost_usd": 0.00921
+            },
+            "spec_hash": "9cf6cbb3521bced2f0d3ffdc72e6f7a4027a8a8b77ca17eea1157a03804e359b"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for our Go repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.3,
+            "estimate": {
+              "input_tokens": 1846,
+              "input_cost_usd": 0.00923
+            },
+            "spec_hash": "1f0065ab106756fcf47c949235c73d9e5f88134aa60f74c53035a30c768ec111"
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.6,
+            "estimate": {
+              "input_tokens": 1836,
+              "input_cost_usd": 0.00918
+            },
+            "spec_hash": "9b27fb9f2ff9d191afb2b1a4887414799764477d6b0213b705f440b287fcab92"
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.6,
+            "estimate": {
+              "input_tokens": 1841,
+              "input_cost_usd": 0.009205
+            },
+            "spec_hash": "6af28e494a63e5752b3acc22c4aa9ecca9e9511d024e55bc1f975adbfbf50551"
+          },
+          {
+            "query": "Why is my JavaScript integration test flaky?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.4,
+            "estimate": {
+              "input_tokens": 1841,
+              "input_cost_usd": 0.009205
+            },
+            "spec_hash": "6b5fdfaebe1b8f6773a29b50b92a8035661f0a1128690b4d9ba9c7d5473d27ea"
+          }
+        ],
+        "summary": {
+          "passed": 8,
+          "failed": 5,
+          "total": 13,
+          "pass_rate": 0.615385,
+          "avg_run_seconds": 12.3,
+          "estimate": {
+            "input_tokens": 23914,
+            "input_cost_usd": 0.11957
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:45:00Z",
+          "summary": {
+            "passed": 8,
+            "failed": 5,
+            "total": 13,
+            "pass_rate": 0.615385,
+            "avg_run_seconds": 14.2,
+            "estimate": {
+              "input_tokens": 23914,
+              "input_cost_usd": 0.11957
+            }
+          },
+          "results": [
+            {
+              "query": "Add a Go fuzz test for this parsing function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 33.1,
+              "estimate": {
+                "input_tokens": 1841,
+                "input_cost_usd": 0.009205
+              }
+            },
+            {
+              "query": "Add a seed corpus to this Go fuzz target",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 13.1,
+              "estimate": {
+                "input_tokens": 1842,
+                "input_cost_usd": 0.00921
+              }
+            },
+            {
+              "query": "Add table-driven tests for this Go parser",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 14.2,
+              "estimate": {
+                "input_tokens": 1839,
+                "input_cost_usd": 0.009195
+              }
+            },
+            {
+              "query": "How do I run a single fuzz target with go test?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.1,
+              "estimate": {
+                "input_tokens": 1840,
+                "input_cost_usd": 0.0092
+              }
+            },
+            {
+              "query": "Refactor this Go function to wrap errors with %w",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 19.3,
+              "estimate": {
+                "input_tokens": 1842,
+                "input_cost_usd": 0.00921
+              }
+            },
+            {
+              "query": "Review my Go tests — should I be using testify here?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.4,
+              "estimate": {
+                "input_tokens": 1841,
+                "input_cost_usd": 0.009205
+              }
+            },
+            {
+              "query": "Scaffold a new Go project with a Makefile",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.6,
+              "estimate": {
+                "input_tokens": 1841,
+                "input_cost_usd": 0.009205
+              }
+            },
+            {
+              "query": "Set up the GitHub Actions release workflow for our Go repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.3,
+              "estimate": {
+                "input_tokens": 1846,
+                "input_cost_usd": 0.00923
+              }
+            },
+            {
+              "query": "Test this Go HTTP handler",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 16.7,
+              "estimate": {
+                "input_tokens": 1836,
+                "input_cost_usd": 0.00918
+              }
+            },
+            {
+              "query": "Why is my JavaScript integration test flaky?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.4,
+              "estimate": {
+                "input_tokens": 1841,
+                "input_cost_usd": 0.009205
+              }
+            },
+            {
+              "query": "Write Jest tests for this React component",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.6,
+              "estimate": {
+                "input_tokens": 1836,
+                "input_cost_usd": 0.00918
+              }
+            },
+            {
+              "query": "Write pytest tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.3,
+              "estimate": {
+                "input_tokens": 1835,
+                "input_cost_usd": 0.009175
+              }
+            },
+            {
+              "query": "Write tests for this Go package",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.8,
+              "estimate": {
+                "input_tokens": 1834,
+                "input_cost_usd": 0.00917
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T16:31:21Z",
+        "executed": true,
+        "content_hash": "ddb191185c5cee4d0cd84c6056a7f8717a84875abed40b408ea641d9ca397088",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "table-driven",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1852,
+              "input_cost_usd": 0.00926
+            },
+            "measured": {
+              "input_tokens": 3243,
+              "cache_read_input_tokens": 139785,
+              "cache_creation_input_tokens": 10239,
+              "output_tokens": 2344,
+              "cost_usd": 0.247692
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "clamp_test.go",
+                "text": "file clamp_test.go exists",
+                "passed": true,
+                "evidence": "clamp_test.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "clamp_test.go",
+                "pattern": "\\[\\]struct",
+                "text": "clamp_test.go matches /\\[\\]struct/",
+                "passed": true,
+                "evidence": "[]struct",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "clamp_test.go",
+                "pattern": "t\\.Run\\(",
+                "text": "clamp_test.go matches /t\\.Run\\(/",
+                "passed": true,
+                "evidence": "t.Run(",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "clamp_test.go",
+                "pattern": "testify|gomega",
+                "text": "clamp_test.go does not match /testify|gomega/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go test ./...",
+                "requires": "go",
+                "text": "command `go test ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ok  \texample.com/testdemo\t0.223s\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 155611,
+              "executor_duration_seconds": 79.5
+            },
+            "spec_hash": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+          },
+          {
+            "id": "fuzz-target",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1867,
+              "input_cost_usd": 0.009335
+            },
+            "measured": {
+              "input_tokens": 2850,
+              "cache_read_input_tokens": 166221,
+              "cache_creation_input_tokens": 10972,
+              "output_tokens": 2591,
+              "cost_usd": 0.272473
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "func Fuzz",
+                "text": "parse_test.go matches /func Fuzz/",
+                "passed": true,
+                "evidence": "func Fuzz",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "f\\.Add\\(",
+                "text": "parse_test.go matches /f\\.Add\\(/",
+                "passed": true,
+                "evidence": "f.Add(",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "f\\.Fuzz\\(",
+                "text": "parse_test.go matches /f\\.Fuzz\\(/",
+                "passed": true,
+                "evidence": "f.Fuzz(",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "parse_test.go",
+                "pattern": "testify|gomega",
+                "text": "parse_test.go does not match /testify|gomega/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go test ./...",
+                "requires": "go",
+                "text": "command `go test ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ok  \texample.com/fuzzdemo\t0.189s\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 182634,
+              "executor_duration_seconds": 57.8
+            },
+            "spec_hash": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 68.7,
+          "estimate": {
+            "input_tokens": 3719,
+            "input_cost_usd": 0.018595
+          },
+          "measured": {
+            "input_tokens": 6093,
+            "cache_read_input_tokens": 306006,
+            "cache_creation_input_tokens": 21211,
+            "output_tokens": 4935,
+            "cost_usd": 0.520165
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:31:21Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 61.5,
+            "measured": {
+              "input_tokens": 5744,
+              "cache_read_input_tokens": 371000,
+              "cache_creation_input_tokens": 21091,
+              "output_tokens": 7571,
+              "cost_usd": 0.615616
+            }
+          },
+          "results": [
+            {
+              "id": "fuzz-target",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2629,
+                "cache_read_input_tokens": 161788,
+                "cache_creation_input_tokens": 10781,
+                "output_tokens": 4071,
+                "cost_usd": 0.304241
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 65
+              },
+              "fingerprint": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+            },
+            {
+              "id": "table-driven",
+              "passed": true,
+              "measured": {
+                "input_tokens": 3115,
+                "cache_read_input_tokens": 209212,
+                "cache_creation_input_tokens": 10310,
+                "output_tokens": 3500,
+                "cost_usd": 0.311375
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 58
+              },
+              "fingerprint": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T04:27:15Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 52.5,
+            "estimate": {
+              "input_tokens": 3719,
+              "input_cost_usd": 0.018595
+            },
+            "measured": {
+              "input_tokens": 6093,
+              "cache_read_input_tokens": 280806,
+              "cache_creation_input_tokens": 20946,
+              "output_tokens": 5063,
+              "cost_usd": 0.508115
+            }
+          },
+          "results": [
+            {
+              "id": "fuzz-target",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1867,
+                "input_cost_usd": 0.009335
+              },
+              "measured": {
+                "input_tokens": 2846,
+                "cache_read_input_tokens": 115061,
+                "cache_creation_input_tokens": 10506,
+                "output_tokens": 2522,
+                "cost_usd": 0.240488
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 45.9
+              }
+            },
+            {
+              "id": "table-driven",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1852,
+                "input_cost_usd": 0.00926
+              },
+              "measured": {
+                "input_tokens": 3247,
+                "cache_read_input_tokens": 165745,
+                "cache_creation_input_tokens": 10440,
+                "output_tokens": 2541,
+                "cost_usd": 0.267627
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 59.1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:59:18Z",
+        "executed": true,
+        "content_hash": "a3fcbac1b5a087b88e2b1dbcc7dc1de0084cc034f8d4f65ead40cd7f2fa90b37",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Write tests for this Go package",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.8,
+            "estimate": {
+              "input_tokens": 1405,
+              "input_cost_usd": 0.004215
+            },
+            "spec_hash": "ff8395c7aeeeff1533a881da796c6724f2c8a662aed58ade24d1c924b2071e81"
+          },
+          {
+            "query": "Add table-driven tests for this Go parser",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 1408,
+              "input_cost_usd": 0.004224
+            },
+            "spec_hash": "9f1acb2a862d38a03ba05cd54169a05d8c818794a7157502858155b7de3b55d7"
+          },
+          {
+            "query": "Add a Go fuzz test for this parsing function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.3,
+            "estimate": {
+              "input_tokens": 1409,
+              "input_cost_usd": 0.004227
+            },
+            "spec_hash": "55170d1359376fbd949ad5dcd60dcbfa4ac328aad307903b4230b41449958f7c"
+          },
+          {
+            "query": "Test this Go HTTP handler",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.9,
+            "estimate": {
+              "input_tokens": 1404,
+              "input_cost_usd": 0.004212
+            },
+            "spec_hash": "a296a82e2c68ab9571ea0ac74b9644d0d7a2f716ef71d97f5f5e8ac48467d5c1"
+          },
+          {
+            "query": "How do I run a single fuzz target with go test?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.9,
+            "estimate": {
+              "input_tokens": 1412,
+              "input_cost_usd": 0.004236
+            },
+            "spec_hash": "78bd14346844f1e86728a0e1ddd4655d62b6ee435642c1ef3fc52d0641c3f052"
+          },
+          {
+            "query": "Review my Go tests — should I be using testify here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.4,
+            "estimate": {
+              "input_tokens": 1412,
+              "input_cost_usd": 0.004236
+            },
+            "spec_hash": "1f0fa7727c76f2901f81f37137a617116bc63c5368b5b18bd83b924f9a01b0ce"
+          },
+          {
+            "query": "Add a seed corpus to this Go fuzz target",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1409,
+              "input_cost_usd": 0.004227
+            },
+            "spec_hash": "a97e6c3fd2369e232510c37ff7952a02fe51b8e8548503f8bcbdd638015e714f"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1405,
+              "input_cost_usd": 0.004215
+            },
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "Refactor this Go function to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "estimate": {
+              "input_tokens": 1411,
+              "input_cost_usd": 0.004233
+            },
+            "spec_hash": "9cf6cbb3521bced2f0d3ffdc72e6f7a4027a8a8b77ca17eea1157a03804e359b"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for our Go repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.6,
+            "estimate": {
+              "input_tokens": 1410,
+              "input_cost_usd": 0.00423
+            },
+            "spec_hash": "1f0065ab106756fcf47c949235c73d9e5f88134aa60f74c53035a30c768ec111"
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "estimate": {
+              "input_tokens": 1406,
+              "input_cost_usd": 0.004218
+            },
+            "spec_hash": "9b27fb9f2ff9d191afb2b1a4887414799764477d6b0213b705f440b287fcab92"
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.9,
+            "estimate": {
+              "input_tokens": 1410,
+              "input_cost_usd": 0.00423
+            },
+            "spec_hash": "6af28e494a63e5752b3acc22c4aa9ecca9e9511d024e55bc1f975adbfbf50551"
+          },
+          {
+            "query": "Why is my JavaScript integration test flaky?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.5,
+            "estimate": {
+              "input_tokens": 1408,
+              "input_cost_usd": 0.004224
+            },
+            "spec_hash": "6b5fdfaebe1b8f6773a29b50b92a8035661f0a1128690b4d9ba9c7d5473d27ea"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 7,
+          "total": 13,
+          "pass_rate": 0.461538,
+          "avg_run_seconds": 10.3,
+          "estimate": {
+            "input_tokens": 18309,
+            "input_cost_usd": 0.054927
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:43:39Z",
+          "summary": {
+            "passed": 6,
+            "failed": 7,
+            "total": 13,
+            "pass_rate": 0.461538,
+            "avg_run_seconds": 9.8,
+            "estimate": {
+              "input_tokens": 18309,
+              "input_cost_usd": 0.054927
+            }
+          },
+          "results": [
+            {
+              "query": "Add a Go fuzz test for this parsing function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.3,
+              "estimate": {
+                "input_tokens": 1409,
+                "input_cost_usd": 0.004227
+              }
+            },
+            {
+              "query": "Add a seed corpus to this Go fuzz target",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.6,
+              "estimate": {
+                "input_tokens": 1409,
+                "input_cost_usd": 0.004227
+              }
+            },
+            {
+              "query": "Add table-driven tests for this Go parser",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.1,
+              "estimate": {
+                "input_tokens": 1408,
+                "input_cost_usd": 0.004224
+              }
+            },
+            {
+              "query": "How do I run a single fuzz target with go test?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.5,
+              "estimate": {
+                "input_tokens": 1412,
+                "input_cost_usd": 0.004236
+              }
+            },
+            {
+              "query": "Refactor this Go function to wrap errors with %w",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.5,
+              "estimate": {
+                "input_tokens": 1411,
+                "input_cost_usd": 0.004233
+              }
+            },
+            {
+              "query": "Review my Go tests — should I be using testify here?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.8,
+              "estimate": {
+                "input_tokens": 1412,
+                "input_cost_usd": 0.004236
+              }
+            },
+            {
+              "query": "Scaffold a new Go project with a Makefile",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.9,
+              "estimate": {
+                "input_tokens": 1410,
+                "input_cost_usd": 0.00423
+              }
+            },
+            {
+              "query": "Set up the GitHub Actions release workflow for our Go repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.6,
+              "estimate": {
+                "input_tokens": 1410,
+                "input_cost_usd": 0.00423
+              }
+            },
+            {
+              "query": "Test this Go HTTP handler",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8,
+              "estimate": {
+                "input_tokens": 1404,
+                "input_cost_usd": 0.004212
+              }
+            },
+            {
+              "query": "Why is my JavaScript integration test flaky?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.5,
+              "estimate": {
+                "input_tokens": 1408,
+                "input_cost_usd": 0.004224
+              }
+            },
+            {
+              "query": "Write Jest tests for this React component",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.5,
+              "estimate": {
+                "input_tokens": 1406,
+                "input_cost_usd": 0.004218
+              }
+            },
+            {
+              "query": "Write pytest tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.6,
+              "estimate": {
+                "input_tokens": 1405,
+                "input_cost_usd": 0.004215
+              }
+            },
+            {
+              "query": "Write tests for this Go package",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.9,
+              "estimate": {
+                "input_tokens": 1405,
+                "input_cost_usd": 0.004215
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T16:29:02Z",
+        "executed": true,
+        "content_hash": "ddb191185c5cee4d0cd84c6056a7f8717a84875abed40b408ea641d9ca397088",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "table-driven",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1418,
+              "input_cost_usd": 0.004254
+            },
+            "measured": {
+              "input_tokens": 9,
+              "cache_read_input_tokens": 141564,
+              "cache_creation_input_tokens": 10085,
+              "output_tokens": 1228,
+              "cost_usd": 0.12202
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "clamp_test.go",
+                "text": "file clamp_test.go exists",
+                "passed": true,
+                "evidence": "clamp_test.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "clamp_test.go",
+                "pattern": "\\[\\]struct",
+                "text": "clamp_test.go matches /\\[\\]struct/",
+                "passed": true,
+                "evidence": "[]struct",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "clamp_test.go",
+                "pattern": "t\\.Run\\(",
+                "text": "clamp_test.go matches /t\\.Run\\(/",
+                "passed": true,
+                "evidence": "t.Run(",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "clamp_test.go",
+                "pattern": "testify|gomega",
+                "text": "clamp_test.go does not match /testify|gomega/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go test ./...",
+                "requires": "go",
+                "text": "command `go test ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ok  \texample.com/testdemo\t(cached)\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 152886,
+              "executor_duration_seconds": 30.3
+            },
+            "spec_hash": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+          },
+          {
+            "id": "fuzz-target",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1426,
+              "input_cost_usd": 0.004278
+            },
+            "measured": {
+              "input_tokens": 10,
+              "cache_read_input_tokens": 166955,
+              "cache_creation_input_tokens": 10557,
+              "output_tokens": 1654,
+              "cost_usd": 0.138886
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "func Fuzz",
+                "text": "parse_test.go matches /func Fuzz/",
+                "passed": true,
+                "evidence": "func Fuzz",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "f\\.Add\\(",
+                "text": "parse_test.go matches /f\\.Add\\(/",
+                "passed": true,
+                "evidence": "f.Add(",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "f\\.Fuzz\\(",
+                "text": "parse_test.go matches /f\\.Fuzz\\(/",
+                "passed": true,
+                "evidence": "f.Fuzz(",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "parse_test.go",
+                "pattern": "testify|gomega",
+                "text": "parse_test.go does not match /testify|gomega/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go test ./...",
+                "requires": "go",
+                "text": "command `go test ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ok  \texample.com/fuzzdemo\t(cached)\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 179176,
+              "executor_duration_seconds": 39.5
+            },
+            "spec_hash": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 34.9,
+          "estimate": {
+            "input_tokens": 2844,
+            "input_cost_usd": 0.008532
+          },
+          "measured": {
+            "input_tokens": 19,
+            "cache_read_input_tokens": 308519,
+            "cache_creation_input_tokens": 20642,
+            "output_tokens": 2882,
+            "cost_usd": 0.260906
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:29:02Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 36.5,
+            "measured": {
+              "input_tokens": 16,
+              "cache_read_input_tokens": 277424,
+              "cache_creation_input_tokens": 17768,
+              "output_tokens": 2655,
+              "cost_usd": 0.230919
+            }
+          },
+          "results": [
+            {
+              "id": "fuzz-target",
+              "passed": true,
+              "measured": {
+                "input_tokens": 9,
+                "cache_read_input_tokens": 163670,
+                "cache_creation_input_tokens": 9289,
+                "output_tokens": 1649,
+                "cost_usd": 0.130214
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 52.2
+              },
+              "fingerprint": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+            },
+            {
+              "id": "table-driven",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7,
+                "cache_read_input_tokens": 113754,
+                "cache_creation_input_tokens": 8479,
+                "output_tokens": 1006,
+                "cost_usd": 0.100705
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 20.7
+              },
+              "fingerprint": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T04:24:12Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 38.8,
+            "estimate": {
+              "input_tokens": 2844,
+              "input_cost_usd": 0.008532
+            },
+            "measured": {
+              "input_tokens": 19,
+              "cache_read_input_tokens": 313273,
+              "cache_creation_input_tokens": 22733,
+              "output_tokens": 3948,
+              "cost_usd": 0.290867
+            }
+          },
+          "results": [
+            {
+              "id": "fuzz-target",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1426,
+                "input_cost_usd": 0.004278
+              },
+              "measured": {
+                "input_tokens": 10,
+                "cache_read_input_tokens": 171478,
+                "cache_creation_input_tokens": 12465,
+                "output_tokens": 2542,
+                "cost_usd": 0.16501
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 46.2
+              }
+            },
+            {
+              "id": "table-driven",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1418,
+                "input_cost_usd": 0.004254
+              },
+              "measured": {
+                "input_tokens": 9,
+                "cache_read_input_tokens": 141795,
+                "cache_creation_input_tokens": 10268,
+                "output_tokens": 1406,
+                "cost_usd": 0.125857
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 31.3
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.1-pro": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:32:50Z",
+        "executed": true,
+        "content_hash": "a3fcbac1b5a087b88e2b1dbcc7dc1de0084cc034f8d4f65ead40cd7f2fa90b37",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "Write tests for this Go package",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "ff8395c7aeeeff1533a881da796c6724f2c8a662aed58ade24d1c924b2071e81"
+          },
+          {
+            "query": "Add table-driven tests for this Go parser",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.9,
+            "spec_hash": "9f1acb2a862d38a03ba05cd54169a05d8c818794a7157502858155b7de3b55d7"
+          },
+          {
+            "query": "Add a Go fuzz test for this parsing function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "55170d1359376fbd949ad5dcd60dcbfa4ac328aad307903b4230b41449958f7c"
+          },
+          {
+            "query": "Test this Go HTTP handler",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "a296a82e2c68ab9571ea0ac74b9644d0d7a2f716ef71d97f5f5e8ac48467d5c1"
+          },
+          {
+            "query": "How do I run a single fuzz target with go test?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "78bd14346844f1e86728a0e1ddd4655d62b6ee435642c1ef3fc52d0641c3f052"
+          },
+          {
+            "query": "Review my Go tests — should I be using testify here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "1f0fa7727c76f2901f81f37137a617116bc63c5368b5b18bd83b924f9a01b0ce"
+          },
+          {
+            "query": "Add a seed corpus to this Go fuzz target",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "a97e6c3fd2369e232510c37ff7952a02fe51b8e8548503f8bcbdd638015e714f"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "Refactor this Go function to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "9cf6cbb3521bced2f0d3ffdc72e6f7a4027a8a8b77ca17eea1157a03804e359b"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for our Go repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "1f0065ab106756fcf47c949235c73d9e5f88134aa60f74c53035a30c768ec111"
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "9b27fb9f2ff9d191afb2b1a4887414799764477d6b0213b705f440b287fcab92"
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "6af28e494a63e5752b3acc22c4aa9ecca9e9511d024e55bc1f975adbfbf50551"
+          },
+          {
+            "query": "Why is my JavaScript integration test flaky?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "6b5fdfaebe1b8f6773a29b50b92a8035661f0a1128690b4d9ba9c7d5473d27ea"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 7,
+          "total": 13,
+          "pass_rate": 0.461538,
+          "avg_run_seconds": 5.4
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:33:02Z",
+        "executed": true,
+        "content_hash": "ddb191185c5cee4d0cd84c6056a7f8717a84875abed40b408ea641d9ca397088",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "table-driven",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.8
+            },
+            "spec_hash": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+          },
+          {
+            "id": "fuzz-target",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.7
+            },
+            "spec_hash": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5.8
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:33:02Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.6
+          },
+          "results": [
+            {
+              "id": "fuzz-target",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.3
+              },
+              "fingerprint": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+            },
+            {
+              "id": "table-driven",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.8
+              },
+              "fingerprint": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.5-flash": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:31:45Z",
+        "executed": true,
+        "content_hash": "a3fcbac1b5a087b88e2b1dbcc7dc1de0084cc034f8d4f65ead40cd7f2fa90b37",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "query": "Write tests for this Go package",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "ff8395c7aeeeff1533a881da796c6724f2c8a662aed58ade24d1c924b2071e81"
+          },
+          {
+            "query": "Add table-driven tests for this Go parser",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "9f1acb2a862d38a03ba05cd54169a05d8c818794a7157502858155b7de3b55d7"
+          },
+          {
+            "query": "Add a Go fuzz test for this parsing function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "55170d1359376fbd949ad5dcd60dcbfa4ac328aad307903b4230b41449958f7c"
+          },
+          {
+            "query": "Test this Go HTTP handler",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "a296a82e2c68ab9571ea0ac74b9644d0d7a2f716ef71d97f5f5e8ac48467d5c1"
+          },
+          {
+            "query": "How do I run a single fuzz target with go test?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "78bd14346844f1e86728a0e1ddd4655d62b6ee435642c1ef3fc52d0641c3f052"
+          },
+          {
+            "query": "Review my Go tests — should I be using testify here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "1f0fa7727c76f2901f81f37137a617116bc63c5368b5b18bd83b924f9a01b0ce"
+          },
+          {
+            "query": "Add a seed corpus to this Go fuzz target",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5,
+            "spec_hash": "a97e6c3fd2369e232510c37ff7952a02fe51b8e8548503f8bcbdd638015e714f"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "Refactor this Go function to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "9cf6cbb3521bced2f0d3ffdc72e6f7a4027a8a8b77ca17eea1157a03804e359b"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for our Go repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "1f0065ab106756fcf47c949235c73d9e5f88134aa60f74c53035a30c768ec111"
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "9b27fb9f2ff9d191afb2b1a4887414799764477d6b0213b705f440b287fcab92"
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "6af28e494a63e5752b3acc22c4aa9ecca9e9511d024e55bc1f975adbfbf50551"
+          },
+          {
+            "query": "Why is my JavaScript integration test flaky?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "6b5fdfaebe1b8f6773a29b50b92a8035661f0a1128690b4d9ba9c7d5473d27ea"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 7,
+          "total": 13,
+          "pass_rate": 0.461538,
+          "avg_run_seconds": 5.1
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:31:56Z",
+        "executed": true,
+        "content_hash": "ddb191185c5cee4d0cd84c6056a7f8717a84875abed40b408ea641d9ca397088",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "id": "table-driven",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.6
+            },
+            "spec_hash": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+          },
+          {
+            "id": "fuzz-target",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.7
+            },
+            "spec_hash": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5.7
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:31:56Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.3
+          },
+          "results": [
+            {
+              "id": "fuzz-target",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.5
+              },
+              "fingerprint": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+            },
+            {
+              "id": "table-driven",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5
+              },
+              "fingerprint": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:02:07Z",
+        "executed": true,
+        "content_hash": "a3fcbac1b5a087b88e2b1dbcc7dc1de0084cc034f8d4f65ead40cd7f2fa90b37",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Write tests for this Go package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 40.5,
+            "estimate": {
+              "input_tokens": 1149,
+              "input_cost_usd": 0.002873
+            }
+          },
+          {
+            "query": "Add table-driven tests for this Go parser",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 23.1,
+            "estimate": {
+              "input_tokens": 1151,
+              "input_cost_usd": 0.002878
+            }
+          },
+          {
+            "query": "Add a Go fuzz test for this parsing function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 89,
+            "estimate": {
+              "input_tokens": 1170,
+              "input_cost_usd": 0.002925
+            },
+            "spec_hash": "55170d1359376fbd949ad5dcd60dcbfa4ac328aad307903b4230b41449958f7c"
+          },
+          {
+            "query": "Test this Go HTTP handler",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.8,
+            "estimate": {
+              "input_tokens": 1148,
+              "input_cost_usd": 0.00287
+            }
+          },
+          {
+            "query": "How do I run a single fuzz target with go test?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.8,
+            "estimate": {
+              "input_tokens": 1173,
+              "input_cost_usd": 0.002933
+            },
+            "spec_hash": "78bd14346844f1e86728a0e1ddd4655d62b6ee435642c1ef3fc52d0641c3f052"
+          },
+          {
+            "query": "Review my Go tests — should I be using testify here?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.5,
+            "estimate": {
+              "input_tokens": 1155,
+              "input_cost_usd": 0.002888
+            }
+          },
+          {
+            "query": "Add a seed corpus to this Go fuzz target",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.6,
+            "estimate": {
+              "input_tokens": 1152,
+              "input_cost_usd": 0.00288
+            }
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 34.3,
+            "estimate": {
+              "input_tokens": 1149,
+              "input_cost_usd": 0.002873
+            }
+          },
+          {
+            "query": "Refactor this Go function to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 30.6,
+            "estimate": {
+              "input_tokens": 1154,
+              "input_cost_usd": 0.002885
+            }
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for our Go repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 108.9,
+            "estimate": {
+              "input_tokens": 1155,
+              "input_cost_usd": 0.002888
+            }
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 26.8,
+            "estimate": {
+              "input_tokens": 1150,
+              "input_cost_usd": 0.002875
+            }
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 47.9,
+            "estimate": {
+              "input_tokens": 1153,
+              "input_cost_usd": 0.002882
+            }
+          },
+          {
+            "query": "Why is my JavaScript integration test flaky?",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 33.2,
+            "estimate": {
+              "input_tokens": 1152,
+              "input_cost_usd": 0.00288
+            }
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 2,
+          "total": 13,
+          "pass_rate": 0.846154,
+          "avg_run_seconds": 38,
+          "estimate": {
+            "input_tokens": 15011,
+            "input_cost_usd": 0.03753
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:47:01Z",
+          "summary": {
+            "passed": 11,
+            "failed": 2,
+            "total": 13,
+            "pass_rate": 0.846154,
+            "avg_run_seconds": 39.6,
+            "estimate": {
+              "input_tokens": 15011,
+              "input_cost_usd": 0.03753
+            }
+          },
+          "results": [
+            {
+              "query": "Add a Go fuzz test for this parsing function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 107.7,
+              "estimate": {
+                "input_tokens": 1170,
+                "input_cost_usd": 0.002925
+              }
+            },
+            {
+              "query": "Add a seed corpus to this Go fuzz target",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 19.6,
+              "estimate": {
+                "input_tokens": 1152,
+                "input_cost_usd": 0.00288
+              }
+            },
+            {
+              "query": "Add table-driven tests for this Go parser",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 23.1,
+              "estimate": {
+                "input_tokens": 1151,
+                "input_cost_usd": 0.002878
+              }
+            },
+            {
+              "query": "How do I run a single fuzz target with go test?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.2,
+              "estimate": {
+                "input_tokens": 1173,
+                "input_cost_usd": 0.002933
+              }
+            },
+            {
+              "query": "Refactor this Go function to wrap errors with %w",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 30.6,
+              "estimate": {
+                "input_tokens": 1154,
+                "input_cost_usd": 0.002885
+              }
+            },
+            {
+              "query": "Review my Go tests — should I be using testify here?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.5,
+              "estimate": {
+                "input_tokens": 1155,
+                "input_cost_usd": 0.002888
+              }
+            },
+            {
+              "query": "Scaffold a new Go project with a Makefile",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 47.9,
+              "estimate": {
+                "input_tokens": 1153,
+                "input_cost_usd": 0.002882
+              }
+            },
+            {
+              "query": "Set up the GitHub Actions release workflow for our Go repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 108.9,
+              "estimate": {
+                "input_tokens": 1155,
+                "input_cost_usd": 0.002888
+              }
+            },
+            {
+              "query": "Test this Go HTTP handler",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 19.8,
+              "estimate": {
+                "input_tokens": 1148,
+                "input_cost_usd": 0.00287
+              }
+            },
+            {
+              "query": "Why is my JavaScript integration test flaky?",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 33.2,
+              "estimate": {
+                "input_tokens": 1152,
+                "input_cost_usd": 0.00288
+              }
+            },
+            {
+              "query": "Write Jest tests for this React component",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 26.8,
+              "estimate": {
+                "input_tokens": 1150,
+                "input_cost_usd": 0.002875
+              }
+            },
+            {
+              "query": "Write pytest tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 34.3,
+              "estimate": {
+                "input_tokens": 1149,
+                "input_cost_usd": 0.002873
+              }
+            },
+            {
+              "query": "Write tests for this Go package",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 40.5,
+              "estimate": {
+                "input_tokens": 1149,
+                "input_cost_usd": 0.002873
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T16:33:14Z",
+        "executed": true,
+        "content_hash": "ddb191185c5cee4d0cd84c6056a7f8717a84875abed40b408ea641d9ca397088",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "table-driven",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00294
+            },
+            "measured": {
+              "input_tokens": 10318,
+              "cache_read_input_tokens": 84736,
+              "output_tokens": 1438,
+              "cost_usd": 0.259205
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "clamp_test.go",
+                "text": "file clamp_test.go exists",
+                "passed": true,
+                "evidence": "clamp_test.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "clamp_test.go",
+                "pattern": "\\[\\]struct",
+                "text": "clamp_test.go matches /\\[\\]struct/",
+                "passed": true,
+                "evidence": "[]struct",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "clamp_test.go",
+                "pattern": "t\\.Run\\(",
+                "text": "clamp_test.go matches /t\\.Run\\(/",
+                "passed": true,
+                "evidence": "t.Run(",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "clamp_test.go",
+                "pattern": "testify|gomega",
+                "text": "clamp_test.go does not match /testify|gomega/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go test ./...",
+                "requires": "go",
+                "text": "command `go test ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ok  \texample.com/testdemo\t(cached)\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 96492,
+              "executor_duration_seconds": 39.8
+            },
+            "spec_hash": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+          },
+          {
+            "id": "fuzz-target",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1185,
+              "input_cost_usd": 0.002963
+            },
+            "measured": {
+              "input_tokens": 5504,
+              "cache_read_input_tokens": 92416,
+              "output_tokens": 1994,
+              "cost_usd": 0.27471
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "func Fuzz",
+                "text": "parse_test.go matches /func Fuzz/",
+                "passed": true,
+                "evidence": "func Fuzz",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "f\\.Add\\(",
+                "text": "parse_test.go matches /f\\.Add\\(/",
+                "passed": true,
+                "evidence": "f.Add(",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "f\\.Fuzz\\(",
+                "text": "parse_test.go matches /f\\.Fuzz\\(/",
+                "passed": true,
+                "evidence": "f.Fuzz(",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "parse_test.go",
+                "pattern": "testify|gomega",
+                "text": "parse_test.go does not match /testify|gomega/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go test ./...",
+                "requires": "go",
+                "text": "command `go test ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ok  \texample.com/fuzzdemo\t(cached)\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 99914,
+              "executor_duration_seconds": 49.3
+            },
+            "spec_hash": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 44.6,
+          "estimate": {
+            "input_tokens": 2361,
+            "input_cost_usd": 0.005903
+          },
+          "measured": {
+            "input_tokens": 15822,
+            "cache_read_input_tokens": 177152,
+            "output_tokens": 3432,
+            "cost_usd": 0.533915
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:33:14Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 65.1,
+            "measured": {
+              "input_tokens": 10375,
+              "cache_read_input_tokens": 169088,
+              "output_tokens": 4039,
+              "cost_usd": 0.509243
+            }
+          },
+          "results": [
+            {
+              "id": "fuzz-target",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6177,
+                "cache_read_input_tokens": 93440,
+                "output_tokens": 2507,
+                "cost_usd": 0.286648
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 57.1
+              },
+              "fingerprint": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+            },
+            {
+              "id": "table-driven",
+              "passed": true,
+              "measured": {
+                "input_tokens": 4198,
+                "cache_read_input_tokens": 75648,
+                "output_tokens": 1532,
+                "cost_usd": 0.222595
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 73
+              },
+              "fingerprint": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T02:50:01Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 45.3,
+            "estimate": {
+              "input_tokens": 2325,
+              "input_cost_usd": 0.005813
+            },
+            "measured": {
+              "input_tokens": 38168,
+              "cache_read_input_tokens": 161792,
+              "output_tokens": 3993,
+              "cost_usd": 0.559795
+            }
+          },
+          "results": [
+            {
+              "id": "fuzz-target",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1167,
+                "input_cost_usd": 0.002918
+              },
+              "measured": {
+                "input_tokens": 19292,
+                "cache_read_input_tokens": 98944,
+                "output_tokens": 2403,
+                "cost_usd": 0.331635
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 52.8
+              }
+            },
+            {
+              "id": "table-driven",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1158,
+                "input_cost_usd": 0.002895
+              },
+              "measured": {
+                "input_tokens": 18876,
+                "cache_read_input_tokens": 62848,
+                "output_tokens": 1590,
+                "cost_usd": 0.22816
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 37.9
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "tool_version": "v0.2.1-50-g8743990-dirty",
+        "ran_at": "2026-06-22T20:49:01Z",
+        "executed": true,
+        "content_hash": "a3fcbac1b5a087b88e2b1dbcc7dc1de0084cc034f8d4f65ead40cd7f2fa90b37",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Write tests for this Go package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.9,
+            "estimate": {
+              "input_tokens": 1149,
+              "input_cost_usd": 0.005745
+            }
+          },
+          {
+            "query": "Add table-driven tests for this Go parser",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 1151,
+              "input_cost_usd": 0.005755
+            }
+          },
+          {
+            "query": "Add a Go fuzz test for this parsing function",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.8,
+            "estimate": {
+              "input_tokens": 1152,
+              "input_cost_usd": 0.00576
+            }
+          },
+          {
+            "query": "Test this Go HTTP handler",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.2,
+            "estimate": {
+              "input_tokens": 1148,
+              "input_cost_usd": 0.00574
+            }
+          },
+          {
+            "query": "How do I run a single fuzz target with go test?",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "estimate": {
+              "input_tokens": 1155,
+              "input_cost_usd": 0.005775
+            }
+          },
+          {
+            "query": "Review my Go tests — should I be using testify here?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1155,
+              "input_cost_usd": 0.005775
+            }
+          },
+          {
+            "query": "Add a seed corpus to this Go fuzz target",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "estimate": {
+              "input_tokens": 1152,
+              "input_cost_usd": 0.00576
+            }
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 88.3,
+            "estimate": {
+              "input_tokens": 1149,
+              "input_cost_usd": 0.005745
+            }
+          },
+          {
+            "query": "Refactor this Go function to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 64,
+            "estimate": {
+              "input_tokens": 1154,
+              "input_cost_usd": 0.00577
+            }
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for our Go repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1155,
+              "input_cost_usd": 0.005775
+            }
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 39.8,
+            "estimate": {
+              "input_tokens": 1150,
+              "input_cost_usd": 0.00575
+            }
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1171,
+              "input_cost_usd": 0.005855
+            },
+            "spec_hash": "6af28e494a63e5752b3acc22c4aa9ecca9e9511d024e55bc1f975adbfbf50551"
+          },
+          {
+            "query": "Why is my JavaScript integration test flaky?",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 86.3,
+            "estimate": {
+              "input_tokens": 1152,
+              "input_cost_usd": 0.00576
+            }
+          }
+        ],
+        "summary": {
+          "passed": 13,
+          "failed": 0,
+          "total": 13,
+          "pass_rate": 1,
+          "avg_run_seconds": 44.1,
+          "estimate": {
+            "input_tokens": 14993,
+            "input_cost_usd": 0.074965
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-20T02:57:05Z",
+          "summary": {
+            "passed": 12,
+            "failed": 1,
+            "total": 13,
+            "pass_rate": 0.923077,
+            "avg_run_seconds": 38,
+            "estimate": {
+              "input_tokens": 14975,
+              "input_cost_usd": 0.074875
+            }
+          },
+          "results": [
+            {
+              "query": "Add a Go fuzz test for this parsing function",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.8,
+              "estimate": {
+                "input_tokens": 1152,
+                "input_cost_usd": 0.00576
+              }
+            },
+            {
+              "query": "Add a seed corpus to this Go fuzz target",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.6,
+              "estimate": {
+                "input_tokens": 1152,
+                "input_cost_usd": 0.00576
+              }
+            },
+            {
+              "query": "Add table-driven tests for this Go parser",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.9,
+              "estimate": {
+                "input_tokens": 1151,
+                "input_cost_usd": 0.005755
+              }
+            },
+            {
+              "query": "How do I run a single fuzz target with go test?",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.9,
+              "estimate": {
+                "input_tokens": 1155,
+                "input_cost_usd": 0.005775
+              }
+            },
+            {
+              "query": "Refactor this Go function to wrap errors with %w",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 64,
+              "estimate": {
+                "input_tokens": 1154,
+                "input_cost_usd": 0.00577
+              }
+            },
+            {
+              "query": "Review my Go tests — should I be using testify here?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.6,
+              "estimate": {
+                "input_tokens": 1155,
+                "input_cost_usd": 0.005775
+              }
+            },
+            {
+              "query": "Scaffold a new Go project with a Makefile",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 40.3,
+              "estimate": {
+                "input_tokens": 1153,
+                "input_cost_usd": 0.005765
+              }
+            },
+            {
+              "query": "Set up the GitHub Actions release workflow for our Go repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 120,
+              "estimate": {
+                "input_tokens": 1155,
+                "input_cost_usd": 0.005775
+              }
+            },
+            {
+              "query": "Test this Go HTTP handler",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.2,
+              "estimate": {
+                "input_tokens": 1148,
+                "input_cost_usd": 0.00574
+              }
+            },
+            {
+              "query": "Why is my JavaScript integration test flaky?",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 86.3,
+              "estimate": {
+                "input_tokens": 1152,
+                "input_cost_usd": 0.00576
+              }
+            },
+            {
+              "query": "Write Jest tests for this React component",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 39.8,
+              "estimate": {
+                "input_tokens": 1150,
+                "input_cost_usd": 0.00575
+              }
+            },
+            {
+              "query": "Write pytest tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 88.3,
+              "estimate": {
+                "input_tokens": 1149,
+                "input_cost_usd": 0.005745
+              }
+            },
+            {
+              "query": "Write tests for this Go package",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.9,
+              "estimate": {
+                "input_tokens": 1149,
+                "input_cost_usd": 0.005745
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T16:34:54Z",
+        "executed": true,
+        "content_hash": "ddb191185c5cee4d0cd84c6056a7f8717a84875abed40b408ea641d9ca397088",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "table-driven",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00588
+            },
+            "measured": {
+              "input_tokens": 14139,
+              "cache_read_input_tokens": 71552,
+              "output_tokens": 1295,
+              "cost_usd": 0.467305
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "clamp_test.go",
+                "text": "file clamp_test.go exists",
+                "passed": true,
+                "evidence": "clamp_test.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "clamp_test.go",
+                "pattern": "\\[\\]struct",
+                "text": "clamp_test.go matches /\\[\\]struct/",
+                "passed": true,
+                "evidence": "[]struct",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "clamp_test.go",
+                "pattern": "t\\.Run\\(",
+                "text": "clamp_test.go matches /t\\.Run\\(/",
+                "passed": true,
+                "evidence": "t.Run(",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "clamp_test.go",
+                "pattern": "testify|gomega",
+                "text": "clamp_test.go does not match /testify|gomega/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go test ./...",
+                "requires": "go",
+                "text": "command `go test ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ok  \texample.com/testdemo\t(cached)\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 86986,
+              "executor_duration_seconds": 34.8
+            },
+            "spec_hash": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+          },
+          {
+            "id": "fuzz-target",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1185,
+              "input_cost_usd": 0.005925
+            },
+            "measured": {
+              "input_tokens": 8821,
+              "cache_read_input_tokens": 117888,
+              "output_tokens": 2383,
+              "cost_usd": 0.705035
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "func Fuzz",
+                "text": "parse_test.go matches /func Fuzz/",
+                "passed": true,
+                "evidence": "func Fuzz",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "f\\.Add\\(",
+                "text": "parse_test.go matches /f\\.Add\\(/",
+                "passed": true,
+                "evidence": "f.Add(",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "parse_test.go",
+                "pattern": "f\\.Fuzz\\(",
+                "text": "parse_test.go matches /f\\.Fuzz\\(/",
+                "passed": true,
+                "evidence": "f.Fuzz(",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "parse_test.go",
+                "pattern": "testify|gomega",
+                "text": "parse_test.go does not match /testify|gomega/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go test ./...",
+                "requires": "go",
+                "text": "command `go test ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ok  \texample.com/fuzzdemo\t(cached)\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 129092,
+              "executor_duration_seconds": 59.7
+            },
+            "spec_hash": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 47.3,
+          "estimate": {
+            "input_tokens": 2361,
+            "input_cost_usd": 0.011805
+          },
+          "measured": {
+            "input_tokens": 22960,
+            "cache_read_input_tokens": 189440,
+            "output_tokens": 3678,
+            "cost_usd": 1.17234
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:34:54Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 40.3,
+            "measured": {
+              "input_tokens": 28853,
+              "cache_read_input_tokens": 143616,
+              "output_tokens": 2874,
+              "cost_usd": 0.948565
+            }
+          },
+          "results": [
+            {
+              "id": "fuzz-target",
+              "passed": true,
+              "measured": {
+                "input_tokens": 15098,
+                "cache_read_input_tokens": 72064,
+                "output_tokens": 1612,
+                "cost_usd": 0.48417
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 38.9
+              },
+              "fingerprint": "f43742e8255dda4a121852002e8aa4b6c1a1f8b3890b1ab33a8f832dc420c3a1"
+            },
+            {
+              "id": "table-driven",
+              "passed": true,
+              "measured": {
+                "input_tokens": 13755,
+                "cache_read_input_tokens": 71552,
+                "output_tokens": 1262,
+                "cost_usd": 0.464395
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 41.8
+              },
+              "fingerprint": "168b5bcbc43f83ef5b5a717dcd4ea3b70972a55910069a01e98b56e9cdc50a46"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T02:57:47Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 36.3,
+            "estimate": {
+              "input_tokens": 2325,
+              "input_cost_usd": 0.011625
+            },
+            "measured": {
+              "input_tokens": 29608,
+              "cache_read_input_tokens": 183296,
+              "output_tokens": 3006,
+              "cost_usd": 1.1547
+            }
+          },
+          "results": [
+            {
+              "id": "fuzz-target",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1167,
+                "input_cost_usd": 0.005835
+              },
+              "measured": {
+                "input_tokens": 12027,
+                "cache_read_input_tokens": 113792,
+                "output_tokens": 1724,
+                "cost_usd": 0.680815
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 41.4
+              }
+            },
+            {
+              "id": "table-driven",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1158,
+                "input_cost_usd": 0.00579
+              },
+              "measured": {
+                "input_tokens": 17581,
+                "cache_read_input_tokens": 69504,
+                "output_tokens": 1282,
+                "cost_usd": 0.473885
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 31.1
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
