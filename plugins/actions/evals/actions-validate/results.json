@@ -1,0 +1,3857 @@
+{
+  "schema": 5,
+  "plugin": "actions",
+  "skill": "actions-validate",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:26:07Z",
+        "executed": true,
+        "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 905,
+              "input_cost_usd": 0.000905
+            },
+            "spec_hash": "05829f1c5bb8e92e0a6ad585e3ee984fb0bce4775daf84377582c506177fce34"
+          },
+          {
+            "query": "Run actionlint over .github/workflows and fix the errors",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 904,
+              "input_cost_usd": 0.000904
+            },
+            "spec_hash": "30ab975d3632c87226f6e2cfbd573785331afa1dcb67b55001ad01568487f346"
+          },
+          {
+            "query": "Audit our workflows with zizmor",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.1,
+            "estimate": {
+              "input_tokens": 899,
+              "input_cost_usd": 0.000899
+            },
+            "spec_hash": "c0d5709d1a6beeda8c5de85be691d6663ed25dd5353b65ff8e9f9e27d65ca58c"
+          },
+          {
+            "query": "Lint and security-check the workflow I just edited",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "estimate": {
+              "input_tokens": 902,
+              "input_cost_usd": 0.000902
+            },
+            "spec_hash": "40b266df18b426d4c9c690cd24dfeb8122f1107796300675b5a3c60eba63e512"
+          },
+          {
+            "query": "Set up actionlint and zizmor for this repository",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.4,
+            "estimate": {
+              "input_tokens": 903,
+              "input_cost_usd": 0.000903
+            },
+            "spec_hash": "309bf09cdafc4a8bb8ce40cab7a013303ed60d989752c1114886897a402496c9"
+          },
+          {
+            "query": "My workflow fails to parse in CI — check and fix it locally",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "estimate": {
+              "input_tokens": 904,
+              "input_cost_usd": 0.000904
+            },
+            "spec_hash": "69effeaa9eb42c7803af52dff6557a4dd321540120c06a303af3a775fe366805"
+          },
+          {
+            "query": "Run the workflow linter before I commit these .github/workflows changes",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "estimate": {
+              "input_tokens": 905,
+              "input_cost_usd": 0.000905
+            },
+            "spec_hash": "660815d35053929abd51162fcf11f6f11597609ead196d7bf1964a89f14f2af5"
+          },
+          {
+            "query": "Write a new release workflow using the reusable library",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.6,
+            "estimate": {
+              "input_tokens": 902,
+              "input_cost_usd": 0.000902
+            },
+            "spec_hash": "842d0fd41b94ac2a3bd6bf88bc8fbdad174d36adf47d51fd09f770149312de04"
+          },
+          {
+            "query": "Explain why pull_request_target is dangerous",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.5,
+            "estimate": {
+              "input_tokens": 901,
+              "input_cost_usd": 0.000901
+            },
+            "spec_hash": "59a987bb91345cb2550b63e83bc134be94668c3eaf61a235b3e9fde0a0c21f74"
+          },
+          {
+            "query": "Add a build matrix to this workflow",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.8,
+            "estimate": {
+              "input_tokens": 898,
+              "input_cost_usd": 0.000898
+            },
+            "spec_hash": "529fb7f70dfa2a15940f57777f30e4d91b250e11526ad70cae244b7c6e6dde4c"
+          },
+          {
+            "query": "Validate this Terraform configuration with tflint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 901,
+              "input_cost_usd": 0.000901
+            },
+            "spec_hash": "ad84c344d96ebbd31a49b9822258cc8675546571ea0fc36764747fa199b23159"
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 899,
+              "input_cost_usd": 0.000899
+            },
+            "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.2,
+            "estimate": {
+              "input_tokens": 899,
+              "input_cost_usd": 0.000899
+            },
+            "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 3,
+          "total": 13,
+          "pass_rate": 0.769231,
+          "avg_run_seconds": 8.6,
+          "estimate": {
+            "input_tokens": 11722,
+            "input_cost_usd": 0.011722
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T00:52:07Z",
+          "summary": {
+            "passed": 10,
+            "failed": 3,
+            "total": 13,
+            "pass_rate": 0.769231,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 11722,
+              "input_cost_usd": 0.011722
+            }
+          },
+          "results": [
+            {
+              "query": "Add a build matrix to this workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.8,
+              "estimate": {
+                "input_tokens": 898,
+                "input_cost_usd": 0.000898
+              }
+            },
+            {
+              "query": "Audit our workflows with zizmor",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.1,
+              "estimate": {
+                "input_tokens": 899,
+                "input_cost_usd": 0.000899
+              }
+            },
+            {
+              "query": "Explain why pull_request_target is dangerous",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.5,
+              "estimate": {
+                "input_tokens": 901,
+                "input_cost_usd": 0.000901
+              }
+            },
+            {
+              "query": "Lint and security-check the workflow I just edited",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.7,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.000902
+              }
+            },
+            {
+              "query": "Lint the markdown files under docs/",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.2,
+              "estimate": {
+                "input_tokens": 899,
+                "input_cost_usd": 0.000899
+              }
+            },
+            {
+              "query": "My workflow fails to parse in CI — check and fix it locally",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.4,
+              "estimate": {
+                "input_tokens": 904,
+                "input_cost_usd": 0.000904
+              }
+            },
+            {
+              "query": "Run actionlint over .github/workflows and fix the errors",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.2,
+              "estimate": {
+                "input_tokens": 904,
+                "input_cost_usd": 0.000904
+              }
+            },
+            {
+              "query": "Run the Go test suite and report failures",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.9,
+              "estimate": {
+                "input_tokens": 899,
+                "input_cost_usd": 0.000899
+              }
+            },
+            {
+              "query": "Run the workflow linter before I commit these .github/workflows changes",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.1,
+              "estimate": {
+                "input_tokens": 905,
+                "input_cost_usd": 0.000905
+              }
+            },
+            {
+              "query": "Set up actionlint and zizmor for this repository",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.4,
+              "estimate": {
+                "input_tokens": 903,
+                "input_cost_usd": 0.000903
+              }
+            },
+            {
+              "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7,
+              "estimate": {
+                "input_tokens": 905,
+                "input_cost_usd": 0.000905
+              }
+            },
+            {
+              "query": "Validate this Terraform configuration with tflint",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.4,
+              "estimate": {
+                "input_tokens": 901,
+                "input_cost_usd": 0.000901
+              }
+            },
+            {
+              "query": "Write a new release workflow using the reusable library",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.6,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.000902
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T22:50:33Z",
+        "executed": true,
+        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "seed-zizmor-config",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 913,
+              "input_cost_usd": 0.000913
+            },
+            "measured": {
+              "input_tokens": 33,
+              "cache_read_input_tokens": 110565,
+              "cache_creation_input_tokens": 16641,
+              "output_tokens": 1632,
+              "cost_usd": 0.053129
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "zizmor.yml",
+                "text": "file zizmor.yml exists",
+                "passed": false,
+                "evidence": "zizmor.yml missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "zizmor.yml",
+                "pattern": "rules:",
+                "text": "zizmor.yml matches /rules:/",
+                "passed": false,
+                "evidence": "zizmor.yml missing",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 0,
+              "failed": 2,
+              "total": 2,
+              "pass_rate": 0
+            },
+            "timing": {
+              "total_tokens": 128871,
+              "executor_duration_seconds": 25.2
+            },
+            "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+          },
+          {
+            "id": "validate-and-fix",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 929,
+              "input_cost_usd": 0.000929
+            },
+            "measured": {
+              "input_tokens": 45,
+              "cache_read_input_tokens": 154050,
+              "cache_creation_input_tokens": 18632,
+              "output_tokens": 1108,
+              "cost_usd": 0.058862
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "actionlint",
+                "requires": "actionlint",
+                "text": "command `actionlint` exits 0",
+                "passed": false,
+                "evidence": "exit 3:  found in any parent directories of \"/private/var/folders/w_/y_0my0ns7vq98bwrhwd1zldr0000gn/T/evolve-run.3829093790/evals.2503978997\". check workflows directory is put correctly in your Git repository",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "zizmor --offline .github/workflows/",
+                "requires": "zizmor",
+                "text": "command `zizmor --offline .github/workflows/` exits 0",
+                "passed": false,
+                "evidence": "exit 13: udits/#artipacked\n\n3 findings (2 suppressed, 1 unsafe fixes): 0 informational, 0 low, 1 medium, 0 high\nINFO zizmor: 🌈 zizmor v1.26.1\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "env:",
+                "text": ".github/workflows/build.yaml matches /env:/",
+                "passed": true,
+                "evidence": "env:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "run:.*\\$\\{\\{",
+                "text": ".github/workflows/build.yaml does not match /run:.*\\$\\{\\{/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 2,
+              "total": 4,
+              "pass_rate": 0.5
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 173835,
+              "executor_duration_seconds": 25.2
+            },
+            "spec_hash": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 2,
+          "total": 2,
+          "pass_rate": 0,
+          "avg_run_seconds": 25.2,
+          "estimate": {
+            "input_tokens": 1842,
+            "input_cost_usd": 0.001842
+          },
+          "measured": {
+            "input_tokens": 78,
+            "cache_read_input_tokens": 264615,
+            "cache_creation_input_tokens": 35273,
+            "output_tokens": 2740,
+            "cost_usd": 0.111991
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-27T22:50:33Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 14.5,
+            "measured": {
+              "input_tokens": 45,
+              "cache_read_input_tokens": 138847,
+              "cache_creation_input_tokens": 31144,
+              "output_tokens": 1413,
+              "cost_usd": 0.084493
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": false,
+              "measured": {
+                "input_tokens": 21,
+                "cache_read_input_tokens": 58816,
+                "cache_creation_input_tokens": 15264,
+                "output_tokens": 693,
+                "cost_usd": 0.040493
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 16
+              },
+              "fingerprint": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": false,
+              "measured": {
+                "input_tokens": 24,
+                "cache_read_input_tokens": 80031,
+                "cache_creation_input_tokens": 15880,
+                "output_tokens": 720,
+                "cost_usd": 0.044
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 4,
+                "total": 4,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 13
+              },
+              "fingerprint": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-23T04:26:32Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 23.9,
+            "estimate": {
+              "input_tokens": 1842,
+              "input_cost_usd": 0.001842
+            },
+            "measured": {
+              "input_tokens": 84,
+              "cache_read_input_tokens": 274652,
+              "cache_creation_input_tokens": 36201,
+              "output_tokens": 2784,
+              "cost_usd": 0.115082
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 913,
+                "input_cost_usd": 0.000913
+              },
+              "measured": {
+                "input_tokens": 33,
+                "cache_read_input_tokens": 110565,
+                "cache_creation_input_tokens": 16641,
+                "output_tokens": 1632,
+                "cost_usd": 0.053129
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 2,
+                "total": 2,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 25.2
+              }
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 929,
+                "input_cost_usd": 0.000929
+              },
+              "measured": {
+                "input_tokens": 51,
+                "cache_read_input_tokens": 164087,
+                "cache_creation_input_tokens": 19560,
+                "output_tokens": 1152,
+                "cost_usd": 0.061953
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 2,
+                "total": 4,
+                "pass_rate": 0.5
+              },
+              "timing": {
+                "executor_duration_seconds": 22.5
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:27:44Z",
+        "executed": true,
+        "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 1252,
+              "input_cost_usd": 0.00626
+            },
+            "spec_hash": "05829f1c5bb8e92e0a6ad585e3ee984fb0bce4775daf84377582c506177fce34"
+          },
+          {
+            "query": "Run actionlint over .github/workflows and fix the errors",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9,
+            "estimate": {
+              "input_tokens": 1246,
+              "input_cost_usd": 0.00623
+            },
+            "spec_hash": "30ab975d3632c87226f6e2cfbd573785331afa1dcb67b55001ad01568487f346"
+          },
+          {
+            "query": "Audit our workflows with zizmor",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 1239,
+              "input_cost_usd": 0.006195
+            },
+            "spec_hash": "c0d5709d1a6beeda8c5de85be691d6663ed25dd5353b65ff8e9f9e27d65ca58c"
+          },
+          {
+            "query": "Lint and security-check the workflow I just edited",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.8,
+            "estimate": {
+              "input_tokens": 1242,
+              "input_cost_usd": 0.00621
+            },
+            "spec_hash": "40b266df18b426d4c9c690cd24dfeb8122f1107796300675b5a3c60eba63e512"
+          },
+          {
+            "query": "Set up actionlint and zizmor for this repository",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "estimate": {
+              "input_tokens": 1243,
+              "input_cost_usd": 0.006215
+            },
+            "spec_hash": "309bf09cdafc4a8bb8ce40cab7a013303ed60d989752c1114886897a402496c9"
+          },
+          {
+            "query": "My workflow fails to parse in CI — check and fix it locally",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.1,
+            "estimate": {
+              "input_tokens": 1247,
+              "input_cost_usd": 0.006235
+            },
+            "spec_hash": "69effeaa9eb42c7803af52dff6557a4dd321540120c06a303af3a775fe366805"
+          },
+          {
+            "query": "Run the workflow linter before I commit these .github/workflows changes",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.7,
+            "estimate": {
+              "input_tokens": 1248,
+              "input_cost_usd": 0.00624
+            },
+            "spec_hash": "660815d35053929abd51162fcf11f6f11597609ead196d7bf1964a89f14f2af5"
+          },
+          {
+            "query": "Write a new release workflow using the reusable library",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.7,
+            "estimate": {
+              "input_tokens": 1241,
+              "input_cost_usd": 0.006205
+            },
+            "spec_hash": "842d0fd41b94ac2a3bd6bf88bc8fbdad174d36adf47d51fd09f770149312de04"
+          },
+          {
+            "query": "Explain why pull_request_target is dangerous",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.4,
+            "estimate": {
+              "input_tokens": 1242,
+              "input_cost_usd": 0.00621
+            },
+            "spec_hash": "59a987bb91345cb2550b63e83bc134be94668c3eaf61a235b3e9fde0a0c21f74"
+          },
+          {
+            "query": "Add a build matrix to this workflow",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 1239,
+              "input_cost_usd": 0.006195
+            },
+            "spec_hash": "529fb7f70dfa2a15940f57777f30e4d91b250e11526ad70cae244b7c6e6dde4c"
+          },
+          {
+            "query": "Validate this Terraform configuration with tflint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.2,
+            "estimate": {
+              "input_tokens": 1242,
+              "input_cost_usd": 0.00621
+            },
+            "spec_hash": "ad84c344d96ebbd31a49b9822258cc8675546571ea0fc36764747fa199b23159"
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1239,
+              "input_cost_usd": 0.006195
+            },
+            "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.8,
+            "estimate": {
+              "input_tokens": 1239,
+              "input_cost_usd": 0.006195
+            },
+            "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 1,
+          "total": 13,
+          "pass_rate": 0.923077,
+          "avg_run_seconds": 10.8,
+          "estimate": {
+            "input_tokens": 16159,
+            "input_cost_usd": 0.080795
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T22:29:11Z",
+          "summary": {
+            "passed": 12,
+            "failed": 1,
+            "total": 13,
+            "pass_rate": 0.923077,
+            "avg_run_seconds": 10.8,
+            "estimate": {
+              "input_tokens": 16159,
+              "input_cost_usd": 0.080795
+            }
+          },
+          "results": [
+            {
+              "query": "Add a build matrix to this workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.3,
+              "estimate": {
+                "input_tokens": 1239,
+                "input_cost_usd": 0.006195
+              }
+            },
+            {
+              "query": "Audit our workflows with zizmor",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.3,
+              "estimate": {
+                "input_tokens": 1239,
+                "input_cost_usd": 0.006195
+              }
+            },
+            {
+              "query": "Explain why pull_request_target is dangerous",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 19.4,
+              "estimate": {
+                "input_tokens": 1242,
+                "input_cost_usd": 0.00621
+              }
+            },
+            {
+              "query": "Lint and security-check the workflow I just edited",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.8,
+              "estimate": {
+                "input_tokens": 1242,
+                "input_cost_usd": 0.00621
+              }
+            },
+            {
+              "query": "Lint the markdown files under docs/",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.8,
+              "estimate": {
+                "input_tokens": 1239,
+                "input_cost_usd": 0.006195
+              }
+            },
+            {
+              "query": "My workflow fails to parse in CI — check and fix it locally",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.1,
+              "estimate": {
+                "input_tokens": 1247,
+                "input_cost_usd": 0.006235
+              }
+            },
+            {
+              "query": "Run actionlint over .github/workflows and fix the errors",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9,
+              "estimate": {
+                "input_tokens": 1246,
+                "input_cost_usd": 0.00623
+              }
+            },
+            {
+              "query": "Run the Go test suite and report failures",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.6,
+              "estimate": {
+                "input_tokens": 1239,
+                "input_cost_usd": 0.006195
+              }
+            },
+            {
+              "query": "Run the workflow linter before I commit these .github/workflows changes",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.7,
+              "estimate": {
+                "input_tokens": 1248,
+                "input_cost_usd": 0.00624
+              }
+            },
+            {
+              "query": "Set up actionlint and zizmor for this repository",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.9,
+              "estimate": {
+                "input_tokens": 1243,
+                "input_cost_usd": 0.006215
+              }
+            },
+            {
+              "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.4,
+              "estimate": {
+                "input_tokens": 1252,
+                "input_cost_usd": 0.00626
+              }
+            },
+            {
+              "query": "Validate this Terraform configuration with tflint",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.2,
+              "estimate": {
+                "input_tokens": 1242,
+                "input_cost_usd": 0.00621
+              }
+            },
+            {
+              "query": "Write a new release workflow using the reusable library",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.7,
+              "estimate": {
+                "input_tokens": 1241,
+                "input_cost_usd": 0.006205
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T23:00:01Z",
+        "executed": true,
+        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "seed-zizmor-config",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1258,
+              "input_cost_usd": 0.00629
+            },
+            "measured": {
+              "input_tokens": 2683,
+              "cache_read_input_tokens": 87511,
+              "cache_creation_input_tokens": 9211,
+              "output_tokens": 1769,
+              "cost_usd": 0.194102
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "zizmor.yml",
+                "text": "file zizmor.yml exists",
+                "passed": true,
+                "evidence": "zizmor.yml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "zizmor.yml",
+                "pattern": "rules:",
+                "text": "zizmor.yml matches /rules:/",
+                "passed": true,
+                "evidence": "rules:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 101174,
+              "executor_duration_seconds": 30
+            },
+            "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+          },
+          {
+            "id": "validate-and-fix",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 1281,
+              "input_cost_usd": 0.006405
+            },
+            "measured": {
+              "input_tokens": 2698,
+              "cache_read_input_tokens": 102259,
+              "cache_creation_input_tokens": 8411,
+              "output_tokens": 1039,
+              "cost_usd": 0.189557
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "actionlint",
+                "requires": "actionlint",
+                "text": "command `actionlint` exits 0",
+                "passed": false,
+                "evidence": "exit 3: s found in any parent directories of \"/private/var/folders/w_/y_0my0ns7vq98bwrhwd1zldr0000gn/T/evolve-run.3829093790/evals.761253870\". check workflows directory is put correctly in your Git repository",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "zizmor --offline .github/workflows/",
+                "requires": "zizmor",
+                "text": "command `zizmor --offline .github/workflows/` exits 0",
+                "passed": false,
+                "evidence": "exit 14: emplate-injection\n\n4 findings (2 suppressed, 2 unsafe fixes): 0 informational, 0 low, 1 medium, 1 high\nINFO zizmor: 🌈 zizmor v1.26.1\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "env:",
+                "text": ".github/workflows/build.yaml matches /env:/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "run:.*\\$\\{\\{",
+                "text": ".github/workflows/build.yaml does not match /run:.*\\$\\{\\{/",
+                "passed": false,
+                "evidence": "run: echo \"Building branch ${{",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 0,
+              "failed": 4,
+              "total": 4,
+              "pass_rate": 0
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 3,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 114407,
+              "executor_duration_seconds": 68.6
+            },
+            "spec_hash": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 49.3,
+          "estimate": {
+            "input_tokens": 2539,
+            "input_cost_usd": 0.012695
+          },
+          "measured": {
+            "input_tokens": 5381,
+            "cache_read_input_tokens": 189770,
+            "cache_creation_input_tokens": 17622,
+            "output_tokens": 2808,
+            "cost_usd": 0.383659
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-27T23:00:01Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 92.4,
+            "measured": {
+              "input_tokens": 5412,
+              "cache_read_input_tokens": 462691,
+              "cache_creation_input_tokens": 24456,
+              "output_tokens": 9204,
+              "cost_usd": 0.734275
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2629,
+                "cache_read_input_tokens": 163457,
+                "cache_creation_input_tokens": 12354,
+                "output_tokens": 5012,
+                "cost_usd": 0.344315
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 103.1
+              },
+              "fingerprint": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2783,
+                "cache_read_input_tokens": 299234,
+                "cache_creation_input_tokens": 12102,
+                "output_tokens": 4192,
+                "cost_usd": 0.38996
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 1,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 81.8
+              },
+              "fingerprint": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-23T04:29:01Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 53.5,
+            "estimate": {
+              "input_tokens": 2539,
+              "input_cost_usd": 0.012695
+            },
+            "measured": {
+              "input_tokens": 6014,
+              "cache_read_input_tokens": 314034,
+              "cache_creation_input_tokens": 37777,
+              "output_tokens": 4627,
+              "cost_usd": 0.681742
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1258,
+                "input_cost_usd": 0.00629
+              },
+              "measured": {
+                "input_tokens": 2683,
+                "cache_read_input_tokens": 87511,
+                "cache_creation_input_tokens": 9211,
+                "output_tokens": 1769,
+                "cost_usd": 0.194102
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 30
+              }
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1281,
+                "input_cost_usd": 0.006405
+              },
+              "measured": {
+                "input_tokens": 3331,
+                "cache_read_input_tokens": 226523,
+                "cache_creation_input_tokens": 28566,
+                "output_tokens": 2858,
+                "cost_usd": 0.48764
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 1,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 77
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:26:43Z",
+        "executed": true,
+        "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "estimate": {
+              "input_tokens": 905,
+              "input_cost_usd": 0.002715
+            },
+            "spec_hash": "05829f1c5bb8e92e0a6ad585e3ee984fb0bce4775daf84377582c506177fce34"
+          },
+          {
+            "query": "Run actionlint over .github/workflows and fix the errors",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "estimate": {
+              "input_tokens": 904,
+              "input_cost_usd": 0.002712
+            },
+            "spec_hash": "30ab975d3632c87226f6e2cfbd573785331afa1dcb67b55001ad01568487f346"
+          },
+          {
+            "query": "Audit our workflows with zizmor",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "estimate": {
+              "input_tokens": 899,
+              "input_cost_usd": 0.002697
+            },
+            "spec_hash": "c0d5709d1a6beeda8c5de85be691d6663ed25dd5353b65ff8e9f9e27d65ca58c"
+          },
+          {
+            "query": "Lint and security-check the workflow I just edited",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.1,
+            "estimate": {
+              "input_tokens": 902,
+              "input_cost_usd": 0.002706
+            },
+            "spec_hash": "40b266df18b426d4c9c690cd24dfeb8122f1107796300675b5a3c60eba63e512"
+          },
+          {
+            "query": "Set up actionlint and zizmor for this repository",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.8,
+            "estimate": {
+              "input_tokens": 903,
+              "input_cost_usd": 0.002709
+            },
+            "spec_hash": "309bf09cdafc4a8bb8ce40cab7a013303ed60d989752c1114886897a402496c9"
+          },
+          {
+            "query": "My workflow fails to parse in CI — check and fix it locally",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.2,
+            "estimate": {
+              "input_tokens": 904,
+              "input_cost_usd": 0.002712
+            },
+            "spec_hash": "69effeaa9eb42c7803af52dff6557a4dd321540120c06a303af3a775fe366805"
+          },
+          {
+            "query": "Run the workflow linter before I commit these .github/workflows changes",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "estimate": {
+              "input_tokens": 905,
+              "input_cost_usd": 0.002715
+            },
+            "spec_hash": "660815d35053929abd51162fcf11f6f11597609ead196d7bf1964a89f14f2af5"
+          },
+          {
+            "query": "Write a new release workflow using the reusable library",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.7,
+            "estimate": {
+              "input_tokens": 902,
+              "input_cost_usd": 0.002706
+            },
+            "spec_hash": "842d0fd41b94ac2a3bd6bf88bc8fbdad174d36adf47d51fd09f770149312de04"
+          },
+          {
+            "query": "Explain why pull_request_target is dangerous",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.9,
+            "estimate": {
+              "input_tokens": 901,
+              "input_cost_usd": 0.002703
+            },
+            "spec_hash": "59a987bb91345cb2550b63e83bc134be94668c3eaf61a235b3e9fde0a0c21f74"
+          },
+          {
+            "query": "Add a build matrix to this workflow",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.6,
+            "estimate": {
+              "input_tokens": 898,
+              "input_cost_usd": 0.002694
+            },
+            "spec_hash": "529fb7f70dfa2a15940f57777f30e4d91b250e11526ad70cae244b7c6e6dde4c"
+          },
+          {
+            "query": "Validate this Terraform configuration with tflint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.9,
+            "estimate": {
+              "input_tokens": 901,
+              "input_cost_usd": 0.002703
+            },
+            "spec_hash": "ad84c344d96ebbd31a49b9822258cc8675546571ea0fc36764747fa199b23159"
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 899,
+              "input_cost_usd": 0.002697
+            },
+            "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.7,
+            "estimate": {
+              "input_tokens": 899,
+              "input_cost_usd": 0.002697
+            },
+            "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 1,
+          "total": 13,
+          "pass_rate": 0.923077,
+          "avg_run_seconds": 9,
+          "estimate": {
+            "input_tokens": 11722,
+            "input_cost_usd": 0.035166
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T22:27:45Z",
+          "summary": {
+            "passed": 12,
+            "failed": 1,
+            "total": 13,
+            "pass_rate": 0.923077,
+            "avg_run_seconds": 9,
+            "estimate": {
+              "input_tokens": 11722,
+              "input_cost_usd": 0.035166
+            }
+          },
+          "results": [
+            {
+              "query": "Add a build matrix to this workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.6,
+              "estimate": {
+                "input_tokens": 898,
+                "input_cost_usd": 0.002694
+              }
+            },
+            {
+              "query": "Audit our workflows with zizmor",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.9,
+              "estimate": {
+                "input_tokens": 899,
+                "input_cost_usd": 0.002697
+              }
+            },
+            {
+              "query": "Explain why pull_request_target is dangerous",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 19.9,
+              "estimate": {
+                "input_tokens": 901,
+                "input_cost_usd": 0.002703
+              }
+            },
+            {
+              "query": "Lint and security-check the workflow I just edited",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.1,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.002706
+              }
+            },
+            {
+              "query": "Lint the markdown files under docs/",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.7,
+              "estimate": {
+                "input_tokens": 899,
+                "input_cost_usd": 0.002697
+              }
+            },
+            {
+              "query": "My workflow fails to parse in CI — check and fix it locally",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.1,
+              "estimate": {
+                "input_tokens": 904,
+                "input_cost_usd": 0.002712
+              }
+            },
+            {
+              "query": "Run actionlint over .github/workflows and fix the errors",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.2,
+              "estimate": {
+                "input_tokens": 904,
+                "input_cost_usd": 0.002712
+              }
+            },
+            {
+              "query": "Run the Go test suite and report failures",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.5,
+              "estimate": {
+                "input_tokens": 899,
+                "input_cost_usd": 0.002697
+              }
+            },
+            {
+              "query": "Run the workflow linter before I commit these .github/workflows changes",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.1,
+              "estimate": {
+                "input_tokens": 905,
+                "input_cost_usd": 0.002715
+              }
+            },
+            {
+              "query": "Set up actionlint and zizmor for this repository",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.8,
+              "estimate": {
+                "input_tokens": 903,
+                "input_cost_usd": 0.002709
+              }
+            },
+            {
+              "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.5,
+              "estimate": {
+                "input_tokens": 905,
+                "input_cost_usd": 0.002715
+              }
+            },
+            {
+              "query": "Validate this Terraform configuration with tflint",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.9,
+              "estimate": {
+                "input_tokens": 901,
+                "input_cost_usd": 0.002703
+              }
+            },
+            {
+              "query": "Write a new release workflow using the reusable library",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.7,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.002706
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T22:51:30Z",
+        "executed": true,
+        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "seed-zizmor-config",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 913,
+              "input_cost_usd": 0.002739
+            },
+            "measured": {
+              "input_tokens": 6,
+              "cache_read_input_tokens": 89719,
+              "cache_creation_input_tokens": 8977,
+              "output_tokens": 1319,
+              "cost_usd": 0.101183
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "zizmor.yml",
+                "text": "file zizmor.yml exists",
+                "passed": true,
+                "evidence": "zizmor.yml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "zizmor.yml",
+                "pattern": "rules:",
+                "text": "zizmor.yml matches /rules:/",
+                "passed": true,
+                "evidence": "rules:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 100021,
+              "executor_duration_seconds": 31.1
+            },
+            "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+          },
+          {
+            "id": "validate-and-fix",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 929,
+              "input_cost_usd": 0.002787
+            },
+            "measured": {
+              "input_tokens": 10,
+              "cache_read_input_tokens": 162274,
+              "cache_creation_input_tokens": 10602,
+              "output_tokens": 1593,
+              "cost_usd": 0.136832
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "actionlint",
+                "requires": "actionlint",
+                "text": "command `actionlint` exits 0",
+                "passed": false,
+                "evidence": "exit 3:  found in any parent directories of \"/private/var/folders/w_/y_0my0ns7vq98bwrhwd1zldr0000gn/T/evolve-run.3829093790/evals.1326616217\". check workflows directory is put correctly in your Git repository",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "zizmor --offline .github/workflows/",
+                "requires": "zizmor",
+                "text": "command `zizmor --offline .github/workflows/` exits 0",
+                "passed": true,
+                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.26.1\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "env:",
+                "text": ".github/workflows/build.yaml matches /env:/",
+                "passed": true,
+                "evidence": "env:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "run:.*\\$\\{\\{",
+                "text": ".github/workflows/build.yaml does not match /run:.*\\$\\{\\{/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 1,
+              "total": 4,
+              "pass_rate": 0.75
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 174479,
+              "executor_duration_seconds": 37.4
+            },
+            "spec_hash": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 34.3,
+          "estimate": {
+            "input_tokens": 1842,
+            "input_cost_usd": 0.005526
+          },
+          "measured": {
+            "input_tokens": 16,
+            "cache_read_input_tokens": 251993,
+            "cache_creation_input_tokens": 19579,
+            "output_tokens": 2912,
+            "cost_usd": 0.238015
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-27T22:51:30Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 25.4,
+            "measured": {
+              "input_tokens": 12,
+              "cache_read_input_tokens": 174467,
+              "cache_creation_input_tokens": 17549,
+              "output_tokens": 2450,
+              "cost_usd": 0.195631
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": false,
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 89355,
+                "cache_creation_input_tokens": 9054,
+                "output_tokens": 1578,
+                "cost_usd": 0.105421
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 31.9
+              },
+              "fingerprint": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": false,
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 85112,
+                "cache_creation_input_tokens": 8495,
+                "output_tokens": 872,
+                "cost_usd": 0.09021
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 2,
+                "total": 4,
+                "pass_rate": 0.5
+              },
+              "timing": {
+                "executor_duration_seconds": 18.9
+              },
+              "fingerprint": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-23T04:27:33Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 40.3,
+            "estimate": {
+              "input_tokens": 1842,
+              "input_cost_usd": 0.005526
+            },
+            "measured": {
+              "input_tokens": 16,
+              "cache_read_input_tokens": 262257,
+              "cache_creation_input_tokens": 20587,
+              "output_tokens": 3261,
+              "cost_usd": 0.252377
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 913,
+                "input_cost_usd": 0.002739
+              },
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 89719,
+                "cache_creation_input_tokens": 8977,
+                "output_tokens": 1319,
+                "cost_usd": 0.101183
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 31.1
+              }
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 929,
+                "input_cost_usd": 0.002787
+              },
+              "measured": {
+                "input_tokens": 10,
+                "cache_read_input_tokens": 172538,
+                "cache_creation_input_tokens": 11610,
+                "output_tokens": 1942,
+                "cost_usd": 0.151194
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 1,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 49.4
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.1-pro": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-55-g27c5e17-dirty",
+        "ran_at": "2026-06-22T22:34:54Z",
+        "executed": true,
+        "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "05829f1c5bb8e92e0a6ad585e3ee984fb0bce4775daf84377582c506177fce34"
+          },
+          {
+            "query": "Run actionlint over .github/workflows and fix the errors",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.4,
+            "spec_hash": "30ab975d3632c87226f6e2cfbd573785331afa1dcb67b55001ad01568487f346"
+          },
+          {
+            "query": "Audit our workflows with zizmor",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.5,
+            "spec_hash": "c0d5709d1a6beeda8c5de85be691d6663ed25dd5353b65ff8e9f9e27d65ca58c"
+          },
+          {
+            "query": "Lint and security-check the workflow I just edited",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.6,
+            "spec_hash": "40b266df18b426d4c9c690cd24dfeb8122f1107796300675b5a3c60eba63e512"
+          },
+          {
+            "query": "Set up actionlint and zizmor for this repository",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.5,
+            "spec_hash": "309bf09cdafc4a8bb8ce40cab7a013303ed60d989752c1114886897a402496c9"
+          },
+          {
+            "query": "My workflow fails to parse in CI — check and fix it locally",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.7,
+            "spec_hash": "69effeaa9eb42c7803af52dff6557a4dd321540120c06a303af3a775fe366805"
+          },
+          {
+            "query": "Run the workflow linter before I commit these .github/workflows changes",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.5,
+            "spec_hash": "660815d35053929abd51162fcf11f6f11597609ead196d7bf1964a89f14f2af5"
+          },
+          {
+            "query": "Write a new release workflow using the reusable library",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "842d0fd41b94ac2a3bd6bf88bc8fbdad174d36adf47d51fd09f770149312de04"
+          },
+          {
+            "query": "Explain why pull_request_target is dangerous",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "59a987bb91345cb2550b63e83bc134be94668c3eaf61a235b3e9fde0a0c21f74"
+          },
+          {
+            "query": "Add a build matrix to this workflow",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "529fb7f70dfa2a15940f57777f30e4d91b250e11526ad70cae244b7c6e6dde4c"
+          },
+          {
+            "query": "Validate this Terraform configuration with tflint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "spec_hash": "ad84c344d96ebbd31a49b9822258cc8675546571ea0fc36764747fa199b23159"
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 7,
+          "total": 13,
+          "pass_rate": 0.461538,
+          "avg_run_seconds": 4.8
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:10:05Z",
+        "executed": true,
+        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "seed-zizmor-config",
+            "passed": true,
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "zizmor.yml",
+                "text": "file zizmor.yml exists",
+                "passed": true,
+                "evidence": "zizmor.yml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "zizmor.yml",
+                "pattern": "rules:",
+                "text": "zizmor.yml matches /rules:/",
+                "passed": true,
+                "evidence": "rules:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "timing": {
+              "executor_duration_seconds": 11.8
+            },
+            "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+          },
+          {
+            "id": "validate-and-fix",
+            "passed": false,
+            "expectations": [
+              {
+                "type": "command",
+                "run": "actionlint",
+                "requires": "actionlint",
+                "text": "command `actionlint` exits 0",
+                "passed": false,
+                "evidence": "exit 3:  found in any parent directories of \"/private/var/folders/w_/y_0my0ns7vq98bwrhwd1zldr0000gn/T/evolve-run.2747450129/evals.3157272961\". check workflows directory is put correctly in your Git repository",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "zizmor --offline .github/workflows/",
+                "requires": "zizmor",
+                "text": "command `zizmor --offline .github/workflows/` exits 0",
+                "passed": true,
+                "evidence": "exit 0: No findings to report. Good job!\nINFO zizmor: 🌈 zizmor v1.26.1\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "env:",
+                "text": ".github/workflows/build.yaml matches /env:/",
+                "passed": true,
+                "evidence": "env:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "run:.*\\$\\{\\{",
+                "text": ".github/workflows/build.yaml does not match /run:.*\\$\\{\\{/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 1,
+              "total": 4,
+              "pass_rate": 0.75
+            },
+            "timing": {
+              "executor_duration_seconds": 39
+            },
+            "spec_hash": "7d74b434972b7e9f4b8ac29f3c23f1a0aad48a2450b560a58c04c037e8882870"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 25.4
+        },
+        "baseline": {
+          "ran_at": "2026-06-22T22:35:04Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 4.9
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 4.8
+              },
+              "fingerprint": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+            },
+            {
+              "id": "validate-and-fix",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5
+              },
+              "fingerprint": "7d74b434972b7e9f4b8ac29f3c23f1a0aad48a2450b560a58c04c037e8882870"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-22T22:35:04Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.1
+              }
+            },
+            {
+              "id": "validate-and-fix",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 4.9
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.5-flash": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-55-g27c5e17-dirty",
+        "ran_at": "2026-06-22T22:33:56Z",
+        "executed": true,
+        "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.5,
+            "spec_hash": "05829f1c5bb8e92e0a6ad585e3ee984fb0bce4775daf84377582c506177fce34"
+          },
+          {
+            "query": "Run actionlint over .github/workflows and fix the errors",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "30ab975d3632c87226f6e2cfbd573785331afa1dcb67b55001ad01568487f346"
+          },
+          {
+            "query": "Audit our workflows with zizmor",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.7,
+            "spec_hash": "c0d5709d1a6beeda8c5de85be691d6663ed25dd5353b65ff8e9f9e27d65ca58c"
+          },
+          {
+            "query": "Lint and security-check the workflow I just edited",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "40b266df18b426d4c9c690cd24dfeb8122f1107796300675b5a3c60eba63e512"
+          },
+          {
+            "query": "Set up actionlint and zizmor for this repository",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.9,
+            "spec_hash": "309bf09cdafc4a8bb8ce40cab7a013303ed60d989752c1114886897a402496c9"
+          },
+          {
+            "query": "My workflow fails to parse in CI — check and fix it locally",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.6,
+            "spec_hash": "69effeaa9eb42c7803af52dff6557a4dd321540120c06a303af3a775fe366805"
+          },
+          {
+            "query": "Run the workflow linter before I commit these .github/workflows changes",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "660815d35053929abd51162fcf11f6f11597609ead196d7bf1964a89f14f2af5"
+          },
+          {
+            "query": "Write a new release workflow using the reusable library",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "842d0fd41b94ac2a3bd6bf88bc8fbdad174d36adf47d51fd09f770149312de04"
+          },
+          {
+            "query": "Explain why pull_request_target is dangerous",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "59a987bb91345cb2550b63e83bc134be94668c3eaf61a235b3e9fde0a0c21f74"
+          },
+          {
+            "query": "Add a build matrix to this workflow",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "529fb7f70dfa2a15940f57777f30e4d91b250e11526ad70cae244b7c6e6dde4c"
+          },
+          {
+            "query": "Validate this Terraform configuration with tflint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "spec_hash": "ad84c344d96ebbd31a49b9822258cc8675546571ea0fc36764747fa199b23159"
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 7,
+          "total": 13,
+          "pass_rate": 0.461538,
+          "avg_run_seconds": 4.9
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:09:26Z",
+        "executed": true,
+        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "id": "seed-zizmor-config",
+            "passed": true,
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "zizmor.yml",
+                "text": "file zizmor.yml exists",
+                "passed": true,
+                "evidence": "zizmor.yml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "zizmor.yml",
+                "pattern": "rules:",
+                "text": "zizmor.yml matches /rules:/",
+                "passed": true,
+                "evidence": "rules:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "timing": {
+              "executor_duration_seconds": 14.7
+            },
+            "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+          },
+          {
+            "id": "validate-and-fix",
+            "passed": false,
+            "expectations": [
+              {
+                "type": "command",
+                "run": "actionlint",
+                "requires": "actionlint",
+                "text": "command `actionlint` exits 0",
+                "passed": false,
+                "evidence": "exit 3:  found in any parent directories of \"/private/var/folders/w_/y_0my0ns7vq98bwrhwd1zldr0000gn/T/evolve-run.2747450129/evals.4130956388\". check workflows directory is put correctly in your Git repository",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "zizmor --offline .github/workflows/",
+                "requires": "zizmor",
+                "text": "command `zizmor --offline .github/workflows/` exits 0",
+                "passed": true,
+                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.26.1\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "env:",
+                "text": ".github/workflows/build.yaml matches /env:/",
+                "passed": true,
+                "evidence": "env:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "run:.*\\$\\{\\{",
+                "text": ".github/workflows/build.yaml does not match /run:.*\\$\\{\\{/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 1,
+              "total": 4,
+              "pass_rate": 0.75
+            },
+            "timing": {
+              "executor_duration_seconds": 37.1
+            },
+            "spec_hash": "7d74b434972b7e9f4b8ac29f3c23f1a0aad48a2450b560a58c04c037e8882870"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 25.9
+        },
+        "baseline": {
+          "ran_at": "2026-06-22T22:34:07Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.1
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.1
+              },
+              "fingerprint": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+            },
+            {
+              "id": "validate-and-fix",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.1
+              },
+              "fingerprint": "7d74b434972b7e9f4b8ac29f3c23f1a0aad48a2450b560a58c04c037e8882870"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-22T22:34:07Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.3
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.2
+              }
+            },
+            {
+              "id": "validate-and-fix",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.3
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:30:24Z",
+        "executed": true,
+        "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.5,
+            "estimate": {
+              "input_tokens": 805,
+              "input_cost_usd": 0.002013
+            }
+          },
+          {
+            "query": "Run actionlint over .github/workflows and fix the errors",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.5,
+            "estimate": {
+              "input_tokens": 804,
+              "input_cost_usd": 0.00201
+            }
+          },
+          {
+            "query": "Audit our workflows with zizmor",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.5,
+            "estimate": {
+              "input_tokens": 798,
+              "input_cost_usd": 0.001995
+            }
+          },
+          {
+            "query": "Lint and security-check the workflow I just edited",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.002003
+            }
+          },
+          {
+            "query": "Set up actionlint and zizmor for this repository",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 802,
+              "input_cost_usd": 0.002005
+            }
+          },
+          {
+            "query": "My workflow fails to parse in CI — check and fix it locally",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.1,
+            "estimate": {
+              "input_tokens": 805,
+              "input_cost_usd": 0.002013
+            }
+          },
+          {
+            "query": "Run the workflow linter before I commit these .github/workflows changes",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 806,
+              "input_cost_usd": 0.002015
+            }
+          },
+          {
+            "query": "Write a new release workflow using the reusable library",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 56,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.002003
+            },
+            "spec_hash": "842d0fd41b94ac2a3bd6bf88bc8fbdad174d36adf47d51fd09f770149312de04"
+          },
+          {
+            "query": "Explain why pull_request_target is dangerous",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 799,
+              "input_cost_usd": 0.001998
+            }
+          },
+          {
+            "query": "Add a build matrix to this workflow",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 64.7,
+            "estimate": {
+              "input_tokens": 799,
+              "input_cost_usd": 0.001998
+            }
+          },
+          {
+            "query": "Validate this Terraform configuration with tflint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 40.5,
+            "estimate": {
+              "input_tokens": 800,
+              "input_cost_usd": 0.002
+            }
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 36.7,
+            "estimate": {
+              "input_tokens": 800,
+              "input_cost_usd": 0.002
+            }
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 38,
+            "estimate": {
+              "input_tokens": 799,
+              "input_cost_usd": 0.001998
+            }
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 1,
+          "total": 13,
+          "pass_rate": 0.923077,
+          "avg_run_seconds": 25.4,
+          "estimate": {
+            "input_tokens": 10419,
+            "input_cost_usd": 0.026051
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T22:31:27Z",
+          "summary": {
+            "passed": 12,
+            "failed": 1,
+            "total": 13,
+            "pass_rate": 0.923077,
+            "avg_run_seconds": 24.8,
+            "estimate": {
+              "input_tokens": 10419,
+              "input_cost_usd": 0.026051
+            }
+          },
+          "results": [
+            {
+              "query": "Add a build matrix to this workflow",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 64.7,
+              "estimate": {
+                "input_tokens": 799,
+                "input_cost_usd": 0.001998
+              }
+            },
+            {
+              "query": "Audit our workflows with zizmor",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.5,
+              "estimate": {
+                "input_tokens": 798,
+                "input_cost_usd": 0.001995
+              }
+            },
+            {
+              "query": "Explain why pull_request_target is dangerous",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.3,
+              "estimate": {
+                "input_tokens": 799,
+                "input_cost_usd": 0.001998
+              }
+            },
+            {
+              "query": "Lint and security-check the workflow I just edited",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.5,
+              "estimate": {
+                "input_tokens": 801,
+                "input_cost_usd": 0.002003
+              }
+            },
+            {
+              "query": "Lint the markdown files under docs/",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 38,
+              "estimate": {
+                "input_tokens": 799,
+                "input_cost_usd": 0.001998
+              }
+            },
+            {
+              "query": "My workflow fails to parse in CI — check and fix it locally",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.1,
+              "estimate": {
+                "input_tokens": 805,
+                "input_cost_usd": 0.002013
+              }
+            },
+            {
+              "query": "Run actionlint over .github/workflows and fix the errors",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.5,
+              "estimate": {
+                "input_tokens": 804,
+                "input_cost_usd": 0.00201
+              }
+            },
+            {
+              "query": "Run the Go test suite and report failures",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 36.7,
+              "estimate": {
+                "input_tokens": 800,
+                "input_cost_usd": 0.002
+              }
+            },
+            {
+              "query": "Run the workflow linter before I commit these .github/workflows changes",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.6,
+              "estimate": {
+                "input_tokens": 806,
+                "input_cost_usd": 0.002015
+              }
+            },
+            {
+              "query": "Set up actionlint and zizmor for this repository",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.5,
+              "estimate": {
+                "input_tokens": 802,
+                "input_cost_usd": 0.002005
+              }
+            },
+            {
+              "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.5,
+              "estimate": {
+                "input_tokens": 805,
+                "input_cost_usd": 0.002013
+              }
+            },
+            {
+              "query": "Validate this Terraform configuration with tflint",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 40.5,
+              "estimate": {
+                "input_tokens": 800,
+                "input_cost_usd": 0.002
+              }
+            },
+            {
+              "query": "Write a new release workflow using the reusable library",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 48.3,
+              "estimate": {
+                "input_tokens": 801,
+                "input_cost_usd": 0.002003
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T23:15:12Z",
+        "executed": true,
+        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "seed-zizmor-config",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 812,
+              "input_cost_usd": 0.00203
+            },
+            "measured": {
+              "input_tokens": 13734,
+              "cache_read_input_tokens": 164096,
+              "output_tokens": 2688,
+              "cost_usd": 0.484895
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "zizmor.yml",
+                "text": "file zizmor.yml exists",
+                "passed": true,
+                "evidence": "zizmor.yml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "zizmor.yml",
+                "pattern": "rules:",
+                "text": "zizmor.yml matches /rules:/",
+                "passed": true,
+                "evidence": "rules:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 180518,
+              "executor_duration_seconds": 61.9
+            },
+            "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+          },
+          {
+            "id": "validate-and-fix",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 827,
+              "input_cost_usd": 0.002068
+            },
+            "measured": {
+              "input_tokens": 19375,
+              "cache_read_input_tokens": 96384,
+              "output_tokens": 2432,
+              "cost_usd": 0.325878
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "actionlint",
+                "requires": "actionlint",
+                "text": "command `actionlint` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "zizmor --offline .github/workflows/",
+                "requires": "zizmor",
+                "text": "command `zizmor --offline .github/workflows/` exits 0",
+                "passed": true,
+                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.26.1\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "env:",
+                "text": ".github/workflows/build.yaml matches /env:/",
+                "passed": true,
+                "evidence": "env:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "run:.*\\$\\{\\{",
+                "text": ".github/workflows/build.yaml does not match /run:.*\\$\\{\\{/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 15,
+                "file_change": 1
+              },
+              "total_tool_calls": 16
+            },
+            "timing": {
+              "total_tokens": 118191,
+              "executor_duration_seconds": 54.4
+            },
+            "spec_hash": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 58.2,
+          "estimate": {
+            "input_tokens": 1639,
+            "input_cost_usd": 0.004098
+          },
+          "measured": {
+            "input_tokens": 33109,
+            "cache_read_input_tokens": 260480,
+            "output_tokens": 5120,
+            "cost_usd": 0.810773
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-27T23:15:12Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 208.6,
+            "measured": {
+              "input_tokens": 18725,
+              "cache_read_input_tokens": 252928,
+              "output_tokens": 4413,
+              "cost_usd": 0.745327
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": false,
+              "measured": {
+                "input_tokens": 13412,
+                "cache_read_input_tokens": 150912,
+                "output_tokens": 2558,
+                "cost_usd": 0.44918
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 64
+              },
+              "fingerprint": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": false,
+              "measured": {
+                "input_tokens": 5313,
+                "cache_read_input_tokens": 102016,
+                "output_tokens": 1855,
+                "cost_usd": 0.296147
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 1,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 353.1
+              },
+              "fingerprint": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-23T04:31:40Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 69.1,
+            "estimate": {
+              "input_tokens": 1639,
+              "input_cost_usd": 0.004098
+            },
+            "measured": {
+              "input_tokens": 34718,
+              "cache_read_input_tokens": 271744,
+              "output_tokens": 4964,
+              "cost_usd": 0.840615
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 812,
+                "input_cost_usd": 0.00203
+              },
+              "measured": {
+                "input_tokens": 13734,
+                "cache_read_input_tokens": 164096,
+                "output_tokens": 2688,
+                "cost_usd": 0.484895
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 61.9
+              }
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 827,
+                "input_cost_usd": 0.002068
+              },
+              "measured": {
+                "input_tokens": 20984,
+                "cache_read_input_tokens": 107648,
+                "output_tokens": 2276,
+                "cost_usd": 0.35572
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 1,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 76.2
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:32:58Z",
+        "executed": true,
+        "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 43.9,
+            "estimate": {
+              "input_tokens": 805,
+              "input_cost_usd": 0.004025
+            }
+          },
+          {
+            "query": "Run actionlint over .github/workflows and fix the errors",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 44.8,
+            "estimate": {
+              "input_tokens": 804,
+              "input_cost_usd": 0.00402
+            }
+          },
+          {
+            "query": "Audit our workflows with zizmor",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.3,
+            "estimate": {
+              "input_tokens": 798,
+              "input_cost_usd": 0.00399
+            }
+          },
+          {
+            "query": "Lint and security-check the workflow I just edited",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.9,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.004005
+            }
+          },
+          {
+            "query": "Set up actionlint and zizmor for this repository",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.8,
+            "estimate": {
+              "input_tokens": 802,
+              "input_cost_usd": 0.00401
+            }
+          },
+          {
+            "query": "My workflow fails to parse in CI — check and fix it locally",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.9,
+            "estimate": {
+              "input_tokens": 805,
+              "input_cost_usd": 0.004025
+            }
+          },
+          {
+            "query": "Run the workflow linter before I commit these .github/workflows changes",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.3,
+            "estimate": {
+              "input_tokens": 806,
+              "input_cost_usd": 0.00403
+            },
+            "spec_hash": "660815d35053929abd51162fcf11f6f11597609ead196d7bf1964a89f14f2af5"
+          },
+          {
+            "query": "Write a new release workflow using the reusable library",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 65.3,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.004005
+            },
+            "spec_hash": "842d0fd41b94ac2a3bd6bf88bc8fbdad174d36adf47d51fd09f770149312de04"
+          },
+          {
+            "query": "Explain why pull_request_target is dangerous",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.7,
+            "estimate": {
+              "input_tokens": 799,
+              "input_cost_usd": 0.003995
+            }
+          },
+          {
+            "query": "Add a build matrix to this workflow",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 16.9,
+            "estimate": {
+              "input_tokens": 799,
+              "input_cost_usd": 0.003995
+            },
+            "spec_hash": "529fb7f70dfa2a15940f57777f30e4d91b250e11526ad70cae244b7c6e6dde4c"
+          },
+          {
+            "query": "Validate this Terraform configuration with tflint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 28.7,
+            "estimate": {
+              "input_tokens": 800,
+              "input_cost_usd": 0.004
+            }
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 24.8,
+            "estimate": {
+              "input_tokens": 800,
+              "input_cost_usd": 0.004
+            }
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 38.4,
+            "estimate": {
+              "input_tokens": 799,
+              "input_cost_usd": 0.003995
+            }
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 2,
+          "total": 13,
+          "pass_rate": 0.846154,
+          "avg_run_seconds": 25.1,
+          "estimate": {
+            "input_tokens": 10419,
+            "input_cost_usd": 0.052095
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T19:56:19Z",
+          "summary": {
+            "passed": 11,
+            "failed": 2,
+            "total": 13,
+            "pass_rate": 0.846154,
+            "avg_run_seconds": 25.3,
+            "estimate": {
+              "input_tokens": 10419,
+              "input_cost_usd": 0.052095
+            }
+          },
+          "results": [
+            {
+              "query": "Add a build matrix to this workflow",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 30.6,
+              "estimate": {
+                "input_tokens": 799,
+                "input_cost_usd": 0.003995
+              }
+            },
+            {
+              "query": "Audit our workflows with zizmor",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.3,
+              "estimate": {
+                "input_tokens": 798,
+                "input_cost_usd": 0.00399
+              }
+            },
+            {
+              "query": "Explain why pull_request_target is dangerous",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.7,
+              "estimate": {
+                "input_tokens": 799,
+                "input_cost_usd": 0.003995
+              }
+            },
+            {
+              "query": "Lint and security-check the workflow I just edited",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.9,
+              "estimate": {
+                "input_tokens": 801,
+                "input_cost_usd": 0.004005
+              }
+            },
+            {
+              "query": "Lint the markdown files under docs/",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 38.4,
+              "estimate": {
+                "input_tokens": 799,
+                "input_cost_usd": 0.003995
+              }
+            },
+            {
+              "query": "My workflow fails to parse in CI — check and fix it locally",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.9,
+              "estimate": {
+                "input_tokens": 805,
+                "input_cost_usd": 0.004025
+              }
+            },
+            {
+              "query": "Run actionlint over .github/workflows and fix the errors",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 44.8,
+              "estimate": {
+                "input_tokens": 804,
+                "input_cost_usd": 0.00402
+              }
+            },
+            {
+              "query": "Run the Go test suite and report failures",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 24.8,
+              "estimate": {
+                "input_tokens": 800,
+                "input_cost_usd": 0.004
+              }
+            },
+            {
+              "query": "Run the workflow linter before I commit these .github/workflows changes",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.3,
+              "estimate": {
+                "input_tokens": 806,
+                "input_cost_usd": 0.00403
+              }
+            },
+            {
+              "query": "Set up actionlint and zizmor for this repository",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 16.8,
+              "estimate": {
+                "input_tokens": 802,
+                "input_cost_usd": 0.00401
+              }
+            },
+            {
+              "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 43.9,
+              "estimate": {
+                "input_tokens": 805,
+                "input_cost_usd": 0.004025
+              }
+            },
+            {
+              "query": "Validate this Terraform configuration with tflint",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 28.7,
+              "estimate": {
+                "input_tokens": 800,
+                "input_cost_usd": 0.004
+              }
+            },
+            {
+              "query": "Write a new release workflow using the reusable library",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 54.2,
+              "estimate": {
+                "input_tokens": 801,
+                "input_cost_usd": 0.004005
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T23:17:07Z",
+        "executed": true,
+        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "seed-zizmor-config",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 812,
+              "input_cost_usd": 0.00406
+            },
+            "measured": {
+              "input_tokens": 33236,
+              "cache_read_input_tokens": 105600,
+              "output_tokens": 2329,
+              "cost_usd": 0.76405
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "zizmor.yml",
+                "text": "file zizmor.yml exists",
+                "passed": true,
+                "evidence": "zizmor.yml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "zizmor.yml",
+                "pattern": "rules:",
+                "text": "zizmor.yml matches /rules:/",
+                "passed": true,
+                "evidence": "rules:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 141165,
+              "executor_duration_seconds": 74
+            },
+            "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+          },
+          {
+            "id": "validate-and-fix",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 827,
+              "input_cost_usd": 0.004135
+            },
+            "measured": {
+              "input_tokens": 17510,
+              "cache_read_input_tokens": 104064,
+              "output_tokens": 1739,
+              "cost_usd": 0.66004
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "actionlint",
+                "requires": "actionlint",
+                "text": "command `actionlint` exits 0",
+                "passed": false,
+                "evidence": "exit 3:  found in any parent directories of \"/private/var/folders/w_/y_0my0ns7vq98bwrhwd1zldr0000gn/T/evolve-run.3829093790/evals.3841052068\". check workflows directory is put correctly in your Git repository",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "zizmor --offline .github/workflows/",
+                "requires": "zizmor",
+                "text": "command `zizmor --offline .github/workflows/` exits 0",
+                "passed": true,
+                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.26.1\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "env:",
+                "text": ".github/workflows/build.yaml matches /env:/",
+                "passed": true,
+                "evidence": "env:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "run:.*\\$\\{\\{",
+                "text": ".github/workflows/build.yaml does not match /run:.*\\$\\{\\{/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 1,
+              "total": 4,
+              "pass_rate": 0.75
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 11,
+                "file_change": 1
+              },
+              "total_tool_calls": 12
+            },
+            "timing": {
+              "total_tokens": 123313,
+              "executor_duration_seconds": 44.1
+            },
+            "spec_hash": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 59.1,
+          "estimate": {
+            "input_tokens": 1639,
+            "input_cost_usd": 0.008195
+          },
+          "measured": {
+            "input_tokens": 50746,
+            "cache_read_input_tokens": 209664,
+            "output_tokens": 4068,
+            "cost_usd": 1.42409
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-27T23:17:07Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 68.2,
+            "measured": {
+              "input_tokens": 26944,
+              "cache_read_input_tokens": 314112,
+              "output_tokens": 5730,
+              "cost_usd": 1.87718
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": false,
+              "measured": {
+                "input_tokens": 12276,
+                "cache_read_input_tokens": 154496,
+                "output_tokens": 2504,
+                "cost_usd": 0.90898
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 65.3
+              },
+              "fingerprint": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": false,
+              "measured": {
+                "input_tokens": 14668,
+                "cache_read_input_tokens": 159616,
+                "output_tokens": 3226,
+                "cost_usd": 0.9682
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 4,
+                "total": 4,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 71.1
+              },
+              "fingerprint": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-23T04:33:50Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 63.2,
+            "estimate": {
+              "input_tokens": 1639,
+              "input_cost_usd": 0.008195
+            },
+            "measured": {
+              "input_tokens": 54641,
+              "cache_read_input_tokens": 222976,
+              "output_tokens": 4645,
+              "cost_usd": 1.527435
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 812,
+                "input_cost_usd": 0.00406
+              },
+              "measured": {
+                "input_tokens": 33236,
+                "cache_read_input_tokens": 105600,
+                "output_tokens": 2329,
+                "cost_usd": 0.76405
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 74
+              }
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 827,
+                "input_cost_usd": 0.004135
+              },
+              "measured": {
+                "input_tokens": 21405,
+                "cache_read_input_tokens": 117376,
+                "output_tokens": 2316,
+                "cost_usd": 0.763385
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 1,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 52.3
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+# Caller workflow -- copy to `.github/workflows/release.yaml` in any repo. It owns
+# the push trigger and grants the release permissions; the reusable release
+# workflow runs release-please (two-pass) then, when a .goreleaser.yaml exists,
+# GoReleaser (archives, checksums, SBOMs, cosign signatures, optional Homebrew
+# cask, SLSA attestation) -- otherwise it rebuilds via `make build` and verifies a
+# committed dist/. With vanity-tags: true it also moves the floating v1 / v1.1
+# tags.
+#
+# The repo must provide release-please-config.json + .release-please-manifest.json
+# and a Makefile `build` target (a no-op is fine). Go repos add a .goreleaser.yaml
+# (release-type: go, draft: true); Actions repos commit dist/.
+#
+# Pin @v2 to a release tag or full commit SHA -- see README "Pinning".
+
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+# ceiling for the reusable workflow's release-please + goreleaser/publish jobs
+permissions:
+  # create the release/tag, move vanity tags, and upload assets
+  contents: write
+  # release-please creates pr labels via the issues api
+  issues: write
+  # release-please opens the release pull request
+  pull-requests: write
+  # cosign keyless signing -- GoReleaser path only; drop if you have no .goreleaser.yaml
+  id-token: write
+  # github build-provenance attestation -- GoReleaser path only
+  attestations: write
+  # artifact storage record for the attestation -- GoReleaser path only
+  artifact-metadata: write
+
+jobs:
+  release:
+    uses: bitwise-media-group/github-workflows/.github/workflows/release.yaml@v2
+    with:
+      # move the floating v1 / v1.1 tags -- set for Actions/reusable repos whose
+      # consumers pin @v1; drop (defaults false) for Go binaries pinned to exact versions.
+      vanity-tags: true
+    secrets:
+      # optional -- only needed if .goreleaser.yaml pushes a Homebrew cask to another repo
+      homebrew-tap-token: ${{ secrets.HOMEBREW_TAP_GITHUB_TOKEN }}

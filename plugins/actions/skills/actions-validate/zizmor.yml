@@ -1,0 +1,17 @@
+# zizmor configuration — place at the repo root as `zizmor.yml` or at
+# `.github/zizmor.yml`. zizmor runs all of its security audits by default; this
+# file is only where you record *reviewed* exceptions, so a known-safe finding
+# stops failing the run without disabling the audit everywhere else.
+#
+# Suppress a single finding under the audit that raised it, keyed by workflow
+# filename and optionally a `line` / `line:col`. Keep the list short, comment why
+# each entry is safe, and prefer fixing the workflow over ignoring the finding.
+# Run `zizmor .github/workflows/` to see each finding's audit id and location, and
+# see https://docs.zizmor.sh/configuration/ for the full schema.
+rules: {}
+    # template-injection:
+    #   ignore:
+    #     - safe-trusted-input.yml:42
+    # unpinned-uses:
+    #   ignore:
+    #     - reusable-internal.yml

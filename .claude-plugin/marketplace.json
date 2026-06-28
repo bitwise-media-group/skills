@@ -17,6 +17,12 @@
       "source": "./plugins/terraform",
       "description": "Terraform style conventions, module scaffolding, and fmt/validate/tflint workflows.",
       "keywords": ["terraform", "hcl", "iac", "tflint"]
+    },
+    {
+      "name": "actions",
+      "source": "./plugins/actions",
+      "description": "GitHub Actions workflow style, security hardening, bitwise reusable-workflow wiring, and an actionlint/zizmor validation loop.",
+      "keywords": ["github-actions", "ci", "workflows", "security"]
     }
   ]
 }

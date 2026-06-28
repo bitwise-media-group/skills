@@ -1,0 +1,35 @@
+# Dependabot config — copy to `.github/dependabot.yaml`. Required for the
+# dependabot-merge caller. Keeps the SHA-pinned actions in your workflows fresh
+# (and any npm dev tooling), opening one grouped minor/patch PR per ecosystem so
+# dependabot-merge can fast-forward them once CI is green. Drop the npm block if
+# the repo has no package.json; add gomod/docker/etc. as the repo grows them.
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 7
+    groups:
+      all-minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 7
+    groups:
+      all-minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch

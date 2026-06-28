@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "actions-style",
+  "triggers": [
+    {
+      "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+      "should_trigger": true
+    },
+    {
+      "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+      "should_trigger": true
+    },
+    {
+      "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+      "should_trigger": true
+    },
+    {
+      "query": "How should I gate this step on a workflow_dispatch boolean input?",
+      "should_trigger": true
+    },
+    {
+      "query": "Turn these repeated workflow steps into a composite action",
+      "should_trigger": true
+    },
+    {
+      "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+      "should_trigger": true
+    },
+    {
+      "query": "Set up concurrency so superseded PR runs get cancelled",
+      "should_trigger": true
+    },
+    {
+      "query": "Review .github/workflows/ci.yaml for style and structure",
+      "should_trigger": true
+    },
+    {
+      "query": "Is it safe to use pull_request_target in this workflow?",
+      "should_trigger": false
+    },
+    {
+      "query": "Run zizmor to audit our workflows for security issues",
+      "should_trigger": false
+    },
+    {
+      "query": "Wire up the bitwise reusable release workflow for this repo",
+      "should_trigger": false
+    },
+    {
+      "query": "Write a Terraform module for an S3 bucket",
+      "should_trigger": false
+    },
+    {
+      "query": "Add a GitLab CI pipeline for this project",
+      "should_trigger": false
+    },
+    {
+      "query": "Pin all the actions in our workflows to commit SHAs",
+      "should_trigger": false
+    }
+  ]
+}

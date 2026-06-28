@@ -1,0 +1,55 @@
+# Caller workflow — copy to `.github/workflows/merge.yaml` in a consuming repo to
+# enable both fast-forward merge flows: manual `/merge` and set-and-forget
+# auto-merge. `/merge` merges an approved, green PR now; `/auto-merge` (or the
+# `auto-merge` label) arms it to merge automatically once approved and green. Both
+# preserve every commit signature via the same `ff-merge` action.
+#
+# The reusable workflow routes each event to its own job, so the four triggers are
+# all required for full auto-merge; a repo that only wants `/merge` can trigger just
+# `issue_comment`. None of these run PR code, and none use pull_request_target.
+#
+# Fork PRs: only `issue_comment` and `workflow_run` carry base-context secrets on a
+# fork, so the label-arm and review paths are gated to same-repo PRs. Arm a fork PR
+# with `/auto-merge` (it merges via that attempt or `workflow_run` once CI is green),
+# or just use `/merge`.
+#
+# Requires branch protection that requires PR review (so the approval sets the review
+# decision).
+#
+# Prerequisites (one-time, org-wide — see bitwise-media-group/ff-merge):
+#   - org variable FF_MERGE_CLIENT_ID and org secret FF_MERGE_PRIVATE_KEY
+#   - the "FF Merge" App installed on this repo and in the ruleset bypass list
+#
+# Pin @v2 to a release tag or full commit SHA — see README "Pinning".
+name: Merge
+
+# All four triggers are required for auto-merge; each is handled by one job in the
+# reusable workflow. issue_comment drives `/merge` and arms `/auto-merge`;
+# pull_request(labeled) arms via label; pull_request_review(submitted) and
+# workflow_run(completed) attempt the auto-merge once the PR is approved and green.
+# List in `workflows:` every workflow that must pass — whichever finishes last
+# triggers the attempt, and ff-merge re-verifies all checks.
+on:
+  issue_comment:
+    types: [created]
+  pull_request:
+    types: [labeled]
+  pull_request_review:
+    types: [submitted]
+  workflow_run:
+    workflows: ["CI"] # replace with your CI workflow name(s) — all that must be green
+    types: [completed]
+
+# the App token does the privileged work; the caller grants nothing
+permissions: {}
+
+jobs:
+  merge:
+    uses: bitwise-media-group/github-workflows/.github/workflows/merge.yaml@v2
+    with:
+      app-client-id: ${{ vars.FF_MERGE_CLIENT_ID }}
+      # merge-command: /merge     # default — the comment that merges now
+      # arm-command: /auto-merge  # default — the comment that arms auto-merge
+      # label: auto-merge         # default — the label that arms auto-merge
+    secrets:
+      app-private-key: ${{ secrets.FF_MERGE_PRIVATE_KEY }}

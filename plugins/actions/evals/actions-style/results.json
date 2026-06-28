@@ -1,0 +1,4205 @@
+{
+  "schema": 5,
+  "plugin": "actions",
+  "skill": "actions-style",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:24:13Z",
+        "executed": true,
+        "content_hash": "1785fdac48707897fee4694df868b29da92ff68f2444524d3d62eb14f2fda788",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1449,
+              "input_cost_usd": 0.001449
+            },
+            "spec_hash": "5682d8bdaf246df512b56342dd5c98f6da7cde3012eba9fa7ea50c2585e057a3"
+          },
+          {
+            "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.8,
+            "estimate": {
+              "input_tokens": 1452,
+              "input_cost_usd": 0.001452
+            },
+            "spec_hash": "f4f20115dd05d705b727265c3777d6b820bda12117bc82cc1435baaadc758ce7"
+          },
+          {
+            "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5,
+            "estimate": {
+              "input_tokens": 1453,
+              "input_cost_usd": 0.001453
+            },
+            "spec_hash": "a1476dc54c260ba926262a4043f5d62c3cc28a5b4e237421019a55ed66342863"
+          },
+          {
+            "query": "How should I gate this step on a workflow_dispatch boolean input?",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "estimate": {
+              "input_tokens": 1447,
+              "input_cost_usd": 0.001447
+            },
+            "spec_hash": "0b9be860094c074f0e31a4f3c946def3d6dd46a720b9a2e89e6299cd855160f8"
+          },
+          {
+            "query": "Turn these repeated workflow steps into a composite action",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.3,
+            "estimate": {
+              "input_tokens": 1442,
+              "input_cost_usd": 0.001442
+            },
+            "spec_hash": "618eb05ca27897289bbe2732ff609684267b4130e0559f613fe72ff0fdbe8d47"
+          },
+          {
+            "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 1448,
+              "input_cost_usd": 0.001448
+            },
+            "spec_hash": "9add495259e4b0504497520ae4540a8becbdc770e69281942949cbf0266dd0b1"
+          },
+          {
+            "query": "Set up concurrency so superseded PR runs get cancelled",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10,
+            "estimate": {
+              "input_tokens": 1444,
+              "input_cost_usd": 0.001444
+            },
+            "spec_hash": "60b33cf523054b8dba6f2c654259ab5d3642d0c7b3ded15c0bcbea043ae910e2"
+          },
+          {
+            "query": "Review .github/workflows/ci.yaml for style and structure",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.7,
+            "estimate": {
+              "input_tokens": 1446,
+              "input_cost_usd": 0.001446
+            },
+            "spec_hash": "26f21514666f5be3f02df969994f53caf2fab58df07a6b8133793c27362c9ccb"
+          },
+          {
+            "query": "Is it safe to use pull_request_target in this workflow?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.5,
+            "estimate": {
+              "input_tokens": 1447,
+              "input_cost_usd": 0.001447
+            },
+            "spec_hash": "76ffd5029456e7b8bd6e345bfdafd3fbfa38b3f9252c218f7f0286d4a144b095"
+          },
+          {
+            "query": "Run zizmor to audit our workflows for security issues",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 1444,
+              "input_cost_usd": 0.001444
+            },
+            "spec_hash": "2f8cf930f0ba257fd0659593788e94ee148827d38030556a6270844f8dccef40"
+          },
+          {
+            "query": "Wire up the bitwise reusable release workflow for this repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.7,
+            "estimate": {
+              "input_tokens": 1446,
+              "input_cost_usd": 0.001446
+            },
+            "spec_hash": "1d3ce7fb6f24a458685f22bd16c2755a6d07b7630a619d2a3bca42455280b53f"
+          },
+          {
+            "query": "Write a Terraform module for an S3 bucket",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.1,
+            "estimate": {
+              "input_tokens": 1444,
+              "input_cost_usd": 0.001444
+            },
+            "spec_hash": "a02f322077d29e90b9335c2701e0359de28dc297abfad82f4c7748392e16c4a3"
+          },
+          {
+            "query": "Add a GitLab CI pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 1443,
+              "input_cost_usd": 0.001443
+            },
+            "spec_hash": "fa2d8b82d1cb47e84b17f03c2e98d700c5ba0fec6c320f08234d6a8bc1812bf9"
+          },
+          {
+            "query": "Pin all the actions in our workflows to commit SHAs",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7,
+            "estimate": {
+              "input_tokens": 1445,
+              "input_cost_usd": 0.001445
+            },
+            "spec_hash": "3815d47f16c9cbdbfc922660ad0fb4da208250ba859c17d1480581e009022945"
+          }
+        ],
+        "summary": {
+          "passed": 7,
+          "failed": 7,
+          "total": 14,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 8.6,
+          "estimate": {
+            "input_tokens": 20250,
+            "input_cost_usd": 0.02025
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T00:45:19Z",
+          "summary": {
+            "passed": 6,
+            "failed": 8,
+            "total": 14,
+            "pass_rate": 0.428571,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 20250,
+              "input_cost_usd": 0.02025
+            }
+          },
+          "results": [
+            {
+              "query": "Add a GitLab CI pipeline for this project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.9,
+              "estimate": {
+                "input_tokens": 1443,
+                "input_cost_usd": 0.001443
+              }
+            },
+            {
+              "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.1,
+              "estimate": {
+                "input_tokens": 1452,
+                "input_cost_usd": 0.001452
+              }
+            },
+            {
+              "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.8,
+              "estimate": {
+                "input_tokens": 1448,
+                "input_cost_usd": 0.001448
+              }
+            },
+            {
+              "query": "How should I gate this step on a workflow_dispatch boolean input?",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.9,
+              "estimate": {
+                "input_tokens": 1447,
+                "input_cost_usd": 0.001447
+              }
+            },
+            {
+              "query": "Is it safe to use pull_request_target in this workflow?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.5,
+              "estimate": {
+                "input_tokens": 1447,
+                "input_cost_usd": 0.001447
+              }
+            },
+            {
+              "query": "Pin all the actions in our workflows to commit SHAs",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7,
+              "estimate": {
+                "input_tokens": 1445,
+                "input_cost_usd": 0.001445
+              }
+            },
+            {
+              "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.1,
+              "estimate": {
+                "input_tokens": 1453,
+                "input_cost_usd": 0.001453
+              }
+            },
+            {
+              "query": "Review .github/workflows/ci.yaml for style and structure",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.3,
+              "estimate": {
+                "input_tokens": 1446,
+                "input_cost_usd": 0.001446
+              }
+            },
+            {
+              "query": "Run zizmor to audit our workflows for security issues",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.2,
+              "estimate": {
+                "input_tokens": 1444,
+                "input_cost_usd": 0.001444
+              }
+            },
+            {
+              "query": "Set up concurrency so superseded PR runs get cancelled",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.1,
+              "estimate": {
+                "input_tokens": 1444,
+                "input_cost_usd": 0.001444
+              }
+            },
+            {
+              "query": "Turn these repeated workflow steps into a composite action",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.5,
+              "estimate": {
+                "input_tokens": 1442,
+                "input_cost_usd": 0.001442
+              }
+            },
+            {
+              "query": "Wire up the bitwise reusable release workflow for this repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.7,
+              "estimate": {
+                "input_tokens": 1446,
+                "input_cost_usd": 0.001446
+              }
+            },
+            {
+              "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.8,
+              "estimate": {
+                "input_tokens": 1449,
+                "input_cost_usd": 0.001449
+              }
+            },
+            {
+              "query": "Write a Terraform module for an S3 bucket",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.1,
+              "estimate": {
+                "input_tokens": 1444,
+                "input_cost_usd": 0.001444
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T22:45:52Z",
+        "executed": true,
+        "content_hash": "41bb98a42f07f5eee04abfc4d7c8dd547170a63c45fd86b2e0e37c901f9e7898",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "reusable-boolean-input",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1513,
+              "input_cost_usd": 0.001513
+            },
+            "measured": {
+              "input_tokens": 31,
+              "cache_read_input_tokens": 85347,
+              "cache_creation_input_tokens": 18719,
+              "output_tokens": 1448,
+              "cost_usd": 0.053914
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/build.yaml",
+                "text": "file .github/workflows/build.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/build.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "workflow_call",
+                "text": ".github/workflows/build.yaml matches /workflow_call/",
+                "passed": true,
+                "evidence": "workflow_call",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "type:\\s*boolean",
+                "text": ".github/workflows/build.yaml matches /type:\\s*boolean/",
+                "passed": true,
+                "evidence": "type: boolean",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "permissions:",
+                "text": ".github/workflows/build.yaml matches /permissions:/",
+                "passed": true,
+                "evidence": "permissions:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/build.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/build.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 105545,
+              "executor_duration_seconds": 22.7
+            },
+            "spec_hash": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+          },
+          {
+            "id": "fix-string-boolean",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1474,
+              "input_cost_usd": 0.001474
+            },
+            "measured": {
+              "input_tokens": 20,
+              "cache_read_input_tokens": 55983,
+              "cache_creation_input_tokens": 15672,
+              "output_tokens": 581,
+              "cost_usd": 0.040478
+            },
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/deploy.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "if:.*inputs\\.run_tests",
+                "text": ".github/workflows/deploy.yaml matches /if:.*inputs\\.run_tests/",
+                "passed": true,
+                "evidence": "if: ${{ inputs.run_tests",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Glob": 1,
+                "Read": 1
+              },
+              "total_tool_calls": 2
+            },
+            "timing": {
+              "total_tokens": 72256,
+              "executor_duration_seconds": 10.6
+            },
+            "spec_hash": "f04e40135818ae54047c4a8a53d07b6f1bc52f6fb16793305769b6c666a62297"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 16.7,
+          "estimate": {
+            "input_tokens": 2987,
+            "input_cost_usd": 0.002987
+          },
+          "measured": {
+            "input_tokens": 51,
+            "cache_read_input_tokens": 141330,
+            "cache_creation_input_tokens": 34391,
+            "output_tokens": 2029,
+            "cost_usd": 0.094392
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-27T22:45:52Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 12.3,
+            "measured": {
+              "input_tokens": 35,
+              "cache_read_input_tokens": 90105,
+              "cache_creation_input_tokens": 30492,
+              "output_tokens": 1292,
+              "cost_usd": 0.077775
+            }
+          },
+          "results": [
+            {
+              "id": "reusable-boolean-input",
+              "passed": true,
+              "measured": {
+                "input_tokens": 15,
+                "cache_read_input_tokens": 34254,
+                "cache_creation_input_tokens": 15085,
+                "output_tokens": 881,
+                "cost_usd": 0.038685
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 15.2
+              },
+              "fingerprint": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+            },
+            {
+              "id": "fix-string-boolean",
+              "passed": true,
+              "measured": {
+                "input_tokens": 20,
+                "cache_read_input_tokens": 55851,
+                "cache_creation_input_tokens": 15407,
+                "output_tokens": 411,
+                "cost_usd": 0.03909
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 9.4
+              },
+              "fingerprint": "f04e40135818ae54047c4a8a53d07b6f1bc52f6fb16793305769b6c666a62297"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-22T16:38:37Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 16.2,
+            "estimate": {
+              "input_tokens": 2987,
+              "input_cost_usd": 0.002987
+            },
+            "measured": {
+              "input_tokens": 54,
+              "cache_read_input_tokens": 144466,
+              "cache_creation_input_tokens": 34477,
+              "output_tokens": 1953,
+              "cost_usd": 0.094506
+            }
+          },
+          "results": [
+            {
+              "id": "reusable-boolean-input",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1513,
+                "input_cost_usd": 0.001513
+              },
+              "measured": {
+                "input_tokens": 31,
+                "cache_read_input_tokens": 85347,
+                "cache_creation_input_tokens": 18719,
+                "output_tokens": 1448,
+                "cost_usd": 0.053914
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 22.7
+              }
+            },
+            {
+              "id": "fix-string-boolean",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1474,
+                "input_cost_usd": 0.001474
+              },
+              "measured": {
+                "input_tokens": 23,
+                "cache_read_input_tokens": 59119,
+                "cache_creation_input_tokens": 15758,
+                "output_tokens": 505,
+                "cost_usd": 0.040592
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 9.7
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:25:50Z",
+        "executed": true,
+        "content_hash": "1785fdac48707897fee4694df868b29da92ff68f2444524d3d62eb14f2fda788",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 19.7,
+            "estimate": {
+              "input_tokens": 2067,
+              "input_cost_usd": 0.010335
+            },
+            "spec_hash": "5682d8bdaf246df512b56342dd5c98f6da7cde3012eba9fa7ea50c2585e057a3"
+          },
+          {
+            "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.8,
+            "estimate": {
+              "input_tokens": 2065,
+              "input_cost_usd": 0.010325
+            },
+            "spec_hash": "f4f20115dd05d705b727265c3777d6b820bda12117bc82cc1435baaadc758ce7"
+          },
+          {
+            "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 2068,
+              "input_cost_usd": 0.01034
+            },
+            "spec_hash": "a1476dc54c260ba926262a4043f5d62c3cc28a5b4e237421019a55ed66342863"
+          },
+          {
+            "query": "How should I gate this step on a workflow_dispatch boolean input?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9,
+            "estimate": {
+              "input_tokens": 2062,
+              "input_cost_usd": 0.01031
+            },
+            "spec_hash": "0b9be860094c074f0e31a4f3c946def3d6dd46a720b9a2e89e6299cd855160f8"
+          },
+          {
+            "query": "Turn these repeated workflow steps into a composite action",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 14.7,
+            "estimate": {
+              "input_tokens": 2057,
+              "input_cost_usd": 0.010285
+            },
+            "spec_hash": "618eb05ca27897289bbe2732ff609684267b4130e0559f613fe72ff0fdbe8d47"
+          },
+          {
+            "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.1,
+            "estimate": {
+              "input_tokens": 2065,
+              "input_cost_usd": 0.010325
+            },
+            "spec_hash": "9add495259e4b0504497520ae4540a8becbdc770e69281942949cbf0266dd0b1"
+          },
+          {
+            "query": "Set up concurrency so superseded PR runs get cancelled",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13,
+            "estimate": {
+              "input_tokens": 2060,
+              "input_cost_usd": 0.0103
+            },
+            "spec_hash": "60b33cf523054b8dba6f2c654259ab5d3642d0c7b3ded15c0bcbea043ae910e2"
+          },
+          {
+            "query": "Review .github/workflows/ci.yaml for style and structure",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13,
+            "estimate": {
+              "input_tokens": 2060,
+              "input_cost_usd": 0.0103
+            },
+            "spec_hash": "26f21514666f5be3f02df969994f53caf2fab58df07a6b8133793c27362c9ccb"
+          },
+          {
+            "query": "Is it safe to use pull_request_target in this workflow?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.5,
+            "estimate": {
+              "input_tokens": 2059,
+              "input_cost_usd": 0.010295
+            },
+            "spec_hash": "76ffd5029456e7b8bd6e345bfdafd3fbfa38b3f9252c218f7f0286d4a144b095"
+          },
+          {
+            "query": "Run zizmor to audit our workflows for security issues",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.8,
+            "estimate": {
+              "input_tokens": 2057,
+              "input_cost_usd": 0.010285
+            },
+            "spec_hash": "2f8cf930f0ba257fd0659593788e94ee148827d38030556a6270844f8dccef40"
+          },
+          {
+            "query": "Wire up the bitwise reusable release workflow for this repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.3,
+            "estimate": {
+              "input_tokens": 2060,
+              "input_cost_usd": 0.0103
+            },
+            "spec_hash": "1d3ce7fb6f24a458685f22bd16c2755a6d07b7630a619d2a3bca42455280b53f"
+          },
+          {
+            "query": "Write a Terraform module for an S3 bucket",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 60,
+            "estimate": {
+              "input_tokens": 2056,
+              "input_cost_usd": 0.01028
+            },
+            "spec_hash": "a02f322077d29e90b9335c2701e0359de28dc297abfad82f4c7748392e16c4a3"
+          },
+          {
+            "query": "Add a GitLab CI pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.9,
+            "estimate": {
+              "input_tokens": 2056,
+              "input_cost_usd": 0.01028
+            },
+            "spec_hash": "fa2d8b82d1cb47e84b17f03c2e98d700c5ba0fec6c320f08234d6a8bc1812bf9"
+          },
+          {
+            "query": "Pin all the actions in our workflows to commit SHAs",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.4,
+            "estimate": {
+              "input_tokens": 2059,
+              "input_cost_usd": 0.010295
+            },
+            "spec_hash": "3815d47f16c9cbdbfc922660ad0fb4da208250ba859c17d1480581e009022945"
+          }
+        ],
+        "summary": {
+          "passed": 8,
+          "failed": 6,
+          "total": 14,
+          "pass_rate": 0.571429,
+          "avg_run_seconds": 17.4,
+          "estimate": {
+            "input_tokens": 28851,
+            "input_cost_usd": 0.144255
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T00:48:41Z",
+          "summary": {
+            "passed": 8,
+            "failed": 6,
+            "total": 14,
+            "pass_rate": 0.571429,
+            "avg_run_seconds": 16.9,
+            "estimate": {
+              "input_tokens": 28851,
+              "input_cost_usd": 0.144255
+            }
+          },
+          "results": [
+            {
+              "query": "Add a GitLab CI pipeline for this project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.9,
+              "estimate": {
+                "input_tokens": 2056,
+                "input_cost_usd": 0.01028
+              }
+            },
+            {
+              "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 13.5,
+              "estimate": {
+                "input_tokens": 2065,
+                "input_cost_usd": 0.010325
+              }
+            },
+            {
+              "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 17.1,
+              "estimate": {
+                "input_tokens": 2065,
+                "input_cost_usd": 0.010325
+              }
+            },
+            {
+              "query": "How should I gate this step on a workflow_dispatch boolean input?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9,
+              "estimate": {
+                "input_tokens": 2062,
+                "input_cost_usd": 0.01031
+              }
+            },
+            {
+              "query": "Is it safe to use pull_request_target in this workflow?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 16.5,
+              "estimate": {
+                "input_tokens": 2059,
+                "input_cost_usd": 0.010295
+              }
+            },
+            {
+              "query": "Pin all the actions in our workflows to commit SHAs",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.4,
+              "estimate": {
+                "input_tokens": 2059,
+                "input_cost_usd": 0.010295
+              }
+            },
+            {
+              "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.9,
+              "estimate": {
+                "input_tokens": 2068,
+                "input_cost_usd": 0.01034
+              }
+            },
+            {
+              "query": "Review .github/workflows/ci.yaml for style and structure",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.7,
+              "estimate": {
+                "input_tokens": 2060,
+                "input_cost_usd": 0.0103
+              }
+            },
+            {
+              "query": "Run zizmor to audit our workflows for security issues",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.8,
+              "estimate": {
+                "input_tokens": 2057,
+                "input_cost_usd": 0.010285
+              }
+            },
+            {
+              "query": "Set up concurrency so superseded PR runs get cancelled",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.4,
+              "estimate": {
+                "input_tokens": 2060,
+                "input_cost_usd": 0.0103
+              }
+            },
+            {
+              "query": "Turn these repeated workflow steps into a composite action",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 13.9,
+              "estimate": {
+                "input_tokens": 2057,
+                "input_cost_usd": 0.010285
+              }
+            },
+            {
+              "query": "Wire up the bitwise reusable release workflow for this repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.3,
+              "estimate": {
+                "input_tokens": 2060,
+                "input_cost_usd": 0.0103
+              }
+            },
+            {
+              "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 17.8,
+              "estimate": {
+                "input_tokens": 2067,
+                "input_cost_usd": 0.010335
+              }
+            },
+            {
+              "query": "Write a Terraform module for an S3 bucket",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 60,
+              "estimate": {
+                "input_tokens": 2056,
+                "input_cost_usd": 0.01028
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T22:48:00Z",
+        "executed": true,
+        "content_hash": "41bb98a42f07f5eee04abfc4d7c8dd547170a63c45fd86b2e0e37c901f9e7898",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "reusable-boolean-input",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2154,
+              "input_cost_usd": 0.01077
+            },
+            "measured": {
+              "input_tokens": 2711,
+              "cache_read_input_tokens": 62444,
+              "cache_creation_input_tokens": 9215,
+              "output_tokens": 1629,
+              "cost_usd": 0.178312
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/build.yaml",
+                "text": "file .github/workflows/build.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/build.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "workflow_call",
+                "text": ".github/workflows/build.yaml matches /workflow_call/",
+                "passed": true,
+                "evidence": "workflow_call",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "type:\\s*boolean",
+                "text": ".github/workflows/build.yaml matches /type:\\s*boolean/",
+                "passed": true,
+                "evidence": "type: boolean",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "permissions:",
+                "text": ".github/workflows/build.yaml matches /permissions:/",
+                "passed": true,
+                "evidence": "permissions:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/build.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/build.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 75999,
+              "executor_duration_seconds": 27.2
+            },
+            "spec_hash": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+          },
+          {
+            "id": "fix-string-boolean",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2097,
+              "input_cost_usd": 0.010485
+            },
+            "measured": {
+              "input_tokens": 2726,
+              "cache_read_input_tokens": 82323,
+              "cache_creation_input_tokens": 9468,
+              "output_tokens": 1863,
+              "cost_usd": 0.196662
+            },
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/deploy.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "if:.*inputs\\.run_tests",
+                "text": ".github/workflows/deploy.yaml matches /if:.*inputs\\.run_tests/",
+                "passed": true,
+                "evidence": "if: ${{ inputs.run_tests",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Glob": 1,
+                "Grep": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 96380,
+              "executor_duration_seconds": 30.5
+            },
+            "spec_hash": "f04e40135818ae54047c4a8a53d07b6f1bc52f6fb16793305769b6c666a62297"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 28.9,
+          "estimate": {
+            "input_tokens": 4251,
+            "input_cost_usd": 0.021255
+          },
+          "measured": {
+            "input_tokens": 5437,
+            "cache_read_input_tokens": 144767,
+            "cache_creation_input_tokens": 18683,
+            "output_tokens": 3492,
+            "cost_usd": 0.374974
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-27T22:48:00Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 32.7,
+            "measured": {
+              "input_tokens": 4999,
+              "cache_read_input_tokens": 122901,
+              "cache_creation_input_tokens": 29599,
+              "output_tokens": 3932,
+              "cost_usd": 0.482007
+            }
+          },
+          "results": [
+            {
+              "id": "reusable-boolean-input",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2492,
+                "cache_read_input_tokens": 60718,
+                "cache_creation_input_tokens": 7225,
+                "output_tokens": 1464,
+                "cost_usd": 0.152329
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 23.6
+              },
+              "fingerprint": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+            },
+            {
+              "id": "fix-string-boolean",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2507,
+                "cache_read_input_tokens": 62183,
+                "cache_creation_input_tokens": 22374,
+                "output_tokens": 2468,
+                "cost_usd": 0.329678
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 41.8
+              },
+              "fingerprint": "f04e40135818ae54047c4a8a53d07b6f1bc52f6fb16793305769b6c666a62297"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T13:38:16Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 29.7,
+            "estimate": {
+              "input_tokens": 4251,
+              "input_cost_usd": 0.021255
+            },
+            "measured": {
+              "input_tokens": 5422,
+              "cache_read_input_tokens": 125634,
+              "cache_creation_input_tokens": 18818,
+              "output_tokens": 3534,
+              "cost_usd": 0.367733
+            }
+          },
+          "results": [
+            {
+              "id": "reusable-boolean-input",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 2154,
+                "input_cost_usd": 0.01077
+              },
+              "measured": {
+                "input_tokens": 2711,
+                "cache_read_input_tokens": 62444,
+                "cache_creation_input_tokens": 9215,
+                "output_tokens": 1629,
+                "cost_usd": 0.178312
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 27.2
+              }
+            },
+            {
+              "id": "fix-string-boolean",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 2097,
+                "input_cost_usd": 0.010485
+              },
+              "measured": {
+                "input_tokens": 2711,
+                "cache_read_input_tokens": 63190,
+                "cache_creation_input_tokens": 9603,
+                "output_tokens": 1905,
+                "cost_usd": 0.189421
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 32.1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T04:24:45Z",
+        "executed": true,
+        "content_hash": "1785fdac48707897fee4694df868b29da92ff68f2444524d3d62eb14f2fda788",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.4,
+            "estimate": {
+              "input_tokens": 1449,
+              "input_cost_usd": 0.004347
+            },
+            "spec_hash": "5682d8bdaf246df512b56342dd5c98f6da7cde3012eba9fa7ea50c2585e057a3"
+          },
+          {
+            "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12,
+            "estimate": {
+              "input_tokens": 1452,
+              "input_cost_usd": 0.004356
+            },
+            "spec_hash": "f4f20115dd05d705b727265c3777d6b820bda12117bc82cc1435baaadc758ce7"
+          },
+          {
+            "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 1453,
+              "input_cost_usd": 0.004359
+            },
+            "spec_hash": "a1476dc54c260ba926262a4043f5d62c3cc28a5b4e237421019a55ed66342863"
+          },
+          {
+            "query": "How should I gate this step on a workflow_dispatch boolean input?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "estimate": {
+              "input_tokens": 1447,
+              "input_cost_usd": 0.004341
+            },
+            "spec_hash": "0b9be860094c074f0e31a4f3c946def3d6dd46a720b9a2e89e6299cd855160f8"
+          },
+          {
+            "query": "Turn these repeated workflow steps into a composite action",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 1442,
+              "input_cost_usd": 0.004326
+            },
+            "spec_hash": "618eb05ca27897289bbe2732ff609684267b4130e0559f613fe72ff0fdbe8d47"
+          },
+          {
+            "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.6,
+            "estimate": {
+              "input_tokens": 1448,
+              "input_cost_usd": 0.004344
+            },
+            "spec_hash": "9add495259e4b0504497520ae4540a8becbdc770e69281942949cbf0266dd0b1"
+          },
+          {
+            "query": "Set up concurrency so superseded PR runs get cancelled",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "estimate": {
+              "input_tokens": 1444,
+              "input_cost_usd": 0.004332
+            },
+            "spec_hash": "60b33cf523054b8dba6f2c654259ab5d3642d0c7b3ded15c0bcbea043ae910e2"
+          },
+          {
+            "query": "Review .github/workflows/ci.yaml for style and structure",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.4,
+            "estimate": {
+              "input_tokens": 1446,
+              "input_cost_usd": 0.004338
+            },
+            "spec_hash": "26f21514666f5be3f02df969994f53caf2fab58df07a6b8133793c27362c9ccb"
+          },
+          {
+            "query": "Is it safe to use pull_request_target in this workflow?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 1447,
+              "input_cost_usd": 0.004341
+            },
+            "spec_hash": "76ffd5029456e7b8bd6e345bfdafd3fbfa38b3f9252c218f7f0286d4a144b095"
+          },
+          {
+            "query": "Run zizmor to audit our workflows for security issues",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.6,
+            "estimate": {
+              "input_tokens": 1444,
+              "input_cost_usd": 0.004332
+            },
+            "spec_hash": "2f8cf930f0ba257fd0659593788e94ee148827d38030556a6270844f8dccef40"
+          },
+          {
+            "query": "Wire up the bitwise reusable release workflow for this repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.2,
+            "estimate": {
+              "input_tokens": 1446,
+              "input_cost_usd": 0.004338
+            },
+            "spec_hash": "1d3ce7fb6f24a458685f22bd16c2755a6d07b7630a619d2a3bca42455280b53f"
+          },
+          {
+            "query": "Write a Terraform module for an S3 bucket",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 21.2,
+            "estimate": {
+              "input_tokens": 1444,
+              "input_cost_usd": 0.004332
+            },
+            "spec_hash": "a02f322077d29e90b9335c2701e0359de28dc297abfad82f4c7748392e16c4a3"
+          },
+          {
+            "query": "Add a GitLab CI pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15,
+            "estimate": {
+              "input_tokens": 1443,
+              "input_cost_usd": 0.004329
+            },
+            "spec_hash": "fa2d8b82d1cb47e84b17f03c2e98d700c5ba0fec6c320f08234d6a8bc1812bf9"
+          },
+          {
+            "query": "Pin all the actions in our workflows to commit SHAs",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.8,
+            "estimate": {
+              "input_tokens": 1445,
+              "input_cost_usd": 0.004335
+            },
+            "spec_hash": "3815d47f16c9cbdbfc922660ad0fb4da208250ba859c17d1480581e009022945"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 4,
+          "total": 14,
+          "pass_rate": 0.714286,
+          "avg_run_seconds": 9.8,
+          "estimate": {
+            "input_tokens": 20250,
+            "input_cost_usd": 0.06075
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T00:47:39Z",
+          "summary": {
+            "passed": 10,
+            "failed": 4,
+            "total": 14,
+            "pass_rate": 0.714286,
+            "avg_run_seconds": 12.6,
+            "estimate": {
+              "input_tokens": 20250,
+              "input_cost_usd": 0.06075
+            }
+          },
+          "results": [
+            {
+              "query": "Add a GitLab CI pipeline for this project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15,
+              "estimate": {
+                "input_tokens": 1443,
+                "input_cost_usd": 0.004329
+              }
+            },
+            {
+              "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.3,
+              "estimate": {
+                "input_tokens": 1452,
+                "input_cost_usd": 0.004356
+              }
+            },
+            {
+              "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 48.8,
+              "estimate": {
+                "input_tokens": 1448,
+                "input_cost_usd": 0.004344
+              }
+            },
+            {
+              "query": "How should I gate this step on a workflow_dispatch boolean input?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.9,
+              "estimate": {
+                "input_tokens": 1447,
+                "input_cost_usd": 0.004341
+              }
+            },
+            {
+              "query": "Is it safe to use pull_request_target in this workflow?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.2,
+              "estimate": {
+                "input_tokens": 1447,
+                "input_cost_usd": 0.004341
+              }
+            },
+            {
+              "query": "Pin all the actions in our workflows to commit SHAs",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.8,
+              "estimate": {
+                "input_tokens": 1445,
+                "input_cost_usd": 0.004335
+              }
+            },
+            {
+              "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.3,
+              "estimate": {
+                "input_tokens": 1453,
+                "input_cost_usd": 0.004359
+              }
+            },
+            {
+              "query": "Review .github/workflows/ci.yaml for style and structure",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.4,
+              "estimate": {
+                "input_tokens": 1446,
+                "input_cost_usd": 0.004338
+              }
+            },
+            {
+              "query": "Run zizmor to audit our workflows for security issues",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.6,
+              "estimate": {
+                "input_tokens": 1444,
+                "input_cost_usd": 0.004332
+              }
+            },
+            {
+              "query": "Set up concurrency so superseded PR runs get cancelled",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.7,
+              "estimate": {
+                "input_tokens": 1444,
+                "input_cost_usd": 0.004332
+              }
+            },
+            {
+              "query": "Turn these repeated workflow steps into a composite action",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.2,
+              "estimate": {
+                "input_tokens": 1442,
+                "input_cost_usd": 0.004326
+              }
+            },
+            {
+              "query": "Wire up the bitwise reusable release workflow for this repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.2,
+              "estimate": {
+                "input_tokens": 1446,
+                "input_cost_usd": 0.004338
+              }
+            },
+            {
+              "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.4,
+              "estimate": {
+                "input_tokens": 1449,
+                "input_cost_usd": 0.004347
+              }
+            },
+            {
+              "query": "Write a Terraform module for an S3 bucket",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 21.2,
+              "estimate": {
+                "input_tokens": 1444,
+                "input_cost_usd": 0.004332
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T22:46:47Z",
+        "executed": true,
+        "content_hash": "41bb98a42f07f5eee04abfc4d7c8dd547170a63c45fd86b2e0e37c901f9e7898",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "reusable-boolean-input",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1513,
+              "input_cost_usd": 0.004539
+            },
+            "measured": {
+              "input_tokens": 7,
+              "cache_read_input_tokens": 94138,
+              "cache_creation_input_tokens": 11711,
+              "output_tokens": 2929,
+              "cost_usd": 0.143118
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/build.yaml",
+                "text": "file .github/workflows/build.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/build.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "workflow_call",
+                "text": ".github/workflows/build.yaml matches /workflow_call/",
+                "passed": true,
+                "evidence": "workflow_call",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "type:\\s*boolean",
+                "text": ".github/workflows/build.yaml matches /type:\\s*boolean/",
+                "passed": true,
+                "evidence": "type: boolean",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "permissions:",
+                "text": ".github/workflows/build.yaml matches /permissions:/",
+                "passed": true,
+                "evidence": "permissions:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/build.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/build.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 108785,
+              "executor_duration_seconds": 56.3
+            },
+            "spec_hash": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+          },
+          {
+            "id": "fix-string-boolean",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1474,
+              "input_cost_usd": 0.004422
+            },
+            "measured": {
+              "input_tokens": 7,
+              "cache_read_input_tokens": 86532,
+              "cache_creation_input_tokens": 9457,
+              "output_tokens": 1077,
+              "cost_usd": 0.099499
+            },
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/deploy.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "if:.*inputs\\.run_tests",
+                "text": ".github/workflows/deploy.yaml matches /if:.*inputs\\.run_tests/",
+                "passed": true,
+                "evidence": "if: ${{ inputs.run_tests",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 97073,
+              "executor_duration_seconds": 24.5
+            },
+            "spec_hash": "f04e40135818ae54047c4a8a53d07b6f1bc52f6fb16793305769b6c666a62297"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 40.4,
+          "estimate": {
+            "input_tokens": 2987,
+            "input_cost_usd": 0.008961
+          },
+          "measured": {
+            "input_tokens": 14,
+            "cache_read_input_tokens": 180670,
+            "cache_creation_input_tokens": 21168,
+            "output_tokens": 4006,
+            "cost_usd": 0.242617
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-27T22:46:47Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 29.1,
+            "measured": {
+              "input_tokens": 12,
+              "cache_read_input_tokens": 174300,
+              "cache_creation_input_tokens": 17201,
+              "output_tokens": 2063,
+              "cost_usd": 0.187753
+            }
+          },
+          "results": [
+            {
+              "id": "reusable-boolean-input",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 89158,
+                "cache_creation_input_tokens": 8110,
+                "output_tokens": 716,
+                "cost_usd": 0.086825
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 28
+              },
+              "fingerprint": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+            },
+            {
+              "id": "fix-string-boolean",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 85142,
+                "cache_creation_input_tokens": 9091,
+                "output_tokens": 1347,
+                "cost_usd": 0.100928
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 30.2
+              },
+              "fingerprint": "f04e40135818ae54047c4a8a53d07b6f1bc52f6fb16793305769b6c666a62297"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T13:35:08Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 35.9,
+            "estimate": {
+              "input_tokens": 2987,
+              "input_cost_usd": 0.008961
+            },
+            "measured": {
+              "input_tokens": 14,
+              "cache_read_input_tokens": 184692,
+              "cache_creation_input_tokens": 21161,
+              "output_tokens": 3318,
+              "cost_usd": 0.233451
+            }
+          },
+          "results": [
+            {
+              "id": "reusable-boolean-input",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1513,
+                "input_cost_usd": 0.004539
+              },
+              "measured": {
+                "input_tokens": 7,
+                "cache_read_input_tokens": 94138,
+                "cache_creation_input_tokens": 11711,
+                "output_tokens": 2929,
+                "cost_usd": 0.143118
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 56.3
+              }
+            },
+            {
+              "id": "fix-string-boolean",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1474,
+                "input_cost_usd": 0.004422
+              },
+              "measured": {
+                "input_tokens": 7,
+                "cache_read_input_tokens": 90554,
+                "cache_creation_input_tokens": 9450,
+                "output_tokens": 389,
+                "cost_usd": 0.090333
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 15.5
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.1-pro": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-55-g27c5e17-dirty",
+        "ran_at": "2026-06-23T00:51:46Z",
+        "executed": true,
+        "content_hash": "1785fdac48707897fee4694df868b29da92ff68f2444524d3d62eb14f2fda788",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.6,
+            "spec_hash": "5682d8bdaf246df512b56342dd5c98f6da7cde3012eba9fa7ea50c2585e057a3"
+          },
+          {
+            "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.6,
+            "spec_hash": "f4f20115dd05d705b727265c3777d6b820bda12117bc82cc1435baaadc758ce7"
+          },
+          {
+            "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.5,
+            "spec_hash": "a1476dc54c260ba926262a4043f5d62c3cc28a5b4e237421019a55ed66342863"
+          },
+          {
+            "query": "How should I gate this step on a workflow_dispatch boolean input?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.6,
+            "spec_hash": "0b9be860094c074f0e31a4f3c946def3d6dd46a720b9a2e89e6299cd855160f8"
+          },
+          {
+            "query": "Turn these repeated workflow steps into a composite action",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5,
+            "spec_hash": "618eb05ca27897289bbe2732ff609684267b4130e0559f613fe72ff0fdbe8d47"
+          },
+          {
+            "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "9add495259e4b0504497520ae4540a8becbdc770e69281942949cbf0266dd0b1"
+          },
+          {
+            "query": "Set up concurrency so superseded PR runs get cancelled",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "60b33cf523054b8dba6f2c654259ab5d3642d0c7b3ded15c0bcbea043ae910e2"
+          },
+          {
+            "query": "Review .github/workflows/ci.yaml for style and structure",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "26f21514666f5be3f02df969994f53caf2fab58df07a6b8133793c27362c9ccb"
+          },
+          {
+            "query": "Is it safe to use pull_request_target in this workflow?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "spec_hash": "76ffd5029456e7b8bd6e345bfdafd3fbfa38b3f9252c218f7f0286d4a144b095"
+          },
+          {
+            "query": "Run zizmor to audit our workflows for security issues",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.7,
+            "spec_hash": "2f8cf930f0ba257fd0659593788e94ee148827d38030556a6270844f8dccef40"
+          },
+          {
+            "query": "Wire up the bitwise reusable release workflow for this repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "spec_hash": "1d3ce7fb6f24a458685f22bd16c2755a6d07b7630a619d2a3bca42455280b53f"
+          },
+          {
+            "query": "Write a Terraform module for an S3 bucket",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.7,
+            "spec_hash": "a02f322077d29e90b9335c2701e0359de28dc297abfad82f4c7748392e16c4a3"
+          },
+          {
+            "query": "Add a GitLab CI pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "spec_hash": "fa2d8b82d1cb47e84b17f03c2e98d700c5ba0fec6c320f08234d6a8bc1812bf9"
+          },
+          {
+            "query": "Pin all the actions in our workflows to commit SHAs",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.7,
+            "spec_hash": "3815d47f16c9cbdbfc922660ad0fb4da208250ba859c17d1480581e009022945"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 8,
+          "total": 14,
+          "pass_rate": 0.428571,
+          "avg_run_seconds": 4.8
+        },
+        "previous": {
+          "ran_at": "2026-06-22T22:26:29Z",
+          "summary": {
+            "passed": 6,
+            "failed": 8,
+            "total": 14,
+            "pass_rate": 0.428571,
+            "avg_run_seconds": 4.8
+          },
+          "results": [
+            {
+              "query": "Add a GitLab CI pipeline for this project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.5
+            },
+            {
+              "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.1
+            },
+            {
+              "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.7
+            },
+            {
+              "query": "How should I gate this step on a workflow_dispatch boolean input?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.9
+            },
+            {
+              "query": "Is it safe to use pull_request_target in this workflow?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5
+            },
+            {
+              "query": "Pin all the actions in our workflows to commit SHAs",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.7
+            },
+            {
+              "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.9
+            },
+            {
+              "query": "Review .github/workflows/ci.yaml for style and structure",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.6
+            },
+            {
+              "query": "Run zizmor to audit our workflows for security issues",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.7
+            },
+            {
+              "query": "Set up concurrency so superseded PR runs get cancelled",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5
+            },
+            {
+              "query": "Turn these repeated workflow steps into a composite action",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.2
+            },
+            {
+              "query": "Wire up the bitwise reusable release workflow for this repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.5
+            },
+            {
+              "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.9
+            },
+            {
+              "query": "Write a Terraform module for an S3 bucket",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.7
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:08:48Z",
+        "executed": true,
+        "content_hash": "41bb98a42f07f5eee04abfc4d7c8dd547170a63c45fd86b2e0e37c901f9e7898",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "reusable-boolean-input",
+            "passed": true,
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/build.yaml",
+                "text": "file .github/workflows/build.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/build.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "workflow_call",
+                "text": ".github/workflows/build.yaml matches /workflow_call/",
+                "passed": true,
+                "evidence": "workflow_call",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "type:\\s*boolean",
+                "text": ".github/workflows/build.yaml matches /type:\\s*boolean/",
+                "passed": true,
+                "evidence": "type: boolean",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "permissions:",
+                "text": ".github/workflows/build.yaml matches /permissions:/",
+                "passed": true,
+                "evidence": "permissions:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/build.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/build.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "executor_duration_seconds": 23.1
+            },
+            "spec_hash": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+          },
+          {
+            "id": "fix-string-boolean",
+            "passed": true,
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/deploy.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "if:.*inputs\\.run_tests",
+                "text": ".github/workflows/deploy.yaml matches /if:.*inputs\\.run_tests/",
+                "passed": true,
+                "evidence": "if: ${{ inputs.run_tests",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "timing": {
+              "executor_duration_seconds": 48.5
+            },
+            "spec_hash": "dd9c3f5b8b0baa52ece2e1dbd072e86d233f8de97c280c7507bff1205a3fd4dd"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 35.8
+        },
+        "baseline": {
+          "ran_at": "2026-06-22T22:26:39Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.1
+          },
+          "results": [
+            {
+              "id": "fix-string-boolean",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.3
+              },
+              "fingerprint": "dd9c3f5b8b0baa52ece2e1dbd072e86d233f8de97c280c7507bff1205a3fd4dd"
+            },
+            {
+              "id": "reusable-boolean-input",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 4.9
+              },
+              "fingerprint": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-23T00:51:51Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 4.8
+          },
+          "results": [
+            {
+              "id": "fix-string-boolean",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 4.7
+              }
+            },
+            {
+              "id": "reusable-boolean-input",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 4.8
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.5-flash": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-55-g27c5e17-dirty",
+        "ran_at": "2026-06-23T00:51:12Z",
+        "executed": true,
+        "content_hash": "1785fdac48707897fee4694df868b29da92ff68f2444524d3d62eb14f2fda788",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.5,
+            "spec_hash": "5682d8bdaf246df512b56342dd5c98f6da7cde3012eba9fa7ea50c2585e057a3"
+          },
+          {
+            "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "f4f20115dd05d705b727265c3777d6b820bda12117bc82cc1435baaadc758ce7"
+          },
+          {
+            "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "a1476dc54c260ba926262a4043f5d62c3cc28a5b4e237421019a55ed66342863"
+          },
+          {
+            "query": "How should I gate this step on a workflow_dispatch boolean input?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "0b9be860094c074f0e31a4f3c946def3d6dd46a720b9a2e89e6299cd855160f8"
+          },
+          {
+            "query": "Turn these repeated workflow steps into a composite action",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5,
+            "spec_hash": "618eb05ca27897289bbe2732ff609684267b4130e0559f613fe72ff0fdbe8d47"
+          },
+          {
+            "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.5,
+            "spec_hash": "9add495259e4b0504497520ae4540a8becbdc770e69281942949cbf0266dd0b1"
+          },
+          {
+            "query": "Set up concurrency so superseded PR runs get cancelled",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.5,
+            "spec_hash": "60b33cf523054b8dba6f2c654259ab5d3642d0c7b3ded15c0bcbea043ae910e2"
+          },
+          {
+            "query": "Review .github/workflows/ci.yaml for style and structure",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "26f21514666f5be3f02df969994f53caf2fab58df07a6b8133793c27362c9ccb"
+          },
+          {
+            "query": "Is it safe to use pull_request_target in this workflow?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.7,
+            "spec_hash": "76ffd5029456e7b8bd6e345bfdafd3fbfa38b3f9252c218f7f0286d4a144b095"
+          },
+          {
+            "query": "Run zizmor to audit our workflows for security issues",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "2f8cf930f0ba257fd0659593788e94ee148827d38030556a6270844f8dccef40"
+          },
+          {
+            "query": "Wire up the bitwise reusable release workflow for this repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "1d3ce7fb6f24a458685f22bd16c2755a6d07b7630a619d2a3bca42455280b53f"
+          },
+          {
+            "query": "Write a Terraform module for an S3 bucket",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "spec_hash": "a02f322077d29e90b9335c2701e0359de28dc297abfad82f4c7748392e16c4a3"
+          },
+          {
+            "query": "Add a GitLab CI pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.6,
+            "spec_hash": "fa2d8b82d1cb47e84b17f03c2e98d700c5ba0fec6c320f08234d6a8bc1812bf9"
+          },
+          {
+            "query": "Pin all the actions in our workflows to commit SHAs",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.7,
+            "spec_hash": "3815d47f16c9cbdbfc922660ad0fb4da208250ba859c17d1480581e009022945"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 8,
+          "total": 14,
+          "pass_rate": 0.428571,
+          "avg_run_seconds": 5
+        },
+        "previous": {
+          "ran_at": "2026-06-22T22:25:25Z",
+          "summary": {
+            "passed": 6,
+            "failed": 8,
+            "total": 14,
+            "pass_rate": 0.428571,
+            "avg_run_seconds": 5
+          },
+          "results": [
+            {
+              "query": "Add a GitLab CI pipeline for this project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.6
+            },
+            {
+              "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.3
+            },
+            {
+              "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.5
+            },
+            {
+              "query": "How should I gate this step on a workflow_dispatch boolean input?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.1
+            },
+            {
+              "query": "Is it safe to use pull_request_target in this workflow?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.7
+            },
+            {
+              "query": "Pin all the actions in our workflows to commit SHAs",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.7
+            },
+            {
+              "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.3
+            },
+            {
+              "query": "Review .github/workflows/ci.yaml for style and structure",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.7
+            },
+            {
+              "query": "Run zizmor to audit our workflows for security issues",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.9
+            },
+            {
+              "query": "Set up concurrency so superseded PR runs get cancelled",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.1
+            },
+            {
+              "query": "Turn these repeated workflow steps into a composite action",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.7
+            },
+            {
+              "query": "Wire up the bitwise reusable release workflow for this repo",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.8
+            },
+            {
+              "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.9
+            },
+            {
+              "query": "Write a Terraform module for an S3 bucket",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.5
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:08:00Z",
+        "executed": true,
+        "content_hash": "41bb98a42f07f5eee04abfc4d7c8dd547170a63c45fd86b2e0e37c901f9e7898",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "id": "reusable-boolean-input",
+            "passed": true,
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/build.yaml",
+                "text": "file .github/workflows/build.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/build.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "workflow_call",
+                "text": ".github/workflows/build.yaml matches /workflow_call/",
+                "passed": true,
+                "evidence": "workflow_call",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "type:\\s*boolean",
+                "text": ".github/workflows/build.yaml matches /type:\\s*boolean/",
+                "passed": true,
+                "evidence": "type: boolean",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "permissions:",
+                "text": ".github/workflows/build.yaml matches /permissions:/",
+                "passed": true,
+                "evidence": "permissions:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/build.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/build.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "executor_duration_seconds": 31.5
+            },
+            "spec_hash": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+          },
+          {
+            "id": "fix-string-boolean",
+            "passed": true,
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/deploy.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "if:.*inputs\\.run_tests",
+                "text": ".github/workflows/deploy.yaml matches /if:.*inputs\\.run_tests/",
+                "passed": true,
+                "evidence": "if: ${{ inputs.run_tests",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "timing": {
+              "executor_duration_seconds": 39.7
+            },
+            "spec_hash": "dd9c3f5b8b0baa52ece2e1dbd072e86d233f8de97c280c7507bff1205a3fd4dd"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 35.6
+        },
+        "baseline": {
+          "ran_at": "2026-06-22T22:25:35Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 4.6
+          },
+          "results": [
+            {
+              "id": "fix-string-boolean",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 4.5
+              },
+              "fingerprint": "dd9c3f5b8b0baa52ece2e1dbd072e86d233f8de97c280c7507bff1205a3fd4dd"
+            },
+            {
+              "id": "reusable-boolean-input",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 4.6
+              },
+              "fingerprint": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-23T01:12:25Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5
+          },
+          "results": [
+            {
+              "id": "fix-string-boolean",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.3
+              }
+            },
+            {
+              "id": "reusable-boolean-input",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 4.7
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.2.1-55-g27c5e17-dirty",
+        "ran_at": "2026-06-23T00:50:41Z",
+        "executed": true,
+        "content_hash": "1785fdac48707897fee4694df868b29da92ff68f2444524d3d62eb14f2fda788",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.8,
+            "estimate": {
+              "input_tokens": 1321,
+              "input_cost_usd": 0.003303
+            },
+            "spec_hash": "5682d8bdaf246df512b56342dd5c98f6da7cde3012eba9fa7ea50c2585e057a3"
+          },
+          {
+            "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.3,
+            "estimate": {
+              "input_tokens": 1323,
+              "input_cost_usd": 0.003307
+            },
+            "spec_hash": "f4f20115dd05d705b727265c3777d6b820bda12117bc82cc1435baaadc758ce7"
+          },
+          {
+            "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.1,
+            "estimate": {
+              "input_tokens": 1323,
+              "input_cost_usd": 0.003307
+            },
+            "spec_hash": "a1476dc54c260ba926262a4043f5d62c3cc28a5b4e237421019a55ed66342863"
+          },
+          {
+            "query": "How should I gate this step on a workflow_dispatch boolean input?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.5,
+            "estimate": {
+              "input_tokens": 1318,
+              "input_cost_usd": 0.003295
+            },
+            "spec_hash": "0b9be860094c074f0e31a4f3c946def3d6dd46a720b9a2e89e6299cd855160f8"
+          },
+          {
+            "query": "Turn these repeated workflow steps into a composite action",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 51.5,
+            "estimate": {
+              "input_tokens": 1314,
+              "input_cost_usd": 0.003285
+            },
+            "spec_hash": "618eb05ca27897289bbe2732ff609684267b4130e0559f613fe72ff0fdbe8d47"
+          },
+          {
+            "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.6,
+            "estimate": {
+              "input_tokens": 1317,
+              "input_cost_usd": 0.003293
+            },
+            "spec_hash": "9add495259e4b0504497520ae4540a8becbdc770e69281942949cbf0266dd0b1"
+          },
+          {
+            "query": "Set up concurrency so superseded PR runs get cancelled",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.4,
+            "estimate": {
+              "input_tokens": 1315,
+              "input_cost_usd": 0.003288
+            },
+            "spec_hash": "60b33cf523054b8dba6f2c654259ab5d3642d0c7b3ded15c0bcbea043ae910e2"
+          },
+          {
+            "query": "Review .github/workflows/ci.yaml for style and structure",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.9,
+            "estimate": {
+              "input_tokens": 1317,
+              "input_cost_usd": 0.003293
+            },
+            "spec_hash": "26f21514666f5be3f02df969994f53caf2fab58df07a6b8133793c27362c9ccb"
+          },
+          {
+            "query": "Is it safe to use pull_request_target in this workflow?",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 42.9,
+            "estimate": {
+              "input_tokens": 1317,
+              "input_cost_usd": 0.003293
+            },
+            "spec_hash": "76ffd5029456e7b8bd6e345bfdafd3fbfa38b3f9252c218f7f0286d4a144b095"
+          },
+          {
+            "query": "Run zizmor to audit our workflows for security issues",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 66.4,
+            "estimate": {
+              "input_tokens": 1315,
+              "input_cost_usd": 0.003288
+            },
+            "spec_hash": "2f8cf930f0ba257fd0659593788e94ee148827d38030556a6270844f8dccef40"
+          },
+          {
+            "query": "Wire up the bitwise reusable release workflow for this repo",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 80.5,
+            "estimate": {
+              "input_tokens": 1316,
+              "input_cost_usd": 0.00329
+            },
+            "spec_hash": "1d3ce7fb6f24a458685f22bd16c2755a6d07b7630a619d2a3bca42455280b53f"
+          },
+          {
+            "query": "Write a Terraform module for an S3 bucket",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1314,
+              "input_cost_usd": 0.003285
+            },
+            "spec_hash": "a02f322077d29e90b9335c2701e0359de28dc297abfad82f4c7748392e16c4a3"
+          },
+          {
+            "query": "Add a GitLab CI pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1314,
+              "input_cost_usd": 0.003285
+            },
+            "spec_hash": "fa2d8b82d1cb47e84b17f03c2e98d700c5ba0fec6c320f08234d6a8bc1812bf9"
+          },
+          {
+            "query": "Pin all the actions in our workflows to commit SHAs",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 84.3,
+            "estimate": {
+              "input_tokens": 1316,
+              "input_cost_usd": 0.00329
+            },
+            "spec_hash": "3815d47f16c9cbdbfc922660ad0fb4da208250ba859c17d1480581e009022945"
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 47.1,
+          "estimate": {
+            "input_tokens": 18440,
+            "input_cost_usd": 0.046102
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T22:24:31Z",
+          "summary": {
+            "passed": 13,
+            "failed": 1,
+            "total": 14,
+            "pass_rate": 0.928571,
+            "avg_run_seconds": 42.4,
+            "estimate": {
+              "input_tokens": 18440,
+              "input_cost_usd": 0.046102
+            }
+          },
+          "results": [
+            {
+              "query": "Add a GitLab CI pipeline for this project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 120,
+              "estimate": {
+                "input_tokens": 1314,
+                "input_cost_usd": 0.003285
+              }
+            },
+            {
+              "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.3,
+              "estimate": {
+                "input_tokens": 1323,
+                "input_cost_usd": 0.003307
+              }
+            },
+            {
+              "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 20.6,
+              "estimate": {
+                "input_tokens": 1317,
+                "input_cost_usd": 0.003293
+              }
+            },
+            {
+              "query": "How should I gate this step on a workflow_dispatch boolean input?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.5,
+              "estimate": {
+                "input_tokens": 1318,
+                "input_cost_usd": 0.003295
+              }
+            },
+            {
+              "query": "Is it safe to use pull_request_target in this workflow?",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 42.9,
+              "estimate": {
+                "input_tokens": 1317,
+                "input_cost_usd": 0.003293
+              }
+            },
+            {
+              "query": "Pin all the actions in our workflows to commit SHAs",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 18.4,
+              "estimate": {
+                "input_tokens": 1316,
+                "input_cost_usd": 0.00329
+              }
+            },
+            {
+              "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.1,
+              "estimate": {
+                "input_tokens": 1323,
+                "input_cost_usd": 0.003307
+              }
+            },
+            {
+              "query": "Review .github/workflows/ci.yaml for style and structure",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.9,
+              "estimate": {
+                "input_tokens": 1317,
+                "input_cost_usd": 0.003293
+              }
+            },
+            {
+              "query": "Run zizmor to audit our workflows for security issues",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 66.4,
+              "estimate": {
+                "input_tokens": 1315,
+                "input_cost_usd": 0.003288
+              }
+            },
+            {
+              "query": "Set up concurrency so superseded PR runs get cancelled",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.4,
+              "estimate": {
+                "input_tokens": 1315,
+                "input_cost_usd": 0.003288
+              }
+            },
+            {
+              "query": "Turn these repeated workflow steps into a composite action",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 51.5,
+              "estimate": {
+                "input_tokens": 1314,
+                "input_cost_usd": 0.003285
+              }
+            },
+            {
+              "query": "Wire up the bitwise reusable release workflow for this repo",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 80.5,
+              "estimate": {
+                "input_tokens": 1316,
+                "input_cost_usd": 0.00329
+              }
+            },
+            {
+              "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.8,
+              "estimate": {
+                "input_tokens": 1321,
+                "input_cost_usd": 0.003303
+              }
+            },
+            {
+              "query": "Write a Terraform module for an S3 bucket",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 120,
+              "estimate": {
+                "input_tokens": 1314,
+                "input_cost_usd": 0.003285
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T22:48:59Z",
+        "executed": true,
+        "content_hash": "41bb98a42f07f5eee04abfc4d7c8dd547170a63c45fd86b2e0e37c901f9e7898",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "reusable-boolean-input",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1378,
+              "input_cost_usd": 0.003445
+            },
+            "measured": {
+              "input_tokens": 10384,
+              "cache_read_input_tokens": 91904,
+              "output_tokens": 1257,
+              "cost_usd": 0.274575
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/build.yaml",
+                "text": "file .github/workflows/build.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/build.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "workflow_call",
+                "text": ".github/workflows/build.yaml matches /workflow_call/",
+                "passed": true,
+                "evidence": "workflow_call",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "type:\\s*boolean",
+                "text": ".github/workflows/build.yaml matches /type:\\s*boolean/",
+                "passed": true,
+                "evidence": "type: boolean",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "permissions:",
+                "text": ".github/workflows/build.yaml matches /permissions:/",
+                "passed": true,
+                "evidence": "permissions:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/build.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/build.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 103545,
+              "executor_duration_seconds": 31.4
+            },
+            "spec_hash": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+          },
+          {
+            "id": "fix-string-boolean",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1345,
+              "input_cost_usd": 0.003363
+            },
+            "measured": {
+              "input_tokens": 21806,
+              "cache_read_input_tokens": 73984,
+              "output_tokens": 1373,
+              "cost_usd": 0.26007
+            },
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/deploy.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "if:.*inputs\\.run_tests",
+                "text": ".github/workflows/deploy.yaml matches /if:.*inputs\\.run_tests/",
+                "passed": true,
+                "evidence": "if: ${{ inputs.run_tests",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 9
+              },
+              "total_tool_calls": 9
+            },
+            "timing": {
+              "total_tokens": 97163,
+              "executor_duration_seconds": 34.4
+            },
+            "spec_hash": "f04e40135818ae54047c4a8a53d07b6f1bc52f6fb16793305769b6c666a62297"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 32.9,
+          "estimate": {
+            "input_tokens": 2723,
+            "input_cost_usd": 0.006808
+          },
+          "measured": {
+            "input_tokens": 32190,
+            "cache_read_input_tokens": 165888,
+            "output_tokens": 2630,
+            "cost_usd": 0.534645
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-27T22:48:59Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 30.8,
+            "measured": {
+              "input_tokens": 14128,
+              "cache_read_input_tokens": 122752,
+              "output_tokens": 2089,
+              "cost_usd": 0.373535
+            }
+          },
+          "results": [
+            {
+              "id": "reusable-boolean-input",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6048,
+                "cache_read_input_tokens": 73088,
+                "output_tokens": 1108,
+                "cost_usd": 0.21446
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 36.9
+              },
+              "fingerprint": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+            },
+            {
+              "id": "fix-string-boolean",
+              "passed": true,
+              "measured": {
+                "input_tokens": 8080,
+                "cache_read_input_tokens": 49664,
+                "output_tokens": 981,
+                "cost_usd": 0.159075
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 24.6
+              },
+              "fingerprint": "f04e40135818ae54047c4a8a53d07b6f1bc52f6fb16793305769b6c666a62297"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T14:33:37Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 32.8,
+            "estimate": {
+              "input_tokens": 2723,
+              "input_cost_usd": 0.006808
+            },
+            "measured": {
+              "input_tokens": 22392,
+              "cache_read_input_tokens": 168064,
+              "output_tokens": 2724,
+              "cost_usd": 0.517
+            }
+          },
+          "results": [
+            {
+              "id": "reusable-boolean-input",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1378,
+                "input_cost_usd": 0.003445
+              },
+              "measured": {
+                "input_tokens": 10384,
+                "cache_read_input_tokens": 91904,
+                "output_tokens": 1257,
+                "cost_usd": 0.274575
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 31.4
+              }
+            },
+            {
+              "id": "fix-string-boolean",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1345,
+                "input_cost_usd": 0.003363
+              },
+              "measured": {
+                "input_tokens": 12008,
+                "cache_read_input_tokens": 76160,
+                "output_tokens": 1467,
+                "cost_usd": 0.242425
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 34.3
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "tool_version": "v0.2.1-35-g6297e2f-dirty",
+        "ran_at": "2026-06-21T10:55:20Z",
+        "executed": true,
+        "content_hash": "1785fdac48707897fee4694df868b29da92ff68f2444524d3d62eb14f2fda788",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Write a GitHub Actions CI workflow that lints and tests on pushes to main",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 1321,
+              "input_cost_usd": 0.006605
+            },
+            "spec_hash": "5682d8bdaf246df512b56342dd5c98f6da7cde3012eba9fa7ea50c2585e057a3"
+          },
+          {
+            "query": "Add a matrix build across Node 18, 20, and 22 to our workflow",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.8,
+            "estimate": {
+              "input_tokens": 1323,
+              "input_cost_usd": 0.006615
+            },
+            "spec_hash": "f4f20115dd05d705b727265c3777d6b820bda12117bc82cc1435baaadc758ce7"
+          },
+          {
+            "query": "Refactor this workflow to use a boolean input instead of comparing a string to 'true'",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "estimate": {
+              "input_tokens": 1323,
+              "input_cost_usd": 0.006615
+            },
+            "spec_hash": "a1476dc54c260ba926262a4043f5d62c3cc28a5b4e237421019a55ed66342863"
+          },
+          {
+            "query": "How should I gate this step on a workflow_dispatch boolean input?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "estimate": {
+              "input_tokens": 1318,
+              "input_cost_usd": 0.00659
+            },
+            "spec_hash": "0b9be860094c074f0e31a4f3c946def3d6dd46a720b9a2e89e6299cd855160f8"
+          },
+          {
+            "query": "Turn these repeated workflow steps into a composite action",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 22.9,
+            "estimate": {
+              "input_tokens": 1314,
+              "input_cost_usd": 0.00657
+            },
+            "spec_hash": "618eb05ca27897289bbe2732ff609684267b4130e0559f613fe72ff0fdbe8d47"
+          },
+          {
+            "query": "Add a reusable workflow with workflow_call inputs for our deploy steps",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.3,
+            "estimate": {
+              "input_tokens": 1317,
+              "input_cost_usd": 0.006585
+            },
+            "spec_hash": "9add495259e4b0504497520ae4540a8becbdc770e69281942949cbf0266dd0b1"
+          },
+          {
+            "query": "Set up concurrency so superseded PR runs get cancelled",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.5,
+            "estimate": {
+              "input_tokens": 1315,
+              "input_cost_usd": 0.006575
+            },
+            "spec_hash": "60b33cf523054b8dba6f2c654259ab5d3642d0c7b3ded15c0bcbea043ae910e2"
+          },
+          {
+            "query": "Review .github/workflows/ci.yaml for style and structure",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 1317,
+              "input_cost_usd": 0.006585
+            },
+            "spec_hash": "26f21514666f5be3f02df969994f53caf2fab58df07a6b8133793c27362c9ccb"
+          },
+          {
+            "query": "Is it safe to use pull_request_target in this workflow?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 41.6,
+            "estimate": {
+              "input_tokens": 1317,
+              "input_cost_usd": 0.006585
+            },
+            "spec_hash": "76ffd5029456e7b8bd6e345bfdafd3fbfa38b3f9252c218f7f0286d4a144b095"
+          },
+          {
+            "query": "Run zizmor to audit our workflows for security issues",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 26.5,
+            "estimate": {
+              "input_tokens": 1315,
+              "input_cost_usd": 0.006575
+            },
+            "spec_hash": "2f8cf930f0ba257fd0659593788e94ee148827d38030556a6270844f8dccef40"
+          },
+          {
+            "query": "Wire up the bitwise reusable release workflow for this repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 99.9,
+            "estimate": {
+              "input_tokens": 1316,
+              "input_cost_usd": 0.00658
+            },
+            "spec_hash": "1d3ce7fb6f24a458685f22bd16c2755a6d07b7630a619d2a3bca42455280b53f"
+          },
+          {
+            "query": "Write a Terraform module for an S3 bucket",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 116.8,
+            "estimate": {
+              "input_tokens": 1314,
+              "input_cost_usd": 0.00657
+            },
+            "spec_hash": "a02f322077d29e90b9335c2701e0359de28dc297abfad82f4c7748392e16c4a3"
+          },
+          {
+            "query": "Add a GitLab CI pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 88.4,
+            "estimate": {
+              "input_tokens": 1314,
+              "input_cost_usd": 0.00657
+            },
+            "spec_hash": "fa2d8b82d1cb47e84b17f03c2e98d700c5ba0fec6c320f08234d6a8bc1812bf9"
+          },
+          {
+            "query": "Pin all the actions in our workflows to commit SHAs",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 50.4,
+            "estimate": {
+              "input_tokens": 1316,
+              "input_cost_usd": 0.00658
+            },
+            "spec_hash": "3815d47f16c9cbdbfc922660ad0fb4da208250ba859c17d1480581e009022945"
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 37.3,
+          "estimate": {
+            "input_tokens": 18440,
+            "input_cost_usd": 0.0922
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T22:49:55Z",
+        "executed": true,
+        "content_hash": "41bb98a42f07f5eee04abfc4d7c8dd547170a63c45fd86b2e0e37c901f9e7898",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "reusable-boolean-input",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1378,
+              "input_cost_usd": 0.00689
+            },
+            "measured": {
+              "input_tokens": 35205,
+              "cache_read_input_tokens": 121856,
+              "output_tokens": 2163,
+              "cost_usd": 0.850195
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/build.yaml",
+                "text": "file .github/workflows/build.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/build.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "workflow_call",
+                "text": ".github/workflows/build.yaml matches /workflow_call/",
+                "passed": true,
+                "evidence": "workflow_call",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "type:\\s*boolean",
+                "text": ".github/workflows/build.yaml matches /type:\\s*boolean/",
+                "passed": true,
+                "evidence": "type: boolean",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "permissions:",
+                "text": ".github/workflows/build.yaml matches /permissions:/",
+                "passed": true,
+                "evidence": "permissions:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/build.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/build.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 159224,
+              "executor_duration_seconds": 54.8
+            },
+            "spec_hash": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+          },
+          {
+            "id": "fix-string-boolean",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1345,
+              "input_cost_usd": 0.006725
+            },
+            "measured": {
+              "input_tokens": 17551,
+              "cache_read_input_tokens": 71552,
+              "output_tokens": 1479,
+              "cost_usd": 0.489885
+            },
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "==\\s*['\"](true|false)['\"]",
+                "text": ".github/workflows/deploy.yaml does not match /==\\s*['\"](true|false)['\"]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/deploy.yaml",
+                "pattern": "if:.*inputs\\.run_tests",
+                "text": ".github/workflows/deploy.yaml matches /if:.*inputs\\.run_tests/",
+                "passed": true,
+                "evidence": "if: ${{ inputs.run_tests",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 10
+              },
+              "total_tool_calls": 10
+            },
+            "timing": {
+              "total_tokens": 90582,
+              "executor_duration_seconds": 34.7
+            },
+            "spec_hash": "f04e40135818ae54047c4a8a53d07b6f1bc52f6fb16793305769b6c666a62297"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 44.8,
+          "estimate": {
+            "input_tokens": 2723,
+            "input_cost_usd": 0.013615
+          },
+          "measured": {
+            "input_tokens": 52756,
+            "cache_read_input_tokens": 193408,
+            "output_tokens": 3642,
+            "cost_usd": 1.34008
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-27T22:49:55Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 33.8,
+            "measured": {
+              "input_tokens": 29384,
+              "cache_read_input_tokens": 141056,
+              "output_tokens": 2837,
+              "cost_usd": 0.93731
+            }
+          },
+          "results": [
+            {
+              "id": "reusable-boolean-input",
+              "passed": true,
+              "measured": {
+                "input_tokens": 21819,
+                "cache_read_input_tokens": 101504,
+                "output_tokens": 1971,
+                "cost_usd": 0.675745
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 46.4
+              },
+              "fingerprint": "bbdf70f5463028bb9f31a79ccc629a86990cd4e645faa41407fea35a9244ef98"
+            },
+            {
+              "id": "fix-string-boolean",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7565,
+                "cache_read_input_tokens": 39552,
+                "output_tokens": 866,
+                "cost_usd": 0.261565
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 21.2
+              },
+              "fingerprint": "f04e40135818ae54047c4a8a53d07b6f1bc52f6fb16793305769b6c666a62297"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T14:35:20Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 47.4,
+            "estimate": {
+              "input_tokens": 2723,
+              "input_cost_usd": 0.013615
+            },
+            "measured": {
+              "input_tokens": 52047,
+              "cache_read_input_tokens": 199040,
+              "output_tokens": 3586,
+              "cost_usd": 1.363015
+            }
+          },
+          "results": [
+            {
+              "id": "reusable-boolean-input",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1378,
+                "input_cost_usd": 0.00689
+              },
+              "measured": {
+                "input_tokens": 35205,
+                "cache_read_input_tokens": 121856,
+                "output_tokens": 2163,
+                "cost_usd": 0.850195
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 54.8
+              }
+            },
+            {
+              "id": "fix-string-boolean",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1345,
+                "input_cost_usd": 0.006725
+              },
+              "measured": {
+                "input_tokens": 16842,
+                "cache_read_input_tokens": 77184,
+                "output_tokens": 1423,
+                "cost_usd": 0.51282
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 40
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

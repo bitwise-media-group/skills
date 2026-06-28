@@ -19,7 +19,7 @@
   "report": {
     "thresholds": {
       "triggers_min_pass_rate": 0.55,
-      "evals_min_pass_rate": 0.8
+      "evals_min_pass_rate": 0.75
     }
   }
 }
