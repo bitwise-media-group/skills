@@ -1,0 +1,3212 @@
+{
+  "schema": 5,
+  "plugin": "terraform",
+  "skill": "terraform-validate",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T06:00:50Z",
+        "executed": true,
+        "content_hash": "4c2f639d7d5219dd917b0d516337fc355a3d712fe629adcbc2efb38300fea85c",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "I just edited main.tf — make sure the terraform still validates",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "estimate": {
+              "input_tokens": 590,
+              "input_cost_usd": 0.00059
+            },
+            "spec_hash": "debebacf88b3b3658a53042475af7b963e6cfb6eae79a5494eaafd8a39ac9f2d"
+          },
+          {
+            "query": "Run the linter over the terraform modules",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "estimate": {
+              "input_tokens": 585,
+              "input_cost_usd": 0.000585
+            },
+            "spec_hash": "2308158571811d7f21a91df6edf74cc5b575165d88042cbd59eb422cefc99c02"
+          },
+          {
+            "query": "Format and validate the Terraform before we commit",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.3,
+            "estimate": {
+              "input_tokens": 586,
+              "input_cost_usd": 0.000586
+            },
+            "spec_hash": "60c4ffe100c9961ab55725bb31b2bf381a95b8ea2fec964025b58447d5f08621"
+          },
+          {
+            "query": "tflint is failing in CI — reproduce it locally and fix the findings",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.7,
+            "estimate": {
+              "input_tokens": 592,
+              "input_cost_usd": 0.000592
+            },
+            "spec_hash": "169dbd0eeb17b5d3bc09b9d21fcebf8ab5939f5417b6ad6aaa458aca942158e7"
+          },
+          {
+            "query": "Check the terraform code in modules/ for errors",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8,
+            "estimate": {
+              "input_tokens": 586,
+              "input_cost_usd": 0.000586
+            },
+            "spec_hash": "5095b026be159016ec0e1388d0eb719ba1e280f329b83658b22d726a767ed77b"
+          },
+          {
+            "query": "Set up tflint for this repository",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.8,
+            "estimate": {
+              "input_tokens": 585,
+              "input_cost_usd": 0.000585
+            },
+            "spec_hash": "05884ef928cde848df400464fa6450d6280d54bc29c30abacafba6736990db95"
+          },
+          {
+            "query": "Validate this JSON file against its schema",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.8,
+            "estimate": {
+              "input_tokens": 585,
+              "input_cost_usd": 0.000585
+            },
+            "spec_hash": "9e355c398113ad293ac23f9dd9f4419e2149a3ee3fbcab698dfcdfb502166c96"
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "estimate": {
+              "input_tokens": 585,
+              "input_cost_usd": 0.000585
+            },
+            "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+          },
+          {
+            "query": "What is the difference between terraform validate and terraform plan?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 588,
+              "input_cost_usd": 0.000588
+            },
+            "spec_hash": "f85fd23db3dfe6759195d611d3571ff2040a61b9828e9bc1237ed588158dff2b"
+          },
+          {
+            "query": "Write a new variables.tf for the cluster module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 587,
+              "input_cost_usd": 0.000587
+            },
+            "spec_hash": "bb17ef31e041770e3d2e3d8656493b04f6542b5a7f07f0633a6bbfb6c29e385b"
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.5,
+            "estimate": {
+              "input_tokens": 585,
+              "input_cost_usd": 0.000585
+            },
+            "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+          }
+        ],
+        "summary": {
+          "passed": 9,
+          "failed": 2,
+          "total": 11,
+          "pass_rate": 0.818182,
+          "avg_run_seconds": 7,
+          "estimate": {
+            "input_tokens": 6454,
+            "input_cost_usd": 0.006454
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-21T18:19:39Z",
+          "summary": {
+            "passed": 8,
+            "failed": 3,
+            "total": 11,
+            "pass_rate": 0.727273,
+            "avg_run_seconds": 6.6,
+            "estimate": {
+              "input_tokens": 6454,
+              "input_cost_usd": 0.006454
+            }
+          },
+          "results": [
+            {
+              "query": "Check the terraform code in modules/ for errors",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.2,
+              "estimate": {
+                "input_tokens": 586,
+                "input_cost_usd": 0.000586
+              }
+            },
+            {
+              "query": "Format and validate the Terraform before we commit",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.3,
+              "estimate": {
+                "input_tokens": 586,
+                "input_cost_usd": 0.000586
+              }
+            },
+            {
+              "query": "I just edited main.tf — make sure the terraform still validates",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.5,
+              "estimate": {
+                "input_tokens": 590,
+                "input_cost_usd": 0.00059
+              }
+            },
+            {
+              "query": "Lint the markdown files under docs/",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.5,
+              "estimate": {
+                "input_tokens": 585,
+                "input_cost_usd": 0.000585
+              }
+            },
+            {
+              "query": "Run the Go test suite and report failures",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.9,
+              "estimate": {
+                "input_tokens": 585,
+                "input_cost_usd": 0.000585
+              }
+            },
+            {
+              "query": "Run the linter over the terraform modules",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.7,
+              "estimate": {
+                "input_tokens": 585,
+                "input_cost_usd": 0.000585
+              }
+            },
+            {
+              "query": "Set up tflint for this repository",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.8,
+              "estimate": {
+                "input_tokens": 585,
+                "input_cost_usd": 0.000585
+              }
+            },
+            {
+              "query": "Validate this JSON file against its schema",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.8,
+              "estimate": {
+                "input_tokens": 585,
+                "input_cost_usd": 0.000585
+              }
+            },
+            {
+              "query": "What is the difference between terraform validate and terraform plan?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.1,
+              "estimate": {
+                "input_tokens": 588,
+                "input_cost_usd": 0.000588
+              }
+            },
+            {
+              "query": "Write a new variables.tf for the cluster module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.7,
+              "estimate": {
+                "input_tokens": 587,
+                "input_cost_usd": 0.000587
+              }
+            },
+            {
+              "query": "tflint is failing in CI — reproduce it locally and fix the findings",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.3,
+              "estimate": {
+                "input_tokens": 592,
+                "input_cost_usd": 0.000592
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T18:21:36Z",
+        "executed": true,
+        "content_hash": "4c56c214f74612530d1cf8ee2db05a26c6eca811628abbd84de2d435337edfd7",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "validate-fix-module",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 600,
+              "input_cost_usd": 0.0006
+            },
+            "measured": {
+              "input_tokens": 53,
+              "cache_read_input_tokens": 188310,
+              "cache_creation_input_tokens": 17633,
+              "output_tokens": 942,
+              "cost_usd": 0.059463
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "terraform fmt -recursive -check",
+                "requires": "terraform",
+                "text": "command `terraform fmt -recursive -check` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate",
+                "cwd": "modules/widget",
+                "requires": "terraform",
+                "text": "command `terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate` exits 0",
+                "passed": true,
+                "evidence": "exit 0: Success! The configuration is valid.\n\n",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/widget/main.tf",
+                "pattern": "aws_s3_bucket",
+                "text": "modules/widget/main.tf matches /aws_s3_bucket/",
+                "passed": true,
+                "evidence": "aws_s3_bucket",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 206938,
+              "executor_duration_seconds": 34.9
+            },
+            "spec_hash": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+          },
+          {
+            "id": "validate-seed-tflint",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 608,
+              "input_cost_usd": 0.000608
+            },
+            "measured": {
+              "input_tokens": 49,
+              "cache_read_input_tokens": 438386,
+              "cache_creation_input_tokens": 20347,
+              "output_tokens": 2296,
+              "cost_usd": 0.096678
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".tflint.hcl",
+                "text": "file .tflint.hcl exists",
+                "passed": true,
+                "evidence": ".tflint.hcl exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".tflint.hcl",
+                "pattern": "terraform_documented_variables",
+                "text": ".tflint.hcl matches /terraform_documented_variables/",
+                "passed": true,
+                "evidence": "terraform_documented_variables",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".tflint.hcl",
+                "pattern": "preset\\s*=\\s*\"recommended\"",
+                "text": ".tflint.hcl matches /preset\\s*=\\s*\"recommended\"/",
+                "passed": true,
+                "evidence": "preset  = \"recommended\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 461078,
+              "executor_duration_seconds": 76.9
+            },
+            "spec_hash": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 55.9,
+          "estimate": {
+            "input_tokens": 1208,
+            "input_cost_usd": 0.001208
+          },
+          "measured": {
+            "input_tokens": 102,
+            "cache_read_input_tokens": 626696,
+            "cache_creation_input_tokens": 37980,
+            "output_tokens": 3238,
+            "cost_usd": 0.156141
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T18:21:36Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 42.5,
+            "measured": {
+              "input_tokens": 108,
+              "cache_read_input_tokens": 693542,
+              "cache_creation_input_tokens": 35549,
+              "output_tokens": 3968,
+              "cost_usd": 0.16162
+            }
+          },
+          "results": [
+            {
+              "id": "validate-fix-module",
+              "passed": true,
+              "measured": {
+                "input_tokens": 57,
+                "cache_read_input_tokens": 344586,
+                "cache_creation_input_tokens": 17796,
+                "output_tokens": 1739,
+                "cost_usd": 0.079401
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 44.7
+              },
+              "fingerprint": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+            },
+            {
+              "id": "validate-seed-tflint",
+              "passed": false,
+              "measured": {
+                "input_tokens": 51,
+                "cache_read_input_tokens": 348956,
+                "cache_creation_input_tokens": 17753,
+                "output_tokens": 2229,
+                "cost_usd": 0.082219
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 40.3
+              },
+              "fingerprint": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T21:08:23Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 46.3,
+            "estimate": {
+              "input_tokens": 1208,
+              "input_cost_usd": 0.001208
+            },
+            "measured": {
+              "input_tokens": 129,
+              "cache_read_input_tokens": 589889,
+              "cache_creation_input_tokens": 37109,
+              "output_tokens": 3632,
+              "cost_usd": 0.152705
+            }
+          },
+          "results": [
+            {
+              "id": "validate-fix-module",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 600,
+                "input_cost_usd": 0.0006
+              },
+              "measured": {
+                "input_tokens": 76,
+                "cache_read_input_tokens": 349917,
+                "cache_creation_input_tokens": 19131,
+                "output_tokens": 2117,
+                "cost_usd": 0.084503
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 46.4
+              }
+            },
+            {
+              "id": "validate-seed-tflint",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 608,
+                "input_cost_usd": 0.000608
+              },
+              "measured": {
+                "input_tokens": 53,
+                "cache_read_input_tokens": 239972,
+                "cache_creation_input_tokens": 17978,
+                "output_tokens": 1515,
+                "cost_usd": 0.068202
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 46.1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T06:02:03Z",
+        "executed": true,
+        "content_hash": "4c2f639d7d5219dd917b0d516337fc355a3d712fe629adcbc2efb38300fea85c",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "I just edited main.tf — make sure the terraform still validates",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "estimate": {
+              "input_tokens": 829,
+              "input_cost_usd": 0.004145
+            },
+            "spec_hash": "debebacf88b3b3658a53042475af7b963e6cfb6eae79a5494eaafd8a39ac9f2d"
+          },
+          {
+            "query": "Run the linter over the terraform modules",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.9,
+            "estimate": {
+              "input_tokens": 822,
+              "input_cost_usd": 0.00411
+            },
+            "spec_hash": "2308158571811d7f21a91df6edf74cc5b575165d88042cbd59eb422cefc99c02"
+          },
+          {
+            "query": "Format and validate the Terraform before we commit",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 824,
+              "input_cost_usd": 0.00412
+            },
+            "spec_hash": "60c4ffe100c9961ab55725bb31b2bf381a95b8ea2fec964025b58447d5f08621"
+          },
+          {
+            "query": "tflint is failing in CI — reproduce it locally and fix the findings",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 25.3,
+            "estimate": {
+              "input_tokens": 833,
+              "input_cost_usd": 0.004165
+            },
+            "spec_hash": "169dbd0eeb17b5d3bc09b9d21fcebf8ab5939f5417b6ad6aaa458aca942158e7"
+          },
+          {
+            "query": "Check the terraform code in modules/ for errors",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.3,
+            "estimate": {
+              "input_tokens": 825,
+              "input_cost_usd": 0.004125
+            },
+            "spec_hash": "5095b026be159016ec0e1388d0eb719ba1e280f329b83658b22d726a767ed77b"
+          },
+          {
+            "query": "Set up tflint for this repository",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "estimate": {
+              "input_tokens": 820,
+              "input_cost_usd": 0.0041
+            },
+            "spec_hash": "05884ef928cde848df400464fa6450d6280d54bc29c30abacafba6736990db95"
+          },
+          {
+            "query": "Validate this JSON file against its schema",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.6,
+            "estimate": {
+              "input_tokens": 822,
+              "input_cost_usd": 0.00411
+            },
+            "spec_hash": "9e355c398113ad293ac23f9dd9f4419e2149a3ee3fbcab698dfcdfb502166c96"
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.2,
+            "estimate": {
+              "input_tokens": 822,
+              "input_cost_usd": 0.00411
+            },
+            "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+          },
+          {
+            "query": "What is the difference between terraform validate and terraform plan?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15,
+            "estimate": {
+              "input_tokens": 828,
+              "input_cost_usd": 0.00414
+            },
+            "spec_hash": "f85fd23db3dfe6759195d611d3571ff2040a61b9828e9bc1237ed588158dff2b"
+          },
+          {
+            "query": "Write a new variables.tf for the cluster module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10,
+            "estimate": {
+              "input_tokens": 825,
+              "input_cost_usd": 0.004125
+            },
+            "spec_hash": "bb17ef31e041770e3d2e3d8656493b04f6542b5a7f07f0633a6bbfb6c29e385b"
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10,
+            "estimate": {
+              "input_tokens": 822,
+              "input_cost_usd": 0.00411
+            },
+            "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+          }
+        ],
+        "summary": {
+          "passed": 9,
+          "failed": 2,
+          "total": 11,
+          "pass_rate": 0.818182,
+          "avg_run_seconds": 10.8,
+          "estimate": {
+            "input_tokens": 9072,
+            "input_cost_usd": 0.04536
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-21T18:26:56Z",
+          "summary": {
+            "passed": 9,
+            "failed": 2,
+            "total": 11,
+            "pass_rate": 0.818182,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 9072,
+              "input_cost_usd": 0.04536
+            }
+          },
+          "results": [
+            {
+              "query": "Check the terraform code in modules/ for errors",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.1,
+              "estimate": {
+                "input_tokens": 825,
+                "input_cost_usd": 0.004125
+              }
+            },
+            {
+              "query": "Format and validate the Terraform before we commit",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.4,
+              "estimate": {
+                "input_tokens": 824,
+                "input_cost_usd": 0.00412
+              }
+            },
+            {
+              "query": "I just edited main.tf — make sure the terraform still validates",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.3,
+              "estimate": {
+                "input_tokens": 829,
+                "input_cost_usd": 0.004145
+              }
+            },
+            {
+              "query": "Lint the markdown files under docs/",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10,
+              "estimate": {
+                "input_tokens": 822,
+                "input_cost_usd": 0.00411
+              }
+            },
+            {
+              "query": "Run the Go test suite and report failures",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.2,
+              "estimate": {
+                "input_tokens": 822,
+                "input_cost_usd": 0.00411
+              }
+            },
+            {
+              "query": "Run the linter over the terraform modules",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.9,
+              "estimate": {
+                "input_tokens": 822,
+                "input_cost_usd": 0.00411
+              }
+            },
+            {
+              "query": "Set up tflint for this repository",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.3,
+              "estimate": {
+                "input_tokens": 820,
+                "input_cost_usd": 0.0041
+              }
+            },
+            {
+              "query": "Validate this JSON file against its schema",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.6,
+              "estimate": {
+                "input_tokens": 822,
+                "input_cost_usd": 0.00411
+              }
+            },
+            {
+              "query": "What is the difference between terraform validate and terraform plan?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15,
+              "estimate": {
+                "input_tokens": 828,
+                "input_cost_usd": 0.00414
+              }
+            },
+            {
+              "query": "Write a new variables.tf for the cluster module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10,
+              "estimate": {
+                "input_tokens": 825,
+                "input_cost_usd": 0.004125
+              }
+            },
+            {
+              "query": "tflint is failing in CI — reproduce it locally and fix the findings",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.9,
+              "estimate": {
+                "input_tokens": 833,
+                "input_cost_usd": 0.004165
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T18:32:48Z",
+        "executed": true,
+        "content_hash": "4c56c214f74612530d1cf8ee2db05a26c6eca811628abbd84de2d435337edfd7",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "validate-fix-module",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 846,
+              "input_cost_usd": 0.00423
+            },
+            "measured": {
+              "input_tokens": 3070,
+              "cache_read_input_tokens": 534125,
+              "cache_creation_input_tokens": 16254,
+              "output_tokens": 6701,
+              "cost_usd": 0.613081
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "terraform fmt -recursive -check",
+                "requires": "terraform",
+                "text": "command `terraform fmt -recursive -check` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate",
+                "cwd": "modules/widget",
+                "requires": "terraform",
+                "text": "command `terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate` exits 0",
+                "passed": true,
+                "evidence": "exit 0: Success! The configuration is valid.\n\n",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/widget/main.tf",
+                "pattern": "aws_s3_bucket",
+                "text": "modules/widget/main.tf matches /aws_s3_bucket/",
+                "passed": true,
+                "evidence": "aws_s3_bucket",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 560150,
+              "executor_duration_seconds": 136.1
+            },
+            "spec_hash": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+          },
+          {
+            "id": "validate-seed-tflint",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 853,
+              "input_cost_usd": 0.004265
+            },
+            "measured": {
+              "input_tokens": 3006,
+              "cache_read_input_tokens": 539495,
+              "cache_creation_input_tokens": 20878,
+              "output_tokens": 11411,
+              "cost_usd": 0.779449
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".tflint.hcl",
+                "text": "file .tflint.hcl exists",
+                "passed": true,
+                "evidence": ".tflint.hcl exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".tflint.hcl",
+                "pattern": "terraform_documented_variables",
+                "text": ".tflint.hcl matches /terraform_documented_variables/",
+                "passed": true,
+                "evidence": "terraform_documented_variables",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".tflint.hcl",
+                "pattern": "preset\\s*=\\s*\"recommended\"",
+                "text": ".tflint.hcl matches /preset\\s*=\\s*\"recommended\"/",
+                "passed": true,
+                "evidence": "preset  = \"recommended\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 574790,
+              "executor_duration_seconds": 195.3
+            },
+            "spec_hash": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 165.7,
+          "estimate": {
+            "input_tokens": 1699,
+            "input_cost_usd": 0.008495
+          },
+          "measured": {
+            "input_tokens": 6076,
+            "cache_read_input_tokens": 1073620,
+            "cache_creation_input_tokens": 37132,
+            "output_tokens": 18112,
+            "cost_usd": 1.39253
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T18:32:48Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 135.5,
+            "measured": {
+              "input_tokens": 5544,
+              "cache_read_input_tokens": 703440,
+              "cache_creation_input_tokens": 27683,
+              "output_tokens": 14351,
+              "cost_usd": 1.016264
+            }
+          },
+          "results": [
+            {
+              "id": "validate-fix-module",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2776,
+                "cache_read_input_tokens": 390206,
+                "cache_creation_input_tokens": 12424,
+                "output_tokens": 4797,
+                "cost_usd": 0.453746
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 113.9
+              },
+              "fingerprint": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+            },
+            {
+              "id": "validate-seed-tflint",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2768,
+                "cache_read_input_tokens": 313234,
+                "cache_creation_input_tokens": 15259,
+                "output_tokens": 9554,
+                "cost_usd": 0.562518
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 157.1
+              },
+              "fingerprint": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T19:06:47Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 197.5,
+            "estimate": {
+              "input_tokens": 1699,
+              "input_cost_usd": 0.008495
+            },
+            "measured": {
+              "input_tokens": 6011,
+              "cache_read_input_tokens": 1061571,
+              "cache_creation_input_tokens": 42790,
+              "output_tokens": 23946,
+              "cost_usd": 1.588605
+            }
+          },
+          "results": [
+            {
+              "id": "validate-fix-module",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 846,
+                "input_cost_usd": 0.00423
+              },
+              "measured": {
+                "input_tokens": 3004,
+                "cache_read_input_tokens": 474198,
+                "cache_creation_input_tokens": 16180,
+                "output_tokens": 7645,
+                "cost_usd": 0.605642
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 128.1
+              }
+            },
+            {
+              "id": "validate-seed-tflint",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 853,
+                "input_cost_usd": 0.004265
+              },
+              "measured": {
+                "input_tokens": 3007,
+                "cache_read_input_tokens": 587373,
+                "cache_creation_input_tokens": 26610,
+                "output_tokens": 16301,
+                "cost_usd": 0.982963
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 266.9
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T06:01:24Z",
+        "executed": true,
+        "content_hash": "4c2f639d7d5219dd917b0d516337fc355a3d712fe629adcbc2efb38300fea85c",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "I just edited main.tf — make sure the terraform still validates",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "estimate": {
+              "input_tokens": 590,
+              "input_cost_usd": 0.00177
+            },
+            "spec_hash": "debebacf88b3b3658a53042475af7b963e6cfb6eae79a5494eaafd8a39ac9f2d"
+          },
+          {
+            "query": "Run the linter over the terraform modules",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "estimate": {
+              "input_tokens": 585,
+              "input_cost_usd": 0.001755
+            },
+            "spec_hash": "2308158571811d7f21a91df6edf74cc5b575165d88042cbd59eb422cefc99c02"
+          },
+          {
+            "query": "Format and validate the Terraform before we commit",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "estimate": {
+              "input_tokens": 586,
+              "input_cost_usd": 0.001758
+            },
+            "spec_hash": "60c4ffe100c9961ab55725bb31b2bf381a95b8ea2fec964025b58447d5f08621"
+          },
+          {
+            "query": "tflint is failing in CI — reproduce it locally and fix the findings",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 17.8,
+            "estimate": {
+              "input_tokens": 592,
+              "input_cost_usd": 0.001776
+            },
+            "spec_hash": "169dbd0eeb17b5d3bc09b9d21fcebf8ab5939f5417b6ad6aaa458aca942158e7"
+          },
+          {
+            "query": "Check the terraform code in modules/ for errors",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.7,
+            "estimate": {
+              "input_tokens": 586,
+              "input_cost_usd": 0.001758
+            },
+            "spec_hash": "5095b026be159016ec0e1388d0eb719ba1e280f329b83658b22d726a767ed77b"
+          },
+          {
+            "query": "Set up tflint for this repository",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.7,
+            "estimate": {
+              "input_tokens": 585,
+              "input_cost_usd": 0.001755
+            },
+            "spec_hash": "05884ef928cde848df400464fa6450d6280d54bc29c30abacafba6736990db95"
+          },
+          {
+            "query": "Validate this JSON file against its schema",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.1,
+            "estimate": {
+              "input_tokens": 585,
+              "input_cost_usd": 0.001755
+            },
+            "spec_hash": "9e355c398113ad293ac23f9dd9f4419e2149a3ee3fbcab698dfcdfb502166c96"
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 585,
+              "input_cost_usd": 0.001755
+            },
+            "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+          },
+          {
+            "query": "What is the difference between terraform validate and terraform plan?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.7,
+            "estimate": {
+              "input_tokens": 588,
+              "input_cost_usd": 0.001764
+            },
+            "spec_hash": "f85fd23db3dfe6759195d611d3571ff2040a61b9828e9bc1237ed588158dff2b"
+          },
+          {
+            "query": "Write a new variables.tf for the cluster module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.1,
+            "estimate": {
+              "input_tokens": 587,
+              "input_cost_usd": 0.001761
+            },
+            "spec_hash": "bb17ef31e041770e3d2e3d8656493b04f6542b5a7f07f0633a6bbfb6c29e385b"
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.1,
+            "estimate": {
+              "input_tokens": 585,
+              "input_cost_usd": 0.001755
+            },
+            "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+          }
+        ],
+        "summary": {
+          "passed": 9,
+          "failed": 2,
+          "total": 11,
+          "pass_rate": 0.818182,
+          "avg_run_seconds": 8.4,
+          "estimate": {
+            "input_tokens": 6454,
+            "input_cost_usd": 0.019362
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-21T18:22:04Z",
+          "summary": {
+            "passed": 9,
+            "failed": 2,
+            "total": 11,
+            "pass_rate": 0.818182,
+            "avg_run_seconds": 7.1,
+            "estimate": {
+              "input_tokens": 6454,
+              "input_cost_usd": 0.019362
+            }
+          },
+          "results": [
+            {
+              "query": "Check the terraform code in modules/ for errors",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8,
+              "estimate": {
+                "input_tokens": 586,
+                "input_cost_usd": 0.001758
+              }
+            },
+            {
+              "query": "Format and validate the Terraform before we commit",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.2,
+              "estimate": {
+                "input_tokens": 586,
+                "input_cost_usd": 0.001758
+              }
+            },
+            {
+              "query": "I just edited main.tf — make sure the terraform still validates",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.5,
+              "estimate": {
+                "input_tokens": 590,
+                "input_cost_usd": 0.00177
+              }
+            },
+            {
+              "query": "Lint the markdown files under docs/",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.1,
+              "estimate": {
+                "input_tokens": 585,
+                "input_cost_usd": 0.001755
+              }
+            },
+            {
+              "query": "Run the Go test suite and report failures",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.2,
+              "estimate": {
+                "input_tokens": 585,
+                "input_cost_usd": 0.001755
+              }
+            },
+            {
+              "query": "Run the linter over the terraform modules",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.5,
+              "estimate": {
+                "input_tokens": 585,
+                "input_cost_usd": 0.001755
+              }
+            },
+            {
+              "query": "Set up tflint for this repository",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.7,
+              "estimate": {
+                "input_tokens": 585,
+                "input_cost_usd": 0.001755
+              }
+            },
+            {
+              "query": "Validate this JSON file against its schema",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.1,
+              "estimate": {
+                "input_tokens": 585,
+                "input_cost_usd": 0.001755
+              }
+            },
+            {
+              "query": "What is the difference between terraform validate and terraform plan?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.7,
+              "estimate": {
+                "input_tokens": 588,
+                "input_cost_usd": 0.001764
+              }
+            },
+            {
+              "query": "Write a new variables.tf for the cluster module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.1,
+              "estimate": {
+                "input_tokens": 587,
+                "input_cost_usd": 0.001761
+              }
+            },
+            {
+              "query": "tflint is failing in CI — reproduce it locally and fix the findings",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.3,
+              "estimate": {
+                "input_tokens": 592,
+                "input_cost_usd": 0.001776
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T18:26:21Z",
+        "executed": true,
+        "content_hash": "4c56c214f74612530d1cf8ee2db05a26c6eca811628abbd84de2d435337edfd7",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "validate-fix-module",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 600,
+              "input_cost_usd": 0.0018
+            },
+            "measured": {
+              "input_tokens": 14,
+              "cache_read_input_tokens": 275229,
+              "cache_creation_input_tokens": 11013,
+              "output_tokens": 1876,
+              "cost_usd": 0.177427
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "terraform fmt -recursive -check",
+                "requires": "terraform",
+                "text": "command `terraform fmt -recursive -check` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate",
+                "cwd": "modules/widget",
+                "requires": "terraform",
+                "text": "command `terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate` exits 0",
+                "passed": true,
+                "evidence": "exit 0: Success! The configuration is valid.\n\n",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/widget/main.tf",
+                "pattern": "aws_s3_bucket",
+                "text": "modules/widget/main.tf matches /aws_s3_bucket/",
+                "passed": true,
+                "evidence": "aws_s3_bucket",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 288132,
+              "executor_duration_seconds": 57.8
+            },
+            "spec_hash": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+          },
+          {
+            "id": "validate-seed-tflint",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 608,
+              "input_cost_usd": 0.001824
+            },
+            "measured": {
+              "input_tokens": 14,
+              "cache_read_input_tokens": 256019,
+              "cache_creation_input_tokens": 11648,
+              "output_tokens": 2510,
+              "cost_usd": 0.211727
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".tflint.hcl",
+                "text": "file .tflint.hcl exists",
+                "passed": true,
+                "evidence": ".tflint.hcl exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".tflint.hcl",
+                "pattern": "terraform_documented_variables",
+                "text": ".tflint.hcl matches /terraform_documented_variables/",
+                "passed": true,
+                "evidence": "terraform_documented_variables",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".tflint.hcl",
+                "pattern": "preset\\s*=\\s*\"recommended\"",
+                "text": ".tflint.hcl matches /preset\\s*=\\s*\"recommended\"/",
+                "passed": true,
+                "evidence": "preset  = \"recommended\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 270191,
+              "executor_duration_seconds": 104.9
+            },
+            "spec_hash": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 81.4,
+          "estimate": {
+            "input_tokens": 1208,
+            "input_cost_usd": 0.003624
+          },
+          "measured": {
+            "input_tokens": 28,
+            "cache_read_input_tokens": 531248,
+            "cache_creation_input_tokens": 22661,
+            "output_tokens": 4386,
+            "cost_usd": 0.389154
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T18:26:21Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 124.5,
+            "measured": {
+              "input_tokens": 22,
+              "cache_read_input_tokens": 452674,
+              "cache_creation_input_tokens": 23622,
+              "output_tokens": 6468,
+              "cost_usd": 0.465942
+            }
+          },
+          "results": [
+            {
+              "id": "validate-fix-module",
+              "passed": true,
+              "measured": {
+                "input_tokens": 10,
+                "cache_read_input_tokens": 196350,
+                "cache_creation_input_tokens": 10431,
+                "output_tokens": 2113,
+                "cost_usd": 0.204199
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 96.3
+              },
+              "fingerprint": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+            },
+            {
+              "id": "validate-seed-tflint",
+              "passed": false,
+              "measured": {
+                "input_tokens": 12,
+                "cache_read_input_tokens": 256324,
+                "cache_creation_input_tokens": 13191,
+                "output_tokens": 4355,
+                "cost_usd": 0.261743
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 152.7
+              },
+              "fingerprint": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T19:02:20Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 64.7,
+            "estimate": {
+              "input_tokens": 1208,
+              "input_cost_usd": 0.003624
+            },
+            "measured": {
+              "input_tokens": 30,
+              "cache_read_input_tokens": 615674,
+              "cache_creation_input_tokens": 23679,
+              "output_tokens": 5324,
+              "cost_usd": 0.407945
+            }
+          },
+          "results": [
+            {
+              "id": "validate-fix-module",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 600,
+                "input_cost_usd": 0.0018
+              },
+              "measured": {
+                "input_tokens": 15,
+                "cache_read_input_tokens": 306348,
+                "cache_creation_input_tokens": 11882,
+                "output_tokens": 2659,
+                "cost_usd": 0.203724
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 65.4
+              }
+            },
+            {
+              "id": "validate-seed-tflint",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 608,
+                "input_cost_usd": 0.001824
+              },
+              "measured": {
+                "input_tokens": 15,
+                "cache_read_input_tokens": 309326,
+                "cache_creation_input_tokens": 11797,
+                "output_tokens": 2665,
+                "cost_usd": 0.204221
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 64
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.1-pro": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:54:05Z",
+        "executed": true,
+        "content_hash": "4c2f639d7d5219dd917b0d516337fc355a3d712fe629adcbc2efb38300fea85c",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "I just edited main.tf — make sure the terraform still validates",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5,
+            "spec_hash": "debebacf88b3b3658a53042475af7b963e6cfb6eae79a5494eaafd8a39ac9f2d"
+          },
+          {
+            "query": "Run the linter over the terraform modules",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "2308158571811d7f21a91df6edf74cc5b575165d88042cbd59eb422cefc99c02"
+          },
+          {
+            "query": "Format and validate the Terraform before we commit",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.6,
+            "spec_hash": "60c4ffe100c9961ab55725bb31b2bf381a95b8ea2fec964025b58447d5f08621"
+          },
+          {
+            "query": "tflint is failing in CI — reproduce it locally and fix the findings",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "169dbd0eeb17b5d3bc09b9d21fcebf8ab5939f5417b6ad6aaa458aca942158e7"
+          },
+          {
+            "query": "Check the terraform code in modules/ for errors",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5,
+            "spec_hash": "5095b026be159016ec0e1388d0eb719ba1e280f329b83658b22d726a767ed77b"
+          },
+          {
+            "query": "Set up tflint for this repository",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "05884ef928cde848df400464fa6450d6280d54bc29c30abacafba6736990db95"
+          },
+          {
+            "query": "Validate this JSON file against its schema",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "9e355c398113ad293ac23f9dd9f4419e2149a3ee3fbcab698dfcdfb502166c96"
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+          },
+          {
+            "query": "What is the difference between terraform validate and terraform plan?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "f85fd23db3dfe6759195d611d3571ff2040a61b9828e9bc1237ed588158dff2b"
+          },
+          {
+            "query": "Write a new variables.tf for the cluster module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "spec_hash": "bb17ef31e041770e3d2e3d8656493b04f6542b5a7f07f0633a6bbfb6c29e385b"
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 6,
+          "total": 11,
+          "pass_rate": 0.454545,
+          "avg_run_seconds": 5
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:54:15Z",
+        "executed": true,
+        "content_hash": "4c56c214f74612530d1cf8ee2db05a26c6eca811628abbd84de2d435337edfd7",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "validate-fix-module",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.1
+            },
+            "spec_hash": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+          },
+          {
+            "id": "validate-seed-tflint",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 4.8
+            },
+            "spec_hash": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 4.9
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:54:15Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.2
+          },
+          "results": [
+            {
+              "id": "validate-fix-module",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 4.9
+              },
+              "fingerprint": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+            },
+            {
+              "id": "validate-seed-tflint",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.4
+              },
+              "fingerprint": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.5-flash": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:53:09Z",
+        "executed": true,
+        "content_hash": "4c2f639d7d5219dd917b0d516337fc355a3d712fe629adcbc2efb38300fea85c",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "query": "I just edited main.tf — make sure the terraform still validates",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "debebacf88b3b3658a53042475af7b963e6cfb6eae79a5494eaafd8a39ac9f2d"
+          },
+          {
+            "query": "Run the linter over the terraform modules",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "2308158571811d7f21a91df6edf74cc5b575165d88042cbd59eb422cefc99c02"
+          },
+          {
+            "query": "Format and validate the Terraform before we commit",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "60c4ffe100c9961ab55725bb31b2bf381a95b8ea2fec964025b58447d5f08621"
+          },
+          {
+            "query": "tflint is failing in CI — reproduce it locally and fix the findings",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "169dbd0eeb17b5d3bc09b9d21fcebf8ab5939f5417b6ad6aaa458aca942158e7"
+          },
+          {
+            "query": "Check the terraform code in modules/ for errors",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "5095b026be159016ec0e1388d0eb719ba1e280f329b83658b22d726a767ed77b"
+          },
+          {
+            "query": "Set up tflint for this repository",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "05884ef928cde848df400464fa6450d6280d54bc29c30abacafba6736990db95"
+          },
+          {
+            "query": "Validate this JSON file against its schema",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "9e355c398113ad293ac23f9dd9f4419e2149a3ee3fbcab698dfcdfb502166c96"
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+          },
+          {
+            "query": "What is the difference between terraform validate and terraform plan?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "f85fd23db3dfe6759195d611d3571ff2040a61b9828e9bc1237ed588158dff2b"
+          },
+          {
+            "query": "Write a new variables.tf for the cluster module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "bb17ef31e041770e3d2e3d8656493b04f6542b5a7f07f0633a6bbfb6c29e385b"
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 6,
+          "total": 11,
+          "pass_rate": 0.454545,
+          "avg_run_seconds": 5.4
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:53:20Z",
+        "executed": true,
+        "content_hash": "4c56c214f74612530d1cf8ee2db05a26c6eca811628abbd84de2d435337edfd7",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "id": "validate-fix-module",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.3
+            },
+            "spec_hash": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+          },
+          {
+            "id": "validate-seed-tflint",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 4.5
+            },
+            "spec_hash": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 4.9
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:53:20Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.3
+          },
+          "results": [
+            {
+              "id": "validate-fix-module",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.3
+              },
+              "fingerprint": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+            },
+            {
+              "id": "validate-seed-tflint",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.3
+              },
+              "fingerprint": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T06:04:03Z",
+        "executed": true,
+        "content_hash": "4c2f639d7d5219dd917b0d516337fc355a3d712fe629adcbc2efb38300fea85c",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "I just edited main.tf — make sure the terraform still validates",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.5,
+            "estimate": {
+              "input_tokens": 528,
+              "input_cost_usd": 0.00132
+            },
+            "spec_hash": "debebacf88b3b3658a53042475af7b963e6cfb6eae79a5494eaafd8a39ac9f2d"
+          },
+          {
+            "query": "Run the linter over the terraform modules",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.5,
+            "estimate": {
+              "input_tokens": 524,
+              "input_cost_usd": 0.00131
+            },
+            "spec_hash": "2308158571811d7f21a91df6edf74cc5b575165d88042cbd59eb422cefc99c02"
+          },
+          {
+            "query": "Format and validate the Terraform before we commit",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15,
+            "estimate": {
+              "input_tokens": 524,
+              "input_cost_usd": 0.00131
+            },
+            "spec_hash": "60c4ffe100c9961ab55725bb31b2bf381a95b8ea2fec964025b58447d5f08621"
+          },
+          {
+            "query": "tflint is failing in CI — reproduce it locally and fix the findings",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.1,
+            "estimate": {
+              "input_tokens": 531,
+              "input_cost_usd": 0.001328
+            },
+            "spec_hash": "169dbd0eeb17b5d3bc09b9d21fcebf8ab5939f5417b6ad6aaa458aca942158e7"
+          },
+          {
+            "query": "Check the terraform code in modules/ for errors",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 22.8,
+            "estimate": {
+              "input_tokens": 525,
+              "input_cost_usd": 0.001312
+            },
+            "spec_hash": "5095b026be159016ec0e1388d0eb719ba1e280f329b83658b22d726a767ed77b"
+          },
+          {
+            "query": "Set up tflint for this repository",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.8,
+            "estimate": {
+              "input_tokens": 524,
+              "input_cost_usd": 0.00131
+            },
+            "spec_hash": "05884ef928cde848df400464fa6450d6280d54bc29c30abacafba6736990db95"
+          },
+          {
+            "query": "Validate this JSON file against its schema",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 32.4,
+            "estimate": {
+              "input_tokens": 523,
+              "input_cost_usd": 0.001308
+            },
+            "spec_hash": "9e355c398113ad293ac23f9dd9f4419e2149a3ee3fbcab698dfcdfb502166c96"
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 54.5,
+            "estimate": {
+              "input_tokens": 524,
+              "input_cost_usd": 0.00131
+            },
+            "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+          },
+          {
+            "query": "What is the difference between terraform validate and terraform plan?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.8,
+            "estimate": {
+              "input_tokens": 527,
+              "input_cost_usd": 0.001318
+            },
+            "spec_hash": "f85fd23db3dfe6759195d611d3571ff2040a61b9828e9bc1237ed588158dff2b"
+          },
+          {
+            "query": "Write a new variables.tf for the cluster module",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 78.6,
+            "estimate": {
+              "input_tokens": 525,
+              "input_cost_usd": 0.001312
+            },
+            "spec_hash": "bb17ef31e041770e3d2e3d8656493b04f6542b5a7f07f0633a6bbfb6c29e385b"
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 34.4,
+            "estimate": {
+              "input_tokens": 523,
+              "input_cost_usd": 0.001308
+            },
+            "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 1,
+          "total": 11,
+          "pass_rate": 0.909091,
+          "avg_run_seconds": 27.5,
+          "estimate": {
+            "input_tokens": 5778,
+            "input_cost_usd": 0.014446
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-21T18:34:45Z",
+          "summary": {
+            "passed": 10,
+            "failed": 1,
+            "total": 11,
+            "pass_rate": 0.909091,
+            "avg_run_seconds": 23.6,
+            "estimate": {
+              "input_tokens": 5778,
+              "input_cost_usd": 0.014446
+            }
+          },
+          "results": [
+            {
+              "query": "Check the terraform code in modules/ for errors",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 22.8,
+              "estimate": {
+                "input_tokens": 525,
+                "input_cost_usd": 0.001312
+              }
+            },
+            {
+              "query": "Format and validate the Terraform before we commit",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15,
+              "estimate": {
+                "input_tokens": 524,
+                "input_cost_usd": 0.00131
+              }
+            },
+            {
+              "query": "I just edited main.tf — make sure the terraform still validates",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.5,
+              "estimate": {
+                "input_tokens": 528,
+                "input_cost_usd": 0.00132
+              }
+            },
+            {
+              "query": "Lint the markdown files under docs/",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 34.4,
+              "estimate": {
+                "input_tokens": 523,
+                "input_cost_usd": 0.001308
+              }
+            },
+            {
+              "query": "Run the Go test suite and report failures",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 54.5,
+              "estimate": {
+                "input_tokens": 524,
+                "input_cost_usd": 0.00131
+              }
+            },
+            {
+              "query": "Run the linter over the terraform modules",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.5,
+              "estimate": {
+                "input_tokens": 524,
+                "input_cost_usd": 0.00131
+              }
+            },
+            {
+              "query": "Set up tflint for this repository",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.8,
+              "estimate": {
+                "input_tokens": 524,
+                "input_cost_usd": 0.00131
+              }
+            },
+            {
+              "query": "Validate this JSON file against its schema",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 32.4,
+              "estimate": {
+                "input_tokens": 523,
+                "input_cost_usd": 0.001308
+              }
+            },
+            {
+              "query": "What is the difference between terraform validate and terraform plan?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.8,
+              "estimate": {
+                "input_tokens": 527,
+                "input_cost_usd": 0.001318
+              }
+            },
+            {
+              "query": "Write a new variables.tf for the cluster module",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 36.1,
+              "estimate": {
+                "input_tokens": 525,
+                "input_cost_usd": 0.001312
+              }
+            },
+            {
+              "query": "tflint is failing in CI — reproduce it locally and fix the findings",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 16.1,
+              "estimate": {
+                "input_tokens": 531,
+                "input_cost_usd": 0.001328
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T18:38:10Z",
+        "executed": true,
+        "content_hash": "4c56c214f74612530d1cf8ee2db05a26c6eca811628abbd84de2d435337edfd7",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "validate-fix-module",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 537,
+              "input_cost_usd": 0.001343
+            },
+            "measured": {
+              "input_tokens": 14116,
+              "cache_read_input_tokens": 170752,
+              "output_tokens": 3326,
+              "cost_usd": 0.51206
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "terraform fmt -recursive -check",
+                "requires": "terraform",
+                "text": "command `terraform fmt -recursive -check` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate",
+                "cwd": "modules/widget",
+                "requires": "terraform",
+                "text": "command `terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate` exits 0",
+                "passed": true,
+                "evidence": "exit 0: Success! The configuration is valid.\n\n",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/widget/main.tf",
+                "pattern": "aws_s3_bucket",
+                "text": "modules/widget/main.tf matches /aws_s3_bucket/",
+                "passed": true,
+                "evidence": "aws_s3_bucket",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 188194,
+              "executor_duration_seconds": 84.4
+            },
+            "spec_hash": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+          },
+          {
+            "id": "validate-seed-tflint",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 545,
+              "input_cost_usd": 0.001363
+            },
+            "measured": {
+              "input_tokens": 16681,
+              "cache_read_input_tokens": 123392,
+              "output_tokens": 2427,
+              "cost_usd": 0.386588
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".tflint.hcl",
+                "text": "file .tflint.hcl exists",
+                "passed": true,
+                "evidence": ".tflint.hcl exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".tflint.hcl",
+                "pattern": "terraform_documented_variables",
+                "text": ".tflint.hcl matches /terraform_documented_variables/",
+                "passed": true,
+                "evidence": "terraform_documented_variables",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".tflint.hcl",
+                "pattern": "preset\\s*=\\s*\"recommended\"",
+                "text": ".tflint.hcl matches /preset\\s*=\\s*\"recommended\"/",
+                "passed": true,
+                "evidence": "preset  = \"recommended\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 142500,
+              "executor_duration_seconds": 62.6
+            },
+            "spec_hash": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 73.5,
+          "estimate": {
+            "input_tokens": 1082,
+            "input_cost_usd": 0.002706
+          },
+          "measured": {
+            "input_tokens": 30797,
+            "cache_read_input_tokens": 294144,
+            "output_tokens": 5753,
+            "cost_usd": 0.898648
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T18:38:10Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 121.3,
+            "measured": {
+              "input_tokens": 33073,
+              "cache_read_input_tokens": 600960,
+              "output_tokens": 8809,
+              "cost_usd": 1.717218
+            }
+          },
+          "results": [
+            {
+              "id": "validate-fix-module",
+              "passed": true,
+              "measured": {
+                "input_tokens": 11306,
+                "cache_read_input_tokens": 217984,
+                "output_tokens": 3242,
+                "cost_usd": 0.621855
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 100.6
+              },
+              "fingerprint": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+            },
+            {
+              "id": "validate-seed-tflint",
+              "passed": false,
+              "measured": {
+                "input_tokens": 21767,
+                "cache_read_input_tokens": 382976,
+                "output_tokens": 5567,
+                "cost_usd": 1.095363
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 141.9
+              },
+              "fingerprint": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T19:09:49Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 85.4,
+            "estimate": {
+              "input_tokens": 1082,
+              "input_cost_usd": 0.002706
+            },
+            "measured": {
+              "input_tokens": 36729,
+              "cache_read_input_tokens": 298112,
+              "output_tokens": 5964,
+              "cost_usd": 0.926563
+            }
+          },
+          "results": [
+            {
+              "id": "validate-fix-module",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 537,
+                "input_cost_usd": 0.001343
+              },
+              "measured": {
+                "input_tokens": 12496,
+                "cache_read_input_tokens": 111232,
+                "output_tokens": 2815,
+                "cost_usd": 0.351545
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 91
+              }
+            },
+            {
+              "id": "validate-seed-tflint",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 545,
+                "input_cost_usd": 0.001363
+              },
+              "measured": {
+                "input_tokens": 24233,
+                "cache_read_input_tokens": 186880,
+                "output_tokens": 3149,
+                "cost_usd": 0.575018
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 79.8
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T18:40:46Z",
+        "executed": true,
+        "content_hash": "4c2f639d7d5219dd917b0d516337fc355a3d712fe629adcbc2efb38300fea85c",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "I just edited main.tf — make sure the terraform still validates",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 528,
+              "input_cost_usd": 0.00264
+            },
+            "spec_hash": "debebacf88b3b3658a53042475af7b963e6cfb6eae79a5494eaafd8a39ac9f2d"
+          },
+          {
+            "query": "Run the linter over the terraform modules",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.8,
+            "estimate": {
+              "input_tokens": 524,
+              "input_cost_usd": 0.00262
+            },
+            "spec_hash": "2308158571811d7f21a91df6edf74cc5b575165d88042cbd59eb422cefc99c02"
+          },
+          {
+            "query": "Format and validate the Terraform before we commit",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.9,
+            "estimate": {
+              "input_tokens": 524,
+              "input_cost_usd": 0.00262
+            },
+            "spec_hash": "60c4ffe100c9961ab55725bb31b2bf381a95b8ea2fec964025b58447d5f08621"
+          },
+          {
+            "query": "tflint is failing in CI — reproduce it locally and fix the findings",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 531,
+              "input_cost_usd": 0.002655
+            },
+            "spec_hash": "169dbd0eeb17b5d3bc09b9d21fcebf8ab5939f5417b6ad6aaa458aca942158e7"
+          },
+          {
+            "query": "Check the terraform code in modules/ for errors",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9,
+            "estimate": {
+              "input_tokens": 525,
+              "input_cost_usd": 0.002625
+            },
+            "spec_hash": "5095b026be159016ec0e1388d0eb719ba1e280f329b83658b22d726a767ed77b"
+          },
+          {
+            "query": "Set up tflint for this repository",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 524,
+              "input_cost_usd": 0.00262
+            },
+            "spec_hash": "05884ef928cde848df400464fa6450d6280d54bc29c30abacafba6736990db95"
+          },
+          {
+            "query": "Validate this JSON file against its schema",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 48.9,
+            "estimate": {
+              "input_tokens": 523,
+              "input_cost_usd": 0.002615
+            },
+            "spec_hash": "9e355c398113ad293ac23f9dd9f4419e2149a3ee3fbcab698dfcdfb502166c96"
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 40.8,
+            "estimate": {
+              "input_tokens": 524,
+              "input_cost_usd": 0.00262
+            },
+            "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+          },
+          {
+            "query": "What is the difference between terraform validate and terraform plan?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "estimate": {
+              "input_tokens": 527,
+              "input_cost_usd": 0.002635
+            },
+            "spec_hash": "f85fd23db3dfe6759195d611d3571ff2040a61b9828e9bc1237ed588158dff2b"
+          },
+          {
+            "query": "Write a new variables.tf for the cluster module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 525,
+              "input_cost_usd": 0.002625
+            },
+            "spec_hash": "bb17ef31e041770e3d2e3d8656493b04f6542b5a7f07f0633a6bbfb6c29e385b"
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 90.5,
+            "estimate": {
+              "input_tokens": 523,
+              "input_cost_usd": 0.002615
+            },
+            "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 0,
+          "total": 11,
+          "pass_rate": 1,
+          "avg_run_seconds": 34.8,
+          "estimate": {
+            "input_tokens": 5778,
+            "input_cost_usd": 0.02889
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T18:45:17Z",
+        "executed": true,
+        "content_hash": "4c56c214f74612530d1cf8ee2db05a26c6eca811628abbd84de2d435337edfd7",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "validate-fix-module",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 537,
+              "input_cost_usd": 0.002685
+            },
+            "measured": {
+              "input_tokens": 37058,
+              "cache_read_input_tokens": 281088,
+              "output_tokens": 4111,
+              "cost_usd": 1.71406
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "terraform fmt -recursive -check",
+                "requires": "terraform",
+                "text": "command `terraform fmt -recursive -check` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate",
+                "cwd": "modules/widget",
+                "requires": "terraform",
+                "text": "command `terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate` exits 0",
+                "passed": true,
+                "evidence": "exit 0: Success! The configuration is valid.\n\n",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/widget/main.tf",
+                "pattern": "aws_s3_bucket",
+                "text": "modules/widget/main.tf matches /aws_s3_bucket/",
+                "passed": true,
+                "evidence": "aws_s3_bucket",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 322257,
+              "executor_duration_seconds": 128
+            },
+            "spec_hash": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+          },
+          {
+            "id": "validate-seed-tflint",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 545,
+              "input_cost_usd": 0.002725
+            },
+            "measured": {
+              "input_tokens": 21226,
+              "cache_read_input_tokens": 170752,
+              "output_tokens": 2792,
+              "cost_usd": 1.04365
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".tflint.hcl",
+                "text": "file .tflint.hcl exists",
+                "passed": true,
+                "evidence": ".tflint.hcl exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".tflint.hcl",
+                "pattern": "terraform_documented_variables",
+                "text": ".tflint.hcl matches /terraform_documented_variables/",
+                "passed": true,
+                "evidence": "terraform_documented_variables",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".tflint.hcl",
+                "pattern": "preset\\s*=\\s*\"recommended\"",
+                "text": ".tflint.hcl matches /preset\\s*=\\s*\"recommended\"/",
+                "passed": true,
+                "evidence": "preset  = \"recommended\"",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 194770,
+              "executor_duration_seconds": 78.3
+            },
+            "spec_hash": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 103.2,
+          "estimate": {
+            "input_tokens": 1082,
+            "input_cost_usd": 0.00541
+          },
+          "measured": {
+            "input_tokens": 58284,
+            "cache_read_input_tokens": 451840,
+            "output_tokens": 6903,
+            "cost_usd": 2.75771
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T18:45:17Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 129.2,
+            "measured": {
+              "input_tokens": 97050,
+              "cache_read_input_tokens": 417536,
+              "output_tokens": 8575,
+              "cost_usd": 2.83018
+            }
+          },
+          "results": [
+            {
+              "id": "validate-fix-module",
+              "passed": true,
+              "measured": {
+                "input_tokens": 38753,
+                "cache_read_input_tokens": 153856,
+                "output_tokens": 3437,
+                "cost_usd": 1.066155
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 112
+              },
+              "fingerprint": "1a1e7db4f6cd4b17a1648fee121664dbbcd43d6e00bc7b9b4af72cd9bd6917d7"
+            },
+            {
+              "id": "validate-seed-tflint",
+              "passed": true,
+              "measured": {
+                "input_tokens": 58297,
+                "cache_read_input_tokens": 263680,
+                "output_tokens": 5138,
+                "cost_usd": 1.764025
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 146.4
+              },
+              "fingerprint": "ef1229665d83e3e6067e9c0aaf9d1384ebdf3a2842125a7f41628d44a07829ee"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T19:11:56Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 108.3,
+            "estimate": {
+              "input_tokens": 1082,
+              "input_cost_usd": 0.00541
+            },
+            "measured": {
+              "input_tokens": 46017,
+              "cache_read_input_tokens": 433152,
+              "output_tokens": 8189,
+              "cost_usd": 2.641515
+            }
+          },
+          "results": [
+            {
+              "id": "validate-fix-module",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 537,
+                "input_cost_usd": 0.002685
+              },
+              "measured": {
+                "input_tokens": 21427,
+                "cache_read_input_tokens": 220672,
+                "output_tokens": 4666,
+                "cost_usd": 1.350475
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 112.7
+              }
+            },
+            {
+              "id": "validate-seed-tflint",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 545,
+                "input_cost_usd": 0.002725
+              },
+              "measured": {
+                "input_tokens": 24590,
+                "cache_read_input_tokens": 212480,
+                "output_tokens": 3523,
+                "cost_usd": 1.29104
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 103.8
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3370 @@
+{
+  "schema": 5,
+  "plugin": "terraform",
+  "skill": "terraform-module",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:52:14Z",
+        "executed": true,
+        "content_hash": "cf719c8c3bf7b96937a74e693226021c18af7547eed21f0b969307d8c947b0fb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Create a new Terraform module for an ECR registry mirror",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.5,
+            "estimate": {
+              "input_tokens": 673,
+              "input_cost_usd": 0.000673
+            }
+          },
+          {
+            "query": "Scaffold modules/eks-cluster with the standard file layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4,
+            "estimate": {
+              "input_tokens": 673,
+              "input_cost_usd": 0.000673
+            }
+          },
+          {
+            "query": "Add a new module under modules/ for managing IAM roles",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 673,
+              "input_cost_usd": 0.000673
+            },
+            "spec_hash": "06b372c564501bf4d59881f3a5044b7db4952cc2fd3ae8519e6a31e2c6b38811"
+          },
+          {
+            "query": "Restructure this Terraform module to follow our standard layout",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 673,
+              "input_cost_usd": 0.000673
+            },
+            "spec_hash": "165aaf8ff6e94c9a61f0c10099547bd908dbeca7bbf85d69d6dee8b346d049a9"
+          },
+          {
+            "query": "Start a terraform module for the VPC — just the skeleton, no resources yet",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.7,
+            "estimate": {
+              "input_tokens": 677,
+              "input_cost_usd": 0.000677
+            }
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.9,
+            "estimate": {
+              "input_tokens": 672,
+              "input_cost_usd": 0.000672
+            }
+          },
+          {
+            "query": "Add a new module to this Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "estimate": {
+              "input_tokens": 669,
+              "input_cost_usd": 0.000669
+            }
+          },
+          {
+            "query": "Why does my terraform module fail validation?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.5,
+            "estimate": {
+              "input_tokens": 669,
+              "input_cost_usd": 0.000669
+            }
+          },
+          {
+            "query": "What's the right type for a variable holding unique subnet IDs?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 675,
+              "input_cost_usd": 0.000675
+            }
+          },
+          {
+            "query": "Write a docker-compose file for local development",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.2,
+            "estimate": {
+              "input_tokens": 670,
+              "input_cost_usd": 0.00067
+            }
+          }
+        ],
+        "summary": {
+          "passed": 8,
+          "failed": 2,
+          "total": 10,
+          "pass_rate": 0.8,
+          "avg_run_seconds": 6.7,
+          "estimate": {
+            "input_tokens": 6724,
+            "input_cost_usd": 0.006724
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-20T14:50:14Z",
+          "summary": {
+            "passed": 8,
+            "failed": 2,
+            "total": 10,
+            "pass_rate": 0.8,
+            "avg_run_seconds": 6.5,
+            "estimate": {
+              "input_tokens": 6724,
+              "input_cost_usd": 0.006724
+            }
+          },
+          "results": [
+            {
+              "query": "Add a new module to this Python project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.9,
+              "estimate": {
+                "input_tokens": 669,
+                "input_cost_usd": 0.000669
+              }
+            },
+            {
+              "query": "Add a new module under modules/ for managing IAM roles",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.6,
+              "estimate": {
+                "input_tokens": 673,
+                "input_cost_usd": 0.000673
+              }
+            },
+            {
+              "query": "Create a new Terraform module for an ECR registry mirror",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.5,
+              "estimate": {
+                "input_tokens": 673,
+                "input_cost_usd": 0.000673
+              }
+            },
+            {
+              "query": "Restructure this Terraform module to follow our standard layout",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.2,
+              "estimate": {
+                "input_tokens": 673,
+                "input_cost_usd": 0.000673
+              }
+            },
+            {
+              "query": "Scaffold a new npm package with the usual project files",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.9,
+              "estimate": {
+                "input_tokens": 672,
+                "input_cost_usd": 0.000672
+              }
+            },
+            {
+              "query": "Scaffold modules/eks-cluster with the standard file layout",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4,
+              "estimate": {
+                "input_tokens": 673,
+                "input_cost_usd": 0.000673
+              }
+            },
+            {
+              "query": "Start a terraform module for the VPC — just the skeleton, no resources yet",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.7,
+              "estimate": {
+                "input_tokens": 677,
+                "input_cost_usd": 0.000677
+              }
+            },
+            {
+              "query": "What's the right type for a variable holding unique subnet IDs?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.1,
+              "estimate": {
+                "input_tokens": 675,
+                "input_cost_usd": 0.000675
+              }
+            },
+            {
+              "query": "Why does my terraform module fail validation?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.5,
+              "estimate": {
+                "input_tokens": 669,
+                "input_cost_usd": 0.000669
+              }
+            },
+            {
+              "query": "Write a docker-compose file for local development",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.2,
+              "estimate": {
+                "input_tokens": 670,
+                "input_cost_usd": 0.00067
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:53:05Z",
+        "executed": true,
+        "content_hash": "76786ec6cb91f034448e41e951835c5f8b502fe6a3ff63fb872d3dee4fde42f7",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "module-scaffold",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 711,
+              "input_cost_usd": 0.000711
+            },
+            "measured": {
+              "input_tokens": 47,
+              "cache_read_input_tokens": 137769,
+              "cache_creation_input_tokens": 20943,
+              "output_tokens": 3023,
+              "cost_usd": 0.071455
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "text": "file modules/ecr-mirror/terraform.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/terraform.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/main.tf",
+                "text": "file modules/ecr-mirror/main.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/main.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/variables.tf",
+                "text": "file modules/ecr-mirror/variables.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/variables.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/outputs.tf",
+                "text": "file modules/ecr-mirror/outputs.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/outputs.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/README.md",
+                "text": "file modules/ecr-mirror/README.md exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/README.md exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_absent",
+                "path": "modules/ecr-mirror/versions.tf",
+                "text": "file modules/ecr-mirror/versions.tf is absent",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/versions.tf missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "pattern": "required_version",
+                "text": "modules/ecr-mirror/terraform.tf matches /required_version/",
+                "passed": true,
+                "evidence": "required_version",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "pattern": "required_providers",
+                "text": "modules/ecr-mirror/terraform.tf matches /required_providers/",
+                "passed": true,
+                "evidence": "required_providers",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/README.md",
+                "pattern": "## Usage",
+                "text": "modules/ecr-mirror/README.md matches /## Usage/",
+                "passed": true,
+                "evidence": "## Usage",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "modules/ecr-mirror/main.tf",
+                "pattern": "resource\\s+\"[a-z0-9_]+\"\\s+\"this\"",
+                "text": "modules/ecr-mirror/main.tf does not match /resource\\s+\"[a-z0-9_]+\"\\s+\"this\"/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 10,
+              "failed": 0,
+              "total": 10,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 161782,
+              "executor_duration_seconds": 32.9
+            },
+            "spec_hash": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+          },
+          {
+            "id": "module-restructure",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 684,
+              "input_cost_usd": 0.000684
+            },
+            "measured": {
+              "input_tokens": 65,
+              "cache_read_input_tokens": 383272,
+              "cache_creation_input_tokens": 21601,
+              "output_tokens": 2701,
+              "cost_usd": 0.095702
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/terraform.tf",
+                "text": "file modules/legacy/terraform.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/terraform.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_absent",
+                "path": "modules/legacy/versions.tf",
+                "text": "file modules/legacy/versions.tf is absent",
+                "passed": false,
+                "evidence": "modules/legacy/versions.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/variables.tf",
+                "text": "file modules/legacy/variables.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/variables.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/outputs.tf",
+                "text": "file modules/legacy/outputs.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/outputs.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/legacy/variables.tf",
+                "pattern": "variable \"name\"",
+                "text": "modules/legacy/variables.tf matches /variable \"name\"/",
+                "passed": true,
+                "evidence": "variable \"name\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/legacy/outputs.tf",
+                "pattern": "output \"bucket\"",
+                "text": "modules/legacy/outputs.tf matches /output \"bucket\"/",
+                "passed": true,
+                "evidence": "output \"bucket\"",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate",
+                "cwd": "modules/legacy",
+                "requires": "terraform",
+                "text": "command `terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate` exits 0",
+                "passed": false,
+                "evidence": "exit 1: , in terraform:\n│    4:   required_providers {\n│ \n│ A module may have only one required providers configuration. The required\n│ providers were previously configured at terraform.tf:4,3-21.\n╵",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 2,
+              "total": 7,
+              "pass_rate": 0.714286
+            },
+            "timing": {
+              "total_tokens": 407639,
+              "executor_duration_seconds": 51.1
+            },
+            "spec_hash": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 42,
+          "estimate": {
+            "input_tokens": 1395,
+            "input_cost_usd": 0.001395
+          },
+          "measured": {
+            "input_tokens": 112,
+            "cache_read_input_tokens": 521041,
+            "cache_creation_input_tokens": 42544,
+            "output_tokens": 5724,
+            "cost_usd": 0.167157
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:38:11Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 23.5,
+            "measured": {
+              "input_tokens": 76,
+              "cache_read_input_tokens": 347178,
+              "cache_creation_input_tokens": 33691,
+              "output_tokens": 2932,
+              "cost_usd": 0.118074
+            }
+          },
+          "results": [
+            {
+              "id": "module-restructure",
+              "passed": false,
+              "measured": {
+                "input_tokens": 42,
+                "cache_read_input_tokens": 135439,
+                "cache_creation_input_tokens": 16896,
+                "output_tokens": 1344,
+                "cost_usd": 0.054706
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.714286
+              },
+              "timing": {
+                "executor_duration_seconds": 16.7
+              },
+              "fingerprint": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+            },
+            {
+              "id": "module-scaffold",
+              "passed": false,
+              "measured": {
+                "input_tokens": 34,
+                "cache_read_input_tokens": 211739,
+                "cache_creation_input_tokens": 16795,
+                "output_tokens": 1588,
+                "cost_usd": 0.063368
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.7
+              },
+              "timing": {
+                "executor_duration_seconds": 30.2
+              },
+              "fingerprint": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T17:38:11Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 42.3,
+            "estimate": {
+              "input_tokens": 1395,
+              "input_cost_usd": 0.001395
+            },
+            "measured": {
+              "input_tokens": 106,
+              "cache_read_input_tokens": 518607,
+              "cache_creation_input_tokens": 41651,
+              "output_tokens": 5589,
+              "cost_usd": 0.164452
+            }
+          },
+          "results": [
+            {
+              "id": "module-restructure",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 684,
+                "input_cost_usd": 0.000684
+              },
+              "measured": {
+                "input_tokens": 59,
+                "cache_read_input_tokens": 380838,
+                "cache_creation_input_tokens": 20708,
+                "output_tokens": 2566,
+                "cost_usd": 0.092997
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 0.857143
+              },
+              "timing": {
+                "executor_duration_seconds": 51.8
+              }
+            },
+            {
+              "id": "module-scaffold",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 711,
+                "input_cost_usd": 0.000711
+              },
+              "measured": {
+                "input_tokens": 47,
+                "cache_read_input_tokens": 137769,
+                "cache_creation_input_tokens": 20943,
+                "output_tokens": 3023,
+                "cost_usd": 0.071455
+              },
+              "summary": {
+                "passed": 10,
+                "failed": 0,
+                "total": 10,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 32.9
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:53:41Z",
+        "executed": true,
+        "content_hash": "cf719c8c3bf7b96937a74e693226021c18af7547eed21f0b969307d8c947b0fb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Create a new Terraform module for an ECR registry mirror",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "estimate": {
+              "input_tokens": 923,
+              "input_cost_usd": 0.004615
+            }
+          },
+          {
+            "query": "Scaffold modules/eks-cluster with the standard file layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.6,
+            "estimate": {
+              "input_tokens": 925,
+              "input_cost_usd": 0.004625
+            }
+          },
+          {
+            "query": "Add a new module under modules/ for managing IAM roles",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.8,
+            "estimate": {
+              "input_tokens": 922,
+              "input_cost_usd": 0.00461
+            },
+            "spec_hash": "06b372c564501bf4d59881f3a5044b7db4952cc2fd3ae8519e6a31e2c6b38811"
+          },
+          {
+            "query": "Restructure this Terraform module to follow our standard layout",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.7,
+            "estimate": {
+              "input_tokens": 922,
+              "input_cost_usd": 0.00461
+            }
+          },
+          {
+            "query": "Start a terraform module for the VPC — just the skeleton, no resources yet",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.4,
+            "estimate": {
+              "input_tokens": 929,
+              "input_cost_usd": 0.004645
+            }
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.9,
+            "estimate": {
+              "input_tokens": 920,
+              "input_cost_usd": 0.0046
+            }
+          },
+          {
+            "query": "Add a new module to this Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 914,
+              "input_cost_usd": 0.00457
+            }
+          },
+          {
+            "query": "Why does my terraform module fail validation?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.1,
+            "estimate": {
+              "input_tokens": 917,
+              "input_cost_usd": 0.004585
+            }
+          },
+          {
+            "query": "What's the right type for a variable holding unique subnet IDs?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16,
+            "estimate": {
+              "input_tokens": 924,
+              "input_cost_usd": 0.00462
+            }
+          },
+          {
+            "query": "Write a docker-compose file for local development",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 916,
+              "input_cost_usd": 0.00458
+            }
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 0,
+          "total": 10,
+          "pass_rate": 1,
+          "avg_run_seconds": 10.3,
+          "estimate": {
+            "input_tokens": 9212,
+            "input_cost_usd": 0.04606
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-20T14:55:49Z",
+          "summary": {
+            "passed": 9,
+            "failed": 1,
+            "total": 10,
+            "pass_rate": 0.9,
+            "avg_run_seconds": 10.6,
+            "estimate": {
+              "input_tokens": 9212,
+              "input_cost_usd": 0.04606
+            }
+          },
+          "results": [
+            {
+              "query": "Add a new module to this Python project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11,
+              "estimate": {
+                "input_tokens": 914,
+                "input_cost_usd": 0.00457
+              }
+            },
+            {
+              "query": "Add a new module under modules/ for managing IAM roles",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.9,
+              "estimate": {
+                "input_tokens": 922,
+                "input_cost_usd": 0.00461
+              }
+            },
+            {
+              "query": "Create a new Terraform module for an ECR registry mirror",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.3,
+              "estimate": {
+                "input_tokens": 923,
+                "input_cost_usd": 0.004615
+              }
+            },
+            {
+              "query": "Restructure this Terraform module to follow our standard layout",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.7,
+              "estimate": {
+                "input_tokens": 922,
+                "input_cost_usd": 0.00461
+              }
+            },
+            {
+              "query": "Scaffold a new npm package with the usual project files",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 17.9,
+              "estimate": {
+                "input_tokens": 920,
+                "input_cost_usd": 0.0046
+              }
+            },
+            {
+              "query": "Scaffold modules/eks-cluster with the standard file layout",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.6,
+              "estimate": {
+                "input_tokens": 925,
+                "input_cost_usd": 0.004625
+              }
+            },
+            {
+              "query": "Start a terraform module for the VPC — just the skeleton, no resources yet",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.4,
+              "estimate": {
+                "input_tokens": 929,
+                "input_cost_usd": 0.004645
+              }
+            },
+            {
+              "query": "What's the right type for a variable holding unique subnet IDs?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 16,
+              "estimate": {
+                "input_tokens": 924,
+                "input_cost_usd": 0.00462
+              }
+            },
+            {
+              "query": "Why does my terraform module fail validation?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.1,
+              "estimate": {
+                "input_tokens": 917,
+                "input_cost_usd": 0.004585
+              }
+            },
+            {
+              "query": "Write a docker-compose file for local development",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.5,
+              "estimate": {
+                "input_tokens": 916,
+                "input_cost_usd": 0.00458
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:46:07Z",
+        "executed": true,
+        "content_hash": "76786ec6cb91f034448e41e951835c5f8b502fe6a3ff63fb872d3dee4fde42f7",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "module-scaffold",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 984,
+              "input_cost_usd": 0.00492
+            },
+            "measured": {
+              "input_tokens": 2870,
+              "cache_read_input_tokens": 316770,
+              "cache_creation_input_tokens": 21991,
+              "output_tokens": 12320,
+              "cost_usd": 0.701275
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "text": "file modules/ecr-mirror/terraform.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/terraform.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/main.tf",
+                "text": "file modules/ecr-mirror/main.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/main.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/variables.tf",
+                "text": "file modules/ecr-mirror/variables.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/variables.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/outputs.tf",
+                "text": "file modules/ecr-mirror/outputs.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/outputs.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/README.md",
+                "text": "file modules/ecr-mirror/README.md exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/README.md exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_absent",
+                "path": "modules/ecr-mirror/versions.tf",
+                "text": "file modules/ecr-mirror/versions.tf is absent",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/versions.tf missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "pattern": "required_version",
+                "text": "modules/ecr-mirror/terraform.tf matches /required_version/",
+                "passed": true,
+                "evidence": "required_version",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "pattern": "required_providers",
+                "text": "modules/ecr-mirror/terraform.tf matches /required_providers/",
+                "passed": true,
+                "evidence": "required_providers",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/README.md",
+                "pattern": "## Usage",
+                "text": "modules/ecr-mirror/README.md matches /## Usage/",
+                "passed": true,
+                "evidence": "## Usage",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "modules/ecr-mirror/main.tf",
+                "pattern": "resource\\s+\"[a-z0-9_]+\"\\s+\"this\"",
+                "text": "modules/ecr-mirror/main.tf does not match /resource\\s+\"[a-z0-9_]+\"\\s+\"this\"/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 10,
+              "failed": 0,
+              "total": 10,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 353951,
+              "executor_duration_seconds": 198.6
+            },
+            "spec_hash": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+          },
+          {
+            "id": "module-restructure",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 940,
+              "input_cost_usd": 0.0047
+            },
+            "measured": {
+              "input_tokens": 2872,
+              "cache_read_input_tokens": 320960,
+              "cache_creation_input_tokens": 15684,
+              "output_tokens": 6017,
+              "cost_usd": 0.482708
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/terraform.tf",
+                "text": "file modules/legacy/terraform.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/terraform.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_absent",
+                "path": "modules/legacy/versions.tf",
+                "text": "file modules/legacy/versions.tf is absent",
+                "passed": true,
+                "evidence": "modules/legacy/versions.tf missing",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/variables.tf",
+                "text": "file modules/legacy/variables.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/variables.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/outputs.tf",
+                "text": "file modules/legacy/outputs.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/outputs.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/legacy/variables.tf",
+                "pattern": "variable \"name\"",
+                "text": "modules/legacy/variables.tf matches /variable \"name\"/",
+                "passed": true,
+                "evidence": "variable \"name\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/legacy/outputs.tf",
+                "pattern": "output \"bucket\"",
+                "text": "modules/legacy/outputs.tf matches /output \"bucket\"/",
+                "passed": true,
+                "evidence": "output \"bucket\"",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate",
+                "cwd": "modules/legacy",
+                "requires": "terraform",
+                "text": "command `terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate` exits 0",
+                "passed": true,
+                "evidence": "exit 0: Success! The configuration is valid.\n\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 345533,
+              "executor_duration_seconds": 104.4
+            },
+            "spec_hash": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 151.5,
+          "estimate": {
+            "input_tokens": 1924,
+            "input_cost_usd": 0.00962
+          },
+          "measured": {
+            "input_tokens": 5742,
+            "cache_read_input_tokens": 637730,
+            "cache_creation_input_tokens": 37675,
+            "output_tokens": 18337,
+            "cost_usd": 1.183983
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:46:07Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 60.1,
+            "measured": {
+              "input_tokens": 5252,
+              "cache_read_input_tokens": 250371,
+              "cache_creation_input_tokens": 21344,
+              "output_tokens": 8310,
+              "cost_usd": 0.573869
+            }
+          },
+          "results": [
+            {
+              "id": "module-restructure",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2627,
+                "cache_read_input_tokens": 134207,
+                "cache_creation_input_tokens": 8783,
+                "output_tokens": 1954,
+                "cost_usd": 0.217522
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.714286
+              },
+              "timing": {
+                "executor_duration_seconds": 37.4
+              },
+              "fingerprint": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+            },
+            {
+              "id": "module-scaffold",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2625,
+                "cache_read_input_tokens": 116164,
+                "cache_creation_input_tokens": 12561,
+                "output_tokens": 6356,
+                "cost_usd": 0.356347
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.5
+              },
+              "timing": {
+                "executor_duration_seconds": 82.8
+              },
+              "fingerprint": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T18:23:35Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 119.1,
+            "estimate": {
+              "input_tokens": 1924,
+              "input_cost_usd": 0.00962
+            },
+            "measured": {
+              "input_tokens": 5809,
+              "cache_read_input_tokens": 342067,
+              "cache_creation_input_tokens": 69491,
+              "output_tokens": 15970,
+              "cost_usd": 1.295476
+            }
+          },
+          "results": [
+            {
+              "id": "module-restructure",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 940,
+                "input_cost_usd": 0.0047
+              },
+              "measured": {
+                "input_tokens": 2865,
+                "cache_read_input_tokens": 208615,
+                "cache_creation_input_tokens": 31470,
+                "output_tokens": 4444,
+                "cost_usd": 0.54504
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 86.4
+              }
+            },
+            {
+              "id": "module-scaffold",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 984,
+                "input_cost_usd": 0.00492
+              },
+              "measured": {
+                "input_tokens": 2944,
+                "cache_read_input_tokens": 133452,
+                "cache_creation_input_tokens": 38021,
+                "output_tokens": 11526,
+                "cost_usd": 0.750436
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 151.7
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:53:31Z",
+        "executed": true,
+        "content_hash": "cf719c8c3bf7b96937a74e693226021c18af7547eed21f0b969307d8c947b0fb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Create a new Terraform module for an ECR registry mirror",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.8,
+            "estimate": {
+              "input_tokens": 673,
+              "input_cost_usd": 0.002019
+            }
+          },
+          {
+            "query": "Scaffold modules/eks-cluster with the standard file layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.6,
+            "estimate": {
+              "input_tokens": 673,
+              "input_cost_usd": 0.002019
+            }
+          },
+          {
+            "query": "Add a new module under modules/ for managing IAM roles",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.6,
+            "estimate": {
+              "input_tokens": 673,
+              "input_cost_usd": 0.002019
+            },
+            "spec_hash": "06b372c564501bf4d59881f3a5044b7db4952cc2fd3ae8519e6a31e2c6b38811"
+          },
+          {
+            "query": "Restructure this Terraform module to follow our standard layout",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.7,
+            "estimate": {
+              "input_tokens": 673,
+              "input_cost_usd": 0.002019
+            },
+            "spec_hash": "165aaf8ff6e94c9a61f0c10099547bd908dbeca7bbf85d69d6dee8b346d049a9"
+          },
+          {
+            "query": "Start a terraform module for the VPC — just the skeleton, no resources yet",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.1,
+            "estimate": {
+              "input_tokens": 677,
+              "input_cost_usd": 0.002031
+            }
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 672,
+              "input_cost_usd": 0.002016
+            }
+          },
+          {
+            "query": "Add a new module to this Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 33.3,
+            "estimate": {
+              "input_tokens": 669,
+              "input_cost_usd": 0.002007
+            }
+          },
+          {
+            "query": "Why does my terraform module fail validation?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.8,
+            "estimate": {
+              "input_tokens": 669,
+              "input_cost_usd": 0.002007
+            }
+          },
+          {
+            "query": "What's the right type for a variable holding unique subnet IDs?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "estimate": {
+              "input_tokens": 675,
+              "input_cost_usd": 0.002025
+            }
+          },
+          {
+            "query": "Write a docker-compose file for local development",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 670,
+              "input_cost_usd": 0.00201
+            }
+          }
+        ],
+        "summary": {
+          "passed": 8,
+          "failed": 2,
+          "total": 10,
+          "pass_rate": 0.8,
+          "avg_run_seconds": 10.8,
+          "estimate": {
+            "input_tokens": 6724,
+            "input_cost_usd": 0.020172
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-20T14:52:45Z",
+          "summary": {
+            "passed": 8,
+            "failed": 2,
+            "total": 10,
+            "pass_rate": 0.8,
+            "avg_run_seconds": 9.9,
+            "estimate": {
+              "input_tokens": 6724,
+              "input_cost_usd": 0.020172
+            }
+          },
+          "results": [
+            {
+              "query": "Add a new module to this Python project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 33.3,
+              "estimate": {
+                "input_tokens": 669,
+                "input_cost_usd": 0.002007
+              }
+            },
+            {
+              "query": "Add a new module under modules/ for managing IAM roles",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.9,
+              "estimate": {
+                "input_tokens": 673,
+                "input_cost_usd": 0.002019
+              }
+            },
+            {
+              "query": "Create a new Terraform module for an ECR registry mirror",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.8,
+              "estimate": {
+                "input_tokens": 673,
+                "input_cost_usd": 0.002019
+              }
+            },
+            {
+              "query": "Restructure this Terraform module to follow our standard layout",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.3,
+              "estimate": {
+                "input_tokens": 673,
+                "input_cost_usd": 0.002019
+              }
+            },
+            {
+              "query": "Scaffold a new npm package with the usual project files",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.1,
+              "estimate": {
+                "input_tokens": 672,
+                "input_cost_usd": 0.002016
+              }
+            },
+            {
+              "query": "Scaffold modules/eks-cluster with the standard file layout",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.6,
+              "estimate": {
+                "input_tokens": 673,
+                "input_cost_usd": 0.002019
+              }
+            },
+            {
+              "query": "Start a terraform module for the VPC — just the skeleton, no resources yet",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.1,
+              "estimate": {
+                "input_tokens": 677,
+                "input_cost_usd": 0.002031
+              }
+            },
+            {
+              "query": "What's the right type for a variable holding unique subnet IDs?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.3,
+              "estimate": {
+                "input_tokens": 675,
+                "input_cost_usd": 0.002025
+              }
+            },
+            {
+              "query": "Why does my terraform module fail validation?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.8,
+              "estimate": {
+                "input_tokens": 669,
+                "input_cost_usd": 0.002007
+              }
+            },
+            {
+              "query": "Write a docker-compose file for local development",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.2,
+              "estimate": {
+                "input_tokens": 670,
+                "input_cost_usd": 0.00201
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:41:26Z",
+        "executed": true,
+        "content_hash": "76786ec6cb91f034448e41e951835c5f8b502fe6a3ff63fb872d3dee4fde42f7",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "module-scaffold",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 711,
+              "input_cost_usd": 0.002133
+            },
+            "measured": {
+              "input_tokens": 16,
+              "cache_read_input_tokens": 324129,
+              "cache_creation_input_tokens": 14442,
+              "output_tokens": 4091,
+              "cost_usd": 0.245934
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "text": "file modules/ecr-mirror/terraform.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/terraform.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/main.tf",
+                "text": "file modules/ecr-mirror/main.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/main.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/variables.tf",
+                "text": "file modules/ecr-mirror/variables.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/variables.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/outputs.tf",
+                "text": "file modules/ecr-mirror/outputs.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/outputs.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/README.md",
+                "text": "file modules/ecr-mirror/README.md exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/README.md exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_absent",
+                "path": "modules/ecr-mirror/versions.tf",
+                "text": "file modules/ecr-mirror/versions.tf is absent",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/versions.tf missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "pattern": "required_version",
+                "text": "modules/ecr-mirror/terraform.tf matches /required_version/",
+                "passed": true,
+                "evidence": "required_version",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "pattern": "required_providers",
+                "text": "modules/ecr-mirror/terraform.tf matches /required_providers/",
+                "passed": true,
+                "evidence": "required_providers",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/README.md",
+                "pattern": "## Usage",
+                "text": "modules/ecr-mirror/README.md matches /## Usage/",
+                "passed": true,
+                "evidence": "## Usage",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "modules/ecr-mirror/main.tf",
+                "pattern": "resource\\s+\"[a-z0-9_]+\"\\s+\"this\"",
+                "text": "modules/ecr-mirror/main.tf does not match /resource\\s+\"[a-z0-9_]+\"\\s+\"this\"/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 10,
+              "failed": 0,
+              "total": 10,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 342678,
+              "executor_duration_seconds": 86.6
+            },
+            "spec_hash": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+          },
+          {
+            "id": "module-restructure",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 684,
+              "input_cost_usd": 0.002052
+            },
+            "measured": {
+              "input_tokens": 15,
+              "cache_read_input_tokens": 295256,
+              "cache_creation_input_tokens": 14450,
+              "output_tokens": 3589,
+              "cost_usd": 0.241487
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/terraform.tf",
+                "text": "file modules/legacy/terraform.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/terraform.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_absent",
+                "path": "modules/legacy/versions.tf",
+                "text": "file modules/legacy/versions.tf is absent",
+                "passed": true,
+                "evidence": "modules/legacy/versions.tf missing",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/variables.tf",
+                "text": "file modules/legacy/variables.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/variables.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/outputs.tf",
+                "text": "file modules/legacy/outputs.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/outputs.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/legacy/variables.tf",
+                "pattern": "variable \"name\"",
+                "text": "modules/legacy/variables.tf matches /variable \"name\"/",
+                "passed": true,
+                "evidence": "variable \"name\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/legacy/outputs.tf",
+                "pattern": "output \"bucket\"",
+                "text": "modules/legacy/outputs.tf matches /output \"bucket\"/",
+                "passed": true,
+                "evidence": "output \"bucket\"",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate",
+                "cwd": "modules/legacy",
+                "requires": "terraform",
+                "text": "command `terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate` exits 0",
+                "passed": true,
+                "evidence": "exit 0: Success! The configuration is valid.\n\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 313310,
+              "executor_duration_seconds": 106.4
+            },
+            "spec_hash": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 96.5,
+          "estimate": {
+            "input_tokens": 1395,
+            "input_cost_usd": 0.004185
+          },
+          "measured": {
+            "input_tokens": 31,
+            "cache_read_input_tokens": 619385,
+            "cache_creation_input_tokens": 28892,
+            "output_tokens": 7680,
+            "cost_usd": 0.487421
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:41:26Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 52.6,
+            "measured": {
+              "input_tokens": 14,
+              "cache_read_input_tokens": 230368,
+              "cache_creation_input_tokens": 19416,
+              "output_tokens": 3733,
+              "cost_usd": 0.259926
+            }
+          },
+          "results": [
+            {
+              "id": "module-restructure",
+              "passed": false,
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 140911,
+                "cache_creation_input_tokens": 9309,
+                "output_tokens": 1290,
+                "cost_usd": 0.135154
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.714286
+              },
+              "timing": {
+                "executor_duration_seconds": 65.3
+              },
+              "fingerprint": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+            },
+            {
+              "id": "module-scaffold",
+              "passed": false,
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 89457,
+                "cache_creation_input_tokens": 10107,
+                "output_tokens": 2443,
+                "cost_usd": 0.124772
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.3
+              },
+              "timing": {
+                "executor_duration_seconds": 39.9
+              },
+              "fingerprint": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T18:21:03Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 76.8,
+            "estimate": {
+              "input_tokens": 1395,
+              "input_cost_usd": 0.004185
+            },
+            "measured": {
+              "input_tokens": 38,
+              "cache_read_input_tokens": 805491,
+              "cache_creation_input_tokens": 28404,
+              "output_tokens": 7397,
+              "cost_usd": 0.524374
+            }
+          },
+          "results": [
+            {
+              "id": "module-restructure",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 684,
+                "input_cost_usd": 0.002052
+              },
+              "measured": {
+                "input_tokens": 20,
+                "cache_read_input_tokens": 424655,
+                "cache_creation_input_tokens": 13946,
+                "output_tokens": 3428,
+                "cost_usd": 0.263156
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 70.5
+              }
+            },
+            {
+              "id": "module-scaffold",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 711,
+                "input_cost_usd": 0.002133
+              },
+              "measured": {
+                "input_tokens": 18,
+                "cache_read_input_tokens": 380836,
+                "cache_creation_input_tokens": 14458,
+                "output_tokens": 3969,
+                "cost_usd": 0.261218
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 83.1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.1-pro": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:49:52Z",
+        "executed": true,
+        "content_hash": "cf719c8c3bf7b96937a74e693226021c18af7547eed21f0b969307d8c947b0fb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "Create a new Terraform module for an ECR registry mirror",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "687d5e41e9eaca04c4779583d492eb5d97af9116fc9d53de040b71aee40fe390"
+          },
+          {
+            "query": "Scaffold modules/eks-cluster with the standard file layout",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "f5ce9c28913384b12445e5152416890990d6c1e39f9b05dac1d76717d4b5e5ac"
+          },
+          {
+            "query": "Add a new module under modules/ for managing IAM roles",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "06b372c564501bf4d59881f3a5044b7db4952cc2fd3ae8519e6a31e2c6b38811"
+          },
+          {
+            "query": "Restructure this Terraform module to follow our standard layout",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "165aaf8ff6e94c9a61f0c10099547bd908dbeca7bbf85d69d6dee8b346d049a9"
+          },
+          {
+            "query": "Start a terraform module for the VPC — just the skeleton, no resources yet",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "0b05abc0e79593daa3b55200ed34561dd6d4747adefbe02258ad521105641b3d"
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "abfe1a218d2de2b83a4c9a565295a366cdc2acfa7b083b31478d05195fee972b"
+          },
+          {
+            "query": "Add a new module to this Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "2cb2aa945f73c083a104675e682926261004deaeb6636e9b149a26b6845c03de"
+          },
+          {
+            "query": "Why does my terraform module fail validation?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "f1b6e3ca701001f03ccb300c28793b14530400c5ed628083b98cf9e90a9ddc49"
+          },
+          {
+            "query": "What's the right type for a variable holding unique subnet IDs?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "c20bf9745fdb74c7062da935e3506cc8c3c43edd0dab0e520885a6362b185eef"
+          },
+          {
+            "query": "Write a docker-compose file for local development",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "8483e1253292aae1d714e8036e5b239a0b03f6adcd53a1ddd8822dd9579ddf36"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 5,
+          "total": 10,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 5.2
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:50:02Z",
+        "executed": true,
+        "content_hash": "76786ec6cb91f034448e41e951835c5f8b502fe6a3ff63fb872d3dee4fde42f7",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "module-scaffold",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.2
+            },
+            "spec_hash": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+          },
+          {
+            "id": "module-restructure",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.4
+            },
+            "spec_hash": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5.3
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:50:02Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 4.9
+          },
+          "results": [
+            {
+              "id": "module-restructure",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 4.8
+              },
+              "fingerprint": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+            },
+            {
+              "id": "module-scaffold",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5
+              },
+              "fingerprint": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.5-flash": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:48:58Z",
+        "executed": true,
+        "content_hash": "cf719c8c3bf7b96937a74e693226021c18af7547eed21f0b969307d8c947b0fb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "query": "Create a new Terraform module for an ECR registry mirror",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "687d5e41e9eaca04c4779583d492eb5d97af9116fc9d53de040b71aee40fe390"
+          },
+          {
+            "query": "Scaffold modules/eks-cluster with the standard file layout",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "f5ce9c28913384b12445e5152416890990d6c1e39f9b05dac1d76717d4b5e5ac"
+          },
+          {
+            "query": "Add a new module under modules/ for managing IAM roles",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5,
+            "spec_hash": "06b372c564501bf4d59881f3a5044b7db4952cc2fd3ae8519e6a31e2c6b38811"
+          },
+          {
+            "query": "Restructure this Terraform module to follow our standard layout",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.7,
+            "spec_hash": "165aaf8ff6e94c9a61f0c10099547bd908dbeca7bbf85d69d6dee8b346d049a9"
+          },
+          {
+            "query": "Start a terraform module for the VPC — just the skeleton, no resources yet",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.7,
+            "spec_hash": "0b05abc0e79593daa3b55200ed34561dd6d4747adefbe02258ad521105641b3d"
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "abfe1a218d2de2b83a4c9a565295a366cdc2acfa7b083b31478d05195fee972b"
+          },
+          {
+            "query": "Add a new module to this Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "2cb2aa945f73c083a104675e682926261004deaeb6636e9b149a26b6845c03de"
+          },
+          {
+            "query": "Why does my terraform module fail validation?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "f1b6e3ca701001f03ccb300c28793b14530400c5ed628083b98cf9e90a9ddc49"
+          },
+          {
+            "query": "What's the right type for a variable holding unique subnet IDs?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "c20bf9745fdb74c7062da935e3506cc8c3c43edd0dab0e520885a6362b185eef"
+          },
+          {
+            "query": "Write a docker-compose file for local development",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "8483e1253292aae1d714e8036e5b239a0b03f6adcd53a1ddd8822dd9579ddf36"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 5,
+          "total": 10,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 5.3
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:49:10Z",
+        "executed": true,
+        "content_hash": "76786ec6cb91f034448e41e951835c5f8b502fe6a3ff63fb872d3dee4fde42f7",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "id": "module-scaffold",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 6
+            },
+            "spec_hash": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+          },
+          {
+            "id": "module-restructure",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.4
+            },
+            "spec_hash": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5.7
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:49:10Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 6
+          },
+          "results": [
+            {
+              "id": "module-restructure",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 6
+              },
+              "fingerprint": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+            },
+            {
+              "id": "module-scaffold",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 6
+              },
+              "fingerprint": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:48:19Z",
+        "executed": true,
+        "content_hash": "cf719c8c3bf7b96937a74e693226021c18af7547eed21f0b969307d8c947b0fb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Create a new Terraform module for an ECR registry mirror",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.1,
+            "estimate": {
+              "input_tokens": 594,
+              "input_cost_usd": 0.001485
+            },
+            "spec_hash": "687d5e41e9eaca04c4779583d492eb5d97af9116fc9d53de040b71aee40fe390"
+          },
+          {
+            "query": "Scaffold modules/eks-cluster with the standard file layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.9,
+            "estimate": {
+              "input_tokens": 595,
+              "input_cost_usd": 0.001488
+            },
+            "spec_hash": "f5ce9c28913384b12445e5152416890990d6c1e39f9b05dac1d76717d4b5e5ac"
+          },
+          {
+            "query": "Add a new module under modules/ for managing IAM roles",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.3,
+            "estimate": {
+              "input_tokens": 594,
+              "input_cost_usd": 0.001485
+            },
+            "spec_hash": "06b372c564501bf4d59881f3a5044b7db4952cc2fd3ae8519e6a31e2c6b38811"
+          },
+          {
+            "query": "Restructure this Terraform module to follow our standard layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.8,
+            "estimate": {
+              "input_tokens": 593,
+              "input_cost_usd": 0.001482
+            },
+            "spec_hash": "165aaf8ff6e94c9a61f0c10099547bd908dbeca7bbf85d69d6dee8b346d049a9"
+          },
+          {
+            "query": "Start a terraform module for the VPC — just the skeleton, no resources yet",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.7,
+            "estimate": {
+              "input_tokens": 599,
+              "input_cost_usd": 0.001498
+            },
+            "spec_hash": "0b05abc0e79593daa3b55200ed34561dd6d4747adefbe02258ad521105641b3d"
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 68.4,
+            "estimate": {
+              "input_tokens": 594,
+              "input_cost_usd": 0.001485
+            },
+            "spec_hash": "abfe1a218d2de2b83a4c9a565295a366cdc2acfa7b083b31478d05195fee972b"
+          },
+          {
+            "query": "Add a new module to this Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 39,
+            "estimate": {
+              "input_tokens": 591,
+              "input_cost_usd": 0.001478
+            },
+            "spec_hash": "2cb2aa945f73c083a104675e682926261004deaeb6636e9b149a26b6845c03de"
+          },
+          {
+            "query": "Why does my terraform module fail validation?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 49.7,
+            "estimate": {
+              "input_tokens": 591,
+              "input_cost_usd": 0.001478
+            },
+            "spec_hash": "f1b6e3ca701001f03ccb300c28793b14530400c5ed628083b98cf9e90a9ddc49"
+          },
+          {
+            "query": "What's the right type for a variable holding unique subnet IDs?",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.5,
+            "estimate": {
+              "input_tokens": 595,
+              "input_cost_usd": 0.001488
+            },
+            "spec_hash": "c20bf9745fdb74c7062da935e3506cc8c3c43edd0dab0e520885a6362b185eef"
+          },
+          {
+            "query": "Write a docker-compose file for local development",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 50.4,
+            "estimate": {
+              "input_tokens": 591,
+              "input_cost_usd": 0.001478
+            },
+            "spec_hash": "8483e1253292aae1d714e8036e5b239a0b03f6adcd53a1ddd8822dd9579ddf36"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 0,
+          "total": 10,
+          "pass_rate": 1,
+          "avg_run_seconds": 30.2,
+          "estimate": {
+            "input_tokens": 5937,
+            "input_cost_usd": 0.014845
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:51:00Z",
+        "executed": true,
+        "content_hash": "76786ec6cb91f034448e41e951835c5f8b502fe6a3ff63fb872d3dee4fde42f7",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "module-scaffold",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 628,
+              "input_cost_usd": 0.00157
+            },
+            "measured": {
+              "input_tokens": 12070,
+              "cache_read_input_tokens": 128000,
+              "output_tokens": 3368,
+              "cost_usd": 0.400695
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "text": "file modules/ecr-mirror/terraform.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/terraform.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/main.tf",
+                "text": "file modules/ecr-mirror/main.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/main.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/variables.tf",
+                "text": "file modules/ecr-mirror/variables.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/variables.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/outputs.tf",
+                "text": "file modules/ecr-mirror/outputs.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/outputs.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/README.md",
+                "text": "file modules/ecr-mirror/README.md exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/README.md exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_absent",
+                "path": "modules/ecr-mirror/versions.tf",
+                "text": "file modules/ecr-mirror/versions.tf is absent",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/versions.tf missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "pattern": "required_version",
+                "text": "modules/ecr-mirror/terraform.tf matches /required_version/",
+                "passed": true,
+                "evidence": "required_version",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "pattern": "required_providers",
+                "text": "modules/ecr-mirror/terraform.tf matches /required_providers/",
+                "passed": true,
+                "evidence": "required_providers",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/README.md",
+                "pattern": "## Usage",
+                "text": "modules/ecr-mirror/README.md matches /## Usage/",
+                "passed": true,
+                "evidence": "## Usage",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "modules/ecr-mirror/main.tf",
+                "pattern": "resource\\s+\"[a-z0-9_]+\"\\s+\"this\"",
+                "text": "modules/ecr-mirror/main.tf does not match /resource\\s+\"[a-z0-9_]+\"\\s+\"this\"/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 10,
+              "failed": 0,
+              "total": 10,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 143438,
+              "executor_duration_seconds": 75.2
+            },
+            "spec_hash": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+          },
+          {
+            "id": "module-restructure",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 604,
+              "input_cost_usd": 0.00151
+            },
+            "measured": {
+              "input_tokens": 21179,
+              "cache_read_input_tokens": 165632,
+              "output_tokens": 3484,
+              "cost_usd": 0.519288
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/terraform.tf",
+                "text": "file modules/legacy/terraform.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/terraform.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_absent",
+                "path": "modules/legacy/versions.tf",
+                "text": "file modules/legacy/versions.tf is absent",
+                "passed": true,
+                "evidence": "modules/legacy/versions.tf missing",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/variables.tf",
+                "text": "file modules/legacy/variables.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/variables.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/outputs.tf",
+                "text": "file modules/legacy/outputs.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/outputs.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/legacy/variables.tf",
+                "pattern": "variable \"name\"",
+                "text": "modules/legacy/variables.tf matches /variable \"name\"/",
+                "passed": true,
+                "evidence": "variable \"name\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/legacy/outputs.tf",
+                "pattern": "output \"bucket\"",
+                "text": "modules/legacy/outputs.tf matches /output \"bucket\"/",
+                "passed": true,
+                "evidence": "output \"bucket\"",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate",
+                "cwd": "modules/legacy",
+                "requires": "terraform",
+                "text": "command `terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate` exits 0",
+                "passed": true,
+                "evidence": "exit 0: Success! The configuration is valid.\n\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 190295,
+              "executor_duration_seconds": 94.9
+            },
+            "spec_hash": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 85.1,
+          "estimate": {
+            "input_tokens": 1232,
+            "input_cost_usd": 0.00308
+          },
+          "measured": {
+            "input_tokens": 33249,
+            "cache_read_input_tokens": 293632,
+            "output_tokens": 6852,
+            "cost_usd": 0.919983
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:51:00Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 47.5,
+            "measured": {
+              "input_tokens": 10815,
+              "cache_read_input_tokens": 167552,
+              "output_tokens": 4380,
+              "cost_usd": 0.511618
+            }
+          },
+          "results": [
+            {
+              "id": "module-restructure",
+              "passed": false,
+              "measured": {
+                "input_tokens": 5196,
+                "cache_read_input_tokens": 75648,
+                "output_tokens": 1919,
+                "cost_usd": 0.230895
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.714286
+              },
+              "timing": {
+                "executor_duration_seconds": 42.2
+              },
+              "fingerprint": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+            },
+            {
+              "id": "module-scaffold",
+              "passed": false,
+              "measured": {
+                "input_tokens": 5619,
+                "cache_read_input_tokens": 91904,
+                "output_tokens": 2461,
+                "cost_usd": 0.280723
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.5
+              },
+              "timing": {
+                "executor_duration_seconds": 52.8
+              },
+              "fingerprint": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T18:27:49Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 85.7,
+            "estimate": {
+              "input_tokens": 1232,
+              "input_cost_usd": 0.00308
+            },
+            "measured": {
+              "input_tokens": 29844,
+              "cache_read_input_tokens": 369536,
+              "output_tokens": 6780,
+              "cost_usd": 1.10015
+            }
+          },
+          "results": [
+            {
+              "id": "module-restructure",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 604,
+                "input_cost_usd": 0.00151
+              },
+              "measured": {
+                "input_tokens": 15896,
+                "cache_read_input_tokens": 191104,
+                "output_tokens": 3270,
+                "cost_usd": 0.56655
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 87
+              }
+            },
+            {
+              "id": "module-scaffold",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 628,
+                "input_cost_usd": 0.00157
+              },
+              "measured": {
+                "input_tokens": 13948,
+                "cache_read_input_tokens": 178432,
+                "output_tokens": 3510,
+                "cost_usd": 0.5336
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 84.3
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:53:21Z",
+        "executed": true,
+        "content_hash": "cf719c8c3bf7b96937a74e693226021c18af7547eed21f0b969307d8c947b0fb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Create a new Terraform module for an ECR registry mirror",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 594,
+              "input_cost_usd": 0.00297
+            },
+            "spec_hash": "687d5e41e9eaca04c4779583d492eb5d97af9116fc9d53de040b71aee40fe390"
+          },
+          {
+            "query": "Scaffold modules/eks-cluster with the standard file layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.4,
+            "estimate": {
+              "input_tokens": 595,
+              "input_cost_usd": 0.002975
+            },
+            "spec_hash": "f5ce9c28913384b12445e5152416890990d6c1e39f9b05dac1d76717d4b5e5ac"
+          },
+          {
+            "query": "Add a new module under modules/ for managing IAM roles",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.6,
+            "estimate": {
+              "input_tokens": 594,
+              "input_cost_usd": 0.00297
+            },
+            "spec_hash": "06b372c564501bf4d59881f3a5044b7db4952cc2fd3ae8519e6a31e2c6b38811"
+          },
+          {
+            "query": "Restructure this Terraform module to follow our standard layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 593,
+              "input_cost_usd": 0.002965
+            },
+            "spec_hash": "165aaf8ff6e94c9a61f0c10099547bd908dbeca7bbf85d69d6dee8b346d049a9"
+          },
+          {
+            "query": "Start a terraform module for the VPC — just the skeleton, no resources yet",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 599,
+              "input_cost_usd": 0.002995
+            },
+            "spec_hash": "0b05abc0e79593daa3b55200ed34561dd6d4747adefbe02258ad521105641b3d"
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 53,
+            "estimate": {
+              "input_tokens": 594,
+              "input_cost_usd": 0.00297
+            },
+            "spec_hash": "abfe1a218d2de2b83a4c9a565295a366cdc2acfa7b083b31478d05195fee972b"
+          },
+          {
+            "query": "Add a new module to this Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 74.6,
+            "estimate": {
+              "input_tokens": 591,
+              "input_cost_usd": 0.002955
+            },
+            "spec_hash": "2cb2aa945f73c083a104675e682926261004deaeb6636e9b149a26b6845c03de"
+          },
+          {
+            "query": "Why does my terraform module fail validation?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 93,
+            "estimate": {
+              "input_tokens": 591,
+              "input_cost_usd": 0.002955
+            },
+            "spec_hash": "f1b6e3ca701001f03ccb300c28793b14530400c5ed628083b98cf9e90a9ddc49"
+          },
+          {
+            "query": "What's the right type for a variable holding unique subnet IDs?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 595,
+              "input_cost_usd": 0.002975
+            },
+            "spec_hash": "c20bf9745fdb74c7062da935e3506cc8c3c43edd0dab0e520885a6362b185eef"
+          },
+          {
+            "query": "Write a docker-compose file for local development",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 72.9,
+            "estimate": {
+              "input_tokens": 591,
+              "input_cost_usd": 0.002955
+            },
+            "spec_hash": "8483e1253292aae1d714e8036e5b239a0b03f6adcd53a1ddd8822dd9579ddf36"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 0,
+          "total": 10,
+          "pass_rate": 1,
+          "avg_run_seconds": 35.6,
+          "estimate": {
+            "input_tokens": 5937,
+            "input_cost_usd": 0.029685
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:56:50Z",
+        "executed": true,
+        "content_hash": "76786ec6cb91f034448e41e951835c5f8b502fe6a3ff63fb872d3dee4fde42f7",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "module-scaffold",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 628,
+              "input_cost_usd": 0.00314
+            },
+            "measured": {
+              "input_tokens": 29530,
+              "cache_read_input_tokens": 270080,
+              "output_tokens": 4785,
+              "cost_usd": 1.6416
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "text": "file modules/ecr-mirror/terraform.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/terraform.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/main.tf",
+                "text": "file modules/ecr-mirror/main.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/main.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/variables.tf",
+                "text": "file modules/ecr-mirror/variables.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/variables.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/outputs.tf",
+                "text": "file modules/ecr-mirror/outputs.tf exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/outputs.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/ecr-mirror/README.md",
+                "text": "file modules/ecr-mirror/README.md exists",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/README.md exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_absent",
+                "path": "modules/ecr-mirror/versions.tf",
+                "text": "file modules/ecr-mirror/versions.tf is absent",
+                "passed": true,
+                "evidence": "modules/ecr-mirror/versions.tf missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "pattern": "required_version",
+                "text": "modules/ecr-mirror/terraform.tf matches /required_version/",
+                "passed": true,
+                "evidence": "required_version",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/terraform.tf",
+                "pattern": "required_providers",
+                "text": "modules/ecr-mirror/terraform.tf matches /required_providers/",
+                "passed": true,
+                "evidence": "required_providers",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/ecr-mirror/README.md",
+                "pattern": "## Usage",
+                "text": "modules/ecr-mirror/README.md matches /## Usage/",
+                "passed": true,
+                "evidence": "## Usage",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "modules/ecr-mirror/main.tf",
+                "pattern": "resource\\s+\"[a-z0-9_]+\"\\s+\"this\"",
+                "text": "modules/ecr-mirror/main.tf does not match /resource\\s+\"[a-z0-9_]+\"\\s+\"this\"/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 10,
+              "failed": 0,
+              "total": 10,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 304395,
+              "executor_duration_seconds": 161.6
+            },
+            "spec_hash": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+          },
+          {
+            "id": "module-restructure",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 604,
+              "input_cost_usd": 0.00302
+            },
+            "measured": {
+              "input_tokens": 24597,
+              "cache_read_input_tokens": 190592,
+              "output_tokens": 3658,
+              "cost_usd": 1.185685
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/terraform.tf",
+                "text": "file modules/legacy/terraform.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/terraform.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_absent",
+                "path": "modules/legacy/versions.tf",
+                "text": "file modules/legacy/versions.tf is absent",
+                "passed": true,
+                "evidence": "modules/legacy/versions.tf missing",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/variables.tf",
+                "text": "file modules/legacy/variables.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/variables.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "modules/legacy/outputs.tf",
+                "text": "file modules/legacy/outputs.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/outputs.tf exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/legacy/variables.tf",
+                "pattern": "variable \"name\"",
+                "text": "modules/legacy/variables.tf matches /variable \"name\"/",
+                "passed": true,
+                "evidence": "variable \"name\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "modules/legacy/outputs.tf",
+                "pattern": "output \"bucket\"",
+                "text": "modules/legacy/outputs.tf matches /output \"bucket\"/",
+                "passed": true,
+                "evidence": "output \"bucket\"",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate",
+                "cwd": "modules/legacy",
+                "requires": "terraform",
+                "text": "command `terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate` exits 0",
+                "passed": true,
+                "evidence": "exit 0: Success! The configuration is valid.\n\n",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 218847,
+              "executor_duration_seconds": 93.7
+            },
+            "spec_hash": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 127.7,
+          "estimate": {
+            "input_tokens": 1232,
+            "input_cost_usd": 0.00616
+          },
+          "measured": {
+            "input_tokens": 54127,
+            "cache_read_input_tokens": 460672,
+            "output_tokens": 8443,
+            "cost_usd": 2.827285
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:56:50Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 52,
+            "measured": {
+              "input_tokens": 34535,
+              "cache_read_input_tokens": 214272,
+              "output_tokens": 4604,
+              "cost_usd": 1.382155
+            }
+          },
+          "results": [
+            {
+              "id": "module-restructure",
+              "passed": false,
+              "measured": {
+                "input_tokens": 17488,
+                "cache_read_input_tokens": 108160,
+                "output_tokens": 2538,
+                "cost_usd": 0.70438
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.714286
+              },
+              "timing": {
+                "executor_duration_seconds": 57.2
+              },
+              "fingerprint": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
+            },
+            {
+              "id": "module-scaffold",
+              "passed": false,
+              "measured": {
+                "input_tokens": 17047,
+                "cache_read_input_tokens": 106112,
+                "output_tokens": 2066,
+                "cost_usd": 0.677775
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.5
+              },
+              "timing": {
+                "executor_duration_seconds": 46.8
+              },
+              "fingerprint": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T18:29:51Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 110.1,
+            "estimate": {
+              "input_tokens": 1232,
+              "input_cost_usd": 0.00616
+            },
+            "measured": {
+              "input_tokens": 46620,
+              "cache_read_input_tokens": 484736,
+              "output_tokens": 8505,
+              "cost_usd": 2.91193
+            }
+          },
+          "results": [
+            {
+              "id": "module-restructure",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 604,
+                "input_cost_usd": 0.00302
+              },
+              "measured": {
+                "input_tokens": 29625,
+                "cache_read_input_tokens": 221696,
+                "output_tokens": 3542,
+                "cost_usd": 1.362865
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 98.5
+              }
+            },
+            {
+              "id": "module-scaffold",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 628,
+                "input_cost_usd": 0.00314
+              },
+              "measured": {
+                "input_tokens": 16995,
+                "cache_read_input_tokens": 263040,
+                "output_tokens": 4963,
+                "cost_usd": 1.549065
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 121.6
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
