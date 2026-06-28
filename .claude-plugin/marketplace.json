@@ -23,6 +23,12 @@
       "source": "./plugins/actions",
       "description": "GitHub Actions workflow style, security hardening, bitwise reusable-workflow wiring, and an actionlint/zizmor validation loop.",
       "keywords": ["github-actions", "ci", "workflows", "security"]
+    },
+    {
+      "name": "python",
+      "source": "./plugins/python",
+      "description": "Modern Python on the Astral toolchain — uv project layout, ruff format/lint, ty/pyright type checking, pytest with Hypothesis, Google-style docstrings with CLI references, and trusted-publishing releases.",
+      "keywords": ["python", "uv", "ruff", "ty", "pyright", "pytest", "typing"]
     }
   ]
 }

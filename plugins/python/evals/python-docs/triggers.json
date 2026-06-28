@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "python-docs",
+  "triggers": [
+    { "query": "Add docstrings to my Python functions", "should_trigger": true },
+    { "query": "What docstring style should I use for Python?", "should_trigger": true },
+    { "query": "Configure ruff's pydocstyle D rules", "should_trigger": true },
+    { "query": "Document the public API of this Python module", "should_trigger": true },
+    { "query": "Generate CLI documentation for my Typer app", "should_trigger": true },
+    { "query": "Add a module docstring to this file", "should_trigger": true },
+    { "query": "Make my Click CLI's docs readable by LLMs", "should_trigger": true },
+    { "query": "Enforce Google-style docstrings in my project", "should_trigger": true },
+    { "query": "Write a docstring for this function", "should_trigger": true },
+    { "query": "Review this module for missing docstrings", "should_trigger": true },
+    { "query": "Write a README for my Python project", "should_trigger": false },
+    { "query": "Add type hints to this function", "should_trigger": false },
+    { "query": "Write tests for this module", "should_trigger": false },
+    { "query": "Generate markdown docs for my cobra CLI", "should_trigger": false },
+    { "query": "Add inline comments explaining this algorithm", "should_trigger": false }
+  ]
+}

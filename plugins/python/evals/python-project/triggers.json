@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "python-project",
+  "triggers": [
+    { "query": "Set up a new Python project with uv", "should_trigger": true },
+    { "query": "Create a pyproject.toml for my package", "should_trigger": true },
+    { "query": "What build backend should I use for my Python library?", "should_trigger": true },
+    { "query": "Restructure my Python repo to the src layout", "should_trigger": true },
+    { "query": "Pin ruff and ty as dev dependencies with uv", "should_trigger": true },
+    { "query": "Add a Makefile with a pr gate for my Python project", "should_trigger": true },
+    { "query": "Initialize a uv-managed Python CLI", "should_trigger": true },
+    { "query": "How should I lay out a new Python package?", "should_trigger": true },
+    { "query": "Set up a dev dependency group for my Python tooling", "should_trigger": true },
+    { "query": "Migrate my project from pip and requirements.txt to uv", "should_trigger": true },
+    { "query": "Scaffold a new Go service with cmd and internal directories", "should_trigger": false },
+    { "query": "Write pytest tests for this module", "should_trigger": false },
+    { "query": "How should I handle errors in this Python function?", "should_trigger": false },
+    { "query": "Add type hints to this Python function", "should_trigger": false },
+    { "query": "Publish my Python package to PyPI", "should_trigger": false },
+    { "query": "Set up a new Node project with npm", "should_trigger": false }
+  ]
+}

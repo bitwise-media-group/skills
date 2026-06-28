@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "python-typing",
+  "triggers": [
+    { "query": "Add type hints to this Python function", "should_trigger": true },
+    { "query": "Set up ty for type checking", "should_trigger": true },
+    { "query": "Configure ty in pyproject.toml", "should_trigger": true },
+    { "query": "Migrate this project from mypy to ty", "should_trigger": true },
+    { "query": "Set up pyright for type checking", "should_trigger": true },
+    { "query": "Configure pyright in pyproject.toml", "should_trigger": true },
+    { "query": "Migrate this project from mypy to pyright", "should_trigger": true },
+    { "query": "Fix these Python type errors", "should_trigger": true },
+    { "query": "Should this interface be a Protocol or an ABC?", "should_trigger": true },
+    { "query": "Make this Python function generic with a type parameter", "should_trigger": true },
+    { "query": "Modernize these type hints to use X | None instead of Optional", "should_trigger": true },
+    { "query": "How do I type-check my Python project?", "should_trigger": true },
+    { "query": "Add return type annotations across this module", "should_trigger": true },
+    { "query": "Format this Python code with ruff", "should_trigger": false },
+    { "query": "Write tests for this function", "should_trigger": false },
+    { "query": "Add generics to my Go function", "should_trigger": false },
+    { "query": "Check at runtime whether this variable is an int", "should_trigger": false },
+    { "query": "Scaffold a new Python package with uv", "should_trigger": false },
+    { "query": "Add type annotations to my TypeScript code", "should_trigger": false }
+  ]
+}

@@ -1,0 +1,28 @@
+# Tag-driven release — save as .github/workflows/release.yaml. Pushing a vX.Y.Z
+# tag builds the sdist + wheel and publishes them to PyPI via Trusted Publishing
+# (OIDC) — no API token to store or rotate. Configure the trusted publisher for
+# this repo on PyPI first: https://docs.pypi.org/trusted-publishers/
+name: release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+  id-token: write # OIDC token for PyPI Trusted Publishing
+
+jobs:
+  pypi:
+    runs-on: ubuntu-latest
+    environment: pypi # must match the environment in the PyPI publisher config
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+
+      - uses: astral-sh/setup-uv@fac544c07dec837d0ccb6301d7b5580bf5edae39 # v8.2.0
+
+      - name: Build
+        run: uv build
+
+      - name: Publish to PyPI
+        run: uv publish --trusted-publishing always

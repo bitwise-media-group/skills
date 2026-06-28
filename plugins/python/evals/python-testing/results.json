@@ -1,0 +1,4133 @@
+{
+  "schema": 5,
+  "plugin": "python",
+  "skill": "python-testing",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:30:05Z",
+        "executed": true,
+        "content_hash": "06670a6ed40e1da7d905f171139d834996c5c4c127c2318d6a8b564074240975",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "estimate": {
+              "input_tokens": 1092,
+              "input_cost_usd": 0.001092
+            },
+            "spec_hash": "9a91da71d4227d149b12aa0078af9d7f2b1a652af40a1986eabcaa2a45387c1c"
+          },
+          {
+            "query": "Parametrize these test cases",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 3.6,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.001093
+            },
+            "spec_hash": "d6ea4b2d1fc313c03977b0e14691a9e6586ecf712676e7d90139db5bfb9c311c"
+          },
+          {
+            "query": "Add a property-based test with Hypothesis",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.001095
+            },
+            "spec_hash": "46bb51c5e28d755c43eae26b770e2a7ceb6fb0090d6744854778eda4f928a76d"
+          },
+          {
+            "query": "Test that this function raises ValueError",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 3.8,
+            "estimate": {
+              "input_tokens": 1092,
+              "input_cost_usd": 0.001092
+            },
+            "spec_hash": "bc5d85e5368b46d439091a534bc9952de636d6353ce591a7c6fd53e84a20adf7"
+          },
+          {
+            "query": "Set up fixtures for my pytest suite",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.9,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.001093
+            },
+            "spec_hash": "b7dda89c6ec36af1a7c4aa1572d0d7a95cca81e834f7dcf0932c1f8dd2641512"
+          },
+          {
+            "query": "Should I use a fake or a mock here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.9,
+            "estimate": {
+              "input_tokens": 1096,
+              "input_cost_usd": 0.001096
+            },
+            "spec_hash": "ee9baa8ac19745ec64c9e3ff75aaaa094e2a378112acbf34aa8a9ac0739b1609"
+          },
+          {
+            "query": "Add a fuzz test for my Python parser",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.001095
+            },
+            "spec_hash": "b9d2c82e7cea8856974a2e9e0f9e1d07522252dfd577d1014658442af06b8d64"
+          },
+          {
+            "query": "Review my Python tests",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "estimate": {
+              "input_tokens": 1090,
+              "input_cost_usd": 0.00109
+            },
+            "spec_hash": "73622c8964271e994dd446f7e20500197489524147e6e75bd9ba552af59fc71e"
+          },
+          {
+            "query": "How do I run a single pytest test?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.9,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.001095
+            },
+            "spec_hash": "7fd08c26f186a79224b33d46371a4cb2368ab9724cd1e99d0ffef93d3d909ff7"
+          },
+          {
+            "query": "Write unit tests for this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 3.8,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.001093
+            },
+            "spec_hash": "e453b7ed52408c72000f3f278dec2d5e26ea35fb217e230bb7bb10d59fa3f219"
+          },
+          {
+            "query": "Write a Go fuzz test for this parser",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.1,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.001095
+            },
+            "spec_hash": "cac291f2616407f1d372a2c5b2c2fd1b627e0e6c0cba8fe727b11bf82c27b441"
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.1,
+            "estimate": {
+              "input_tokens": 1092,
+              "input_cost_usd": 0.001092
+            },
+            "spec_hash": "23e1969a8cff13239de5e1d53d707dfd3286cce2847c1fae8e5affe145283790"
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.001093
+            },
+            "spec_hash": "9b27fb9f2ff9d191afb2b1a4887414799764477d6b0213b705f440b287fcab92"
+          },
+          {
+            "query": "Set up ruff for my project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.5,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.001093
+            },
+            "spec_hash": "0517ed4c92a856b908e3acf5a3b94545133286c4373bd330fcb08b6aafb300ae"
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.001095
+            },
+            "spec_hash": "7a3c3785cc37c1fc45499b20c54c397e409943828b05c226388c80140291fb7b"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 10,
+          "total": 15,
+          "pass_rate": 0.333333,
+          "avg_run_seconds": 6.3,
+          "estimate": {
+            "input_tokens": 16402,
+            "input_cost_usd": 0.016402
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-21T01:05:12Z",
+          "summary": {
+            "passed": 5,
+            "failed": 10,
+            "total": 15,
+            "pass_rate": 0.333333,
+            "avg_run_seconds": 6.5,
+            "estimate": {
+              "input_tokens": 16402,
+              "input_cost_usd": 0.016402
+            }
+          },
+          "results": [
+            {
+              "query": "Add a fuzz test for my Python parser",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.2,
+              "estimate": {
+                "input_tokens": 1095,
+                "input_cost_usd": 0.001095
+              }
+            },
+            {
+              "query": "Add a property-based test with Hypothesis",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.5,
+              "estimate": {
+                "input_tokens": 1095,
+                "input_cost_usd": 0.001095
+              }
+            },
+            {
+              "query": "Add type hints to this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.1,
+              "estimate": {
+                "input_tokens": 1092,
+                "input_cost_usd": 0.001092
+              }
+            },
+            {
+              "query": "How do I run a single pytest test?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.6,
+              "estimate": {
+                "input_tokens": 1095,
+                "input_cost_usd": 0.001095
+              }
+            },
+            {
+              "query": "Parametrize these test cases",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.1,
+              "estimate": {
+                "input_tokens": 1093,
+                "input_cost_usd": 0.001093
+              }
+            },
+            {
+              "query": "Review my Python tests",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.1,
+              "estimate": {
+                "input_tokens": 1090,
+                "input_cost_usd": 0.00109
+              }
+            },
+            {
+              "query": "Scaffold a new Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13,
+              "estimate": {
+                "input_tokens": 1095,
+                "input_cost_usd": 0.001095
+              }
+            },
+            {
+              "query": "Set up fixtures for my pytest suite",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.9,
+              "estimate": {
+                "input_tokens": 1093,
+                "input_cost_usd": 0.001093
+              }
+            },
+            {
+              "query": "Set up ruff for my project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.5,
+              "estimate": {
+                "input_tokens": 1093,
+                "input_cost_usd": 0.001093
+              }
+            },
+            {
+              "query": "Should I use a fake or a mock here?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.1,
+              "estimate": {
+                "input_tokens": 1096,
+                "input_cost_usd": 0.001096
+              }
+            },
+            {
+              "query": "Test that this function raises ValueError",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4,
+              "estimate": {
+                "input_tokens": 1092,
+                "input_cost_usd": 0.001092
+              }
+            },
+            {
+              "query": "Write Jest tests for this React component",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.5,
+              "estimate": {
+                "input_tokens": 1093,
+                "input_cost_usd": 0.001093
+              }
+            },
+            {
+              "query": "Write a Go fuzz test for this parser",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.1,
+              "estimate": {
+                "input_tokens": 1095,
+                "input_cost_usd": 0.001095
+              }
+            },
+            {
+              "query": "Write pytest tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.6,
+              "estimate": {
+                "input_tokens": 1092,
+                "input_cost_usd": 0.001092
+              }
+            },
+            {
+              "query": "Write unit tests for this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 3.4,
+              "estimate": {
+                "input_tokens": 1093,
+                "input_cost_usd": 0.001093
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:17:12Z",
+        "executed": true,
+        "content_hash": "47cd454ff56ce4ac8e9bd9761b888ad3d59cb1e2fac68b6806c80b71cbda9602",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "parametrize",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1131,
+              "input_cost_usd": 0.001131
+            },
+            "measured": {
+              "input_tokens": 44,
+              "cache_read_input_tokens": 135937,
+              "cache_creation_input_tokens": 19507,
+              "output_tokens": 1830,
+              "cost_usd": 0.062437
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "tests/test_kv.py",
+                "text": "file tests/test_kv.py exists",
+                "passed": true,
+                "evidence": "tests/test_kv.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "pytest\\.mark\\.parametrize",
+                "text": "tests/test_kv.py matches /pytest\\.mark\\.parametrize/",
+                "passed": true,
+                "evidence": "pytest.mark.parametrize",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "def test_",
+                "text": "tests/test_kv.py matches /def test_/",
+                "passed": true,
+                "evidence": "def test_",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "pytest\\.raises",
+                "text": "tests/test_kv.py matches /pytest\\.raises/",
+                "passed": true,
+                "evidence": "pytest.raises",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "tests/test_kv.py",
+                "pattern": "unittest|TestCase",
+                "text": "tests/test_kv.py does not match /unittest|TestCase/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile tests/test_kv.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile tests/test_kv.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 157318,
+              "executor_duration_seconds": 20.2
+            },
+            "spec_hash": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+          },
+          {
+            "id": "hypothesis-property",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1140,
+              "input_cost_usd": 0.00114
+            },
+            "measured": {
+              "input_tokens": 60,
+              "cache_read_input_tokens": 242514,
+              "cache_creation_input_tokens": 19918,
+              "output_tokens": 1801,
+              "cost_usd": 0.073796
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "tests/test_kv_props.py",
+                "text": "file tests/test_kv_props.py exists",
+                "passed": true,
+                "evidence": "tests/test_kv_props.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "from hypothesis",
+                "text": "tests/test_kv_props.py matches /from hypothesis/",
+                "passed": true,
+                "evidence": "from hypothesis",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "@given",
+                "text": "tests/test_kv_props.py matches /@given/",
+                "passed": true,
+                "evidence": "@given",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "strategies|st\\.",
+                "text": "tests/test_kv_props.py matches /strategies|st\\./",
+                "passed": true,
+                "evidence": "strategies",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile tests/test_kv_props.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile tests/test_kv_props.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 264293,
+              "executor_duration_seconds": 40.5
+            },
+            "spec_hash": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 30.4,
+          "estimate": {
+            "input_tokens": 2271,
+            "input_cost_usd": 0.002271
+          },
+          "measured": {
+            "input_tokens": 104,
+            "cache_read_input_tokens": 378451,
+            "cache_creation_input_tokens": 39425,
+            "output_tokens": 3631,
+            "cost_usd": 0.136233
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:17:12Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 12.5,
+            "measured": {
+              "input_tokens": 50,
+              "cache_read_input_tokens": 143111,
+              "cache_creation_input_tokens": 31515,
+              "output_tokens": 1777,
+              "cost_usd": 0.087535
+            }
+          },
+          "results": [
+            {
+              "id": "hypothesis-property",
+              "passed": true,
+              "measured": {
+                "input_tokens": 21,
+                "cache_read_input_tokens": 58872,
+                "cache_creation_input_tokens": 15406,
+                "output_tokens": 747,
+                "cost_usd": 0.041089
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 10.3
+              },
+              "fingerprint": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+            },
+            {
+              "id": "parametrize",
+              "passed": true,
+              "measured": {
+                "input_tokens": 29,
+                "cache_read_input_tokens": 84239,
+                "cache_creation_input_tokens": 16109,
+                "output_tokens": 1030,
+                "cost_usd": 0.046446
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 14.6
+              },
+              "fingerprint": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T01:05:31Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 17.2,
+            "estimate": {
+              "input_tokens": 2271,
+              "input_cost_usd": 0.002271
+            },
+            "measured": {
+              "input_tokens": 49,
+              "cache_read_input_tokens": 143221,
+              "cache_creation_input_tokens": 31919,
+              "output_tokens": 1851,
+              "cost_usd": 0.088748
+            }
+          },
+          "results": [
+            {
+              "id": "hypothesis-property",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1140,
+                "input_cost_usd": 0.00114
+              },
+              "measured": {
+                "input_tokens": 28,
+                "cache_read_input_tokens": 84138,
+                "cache_creation_input_tokens": 16003,
+                "output_tokens": 982,
+                "cost_usd": 0.045992
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 18.9
+              }
+            },
+            {
+              "id": "parametrize",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1131,
+                "input_cost_usd": 0.001131
+              },
+              "measured": {
+                "input_tokens": 21,
+                "cache_read_input_tokens": 59083,
+                "cache_creation_input_tokens": 15916,
+                "output_tokens": 869,
+                "cost_usd": 0.042756
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 15.4
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:34:18Z",
+        "executed": true,
+        "content_hash": "06670a6ed40e1da7d905f171139d834996c5c4c127c2318d6a8b564074240975",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 1498,
+              "input_cost_usd": 0.00749
+            },
+            "spec_hash": "9a91da71d4227d149b12aa0078af9d7f2b1a652af40a1986eabcaa2a45387c1c"
+          },
+          {
+            "query": "Parametrize these test cases",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 1497,
+              "input_cost_usd": 0.007485
+            },
+            "spec_hash": "d6ea4b2d1fc313c03977b0e14691a9e6586ecf712676e7d90139db5bfb9c311c"
+          },
+          {
+            "query": "Add a property-based test with Hypothesis",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 17.3,
+            "estimate": {
+              "input_tokens": 1502,
+              "input_cost_usd": 0.00751
+            },
+            "spec_hash": "46bb51c5e28d755c43eae26b770e2a7ceb6fb0090d6744854778eda4f928a76d"
+          },
+          {
+            "query": "Test that this function raises ValueError",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 16.1,
+            "estimate": {
+              "input_tokens": 1499,
+              "input_cost_usd": 0.007495
+            },
+            "spec_hash": "bc5d85e5368b46d439091a534bc9952de636d6353ce591a7c6fd53e84a20adf7"
+          },
+          {
+            "query": "Set up fixtures for my pytest suite",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.1,
+            "estimate": {
+              "input_tokens": 1502,
+              "input_cost_usd": 0.00751
+            },
+            "spec_hash": "b7dda89c6ec36af1a7c4aa1572d0d7a95cca81e834f7dcf0932c1f8dd2641512"
+          },
+          {
+            "query": "Should I use a fake or a mock here?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.8,
+            "estimate": {
+              "input_tokens": 1501,
+              "input_cost_usd": 0.007505
+            },
+            "spec_hash": "ee9baa8ac19745ec64c9e3ff75aaaa094e2a378112acbf34aa8a9ac0739b1609"
+          },
+          {
+            "query": "Add a fuzz test for my Python parser",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "estimate": {
+              "input_tokens": 1502,
+              "input_cost_usd": 0.00751
+            },
+            "spec_hash": "b9d2c82e7cea8856974a2e9e0f9e1d07522252dfd577d1014658442af06b8d64"
+          },
+          {
+            "query": "Review my Python tests",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.6,
+            "estimate": {
+              "input_tokens": 1495,
+              "input_cost_usd": 0.007475
+            },
+            "spec_hash": "73622c8964271e994dd446f7e20500197489524147e6e75bd9ba552af59fc71e"
+          },
+          {
+            "query": "How do I run a single pytest test?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "estimate": {
+              "input_tokens": 1499,
+              "input_cost_usd": 0.007495
+            },
+            "spec_hash": "7fd08c26f186a79224b33d46371a4cb2368ab9724cd1e99d0ffef93d3d909ff7"
+          },
+          {
+            "query": "Write unit tests for this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 22.7,
+            "estimate": {
+              "input_tokens": 1499,
+              "input_cost_usd": 0.007495
+            },
+            "spec_hash": "e453b7ed52408c72000f3f278dec2d5e26ea35fb217e230bb7bb10d59fa3f219"
+          },
+          {
+            "query": "Write a Go fuzz test for this parser",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12,
+            "estimate": {
+              "input_tokens": 1502,
+              "input_cost_usd": 0.00751
+            },
+            "spec_hash": "cac291f2616407f1d372a2c5b2c2fd1b627e0e6c0cba8fe727b11bf82c27b441"
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 22.4,
+            "estimate": {
+              "input_tokens": 1496,
+              "input_cost_usd": 0.00748
+            },
+            "spec_hash": "23e1969a8cff13239de5e1d53d707dfd3286cce2847c1fae8e5affe145283790"
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.5,
+            "estimate": {
+              "input_tokens": 1499,
+              "input_cost_usd": 0.007495
+            },
+            "spec_hash": "9b27fb9f2ff9d191afb2b1a4887414799764477d6b0213b705f440b287fcab92"
+          },
+          {
+            "query": "Set up ruff for my project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17,
+            "estimate": {
+              "input_tokens": 1497,
+              "input_cost_usd": 0.007485
+            },
+            "spec_hash": "0517ed4c92a856b908e3acf5a3b94545133286c4373bd330fcb08b6aafb300ae"
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.9,
+            "estimate": {
+              "input_tokens": 1501,
+              "input_cost_usd": 0.007505
+            },
+            "spec_hash": "7a3c3785cc37c1fc45499b20c54c397e409943828b05c226388c80140291fb7b"
+          }
+        ],
+        "summary": {
+          "passed": 9,
+          "failed": 6,
+          "total": 15,
+          "pass_rate": 0.6,
+          "avg_run_seconds": 14.2,
+          "estimate": {
+            "input_tokens": 22489,
+            "input_cost_usd": 0.112445
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-21T01:11:36Z",
+          "summary": {
+            "passed": 9,
+            "failed": 6,
+            "total": 15,
+            "pass_rate": 0.6,
+            "avg_run_seconds": 12.8,
+            "estimate": {
+              "input_tokens": 22489,
+              "input_cost_usd": 0.112445
+            }
+          },
+          "results": [
+            {
+              "query": "Add a fuzz test for my Python parser",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.5,
+              "estimate": {
+                "input_tokens": 1502,
+                "input_cost_usd": 0.00751
+              }
+            },
+            {
+              "query": "Add a property-based test with Hypothesis",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.8,
+              "estimate": {
+                "input_tokens": 1502,
+                "input_cost_usd": 0.00751
+              }
+            },
+            {
+              "query": "Add type hints to this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 22.4,
+              "estimate": {
+                "input_tokens": 1496,
+                "input_cost_usd": 0.00748
+              }
+            },
+            {
+              "query": "How do I run a single pytest test?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.7,
+              "estimate": {
+                "input_tokens": 1499,
+                "input_cost_usd": 0.007495
+              }
+            },
+            {
+              "query": "Parametrize these test cases",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.5,
+              "estimate": {
+                "input_tokens": 1497,
+                "input_cost_usd": 0.007485
+              }
+            },
+            {
+              "query": "Review my Python tests",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.6,
+              "estimate": {
+                "input_tokens": 1495,
+                "input_cost_usd": 0.007475
+              }
+            },
+            {
+              "query": "Scaffold a new Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 19.9,
+              "estimate": {
+                "input_tokens": 1501,
+                "input_cost_usd": 0.007505
+              }
+            },
+            {
+              "query": "Set up fixtures for my pytest suite",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 13,
+              "estimate": {
+                "input_tokens": 1502,
+                "input_cost_usd": 0.00751
+              }
+            },
+            {
+              "query": "Set up ruff for my project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 17,
+              "estimate": {
+                "input_tokens": 1497,
+                "input_cost_usd": 0.007485
+              }
+            },
+            {
+              "query": "Should I use a fake or a mock here?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.8,
+              "estimate": {
+                "input_tokens": 1501,
+                "input_cost_usd": 0.007505
+              }
+            },
+            {
+              "query": "Test that this function raises ValueError",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.8,
+              "estimate": {
+                "input_tokens": 1499,
+                "input_cost_usd": 0.007495
+              }
+            },
+            {
+              "query": "Write Jest tests for this React component",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 16.5,
+              "estimate": {
+                "input_tokens": 1499,
+                "input_cost_usd": 0.007495
+              }
+            },
+            {
+              "query": "Write a Go fuzz test for this parser",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12,
+              "estimate": {
+                "input_tokens": 1502,
+                "input_cost_usd": 0.00751
+              }
+            },
+            {
+              "query": "Write pytest tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.7,
+              "estimate": {
+                "input_tokens": 1498,
+                "input_cost_usd": 0.00749
+              }
+            },
+            {
+              "query": "Write unit tests for this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 14.1,
+              "estimate": {
+                "input_tokens": 1499,
+                "input_cost_usd": 0.007495
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:21:51Z",
+        "executed": true,
+        "content_hash": "47cd454ff56ce4ac8e9bd9761b888ad3d59cb1e2fac68b6806c80b71cbda9602",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "parametrize",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1546,
+              "input_cost_usd": 0.00773
+            },
+            "measured": {
+              "input_tokens": 2919,
+              "cache_read_input_tokens": 139790,
+              "cache_creation_input_tokens": 10668,
+              "output_tokens": 3495,
+              "cost_usd": 0.27917
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "tests/test_kv.py",
+                "text": "file tests/test_kv.py exists",
+                "passed": true,
+                "evidence": "tests/test_kv.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "pytest\\.mark\\.parametrize",
+                "text": "tests/test_kv.py matches /pytest\\.mark\\.parametrize/",
+                "passed": true,
+                "evidence": "pytest.mark.parametrize",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "def test_",
+                "text": "tests/test_kv.py matches /def test_/",
+                "passed": true,
+                "evidence": "def test_",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "pytest\\.raises",
+                "text": "tests/test_kv.py matches /pytest\\.raises/",
+                "passed": true,
+                "evidence": "pytest.raises",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "tests/test_kv.py",
+                "pattern": "unittest|TestCase",
+                "text": "tests/test_kv.py does not match /unittest|TestCase/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile tests/test_kv.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile tests/test_kv.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 156872,
+              "executor_duration_seconds": 62.6
+            },
+            "spec_hash": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+          },
+          {
+            "id": "hypothesis-property",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1562,
+              "input_cost_usd": 0.00781
+            },
+            "measured": {
+              "input_tokens": 2924,
+              "cache_read_input_tokens": 196723,
+              "cache_creation_input_tokens": 13058,
+              "output_tokens": 5060,
+              "cost_usd": 0.370696
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "tests/test_kv_props.py",
+                "text": "file tests/test_kv_props.py exists",
+                "passed": true,
+                "evidence": "tests/test_kv_props.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "from hypothesis",
+                "text": "tests/test_kv_props.py matches /from hypothesis/",
+                "passed": true,
+                "evidence": "from hypothesis",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "@given",
+                "text": "tests/test_kv_props.py matches /@given/",
+                "passed": true,
+                "evidence": "@given",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "strategies|st\\.",
+                "text": "tests/test_kv_props.py matches /strategies|st\\./",
+                "passed": true,
+                "evidence": "strategies",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile tests/test_kv_props.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile tests/test_kv_props.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 217765,
+              "executor_duration_seconds": 82.1
+            },
+            "spec_hash": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 72.4,
+          "estimate": {
+            "input_tokens": 3108,
+            "input_cost_usd": 0.01554
+          },
+          "measured": {
+            "input_tokens": 5843,
+            "cache_read_input_tokens": 336513,
+            "cache_creation_input_tokens": 23726,
+            "output_tokens": 8555,
+            "cost_usd": 0.649866
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:21:51Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 92.1,
+            "measured": {
+              "input_tokens": 5266,
+              "cache_read_input_tokens": 423638,
+              "cache_creation_input_tokens": 23866,
+              "output_tokens": 11098,
+              "cost_usd": 0.755528
+            }
+          },
+          "results": [
+            {
+              "id": "hypothesis-property",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2633,
+                "cache_read_input_tokens": 219402,
+                "cache_creation_input_tokens": 13356,
+                "output_tokens": 7301,
+                "cost_usd": 0.439595
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 119.8
+              },
+              "fingerprint": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+            },
+            {
+              "id": "parametrize",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2633,
+                "cache_read_input_tokens": 204236,
+                "cache_creation_input_tokens": 10510,
+                "output_tokens": 3797,
+                "cost_usd": 0.315933
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 64.4
+              },
+              "fingerprint": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T01:12:46Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 68.1,
+            "estimate": {
+              "input_tokens": 3108,
+              "input_cost_usd": 0.01554
+            },
+            "measured": {
+              "input_tokens": 5842,
+              "cache_read_input_tokens": 340873,
+              "cache_creation_input_tokens": 23035,
+              "output_tokens": 7824,
+              "cost_usd": 0.626875
+            }
+          },
+          "results": [
+            {
+              "id": "hypothesis-property",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1562,
+                "input_cost_usd": 0.00781
+              },
+              "measured": {
+                "input_tokens": 2921,
+                "cache_read_input_tokens": 168072,
+                "cache_creation_input_tokens": 11169,
+                "output_tokens": 3448,
+                "cost_usd": 0.297175
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 69.9
+              }
+            },
+            {
+              "id": "parametrize",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1546,
+                "input_cost_usd": 0.00773
+              },
+              "measured": {
+                "input_tokens": 2921,
+                "cache_read_input_tokens": 172801,
+                "cache_creation_input_tokens": 11866,
+                "output_tokens": 4376,
+                "cost_usd": 0.3297
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 66.3
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:33:01Z",
+        "executed": true,
+        "content_hash": "06670a6ed40e1da7d905f171139d834996c5c4c127c2318d6a8b564074240975",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 14.5,
+            "estimate": {
+              "input_tokens": 1092,
+              "input_cost_usd": 0.003276
+            },
+            "spec_hash": "9a91da71d4227d149b12aa0078af9d7f2b1a652af40a1986eabcaa2a45387c1c"
+          },
+          {
+            "query": "Parametrize these test cases",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.1,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.003279
+            },
+            "spec_hash": "d6ea4b2d1fc313c03977b0e14691a9e6586ecf712676e7d90139db5bfb9c311c"
+          },
+          {
+            "query": "Add a property-based test with Hypothesis",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.003285
+            },
+            "spec_hash": "46bb51c5e28d755c43eae26b770e2a7ceb6fb0090d6744854778eda4f928a76d"
+          },
+          {
+            "query": "Test that this function raises ValueError",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 1092,
+              "input_cost_usd": 0.003276
+            },
+            "spec_hash": "bc5d85e5368b46d439091a534bc9952de636d6353ce591a7c6fd53e84a20adf7"
+          },
+          {
+            "query": "Set up fixtures for my pytest suite",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.003279
+            },
+            "spec_hash": "b7dda89c6ec36af1a7c4aa1572d0d7a95cca81e834f7dcf0932c1f8dd2641512"
+          },
+          {
+            "query": "Should I use a fake or a mock here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 29.1,
+            "estimate": {
+              "input_tokens": 1096,
+              "input_cost_usd": 0.003288
+            },
+            "spec_hash": "ee9baa8ac19745ec64c9e3ff75aaaa094e2a378112acbf34aa8a9ac0739b1609"
+          },
+          {
+            "query": "Add a fuzz test for my Python parser",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.003285
+            },
+            "spec_hash": "b9d2c82e7cea8856974a2e9e0f9e1d07522252dfd577d1014658442af06b8d64"
+          },
+          {
+            "query": "Review my Python tests",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.4,
+            "estimate": {
+              "input_tokens": 1090,
+              "input_cost_usd": 0.00327
+            },
+            "spec_hash": "73622c8964271e994dd446f7e20500197489524147e6e75bd9ba552af59fc71e"
+          },
+          {
+            "query": "How do I run a single pytest test?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.7,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.003285
+            },
+            "spec_hash": "7fd08c26f186a79224b33d46371a4cb2368ab9724cd1e99d0ffef93d3d909ff7"
+          },
+          {
+            "query": "Write unit tests for this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.2,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.003279
+            },
+            "spec_hash": "e453b7ed52408c72000f3f278dec2d5e26ea35fb217e230bb7bb10d59fa3f219"
+          },
+          {
+            "query": "Write a Go fuzz test for this parser",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.2,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.003285
+            },
+            "spec_hash": "cac291f2616407f1d372a2c5b2c2fd1b627e0e6c0cba8fe727b11bf82c27b441"
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.4,
+            "estimate": {
+              "input_tokens": 1092,
+              "input_cost_usd": 0.003276
+            },
+            "spec_hash": "23e1969a8cff13239de5e1d53d707dfd3286cce2847c1fae8e5affe145283790"
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.3,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.003279
+            },
+            "spec_hash": "9b27fb9f2ff9d191afb2b1a4887414799764477d6b0213b705f440b287fcab92"
+          },
+          {
+            "query": "Set up ruff for my project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.9,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.003279
+            },
+            "spec_hash": "0517ed4c92a856b908e3acf5a3b94545133286c4373bd330fcb08b6aafb300ae"
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.5,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.003285
+            },
+            "spec_hash": "7a3c3785cc37c1fc45499b20c54c397e409943828b05c226388c80140291fb7b"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 9,
+          "total": 15,
+          "pass_rate": 0.4,
+          "avg_run_seconds": 18,
+          "estimate": {
+            "input_tokens": 16402,
+            "input_cost_usd": 0.049206
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-21T01:08:30Z",
+          "summary": {
+            "passed": 6,
+            "failed": 9,
+            "total": 15,
+            "pass_rate": 0.4,
+            "avg_run_seconds": 15,
+            "estimate": {
+              "input_tokens": 16402,
+              "input_cost_usd": 0.049206
+            }
+          },
+          "results": [
+            {
+              "query": "Add a fuzz test for my Python parser",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 112.7,
+              "estimate": {
+                "input_tokens": 1095,
+                "input_cost_usd": 0.003285
+              }
+            },
+            {
+              "query": "Add a property-based test with Hypothesis",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.6,
+              "estimate": {
+                "input_tokens": 1095,
+                "input_cost_usd": 0.003285
+              }
+            },
+            {
+              "query": "Add type hints to this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.4,
+              "estimate": {
+                "input_tokens": 1092,
+                "input_cost_usd": 0.003276
+              }
+            },
+            {
+              "query": "How do I run a single pytest test?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.3,
+              "estimate": {
+                "input_tokens": 1095,
+                "input_cost_usd": 0.003285
+              }
+            },
+            {
+              "query": "Parametrize these test cases",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.2,
+              "estimate": {
+                "input_tokens": 1093,
+                "input_cost_usd": 0.003279
+              }
+            },
+            {
+              "query": "Review my Python tests",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9,
+              "estimate": {
+                "input_tokens": 1090,
+                "input_cost_usd": 0.00327
+              }
+            },
+            {
+              "query": "Scaffold a new Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.5,
+              "estimate": {
+                "input_tokens": 1095,
+                "input_cost_usd": 0.003285
+              }
+            },
+            {
+              "query": "Set up fixtures for my pytest suite",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.5,
+              "estimate": {
+                "input_tokens": 1093,
+                "input_cost_usd": 0.003279
+              }
+            },
+            {
+              "query": "Set up ruff for my project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.9,
+              "estimate": {
+                "input_tokens": 1093,
+                "input_cost_usd": 0.003279
+              }
+            },
+            {
+              "query": "Should I use a fake or a mock here?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.3,
+              "estimate": {
+                "input_tokens": 1096,
+                "input_cost_usd": 0.003288
+              }
+            },
+            {
+              "query": "Test that this function raises ValueError",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.9,
+              "estimate": {
+                "input_tokens": 1092,
+                "input_cost_usd": 0.003276
+              }
+            },
+            {
+              "query": "Write Jest tests for this React component",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.3,
+              "estimate": {
+                "input_tokens": 1093,
+                "input_cost_usd": 0.003279
+              }
+            },
+            {
+              "query": "Write a Go fuzz test for this parser",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.2,
+              "estimate": {
+                "input_tokens": 1095,
+                "input_cost_usd": 0.003285
+              }
+            },
+            {
+              "query": "Write pytest tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.8,
+              "estimate": {
+                "input_tokens": 1092,
+                "input_cost_usd": 0.003276
+              }
+            },
+            {
+              "query": "Write unit tests for this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4,
+              "estimate": {
+                "input_tokens": 1093,
+                "input_cost_usd": 0.003279
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:18:29Z",
+        "executed": true,
+        "content_hash": "47cd454ff56ce4ac8e9bd9761b888ad3d59cb1e2fac68b6806c80b71cbda9602",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "parametrize",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1131,
+              "input_cost_usd": 0.003393
+            },
+            "measured": {
+              "input_tokens": 12,
+              "cache_read_input_tokens": 222989,
+              "cache_creation_input_tokens": 10861,
+              "output_tokens": 2215,
+              "cost_usd": 0.165949
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "tests/test_kv.py",
+                "text": "file tests/test_kv.py exists",
+                "passed": true,
+                "evidence": "tests/test_kv.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "pytest\\.mark\\.parametrize",
+                "text": "tests/test_kv.py matches /pytest\\.mark\\.parametrize/",
+                "passed": true,
+                "evidence": "pytest.mark.parametrize",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "def test_",
+                "text": "tests/test_kv.py matches /def test_/",
+                "passed": true,
+                "evidence": "def test_",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "pytest\\.raises",
+                "text": "tests/test_kv.py matches /pytest\\.raises/",
+                "passed": true,
+                "evidence": "pytest.raises",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "tests/test_kv.py",
+                "pattern": "unittest|TestCase",
+                "text": "tests/test_kv.py does not match /unittest|TestCase/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile tests/test_kv.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile tests/test_kv.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 236077,
+              "executor_duration_seconds": 46.7
+            },
+            "spec_hash": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+          },
+          {
+            "id": "hypothesis-property",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1140,
+              "input_cost_usd": 0.00342
+            },
+            "measured": {
+              "input_tokens": 16,
+              "cache_read_input_tokens": 330459,
+              "cache_creation_input_tokens": 11548,
+              "output_tokens": 1799,
+              "cost_usd": 0.196093
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "tests/test_kv_props.py",
+                "text": "file tests/test_kv_props.py exists",
+                "passed": true,
+                "evidence": "tests/test_kv_props.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "from hypothesis",
+                "text": "tests/test_kv_props.py matches /from hypothesis/",
+                "passed": true,
+                "evidence": "from hypothesis",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "@given",
+                "text": "tests/test_kv_props.py matches /@given/",
+                "passed": true,
+                "evidence": "@given",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "strategies|st\\.",
+                "text": "tests/test_kv_props.py matches /strategies|st\\./",
+                "passed": true,
+                "evidence": "strategies",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile tests/test_kv_props.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile tests/test_kv_props.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 343822,
+              "executor_duration_seconds": 57.9
+            },
+            "spec_hash": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 52.3,
+          "estimate": {
+            "input_tokens": 2271,
+            "input_cost_usd": 0.006813
+          },
+          "measured": {
+            "input_tokens": 28,
+            "cache_read_input_tokens": 553448,
+            "cache_creation_input_tokens": 22409,
+            "output_tokens": 4014,
+            "cost_usd": 0.362042
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:18:29Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 22.6,
+            "measured": {
+              "input_tokens": 16,
+              "cache_read_input_tokens": 276567,
+              "cache_creation_input_tokens": 16942,
+              "output_tokens": 1892,
+              "cost_usd": 0.21431
+            }
+          },
+          "results": [
+            {
+              "id": "hypothesis-property",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7,
+                "cache_read_input_tokens": 113845,
+                "cache_creation_input_tokens": 8345,
+                "output_tokens": 819,
+                "cost_usd": 0.097164
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 19.6
+              },
+              "fingerprint": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+            },
+            {
+              "id": "parametrize",
+              "passed": true,
+              "measured": {
+                "input_tokens": 9,
+                "cache_read_input_tokens": 162722,
+                "cache_creation_input_tokens": 8597,
+                "output_tokens": 1073,
+                "cost_usd": 0.117146
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 25.5
+              },
+              "fingerprint": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T01:09:06Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 30.2,
+            "estimate": {
+              "input_tokens": 2271,
+              "input_cost_usd": 0.006813
+            },
+            "measured": {
+              "input_tokens": 22,
+              "cache_read_input_tokens": 390948,
+              "cache_creation_input_tokens": 20049,
+              "output_tokens": 2675,
+              "cost_usd": 0.279028
+            }
+          },
+          "results": [
+            {
+              "id": "hypothesis-property",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1140,
+                "input_cost_usd": 0.00342
+              },
+              "measured": {
+                "input_tokens": 9,
+                "cache_read_input_tokens": 142480,
+                "cache_creation_input_tokens": 9646,
+                "output_tokens": 894,
+                "cost_usd": 0.114691
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 24.8
+              }
+            },
+            {
+              "id": "parametrize",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1131,
+                "input_cost_usd": 0.003393
+              },
+              "measured": {
+                "input_tokens": 13,
+                "cache_read_input_tokens": 248468,
+                "cache_creation_input_tokens": 10403,
+                "output_tokens": 1781,
+                "cost_usd": 0.164337
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 35.6
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.1-pro": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:45:36Z",
+        "executed": true,
+        "content_hash": "06670a6ed40e1da7d905f171139d834996c5c4c127c2318d6a8b564074240975",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "9a91da71d4227d149b12aa0078af9d7f2b1a652af40a1986eabcaa2a45387c1c"
+          },
+          {
+            "query": "Parametrize these test cases",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "d6ea4b2d1fc313c03977b0e14691a9e6586ecf712676e7d90139db5bfb9c311c"
+          },
+          {
+            "query": "Add a property-based test with Hypothesis",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "46bb51c5e28d755c43eae26b770e2a7ceb6fb0090d6744854778eda4f928a76d"
+          },
+          {
+            "query": "Test that this function raises ValueError",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "bc5d85e5368b46d439091a534bc9952de636d6353ce591a7c6fd53e84a20adf7"
+          },
+          {
+            "query": "Set up fixtures for my pytest suite",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "b7dda89c6ec36af1a7c4aa1572d0d7a95cca81e834f7dcf0932c1f8dd2641512"
+          },
+          {
+            "query": "Should I use a fake or a mock here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "ee9baa8ac19745ec64c9e3ff75aaaa094e2a378112acbf34aa8a9ac0739b1609"
+          },
+          {
+            "query": "Add a fuzz test for my Python parser",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "b9d2c82e7cea8856974a2e9e0f9e1d07522252dfd577d1014658442af06b8d64"
+          },
+          {
+            "query": "Review my Python tests",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.9,
+            "spec_hash": "73622c8964271e994dd446f7e20500197489524147e6e75bd9ba552af59fc71e"
+          },
+          {
+            "query": "How do I run a single pytest test?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "7fd08c26f186a79224b33d46371a4cb2368ab9724cd1e99d0ffef93d3d909ff7"
+          },
+          {
+            "query": "Write unit tests for this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "e453b7ed52408c72000f3f278dec2d5e26ea35fb217e230bb7bb10d59fa3f219"
+          },
+          {
+            "query": "Write a Go fuzz test for this parser",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "cac291f2616407f1d372a2c5b2c2fd1b627e0e6c0cba8fe727b11bf82c27b441"
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "23e1969a8cff13239de5e1d53d707dfd3286cce2847c1fae8e5affe145283790"
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "9b27fb9f2ff9d191afb2b1a4887414799764477d6b0213b705f440b287fcab92"
+          },
+          {
+            "query": "Set up ruff for my project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "0517ed4c92a856b908e3acf5a3b94545133286c4373bd330fcb08b6aafb300ae"
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "spec_hash": "7a3c3785cc37c1fc45499b20c54c397e409943828b05c226388c80140291fb7b"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 10,
+          "total": 15,
+          "pass_rate": 0.333333,
+          "avg_run_seconds": 5.4
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:45:48Z",
+        "executed": true,
+        "content_hash": "47cd454ff56ce4ac8e9bd9761b888ad3d59cb1e2fac68b6806c80b71cbda9602",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "parametrize",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.7
+            },
+            "spec_hash": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+          },
+          {
+            "id": "hypothesis-property",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.7
+            },
+            "spec_hash": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5.7
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:45:48Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 6.2
+          },
+          "results": [
+            {
+              "id": "hypothesis-property",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 6.3
+              },
+              "fingerprint": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+            },
+            {
+              "id": "parametrize",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 6
+              },
+              "fingerprint": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.5-flash": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:44:21Z",
+        "executed": true,
+        "content_hash": "06670a6ed40e1da7d905f171139d834996c5c4c127c2318d6a8b564074240975",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "9a91da71d4227d149b12aa0078af9d7f2b1a652af40a1986eabcaa2a45387c1c"
+          },
+          {
+            "query": "Parametrize these test cases",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "d6ea4b2d1fc313c03977b0e14691a9e6586ecf712676e7d90139db5bfb9c311c"
+          },
+          {
+            "query": "Add a property-based test with Hypothesis",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "46bb51c5e28d755c43eae26b770e2a7ceb6fb0090d6744854778eda4f928a76d"
+          },
+          {
+            "query": "Test that this function raises ValueError",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "bc5d85e5368b46d439091a534bc9952de636d6353ce591a7c6fd53e84a20adf7"
+          },
+          {
+            "query": "Set up fixtures for my pytest suite",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "b7dda89c6ec36af1a7c4aa1572d0d7a95cca81e834f7dcf0932c1f8dd2641512"
+          },
+          {
+            "query": "Should I use a fake or a mock here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "ee9baa8ac19745ec64c9e3ff75aaaa094e2a378112acbf34aa8a9ac0739b1609"
+          },
+          {
+            "query": "Add a fuzz test for my Python parser",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "b9d2c82e7cea8856974a2e9e0f9e1d07522252dfd577d1014658442af06b8d64"
+          },
+          {
+            "query": "Review my Python tests",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "73622c8964271e994dd446f7e20500197489524147e6e75bd9ba552af59fc71e"
+          },
+          {
+            "query": "How do I run a single pytest test?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "7fd08c26f186a79224b33d46371a4cb2368ab9724cd1e99d0ffef93d3d909ff7"
+          },
+          {
+            "query": "Write unit tests for this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "e453b7ed52408c72000f3f278dec2d5e26ea35fb217e230bb7bb10d59fa3f219"
+          },
+          {
+            "query": "Write a Go fuzz test for this parser",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "cac291f2616407f1d372a2c5b2c2fd1b627e0e6c0cba8fe727b11bf82c27b441"
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "23e1969a8cff13239de5e1d53d707dfd3286cce2847c1fae8e5affe145283790"
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "9b27fb9f2ff9d191afb2b1a4887414799764477d6b0213b705f440b287fcab92"
+          },
+          {
+            "query": "Set up ruff for my project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "0517ed4c92a856b908e3acf5a3b94545133286c4373bd330fcb08b6aafb300ae"
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "7a3c3785cc37c1fc45499b20c54c397e409943828b05c226388c80140291fb7b"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 10,
+          "total": 15,
+          "pass_rate": 0.333333,
+          "avg_run_seconds": 5.3
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:44:32Z",
+        "executed": true,
+        "content_hash": "47cd454ff56ce4ac8e9bd9761b888ad3d59cb1e2fac68b6806c80b71cbda9602",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "id": "parametrize",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.1
+            },
+            "spec_hash": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+          },
+          {
+            "id": "hypothesis-property",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.6
+            },
+            "spec_hash": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5.4
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:44:32Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.5
+          },
+          "results": [
+            {
+              "id": "hypothesis-property",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 4.7
+              },
+              "fingerprint": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+            },
+            {
+              "id": "parametrize",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 6.2
+              },
+              "fingerprint": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:40:12Z",
+        "executed": true,
+        "content_hash": "06670a6ed40e1da7d905f171139d834996c5c4c127c2318d6a8b564074240975",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 51.3,
+            "estimate": {
+              "input_tokens": 965,
+              "input_cost_usd": 0.002413
+            },
+            "spec_hash": "9a91da71d4227d149b12aa0078af9d7f2b1a652af40a1986eabcaa2a45387c1c"
+          },
+          {
+            "query": "Parametrize these test cases",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 87.1,
+            "estimate": {
+              "input_tokens": 964,
+              "input_cost_usd": 0.00241
+            },
+            "spec_hash": "d6ea4b2d1fc313c03977b0e14691a9e6586ecf712676e7d90139db5bfb9c311c"
+          },
+          {
+            "query": "Add a property-based test with Hypothesis",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.1,
+            "estimate": {
+              "input_tokens": 967,
+              "input_cost_usd": 0.002418
+            },
+            "spec_hash": "46bb51c5e28d755c43eae26b770e2a7ceb6fb0090d6744854778eda4f928a76d"
+          },
+          {
+            "query": "Test that this function raises ValueError",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 70.5,
+            "estimate": {
+              "input_tokens": 966,
+              "input_cost_usd": 0.002415
+            },
+            "spec_hash": "bc5d85e5368b46d439091a534bc9952de636d6353ce591a7c6fd53e84a20adf7"
+          },
+          {
+            "query": "Set up fixtures for my pytest suite",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 47.9,
+            "estimate": {
+              "input_tokens": 966,
+              "input_cost_usd": 0.002415
+            },
+            "spec_hash": "b7dda89c6ec36af1a7c4aa1572d0d7a95cca81e834f7dcf0932c1f8dd2641512"
+          },
+          {
+            "query": "Should I use a fake or a mock here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 18,
+            "estimate": {
+              "input_tokens": 969,
+              "input_cost_usd": 0.002423
+            },
+            "spec_hash": "ee9baa8ac19745ec64c9e3ff75aaaa094e2a378112acbf34aa8a9ac0739b1609"
+          },
+          {
+            "query": "Add a fuzz test for my Python parser",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 43.2,
+            "estimate": {
+              "input_tokens": 967,
+              "input_cost_usd": 0.002418
+            },
+            "spec_hash": "b9d2c82e7cea8856974a2e9e0f9e1d07522252dfd577d1014658442af06b8d64"
+          },
+          {
+            "query": "Review my Python tests",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 69.3,
+            "estimate": {
+              "input_tokens": 963,
+              "input_cost_usd": 0.002408
+            },
+            "spec_hash": "73622c8964271e994dd446f7e20500197489524147e6e75bd9ba552af59fc71e"
+          },
+          {
+            "query": "How do I run a single pytest test?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.3,
+            "estimate": {
+              "input_tokens": 968,
+              "input_cost_usd": 0.00242
+            },
+            "spec_hash": "7fd08c26f186a79224b33d46371a4cb2368ab9724cd1e99d0ffef93d3d909ff7"
+          },
+          {
+            "query": "Write unit tests for this Python function",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 40.2,
+            "estimate": {
+              "input_tokens": 966,
+              "input_cost_usd": 0.002415
+            },
+            "spec_hash": "e453b7ed52408c72000f3f278dec2d5e26ea35fb217e230bb7bb10d59fa3f219"
+          },
+          {
+            "query": "Write a Go fuzz test for this parser",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 77.3,
+            "estimate": {
+              "input_tokens": 903,
+              "input_cost_usd": 0.002258
+            }
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 26.7,
+            "estimate": {
+              "input_tokens": 901,
+              "input_cost_usd": 0.002253
+            }
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 33.1,
+            "estimate": {
+              "input_tokens": 902,
+              "input_cost_usd": 0.002255
+            }
+          },
+          {
+            "query": "Set up ruff for my project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 70,
+            "estimate": {
+              "input_tokens": 902,
+              "input_cost_usd": 0.002255
+            }
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 110.8,
+            "estimate": {
+              "input_tokens": 903,
+              "input_cost_usd": 0.002258
+            }
+          }
+        ],
+        "summary": {
+          "passed": 7,
+          "failed": 8,
+          "total": 15,
+          "pass_rate": 0.466667,
+          "avg_run_seconds": 50.8,
+          "estimate": {
+            "input_tokens": 14172,
+            "input_cost_usd": 0.035434
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-20T13:25:51Z",
+          "summary": {
+            "passed": 5,
+            "failed": 10,
+            "total": 15,
+            "pass_rate": 0.333333,
+            "avg_run_seconds": 56.5,
+            "estimate": {
+              "input_tokens": 13532,
+              "input_cost_usd": 0.033833
+            }
+          },
+          "results": [
+            {
+              "query": "Add a fuzz test for my Python parser",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 60.6,
+              "estimate": {
+                "input_tokens": 903,
+                "input_cost_usd": 0.002258
+              }
+            },
+            {
+              "query": "Add a property-based test with Hypothesis",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 72.8,
+              "estimate": {
+                "input_tokens": 903,
+                "input_cost_usd": 0.002258
+              }
+            },
+            {
+              "query": "Add type hints to this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 26.7,
+              "estimate": {
+                "input_tokens": 901,
+                "input_cost_usd": 0.002253
+              }
+            },
+            {
+              "query": "How do I run a single pytest test?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.8,
+              "estimate": {
+                "input_tokens": 904,
+                "input_cost_usd": 0.00226
+              }
+            },
+            {
+              "query": "Parametrize these test cases",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 120,
+              "estimate": {
+                "input_tokens": 900,
+                "input_cost_usd": 0.00225
+              }
+            },
+            {
+              "query": "Review my Python tests",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 36.8,
+              "estimate": {
+                "input_tokens": 899,
+                "input_cost_usd": 0.002248
+              }
+            },
+            {
+              "query": "Scaffold a new Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 110.8,
+              "estimate": {
+                "input_tokens": 903,
+                "input_cost_usd": 0.002258
+              }
+            },
+            {
+              "query": "Set up fixtures for my pytest suite",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 62.4,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.002255
+              }
+            },
+            {
+              "query": "Set up ruff for my project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 70,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.002255
+              }
+            },
+            {
+              "query": "Should I use a fake or a mock here?",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 19.5,
+              "estimate": {
+                "input_tokens": 905,
+                "input_cost_usd": 0.002262
+              }
+            },
+            {
+              "query": "Test that this function raises ValueError",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 62.8,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.002255
+              }
+            },
+            {
+              "query": "Write Jest tests for this React component",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 33.1,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.002255
+              }
+            },
+            {
+              "query": "Write a Go fuzz test for this parser",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 77.3,
+              "estimate": {
+                "input_tokens": 903,
+                "input_cost_usd": 0.002258
+              }
+            },
+            {
+              "query": "Write pytest tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 42.5,
+              "estimate": {
+                "input_tokens": 901,
+                "input_cost_usd": 0.002253
+              }
+            },
+            {
+              "query": "Write unit tests for this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 42.8,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.002255
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:23:27Z",
+        "executed": true,
+        "content_hash": "47cd454ff56ce4ac8e9bd9761b888ad3d59cb1e2fac68b6806c80b71cbda9602",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "parametrize",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 997,
+              "input_cost_usd": 0.002493
+            },
+            "measured": {
+              "input_tokens": 10130,
+              "cache_read_input_tokens": 91392,
+              "output_tokens": 1555,
+              "cost_usd": 0.27713
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "tests/test_kv.py",
+                "text": "file tests/test_kv.py exists",
+                "passed": true,
+                "evidence": "tests/test_kv.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "pytest\\.mark\\.parametrize",
+                "text": "tests/test_kv.py matches /pytest\\.mark\\.parametrize/",
+                "passed": true,
+                "evidence": "pytest.mark.parametrize",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "def test_",
+                "text": "tests/test_kv.py matches /def test_/",
+                "passed": true,
+                "evidence": "def test_",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "pytest\\.raises",
+                "text": "tests/test_kv.py matches /pytest\\.raises/",
+                "passed": true,
+                "evidence": "pytest.raises",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "tests/test_kv.py",
+                "pattern": "unittest|TestCase",
+                "text": "tests/test_kv.py does not match /unittest|TestCase/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile tests/test_kv.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile tests/test_kv.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 103077,
+              "executor_duration_seconds": 36.8
+            },
+            "spec_hash": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+          },
+          {
+            "id": "hypothesis-property",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1005,
+              "input_cost_usd": 0.002513
+            },
+            "measured": {
+              "input_tokens": 18519,
+              "cache_read_input_tokens": 121344,
+              "output_tokens": 1932,
+              "cost_usd": 0.378638
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "tests/test_kv_props.py",
+                "text": "file tests/test_kv_props.py exists",
+                "passed": true,
+                "evidence": "tests/test_kv_props.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "from hypothesis",
+                "text": "tests/test_kv_props.py matches /from hypothesis/",
+                "passed": true,
+                "evidence": "from hypothesis",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "@given",
+                "text": "tests/test_kv_props.py matches /@given/",
+                "passed": true,
+                "evidence": "@given",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "strategies|st\\.",
+                "text": "tests/test_kv_props.py matches /strategies|st\\./",
+                "passed": true,
+                "evidence": "strategies",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile tests/test_kv_props.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile tests/test_kv_props.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 141795,
+              "executor_duration_seconds": 50.2
+            },
+            "spec_hash": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 43.5,
+          "estimate": {
+            "input_tokens": 2002,
+            "input_cost_usd": 0.005006
+          },
+          "measured": {
+            "input_tokens": 28649,
+            "cache_read_input_tokens": 212736,
+            "output_tokens": 3487,
+            "cost_usd": 0.655768
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:23:27Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 37.6,
+            "measured": {
+              "input_tokens": 9807,
+              "cache_read_input_tokens": 184320,
+              "output_tokens": 3057,
+              "cost_usd": 0.531173
+            }
+          },
+          "results": [
+            {
+              "id": "hypothesis-property",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6477,
+                "cache_read_input_tokens": 108672,
+                "output_tokens": 1862,
+                "cost_usd": 0.315803
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 44.5
+              },
+              "fingerprint": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+            },
+            {
+              "id": "parametrize",
+              "passed": true,
+              "measured": {
+                "input_tokens": 3330,
+                "cache_read_input_tokens": 75648,
+                "output_tokens": 1195,
+                "cost_usd": 0.21537
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 30.7
+              },
+              "fingerprint": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T21:02:17Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 44.5,
+            "estimate": {
+              "input_tokens": 1874,
+              "input_cost_usd": 0.004686
+            },
+            "measured": {
+              "input_tokens": 26583,
+              "cache_read_input_tokens": 207104,
+              "output_tokens": 3726,
+              "cost_usd": 0.640108
+            }
+          },
+          "results": [
+            {
+              "id": "hypothesis-property",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 941,
+                "input_cost_usd": 0.002353
+              },
+              "measured": {
+                "input_tokens": 10000,
+                "cache_read_input_tokens": 105088,
+                "output_tokens": 1813,
+                "cost_usd": 0.314915
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 43.9
+              }
+            },
+            {
+              "id": "parametrize",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 933,
+                "input_cost_usd": 0.002333
+              },
+              "measured": {
+                "input_tokens": 16583,
+                "cache_read_input_tokens": 102016,
+                "output_tokens": 1913,
+                "cost_usd": 0.325193
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 45
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:41:33Z",
+        "executed": true,
+        "content_hash": "06670a6ed40e1da7d905f171139d834996c5c4c127c2318d6a8b564074240975",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 25,
+            "estimate": {
+              "input_tokens": 965,
+              "input_cost_usd": 0.004825
+            },
+            "spec_hash": "9a91da71d4227d149b12aa0078af9d7f2b1a652af40a1986eabcaa2a45387c1c"
+          },
+          {
+            "query": "Parametrize these test cases",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 52.5,
+            "estimate": {
+              "input_tokens": 964,
+              "input_cost_usd": 0.00482
+            },
+            "spec_hash": "d6ea4b2d1fc313c03977b0e14691a9e6586ecf712676e7d90139db5bfb9c311c"
+          },
+          {
+            "query": "Add a property-based test with Hypothesis",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 61.6,
+            "estimate": {
+              "input_tokens": 903,
+              "input_cost_usd": 0.004515
+            }
+          },
+          {
+            "query": "Test that this function raises ValueError",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 86.6,
+            "estimate": {
+              "input_tokens": 902,
+              "input_cost_usd": 0.00451
+            }
+          },
+          {
+            "query": "Set up fixtures for my pytest suite",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 60.6,
+            "estimate": {
+              "input_tokens": 902,
+              "input_cost_usd": 0.00451
+            }
+          },
+          {
+            "query": "Should I use a fake or a mock here?",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 969,
+              "input_cost_usd": 0.004845
+            },
+            "spec_hash": "ee9baa8ac19745ec64c9e3ff75aaaa094e2a378112acbf34aa8a9ac0739b1609"
+          },
+          {
+            "query": "Add a fuzz test for my Python parser",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 57.9,
+            "estimate": {
+              "input_tokens": 903,
+              "input_cost_usd": 0.004515
+            }
+          },
+          {
+            "query": "Review my Python tests",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 65.8,
+            "estimate": {
+              "input_tokens": 899,
+              "input_cost_usd": 0.004495
+            }
+          },
+          {
+            "query": "How do I run a single pytest test?",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.2,
+            "estimate": {
+              "input_tokens": 968,
+              "input_cost_usd": 0.00484
+            },
+            "spec_hash": "7fd08c26f186a79224b33d46371a4cb2368ab9724cd1e99d0ffef93d3d909ff7"
+          },
+          {
+            "query": "Write unit tests for this Python function",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "estimate": {
+              "input_tokens": 966,
+              "input_cost_usd": 0.00483
+            },
+            "spec_hash": "e453b7ed52408c72000f3f278dec2d5e26ea35fb217e230bb7bb10d59fa3f219"
+          },
+          {
+            "query": "Write a Go fuzz test for this parser",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 903,
+              "input_cost_usd": 0.004515
+            }
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 42.9,
+            "estimate": {
+              "input_tokens": 901,
+              "input_cost_usd": 0.004505
+            }
+          },
+          {
+            "query": "Write Jest tests for this React component",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 902,
+              "input_cost_usd": 0.00451
+            }
+          },
+          {
+            "query": "Set up ruff for my project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 74.3,
+            "estimate": {
+              "input_tokens": 902,
+              "input_cost_usd": 0.00451
+            }
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 87.7,
+            "estimate": {
+              "input_tokens": 903,
+              "input_cost_usd": 0.004515
+            }
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 1,
+          "total": 15,
+          "pass_rate": 0.933333,
+          "avg_run_seconds": 58.6,
+          "estimate": {
+            "input_tokens": 13852,
+            "input_cost_usd": 0.06926
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-20T13:42:09Z",
+          "summary": {
+            "passed": 10,
+            "failed": 5,
+            "total": 15,
+            "pass_rate": 0.666667,
+            "avg_run_seconds": 68.6,
+            "estimate": {
+              "input_tokens": 13532,
+              "input_cost_usd": 0.06766
+            }
+          },
+          "results": [
+            {
+              "query": "Add a fuzz test for my Python parser",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 57.9,
+              "estimate": {
+                "input_tokens": 903,
+                "input_cost_usd": 0.004515
+              }
+            },
+            {
+              "query": "Add a property-based test with Hypothesis",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 61.6,
+              "estimate": {
+                "input_tokens": 903,
+                "input_cost_usd": 0.004515
+              }
+            },
+            {
+              "query": "Add type hints to this function",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 42.9,
+              "estimate": {
+                "input_tokens": 901,
+                "input_cost_usd": 0.004505
+              }
+            },
+            {
+              "query": "How do I run a single pytest test?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.6,
+              "estimate": {
+                "input_tokens": 904,
+                "input_cost_usd": 0.00452
+              }
+            },
+            {
+              "query": "Parametrize these test cases",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 89.6,
+              "estimate": {
+                "input_tokens": 900,
+                "input_cost_usd": 0.0045
+              }
+            },
+            {
+              "query": "Review my Python tests",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 65.8,
+              "estimate": {
+                "input_tokens": 899,
+                "input_cost_usd": 0.004495
+              }
+            },
+            {
+              "query": "Scaffold a new Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 87.7,
+              "estimate": {
+                "input_tokens": 903,
+                "input_cost_usd": 0.004515
+              }
+            },
+            {
+              "query": "Set up fixtures for my pytest suite",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 60.6,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.00451
+              }
+            },
+            {
+              "query": "Set up ruff for my project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 74.3,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.00451
+              }
+            },
+            {
+              "query": "Should I use a fake or a mock here?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.1,
+              "estimate": {
+                "input_tokens": 905,
+                "input_cost_usd": 0.004525
+              }
+            },
+            {
+              "query": "Test that this function raises ValueError",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 86.6,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.00451
+              }
+            },
+            {
+              "query": "Write Jest tests for this React component",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 120,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.00451
+              }
+            },
+            {
+              "query": "Write a Go fuzz test for this parser",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 120,
+              "estimate": {
+                "input_tokens": 903,
+                "input_cost_usd": 0.004515
+              }
+            },
+            {
+              "query": "Write pytest tests for this module",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 102.6,
+              "estimate": {
+                "input_tokens": 901,
+                "input_cost_usd": 0.004505
+              }
+            },
+            {
+              "query": "Write unit tests for this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 44.5,
+              "estimate": {
+                "input_tokens": 902,
+                "input_cost_usd": 0.00451
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:25:51Z",
+        "executed": true,
+        "content_hash": "47cd454ff56ce4ac8e9bd9761b888ad3d59cb1e2fac68b6806c80b71cbda9602",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "parametrize",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 997,
+              "input_cost_usd": 0.004985
+            },
+            "measured": {
+              "input_tokens": 11966,
+              "cache_read_input_tokens": 144384,
+              "output_tokens": 1929,
+              "cost_usd": 0.83962
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "tests/test_kv.py",
+                "text": "file tests/test_kv.py exists",
+                "passed": true,
+                "evidence": "tests/test_kv.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "pytest\\.mark\\.parametrize",
+                "text": "tests/test_kv.py matches /pytest\\.mark\\.parametrize/",
+                "passed": true,
+                "evidence": "pytest.mark.parametrize",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "def test_",
+                "text": "tests/test_kv.py matches /def test_/",
+                "passed": true,
+                "evidence": "def test_",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv.py",
+                "pattern": "pytest\\.raises",
+                "text": "tests/test_kv.py matches /pytest\\.raises/",
+                "passed": true,
+                "evidence": "pytest.raises",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "tests/test_kv.py",
+                "pattern": "unittest|TestCase",
+                "text": "tests/test_kv.py does not match /unittest|TestCase/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile tests/test_kv.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile tests/test_kv.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 158279,
+              "executor_duration_seconds": 96.1
+            },
+            "spec_hash": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+          },
+          {
+            "id": "hypothesis-property",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1005,
+              "input_cost_usd": 0.005025
+            },
+            "measured": {
+              "input_tokens": 10788,
+              "cache_read_input_tokens": 118912,
+              "output_tokens": 1656,
+              "cost_usd": 0.69818
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "tests/test_kv_props.py",
+                "text": "file tests/test_kv_props.py exists",
+                "passed": true,
+                "evidence": "tests/test_kv_props.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "from hypothesis",
+                "text": "tests/test_kv_props.py matches /from hypothesis/",
+                "passed": true,
+                "evidence": "from hypothesis",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "@given",
+                "text": "tests/test_kv_props.py matches /@given/",
+                "passed": true,
+                "evidence": "@given",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "strategies|st\\.",
+                "text": "tests/test_kv_props.py matches /strategies|st\\./",
+                "passed": true,
+                "evidence": "strategies",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile tests/test_kv_props.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile tests/test_kv_props.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 131356,
+              "executor_duration_seconds": 53.7
+            },
+            "spec_hash": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 74.9,
+          "estimate": {
+            "input_tokens": 2002,
+            "input_cost_usd": 0.01001
+          },
+          "measured": {
+            "input_tokens": 22754,
+            "cache_read_input_tokens": 263296,
+            "output_tokens": 3585,
+            "cost_usd": 1.5378
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:25:51Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 48.3,
+            "measured": {
+              "input_tokens": 31196,
+              "cache_read_input_tokens": 219904,
+              "output_tokens": 3778,
+              "cost_usd": 1.36884
+            }
+          },
+          "results": [
+            {
+              "id": "hypothesis-property",
+              "passed": true,
+              "measured": {
+                "input_tokens": 26377,
+                "cache_read_input_tokens": 100480,
+                "output_tokens": 1906,
+                "cost_usd": 0.691465
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 48.9
+              },
+              "fingerprint": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+            },
+            {
+              "id": "parametrize",
+              "passed": true,
+              "measured": {
+                "input_tokens": 4819,
+                "cache_read_input_tokens": 119424,
+                "output_tokens": 1872,
+                "cost_usd": 0.677375
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 47.8
+              },
+              "fingerprint": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T21:03:11Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 49.8,
+            "estimate": {
+              "input_tokens": 1874,
+              "input_cost_usd": 0.00937
+            },
+            "measured": {
+              "input_tokens": 48296,
+              "cache_read_input_tokens": 253952,
+              "output_tokens": 4159,
+              "cost_usd": 1.63601
+            }
+          },
+          "results": [
+            {
+              "id": "hypothesis-property",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 941,
+                "input_cost_usd": 0.004705
+              },
+              "measured": {
+                "input_tokens": 27837,
+                "cache_read_input_tokens": 102528,
+                "output_tokens": 1918,
+                "cost_usd": 0.709365
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 45.6
+              }
+            },
+            {
+              "id": "parametrize",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 933,
+                "input_cost_usd": 0.004665
+              },
+              "measured": {
+                "input_tokens": 20459,
+                "cache_read_input_tokens": 151424,
+                "output_tokens": 2241,
+                "cost_usd": 0.926645
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 53.9
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

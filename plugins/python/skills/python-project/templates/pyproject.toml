@@ -1,0 +1,50 @@
+# Project metadata, dependencies, and tool config for a uv-managed package.
+# Replace `myapp` throughout. `uv sync` installs everything; `make pr` gates it.
+
+[project]
+name = "myapp"
+version = "0.1.0"
+description = "One line on what this tool does."
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+dependencies = []
+
+[project.scripts]
+myapp = "myapp.__main__:main"
+
+# Developer-only tools (PEP 735). Installed by `uv sync`, never shipped in the
+# wheel. Add with `uv add --dev <tool>`. ty is pre-1.0 — expect churn.
+[dependency-groups]
+dev = ["hypothesis>=6.100", "pytest>=8.3", "ruff>=0.14", "ty>=0.0.1"]
+
+# uv's native build backend — fast and zero-config for the src/ layout. The
+# upper bound keeps builds reproducible as the backend evolves.
+[build-system]
+requires = ["uv_build>=0.11.21,<0.12"]
+build-backend = "uv_build"
+
+# Test discovery. Rationale: python-testing skill.
+[tool.pytest.ini_options]
+addopts = "--strict-markers --strict-config"
+testpaths = ["tests"]
+
+# Formatting + linting. Rationale and the full select set: python-style skill.
+[tool.ruff]
+target-version = "py313"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "C4", "PTH", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+# Type checking. Rationale: python-typing skill.
+[tool.ty.environment]
+python-version = "3.13"
+root = ["./src"]

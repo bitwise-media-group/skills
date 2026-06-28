@@ -1,0 +1,40 @@
+# Continuous integration — save as .github/workflows/ci.yaml. Format-checks,
+# lints, type-checks, and tests on every push and pull request. uv provisions
+# the interpreter from .python-version; tool versions come from uv.lock.
+#
+# Every action is pinned to a full commit SHA (tag in the comment) so a moved
+# tag can never change what runs; Dependabot keeps the pins fresh.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+
+      - uses: astral-sh/setup-uv@fac544c07dec837d0ccb6301d7b5580bf5edae39 # v8.2.0
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync --locked
+
+      - name: Format
+        run: uv run ruff format --check .
+
+      - name: Lint
+        run: uv run ruff check .
+
+      - name: Type-check
+        run: uv run ty check
+
+      - name: Test
+        run: uv run pytest -q

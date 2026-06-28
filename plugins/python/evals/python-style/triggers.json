@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "python-style",
+  "triggers": [
+    { "query": "Refactor this Python code to our house style", "should_trigger": true },
+    { "query": "Set up ruff for formatting and linting", "should_trigger": true },
+    { "query": "Which ruff lint rules should I enable?", "should_trigger": true },
+    { "query": "Replace black and isort with ruff", "should_trigger": true },
+    { "query": "Convert these print statements to logging in my Python module", "should_trigger": true },
+    { "query": "Review this Python file for idiomatic style", "should_trigger": true },
+    { "query": "Should I use pathlib or os.path here?", "should_trigger": true },
+    { "query": "Fix the exception handling in this Python function", "should_trigger": true },
+    { "query": "Format my Python code", "should_trigger": true },
+    { "query": "Configure ruff in pyproject.toml", "should_trigger": true },
+    { "query": "Add type annotations to this Python function", "should_trigger": false },
+    { "query": "Write tests for this Python module", "should_trigger": false },
+    { "query": "Set up a new Python project with uv", "should_trigger": false },
+    { "query": "Refactor this Go code to wrap errors with %w", "should_trigger": false },
+    { "query": "Add docstrings to my Python functions", "should_trigger": false },
+    { "query": "Lint my JavaScript with ESLint", "should_trigger": false }
+  ]
+}

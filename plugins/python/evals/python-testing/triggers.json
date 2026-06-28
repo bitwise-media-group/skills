@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "python-testing",
+  "triggers": [
+    { "query": "Write pytest tests for this module", "should_trigger": true },
+    { "query": "Parametrize these test cases", "should_trigger": true },
+    { "query": "Add a property-based test with Hypothesis", "should_trigger": true },
+    { "query": "Test that this function raises ValueError", "should_trigger": true },
+    { "query": "Set up fixtures for my pytest suite", "should_trigger": true },
+    { "query": "Should I use a fake or a mock here?", "should_trigger": true },
+    { "query": "Add a fuzz test for my Python parser", "should_trigger": true },
+    { "query": "Review my Python tests", "should_trigger": true },
+    { "query": "How do I run a single pytest test?", "should_trigger": true },
+    { "query": "Write unit tests for this Python function", "should_trigger": true },
+    { "query": "Write a Go fuzz test for this parser", "should_trigger": false },
+    { "query": "Add type hints to this function", "should_trigger": false },
+    { "query": "Write Jest tests for this React component", "should_trigger": false },
+    { "query": "Set up ruff for my project", "should_trigger": false },
+    { "query": "Scaffold a new Python project with uv", "should_trigger": false }
+  ]
+}

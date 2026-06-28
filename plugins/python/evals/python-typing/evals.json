@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "python-typing",
+  "evals": [
+    {
+      "id": "annotate-and-configure",
+      "prompt": "Add type annotations to the functions in src/myapp/calc.py and configure ty in pyproject.toml (Python 3.13, with the src directory as the root) following our typing conventions.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(ty *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["fixtures/typedemo/pyproject.toml", "files/src/myapp/calc.py"],
+      "assertions": [
+        { "type": "regex", "path": "src/myapp/calc.py", "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:" },
+        { "type": "regex", "path": "src/myapp/calc.py", "pattern": "-> " },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "\\[tool\\.ty\\.environment\\]" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "python-version" },
+        { "type": "command", "run": "python3 -m py_compile src/myapp/calc.py", "requires": "python3" }
+      ]
+    },
+    {
+      "id": "configure-pyright",
+      "prompt": "Add type annotations to the functions in src/myapp/calc.py and configure pyright in pyproject.toml (Python 3.13, checking the src directory) following our typing conventions.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(uvx *) Bash(pyright *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["fixtures/typedemo/pyproject.toml", "files/src/myapp/calc.py"],
+      "assertions": [
+        { "type": "regex", "path": "src/myapp/calc.py", "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:" },
+        { "type": "regex", "path": "src/myapp/calc.py", "pattern": "-> " },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "\\[tool\\.pyright\\]" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "pythonVersion" },
+        { "type": "command", "run": "python3 -m py_compile src/myapp/calc.py", "requires": "python3" }
+      ]
+    },
+    {
+      "id": "modernize-hints",
+      "prompt": "Modernize the type hints in src/myapp/legacy.py to current Python syntax.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(ty *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["files/src/myapp/legacy.py"],
+      "assertions": [
+        { "type": "not_regex", "path": "src/myapp/legacy.py", "pattern": "Optional\\[" },
+        { "type": "not_regex", "path": "src/myapp/legacy.py", "pattern": "Union\\[" },
+        { "type": "not_regex", "path": "src/myapp/legacy.py", "pattern": "List\\[" },
+        { "type": "not_regex", "path": "src/myapp/legacy.py", "pattern": "Dict\\[" },
+        { "type": "regex", "path": "src/myapp/legacy.py", "pattern": "\\| None" },
+        { "type": "regex", "path": "src/myapp/legacy.py", "pattern": "list\\[|dict\\[" },
+        { "type": "command", "run": "python3 -m py_compile src/myapp/legacy.py", "requires": "python3" }
+      ]
+    }
+  ]
+}

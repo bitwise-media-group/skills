@@ -1,0 +1,4128 @@
+{
+  "schema": 5,
+  "plugin": "python",
+  "skill": "python-docs",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:02:33Z",
+        "executed": true,
+        "content_hash": "0b43bda3b8c964a44de9f68998feddabe3663d48f67bb5fd8bf09d7042f9c6e7",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "estimate": {
+              "input_tokens": 960,
+              "input_cost_usd": 0.00096
+            },
+            "spec_hash": "84226802e26dfe7f2e3d527ba4440086cd8b89ebc71c0732ab90546fa8b3d2ea"
+          },
+          {
+            "query": "What docstring style should I use for Python?",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8,
+            "estimate": {
+              "input_tokens": 962,
+              "input_cost_usd": 0.000962
+            },
+            "spec_hash": "547f70df370dfd044b5805627b6d0da35ae80429d29f4e5ca61f09c4406518c4"
+          },
+          {
+            "query": "Configure ruff's pydocstyle D rules",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.8,
+            "estimate": {
+              "input_tokens": 963,
+              "input_cost_usd": 0.000963
+            },
+            "spec_hash": "c97f9e87025a03d21969128d7eeeda4d0e96163785073399814d2e6983cab57d"
+          },
+          {
+            "query": "Document the public API of this Python module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.7,
+            "estimate": {
+              "input_tokens": 960,
+              "input_cost_usd": 0.00096
+            },
+            "spec_hash": "833c2e59344590789a628e138fd17ecb85374d7a9dbc16bccc6bfc48a417d190"
+          },
+          {
+            "query": "Generate CLI documentation for my Typer app",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 961,
+              "input_cost_usd": 0.000961
+            },
+            "spec_hash": "aaa9d043c8901f9342d7aac9de84fb88412a1f4942969b9e34fe91237287f57a"
+          },
+          {
+            "query": "Add a module docstring to this file",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "estimate": {
+              "input_tokens": 960,
+              "input_cost_usd": 0.00096
+            },
+            "spec_hash": "34e97d539c740621b6b8c16ea30447518e50d0a375e92d8ee9d14abb5a2a966c"
+          },
+          {
+            "query": "Make my Click CLI's docs readable by LLMs",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "estimate": {
+              "input_tokens": 963,
+              "input_cost_usd": 0.000963
+            },
+            "spec_hash": "e616c35c2d3168e1c615b8914b9ab98c2974de421c51dbf6a3841f40207182de"
+          },
+          {
+            "query": "Enforce Google-style docstrings in my project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6,
+            "estimate": {
+              "input_tokens": 963,
+              "input_cost_usd": 0.000963
+            },
+            "spec_hash": "b75dba11e3ca5cdaa08c12055437abe0bdc9eeacf9144670fa90a7eeed256f33"
+          },
+          {
+            "query": "Write a docstring for this function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.2,
+            "estimate": {
+              "input_tokens": 959,
+              "input_cost_usd": 0.000959
+            },
+            "spec_hash": "3d5359d2982eca1a2165d347f8d443cf0b15a0b05894dbdc690cf57143881aac"
+          },
+          {
+            "query": "Review this module for missing docstrings",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.2,
+            "estimate": {
+              "input_tokens": 960,
+              "input_cost_usd": 0.00096
+            },
+            "spec_hash": "ed846570418c5d8cf33e85538e6fcdede9fa78e9bef48d6a1b00b6f663da457f"
+          },
+          {
+            "query": "Write a README for my Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.3,
+            "estimate": {
+              "input_tokens": 959,
+              "input_cost_usd": 0.000959
+            },
+            "spec_hash": "9dd553c9713eba8e2dacae689c387288953990f45bbaf6d50e0bf0f49ee9893a"
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.4,
+            "estimate": {
+              "input_tokens": 958,
+              "input_cost_usd": 0.000958
+            },
+            "spec_hash": "23e1969a8cff13239de5e1d53d707dfd3286cce2847c1fae8e5affe145283790"
+          },
+          {
+            "query": "Write tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "estimate": {
+              "input_tokens": 957,
+              "input_cost_usd": 0.000957
+            },
+            "spec_hash": "77aeaf3d2c97769baa5f4a94c56ff7989861a9e4df5cbdfdbb9df4a57fc2ec9e"
+          },
+          {
+            "query": "Generate markdown docs for my cobra CLI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.2,
+            "estimate": {
+              "input_tokens": 959,
+              "input_cost_usd": 0.000959
+            },
+            "spec_hash": "f439512ef25b335b6ad8d8b07904b7904cf63b22a60ada8094707276117b8254"
+          },
+          {
+            "query": "Add inline comments explaining this algorithm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "estimate": {
+              "input_tokens": 958,
+              "input_cost_usd": 0.000958
+            },
+            "spec_hash": "f94b2b3dd1ca2cf377c8e434b0dfce113ca887e0c3bf4dc9a0c81cef5e9ca221"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 5,
+          "total": 15,
+          "pass_rate": 0.666667,
+          "avg_run_seconds": 6,
+          "estimate": {
+            "input_tokens": 14402,
+            "input_cost_usd": 0.014402
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:51:46Z",
+          "summary": {
+            "passed": 10,
+            "failed": 5,
+            "total": 15,
+            "pass_rate": 0.666667,
+            "avg_run_seconds": 6.1,
+            "estimate": {
+              "input_tokens": 14402,
+              "input_cost_usd": 0.014402
+            }
+          },
+          "results": [
+            {
+              "query": "Add a module docstring to this file",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.3,
+              "estimate": {
+                "input_tokens": 960,
+                "input_cost_usd": 0.00096
+              }
+            },
+            {
+              "query": "Add docstrings to my Python functions",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.7,
+              "estimate": {
+                "input_tokens": 960,
+                "input_cost_usd": 0.00096
+              }
+            },
+            {
+              "query": "Add inline comments explaining this algorithm",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.8,
+              "estimate": {
+                "input_tokens": 958,
+                "input_cost_usd": 0.000958
+              }
+            },
+            {
+              "query": "Add type hints to this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.4,
+              "estimate": {
+                "input_tokens": 958,
+                "input_cost_usd": 0.000958
+              }
+            },
+            {
+              "query": "Configure ruff's pydocstyle D rules",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.8,
+              "estimate": {
+                "input_tokens": 963,
+                "input_cost_usd": 0.000963
+              }
+            },
+            {
+              "query": "Document the public API of this Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.3,
+              "estimate": {
+                "input_tokens": 960,
+                "input_cost_usd": 0.00096
+              }
+            },
+            {
+              "query": "Enforce Google-style docstrings in my project",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6,
+              "estimate": {
+                "input_tokens": 963,
+                "input_cost_usd": 0.000963
+              }
+            },
+            {
+              "query": "Generate CLI documentation for my Typer app",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.6,
+              "estimate": {
+                "input_tokens": 961,
+                "input_cost_usd": 0.000961
+              }
+            },
+            {
+              "query": "Generate markdown docs for my cobra CLI",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.2,
+              "estimate": {
+                "input_tokens": 959,
+                "input_cost_usd": 0.000959
+              }
+            },
+            {
+              "query": "Make my Click CLI's docs readable by LLMs",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.7,
+              "estimate": {
+                "input_tokens": 963,
+                "input_cost_usd": 0.000963
+              }
+            },
+            {
+              "query": "Review this module for missing docstrings",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.2,
+              "estimate": {
+                "input_tokens": 960,
+                "input_cost_usd": 0.00096
+              }
+            },
+            {
+              "query": "What docstring style should I use for Python?",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8,
+              "estimate": {
+                "input_tokens": 962,
+                "input_cost_usd": 0.000962
+              }
+            },
+            {
+              "query": "Write a README for my Python project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.3,
+              "estimate": {
+                "input_tokens": 959,
+                "input_cost_usd": 0.000959
+              }
+            },
+            {
+              "query": "Write a docstring for this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.6,
+              "estimate": {
+                "input_tokens": 959,
+                "input_cost_usd": 0.000959
+              }
+            },
+            {
+              "query": "Write tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.3,
+              "estimate": {
+                "input_tokens": 957,
+                "input_cost_usd": 0.000957
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:03:10Z",
+        "executed": true,
+        "content_hash": "7c549643b4f1faf4242f6be7fd2eab0c0790017ae19bef7f3190bcdc78e76422",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "google-docstrings",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1003,
+              "input_cost_usd": 0.001003
+            },
+            "measured": {
+              "input_tokens": 33,
+              "cache_read_input_tokens": 83923,
+              "cache_creation_input_tokens": 19095,
+              "output_tokens": 1648,
+              "cost_usd": 0.055511
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "\"\"\"",
+                "text": "src/myapp/kv.py matches /\"\"\"/",
+                "passed": true,
+                "evidence": "\"\"\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "Args:",
+                "text": "src/myapp/kv.py matches /Args:/",
+                "passed": true,
+                "evidence": "Args:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "Returns:",
+                "text": "src/myapp/kv.py matches /Returns:/",
+                "passed": true,
+                "evidence": "Returns:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "convention = \"google\"",
+                "text": "pyproject.toml matches /convention = \"google\"/",
+                "passed": true,
+                "evidence": "convention = \"google\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"D\"",
+                "text": "pyproject.toml matches /\"D\"/",
+                "passed": true,
+                "evidence": "\"D\"",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/kv.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/kv.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 104699,
+              "executor_duration_seconds": 28
+            },
+            "spec_hash": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+          },
+          {
+            "id": "cli-docgen",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 1006,
+              "input_cost_usd": 0.001006
+            },
+            "measured": {
+              "input_tokens": 64,
+              "cache_read_input_tokens": 331708,
+              "cache_creation_input_tokens": 21181,
+              "output_tokens": 3431,
+              "cost_usd": 0.093386
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "src/myapp/tools/docgen.py",
+                "text": "file src/myapp/tools/docgen.py exists",
+                "passed": true,
+                "evidence": "src/myapp/tools/docgen.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/tools/docgen.py",
+                "pattern": "click",
+                "text": "src/myapp/tools/docgen.py matches /click/",
+                "passed": true,
+                "evidence": "click",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/tools/docgen.py",
+                "pattern": "get_help|format_help|get_short_help|CliRunner",
+                "text": "src/myapp/tools/docgen.py matches /get_help|format_help|get_short_help|CliRunner/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "docgen",
+                "text": "Makefile matches /docgen/",
+                "passed": true,
+                "evidence": "docgen",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run|python3? -m",
+                "text": "Makefile matches /uv run|python3? -m/",
+                "passed": true,
+                "evidence": "uv run",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 1,
+              "total": 5,
+              "pass_rate": 0.8
+            },
+            "timing": {
+              "total_tokens": 356384,
+              "executor_duration_seconds": 37.2
+            },
+            "spec_hash": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 32.6,
+          "estimate": {
+            "input_tokens": 2009,
+            "input_cost_usd": 0.002009
+          },
+          "measured": {
+            "input_tokens": 97,
+            "cache_read_input_tokens": 415631,
+            "cache_creation_input_tokens": 40276,
+            "output_tokens": 5079,
+            "cost_usd": 0.148897
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:35:58Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 25.6,
+            "measured": {
+              "input_tokens": 104,
+              "cache_read_input_tokens": 426645,
+              "cache_creation_input_tokens": 35455,
+              "output_tokens": 4715,
+              "cost_usd": 0.138553
+            }
+          },
+          "results": [
+            {
+              "id": "cli-docgen",
+              "passed": false,
+              "measured": {
+                "input_tokens": 62,
+                "cache_read_input_tokens": 265953,
+                "cache_creation_input_tokens": 18640,
+                "output_tokens": 3228,
+                "cost_usd": 0.080721
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.8
+              },
+              "timing": {
+                "executor_duration_seconds": 32.6
+              },
+              "fingerprint": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+            },
+            {
+              "id": "google-docstrings",
+              "passed": true,
+              "measured": {
+                "input_tokens": 42,
+                "cache_read_input_tokens": 160692,
+                "cache_creation_input_tokens": 16815,
+                "output_tokens": 1487,
+                "cost_usd": 0.057832
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 18.5
+              },
+              "fingerprint": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:52:31Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 36.3,
+            "estimate": {
+              "input_tokens": 2009,
+              "input_cost_usd": 0.002009
+            },
+            "measured": {
+              "input_tokens": 104,
+              "cache_read_input_tokens": 397545,
+              "cache_creation_input_tokens": 48971,
+              "output_tokens": 5233,
+              "cost_usd": 0.16528
+            }
+          },
+          "results": [
+            {
+              "id": "cli-docgen",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1006,
+                "input_cost_usd": 0.001006
+              },
+              "measured": {
+                "input_tokens": 71,
+                "cache_read_input_tokens": 313622,
+                "cache_creation_input_tokens": 29876,
+                "output_tokens": 3585,
+                "cost_usd": 0.109769
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 0.8
+              },
+              "timing": {
+                "executor_duration_seconds": 44.6
+              }
+            },
+            {
+              "id": "google-docstrings",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1003,
+                "input_cost_usd": 0.001003
+              },
+              "measured": {
+                "input_tokens": 33,
+                "cache_read_input_tokens": 83923,
+                "cache_creation_input_tokens": 19095,
+                "output_tokens": 1648,
+                "cost_usd": 0.055511
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 28
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:04:29Z",
+        "executed": true,
+        "content_hash": "0b43bda3b8c964a44de9f68998feddabe3663d48f67bb5fd8bf09d7042f9c6e7",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 1247,
+              "input_cost_usd": 0.006235
+            },
+            "spec_hash": "84226802e26dfe7f2e3d527ba4440086cd8b89ebc71c0732ab90546fa8b3d2ea"
+          },
+          {
+            "query": "What docstring style should I use for Python?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.8,
+            "estimate": {
+              "input_tokens": 1247,
+              "input_cost_usd": 0.006235
+            },
+            "spec_hash": "547f70df370dfd044b5805627b6d0da35ae80429d29f4e5ca61f09c4406518c4"
+          },
+          {
+            "query": "Configure ruff's pydocstyle D rules",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.4,
+            "estimate": {
+              "input_tokens": 1251,
+              "input_cost_usd": 0.006255
+            },
+            "spec_hash": "c97f9e87025a03d21969128d7eeeda4d0e96163785073399814d2e6983cab57d"
+          },
+          {
+            "query": "Document the public API of this Python module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.2,
+            "estimate": {
+              "input_tokens": 1245,
+              "input_cost_usd": 0.006225
+            },
+            "spec_hash": "833c2e59344590789a628e138fd17ecb85374d7a9dbc16bccc6bfc48a417d190"
+          },
+          {
+            "query": "Generate CLI documentation for my Typer app",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "estimate": {
+              "input_tokens": 1250,
+              "input_cost_usd": 0.00625
+            },
+            "spec_hash": "aaa9d043c8901f9342d7aac9de84fb88412a1f4942969b9e34fe91237287f57a"
+          },
+          {
+            "query": "Add a module docstring to this file",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.3,
+            "estimate": {
+              "input_tokens": 1245,
+              "input_cost_usd": 0.006225
+            },
+            "spec_hash": "34e97d539c740621b6b8c16ea30447518e50d0a375e92d8ee9d14abb5a2a966c"
+          },
+          {
+            "query": "Make my Click CLI's docs readable by LLMs",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "estimate": {
+              "input_tokens": 1253,
+              "input_cost_usd": 0.006265
+            },
+            "spec_hash": "e616c35c2d3168e1c615b8914b9ab98c2974de421c51dbf6a3841f40207182de"
+          },
+          {
+            "query": "Enforce Google-style docstrings in my project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "estimate": {
+              "input_tokens": 1250,
+              "input_cost_usd": 0.00625
+            },
+            "spec_hash": "b75dba11e3ca5cdaa08c12055437abe0bdc9eeacf9144670fa90a7eeed256f33"
+          },
+          {
+            "query": "Write a docstring for this function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.9,
+            "estimate": {
+              "input_tokens": 1244,
+              "input_cost_usd": 0.00622
+            },
+            "spec_hash": "3d5359d2982eca1a2165d347f8d443cf0b15a0b05894dbdc690cf57143881aac"
+          },
+          {
+            "query": "Review this module for missing docstrings",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.9,
+            "estimate": {
+              "input_tokens": 1246,
+              "input_cost_usd": 0.00623
+            },
+            "spec_hash": "ed846570418c5d8cf33e85538e6fcdede9fa78e9bef48d6a1b00b6f663da457f"
+          },
+          {
+            "query": "Write a README for my Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.9,
+            "estimate": {
+              "input_tokens": 1244,
+              "input_cost_usd": 0.00622
+            },
+            "spec_hash": "9dd553c9713eba8e2dacae689c387288953990f45bbaf6d50e0bf0f49ee9893a"
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 34.3,
+            "estimate": {
+              "input_tokens": 1243,
+              "input_cost_usd": 0.006215
+            },
+            "spec_hash": "23e1969a8cff13239de5e1d53d707dfd3286cce2847c1fae8e5affe145283790"
+          },
+          {
+            "query": "Write tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.3,
+            "estimate": {
+              "input_tokens": 1242,
+              "input_cost_usd": 0.00621
+            },
+            "spec_hash": "77aeaf3d2c97769baa5f4a94c56ff7989861a9e4df5cbdfdbb9df4a57fc2ec9e"
+          },
+          {
+            "query": "Generate markdown docs for my cobra CLI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.6,
+            "estimate": {
+              "input_tokens": 1251,
+              "input_cost_usd": 0.006255
+            },
+            "spec_hash": "f439512ef25b335b6ad8d8b07904b7904cf63b22a60ada8094707276117b8254"
+          },
+          {
+            "query": "Add inline comments explaining this algorithm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 1249,
+              "input_cost_usd": 0.006245
+            },
+            "spec_hash": "f94b2b3dd1ca2cf377c8e434b0dfce113ca887e0c3bf4dc9a0c81cef5e9ca221"
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 4,
+          "total": 15,
+          "pass_rate": 0.733333,
+          "avg_run_seconds": 11.4,
+          "estimate": {
+            "input_tokens": 18707,
+            "input_cost_usd": 0.093535
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:53:47Z",
+          "summary": {
+            "passed": 11,
+            "failed": 4,
+            "total": 15,
+            "pass_rate": 0.733333,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 18707,
+              "input_cost_usd": 0.093535
+            }
+          },
+          "results": [
+            {
+              "query": "Add a module docstring to this file",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.5,
+              "estimate": {
+                "input_tokens": 1245,
+                "input_cost_usd": 0.006225
+              }
+            },
+            {
+              "query": "Add docstrings to my Python functions",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.4,
+              "estimate": {
+                "input_tokens": 1247,
+                "input_cost_usd": 0.006235
+              }
+            },
+            {
+              "query": "Add inline comments explaining this algorithm",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.2,
+              "estimate": {
+                "input_tokens": 1249,
+                "input_cost_usd": 0.006245
+              }
+            },
+            {
+              "query": "Add type hints to this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 34.3,
+              "estimate": {
+                "input_tokens": 1243,
+                "input_cost_usd": 0.006215
+              }
+            },
+            {
+              "query": "Configure ruff's pydocstyle D rules",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.4,
+              "estimate": {
+                "input_tokens": 1251,
+                "input_cost_usd": 0.006255
+              }
+            },
+            {
+              "query": "Document the public API of this Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 14.6,
+              "estimate": {
+                "input_tokens": 1245,
+                "input_cost_usd": 0.006225
+              }
+            },
+            {
+              "query": "Enforce Google-style docstrings in my project",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.9,
+              "estimate": {
+                "input_tokens": 1250,
+                "input_cost_usd": 0.00625
+              }
+            },
+            {
+              "query": "Generate CLI documentation for my Typer app",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.8,
+              "estimate": {
+                "input_tokens": 1250,
+                "input_cost_usd": 0.00625
+              }
+            },
+            {
+              "query": "Generate markdown docs for my cobra CLI",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.6,
+              "estimate": {
+                "input_tokens": 1251,
+                "input_cost_usd": 0.006255
+              }
+            },
+            {
+              "query": "Make my Click CLI's docs readable by LLMs",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.6,
+              "estimate": {
+                "input_tokens": 1253,
+                "input_cost_usd": 0.006265
+              }
+            },
+            {
+              "query": "Review this module for missing docstrings",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 13.2,
+              "estimate": {
+                "input_tokens": 1246,
+                "input_cost_usd": 0.00623
+              }
+            },
+            {
+              "query": "What docstring style should I use for Python?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.8,
+              "estimate": {
+                "input_tokens": 1247,
+                "input_cost_usd": 0.006235
+              }
+            },
+            {
+              "query": "Write a README for my Python project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.9,
+              "estimate": {
+                "input_tokens": 1244,
+                "input_cost_usd": 0.00622
+              }
+            },
+            {
+              "query": "Write a docstring for this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 14.4,
+              "estimate": {
+                "input_tokens": 1244,
+                "input_cost_usd": 0.00622
+              }
+            },
+            {
+              "query": "Write tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.3,
+              "estimate": {
+                "input_tokens": 1242,
+                "input_cost_usd": 0.00621
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T16:45:12Z",
+        "executed": true,
+        "content_hash": "7c549643b4f1faf4242f6be7fd2eab0c0790017ae19bef7f3190bcdc78e76422",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "google-docstrings",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1302,
+              "input_cost_usd": 0.00651
+            },
+            "measured": {
+              "input_tokens": 2808,
+              "cache_read_input_tokens": 192580,
+              "cache_creation_input_tokens": 10449,
+              "output_tokens": 3149,
+              "cost_usd": 0.294216
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "\"\"\"",
+                "text": "src/myapp/kv.py matches /\"\"\"/",
+                "passed": true,
+                "evidence": "\"\"\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "Args:",
+                "text": "src/myapp/kv.py matches /Args:/",
+                "passed": true,
+                "evidence": "Args:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "Returns:",
+                "text": "src/myapp/kv.py matches /Returns:/",
+                "passed": true,
+                "evidence": "Returns:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "convention = \"google\"",
+                "text": "pyproject.toml matches /convention = \"google\"/",
+                "passed": true,
+                "evidence": "convention = \"google\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"D\"",
+                "text": "pyproject.toml matches /\"D\"/",
+                "passed": true,
+                "evidence": "\"D\"",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/kv.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/kv.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 208986,
+              "executor_duration_seconds": 55.2
+            },
+            "spec_hash": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+          },
+          {
+            "id": "cli-docgen",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1312,
+              "input_cost_usd": 0.00656
+            },
+            "measured": {
+              "input_tokens": 2810,
+              "cache_read_input_tokens": 238842,
+              "cache_creation_input_tokens": 15616,
+              "output_tokens": 6127,
+              "cost_usd": 0.443465
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "src/myapp/tools/docgen.py",
+                "text": "file src/myapp/tools/docgen.py exists",
+                "passed": true,
+                "evidence": "src/myapp/tools/docgen.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/tools/docgen.py",
+                "pattern": "click",
+                "text": "src/myapp/tools/docgen.py matches /click/",
+                "passed": true,
+                "evidence": "click",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/tools/docgen.py",
+                "pattern": "get_help|format_help|get_short_help|CliRunner",
+                "text": "src/myapp/tools/docgen.py matches /get_help|format_help|get_short_help|CliRunner/",
+                "passed": true,
+                "evidence": "get_short_help",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "docgen",
+                "text": "Makefile matches /docgen/",
+                "passed": true,
+                "evidence": "docgen",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run|python3? -m",
+                "text": "Makefile matches /uv run|python3? -m/",
+                "passed": true,
+                "evidence": "uv run",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 263395,
+              "executor_duration_seconds": 88
+            },
+            "spec_hash": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 71.6,
+          "estimate": {
+            "input_tokens": 2614,
+            "input_cost_usd": 0.01307
+          },
+          "measured": {
+            "input_tokens": 5618,
+            "cache_read_input_tokens": 431422,
+            "cache_creation_input_tokens": 26065,
+            "output_tokens": 9276,
+            "cost_usd": 0.737681
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:45:12Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 120.5,
+            "measured": {
+              "input_tokens": 5270,
+              "cache_read_input_tokens": 504170,
+              "cache_creation_input_tokens": 31240,
+              "output_tokens": 17923,
+              "cost_usd": 1.040205
+            }
+          },
+          "results": [
+            {
+              "id": "cli-docgen",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2635,
+                "cache_read_input_tokens": 265298,
+                "cache_creation_input_tokens": 19806,
+                "output_tokens": 13180,
+                "cost_usd": 0.674028
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.8
+              },
+              "timing": {
+                "executor_duration_seconds": 170.3
+              },
+              "fingerprint": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+            },
+            {
+              "id": "google-docstrings",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2635,
+                "cache_read_input_tokens": 238872,
+                "cache_creation_input_tokens": 11434,
+                "output_tokens": 4743,
+                "cost_usd": 0.366177
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 70.6
+              },
+              "fingerprint": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T02:34:27Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 61.3,
+            "estimate": {
+              "input_tokens": 2614,
+              "input_cost_usd": 0.01307
+            },
+            "measured": {
+              "input_tokens": 5615,
+              "cache_read_input_tokens": 380528,
+              "cache_creation_input_tokens": 24953,
+              "output_tokens": 8012,
+              "cost_usd": 0.669445
+            }
+          },
+          "results": [
+            {
+              "id": "cli-docgen",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1312,
+                "input_cost_usd": 0.00656
+              },
+              "measured": {
+                "input_tokens": 2811,
+                "cache_read_input_tokens": 242057,
+                "cache_creation_input_tokens": 15405,
+                "output_tokens": 5700,
+                "cost_usd": 0.432268
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 88.8
+              }
+            },
+            {
+              "id": "google-docstrings",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1302,
+                "input_cost_usd": 0.00651
+              },
+              "measured": {
+                "input_tokens": 2804,
+                "cache_read_input_tokens": 138471,
+                "cache_creation_input_tokens": 9548,
+                "output_tokens": 2312,
+                "cost_usd": 0.237177
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 33.8
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:03:40Z",
+        "executed": true,
+        "content_hash": "0b43bda3b8c964a44de9f68998feddabe3663d48f67bb5fd8bf09d7042f9c6e7",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.6,
+            "estimate": {
+              "input_tokens": 960,
+              "input_cost_usd": 0.00288
+            },
+            "spec_hash": "84226802e26dfe7f2e3d527ba4440086cd8b89ebc71c0732ab90546fa8b3d2ea"
+          },
+          {
+            "query": "What docstring style should I use for Python?",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "estimate": {
+              "input_tokens": 962,
+              "input_cost_usd": 0.002886
+            },
+            "spec_hash": "547f70df370dfd044b5805627b6d0da35ae80429d29f4e5ca61f09c4406518c4"
+          },
+          {
+            "query": "Configure ruff's pydocstyle D rules",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.5,
+            "estimate": {
+              "input_tokens": 963,
+              "input_cost_usd": 0.002889
+            },
+            "spec_hash": "c97f9e87025a03d21969128d7eeeda4d0e96163785073399814d2e6983cab57d"
+          },
+          {
+            "query": "Document the public API of this Python module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 960,
+              "input_cost_usd": 0.00288
+            },
+            "spec_hash": "833c2e59344590789a628e138fd17ecb85374d7a9dbc16bccc6bfc48a417d190"
+          },
+          {
+            "query": "Generate CLI documentation for my Typer app",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "estimate": {
+              "input_tokens": 961,
+              "input_cost_usd": 0.002883
+            },
+            "spec_hash": "aaa9d043c8901f9342d7aac9de84fb88412a1f4942969b9e34fe91237287f57a"
+          },
+          {
+            "query": "Add a module docstring to this file",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.4,
+            "estimate": {
+              "input_tokens": 960,
+              "input_cost_usd": 0.00288
+            },
+            "spec_hash": "34e97d539c740621b6b8c16ea30447518e50d0a375e92d8ee9d14abb5a2a966c"
+          },
+          {
+            "query": "Make my Click CLI's docs readable by LLMs",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "estimate": {
+              "input_tokens": 963,
+              "input_cost_usd": 0.002889
+            },
+            "spec_hash": "e616c35c2d3168e1c615b8914b9ab98c2974de421c51dbf6a3841f40207182de"
+          },
+          {
+            "query": "Enforce Google-style docstrings in my project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.7,
+            "estimate": {
+              "input_tokens": 963,
+              "input_cost_usd": 0.002889
+            },
+            "spec_hash": "b75dba11e3ca5cdaa08c12055437abe0bdc9eeacf9144670fa90a7eeed256f33"
+          },
+          {
+            "query": "Write a docstring for this function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.6,
+            "estimate": {
+              "input_tokens": 959,
+              "input_cost_usd": 0.002877
+            },
+            "spec_hash": "3d5359d2982eca1a2165d347f8d443cf0b15a0b05894dbdc690cf57143881aac"
+          },
+          {
+            "query": "Review this module for missing docstrings",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.7,
+            "estimate": {
+              "input_tokens": 960,
+              "input_cost_usd": 0.00288
+            },
+            "spec_hash": "ed846570418c5d8cf33e85538e6fcdede9fa78e9bef48d6a1b00b6f663da457f"
+          },
+          {
+            "query": "Write a README for my Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.8,
+            "estimate": {
+              "input_tokens": 959,
+              "input_cost_usd": 0.002877
+            },
+            "spec_hash": "9dd553c9713eba8e2dacae689c387288953990f45bbaf6d50e0bf0f49ee9893a"
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "estimate": {
+              "input_tokens": 958,
+              "input_cost_usd": 0.002874
+            },
+            "spec_hash": "23e1969a8cff13239de5e1d53d707dfd3286cce2847c1fae8e5affe145283790"
+          },
+          {
+            "query": "Write tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.5,
+            "estimate": {
+              "input_tokens": 957,
+              "input_cost_usd": 0.002871
+            },
+            "spec_hash": "77aeaf3d2c97769baa5f4a94c56ff7989861a9e4df5cbdfdbb9df4a57fc2ec9e"
+          },
+          {
+            "query": "Generate markdown docs for my cobra CLI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.4,
+            "estimate": {
+              "input_tokens": 959,
+              "input_cost_usd": 0.002877
+            },
+            "spec_hash": "f439512ef25b335b6ad8d8b07904b7904cf63b22a60ada8094707276117b8254"
+          },
+          {
+            "query": "Add inline comments explaining this algorithm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7,
+            "estimate": {
+              "input_tokens": 958,
+              "input_cost_usd": 0.002874
+            },
+            "spec_hash": "f94b2b3dd1ca2cf377c8e434b0dfce113ca887e0c3bf4dc9a0c81cef5e9ca221"
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 4,
+          "total": 15,
+          "pass_rate": 0.733333,
+          "avg_run_seconds": 7.1,
+          "estimate": {
+            "input_tokens": 14402,
+            "input_cost_usd": 0.043206
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:53:01Z",
+          "summary": {
+            "passed": 11,
+            "failed": 4,
+            "total": 15,
+            "pass_rate": 0.733333,
+            "avg_run_seconds": 7,
+            "estimate": {
+              "input_tokens": 14402,
+              "input_cost_usd": 0.043206
+            }
+          },
+          "results": [
+            {
+              "query": "Add a module docstring to this file",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.4,
+              "estimate": {
+                "input_tokens": 960,
+                "input_cost_usd": 0.00288
+              }
+            },
+            {
+              "query": "Add docstrings to my Python functions",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.5,
+              "estimate": {
+                "input_tokens": 960,
+                "input_cost_usd": 0.00288
+              }
+            },
+            {
+              "query": "Add inline comments explaining this algorithm",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7,
+              "estimate": {
+                "input_tokens": 958,
+                "input_cost_usd": 0.002874
+              }
+            },
+            {
+              "query": "Add type hints to this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.6,
+              "estimate": {
+                "input_tokens": 958,
+                "input_cost_usd": 0.002874
+              }
+            },
+            {
+              "query": "Configure ruff's pydocstyle D rules",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.5,
+              "estimate": {
+                "input_tokens": 963,
+                "input_cost_usd": 0.002889
+              }
+            },
+            {
+              "query": "Document the public API of this Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10,
+              "estimate": {
+                "input_tokens": 960,
+                "input_cost_usd": 0.00288
+              }
+            },
+            {
+              "query": "Enforce Google-style docstrings in my project",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.7,
+              "estimate": {
+                "input_tokens": 963,
+                "input_cost_usd": 0.002889
+              }
+            },
+            {
+              "query": "Generate CLI documentation for my Typer app",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.5,
+              "estimate": {
+                "input_tokens": 961,
+                "input_cost_usd": 0.002883
+              }
+            },
+            {
+              "query": "Generate markdown docs for my cobra CLI",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.4,
+              "estimate": {
+                "input_tokens": 959,
+                "input_cost_usd": 0.002877
+              }
+            },
+            {
+              "query": "Make my Click CLI's docs readable by LLMs",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.9,
+              "estimate": {
+                "input_tokens": 963,
+                "input_cost_usd": 0.002889
+              }
+            },
+            {
+              "query": "Review this module for missing docstrings",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.7,
+              "estimate": {
+                "input_tokens": 960,
+                "input_cost_usd": 0.00288
+              }
+            },
+            {
+              "query": "What docstring style should I use for Python?",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.8,
+              "estimate": {
+                "input_tokens": 962,
+                "input_cost_usd": 0.002886
+              }
+            },
+            {
+              "query": "Write a README for my Python project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.8,
+              "estimate": {
+                "input_tokens": 959,
+                "input_cost_usd": 0.002877
+              }
+            },
+            {
+              "query": "Write a docstring for this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.3,
+              "estimate": {
+                "input_tokens": 959,
+                "input_cost_usd": 0.002877
+              }
+            },
+            {
+              "query": "Write tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.5,
+              "estimate": {
+                "input_tokens": 957,
+                "input_cost_usd": 0.002871
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T16:40:54Z",
+        "executed": true,
+        "content_hash": "7c549643b4f1faf4242f6be7fd2eab0c0790017ae19bef7f3190bcdc78e76422",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "google-docstrings",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1003,
+              "input_cost_usd": 0.003009
+            },
+            "measured": {
+              "input_tokens": 89,
+              "cache_read_input_tokens": 117570,
+              "cache_creation_input_tokens": 9996,
+              "output_tokens": 1273,
+              "cost_usd": 0.11527
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "\"\"\"",
+                "text": "src/myapp/kv.py matches /\"\"\"/",
+                "passed": true,
+                "evidence": "\"\"\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "Args:",
+                "text": "src/myapp/kv.py matches /Args:/",
+                "passed": true,
+                "evidence": "Args:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "Returns:",
+                "text": "src/myapp/kv.py matches /Returns:/",
+                "passed": true,
+                "evidence": "Returns:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "convention = \"google\"",
+                "text": "pyproject.toml matches /convention = \"google\"/",
+                "passed": true,
+                "evidence": "convention = \"google\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"D\"",
+                "text": "pyproject.toml matches /\"D\"/",
+                "passed": true,
+                "evidence": "\"D\"",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/kv.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/kv.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 128928,
+              "executor_duration_seconds": 27.9
+            },
+            "spec_hash": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+          },
+          {
+            "id": "cli-docgen",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1006,
+              "input_cost_usd": 0.003018
+            },
+            "measured": {
+              "input_tokens": 10,
+              "cache_read_input_tokens": 178178,
+              "cache_creation_input_tokens": 13178,
+              "output_tokens": 2776,
+              "cost_usd": 0.192056
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "src/myapp/tools/docgen.py",
+                "text": "file src/myapp/tools/docgen.py exists",
+                "passed": true,
+                "evidence": "src/myapp/tools/docgen.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/tools/docgen.py",
+                "pattern": "click",
+                "text": "src/myapp/tools/docgen.py matches /click/",
+                "passed": true,
+                "evidence": "click",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/tools/docgen.py",
+                "pattern": "get_help|format_help|get_short_help|CliRunner",
+                "text": "src/myapp/tools/docgen.py matches /get_help|format_help|get_short_help|CliRunner/",
+                "passed": true,
+                "evidence": "get_short_help",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "docgen",
+                "text": "Makefile matches /docgen/",
+                "passed": true,
+                "evidence": "docgen",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run|python3? -m",
+                "text": "Makefile matches /uv run|python3? -m/",
+                "passed": true,
+                "evidence": "uv run",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 194142,
+              "executor_duration_seconds": 74
+            },
+            "spec_hash": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 51,
+          "estimate": {
+            "input_tokens": 2009,
+            "input_cost_usd": 0.006027
+          },
+          "measured": {
+            "input_tokens": 99,
+            "cache_read_input_tokens": 295748,
+            "cache_creation_input_tokens": 23174,
+            "output_tokens": 4049,
+            "cost_usd": 0.307326
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:40:54Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 122.9,
+            "measured": {
+              "input_tokens": 15,
+              "cache_read_input_tokens": 273643,
+              "cache_creation_input_tokens": 25079,
+              "output_tokens": 8771,
+              "cost_usd": 0.417398
+            }
+          },
+          "results": [
+            {
+              "id": "cli-docgen",
+              "passed": true,
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 158921,
+                "cache_creation_input_tokens": 16120,
+                "output_tokens": 7534,
+                "cost_usd": 0.30999
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 222.1
+              },
+              "fingerprint": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+            },
+            {
+              "id": "google-docstrings",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7,
+                "cache_read_input_tokens": 114722,
+                "cache_creation_input_tokens": 8959,
+                "output_tokens": 1237,
+                "cost_usd": 0.107408
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 23.7
+              },
+              "fingerprint": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T02:30:49Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 48.6,
+            "estimate": {
+              "input_tokens": 2009,
+              "input_cost_usd": 0.006027
+            },
+            "measured": {
+              "input_tokens": 19,
+              "cache_read_input_tokens": 321919,
+              "cache_creation_input_tokens": 23616,
+              "output_tokens": 4253,
+              "cost_usd": 0.329947
+            }
+          },
+          "results": [
+            {
+              "id": "cli-docgen",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1006,
+                "input_cost_usd": 0.003018
+              },
+              "measured": {
+                "input_tokens": 11,
+                "cache_read_input_tokens": 204246,
+                "cache_creation_input_tokens": 13611,
+                "output_tokens": 2975,
+                "cost_usd": 0.21476
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 74.6
+              }
+            },
+            {
+              "id": "google-docstrings",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1003,
+                "input_cost_usd": 0.003009
+              },
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 117673,
+                "cache_creation_input_tokens": 10005,
+                "output_tokens": 1278,
+                "cost_usd": 0.115187
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 22.6
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.1-pro": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:35:20Z",
+        "executed": true,
+        "content_hash": "0b43bda3b8c964a44de9f68998feddabe3663d48f67bb5fd8bf09d7042f9c6e7",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "84226802e26dfe7f2e3d527ba4440086cd8b89ebc71c0732ab90546fa8b3d2ea"
+          },
+          {
+            "query": "What docstring style should I use for Python?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "547f70df370dfd044b5805627b6d0da35ae80429d29f4e5ca61f09c4406518c4"
+          },
+          {
+            "query": "Configure ruff's pydocstyle D rules",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "c97f9e87025a03d21969128d7eeeda4d0e96163785073399814d2e6983cab57d"
+          },
+          {
+            "query": "Document the public API of this Python module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "833c2e59344590789a628e138fd17ecb85374d7a9dbc16bccc6bfc48a417d190"
+          },
+          {
+            "query": "Generate CLI documentation for my Typer app",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "aaa9d043c8901f9342d7aac9de84fb88412a1f4942969b9e34fe91237287f57a"
+          },
+          {
+            "query": "Add a module docstring to this file",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "34e97d539c740621b6b8c16ea30447518e50d0a375e92d8ee9d14abb5a2a966c"
+          },
+          {
+            "query": "Make my Click CLI's docs readable by LLMs",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "e616c35c2d3168e1c615b8914b9ab98c2974de421c51dbf6a3841f40207182de"
+          },
+          {
+            "query": "Enforce Google-style docstrings in my project",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "b75dba11e3ca5cdaa08c12055437abe0bdc9eeacf9144670fa90a7eeed256f33"
+          },
+          {
+            "query": "Write a docstring for this function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "3d5359d2982eca1a2165d347f8d443cf0b15a0b05894dbdc690cf57143881aac"
+          },
+          {
+            "query": "Review this module for missing docstrings",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "ed846570418c5d8cf33e85538e6fcdede9fa78e9bef48d6a1b00b6f663da457f"
+          },
+          {
+            "query": "Write a README for my Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "9dd553c9713eba8e2dacae689c387288953990f45bbaf6d50e0bf0f49ee9893a"
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "23e1969a8cff13239de5e1d53d707dfd3286cce2847c1fae8e5affe145283790"
+          },
+          {
+            "query": "Write tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "77aeaf3d2c97769baa5f4a94c56ff7989861a9e4df5cbdfdbb9df4a57fc2ec9e"
+          },
+          {
+            "query": "Generate markdown docs for my cobra CLI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "f439512ef25b335b6ad8d8b07904b7904cf63b22a60ada8094707276117b8254"
+          },
+          {
+            "query": "Add inline comments explaining this algorithm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "f94b2b3dd1ca2cf377c8e434b0dfce113ca887e0c3bf4dc9a0c81cef5e9ca221"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 10,
+          "total": 15,
+          "pass_rate": 0.333333,
+          "avg_run_seconds": 5.4
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:35:31Z",
+        "executed": true,
+        "content_hash": "7c549643b4f1faf4242f6be7fd2eab0c0790017ae19bef7f3190bcdc78e76422",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "google-docstrings",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.9
+            },
+            "spec_hash": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+          },
+          {
+            "id": "cli-docgen",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.8
+            },
+            "spec_hash": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5.9
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:35:31Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.5
+          },
+          "results": [
+            {
+              "id": "cli-docgen",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.5
+              },
+              "fingerprint": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+            },
+            {
+              "id": "google-docstrings",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.5
+              },
+              "fingerprint": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.5-flash": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:34:05Z",
+        "executed": true,
+        "content_hash": "0b43bda3b8c964a44de9f68998feddabe3663d48f67bb5fd8bf09d7042f9c6e7",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "84226802e26dfe7f2e3d527ba4440086cd8b89ebc71c0732ab90546fa8b3d2ea"
+          },
+          {
+            "query": "What docstring style should I use for Python?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "547f70df370dfd044b5805627b6d0da35ae80429d29f4e5ca61f09c4406518c4"
+          },
+          {
+            "query": "Configure ruff's pydocstyle D rules",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "c97f9e87025a03d21969128d7eeeda4d0e96163785073399814d2e6983cab57d"
+          },
+          {
+            "query": "Document the public API of this Python module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5,
+            "spec_hash": "833c2e59344590789a628e138fd17ecb85374d7a9dbc16bccc6bfc48a417d190"
+          },
+          {
+            "query": "Generate CLI documentation for my Typer app",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "aaa9d043c8901f9342d7aac9de84fb88412a1f4942969b9e34fe91237287f57a"
+          },
+          {
+            "query": "Add a module docstring to this file",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "34e97d539c740621b6b8c16ea30447518e50d0a375e92d8ee9d14abb5a2a966c"
+          },
+          {
+            "query": "Make my Click CLI's docs readable by LLMs",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "e616c35c2d3168e1c615b8914b9ab98c2974de421c51dbf6a3841f40207182de"
+          },
+          {
+            "query": "Enforce Google-style docstrings in my project",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "b75dba11e3ca5cdaa08c12055437abe0bdc9eeacf9144670fa90a7eeed256f33"
+          },
+          {
+            "query": "Write a docstring for this function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "3d5359d2982eca1a2165d347f8d443cf0b15a0b05894dbdc690cf57143881aac"
+          },
+          {
+            "query": "Review this module for missing docstrings",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "ed846570418c5d8cf33e85538e6fcdede9fa78e9bef48d6a1b00b6f663da457f"
+          },
+          {
+            "query": "Write a README for my Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "9dd553c9713eba8e2dacae689c387288953990f45bbaf6d50e0bf0f49ee9893a"
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "23e1969a8cff13239de5e1d53d707dfd3286cce2847c1fae8e5affe145283790"
+          },
+          {
+            "query": "Write tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "77aeaf3d2c97769baa5f4a94c56ff7989861a9e4df5cbdfdbb9df4a57fc2ec9e"
+          },
+          {
+            "query": "Generate markdown docs for my cobra CLI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "f439512ef25b335b6ad8d8b07904b7904cf63b22a60ada8094707276117b8254"
+          },
+          {
+            "query": "Add inline comments explaining this algorithm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "f94b2b3dd1ca2cf377c8e434b0dfce113ca887e0c3bf4dc9a0c81cef5e9ca221"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 10,
+          "total": 15,
+          "pass_rate": 0.333333,
+          "avg_run_seconds": 5.3
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:34:16Z",
+        "executed": true,
+        "content_hash": "7c549643b4f1faf4242f6be7fd2eab0c0790017ae19bef7f3190bcdc78e76422",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "id": "google-docstrings",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.4
+            },
+            "spec_hash": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+          },
+          {
+            "id": "cli-docgen",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 4.8
+            },
+            "spec_hash": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5.1
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:34:16Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.5
+          },
+          "results": [
+            {
+              "id": "cli-docgen",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.4
+              },
+              "fingerprint": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+            },
+            {
+              "id": "google-docstrings",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.6
+              },
+              "fingerprint": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:05:07Z",
+        "executed": true,
+        "content_hash": "0b43bda3b8c964a44de9f68998feddabe3663d48f67bb5fd8bf09d7042f9c6e7",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.1,
+            "estimate": {
+              "input_tokens": 861,
+              "input_cost_usd": 0.002153
+            }
+          },
+          {
+            "query": "What docstring style should I use for Python?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6,
+            "estimate": {
+              "input_tokens": 864,
+              "input_cost_usd": 0.00216
+            }
+          },
+          {
+            "query": "Configure ruff's pydocstyle D rules",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.1,
+            "estimate": {
+              "input_tokens": 864,
+              "input_cost_usd": 0.00216
+            }
+          },
+          {
+            "query": "Document the public API of this Python module",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.6,
+            "estimate": {
+              "input_tokens": 862,
+              "input_cost_usd": 0.002155
+            }
+          },
+          {
+            "query": "Generate CLI documentation for my Typer app",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.6,
+            "estimate": {
+              "input_tokens": 862,
+              "input_cost_usd": 0.002155
+            }
+          },
+          {
+            "query": "Add a module docstring to this file",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 24,
+            "estimate": {
+              "input_tokens": 862,
+              "input_cost_usd": 0.002155
+            },
+            "spec_hash": "34e97d539c740621b6b8c16ea30447518e50d0a375e92d8ee9d14abb5a2a966c"
+          },
+          {
+            "query": "Make my Click CLI's docs readable by LLMs",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10,
+            "estimate": {
+              "input_tokens": 865,
+              "input_cost_usd": 0.002163
+            }
+          },
+          {
+            "query": "Enforce Google-style docstrings in my project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 863,
+              "input_cost_usd": 0.002158
+            }
+          },
+          {
+            "query": "Write a docstring for this function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.8,
+            "estimate": {
+              "input_tokens": 861,
+              "input_cost_usd": 0.002153
+            },
+            "spec_hash": "3d5359d2982eca1a2165d347f8d443cf0b15a0b05894dbdc690cf57143881aac"
+          },
+          {
+            "query": "Review this module for missing docstrings",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 30.2,
+            "estimate": {
+              "input_tokens": 861,
+              "input_cost_usd": 0.002153
+            }
+          },
+          {
+            "query": "Write a README for my Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 36.7,
+            "estimate": {
+              "input_tokens": 861,
+              "input_cost_usd": 0.002153
+            }
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.2,
+            "estimate": {
+              "input_tokens": 860,
+              "input_cost_usd": 0.00215
+            }
+          },
+          {
+            "query": "Write tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 31.8,
+            "estimate": {
+              "input_tokens": 859,
+              "input_cost_usd": 0.002148
+            }
+          },
+          {
+            "query": "Generate markdown docs for my cobra CLI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 32.6,
+            "estimate": {
+              "input_tokens": 861,
+              "input_cost_usd": 0.002153
+            }
+          },
+          {
+            "query": "Add inline comments explaining this algorithm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.8,
+            "estimate": {
+              "input_tokens": 860,
+              "input_cost_usd": 0.00215
+            }
+          }
+        ],
+        "summary": {
+          "passed": 13,
+          "failed": 2,
+          "total": 15,
+          "pass_rate": 0.866667,
+          "avg_run_seconds": 19.5,
+          "estimate": {
+            "input_tokens": 12926,
+            "input_cost_usd": 0.032319
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:54:33Z",
+          "summary": {
+            "passed": 13,
+            "failed": 2,
+            "total": 15,
+            "pass_rate": 0.866667,
+            "avg_run_seconds": 19.8,
+            "estimate": {
+              "input_tokens": 12926,
+              "input_cost_usd": 0.032319
+            }
+          },
+          "results": [
+            {
+              "query": "Add a module docstring to this file",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 36.7,
+              "estimate": {
+                "input_tokens": 862,
+                "input_cost_usd": 0.002155
+              }
+            },
+            {
+              "query": "Add docstrings to my Python functions",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 19.1,
+              "estimate": {
+                "input_tokens": 861,
+                "input_cost_usd": 0.002153
+              }
+            },
+            {
+              "query": "Add inline comments explaining this algorithm",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 16.8,
+              "estimate": {
+                "input_tokens": 860,
+                "input_cost_usd": 0.00215
+              }
+            },
+            {
+              "query": "Add type hints to this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 19.2,
+              "estimate": {
+                "input_tokens": 860,
+                "input_cost_usd": 0.00215
+              }
+            },
+            {
+              "query": "Configure ruff's pydocstyle D rules",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.1,
+              "estimate": {
+                "input_tokens": 864,
+                "input_cost_usd": 0.00216
+              }
+            },
+            {
+              "query": "Document the public API of this Python module",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 20.6,
+              "estimate": {
+                "input_tokens": 862,
+                "input_cost_usd": 0.002155
+              }
+            },
+            {
+              "query": "Enforce Google-style docstrings in my project",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11,
+              "estimate": {
+                "input_tokens": 863,
+                "input_cost_usd": 0.002158
+              }
+            },
+            {
+              "query": "Generate CLI documentation for my Typer app",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.6,
+              "estimate": {
+                "input_tokens": 862,
+                "input_cost_usd": 0.002155
+              }
+            },
+            {
+              "query": "Generate markdown docs for my cobra CLI",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 32.6,
+              "estimate": {
+                "input_tokens": 861,
+                "input_cost_usd": 0.002153
+              }
+            },
+            {
+              "query": "Make my Click CLI's docs readable by LLMs",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10,
+              "estimate": {
+                "input_tokens": 865,
+                "input_cost_usd": 0.002163
+              }
+            },
+            {
+              "query": "Review this module for missing docstrings",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 30.2,
+              "estimate": {
+                "input_tokens": 861,
+                "input_cost_usd": 0.002153
+              }
+            },
+            {
+              "query": "What docstring style should I use for Python?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6,
+              "estimate": {
+                "input_tokens": 864,
+                "input_cost_usd": 0.00216
+              }
+            },
+            {
+              "query": "Write a README for my Python project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 36.7,
+              "estimate": {
+                "input_tokens": 861,
+                "input_cost_usd": 0.002153
+              }
+            },
+            {
+              "query": "Write a docstring for this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.7,
+              "estimate": {
+                "input_tokens": 861,
+                "input_cost_usd": 0.002153
+              }
+            },
+            {
+              "query": "Write tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 31.8,
+              "estimate": {
+                "input_tokens": 859,
+                "input_cost_usd": 0.002148
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T16:47:25Z",
+        "executed": true,
+        "content_hash": "7c549643b4f1faf4242f6be7fd2eab0c0790017ae19bef7f3190bcdc78e76422",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "google-docstrings",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 898,
+              "input_cost_usd": 0.002245
+            },
+            "measured": {
+              "input_tokens": 22284,
+              "cache_read_input_tokens": 110976,
+              "output_tokens": 2116,
+              "cost_usd": 0.36489
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "\"\"\"",
+                "text": "src/myapp/kv.py matches /\"\"\"/",
+                "passed": true,
+                "evidence": "\"\"\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "Args:",
+                "text": "src/myapp/kv.py matches /Args:/",
+                "passed": true,
+                "evidence": "Args:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "Returns:",
+                "text": "src/myapp/kv.py matches /Returns:/",
+                "passed": true,
+                "evidence": "Returns:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "convention = \"google\"",
+                "text": "pyproject.toml matches /convention = \"google\"/",
+                "passed": true,
+                "evidence": "convention = \"google\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"D\"",
+                "text": "pyproject.toml matches /\"D\"/",
+                "passed": true,
+                "evidence": "\"D\"",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/kv.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/kv.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 135376,
+              "executor_duration_seconds": 47.8
+            },
+            "spec_hash": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+          },
+          {
+            "id": "cli-docgen",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 901,
+              "input_cost_usd": 0.002253
+            },
+            "measured": {
+              "input_tokens": 13496,
+              "cache_read_input_tokens": 113792,
+              "output_tokens": 3663,
+              "cost_usd": 0.373165
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "src/myapp/tools/docgen.py",
+                "text": "file src/myapp/tools/docgen.py exists",
+                "passed": true,
+                "evidence": "src/myapp/tools/docgen.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/tools/docgen.py",
+                "pattern": "click",
+                "text": "src/myapp/tools/docgen.py matches /click/",
+                "passed": true,
+                "evidence": "click",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/tools/docgen.py",
+                "pattern": "get_help|format_help|get_short_help|CliRunner",
+                "text": "src/myapp/tools/docgen.py matches /get_help|format_help|get_short_help|CliRunner/",
+                "passed": true,
+                "evidence": "get_short_help",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "docgen",
+                "text": "Makefile matches /docgen/",
+                "passed": true,
+                "evidence": "docgen",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run|python3? -m",
+                "text": "Makefile matches /uv run|python3? -m/",
+                "passed": true,
+                "evidence": "uv run",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 130951,
+              "executor_duration_seconds": 77.5
+            },
+            "spec_hash": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 62.7,
+          "estimate": {
+            "input_tokens": 1799,
+            "input_cost_usd": 0.004498
+          },
+          "measured": {
+            "input_tokens": 35780,
+            "cache_read_input_tokens": 224768,
+            "output_tokens": 5779,
+            "cost_usd": 0.738055
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:47:25Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 55,
+            "measured": {
+              "input_tokens": 16890,
+              "cache_read_input_tokens": 178688,
+              "output_tokens": 4947,
+              "cost_usd": 0.563151
+            }
+          },
+          "results": [
+            {
+              "id": "cli-docgen",
+              "passed": false,
+              "measured": {
+                "input_tokens": 7393,
+                "cache_read_input_tokens": 73088,
+                "output_tokens": 2627,
+                "cost_usd": 0.240608
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.6
+              },
+              "timing": {
+                "executor_duration_seconds": 55.1
+              },
+              "fingerprint": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+            },
+            {
+              "id": "google-docstrings",
+              "passed": true,
+              "measured": {
+                "input_tokens": 9497,
+                "cache_read_input_tokens": 105600,
+                "output_tokens": 2320,
+                "cost_usd": 0.322543
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 54.8
+              },
+              "fingerprint": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T03:22:55Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 64.4,
+            "estimate": {
+              "input_tokens": 1799,
+              "input_cost_usd": 0.004498
+            },
+            "measured": {
+              "input_tokens": 36685,
+              "cache_read_input_tokens": 202496,
+              "output_tokens": 5999,
+              "cost_usd": 0.687938
+            }
+          },
+          "results": [
+            {
+              "id": "cli-docgen",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 901,
+                "input_cost_usd": 0.002253
+              },
+              "measured": {
+                "input_tokens": 15990,
+                "cache_read_input_tokens": 108672,
+                "output_tokens": 3983,
+                "cost_usd": 0.3714
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 82.9
+              }
+            },
+            {
+              "id": "google-docstrings",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 898,
+                "input_cost_usd": 0.002245
+              },
+              "measured": {
+                "input_tokens": 20695,
+                "cache_read_input_tokens": 93824,
+                "output_tokens": 2016,
+                "cost_usd": 0.316538
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 45.9
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:05:56Z",
+        "executed": true,
+        "content_hash": "0b43bda3b8c964a44de9f68998feddabe3663d48f67bb5fd8bf09d7042f9c6e7",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 861,
+              "input_cost_usd": 0.004305
+            }
+          },
+          {
+            "query": "What docstring style should I use for Python?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.4,
+            "estimate": {
+              "input_tokens": 864,
+              "input_cost_usd": 0.00432
+            }
+          },
+          {
+            "query": "Configure ruff's pydocstyle D rules",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7,
+            "estimate": {
+              "input_tokens": 864,
+              "input_cost_usd": 0.00432
+            }
+          },
+          {
+            "query": "Document the public API of this Python module",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 862,
+              "input_cost_usd": 0.00431
+            }
+          },
+          {
+            "query": "Generate CLI documentation for my Typer app",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 862,
+              "input_cost_usd": 0.00431
+            }
+          },
+          {
+            "query": "Add a module docstring to this file",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 30.8,
+            "estimate": {
+              "input_tokens": 862,
+              "input_cost_usd": 0.00431
+            },
+            "spec_hash": "34e97d539c740621b6b8c16ea30447518e50d0a375e92d8ee9d14abb5a2a966c"
+          },
+          {
+            "query": "Make my Click CLI's docs readable by LLMs",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9,
+            "estimate": {
+              "input_tokens": 865,
+              "input_cost_usd": 0.004325
+            }
+          },
+          {
+            "query": "Enforce Google-style docstrings in my project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.1,
+            "estimate": {
+              "input_tokens": 863,
+              "input_cost_usd": 0.004315
+            }
+          },
+          {
+            "query": "Write a docstring for this function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 14,
+            "estimate": {
+              "input_tokens": 861,
+              "input_cost_usd": 0.004305
+            },
+            "spec_hash": "3d5359d2982eca1a2165d347f8d443cf0b15a0b05894dbdc690cf57143881aac"
+          },
+          {
+            "query": "Review this module for missing docstrings",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 25.4,
+            "estimate": {
+              "input_tokens": 861,
+              "input_cost_usd": 0.004305
+            }
+          },
+          {
+            "query": "Write a README for my Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 51.2,
+            "estimate": {
+              "input_tokens": 861,
+              "input_cost_usd": 0.004305
+            }
+          },
+          {
+            "query": "Add type hints to this function",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 33,
+            "estimate": {
+              "input_tokens": 860,
+              "input_cost_usd": 0.0043
+            }
+          },
+          {
+            "query": "Write tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 35.2,
+            "estimate": {
+              "input_tokens": 859,
+              "input_cost_usd": 0.004295
+            }
+          },
+          {
+            "query": "Generate markdown docs for my cobra CLI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 59.8,
+            "estimate": {
+              "input_tokens": 861,
+              "input_cost_usd": 0.004305
+            }
+          },
+          {
+            "query": "Add inline comments explaining this algorithm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 29.2,
+            "estimate": {
+              "input_tokens": 860,
+              "input_cost_usd": 0.0043
+            }
+          }
+        ],
+        "summary": {
+          "passed": 13,
+          "failed": 2,
+          "total": 15,
+          "pass_rate": 0.866667,
+          "avg_run_seconds": 22.3,
+          "estimate": {
+            "input_tokens": 12926,
+            "input_cost_usd": 0.06463
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T20:56:33Z",
+          "summary": {
+            "passed": 13,
+            "failed": 2,
+            "total": 15,
+            "pass_rate": 0.866667,
+            "avg_run_seconds": 25,
+            "estimate": {
+              "input_tokens": 12926,
+              "input_cost_usd": 0.06463
+            }
+          },
+          "results": [
+            {
+              "query": "Add a module docstring to this file",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 75.2,
+              "estimate": {
+                "input_tokens": 862,
+                "input_cost_usd": 0.00431
+              }
+            },
+            {
+              "query": "Add docstrings to my Python functions",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.3,
+              "estimate": {
+                "input_tokens": 861,
+                "input_cost_usd": 0.004305
+              }
+            },
+            {
+              "query": "Add inline comments explaining this algorithm",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 29.2,
+              "estimate": {
+                "input_tokens": 860,
+                "input_cost_usd": 0.0043
+              }
+            },
+            {
+              "query": "Add type hints to this function",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 33,
+              "estimate": {
+                "input_tokens": 860,
+                "input_cost_usd": 0.0043
+              }
+            },
+            {
+              "query": "Configure ruff's pydocstyle D rules",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7,
+              "estimate": {
+                "input_tokens": 864,
+                "input_cost_usd": 0.00432
+              }
+            },
+            {
+              "query": "Document the public API of this Python module",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.3,
+              "estimate": {
+                "input_tokens": 862,
+                "input_cost_usd": 0.00431
+              }
+            },
+            {
+              "query": "Enforce Google-style docstrings in my project",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.1,
+              "estimate": {
+                "input_tokens": 863,
+                "input_cost_usd": 0.004315
+              }
+            },
+            {
+              "query": "Generate CLI documentation for my Typer app",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.4,
+              "estimate": {
+                "input_tokens": 862,
+                "input_cost_usd": 0.00431
+              }
+            },
+            {
+              "query": "Generate markdown docs for my cobra CLI",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 59.8,
+              "estimate": {
+                "input_tokens": 861,
+                "input_cost_usd": 0.004305
+              }
+            },
+            {
+              "query": "Make my Click CLI's docs readable by LLMs",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9,
+              "estimate": {
+                "input_tokens": 865,
+                "input_cost_usd": 0.004325
+              }
+            },
+            {
+              "query": "Review this module for missing docstrings",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 25.4,
+              "estimate": {
+                "input_tokens": 861,
+                "input_cost_usd": 0.004305
+              }
+            },
+            {
+              "query": "What docstring style should I use for Python?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.4,
+              "estimate": {
+                "input_tokens": 864,
+                "input_cost_usd": 0.00432
+              }
+            },
+            {
+              "query": "Write a README for my Python project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 51.2,
+              "estimate": {
+                "input_tokens": 861,
+                "input_cost_usd": 0.004305
+              }
+            },
+            {
+              "query": "Write a docstring for this function",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11,
+              "estimate": {
+                "input_tokens": 861,
+                "input_cost_usd": 0.004305
+              }
+            },
+            {
+              "query": "Write tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 35.2,
+              "estimate": {
+                "input_tokens": 859,
+                "input_cost_usd": 0.004295
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T16:50:52Z",
+        "executed": true,
+        "content_hash": "7c549643b4f1faf4242f6be7fd2eab0c0790017ae19bef7f3190bcdc78e76422",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "google-docstrings",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 898,
+              "input_cost_usd": 0.00449
+            },
+            "measured": {
+              "input_tokens": 31473,
+              "cache_read_input_tokens": 164096,
+              "output_tokens": 2902,
+              "cost_usd": 1.064905
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "\"\"\"",
+                "text": "src/myapp/kv.py matches /\"\"\"/",
+                "passed": true,
+                "evidence": "\"\"\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "Args:",
+                "text": "src/myapp/kv.py matches /Args:/",
+                "passed": true,
+                "evidence": "Args:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "Returns:",
+                "text": "src/myapp/kv.py matches /Returns:/",
+                "passed": true,
+                "evidence": "Returns:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "convention = \"google\"",
+                "text": "pyproject.toml matches /convention = \"google\"/",
+                "passed": true,
+                "evidence": "convention = \"google\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"D\"",
+                "text": "pyproject.toml matches /\"D\"/",
+                "passed": true,
+                "evidence": "\"D\"",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/kv.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/kv.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 198471,
+              "executor_duration_seconds": 136.6
+            },
+            "spec_hash": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+          },
+          {
+            "id": "cli-docgen",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 901,
+              "input_cost_usd": 0.004505
+            },
+            "measured": {
+              "input_tokens": 34761,
+              "cache_read_input_tokens": 61824,
+              "output_tokens": 3456,
+              "cost_usd": 0.586605
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "src/myapp/tools/docgen.py",
+                "text": "file src/myapp/tools/docgen.py exists",
+                "passed": true,
+                "evidence": "src/myapp/tools/docgen.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/tools/docgen.py",
+                "pattern": "click",
+                "text": "src/myapp/tools/docgen.py matches /click/",
+                "passed": true,
+                "evidence": "click",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/tools/docgen.py",
+                "pattern": "get_help|format_help|get_short_help|CliRunner",
+                "text": "src/myapp/tools/docgen.py matches /get_help|format_help|get_short_help|CliRunner/",
+                "passed": true,
+                "evidence": "get_short_help",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "docgen",
+                "text": "Makefile matches /docgen/",
+                "passed": true,
+                "evidence": "docgen",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run|python3? -m",
+                "text": "Makefile matches /uv run|python3? -m/",
+                "passed": true,
+                "evidence": "uv run",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 100041,
+              "executor_duration_seconds": 71.5
+            },
+            "spec_hash": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 104.1,
+          "estimate": {
+            "input_tokens": 1799,
+            "input_cost_usd": 0.008995
+          },
+          "measured": {
+            "input_tokens": 66234,
+            "cache_read_input_tokens": 225920,
+            "output_tokens": 6358,
+            "cost_usd": 1.65151
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:50:52Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 63.7,
+            "measured": {
+              "input_tokens": 16335,
+              "cache_read_input_tokens": 240896,
+              "output_tokens": 5250,
+              "cost_usd": 1.443655
+            }
+          },
+          "results": [
+            {
+              "id": "cli-docgen",
+              "passed": true,
+              "measured": {
+                "input_tokens": 9108,
+                "cache_read_input_tokens": 78208,
+                "output_tokens": 2329,
+                "cost_usd": 0.50645
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 57
+              },
+              "fingerprint": "ebe9add4aacebd03f7c2c17391df6d0a2194cb621143f7f599aff93a1d8e199f"
+            },
+            {
+              "id": "google-docstrings",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7227,
+                "cache_read_input_tokens": 162688,
+                "output_tokens": 2921,
+                "cost_usd": 0.937205
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 70.3
+              },
+              "fingerprint": "2d8616f3e3e731f6e64df7483ff336c85e6b53343c66d0b20899e87508017d70"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T10:16:35Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 83.2,
+            "estimate": {
+              "input_tokens": 1799,
+              "input_cost_usd": 0.008995
+            },
+            "measured": {
+              "input_tokens": 54408,
+              "cache_read_input_tokens": 183168,
+              "output_tokens": 6039,
+              "cost_usd": 1.36905
+            }
+          },
+          "results": [
+            {
+              "id": "cli-docgen",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 901,
+                "input_cost_usd": 0.004505
+              },
+              "measured": {
+                "input_tokens": 32958,
+                "cache_read_input_tokens": 60800,
+                "output_tokens": 3971,
+                "cost_usd": 0.58792
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 116.3
+              }
+            },
+            {
+              "id": "google-docstrings",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 898,
+                "input_cost_usd": 0.00449
+              },
+              "measured": {
+                "input_tokens": 21450,
+                "cache_read_input_tokens": 122368,
+                "output_tokens": 2068,
+                "cost_usd": 0.78113
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 50
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4424 @@
+{
+  "schema": 5,
+  "plugin": "python",
+  "skill": "python-style",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:10:29Z",
+        "executed": true,
+        "content_hash": "c6c6b881bb4517a04efc46810a7ff832d9577fec60a29e1b36827d251c992294",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Refactor this Python code to our house style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.1,
+            "estimate": {
+              "input_tokens": 1201,
+              "input_cost_usd": 0.001201
+            },
+            "spec_hash": "39eb5b3bf38e1222247a8e3fd875ed0dc4e8fae79f2b1985d6600ff013cdb813"
+          },
+          {
+            "query": "Set up ruff for formatting and linting",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 1200,
+              "input_cost_usd": 0.0012
+            },
+            "spec_hash": "8b7d24a12b2b62c3f32f9c7b50227db2aca7285bfe154f4ecb7eb86ad2bc48b1"
+          },
+          {
+            "query": "Which ruff lint rules should I enable?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "estimate": {
+              "input_tokens": 1200,
+              "input_cost_usd": 0.0012
+            },
+            "spec_hash": "de906e08ffad25d9d967104f17c47dbde8d6ddc1b31e42528d4bb01b9d49a1be"
+          },
+          {
+            "query": "Replace black and isort with ruff",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.1,
+            "estimate": {
+              "input_tokens": 1199,
+              "input_cost_usd": 0.001199
+            },
+            "spec_hash": "62bb2f01da4f4d72ae78355ad14c4577800cfb3d5687e44cf06d416f12fa5e3e"
+          },
+          {
+            "query": "Convert these print statements to logging in my Python module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.9,
+            "estimate": {
+              "input_tokens": 1201,
+              "input_cost_usd": 0.001201
+            },
+            "spec_hash": "c7dcca53fa33a584b7529193f24038613ad65e6b0f05fa192ed97f69191e85f8"
+          },
+          {
+            "query": "Review this Python file for idiomatic style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 3.9,
+            "estimate": {
+              "input_tokens": 1200,
+              "input_cost_usd": 0.0012
+            },
+            "spec_hash": "4ec3d8944e6d7c0cebb869fb77c117b90d83fb50214d534ad42d84f935bcceda"
+          },
+          {
+            "query": "Should I use pathlib or os.path here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 1202,
+              "input_cost_usd": 0.001202
+            },
+            "spec_hash": "0e74a43e6529502cf44080f982bddfddd5c65a6a1be66495498534eec923b57b"
+          },
+          {
+            "query": "Fix the exception handling in this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 3.6,
+            "estimate": {
+              "input_tokens": 1199,
+              "input_cost_usd": 0.001199
+            },
+            "spec_hash": "9d04e0bedf081e2890f847916394194780027a8140ba0cddd4ecb268e752c919"
+          },
+          {
+            "query": "Format my Python code",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 1195,
+              "input_cost_usd": 0.001195
+            },
+            "spec_hash": "597fc8b7016a975026d896fdae1e9b9815f4554cd93fed8a9ed62d0f3a40a6fd"
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 1200,
+              "input_cost_usd": 0.0012
+            },
+            "spec_hash": "0456552dd1ee4bf51e269e6e855195dcd454a21a3c80bf9b180cb917e9d4dfd8"
+          },
+          {
+            "query": "Add type annotations to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.6,
+            "estimate": {
+              "input_tokens": 1198,
+              "input_cost_usd": 0.001198
+            },
+            "spec_hash": "11609a71345fb30ccf8722ba18e56acdb6125418a4bca87a8de611724055ad9d"
+          },
+          {
+            "query": "Write tests for this Python module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.8,
+            "estimate": {
+              "input_tokens": 1197,
+              "input_cost_usd": 0.001197
+            },
+            "spec_hash": "7ac572b76583a66d8356ab61bbc0817d93b216c4d4644e4324d93e01b55a1ebe"
+          },
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 1200,
+              "input_cost_usd": 0.0012
+            },
+            "spec_hash": "b41aa46dc7d87ba2b2825cd6a8a30ff78519f72ef6601dba422abaeb84c88587"
+          },
+          {
+            "query": "Refactor this Go code to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4,
+            "estimate": {
+              "input_tokens": 1203,
+              "input_cost_usd": 0.001203
+            },
+            "spec_hash": "b4579b51d98034433f31a663a4e1e0d13683393acd9dde86f00faf423b9ae88c"
+          },
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "estimate": {
+              "input_tokens": 1199,
+              "input_cost_usd": 0.001199
+            },
+            "spec_hash": "407623876053bed0d285f56898ae64555d52de0e3dd1709d2d7b6fdb28ce0c5f"
+          },
+          {
+            "query": "Lint my JavaScript with ESLint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.8,
+            "estimate": {
+              "input_tokens": 1199,
+              "input_cost_usd": 0.001199
+            },
+            "spec_hash": "97ad65e6427c4cf277409eb7afcffdaea4a6813ddaf380a22271d89933c19e89"
+          }
+        ],
+        "summary": {
+          "passed": 7,
+          "failed": 9,
+          "total": 16,
+          "pass_rate": 0.4375,
+          "avg_run_seconds": 6.6,
+          "estimate": {
+            "input_tokens": 19193,
+            "input_cost_usd": 0.019193
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T21:10:03Z",
+          "summary": {
+            "passed": 7,
+            "failed": 9,
+            "total": 16,
+            "pass_rate": 0.4375,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 19193,
+              "input_cost_usd": 0.019193
+            }
+          },
+          "results": [
+            {
+              "query": "Add docstrings to my Python functions",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.9,
+              "estimate": {
+                "input_tokens": 1199,
+                "input_cost_usd": 0.001199
+              }
+            },
+            {
+              "query": "Add type annotations to this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.6,
+              "estimate": {
+                "input_tokens": 1198,
+                "input_cost_usd": 0.001198
+              }
+            },
+            {
+              "query": "Configure ruff in pyproject.toml",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10,
+              "estimate": {
+                "input_tokens": 1200,
+                "input_cost_usd": 0.0012
+              }
+            },
+            {
+              "query": "Convert these print statements to logging in my Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.3,
+              "estimate": {
+                "input_tokens": 1201,
+                "input_cost_usd": 0.001201
+              }
+            },
+            {
+              "query": "Fix the exception handling in this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.2,
+              "estimate": {
+                "input_tokens": 1199,
+                "input_cost_usd": 0.001199
+              }
+            },
+            {
+              "query": "Format my Python code",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6,
+              "estimate": {
+                "input_tokens": 1195,
+                "input_cost_usd": 0.001195
+              }
+            },
+            {
+              "query": "Lint my JavaScript with ESLint",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.8,
+              "estimate": {
+                "input_tokens": 1199,
+                "input_cost_usd": 0.001199
+              }
+            },
+            {
+              "query": "Refactor this Go code to wrap errors with %w",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4,
+              "estimate": {
+                "input_tokens": 1203,
+                "input_cost_usd": 0.001203
+              }
+            },
+            {
+              "query": "Refactor this Python code to our house style",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.2,
+              "estimate": {
+                "input_tokens": 1201,
+                "input_cost_usd": 0.001201
+              }
+            },
+            {
+              "query": "Replace black and isort with ruff",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.5,
+              "estimate": {
+                "input_tokens": 1199,
+                "input_cost_usd": 0.001199
+              }
+            },
+            {
+              "query": "Review this Python file for idiomatic style",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.1,
+              "estimate": {
+                "input_tokens": 1200,
+                "input_cost_usd": 0.0012
+              }
+            },
+            {
+              "query": "Set up a new Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.3,
+              "estimate": {
+                "input_tokens": 1200,
+                "input_cost_usd": 0.0012
+              }
+            },
+            {
+              "query": "Set up ruff for formatting and linting",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.3,
+              "estimate": {
+                "input_tokens": 1200,
+                "input_cost_usd": 0.0012
+              }
+            },
+            {
+              "query": "Should I use pathlib or os.path here?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.1,
+              "estimate": {
+                "input_tokens": 1202,
+                "input_cost_usd": 0.001202
+              }
+            },
+            {
+              "query": "Which ruff lint rules should I enable?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.6,
+              "estimate": {
+                "input_tokens": 1200,
+                "input_cost_usd": 0.0012
+              }
+            },
+            {
+              "query": "Write tests for this Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.8,
+              "estimate": {
+                "input_tokens": 1197,
+                "input_cost_usd": 0.001197
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "tool_version": "v0.2.1-50-g8743990-dirty",
+        "ran_at": "2026-06-22T21:10:41Z",
+        "executed": true,
+        "content_hash": "02537a66dbdbe4ed41948f5422755b4e1b061f604e14f0cccd5a9a65d8c5cdcc",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "ruff-config",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1238,
+              "input_cost_usd": 0.001238
+            },
+            "measured": {
+              "input_tokens": 21,
+              "cache_read_input_tokens": 59095,
+              "cache_creation_input_tokens": 16291,
+              "output_tokens": 783,
+              "cost_usd": 0.04307
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.ruff\\.lint\\]",
+                "text": "pyproject.toml matches /\\[tool\\.ruff\\.lint\\]/",
+                "passed": true,
+                "evidence": "[tool.ruff.lint]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "select",
+                "text": "pyproject.toml matches /select/",
+                "passed": true,
+                "evidence": "select",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"E\"",
+                "text": "pyproject.toml matches /\"E\"/",
+                "passed": true,
+                "evidence": "\"E\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"F\"",
+                "text": "pyproject.toml matches /\"F\"/",
+                "passed": true,
+                "evidence": "\"F\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"I\"",
+                "text": "pyproject.toml matches /\"I\"/",
+                "passed": true,
+                "evidence": "\"I\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"UP\"",
+                "text": "pyproject.toml matches /\"UP\"/",
+                "passed": true,
+                "evidence": "\"UP\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "target-version",
+                "text": "pyproject.toml matches /target-version/",
+                "passed": true,
+                "evidence": "target-version",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.(black|isort|flake8|pylint)\\]",
+                "text": "pyproject.toml does not match /\\[tool\\.(black|isort|flake8|pylint)\\]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 0,
+              "total": 8,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 76190,
+              "executor_duration_seconds": 14.7
+            },
+            "spec_hash": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+          },
+          {
+            "id": "modernize-io",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1223,
+              "input_cost_usd": 0.001223
+            },
+            "measured": {
+              "input_tokens": 31,
+              "cache_read_input_tokens": 84142,
+              "cache_creation_input_tokens": 20108,
+              "output_tokens": 3273,
+              "cost_usd": 0.065648
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "Path",
+                "text": "src/myapp/io.py matches /Path/",
+                "passed": true,
+                "evidence": "Path",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/io.py",
+                "pattern": "os\\.path",
+                "text": "src/myapp/io.py does not match /os\\.path/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/io.py",
+                "pattern": "print\\(",
+                "text": "src/myapp/io.py does not match /print\\(/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "getLogger|logging\\.",
+                "text": "src/myapp/io.py matches /getLogger|logging\\./",
+                "passed": true,
+                "evidence": "logging.",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "with open|with Path|read_text",
+                "text": "src/myapp/io.py matches /with open|with Path|read_text/",
+                "passed": true,
+                "evidence": "read_text",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/io.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/io.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 107554,
+              "executor_duration_seconds": 36.1
+            },
+            "spec_hash": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 25.4,
+          "estimate": {
+            "input_tokens": 2461,
+            "input_cost_usd": 0.002461
+          },
+          "measured": {
+            "input_tokens": 52,
+            "cache_read_input_tokens": 143237,
+            "cache_creation_input_tokens": 36399,
+            "output_tokens": 4056,
+            "cost_usd": 0.108718
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:07:33Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 13.7,
+            "measured": {
+              "input_tokens": 55,
+              "cache_read_input_tokens": 167867,
+              "cache_creation_input_tokens": 31488,
+              "output_tokens": 2240,
+              "cost_usd": 0.092287
+            }
+          },
+          "results": [
+            {
+              "id": "modernize-io",
+              "passed": false,
+              "measured": {
+                "input_tokens": 34,
+                "cache_read_input_tokens": 109062,
+                "cache_creation_input_tokens": 15956,
+                "output_tokens": 1107,
+                "cost_usd": 0.049004
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 14.6
+              },
+              "fingerprint": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+            },
+            {
+              "id": "ruff-config",
+              "passed": true,
+              "measured": {
+                "input_tokens": 21,
+                "cache_read_input_tokens": 58805,
+                "cache_creation_input_tokens": 15532,
+                "output_tokens": 1133,
+                "cost_usd": 0.043283
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 12.8
+              },
+              "fingerprint": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T17:07:33Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 13.6,
+            "estimate": {
+              "input_tokens": 2461,
+              "input_cost_usd": 0.002461
+            },
+            "measured": {
+              "input_tokens": 40,
+              "cache_read_input_tokens": 118943,
+              "cache_creation_input_tokens": 32001,
+              "output_tokens": 2002,
+              "cost_usd": 0.0872
+            }
+          },
+          "results": [
+            {
+              "id": "modernize-io",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1223,
+                "input_cost_usd": 0.001223
+              },
+              "measured": {
+                "input_tokens": 25,
+                "cache_read_input_tokens": 84689,
+                "cache_creation_input_tokens": 16443,
+                "output_tokens": 1354,
+                "cost_usd": 0.048772
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 0.833333
+              },
+              "timing": {
+                "executor_duration_seconds": 16
+              }
+            },
+            {
+              "id": "ruff-config",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1238,
+                "input_cost_usd": 0.001238
+              },
+              "measured": {
+                "input_tokens": 15,
+                "cache_read_input_tokens": 34254,
+                "cache_creation_input_tokens": 15558,
+                "output_tokens": 648,
+                "cost_usd": 0.038428
+              },
+              "summary": {
+                "passed": 1,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 0.125
+              },
+              "timing": {
+                "executor_duration_seconds": 11.2
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:12:17Z",
+        "executed": true,
+        "content_hash": "c6c6b881bb4517a04efc46810a7ff832d9577fec60a29e1b36827d251c992294",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Refactor this Python code to our house style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 20,
+            "estimate": {
+              "input_tokens": 1579,
+              "input_cost_usd": 0.007895
+            },
+            "spec_hash": "39eb5b3bf38e1222247a8e3fd875ed0dc4e8fae79f2b1985d6600ff013cdb813"
+          },
+          {
+            "query": "Set up ruff for formatting and linting",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 17.4,
+            "estimate": {
+              "input_tokens": 1580,
+              "input_cost_usd": 0.0079
+            },
+            "spec_hash": "8b7d24a12b2b62c3f32f9c7b50227db2aca7285bfe154f4ecb7eb86ad2bc48b1"
+          },
+          {
+            "query": "Which ruff lint rules should I enable?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.8,
+            "estimate": {
+              "input_tokens": 1581,
+              "input_cost_usd": 0.007905
+            },
+            "spec_hash": "de906e08ffad25d9d967104f17c47dbde8d6ddc1b31e42528d4bb01b9d49a1be"
+          },
+          {
+            "query": "Replace black and isort with ruff",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.3,
+            "estimate": {
+              "input_tokens": 1578,
+              "input_cost_usd": 0.00789
+            },
+            "spec_hash": "62bb2f01da4f4d72ae78355ad14c4577800cfb3d5687e44cf06d416f12fa5e3e"
+          },
+          {
+            "query": "Convert these print statements to logging in my Python module",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.2,
+            "estimate": {
+              "input_tokens": 1582,
+              "input_cost_usd": 0.00791
+            },
+            "spec_hash": "c7dcca53fa33a584b7529193f24038613ad65e6b0f05fa192ed97f69191e85f8"
+          },
+          {
+            "query": "Review this Python file for idiomatic style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 1580,
+              "input_cost_usd": 0.0079
+            },
+            "spec_hash": "4ec3d8944e6d7c0cebb869fb77c117b90d83fb50214d534ad42d84f935bcceda"
+          },
+          {
+            "query": "Should I use pathlib or os.path here?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.2,
+            "estimate": {
+              "input_tokens": 1581,
+              "input_cost_usd": 0.007905
+            },
+            "spec_hash": "0e74a43e6529502cf44080f982bddfddd5c65a6a1be66495498534eec923b57b"
+          },
+          {
+            "query": "Fix the exception handling in this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.9,
+            "estimate": {
+              "input_tokens": 1580,
+              "input_cost_usd": 0.0079
+            },
+            "spec_hash": "9d04e0bedf081e2890f847916394194780027a8140ba0cddd4ecb268e752c919"
+          },
+          {
+            "query": "Format my Python code",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 1573,
+              "input_cost_usd": 0.007865
+            },
+            "spec_hash": "597fc8b7016a975026d896fdae1e9b9815f4554cd93fed8a9ed62d0f3a40a6fd"
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.5,
+            "estimate": {
+              "input_tokens": 1581,
+              "input_cost_usd": 0.007905
+            },
+            "spec_hash": "0456552dd1ee4bf51e269e6e855195dcd454a21a3c80bf9b180cb917e9d4dfd8"
+          },
+          {
+            "query": "Add type annotations to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.6,
+            "estimate": {
+              "input_tokens": 1578,
+              "input_cost_usd": 0.00789
+            },
+            "spec_hash": "11609a71345fb30ccf8722ba18e56acdb6125418a4bca87a8de611724055ad9d"
+          },
+          {
+            "query": "Write tests for this Python module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.6,
+            "estimate": {
+              "input_tokens": 1576,
+              "input_cost_usd": 0.00788
+            },
+            "spec_hash": "7ac572b76583a66d8356ab61bbc0817d93b216c4d4644e4324d93e01b55a1ebe"
+          },
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.2,
+            "estimate": {
+              "input_tokens": 1578,
+              "input_cost_usd": 0.00789
+            },
+            "spec_hash": "b41aa46dc7d87ba2b2825cd6a8a30ff78519f72ef6601dba422abaeb84c88587"
+          },
+          {
+            "query": "Refactor this Go code to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 1584,
+              "input_cost_usd": 0.00792
+            },
+            "spec_hash": "b4579b51d98034433f31a663a4e1e0d13683393acd9dde86f00faf423b9ae88c"
+          },
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.4,
+            "estimate": {
+              "input_tokens": 1579,
+              "input_cost_usd": 0.007895
+            },
+            "spec_hash": "407623876053bed0d285f56898ae64555d52de0e3dd1709d2d7b6fdb28ce0c5f"
+          },
+          {
+            "query": "Lint my JavaScript with ESLint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.7,
+            "estimate": {
+              "input_tokens": 1581,
+              "input_cost_usd": 0.007905
+            },
+            "spec_hash": "97ad65e6427c4cf277409eb7afcffdaea4a6813ddaf380a22271d89933c19e89"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 6,
+          "total": 16,
+          "pass_rate": 0.625,
+          "avg_run_seconds": 11.4,
+          "estimate": {
+            "input_tokens": 25271,
+            "input_cost_usd": 0.126355
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-21T01:01:17Z",
+          "summary": {
+            "passed": 10,
+            "failed": 6,
+            "total": 16,
+            "pass_rate": 0.625,
+            "avg_run_seconds": 10,
+            "estimate": {
+              "input_tokens": 25271,
+              "input_cost_usd": 0.126355
+            }
+          },
+          "results": [
+            {
+              "query": "Add docstrings to my Python functions",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.4,
+              "estimate": {
+                "input_tokens": 1579,
+                "input_cost_usd": 0.007895
+              }
+            },
+            {
+              "query": "Add type annotations to this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.6,
+              "estimate": {
+                "input_tokens": 1578,
+                "input_cost_usd": 0.00789
+              }
+            },
+            {
+              "query": "Configure ruff in pyproject.toml",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.5,
+              "estimate": {
+                "input_tokens": 1581,
+                "input_cost_usd": 0.007905
+              }
+            },
+            {
+              "query": "Convert these print statements to logging in my Python module",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.2,
+              "estimate": {
+                "input_tokens": 1582,
+                "input_cost_usd": 0.00791
+              }
+            },
+            {
+              "query": "Fix the exception handling in this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.9,
+              "estimate": {
+                "input_tokens": 1580,
+                "input_cost_usd": 0.0079
+              }
+            },
+            {
+              "query": "Format my Python code",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.9,
+              "estimate": {
+                "input_tokens": 1573,
+                "input_cost_usd": 0.007865
+              }
+            },
+            {
+              "query": "Lint my JavaScript with ESLint",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.7,
+              "estimate": {
+                "input_tokens": 1581,
+                "input_cost_usd": 0.007905
+              }
+            },
+            {
+              "query": "Refactor this Go code to wrap errors with %w",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.3,
+              "estimate": {
+                "input_tokens": 1584,
+                "input_cost_usd": 0.00792
+              }
+            },
+            {
+              "query": "Refactor this Python code to our house style",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.5,
+              "estimate": {
+                "input_tokens": 1579,
+                "input_cost_usd": 0.007895
+              }
+            },
+            {
+              "query": "Replace black and isort with ruff",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.5,
+              "estimate": {
+                "input_tokens": 1578,
+                "input_cost_usd": 0.00789
+              }
+            },
+            {
+              "query": "Review this Python file for idiomatic style",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.9,
+              "estimate": {
+                "input_tokens": 1580,
+                "input_cost_usd": 0.0079
+              }
+            },
+            {
+              "query": "Set up a new Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.2,
+              "estimate": {
+                "input_tokens": 1578,
+                "input_cost_usd": 0.00789
+              }
+            },
+            {
+              "query": "Set up ruff for formatting and linting",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.2,
+              "estimate": {
+                "input_tokens": 1580,
+                "input_cost_usd": 0.0079
+              }
+            },
+            {
+              "query": "Should I use pathlib or os.path here?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.2,
+              "estimate": {
+                "input_tokens": 1581,
+                "input_cost_usd": 0.007905
+              }
+            },
+            {
+              "query": "Which ruff lint rules should I enable?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.8,
+              "estimate": {
+                "input_tokens": 1581,
+                "input_cost_usd": 0.007905
+              }
+            },
+            {
+              "query": "Write tests for this Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.6,
+              "estimate": {
+                "input_tokens": 1576,
+                "input_cost_usd": 0.00788
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:12:03Z",
+        "executed": true,
+        "content_hash": "02537a66dbdbe4ed41948f5422755b4e1b061f604e14f0cccd5a9a65d8c5cdcc",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "ruff-config",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1628,
+              "input_cost_usd": 0.00814
+            },
+            "measured": {
+              "input_tokens": 2795,
+              "cache_read_input_tokens": 111329,
+              "cache_creation_input_tokens": 8509,
+              "output_tokens": 1225,
+              "cost_usd": 0.185986
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.ruff\\.lint\\]",
+                "text": "pyproject.toml matches /\\[tool\\.ruff\\.lint\\]/",
+                "passed": true,
+                "evidence": "[tool.ruff.lint]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "select",
+                "text": "pyproject.toml matches /select/",
+                "passed": true,
+                "evidence": "select",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"E\"",
+                "text": "pyproject.toml matches /\"E\"/",
+                "passed": true,
+                "evidence": "\"E\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"F\"",
+                "text": "pyproject.toml matches /\"F\"/",
+                "passed": true,
+                "evidence": "\"F\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"I\"",
+                "text": "pyproject.toml matches /\"I\"/",
+                "passed": true,
+                "evidence": "\"I\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"UP\"",
+                "text": "pyproject.toml matches /\"UP\"/",
+                "passed": true,
+                "evidence": "\"UP\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "target-version",
+                "text": "pyproject.toml matches /target-version/",
+                "passed": true,
+                "evidence": "target-version",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.(black|isort|flake8|pylint)\\]",
+                "text": "pyproject.toml does not match /\\[tool\\.(black|isort|flake8|pylint)\\]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 0,
+              "total": 8,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 123858,
+              "executor_duration_seconds": 23.5
+            },
+            "spec_hash": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+          },
+          {
+            "id": "modernize-io",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1605,
+              "input_cost_usd": 0.008025
+            },
+            "measured": {
+              "input_tokens": 2926,
+              "cache_read_input_tokens": 151179,
+              "cache_creation_input_tokens": 14486,
+              "output_tokens": 6109,
+              "cost_usd": 0.388421
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "Path",
+                "text": "src/myapp/io.py matches /Path/",
+                "passed": true,
+                "evidence": "Path",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/io.py",
+                "pattern": "os\\.path",
+                "text": "src/myapp/io.py does not match /os\\.path/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/io.py",
+                "pattern": "print\\(",
+                "text": "src/myapp/io.py does not match /print\\(/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "getLogger|logging\\.",
+                "text": "src/myapp/io.py matches /getLogger|logging\\./",
+                "passed": true,
+                "evidence": "logging.",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "with open|with Path|read_text",
+                "text": "src/myapp/io.py matches /with open|with Path|read_text/",
+                "passed": true,
+                "evidence": "read_text",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/io.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/io.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 174700,
+              "executor_duration_seconds": 89.7
+            },
+            "spec_hash": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 56.6,
+          "estimate": {
+            "input_tokens": 3233,
+            "input_cost_usd": 0.016165
+          },
+          "measured": {
+            "input_tokens": 5721,
+            "cache_read_input_tokens": 262508,
+            "cache_creation_input_tokens": 22995,
+            "output_tokens": 7334,
+            "cost_usd": 0.574407
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:12:03Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 72.8,
+            "measured": {
+              "input_tokens": 5129,
+              "cache_read_input_tokens": 318180,
+              "cache_creation_input_tokens": 21454,
+              "output_tokens": 9258,
+              "cost_usd": 0.631984
+            }
+          },
+          "results": [
+            {
+              "id": "modernize-io",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2631,
+                "cache_read_input_tokens": 185862,
+                "cache_creation_input_tokens": 12215,
+                "output_tokens": 5703,
+                "cost_usd": 0.371428
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 89.1
+              },
+              "fingerprint": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+            },
+            {
+              "id": "ruff-config",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2498,
+                "cache_read_input_tokens": 132318,
+                "cache_creation_input_tokens": 9239,
+                "output_tokens": 3555,
+                "cost_usd": 0.260556
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 56.5
+              },
+              "fingerprint": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T01:03:54Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 92.4,
+            "estimate": {
+              "input_tokens": 3233,
+              "input_cost_usd": 0.016165
+            },
+            "measured": {
+              "input_tokens": 5721,
+              "cache_read_input_tokens": 273585,
+              "cache_creation_input_tokens": 29402,
+              "output_tokens": 13216,
+              "cost_usd": 0.791067
+            }
+          },
+          "results": [
+            {
+              "id": "modernize-io",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1605,
+                "input_cost_usd": 0.008025
+              },
+              "measured": {
+                "input_tokens": 2926,
+                "cache_read_input_tokens": 162152,
+                "cache_creation_input_tokens": 20669,
+                "output_tokens": 11668,
+                "cost_usd": 0.594713
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 156.1
+              }
+            },
+            {
+              "id": "ruff-config",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1628,
+                "input_cost_usd": 0.00814
+              },
+              "measured": {
+                "input_tokens": 2795,
+                "cache_read_input_tokens": 111433,
+                "cache_creation_input_tokens": 8733,
+                "output_tokens": 1548,
+                "cost_usd": 0.196354
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 28.6
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:11:10Z",
+        "executed": true,
+        "content_hash": "c6c6b881bb4517a04efc46810a7ff832d9577fec60a29e1b36827d251c992294",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Refactor this Python code to our house style",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1201,
+              "input_cost_usd": 0.003603
+            },
+            "spec_hash": "39eb5b3bf38e1222247a8e3fd875ed0dc4e8fae79f2b1985d6600ff013cdb813"
+          },
+          {
+            "query": "Set up ruff for formatting and linting",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4,
+            "estimate": {
+              "input_tokens": 1200,
+              "input_cost_usd": 0.0036
+            },
+            "spec_hash": "8b7d24a12b2b62c3f32f9c7b50227db2aca7285bfe154f4ecb7eb86ad2bc48b1"
+          },
+          {
+            "query": "Which ruff lint rules should I enable?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "estimate": {
+              "input_tokens": 1200,
+              "input_cost_usd": 0.0036
+            },
+            "spec_hash": "de906e08ffad25d9d967104f17c47dbde8d6ddc1b31e42528d4bb01b9d49a1be"
+          },
+          {
+            "query": "Replace black and isort with ruff",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.6,
+            "estimate": {
+              "input_tokens": 1199,
+              "input_cost_usd": 0.003597
+            },
+            "spec_hash": "62bb2f01da4f4d72ae78355ad14c4577800cfb3d5687e44cf06d416f12fa5e3e"
+          },
+          {
+            "query": "Convert these print statements to logging in my Python module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.9,
+            "estimate": {
+              "input_tokens": 1201,
+              "input_cost_usd": 0.003603
+            },
+            "spec_hash": "c7dcca53fa33a584b7529193f24038613ad65e6b0f05fa192ed97f69191e85f8"
+          },
+          {
+            "query": "Review this Python file for idiomatic style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.6,
+            "estimate": {
+              "input_tokens": 1200,
+              "input_cost_usd": 0.0036
+            },
+            "spec_hash": "4ec3d8944e6d7c0cebb869fb77c117b90d83fb50214d534ad42d84f935bcceda"
+          },
+          {
+            "query": "Should I use pathlib or os.path here?",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "estimate": {
+              "input_tokens": 1202,
+              "input_cost_usd": 0.003606
+            },
+            "spec_hash": "0e74a43e6529502cf44080f982bddfddd5c65a6a1be66495498534eec923b57b"
+          },
+          {
+            "query": "Fix the exception handling in this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 1199,
+              "input_cost_usd": 0.003597
+            },
+            "spec_hash": "9d04e0bedf081e2890f847916394194780027a8140ba0cddd4ecb268e752c919"
+          },
+          {
+            "query": "Format my Python code",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.7,
+            "estimate": {
+              "input_tokens": 1195,
+              "input_cost_usd": 0.003585
+            },
+            "spec_hash": "597fc8b7016a975026d896fdae1e9b9815f4554cd93fed8a9ed62d0f3a40a6fd"
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "estimate": {
+              "input_tokens": 1200,
+              "input_cost_usd": 0.0036
+            },
+            "spec_hash": "0456552dd1ee4bf51e269e6e855195dcd454a21a3c80bf9b180cb917e9d4dfd8"
+          },
+          {
+            "query": "Add type annotations to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.5,
+            "estimate": {
+              "input_tokens": 1198,
+              "input_cost_usd": 0.003594
+            },
+            "spec_hash": "11609a71345fb30ccf8722ba18e56acdb6125418a4bca87a8de611724055ad9d"
+          },
+          {
+            "query": "Write tests for this Python module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 1197,
+              "input_cost_usd": 0.003591
+            },
+            "spec_hash": "7ac572b76583a66d8356ab61bbc0817d93b216c4d4644e4324d93e01b55a1ebe"
+          },
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.1,
+            "estimate": {
+              "input_tokens": 1200,
+              "input_cost_usd": 0.0036
+            },
+            "spec_hash": "b41aa46dc7d87ba2b2825cd6a8a30ff78519f72ef6601dba422abaeb84c88587"
+          },
+          {
+            "query": "Refactor this Go code to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 1203,
+              "input_cost_usd": 0.003609
+            },
+            "spec_hash": "b4579b51d98034433f31a663a4e1e0d13683393acd9dde86f00faf423b9ae88c"
+          },
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.9,
+            "estimate": {
+              "input_tokens": 1199,
+              "input_cost_usd": 0.003597
+            },
+            "spec_hash": "407623876053bed0d285f56898ae64555d52de0e3dd1709d2d7b6fdb28ce0c5f"
+          },
+          {
+            "query": "Lint my JavaScript with ESLint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.7,
+            "estimate": {
+              "input_tokens": 1199,
+              "input_cost_usd": 0.003597
+            },
+            "spec_hash": "97ad65e6427c4cf277409eb7afcffdaea4a6813ddaf380a22271d89933c19e89"
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 5,
+          "total": 16,
+          "pass_rate": 0.6875,
+          "avg_run_seconds": 7.6,
+          "estimate": {
+            "input_tokens": 19193,
+            "input_cost_usd": 0.057579
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-22T21:11:46Z",
+          "summary": {
+            "passed": 11,
+            "failed": 5,
+            "total": 16,
+            "pass_rate": 0.6875,
+            "avg_run_seconds": 9.8,
+            "estimate": {
+              "input_tokens": 19193,
+              "input_cost_usd": 0.057579
+            }
+          },
+          "results": [
+            {
+              "query": "Add docstrings to my Python functions",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.9,
+              "estimate": {
+                "input_tokens": 1199,
+                "input_cost_usd": 0.003597
+              }
+            },
+            {
+              "query": "Add type annotations to this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.5,
+              "estimate": {
+                "input_tokens": 1198,
+                "input_cost_usd": 0.003594
+              }
+            },
+            {
+              "query": "Configure ruff in pyproject.toml",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.5,
+              "estimate": {
+                "input_tokens": 1200,
+                "input_cost_usd": 0.0036
+              }
+            },
+            {
+              "query": "Convert these print statements to logging in my Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 19,
+              "estimate": {
+                "input_tokens": 1201,
+                "input_cost_usd": 0.003603
+              }
+            },
+            {
+              "query": "Fix the exception handling in this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.2,
+              "estimate": {
+                "input_tokens": 1199,
+                "input_cost_usd": 0.003597
+              }
+            },
+            {
+              "query": "Format my Python code",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.5,
+              "estimate": {
+                "input_tokens": 1195,
+                "input_cost_usd": 0.003585
+              }
+            },
+            {
+              "query": "Lint my JavaScript with ESLint",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.7,
+              "estimate": {
+                "input_tokens": 1199,
+                "input_cost_usd": 0.003597
+              }
+            },
+            {
+              "query": "Refactor this Go code to wrap errors with %w",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.2,
+              "estimate": {
+                "input_tokens": 1203,
+                "input_cost_usd": 0.003609
+              }
+            },
+            {
+              "query": "Refactor this Python code to our house style",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 33.3,
+              "estimate": {
+                "input_tokens": 1201,
+                "input_cost_usd": 0.003603
+              }
+            },
+            {
+              "query": "Replace black and isort with ruff",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.6,
+              "estimate": {
+                "input_tokens": 1199,
+                "input_cost_usd": 0.003597
+              }
+            },
+            {
+              "query": "Review this Python file for idiomatic style",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.4,
+              "estimate": {
+                "input_tokens": 1200,
+                "input_cost_usd": 0.0036
+              }
+            },
+            {
+              "query": "Set up a new Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.1,
+              "estimate": {
+                "input_tokens": 1200,
+                "input_cost_usd": 0.0036
+              }
+            },
+            {
+              "query": "Set up ruff for formatting and linting",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4,
+              "estimate": {
+                "input_tokens": 1200,
+                "input_cost_usd": 0.0036
+              }
+            },
+            {
+              "query": "Should I use pathlib or os.path here?",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.9,
+              "estimate": {
+                "input_tokens": 1202,
+                "input_cost_usd": 0.003606
+              }
+            },
+            {
+              "query": "Which ruff lint rules should I enable?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.5,
+              "estimate": {
+                "input_tokens": 1200,
+                "input_cost_usd": 0.0036
+              }
+            },
+            {
+              "query": "Write tests for this Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.7,
+              "estimate": {
+                "input_tokens": 1197,
+                "input_cost_usd": 0.003591
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:09:04Z",
+        "executed": true,
+        "content_hash": "02537a66dbdbe4ed41948f5422755b4e1b061f604e14f0cccd5a9a65d8c5cdcc",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "ruff-config",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1238,
+              "input_cost_usd": 0.003714
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 117107,
+              "cache_creation_input_tokens": 9486,
+              "output_tokens": 775,
+              "cost_usd": 0.104329
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.ruff\\.lint\\]",
+                "text": "pyproject.toml matches /\\[tool\\.ruff\\.lint\\]/",
+                "passed": true,
+                "evidence": "[tool.ruff.lint]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "select",
+                "text": "pyproject.toml matches /select/",
+                "passed": true,
+                "evidence": "select",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"E\"",
+                "text": "pyproject.toml matches /\"E\"/",
+                "passed": true,
+                "evidence": "\"E\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"F\"",
+                "text": "pyproject.toml matches /\"F\"/",
+                "passed": true,
+                "evidence": "\"F\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"I\"",
+                "text": "pyproject.toml matches /\"I\"/",
+                "passed": true,
+                "evidence": "\"I\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"UP\"",
+                "text": "pyproject.toml matches /\"UP\"/",
+                "passed": true,
+                "evidence": "\"UP\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "target-version",
+                "text": "pyproject.toml matches /target-version/",
+                "passed": true,
+                "evidence": "target-version",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.(black|isort|flake8|pylint)\\]",
+                "text": "pyproject.toml does not match /\\[tool\\.(black|isort|flake8|pylint)\\]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 0,
+              "total": 8,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 127376,
+              "executor_duration_seconds": 20
+            },
+            "spec_hash": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+          },
+          {
+            "id": "modernize-io",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1223,
+              "input_cost_usd": 0.003669
+            },
+            "measured": {
+              "input_tokens": 7,
+              "cache_read_input_tokens": 91677,
+              "cache_creation_input_tokens": 10695,
+              "output_tokens": 1909,
+              "cost_usd": 0.120951
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "Path",
+                "text": "src/myapp/io.py matches /Path/",
+                "passed": true,
+                "evidence": "Path",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/io.py",
+                "pattern": "os\\.path",
+                "text": "src/myapp/io.py does not match /os\\.path/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/io.py",
+                "pattern": "print\\(",
+                "text": "src/myapp/io.py does not match /print\\(/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "getLogger|logging\\.",
+                "text": "src/myapp/io.py matches /getLogger|logging\\./",
+                "passed": true,
+                "evidence": "logging.",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "with open|with Path|read_text",
+                "text": "src/myapp/io.py matches /with open|with Path|read_text/",
+                "passed": true,
+                "evidence": "read_text",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/io.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/io.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 104288,
+              "executor_duration_seconds": 34.8
+            },
+            "spec_hash": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 27.4,
+          "estimate": {
+            "input_tokens": 2461,
+            "input_cost_usd": 0.007383
+          },
+          "measured": {
+            "input_tokens": 15,
+            "cache_read_input_tokens": 208784,
+            "cache_creation_input_tokens": 20181,
+            "output_tokens": 2684,
+            "cost_usd": 0.22528
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:09:04Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 37.5,
+            "measured": {
+              "input_tokens": 13,
+              "cache_read_input_tokens": 204002,
+              "cache_creation_input_tokens": 19047,
+              "output_tokens": 4092,
+              "cost_usd": 0.238171
+            }
+          },
+          "results": [
+            {
+              "id": "modernize-io",
+              "passed": false,
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 139329,
+                "cache_creation_input_tokens": 10784,
+                "output_tokens": 3142,
+                "cost_usd": 0.154274
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 55.8
+              },
+              "fingerprint": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+            },
+            {
+              "id": "ruff-config",
+              "passed": true,
+              "measured": {
+                "input_tokens": 5,
+                "cache_read_input_tokens": 64673,
+                "cache_creation_input_tokens": 8263,
+                "output_tokens": 950,
+                "cost_usd": 0.083897
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 19.1
+              },
+              "fingerprint": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T02:51:50Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 33.3,
+            "estimate": {
+              "input_tokens": 2461,
+              "input_cost_usd": 0.007383
+            },
+            "measured": {
+              "input_tokens": 15,
+              "cache_read_input_tokens": 208792,
+              "cache_creation_input_tokens": 21159,
+              "output_tokens": 3701,
+              "cost_usd": 0.2464
+            }
+          },
+          "results": [
+            {
+              "id": "modernize-io",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1223,
+                "input_cost_usd": 0.003669
+              },
+              "measured": {
+                "input_tokens": 7,
+                "cache_read_input_tokens": 91681,
+                "cache_creation_input_tokens": 11669,
+                "output_tokens": 2930,
+                "cost_usd": 0.142106
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 50.2
+              }
+            },
+            {
+              "id": "ruff-config",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1238,
+                "input_cost_usd": 0.003714
+              },
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 117111,
+                "cache_creation_input_tokens": 9490,
+                "output_tokens": 771,
+                "cost_usd": 0.104294
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 16.3
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.1-pro": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:43:06Z",
+        "executed": true,
+        "content_hash": "c6c6b881bb4517a04efc46810a7ff832d9577fec60a29e1b36827d251c992294",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "Refactor this Python code to our house style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "39eb5b3bf38e1222247a8e3fd875ed0dc4e8fae79f2b1985d6600ff013cdb813"
+          },
+          {
+            "query": "Set up ruff for formatting and linting",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "8b7d24a12b2b62c3f32f9c7b50227db2aca7285bfe154f4ecb7eb86ad2bc48b1"
+          },
+          {
+            "query": "Which ruff lint rules should I enable?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "de906e08ffad25d9d967104f17c47dbde8d6ddc1b31e42528d4bb01b9d49a1be"
+          },
+          {
+            "query": "Replace black and isort with ruff",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "62bb2f01da4f4d72ae78355ad14c4577800cfb3d5687e44cf06d416f12fa5e3e"
+          },
+          {
+            "query": "Convert these print statements to logging in my Python module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "c7dcca53fa33a584b7529193f24038613ad65e6b0f05fa192ed97f69191e85f8"
+          },
+          {
+            "query": "Review this Python file for idiomatic style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5,
+            "spec_hash": "4ec3d8944e6d7c0cebb869fb77c117b90d83fb50214d534ad42d84f935bcceda"
+          },
+          {
+            "query": "Should I use pathlib or os.path here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "0e74a43e6529502cf44080f982bddfddd5c65a6a1be66495498534eec923b57b"
+          },
+          {
+            "query": "Fix the exception handling in this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "9d04e0bedf081e2890f847916394194780027a8140ba0cddd4ecb268e752c919"
+          },
+          {
+            "query": "Format my Python code",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.8,
+            "spec_hash": "597fc8b7016a975026d896fdae1e9b9815f4554cd93fed8a9ed62d0f3a40a6fd"
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "0456552dd1ee4bf51e269e6e855195dcd454a21a3c80bf9b180cb917e9d4dfd8"
+          },
+          {
+            "query": "Add type annotations to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.8,
+            "spec_hash": "11609a71345fb30ccf8722ba18e56acdb6125418a4bca87a8de611724055ad9d"
+          },
+          {
+            "query": "Write tests for this Python module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "7ac572b76583a66d8356ab61bbc0817d93b216c4d4644e4324d93e01b55a1ebe"
+          },
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "b41aa46dc7d87ba2b2825cd6a8a30ff78519f72ef6601dba422abaeb84c88587"
+          },
+          {
+            "query": "Refactor this Go code to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "b4579b51d98034433f31a663a4e1e0d13683393acd9dde86f00faf423b9ae88c"
+          },
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "407623876053bed0d285f56898ae64555d52de0e3dd1709d2d7b6fdb28ce0c5f"
+          },
+          {
+            "query": "Lint my JavaScript with ESLint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "97ad65e6427c4cf277409eb7afcffdaea4a6813ddaf380a22271d89933c19e89"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 10,
+          "total": 16,
+          "pass_rate": 0.375,
+          "avg_run_seconds": 5.4
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:43:17Z",
+        "executed": true,
+        "content_hash": "02537a66dbdbe4ed41948f5422755b4e1b061f604e14f0cccd5a9a65d8c5cdcc",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "ruff-config",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.7
+            },
+            "spec_hash": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+          },
+          {
+            "id": "modernize-io",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.2
+            },
+            "spec_hash": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5.5
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:43:17Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.2
+          },
+          "results": [
+            {
+              "id": "modernize-io",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.1
+              },
+              "fingerprint": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+            },
+            {
+              "id": "ruff-config",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.3
+              },
+              "fingerprint": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.5-flash": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:41:49Z",
+        "executed": true,
+        "content_hash": "c6c6b881bb4517a04efc46810a7ff832d9577fec60a29e1b36827d251c992294",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "query": "Refactor this Python code to our house style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "39eb5b3bf38e1222247a8e3fd875ed0dc4e8fae79f2b1985d6600ff013cdb813"
+          },
+          {
+            "query": "Set up ruff for formatting and linting",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "8b7d24a12b2b62c3f32f9c7b50227db2aca7285bfe154f4ecb7eb86ad2bc48b1"
+          },
+          {
+            "query": "Which ruff lint rules should I enable?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "de906e08ffad25d9d967104f17c47dbde8d6ddc1b31e42528d4bb01b9d49a1be"
+          },
+          {
+            "query": "Replace black and isort with ruff",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "62bb2f01da4f4d72ae78355ad14c4577800cfb3d5687e44cf06d416f12fa5e3e"
+          },
+          {
+            "query": "Convert these print statements to logging in my Python module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.1,
+            "spec_hash": "c7dcca53fa33a584b7529193f24038613ad65e6b0f05fa192ed97f69191e85f8"
+          },
+          {
+            "query": "Review this Python file for idiomatic style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "4ec3d8944e6d7c0cebb869fb77c117b90d83fb50214d534ad42d84f935bcceda"
+          },
+          {
+            "query": "Should I use pathlib or os.path here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "0e74a43e6529502cf44080f982bddfddd5c65a6a1be66495498534eec923b57b"
+          },
+          {
+            "query": "Fix the exception handling in this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "9d04e0bedf081e2890f847916394194780027a8140ba0cddd4ecb268e752c919"
+          },
+          {
+            "query": "Format my Python code",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "597fc8b7016a975026d896fdae1e9b9815f4554cd93fed8a9ed62d0f3a40a6fd"
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "0456552dd1ee4bf51e269e6e855195dcd454a21a3c80bf9b180cb917e9d4dfd8"
+          },
+          {
+            "query": "Add type annotations to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "11609a71345fb30ccf8722ba18e56acdb6125418a4bca87a8de611724055ad9d"
+          },
+          {
+            "query": "Write tests for this Python module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "7ac572b76583a66d8356ab61bbc0817d93b216c4d4644e4324d93e01b55a1ebe"
+          },
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "b41aa46dc7d87ba2b2825cd6a8a30ff78519f72ef6601dba422abaeb84c88587"
+          },
+          {
+            "query": "Refactor this Go code to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "b4579b51d98034433f31a663a4e1e0d13683393acd9dde86f00faf423b9ae88c"
+          },
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "407623876053bed0d285f56898ae64555d52de0e3dd1709d2d7b6fdb28ce0c5f"
+          },
+          {
+            "query": "Lint my JavaScript with ESLint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "97ad65e6427c4cf277409eb7afcffdaea4a6813ddaf380a22271d89933c19e89"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 10,
+          "total": 16,
+          "pass_rate": 0.375,
+          "avg_run_seconds": 5.5
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:42:00Z",
+        "executed": true,
+        "content_hash": "02537a66dbdbe4ed41948f5422755b4e1b061f604e14f0cccd5a9a65d8c5cdcc",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "id": "ruff-config",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.3
+            },
+            "spec_hash": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+          },
+          {
+            "id": "modernize-io",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.6
+            },
+            "spec_hash": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5.4
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:42:00Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.6
+          },
+          "results": [
+            {
+              "id": "modernize-io",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.4
+              },
+              "fingerprint": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+            },
+            {
+              "id": "ruff-config",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.8
+              },
+              "fingerprint": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:19:59Z",
+        "executed": true,
+        "content_hash": "c6c6b881bb4517a04efc46810a7ff832d9577fec60a29e1b36827d251c992294",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Refactor this Python code to our house style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 42.7,
+            "estimate": {
+              "input_tokens": 1074,
+              "input_cost_usd": 0.002685
+            },
+            "spec_hash": "39eb5b3bf38e1222247a8e3fd875ed0dc4e8fae79f2b1985d6600ff013cdb813"
+          },
+          {
+            "query": "Set up ruff for formatting and linting",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 106.3,
+            "estimate": {
+              "input_tokens": 1074,
+              "input_cost_usd": 0.002685
+            },
+            "spec_hash": "8b7d24a12b2b62c3f32f9c7b50227db2aca7285bfe154f4ecb7eb86ad2bc48b1"
+          },
+          {
+            "query": "Which ruff lint rules should I enable?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 27.4,
+            "estimate": {
+              "input_tokens": 1074,
+              "input_cost_usd": 0.002685
+            },
+            "spec_hash": "de906e08ffad25d9d967104f17c47dbde8d6ddc1b31e42528d4bb01b9d49a1be"
+          },
+          {
+            "query": "Replace black and isort with ruff",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 92.4,
+            "estimate": {
+              "input_tokens": 1073,
+              "input_cost_usd": 0.002683
+            },
+            "spec_hash": "62bb2f01da4f4d72ae78355ad14c4577800cfb3d5687e44cf06d416f12fa5e3e"
+          },
+          {
+            "query": "Convert these print statements to logging in my Python module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 33.2,
+            "estimate": {
+              "input_tokens": 1075,
+              "input_cost_usd": 0.002688
+            },
+            "spec_hash": "c7dcca53fa33a584b7529193f24038613ad65e6b0f05fa192ed97f69191e85f8"
+          },
+          {
+            "query": "Review this Python file for idiomatic style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 28.6,
+            "estimate": {
+              "input_tokens": 1073,
+              "input_cost_usd": 0.002683
+            },
+            "spec_hash": "4ec3d8944e6d7c0cebb869fb77c117b90d83fb50214d534ad42d84f935bcceda"
+          },
+          {
+            "query": "Should I use pathlib or os.path here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.9,
+            "estimate": {
+              "input_tokens": 1074,
+              "input_cost_usd": 0.002685
+            },
+            "spec_hash": "0e74a43e6529502cf44080f982bddfddd5c65a6a1be66495498534eec923b57b"
+          },
+          {
+            "query": "Fix the exception handling in this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 91.3,
+            "estimate": {
+              "input_tokens": 1073,
+              "input_cost_usd": 0.002683
+            },
+            "spec_hash": "9d04e0bedf081e2890f847916394194780027a8140ba0cddd4ecb268e752c919"
+          },
+          {
+            "query": "Format my Python code",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 33,
+            "estimate": {
+              "input_tokens": 1069,
+              "input_cost_usd": 0.002673
+            },
+            "spec_hash": "597fc8b7016a975026d896fdae1e9b9815f4554cd93fed8a9ed62d0f3a40a6fd"
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 62.5,
+            "estimate": {
+              "input_tokens": 1073,
+              "input_cost_usd": 0.002683
+            },
+            "spec_hash": "0456552dd1ee4bf51e269e6e855195dcd454a21a3c80bf9b180cb917e9d4dfd8"
+          },
+          {
+            "query": "Add type annotations to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 32.7,
+            "estimate": {
+              "input_tokens": 1020,
+              "input_cost_usd": 0.00255
+            }
+          },
+          {
+            "query": "Write tests for this Python module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1019,
+              "input_cost_usd": 0.002548
+            }
+          },
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 83.5,
+            "estimate": {
+              "input_tokens": 1021,
+              "input_cost_usd": 0.002553
+            }
+          },
+          {
+            "query": "Refactor this Go code to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 74.7,
+            "estimate": {
+              "input_tokens": 1024,
+              "input_cost_usd": 0.00256
+            }
+          },
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 52.5,
+            "estimate": {
+              "input_tokens": 1020,
+              "input_cost_usd": 0.00255
+            }
+          },
+          {
+            "query": "Lint my JavaScript with ESLint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 25,
+            "estimate": {
+              "input_tokens": 1020,
+              "input_cost_usd": 0.00255
+            }
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 10,
+          "total": 16,
+          "pass_rate": 0.375,
+          "avg_run_seconds": 57.4,
+          "estimate": {
+            "input_tokens": 16856,
+            "input_cost_usd": 0.042144
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-20T12:09:53Z",
+          "summary": {
+            "passed": 6,
+            "failed": 10,
+            "total": 16,
+            "pass_rate": 0.375,
+            "avg_run_seconds": 57.1,
+            "estimate": {
+              "input_tokens": 16336,
+              "input_cost_usd": 0.040843
+            }
+          },
+          "results": [
+            {
+              "query": "Add docstrings to my Python functions",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 52.5,
+              "estimate": {
+                "input_tokens": 1020,
+                "input_cost_usd": 0.00255
+              }
+            },
+            {
+              "query": "Add type annotations to this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 32.7,
+              "estimate": {
+                "input_tokens": 1020,
+                "input_cost_usd": 0.00255
+              }
+            },
+            {
+              "query": "Configure ruff in pyproject.toml",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 53,
+              "estimate": {
+                "input_tokens": 1021,
+                "input_cost_usd": 0.002553
+              }
+            },
+            {
+              "query": "Convert these print statements to logging in my Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 58.3,
+              "estimate": {
+                "input_tokens": 1023,
+                "input_cost_usd": 0.002558
+              }
+            },
+            {
+              "query": "Fix the exception handling in this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 88.7,
+              "estimate": {
+                "input_tokens": 1021,
+                "input_cost_usd": 0.002553
+              }
+            },
+            {
+              "query": "Format my Python code",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 28.4,
+              "estimate": {
+                "input_tokens": 1017,
+                "input_cost_usd": 0.002542
+              }
+            },
+            {
+              "query": "Lint my JavaScript with ESLint",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 25,
+              "estimate": {
+                "input_tokens": 1020,
+                "input_cost_usd": 0.00255
+              }
+            },
+            {
+              "query": "Refactor this Go code to wrap errors with %w",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 74.7,
+              "estimate": {
+                "input_tokens": 1024,
+                "input_cost_usd": 0.00256
+              }
+            },
+            {
+              "query": "Refactor this Python code to our house style",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 102.6,
+              "estimate": {
+                "input_tokens": 1022,
+                "input_cost_usd": 0.002555
+              }
+            },
+            {
+              "query": "Replace black and isort with ruff",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 41.4,
+              "estimate": {
+                "input_tokens": 1021,
+                "input_cost_usd": 0.002553
+              }
+            },
+            {
+              "query": "Review this Python file for idiomatic style",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 31,
+              "estimate": {
+                "input_tokens": 1021,
+                "input_cost_usd": 0.002553
+              }
+            },
+            {
+              "query": "Set up a new Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 83.5,
+              "estimate": {
+                "input_tokens": 1021,
+                "input_cost_usd": 0.002553
+              }
+            },
+            {
+              "query": "Set up ruff for formatting and linting",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 77.8,
+              "estimate": {
+                "input_tokens": 1022,
+                "input_cost_usd": 0.002555
+              }
+            },
+            {
+              "query": "Should I use pathlib or os.path here?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.5,
+              "estimate": {
+                "input_tokens": 1022,
+                "input_cost_usd": 0.002555
+              }
+            },
+            {
+              "query": "Which ruff lint rules should I enable?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 32.6,
+              "estimate": {
+                "input_tokens": 1022,
+                "input_cost_usd": 0.002555
+              }
+            },
+            {
+              "query": "Write tests for this Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 120,
+              "estimate": {
+                "input_tokens": 1019,
+                "input_cost_usd": 0.002548
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:13:55Z",
+        "executed": true,
+        "content_hash": "02537a66dbdbe4ed41948f5422755b4e1b061f604e14f0cccd5a9a65d8c5cdcc",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "ruff-config",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1111,
+              "input_cost_usd": 0.002778
+            },
+            "measured": {
+              "input_tokens": 3813,
+              "cache_read_input_tokens": 90880,
+              "output_tokens": 1447,
+              "cost_usd": 0.258438
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.ruff\\.lint\\]",
+                "text": "pyproject.toml matches /\\[tool\\.ruff\\.lint\\]/",
+                "passed": true,
+                "evidence": "[tool.ruff.lint]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "select",
+                "text": "pyproject.toml matches /select/",
+                "passed": true,
+                "evidence": "select",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"E\"",
+                "text": "pyproject.toml matches /\"E\"/",
+                "passed": true,
+                "evidence": "\"E\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"F\"",
+                "text": "pyproject.toml matches /\"F\"/",
+                "passed": true,
+                "evidence": "\"F\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"I\"",
+                "text": "pyproject.toml matches /\"I\"/",
+                "passed": true,
+                "evidence": "\"I\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"UP\"",
+                "text": "pyproject.toml matches /\"UP\"/",
+                "passed": true,
+                "evidence": "\"UP\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "target-version",
+                "text": "pyproject.toml matches /target-version/",
+                "passed": true,
+                "evidence": "target-version",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.(black|isort|flake8|pylint)\\]",
+                "text": "pyproject.toml does not match /\\[tool\\.(black|isort|flake8|pylint)\\]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 0,
+              "total": 8,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 96140,
+              "executor_duration_seconds": 67
+            },
+            "spec_hash": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+          },
+          {
+            "id": "modernize-io",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1092,
+              "input_cost_usd": 0.00273
+            },
+            "measured": {
+              "input_tokens": 19235,
+              "cache_read_input_tokens": 168064,
+              "output_tokens": 2213,
+              "cost_usd": 0.501443
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "Path",
+                "text": "src/myapp/io.py matches /Path/",
+                "passed": true,
+                "evidence": "Path",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/io.py",
+                "pattern": "os\\.path",
+                "text": "src/myapp/io.py does not match /os\\.path/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/io.py",
+                "pattern": "print\\(",
+                "text": "src/myapp/io.py does not match /print\\(/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "getLogger|logging\\.",
+                "text": "src/myapp/io.py matches /getLogger|logging\\./",
+                "passed": true,
+                "evidence": "logging.",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "with open|with Path|read_text",
+                "text": "src/myapp/io.py matches /with open|with Path|read_text/",
+                "passed": true,
+                "evidence": "read_text",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/io.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/io.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 189512,
+              "executor_duration_seconds": 49.5
+            },
+            "spec_hash": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 58.3,
+          "estimate": {
+            "input_tokens": 2203,
+            "input_cost_usd": 0.005508
+          },
+          "measured": {
+            "input_tokens": 23048,
+            "cache_read_input_tokens": 258944,
+            "output_tokens": 3660,
+            "cost_usd": 0.759881
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:13:55Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 47.3,
+            "measured": {
+              "input_tokens": 18975,
+              "cache_read_input_tokens": 207104,
+              "output_tokens": 3225,
+              "cost_usd": 0.613573
+            }
+          },
+          "results": [
+            {
+              "id": "modernize-io",
+              "passed": true,
+              "measured": {
+                "input_tokens": 12923,
+                "cache_read_input_tokens": 118784,
+                "output_tokens": 1944,
+                "cost_usd": 0.358428
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 50.4
+              },
+              "fingerprint": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+            },
+            {
+              "id": "ruff-config",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6052,
+                "cache_read_input_tokens": 88320,
+                "output_tokens": 1281,
+                "cost_usd": 0.255145
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 44.1
+              },
+              "fingerprint": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T12:10:50Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 48.8,
+            "estimate": {
+              "input_tokens": 2099,
+              "input_cost_usd": 0.005248
+            },
+            "measured": {
+              "input_tokens": 34858,
+              "cache_read_input_tokens": 226944,
+              "output_tokens": 4108,
+              "cost_usd": 0.716126
+            }
+          },
+          "results": [
+            {
+              "id": "modernize-io",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1040,
+                "input_cost_usd": 0.0026
+              },
+              "measured": {
+                "input_tokens": 18213,
+                "cache_read_input_tokens": 123904,
+                "output_tokens": 2327,
+                "cost_usd": 0.390198
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 56.9
+              }
+            },
+            {
+              "id": "ruff-config",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1059,
+                "input_cost_usd": 0.002648
+              },
+              "measured": {
+                "input_tokens": 16645,
+                "cache_read_input_tokens": 103040,
+                "output_tokens": 1781,
+                "cost_usd": 0.325928
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 40.6
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T05:29:22Z",
+        "executed": true,
+        "content_hash": "c6c6b881bb4517a04efc46810a7ff832d9577fec60a29e1b36827d251c992294",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Refactor this Python code to our house style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1074,
+              "input_cost_usd": 0.00537
+            },
+            "spec_hash": "39eb5b3bf38e1222247a8e3fd875ed0dc4e8fae79f2b1985d6600ff013cdb813"
+          },
+          {
+            "query": "Set up ruff for formatting and linting",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 76.8,
+            "estimate": {
+              "input_tokens": 1074,
+              "input_cost_usd": 0.00537
+            },
+            "spec_hash": "8b7d24a12b2b62c3f32f9c7b50227db2aca7285bfe154f4ecb7eb86ad2bc48b1"
+          },
+          {
+            "query": "Which ruff lint rules should I enable?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 20.5,
+            "estimate": {
+              "input_tokens": 1074,
+              "input_cost_usd": 0.00537
+            },
+            "spec_hash": "de906e08ffad25d9d967104f17c47dbde8d6ddc1b31e42528d4bb01b9d49a1be"
+          },
+          {
+            "query": "Replace black and isort with ruff",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 73.9,
+            "estimate": {
+              "input_tokens": 1073,
+              "input_cost_usd": 0.005365
+            },
+            "spec_hash": "62bb2f01da4f4d72ae78355ad14c4577800cfb3d5687e44cf06d416f12fa5e3e"
+          },
+          {
+            "query": "Convert these print statements to logging in my Python module",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 91.8,
+            "estimate": {
+              "input_tokens": 1075,
+              "input_cost_usd": 0.005375
+            },
+            "spec_hash": "c7dcca53fa33a584b7529193f24038613ad65e6b0f05fa192ed97f69191e85f8"
+          },
+          {
+            "query": "Review this Python file for idiomatic style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 23,
+            "estimate": {
+              "input_tokens": 1073,
+              "input_cost_usd": 0.005365
+            },
+            "spec_hash": "4ec3d8944e6d7c0cebb869fb77c117b90d83fb50214d534ad42d84f935bcceda"
+          },
+          {
+            "query": "Should I use pathlib or os.path here?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 18.5,
+            "estimate": {
+              "input_tokens": 1074,
+              "input_cost_usd": 0.00537
+            },
+            "spec_hash": "0e74a43e6529502cf44080f982bddfddd5c65a6a1be66495498534eec923b57b"
+          },
+          {
+            "query": "Fix the exception handling in this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1073,
+              "input_cost_usd": 0.005365
+            },
+            "spec_hash": "9d04e0bedf081e2890f847916394194780027a8140ba0cddd4ecb268e752c919"
+          },
+          {
+            "query": "Format my Python code",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 58.1,
+            "estimate": {
+              "input_tokens": 1069,
+              "input_cost_usd": 0.005345
+            },
+            "spec_hash": "597fc8b7016a975026d896fdae1e9b9815f4554cd93fed8a9ed62d0f3a40a6fd"
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 95.3,
+            "estimate": {
+              "input_tokens": 1073,
+              "input_cost_usd": 0.005365
+            },
+            "spec_hash": "0456552dd1ee4bf51e269e6e855195dcd454a21a3c80bf9b180cb917e9d4dfd8"
+          },
+          {
+            "query": "Add type annotations to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 43.8,
+            "estimate": {
+              "input_tokens": 1020,
+              "input_cost_usd": 0.0051
+            }
+          },
+          {
+            "query": "Write tests for this Python module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 69.8,
+            "estimate": {
+              "input_tokens": 1019,
+              "input_cost_usd": 0.005095
+            }
+          },
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 49,
+            "estimate": {
+              "input_tokens": 1021,
+              "input_cost_usd": 0.005105
+            }
+          },
+          {
+            "query": "Refactor this Go code to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 115.4,
+            "estimate": {
+              "input_tokens": 1024,
+              "input_cost_usd": 0.00512
+            }
+          },
+          {
+            "query": "Add docstrings to my Python functions",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 54.4,
+            "estimate": {
+              "input_tokens": 1020,
+              "input_cost_usd": 0.0051
+            }
+          },
+          {
+            "query": "Lint my JavaScript with ESLint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 46.8,
+            "estimate": {
+              "input_tokens": 1020,
+              "input_cost_usd": 0.0051
+            }
+          }
+        ],
+        "summary": {
+          "passed": 7,
+          "failed": 9,
+          "total": 16,
+          "pass_rate": 0.4375,
+          "avg_run_seconds": 67.3,
+          "estimate": {
+            "input_tokens": 16856,
+            "input_cost_usd": 0.08428
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-20T12:22:43Z",
+          "summary": {
+            "passed": 6,
+            "failed": 10,
+            "total": 16,
+            "pass_rate": 0.375,
+            "avg_run_seconds": 54.9,
+            "estimate": {
+              "input_tokens": 16336,
+              "input_cost_usd": 0.08168
+            }
+          },
+          "results": [
+            {
+              "query": "Add docstrings to my Python functions",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 54.4,
+              "estimate": {
+                "input_tokens": 1020,
+                "input_cost_usd": 0.0051
+              }
+            },
+            {
+              "query": "Add type annotations to this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 43.8,
+              "estimate": {
+                "input_tokens": 1020,
+                "input_cost_usd": 0.0051
+              }
+            },
+            {
+              "query": "Configure ruff in pyproject.toml",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 46.9,
+              "estimate": {
+                "input_tokens": 1021,
+                "input_cost_usd": 0.005105
+              }
+            },
+            {
+              "query": "Convert these print statements to logging in my Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 37.6,
+              "estimate": {
+                "input_tokens": 1023,
+                "input_cost_usd": 0.005115
+              }
+            },
+            {
+              "query": "Fix the exception handling in this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 68.4,
+              "estimate": {
+                "input_tokens": 1021,
+                "input_cost_usd": 0.005105
+              }
+            },
+            {
+              "query": "Format my Python code",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 37.3,
+              "estimate": {
+                "input_tokens": 1017,
+                "input_cost_usd": 0.005085
+              }
+            },
+            {
+              "query": "Lint my JavaScript with ESLint",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 46.8,
+              "estimate": {
+                "input_tokens": 1020,
+                "input_cost_usd": 0.0051
+              }
+            },
+            {
+              "query": "Refactor this Go code to wrap errors with %w",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 115.4,
+              "estimate": {
+                "input_tokens": 1024,
+                "input_cost_usd": 0.00512
+              }
+            },
+            {
+              "query": "Refactor this Python code to our house style",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 120,
+              "estimate": {
+                "input_tokens": 1022,
+                "input_cost_usd": 0.00511
+              }
+            },
+            {
+              "query": "Replace black and isort with ruff",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 44.5,
+              "estimate": {
+                "input_tokens": 1021,
+                "input_cost_usd": 0.005105
+              }
+            },
+            {
+              "query": "Review this Python file for idiomatic style",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 49.6,
+              "estimate": {
+                "input_tokens": 1021,
+                "input_cost_usd": 0.005105
+              }
+            },
+            {
+              "query": "Set up a new Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 49,
+              "estimate": {
+                "input_tokens": 1021,
+                "input_cost_usd": 0.005105
+              }
+            },
+            {
+              "query": "Set up ruff for formatting and linting",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 49.2,
+              "estimate": {
+                "input_tokens": 1022,
+                "input_cost_usd": 0.00511
+              }
+            },
+            {
+              "query": "Should I use pathlib or os.path here?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 18.7,
+              "estimate": {
+                "input_tokens": 1022,
+                "input_cost_usd": 0.00511
+              }
+            },
+            {
+              "query": "Which ruff lint rules should I enable?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 27.5,
+              "estimate": {
+                "input_tokens": 1022,
+                "input_cost_usd": 0.00511
+              }
+            },
+            {
+              "query": "Write tests for this Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 69.8,
+              "estimate": {
+                "input_tokens": 1019,
+                "input_cost_usd": 0.005095
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "tool_version": "v0.2.1-39-g047d0db-dirty",
+        "ran_at": "2026-06-21T17:16:21Z",
+        "executed": true,
+        "content_hash": "02537a66dbdbe4ed41948f5422755b4e1b061f604e14f0cccd5a9a65d8c5cdcc",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "ruff-config",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1111,
+              "input_cost_usd": 0.005555
+            },
+            "measured": {
+              "input_tokens": 10542,
+              "cache_read_input_tokens": 112256,
+              "output_tokens": 1368,
+              "cost_usd": 0.65503
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.ruff\\.lint\\]",
+                "text": "pyproject.toml matches /\\[tool\\.ruff\\.lint\\]/",
+                "passed": true,
+                "evidence": "[tool.ruff.lint]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "select",
+                "text": "pyproject.toml matches /select/",
+                "passed": true,
+                "evidence": "select",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"E\"",
+                "text": "pyproject.toml matches /\"E\"/",
+                "passed": true,
+                "evidence": "\"E\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"F\"",
+                "text": "pyproject.toml matches /\"F\"/",
+                "passed": true,
+                "evidence": "\"F\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"I\"",
+                "text": "pyproject.toml matches /\"I\"/",
+                "passed": true,
+                "evidence": "\"I\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"UP\"",
+                "text": "pyproject.toml matches /\"UP\"/",
+                "passed": true,
+                "evidence": "\"UP\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "target-version",
+                "text": "pyproject.toml matches /target-version/",
+                "passed": true,
+                "evidence": "target-version",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.(black|isort|flake8|pylint)\\]",
+                "text": "pyproject.toml does not match /\\[tool\\.(black|isort|flake8|pylint)\\]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 0,
+              "total": 8,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 124166,
+              "executor_duration_seconds": 37.9
+            },
+            "spec_hash": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+          },
+          {
+            "id": "modernize-io",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1092,
+              "input_cost_usd": 0.00546
+            },
+            "measured": {
+              "input_tokens": 23134,
+              "cache_read_input_tokens": 165632,
+              "output_tokens": 3997,
+              "cost_usd": 1.06374
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "Path",
+                "text": "src/myapp/io.py matches /Path/",
+                "passed": true,
+                "evidence": "Path",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/io.py",
+                "pattern": "os\\.path",
+                "text": "src/myapp/io.py does not match /os\\.path/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/io.py",
+                "pattern": "print\\(",
+                "text": "src/myapp/io.py does not match /print\\(/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "getLogger|logging\\.",
+                "text": "src/myapp/io.py matches /getLogger|logging\\./",
+                "passed": true,
+                "evidence": "logging.",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "with open|with Path|read_text",
+                "text": "src/myapp/io.py matches /with open|with Path|read_text/",
+                "passed": true,
+                "evidence": "read_text",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/io.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/io.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 192763,
+              "executor_duration_seconds": 92.8
+            },
+            "spec_hash": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 65.4,
+          "estimate": {
+            "input_tokens": 2203,
+            "input_cost_usd": 0.011015
+          },
+          "measured": {
+            "input_tokens": 33676,
+            "cache_read_input_tokens": 277888,
+            "output_tokens": 5365,
+            "cost_usd": 1.71877
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:16:21Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 41.4,
+            "measured": {
+              "input_tokens": 12083,
+              "cache_read_input_tokens": 198656,
+              "output_tokens": 3286,
+              "cost_usd": 1.152275
+            }
+          },
+          "results": [
+            {
+              "id": "modernize-io",
+              "passed": true,
+              "measured": {
+                "input_tokens": 8547,
+                "cache_read_input_tokens": 116864,
+                "output_tokens": 2129,
+                "cost_usd": 0.690925
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 52.7
+              },
+              "fingerprint": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+            },
+            {
+              "id": "ruff-config",
+              "passed": true,
+              "measured": {
+                "input_tokens": 3536,
+                "cache_read_input_tokens": 81792,
+                "output_tokens": 1157,
+                "cost_usd": 0.46135
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 30
+              },
+              "fingerprint": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-20T12:24:00Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 67.4,
+            "estimate": {
+              "input_tokens": 2099,
+              "input_cost_usd": 0.010495
+            },
+            "measured": {
+              "input_tokens": 53506,
+              "cache_read_input_tokens": 358272,
+              "output_tokens": 5658,
+              "cost_usd": 2.22863
+            }
+          },
+          "results": [
+            {
+              "id": "modernize-io",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1040,
+                "input_cost_usd": 0.0052
+              },
+              "measured": {
+                "input_tokens": 40992,
+                "cache_read_input_tokens": 198656,
+                "output_tokens": 3193,
+                "cost_usd": 1.29403
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 76.8
+              }
+            },
+            {
+              "id": "ruff-config",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1059,
+                "input_cost_usd": 0.005295
+              },
+              "measured": {
+                "input_tokens": 12514,
+                "cache_read_input_tokens": 159616,
+                "output_tokens": 2465,
+                "cost_usd": 0.9346
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 58
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

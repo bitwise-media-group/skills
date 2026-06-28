@@ -30,6 +30,19 @@ Conventions and workflows for authoring reusable Terraform modules.
 | `terraform-module`   | Scaffolds a new module with the canonical layout (`terraform.tf`, `main.tf`, `variables.tf`, `outputs.tf`, `README.md`) from commented templates. |
 | `terraform-validate` | The fmt → init/validate → tflint loop, with a bundled provider-agnostic `tflint.hcl`.                                                             |
 
+### python
+
+Modern Python on the Astral toolchain (`uv`, `ruff`, `ty`/`pyright`).
+
+| Skill            | What it does                                                                                                                                        |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `python-project` | Scaffolds the `src/` layout with `uv`: `pyproject.toml` on the `uv_build` backend, dev tools in a dependency group, and a Makefile `pr` gate.       |
+| `python-style`   | House style enforced by `ruff format` + `ruff check`: the opinionated lint select set, `pathlib`, `logging`, and exception idioms.                  |
+| `python-typing`  | Type every public API and gate it with `ty` or `pyright`: `[tool.ty]`/`[tool.pyright]` config, `X \| None`, PEP 695 generics, `Protocol` over ABCs. |
+| `python-testing` | `pytest` with `@pytest.mark.parametrize`, fixtures, fakes over mocks, and Hypothesis property tests as the fuzzing analogue.                        |
+| `python-docs`    | Google-style docstrings enforced via ruff `D` rules, and LLM-ready CLI reference generation for Typer/Click tools.                                  |
+| `python-release` | `uv build` + `uv publish` via PyPI Trusted Publishing, SHA-pinned CI (`ruff`/`ty`/`pytest`), tag-driven releases, and Dependabot coverage.          |
+
 ## Installation
 
 ### Claude Code

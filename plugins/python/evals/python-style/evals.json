@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "python-style",
+  "evals": [
+    {
+      "id": "ruff-config",
+      "prompt": "Configure ruff in pyproject.toml for our Python house style: ruff as the formatter and linter, our standard lint select set, a line length, and target version 3.13. Edit the file directly.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(ruff *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["fixtures/styledemo/pyproject.toml"],
+      "assertions": [
+        { "type": "regex", "path": "pyproject.toml", "pattern": "\\[tool\\.ruff\\.lint\\]" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "select" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "\"E\"" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "\"F\"" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "\"I\"" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "\"UP\"" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "target-version" },
+        { "type": "not_regex", "path": "pyproject.toml", "pattern": "\\[tool\\.(black|isort|flake8|pylint)\\]" }
+      ]
+    },
+    {
+      "id": "modernize-io",
+      "prompt": "Refactor src/myapp/io.py to our Python house style — fix the file I/O, the logging, and the error handling.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(ruff *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["fixtures/styledemo/pyproject.toml", "files/src/myapp/io.py"],
+      "assertions": [
+        { "type": "regex", "path": "src/myapp/io.py", "pattern": "Path" },
+        { "type": "not_regex", "path": "src/myapp/io.py", "pattern": "os\\.path" },
+        { "type": "not_regex", "path": "src/myapp/io.py", "pattern": "print\\(" },
+        { "type": "regex", "path": "src/myapp/io.py", "pattern": "getLogger|logging\\." },
+        { "type": "regex", "path": "src/myapp/io.py", "pattern": "with open|with Path|read_text" },
+        { "type": "command", "run": "python3 -m py_compile src/myapp/io.py", "requires": "python3" }
+      ]
+    }
+  ]
+}

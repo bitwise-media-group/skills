@@ -1,0 +1,47 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "python-release",
+  "evals": [
+    {
+      "id": "ci-workflow",
+      "prompt": "Write a GitHub Actions CI workflow for this uv-based Python project following our conventions — it should format-check, lint, type-check, and test on every push and pull request.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["fixtures/reldemo/pyproject.toml"],
+      "assertions": [
+        { "type": "file_exists", "path": ".github/workflows/ci.yaml" },
+        { "type": "regex", "path": ".github/workflows/ci.yaml", "pattern": "astral-sh/setup-uv@[0-9a-f]{40}" },
+        { "type": "regex", "path": ".github/workflows/ci.yaml", "pattern": "actions/checkout@[0-9a-f]{40}" },
+        { "type": "regex", "path": ".github/workflows/ci.yaml", "pattern": "ruff format --check" },
+        { "type": "regex", "path": ".github/workflows/ci.yaml", "pattern": "ty check" },
+        { "type": "regex", "path": ".github/workflows/ci.yaml", "pattern": "pytest" },
+        { "type": "regex", "path": ".github/workflows/ci.yaml", "pattern": "contents: read" }
+      ]
+    },
+    {
+      "id": "trusted-publishing",
+      "prompt": "Write a tag-triggered GitHub Actions release workflow that builds the package and publishes it to PyPI using Trusted Publishing, following our release conventions.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["fixtures/reldemo/pyproject.toml"],
+      "assertions": [
+        { "type": "file_exists", "path": ".github/workflows/release.yaml" },
+        { "type": "regex", "path": ".github/workflows/release.yaml", "pattern": "id-token: write" },
+        { "type": "regex", "path": ".github/workflows/release.yaml", "pattern": "uv build" },
+        { "type": "regex", "path": ".github/workflows/release.yaml", "pattern": "uv publish" },
+        { "type": "regex", "path": ".github/workflows/release.yaml", "pattern": "tags:" },
+        { "type": "not_regex", "path": ".github/workflows/release.yaml", "pattern": "PYPI_API_TOKEN|password:" }
+      ]
+    },
+    {
+      "id": "dependabot",
+      "prompt": "Add a Dependabot config for this uv project that keeps both the Python dependencies and the GitHub Actions pins up to date, following our conventions.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["fixtures/reldemo/pyproject.toml"],
+      "assertions": [
+        { "type": "file_exists", "path": ".github/dependabot.yaml" },
+        { "type": "regex", "path": ".github/dependabot.yaml", "pattern": "ecosystem:.*uv" },
+        { "type": "regex", "path": ".github/dependabot.yaml", "pattern": "ecosystem:.*github-actions" },
+        { "type": "regex", "path": ".github/dependabot.yaml", "pattern": "cooldown" }
+      ]
+    }
+  ]
+}

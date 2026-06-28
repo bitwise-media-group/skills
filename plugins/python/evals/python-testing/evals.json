@@ -1,0 +1,33 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "python-testing",
+  "evals": [
+    {
+      "id": "parametrize",
+      "prompt": "Write tests for the parse function in src/myapp/kv.py following our Python testing conventions — parametrize the cases, including the error paths. Put them in tests/test_kv.py.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(pytest *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["files/src/myapp/kv.py"],
+      "assertions": [
+        { "type": "file_exists", "path": "tests/test_kv.py" },
+        { "type": "regex", "path": "tests/test_kv.py", "pattern": "pytest\\.mark\\.parametrize" },
+        { "type": "regex", "path": "tests/test_kv.py", "pattern": "def test_" },
+        { "type": "regex", "path": "tests/test_kv.py", "pattern": "pytest\\.raises" },
+        { "type": "not_regex", "path": "tests/test_kv.py", "pattern": "unittest|TestCase" },
+        { "type": "command", "run": "python3 -m py_compile tests/test_kv.py", "requires": "python3" }
+      ]
+    },
+    {
+      "id": "hypothesis-property",
+      "prompt": "Add a Hypothesis property-based test for the parse function in src/myapp/kv.py — assert it never crashes on arbitrary input and never returns an empty key for accepted input. Put it in tests/test_kv_props.py.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(pytest *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["files/src/myapp/kv.py"],
+      "assertions": [
+        { "type": "file_exists", "path": "tests/test_kv_props.py" },
+        { "type": "regex", "path": "tests/test_kv_props.py", "pattern": "from hypothesis" },
+        { "type": "regex", "path": "tests/test_kv_props.py", "pattern": "@given" },
+        { "type": "regex", "path": "tests/test_kv_props.py", "pattern": "strategies|st\\." },
+        { "type": "command", "run": "python3 -m py_compile tests/test_kv_props.py", "requires": "python3" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "python-release",
+  "triggers": [
+    { "query": "Publish my Python package to PyPI", "should_trigger": true },
+    { "query": "Set up uv build and uv publish", "should_trigger": true },
+    { "query": "Write a GitHub Actions CI workflow for my uv project", "should_trigger": true },
+    { "query": "Configure Trusted Publishing for PyPI", "should_trigger": true },
+    { "query": "Add a tag-triggered release workflow for my Python package", "should_trigger": true },
+    { "query": "Set up Dependabot for my Python repo", "should_trigger": true },
+    { "query": "How do I version and release my Python package?", "should_trigger": true },
+    { "query": "Build a wheel and sdist with uv", "should_trigger": true },
+    { "query": "Add CI that runs ruff, ty, and pytest", "should_trigger": true },
+    { "query": "Set up GoReleaser for my Go project", "should_trigger": false },
+    { "query": "Write tests for my Python package", "should_trigger": false },
+    { "query": "Scaffold a new Python project with uv", "should_trigger": false },
+    { "query": "Publish my npm package to the registry", "should_trigger": false },
+    { "query": "Configure ruff in pyproject.toml", "should_trigger": false }
+  ]
+}

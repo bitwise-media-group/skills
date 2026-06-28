@@ -1,0 +1,11 @@
+{
+  "name": "python",
+  "version": "0.1.0",
+  "description": "Modern Python on the Astral toolchain — uv for project and dependency management with the uv_build backend, ruff for formatting and linting, ty or pyright for type checking, pytest with Hypothesis property tests, Google-style docstrings with CLI reference generation, and trusted-publishing release engineering.",
+  "author": {
+    "name": "Bitwise Media Group",
+    "email": "deavon@bitwisemedia.co.uk"
+  },
+  "license": "MIT",
+  "keywords": ["python", "uv", "ruff", "ty", "pyright", "pytest", "hypothesis", "typing", "pyproject"]
+}

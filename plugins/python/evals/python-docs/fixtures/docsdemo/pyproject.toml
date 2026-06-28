@@ -1,0 +1,6 @@
+[project]
+name = "myapp"
+version = "0.1.0"
+
+[tool.ruff]
+target-version = "py313"

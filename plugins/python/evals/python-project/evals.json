@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "python-project",
+  "evals": [
+    {
+      "id": "configure-pyproject",
+      "prompt": "Configure pyproject.toml for our uv-managed Python conventions: set requires-python to 3.13, add the uv_build build backend, and add a dev dependency group with ruff, ty, and pytest. Edit the file directly — no need to run uv.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["fixtures/projdemo/pyproject.toml"],
+      "assertions": [
+        { "type": "regex", "path": "pyproject.toml", "pattern": "build-backend = \"uv_build\"" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "uv_build>=" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "\\[dependency-groups\\]" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "ruff" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "\"ty" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "pytest" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "requires-python" },
+        { "type": "not_regex", "path": "pyproject.toml", "pattern": "hatchling|setuptools|poetry" }
+      ]
+    },
+    {
+      "id": "makefile-gate",
+      "prompt": "Add a Makefile with our standard Python dev gate following our project conventions: targets to format, lint, type-check, test, and build — all run through uv — plus a pr target that runs them in order.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["fixtures/projdemo/pyproject.toml"],
+      "assertions": [
+        { "type": "file_exists", "path": "Makefile" },
+        { "type": "regex", "path": "Makefile", "pattern": "uv run ruff format" },
+        { "type": "regex", "path": "Makefile", "pattern": "uv run ruff check" },
+        { "type": "regex", "path": "Makefile", "pattern": "uv run ty check" },
+        { "type": "regex", "path": "Makefile", "pattern": "uv run pytest" },
+        { "type": "regex", "path": "Makefile", "pattern": "uv build" },
+        { "type": "regex", "path": "Makefile", "pattern": "pr:" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "python-docs",
+  "evals": [
+    {
+      "id": "google-docstrings",
+      "prompt": "Add Google-style docstrings to the public functions in src/myapp/kv.py per our documentation conventions, and configure ruff's pydocstyle (D) rules with the google convention in pyproject.toml.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(ruff *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["fixtures/docsdemo/pyproject.toml", "files/src/myapp/kv.py"],
+      "assertions": [
+        { "type": "regex", "path": "src/myapp/kv.py", "pattern": "\"\"\"" },
+        { "type": "regex", "path": "src/myapp/kv.py", "pattern": "Args:" },
+        { "type": "regex", "path": "src/myapp/kv.py", "pattern": "Returns:" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "convention = \"google\"" },
+        { "type": "regex", "path": "pyproject.toml", "pattern": "\"D\"" },
+        { "type": "command", "run": "python3 -m py_compile src/myapp/kv.py", "requires": "python3" }
+      ]
+    },
+    {
+      "id": "cli-docgen",
+      "prompt": "Wire up LLM-ready CLI reference generation for this Click tool following our docs conventions: a docgen helper at src/myapp/tools/docgen.py and a docs Makefile target. Edit the files directly — no need to run commands.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(python3 *) Bash(mkdir *)",
+      "files": ["files/src/myapp/cli.py", "files/Makefile"],
+      "assertions": [
+        { "type": "file_exists", "path": "src/myapp/tools/docgen.py" },
+        { "type": "regex", "path": "src/myapp/tools/docgen.py", "pattern": "click" },
+        {
+          "type": "regex",
+          "path": "src/myapp/tools/docgen.py",
+          "pattern": "get_help|format_help|get_short_help|CliRunner"
+        },
+        { "type": "regex", "path": "Makefile", "pattern": "docgen" },
+        { "type": "regex", "path": "Makefile", "pattern": "uv run|python3? -m" }
+      ]
+    }
+  ]
+}

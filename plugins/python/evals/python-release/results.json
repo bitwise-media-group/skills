@@ -1,0 +1,4391 @@
+{
+  "schema": 5,
+  "plugin": "python",
+  "skill": "python-release",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:26:44Z",
+        "executed": true,
+        "content_hash": "5f1cbfa8dbfa0bad926f204c19274fd6720156cd2ad521a4f90309aa02a0b40a",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 1018,
+              "input_cost_usd": 0.001018
+            },
+            "spec_hash": "0ee21d088dbfe51cfe5a8d1039780877676807aa3c954619fb70f33137b271b2"
+          },
+          {
+            "query": "Set up uv build and uv publish",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.9,
+            "estimate": {
+              "input_tokens": 1019,
+              "input_cost_usd": 0.001019
+            },
+            "spec_hash": "fab7c891a9d9da3f9810a0904368407f3a5e78c1f407564f550eb0caac05891b"
+          },
+          {
+            "query": "Write a GitHub Actions CI workflow for my uv project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.3,
+            "estimate": {
+              "input_tokens": 1021,
+              "input_cost_usd": 0.001021
+            },
+            "spec_hash": "f9428da4dd3bc3e229813fc48bf7b5e81b686f2cd0b2d25d460dd373ddc70007"
+          },
+          {
+            "query": "Configure Trusted Publishing for PyPI",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 1017,
+              "input_cost_usd": 0.001017
+            },
+            "spec_hash": "dddd0da2e2c09a7bd2bd22ce031864cc825987cb139315fa2a2b395e0d5e030c"
+          },
+          {
+            "query": "Add a tag-triggered release workflow for my Python package",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 1021,
+              "input_cost_usd": 0.001021
+            },
+            "spec_hash": "afc4abefb29042cd334f0e81826f5bae02e6eb61e5eeff2b8415d23a4e46b333"
+          },
+          {
+            "query": "Set up Dependabot for my Python repo",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 1020,
+              "input_cost_usd": 0.00102
+            },
+            "spec_hash": "c5e002d6ff3e1d5abea1c3959649d6527cfe9879027071392ee5e45b6e3de5b1"
+          },
+          {
+            "query": "How do I version and release my Python package?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "estimate": {
+              "input_tokens": 1020,
+              "input_cost_usd": 0.00102
+            },
+            "spec_hash": "83d7c928f09ba555f35332307a44e60b279bf8ce0b4afeb1cf34be8fd3e6fde5"
+          },
+          {
+            "query": "Build a wheel and sdist with uv",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.8,
+            "estimate": {
+              "input_tokens": 1019,
+              "input_cost_usd": 0.001019
+            },
+            "spec_hash": "65d0d1426ce3506411041bad876a367f88bdebcc42d2a1bc91eb6e8bb389f4bb"
+          },
+          {
+            "query": "Add CI that runs ruff, ty, and pytest",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 1021,
+              "input_cost_usd": 0.001021
+            },
+            "spec_hash": "6947215efe6e0c7ac4e295847e49ae2a7fc25956ddae30f9dc18174c9e077d74"
+          },
+          {
+            "query": "Set up GoReleaser for my Go project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6,
+            "estimate": {
+              "input_tokens": 1020,
+              "input_cost_usd": 0.00102
+            },
+            "spec_hash": "498375d63ad5581474777653823abc18417a49120785e9bd82d6edcf271f13b0"
+          },
+          {
+            "query": "Write tests for my Python package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 1016,
+              "input_cost_usd": 0.001016
+            },
+            "spec_hash": "6d04dff49bda9fa757068e465efe8875562b25c076d0688a6566f6e9b1d98368"
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 1019,
+              "input_cost_usd": 0.001019
+            },
+            "spec_hash": "7a3c3785cc37c1fc45499b20c54c397e409943828b05c226388c80140291fb7b"
+          },
+          {
+            "query": "Publish my npm package to the registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.2,
+            "estimate": {
+              "input_tokens": 1018,
+              "input_cost_usd": 0.001018
+            },
+            "spec_hash": "df454f30e592f7586a4ba4dbae3d2be944679893772ad66389104522df9df92b"
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 1019,
+              "input_cost_usd": 0.001019
+            },
+            "spec_hash": "2dc729e66b9cf0fc94a45c9441f3d63095ce75c265f8f527b56bd2177d6085e6"
+          }
+        ],
+        "summary": {
+          "passed": 9,
+          "failed": 5,
+          "total": 14,
+          "pass_rate": 0.642857,
+          "avg_run_seconds": 8.6,
+          "estimate": {
+            "input_tokens": 14268,
+            "input_cost_usd": 0.014268
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:08:43Z",
+          "summary": {
+            "passed": 13,
+            "failed": 1,
+            "total": 14,
+            "pass_rate": 0.928571,
+            "avg_run_seconds": 8.1,
+            "estimate": {
+              "input_tokens": 13736,
+              "input_cost_usd": 0.013736
+            }
+          },
+          "results": [
+            {
+              "query": "Add CI that runs ruff, ty, and pytest",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.8,
+              "estimate": {
+                "input_tokens": 983,
+                "input_cost_usd": 0.000983
+              }
+            },
+            {
+              "query": "Add a tag-triggered release workflow for my Python package",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.8,
+              "estimate": {
+                "input_tokens": 983,
+                "input_cost_usd": 0.000983
+              }
+            },
+            {
+              "query": "Build a wheel and sdist with uv",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.5,
+              "estimate": {
+                "input_tokens": 981,
+                "input_cost_usd": 0.000981
+              }
+            },
+            {
+              "query": "Configure Trusted Publishing for PyPI",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.1,
+              "estimate": {
+                "input_tokens": 979,
+                "input_cost_usd": 0.000979
+              }
+            },
+            {
+              "query": "Configure ruff in pyproject.toml",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.1,
+              "estimate": {
+                "input_tokens": 981,
+                "input_cost_usd": 0.000981
+              }
+            },
+            {
+              "query": "How do I version and release my Python package?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.2,
+              "estimate": {
+                "input_tokens": 982,
+                "input_cost_usd": 0.000982
+              }
+            },
+            {
+              "query": "Publish my Python package to PyPI",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.2,
+              "estimate": {
+                "input_tokens": 980,
+                "input_cost_usd": 0.00098
+              }
+            },
+            {
+              "query": "Publish my npm package to the registry",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.6,
+              "estimate": {
+                "input_tokens": 980,
+                "input_cost_usd": 0.00098
+              }
+            },
+            {
+              "query": "Scaffold a new Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.8,
+              "estimate": {
+                "input_tokens": 981,
+                "input_cost_usd": 0.000981
+              }
+            },
+            {
+              "query": "Set up Dependabot for my Python repo",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.5,
+              "estimate": {
+                "input_tokens": 982,
+                "input_cost_usd": 0.000982
+              }
+            },
+            {
+              "query": "Set up GoReleaser for my Go project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.8,
+              "estimate": {
+                "input_tokens": 982,
+                "input_cost_usd": 0.000982
+              }
+            },
+            {
+              "query": "Set up uv build and uv publish",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.3,
+              "estimate": {
+                "input_tokens": 981,
+                "input_cost_usd": 0.000981
+              }
+            },
+            {
+              "query": "Write a GitHub Actions CI workflow for my uv project",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7,
+              "estimate": {
+                "input_tokens": 983,
+                "input_cost_usd": 0.000983
+              }
+            },
+            {
+              "query": "Write tests for my Python package",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.1,
+              "estimate": {
+                "input_tokens": 978,
+                "input_cost_usd": 0.000978
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T23:41:04Z",
+        "executed": true,
+        "content_hash": "e06011c2f2338a52746d1877d60a693eef47a6fdc28850986ebe73332b62ea46",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "ci-workflow",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 1049,
+              "input_cost_usd": 0.001049
+            },
+            "measured": {
+              "input_tokens": 27,
+              "cache_read_input_tokens": 104759,
+              "cache_creation_input_tokens": 16443,
+              "output_tokens": 1255,
+              "cost_usd": 0.050293
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": false,
+                "evidence": ".github/workflows/ci.yaml missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "astral-sh/setup-uv@[0-9a-f]{40}",
+                "text": ".github/workflows/ci.yaml matches /astral-sh/setup-uv@[0-9a-f]{40}/",
+                "passed": false,
+                "evidence": ".github/workflows/ci.yaml missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "actions/checkout@[0-9a-f]{40}",
+                "text": ".github/workflows/ci.yaml matches /actions/checkout@[0-9a-f]{40}/",
+                "passed": false,
+                "evidence": ".github/workflows/ci.yaml missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "ruff format --check",
+                "text": ".github/workflows/ci.yaml matches /ruff format --check/",
+                "passed": false,
+                "evidence": ".github/workflows/ci.yaml missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "ty check",
+                "text": ".github/workflows/ci.yaml matches /ty check/",
+                "passed": false,
+                "evidence": ".github/workflows/ci.yaml missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "pytest",
+                "text": ".github/workflows/ci.yaml matches /pytest/",
+                "passed": false,
+                "evidence": ".github/workflows/ci.yaml missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "contents: read",
+                "text": ".github/workflows/ci.yaml matches /contents: read/",
+                "passed": false,
+                "evidence": ".github/workflows/ci.yaml missing",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 0,
+              "failed": 7,
+              "total": 7,
+              "pass_rate": 0
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Read": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 122484,
+              "executor_duration_seconds": 20.5
+            },
+            "spec_hash": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+          },
+          {
+            "id": "trusted-publishing",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 1040,
+              "input_cost_usd": 0.00104
+            },
+            "measured": {
+              "input_tokens": 46,
+              "cache_read_input_tokens": 235344,
+              "cache_creation_input_tokens": 20817,
+              "output_tokens": 3041,
+              "cost_usd": 0.081029
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "id-token: write",
+                "text": ".github/workflows/release.yaml matches /id-token: write/",
+                "passed": true,
+                "evidence": "id-token: write",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "uv build",
+                "text": ".github/workflows/release.yaml matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "uv publish",
+                "text": ".github/workflows/release.yaml matches /uv publish/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "tags:",
+                "text": ".github/workflows/release.yaml matches /tags:/",
+                "passed": true,
+                "evidence": "tags:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "PYPI_API_TOKEN|password:",
+                "text": ".github/workflows/release.yaml does not match /PYPI_API_TOKEN|password:/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 1,
+              "total": 6,
+              "pass_rate": 0.833333
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 4,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 3
+              },
+              "total_tool_calls": 9
+            },
+            "timing": {
+              "total_tokens": 259248,
+              "executor_duration_seconds": 38.7
+            },
+            "spec_hash": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+          },
+          {
+            "id": "dependabot",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 1041,
+              "input_cost_usd": 0.001041
+            },
+            "measured": {
+              "input_tokens": 35,
+              "cache_read_input_tokens": 128755,
+              "cache_creation_input_tokens": 16508,
+              "output_tokens": 1030,
+              "cost_usd": 0.051698
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/dependabot.yaml",
+                "text": "file .github/dependabot.yaml exists",
+                "passed": false,
+                "evidence": ".github/dependabot.yaml missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "ecosystem:.*uv",
+                "text": ".github/dependabot.yaml matches /ecosystem:.*uv/",
+                "passed": false,
+                "evidence": ".github/dependabot.yaml missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "ecosystem:.*github-actions",
+                "text": ".github/dependabot.yaml matches /ecosystem:.*github-actions/",
+                "passed": false,
+                "evidence": ".github/dependabot.yaml missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "cooldown",
+                "text": ".github/dependabot.yaml matches /cooldown/",
+                "passed": false,
+                "evidence": ".github/dependabot.yaml missing",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 0,
+              "failed": 4,
+              "total": 4,
+              "pass_rate": 0
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Glob": 1,
+                "Read": 2,
+                "Write": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 146328,
+              "executor_duration_seconds": 20.2
+            },
+            "spec_hash": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 3,
+          "total": 3,
+          "pass_rate": 0,
+          "avg_run_seconds": 26.5,
+          "estimate": {
+            "input_tokens": 3130,
+            "input_cost_usd": 0.00313
+          },
+          "measured": {
+            "input_tokens": 108,
+            "cache_read_input_tokens": 468858,
+            "cache_creation_input_tokens": 53768,
+            "output_tokens": 5326,
+            "cost_usd": 0.18302
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:57:22Z",
+          "summary": {
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "pass_rate": 0,
+            "avg_run_seconds": 28.9,
+            "measured": {
+              "input_tokens": 122,
+              "cache_read_input_tokens": 452912,
+              "cache_creation_input_tokens": 50009,
+              "output_tokens": 5850,
+              "cost_usd": 0.176551
+            }
+          },
+          "results": [
+            {
+              "id": "ci-workflow",
+              "passed": false,
+              "measured": {
+                "input_tokens": 46,
+                "cache_read_input_tokens": 158912,
+                "cache_creation_input_tokens": 16075,
+                "output_tokens": 1295,
+                "cost_usd": 0.055191
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 20
+              },
+              "fingerprint": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+            },
+            {
+              "id": "trusted-publishing",
+              "passed": false,
+              "measured": {
+                "input_tokens": 40,
+                "cache_read_input_tokens": 160050,
+                "cache_creation_input_tokens": 17990,
+                "output_tokens": 3359,
+                "cost_usd": 0.06944
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 38.6
+              },
+              "fingerprint": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+            },
+            {
+              "id": "dependabot",
+              "passed": false,
+              "measured": {
+                "input_tokens": 36,
+                "cache_read_input_tokens": 133950,
+                "cache_creation_input_tokens": 15944,
+                "output_tokens": 1196,
+                "cost_usd": 0.05192
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 28.2
+              },
+              "fingerprint": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T16:27:15Z",
+          "summary": {
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "pass_rate": 0.666667,
+            "avg_run_seconds": 22.8,
+            "estimate": {
+              "input_tokens": 3130,
+              "input_cost_usd": 0.00313
+            },
+            "measured": {
+              "input_tokens": 117,
+              "cache_read_input_tokens": 421517,
+              "cache_creation_input_tokens": 55200,
+              "output_tokens": 5126,
+              "cost_usd": 0.180154
+            }
+          },
+          "results": [
+            {
+              "id": "ci-workflow",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1049,
+                "input_cost_usd": 0.001049
+              },
+              "measured": {
+                "input_tokens": 31,
+                "cache_read_input_tokens": 81486,
+                "cache_creation_input_tokens": 18767,
+                "output_tokens": 1691,
+                "cost_usd": 0.054793
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 19.5
+              }
+            },
+            {
+              "id": "trusted-publishing",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1040,
+                "input_cost_usd": 0.00104
+              },
+              "measured": {
+                "input_tokens": 53,
+                "cache_read_input_tokens": 210418,
+                "cache_creation_input_tokens": 19744,
+                "output_tokens": 2378,
+                "cost_usd": 0.073083
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 30
+              }
+            },
+            {
+              "id": "dependabot",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1041,
+                "input_cost_usd": 0.001041
+              },
+              "measured": {
+                "input_tokens": 33,
+                "cache_read_input_tokens": 129613,
+                "cache_creation_input_tokens": 16689,
+                "output_tokens": 1057,
+                "cost_usd": 0.052278
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 4,
+                "total": 4,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 18.8
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:31:30Z",
+        "executed": true,
+        "content_hash": "5f1cbfa8dbfa0bad926f204c19274fd6720156cd2ad521a4f90309aa02a0b40a",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.1,
+            "estimate": {
+              "input_tokens": 1438,
+              "input_cost_usd": 0.00719
+            },
+            "spec_hash": "0ee21d088dbfe51cfe5a8d1039780877676807aa3c954619fb70f33137b271b2"
+          },
+          {
+            "query": "Set up uv build and uv publish",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 1437,
+              "input_cost_usd": 0.007185
+            },
+            "spec_hash": "fab7c891a9d9da3f9810a0904368407f3a5e78c1f407564f550eb0caac05891b"
+          },
+          {
+            "query": "Write a GitHub Actions CI workflow for my uv project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "estimate": {
+              "input_tokens": 1446,
+              "input_cost_usd": 0.00723
+            },
+            "spec_hash": "f9428da4dd3bc3e229813fc48bf7b5e81b686f2cd0b2d25d460dd373ddc70007"
+          },
+          {
+            "query": "Configure Trusted Publishing for PyPI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "estimate": {
+              "input_tokens": 1442,
+              "input_cost_usd": 0.00721
+            },
+            "spec_hash": "dddd0da2e2c09a7bd2bd22ce031864cc825987cb139315fa2a2b395e0d5e030c"
+          },
+          {
+            "query": "Add a tag-triggered release workflow for my Python package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.7,
+            "estimate": {
+              "input_tokens": 1444,
+              "input_cost_usd": 0.00722
+            },
+            "spec_hash": "afc4abefb29042cd334f0e81826f5bae02e6eb61e5eeff2b8415d23a4e46b333"
+          },
+          {
+            "query": "Set up Dependabot for my Python repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10,
+            "estimate": {
+              "input_tokens": 1440,
+              "input_cost_usd": 0.0072
+            },
+            "spec_hash": "c5e002d6ff3e1d5abea1c3959649d6527cfe9879027071392ee5e45b6e3de5b1"
+          },
+          {
+            "query": "How do I version and release my Python package?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "estimate": {
+              "input_tokens": 1437,
+              "input_cost_usd": 0.007185
+            },
+            "spec_hash": "83d7c928f09ba555f35332307a44e60b279bf8ce0b4afeb1cf34be8fd3e6fde5"
+          },
+          {
+            "query": "Build a wheel and sdist with uv",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 1439,
+              "input_cost_usd": 0.007195
+            },
+            "spec_hash": "65d0d1426ce3506411041bad876a367f88bdebcc42d2a1bc91eb6e8bb389f4bb"
+          },
+          {
+            "query": "Add CI that runs ruff, ty, and pytest",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.8,
+            "estimate": {
+              "input_tokens": 1444,
+              "input_cost_usd": 0.00722
+            },
+            "spec_hash": "6947215efe6e0c7ac4e295847e49ae2a7fc25956ddae30f9dc18174c9e077d74"
+          },
+          {
+            "query": "Set up GoReleaser for my Go project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.9,
+            "estimate": {
+              "input_tokens": 1440,
+              "input_cost_usd": 0.0072
+            },
+            "spec_hash": "498375d63ad5581474777653823abc18417a49120785e9bd82d6edcf271f13b0"
+          },
+          {
+            "query": "Write tests for my Python package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 1435,
+              "input_cost_usd": 0.007175
+            },
+            "spec_hash": "6d04dff49bda9fa757068e465efe8875562b25c076d0688a6566f6e9b1d98368"
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.4,
+            "estimate": {
+              "input_tokens": 1439,
+              "input_cost_usd": 0.007195
+            },
+            "spec_hash": "7a3c3785cc37c1fc45499b20c54c397e409943828b05c226388c80140291fb7b"
+          },
+          {
+            "query": "Publish my npm package to the registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.5,
+            "estimate": {
+              "input_tokens": 1437,
+              "input_cost_usd": 0.007185
+            },
+            "spec_hash": "df454f30e592f7586a4ba4dbae3d2be944679893772ad66389104522df9df92b"
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18.9,
+            "estimate": {
+              "input_tokens": 1440,
+              "input_cost_usd": 0.0072
+            },
+            "spec_hash": "2dc729e66b9cf0fc94a45c9441f3d63095ce75c265f8f527b56bd2177d6085e6"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 2,
+          "total": 14,
+          "pass_rate": 0.857143,
+          "avg_run_seconds": 9.7,
+          "estimate": {
+            "input_tokens": 20158,
+            "input_cost_usd": 0.10079
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:09:37Z",
+          "summary": {
+            "passed": 12,
+            "failed": 2,
+            "total": 14,
+            "pass_rate": 0.857143,
+            "avg_run_seconds": 10.8,
+            "estimate": {
+              "input_tokens": 19514,
+              "input_cost_usd": 0.09757
+            }
+          },
+          "results": [
+            {
+              "query": "Add CI that runs ruff, ty, and pytest",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.1,
+              "estimate": {
+                "input_tokens": 1398,
+                "input_cost_usd": 0.00699
+              }
+            },
+            {
+              "query": "Add a tag-triggered release workflow for my Python package",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.2,
+              "estimate": {
+                "input_tokens": 1398,
+                "input_cost_usd": 0.00699
+              }
+            },
+            {
+              "query": "Build a wheel and sdist with uv",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.6,
+              "estimate": {
+                "input_tokens": 1393,
+                "input_cost_usd": 0.006965
+              }
+            },
+            {
+              "query": "Configure Trusted Publishing for PyPI",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.2,
+              "estimate": {
+                "input_tokens": 1396,
+                "input_cost_usd": 0.00698
+              }
+            },
+            {
+              "query": "Configure ruff in pyproject.toml",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 16.9,
+              "estimate": {
+                "input_tokens": 1394,
+                "input_cost_usd": 0.00697
+              }
+            },
+            {
+              "query": "How do I version and release my Python package?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.4,
+              "estimate": {
+                "input_tokens": 1391,
+                "input_cost_usd": 0.006955
+              }
+            },
+            {
+              "query": "Publish my Python package to PyPI",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.3,
+              "estimate": {
+                "input_tokens": 1392,
+                "input_cost_usd": 0.00696
+              }
+            },
+            {
+              "query": "Publish my npm package to the registry",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.2,
+              "estimate": {
+                "input_tokens": 1391,
+                "input_cost_usd": 0.006955
+              }
+            },
+            {
+              "query": "Scaffold a new Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 22,
+              "estimate": {
+                "input_tokens": 1393,
+                "input_cost_usd": 0.006965
+              }
+            },
+            {
+              "query": "Set up Dependabot for my Python repo",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.7,
+              "estimate": {
+                "input_tokens": 1394,
+                "input_cost_usd": 0.00697
+              }
+            },
+            {
+              "query": "Set up GoReleaser for my Go project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.4,
+              "estimate": {
+                "input_tokens": 1394,
+                "input_cost_usd": 0.00697
+              }
+            },
+            {
+              "query": "Set up uv build and uv publish",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.9,
+              "estimate": {
+                "input_tokens": 1391,
+                "input_cost_usd": 0.006955
+              }
+            },
+            {
+              "query": "Write a GitHub Actions CI workflow for my uv project",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6,
+              "estimate": {
+                "input_tokens": 1400,
+                "input_cost_usd": 0.007
+              }
+            },
+            {
+              "query": "Write tests for my Python package",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.3,
+              "estimate": {
+                "input_tokens": 1389,
+                "input_cost_usd": 0.006945
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T23:42:27Z",
+        "executed": true,
+        "content_hash": "e06011c2f2338a52746d1877d60a693eef47a6fdc28850986ebe73332b62ea46",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "ci-workflow",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1479,
+              "input_cost_usd": 0.007395
+            },
+            "measured": {
+              "input_tokens": 2809,
+              "cache_read_input_tokens": 131781,
+              "cache_creation_input_tokens": 10715,
+              "output_tokens": 3079,
+              "cost_usd": 0.264685
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "astral-sh/setup-uv@[0-9a-f]{40}",
+                "text": ".github/workflows/ci.yaml matches /astral-sh/setup-uv@[0-9a-f]{40}/",
+                "passed": true,
+                "evidence": "astral-sh/setup-uv@fac544c07dec837d0ccb6301d7b5580bf5edae39",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "actions/checkout@[0-9a-f]{40}",
+                "text": ".github/workflows/ci.yaml matches /actions/checkout@[0-9a-f]{40}/",
+                "passed": true,
+                "evidence": "actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "ruff format --check",
+                "text": ".github/workflows/ci.yaml matches /ruff format --check/",
+                "passed": true,
+                "evidence": "ruff format --check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "ty check",
+                "text": ".github/workflows/ci.yaml matches /ty check/",
+                "passed": true,
+                "evidence": "ty check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "pytest",
+                "text": ".github/workflows/ci.yaml matches /pytest/",
+                "passed": true,
+                "evidence": "pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "contents: read",
+                "text": ".github/workflows/ci.yaml matches /contents: read/",
+                "passed": true,
+                "evidence": "contents: read",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 148384,
+              "executor_duration_seconds": 49.6
+            },
+            "spec_hash": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+          },
+          {
+            "id": "trusted-publishing",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1478,
+              "input_cost_usd": 0.00739
+            },
+            "measured": {
+              "input_tokens": 2935,
+              "cache_read_input_tokens": 109704,
+              "cache_creation_input_tokens": 11952,
+              "output_tokens": 2690,
+              "cost_usd": 0.256907
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "id-token: write",
+                "text": ".github/workflows/release.yaml matches /id-token: write/",
+                "passed": true,
+                "evidence": "id-token: write",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "uv build",
+                "text": ".github/workflows/release.yaml matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "uv publish",
+                "text": ".github/workflows/release.yaml matches /uv publish/",
+                "passed": true,
+                "evidence": "uv publish",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "tags:",
+                "text": ".github/workflows/release.yaml matches /tags:/",
+                "passed": true,
+                "evidence": "tags:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "PYPI_API_TOKEN|password:",
+                "text": ".github/workflows/release.yaml does not match /PYPI_API_TOKEN|password:/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Read": 3,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 127281,
+              "executor_duration_seconds": 47.9
+            },
+            "spec_hash": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+          },
+          {
+            "id": "dependabot",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1473,
+              "input_cost_usd": 0.007365
+            },
+            "measured": {
+              "input_tokens": 2804,
+              "cache_read_input_tokens": 83774,
+              "cache_creation_input_tokens": 11262,
+              "output_tokens": 2035,
+              "cost_usd": 0.220023
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/dependabot.yaml",
+                "text": "file .github/dependabot.yaml exists",
+                "passed": true,
+                "evidence": ".github/dependabot.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "ecosystem:.*uv",
+                "text": ".github/dependabot.yaml matches /ecosystem:.*uv/",
+                "passed": true,
+                "evidence": "ecosystem: uv",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "ecosystem:.*github-actions",
+                "text": ".github/dependabot.yaml matches /ecosystem:.*github-actions/",
+                "passed": true,
+                "evidence": "ecosystem: github-actions",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "cooldown",
+                "text": ".github/dependabot.yaml matches /cooldown/",
+                "passed": true,
+                "evidence": "cooldown",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Read": 3,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 99875,
+              "executor_duration_seconds": 31.7
+            },
+            "spec_hash": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 43.1,
+          "estimate": {
+            "input_tokens": 4430,
+            "input_cost_usd": 0.02215
+          },
+          "measured": {
+            "input_tokens": 8548,
+            "cache_read_input_tokens": 325259,
+            "cache_creation_input_tokens": 33929,
+            "output_tokens": 7804,
+            "cost_usd": 0.741615
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:02:08Z",
+          "summary": {
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "pass_rate": 0,
+            "avg_run_seconds": 112.2,
+            "measured": {
+              "input_tokens": 7631,
+              "cache_read_input_tokens": 531584,
+              "cache_creation_input_tokens": 40373,
+              "output_tokens": 22644,
+              "cost_usd": 1.275642
+            }
+          },
+          "results": [
+            {
+              "id": "ci-workflow",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2635,
+                "cache_read_input_tokens": 259951,
+                "cache_creation_input_tokens": 17275,
+                "output_tokens": 10781,
+                "cost_usd": 0.586045
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 156.3
+              },
+              "fingerprint": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+            },
+            {
+              "id": "trusted-publishing",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2498,
+                "cache_read_input_tokens": 138201,
+                "cache_creation_input_tokens": 13934,
+                "output_tokens": 8447,
+                "cost_usd": 0.43273
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 123.7
+              },
+              "fingerprint": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+            },
+            {
+              "id": "dependabot",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2498,
+                "cache_read_input_tokens": 133432,
+                "cache_creation_input_tokens": 9164,
+                "output_tokens": 3416,
+                "cost_usd": 0.256867
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 56.6
+              },
+              "fingerprint": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T16:32:34Z",
+          "summary": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 47.2,
+            "estimate": {
+              "input_tokens": 4430,
+              "input_cost_usd": 0.02215
+            },
+            "measured": {
+              "input_tokens": 8677,
+              "cache_read_input_tokens": 329110,
+              "cache_creation_input_tokens": 36114,
+              "output_tokens": 8275,
+              "cost_usd": 0.77781
+            }
+          },
+          "results": [
+            {
+              "id": "ci-workflow",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1479,
+                "input_cost_usd": 0.007395
+              },
+              "measured": {
+                "input_tokens": 2936,
+                "cache_read_input_tokens": 109650,
+                "cache_creation_input_tokens": 13400,
+                "output_tokens": 4206,
+                "cost_usd": 0.309279
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 63.3
+              }
+            },
+            {
+              "id": "trusted-publishing",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1478,
+                "input_cost_usd": 0.00739
+              },
+              "measured": {
+                "input_tokens": 2937,
+                "cache_read_input_tokens": 136283,
+                "cache_creation_input_tokens": 11919,
+                "output_tokens": 2366,
+                "cost_usd": 0.261777
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 48.2
+              }
+            },
+            {
+              "id": "dependabot",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1473,
+                "input_cost_usd": 0.007365
+              },
+              "measured": {
+                "input_tokens": 2804,
+                "cache_read_input_tokens": 83177,
+                "cache_creation_input_tokens": 10795,
+                "output_tokens": 1703,
+                "cost_usd": 0.206754
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 30
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:29:07Z",
+        "executed": true,
+        "content_hash": "5f1cbfa8dbfa0bad926f204c19274fd6720156cd2ad521a4f90309aa02a0b40a",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.2,
+            "estimate": {
+              "input_tokens": 1018,
+              "input_cost_usd": 0.003054
+            },
+            "spec_hash": "0ee21d088dbfe51cfe5a8d1039780877676807aa3c954619fb70f33137b271b2"
+          },
+          {
+            "query": "Set up uv build and uv publish",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.1,
+            "estimate": {
+              "input_tokens": 1019,
+              "input_cost_usd": 0.003057
+            },
+            "spec_hash": "fab7c891a9d9da3f9810a0904368407f3a5e78c1f407564f550eb0caac05891b"
+          },
+          {
+            "query": "Write a GitHub Actions CI workflow for my uv project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4,
+            "estimate": {
+              "input_tokens": 1021,
+              "input_cost_usd": 0.003063
+            },
+            "spec_hash": "f9428da4dd3bc3e229813fc48bf7b5e81b686f2cd0b2d25d460dd373ddc70007"
+          },
+          {
+            "query": "Configure Trusted Publishing for PyPI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.9,
+            "estimate": {
+              "input_tokens": 1017,
+              "input_cost_usd": 0.003051
+            },
+            "spec_hash": "dddd0da2e2c09a7bd2bd22ce031864cc825987cb139315fa2a2b395e0d5e030c"
+          },
+          {
+            "query": "Add a tag-triggered release workflow for my Python package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.6,
+            "estimate": {
+              "input_tokens": 1021,
+              "input_cost_usd": 0.003063
+            },
+            "spec_hash": "afc4abefb29042cd334f0e81826f5bae02e6eb61e5eeff2b8415d23a4e46b333"
+          },
+          {
+            "query": "Set up Dependabot for my Python repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.4,
+            "estimate": {
+              "input_tokens": 1020,
+              "input_cost_usd": 0.00306
+            },
+            "spec_hash": "c5e002d6ff3e1d5abea1c3959649d6527cfe9879027071392ee5e45b6e3de5b1"
+          },
+          {
+            "query": "How do I version and release my Python package?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.2,
+            "estimate": {
+              "input_tokens": 1020,
+              "input_cost_usd": 0.00306
+            },
+            "spec_hash": "83d7c928f09ba555f35332307a44e60b279bf8ce0b4afeb1cf34be8fd3e6fde5"
+          },
+          {
+            "query": "Build a wheel and sdist with uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.1,
+            "estimate": {
+              "input_tokens": 1019,
+              "input_cost_usd": 0.003057
+            },
+            "spec_hash": "65d0d1426ce3506411041bad876a367f88bdebcc42d2a1bc91eb6e8bb389f4bb"
+          },
+          {
+            "query": "Add CI that runs ruff, ty, and pytest",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 14.9,
+            "estimate": {
+              "input_tokens": 1021,
+              "input_cost_usd": 0.003063
+            },
+            "spec_hash": "6947215efe6e0c7ac4e295847e49ae2a7fc25956ddae30f9dc18174c9e077d74"
+          },
+          {
+            "query": "Set up GoReleaser for my Go project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.9,
+            "estimate": {
+              "input_tokens": 1020,
+              "input_cost_usd": 0.00306
+            },
+            "spec_hash": "498375d63ad5581474777653823abc18417a49120785e9bd82d6edcf271f13b0"
+          },
+          {
+            "query": "Write tests for my Python package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 27,
+            "estimate": {
+              "input_tokens": 1016,
+              "input_cost_usd": 0.003048
+            },
+            "spec_hash": "6d04dff49bda9fa757068e465efe8875562b25c076d0688a6566f6e9b1d98368"
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 1019,
+              "input_cost_usd": 0.003057
+            },
+            "spec_hash": "7a3c3785cc37c1fc45499b20c54c397e409943828b05c226388c80140291fb7b"
+          },
+          {
+            "query": "Publish my npm package to the registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.2,
+            "estimate": {
+              "input_tokens": 1018,
+              "input_cost_usd": 0.003054
+            },
+            "spec_hash": "df454f30e592f7586a4ba4dbae3d2be944679893772ad66389104522df9df92b"
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.9,
+            "estimate": {
+              "input_tokens": 1019,
+              "input_cost_usd": 0.003057
+            },
+            "spec_hash": "2dc729e66b9cf0fc94a45c9441f3d63095ce75c265f8f527b56bd2177d6085e6"
+          }
+        ],
+        "summary": {
+          "passed": 13,
+          "failed": 1,
+          "total": 14,
+          "pass_rate": 0.928571,
+          "avg_run_seconds": 8.3,
+          "estimate": {
+            "input_tokens": 14268,
+            "input_cost_usd": 0.042804
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:09:13Z",
+          "summary": {
+            "passed": 13,
+            "failed": 1,
+            "total": 14,
+            "pass_rate": 0.928571,
+            "avg_run_seconds": 8.3,
+            "estimate": {
+              "input_tokens": 13736,
+              "input_cost_usd": 0.041208
+            }
+          },
+          "results": [
+            {
+              "query": "Add CI that runs ruff, ty, and pytest",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.7,
+              "estimate": {
+                "input_tokens": 983,
+                "input_cost_usd": 0.002949
+              }
+            },
+            {
+              "query": "Add a tag-triggered release workflow for my Python package",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.6,
+              "estimate": {
+                "input_tokens": 983,
+                "input_cost_usd": 0.002949
+              }
+            },
+            {
+              "query": "Build a wheel and sdist with uv",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.7,
+              "estimate": {
+                "input_tokens": 981,
+                "input_cost_usd": 0.002943
+              }
+            },
+            {
+              "query": "Configure Trusted Publishing for PyPI",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.5,
+              "estimate": {
+                "input_tokens": 979,
+                "input_cost_usd": 0.002937
+              }
+            },
+            {
+              "query": "Configure ruff in pyproject.toml",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.8,
+              "estimate": {
+                "input_tokens": 981,
+                "input_cost_usd": 0.002943
+              }
+            },
+            {
+              "query": "How do I version and release my Python package?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.6,
+              "estimate": {
+                "input_tokens": 982,
+                "input_cost_usd": 0.002946
+              }
+            },
+            {
+              "query": "Publish my Python package to PyPI",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.9,
+              "estimate": {
+                "input_tokens": 980,
+                "input_cost_usd": 0.00294
+              }
+            },
+            {
+              "query": "Publish my npm package to the registry",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 17.1,
+              "estimate": {
+                "input_tokens": 980,
+                "input_cost_usd": 0.00294
+              }
+            },
+            {
+              "query": "Scaffold a new Python project with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.1,
+              "estimate": {
+                "input_tokens": 981,
+                "input_cost_usd": 0.002943
+              }
+            },
+            {
+              "query": "Set up Dependabot for my Python repo",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.6,
+              "estimate": {
+                "input_tokens": 982,
+                "input_cost_usd": 0.002946
+              }
+            },
+            {
+              "query": "Set up GoReleaser for my Go project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.6,
+              "estimate": {
+                "input_tokens": 982,
+                "input_cost_usd": 0.002946
+              }
+            },
+            {
+              "query": "Set up uv build and uv publish",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.9,
+              "estimate": {
+                "input_tokens": 981,
+                "input_cost_usd": 0.002943
+              }
+            },
+            {
+              "query": "Write a GitHub Actions CI workflow for my uv project",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.6,
+              "estimate": {
+                "input_tokens": 983,
+                "input_cost_usd": 0.002949
+              }
+            },
+            {
+              "query": "Write tests for my Python package",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 27.4,
+              "estimate": {
+                "input_tokens": 978,
+                "input_cost_usd": 0.002934
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T23:41:37Z",
+        "executed": true,
+        "content_hash": "e06011c2f2338a52746d1877d60a693eef47a6fdc28850986ebe73332b62ea46",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "ci-workflow",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1049,
+              "input_cost_usd": 0.003147
+            },
+            "measured": {
+              "input_tokens": 9,
+              "cache_read_input_tokens": 138163,
+              "cache_creation_input_tokens": 10332,
+              "output_tokens": 1314,
+              "cost_usd": 0.123807
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "astral-sh/setup-uv@[0-9a-f]{40}",
+                "text": ".github/workflows/ci.yaml matches /astral-sh/setup-uv@[0-9a-f]{40}/",
+                "passed": true,
+                "evidence": "astral-sh/setup-uv@fac544c07dec837d0ccb6301d7b5580bf5edae39",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "actions/checkout@[0-9a-f]{40}",
+                "text": ".github/workflows/ci.yaml matches /actions/checkout@[0-9a-f]{40}/",
+                "passed": true,
+                "evidence": "actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "ruff format --check",
+                "text": ".github/workflows/ci.yaml matches /ruff format --check/",
+                "passed": true,
+                "evidence": "ruff format --check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "ty check",
+                "text": ".github/workflows/ci.yaml matches /ty check/",
+                "passed": true,
+                "evidence": "ty check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "pytest",
+                "text": ".github/workflows/ci.yaml matches /pytest/",
+                "passed": true,
+                "evidence": "pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "contents: read",
+                "text": ".github/workflows/ci.yaml matches /contents: read/",
+                "passed": true,
+                "evidence": "contents: read",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Glob": 1,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 149818,
+              "executor_duration_seconds": 32.7
+            },
+            "spec_hash": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+          },
+          {
+            "id": "trusted-publishing",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1040,
+              "input_cost_usd": 0.00312
+            },
+            "measured": {
+              "input_tokens": 9,
+              "cache_read_input_tokens": 137934,
+              "cache_creation_input_tokens": 10160,
+              "output_tokens": 1358,
+              "cost_usd": 0.123342
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "id-token: write",
+                "text": ".github/workflows/release.yaml matches /id-token: write/",
+                "passed": true,
+                "evidence": "id-token: write",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "uv build",
+                "text": ".github/workflows/release.yaml matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "uv publish",
+                "text": ".github/workflows/release.yaml matches /uv publish/",
+                "passed": true,
+                "evidence": "uv publish",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "tags:",
+                "text": ".github/workflows/release.yaml matches /tags:/",
+                "passed": true,
+                "evidence": "tags:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "PYPI_API_TOKEN|password:",
+                "text": ".github/workflows/release.yaml does not match /PYPI_API_TOKEN|password:/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Glob": 1,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 149461,
+              "executor_duration_seconds": 31.2
+            },
+            "spec_hash": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+          },
+          {
+            "id": "dependabot",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1041,
+              "input_cost_usd": 0.003123
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 112422,
+              "cache_creation_input_tokens": 9800,
+              "output_tokens": 965,
+              "cost_usd": 0.107647
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/dependabot.yaml",
+                "text": "file .github/dependabot.yaml exists",
+                "passed": true,
+                "evidence": ".github/dependabot.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "ecosystem:.*uv",
+                "text": ".github/dependabot.yaml matches /ecosystem:.*uv/",
+                "passed": true,
+                "evidence": "ecosystem: uv",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "ecosystem:.*github-actions",
+                "text": ".github/dependabot.yaml matches /ecosystem:.*github-actions/",
+                "passed": true,
+                "evidence": "ecosystem: github-actions",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "cooldown",
+                "text": ".github/dependabot.yaml matches /cooldown/",
+                "passed": true,
+                "evidence": "cooldown",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 123195,
+              "executor_duration_seconds": 20.2
+            },
+            "spec_hash": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 28,
+          "estimate": {
+            "input_tokens": 3130,
+            "input_cost_usd": 0.00939
+          },
+          "measured": {
+            "input_tokens": 26,
+            "cache_read_input_tokens": 388519,
+            "cache_creation_input_tokens": 30292,
+            "output_tokens": 3637,
+            "cost_usd": 0.354796
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:58:52Z",
+          "summary": {
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "pass_rate": 0,
+            "avg_run_seconds": 51.6,
+            "measured": {
+              "input_tokens": 21,
+              "cache_read_input_tokens": 347612,
+              "cache_creation_input_tokens": 27831,
+              "output_tokens": 4953,
+              "cost_usd": 0.383342
+            }
+          },
+          "results": [
+            {
+              "id": "ci-workflow",
+              "passed": false,
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 143652,
+                "cache_creation_input_tokens": 10141,
+                "output_tokens": 2163,
+                "cost_usd": 0.158326
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 65.7
+              },
+              "fingerprint": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+            },
+            {
+              "id": "trusted-publishing",
+              "passed": false,
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 90048,
+                "cache_creation_input_tokens": 9053,
+                "output_tokens": 1689,
+                "cost_usd": 0.121863
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 65.3
+              },
+              "fingerprint": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+            },
+            {
+              "id": "dependabot",
+              "passed": false,
+              "measured": {
+                "input_tokens": 7,
+                "cache_read_input_tokens": 113912,
+                "cache_creation_input_tokens": 8637,
+                "output_tokens": 1101,
+                "cost_usd": 0.103153
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 23.9
+              },
+              "fingerprint": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T16:29:38Z",
+          "summary": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 23.9,
+            "estimate": {
+              "input_tokens": 3130,
+              "input_cost_usd": 0.00939
+            },
+            "measured": {
+              "input_tokens": 27,
+              "cache_read_input_tokens": 412465,
+              "cache_creation_input_tokens": 29891,
+              "output_tokens": 3519,
+              "cost_usd": 0.357807
+            }
+          },
+          "results": [
+            {
+              "id": "ci-workflow",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1049,
+                "input_cost_usd": 0.003147
+              },
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 112579,
+                "cache_creation_input_tokens": 9914,
+                "output_tokens": 1108,
+                "cost_usd": 0.110526
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 20.3
+              }
+            },
+            {
+              "id": "trusted-publishing",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1040,
+                "input_cost_usd": 0.00312
+              },
+              "measured": {
+                "input_tokens": 11,
+                "cache_read_input_tokens": 187529,
+                "cache_creation_input_tokens": 10206,
+                "output_tokens": 1472,
+                "cost_usd": 0.140218
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 30.2
+              }
+            },
+            {
+              "id": "dependabot",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1041,
+                "input_cost_usd": 0.003123
+              },
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 112357,
+                "cache_creation_input_tokens": 9771,
+                "output_tokens": 939,
+                "cost_usd": 0.107063
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 21.2
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.1-pro": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:40:18Z",
+        "executed": true,
+        "content_hash": "93b7b05da4447ba885a9134a01e3f0d4c2bf902fa4e23ad906782f67b9a751cb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "0ee21d088dbfe51cfe5a8d1039780877676807aa3c954619fb70f33137b271b2"
+          },
+          {
+            "query": "Set up uv build and uv publish",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "fab7c891a9d9da3f9810a0904368407f3a5e78c1f407564f550eb0caac05891b"
+          },
+          {
+            "query": "Write a GitHub Actions CI workflow for my uv project",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "f9428da4dd3bc3e229813fc48bf7b5e81b686f2cd0b2d25d460dd373ddc70007"
+          },
+          {
+            "query": "Configure Trusted Publishing for PyPI",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "dddd0da2e2c09a7bd2bd22ce031864cc825987cb139315fa2a2b395e0d5e030c"
+          },
+          {
+            "query": "Add a tag-triggered release workflow for my Python package",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "afc4abefb29042cd334f0e81826f5bae02e6eb61e5eeff2b8415d23a4e46b333"
+          },
+          {
+            "query": "Set up Dependabot for my Python repo",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "c5e002d6ff3e1d5abea1c3959649d6527cfe9879027071392ee5e45b6e3de5b1"
+          },
+          {
+            "query": "How do I version and release my Python package?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "83d7c928f09ba555f35332307a44e60b279bf8ce0b4afeb1cf34be8fd3e6fde5"
+          },
+          {
+            "query": "Build a wheel and sdist with uv",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "65d0d1426ce3506411041bad876a367f88bdebcc42d2a1bc91eb6e8bb389f4bb"
+          },
+          {
+            "query": "Add CI that runs ruff, ty, and pytest",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "6947215efe6e0c7ac4e295847e49ae2a7fc25956ddae30f9dc18174c9e077d74"
+          },
+          {
+            "query": "Set up GoReleaser for my Go project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "498375d63ad5581474777653823abc18417a49120785e9bd82d6edcf271f13b0"
+          },
+          {
+            "query": "Write tests for my Python package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "6d04dff49bda9fa757068e465efe8875562b25c076d0688a6566f6e9b1d98368"
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "7a3c3785cc37c1fc45499b20c54c397e409943828b05c226388c80140291fb7b"
+          },
+          {
+            "query": "Publish my npm package to the registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "df454f30e592f7586a4ba4dbae3d2be944679893772ad66389104522df9df92b"
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "2dc729e66b9cf0fc94a45c9441f3d63095ce75c265f8f527b56bd2177d6085e6"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 9,
+          "total": 14,
+          "pass_rate": 0.357143,
+          "avg_run_seconds": 5.4
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:40:42Z",
+        "executed": true,
+        "content_hash": "168b154b53b91680b0ef6d6e9ee62f2ca36e5e24413bf9ef7eb450088677fb02",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "ci-workflow",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 19
+            },
+            "spec_hash": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+          },
+          {
+            "id": "trusted-publishing",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.8
+            },
+            "spec_hash": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+          },
+          {
+            "id": "dependabot",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.2
+            },
+            "spec_hash": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 3,
+          "total": 3,
+          "avg_run_seconds": 10
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:40:42Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 3,
+            "total": 3,
+            "avg_run_seconds": 5.3
+          },
+          "results": [
+            {
+              "id": "ci-workflow",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.2
+              },
+              "fingerprint": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+            },
+            {
+              "id": "dependabot",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.3
+              },
+              "fingerprint": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+            },
+            {
+              "id": "trusted-publishing",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.3
+              },
+              "fingerprint": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.5-flash": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:39:07Z",
+        "executed": true,
+        "content_hash": "93b7b05da4447ba885a9134a01e3f0d4c2bf902fa4e23ad906782f67b9a751cb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5,
+            "spec_hash": "0ee21d088dbfe51cfe5a8d1039780877676807aa3c954619fb70f33137b271b2"
+          },
+          {
+            "query": "Set up uv build and uv publish",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "fab7c891a9d9da3f9810a0904368407f3a5e78c1f407564f550eb0caac05891b"
+          },
+          {
+            "query": "Write a GitHub Actions CI workflow for my uv project",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "f9428da4dd3bc3e229813fc48bf7b5e81b686f2cd0b2d25d460dd373ddc70007"
+          },
+          {
+            "query": "Configure Trusted Publishing for PyPI",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5,
+            "spec_hash": "dddd0da2e2c09a7bd2bd22ce031864cc825987cb139315fa2a2b395e0d5e030c"
+          },
+          {
+            "query": "Add a tag-triggered release workflow for my Python package",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "afc4abefb29042cd334f0e81826f5bae02e6eb61e5eeff2b8415d23a4e46b333"
+          },
+          {
+            "query": "Set up Dependabot for my Python repo",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "c5e002d6ff3e1d5abea1c3959649d6527cfe9879027071392ee5e45b6e3de5b1"
+          },
+          {
+            "query": "How do I version and release my Python package?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "83d7c928f09ba555f35332307a44e60b279bf8ce0b4afeb1cf34be8fd3e6fde5"
+          },
+          {
+            "query": "Build a wheel and sdist with uv",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "65d0d1426ce3506411041bad876a367f88bdebcc42d2a1bc91eb6e8bb389f4bb"
+          },
+          {
+            "query": "Add CI that runs ruff, ty, and pytest",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "6947215efe6e0c7ac4e295847e49ae2a7fc25956ddae30f9dc18174c9e077d74"
+          },
+          {
+            "query": "Set up GoReleaser for my Go project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "spec_hash": "498375d63ad5581474777653823abc18417a49120785e9bd82d6edcf271f13b0"
+          },
+          {
+            "query": "Write tests for my Python package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "6d04dff49bda9fa757068e465efe8875562b25c076d0688a6566f6e9b1d98368"
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "7a3c3785cc37c1fc45499b20c54c397e409943828b05c226388c80140291fb7b"
+          },
+          {
+            "query": "Publish my npm package to the registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "df454f30e592f7586a4ba4dbae3d2be944679893772ad66389104522df9df92b"
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "2dc729e66b9cf0fc94a45c9441f3d63095ce75c265f8f527b56bd2177d6085e6"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 9,
+          "total": 14,
+          "pass_rate": 0.357143,
+          "avg_run_seconds": 5.3
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:39:19Z",
+        "executed": true,
+        "content_hash": "168b154b53b91680b0ef6d6e9ee62f2ca36e5e24413bf9ef7eb450088677fb02",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "id": "ci-workflow",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.5
+            },
+            "spec_hash": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+          },
+          {
+            "id": "trusted-publishing",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.1
+            },
+            "spec_hash": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+          },
+          {
+            "id": "dependabot",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.3
+            },
+            "spec_hash": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 3,
+          "total": 3,
+          "avg_run_seconds": 5.3
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:39:19Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 3,
+            "total": 3,
+            "avg_run_seconds": 5.7
+          },
+          "results": [
+            {
+              "id": "ci-workflow",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.5
+              },
+              "fingerprint": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+            },
+            {
+              "id": "dependabot",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 6.4
+              },
+              "fingerprint": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+            },
+            {
+              "id": "trusted-publishing",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.3
+              },
+              "fingerprint": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "tool_version": "v0.2.1-18-ga772ab7-dirty",
+        "ran_at": "2026-06-20T11:23:21Z",
+        "executed": true,
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.3,
+            "estimate": {
+              "input_tokens": 826,
+              "input_cost_usd": 0.002065
+            }
+          },
+          {
+            "query": "Set up uv build and uv publish",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.9,
+            "estimate": {
+              "input_tokens": 826,
+              "input_cost_usd": 0.002065
+            }
+          },
+          {
+            "query": "Write a GitHub Actions CI workflow for my uv project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 21.3,
+            "estimate": {
+              "input_tokens": 830,
+              "input_cost_usd": 0.002075
+            }
+          },
+          {
+            "query": "Configure Trusted Publishing for PyPI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.5,
+            "estimate": {
+              "input_tokens": 825,
+              "input_cost_usd": 0.002063
+            }
+          },
+          {
+            "query": "Add a tag-triggered release workflow for my Python package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.5,
+            "estimate": {
+              "input_tokens": 830,
+              "input_cost_usd": 0.002075
+            }
+          },
+          {
+            "query": "Set up Dependabot for my Python repo",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.1,
+            "estimate": {
+              "input_tokens": 827,
+              "input_cost_usd": 0.002068
+            }
+          },
+          {
+            "query": "How do I version and release my Python package?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 829,
+              "input_cost_usd": 0.002073
+            }
+          },
+          {
+            "query": "Build a wheel and sdist with uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.1,
+            "estimate": {
+              "input_tokens": 827,
+              "input_cost_usd": 0.002068
+            }
+          },
+          {
+            "query": "Add CI that runs ruff, ty, and pytest",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18.2,
+            "estimate": {
+              "input_tokens": 830,
+              "input_cost_usd": 0.002075
+            }
+          },
+          {
+            "query": "Set up GoReleaser for my Go project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 46.4,
+            "estimate": {
+              "input_tokens": 829,
+              "input_cost_usd": 0.002073
+            }
+          },
+          {
+            "query": "Write tests for my Python package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 98,
+            "estimate": {
+              "input_tokens": 825,
+              "input_cost_usd": 0.002063
+            }
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 827,
+              "input_cost_usd": 0.002068
+            }
+          },
+          {
+            "query": "Publish my npm package to the registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 49,
+            "estimate": {
+              "input_tokens": 826,
+              "input_cost_usd": 0.002065
+            }
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 61.6,
+            "estimate": {
+              "input_tokens": 827,
+              "input_cost_usd": 0.002068
+            }
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 37.3,
+          "estimate": {
+            "input_tokens": 11584,
+            "input_cost_usd": 0.028964
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T23:44:19Z",
+        "executed": true,
+        "content_hash": "e06011c2f2338a52746d1877d60a693eef47a6fdc28850986ebe73332b62ea46",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "ci-workflow",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 928,
+              "input_cost_usd": 0.00232
+            },
+            "measured": {
+              "input_tokens": 23450,
+              "cache_read_input_tokens": 153856,
+              "output_tokens": 3676,
+              "cost_usd": 0.498405
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "astral-sh/setup-uv@[0-9a-f]{40}",
+                "text": ".github/workflows/ci.yaml matches /astral-sh/setup-uv@[0-9a-f]{40}/",
+                "passed": true,
+                "evidence": "astral-sh/setup-uv@fac544c07dec837d0ccb6301d7b5580bf5edae39",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "actions/checkout@[0-9a-f]{40}",
+                "text": ".github/workflows/ci.yaml matches /actions/checkout@[0-9a-f]{40}/",
+                "passed": true,
+                "evidence": "actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "ruff format --check",
+                "text": ".github/workflows/ci.yaml matches /ruff format --check/",
+                "passed": true,
+                "evidence": "ruff format --check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "ty check",
+                "text": ".github/workflows/ci.yaml matches /ty check/",
+                "passed": true,
+                "evidence": "ty check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "pytest",
+                "text": ".github/workflows/ci.yaml matches /pytest/",
+                "passed": true,
+                "evidence": "pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "contents: read",
+                "text": ".github/workflows/ci.yaml matches /contents: read/",
+                "passed": true,
+                "evidence": "contents: read",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 18,
+                "file_change": 1
+              },
+              "total_tool_calls": 19
+            },
+            "timing": {
+              "total_tokens": 180982,
+              "executor_duration_seconds": 112.4
+            },
+            "spec_hash": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+          },
+          {
+            "id": "trusted-publishing",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 921,
+              "input_cost_usd": 0.002303
+            },
+            "measured": {
+              "input_tokens": 12238,
+              "cache_read_input_tokens": 104576,
+              "output_tokens": 2325,
+              "cost_usd": 0.32691
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "id-token: write",
+                "text": ".github/workflows/release.yaml matches /id-token: write/",
+                "passed": true,
+                "evidence": "id-token: write",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "uv build",
+                "text": ".github/workflows/release.yaml matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "uv publish",
+                "text": ".github/workflows/release.yaml matches /uv publish/",
+                "passed": true,
+                "evidence": "uv publish",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "tags:",
+                "text": ".github/workflows/release.yaml matches /tags:/",
+                "passed": true,
+                "evidence": "tags:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "PYPI_API_TOKEN|password:",
+                "text": ".github/workflows/release.yaml does not match /PYPI_API_TOKEN|password:/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 10,
+                "file_change": 1
+              },
+              "total_tool_calls": 11
+            },
+            "timing": {
+              "total_tokens": 119139,
+              "executor_duration_seconds": 54.6
+            },
+            "spec_hash": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+          },
+          {
+            "id": "dependabot",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 921,
+              "input_cost_usd": 0.002303
+            },
+            "measured": {
+              "input_tokens": 10384,
+              "cache_read_input_tokens": 84224,
+              "output_tokens": 1507,
+              "cost_usd": 0.259125
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/dependabot.yaml",
+                "text": "file .github/dependabot.yaml exists",
+                "passed": true,
+                "evidence": ".github/dependabot.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "ecosystem:.*uv",
+                "text": ".github/dependabot.yaml matches /ecosystem:.*uv/",
+                "passed": true,
+                "evidence": "ecosystem: uv",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "ecosystem:.*github-actions",
+                "text": ".github/dependabot.yaml matches /ecosystem:.*github-actions/",
+                "passed": true,
+                "evidence": "ecosystem: github-actions",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "cooldown",
+                "text": ".github/dependabot.yaml matches /cooldown/",
+                "passed": true,
+                "evidence": "cooldown",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 8,
+                "file_change": 1
+              },
+              "total_tool_calls": 9
+            },
+            "timing": {
+              "total_tokens": 96115,
+              "executor_duration_seconds": 40.7
+            },
+            "spec_hash": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 69.2,
+          "estimate": {
+            "input_tokens": 2770,
+            "input_cost_usd": 0.006926
+          },
+          "measured": {
+            "input_tokens": 46072,
+            "cache_read_input_tokens": 342656,
+            "output_tokens": 7508,
+            "cost_usd": 1.08444
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:04:03Z",
+          "summary": {
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "pass_rate": 0.333333,
+            "avg_run_seconds": 53.9,
+            "measured": {
+              "input_tokens": 31021,
+              "cache_read_input_tokens": 287488,
+              "output_tokens": 7207,
+              "cost_usd": 0.904378
+            }
+          },
+          "results": [
+            {
+              "id": "ci-workflow",
+              "passed": false,
+              "measured": {
+                "input_tokens": 7254,
+                "cache_read_input_tokens": 91392,
+                "output_tokens": 2530,
+                "cost_usd": 0.284565
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 54.8
+              },
+              "fingerprint": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+            },
+            {
+              "id": "trusted-publishing",
+              "passed": false,
+              "measured": {
+                "input_tokens": 5512,
+                "cache_read_input_tokens": 77696,
+                "output_tokens": 2616,
+                "cost_usd": 0.24726
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 54.9
+              },
+              "fingerprint": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+            },
+            {
+              "id": "dependabot",
+              "passed": true,
+              "measured": {
+                "input_tokens": 18255,
+                "cache_read_input_tokens": 118400,
+                "output_tokens": 2061,
+                "cost_usd": 0.372553
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 51.9
+              },
+              "fingerprint": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T16:34:31Z",
+          "summary": {
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "pass_rate": 0.666667,
+            "avg_run_seconds": 66.8,
+            "estimate": {
+              "input_tokens": 2770,
+              "input_cost_usd": 0.006926
+            },
+            "measured": {
+              "input_tokens": 92174,
+              "cache_read_input_tokens": 439040,
+              "output_tokens": 8631,
+              "cost_usd": 1.457501
+            }
+          },
+          "results": [
+            {
+              "id": "ci-workflow",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 928,
+                "input_cost_usd": 0.00232
+              },
+              "measured": {
+                "input_tokens": 39125,
+                "cache_read_input_tokens": 237440,
+                "output_tokens": 5052,
+                "cost_usd": 0.767193
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 115.6
+              }
+            },
+            {
+              "id": "trusted-publishing",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 921,
+                "input_cost_usd": 0.002303
+              },
+              "measured": {
+                "input_tokens": 37137,
+                "cache_read_input_tokens": 89856,
+                "output_tokens": 2255,
+                "cost_usd": 0.351308
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 48.8
+              }
+            },
+            {
+              "id": "dependabot",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 921,
+                "input_cost_usd": 0.002303
+              },
+              "measured": {
+                "input_tokens": 15912,
+                "cache_read_input_tokens": 111744,
+                "output_tokens": 1324,
+                "cost_usd": 0.339
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 4,
+                "total": 4,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 36
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "tool_version": "v0.2.1-18-ga772ab7-dirty",
+        "ran_at": "2026-06-20T11:30:45Z",
+        "executed": true,
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.7,
+            "estimate": {
+              "input_tokens": 826,
+              "input_cost_usd": 0.00413
+            }
+          },
+          {
+            "query": "Set up uv build and uv publish",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 826,
+              "input_cost_usd": 0.00413
+            }
+          },
+          {
+            "query": "Write a GitHub Actions CI workflow for my uv project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.9,
+            "estimate": {
+              "input_tokens": 830,
+              "input_cost_usd": 0.00415
+            }
+          },
+          {
+            "query": "Configure Trusted Publishing for PyPI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "estimate": {
+              "input_tokens": 825,
+              "input_cost_usd": 0.004125
+            }
+          },
+          {
+            "query": "Add a tag-triggered release workflow for my Python package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9,
+            "estimate": {
+              "input_tokens": 830,
+              "input_cost_usd": 0.00415
+            }
+          },
+          {
+            "query": "Set up Dependabot for my Python repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.2,
+            "estimate": {
+              "input_tokens": 827,
+              "input_cost_usd": 0.004135
+            }
+          },
+          {
+            "query": "How do I version and release my Python package?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6,
+            "estimate": {
+              "input_tokens": 829,
+              "input_cost_usd": 0.004145
+            }
+          },
+          {
+            "query": "Build a wheel and sdist with uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.6,
+            "estimate": {
+              "input_tokens": 827,
+              "input_cost_usd": 0.004135
+            }
+          },
+          {
+            "query": "Add CI that runs ruff, ty, and pytest",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.9,
+            "estimate": {
+              "input_tokens": 830,
+              "input_cost_usd": 0.00415
+            }
+          },
+          {
+            "query": "Set up GoReleaser for my Go project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 113.7,
+            "estimate": {
+              "input_tokens": 829,
+              "input_cost_usd": 0.004145
+            }
+          },
+          {
+            "query": "Write tests for my Python package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 59.5,
+            "estimate": {
+              "input_tokens": 825,
+              "input_cost_usd": 0.004125
+            }
+          },
+          {
+            "query": "Scaffold a new Python project with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 101.8,
+            "estimate": {
+              "input_tokens": 827,
+              "input_cost_usd": 0.004135
+            }
+          },
+          {
+            "query": "Publish my npm package to the registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 48.7,
+            "estimate": {
+              "input_tokens": 826,
+              "input_cost_usd": 0.00413
+            }
+          },
+          {
+            "query": "Configure ruff in pyproject.toml",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 47.5,
+            "estimate": {
+              "input_tokens": 827,
+              "input_cost_usd": 0.004135
+            }
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 32.8,
+          "estimate": {
+            "input_tokens": 11584,
+            "input_cost_usd": 0.05792
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T23:46:36Z",
+        "executed": true,
+        "content_hash": "e06011c2f2338a52746d1877d60a693eef47a6fdc28850986ebe73332b62ea46",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "ci-workflow",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 928,
+              "input_cost_usd": 0.00464
+            },
+            "measured": {
+              "input_tokens": 29557,
+              "cache_read_input_tokens": 248576,
+              "output_tokens": 4489,
+              "cost_usd": 1.525335
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "astral-sh/setup-uv@[0-9a-f]{40}",
+                "text": ".github/workflows/ci.yaml matches /astral-sh/setup-uv@[0-9a-f]{40}/",
+                "passed": true,
+                "evidence": "astral-sh/setup-uv@fac544c07dec837d0ccb6301d7b5580bf5edae39",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "actions/checkout@[0-9a-f]{40}",
+                "text": ".github/workflows/ci.yaml matches /actions/checkout@[0-9a-f]{40}/",
+                "passed": true,
+                "evidence": "actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "ruff format --check",
+                "text": ".github/workflows/ci.yaml matches /ruff format --check/",
+                "passed": true,
+                "evidence": "ruff format --check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "ty check",
+                "text": ".github/workflows/ci.yaml matches /ty check/",
+                "passed": true,
+                "evidence": "ty check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "pytest",
+                "text": ".github/workflows/ci.yaml matches /pytest/",
+                "passed": true,
+                "evidence": "pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "contents: read",
+                "text": ".github/workflows/ci.yaml matches /contents: read/",
+                "passed": true,
+                "evidence": "contents: read",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 21,
+                "file_change": 2
+              },
+              "total_tool_calls": 23
+            },
+            "timing": {
+              "total_tokens": 282622,
+              "executor_duration_seconds": 136.8
+            },
+            "spec_hash": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+          },
+          {
+            "id": "trusted-publishing",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 921,
+              "input_cost_usd": 0.004605
+            },
+            "measured": {
+              "input_tokens": 10937,
+              "cache_read_input_tokens": 95488,
+              "output_tokens": 2106,
+              "cost_usd": 0.595305
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "id-token: write",
+                "text": ".github/workflows/release.yaml matches /id-token: write/",
+                "passed": true,
+                "evidence": "id-token: write",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "uv build",
+                "text": ".github/workflows/release.yaml matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "uv publish",
+                "text": ".github/workflows/release.yaml matches /uv publish/",
+                "passed": true,
+                "evidence": "uv publish",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "tags:",
+                "text": ".github/workflows/release.yaml matches /tags:/",
+                "passed": true,
+                "evidence": "tags:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "PYPI_API_TOKEN|password:",
+                "text": ".github/workflows/release.yaml does not match /PYPI_API_TOKEN|password:/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 10,
+                "file_change": 1
+              },
+              "total_tool_calls": 11
+            },
+            "timing": {
+              "total_tokens": 108531,
+              "executor_duration_seconds": 52.6
+            },
+            "spec_hash": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+          },
+          {
+            "id": "dependabot",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 921,
+              "input_cost_usd": 0.004605
+            },
+            "measured": {
+              "input_tokens": 17544,
+              "cache_read_input_tokens": 87296,
+              "output_tokens": 1848,
+              "cost_usd": 0.57964
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/dependabot.yaml",
+                "text": "file .github/dependabot.yaml exists",
+                "passed": true,
+                "evidence": ".github/dependabot.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "ecosystem:.*uv",
+                "text": ".github/dependabot.yaml matches /ecosystem:.*uv/",
+                "passed": true,
+                "evidence": "ecosystem: uv",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "ecosystem:.*github-actions",
+                "text": ".github/dependabot.yaml matches /ecosystem:.*github-actions/",
+                "passed": true,
+                "evidence": "ecosystem: github-actions",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "cooldown",
+                "text": ".github/dependabot.yaml matches /cooldown/",
+                "passed": true,
+                "evidence": "cooldown",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 9,
+                "file_change": 1
+              },
+              "total_tool_calls": 10
+            },
+            "timing": {
+              "total_tokens": 106688,
+              "executor_duration_seconds": 70
+            },
+            "spec_hash": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 86.5,
+          "estimate": {
+            "input_tokens": 2770,
+            "input_cost_usd": 0.01385
+          },
+          "measured": {
+            "input_tokens": 58038,
+            "cache_read_input_tokens": 431360,
+            "output_tokens": 8443,
+            "cost_usd": 2.70028
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T17:07:03Z",
+          "summary": {
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "pass_rate": 0,
+            "avg_run_seconds": 63.9,
+            "measured": {
+              "input_tokens": 45236,
+              "cache_read_input_tokens": 372992,
+              "output_tokens": 8748,
+              "cost_usd": 2.35358
+            }
+          },
+          "results": [
+            {
+              "id": "ci-workflow",
+              "passed": false,
+              "measured": {
+                "input_tokens": 9000,
+                "cache_read_input_tokens": 78208,
+                "output_tokens": 1989,
+                "cost_usd": 0.49571
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 44.7
+              },
+              "fingerprint": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+            },
+            {
+              "id": "trusted-publishing",
+              "passed": false,
+              "measured": {
+                "input_tokens": 15655,
+                "cache_read_input_tokens": 161664,
+                "output_tokens": 4180,
+                "cost_usd": 1.011995
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 88.4
+              },
+              "fingerprint": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+            },
+            {
+              "id": "dependabot",
+              "passed": false,
+              "measured": {
+                "input_tokens": 20581,
+                "cache_read_input_tokens": 133120,
+                "output_tokens": 2579,
+                "cost_usd": 0.845875
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 58.5
+              },
+              "fingerprint": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T16:35:42Z",
+          "summary": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 54.8,
+            "estimate": {
+              "input_tokens": 2770,
+              "input_cost_usd": 0.01385
+            },
+            "measured": {
+              "input_tokens": 74968,
+              "cache_read_input_tokens": 370432,
+              "output_tokens": 6924,
+              "cost_usd": 2.43472
+            }
+          },
+          "results": [
+            {
+              "id": "ci-workflow",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 928,
+                "input_cost_usd": 0.00464
+              },
+              "measured": {
+                "input_tokens": 38296,
+                "cache_read_input_tokens": 160128,
+                "output_tokens": 2954,
+                "cost_usd": 1.08074
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 70.3
+              }
+            },
+            {
+              "id": "trusted-publishing",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 921,
+                "input_cost_usd": 0.004605
+              },
+              "measured": {
+                "input_tokens": 12816,
+                "cache_read_input_tokens": 121984,
+                "output_tokens": 1953,
+                "cost_usd": 0.73259
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 48
+              }
+            },
+            {
+              "id": "dependabot",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 921,
+                "input_cost_usd": 0.004605
+              },
+              "measured": {
+                "input_tokens": 23856,
+                "cache_read_input_tokens": 88320,
+                "output_tokens": 2017,
+                "cost_usd": 0.62139
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 46.2
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

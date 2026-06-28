@@ -1,0 +1,4079 @@
+{
+  "schema": 5,
+  "plugin": "python",
+  "skill": "python-project",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:19:27Z",
+        "executed": true,
+        "content_hash": "890e1700515e610088fd34e4a3126f6a1f8efb4cf7956e43414139bfc441b38e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "estimate": {
+              "input_tokens": 1454,
+              "input_cost_usd": 0.001454
+            },
+            "spec_hash": "13a6171cc487ad8fa11e4996eb6292aea11ce1279c6447dbefc461c98b68a48b"
+          },
+          {
+            "query": "Create a pyproject.toml for my package",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.6,
+            "estimate": {
+              "input_tokens": 1455,
+              "input_cost_usd": 0.001455
+            },
+            "spec_hash": "b28d5fe339b02848dbf810db86b027ff03e3daf97239df74c7ef975e79748ad4"
+          },
+          {
+            "query": "What build backend should I use for my Python library?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.9,
+            "estimate": {
+              "input_tokens": 1456,
+              "input_cost_usd": 0.001456
+            },
+            "spec_hash": "4500a3bb85cc2d7a4038d3f0d63ae18f603008b99b9126f457794a0bb29a2145"
+          },
+          {
+            "query": "Restructure my Python repo to the src layout",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "estimate": {
+              "input_tokens": 1455,
+              "input_cost_usd": 0.001455
+            },
+            "spec_hash": "a1ccccd244a8a11e2ead5ddd7df5143f05e8b1d410dd243311dc96bf1e19d0e9"
+          },
+          {
+            "query": "Pin ruff and ty as dev dependencies with uv",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 1456,
+              "input_cost_usd": 0.001456
+            },
+            "spec_hash": "46d755a5bab15ba99d106d05a01d4f1635d63e9b1d24afe02bea54df3038af26"
+          },
+          {
+            "query": "Add a Makefile with a pr gate for my Python project",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 1458,
+              "input_cost_usd": 0.001458
+            },
+            "spec_hash": "d6ba66f284c46649bc68296084974592e5f3e9bdd485c962285cd7f81c1d8322"
+          },
+          {
+            "query": "Initialize a uv-managed Python CLI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.8,
+            "estimate": {
+              "input_tokens": 1453,
+              "input_cost_usd": 0.001453
+            },
+            "spec_hash": "16ef7be6be8331c3947dfcb4824aa6fa91d7e0c05a36c4c066348f51cbb772a8"
+          },
+          {
+            "query": "How should I lay out a new Python package?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.4,
+            "estimate": {
+              "input_tokens": 1455,
+              "input_cost_usd": 0.001455
+            },
+            "spec_hash": "2b11dce2cff4d3ff30b155fe37d5604f12047b61f00c8cc6b2dab1e37f73eb2f"
+          },
+          {
+            "query": "Set up a dev dependency group for my Python tooling",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.8,
+            "estimate": {
+              "input_tokens": 1456,
+              "input_cost_usd": 0.001456
+            },
+            "spec_hash": "6fa685a77cef4f4905678fe8aac03b437afeb0cd267c62ba1cef7fc6797166e4"
+          },
+          {
+            "query": "Migrate my project from pip and requirements.txt to uv",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 1458,
+              "input_cost_usd": 0.001458
+            },
+            "spec_hash": "a5d4f660ca15ccc3d1f59500a3128bc208203be57251250c20165aa27f00ff20"
+          },
+          {
+            "query": "Scaffold a new Go service with cmd and internal directories",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 1456,
+              "input_cost_usd": 0.001456
+            },
+            "spec_hash": "b2fab86692276ed81805084745a25ead15e3b67da06a145b8b02ff92f10e0ec6"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "estimate": {
+              "input_tokens": 1451,
+              "input_cost_usd": 0.001451
+            },
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "How should I handle errors in this Python function?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "estimate": {
+              "input_tokens": 1455,
+              "input_cost_usd": 0.001455
+            },
+            "spec_hash": "61bbc9422ddeeae97df71d5dcd9338837c669fdecf8d6a89c65a414ed725d43d"
+          },
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.2,
+            "estimate": {
+              "input_tokens": 1452,
+              "input_cost_usd": 0.001452
+            },
+            "spec_hash": "2bcb7d7ab874cc070837d3286dcb618aa8bcbbfe41cef28892ffde7459a15166"
+          },
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.8,
+            "estimate": {
+              "input_tokens": 1453,
+              "input_cost_usd": 0.001453
+            },
+            "spec_hash": "4181d3bf1d554a149420d4bacc47cc4fc084c365072797d0e5ca7fe748294788"
+          },
+          {
+            "query": "Set up a new Node project with npm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.1,
+            "estimate": {
+              "input_tokens": 1453,
+              "input_cost_usd": 0.001453
+            },
+            "spec_hash": "5545b7ee3fa5ddc6f6737f8224d631f658419130fa38f2547405fdb648741ec6"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 6,
+          "total": 16,
+          "pass_rate": 0.625,
+          "avg_run_seconds": 7.7,
+          "estimate": {
+            "input_tokens": 23276,
+            "input_cost_usd": 0.023276
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:06:28Z",
+          "summary": {
+            "passed": 12,
+            "failed": 4,
+            "total": 16,
+            "pass_rate": 0.75,
+            "avg_run_seconds": 7.1,
+            "estimate": {
+              "input_tokens": 22332,
+              "input_cost_usd": 0.022332
+            }
+          },
+          "results": [
+            {
+              "query": "Add a Makefile with a pr gate for my Python project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.2,
+              "estimate": {
+                "input_tokens": 1399,
+                "input_cost_usd": 0.001399
+              }
+            },
+            {
+              "query": "Add type hints to this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.2,
+              "estimate": {
+                "input_tokens": 1393,
+                "input_cost_usd": 0.001393
+              }
+            },
+            {
+              "query": "Create a pyproject.toml for my package",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.4,
+              "estimate": {
+                "input_tokens": 1396,
+                "input_cost_usd": 0.001396
+              }
+            },
+            {
+              "query": "How should I handle errors in this Python function?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.6,
+              "estimate": {
+                "input_tokens": 1396,
+                "input_cost_usd": 0.001396
+              }
+            },
+            {
+              "query": "How should I lay out a new Python package?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.3,
+              "estimate": {
+                "input_tokens": 1396,
+                "input_cost_usd": 0.001396
+              }
+            },
+            {
+              "query": "Initialize a uv-managed Python CLI",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.4,
+              "estimate": {
+                "input_tokens": 1394,
+                "input_cost_usd": 0.001394
+              }
+            },
+            {
+              "query": "Migrate my project from pip and requirements.txt to uv",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8,
+              "estimate": {
+                "input_tokens": 1399,
+                "input_cost_usd": 0.001399
+              }
+            },
+            {
+              "query": "Pin ruff and ty as dev dependencies with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.1,
+              "estimate": {
+                "input_tokens": 1397,
+                "input_cost_usd": 0.001397
+              }
+            },
+            {
+              "query": "Publish my Python package to PyPI",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.3,
+              "estimate": {
+                "input_tokens": 1394,
+                "input_cost_usd": 0.001394
+              }
+            },
+            {
+              "query": "Restructure my Python repo to the src layout",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.8,
+              "estimate": {
+                "input_tokens": 1396,
+                "input_cost_usd": 0.001396
+              }
+            },
+            {
+              "query": "Scaffold a new Go service with cmd and internal directories",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.5,
+              "estimate": {
+                "input_tokens": 1397,
+                "input_cost_usd": 0.001397
+              }
+            },
+            {
+              "query": "Set up a dev dependency group for my Python tooling",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.4,
+              "estimate": {
+                "input_tokens": 1397,
+                "input_cost_usd": 0.001397
+              }
+            },
+            {
+              "query": "Set up a new Node project with npm",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.8,
+              "estimate": {
+                "input_tokens": 1394,
+                "input_cost_usd": 0.001394
+              }
+            },
+            {
+              "query": "Set up a new Python project with uv",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.6,
+              "estimate": {
+                "input_tokens": 1395,
+                "input_cost_usd": 0.001395
+              }
+            },
+            {
+              "query": "What build backend should I use for my Python library?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.8,
+              "estimate": {
+                "input_tokens": 1397,
+                "input_cost_usd": 0.001397
+              }
+            },
+            {
+              "query": "Write pytest tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.5,
+              "estimate": {
+                "input_tokens": 1392,
+                "input_cost_usd": 0.001392
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:19:42Z",
+        "executed": true,
+        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "configure-pyproject",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 1506,
+              "input_cost_usd": 0.001506
+            },
+            "measured": {
+              "input_tokens": 24,
+              "cache_read_input_tokens": 64170,
+              "cache_creation_input_tokens": 32296,
+              "output_tokens": 638,
+              "cost_usd": 0.074899
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "build-backend = \"uv_build\"",
+                "text": "pyproject.toml matches /build-backend = \"uv_build\"/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "uv_build\u003e=",
+                "text": "pyproject.toml matches /uv_build\u003e=/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[dependency-groups\\]",
+                "text": "pyproject.toml matches /\\[dependency-groups\\]/",
+                "passed": true,
+                "evidence": "[dependency-groups]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "ruff",
+                "text": "pyproject.toml matches /ruff/",
+                "passed": true,
+                "evidence": "ruff",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"ty",
+                "text": "pyproject.toml matches /\"ty/",
+                "passed": true,
+                "evidence": "\"ty",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pytest",
+                "text": "pyproject.toml matches /pytest/",
+                "passed": true,
+                "evidence": "pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "requires-python",
+                "text": "pyproject.toml matches /requires-python/",
+                "passed": true,
+                "evidence": "requires-python",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "hatchling|setuptools|poetry",
+                "text": "pyproject.toml does not match /hatchling|setuptools|poetry/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 2,
+              "total": 8,
+              "pass_rate": 0.75
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Edit": 1,
+                "Read": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 97128,
+              "executor_duration_seconds": 14.2
+            },
+            "spec_hash": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+          },
+          {
+            "id": "makefile-gate",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 1492,
+              "input_cost_usd": 0.001492
+            },
+            "measured": {
+              "input_tokens": 24,
+              "cache_read_input_tokens": 64452,
+              "cache_creation_input_tokens": 32393,
+              "output_tokens": 860,
+              "cost_usd": 0.076187
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "Makefile",
+                "text": "file Makefile exists",
+                "passed": true,
+                "evidence": "Makefile exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff format",
+                "text": "Makefile matches /uv run ruff format/",
+                "passed": true,
+                "evidence": "uv run ruff format",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff check",
+                "text": "Makefile matches /uv run ruff check/",
+                "passed": true,
+                "evidence": "uv run ruff check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ty check",
+                "text": "Makefile matches /uv run ty check/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run pytest",
+                "text": "Makefile matches /uv run pytest/",
+                "passed": true,
+                "evidence": "uv run pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv build",
+                "text": "Makefile matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "pr:",
+                "text": "Makefile matches /pr:/",
+                "passed": true,
+                "evidence": "pr:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 1,
+              "total": 7,
+              "pass_rate": 0.857143
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Read": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 97729,
+              "executor_duration_seconds": 12.4
+            },
+            "spec_hash": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 2,
+          "total": 2,
+          "pass_rate": 0,
+          "avg_run_seconds": 13.3,
+          "estimate": {
+            "input_tokens": 2998,
+            "input_cost_usd": 0.002998
+          },
+          "measured": {
+            "input_tokens": 48,
+            "cache_read_input_tokens": 128622,
+            "cache_creation_input_tokens": 64689,
+            "output_tokens": 1498,
+            "cost_usd": 0.151086
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:51:22Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 15.8,
+            "measured": {
+              "input_tokens": 62,
+              "cache_read_input_tokens": 193490,
+              "cache_creation_input_tokens": 31460,
+              "output_tokens": 2456,
+              "cost_usd": 0.095909
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": false,
+              "measured": {
+                "input_tokens": 21,
+                "cache_read_input_tokens": 58828,
+                "cache_creation_input_tokens": 15250,
+                "output_tokens": 1216,
+                "cost_usd": 0.04314
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.625
+              },
+              "timing": {
+                "executor_duration_seconds": 14.9
+              },
+              "fingerprint": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+            },
+            {
+              "id": "makefile-gate",
+              "passed": false,
+              "measured": {
+                "input_tokens": 41,
+                "cache_read_input_tokens": 134662,
+                "cache_creation_input_tokens": 16210,
+                "output_tokens": 1240,
+                "cost_usd": 0.052769
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.857143
+              },
+              "timing": {
+                "executor_duration_seconds": 16.6
+              },
+              "fingerprint": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:06:43Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 14.6,
+            "estimate": {
+              "input_tokens": 2880,
+              "input_cost_usd": 0.00288
+            },
+            "measured": {
+              "input_tokens": 46,
+              "cache_read_input_tokens": 143911,
+              "cache_creation_input_tokens": 32710,
+              "output_tokens": 1316,
+              "cost_usd": 0.08774
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1447,
+                "input_cost_usd": 0.001447
+              },
+              "measured": {
+                "input_tokens": 21,
+                "cache_read_input_tokens": 59164,
+                "cache_creation_input_tokens": 16251,
+                "output_tokens": 625,
+                "cost_usd": 0.042235
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 15.1
+              }
+            },
+            {
+              "id": "makefile-gate",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1433,
+                "input_cost_usd": 0.001433
+              },
+              "measured": {
+                "input_tokens": 25,
+                "cache_read_input_tokens": 84747,
+                "cache_creation_input_tokens": 16459,
+                "output_tokens": 691,
+                "cost_usd": 0.045505
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 0.857143
+              },
+              "timing": {
+                "executor_duration_seconds": 14.1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:23:18Z",
+        "executed": true,
+        "content_hash": "890e1700515e610088fd34e4a3126f6a1f8efb4cf7956e43414139bfc441b38e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.1,
+            "estimate": {
+              "input_tokens": 1947,
+              "input_cost_usd": 0.009735
+            },
+            "spec_hash": "13a6171cc487ad8fa11e4996eb6292aea11ce1279c6447dbefc461c98b68a48b"
+          },
+          {
+            "query": "Create a pyproject.toml for my package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.2,
+            "estimate": {
+              "input_tokens": 1949,
+              "input_cost_usd": 0.009745
+            },
+            "spec_hash": "b28d5fe339b02848dbf810db86b027ff03e3daf97239df74c7ef975e79748ad4"
+          },
+          {
+            "query": "What build backend should I use for my Python library?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.5,
+            "estimate": {
+              "input_tokens": 1949,
+              "input_cost_usd": 0.009745
+            },
+            "spec_hash": "4500a3bb85cc2d7a4038d3f0d63ae18f603008b99b9126f457794a0bb29a2145"
+          },
+          {
+            "query": "Restructure my Python repo to the src layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "estimate": {
+              "input_tokens": 1950,
+              "input_cost_usd": 0.00975
+            },
+            "spec_hash": "a1ccccd244a8a11e2ead5ddd7df5143f05e8b1d410dd243311dc96bf1e19d0e9"
+          },
+          {
+            "query": "Pin ruff and ty as dev dependencies with uv",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.1,
+            "estimate": {
+              "input_tokens": 1955,
+              "input_cost_usd": 0.009775
+            },
+            "spec_hash": "46d755a5bab15ba99d106d05a01d4f1635d63e9b1d24afe02bea54df3038af26"
+          },
+          {
+            "query": "Add a Makefile with a pr gate for my Python project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.2,
+            "estimate": {
+              "input_tokens": 1954,
+              "input_cost_usd": 0.00977
+            },
+            "spec_hash": "d6ba66f284c46649bc68296084974592e5f3e9bdd485c962285cd7f81c1d8322"
+          },
+          {
+            "query": "Initialize a uv-managed Python CLI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "estimate": {
+              "input_tokens": 1951,
+              "input_cost_usd": 0.009755
+            },
+            "spec_hash": "16ef7be6be8331c3947dfcb4824aa6fa91d7e0c05a36c4c066348f51cbb772a8"
+          },
+          {
+            "query": "How should I lay out a new Python package?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "estimate": {
+              "input_tokens": 1948,
+              "input_cost_usd": 0.00974
+            },
+            "spec_hash": "2b11dce2cff4d3ff30b155fe37d5604f12047b61f00c8cc6b2dab1e37f73eb2f"
+          },
+          {
+            "query": "Set up a dev dependency group for my Python tooling",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "estimate": {
+              "input_tokens": 1953,
+              "input_cost_usd": 0.009765
+            },
+            "spec_hash": "6fa685a77cef4f4905678fe8aac03b437afeb0cd267c62ba1cef7fc6797166e4"
+          },
+          {
+            "query": "Migrate my project from pip and requirements.txt to uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "estimate": {
+              "input_tokens": 1955,
+              "input_cost_usd": 0.009775
+            },
+            "spec_hash": "a5d4f660ca15ccc3d1f59500a3128bc208203be57251250c20165aa27f00ff20"
+          },
+          {
+            "query": "Scaffold a new Go service with cmd and internal directories",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.3,
+            "estimate": {
+              "input_tokens": 1955,
+              "input_cost_usd": 0.009775
+            },
+            "spec_hash": "b2fab86692276ed81805084745a25ead15e3b67da06a145b8b02ff92f10e0ec6"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 1946,
+              "input_cost_usd": 0.00973
+            },
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "How should I handle errors in this Python function?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.9,
+            "estimate": {
+              "input_tokens": 1949,
+              "input_cost_usd": 0.009745
+            },
+            "spec_hash": "61bbc9422ddeeae97df71d5dcd9338837c669fdecf8d6a89c65a414ed725d43d"
+          },
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.4,
+            "estimate": {
+              "input_tokens": 1946,
+              "input_cost_usd": 0.00973
+            },
+            "spec_hash": "2bcb7d7ab874cc070837d3286dcb618aa8bcbbfe41cef28892ffde7459a15166"
+          },
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.4,
+            "estimate": {
+              "input_tokens": 1948,
+              "input_cost_usd": 0.00974
+            },
+            "spec_hash": "4181d3bf1d554a149420d4bacc47cc4fc084c365072797d0e5ca7fe748294788"
+          },
+          {
+            "query": "Set up a new Node project with npm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.6,
+            "estimate": {
+              "input_tokens": 1947,
+              "input_cost_usd": 0.009735
+            },
+            "spec_hash": "5545b7ee3fa5ddc6f6737f8224d631f658419130fa38f2547405fdb648741ec6"
+          }
+        ],
+        "summary": {
+          "passed": 15,
+          "failed": 1,
+          "total": 16,
+          "pass_rate": 0.9375,
+          "avg_run_seconds": 9,
+          "estimate": {
+            "input_tokens": 31202,
+            "input_cost_usd": 0.15601
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:07:09Z",
+          "summary": {
+            "passed": 15,
+            "failed": 1,
+            "total": 16,
+            "pass_rate": 0.9375,
+            "avg_run_seconds": 9.5,
+            "estimate": {
+              "input_tokens": 30018,
+              "input_cost_usd": 0.15009
+            }
+          },
+          "results": [
+            {
+              "query": "Add a Makefile with a pr gate for my Python project",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.5,
+              "estimate": {
+                "input_tokens": 1880,
+                "input_cost_usd": 0.0094
+              }
+            },
+            {
+              "query": "Add type hints to this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11,
+              "estimate": {
+                "input_tokens": 1872,
+                "input_cost_usd": 0.00936
+              }
+            },
+            {
+              "query": "Create a pyproject.toml for my package",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.5,
+              "estimate": {
+                "input_tokens": 1875,
+                "input_cost_usd": 0.009375
+              }
+            },
+            {
+              "query": "How should I handle errors in this Python function?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 17.7,
+              "estimate": {
+                "input_tokens": 1875,
+                "input_cost_usd": 0.009375
+              }
+            },
+            {
+              "query": "How should I lay out a new Python package?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.5,
+              "estimate": {
+                "input_tokens": 1874,
+                "input_cost_usd": 0.00937
+              }
+            },
+            {
+              "query": "Initialize a uv-managed Python CLI",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.6,
+              "estimate": {
+                "input_tokens": 1877,
+                "input_cost_usd": 0.009385
+              }
+            },
+            {
+              "query": "Migrate my project from pip and requirements.txt to uv",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7,
+              "estimate": {
+                "input_tokens": 1881,
+                "input_cost_usd": 0.009405
+              }
+            },
+            {
+              "query": "Pin ruff and ty as dev dependencies with uv",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.2,
+              "estimate": {
+                "input_tokens": 1881,
+                "input_cost_usd": 0.009405
+              }
+            },
+            {
+              "query": "Publish my Python package to PyPI",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12,
+              "estimate": {
+                "input_tokens": 1874,
+                "input_cost_usd": 0.00937
+              }
+            },
+            {
+              "query": "Restructure my Python repo to the src layout",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.1,
+              "estimate": {
+                "input_tokens": 1876,
+                "input_cost_usd": 0.00938
+              }
+            },
+            {
+              "query": "Scaffold a new Go service with cmd and internal directories",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 25,
+              "estimate": {
+                "input_tokens": 1881,
+                "input_cost_usd": 0.009405
+              }
+            },
+            {
+              "query": "Set up a dev dependency group for my Python tooling",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.4,
+              "estimate": {
+                "input_tokens": 1879,
+                "input_cost_usd": 0.009395
+              }
+            },
+            {
+              "query": "Set up a new Node project with npm",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.2,
+              "estimate": {
+                "input_tokens": 1873,
+                "input_cost_usd": 0.009365
+              }
+            },
+            {
+              "query": "Set up a new Python project with uv",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.2,
+              "estimate": {
+                "input_tokens": 1873,
+                "input_cost_usd": 0.009365
+              }
+            },
+            {
+              "query": "What build backend should I use for my Python library?",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.9,
+              "estimate": {
+                "input_tokens": 1875,
+                "input_cost_usd": 0.009375
+              }
+            },
+            {
+              "query": "Write pytest tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.8,
+              "estimate": {
+                "input_tokens": 1872,
+                "input_cost_usd": 0.00936
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:23:50Z",
+        "executed": true,
+        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "configure-pyproject",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2017,
+              "input_cost_usd": 0.010085
+            },
+            "measured": {
+              "input_tokens": 2865,
+              "cache_read_input_tokens": 67262,
+              "cache_creation_input_tokens": 25598,
+              "output_tokens": 1665,
+              "cost_usd": 0.346217
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "build-backend = \"uv_build\"",
+                "text": "pyproject.toml matches /build-backend = \"uv_build\"/",
+                "passed": true,
+                "evidence": "build-backend = \"uv_build\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "uv_build\u003e=",
+                "text": "pyproject.toml matches /uv_build\u003e=/",
+                "passed": true,
+                "evidence": "uv_build\u003e=",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[dependency-groups\\]",
+                "text": "pyproject.toml matches /\\[dependency-groups\\]/",
+                "passed": true,
+                "evidence": "[dependency-groups]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "ruff",
+                "text": "pyproject.toml matches /ruff/",
+                "passed": true,
+                "evidence": "ruff",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"ty",
+                "text": "pyproject.toml matches /\"ty/",
+                "passed": true,
+                "evidence": "\"ty",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pytest",
+                "text": "pyproject.toml matches /pytest/",
+                "passed": true,
+                "evidence": "pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "requires-python",
+                "text": "pyproject.toml matches /requires-python/",
+                "passed": true,
+                "evidence": "requires-python",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "hatchling|setuptools|poetry",
+                "text": "pyproject.toml does not match /hatchling|setuptools|poetry/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 0,
+              "total": 8,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 97390,
+              "executor_duration_seconds": 27.6
+            },
+            "spec_hash": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+          },
+          {
+            "id": "makefile-gate",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1996,
+              "input_cost_usd": 0.00998
+            },
+            "measured": {
+              "input_tokens": 2868,
+              "cache_read_input_tokens": 92467,
+              "cache_creation_input_tokens": 25975,
+              "output_tokens": 2146,
+              "cost_usd": 0.374606
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "Makefile",
+                "text": "file Makefile exists",
+                "passed": true,
+                "evidence": "Makefile exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff format",
+                "text": "Makefile matches /uv run ruff format/",
+                "passed": true,
+                "evidence": "uv run ruff format",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff check",
+                "text": "Makefile matches /uv run ruff check/",
+                "passed": true,
+                "evidence": "uv run ruff check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ty check",
+                "text": "Makefile matches /uv run ty check/",
+                "passed": true,
+                "evidence": "uv run ty check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run pytest",
+                "text": "Makefile matches /uv run pytest/",
+                "passed": true,
+                "evidence": "uv run pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv build",
+                "text": "Makefile matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "pr:",
+                "text": "Makefile matches /pr:/",
+                "passed": true,
+                "evidence": "pr:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 123456,
+              "executor_duration_seconds": 31.8
+            },
+            "spec_hash": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 29.7,
+          "estimate": {
+            "input_tokens": 4013,
+            "input_cost_usd": 0.020065
+          },
+          "measured": {
+            "input_tokens": 5733,
+            "cache_read_input_tokens": 159729,
+            "cache_creation_input_tokens": 51573,
+            "output_tokens": 3811,
+            "cost_usd": 0.720823
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:53:31Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 39.7,
+            "measured": {
+              "input_tokens": 5123,
+              "cache_read_input_tokens": 241670,
+              "cache_creation_input_tokens": 16076,
+              "output_tokens": 4507,
+              "cost_usd": 0.421193
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2494,
+                "cache_read_input_tokens": 83228,
+                "cache_creation_input_tokens": 6657,
+                "output_tokens": 933,
+                "cost_usd": 0.144655
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 18.3
+              },
+              "fingerprint": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+            },
+            {
+              "id": "makefile-gate",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2629,
+                "cache_read_input_tokens": 158442,
+                "cache_creation_input_tokens": 9419,
+                "output_tokens": 3574,
+                "cost_usd": 0.276538
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.857143
+              },
+              "timing": {
+                "executor_duration_seconds": 61
+              },
+              "fingerprint": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-21T16:53:31Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 55.2,
+            "estimate": {
+              "input_tokens": 3865,
+              "input_cost_usd": 0.019325
+            },
+            "measured": {
+              "input_tokens": 5691,
+              "cache_read_input_tokens": 231173,
+              "cache_creation_input_tokens": 21551,
+              "output_tokens": 4899,
+              "cost_usd": 0.483335
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1943,
+                "input_cost_usd": 0.009715
+              },
+              "measured": {
+                "input_tokens": 2845,
+                "cache_read_input_tokens": 116216,
+                "cache_creation_input_tokens": 11019,
+                "output_tokens": 2591,
+                "cost_usd": 0.247974
+              },
+              "summary": {
+                "passed": 8,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 74.7
+              }
+            },
+            {
+              "id": "makefile-gate",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1922,
+                "input_cost_usd": 0.00961
+              },
+              "measured": {
+                "input_tokens": 2846,
+                "cache_read_input_tokens": 114957,
+                "cache_creation_input_tokens": 10532,
+                "output_tokens": 2308,
+                "cost_usd": 0.235361
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 35.7
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:21:02Z",
+        "executed": true,
+        "content_hash": "890e1700515e610088fd34e4a3126f6a1f8efb4cf7956e43414139bfc441b38e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.1,
+            "estimate": {
+              "input_tokens": 1454,
+              "input_cost_usd": 0.004362
+            },
+            "spec_hash": "13a6171cc487ad8fa11e4996eb6292aea11ce1279c6447dbefc461c98b68a48b"
+          },
+          {
+            "query": "Create a pyproject.toml for my package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4,
+            "estimate": {
+              "input_tokens": 1455,
+              "input_cost_usd": 0.004365
+            },
+            "spec_hash": "b28d5fe339b02848dbf810db86b027ff03e3daf97239df74c7ef975e79748ad4"
+          },
+          {
+            "query": "What build backend should I use for my Python library?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "estimate": {
+              "input_tokens": 1456,
+              "input_cost_usd": 0.004368
+            },
+            "spec_hash": "4500a3bb85cc2d7a4038d3f0d63ae18f603008b99b9126f457794a0bb29a2145"
+          },
+          {
+            "query": "Restructure my Python repo to the src layout",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.1,
+            "estimate": {
+              "input_tokens": 1455,
+              "input_cost_usd": 0.004365
+            },
+            "spec_hash": "a1ccccd244a8a11e2ead5ddd7df5143f05e8b1d410dd243311dc96bf1e19d0e9"
+          },
+          {
+            "query": "Pin ruff and ty as dev dependencies with uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.5,
+            "estimate": {
+              "input_tokens": 1456,
+              "input_cost_usd": 0.004368
+            },
+            "spec_hash": "46d755a5bab15ba99d106d05a01d4f1635d63e9b1d24afe02bea54df3038af26"
+          },
+          {
+            "query": "Add a Makefile with a pr gate for my Python project",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "estimate": {
+              "input_tokens": 1458,
+              "input_cost_usd": 0.004374
+            },
+            "spec_hash": "d6ba66f284c46649bc68296084974592e5f3e9bdd485c962285cd7f81c1d8322"
+          },
+          {
+            "query": "Initialize a uv-managed Python CLI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.4,
+            "estimate": {
+              "input_tokens": 1453,
+              "input_cost_usd": 0.004359
+            },
+            "spec_hash": "16ef7be6be8331c3947dfcb4824aa6fa91d7e0c05a36c4c066348f51cbb772a8"
+          },
+          {
+            "query": "How should I lay out a new Python package?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.9,
+            "estimate": {
+              "input_tokens": 1455,
+              "input_cost_usd": 0.004365
+            },
+            "spec_hash": "2b11dce2cff4d3ff30b155fe37d5604f12047b61f00c8cc6b2dab1e37f73eb2f"
+          },
+          {
+            "query": "Set up a dev dependency group for my Python tooling",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.9,
+            "estimate": {
+              "input_tokens": 1456,
+              "input_cost_usd": 0.004368
+            },
+            "spec_hash": "6fa685a77cef4f4905678fe8aac03b437afeb0cd267c62ba1cef7fc6797166e4"
+          },
+          {
+            "query": "Migrate my project from pip and requirements.txt to uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.3,
+            "estimate": {
+              "input_tokens": 1458,
+              "input_cost_usd": 0.004374
+            },
+            "spec_hash": "a5d4f660ca15ccc3d1f59500a3128bc208203be57251250c20165aa27f00ff20"
+          },
+          {
+            "query": "Scaffold a new Go service with cmd and internal directories",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.8,
+            "estimate": {
+              "input_tokens": 1456,
+              "input_cost_usd": 0.004368
+            },
+            "spec_hash": "b2fab86692276ed81805084745a25ead15e3b67da06a145b8b02ff92f10e0ec6"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "estimate": {
+              "input_tokens": 1451,
+              "input_cost_usd": 0.004353
+            },
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "How should I handle errors in this Python function?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.5,
+            "estimate": {
+              "input_tokens": 1455,
+              "input_cost_usd": 0.004365
+            },
+            "spec_hash": "61bbc9422ddeeae97df71d5dcd9338837c669fdecf8d6a89c65a414ed725d43d"
+          },
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.8,
+            "estimate": {
+              "input_tokens": 1452,
+              "input_cost_usd": 0.004356
+            },
+            "spec_hash": "2bcb7d7ab874cc070837d3286dcb618aa8bcbbfe41cef28892ffde7459a15166"
+          },
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.8,
+            "estimate": {
+              "input_tokens": 1453,
+              "input_cost_usd": 0.004359
+            },
+            "spec_hash": "4181d3bf1d554a149420d4bacc47cc4fc084c365072797d0e5ca7fe748294788"
+          },
+          {
+            "query": "Set up a new Node project with npm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 1453,
+              "input_cost_usd": 0.004359
+            },
+            "spec_hash": "5545b7ee3fa5ddc6f6737f8224d631f658419130fa38f2547405fdb648741ec6"
+          }
+        ],
+        "summary": {
+          "passed": 16,
+          "failed": 0,
+          "total": 16,
+          "pass_rate": 1,
+          "avg_run_seconds": 6.2,
+          "estimate": {
+            "input_tokens": 23276,
+            "input_cost_usd": 0.069828
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-21T02:37:23Z",
+          "summary": {
+            "passed": 16,
+            "failed": 0,
+            "total": 16,
+            "pass_rate": 1,
+            "avg_run_seconds": 5.7,
+            "estimate": {
+              "input_tokens": 22332,
+              "input_cost_usd": 0.066996
+            }
+          },
+          "results": [
+            {
+              "query": "Add a Makefile with a pr gate for my Python project",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4,
+              "estimate": {
+                "input_tokens": 1399,
+                "input_cost_usd": 0.004197
+              }
+            },
+            {
+              "query": "Add type hints to this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.3,
+              "estimate": {
+                "input_tokens": 1393,
+                "input_cost_usd": 0.004179
+              }
+            },
+            {
+              "query": "Create a pyproject.toml for my package",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.6,
+              "estimate": {
+                "input_tokens": 1396,
+                "input_cost_usd": 0.004188
+              }
+            },
+            {
+              "query": "How should I handle errors in this Python function?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.8,
+              "estimate": {
+                "input_tokens": 1396,
+                "input_cost_usd": 0.004188
+              }
+            },
+            {
+              "query": "How should I lay out a new Python package?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.7,
+              "estimate": {
+                "input_tokens": 1396,
+                "input_cost_usd": 0.004188
+              }
+            },
+            {
+              "query": "Initialize a uv-managed Python CLI",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.1,
+              "estimate": {
+                "input_tokens": 1394,
+                "input_cost_usd": 0.004182
+              }
+            },
+            {
+              "query": "Migrate my project from pip and requirements.txt to uv",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.9,
+              "estimate": {
+                "input_tokens": 1399,
+                "input_cost_usd": 0.004197
+              }
+            },
+            {
+              "query": "Pin ruff and ty as dev dependencies with uv",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.7,
+              "estimate": {
+                "input_tokens": 1397,
+                "input_cost_usd": 0.004191
+              }
+            },
+            {
+              "query": "Publish my Python package to PyPI",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.4,
+              "estimate": {
+                "input_tokens": 1394,
+                "input_cost_usd": 0.004182
+              }
+            },
+            {
+              "query": "Restructure my Python repo to the src layout",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.4,
+              "estimate": {
+                "input_tokens": 1396,
+                "input_cost_usd": 0.004188
+              }
+            },
+            {
+              "query": "Scaffold a new Go service with cmd and internal directories",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.5,
+              "estimate": {
+                "input_tokens": 1397,
+                "input_cost_usd": 0.004191
+              }
+            },
+            {
+              "query": "Set up a dev dependency group for my Python tooling",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.8,
+              "estimate": {
+                "input_tokens": 1397,
+                "input_cost_usd": 0.004191
+              }
+            },
+            {
+              "query": "Set up a new Node project with npm",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.2,
+              "estimate": {
+                "input_tokens": 1394,
+                "input_cost_usd": 0.004182
+              }
+            },
+            {
+              "query": "Set up a new Python project with uv",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.1,
+              "estimate": {
+                "input_tokens": 1395,
+                "input_cost_usd": 0.004185
+              }
+            },
+            {
+              "query": "What build backend should I use for my Python library?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.7,
+              "estimate": {
+                "input_tokens": 1397,
+                "input_cost_usd": 0.004191
+              }
+            },
+            {
+              "query": "Write pytest tests for this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.8,
+              "estimate": {
+                "input_tokens": 1392,
+                "input_cost_usd": 0.004176
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:21:24Z",
+        "executed": true,
+        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "configure-pyproject",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 1506,
+              "input_cost_usd": 0.004518
+            },
+            "measured": {
+              "input_tokens": 6,
+              "cache_read_input_tokens": 85588,
+              "cache_creation_input_tokens": 8268,
+              "output_tokens": 502,
+              "cost_usd": 0.083488
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "build-backend = \"uv_build\"",
+                "text": "pyproject.toml matches /build-backend = \"uv_build\"/",
+                "passed": true,
+                "evidence": "build-backend = \"uv_build\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "uv_build\u003e=",
+                "text": "pyproject.toml matches /uv_build\u003e=/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[dependency-groups\\]",
+                "text": "pyproject.toml matches /\\[dependency-groups\\]/",
+                "passed": true,
+                "evidence": "[dependency-groups]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "ruff",
+                "text": "pyproject.toml matches /ruff/",
+                "passed": true,
+                "evidence": "ruff",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"ty",
+                "text": "pyproject.toml matches /\"ty/",
+                "passed": true,
+                "evidence": "\"ty",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pytest",
+                "text": "pyproject.toml matches /pytest/",
+                "passed": true,
+                "evidence": "pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "requires-python",
+                "text": "pyproject.toml matches /requires-python/",
+                "passed": true,
+                "evidence": "requires-python",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "hatchling|setuptools|poetry",
+                "text": "pyproject.toml does not match /hatchling|setuptools|poetry/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 1,
+              "total": 8,
+              "pass_rate": 0.875
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 94364,
+              "executor_duration_seconds": 18
+            },
+            "spec_hash": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+          },
+          {
+            "id": "makefile-gate",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1492,
+              "input_cost_usd": 0.004476
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 114130,
+              "cache_creation_input_tokens": 10510,
+              "output_tokens": 1077,
+              "cost_usd": 0.11411
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "Makefile",
+                "text": "file Makefile exists",
+                "passed": true,
+                "evidence": "Makefile exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff format",
+                "text": "Makefile matches /uv run ruff format/",
+                "passed": true,
+                "evidence": "uv run ruff format",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff check",
+                "text": "Makefile matches /uv run ruff check/",
+                "passed": true,
+                "evidence": "uv run ruff check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ty check",
+                "text": "Makefile matches /uv run ty check/",
+                "passed": true,
+                "evidence": "uv run ty check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run pytest",
+                "text": "Makefile matches /uv run pytest/",
+                "passed": true,
+                "evidence": "uv run pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv build",
+                "text": "Makefile matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "pr:",
+                "text": "Makefile matches /pr:/",
+                "passed": true,
+                "evidence": "pr:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Glob": 1,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 125725,
+              "executor_duration_seconds": 22
+            },
+            "spec_hash": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 20,
+          "estimate": {
+            "input_tokens": 2998,
+            "input_cost_usd": 0.008994
+          },
+          "measured": {
+            "input_tokens": 14,
+            "cache_read_input_tokens": 199718,
+            "cache_creation_input_tokens": 18778,
+            "output_tokens": 1579,
+            "cost_usd": 0.197598
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:51:55Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 15.7,
+            "measured": {
+              "input_tokens": 11,
+              "cache_read_input_tokens": 153632,
+              "cache_creation_input_tokens": 15895,
+              "output_tokens": 1070,
+              "cost_usd": 0.15885
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": false,
+              "measured": {
+                "input_tokens": 5,
+                "cache_read_input_tokens": 64691,
+                "cache_creation_input_tokens": 7869,
+                "output_tokens": 408,
+                "cost_usd": 0.073432
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.875
+              },
+              "timing": {
+                "executor_duration_seconds": 12.7
+              },
+              "fingerprint": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+            },
+            {
+              "id": "makefile-gate",
+              "passed": false,
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 88941,
+                "cache_creation_input_tokens": 8026,
+                "output_tokens": 662,
+                "cost_usd": 0.085418
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.857143
+              },
+              "timing": {
+                "executor_duration_seconds": 18.7
+              },
+              "fingerprint": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:06:56Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 13.7,
+            "estimate": {
+              "input_tokens": 2880,
+              "input_cost_usd": 0.00864
+            },
+            "measured": {
+              "input_tokens": 47,
+              "cache_read_input_tokens": 180036,
+              "cache_creation_input_tokens": 16929,
+              "output_tokens": 1054,
+              "cost_usd": 0.172844
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1447,
+                "input_cost_usd": 0.004341
+              },
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 90181,
+                "cache_creation_input_tokens": 8592,
+                "output_tokens": 466,
+                "cost_usd": 0.08629
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 0.875
+              },
+              "timing": {
+                "executor_duration_seconds": 13.5
+              }
+            },
+            {
+              "id": "makefile-gate",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1433,
+                "input_cost_usd": 0.004299
+              },
+              "measured": {
+                "input_tokens": 41,
+                "cache_read_input_tokens": 89855,
+                "cache_creation_input_tokens": 8337,
+                "output_tokens": 588,
+                "cost_usd": 0.086554
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 13.9
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.1-pro": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:37:58Z",
+        "executed": true,
+        "content_hash": "a966180910292b766be49ab3736c5986772e7006ea67a1fba6fe698cb4c51599",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.8,
+            "spec_hash": "13a6171cc487ad8fa11e4996eb6292aea11ce1279c6447dbefc461c98b68a48b"
+          },
+          {
+            "query": "Create a pyproject.toml for my package",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6,
+            "spec_hash": "b28d5fe339b02848dbf810db86b027ff03e3daf97239df74c7ef975e79748ad4"
+          },
+          {
+            "query": "What build backend should I use for my Python library?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "4500a3bb85cc2d7a4038d3f0d63ae18f603008b99b9126f457794a0bb29a2145"
+          },
+          {
+            "query": "Restructure my Python repo to the src layout",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.9,
+            "spec_hash": "a1ccccd244a8a11e2ead5ddd7df5143f05e8b1d410dd243311dc96bf1e19d0e9"
+          },
+          {
+            "query": "Pin ruff and ty as dev dependencies with uv",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "46d755a5bab15ba99d106d05a01d4f1635d63e9b1d24afe02bea54df3038af26"
+          },
+          {
+            "query": "Add a Makefile with a pr gate for my Python project",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "d6ba66f284c46649bc68296084974592e5f3e9bdd485c962285cd7f81c1d8322"
+          },
+          {
+            "query": "Initialize a uv-managed Python CLI",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "16ef7be6be8331c3947dfcb4824aa6fa91d7e0c05a36c4c066348f51cbb772a8"
+          },
+          {
+            "query": "How should I lay out a new Python package?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "2b11dce2cff4d3ff30b155fe37d5604f12047b61f00c8cc6b2dab1e37f73eb2f"
+          },
+          {
+            "query": "Set up a dev dependency group for my Python tooling",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "6fa685a77cef4f4905678fe8aac03b437afeb0cd267c62ba1cef7fc6797166e4"
+          },
+          {
+            "query": "Migrate my project from pip and requirements.txt to uv",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "a5d4f660ca15ccc3d1f59500a3128bc208203be57251250c20165aa27f00ff20"
+          },
+          {
+            "query": "Scaffold a new Go service with cmd and internal directories",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "b2fab86692276ed81805084745a25ead15e3b67da06a145b8b02ff92f10e0ec6"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "How should I handle errors in this Python function?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "61bbc9422ddeeae97df71d5dcd9338837c669fdecf8d6a89c65a414ed725d43d"
+          },
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "2bcb7d7ab874cc070837d3286dcb618aa8bcbbfe41cef28892ffde7459a15166"
+          },
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "spec_hash": "4181d3bf1d554a149420d4bacc47cc4fc084c365072797d0e5ca7fe748294788"
+          },
+          {
+            "query": "Set up a new Node project with npm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "5545b7ee3fa5ddc6f6737f8224d631f658419130fa38f2547405fdb648741ec6"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 10,
+          "total": 16,
+          "pass_rate": 0.375,
+          "avg_run_seconds": 5.5
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:38:09Z",
+        "executed": true,
+        "content_hash": "d962cde207cfb8ab1962a5d7664c410effbffb2c4caf21f2ac270c7b4acd3a00",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "configure-pyproject",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 4.5
+            },
+            "spec_hash": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+          },
+          {
+            "id": "makefile-gate",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.3
+            },
+            "spec_hash": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 4.9
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:38:09Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.4
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.4
+              },
+              "fingerprint": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+            },
+            {
+              "id": "makefile-gate",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.3
+              },
+              "fingerprint": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.5-flash": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:36:39Z",
+        "executed": true,
+        "content_hash": "a966180910292b766be49ab3736c5986772e7006ea67a1fba6fe698cb4c51599",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "13a6171cc487ad8fa11e4996eb6292aea11ce1279c6447dbefc461c98b68a48b"
+          },
+          {
+            "query": "Create a pyproject.toml for my package",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "b28d5fe339b02848dbf810db86b027ff03e3daf97239df74c7ef975e79748ad4"
+          },
+          {
+            "query": "What build backend should I use for my Python library?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.8,
+            "spec_hash": "4500a3bb85cc2d7a4038d3f0d63ae18f603008b99b9126f457794a0bb29a2145"
+          },
+          {
+            "query": "Restructure my Python repo to the src layout",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.8,
+            "spec_hash": "a1ccccd244a8a11e2ead5ddd7df5143f05e8b1d410dd243311dc96bf1e19d0e9"
+          },
+          {
+            "query": "Pin ruff and ty as dev dependencies with uv",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "46d755a5bab15ba99d106d05a01d4f1635d63e9b1d24afe02bea54df3038af26"
+          },
+          {
+            "query": "Add a Makefile with a pr gate for my Python project",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "d6ba66f284c46649bc68296084974592e5f3e9bdd485c962285cd7f81c1d8322"
+          },
+          {
+            "query": "Initialize a uv-managed Python CLI",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "16ef7be6be8331c3947dfcb4824aa6fa91d7e0c05a36c4c066348f51cbb772a8"
+          },
+          {
+            "query": "How should I lay out a new Python package?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "2b11dce2cff4d3ff30b155fe37d5604f12047b61f00c8cc6b2dab1e37f73eb2f"
+          },
+          {
+            "query": "Set up a dev dependency group for my Python tooling",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.2,
+            "spec_hash": "6fa685a77cef4f4905678fe8aac03b437afeb0cd267c62ba1cef7fc6797166e4"
+          },
+          {
+            "query": "Migrate my project from pip and requirements.txt to uv",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "a5d4f660ca15ccc3d1f59500a3128bc208203be57251250c20165aa27f00ff20"
+          },
+          {
+            "query": "Scaffold a new Go service with cmd and internal directories",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "b2fab86692276ed81805084745a25ead15e3b67da06a145b8b02ff92f10e0ec6"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "How should I handle errors in this Python function?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "61bbc9422ddeeae97df71d5dcd9338837c669fdecf8d6a89c65a414ed725d43d"
+          },
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "2bcb7d7ab874cc070837d3286dcb618aa8bcbbfe41cef28892ffde7459a15166"
+          },
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "4181d3bf1d554a149420d4bacc47cc4fc084c365072797d0e5ca7fe748294788"
+          },
+          {
+            "query": "Set up a new Node project with npm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "5545b7ee3fa5ddc6f6737f8224d631f658419130fa38f2547405fdb648741ec6"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 10,
+          "total": 16,
+          "pass_rate": 0.375,
+          "avg_run_seconds": 5.5
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:36:49Z",
+        "executed": true,
+        "content_hash": "d962cde207cfb8ab1962a5d7664c410effbffb2c4caf21f2ac270c7b4acd3a00",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "id": "configure-pyproject",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 4.8
+            },
+            "spec_hash": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+          },
+          {
+            "id": "makefile-gate",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.2
+            },
+            "spec_hash": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:36:49Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.7
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.7
+              },
+              "fingerprint": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+            },
+            {
+              "id": "makefile-gate",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.7
+              },
+              "fingerprint": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "tool_version": "v0.2.1-18-ga772ab7-dirty",
+        "ran_at": "2026-06-20T10:41:54Z",
+        "executed": true,
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.6,
+            "estimate": {
+              "input_tokens": 1162,
+              "input_cost_usd": 0.002905
+            }
+          },
+          {
+            "query": "Create a pyproject.toml for my package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.9,
+            "estimate": {
+              "input_tokens": 1163,
+              "input_cost_usd": 0.002908
+            }
+          },
+          {
+            "query": "What build backend should I use for my Python library?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.5,
+            "estimate": {
+              "input_tokens": 1165,
+              "input_cost_usd": 0.002913
+            }
+          },
+          {
+            "query": "Restructure my Python repo to the src layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.1,
+            "estimate": {
+              "input_tokens": 1163,
+              "input_cost_usd": 0.002908
+            }
+          },
+          {
+            "query": "Pin ruff and ty as dev dependencies with uv",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 25,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00291
+            }
+          },
+          {
+            "query": "Add a Makefile with a pr gate for my Python project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.7,
+            "estimate": {
+              "input_tokens": 1166,
+              "input_cost_usd": 0.002915
+            }
+          },
+          {
+            "query": "Initialize a uv-managed Python CLI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 1160,
+              "input_cost_usd": 0.0029
+            }
+          },
+          {
+            "query": "How should I lay out a new Python package?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.6,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00291
+            }
+          },
+          {
+            "query": "Set up a dev dependency group for my Python tooling",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.5,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00291
+            }
+          },
+          {
+            "query": "Migrate my project from pip and requirements.txt to uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.5,
+            "estimate": {
+              "input_tokens": 1165,
+              "input_cost_usd": 0.002913
+            }
+          },
+          {
+            "query": "Scaffold a new Go service with cmd and internal directories",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 105.7,
+            "estimate": {
+              "input_tokens": 1165,
+              "input_cost_usd": 0.002913
+            }
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 100.3,
+            "estimate": {
+              "input_tokens": 1160,
+              "input_cost_usd": 0.0029
+            }
+          },
+          {
+            "query": "How should I handle errors in this Python function?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.2,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00291
+            }
+          },
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 26.7,
+            "estimate": {
+              "input_tokens": 1161,
+              "input_cost_usd": 0.002902
+            }
+          },
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 49.7,
+            "estimate": {
+              "input_tokens": 1161,
+              "input_cost_usd": 0.002902
+            }
+          },
+          {
+            "query": "Set up a new Node project with npm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 65.7,
+            "estimate": {
+              "input_tokens": 1162,
+              "input_cost_usd": 0.002905
+            }
+          }
+        ],
+        "summary": {
+          "passed": 16,
+          "failed": 0,
+          "total": 16,
+          "pass_rate": 1,
+          "avg_run_seconds": 29.9,
+          "estimate": {
+            "input_tokens": 18609,
+            "input_cost_usd": 0.046524
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:24:34Z",
+        "executed": true,
+        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "configure-pyproject",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1340,
+              "input_cost_usd": 0.00335
+            },
+            "measured": {
+              "input_tokens": 9591,
+              "cache_read_input_tokens": 80768,
+              "output_tokens": 954,
+              "cost_usd": 0.240208
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "build-backend = \"uv_build\"",
+                "text": "pyproject.toml matches /build-backend = \"uv_build\"/",
+                "passed": true,
+                "evidence": "build-backend = \"uv_build\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "uv_build\u003e=",
+                "text": "pyproject.toml matches /uv_build\u003e=/",
+                "passed": true,
+                "evidence": "uv_build\u003e=",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[dependency-groups\\]",
+                "text": "pyproject.toml matches /\\[dependency-groups\\]/",
+                "passed": true,
+                "evidence": "[dependency-groups]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "ruff",
+                "text": "pyproject.toml matches /ruff/",
+                "passed": true,
+                "evidence": "ruff",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"ty",
+                "text": "pyproject.toml matches /\"ty/",
+                "passed": true,
+                "evidence": "\"ty",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pytest",
+                "text": "pyproject.toml matches /pytest/",
+                "passed": true,
+                "evidence": "pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "requires-python",
+                "text": "pyproject.toml matches /requires-python/",
+                "passed": true,
+                "evidence": "requires-python",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "hatchling|setuptools|poetry",
+                "text": "pyproject.toml does not match /hatchling|setuptools|poetry/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 0,
+              "total": 8,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 91313,
+              "executor_duration_seconds": 25
+            },
+            "spec_hash": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+          },
+          {
+            "id": "makefile-gate",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1330,
+              "input_cost_usd": 0.003325
+            },
+            "measured": {
+              "input_tokens": 19979,
+              "cache_read_input_tokens": 110208,
+              "output_tokens": 1540,
+              "cost_usd": 0.348568
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "Makefile",
+                "text": "file Makefile exists",
+                "passed": true,
+                "evidence": "Makefile exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff format",
+                "text": "Makefile matches /uv run ruff format/",
+                "passed": true,
+                "evidence": "uv run ruff format",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff check",
+                "text": "Makefile matches /uv run ruff check/",
+                "passed": true,
+                "evidence": "uv run ruff check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ty check",
+                "text": "Makefile matches /uv run ty check/",
+                "passed": true,
+                "evidence": "uv run ty check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run pytest",
+                "text": "Makefile matches /uv run pytest/",
+                "passed": true,
+                "evidence": "uv run pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv build",
+                "text": "Makefile matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "pr:",
+                "text": "Makefile matches /pr:/",
+                "passed": true,
+                "evidence": "pr:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 131727,
+              "executor_duration_seconds": 42.2
+            },
+            "spec_hash": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 33.6,
+          "estimate": {
+            "input_tokens": 2670,
+            "input_cost_usd": 0.006675
+          },
+          "measured": {
+            "input_tokens": 29570,
+            "cache_read_input_tokens": 190976,
+            "output_tokens": 2494,
+            "cost_usd": 0.588776
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:54:47Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 36.3,
+            "measured": {
+              "input_tokens": 27047,
+              "cache_read_input_tokens": 155392,
+              "output_tokens": 2765,
+              "cost_usd": 0.497573
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": true,
+              "measured": {
+                "input_tokens": 21057,
+                "cache_read_input_tokens": 81280,
+                "output_tokens": 1204,
+                "cost_usd": 0.273903
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 35.9
+              },
+              "fingerprint": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+            },
+            {
+              "id": "makefile-gate",
+              "passed": false,
+              "measured": {
+                "input_tokens": 5990,
+                "cache_read_input_tokens": 74112,
+                "output_tokens": 1561,
+                "cost_usd": 0.22367
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.428571
+              },
+              "timing": {
+                "executor_duration_seconds": 36.6
+              },
+              "fingerprint": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:07:35Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 25.9,
+            "estimate": {
+              "input_tokens": 2560,
+              "input_cost_usd": 0.0064
+            },
+            "measured": {
+              "input_tokens": 28433,
+              "cache_read_input_tokens": 136448,
+              "output_tokens": 2117,
+              "cost_usd": 0.443957
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1285,
+                "input_cost_usd": 0.003212
+              },
+              "measured": {
+                "input_tokens": 13415,
+                "cache_read_input_tokens": 68480,
+                "output_tokens": 1013,
+                "cost_usd": 0.219932
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 0.875
+              },
+              "timing": {
+                "executor_duration_seconds": 25.1
+              }
+            },
+            {
+              "id": "makefile-gate",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1275,
+                "input_cost_usd": 0.003188
+              },
+              "measured": {
+                "input_tokens": 15018,
+                "cache_read_input_tokens": 67968,
+                "output_tokens": 1104,
+                "cost_usd": 0.224025
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 0.857143
+              },
+              "timing": {
+                "executor_duration_seconds": 26.6
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "tool_version": "v0.2.1-18-ga772ab7-dirty",
+        "ran_at": "2026-06-20T10:50:01Z",
+        "executed": true,
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "estimate": {
+              "input_tokens": 1162,
+              "input_cost_usd": 0.00581
+            }
+          },
+          {
+            "query": "Create a pyproject.toml for my package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 1163,
+              "input_cost_usd": 0.005815
+            }
+          },
+          {
+            "query": "What build backend should I use for my Python library?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 1165,
+              "input_cost_usd": 0.005825
+            }
+          },
+          {
+            "query": "Restructure my Python repo to the src layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1163,
+              "input_cost_usd": 0.005815
+            }
+          },
+          {
+            "query": "Pin ruff and ty as dev dependencies with uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.3,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00582
+            }
+          },
+          {
+            "query": "Add a Makefile with a pr gate for my Python project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 1166,
+              "input_cost_usd": 0.00583
+            }
+          },
+          {
+            "query": "Initialize a uv-managed Python CLI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 1160,
+              "input_cost_usd": 0.0058
+            }
+          },
+          {
+            "query": "How should I lay out a new Python package?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00582
+            }
+          },
+          {
+            "query": "Set up a dev dependency group for my Python tooling",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00582
+            }
+          },
+          {
+            "query": "Migrate my project from pip and requirements.txt to uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.3,
+            "estimate": {
+              "input_tokens": 1165,
+              "input_cost_usd": 0.005825
+            }
+          },
+          {
+            "query": "Scaffold a new Go service with cmd and internal directories",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 94,
+            "estimate": {
+              "input_tokens": 1165,
+              "input_cost_usd": 0.005825
+            }
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 105.9,
+            "estimate": {
+              "input_tokens": 1160,
+              "input_cost_usd": 0.0058
+            }
+          },
+          {
+            "query": "How should I handle errors in this Python function?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.7,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00582
+            }
+          },
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 105.1,
+            "estimate": {
+              "input_tokens": 1161,
+              "input_cost_usd": 0.005805
+            }
+          },
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 94.8,
+            "estimate": {
+              "input_tokens": 1161,
+              "input_cost_usd": 0.005805
+            }
+          },
+          {
+            "query": "Set up a new Node project with npm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 48.3,
+            "estimate": {
+              "input_tokens": 1162,
+              "input_cost_usd": 0.00581
+            }
+          }
+        ],
+        "summary": {
+          "passed": 16,
+          "failed": 0,
+          "total": 16,
+          "pass_rate": 1,
+          "avg_run_seconds": 35.3,
+          "estimate": {
+            "input_tokens": 18609,
+            "input_cost_usd": 0.093045
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:25:12Z",
+        "executed": true,
+        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "configure-pyproject",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1340,
+              "input_cost_usd": 0.0067
+            },
+            "measured": {
+              "input_tokens": 25047,
+              "cache_read_input_tokens": 73088,
+              "output_tokens": 1015,
+              "cost_usd": 0.521125
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "build-backend = \"uv_build\"",
+                "text": "pyproject.toml matches /build-backend = \"uv_build\"/",
+                "passed": true,
+                "evidence": "build-backend = \"uv_build\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "uv_build\u003e=",
+                "text": "pyproject.toml matches /uv_build\u003e=/",
+                "passed": true,
+                "evidence": "uv_build\u003e=",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[dependency-groups\\]",
+                "text": "pyproject.toml matches /\\[dependency-groups\\]/",
+                "passed": true,
+                "evidence": "[dependency-groups]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "ruff",
+                "text": "pyproject.toml matches /ruff/",
+                "passed": true,
+                "evidence": "ruff",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"ty",
+                "text": "pyproject.toml matches /\"ty/",
+                "passed": true,
+                "evidence": "\"ty",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pytest",
+                "text": "pyproject.toml matches /pytest/",
+                "passed": true,
+                "evidence": "pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "requires-python",
+                "text": "pyproject.toml matches /requires-python/",
+                "passed": true,
+                "evidence": "requires-python",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "hatchling|setuptools|poetry",
+                "text": "pyproject.toml does not match /hatchling|setuptools|poetry/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 0,
+              "total": 8,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 99150,
+              "executor_duration_seconds": 25.2
+            },
+            "spec_hash": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+          },
+          {
+            "id": "makefile-gate",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1330,
+              "input_cost_usd": 0.00665
+            },
+            "measured": {
+              "input_tokens": 11735,
+              "cache_read_input_tokens": 89984,
+              "output_tokens": 1724,
+              "cost_usd": 0.560315
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "Makefile",
+                "text": "file Makefile exists",
+                "passed": true,
+                "evidence": "Makefile exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff format",
+                "text": "Makefile matches /uv run ruff format/",
+                "passed": true,
+                "evidence": "uv run ruff format",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff check",
+                "text": "Makefile matches /uv run ruff check/",
+                "passed": true,
+                "evidence": "uv run ruff check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ty check",
+                "text": "Makefile matches /uv run ty check/",
+                "passed": true,
+                "evidence": "uv run ty check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run pytest",
+                "text": "Makefile matches /uv run pytest/",
+                "passed": true,
+                "evidence": "uv run pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv build",
+                "text": "Makefile matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "pr:",
+                "text": "Makefile matches /pr:/",
+                "passed": true,
+                "evidence": "pr:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 103443,
+              "executor_duration_seconds": 37.7
+            },
+            "spec_hash": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 31.5,
+          "estimate": {
+            "input_tokens": 2670,
+            "input_cost_usd": 0.01335
+          },
+          "measured": {
+            "input_tokens": 36782,
+            "cache_read_input_tokens": 163072,
+            "output_tokens": 2739,
+            "cost_usd": 1.08144
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-21T16:56:23Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 39.1,
+            "measured": {
+              "input_tokens": 38792,
+              "cache_read_input_tokens": 166528,
+              "output_tokens": 3227,
+              "cost_usd": 1.12341
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": true,
+              "measured": {
+                "input_tokens": 13214,
+                "cache_read_input_tokens": 72064,
+                "output_tokens": 1056,
+                "cost_usd": 0.45807
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 26.8
+              },
+              "fingerprint": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+            },
+            {
+              "id": "makefile-gate",
+              "passed": false,
+              "measured": {
+                "input_tokens": 25578,
+                "cache_read_input_tokens": 94464,
+                "output_tokens": 2171,
+                "cost_usd": 0.66534
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.857143
+              },
+              "timing": {
+                "executor_duration_seconds": 51.3
+              },
+              "fingerprint": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:08:33Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 43.4,
+            "estimate": {
+              "input_tokens": 2560,
+              "input_cost_usd": 0.0128
+            },
+            "measured": {
+              "input_tokens": 46270,
+              "cache_read_input_tokens": 222976,
+              "output_tokens": 3698,
+              "cost_usd": 1.45717
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1285,
+                "input_cost_usd": 0.006425
+              },
+              "measured": {
+                "input_tokens": 22084,
+                "cache_read_input_tokens": 81152,
+                "output_tokens": 1087,
+                "cost_usd": 0.54879
+              },
+              "summary": {
+                "passed": 8,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 29.3
+              }
+            },
+            {
+              "id": "makefile-gate",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1275,
+                "input_cost_usd": 0.006375
+              },
+              "measured": {
+                "input_tokens": 24186,
+                "cache_read_input_tokens": 141824,
+                "output_tokens": 2611,
+                "cost_usd": 0.90838
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 57.4
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

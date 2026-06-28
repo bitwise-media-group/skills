@@ -1,0 +1,5195 @@
+{
+  "schema": 5,
+  "plugin": "python",
+  "skill": "python-typing",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:37:30Z",
+        "executed": true,
+        "content_hash": "03d90e7f18fd55de777159aa16575d3a29eeb0b32fb858d529c6a381b357c54c",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4,
+            "estimate": {
+              "input_tokens": 1350,
+              "input_cost_usd": 0.00135
+            },
+            "spec_hash": "5c57ac61d7ce767a115533848e571ee2764c07081b40c98a1108801c80ca6f9b"
+          },
+          {
+            "query": "Set up ty for type checking",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 1349,
+              "input_cost_usd": 0.001349
+            },
+            "spec_hash": "d78559e6db12bbd20fca53c825bdd5f8114ba18c7e206dd3af06a9fc4b4e4018"
+          },
+          {
+            "query": "Configure ty in pyproject.toml",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.5,
+            "estimate": {
+              "input_tokens": 1351,
+              "input_cost_usd": 0.001351
+            },
+            "spec_hash": "08c17ef23c3f7334ad31734fd43e723fc5a66637512aa90590029f19ee785bc3"
+          },
+          {
+            "query": "Migrate this project from mypy to ty",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 1352,
+              "input_cost_usd": 0.001352
+            },
+            "spec_hash": "070b6749aeea010906af77d66ea3acc2b5918fc1267ed6029721bf87d5a7e969"
+          },
+          {
+            "query": "Set up pyright for type checking",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.7,
+            "estimate": {
+              "input_tokens": 1350,
+              "input_cost_usd": 0.00135
+            },
+            "spec_hash": "651698851f8240c0e96e9c9518a2f912119c6152322b22c5fba7ece55cd8bda3"
+          },
+          {
+            "query": "Configure pyright in pyproject.toml",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.5,
+            "estimate": {
+              "input_tokens": 1352,
+              "input_cost_usd": 0.001352
+            },
+            "spec_hash": "261cf87e06869fdc3dbac4f962f0a94e69dbac502a8ad973182a13b04267026f"
+          },
+          {
+            "query": "Migrate this project from mypy to pyright",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.5,
+            "estimate": {
+              "input_tokens": 1353,
+              "input_cost_usd": 0.001353
+            },
+            "spec_hash": "989e4e9c6fb86c3b31c6e0199e613fee30cada91c090c12853892b1402e6a33b"
+          },
+          {
+            "query": "Fix these Python type errors",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.7,
+            "estimate": {
+              "input_tokens": 1348,
+              "input_cost_usd": 0.001348
+            },
+            "spec_hash": "6eecd3b3e41d6602ce2387719a03420a88ae3ab34db2b2ae6c5b13599350124d"
+          },
+          {
+            "query": "Should this interface be a Protocol or an ABC?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.1,
+            "estimate": {
+              "input_tokens": 1353,
+              "input_cost_usd": 0.001353
+            },
+            "spec_hash": "189d8bb6f6f3bd39a19c341daa84c0ce448b812033fbc0f184450d8a37f7158b"
+          },
+          {
+            "query": "Make this Python function generic with a type parameter",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 3.6,
+            "estimate": {
+              "input_tokens": 1352,
+              "input_cost_usd": 0.001352
+            },
+            "spec_hash": "8937d9cd16003d908c3a6afbd55b925f2ba2ce9e40ac4eeeabd1d20cbd5a67ae"
+          },
+          {
+            "query": "Modernize these type hints to use X | None instead of Optional",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.9,
+            "estimate": {
+              "input_tokens": 1357,
+              "input_cost_usd": 0.001357
+            },
+            "spec_hash": "2d310e0f1d6175e30d504aa6ad85d977f8f2dee0b05b4ba8e32cdcae538bb06b"
+          },
+          {
+            "query": "How do I type-check my Python project?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.6,
+            "estimate": {
+              "input_tokens": 1353,
+              "input_cost_usd": 0.001353
+            },
+            "spec_hash": "aaeb0ed606785fcbf855dec4114a896ca8b2f28b0462ec094c83a450ae3bd04a"
+          },
+          {
+            "query": "Add return type annotations across this module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 1350,
+              "input_cost_usd": 0.00135
+            },
+            "spec_hash": "168dfe198a900552b33fa718b2a1e8b27cc4b7fe5b0349c007db4af6ee3301f1"
+          },
+          {
+            "query": "Format this Python code with ruff",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "estimate": {
+              "input_tokens": 1350,
+              "input_cost_usd": 0.00135
+            },
+            "spec_hash": "d1ac4606bc3d4f99c34236d9a1a548356539c96f1690f035042af91f0841d9b8"
+          },
+          {
+            "query": "Write tests for this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.4,
+            "estimate": {
+              "input_tokens": 1348,
+              "input_cost_usd": 0.001348
+            },
+            "spec_hash": "7be41101aeeebeaf53d368ec321e2f670c4e818be398870ca5cdca9357a733d2"
+          },
+          {
+            "query": "Add generics to my Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3,
+            "estimate": {
+              "input_tokens": 1350,
+              "input_cost_usd": 0.00135
+            },
+            "spec_hash": "58f318cb23b5e791e1439657e12645de35143ccde846da0de8709a777713c772"
+          },
+          {
+            "query": "Check at runtime whether this variable is an int",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.7,
+            "estimate": {
+              "input_tokens": 1352,
+              "input_cost_usd": 0.001352
+            },
+            "spec_hash": "44f132b53365bbea996f7d929bbaeb33f9fb49428d1f402e49156054f9a410e8"
+          },
+          {
+            "query": "Scaffold a new Python package with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 1352,
+              "input_cost_usd": 0.001352
+            },
+            "spec_hash": "229542c82ff8458d85f24c22d629ee1b4e29f34cab6f24d9b692e3862509ab03"
+          },
+          {
+            "query": "Add type annotations to my TypeScript code",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.7,
+            "estimate": {
+              "input_tokens": 1351,
+              "input_cost_usd": 0.001351
+            },
+            "spec_hash": "49d15b57d26a02d8febd5adcf8f54810419a391494131d70773d1ba3661354ff"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 13,
+          "total": 19,
+          "pass_rate": 0.315789,
+          "avg_run_seconds": 7.3,
+          "estimate": {
+            "input_tokens": 25673,
+            "input_cost_usd": 0.025673
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:42:20Z",
+          "summary": {
+            "passed": 8,
+            "failed": 8,
+            "total": 16,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 6.3,
+            "estimate": {
+              "input_tokens": 18018,
+              "input_cost_usd": 0.018018
+            }
+          },
+          "results": [
+            {
+              "query": "Add generics to my Go function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.4,
+              "estimate": {
+                "input_tokens": 1125,
+                "input_cost_usd": 0.001125
+              }
+            },
+            {
+              "query": "Add return type annotations across this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.8,
+              "estimate": {
+                "input_tokens": 1125,
+                "input_cost_usd": 0.001125
+              }
+            },
+            {
+              "query": "Add type annotations to my TypeScript code",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.8,
+              "estimate": {
+                "input_tokens": 1126,
+                "input_cost_usd": 0.001126
+              }
+            },
+            {
+              "query": "Add type hints to this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.5,
+              "estimate": {
+                "input_tokens": 1125,
+                "input_cost_usd": 0.001125
+              }
+            },
+            {
+              "query": "Check at runtime whether this variable is an int",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5,
+              "estimate": {
+                "input_tokens": 1127,
+                "input_cost_usd": 0.001127
+              }
+            },
+            {
+              "query": "Configure ty in pyproject.toml",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.6,
+              "estimate": {
+                "input_tokens": 1126,
+                "input_cost_usd": 0.001126
+              }
+            },
+            {
+              "query": "Fix these Python type errors",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 4.7,
+              "estimate": {
+                "input_tokens": 1123,
+                "input_cost_usd": 0.001123
+              }
+            },
+            {
+              "query": "Format this Python code with ruff",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.7,
+              "estimate": {
+                "input_tokens": 1125,
+                "input_cost_usd": 0.001125
+              }
+            },
+            {
+              "query": "How do I type-check my Python project?",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.3,
+              "estimate": {
+                "input_tokens": 1128,
+                "input_cost_usd": 0.001128
+              }
+            },
+            {
+              "query": "Make this Python function generic with a type parameter",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 3.8,
+              "estimate": {
+                "input_tokens": 1127,
+                "input_cost_usd": 0.001127
+              }
+            },
+            {
+              "query": "Migrate this project from mypy to ty",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.1,
+              "estimate": {
+                "input_tokens": 1127,
+                "input_cost_usd": 0.001127
+              }
+            },
+            {
+              "query": "Modernize these type hints to use X | None instead of Optional",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.8,
+              "estimate": {
+                "input_tokens": 1132,
+                "input_cost_usd": 0.001132
+              }
+            },
+            {
+              "query": "Scaffold a new Python package with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.3,
+              "estimate": {
+                "input_tokens": 1127,
+                "input_cost_usd": 0.001127
+              }
+            },
+            {
+              "query": "Set up ty for type checking",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.9,
+              "estimate": {
+                "input_tokens": 1124,
+                "input_cost_usd": 0.001124
+              }
+            },
+            {
+              "query": "Should this interface be a Protocol or an ABC?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.8,
+              "estimate": {
+                "input_tokens": 1128,
+                "input_cost_usd": 0.001128
+              }
+            },
+            {
+              "query": "Write tests for this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.6,
+              "estimate": {
+                "input_tokens": 1123,
+                "input_cost_usd": 0.001123
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.1-2-g6f27c65-dirty",
+        "ran_at": "2026-06-25T00:49:45Z",
+        "executed": true,
+        "content_hash": "54b3b3d8570181fa3810a1cf6ecd90222883b1af9285143eaeaa383379b52ef1",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "annotate-and-configure",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1387,
+              "input_cost_usd": 0.001387
+            },
+            "measured": {
+              "input_tokens": 34,
+              "cache_read_input_tokens": 64166,
+              "cache_creation_input_tokens": 36102,
+              "output_tokens": 2488,
+              "cost_usd": 0.091719
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:",
+                "text": "src/myapp/calc.py matches /def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:/",
+                "passed": true,
+                "evidence": "def add(a:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "-\u003e ",
+                "text": "src/myapp/calc.py matches /-\u003e /",
+                "passed": true,
+                "evidence": "-\u003e ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.ty\\.environment\\]",
+                "text": "pyproject.toml matches /\\[tool\\.ty\\.environment\\]/",
+                "passed": true,
+                "evidence": "[tool.ty.environment]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "python-version",
+                "text": "pyproject.toml matches /python-version/",
+                "passed": true,
+                "evidence": "python-version",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/calc.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/calc.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 2,
+                "Read": 2,
+                "Skill": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 102790,
+              "executor_duration_seconds": 25.9
+            },
+            "spec_hash": "5cc61cc72f2e7f5798ead7ca89d976714ae6c1af7e9879fe04db7b66fe526a12"
+          },
+          {
+            "id": "configure-pyright",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1385,
+              "input_cost_usd": 0.001385
+            },
+            "measured": {
+              "input_tokens": 38,
+              "cache_read_input_tokens": 130404,
+              "cache_creation_input_tokens": 20160,
+              "output_tokens": 2680,
+              "cost_usd": 0.067435
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:",
+                "text": "src/myapp/calc.py matches /def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:/",
+                "passed": true,
+                "evidence": "def add(a:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "-\u003e ",
+                "text": "src/myapp/calc.py matches /-\u003e /",
+                "passed": true,
+                "evidence": "-\u003e ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.pyright\\]",
+                "text": "pyproject.toml matches /\\[tool\\.pyright\\]/",
+                "passed": true,
+                "evidence": "[tool.pyright]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pythonVersion",
+                "text": "pyproject.toml matches /pythonVersion/",
+                "passed": true,
+                "evidence": "pythonVersion",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/calc.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/calc.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Edit": 2,
+                "Read": 2,
+                "Skill": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 153282,
+              "executor_duration_seconds": 45.7
+            },
+            "spec_hash": "82fc925f92e7acfab76808b7a18080c1ec68a4ddcf5086b85ec39e8db7e25ca0"
+          },
+          {
+            "id": "modernize-hints",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1363,
+              "input_cost_usd": 0.001363
+            },
+            "measured": {
+              "input_tokens": 19,
+              "cache_read_input_tokens": 56221,
+              "cache_creation_input_tokens": 16087,
+              "output_tokens": 670,
+              "cost_usd": 0.04177
+            },
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Optional\\[",
+                "text": "src/myapp/legacy.py does not match /Optional\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Union\\[",
+                "text": "src/myapp/legacy.py does not match /Union\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "List\\[",
+                "text": "src/myapp/legacy.py does not match /List\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Dict\\[",
+                "text": "src/myapp/legacy.py does not match /Dict\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "\\| None",
+                "text": "src/myapp/legacy.py matches /\\| None/",
+                "passed": true,
+                "evidence": "| None",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "list\\[|dict\\[",
+                "text": "src/myapp/legacy.py matches /list\\[|dict\\[/",
+                "passed": true,
+                "evidence": "dict[",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/legacy.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/legacy.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Read": 1
+              },
+              "total_tool_calls": 2
+            },
+            "timing": {
+              "total_tokens": 72997,
+              "executor_duration_seconds": 9.6
+            },
+            "spec_hash": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 27.1,
+          "estimate": {
+            "input_tokens": 4135,
+            "input_cost_usd": 0.004135
+          },
+          "measured": {
+            "input_tokens": 91,
+            "cache_read_input_tokens": 250791,
+            "cache_creation_input_tokens": 72349,
+            "output_tokens": 5838,
+            "cost_usd": 0.200924
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T17:39:33Z",
+          "summary": {
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "pass_rate": 0.666667,
+            "avg_run_seconds": 16.9,
+            "measured": {
+              "input_tokens": 94,
+              "cache_read_input_tokens": 260881,
+              "cache_creation_input_tokens": 80816,
+              "output_tokens": 3030,
+              "cost_usd": 0.204825
+            }
+          },
+          "results": [
+            {
+              "id": "annotate-and-configure",
+              "passed": false,
+              "measured": {
+                "input_tokens": 40,
+                "cache_read_input_tokens": 112958,
+                "cache_creation_input_tokens": 32747,
+                "output_tokens": 1240,
+                "cost_usd": 0.083669
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 0.6
+              },
+              "timing": {
+                "executor_duration_seconds": 20
+              },
+              "fingerprint": "5cc61cc72f2e7f5798ead7ca89d976714ae6c1af7e9879fe04db7b66fe526a12"
+            },
+            {
+              "id": "configure-pyright",
+              "passed": true,
+              "measured": {
+                "input_tokens": 33,
+                "cache_read_input_tokens": 89054,
+                "cache_creation_input_tokens": 32718,
+                "output_tokens": 1145,
+                "cost_usd": 0.080716
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 18.3
+              },
+              "fingerprint": "82fc925f92e7acfab76808b7a18080c1ec68a4ddcf5086b85ec39e8db7e25ca0"
+            },
+            {
+              "id": "modernize-hints",
+              "passed": true,
+              "measured": {
+                "input_tokens": 21,
+                "cache_read_input_tokens": 58869,
+                "cache_creation_input_tokens": 15351,
+                "output_tokens": 645,
+                "cost_usd": 0.04044
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 12.5
+              },
+              "fingerprint": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T17:39:33Z",
+          "summary": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 26.7,
+            "estimate": {
+              "input_tokens": 4135,
+              "input_cost_usd": 0.004135
+            },
+            "measured": {
+              "input_tokens": 91,
+              "cache_read_input_tokens": 266894,
+              "cache_creation_input_tokens": 56225,
+              "output_tokens": 5627,
+              "cost_usd": 0.169231
+            }
+          },
+          "results": [
+            {
+              "id": "annotate-and-configure",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1387,
+                "input_cost_usd": 0.001387
+              },
+              "measured": {
+                "input_tokens": 34,
+                "cache_read_input_tokens": 80269,
+                "cache_creation_input_tokens": 19978,
+                "output_tokens": 2277,
+                "cost_usd": 0.060026
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 24.8
+              }
+            },
+            {
+              "id": "configure-pyright",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1385,
+                "input_cost_usd": 0.001385
+              },
+              "measured": {
+                "input_tokens": 38,
+                "cache_read_input_tokens": 130404,
+                "cache_creation_input_tokens": 20160,
+                "output_tokens": 2680,
+                "cost_usd": 0.067435
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 45.7
+              }
+            },
+            {
+              "id": "modernize-hints",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1363,
+                "input_cost_usd": 0.001363
+              },
+              "measured": {
+                "input_tokens": 19,
+                "cache_read_input_tokens": 56221,
+                "cache_creation_input_tokens": 16087,
+                "output_tokens": 670,
+                "cost_usd": 0.04177
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 9.6
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:45:27Z",
+        "executed": true,
+        "content_hash": "03d90e7f18fd55de777159aa16575d3a29eeb0b32fb858d529c6a381b357c54c",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1829,
+              "input_cost_usd": 0.009145
+            },
+            "spec_hash": "5c57ac61d7ce767a115533848e571ee2764c07081b40c98a1108801c80ca6f9b"
+          },
+          {
+            "query": "Set up ty for type checking",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 1828,
+              "input_cost_usd": 0.00914
+            },
+            "spec_hash": "d78559e6db12bbd20fca53c825bdd5f8114ba18c7e206dd3af06a9fc4b4e4018"
+          },
+          {
+            "query": "Configure ty in pyproject.toml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.8,
+            "estimate": {
+              "input_tokens": 1832,
+              "input_cost_usd": 0.00916
+            },
+            "spec_hash": "08c17ef23c3f7334ad31734fd43e723fc5a66637512aa90590029f19ee785bc3"
+          },
+          {
+            "query": "Migrate this project from mypy to ty",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.9,
+            "estimate": {
+              "input_tokens": 1832,
+              "input_cost_usd": 0.00916
+            },
+            "spec_hash": "070b6749aeea010906af77d66ea3acc2b5918fc1267ed6029721bf87d5a7e969"
+          },
+          {
+            "query": "Set up pyright for type checking",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 14.8,
+            "estimate": {
+              "input_tokens": 1829,
+              "input_cost_usd": 0.009145
+            },
+            "spec_hash": "651698851f8240c0e96e9c9518a2f912119c6152322b22c5fba7ece55cd8bda3"
+          },
+          {
+            "query": "Configure pyright in pyproject.toml",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.1,
+            "estimate": {
+              "input_tokens": 1833,
+              "input_cost_usd": 0.009165
+            },
+            "spec_hash": "261cf87e06869fdc3dbac4f962f0a94e69dbac502a8ad973182a13b04267026f"
+          },
+          {
+            "query": "Migrate this project from mypy to pyright",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 1833,
+              "input_cost_usd": 0.009165
+            },
+            "spec_hash": "989e4e9c6fb86c3b31c6e0199e613fee30cada91c090c12853892b1402e6a33b"
+          },
+          {
+            "query": "Fix these Python type errors",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.4,
+            "estimate": {
+              "input_tokens": 1828,
+              "input_cost_usd": 0.00914
+            },
+            "spec_hash": "6eecd3b3e41d6602ce2387719a03420a88ae3ab34db2b2ae6c5b13599350124d"
+          },
+          {
+            "query": "Should this interface be a Protocol or an ABC?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.9,
+            "estimate": {
+              "input_tokens": 1836,
+              "input_cost_usd": 0.00918
+            },
+            "spec_hash": "189d8bb6f6f3bd39a19c341daa84c0ce448b812033fbc0f184450d8a37f7158b"
+          },
+          {
+            "query": "Make this Python function generic with a type parameter",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 1833,
+              "input_cost_usd": 0.009165
+            },
+            "spec_hash": "8937d9cd16003d908c3a6afbd55b925f2ba2ce9e40ac4eeeabd1d20cbd5a67ae"
+          },
+          {
+            "query": "Modernize these type hints to use X | None instead of Optional",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 1838,
+              "input_cost_usd": 0.00919
+            },
+            "spec_hash": "2d310e0f1d6175e30d504aa6ad85d977f8f2dee0b05b4ba8e32cdcae538bb06b"
+          },
+          {
+            "query": "How do I type-check my Python project?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "estimate": {
+              "input_tokens": 1830,
+              "input_cost_usd": 0.00915
+            },
+            "spec_hash": "aaeb0ed606785fcbf855dec4114a896ca8b2f28b0462ec094c83a450ae3bd04a"
+          },
+          {
+            "query": "Add return type annotations across this module",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.8,
+            "estimate": {
+              "input_tokens": 1829,
+              "input_cost_usd": 0.009145
+            },
+            "spec_hash": "168dfe198a900552b33fa718b2a1e8b27cc4b7fe5b0349c007db4af6ee3301f1"
+          },
+          {
+            "query": "Format this Python code with ruff",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.6,
+            "estimate": {
+              "input_tokens": 1829,
+              "input_cost_usd": 0.009145
+            },
+            "spec_hash": "d1ac4606bc3d4f99c34236d9a1a548356539c96f1690f035042af91f0841d9b8"
+          },
+          {
+            "query": "Write tests for this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.8,
+            "estimate": {
+              "input_tokens": 1826,
+              "input_cost_usd": 0.00913
+            },
+            "spec_hash": "7be41101aeeebeaf53d368ec321e2f670c4e818be398870ca5cdca9357a733d2"
+          },
+          {
+            "query": "Add generics to my Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.2,
+            "estimate": {
+              "input_tokens": 1828,
+              "input_cost_usd": 0.00914
+            },
+            "spec_hash": "58f318cb23b5e791e1439657e12645de35143ccde846da0de8709a777713c772"
+          },
+          {
+            "query": "Check at runtime whether this variable is an int",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.1,
+            "estimate": {
+              "input_tokens": 1833,
+              "input_cost_usd": 0.009165
+            },
+            "spec_hash": "44f132b53365bbea996f7d929bbaeb33f9fb49428d1f402e49156054f9a410e8"
+          },
+          {
+            "query": "Scaffold a new Python package with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.8,
+            "estimate": {
+              "input_tokens": 1832,
+              "input_cost_usd": 0.00916
+            },
+            "spec_hash": "229542c82ff8458d85f24c22d629ee1b4e29f34cab6f24d9b692e3862509ab03"
+          },
+          {
+            "query": "Add type annotations to my TypeScript code",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.5,
+            "estimate": {
+              "input_tokens": 1833,
+              "input_cost_usd": 0.009165
+            },
+            "spec_hash": "49d15b57d26a02d8febd5adcf8f54810419a391494131d70773d1ba3661354ff"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 7,
+          "total": 19,
+          "pass_rate": 0.631579,
+          "avg_run_seconds": 11,
+          "estimate": {
+            "input_tokens": 34791,
+            "input_cost_usd": 0.173955
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:44:17Z",
+          "summary": {
+            "passed": 12,
+            "failed": 4,
+            "total": 16,
+            "pass_rate": 0.75,
+            "avg_run_seconds": 11.1,
+            "estimate": {
+              "input_tokens": 24480,
+              "input_cost_usd": 0.1224
+            }
+          },
+          "results": [
+            {
+              "query": "Add generics to my Go function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.2,
+              "estimate": {
+                "input_tokens": 1527,
+                "input_cost_usd": 0.007635
+              }
+            },
+            {
+              "query": "Add return type annotations across this module",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.9,
+              "estimate": {
+                "input_tokens": 1528,
+                "input_cost_usd": 0.00764
+              }
+            },
+            {
+              "query": "Add type annotations to my TypeScript code",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.3,
+              "estimate": {
+                "input_tokens": 1532,
+                "input_cost_usd": 0.00766
+              }
+            },
+            {
+              "query": "Add type hints to this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 10.3,
+              "estimate": {
+                "input_tokens": 1528,
+                "input_cost_usd": 0.00764
+              }
+            },
+            {
+              "query": "Check at runtime whether this variable is an int",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.4,
+              "estimate": {
+                "input_tokens": 1532,
+                "input_cost_usd": 0.00766
+              }
+            },
+            {
+              "query": "Configure ty in pyproject.toml",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.3,
+              "estimate": {
+                "input_tokens": 1531,
+                "input_cost_usd": 0.007655
+              }
+            },
+            {
+              "query": "Fix these Python type errors",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 13.2,
+              "estimate": {
+                "input_tokens": 1527,
+                "input_cost_usd": 0.007635
+              }
+            },
+            {
+              "query": "Format this Python code with ruff",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.3,
+              "estimate": {
+                "input_tokens": 1528,
+                "input_cost_usd": 0.00764
+              }
+            },
+            {
+              "query": "How do I type-check my Python project?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.6,
+              "estimate": {
+                "input_tokens": 1529,
+                "input_cost_usd": 0.007645
+              }
+            },
+            {
+              "query": "Make this Python function generic with a type parameter",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.6,
+              "estimate": {
+                "input_tokens": 1532,
+                "input_cost_usd": 0.00766
+              }
+            },
+            {
+              "query": "Migrate this project from mypy to ty",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 14.2,
+              "estimate": {
+                "input_tokens": 1531,
+                "input_cost_usd": 0.007655
+              }
+            },
+            {
+              "query": "Modernize these type hints to use X | None instead of Optional",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 18.7,
+              "estimate": {
+                "input_tokens": 1537,
+                "input_cost_usd": 0.007685
+              }
+            },
+            {
+              "query": "Scaffold a new Python package with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 16.5,
+              "estimate": {
+                "input_tokens": 1531,
+                "input_cost_usd": 0.007655
+              }
+            },
+            {
+              "query": "Set up ty for type checking",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10,
+              "estimate": {
+                "input_tokens": 1527,
+                "input_cost_usd": 0.007635
+              }
+            },
+            {
+              "query": "Should this interface be a Protocol or an ABC?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.4,
+              "estimate": {
+                "input_tokens": 1535,
+                "input_cost_usd": 0.007675
+              }
+            },
+            {
+              "query": "Write tests for this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.8,
+              "estimate": {
+                "input_tokens": 1525,
+                "input_cost_usd": 0.007625
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T17:45:21Z",
+        "executed": true,
+        "content_hash": "54b3b3d8570181fa3810a1cf6ecd90222883b1af9285143eaeaa383379b52ef1",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "annotate-and-configure",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1878,
+              "input_cost_usd": 0.00939
+            },
+            "measured": {
+              "input_tokens": 2954,
+              "cache_read_input_tokens": 161669,
+              "cache_creation_input_tokens": 12821,
+              "output_tokens": 5224,
+              "cost_usd": 0.355054
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:",
+                "text": "src/myapp/calc.py matches /def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:/",
+                "passed": true,
+                "evidence": "def add(a:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "-\u003e ",
+                "text": "src/myapp/calc.py matches /-\u003e /",
+                "passed": true,
+                "evidence": "-\u003e ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.ty\\.environment\\]",
+                "text": "pyproject.toml matches /\\[tool\\.ty\\.environment\\]/",
+                "passed": true,
+                "evidence": "[tool.ty.environment]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "python-version",
+                "text": "pyproject.toml matches /python-version/",
+                "passed": true,
+                "evidence": "python-version",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/calc.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/calc.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 7
+            },
+            "timing": {
+              "total_tokens": 182668,
+              "executor_duration_seconds": 81.7
+            },
+            "spec_hash": "5cc61cc72f2e7f5798ead7ca89d976714ae6c1af7e9879fe04db7b66fe526a12"
+          },
+          {
+            "id": "configure-pyright",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1877,
+              "input_cost_usd": 0.009385
+            },
+            "measured": {
+              "input_tokens": 2952,
+              "cache_read_input_tokens": 142036,
+              "cache_creation_input_tokens": 17475,
+              "output_tokens": 8990,
+              "cost_usd": 0.485895
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:",
+                "text": "src/myapp/calc.py matches /def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:/",
+                "passed": true,
+                "evidence": "def add[T: (int, float)](a:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "-\u003e ",
+                "text": "src/myapp/calc.py matches /-\u003e /",
+                "passed": true,
+                "evidence": "-\u003e ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.pyright\\]",
+                "text": "pyproject.toml matches /\\[tool\\.pyright\\]/",
+                "passed": true,
+                "evidence": "[tool.pyright]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pythonVersion",
+                "text": "pyproject.toml matches /pythonVersion/",
+                "passed": true,
+                "evidence": "pythonVersion",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/calc.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/calc.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 3,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 8
+            },
+            "timing": {
+              "total_tokens": 171453,
+              "executor_duration_seconds": 124.4
+            },
+            "spec_hash": "82fc925f92e7acfab76808b7a18080c1ec68a4ddcf5086b85ec39e8db7e25ca0"
+          },
+          {
+            "id": "modernize-hints",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1847,
+              "input_cost_usd": 0.009235
+            },
+            "measured": {
+              "input_tokens": 2817,
+              "cache_read_input_tokens": 58142,
+              "cache_creation_input_tokens": 9074,
+              "output_tokens": 1368,
+              "cost_usd": 0.168701
+            },
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Optional\\[",
+                "text": "src/myapp/legacy.py does not match /Optional\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Union\\[",
+                "text": "src/myapp/legacy.py does not match /Union\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "List\\[",
+                "text": "src/myapp/legacy.py does not match /List\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Dict\\[",
+                "text": "src/myapp/legacy.py does not match /Dict\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "\\| None",
+                "text": "src/myapp/legacy.py matches /\\| None/",
+                "passed": true,
+                "evidence": "| None",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "list\\[|dict\\[",
+                "text": "src/myapp/legacy.py matches /list\\[|dict\\[/",
+                "passed": true,
+                "evidence": "dict[",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/legacy.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/legacy.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 71401,
+              "executor_duration_seconds": 22.3
+            },
+            "spec_hash": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 76.1,
+          "estimate": {
+            "input_tokens": 5602,
+            "input_cost_usd": 0.02801
+          },
+          "measured": {
+            "input_tokens": 8723,
+            "cache_read_input_tokens": 361847,
+            "cache_creation_input_tokens": 39370,
+            "output_tokens": 15582,
+            "cost_usd": 1.00965
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T17:45:21Z",
+          "summary": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 87.9,
+            "measured": {
+              "input_tokens": 7929,
+              "cache_read_input_tokens": 672906,
+              "cache_creation_input_tokens": 34811,
+              "output_tokens": 15818,
+              "cost_usd": 1.121504
+            }
+          },
+          "results": [
+            {
+              "id": "annotate-and-configure",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2783,
+                "cache_read_input_tokens": 318085,
+                "cache_creation_input_tokens": 15485,
+                "output_tokens": 8778,
+                "cost_usd": 0.547881
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 139.4
+              },
+              "fingerprint": "5cc61cc72f2e7f5798ead7ca89d976714ae6c1af7e9879fe04db7b66fe526a12"
+            },
+            {
+              "id": "configure-pyright",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2650,
+                "cache_read_input_tokens": 247558,
+                "cache_creation_input_tokens": 12074,
+                "output_tokens": 5649,
+                "cost_usd": 0.399611
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 95.2
+              },
+              "fingerprint": "82fc925f92e7acfab76808b7a18080c1ec68a4ddcf5086b85ec39e8db7e25ca0"
+            },
+            {
+              "id": "modernize-hints",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2496,
+                "cache_read_input_tokens": 107263,
+                "cache_creation_input_tokens": 7252,
+                "output_tokens": 1391,
+                "cost_usd": 0.174012
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 29.2
+              },
+              "fingerprint": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T16:48:42Z",
+          "summary": {
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "pass_rate": 0.333333,
+            "avg_run_seconds": 77.7,
+            "estimate": {
+              "input_tokens": 5602,
+              "input_cost_usd": 0.02801
+            },
+            "measured": {
+              "input_tokens": 8721,
+              "cache_read_input_tokens": 350342,
+              "cache_creation_input_tokens": 39744,
+              "output_tokens": 16362,
+              "cost_usd": 1.027133
+            }
+          },
+          "results": [
+            {
+              "id": "annotate-and-configure",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1878,
+                "input_cost_usd": 0.00939
+              },
+              "measured": {
+                "input_tokens": 2950,
+                "cache_read_input_tokens": 114055,
+                "cache_creation_input_tokens": 13336,
+                "output_tokens": 5492,
+                "cost_usd": 0.343062
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 0.8
+              },
+              "timing": {
+                "executor_duration_seconds": 80.9
+              }
+            },
+            {
+              "id": "configure-pyright",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1877,
+                "input_cost_usd": 0.009385
+              },
+              "measured": {
+                "input_tokens": 2954,
+                "cache_read_input_tokens": 178145,
+                "cache_creation_input_tokens": 17334,
+                "output_tokens": 9502,
+                "cost_usd": 0.51537
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 0.8
+              },
+              "timing": {
+                "executor_duration_seconds": 129.8
+              }
+            },
+            {
+              "id": "modernize-hints",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1847,
+                "input_cost_usd": 0.009235
+              },
+              "measured": {
+                "input_tokens": 2817,
+                "cache_read_input_tokens": 58142,
+                "cache_creation_input_tokens": 9074,
+                "output_tokens": 1368,
+                "cost_usd": 0.168701
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 22.3
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:41:17Z",
+        "executed": true,
+        "content_hash": "03d90e7f18fd55de777159aa16575d3a29eeb0b32fb858d529c6a381b357c54c",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.7,
+            "estimate": {
+              "input_tokens": 1350,
+              "input_cost_usd": 0.00405
+            },
+            "spec_hash": "5c57ac61d7ce767a115533848e571ee2764c07081b40c98a1108801c80ca6f9b"
+          },
+          {
+            "query": "Set up ty for type checking",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.3,
+            "estimate": {
+              "input_tokens": 1349,
+              "input_cost_usd": 0.004047
+            },
+            "spec_hash": "d78559e6db12bbd20fca53c825bdd5f8114ba18c7e206dd3af06a9fc4b4e4018"
+          },
+          {
+            "query": "Configure ty in pyproject.toml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.8,
+            "estimate": {
+              "input_tokens": 1351,
+              "input_cost_usd": 0.004053
+            },
+            "spec_hash": "08c17ef23c3f7334ad31734fd43e723fc5a66637512aa90590029f19ee785bc3"
+          },
+          {
+            "query": "Migrate this project from mypy to ty",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.8,
+            "estimate": {
+              "input_tokens": 1352,
+              "input_cost_usd": 0.004056
+            },
+            "spec_hash": "070b6749aeea010906af77d66ea3acc2b5918fc1267ed6029721bf87d5a7e969"
+          },
+          {
+            "query": "Set up pyright for type checking",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.2,
+            "estimate": {
+              "input_tokens": 1350,
+              "input_cost_usd": 0.00405
+            },
+            "spec_hash": "651698851f8240c0e96e9c9518a2f912119c6152322b22c5fba7ece55cd8bda3"
+          },
+          {
+            "query": "Configure pyright in pyproject.toml",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.2,
+            "estimate": {
+              "input_tokens": 1352,
+              "input_cost_usd": 0.004056
+            },
+            "spec_hash": "261cf87e06869fdc3dbac4f962f0a94e69dbac502a8ad973182a13b04267026f"
+          },
+          {
+            "query": "Migrate this project from mypy to pyright",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 64.9,
+            "estimate": {
+              "input_tokens": 1353,
+              "input_cost_usd": 0.004059
+            },
+            "spec_hash": "989e4e9c6fb86c3b31c6e0199e613fee30cada91c090c12853892b1402e6a33b"
+          },
+          {
+            "query": "Fix these Python type errors",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 15.6,
+            "estimate": {
+              "input_tokens": 1348,
+              "input_cost_usd": 0.004044
+            },
+            "spec_hash": "6eecd3b3e41d6602ce2387719a03420a88ae3ab34db2b2ae6c5b13599350124d"
+          },
+          {
+            "query": "Should this interface be a Protocol or an ABC?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.5,
+            "estimate": {
+              "input_tokens": 1353,
+              "input_cost_usd": 0.004059
+            },
+            "spec_hash": "189d8bb6f6f3bd39a19c341daa84c0ce448b812033fbc0f184450d8a37f7158b"
+          },
+          {
+            "query": "Make this Python function generic with a type parameter",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "estimate": {
+              "input_tokens": 1352,
+              "input_cost_usd": 0.004056
+            },
+            "spec_hash": "8937d9cd16003d908c3a6afbd55b925f2ba2ce9e40ac4eeeabd1d20cbd5a67ae"
+          },
+          {
+            "query": "Modernize these type hints to use X | None instead of Optional",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.8,
+            "estimate": {
+              "input_tokens": 1357,
+              "input_cost_usd": 0.004071
+            },
+            "spec_hash": "2d310e0f1d6175e30d504aa6ad85d977f8f2dee0b05b4ba8e32cdcae538bb06b"
+          },
+          {
+            "query": "How do I type-check my Python project?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.3,
+            "estimate": {
+              "input_tokens": 1353,
+              "input_cost_usd": 0.004059
+            },
+            "spec_hash": "aaeb0ed606785fcbf855dec4114a896ca8b2f28b0462ec094c83a450ae3bd04a"
+          },
+          {
+            "query": "Add return type annotations across this module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.1,
+            "estimate": {
+              "input_tokens": 1350,
+              "input_cost_usd": 0.00405
+            },
+            "spec_hash": "168dfe198a900552b33fa718b2a1e8b27cc4b7fe5b0349c007db4af6ee3301f1"
+          },
+          {
+            "query": "Format this Python code with ruff",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.8,
+            "estimate": {
+              "input_tokens": 1350,
+              "input_cost_usd": 0.00405
+            },
+            "spec_hash": "d1ac4606bc3d4f99c34236d9a1a548356539c96f1690f035042af91f0841d9b8"
+          },
+          {
+            "query": "Write tests for this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1348,
+              "input_cost_usd": 0.004044
+            },
+            "spec_hash": "7be41101aeeebeaf53d368ec321e2f670c4e818be398870ca5cdca9357a733d2"
+          },
+          {
+            "query": "Add generics to my Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "estimate": {
+              "input_tokens": 1350,
+              "input_cost_usd": 0.00405
+            },
+            "spec_hash": "58f318cb23b5e791e1439657e12645de35143ccde846da0de8709a777713c772"
+          },
+          {
+            "query": "Check at runtime whether this variable is an int",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 1352,
+              "input_cost_usd": 0.004056
+            },
+            "spec_hash": "44f132b53365bbea996f7d929bbaeb33f9fb49428d1f402e49156054f9a410e8"
+          },
+          {
+            "query": "Scaffold a new Python package with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 1352,
+              "input_cost_usd": 0.004056
+            },
+            "spec_hash": "229542c82ff8458d85f24c22d629ee1b4e29f34cab6f24d9b692e3862509ab03"
+          },
+          {
+            "query": "Add type annotations to my TypeScript code",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.6,
+            "estimate": {
+              "input_tokens": 1351,
+              "input_cost_usd": 0.004053
+            },
+            "spec_hash": "49d15b57d26a02d8febd5adcf8f54810419a391494131d70773d1ba3661354ff"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 9,
+          "total": 19,
+          "pass_rate": 0.526316,
+          "avg_run_seconds": 11.8,
+          "estimate": {
+            "input_tokens": 25673,
+            "input_cost_usd": 0.077019
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:43:10Z",
+          "summary": {
+            "passed": 10,
+            "failed": 6,
+            "total": 16,
+            "pass_rate": 0.625,
+            "avg_run_seconds": 8.8,
+            "estimate": {
+              "input_tokens": 18018,
+              "input_cost_usd": 0.054054
+            }
+          },
+          "results": [
+            {
+              "query": "Add generics to my Go function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.4,
+              "estimate": {
+                "input_tokens": 1125,
+                "input_cost_usd": 0.003375
+              }
+            },
+            {
+              "query": "Add return type annotations across this module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.6,
+              "estimate": {
+                "input_tokens": 1125,
+                "input_cost_usd": 0.003375
+              }
+            },
+            {
+              "query": "Add type annotations to my TypeScript code",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.2,
+              "estimate": {
+                "input_tokens": 1126,
+                "input_cost_usd": 0.003378
+              }
+            },
+            {
+              "query": "Add type hints to this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5.2,
+              "estimate": {
+                "input_tokens": 1125,
+                "input_cost_usd": 0.003375
+              }
+            },
+            {
+              "query": "Check at runtime whether this variable is an int",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.2,
+              "estimate": {
+                "input_tokens": 1127,
+                "input_cost_usd": 0.003381
+              }
+            },
+            {
+              "query": "Configure ty in pyproject.toml",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4,
+              "estimate": {
+                "input_tokens": 1126,
+                "input_cost_usd": 0.003378
+              }
+            },
+            {
+              "query": "Fix these Python type errors",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.1,
+              "estimate": {
+                "input_tokens": 1123,
+                "input_cost_usd": 0.003369
+              }
+            },
+            {
+              "query": "Format this Python code with ruff",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.6,
+              "estimate": {
+                "input_tokens": 1125,
+                "input_cost_usd": 0.003375
+              }
+            },
+            {
+              "query": "How do I type-check my Python project?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.3,
+              "estimate": {
+                "input_tokens": 1128,
+                "input_cost_usd": 0.003384
+              }
+            },
+            {
+              "query": "Make this Python function generic with a type parameter",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.6,
+              "estimate": {
+                "input_tokens": 1127,
+                "input_cost_usd": 0.003381
+              }
+            },
+            {
+              "query": "Migrate this project from mypy to ty",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 18.5,
+              "estimate": {
+                "input_tokens": 1127,
+                "input_cost_usd": 0.003381
+              }
+            },
+            {
+              "query": "Modernize these type hints to use X | None instead of Optional",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 14.9,
+              "estimate": {
+                "input_tokens": 1132,
+                "input_cost_usd": 0.003396
+              }
+            },
+            {
+              "query": "Scaffold a new Python package with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.4,
+              "estimate": {
+                "input_tokens": 1127,
+                "input_cost_usd": 0.003381
+              }
+            },
+            {
+              "query": "Set up ty for type checking",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.8,
+              "estimate": {
+                "input_tokens": 1124,
+                "input_cost_usd": 0.003372
+              }
+            },
+            {
+              "query": "Should this interface be a Protocol or an ABC?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.5,
+              "estimate": {
+                "input_tokens": 1128,
+                "input_cost_usd": 0.003384
+              }
+            },
+            {
+              "query": "Write tests for this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.3,
+              "estimate": {
+                "input_tokens": 1123,
+                "input_cost_usd": 0.003369
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T17:41:40Z",
+        "executed": true,
+        "content_hash": "54b3b3d8570181fa3810a1cf6ecd90222883b1af9285143eaeaa383379b52ef1",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "annotate-and-configure",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1387,
+              "input_cost_usd": 0.004161
+            },
+            "measured": {
+              "input_tokens": 7,
+              "cache_read_input_tokens": 88117,
+              "cache_creation_input_tokens": 10003,
+              "output_tokens": 998,
+              "cost_usd": 0.102083
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:",
+                "text": "src/myapp/calc.py matches /def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:/",
+                "passed": true,
+                "evidence": "def add(a:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "-\u003e ",
+                "text": "src/myapp/calc.py matches /-\u003e /",
+                "passed": true,
+                "evidence": "-\u003e ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.ty\\.environment\\]",
+                "text": "pyproject.toml matches /\\[tool\\.ty\\.environment\\]/",
+                "passed": true,
+                "evidence": "[tool.ty.environment]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "python-version",
+                "text": "pyproject.toml matches /python-version/",
+                "passed": true,
+                "evidence": "python-version",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/calc.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/calc.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 99125,
+              "executor_duration_seconds": 19.7
+            },
+            "spec_hash": "5cc61cc72f2e7f5798ead7ca89d976714ae6c1af7e9879fe04db7b66fe526a12"
+          },
+          {
+            "id": "configure-pyright",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1385,
+              "input_cost_usd": 0.004155
+            },
+            "measured": {
+              "input_tokens": 7,
+              "cache_read_input_tokens": 88169,
+              "cache_creation_input_tokens": 10902,
+              "output_tokens": 1926,
+              "cost_usd": 0.121411
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:",
+                "text": "src/myapp/calc.py matches /def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:/",
+                "passed": true,
+                "evidence": "def add(a:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "-\u003e ",
+                "text": "src/myapp/calc.py matches /-\u003e /",
+                "passed": true,
+                "evidence": "-\u003e ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.pyright\\]",
+                "text": "pyproject.toml matches /\\[tool\\.pyright\\]/",
+                "passed": true,
+                "evidence": "[tool.pyright]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pythonVersion",
+                "text": "pyproject.toml matches /pythonVersion/",
+                "passed": true,
+                "evidence": "pythonVersion",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/calc.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/calc.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 101004,
+              "executor_duration_seconds": 32.2
+            },
+            "spec_hash": "82fc925f92e7acfab76808b7a18080c1ec68a4ddcf5086b85ec39e8db7e25ca0"
+          },
+          {
+            "id": "modernize-hints",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1363,
+              "input_cost_usd": 0.004089
+            },
+            "measured": {
+              "input_tokens": 7,
+              "cache_read_input_tokens": 87828,
+              "cache_creation_input_tokens": 9562,
+              "output_tokens": 631,
+              "cost_usd": 0.093811
+            },
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Optional\\[",
+                "text": "src/myapp/legacy.py does not match /Optional\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Union\\[",
+                "text": "src/myapp/legacy.py does not match /Union\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "List\\[",
+                "text": "src/myapp/legacy.py does not match /List\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Dict\\[",
+                "text": "src/myapp/legacy.py does not match /Dict\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "\\| None",
+                "text": "src/myapp/legacy.py matches /\\| None/",
+                "passed": true,
+                "evidence": "| None",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "list\\[|dict\\[",
+                "text": "src/myapp/legacy.py matches /list\\[|dict\\[/",
+                "passed": true,
+                "evidence": "dict[",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/legacy.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/legacy.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 98028,
+              "executor_duration_seconds": 18.6
+            },
+            "spec_hash": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 23.5,
+          "estimate": {
+            "input_tokens": 4135,
+            "input_cost_usd": 0.012405
+          },
+          "measured": {
+            "input_tokens": 21,
+            "cache_read_input_tokens": 264114,
+            "cache_creation_input_tokens": 30467,
+            "output_tokens": 3555,
+            "cost_usd": 0.317305
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T17:41:40Z",
+          "summary": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 60.2,
+            "measured": {
+              "input_tokens": 28,
+              "cache_read_input_tokens": 420776,
+              "cache_creation_input_tokens": 32709,
+              "output_tokens": 7729,
+              "cost_usd": 0.476574
+            }
+          },
+          "results": [
+            {
+              "id": "annotate-and-configure",
+              "passed": true,
+              "measured": {
+                "input_tokens": 15,
+                "cache_read_input_tokens": 221891,
+                "cache_creation_input_tokens": 14575,
+                "output_tokens": 4860,
+                "cost_usd": 0.263788
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 106.9
+              },
+              "fingerprint": "5cc61cc72f2e7f5798ead7ca89d976714ae6c1af7e9879fe04db7b66fe526a12"
+            },
+            {
+              "id": "configure-pyright",
+              "passed": true,
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 134175,
+                "cache_creation_input_tokens": 10038,
+                "output_tokens": 2203,
+                "cost_usd": 0.134187
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 57.4
+              },
+              "fingerprint": "82fc925f92e7acfab76808b7a18080c1ec68a4ddcf5086b85ec39e8db7e25ca0"
+            },
+            {
+              "id": "modernize-hints",
+              "passed": true,
+              "measured": {
+                "input_tokens": 5,
+                "cache_read_input_tokens": 64710,
+                "cache_creation_input_tokens": 8096,
+                "output_tokens": 666,
+                "cost_usd": 0.078599
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 16.4
+              },
+              "fingerprint": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T16:42:36Z",
+          "summary": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 25.4,
+            "estimate": {
+              "input_tokens": 4135,
+              "input_cost_usd": 0.012405
+            },
+            "measured": {
+              "input_tokens": 22,
+              "cache_read_input_tokens": 290244,
+              "cache_creation_input_tokens": 30464,
+              "output_tokens": 3609,
+              "cost_usd": 0.325919
+            }
+          },
+          "results": [
+            {
+              "id": "annotate-and-configure",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1387,
+                "input_cost_usd": 0.004161
+              },
+              "measured": {
+                "input_tokens": 7,
+                "cache_read_input_tokens": 88157,
+                "cache_creation_input_tokens": 10025,
+                "output_tokens": 1037,
+                "cost_usd": 0.102812
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 23
+              }
+            },
+            {
+              "id": "configure-pyright",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1385,
+                "input_cost_usd": 0.004155
+              },
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 114259,
+                "cache_creation_input_tokens": 10877,
+                "output_tokens": 1941,
+                "cost_usd": 0.129296
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 34.5
+              }
+            },
+            {
+              "id": "modernize-hints",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1363,
+                "input_cost_usd": 0.004089
+              },
+              "measured": {
+                "input_tokens": 7,
+                "cache_read_input_tokens": 87828,
+                "cache_creation_input_tokens": 9562,
+                "output_tokens": 631,
+                "cost_usd": 0.093811
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 18.6
+              }
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.1-pro": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:48:06Z",
+        "executed": true,
+        "content_hash": "fa0bfd26f4f49c2c8cd1a428cee364d3a916d7cb07a082aade761cc5392b96ff",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "5c57ac61d7ce767a115533848e571ee2764c07081b40c98a1108801c80ca6f9b"
+          },
+          {
+            "query": "Set up ty for type checking",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "d78559e6db12bbd20fca53c825bdd5f8114ba18c7e206dd3af06a9fc4b4e4018"
+          },
+          {
+            "query": "Configure ty in pyproject.toml",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.7,
+            "spec_hash": "08c17ef23c3f7334ad31734fd43e723fc5a66637512aa90590029f19ee785bc3"
+          },
+          {
+            "query": "Migrate this project from mypy to ty",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.7,
+            "spec_hash": "070b6749aeea010906af77d66ea3acc2b5918fc1267ed6029721bf87d5a7e969"
+          },
+          {
+            "query": "Fix these Python type errors",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "6eecd3b3e41d6602ce2387719a03420a88ae3ab34db2b2ae6c5b13599350124d"
+          },
+          {
+            "query": "Should this interface be a Protocol or an ABC?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "189d8bb6f6f3bd39a19c341daa84c0ce448b812033fbc0f184450d8a37f7158b"
+          },
+          {
+            "query": "Make this Python function generic with a type parameter",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "8937d9cd16003d908c3a6afbd55b925f2ba2ce9e40ac4eeeabd1d20cbd5a67ae"
+          },
+          {
+            "query": "Modernize these type hints to use X | None instead of Optional",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5,
+            "spec_hash": "2d310e0f1d6175e30d504aa6ad85d977f8f2dee0b05b4ba8e32cdcae538bb06b"
+          },
+          {
+            "query": "How do I type-check my Python project?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "aaeb0ed606785fcbf855dec4114a896ca8b2f28b0462ec094c83a450ae3bd04a"
+          },
+          {
+            "query": "Add return type annotations across this module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "168dfe198a900552b33fa718b2a1e8b27cc4b7fe5b0349c007db4af6ee3301f1"
+          },
+          {
+            "query": "Format this Python code with ruff",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "d1ac4606bc3d4f99c34236d9a1a548356539c96f1690f035042af91f0841d9b8"
+          },
+          {
+            "query": "Write tests for this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "7be41101aeeebeaf53d368ec321e2f670c4e818be398870ca5cdca9357a733d2"
+          },
+          {
+            "query": "Add generics to my Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "58f318cb23b5e791e1439657e12645de35143ccde846da0de8709a777713c772"
+          },
+          {
+            "query": "Check at runtime whether this variable is an int",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "44f132b53365bbea996f7d929bbaeb33f9fb49428d1f402e49156054f9a410e8"
+          },
+          {
+            "query": "Scaffold a new Python package with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "229542c82ff8458d85f24c22d629ee1b4e29f34cab6f24d9b692e3862509ab03"
+          },
+          {
+            "query": "Add type annotations to my TypeScript code",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "49d15b57d26a02d8febd5adcf8f54810419a391494131d70773d1ba3661354ff"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 10,
+          "total": 16,
+          "pass_rate": 0.375,
+          "avg_run_seconds": 5.1
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.1-pro",
+        "display": "Gemini 3.1 Pro",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:48:16Z",
+        "executed": true,
+        "content_hash": "8b4d09aac865a023ffaef00d6518303dfd4f5771b587b3a78f21b734232bc46f",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "annotate-and-configure",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 4.8
+            },
+            "spec_hash": "697e3163f2fcad8b73d652874d23a127c1bfdf1947537fa6491754b642e292cd"
+          },
+          {
+            "id": "modernize-hints",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 4.7
+            },
+            "spec_hash": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 4.8
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:48:16Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.4
+          },
+          "results": [
+            {
+              "id": "annotate-and-configure",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.2
+              },
+              "fingerprint": "697e3163f2fcad8b73d652874d23a127c1bfdf1947537fa6491754b642e292cd"
+            },
+            {
+              "id": "modernize-hints",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.5
+              },
+              "fingerprint": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+            }
+          ]
+        }
+      }
+    },
+    "google/gemini-3.5-flash": {
+      "triggers": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:46:52Z",
+        "executed": true,
+        "content_hash": "fa0bfd26f4f49c2c8cd1a428cee364d3a916d7cb07a082aade761cc5392b96ff",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "5c57ac61d7ce767a115533848e571ee2764c07081b40c98a1108801c80ca6f9b"
+          },
+          {
+            "query": "Set up ty for type checking",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "d78559e6db12bbd20fca53c825bdd5f8114ba18c7e206dd3af06a9fc4b4e4018"
+          },
+          {
+            "query": "Configure ty in pyproject.toml",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "08c17ef23c3f7334ad31734fd43e723fc5a66637512aa90590029f19ee785bc3"
+          },
+          {
+            "query": "Migrate this project from mypy to ty",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "070b6749aeea010906af77d66ea3acc2b5918fc1267ed6029721bf87d5a7e969"
+          },
+          {
+            "query": "Fix these Python type errors",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "6eecd3b3e41d6602ce2387719a03420a88ae3ab34db2b2ae6c5b13599350124d"
+          },
+          {
+            "query": "Should this interface be a Protocol or an ABC?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "189d8bb6f6f3bd39a19c341daa84c0ce448b812033fbc0f184450d8a37f7158b"
+          },
+          {
+            "query": "Make this Python function generic with a type parameter",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "8937d9cd16003d908c3a6afbd55b925f2ba2ce9e40ac4eeeabd1d20cbd5a67ae"
+          },
+          {
+            "query": "Modernize these type hints to use X | None instead of Optional",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "2d310e0f1d6175e30d504aa6ad85d977f8f2dee0b05b4ba8e32cdcae538bb06b"
+          },
+          {
+            "query": "How do I type-check my Python project?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "aaeb0ed606785fcbf855dec4114a896ca8b2f28b0462ec094c83a450ae3bd04a"
+          },
+          {
+            "query": "Add return type annotations across this module",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "168dfe198a900552b33fa718b2a1e8b27cc4b7fe5b0349c007db4af6ee3301f1"
+          },
+          {
+            "query": "Format this Python code with ruff",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "d1ac4606bc3d4f99c34236d9a1a548356539c96f1690f035042af91f0841d9b8"
+          },
+          {
+            "query": "Write tests for this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "7be41101aeeebeaf53d368ec321e2f670c4e818be398870ca5cdca9357a733d2"
+          },
+          {
+            "query": "Add generics to my Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "58f318cb23b5e791e1439657e12645de35143ccde846da0de8709a777713c772"
+          },
+          {
+            "query": "Check at runtime whether this variable is an int",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "44f132b53365bbea996f7d929bbaeb33f9fb49428d1f402e49156054f9a410e8"
+          },
+          {
+            "query": "Scaffold a new Python package with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "229542c82ff8458d85f24c22d629ee1b4e29f34cab6f24d9b692e3862509ab03"
+          },
+          {
+            "query": "Add type annotations to my TypeScript code",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "spec_hash": "49d15b57d26a02d8febd5adcf8f54810419a391494131d70773d1ba3661354ff"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 10,
+          "total": 16,
+          "pass_rate": 0.375,
+          "avg_run_seconds": 5.3
+        }
+      },
+      "evals": {
+        "provider": "google",
+        "model": "gemini-3.5-flash",
+        "display": "Gemini 3.5 Flash",
+        "harness": "antigravity",
+        "tool_version": "v0.2.1-63-g50671ce",
+        "ran_at": "2026-06-23T14:47:04Z",
+        "executed": true,
+        "content_hash": "8b4d09aac865a023ffaef00d6518303dfd4f5771b587b3a78f21b734232bc46f",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1.5,
+          "output_per_mtok": 9
+        },
+        "results": [
+          {
+            "id": "annotate-and-configure",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.4
+            },
+            "spec_hash": "697e3163f2fcad8b73d652874d23a127c1bfdf1947537fa6491754b642e292cd"
+          },
+          {
+            "id": "modernize-hints",
+            "runtime_error": "empty CLI output",
+            "timing": {
+              "executor_duration_seconds": 5.4
+            },
+            "spec_hash": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 0,
+          "errored": 2,
+          "total": 2,
+          "avg_run_seconds": 5.4
+        },
+        "baseline": {
+          "ran_at": "2026-06-23T14:47:04Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 5.6
+          },
+          "results": [
+            {
+              "id": "annotate-and-configure",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.3
+              },
+              "fingerprint": "697e3163f2fcad8b73d652874d23a127c1bfdf1947537fa6491754b642e292cd"
+            },
+            {
+              "id": "modernize-hints",
+              "runtime_error": "errored",
+              "timing": {
+                "executor_duration_seconds": 5.8
+              },
+              "fingerprint": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:53:57Z",
+        "executed": true,
+        "content_hash": "03d90e7f18fd55de777159aa16575d3a29eeb0b32fb858d529c6a381b357c54c",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 26.1,
+            "estimate": {
+              "input_tokens": 1217,
+              "input_cost_usd": 0.003043
+            },
+            "spec_hash": "5c57ac61d7ce767a115533848e571ee2764c07081b40c98a1108801c80ca6f9b"
+          },
+          {
+            "query": "Set up ty for type checking",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 30.8,
+            "estimate": {
+              "input_tokens": 1216,
+              "input_cost_usd": 0.00304
+            },
+            "spec_hash": "d78559e6db12bbd20fca53c825bdd5f8114ba18c7e206dd3af06a9fc4b4e4018"
+          },
+          {
+            "query": "Configure ty in pyproject.toml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 1217,
+              "input_cost_usd": 0.003043
+            },
+            "spec_hash": "08c17ef23c3f7334ad31734fd43e723fc5a66637512aa90590029f19ee785bc3"
+          },
+          {
+            "query": "Migrate this project from mypy to ty",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 96.1,
+            "estimate": {
+              "input_tokens": 962,
+              "input_cost_usd": 0.002405
+            }
+          },
+          {
+            "query": "Set up pyright for type checking",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 26.4,
+            "estimate": {
+              "input_tokens": 1217,
+              "input_cost_usd": 0.003043
+            },
+            "spec_hash": "651698851f8240c0e96e9c9518a2f912119c6152322b22c5fba7ece55cd8bda3"
+          },
+          {
+            "query": "Configure pyright in pyproject.toml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.7,
+            "estimate": {
+              "input_tokens": 1218,
+              "input_cost_usd": 0.003045
+            },
+            "spec_hash": "261cf87e06869fdc3dbac4f962f0a94e69dbac502a8ad973182a13b04267026f"
+          },
+          {
+            "query": "Migrate this project from mypy to pyright",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.8,
+            "estimate": {
+              "input_tokens": 1220,
+              "input_cost_usd": 0.00305
+            },
+            "spec_hash": "989e4e9c6fb86c3b31c6e0199e613fee30cada91c090c12853892b1402e6a33b"
+          },
+          {
+            "query": "Fix these Python type errors",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 48.9,
+            "estimate": {
+              "input_tokens": 1215,
+              "input_cost_usd": 0.003038
+            },
+            "spec_hash": "6eecd3b3e41d6602ce2387719a03420a88ae3ab34db2b2ae6c5b13599350124d"
+          },
+          {
+            "query": "Should this interface be a Protocol or an ABC?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 29.5,
+            "estimate": {
+              "input_tokens": 1220,
+              "input_cost_usd": 0.00305
+            },
+            "spec_hash": "189d8bb6f6f3bd39a19c341daa84c0ce448b812033fbc0f184450d8a37f7158b"
+          },
+          {
+            "query": "Make this Python function generic with a type parameter",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 32.6,
+            "estimate": {
+              "input_tokens": 1219,
+              "input_cost_usd": 0.003048
+            },
+            "spec_hash": "8937d9cd16003d908c3a6afbd55b925f2ba2ce9e40ac4eeeabd1d20cbd5a67ae"
+          },
+          {
+            "query": "Modernize these type hints to use X | None instead of Optional",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 71.4,
+            "estimate": {
+              "input_tokens": 966,
+              "input_cost_usd": 0.002415
+            }
+          },
+          {
+            "query": "How do I type-check my Python project?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.4,
+            "estimate": {
+              "input_tokens": 1219,
+              "input_cost_usd": 0.003048
+            },
+            "spec_hash": "aaeb0ed606785fcbf855dec4114a896ca8b2f28b0462ec094c83a450ae3bd04a"
+          },
+          {
+            "query": "Add return type annotations across this module",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 59,
+            "estimate": {
+              "input_tokens": 1217,
+              "input_cost_usd": 0.003043
+            },
+            "spec_hash": "168dfe198a900552b33fa718b2a1e8b27cc4b7fe5b0349c007db4af6ee3301f1"
+          },
+          {
+            "query": "Format this Python code with ruff",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 24.5,
+            "estimate": {
+              "input_tokens": 960,
+              "input_cost_usd": 0.0024
+            }
+          },
+          {
+            "query": "Write tests for this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 60.2,
+            "estimate": {
+              "input_tokens": 958,
+              "input_cost_usd": 0.002395
+            }
+          },
+          {
+            "query": "Add generics to my Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 42.1,
+            "estimate": {
+              "input_tokens": 960,
+              "input_cost_usd": 0.0024
+            }
+          },
+          {
+            "query": "Check at runtime whether this variable is an int",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 23.9,
+            "estimate": {
+              "input_tokens": 962,
+              "input_cost_usd": 0.002405
+            }
+          },
+          {
+            "query": "Scaffold a new Python package with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 56.9,
+            "estimate": {
+              "input_tokens": 961,
+              "input_cost_usd": 0.002403
+            }
+          },
+          {
+            "query": "Add type annotations to my TypeScript code",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 59.2,
+            "estimate": {
+              "input_tokens": 961,
+              "input_cost_usd": 0.002403
+            }
+          }
+        ],
+        "summary": {
+          "passed": 17,
+          "failed": 2,
+          "total": 19,
+          "pass_rate": 0.894737,
+          "avg_run_seconds": 39.6,
+          "estimate": {
+            "input_tokens": 21085,
+            "input_cost_usd": 0.052717
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:49:45Z",
+          "summary": {
+            "passed": 14,
+            "failed": 2,
+            "total": 16,
+            "pass_rate": 0.875,
+            "avg_run_seconds": 44.6,
+            "estimate": {
+              "input_tokens": 15822,
+              "input_cost_usd": 0.039557
+            }
+          },
+          "results": [
+            {
+              "query": "Add generics to my Go function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 42.1,
+              "estimate": {
+                "input_tokens": 960,
+                "input_cost_usd": 0.0024
+              }
+            },
+            {
+              "query": "Add return type annotations across this module",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 27.1,
+              "estimate": {
+                "input_tokens": 1016,
+                "input_cost_usd": 0.00254
+              }
+            },
+            {
+              "query": "Add type annotations to my TypeScript code",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 59.2,
+              "estimate": {
+                "input_tokens": 961,
+                "input_cost_usd": 0.002403
+              }
+            },
+            {
+              "query": "Add type hints to this Python function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 43.6,
+              "estimate": {
+                "input_tokens": 1016,
+                "input_cost_usd": 0.00254
+              }
+            },
+            {
+              "query": "Check at runtime whether this variable is an int",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 23.9,
+              "estimate": {
+                "input_tokens": 962,
+                "input_cost_usd": 0.002405
+              }
+            },
+            {
+              "query": "Configure ty in pyproject.toml",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 37.2,
+              "estimate": {
+                "input_tokens": 1016,
+                "input_cost_usd": 0.00254
+              }
+            },
+            {
+              "query": "Fix these Python type errors",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 89.8,
+              "estimate": {
+                "input_tokens": 1014,
+                "input_cost_usd": 0.002535
+              }
+            },
+            {
+              "query": "Format this Python code with ruff",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 24.5,
+              "estimate": {
+                "input_tokens": 960,
+                "input_cost_usd": 0.0024
+              }
+            },
+            {
+              "query": "How do I type-check my Python project?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.1,
+              "estimate": {
+                "input_tokens": 1018,
+                "input_cost_usd": 0.002545
+              }
+            },
+            {
+              "query": "Make this Python function generic with a type parameter",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 17,
+              "estimate": {
+                "input_tokens": 1018,
+                "input_cost_usd": 0.002545
+              }
+            },
+            {
+              "query": "Migrate this project from mypy to ty",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 96.1,
+              "estimate": {
+                "input_tokens": 962,
+                "input_cost_usd": 0.002405
+              }
+            },
+            {
+              "query": "Modernize these type hints to use X | None instead of Optional",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 71.4,
+              "estimate": {
+                "input_tokens": 966,
+                "input_cost_usd": 0.002415
+              }
+            },
+            {
+              "query": "Scaffold a new Python package with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 56.9,
+              "estimate": {
+                "input_tokens": 961,
+                "input_cost_usd": 0.002403
+              }
+            },
+            {
+              "query": "Set up ty for type checking",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 38.4,
+              "estimate": {
+                "input_tokens": 1015,
+                "input_cost_usd": 0.002538
+              }
+            },
+            {
+              "query": "Should this interface be a Protocol or an ABC?",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 17.2,
+              "estimate": {
+                "input_tokens": 1019,
+                "input_cost_usd": 0.002548
+              }
+            },
+            {
+              "query": "Write tests for this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 60.2,
+              "estimate": {
+                "input_tokens": 958,
+                "input_cost_usd": 0.002395
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T17:48:00Z",
+        "executed": true,
+        "content_hash": "54b3b3d8570181fa3810a1cf6ecd90222883b1af9285143eaeaa383379b52ef1",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "annotate-and-configure",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1251,
+              "input_cost_usd": 0.003128
+            },
+            "measured": {
+              "input_tokens": 15550,
+              "cache_read_input_tokens": 186624,
+              "output_tokens": 3829,
+              "cost_usd": 0.56287
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:",
+                "text": "src/myapp/calc.py matches /def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:/",
+                "passed": true,
+                "evidence": "def add[T: SupportsAdd](a:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "-\u003e ",
+                "text": "src/myapp/calc.py matches /-\u003e /",
+                "passed": true,
+                "evidence": "-\u003e ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.ty\\.environment\\]",
+                "text": "pyproject.toml matches /\\[tool\\.ty\\.environment\\]/",
+                "passed": true,
+                "evidence": "[tool.ty.environment]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "python-version",
+                "text": "pyproject.toml matches /python-version/",
+                "passed": true,
+                "evidence": "python-version",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/calc.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/calc.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 206003,
+              "executor_duration_seconds": 89
+            },
+            "spec_hash": "5cc61cc72f2e7f5798ead7ca89d976714ae6c1af7e9879fe04db7b66fe526a12"
+          },
+          {
+            "id": "configure-pyright",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1249,
+              "input_cost_usd": 0.003123
+            },
+            "measured": {
+              "input_tokens": 24461,
+              "cache_read_input_tokens": 133120,
+              "output_tokens": 3450,
+              "cost_usd": 0.445703
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:",
+                "text": "src/myapp/calc.py matches /def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:/",
+                "passed": true,
+                "evidence": "def add[T: SupportsAdd](a:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "-\u003e ",
+                "text": "src/myapp/calc.py matches /-\u003e /",
+                "passed": true,
+                "evidence": "-\u003e ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.pyright\\]",
+                "text": "pyproject.toml matches /\\[tool\\.pyright\\]/",
+                "passed": true,
+                "evidence": "[tool.pyright]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pythonVersion",
+                "text": "pyproject.toml matches /pythonVersion/",
+                "passed": true,
+                "evidence": "pythonVersion",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/calc.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/calc.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 161031,
+              "executor_duration_seconds": 75.2
+            },
+            "spec_hash": "82fc925f92e7acfab76808b7a18080c1ec68a4ddcf5086b85ec39e8db7e25ca0"
+          },
+          {
+            "id": "modernize-hints",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1227,
+              "input_cost_usd": 0.003068
+            },
+            "measured": {
+              "input_tokens": 15949,
+              "cache_read_input_tokens": 96512,
+              "output_tokens": 1740,
+              "cost_usd": 0.307253
+            },
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Optional\\[",
+                "text": "src/myapp/legacy.py does not match /Optional\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Union\\[",
+                "text": "src/myapp/legacy.py does not match /Union\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "List\\[",
+                "text": "src/myapp/legacy.py does not match /List\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Dict\\[",
+                "text": "src/myapp/legacy.py does not match /Dict\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "\\| None",
+                "text": "src/myapp/legacy.py matches /\\| None/",
+                "passed": true,
+                "evidence": "| None",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "list\\[|dict\\[",
+                "text": "src/myapp/legacy.py matches /list\\[|dict\\[/",
+                "passed": true,
+                "evidence": "dict[",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/legacy.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/legacy.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 114201,
+              "executor_duration_seconds": 40.8
+            },
+            "spec_hash": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 68.3,
+          "estimate": {
+            "input_tokens": 3727,
+            "input_cost_usd": 0.009319
+          },
+          "measured": {
+            "input_tokens": 55960,
+            "cache_read_input_tokens": 416256,
+            "output_tokens": 9019,
+            "cost_usd": 1.315826
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T17:48:00Z",
+          "summary": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 58.1,
+            "measured": {
+              "input_tokens": 57695,
+              "cache_read_input_tokens": 314368,
+              "output_tokens": 6884,
+              "cost_usd": 1.033418
+            }
+          },
+          "results": [
+            {
+              "id": "annotate-and-configure",
+              "passed": true,
+              "measured": {
+                "input_tokens": 35397,
+                "cache_read_input_tokens": 114304,
+                "output_tokens": 3061,
+                "cost_usd": 0.420168
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 69.4
+              },
+              "fingerprint": "5cc61cc72f2e7f5798ead7ca89d976714ae6c1af7e9879fe04db7b66fe526a12"
+            },
+            {
+              "id": "configure-pyright",
+              "passed": true,
+              "measured": {
+                "input_tokens": 17999,
+                "cache_read_input_tokens": 126464,
+                "output_tokens": 2864,
+                "cost_usd": 0.404117
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 78.5
+              },
+              "fingerprint": "82fc925f92e7acfab76808b7a18080c1ec68a4ddcf5086b85ec39e8db7e25ca0"
+            },
+            {
+              "id": "modernize-hints",
+              "passed": true,
+              "measured": {
+                "input_tokens": 4299,
+                "cache_read_input_tokens": 73600,
+                "output_tokens": 959,
+                "cost_usd": 0.209133
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 26.4
+              },
+              "fingerprint": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T16:55:55Z",
+          "summary": {
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "pass_rate": 0.333333,
+            "avg_run_seconds": 54.7,
+            "estimate": {
+              "input_tokens": 3727,
+              "input_cost_usd": 0.009319
+            },
+            "measured": {
+              "input_tokens": 70776,
+              "cache_read_input_tokens": 330112,
+              "output_tokens": 6976,
+              "cost_usd": 1.106861
+            }
+          },
+          "results": [
+            {
+              "id": "annotate-and-configure",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1251,
+                "input_cost_usd": 0.003128
+              },
+              "measured": {
+                "input_tokens": 33449,
+                "cache_read_input_tokens": 97920,
+                "output_tokens": 2201,
+                "cost_usd": 0.361438
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 0.8
+              },
+              "timing": {
+                "executor_duration_seconds": 58
+              }
+            },
+            {
+              "id": "configure-pyright",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1249,
+                "input_cost_usd": 0.003123
+              },
+              "measured": {
+                "input_tokens": 21378,
+                "cache_read_input_tokens": 135680,
+                "output_tokens": 3035,
+                "cost_usd": 0.43817
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 0.8
+              },
+              "timing": {
+                "executor_duration_seconds": 65.4
+              }
+            },
+            {
+              "id": "modernize-hints",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1227,
+                "input_cost_usd": 0.003068
+              },
+              "measured": {
+                "input_tokens": 15949,
+                "cache_read_input_tokens": 96512,
+                "output_tokens": 1740,
+                "cost_usd": 0.307253
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 40.8
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T16:57:59Z",
+        "executed": true,
+        "content_hash": "03d90e7f18fd55de777159aa16575d3a29eeb0b32fb858d529c6a381b357c54c",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.4,
+            "estimate": {
+              "input_tokens": 1217,
+              "input_cost_usd": 0.006085
+            },
+            "spec_hash": "5c57ac61d7ce767a115533848e571ee2764c07081b40c98a1108801c80ca6f9b"
+          },
+          {
+            "query": "Set up ty for type checking",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.4,
+            "estimate": {
+              "input_tokens": 1216,
+              "input_cost_usd": 0.00608
+            },
+            "spec_hash": "d78559e6db12bbd20fca53c825bdd5f8114ba18c7e206dd3af06a9fc4b4e4018"
+          },
+          {
+            "query": "Configure ty in pyproject.toml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.9,
+            "estimate": {
+              "input_tokens": 1217,
+              "input_cost_usd": 0.006085
+            },
+            "spec_hash": "08c17ef23c3f7334ad31734fd43e723fc5a66637512aa90590029f19ee785bc3"
+          },
+          {
+            "query": "Migrate this project from mypy to ty",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "estimate": {
+              "input_tokens": 1219,
+              "input_cost_usd": 0.006095
+            },
+            "spec_hash": "070b6749aeea010906af77d66ea3acc2b5918fc1267ed6029721bf87d5a7e969"
+          },
+          {
+            "query": "Set up pyright for type checking",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 1217,
+              "input_cost_usd": 0.006085
+            },
+            "spec_hash": "651698851f8240c0e96e9c9518a2f912119c6152322b22c5fba7ece55cd8bda3"
+          },
+          {
+            "query": "Configure pyright in pyproject.toml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.4,
+            "estimate": {
+              "input_tokens": 1218,
+              "input_cost_usd": 0.00609
+            },
+            "spec_hash": "261cf87e06869fdc3dbac4f962f0a94e69dbac502a8ad973182a13b04267026f"
+          },
+          {
+            "query": "Migrate this project from mypy to pyright",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 1220,
+              "input_cost_usd": 0.0061
+            },
+            "spec_hash": "989e4e9c6fb86c3b31c6e0199e613fee30cada91c090c12853892b1402e6a33b"
+          },
+          {
+            "query": "Fix these Python type errors",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 1215,
+              "input_cost_usd": 0.006075
+            },
+            "spec_hash": "6eecd3b3e41d6602ce2387719a03420a88ae3ab34db2b2ae6c5b13599350124d"
+          },
+          {
+            "query": "Should this interface be a Protocol or an ABC?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 23.2,
+            "estimate": {
+              "input_tokens": 1220,
+              "input_cost_usd": 0.0061
+            },
+            "spec_hash": "189d8bb6f6f3bd39a19c341daa84c0ce448b812033fbc0f184450d8a37f7158b"
+          },
+          {
+            "query": "Make this Python function generic with a type parameter",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 89.3,
+            "estimate": {
+              "input_tokens": 962,
+              "input_cost_usd": 0.00481
+            }
+          },
+          {
+            "query": "Modernize these type hints to use X | None instead of Optional",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.8,
+            "estimate": {
+              "input_tokens": 1223,
+              "input_cost_usd": 0.006115
+            },
+            "spec_hash": "2d310e0f1d6175e30d504aa6ad85d977f8f2dee0b05b4ba8e32cdcae538bb06b"
+          },
+          {
+            "query": "How do I type-check my Python project?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "estimate": {
+              "input_tokens": 1219,
+              "input_cost_usd": 0.006095
+            },
+            "spec_hash": "aaeb0ed606785fcbf855dec4114a896ca8b2f28b0462ec094c83a450ae3bd04a"
+          },
+          {
+            "query": "Add return type annotations across this module",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17,
+            "estimate": {
+              "input_tokens": 1217,
+              "input_cost_usd": 0.006085
+            },
+            "spec_hash": "168dfe198a900552b33fa718b2a1e8b27cc4b7fe5b0349c007db4af6ee3301f1"
+          },
+          {
+            "query": "Format this Python code with ruff",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 31.6,
+            "estimate": {
+              "input_tokens": 960,
+              "input_cost_usd": 0.0048
+            }
+          },
+          {
+            "query": "Write tests for this function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 118,
+            "estimate": {
+              "input_tokens": 958,
+              "input_cost_usd": 0.00479
+            }
+          },
+          {
+            "query": "Add generics to my Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 117.3,
+            "estimate": {
+              "input_tokens": 960,
+              "input_cost_usd": 0.0048
+            }
+          },
+          {
+            "query": "Check at runtime whether this variable is an int",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 60,
+            "estimate": {
+              "input_tokens": 962,
+              "input_cost_usd": 0.00481
+            }
+          },
+          {
+            "query": "Scaffold a new Python package with uv",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 106.8,
+            "estimate": {
+              "input_tokens": 961,
+              "input_cost_usd": 0.004805
+            }
+          },
+          {
+            "query": "Add type annotations to my TypeScript code",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 65.4,
+            "estimate": {
+              "input_tokens": 961,
+              "input_cost_usd": 0.004805
+            }
+          }
+        ],
+        "summary": {
+          "passed": 19,
+          "failed": 0,
+          "total": 19,
+          "pass_rate": 1,
+          "avg_run_seconds": 38.2,
+          "estimate": {
+            "input_tokens": 21342,
+            "input_cost_usd": 0.10671
+          }
+        },
+        "previous": {
+          "ran_at": "2026-06-23T05:51:58Z",
+          "summary": {
+            "passed": 16,
+            "failed": 0,
+            "total": 16,
+            "pass_rate": 1,
+            "avg_run_seconds": 47.2,
+            "estimate": {
+              "input_tokens": 15878,
+              "input_cost_usd": 0.07939
+            }
+          },
+          "results": [
+            {
+              "query": "Add generics to my Go function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 117.3,
+              "estimate": {
+                "input_tokens": 960,
+                "input_cost_usd": 0.0048
+              }
+            },
+            {
+              "query": "Add return type annotations across this module",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.3,
+              "estimate": {
+                "input_tokens": 1016,
+                "input_cost_usd": 0.00508
+              }
+            },
+            {
+              "query": "Add type annotations to my TypeScript code",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 65.4,
+              "estimate": {
+                "input_tokens": 961,
+                "input_cost_usd": 0.004805
+              }
+            },
+            {
+              "query": "Add type hints to this Python function",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 20.9,
+              "estimate": {
+                "input_tokens": 1016,
+                "input_cost_usd": 0.00508
+              }
+            },
+            {
+              "query": "Check at runtime whether this variable is an int",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 60,
+              "estimate": {
+                "input_tokens": 962,
+                "input_cost_usd": 0.00481
+              }
+            },
+            {
+              "query": "Configure ty in pyproject.toml",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.7,
+              "estimate": {
+                "input_tokens": 1016,
+                "input_cost_usd": 0.00508
+              }
+            },
+            {
+              "query": "Fix these Python type errors",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 44.1,
+              "estimate": {
+                "input_tokens": 1014,
+                "input_cost_usd": 0.00507
+              }
+            },
+            {
+              "query": "Format this Python code with ruff",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 31.6,
+              "estimate": {
+                "input_tokens": 960,
+                "input_cost_usd": 0.0048
+              }
+            },
+            {
+              "query": "How do I type-check my Python project?",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.4,
+              "estimate": {
+                "input_tokens": 1018,
+                "input_cost_usd": 0.00509
+              }
+            },
+            {
+              "query": "Make this Python function generic with a type parameter",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 89.3,
+              "estimate": {
+                "input_tokens": 962,
+                "input_cost_usd": 0.00481
+              }
+            },
+            {
+              "query": "Migrate this project from mypy to ty",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.8,
+              "estimate": {
+                "input_tokens": 1018,
+                "input_cost_usd": 0.00509
+              }
+            },
+            {
+              "query": "Modernize these type hints to use X | None instead of Optional",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.5,
+              "estimate": {
+                "input_tokens": 1022,
+                "input_cost_usd": 0.00511
+              }
+            },
+            {
+              "query": "Scaffold a new Python package with uv",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 106.8,
+              "estimate": {
+                "input_tokens": 961,
+                "input_cost_usd": 0.004805
+              }
+            },
+            {
+              "query": "Set up ty for type checking",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 36.3,
+              "estimate": {
+                "input_tokens": 1015,
+                "input_cost_usd": 0.005075
+              }
+            },
+            {
+              "query": "Should this interface be a Protocol or an ABC?",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 20.6,
+              "estimate": {
+                "input_tokens": 1019,
+                "input_cost_usd": 0.005095
+              }
+            },
+            {
+              "query": "Write tests for this function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 118,
+              "estimate": {
+                "input_tokens": 958,
+                "input_cost_usd": 0.00479
+              }
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T17:50:40Z",
+        "executed": true,
+        "content_hash": "54b3b3d8570181fa3810a1cf6ecd90222883b1af9285143eaeaa383379b52ef1",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "annotate-and-configure",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1251,
+              "input_cost_usd": 0.006255
+            },
+            "measured": {
+              "input_tokens": 33432,
+              "cache_read_input_tokens": 165632,
+              "output_tokens": 3356,
+              "cost_usd": 1.096
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:",
+                "text": "src/myapp/calc.py matches /def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:/",
+                "passed": true,
+                "evidence": "def add(a:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "-\u003e ",
+                "text": "src/myapp/calc.py matches /-\u003e /",
+                "passed": true,
+                "evidence": "-\u003e ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.ty\\.environment\\]",
+                "text": "pyproject.toml matches /\\[tool\\.ty\\.environment\\]/",
+                "passed": true,
+                "evidence": "[tool.ty.environment]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "python-version",
+                "text": "pyproject.toml matches /python-version/",
+                "passed": true,
+                "evidence": "python-version",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/calc.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/calc.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 202420,
+              "executor_duration_seconds": 76.6
+            },
+            "spec_hash": "5cc61cc72f2e7f5798ead7ca89d976714ae6c1af7e9879fe04db7b66fe526a12"
+          },
+          {
+            "id": "configure-pyright",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1249,
+              "input_cost_usd": 0.006245
+            },
+            "measured": {
+              "input_tokens": 35862,
+              "cache_read_input_tokens": 120832,
+              "output_tokens": 2465,
+              "cost_usd": 0.85742
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:",
+                "text": "src/myapp/calc.py matches /def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:/",
+                "passed": true,
+                "evidence": "def add(a:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "-\u003e ",
+                "text": "src/myapp/calc.py matches /-\u003e /",
+                "passed": true,
+                "evidence": "-\u003e ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.pyright\\]",
+                "text": "pyproject.toml matches /\\[tool\\.pyright\\]/",
+                "passed": true,
+                "evidence": "[tool.pyright]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pythonVersion",
+                "text": "pyproject.toml matches /pythonVersion/",
+                "passed": true,
+                "evidence": "pythonVersion",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/calc.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/calc.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 159159,
+              "executor_duration_seconds": 62.1
+            },
+            "spec_hash": "82fc925f92e7acfab76808b7a18080c1ec68a4ddcf5086b85ec39e8db7e25ca0"
+          },
+          {
+            "id": "modernize-hints",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1227,
+              "input_cost_usd": 0.006135
+            },
+            "measured": {
+              "input_tokens": 10750,
+              "cache_read_input_tokens": 68608,
+              "output_tokens": 1222,
+              "cost_usd": 0.43345
+            },
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Optional\\[",
+                "text": "src/myapp/legacy.py does not match /Optional\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Union\\[",
+                "text": "src/myapp/legacy.py does not match /Union\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "List\\[",
+                "text": "src/myapp/legacy.py does not match /List\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Dict\\[",
+                "text": "src/myapp/legacy.py does not match /Dict\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "\\| None",
+                "text": "src/myapp/legacy.py matches /\\| None/",
+                "passed": true,
+                "evidence": "| None",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "list\\[|dict\\[",
+                "text": "src/myapp/legacy.py matches /list\\[|dict\\[/",
+                "passed": true,
+                "evidence": "dict[",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/legacy.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/legacy.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 80580,
+              "executor_duration_seconds": 32.9
+            },
+            "spec_hash": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 57.2,
+          "estimate": {
+            "input_tokens": 3727,
+            "input_cost_usd": 0.018635
+          },
+          "measured": {
+            "input_tokens": 80044,
+            "cache_read_input_tokens": 355072,
+            "output_tokens": 7043,
+            "cost_usd": 2.38687
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T17:50:40Z",
+          "summary": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 63.1,
+            "measured": {
+              "input_tokens": 107035,
+              "cache_read_input_tokens": 513408,
+              "output_tokens": 7597,
+              "cost_usd": 3.330125
+            }
+          },
+          "results": [
+            {
+              "id": "annotate-and-configure",
+              "passed": true,
+              "measured": {
+                "input_tokens": 73824,
+                "cache_read_input_tokens": 253696,
+                "output_tokens": 3344,
+                "cost_usd": 1.73792
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 84.1
+              },
+              "fingerprint": "5cc61cc72f2e7f5798ead7ca89d976714ae6c1af7e9879fe04db7b66fe526a12"
+            },
+            {
+              "id": "configure-pyright",
+              "passed": true,
+              "measured": {
+                "input_tokens": 24015,
+                "cache_read_input_tokens": 180480,
+                "output_tokens": 3199,
+                "cost_usd": 1.118445
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 76.3
+              },
+              "fingerprint": "82fc925f92e7acfab76808b7a18080c1ec68a4ddcf5086b85ec39e8db7e25ca0"
+            },
+            {
+              "id": "modernize-hints",
+              "passed": true,
+              "measured": {
+                "input_tokens": 9196,
+                "cache_read_input_tokens": 79232,
+                "output_tokens": 1054,
+                "cost_usd": 0.47376
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 28.9
+              },
+              "fingerprint": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T17:00:16Z",
+          "summary": {
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "pass_rate": 0.333333,
+            "avg_run_seconds": 62,
+            "estimate": {
+              "input_tokens": 3727,
+              "input_cost_usd": 0.018635
+            },
+            "measured": {
+              "input_tokens": 61553,
+              "cache_read_input_tokens": 483072,
+              "output_tokens": 7858,
+              "cost_usd": 2.958865
+            }
+          },
+          "results": [
+            {
+              "id": "annotate-and-configure",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1251,
+                "input_cost_usd": 0.006255
+              },
+              "measured": {
+                "input_tokens": 37406,
+                "cache_read_input_tokens": 228352,
+                "output_tokens": 3321,
+                "cost_usd": 1.42842
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 0.8
+              },
+              "timing": {
+                "executor_duration_seconds": 76.9
+              }
+            },
+            {
+              "id": "configure-pyright",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1249,
+                "input_cost_usd": 0.006245
+              },
+              "measured": {
+                "input_tokens": 13397,
+                "cache_read_input_tokens": 186112,
+                "output_tokens": 3315,
+                "cost_usd": 1.096995
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 0.8
+              },
+              "timing": {
+                "executor_duration_seconds": 76.1
+              }
+            },
+            {
+              "id": "modernize-hints",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1227,
+                "input_cost_usd": 0.006135
+              },
+              "measured": {
+                "input_tokens": 10750,
+                "cache_read_input_tokens": 68608,
+                "output_tokens": 1222,
+                "cost_usd": 0.43345
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 32.9
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
