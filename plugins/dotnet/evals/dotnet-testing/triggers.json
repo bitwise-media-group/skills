@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "dotnet-testing",
+  "triggers": [
+    { "query": "Write xUnit tests for this Parse method", "should_trigger": true },
+    { "query": "Add a [Theory] with InlineData for these cases", "should_trigger": true },
+    { "query": "Set up a test fixture shared across the test class", "should_trigger": true },
+    { "query": "Should I use Moq here or a hand-written fake?", "should_trigger": true },
+    { "query": "Integration-test this endpoint with WebApplicationFactory", "should_trigger": true },
+    { "query": "Add MemberData for these object test cases", "should_trigger": true },
+    { "query": "How do I assert that this async method throws in xUnit?", "should_trigger": true },
+    { "query": "Write pytest tests for this module", "should_trigger": false },
+    { "query": "Refactor this C# method to be async with a CancellationToken", "should_trigger": false },
+    { "query": "Set up the GitHub Actions release workflow for my package", "should_trigger": false },
+    { "query": "Scaffold a new .NET solution with src and tests", "should_trigger": false },
+    { "query": "Add table-driven tests for this Go function", "should_trigger": false }
+  ]
+}

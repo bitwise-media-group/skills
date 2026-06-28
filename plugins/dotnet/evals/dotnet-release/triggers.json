@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "dotnet-release",
+  "triggers": [
+    { "query": "Package this library as a NuGet package", "should_trigger": true },
+    { "query": "Publish to NuGet via GitHub Actions with trusted publishing", "should_trigger": true },
+    { "query": "Set up SourceLink and deterministic builds for my package", "should_trigger": true },
+    { "query": "Version my NuGet package from git tags", "should_trigger": true },
+    { "query": "Add a CI workflow that builds, tests, and checks formatting for my .NET repo", "should_trigger": true },
+    { "query": "Add Dependabot for my .NET repo", "should_trigger": true },
+    { "query": "Configure dotnet pack metadata for this library", "should_trigger": true },
+    { "query": "Scaffold a new .NET solution with src and tests", "should_trigger": false },
+    { "query": "Write xUnit tests for this class", "should_trigger": false },
+    { "query": "Add XML doc comments to this public API", "should_trigger": false },
+    { "query": "Set up GoReleaser for my Go project", "should_trigger": false },
+    { "query": "Publish my Python package to PyPI", "should_trigger": false }
+  ]
+}

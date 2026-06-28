@@ -1,0 +1,16 @@
+<!--
+  Save as src/App/App.csproj (rename App throughout). An SDK-style library project:
+  TargetFramework, Nullable, analyzers, and warnings-as-errors are all inherited from
+  Directory.Build.props, and package versions come from Directory.Packages.props — so
+  PackageReference carries no Version attribute.
+-->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Acme.App</RootNamespace>
+    <AssemblyName>Acme.App</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "dotnet-style",
+  "evals": [
+    {
+      "id": "exceptions-logging",
+      "prompt": "Refactor Config.cs to our C# house style — fix the exception handling and replace the console output with structured logging.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["fixtures/styledemo/StyleDemo.csproj", "files/Config.cs"],
+      "assertions": [
+        { "type": "regex", "path": "Config.cs", "pattern": "ILogger" },
+        { "type": "regex", "path": "Config.cs", "pattern": "Log(Error|Warning|Information)" },
+        { "type": "not_regex", "path": "Config.cs", "pattern": "Console\\.WriteLine" },
+        { "type": "not_regex", "path": "Config.cs", "pattern": "throw ex;" }
+      ]
+    },
+    {
+      "id": "async-ct",
+      "prompt": "Make ClientStore.GetClient in Store.cs asynchronous and thread a CancellationToken through to Lookup, following our C# house style. Edit the file directly — no need to restore packages or build.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["fixtures/asyncdemo/AsyncDemo.csproj", "files/Store.cs"],
+      "assertions": [
+        { "type": "regex", "path": "Store.cs", "pattern": "async Task" },
+        { "type": "regex", "path": "Store.cs", "pattern": "CancellationToken" },
+        { "type": "not_regex", "path": "Store.cs", "pattern": "\\.Result\\b" },
+        { "type": "not_regex", "path": "Store.cs", "pattern": "async void" }
+      ]
+    }
+  ]
+}

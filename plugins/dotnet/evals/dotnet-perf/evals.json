@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "dotnet-perf",
+  "evals": [
+    {
+      "id": "string-builder",
+      "prompt": "Refactor SpecBuilder.Build in BuildSpec.cs to stop concatenating strings in a loop, per our performance conventions.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["fixtures/perfdemo/PerfDemo.csproj", "files/BuildSpec.cs"],
+      "assertions": [
+        { "type": "regex", "path": "BuildSpec.cs", "pattern": "StringBuilder|string\\.Join|string\\.Create" },
+        { "type": "not_regex", "path": "BuildSpec.cs", "pattern": "\\+=" }
+      ]
+    },
+    {
+      "id": "sync-over-async",
+      "prompt": "Fix the sync-over-async call in Worker.cs so it no longer blocks on the task.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["fixtures/perfdemo/PerfDemo.csproj", "files/Worker.cs"],
+      "assertions": [
+        { "type": "regex", "path": "Worker.cs", "pattern": "async Task" },
+        { "type": "not_regex", "path": "Worker.cs", "pattern": "\\.Result\\b" },
+        { "type": "not_regex", "path": "Worker.cs", "pattern": "\\.Wait\\(\\)" },
+        { "type": "not_regex", "path": "Worker.cs", "pattern": "GetAwaiter\\(\\)\\.GetResult\\(\\)" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2105 @@
+{
+  "schema": 5,
+  "plugin": "dotnet",
+  "skill": "dotnet-style",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:05:35Z",
+        "executed": true,
+        "content_hash": "e9f1bd39781fba03ffcf25b9d8090a04493ae527fe466f9115d47424666c3ce4",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Refactor this C# code to handle exceptions properly",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 4.6,
+            "estimate": {
+              "input_tokens": 1881,
+              "input_cost_usd": 0.001881
+            },
+            "spec_hash": "86759950fb7b5412d0df034aa50634d8ac4397f81dc40df2edebfd969cf0a4ad"
+          },
+          {
+            "query": "Add structured logging to my .NET service",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.1,
+            "estimate": {
+              "input_tokens": 1878,
+              "input_cost_usd": 0.001878
+            },
+            "spec_hash": "69d4721f3c260f9c95ff3d4301e6935f1bd11482d80a7e8e08821f9f1985da92"
+          },
+          {
+            "query": "Make this C# method async and thread a CancellationToken",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.7,
+            "estimate": {
+              "input_tokens": 1884,
+              "input_cost_usd": 0.001884
+            },
+            "spec_hash": "5a45fe82fdc590d8d5040cd2b57203514dc6ef541bb05f6cd3310673fc5022cc"
+          },
+          {
+            "query": "Convert these Console.WriteLine calls to ILogger",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.7,
+            "estimate": {
+              "input_tokens": 1879,
+              "input_cost_usd": 0.001879
+            },
+            "spec_hash": "2374f55206fbd46a63ef5bd4429fe5c89f9a695b74d620d1e03e5a4f5373eb5e"
+          },
+          {
+            "query": "Review this C# class for idiomatic style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 3.1,
+            "estimate": {
+              "input_tokens": 1880,
+              "input_cost_usd": 0.00188
+            },
+            "spec_hash": "c63d14e3f17a8cc3e94c6c0dccfc5237682b046c692cb211ac61b4a20d3dfc1a"
+          },
+          {
+            "query": "Should this DTO be a record or a class?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.8,
+            "estimate": {
+              "input_tokens": 1881,
+              "input_cost_usd": 0.001881
+            },
+            "spec_hash": "971aae7268cb5728b37d68b4efa67e9571e025a309a2084253bdce1176be28f8"
+          },
+          {
+            "query": "Replace Newtonsoft.Json with System.Text.Json in this serializer",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 1887,
+              "input_cost_usd": 0.001887
+            },
+            "spec_hash": "8387ae9954cb9ddded962192290039f1c23449e66efa78dca4e9dd083cfb3f4a"
+          },
+          {
+            "query": "Write xUnit tests for this class",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.9,
+            "estimate": {
+              "input_tokens": 1877,
+              "input_cost_usd": 0.001877
+            },
+            "spec_hash": "b9e9f9a82b660c5d4eb1a930b55460aa2bffb7144159f068b0674cae6fbe0482"
+          },
+          {
+            "query": "Set up a GitHub Actions workflow to publish my NuGet package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15,
+            "estimate": {
+              "input_tokens": 1883,
+              "input_cost_usd": 0.001883
+            },
+            "spec_hash": "09315324d9dfdc59cf12dfed7f0100007898b60323900bfe1f90bddb03b3b9c0"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests directories",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.8,
+            "estimate": {
+              "input_tokens": 1882,
+              "input_cost_usd": 0.001882
+            },
+            "spec_hash": "77211001d8d3fb08d116b50aaa5c7425829273cfd8b4b11a6ddd65ecf46bc63a"
+          },
+          {
+            "query": "Refactor this Go code to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "estimate": {
+              "input_tokens": 1882,
+              "input_cost_usd": 0.001882
+            },
+            "spec_hash": "b4579b51d98034433f31a663a4e1e0d13683393acd9dde86f00faf423b9ae88c"
+          },
+          {
+            "query": "Add structured logging to my Express app",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 1877,
+              "input_cost_usd": 0.001877
+            },
+            "spec_hash": "0521e2a539bc28c86cf3bad0f2f1b6d9bc1332f1720da35af682b25dc73306bf"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 7,
+          "total": 12,
+          "pass_rate": 0.416667,
+          "avg_run_seconds": 7.4,
+          "estimate": {
+            "input_tokens": 22571,
+            "input_cost_usd": 0.022571
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:06:25Z",
+        "executed": true,
+        "content_hash": "72ba6910d6b176451420a8e20a956fd42247dbb2d1adeabe7499e61ee58e77ad",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "exceptions-logging",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1896,
+              "input_cost_usd": 0.001896
+            },
+            "measured": {
+              "input_tokens": 34,
+              "cache_read_input_tokens": 103925,
+              "cache_creation_input_tokens": 20551,
+              "output_tokens": 1897,
+              "cost_usd": 0.061634
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Config.cs",
+                "pattern": "ILogger",
+                "text": "Config.cs matches /ILogger/",
+                "passed": true,
+                "evidence": "ILogger",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Config.cs",
+                "pattern": "Log(Error|Warning|Information)",
+                "text": "Config.cs matches /Log(Error|Warning|Information)/",
+                "passed": true,
+                "evidence": "LogInformation",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Config.cs",
+                "pattern": "Console\\.WriteLine",
+                "text": "Config.cs does not match /Console\\.WriteLine/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Config.cs",
+                "pattern": "throw ex;",
+                "text": "Config.cs does not match /throw ex;/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 126407,
+              "executor_duration_seconds": 38.6
+            },
+            "spec_hash": "0667ac0d99d15bca598aca004a671fffbe7168aee29cf52f3180949e648c71f3"
+          },
+          {
+            "id": "async-ct",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1916,
+              "input_cost_usd": 0.001916
+            },
+            "measured": {
+              "input_tokens": 24,
+              "cache_read_input_tokens": 80078,
+              "cache_creation_input_tokens": 16133,
+              "output_tokens": 904,
+              "cost_usd": 0.045479
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Store.cs",
+                "pattern": "async Task",
+                "text": "Store.cs matches /async Task/",
+                "passed": true,
+                "evidence": "async Task",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Store.cs",
+                "pattern": "CancellationToken",
+                "text": "Store.cs matches /CancellationToken/",
+                "passed": true,
+                "evidence": "CancellationToken",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Store.cs",
+                "pattern": "\\.Result\\b",
+                "text": "Store.cs does not match /\\.Result\\b/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Store.cs",
+                "pattern": "async void",
+                "text": "Store.cs does not match /async void/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 97139,
+              "executor_duration_seconds": 14.3
+            },
+            "spec_hash": "842168ee2dfd14980f7ea93b6816d6b7f96e3e770c9e95c1d556f1d9b2560b3b"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 26.5,
+          "estimate": {
+            "input_tokens": 3812,
+            "input_cost_usd": 0.003812
+          },
+          "measured": {
+            "input_tokens": 58,
+            "cache_read_input_tokens": 184003,
+            "cache_creation_input_tokens": 36684,
+            "output_tokens": 2801,
+            "cost_usd": 0.107113
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T20:06:25Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 13,
+            "measured": {
+              "input_tokens": 48,
+              "cache_read_input_tokens": 135870,
+              "cache_creation_input_tokens": 31252,
+              "output_tokens": 1253,
+              "cost_usd": 0.083686
+            }
+          },
+          "results": [
+            {
+              "id": "async-ct",
+              "passed": true,
+              "measured": {
+                "input_tokens": 28,
+                "cache_read_input_tokens": 80034,
+                "cache_creation_input_tokens": 15931,
+                "output_tokens": 820,
+                "cost_usd": 0.044654
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 15.4
+              },
+              "fingerprint": "842168ee2dfd14980f7ea93b6816d6b7f96e3e770c9e95c1d556f1d9b2560b3b"
+            },
+            {
+              "id": "exceptions-logging",
+              "passed": false,
+              "measured": {
+                "input_tokens": 20,
+                "cache_read_input_tokens": 55836,
+                "cache_creation_input_tokens": 15321,
+                "output_tokens": 433,
+                "cost_usd": 0.039032
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 10.5
+              },
+              "fingerprint": "0667ac0d99d15bca598aca004a671fffbe7168aee29cf52f3180949e648c71f3"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:12:16Z",
+        "executed": true,
+        "content_hash": "e9f1bd39781fba03ffcf25b9d8090a04493ae527fe466f9115d47424666c3ce4",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Refactor this C# code to handle exceptions properly",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 15.9,
+            "estimate": {
+              "input_tokens": 2547,
+              "input_cost_usd": 0.012735
+            },
+            "spec_hash": "86759950fb7b5412d0df034aa50634d8ac4397f81dc40df2edebfd969cf0a4ad"
+          },
+          {
+            "query": "Add structured logging to my .NET service",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.4,
+            "estimate": {
+              "input_tokens": 2542,
+              "input_cost_usd": 0.01271
+            },
+            "spec_hash": "69d4721f3c260f9c95ff3d4301e6935f1bd11482d80a7e8e08821f9f1985da92"
+          },
+          {
+            "query": "Make this C# method async and thread a CancellationToken",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.5,
+            "estimate": {
+              "input_tokens": 2547,
+              "input_cost_usd": 0.012735
+            },
+            "spec_hash": "5a45fe82fdc590d8d5040cd2b57203514dc6ef541bb05f6cd3310673fc5022cc"
+          },
+          {
+            "query": "Convert these Console.WriteLine calls to ILogger",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 2549,
+              "input_cost_usd": 0.012745
+            },
+            "spec_hash": "2374f55206fbd46a63ef5bd4429fe5c89f9a695b74d620d1e03e5a4f5373eb5e"
+          },
+          {
+            "query": "Review this C# class for idiomatic style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.2,
+            "estimate": {
+              "input_tokens": 2543,
+              "input_cost_usd": 0.012715
+            },
+            "spec_hash": "c63d14e3f17a8cc3e94c6c0dccfc5237682b046c692cb211ac61b4a20d3dfc1a"
+          },
+          {
+            "query": "Should this DTO be a record or a class?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 2543,
+              "input_cost_usd": 0.012715
+            },
+            "spec_hash": "971aae7268cb5728b37d68b4efa67e9571e025a309a2084253bdce1176be28f8"
+          },
+          {
+            "query": "Replace Newtonsoft.Json with System.Text.Json in this serializer",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 2556,
+              "input_cost_usd": 0.01278
+            },
+            "spec_hash": "8387ae9954cb9ddded962192290039f1c23449e66efa78dca4e9dd083cfb3f4a"
+          },
+          {
+            "query": "Write xUnit tests for this class",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.6,
+            "estimate": {
+              "input_tokens": 2541,
+              "input_cost_usd": 0.012705
+            },
+            "spec_hash": "b9e9f9a82b660c5d4eb1a930b55460aa2bffb7144159f068b0674cae6fbe0482"
+          },
+          {
+            "query": "Set up a GitHub Actions workflow to publish my NuGet package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.4,
+            "estimate": {
+              "input_tokens": 2553,
+              "input_cost_usd": 0.012765
+            },
+            "spec_hash": "09315324d9dfdc59cf12dfed7f0100007898b60323900bfe1f90bddb03b3b9c0"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests directories",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.3,
+            "estimate": {
+              "input_tokens": 2549,
+              "input_cost_usd": 0.012745
+            },
+            "spec_hash": "77211001d8d3fb08d116b50aaa5c7425829273cfd8b4b11a6ddd65ecf46bc63a"
+          },
+          {
+            "query": "Refactor this Go code to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.7,
+            "estimate": {
+              "input_tokens": 2547,
+              "input_cost_usd": 0.012735
+            },
+            "spec_hash": "b4579b51d98034433f31a663a4e1e0d13683393acd9dde86f00faf423b9ae88c"
+          },
+          {
+            "query": "Add structured logging to my Express app",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18.3,
+            "estimate": {
+              "input_tokens": 2541,
+              "input_cost_usd": 0.012705
+            },
+            "spec_hash": "0521e2a539bc28c86cf3bad0f2f1b6d9bc1332f1720da35af682b25dc73306bf"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 6,
+          "total": 12,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 13.4,
+          "estimate": {
+            "input_tokens": 30558,
+            "input_cost_usd": 0.15279
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:16:23Z",
+        "executed": true,
+        "content_hash": "72ba6910d6b176451420a8e20a956fd42247dbb2d1adeabe7499e61ee58e77ad",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "exceptions-logging",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2565,
+              "input_cost_usd": 0.012825
+            },
+            "measured": {
+              "input_tokens": 2901,
+              "cache_read_input_tokens": 261937,
+              "cache_creation_input_tokens": 24525,
+              "output_tokens": 13044,
+              "cost_usd": 0.717435
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Config.cs",
+                "pattern": "ILogger",
+                "text": "Config.cs matches /ILogger/",
+                "passed": true,
+                "evidence": "ILogger",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Config.cs",
+                "pattern": "Log(Error|Warning|Information)",
+                "text": "Config.cs matches /Log(Error|Warning|Information)/",
+                "passed": true,
+                "evidence": "LogInformation",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Config.cs",
+                "pattern": "Console\\.WriteLine",
+                "text": "Config.cs does not match /Console\\.WriteLine/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Config.cs",
+                "pattern": "throw ex;",
+                "text": "Config.cs does not match /throw ex;/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Edit": 1,
+                "Glob": 3,
+                "Read": 3,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 10
+            },
+            "timing": {
+              "total_tokens": 302407,
+              "executor_duration_seconds": 185.3
+            },
+            "spec_hash": "0667ac0d99d15bca598aca004a671fffbe7168aee29cf52f3180949e648c71f3"
+          },
+          {
+            "id": "async-ct",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2595,
+              "input_cost_usd": 0.012975
+            },
+            "measured": {
+              "input_tokens": 2762,
+              "cache_read_input_tokens": 83049,
+              "cache_creation_input_tokens": 12242,
+              "output_tokens": 3965,
+              "cost_usd": 0.277541
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Store.cs",
+                "pattern": "async Task",
+                "text": "Store.cs matches /async Task/",
+                "passed": true,
+                "evidence": "async Task",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Store.cs",
+                "pattern": "CancellationToken",
+                "text": "Store.cs matches /CancellationToken/",
+                "passed": true,
+                "evidence": "CancellationToken",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Store.cs",
+                "pattern": "\\.Result\\b",
+                "text": "Store.cs does not match /\\.Result\\b/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Store.cs",
+                "pattern": "async void",
+                "text": "Store.cs does not match /async void/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 102018,
+              "executor_duration_seconds": 55.8
+            },
+            "spec_hash": "842168ee2dfd14980f7ea93b6816d6b7f96e3e770c9e95c1d556f1d9b2560b3b"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 120.6,
+          "estimate": {
+            "input_tokens": 5160,
+            "input_cost_usd": 0.0258
+          },
+          "measured": {
+            "input_tokens": 5663,
+            "cache_read_input_tokens": 344986,
+            "cache_creation_input_tokens": 36767,
+            "output_tokens": 17009,
+            "cost_usd": 0.994976
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T20:16:23Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 53.5,
+            "measured": {
+              "input_tokens": 5159,
+              "cache_read_input_tokens": 336490,
+              "cache_creation_input_tokens": 18581,
+              "output_tokens": 6872,
+              "cost_usd": 0.552922
+            }
+          },
+          "results": [
+            {
+              "id": "async-ct",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2513,
+                "cache_read_input_tokens": 143680,
+                "cache_creation_input_tokens": 8649,
+                "output_tokens": 2984,
+                "cost_usd": 0.246156
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 46.3
+              },
+              "fingerprint": "842168ee2dfd14980f7ea93b6816d6b7f96e3e770c9e95c1d556f1d9b2560b3b"
+            },
+            {
+              "id": "exceptions-logging",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2646,
+                "cache_read_input_tokens": 192810,
+                "cache_creation_input_tokens": 9932,
+                "output_tokens": 3888,
+                "cost_usd": 0.306766
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 60.7
+              },
+              "fingerprint": "0667ac0d99d15bca598aca004a671fffbe7168aee29cf52f3180949e648c71f3"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:08:18Z",
+        "executed": true,
+        "content_hash": "e9f1bd39781fba03ffcf25b9d8090a04493ae527fe466f9115d47424666c3ce4",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Refactor this C# code to handle exceptions properly",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 1881,
+              "input_cost_usd": 0.005643
+            },
+            "spec_hash": "86759950fb7b5412d0df034aa50634d8ac4397f81dc40df2edebfd969cf0a4ad"
+          },
+          {
+            "query": "Add structured logging to my .NET service",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 32.5,
+            "estimate": {
+              "input_tokens": 1878,
+              "input_cost_usd": 0.005634
+            },
+            "spec_hash": "69d4721f3c260f9c95ff3d4301e6935f1bd11482d80a7e8e08821f9f1985da92"
+          },
+          {
+            "query": "Make this C# method async and thread a CancellationToken",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.9,
+            "estimate": {
+              "input_tokens": 1884,
+              "input_cost_usd": 0.005652
+            },
+            "spec_hash": "5a45fe82fdc590d8d5040cd2b57203514dc6ef541bb05f6cd3310673fc5022cc"
+          },
+          {
+            "query": "Convert these Console.WriteLine calls to ILogger",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.1,
+            "estimate": {
+              "input_tokens": 1879,
+              "input_cost_usd": 0.005637
+            },
+            "spec_hash": "2374f55206fbd46a63ef5bd4429fe5c89f9a695b74d620d1e03e5a4f5373eb5e"
+          },
+          {
+            "query": "Review this C# class for idiomatic style",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 3.8,
+            "estimate": {
+              "input_tokens": 1880,
+              "input_cost_usd": 0.00564
+            },
+            "spec_hash": "c63d14e3f17a8cc3e94c6c0dccfc5237682b046c692cb211ac61b4a20d3dfc1a"
+          },
+          {
+            "query": "Should this DTO be a record or a class?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 1881,
+              "input_cost_usd": 0.005643
+            },
+            "spec_hash": "971aae7268cb5728b37d68b4efa67e9571e025a309a2084253bdce1176be28f8"
+          },
+          {
+            "query": "Replace Newtonsoft.Json with System.Text.Json in this serializer",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 1887,
+              "input_cost_usd": 0.005661
+            },
+            "spec_hash": "8387ae9954cb9ddded962192290039f1c23449e66efa78dca4e9dd083cfb3f4a"
+          },
+          {
+            "query": "Write xUnit tests for this class",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.7,
+            "estimate": {
+              "input_tokens": 1877,
+              "input_cost_usd": 0.005631
+            },
+            "spec_hash": "b9e9f9a82b660c5d4eb1a930b55460aa2bffb7144159f068b0674cae6fbe0482"
+          },
+          {
+            "query": "Set up a GitHub Actions workflow to publish my NuGet package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 22.9,
+            "estimate": {
+              "input_tokens": 1883,
+              "input_cost_usd": 0.005649
+            },
+            "spec_hash": "09315324d9dfdc59cf12dfed7f0100007898b60323900bfe1f90bddb03b3b9c0"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests directories",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.9,
+            "estimate": {
+              "input_tokens": 1882,
+              "input_cost_usd": 0.005646
+            },
+            "spec_hash": "77211001d8d3fb08d116b50aaa5c7425829273cfd8b4b11a6ddd65ecf46bc63a"
+          },
+          {
+            "query": "Refactor this Go code to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.9,
+            "estimate": {
+              "input_tokens": 1882,
+              "input_cost_usd": 0.005646
+            },
+            "spec_hash": "b4579b51d98034433f31a663a4e1e0d13683393acd9dde86f00faf423b9ae88c"
+          },
+          {
+            "query": "Add structured logging to my Express app",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.5,
+            "estimate": {
+              "input_tokens": 1877,
+              "input_cost_usd": 0.005631
+            },
+            "spec_hash": "0521e2a539bc28c86cf3bad0f2f1b6d9bc1332f1720da35af682b25dc73306bf"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 7,
+          "total": 12,
+          "pass_rate": 0.416667,
+          "avg_run_seconds": 11.9,
+          "estimate": {
+            "input_tokens": 22571,
+            "input_cost_usd": 0.067713
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:10:02Z",
+        "executed": true,
+        "content_hash": "72ba6910d6b176451420a8e20a956fd42247dbb2d1adeabe7499e61ee58e77ad",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "exceptions-logging",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1896,
+              "input_cost_usd": 0.005688
+            },
+            "measured": {
+              "input_tokens": 10,
+              "cache_read_input_tokens": 168400,
+              "cache_creation_input_tokens": 12996,
+              "output_tokens": 3531,
+              "cost_usd": 0.182112
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Config.cs",
+                "pattern": "ILogger",
+                "text": "Config.cs matches /ILogger/",
+                "passed": true,
+                "evidence": "ILogger",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Config.cs",
+                "pattern": "Log(Error|Warning|Information)",
+                "text": "Config.cs matches /Log(Error|Warning|Information)/",
+                "passed": true,
+                "evidence": "LogInformation",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Config.cs",
+                "pattern": "Console\\.WriteLine",
+                "text": "Config.cs does not match /Console\\.WriteLine/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Config.cs",
+                "pattern": "throw ex;",
+                "text": "Config.cs does not match /throw ex;/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Glob": 2,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 184937,
+              "executor_duration_seconds": 66.8
+            },
+            "spec_hash": "0667ac0d99d15bca598aca004a671fffbe7168aee29cf52f3180949e648c71f3"
+          },
+          {
+            "id": "async-ct",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1916,
+              "input_cost_usd": 0.005748
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 114074,
+              "cache_creation_input_tokens": 10163,
+              "output_tokens": 710,
+              "cost_usd": 0.106525
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Store.cs",
+                "pattern": "async Task",
+                "text": "Store.cs matches /async Task/",
+                "passed": true,
+                "evidence": "async Task",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Store.cs",
+                "pattern": "CancellationToken",
+                "text": "Store.cs matches /CancellationToken/",
+                "passed": true,
+                "evidence": "CancellationToken",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Store.cs",
+                "pattern": "\\.Result\\b",
+                "text": "Store.cs does not match /\\.Result\\b/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Store.cs",
+                "pattern": "async void",
+                "text": "Store.cs does not match /async void/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 124955,
+              "executor_duration_seconds": 16.9
+            },
+            "spec_hash": "842168ee2dfd14980f7ea93b6816d6b7f96e3e770c9e95c1d556f1d9b2560b3b"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 41.8,
+          "estimate": {
+            "input_tokens": 3812,
+            "input_cost_usd": 0.011436
+          },
+          "measured": {
+            "input_tokens": 18,
+            "cache_read_input_tokens": 282474,
+            "cache_creation_input_tokens": 23159,
+            "output_tokens": 4241,
+            "cost_usd": 0.288637
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T20:10:02Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 31.2,
+            "measured": {
+              "input_tokens": 16,
+              "cache_read_input_tokens": 265529,
+              "cache_creation_input_tokens": 18012,
+              "output_tokens": 2647,
+              "cost_usd": 0.228766
+            }
+          },
+          "results": [
+            {
+              "id": "async-ct",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7,
+                "cache_read_input_tokens": 108727,
+                "cache_creation_input_tokens": 8567,
+                "output_tokens": 896,
+                "cost_usd": 0.098142
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 25.1
+              },
+              "fingerprint": "842168ee2dfd14980f7ea93b6816d6b7f96e3e770c9e95c1d556f1d9b2560b3b"
+            },
+            {
+              "id": "exceptions-logging",
+              "passed": true,
+              "measured": {
+                "input_tokens": 9,
+                "cache_read_input_tokens": 156802,
+                "cache_creation_input_tokens": 9445,
+                "output_tokens": 1751,
+                "cost_usd": 0.130624
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 37.3
+              },
+              "fingerprint": "0667ac0d99d15bca598aca004a671fffbe7168aee29cf52f3180949e648c71f3"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:24:04Z",
+        "executed": true,
+        "content_hash": "e9f1bd39781fba03ffcf25b9d8090a04493ae527fe466f9115d47424666c3ce4",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Refactor this C# code to handle exceptions properly",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 56.2,
+            "estimate": {
+              "input_tokens": 1610,
+              "input_cost_usd": 0.004025
+            },
+            "spec_hash": "86759950fb7b5412d0df034aa50634d8ac4397f81dc40df2edebfd969cf0a4ad"
+          },
+          {
+            "query": "Add structured logging to my .NET service",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.4,
+            "estimate": {
+              "input_tokens": 1608,
+              "input_cost_usd": 0.00402
+            },
+            "spec_hash": "69d4721f3c260f9c95ff3d4301e6935f1bd11482d80a7e8e08821f9f1985da92"
+          },
+          {
+            "query": "Make this C# method async and thread a CancellationToken",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 44.3,
+            "estimate": {
+              "input_tokens": 1611,
+              "input_cost_usd": 0.004028
+            },
+            "spec_hash": "5a45fe82fdc590d8d5040cd2b57203514dc6ef541bb05f6cd3310673fc5022cc"
+          },
+          {
+            "query": "Convert these Console.WriteLine calls to ILogger",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 39.8,
+            "estimate": {
+              "input_tokens": 1608,
+              "input_cost_usd": 0.00402
+            },
+            "spec_hash": "2374f55206fbd46a63ef5bd4429fe5c89f9a695b74d620d1e03e5a4f5373eb5e"
+          },
+          {
+            "query": "Review this C# class for idiomatic style",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 30.5,
+            "estimate": {
+              "input_tokens": 1609,
+              "input_cost_usd": 0.004023
+            },
+            "spec_hash": "c63d14e3f17a8cc3e94c6c0dccfc5237682b046c692cb211ac61b4a20d3dfc1a"
+          },
+          {
+            "query": "Should this DTO be a record or a class?",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 38.8,
+            "estimate": {
+              "input_tokens": 1610,
+              "input_cost_usd": 0.004025
+            },
+            "spec_hash": "971aae7268cb5728b37d68b4efa67e9571e025a309a2084253bdce1176be28f8"
+          },
+          {
+            "query": "Replace Newtonsoft.Json with System.Text.Json in this serializer",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 24.2,
+            "estimate": {
+              "input_tokens": 1610,
+              "input_cost_usd": 0.004025
+            },
+            "spec_hash": "8387ae9954cb9ddded962192290039f1c23449e66efa78dca4e9dd083cfb3f4a"
+          },
+          {
+            "query": "Write xUnit tests for this class",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 56.6,
+            "estimate": {
+              "input_tokens": 1607,
+              "input_cost_usd": 0.004018
+            },
+            "spec_hash": "b9e9f9a82b660c5d4eb1a930b55460aa2bffb7144159f068b0674cae6fbe0482"
+          },
+          {
+            "query": "Set up a GitHub Actions workflow to publish my NuGet package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 46.7,
+            "estimate": {
+              "input_tokens": 1613,
+              "input_cost_usd": 0.004033
+            },
+            "spec_hash": "09315324d9dfdc59cf12dfed7f0100007898b60323900bfe1f90bddb03b3b9c0"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests directories",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1612,
+              "input_cost_usd": 0.00403
+            },
+            "spec_hash": "77211001d8d3fb08d116b50aaa5c7425829273cfd8b4b11a6ddd65ecf46bc63a"
+          },
+          {
+            "query": "Refactor this Go code to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 74.6,
+            "estimate": {
+              "input_tokens": 1611,
+              "input_cost_usd": 0.004028
+            },
+            "spec_hash": "b4579b51d98034433f31a663a4e1e0d13683393acd9dde86f00faf423b9ae88c"
+          },
+          {
+            "query": "Add structured logging to my Express app",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 41.2,
+            "estimate": {
+              "input_tokens": 1607,
+              "input_cost_usd": 0.004018
+            },
+            "spec_hash": "0521e2a539bc28c86cf3bad0f2f1b6d9bc1332f1720da35af682b25dc73306bf"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 0,
+          "total": 12,
+          "pass_rate": 1,
+          "avg_run_seconds": 49.2,
+          "estimate": {
+            "input_tokens": 19316,
+            "input_cost_usd": 0.048293
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:25:51Z",
+        "executed": true,
+        "content_hash": "72ba6910d6b176451420a8e20a956fd42247dbb2d1adeabe7499e61ee58e77ad",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "exceptions-logging",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1624,
+              "input_cost_usd": 0.00406
+            },
+            "measured": {
+              "input_tokens": 12847,
+              "cache_read_input_tokens": 123520,
+              "output_tokens": 2124,
+              "cost_usd": 0.372778
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Config.cs",
+                "pattern": "ILogger",
+                "text": "Config.cs matches /ILogger/",
+                "passed": true,
+                "evidence": "ILogger",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Config.cs",
+                "pattern": "Log(Error|Warning|Information)",
+                "text": "Config.cs matches /Log(Error|Warning|Information)/",
+                "passed": true,
+                "evidence": "LogInformation",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Config.cs",
+                "pattern": "Console\\.WriteLine",
+                "text": "Config.cs does not match /Console\\.WriteLine/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Config.cs",
+                "pattern": "throw ex;",
+                "text": "Config.cs does not match /throw ex;/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 138491,
+              "executor_duration_seconds": 48.9
+            },
+            "spec_hash": "0667ac0d99d15bca598aca004a671fffbe7168aee29cf52f3180949e648c71f3"
+          },
+          {
+            "id": "async-ct",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1638,
+              "input_cost_usd": 0.004095
+            },
+            "measured": {
+              "input_tokens": 7947,
+              "cache_read_input_tokens": 59392,
+              "output_tokens": 910,
+              "cost_usd": 0.181997
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Store.cs",
+                "pattern": "async Task",
+                "text": "Store.cs matches /async Task/",
+                "passed": true,
+                "evidence": "async Task",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Store.cs",
+                "pattern": "CancellationToken",
+                "text": "Store.cs matches /CancellationToken/",
+                "passed": true,
+                "evidence": "CancellationToken",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Store.cs",
+                "pattern": "\\.Result\\b",
+                "text": "Store.cs does not match /\\.Result\\b/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Store.cs",
+                "pattern": "async void",
+                "text": "Store.cs does not match /async void/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 68249,
+              "executor_duration_seconds": 21.8
+            },
+            "spec_hash": "842168ee2dfd14980f7ea93b6816d6b7f96e3e770c9e95c1d556f1d9b2560b3b"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 35.4,
+          "estimate": {
+            "input_tokens": 3262,
+            "input_cost_usd": 0.008155
+          },
+          "measured": {
+            "input_tokens": 20794,
+            "cache_read_input_tokens": 182912,
+            "output_tokens": 3034,
+            "cost_usd": 0.554775
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T20:25:51Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 48.2,
+            "measured": {
+              "input_tokens": 25936,
+              "cache_read_input_tokens": 219392,
+              "output_tokens": 4117,
+              "cost_usd": 0.675075
+            }
+          },
+          "results": [
+            {
+              "id": "async-ct",
+              "passed": false,
+              "measured": {
+                "input_tokens": 6512,
+                "cache_read_input_tokens": 96000,
+                "output_tokens": 1694,
+                "cost_usd": 0.28169
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 38.7
+              },
+              "fingerprint": "842168ee2dfd14980f7ea93b6816d6b7f96e3e770c9e95c1d556f1d9b2560b3b"
+            },
+            {
+              "id": "exceptions-logging",
+              "passed": true,
+              "measured": {
+                "input_tokens": 19424,
+                "cache_read_input_tokens": 123392,
+                "output_tokens": 2423,
+                "cost_usd": 0.393385
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 57.6
+              },
+              "fingerprint": "0667ac0d99d15bca598aca004a671fffbe7168aee29cf52f3180949e648c71f3"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:31:46Z",
+        "executed": true,
+        "content_hash": "e9f1bd39781fba03ffcf25b9d8090a04493ae527fe466f9115d47424666c3ce4",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Refactor this C# code to handle exceptions properly",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.4,
+            "estimate": {
+              "input_tokens": 1610,
+              "input_cost_usd": 0.00805
+            },
+            "spec_hash": "86759950fb7b5412d0df034aa50634d8ac4397f81dc40df2edebfd969cf0a4ad"
+          },
+          {
+            "query": "Add structured logging to my .NET service",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 1608,
+              "input_cost_usd": 0.00804
+            },
+            "spec_hash": "69d4721f3c260f9c95ff3d4301e6935f1bd11482d80a7e8e08821f9f1985da92"
+          },
+          {
+            "query": "Make this C# method async and thread a CancellationToken",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9,
+            "estimate": {
+              "input_tokens": 1611,
+              "input_cost_usd": 0.008055
+            },
+            "spec_hash": "5a45fe82fdc590d8d5040cd2b57203514dc6ef541bb05f6cd3310673fc5022cc"
+          },
+          {
+            "query": "Convert these Console.WriteLine calls to ILogger",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 1608,
+              "input_cost_usd": 0.00804
+            },
+            "spec_hash": "2374f55206fbd46a63ef5bd4429fe5c89f9a695b74d620d1e03e5a4f5373eb5e"
+          },
+          {
+            "query": "Review this C# class for idiomatic style",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9,
+            "estimate": {
+              "input_tokens": 1609,
+              "input_cost_usd": 0.008045
+            },
+            "spec_hash": "c63d14e3f17a8cc3e94c6c0dccfc5237682b046c692cb211ac61b4a20d3dfc1a"
+          },
+          {
+            "query": "Should this DTO be a record or a class?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.2,
+            "estimate": {
+              "input_tokens": 1610,
+              "input_cost_usd": 0.00805
+            },
+            "spec_hash": "971aae7268cb5728b37d68b4efa67e9571e025a309a2084253bdce1176be28f8"
+          },
+          {
+            "query": "Replace Newtonsoft.Json with System.Text.Json in this serializer",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.7,
+            "estimate": {
+              "input_tokens": 1610,
+              "input_cost_usd": 0.00805
+            },
+            "spec_hash": "8387ae9954cb9ddded962192290039f1c23449e66efa78dca4e9dd083cfb3f4a"
+          },
+          {
+            "query": "Write xUnit tests for this class",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 65.3,
+            "estimate": {
+              "input_tokens": 1607,
+              "input_cost_usd": 0.008035
+            },
+            "spec_hash": "b9e9f9a82b660c5d4eb1a930b55460aa2bffb7144159f068b0674cae6fbe0482"
+          },
+          {
+            "query": "Set up a GitHub Actions workflow to publish my NuGet package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1613,
+              "input_cost_usd": 0.008065
+            },
+            "spec_hash": "09315324d9dfdc59cf12dfed7f0100007898b60323900bfe1f90bddb03b3b9c0"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests directories",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 90.4,
+            "estimate": {
+              "input_tokens": 1612,
+              "input_cost_usd": 0.00806
+            },
+            "spec_hash": "77211001d8d3fb08d116b50aaa5c7425829273cfd8b4b11a6ddd65ecf46bc63a"
+          },
+          {
+            "query": "Refactor this Go code to wrap errors with %w",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 73.9,
+            "estimate": {
+              "input_tokens": 1611,
+              "input_cost_usd": 0.008055
+            },
+            "spec_hash": "b4579b51d98034433f31a663a4e1e0d13683393acd9dde86f00faf423b9ae88c"
+          },
+          {
+            "query": "Add structured logging to my Express app",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 44.6,
+            "estimate": {
+              "input_tokens": 1607,
+              "input_cost_usd": 0.008035
+            },
+            "spec_hash": "0521e2a539bc28c86cf3bad0f2f1b6d9bc1332f1720da35af682b25dc73306bf"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 0,
+          "total": 12,
+          "pass_rate": 1,
+          "avg_run_seconds": 38.7,
+          "estimate": {
+            "input_tokens": 19316,
+            "input_cost_usd": 0.09658
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:34:10Z",
+        "executed": true,
+        "content_hash": "72ba6910d6b176451420a8e20a956fd42247dbb2d1adeabe7499e61ee58e77ad",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "exceptions-logging",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1624,
+              "input_cost_usd": 0.00812
+            },
+            "measured": {
+              "input_tokens": 23751,
+              "cache_read_input_tokens": 210560,
+              "output_tokens": 2882,
+              "cost_usd": 1.258015
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Config.cs",
+                "pattern": "ILogger",
+                "text": "Config.cs matches /ILogger/",
+                "passed": true,
+                "evidence": "ILogger",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Config.cs",
+                "pattern": "Log(Error|Warning|Information)",
+                "text": "Config.cs matches /Log(Error|Warning|Information)/",
+                "passed": true,
+                "evidence": "LogInformation",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Config.cs",
+                "pattern": "Console\\.WriteLine",
+                "text": "Config.cs does not match /Console\\.WriteLine/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Config.cs",
+                "pattern": "throw ex;",
+                "text": "Config.cs does not match /throw ex;/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 237193,
+              "executor_duration_seconds": 71.4
+            },
+            "spec_hash": "0667ac0d99d15bca598aca004a671fffbe7168aee29cf52f3180949e648c71f3"
+          },
+          {
+            "id": "async-ct",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1638,
+              "input_cost_usd": 0.00819
+            },
+            "measured": {
+              "input_tokens": 24450,
+              "cache_read_input_tokens": 76672,
+              "output_tokens": 1396,
+              "cost_usd": 0.54749
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Store.cs",
+                "pattern": "async Task",
+                "text": "Store.cs matches /async Task/",
+                "passed": true,
+                "evidence": "async Task",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Store.cs",
+                "pattern": "CancellationToken",
+                "text": "Store.cs matches /CancellationToken/",
+                "passed": true,
+                "evidence": "CancellationToken",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Store.cs",
+                "pattern": "\\.Result\\b",
+                "text": "Store.cs does not match /\\.Result\\b/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Store.cs",
+                "pattern": "async void",
+                "text": "Store.cs does not match /async void/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 102518,
+              "executor_duration_seconds": 36.5
+            },
+            "spec_hash": "842168ee2dfd14980f7ea93b6816d6b7f96e3e770c9e95c1d556f1d9b2560b3b"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 54,
+          "estimate": {
+            "input_tokens": 3262,
+            "input_cost_usd": 0.01631
+          },
+          "measured": {
+            "input_tokens": 48201,
+            "cache_read_input_tokens": 287232,
+            "output_tokens": 4278,
+            "cost_usd": 1.805505
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T20:34:10Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 52.2,
+            "measured": {
+              "input_tokens": 44231,
+              "cache_read_input_tokens": 267776,
+              "output_tokens": 4210,
+              "cost_usd": 1.686335
+            }
+          },
+          "results": [
+            {
+              "id": "async-ct",
+              "passed": false,
+              "measured": {
+                "input_tokens": 15043,
+                "cache_read_input_tokens": 99072,
+                "output_tokens": 1277,
+                "cost_usd": 0.608885
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 32.8
+              },
+              "fingerprint": "842168ee2dfd14980f7ea93b6816d6b7f96e3e770c9e95c1d556f1d9b2560b3b"
+            },
+            {
+              "id": "exceptions-logging",
+              "passed": true,
+              "measured": {
+                "input_tokens": 29188,
+                "cache_read_input_tokens": 168704,
+                "output_tokens": 2933,
+                "cost_usd": 1.07745
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 71.6
+              },
+              "fingerprint": "0667ac0d99d15bca598aca004a671fffbe7168aee29cf52f3180949e648c71f3"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

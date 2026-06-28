@@ -1,0 +1,1922 @@
+{
+  "schema": 5,
+  "plugin": "dotnet",
+  "skill": "dotnet-docs",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:16:14Z",
+        "executed": true,
+        "content_hash": "58a150a637fb1d9d283998f70371fcc59ceb8ce456464bbfdd358edd91db4f9b",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Add XML doc comments to this public API",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 921,
+              "input_cost_usd": 0.000921
+            },
+            "spec_hash": "5fdc3bc71d0eec5cb8dc92f9d84181dac6961de49d6a753b492f6fd85ecda022"
+          },
+          {
+            "query": "Document this C# class with /// summaries",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.1,
+            "estimate": {
+              "input_tokens": 922,
+              "input_cost_usd": 0.000922
+            },
+            "spec_hash": "739428b598401793a0bd12ec1669dab044c35fcc599d282ff0cb53055e875f8e"
+          },
+          {
+            "query": "Enable the documentation file and treat missing-doc warnings as errors",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.7,
+            "estimate": {
+              "input_tokens": 925,
+              "input_cost_usd": 0.000925
+            },
+            "spec_hash": "3cffa6d30b3a97fc6a19d4930844e67a931ea1d0ed8fa56dd2640f5b2e3a711c"
+          },
+          {
+            "query": "Write /// summaries for these public methods",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.2,
+            "estimate": {
+              "input_tokens": 921,
+              "input_cost_usd": 0.000921
+            },
+            "spec_hash": "22b4dd5f9a530f2e41e31aa400a7a6427f13fb840ecad3b274b654804b31ff4c"
+          },
+          {
+            "query": "How do I document the exceptions a C# method throws?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.8,
+            "estimate": {
+              "input_tokens": 925,
+              "input_cost_usd": 0.000925
+            },
+            "spec_hash": "f4ae75a4efd65316a4b6c920bdd6ff7c61778e6e2f75e88534081b690cd40127"
+          },
+          {
+            "query": "Add \u003cinheritdoc/\u003e to this overriding method",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 926,
+              "input_cost_usd": 0.000926
+            },
+            "spec_hash": "b4a368f12397c0c144d1dec3dc327a71f73aa66018ca40572951fb23da3b70ea"
+          },
+          {
+            "query": "Document this method's parameters and return value with XML comments",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.3,
+            "estimate": {
+              "input_tokens": 924,
+              "input_cost_usd": 0.000924
+            },
+            "spec_hash": "2b976f7533b7327c3941dc55895a31398d4b648bbb0b1e6c21f25bbebcc6e21e"
+          },
+          {
+            "query": "Generate an OpenAPI spec for my API endpoints",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 922,
+              "input_cost_usd": 0.000922
+            },
+            "spec_hash": "55dd4b81d1cc32adc310fdb602f46bb90ca2a65df7a5d8b8a351a959b8c63a6e"
+          },
+          {
+            "query": "Refactor this C# class's exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.3,
+            "estimate": {
+              "input_tokens": 923,
+              "input_cost_usd": 0.000923
+            },
+            "spec_hash": "deba62fcff690950960b2fcdcef0f02ba5d5dd74e82eee5f340232ea7edf00f3"
+          },
+          {
+            "query": "Document this Python function with a docstring",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.3,
+            "estimate": {
+              "input_tokens": 921,
+              "input_cost_usd": 0.000921
+            },
+            "spec_hash": "86550c499b4c096fd2a6b38e49341f9dd390ee3e1a2ac423d6f41e3d9fc49c68"
+          },
+          {
+            "query": "Write godoc comments for this Go package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 921,
+              "input_cost_usd": 0.000921
+            },
+            "spec_hash": "17bb8e0a0a8e65999a48eac3f489171da4b8cfcaf0cda8799ad4e602ac1180e9"
+          },
+          {
+            "query": "Publish this package to NuGet with trusted publishing",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 924,
+              "input_cost_usd": 0.000924
+            },
+            "spec_hash": "50af7783aa436ee130b06085d8b9e95e92ed273854c55e31975323123411a108"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 6,
+          "total": 12,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 7.6,
+          "estimate": {
+            "input_tokens": 11075,
+            "input_cost_usd": 0.011075
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:16:58Z",
+        "executed": true,
+        "content_hash": "f95df5b53063ab9b185cc6b579fefab82cb8d7d7c05f2b21078eeef1bf58ad82",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "xml-docs",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 945,
+              "input_cost_usd": 0.000945
+            },
+            "measured": {
+              "input_tokens": 24,
+              "cache_read_input_tokens": 80054,
+              "cache_creation_input_tokens": 16061,
+              "output_tokens": 689,
+              "cost_usd": 0.044213
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "/// \u003csummary\u003e",
+                "text": "KeyVal.cs matches //// \u003csummary\u003e/",
+                "passed": true,
+                "evidence": "/// \u003csummary\u003e",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "\u003cparam",
+                "text": "KeyVal.cs matches /\u003cparam/",
+                "passed": true,
+                "evidence": "\u003cparam",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "\u003creturns\u003e|\u003cexception",
+                "text": "KeyVal.cs matches /\u003creturns\u003e|\u003cexception/",
+                "passed": true,
+                "evidence": "\u003creturns\u003e",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Edit": 1,
+                "Read": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 96828,
+              "executor_duration_seconds": 14.1
+            },
+            "spec_hash": "b35b1d66bf60392eaf54a288050bafd8a7fbace84d44bafb9b46b9266763651b"
+          },
+          {
+            "id": "doc-gate",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 937,
+              "input_cost_usd": 0.000937
+            },
+            "measured": {
+              "input_tokens": 38,
+              "cache_read_input_tokens": 128939,
+              "cache_creation_input_tokens": 16775,
+              "output_tokens": 1280,
+              "cost_usd": 0.053486
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "\u003cGenerateDocumentationFile\u003etrue",
+                "text": "Lib.csproj matches /\u003cGenerateDocumentationFile\u003etrue/",
+                "passed": true,
+                "evidence": "\u003cGenerateDocumentationFile\u003etrue",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 1,
+              "failed": 0,
+              "total": 1,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 2,
+                "Glob": 1,
+                "Read": 2
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 147032,
+              "executor_duration_seconds": 17.7
+            },
+            "spec_hash": "2daf3e9b0bfdfc98ca63b6f492a9beea5778e11dcba3fe477370b233298a9112"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 15.9,
+          "estimate": {
+            "input_tokens": 1882,
+            "input_cost_usd": 0.001882
+          },
+          "measured": {
+            "input_tokens": 62,
+            "cache_read_input_tokens": 208993,
+            "cache_creation_input_tokens": 32836,
+            "output_tokens": 1969,
+            "cost_usd": 0.097699
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T18:16:58Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 18.5,
+            "measured": {
+              "input_tokens": 55,
+              "cache_read_input_tokens": 208432,
+              "cache_creation_input_tokens": 32507,
+              "output_tokens": 2081,
+              "cost_usd": 0.097528
+            }
+          },
+          "results": [
+            {
+              "id": "doc-gate",
+              "passed": true,
+              "measured": {
+                "input_tokens": 31,
+                "cache_read_input_tokens": 128698,
+                "cache_creation_input_tokens": 16749,
+                "output_tokens": 1392,
+                "cost_usd": 0.053953
+              },
+              "summary": {
+                "passed": 1,
+                "failed": 0,
+                "total": 1,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 26.7
+              },
+              "fingerprint": "2daf3e9b0bfdfc98ca63b6f492a9beea5778e11dcba3fe477370b233298a9112"
+            },
+            {
+              "id": "xml-docs",
+              "passed": true,
+              "measured": {
+                "input_tokens": 24,
+                "cache_read_input_tokens": 79734,
+                "cache_creation_input_tokens": 15758,
+                "output_tokens": 689,
+                "cost_usd": 0.043575
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 10.2
+              },
+              "fingerprint": "b35b1d66bf60392eaf54a288050bafd8a7fbace84d44bafb9b46b9266763651b"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:22:01Z",
+        "executed": true,
+        "content_hash": "58a150a637fb1d9d283998f70371fcc59ceb8ce456464bbfdd358edd91db4f9b",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Add XML doc comments to this public API",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 1245,
+              "input_cost_usd": 0.006225
+            },
+            "spec_hash": "5fdc3bc71d0eec5cb8dc92f9d84181dac6961de49d6a753b492f6fd85ecda022"
+          },
+          {
+            "query": "Document this C# class with /// summaries",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 1245,
+              "input_cost_usd": 0.006225
+            },
+            "spec_hash": "739428b598401793a0bd12ec1669dab044c35fcc599d282ff0cb53055e875f8e"
+          },
+          {
+            "query": "Enable the documentation file and treat missing-doc warnings as errors",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.2,
+            "estimate": {
+              "input_tokens": 1255,
+              "input_cost_usd": 0.006275
+            },
+            "spec_hash": "3cffa6d30b3a97fc6a19d4930844e67a931ea1d0ed8fa56dd2640f5b2e3a711c"
+          },
+          {
+            "query": "Write /// summaries for these public methods",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.3,
+            "estimate": {
+              "input_tokens": 1245,
+              "input_cost_usd": 0.006225
+            },
+            "spec_hash": "22b4dd5f9a530f2e41e31aa400a7a6427f13fb840ecad3b274b654804b31ff4c"
+          },
+          {
+            "query": "How do I document the exceptions a C# method throws?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.7,
+            "estimate": {
+              "input_tokens": 1249,
+              "input_cost_usd": 0.006245
+            },
+            "spec_hash": "f4ae75a4efd65316a4b6c920bdd6ff7c61778e6e2f75e88534081b690cd40127"
+          },
+          {
+            "query": "Add \u003cinheritdoc/\u003e to this overriding method",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13,
+            "estimate": {
+              "input_tokens": 1250,
+              "input_cost_usd": 0.00625
+            },
+            "spec_hash": "b4a368f12397c0c144d1dec3dc327a71f73aa66018ca40572951fb23da3b70ea"
+          },
+          {
+            "query": "Document this method's parameters and return value with XML comments",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.3,
+            "estimate": {
+              "input_tokens": 1249,
+              "input_cost_usd": 0.006245
+            },
+            "spec_hash": "2b976f7533b7327c3941dc55895a31398d4b648bbb0b1e6c21f25bbebcc6e21e"
+          },
+          {
+            "query": "Generate an OpenAPI spec for my API endpoints",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 1252,
+              "input_cost_usd": 0.00626
+            },
+            "spec_hash": "55dd4b81d1cc32adc310fdb602f46bb90ca2a65df7a5d8b8a351a959b8c63a6e"
+          },
+          {
+            "query": "Refactor this C# class's exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.6,
+            "estimate": {
+              "input_tokens": 1246,
+              "input_cost_usd": 0.00623
+            },
+            "spec_hash": "deba62fcff690950960b2fcdcef0f02ba5d5dd74e82eee5f340232ea7edf00f3"
+          },
+          {
+            "query": "Document this Python function with a docstring",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 1244,
+              "input_cost_usd": 0.00622
+            },
+            "spec_hash": "86550c499b4c096fd2a6b38e49341f9dd390ee3e1a2ac423d6f41e3d9fc49c68"
+          },
+          {
+            "query": "Write godoc comments for this Go package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.9,
+            "estimate": {
+              "input_tokens": 1245,
+              "input_cost_usd": 0.006225
+            },
+            "spec_hash": "17bb8e0a0a8e65999a48eac3f489171da4b8cfcaf0cda8799ad4e602ac1180e9"
+          },
+          {
+            "query": "Publish this package to NuGet with trusted publishing",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.2,
+            "estimate": {
+              "input_tokens": 1250,
+              "input_cost_usd": 0.00625
+            },
+            "spec_hash": "50af7783aa436ee130b06085d8b9e95e92ed273854c55e31975323123411a108"
+          }
+        ],
+        "summary": {
+          "passed": 7,
+          "failed": 5,
+          "total": 12,
+          "pass_rate": 0.583333,
+          "avg_run_seconds": 10.6,
+          "estimate": {
+            "input_tokens": 14975,
+            "input_cost_usd": 0.074875
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:23:07Z",
+        "executed": true,
+        "content_hash": "f95df5b53063ab9b185cc6b579fefab82cb8d7d7c05f2b21078eeef1bf58ad82",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "xml-docs",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1279,
+              "input_cost_usd": 0.006395
+            },
+            "measured": {
+              "input_tokens": 2729,
+              "cache_read_input_tokens": 80742,
+              "cache_creation_input_tokens": 8865,
+              "output_tokens": 1778,
+              "cost_usd": 0.187733
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "/// \u003csummary\u003e",
+                "text": "KeyVal.cs matches //// \u003csummary\u003e/",
+                "passed": true,
+                "evidence": "/// \u003csummary\u003e",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "\u003cparam",
+                "text": "KeyVal.cs matches /\u003cparam/",
+                "passed": true,
+                "evidence": "\u003cparam",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "\u003creturns\u003e|\u003cexception",
+                "text": "KeyVal.cs matches /\u003creturns\u003e|\u003cexception/",
+                "passed": true,
+                "evidence": "\u003creturns\u003e",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 94114,
+              "executor_duration_seconds": 30.9
+            },
+            "spec_hash": "b35b1d66bf60392eaf54a288050bafd8a7fbace84d44bafb9b46b9266763651b"
+          },
+          {
+            "id": "doc-gate",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1267,
+              "input_cost_usd": 0.006335
+            },
+            "measured": {
+              "input_tokens": 2731,
+              "cache_read_input_tokens": 103419,
+              "cache_creation_input_tokens": 8523,
+              "output_tokens": 1592,
+              "cost_usd": 0.190984
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "\u003cGenerateDocumentationFile\u003etrue",
+                "text": "Lib.csproj matches /\u003cGenerateDocumentationFile\u003etrue/",
+                "passed": true,
+                "evidence": "\u003cGenerateDocumentationFile\u003etrue",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 1,
+              "failed": 0,
+              "total": 1,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 116265,
+              "executor_duration_seconds": 26.5
+            },
+            "spec_hash": "2daf3e9b0bfdfc98ca63b6f492a9beea5778e11dcba3fe477370b233298a9112"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 28.7,
+          "estimate": {
+            "input_tokens": 2546,
+            "input_cost_usd": 0.01273
+          },
+          "measured": {
+            "input_tokens": 5460,
+            "cache_read_input_tokens": 184161,
+            "cache_creation_input_tokens": 17388,
+            "output_tokens": 3370,
+            "cost_usd": 0.378717
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T18:23:07Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 27.5,
+            "measured": {
+              "input_tokens": 5020,
+              "cache_read_input_tokens": 220812,
+              "cache_creation_input_tokens": 14195,
+              "output_tokens": 2664,
+              "cost_usd": 0.345297
+            }
+          },
+          "results": [
+            {
+              "id": "doc-gate",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2507,
+                "cache_read_input_tokens": 77377,
+                "cache_creation_input_tokens": 6787,
+                "output_tokens": 1070,
+                "cost_usd": 0.146467
+              },
+              "summary": {
+                "passed": 1,
+                "failed": 0,
+                "total": 1,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 20.1
+              },
+              "fingerprint": "2daf3e9b0bfdfc98ca63b6f492a9beea5778e11dcba3fe477370b233298a9112"
+            },
+            {
+              "id": "xml-docs",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2513,
+                "cache_read_input_tokens": 143435,
+                "cache_creation_input_tokens": 7408,
+                "output_tokens": 1594,
+                "cost_usd": 0.19883
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 34.8
+              },
+              "fingerprint": "b35b1d66bf60392eaf54a288050bafd8a7fbace84d44bafb9b46b9266763651b"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:19:35Z",
+        "executed": true,
+        "content_hash": "58a150a637fb1d9d283998f70371fcc59ceb8ce456464bbfdd358edd91db4f9b",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Add XML doc comments to this public API",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.5,
+            "estimate": {
+              "input_tokens": 921,
+              "input_cost_usd": 0.002763
+            },
+            "spec_hash": "5fdc3bc71d0eec5cb8dc92f9d84181dac6961de49d6a753b492f6fd85ecda022"
+          },
+          {
+            "query": "Document this C# class with /// summaries",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "estimate": {
+              "input_tokens": 922,
+              "input_cost_usd": 0.002766
+            },
+            "spec_hash": "739428b598401793a0bd12ec1669dab044c35fcc599d282ff0cb53055e875f8e"
+          },
+          {
+            "query": "Enable the documentation file and treat missing-doc warnings as errors",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.8,
+            "estimate": {
+              "input_tokens": 925,
+              "input_cost_usd": 0.002775
+            },
+            "spec_hash": "3cffa6d30b3a97fc6a19d4930844e67a931ea1d0ed8fa56dd2640f5b2e3a711c"
+          },
+          {
+            "query": "Write /// summaries for these public methods",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.8,
+            "estimate": {
+              "input_tokens": 921,
+              "input_cost_usd": 0.002763
+            },
+            "spec_hash": "22b4dd5f9a530f2e41e31aa400a7a6427f13fb840ecad3b274b654804b31ff4c"
+          },
+          {
+            "query": "How do I document the exceptions a C# method throws?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.5,
+            "estimate": {
+              "input_tokens": 925,
+              "input_cost_usd": 0.002775
+            },
+            "spec_hash": "f4ae75a4efd65316a4b6c920bdd6ff7c61778e6e2f75e88534081b690cd40127"
+          },
+          {
+            "query": "Add \u003cinheritdoc/\u003e to this overriding method",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.1,
+            "estimate": {
+              "input_tokens": 926,
+              "input_cost_usd": 0.002778
+            },
+            "spec_hash": "b4a368f12397c0c144d1dec3dc327a71f73aa66018ca40572951fb23da3b70ea"
+          },
+          {
+            "query": "Document this method's parameters and return value with XML comments",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.3,
+            "estimate": {
+              "input_tokens": 924,
+              "input_cost_usd": 0.002772
+            },
+            "spec_hash": "2b976f7533b7327c3941dc55895a31398d4b648bbb0b1e6c21f25bbebcc6e21e"
+          },
+          {
+            "query": "Generate an OpenAPI spec for my API endpoints",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 98.1,
+            "estimate": {
+              "input_tokens": 922,
+              "input_cost_usd": 0.002766
+            },
+            "spec_hash": "55dd4b81d1cc32adc310fdb602f46bb90ca2a65df7a5d8b8a351a959b8c63a6e"
+          },
+          {
+            "query": "Refactor this C# class's exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.7,
+            "estimate": {
+              "input_tokens": 923,
+              "input_cost_usd": 0.002769
+            },
+            "spec_hash": "deba62fcff690950960b2fcdcef0f02ba5d5dd74e82eee5f340232ea7edf00f3"
+          },
+          {
+            "query": "Document this Python function with a docstring",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "estimate": {
+              "input_tokens": 921,
+              "input_cost_usd": 0.002763
+            },
+            "spec_hash": "86550c499b4c096fd2a6b38e49341f9dd390ee3e1a2ac423d6f41e3d9fc49c68"
+          },
+          {
+            "query": "Write godoc comments for this Go package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.2,
+            "estimate": {
+              "input_tokens": 921,
+              "input_cost_usd": 0.002763
+            },
+            "spec_hash": "17bb8e0a0a8e65999a48eac3f489171da4b8cfcaf0cda8799ad4e602ac1180e9"
+          },
+          {
+            "query": "Publish this package to NuGet with trusted publishing",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.3,
+            "estimate": {
+              "input_tokens": 924,
+              "input_cost_usd": 0.002772
+            },
+            "spec_hash": "50af7783aa436ee130b06085d8b9e95e92ed273854c55e31975323123411a108"
+          }
+        ],
+        "summary": {
+          "passed": 8,
+          "failed": 4,
+          "total": 12,
+          "pass_rate": 0.666667,
+          "avg_run_seconds": 14.4,
+          "estimate": {
+            "input_tokens": 11075,
+            "input_cost_usd": 0.033225
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:20:21Z",
+        "executed": true,
+        "content_hash": "f95df5b53063ab9b185cc6b579fefab82cb8d7d7c05f2b21078eeef1bf58ad82",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "xml-docs",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 945,
+              "input_cost_usd": 0.002835
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 110369,
+              "cache_creation_input_tokens": 9248,
+              "output_tokens": 682,
+              "cost_usd": 0.09947
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "/// \u003csummary\u003e",
+                "text": "KeyVal.cs matches //// \u003csummary\u003e/",
+                "passed": true,
+                "evidence": "/// \u003csummary\u003e",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "\u003cparam",
+                "text": "KeyVal.cs matches /\u003cparam/",
+                "passed": true,
+                "evidence": "\u003cparam",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "\u003creturns\u003e|\u003cexception",
+                "text": "KeyVal.cs matches /\u003creturns\u003e|\u003cexception/",
+                "passed": true,
+                "evidence": "\u003creturns\u003e",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 120307,
+              "executor_duration_seconds": 20.4
+            },
+            "spec_hash": "b35b1d66bf60392eaf54a288050bafd8a7fbace84d44bafb9b46b9266763651b"
+          },
+          {
+            "id": "doc-gate",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 937,
+              "input_cost_usd": 0.002811
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 111103,
+              "cache_creation_input_tokens": 9100,
+              "output_tokens": 630,
+              "cost_usd": 0.097999
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "\u003cGenerateDocumentationFile\u003etrue",
+                "text": "Lib.csproj matches /\u003cGenerateDocumentationFile\u003etrue/",
+                "passed": true,
+                "evidence": "\u003cGenerateDocumentationFile\u003etrue",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 1,
+              "failed": 0,
+              "total": 1,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 120841,
+              "executor_duration_seconds": 16.8
+            },
+            "spec_hash": "2daf3e9b0bfdfc98ca63b6f492a9beea5778e11dcba3fe477370b233298a9112"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 18.6,
+          "estimate": {
+            "input_tokens": 1882,
+            "input_cost_usd": 0.005646
+          },
+          "measured": {
+            "input_tokens": 16,
+            "cache_read_input_tokens": 221472,
+            "cache_creation_input_tokens": 18348,
+            "output_tokens": 1312,
+            "cost_usd": 0.197469
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T18:20:21Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 21.4,
+            "measured": {
+              "input_tokens": 12,
+              "cache_read_input_tokens": 169612,
+              "cache_creation_input_tokens": 16565,
+              "output_tokens": 1565,
+              "cost_usd": 0.17502
+            }
+          },
+          "results": [
+            {
+              "id": "doc-gate",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 84761,
+                "cache_creation_input_tokens": 8046,
+                "output_tokens": 620,
+                "cost_usd": 0.083641
+              },
+              "summary": {
+                "passed": 1,
+                "failed": 0,
+                "total": 1,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 17.5
+              },
+              "fingerprint": "2daf3e9b0bfdfc98ca63b6f492a9beea5778e11dcba3fe477370b233298a9112"
+            },
+            {
+              "id": "xml-docs",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 84851,
+                "cache_creation_input_tokens": 8519,
+                "output_tokens": 945,
+                "cost_usd": 0.091379
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 25.2
+              },
+              "fingerprint": "b35b1d66bf60392eaf54a288050bafd8a7fbace84d44bafb9b46b9266763651b"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:32:11Z",
+        "executed": true,
+        "content_hash": "58a150a637fb1d9d283998f70371fcc59ceb8ce456464bbfdd358edd91db4f9b",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Add XML doc comments to this public API",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 37.7,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.002003
+            },
+            "spec_hash": "5fdc3bc71d0eec5cb8dc92f9d84181dac6961de49d6a753b492f6fd85ecda022"
+          },
+          {
+            "query": "Document this C# class with /// summaries",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 43.8,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.002003
+            },
+            "spec_hash": "739428b598401793a0bd12ec1669dab044c35fcc599d282ff0cb53055e875f8e"
+          },
+          {
+            "query": "Enable the documentation file and treat missing-doc warnings as errors",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.3,
+            "estimate": {
+              "input_tokens": 804,
+              "input_cost_usd": 0.00201
+            },
+            "spec_hash": "3cffa6d30b3a97fc6a19d4930844e67a931ea1d0ed8fa56dd2640f5b2e3a711c"
+          },
+          {
+            "query": "Write /// summaries for these public methods",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 29.4,
+            "estimate": {
+              "input_tokens": 800,
+              "input_cost_usd": 0.002
+            },
+            "spec_hash": "22b4dd5f9a530f2e41e31aa400a7a6427f13fb840ecad3b274b654804b31ff4c"
+          },
+          {
+            "query": "How do I document the exceptions a C# method throws?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 805,
+              "input_cost_usd": 0.002013
+            },
+            "spec_hash": "f4ae75a4efd65316a4b6c920bdd6ff7c61778e6e2f75e88534081b690cd40127"
+          },
+          {
+            "query": "Add \u003cinheritdoc/\u003e to this overriding method",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 59.8,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.002003
+            },
+            "spec_hash": "b4a368f12397c0c144d1dec3dc327a71f73aa66018ca40572951fb23da3b70ea"
+          },
+          {
+            "query": "Document this method's parameters and return value with XML comments",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 65.6,
+            "estimate": {
+              "input_tokens": 804,
+              "input_cost_usd": 0.00201
+            },
+            "spec_hash": "2b976f7533b7327c3941dc55895a31398d4b648bbb0b1e6c21f25bbebcc6e21e"
+          },
+          {
+            "query": "Generate an OpenAPI spec for my API endpoints",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 74.9,
+            "estimate": {
+              "input_tokens": 802,
+              "input_cost_usd": 0.002005
+            },
+            "spec_hash": "55dd4b81d1cc32adc310fdb602f46bb90ca2a65df7a5d8b8a351a959b8c63a6e"
+          },
+          {
+            "query": "Refactor this C# class's exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 91.1,
+            "estimate": {
+              "input_tokens": 802,
+              "input_cost_usd": 0.002005
+            },
+            "spec_hash": "deba62fcff690950960b2fcdcef0f02ba5d5dd74e82eee5f340232ea7edf00f3"
+          },
+          {
+            "query": "Document this Python function with a docstring",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.2,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.002003
+            },
+            "spec_hash": "86550c499b4c096fd2a6b38e49341f9dd390ee3e1a2ac423d6f41e3d9fc49c68"
+          },
+          {
+            "query": "Write godoc comments for this Go package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 100.5,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.002003
+            },
+            "spec_hash": "17bb8e0a0a8e65999a48eac3f489171da4b8cfcaf0cda8799ad4e602ac1180e9"
+          },
+          {
+            "query": "Publish this package to NuGet with trusted publishing",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 88.9,
+            "estimate": {
+              "input_tokens": 802,
+              "input_cost_usd": 0.002005
+            },
+            "spec_hash": "50af7783aa436ee130b06085d8b9e95e92ed273854c55e31975323123411a108"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 0,
+          "total": 12,
+          "pass_rate": 1,
+          "avg_run_seconds": 53.2,
+          "estimate": {
+            "input_tokens": 9624,
+            "input_cost_usd": 0.024063
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:33:16Z",
+        "executed": true,
+        "content_hash": "f95df5b53063ab9b185cc6b579fefab82cb8d7d7c05f2b21078eeef1bf58ad82",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "xml-docs",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 824,
+              "input_cost_usd": 0.00206
+            },
+            "measured": {
+              "input_tokens": 23783,
+              "cache_read_input_tokens": 64896,
+              "output_tokens": 1235,
+              "cost_usd": 0.240223
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "/// \u003csummary\u003e",
+                "text": "KeyVal.cs matches //// \u003csummary\u003e/",
+                "passed": true,
+                "evidence": "/// \u003csummary\u003e",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "\u003cparam",
+                "text": "KeyVal.cs matches /\u003cparam/",
+                "passed": true,
+                "evidence": "\u003cparam",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "\u003creturns\u003e|\u003cexception",
+                "text": "KeyVal.cs matches /\u003creturns\u003e|\u003cexception/",
+                "passed": true,
+                "evidence": "\u003creturns\u003e",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 89914,
+              "executor_duration_seconds": 32.7
+            },
+            "spec_hash": "b35b1d66bf60392eaf54a288050bafd8a7fbace84d44bafb9b46b9266763651b"
+          },
+          {
+            "id": "doc-gate",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 814,
+              "input_cost_usd": 0.002035
+            },
+            "measured": {
+              "input_tokens": 14201,
+              "cache_read_input_tokens": 70016,
+              "output_tokens": 797,
+              "cost_usd": 0.222498
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "\u003cGenerateDocumentationFile\u003etrue",
+                "text": "Lib.csproj matches /\u003cGenerateDocumentationFile\u003etrue/",
+                "passed": true,
+                "evidence": "\u003cGenerateDocumentationFile\u003etrue",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 1,
+              "failed": 0,
+              "total": 1,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 85014,
+              "executor_duration_seconds": 35.2
+            },
+            "spec_hash": "2daf3e9b0bfdfc98ca63b6f492a9beea5778e11dcba3fe477370b233298a9112"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 34,
+          "estimate": {
+            "input_tokens": 1638,
+            "input_cost_usd": 0.004095
+          },
+          "measured": {
+            "input_tokens": 37984,
+            "cache_read_input_tokens": 134912,
+            "output_tokens": 2032,
+            "cost_usd": 0.462721
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T18:33:16Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 25.5,
+            "measured": {
+              "input_tokens": 23418,
+              "cache_read_input_tokens": 126848,
+              "output_tokens": 1785,
+              "cost_usd": 0.40244
+            }
+          },
+          "results": [
+            {
+              "id": "doc-gate",
+              "passed": true,
+              "measured": {
+                "input_tokens": 8570,
+                "cache_read_input_tokens": 75136,
+                "output_tokens": 919,
+                "cost_usd": 0.22305
+              },
+              "summary": {
+                "passed": 1,
+                "failed": 0,
+                "total": 1,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 29.6
+              },
+              "fingerprint": "2daf3e9b0bfdfc98ca63b6f492a9beea5778e11dcba3fe477370b233298a9112"
+            },
+            {
+              "id": "xml-docs",
+              "passed": true,
+              "measured": {
+                "input_tokens": 14848,
+                "cache_read_input_tokens": 51712,
+                "output_tokens": 866,
+                "cost_usd": 0.17939
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 21.4
+              },
+              "fingerprint": "b35b1d66bf60392eaf54a288050bafd8a7fbace84d44bafb9b46b9266763651b"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:40:16Z",
+        "executed": true,
+        "content_hash": "58a150a637fb1d9d283998f70371fcc59ceb8ce456464bbfdd358edd91db4f9b",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Add XML doc comments to this public API",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.8,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.004005
+            },
+            "spec_hash": "5fdc3bc71d0eec5cb8dc92f9d84181dac6961de49d6a753b492f6fd85ecda022"
+          },
+          {
+            "query": "Document this C# class with /// summaries",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.5,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.004005
+            },
+            "spec_hash": "739428b598401793a0bd12ec1669dab044c35fcc599d282ff0cb53055e875f8e"
+          },
+          {
+            "query": "Enable the documentation file and treat missing-doc warnings as errors",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 804,
+              "input_cost_usd": 0.00402
+            },
+            "spec_hash": "3cffa6d30b3a97fc6a19d4930844e67a931ea1d0ed8fa56dd2640f5b2e3a711c"
+          },
+          {
+            "query": "Write /// summaries for these public methods",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.8,
+            "estimate": {
+              "input_tokens": 800,
+              "input_cost_usd": 0.004
+            },
+            "spec_hash": "22b4dd5f9a530f2e41e31aa400a7a6427f13fb840ecad3b274b654804b31ff4c"
+          },
+          {
+            "query": "How do I document the exceptions a C# method throws?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "estimate": {
+              "input_tokens": 805,
+              "input_cost_usd": 0.004025
+            },
+            "spec_hash": "f4ae75a4efd65316a4b6c920bdd6ff7c61778e6e2f75e88534081b690cd40127"
+          },
+          {
+            "query": "Add \u003cinheritdoc/\u003e to this overriding method",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 33.8,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.004005
+            },
+            "spec_hash": "b4a368f12397c0c144d1dec3dc327a71f73aa66018ca40572951fb23da3b70ea"
+          },
+          {
+            "query": "Document this method's parameters and return value with XML comments",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.7,
+            "estimate": {
+              "input_tokens": 804,
+              "input_cost_usd": 0.00402
+            },
+            "spec_hash": "2b976f7533b7327c3941dc55895a31398d4b648bbb0b1e6c21f25bbebcc6e21e"
+          },
+          {
+            "query": "Generate an OpenAPI spec for my API endpoints",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 44.6,
+            "estimate": {
+              "input_tokens": 802,
+              "input_cost_usd": 0.00401
+            },
+            "spec_hash": "55dd4b81d1cc32adc310fdb602f46bb90ca2a65df7a5d8b8a351a959b8c63a6e"
+          },
+          {
+            "query": "Refactor this C# class's exception handling",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 84.8,
+            "estimate": {
+              "input_tokens": 802,
+              "input_cost_usd": 0.00401
+            },
+            "spec_hash": "deba62fcff690950960b2fcdcef0f02ba5d5dd74e82eee5f340232ea7edf00f3"
+          },
+          {
+            "query": "Document this Python function with a docstring",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 40.3,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.004005
+            },
+            "spec_hash": "86550c499b4c096fd2a6b38e49341f9dd390ee3e1a2ac423d6f41e3d9fc49c68"
+          },
+          {
+            "query": "Write godoc comments for this Go package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 97.2,
+            "estimate": {
+              "input_tokens": 801,
+              "input_cost_usd": 0.004005
+            },
+            "spec_hash": "17bb8e0a0a8e65999a48eac3f489171da4b8cfcaf0cda8799ad4e602ac1180e9"
+          },
+          {
+            "query": "Publish this package to NuGet with trusted publishing",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 102.2,
+            "estimate": {
+              "input_tokens": 802,
+              "input_cost_usd": 0.00401
+            },
+            "spec_hash": "50af7783aa436ee130b06085d8b9e95e92ed273854c55e31975323123411a108"
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 1,
+          "total": 12,
+          "pass_rate": 0.916667,
+          "avg_run_seconds": 39.2,
+          "estimate": {
+            "input_tokens": 9624,
+            "input_cost_usd": 0.04812
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:41:34Z",
+        "executed": true,
+        "content_hash": "f95df5b53063ab9b185cc6b579fefab82cb8d7d7c05f2b21078eeef1bf58ad82",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "xml-docs",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 824,
+              "input_cost_usd": 0.00412
+            },
+            "measured": {
+              "input_tokens": 16660,
+              "cache_read_input_tokens": 79744,
+              "output_tokens": 1343,
+              "cost_usd": 0.52231
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "/// \u003csummary\u003e",
+                "text": "KeyVal.cs matches //// \u003csummary\u003e/",
+                "passed": true,
+                "evidence": "/// \u003csummary\u003e",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "\u003cparam",
+                "text": "KeyVal.cs matches /\u003cparam/",
+                "passed": true,
+                "evidence": "\u003cparam",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "KeyVal.cs",
+                "pattern": "\u003creturns\u003e|\u003cexception",
+                "text": "KeyVal.cs matches /\u003creturns\u003e|\u003cexception/",
+                "passed": true,
+                "evidence": "\u003creturns\u003e",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 97747,
+              "executor_duration_seconds": 36.7
+            },
+            "spec_hash": "b35b1d66bf60392eaf54a288050bafd8a7fbace84d44bafb9b46b9266763651b"
+          },
+          {
+            "id": "doc-gate",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 814,
+              "input_cost_usd": 0.00407
+            },
+            "measured": {
+              "input_tokens": 23731,
+              "cache_read_input_tokens": 72576,
+              "output_tokens": 1435,
+              "cost_usd": 0.524585
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "\u003cGenerateDocumentationFile\u003etrue",
+                "text": "Lib.csproj matches /\u003cGenerateDocumentationFile\u003etrue/",
+                "passed": true,
+                "evidence": "\u003cGenerateDocumentationFile\u003etrue",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 1,
+              "failed": 0,
+              "total": 1,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 97742,
+              "executor_duration_seconds": 37.1
+            },
+            "spec_hash": "2daf3e9b0bfdfc98ca63b6f492a9beea5778e11dcba3fe477370b233298a9112"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 36.9,
+          "estimate": {
+            "input_tokens": 1638,
+            "input_cost_usd": 0.00819
+          },
+          "measured": {
+            "input_tokens": 40391,
+            "cache_read_input_tokens": 152320,
+            "output_tokens": 2778,
+            "cost_usd": 1.046895
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T18:41:34Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 35.8,
+            "measured": {
+              "input_tokens": 23274,
+              "cache_read_input_tokens": 179840,
+              "output_tokens": 2535,
+              "cost_usd": 1.09162
+            }
+          },
+          "results": [
+            {
+              "id": "doc-gate",
+              "passed": true,
+              "measured": {
+                "input_tokens": 14146,
+                "cache_read_input_tokens": 77184,
+                "output_tokens": 1098,
+                "cost_usd": 0.48959
+              },
+              "summary": {
+                "passed": 1,
+                "failed": 0,
+                "total": 1,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 30.8
+              },
+              "fingerprint": "2daf3e9b0bfdfc98ca63b6f492a9beea5778e11dcba3fe477370b233298a9112"
+            },
+            {
+              "id": "xml-docs",
+              "passed": true,
+              "measured": {
+                "input_tokens": 9128,
+                "cache_read_input_tokens": 102656,
+                "output_tokens": 1437,
+                "cost_usd": 0.60203
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 40.7
+              },
+              "fingerprint": "b35b1d66bf60392eaf54a288050bafd8a7fbace84d44bafb9b46b9266763651b"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

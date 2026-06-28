@@ -1,0 +1,35 @@
+# Dependabot config — save as .github/dependabot.yaml. Daily checks with a 7-day
+# cooldown; minor and patch bumps are grouped into one PR per ecosystem, while
+# majors arrive as their own PR. nuget reads Central Package Management
+# (Directory.Packages.props). Add dotnet-sdk (for global.json), docker, and others
+# as the repo grows those ecosystems — see reference.md.
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 7
+    groups:
+      all-minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch
+
+  - package-ecosystem: nuget
+    directory: /
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 7
+    groups:
+      all-minor-and-patch:
+        patterns:
+          - "*"
+        update-types:
+          - minor
+          - patch

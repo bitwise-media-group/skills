@@ -1,0 +1,2568 @@
+{
+  "schema": 5,
+  "plugin": "dotnet",
+  "skill": "dotnet-release",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T19:34:41Z",
+        "executed": true,
+        "content_hash": "9b519b99970da894237c1629e5ee5928c0a85d73b4e0f57a888e7d927dcccc02",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Package this library as a NuGet package",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9,
+            "estimate": {
+              "input_tokens": 1328,
+              "input_cost_usd": 0.001328
+            },
+            "spec_hash": "8e9ff383e79176e27f94aa2122a2bc5b10e7b2b4f95e642b448b9dcfaf435acd"
+          },
+          {
+            "query": "Publish to NuGet via GitHub Actions with trusted publishing",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 14.9,
+            "estimate": {
+              "input_tokens": 1331,
+              "input_cost_usd": 0.001331
+            },
+            "spec_hash": "da564a11e6e974b754e39c531ce1379b285c989f5919abf65d81820fb8cd1b80"
+          },
+          {
+            "query": "Set up SourceLink and deterministic builds for my package",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7,
+            "estimate": {
+              "input_tokens": 1331,
+              "input_cost_usd": 0.001331
+            },
+            "spec_hash": "c73690236ebc8a5c1e1ef7e83fee60debc85ab49231cc9521439e0858bf024a5"
+          },
+          {
+            "query": "Version my NuGet package from git tags",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.1,
+            "estimate": {
+              "input_tokens": 1328,
+              "input_cost_usd": 0.001328
+            },
+            "spec_hash": "5ac17987e18621aefb841638d68cc73c05149f270f0688b0f4acb178bc9dc7a1"
+          },
+          {
+            "query": "Add a CI workflow that builds, tests, and checks formatting for my .NET repo",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 1336,
+              "input_cost_usd": 0.001336
+            },
+            "spec_hash": "611fad5f9bb6bce04e574a0ac5e6972a7a5632efb77b815b8cb255d185962667"
+          },
+          {
+            "query": "Add Dependabot for my .NET repo",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.5,
+            "estimate": {
+              "input_tokens": 1329,
+              "input_cost_usd": 0.001329
+            },
+            "spec_hash": "36e4bf9fd85532347e1eb8c54b0a01b01cf0f4697f1dff726dbadcc87cf700ff"
+          },
+          {
+            "query": "Configure dotnet pack metadata for this library",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.3,
+            "estimate": {
+              "input_tokens": 1327,
+              "input_cost_usd": 0.001327
+            },
+            "spec_hash": "fcf734cb4179f795484fc2e0486014b63547dd34477ee59b354a4e27615fb04a"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.6,
+            "estimate": {
+              "input_tokens": 1330,
+              "input_cost_usd": 0.00133
+            },
+            "spec_hash": "918b0025db78a39b457413652c44684fe509bb385d4226ef947ae6b287e4908e"
+          },
+          {
+            "query": "Write xUnit tests for this class",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.4,
+            "estimate": {
+              "input_tokens": 1326,
+              "input_cost_usd": 0.001326
+            },
+            "spec_hash": "b9e9f9a82b660c5d4eb1a930b55460aa2bffb7144159f068b0674cae6fbe0482"
+          },
+          {
+            "query": "Add XML doc comments to this public API",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 1327,
+              "input_cost_usd": 0.001327
+            },
+            "spec_hash": "b057c2537cf4b41198add266e7a07f9658baaea1e4beeb86cf6ad85bef20c517"
+          },
+          {
+            "query": "Set up GoReleaser for my Go project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.2,
+            "estimate": {
+              "input_tokens": 1329,
+              "input_cost_usd": 0.001329
+            },
+            "spec_hash": "498375d63ad5581474777653823abc18417a49120785e9bd82d6edcf271f13b0"
+          },
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.1,
+            "estimate": {
+              "input_tokens": 1327,
+              "input_cost_usd": 0.001327
+            },
+            "spec_hash": "4181d3bf1d554a149420d4bacc47cc4fc084c365072797d0e5ca7fe748294788"
+          }
+        ],
+        "summary": {
+          "passed": 7,
+          "failed": 5,
+          "total": 12,
+          "pass_rate": 0.583333,
+          "avg_run_seconds": 8,
+          "estimate": {
+            "input_tokens": 15949,
+            "input_cost_usd": 0.015949
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T23:17:27Z",
+        "executed": true,
+        "content_hash": "bc0bf304c6c08eb77be9442a16512f8ecac427672328e39929cdeefb4e5f6198",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "nuget-metadata",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 1366,
+              "input_cost_usd": 0.001366
+            },
+            "measured": {
+              "input_tokens": 25,
+              "cache_read_input_tokens": 80207,
+              "cache_creation_input_tokens": 15961,
+              "output_tokens": 977,
+              "cost_usd": 0.04552
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "\u003cPackageId\u003e",
+                "text": "Lib.csproj matches /\u003cPackageId\u003e/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "PackageLicenseExpression",
+                "text": "Lib.csproj matches /PackageLicenseExpression/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "RepositoryUrl",
+                "text": "Lib.csproj matches /RepositoryUrl/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "SourceLink",
+                "text": "Lib.csproj matches /SourceLink/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "ContinuousIntegrationBuild",
+                "text": "Lib.csproj matches /ContinuousIntegrationBuild/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 0,
+              "failed": 5,
+              "total": 5,
+              "pass_rate": 0
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Read": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 97170,
+              "executor_duration_seconds": 15.4
+            },
+            "spec_hash": "81c64643760e196ff8effcfcd745ada418f9cd852b8469683e0b65cfad53dd8c"
+          },
+          {
+            "id": "release-workflow",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1368,
+              "input_cost_usd": 0.001368
+            },
+            "measured": {
+              "input_tokens": 31,
+              "cache_read_input_tokens": 81964,
+              "cache_creation_input_tokens": 19663,
+              "output_tokens": 1848,
+              "cost_usd": 0.057432
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "id-token: write",
+                "text": ".github/workflows/release.yaml matches /id-token: write/",
+                "passed": true,
+                "evidence": "id-token: write",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "dotnet nuget push",
+                "text": ".github/workflows/release.yaml matches /dotnet nuget push/",
+                "passed": true,
+                "evidence": "dotnet nuget push",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "tags:",
+                "text": ".github/workflows/release.yaml matches /tags:/",
+                "passed": true,
+                "evidence": "tags:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "secrets\\.NUGET",
+                "text": ".github/workflows/release.yaml does not match /secrets\\.NUGET/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 103506,
+              "executor_duration_seconds": 19.9
+            },
+            "spec_hash": "2d6e8689295c7e6c2ed45a5b24e4a6d770a7e60fa85b3c27a6f5850b29d775d0"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 17.7,
+          "estimate": {
+            "input_tokens": 2734,
+            "input_cost_usd": 0.002734
+          },
+          "measured": {
+            "input_tokens": 56,
+            "cache_read_input_tokens": 162171,
+            "cache_creation_input_tokens": 35624,
+            "output_tokens": 2825,
+            "cost_usd": 0.102952
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T19:35:58Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 22.9,
+            "measured": {
+              "input_tokens": 62,
+              "cache_read_input_tokens": 289024,
+              "cache_creation_input_tokens": 35103,
+              "output_tokens": 4281,
+              "cost_usd": 0.121876
+            }
+          },
+          "results": [
+            {
+              "id": "nuget-metadata",
+              "passed": false,
+              "measured": {
+                "input_tokens": 24,
+                "cache_read_input_tokens": 79970,
+                "cache_creation_input_tokens": 15986,
+                "output_tokens": 1042,
+                "cost_usd": 0.04587
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 0.8
+              },
+              "timing": {
+                "executor_duration_seconds": 14.6
+              },
+              "fingerprint": "81c64643760e196ff8effcfcd745ada418f9cd852b8469683e0b65cfad53dd8c"
+            },
+            {
+              "id": "release-workflow",
+              "passed": true,
+              "measured": {
+                "input_tokens": 38,
+                "cache_read_input_tokens": 209054,
+                "cache_creation_input_tokens": 19117,
+                "output_tokens": 3239,
+                "cost_usd": 0.076006
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 31.1
+              },
+              "fingerprint": "2d6e8689295c7e6c2ed45a5b24e4a6d770a7e60fa85b3c27a6f5850b29d775d0"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T19:35:58Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 32.1,
+            "estimate": {
+              "input_tokens": 2734,
+              "input_cost_usd": 0.002734
+            },
+            "measured": {
+              "input_tokens": 70,
+              "cache_read_input_tokens": 216497,
+              "cache_creation_input_tokens": 36734,
+              "output_tokens": 2957,
+              "cost_usd": 0.111273
+            }
+          },
+          "results": [
+            {
+              "id": "nuget-metadata",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1366,
+                "input_cost_usd": 0.001366
+              },
+              "measured": {
+                "input_tokens": 17,
+                "cache_read_input_tokens": 32224,
+                "cache_creation_input_tokens": 15739,
+                "output_tokens": 675,
+                "cost_usd": 0.038759
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 5,
+                "total": 5,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 18.2
+              }
+            },
+            {
+              "id": "release-workflow",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1368,
+                "input_cost_usd": 0.001368
+              },
+              "measured": {
+                "input_tokens": 53,
+                "cache_read_input_tokens": 184273,
+                "cache_creation_input_tokens": 20995,
+                "output_tokens": 2282,
+                "cost_usd": 0.072514
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 46
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T19:43:00Z",
+        "executed": true,
+        "content_hash": "9b519b99970da894237c1629e5ee5928c0a85d73b4e0f57a888e7d927dcccc02",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Package this library as a NuGet package",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.9,
+            "estimate": {
+              "input_tokens": 1867,
+              "input_cost_usd": 0.009335
+            },
+            "spec_hash": "8e9ff383e79176e27f94aa2122a2bc5b10e7b2b4f95e642b448b9dcfaf435acd"
+          },
+          {
+            "query": "Publish to NuGet via GitHub Actions with trusted publishing",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.3,
+            "estimate": {
+              "input_tokens": 1879,
+              "input_cost_usd": 0.009395
+            },
+            "spec_hash": "da564a11e6e974b754e39c531ce1379b285c989f5919abf65d81820fb8cd1b80"
+          },
+          {
+            "query": "Set up SourceLink and deterministic builds for my package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.9,
+            "estimate": {
+              "input_tokens": 1874,
+              "input_cost_usd": 0.00937
+            },
+            "spec_hash": "c73690236ebc8a5c1e1ef7e83fee60debc85ab49231cc9521439e0858bf024a5"
+          },
+          {
+            "query": "Version my NuGet package from git tags",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.1,
+            "estimate": {
+              "input_tokens": 1868,
+              "input_cost_usd": 0.00934
+            },
+            "spec_hash": "5ac17987e18621aefb841638d68cc73c05149f270f0688b0f4acb178bc9dc7a1"
+          },
+          {
+            "query": "Add a CI workflow that builds, tests, and checks formatting for my .NET repo",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 14.4,
+            "estimate": {
+              "input_tokens": 1884,
+              "input_cost_usd": 0.00942
+            },
+            "spec_hash": "611fad5f9bb6bce04e574a0ac5e6972a7a5632efb77b815b8cb255d185962667"
+          },
+          {
+            "query": "Add Dependabot for my .NET repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.2,
+            "estimate": {
+              "input_tokens": 1870,
+              "input_cost_usd": 0.00935
+            },
+            "spec_hash": "36e4bf9fd85532347e1eb8c54b0a01b01cf0f4697f1dff726dbadcc87cf700ff"
+          },
+          {
+            "query": "Configure dotnet pack metadata for this library",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.6,
+            "estimate": {
+              "input_tokens": 1871,
+              "input_cost_usd": 0.009355
+            },
+            "spec_hash": "fcf734cb4179f795484fc2e0486014b63547dd34477ee59b354a4e27615fb04a"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.3,
+            "estimate": {
+              "input_tokens": 1873,
+              "input_cost_usd": 0.009365
+            },
+            "spec_hash": "918b0025db78a39b457413652c44684fe509bb385d4226ef947ae6b287e4908e"
+          },
+          {
+            "query": "Write xUnit tests for this class",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.9,
+            "estimate": {
+              "input_tokens": 1867,
+              "input_cost_usd": 0.009335
+            },
+            "spec_hash": "b9e9f9a82b660c5d4eb1a930b55460aa2bffb7144159f068b0674cae6fbe0482"
+          },
+          {
+            "query": "Add XML doc comments to this public API",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.3,
+            "estimate": {
+              "input_tokens": 1868,
+              "input_cost_usd": 0.00934
+            },
+            "spec_hash": "b057c2537cf4b41198add266e7a07f9658baaea1e4beeb86cf6ad85bef20c517"
+          },
+          {
+            "query": "Set up GoReleaser for my Go project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.9,
+            "estimate": {
+              "input_tokens": 1870,
+              "input_cost_usd": 0.00935
+            },
+            "spec_hash": "498375d63ad5581474777653823abc18417a49120785e9bd82d6edcf271f13b0"
+          },
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 1868,
+              "input_cost_usd": 0.00934
+            },
+            "spec_hash": "4181d3bf1d554a149420d4bacc47cc4fc084c365072797d0e5ca7fe748294788"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 2,
+          "total": 12,
+          "pass_rate": 0.833333,
+          "avg_run_seconds": 11.7,
+          "estimate": {
+            "input_tokens": 22459,
+            "input_cost_usd": 0.112295
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T23:20:12Z",
+        "executed": true,
+        "content_hash": "bc0bf304c6c08eb77be9442a16512f8ecac427672328e39929cdeefb4e5f6198",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "nuget-metadata",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1922,
+              "input_cost_usd": 0.00961
+            },
+            "measured": {
+              "input_tokens": 2818,
+              "cache_read_input_tokens": 82928,
+              "cache_creation_input_tokens": 12078,
+              "output_tokens": 4296,
+              "cost_usd": 0.284401
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "\u003cPackageId\u003e",
+                "text": "Lib.csproj matches /\u003cPackageId\u003e/",
+                "passed": true,
+                "evidence": "\u003cPackageId\u003e",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "PackageLicenseExpression",
+                "text": "Lib.csproj matches /PackageLicenseExpression/",
+                "passed": true,
+                "evidence": "PackageLicenseExpression",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "RepositoryUrl",
+                "text": "Lib.csproj matches /RepositoryUrl/",
+                "passed": true,
+                "evidence": "RepositoryUrl",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "SourceLink",
+                "text": "Lib.csproj matches /SourceLink/",
+                "passed": true,
+                "evidence": "SourceLink",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "ContinuousIntegrationBuild",
+                "text": "Lib.csproj matches /ContinuousIntegrationBuild/",
+                "passed": true,
+                "evidence": "ContinuousIntegrationBuild",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Glob": 2,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 102120,
+              "executor_duration_seconds": 57.4
+            },
+            "spec_hash": "81c64643760e196ff8effcfcd745ada418f9cd852b8469683e0b65cfad53dd8c"
+          },
+          {
+            "id": "release-workflow",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1928,
+              "input_cost_usd": 0.00964
+            },
+            "measured": {
+              "input_tokens": 2949,
+              "cache_read_input_tokens": 113524,
+              "cache_creation_input_tokens": 18037,
+              "output_tokens": 7346,
+              "cost_usd": 0.436156
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "id-token: write",
+                "text": ".github/workflows/release.yaml matches /id-token: write/",
+                "passed": true,
+                "evidence": "id-token: write",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "dotnet nuget push",
+                "text": ".github/workflows/release.yaml matches /dotnet nuget push/",
+                "passed": true,
+                "evidence": "dotnet nuget push",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "tags:",
+                "text": ".github/workflows/release.yaml matches /tags:/",
+                "passed": true,
+                "evidence": "tags:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "secrets\\.NUGET",
+                "text": ".github/workflows/release.yaml does not match /secrets\\.NUGET/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Glob": 5,
+                "Read": 3,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 11
+            },
+            "timing": {
+              "total_tokens": 141856,
+              "executor_duration_seconds": 103
+            },
+            "spec_hash": "2d6e8689295c7e6c2ed45a5b24e4a6d770a7e60fa85b3c27a6f5850b29d775d0"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 80.2,
+          "estimate": {
+            "input_tokens": 3850,
+            "input_cost_usd": 0.01925
+          },
+          "measured": {
+            "input_tokens": 5767,
+            "cache_read_input_tokens": 196452,
+            "cache_creation_input_tokens": 30115,
+            "output_tokens": 11642,
+            "cost_usd": 0.720557
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T19:46:48Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 78.3,
+            "measured": {
+              "input_tokens": 5153,
+              "cache_read_input_tokens": 285353,
+              "cache_creation_input_tokens": 22537,
+              "output_tokens": 10572,
+              "cost_usd": 0.659412
+            }
+          },
+          "results": [
+            {
+              "id": "nuget-metadata",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2646,
+                "cache_read_input_tokens": 207254,
+                "cache_creation_input_tokens": 13408,
+                "output_tokens": 7100,
+                "cost_usd": 0.429104
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 111.6
+              },
+              "fingerprint": "81c64643760e196ff8effcfcd745ada418f9cd852b8469683e0b65cfad53dd8c"
+            },
+            {
+              "id": "release-workflow",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2507,
+                "cache_read_input_tokens": 78099,
+                "cache_creation_input_tokens": 9129,
+                "output_tokens": 3472,
+                "cost_usd": 0.230308
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 45
+              },
+              "fingerprint": "2d6e8689295c7e6c2ed45a5b24e4a6d770a7e60fa85b3c27a6f5850b29d775d0"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T19:46:48Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 102.3,
+            "estimate": {
+              "input_tokens": 3850,
+              "input_cost_usd": 0.01925
+            },
+            "measured": {
+              "input_tokens": 5907,
+              "cache_read_input_tokens": 348996,
+              "cache_creation_input_tokens": 29548,
+              "output_tokens": 11021,
+              "cost_usd": 0.776334
+            }
+          },
+          "results": [
+            {
+              "id": "nuget-metadata",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1922,
+                "input_cost_usd": 0.00961
+              },
+              "measured": {
+                "input_tokens": 2956,
+                "cache_read_input_tokens": 206498,
+                "cache_creation_input_tokens": 12726,
+                "output_tokens": 4975,
+                "cost_usd": 0.370331
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 116.2
+              }
+            },
+            {
+              "id": "release-workflow",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1928,
+                "input_cost_usd": 0.00964
+              },
+              "measured": {
+                "input_tokens": 2951,
+                "cache_read_input_tokens": 142498,
+                "cache_creation_input_tokens": 16822,
+                "output_tokens": 6046,
+                "cost_usd": 0.406003
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 88.4
+              }
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T19:38:09Z",
+        "executed": true,
+        "content_hash": "9b519b99970da894237c1629e5ee5928c0a85d73b4e0f57a888e7d927dcccc02",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Package this library as a NuGet package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.5,
+            "estimate": {
+              "input_tokens": 1328,
+              "input_cost_usd": 0.003984
+            },
+            "spec_hash": "8e9ff383e79176e27f94aa2122a2bc5b10e7b2b4f95e642b448b9dcfaf435acd"
+          },
+          {
+            "query": "Publish to NuGet via GitHub Actions with trusted publishing",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.6,
+            "estimate": {
+              "input_tokens": 1331,
+              "input_cost_usd": 0.003993
+            },
+            "spec_hash": "da564a11e6e974b754e39c531ce1379b285c989f5919abf65d81820fb8cd1b80"
+          },
+          {
+            "query": "Set up SourceLink and deterministic builds for my package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.7,
+            "estimate": {
+              "input_tokens": 1331,
+              "input_cost_usd": 0.003993
+            },
+            "spec_hash": "c73690236ebc8a5c1e1ef7e83fee60debc85ab49231cc9521439e0858bf024a5"
+          },
+          {
+            "query": "Version my NuGet package from git tags",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.8,
+            "estimate": {
+              "input_tokens": 1328,
+              "input_cost_usd": 0.003984
+            },
+            "spec_hash": "5ac17987e18621aefb841638d68cc73c05149f270f0688b0f4acb178bc9dc7a1"
+          },
+          {
+            "query": "Add a CI workflow that builds, tests, and checks formatting for my .NET repo",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 47.2,
+            "estimate": {
+              "input_tokens": 1336,
+              "input_cost_usd": 0.004008
+            },
+            "spec_hash": "611fad5f9bb6bce04e574a0ac5e6972a7a5632efb77b815b8cb255d185962667"
+          },
+          {
+            "query": "Add Dependabot for my .NET repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.4,
+            "estimate": {
+              "input_tokens": 1329,
+              "input_cost_usd": 0.003987
+            },
+            "spec_hash": "36e4bf9fd85532347e1eb8c54b0a01b01cf0f4697f1dff726dbadcc87cf700ff"
+          },
+          {
+            "query": "Configure dotnet pack metadata for this library",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "estimate": {
+              "input_tokens": 1327,
+              "input_cost_usd": 0.003981
+            },
+            "spec_hash": "fcf734cb4179f795484fc2e0486014b63547dd34477ee59b354a4e27615fb04a"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.3,
+            "estimate": {
+              "input_tokens": 1330,
+              "input_cost_usd": 0.00399
+            },
+            "spec_hash": "918b0025db78a39b457413652c44684fe509bb385d4226ef947ae6b287e4908e"
+          },
+          {
+            "query": "Write xUnit tests for this class",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.5,
+            "estimate": {
+              "input_tokens": 1326,
+              "input_cost_usd": 0.003978
+            },
+            "spec_hash": "b9e9f9a82b660c5d4eb1a930b55460aa2bffb7144159f068b0674cae6fbe0482"
+          },
+          {
+            "query": "Add XML doc comments to this public API",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.8,
+            "estimate": {
+              "input_tokens": 1327,
+              "input_cost_usd": 0.003981
+            },
+            "spec_hash": "b057c2537cf4b41198add266e7a07f9658baaea1e4beeb86cf6ad85bef20c517"
+          },
+          {
+            "query": "Set up GoReleaser for my Go project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.9,
+            "estimate": {
+              "input_tokens": 1329,
+              "input_cost_usd": 0.003987
+            },
+            "spec_hash": "498375d63ad5581474777653823abc18417a49120785e9bd82d6edcf271f13b0"
+          },
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 21.2,
+            "estimate": {
+              "input_tokens": 1327,
+              "input_cost_usd": 0.003981
+            },
+            "spec_hash": "4181d3bf1d554a149420d4bacc47cc4fc084c365072797d0e5ca7fe748294788"
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 1,
+          "total": 12,
+          "pass_rate": 0.916667,
+          "avg_run_seconds": 10.7,
+          "estimate": {
+            "input_tokens": 15949,
+            "input_cost_usd": 0.047847
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T23:18:28Z",
+        "executed": true,
+        "content_hash": "bc0bf304c6c08eb77be9442a16512f8ecac427672328e39929cdeefb4e5f6198",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "nuget-metadata",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1366,
+              "input_cost_usd": 0.004098
+            },
+            "measured": {
+              "input_tokens": 42,
+              "cache_read_input_tokens": 137880,
+              "cache_creation_input_tokens": 10708,
+              "output_tokens": 1836,
+              "cost_usd": 0.133945
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "\u003cPackageId\u003e",
+                "text": "Lib.csproj matches /\u003cPackageId\u003e/",
+                "passed": true,
+                "evidence": "\u003cPackageId\u003e",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "PackageLicenseExpression",
+                "text": "Lib.csproj matches /PackageLicenseExpression/",
+                "passed": true,
+                "evidence": "PackageLicenseExpression",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "RepositoryUrl",
+                "text": "Lib.csproj matches /RepositoryUrl/",
+                "passed": true,
+                "evidence": "RepositoryUrl",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "SourceLink",
+                "text": "Lib.csproj matches /SourceLink/",
+                "passed": true,
+                "evidence": "SourceLink",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "ContinuousIntegrationBuild",
+                "text": "Lib.csproj matches /ContinuousIntegrationBuild/",
+                "passed": true,
+                "evidence": "ContinuousIntegrationBuild",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Edit": 1,
+                "Glob": 3,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 7
+            },
+            "timing": {
+              "total_tokens": 150466,
+              "executor_duration_seconds": 34.5
+            },
+            "spec_hash": "81c64643760e196ff8effcfcd745ada418f9cd852b8469683e0b65cfad53dd8c"
+          },
+          {
+            "id": "release-workflow",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1368,
+              "input_cost_usd": 0.004104
+            },
+            "measured": {
+              "input_tokens": 690,
+              "cache_read_input_tokens": 115366,
+              "cache_creation_input_tokens": 12076,
+              "output_tokens": 2381,
+              "cost_usd": 0.166293
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "id-token: write",
+                "text": ".github/workflows/release.yaml matches /id-token: write/",
+                "passed": true,
+                "evidence": "id-token: write",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "dotnet nuget push",
+                "text": ".github/workflows/release.yaml matches /dotnet nuget push/",
+                "passed": true,
+                "evidence": "dotnet nuget push",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "tags:",
+                "text": ".github/workflows/release.yaml matches /tags:/",
+                "passed": true,
+                "evidence": "tags:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "secrets\\.NUGET",
+                "text": ".github/workflows/release.yaml does not match /secrets\\.NUGET/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Agent": 1,
+                "Bash": 4,
+                "Glob": 3,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 12
+            },
+            "timing": {
+              "total_tokens": 130513,
+              "executor_duration_seconds": 61.2
+            },
+            "spec_hash": "2d6e8689295c7e6c2ed45a5b24e4a6d770a7e60fa85b3c27a6f5850b29d775d0"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 47.9,
+          "estimate": {
+            "input_tokens": 2734,
+            "input_cost_usd": 0.008202
+          },
+          "measured": {
+            "input_tokens": 732,
+            "cache_read_input_tokens": 253246,
+            "cache_creation_input_tokens": 22784,
+            "output_tokens": 4217,
+            "cost_usd": 0.300238
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T19:41:12Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 86.3,
+            "measured": {
+              "input_tokens": 13,
+              "cache_read_input_tokens": 202216,
+              "cache_creation_input_tokens": 26499,
+              "output_tokens": 11621,
+              "cost_usd": 0.395309
+            }
+          },
+          "results": [
+            {
+              "id": "nuget-metadata",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 84860,
+                "cache_creation_input_tokens": 9935,
+                "output_tokens": 2714,
+                "cost_usd": 0.126463
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 46.7
+              },
+              "fingerprint": "81c64643760e196ff8effcfcd745ada418f9cd852b8469683e0b65cfad53dd8c"
+            },
+            {
+              "id": "release-workflow",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7,
+                "cache_read_input_tokens": 117356,
+                "cache_creation_input_tokens": 16564,
+                "output_tokens": 8907,
+                "cost_usd": 0.268846
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 125.8
+              },
+              "fingerprint": "2d6e8689295c7e6c2ed45a5b24e4a6d770a7e60fa85b3c27a6f5850b29d775d0"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T19:41:12Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 47.9,
+            "estimate": {
+              "input_tokens": 2734,
+              "input_cost_usd": 0.008202
+            },
+            "measured": {
+              "input_tokens": 17,
+              "cache_read_input_tokens": 253080,
+              "cache_creation_input_tokens": 22153,
+              "output_tokens": 3980,
+              "cost_usd": 0.286222
+            }
+          },
+          "results": [
+            {
+              "id": "nuget-metadata",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1366,
+                "input_cost_usd": 0.004098
+              },
+              "measured": {
+                "input_tokens": 9,
+                "cache_read_input_tokens": 137601,
+                "cache_creation_input_tokens": 10542,
+                "output_tokens": 1792,
+                "cost_usd": 0.132106
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 38.7
+              }
+            },
+            {
+              "id": "release-workflow",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1368,
+                "input_cost_usd": 0.004104
+              },
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 115479,
+                "cache_creation_input_tokens": 11611,
+                "output_tokens": 2188,
+                "cost_usd": 0.154116
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 57.1
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T19:52:34Z",
+        "executed": true,
+        "content_hash": "9b519b99970da894237c1629e5ee5928c0a85d73b4e0f57a888e7d927dcccc02",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Package this library as a NuGet package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.6,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.002733
+            },
+            "spec_hash": "8e9ff383e79176e27f94aa2122a2bc5b10e7b2b4f95e642b448b9dcfaf435acd"
+          },
+          {
+            "query": "Publish to NuGet via GitHub Actions with trusted publishing",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.4,
+            "estimate": {
+              "input_tokens": 1096,
+              "input_cost_usd": 0.00274
+            },
+            "spec_hash": "da564a11e6e974b754e39c531ce1379b285c989f5919abf65d81820fb8cd1b80"
+          },
+          {
+            "query": "Set up SourceLink and deterministic builds for my package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 33.6,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.002738
+            },
+            "spec_hash": "c73690236ebc8a5c1e1ef7e83fee60debc85ab49231cc9521439e0858bf024a5"
+          },
+          {
+            "query": "Version my NuGet package from git tags",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.002733
+            },
+            "spec_hash": "5ac17987e18621aefb841638d68cc73c05149f270f0688b0f4acb178bc9dc7a1"
+          },
+          {
+            "query": "Add a CI workflow that builds, tests, and checks formatting for my .NET repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.4,
+            "estimate": {
+              "input_tokens": 1102,
+              "input_cost_usd": 0.002755
+            },
+            "spec_hash": "611fad5f9bb6bce04e574a0ac5e6972a7a5632efb77b815b8cb255d185962667"
+          },
+          {
+            "query": "Add Dependabot for my .NET repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.5,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.002733
+            },
+            "spec_hash": "36e4bf9fd85532347e1eb8c54b0a01b01cf0f4697f1dff726dbadcc87cf700ff"
+          },
+          {
+            "query": "Configure dotnet pack metadata for this library",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.002733
+            },
+            "spec_hash": "fcf734cb4179f795484fc2e0486014b63547dd34477ee59b354a4e27615fb04a"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 89,
+            "estimate": {
+              "input_tokens": 1096,
+              "input_cost_usd": 0.00274
+            },
+            "spec_hash": "918b0025db78a39b457413652c44684fe509bb385d4226ef947ae6b287e4908e"
+          },
+          {
+            "query": "Write xUnit tests for this class",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 53.3,
+            "estimate": {
+              "input_tokens": 1092,
+              "input_cost_usd": 0.00273
+            },
+            "spec_hash": "b9e9f9a82b660c5d4eb1a930b55460aa2bffb7144159f068b0674cae6fbe0482"
+          },
+          {
+            "query": "Add XML doc comments to this public API",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 39.4,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.002733
+            },
+            "spec_hash": "b057c2537cf4b41198add266e7a07f9658baaea1e4beeb86cf6ad85bef20c517"
+          },
+          {
+            "query": "Set up GoReleaser for my Go project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 55,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.002738
+            },
+            "spec_hash": "498375d63ad5581474777653823abc18417a49120785e9bd82d6edcf271f13b0"
+          },
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 66.7,
+            "estimate": {
+              "input_tokens": 1092,
+              "input_cost_usd": 0.00273
+            },
+            "spec_hash": "4181d3bf1d554a149420d4bacc47cc4fc084c365072797d0e5ca7fe748294788"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 0,
+          "total": 12,
+          "pass_rate": 1,
+          "avg_run_seconds": 34.6,
+          "estimate": {
+            "input_tokens": 13133,
+            "input_cost_usd": 0.032836
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T23:21:13Z",
+        "executed": true,
+        "content_hash": "bc0bf304c6c08eb77be9442a16512f8ecac427672328e39929cdeefb4e5f6198",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "nuget-metadata",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1120,
+              "input_cost_usd": 0.0028
+            },
+            "measured": {
+              "input_tokens": 19379,
+              "cache_read_input_tokens": 99456,
+              "output_tokens": 2045,
+              "cost_usd": 0.327763
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "\u003cPackageId\u003e",
+                "text": "Lib.csproj matches /\u003cPackageId\u003e/",
+                "passed": true,
+                "evidence": "\u003cPackageId\u003e",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "PackageLicenseExpression",
+                "text": "Lib.csproj matches /PackageLicenseExpression/",
+                "passed": true,
+                "evidence": "PackageLicenseExpression",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "RepositoryUrl",
+                "text": "Lib.csproj matches /RepositoryUrl/",
+                "passed": true,
+                "evidence": "RepositoryUrl",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "SourceLink",
+                "text": "Lib.csproj matches /SourceLink/",
+                "passed": true,
+                "evidence": "SourceLink",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "ContinuousIntegrationBuild",
+                "text": "Lib.csproj matches /ContinuousIntegrationBuild/",
+                "passed": true,
+                "evidence": "ContinuousIntegrationBuild",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 7,
+                "file_change": 1
+              },
+              "total_tool_calls": 8
+            },
+            "timing": {
+              "total_tokens": 120880,
+              "executor_duration_seconds": 61.5
+            },
+            "spec_hash": "81c64643760e196ff8effcfcd745ada418f9cd852b8469683e0b65cfad53dd8c"
+          },
+          {
+            "id": "release-workflow",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1127,
+              "input_cost_usd": 0.002817
+            },
+            "measured": {
+              "input_tokens": 17548,
+              "cache_read_input_tokens": 82176,
+              "output_tokens": 2194,
+              "cost_usd": 0.28222
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "id-token: write",
+                "text": ".github/workflows/release.yaml matches /id-token: write/",
+                "passed": true,
+                "evidence": "id-token: write",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "dotnet nuget push",
+                "text": ".github/workflows/release.yaml matches /dotnet nuget push/",
+                "passed": true,
+                "evidence": "dotnet nuget push",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "tags:",
+                "text": ".github/workflows/release.yaml matches /tags:/",
+                "passed": true,
+                "evidence": "tags:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "secrets\\.NUGET",
+                "text": ".github/workflows/release.yaml does not match /secrets\\.NUGET/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 8,
+                "file_change": 1
+              },
+              "total_tool_calls": 9
+            },
+            "timing": {
+              "total_tokens": 101918,
+              "executor_duration_seconds": 54.3
+            },
+            "spec_hash": "2d6e8689295c7e6c2ed45a5b24e4a6d770a7e60fa85b3c27a6f5850b29d775d0"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 57.9,
+          "estimate": {
+            "input_tokens": 2247,
+            "input_cost_usd": 0.005617
+          },
+          "measured": {
+            "input_tokens": 36927,
+            "cache_read_input_tokens": 181632,
+            "output_tokens": 4239,
+            "cost_usd": 0.609983
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T19:54:50Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 68.2,
+            "measured": {
+              "input_tokens": 67839,
+              "cache_read_input_tokens": 210944,
+              "output_tokens": 5629,
+              "cost_usd": 0.781393
+            }
+          },
+          "results": [
+            {
+              "id": "nuget-metadata",
+              "passed": false,
+              "measured": {
+                "input_tokens": 35026,
+                "cache_read_input_tokens": 124032,
+                "output_tokens": 3366,
+                "cost_usd": 0.448135
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 0.6
+              },
+              "timing": {
+                "executor_duration_seconds": 79.9
+              },
+              "fingerprint": "81c64643760e196ff8effcfcd745ada418f9cd852b8469683e0b65cfad53dd8c"
+            },
+            {
+              "id": "release-workflow",
+              "passed": false,
+              "measured": {
+                "input_tokens": 32813,
+                "cache_read_input_tokens": 86912,
+                "output_tokens": 2263,
+                "cost_usd": 0.333258
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 0.8
+              },
+              "timing": {
+                "executor_duration_seconds": 56.4
+              },
+              "fingerprint": "2d6e8689295c7e6c2ed45a5b24e4a6d770a7e60fa85b3c27a6f5850b29d775d0"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T19:54:50Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 63.1,
+            "estimate": {
+              "input_tokens": 2247,
+              "input_cost_usd": 0.005617
+            },
+            "measured": {
+              "input_tokens": 42486,
+              "cache_read_input_tokens": 220544,
+              "output_tokens": 4556,
+              "cost_usd": 0.725915
+            }
+          },
+          "results": [
+            {
+              "id": "nuget-metadata",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1120,
+                "input_cost_usd": 0.0028
+              },
+              "measured": {
+                "input_tokens": 13228,
+                "cache_read_input_tokens": 117888,
+                "output_tokens": 2019,
+                "cost_usd": 0.358075
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 47.4
+              }
+            },
+            {
+              "id": "release-workflow",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1127,
+                "input_cost_usd": 0.002817
+              },
+              "measured": {
+                "input_tokens": 29258,
+                "cache_read_input_tokens": 102656,
+                "output_tokens": 2537,
+                "cost_usd": 0.36784
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 78.8
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:00:55Z",
+        "executed": true,
+        "content_hash": "9b519b99970da894237c1629e5ee5928c0a85d73b4e0f57a888e7d927dcccc02",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Package this library as a NuGet package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.005465
+            },
+            "spec_hash": "8e9ff383e79176e27f94aa2122a2bc5b10e7b2b4f95e642b448b9dcfaf435acd"
+          },
+          {
+            "query": "Publish to NuGet via GitHub Actions with trusted publishing",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.8,
+            "estimate": {
+              "input_tokens": 1096,
+              "input_cost_usd": 0.00548
+            },
+            "spec_hash": "da564a11e6e974b754e39c531ce1379b285c989f5919abf65d81820fb8cd1b80"
+          },
+          {
+            "query": "Set up SourceLink and deterministic builds for my package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.005475
+            },
+            "spec_hash": "c73690236ebc8a5c1e1ef7e83fee60debc85ab49231cc9521439e0858bf024a5"
+          },
+          {
+            "query": "Version my NuGet package from git tags",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.9,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.005465
+            },
+            "spec_hash": "5ac17987e18621aefb841638d68cc73c05149f270f0688b0f4acb178bc9dc7a1"
+          },
+          {
+            "query": "Add a CI workflow that builds, tests, and checks formatting for my .NET repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.4,
+            "estimate": {
+              "input_tokens": 1102,
+              "input_cost_usd": 0.00551
+            },
+            "spec_hash": "611fad5f9bb6bce04e574a0ac5e6972a7a5632efb77b815b8cb255d185962667"
+          },
+          {
+            "query": "Add Dependabot for my .NET repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.3,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.005465
+            },
+            "spec_hash": "36e4bf9fd85532347e1eb8c54b0a01b01cf0f4697f1dff726dbadcc87cf700ff"
+          },
+          {
+            "query": "Configure dotnet pack metadata for this library",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.005465
+            },
+            "spec_hash": "fcf734cb4179f795484fc2e0486014b63547dd34477ee59b354a4e27615fb04a"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1096,
+              "input_cost_usd": 0.00548
+            },
+            "spec_hash": "918b0025db78a39b457413652c44684fe509bb385d4226ef947ae6b287e4908e"
+          },
+          {
+            "query": "Write xUnit tests for this class",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 53.3,
+            "estimate": {
+              "input_tokens": 1092,
+              "input_cost_usd": 0.00546
+            },
+            "spec_hash": "b9e9f9a82b660c5d4eb1a930b55460aa2bffb7144159f068b0674cae6fbe0482"
+          },
+          {
+            "query": "Add XML doc comments to this public API",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 60.5,
+            "estimate": {
+              "input_tokens": 1093,
+              "input_cost_usd": 0.005465
+            },
+            "spec_hash": "b057c2537cf4b41198add266e7a07f9658baaea1e4beeb86cf6ad85bef20c517"
+          },
+          {
+            "query": "Set up GoReleaser for my Go project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 72.3,
+            "estimate": {
+              "input_tokens": 1095,
+              "input_cost_usd": 0.005475
+            },
+            "spec_hash": "498375d63ad5581474777653823abc18417a49120785e9bd82d6edcf271f13b0"
+          },
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 76.3,
+            "estimate": {
+              "input_tokens": 1092,
+              "input_cost_usd": 0.00546
+            },
+            "spec_hash": "4181d3bf1d554a149420d4bacc47cc4fc084c365072797d0e5ca7fe748294788"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 0,
+          "total": 12,
+          "pass_rate": 1,
+          "avg_run_seconds": 38.3,
+          "estimate": {
+            "input_tokens": 13133,
+            "input_cost_usd": 0.065665
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "0.4.0",
+        "ran_at": "2026-06-27T23:22:20Z",
+        "executed": true,
+        "content_hash": "bc0bf304c6c08eb77be9442a16512f8ecac427672328e39929cdeefb4e5f6198",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "nuget-metadata",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1120,
+              "input_cost_usd": 0.0056
+            },
+            "measured": {
+              "input_tokens": 11406,
+              "cache_read_input_tokens": 113280,
+              "output_tokens": 1870,
+              "cost_usd": 0.67953
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "\u003cPackageId\u003e",
+                "text": "Lib.csproj matches /\u003cPackageId\u003e/",
+                "passed": true,
+                "evidence": "\u003cPackageId\u003e",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "PackageLicenseExpression",
+                "text": "Lib.csproj matches /PackageLicenseExpression/",
+                "passed": true,
+                "evidence": "PackageLicenseExpression",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "RepositoryUrl",
+                "text": "Lib.csproj matches /RepositoryUrl/",
+                "passed": true,
+                "evidence": "RepositoryUrl",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "SourceLink",
+                "text": "Lib.csproj matches /SourceLink/",
+                "passed": true,
+                "evidence": "SourceLink",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Lib.csproj",
+                "pattern": "ContinuousIntegrationBuild",
+                "text": "Lib.csproj matches /ContinuousIntegrationBuild/",
+                "passed": true,
+                "evidence": "ContinuousIntegrationBuild",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 9,
+                "file_change": 1
+              },
+              "total_tool_calls": 10
+            },
+            "timing": {
+              "total_tokens": 126556,
+              "executor_duration_seconds": 48.6
+            },
+            "spec_hash": "81c64643760e196ff8effcfcd745ada418f9cd852b8469683e0b65cfad53dd8c"
+          },
+          {
+            "id": "release-workflow",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1127,
+              "input_cost_usd": 0.005635
+            },
+            "measured": {
+              "input_tokens": 23936,
+              "cache_read_input_tokens": 105600,
+              "output_tokens": 2580,
+              "cost_usd": 0.72508
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "id-token: write",
+                "text": ".github/workflows/release.yaml matches /id-token: write/",
+                "passed": true,
+                "evidence": "id-token: write",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "dotnet nuget push",
+                "text": ".github/workflows/release.yaml matches /dotnet nuget push/",
+                "passed": true,
+                "evidence": "dotnet nuget push",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "tags:",
+                "text": ".github/workflows/release.yaml matches /tags:/",
+                "passed": true,
+                "evidence": "tags:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "secrets\\.NUGET",
+                "text": ".github/workflows/release.yaml does not match /secrets\\.NUGET/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 9,
+                "file_change": 1
+              },
+              "total_tool_calls": 10
+            },
+            "timing": {
+              "total_tokens": 132116,
+              "executor_duration_seconds": 67
+            },
+            "spec_hash": "2d6e8689295c7e6c2ed45a5b24e4a6d770a7e60fa85b3c27a6f5850b29d775d0"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 57.8,
+          "estimate": {
+            "input_tokens": 2247,
+            "input_cost_usd": 0.011235
+          },
+          "measured": {
+            "input_tokens": 35342,
+            "cache_read_input_tokens": 218880,
+            "output_tokens": 4450,
+            "cost_usd": 1.40461
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T20:04:25Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 89.1,
+            "measured": {
+              "input_tokens": 101113,
+              "cache_read_input_tokens": 328832,
+              "output_tokens": 6796,
+              "cost_usd": 2.353605
+            }
+          },
+          "results": [
+            {
+              "id": "nuget-metadata",
+              "passed": true,
+              "measured": {
+                "input_tokens": 35455,
+                "cache_read_input_tokens": 150912,
+                "output_tokens": 2363,
+                "cost_usd": 1.002725
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 61.7
+              },
+              "fingerprint": "81c64643760e196ff8effcfcd745ada418f9cd852b8469683e0b65cfad53dd8c"
+            },
+            {
+              "id": "release-workflow",
+              "passed": true,
+              "measured": {
+                "input_tokens": 65658,
+                "cache_read_input_tokens": 177920,
+                "output_tokens": 4433,
+                "cost_usd": 1.35088
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 116.4
+              },
+              "fingerprint": "2d6e8689295c7e6c2ed45a5b24e4a6d770a7e60fa85b3c27a6f5850b29d775d0"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-24T20:04:25Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 86.1,
+            "estimate": {
+              "input_tokens": 2247,
+              "input_cost_usd": 0.011235
+            },
+            "measured": {
+              "input_tokens": 68623,
+              "cache_read_input_tokens": 324224,
+              "output_tokens": 7458,
+              "cost_usd": 2.187975
+            }
+          },
+          "results": [
+            {
+              "id": "nuget-metadata",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1120,
+                "input_cost_usd": 0.0056
+              },
+              "measured": {
+                "input_tokens": 25043,
+                "cache_read_input_tokens": 152960,
+                "output_tokens": 3404,
+                "cost_usd": 0.992135
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 78.8
+              }
+            },
+            {
+              "id": "release-workflow",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1127,
+                "input_cost_usd": 0.005635
+              },
+              "measured": {
+                "input_tokens": 43580,
+                "cache_read_input_tokens": 171264,
+                "output_tokens": 4054,
+                "cost_usd": 1.19584
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 93.3
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

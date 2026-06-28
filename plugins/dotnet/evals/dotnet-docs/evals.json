@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "dotnet-docs",
+  "evals": [
+    {
+      "id": "xml-docs",
+      "prompt": "Add XML doc comments to the public members of KeyVal.cs per our conventions — document the parameter, the return value, and the exception it can throw.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["fixtures/docdemo/DocDemo.csproj", "files/KeyVal.cs"],
+      "assertions": [
+        { "type": "regex", "path": "KeyVal.cs", "pattern": "/// <summary>" },
+        { "type": "regex", "path": "KeyVal.cs", "pattern": "<param" },
+        { "type": "regex", "path": "KeyVal.cs", "pattern": "<returns>|<exception" }
+      ]
+    },
+    {
+      "id": "doc-gate",
+      "prompt": "Make missing XML documentation a build error for this library project by enabling the documentation file in Lib.csproj.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["files/Lib.csproj"],
+      "assertions": [{ "type": "regex", "path": "Lib.csproj", "pattern": "<GenerateDocumentationFile>true" }]
+    }
+  ]
+}

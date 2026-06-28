@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "dotnet-project",
+  "evals": [
+    {
+      "id": "directory-build-props",
+      "prompt": "Add a Directory.Build.props enabling nullable reference types, implicit usings, Roslyn analyzers, and warnings-as-errors, and move the package version in App.csproj to Central Package Management in a Directory.Packages.props.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["files/App.csproj"],
+      "assertions": [
+        { "type": "file_exists", "path": "Directory.Build.props" },
+        { "type": "regex", "path": "Directory.Build.props", "pattern": "<Nullable>enable" },
+        { "type": "regex", "path": "Directory.Build.props", "pattern": "TreatWarningsAsErrors" },
+        { "type": "regex", "path": "Directory.Build.props", "pattern": "EnableNETAnalyzers" },
+        { "type": "file_exists", "path": "Directory.Packages.props" },
+        { "type": "regex", "path": "Directory.Packages.props", "pattern": "ManagePackageVersionsCentrally" },
+        { "type": "not_regex", "path": "App.csproj", "pattern": "Version=" }
+      ]
+    },
+    {
+      "id": "global-json",
+      "prompt": "Pin the .NET SDK for this repo with a global.json using latestFeature roll-forward.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["files/Lib.csproj"],
+      "assertions": [
+        { "type": "file_exists", "path": "global.json" },
+        { "type": "regex", "path": "global.json", "pattern": "rollForward" },
+        { "type": "regex", "path": "global.json", "pattern": "latestFeature" }
+      ]
+    }
+  ]
+}

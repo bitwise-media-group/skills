@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "dotnet-testing",
+  "evals": [
+    {
+      "id": "theory-table",
+      "prompt": "Write xUnit tests for Numbers.Clamp (in Clamp.cs) in a new ClampTests.cs, following our testing conventions — use a table-driven theory.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["fixtures/testdemo/TestDemo.csproj", "files/Clamp.cs"],
+      "assertions": [
+        { "type": "file_exists", "path": "ClampTests.cs" },
+        { "type": "regex", "path": "ClampTests.cs", "pattern": "\\[Theory\\]" },
+        { "type": "regex", "path": "ClampTests.cs", "pattern": "InlineData" },
+        { "type": "regex", "path": "ClampTests.cs", "pattern": "Assert\\." },
+        { "type": "not_regex", "path": "ClampTests.cs", "pattern": "FluentAssertions|Moq|Shouldly" }
+      ]
+    },
+    {
+      "id": "fake-over-mock",
+      "prompt": "Write xUnit tests for TokenBroker (in Broker.cs) in a new BrokerTests.cs. TokenBroker depends on IClock — use a hand-written fake, not a mocking library.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["fixtures/testdemo/TestDemo.csproj", "files/IClock.cs", "files/Broker.cs"],
+      "assertions": [
+        { "type": "file_exists", "path": "BrokerTests.cs" },
+        { "type": "regex", "path": "BrokerTests.cs", "pattern": "\\[Fact\\]|\\[Theory\\]" },
+        { "type": "regex", "path": "BrokerTests.cs", "pattern": "IClock" },
+        { "type": "not_regex", "path": "BrokerTests.cs", "pattern": "Moq|NSubstitute|FluentAssertions" }
+      ]
+    }
+  ]
+}

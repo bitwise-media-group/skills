@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "dotnet-data",
+  "triggers": [
+    { "query": "Fix the N+1 query in this EF Core code", "should_trigger": true },
+    { "query": "Use AsNoTracking for these read-only EF queries", "should_trigger": true },
+    { "query": "Register my DbContext with the right lifetime", "should_trigger": true },
+    { "query": "Add an EF Core migration for the Orders table", "should_trigger": true },
+    { "query": "Thread CancellationToken through these EF Core queries", "should_trigger": true },
+    { "query": "Should I use split queries for these includes?", "should_trigger": true },
+    { "query": "Project this EF Core query straight to a DTO", "should_trigger": true },
+    { "query": "Add a minimal-API endpoint for items", "should_trigger": false },
+    { "query": "Write a raw SQL query with Dapper", "should_trigger": false },
+    { "query": "Benchmark this method with BenchmarkDotNet", "should_trigger": false },
+    { "query": "Refactor this C# record's equality", "should_trigger": false },
+    { "query": "Query MongoDB with the C# driver", "should_trigger": false }
+  ]
+}

@@ -29,6 +29,12 @@
       "source": "./plugins/python",
       "description": "Modern Python on the Astral toolchain — uv project layout, ruff format/lint, ty/pyright type checking, pytest with Hypothesis, Google-style docstrings with CLI references, and trusted-publishing releases.",
       "keywords": ["python", "uv", "ruff", "ty", "pyright", "pytest", "typing"]
+    },
+    {
+      "name": "dotnet",
+      "source": "./plugins/dotnet",
+      "description": "Modern .NET — stdlib-first C# style, SDK-style projects with CPM, xUnit testing, XML-doc conventions, NuGet trusted-publishing releases, ASP.NET Core minimal APIs, EF Core, and performance diagnostics.",
+      "keywords": ["dotnet", "csharp", "aspnetcore", "efcore", "xunit", "nuget"]
     }
   ]
 }

@@ -1,0 +1,45 @@
+# Tag-driven release — save as .github/workflows/release.yaml. Pushing a vX.Y.Z tag
+# packs the NuGet package(s) and publishes them to NuGet.org via Trusted Publishing
+# (OIDC) — no API key to store or rotate. The NuGet/login action exchanges the
+# workflow's OIDC token for a short-lived key. Configure the trusted publisher for
+# this repo on NuGet.org first:
+# https://learn.microsoft.com/nuget/nuget-org/trusted-publishing
+#
+# Every action is pinned to a full commit SHA (tag in the comment).
+name: release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+  id-token: write # OIDC token for NuGet Trusted Publishing
+
+jobs:
+  nuget:
+    runs-on: ubuntu-latest
+    environment: nuget # optional: gate the publish behind a protected environment
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+        with:
+          fetch-depth: 0 # MinVer derives the version from the full tag history
+
+      - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4.3.1
+        with:
+          global-json-file: global.json
+
+      - name: Pack
+        run: dotnet pack --configuration Release --output artifacts
+
+      # Exchange the OIDC token for a short-lived NuGet API key. Replace `user`
+      # with the NuGet.org account that owns the trusted-publishing policy.
+      - uses: NuGet/login@8d196754b4036150537f80ac539e15c2f1028841 # v1.2.0
+        id: login
+        with:
+          user: your-nuget-account
+
+      - name: Push
+        run: >
+          dotnet nuget push "artifacts/*.nupkg" --api-key ${{ steps.login.outputs.NUGET_API_KEY }} --source
+          https://api.nuget.org/v3/index.json --skip-duplicate

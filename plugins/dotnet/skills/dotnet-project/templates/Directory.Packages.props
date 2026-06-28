@@ -1,0 +1,25 @@
+<!--
+  Save as Directory.Packages.props at the repo root. With Central Package Management
+  on, every dependency version lives here as a <PackageVersion>; .csproj files carry
+  bare <PackageReference Include="..." /> with no Version. One source of truth for the
+  whole solution. Add a version with: dotnet add package <name> (it edits this file).
+-->
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Application dependencies -->
+    <PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Test dependencies (referenced only by tests/ projects) -->
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.12.0" />
+    <PackageVersion Include="xunit.v3" Version="1.0.0" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.0.0" />
+    <PackageVersion Include="coverlet.collector" Version="6.0.2" />
+  </ItemGroup>
+</Project>

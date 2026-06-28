@@ -1,0 +1,11 @@
+{
+  "name": "dotnet",
+  "version": "0.1.0",
+  "description": "Modern .NET development — stdlib-first C# style with nullable reference types and async correctness, SDK-style projects with Central Package Management and Directory.Build.props, xUnit testing with hand-written fakes, XML-doc conventions, NuGet trusted-publishing releases, ASP.NET Core minimal APIs, EF Core data access, and performance diagnostics.",
+  "author": {
+    "name": "Bitwise Media Group",
+    "email": "deavon@bitwisemedia.co.uk"
+  },
+  "license": "MIT",
+  "keywords": ["dotnet", "csharp", "aspnetcore", "efcore", "xunit", "nuget", "roslyn", "minimal-api", "performance"]
+}

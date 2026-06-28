@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "dotnet-perf",
+  "triggers": [
+    { "query": "Fix the sync-over-async deadlock in this code", "should_trigger": true },
+    { "query": "Reduce allocations in this hot path", "should_trigger": true },
+    { "query": "This string building in a loop is slow — fix it", "should_trigger": true },
+    { "query": "Write a BenchmarkDotNet benchmark for this parser", "should_trigger": true },
+    { "query": "Profile high CPU with the dotnet diagnostic tools", "should_trigger": true },
+    { "query": "Use Span to avoid these substring allocations", "should_trigger": true },
+    { "query": "Reduce GC pressure in this service", "should_trigger": true },
+    { "query": "Make this method async with a CancellationToken", "should_trigger": false },
+    { "query": "Fix the N+1 query in this EF Core code", "should_trigger": false },
+    { "query": "Write xUnit tests for this method", "should_trigger": false },
+    { "query": "Refactor this C# exception handling", "should_trigger": false },
+    { "query": "Optimize my Python loop for speed", "should_trigger": false }
+  ]
+}

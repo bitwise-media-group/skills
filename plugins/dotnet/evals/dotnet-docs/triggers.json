@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "dotnet-docs",
+  "triggers": [
+    { "query": "Add XML doc comments to this public API", "should_trigger": true },
+    { "query": "Document this C# class with /// summaries", "should_trigger": true },
+    { "query": "Enable the documentation file and treat missing-doc warnings as errors", "should_trigger": true },
+    { "query": "Write /// summaries for these public methods", "should_trigger": true },
+    { "query": "How do I document the exceptions a C# method throws?", "should_trigger": true },
+    { "query": "Add <inheritdoc/> to this overriding method", "should_trigger": true },
+    { "query": "Document this method's parameters and return value with XML comments", "should_trigger": true },
+    { "query": "Generate an OpenAPI spec for my API endpoints", "should_trigger": false },
+    { "query": "Refactor this C# class's exception handling", "should_trigger": false },
+    { "query": "Document this Python function with a docstring", "should_trigger": false },
+    { "query": "Write godoc comments for this Go package", "should_trigger": false },
+    { "query": "Publish this package to NuGet with trusted publishing", "should_trigger": false }
+  ]
+}

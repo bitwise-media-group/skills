@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "dotnet-style",
+  "triggers": [
+    { "query": "Refactor this C# code to handle exceptions properly", "should_trigger": true },
+    { "query": "Add structured logging to my .NET service", "should_trigger": true },
+    { "query": "Make this C# method async and thread a CancellationToken", "should_trigger": true },
+    { "query": "Convert these Console.WriteLine calls to ILogger", "should_trigger": true },
+    { "query": "Review this C# class for idiomatic style", "should_trigger": true },
+    { "query": "Should this DTO be a record or a class?", "should_trigger": true },
+    { "query": "Replace Newtonsoft.Json with System.Text.Json in this serializer", "should_trigger": true },
+    { "query": "Write xUnit tests for this class", "should_trigger": false },
+    { "query": "Set up a GitHub Actions workflow to publish my NuGet package", "should_trigger": false },
+    { "query": "Scaffold a new .NET solution with src and tests directories", "should_trigger": false },
+    { "query": "Refactor this Go code to wrap errors with %w", "should_trigger": false },
+    { "query": "Add structured logging to my Express app", "should_trigger": false }
+  ]
+}

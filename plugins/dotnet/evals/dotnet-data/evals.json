@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "dotnet-data",
+  "evals": [
+    {
+      "id": "n-plus-one",
+      "prompt": "Fix the N+1 in OrderService.cs by projecting straight to the customer names with AsNoTracking, and make the query async with a CancellationToken. Edit the file directly — no need to restore packages or build.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["fixtures/efdemo/EfDemo.csproj", "files/Model.cs", "files/OrderService.cs"],
+      "assertions": [
+        { "type": "regex", "path": "OrderService.cs", "pattern": "AsNoTracking" },
+        { "type": "regex", "path": "OrderService.cs", "pattern": "\\.Select\\(" },
+        { "type": "regex", "path": "OrderService.cs", "pattern": "ToListAsync" },
+        { "type": "regex", "path": "OrderService.cs", "pattern": "CancellationToken" }
+      ]
+    },
+    {
+      "id": "async-ct-queries",
+      "prompt": "Make the EF Core queries in Repo.cs async and thread a CancellationToken through them. Edit the file directly — no need to restore packages or build.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["fixtures/efdemo/EfDemo.csproj", "files/Model.cs", "files/Repo.cs"],
+      "assertions": [
+        { "type": "regex", "path": "Repo.cs", "pattern": "FirstOrDefaultAsync|FirstAsync" },
+        { "type": "regex", "path": "Repo.cs", "pattern": "CancellationToken" },
+        { "type": "not_regex", "path": "Repo.cs", "pattern": "\\.ToList\\(\\)" },
+        { "type": "not_regex", "path": "Repo.cs", "pattern": "\\.First\\(" }
+      ]
+    }
+  ]
+}

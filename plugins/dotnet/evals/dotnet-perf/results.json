@@ -1,0 +1,2011 @@
+{
+  "schema": 5,
+  "plugin": "dotnet",
+  "skill": "dotnet-perf",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:42:40Z",
+        "executed": true,
+        "content_hash": "3d8518b12af3a91888fdaa7c1e882370f0105c09b7830fbb7cd94f5387d96de3",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Fix the sync-over-async deadlock in this code",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 1368,
+              "input_cost_usd": 0.001368
+            },
+            "spec_hash": "87522a37f224ef68dd40153cd37d5f7bea556fa9e179b4b9d6b9bb0847a68b18"
+          },
+          {
+            "query": "Reduce allocations in this hot path",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 1364,
+              "input_cost_usd": 0.001364
+            },
+            "spec_hash": "e6e9c273e50f0fa39f132eaca024c08adf0bc0120529036812076a8763f889ed"
+          },
+          {
+            "query": "This string building in a loop is slow — fix it",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.7,
+            "estimate": {
+              "input_tokens": 1367,
+              "input_cost_usd": 0.001367
+            },
+            "spec_hash": "5b8e2e6f4e0eac2e96df0592011b43ebb4002f7ba0521b2457a87e0334b0e747"
+          },
+          {
+            "query": "Write a BenchmarkDotNet benchmark for this parser",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "estimate": {
+              "input_tokens": 1368,
+              "input_cost_usd": 0.001368
+            },
+            "spec_hash": "1741fce81067e408c99f6bfa47d8ee28fffdfef3df6f0ca51c4ef562011da050"
+          },
+          {
+            "query": "Profile high CPU with the dotnet diagnostic tools",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.4,
+            "estimate": {
+              "input_tokens": 1365,
+              "input_cost_usd": 0.001365
+            },
+            "spec_hash": "5ae540b9e96c84c53141213dd337608a48e9332042237c86d72105053b38dbbe"
+          },
+          {
+            "query": "Use Span to avoid these substring allocations",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.3,
+            "estimate": {
+              "input_tokens": 1365,
+              "input_cost_usd": 0.001365
+            },
+            "spec_hash": "f22f60bdfb5a364e04b10e25fd1550e604e268ee48132c748b2fa4f568717048"
+          },
+          {
+            "query": "Reduce GC pressure in this service",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.7,
+            "estimate": {
+              "input_tokens": 1364,
+              "input_cost_usd": 0.001364
+            },
+            "spec_hash": "4bbc01bce0a8dcf699a755a7daddf58e060c8cd0d71eb66004c2378dd6759bbe"
+          },
+          {
+            "query": "Make this method async with a CancellationToken",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "estimate": {
+              "input_tokens": 1367,
+              "input_cost_usd": 0.001367
+            },
+            "spec_hash": "213241f5e591985cdc51d348dc635987f9c427672eb98a45d607904bd8a16b9b"
+          },
+          {
+            "query": "Fix the N+1 query in this EF Core code",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.6,
+            "estimate": {
+              "input_tokens": 1369,
+              "input_cost_usd": 0.001369
+            },
+            "spec_hash": "e36f1da2a112a59d2fb932c5a23f3f42182bf7e8d4739b5c00771ee88cba962b"
+          },
+          {
+            "query": "Write xUnit tests for this method",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.3,
+            "estimate": {
+              "input_tokens": 1363,
+              "input_cost_usd": 0.001363
+            },
+            "spec_hash": "449109a440429ce8ac4e716ddfd99cd42777ff95216b1b7aab2fb51e17f8381e"
+          },
+          {
+            "query": "Refactor this C# exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4,
+            "estimate": {
+              "input_tokens": 1364,
+              "input_cost_usd": 0.001364
+            },
+            "spec_hash": "1617878c2209865e3cb0490c564ce30eefec23e5eaa4d5482c6f094261df4e71"
+          },
+          {
+            "query": "Optimize my Python loop for speed",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "estimate": {
+              "input_tokens": 1363,
+              "input_cost_usd": 0.001363
+            },
+            "spec_hash": "4c457dd5d5e4abb399390b50f7bf4f57a27fcca4aff0a08e3afbaf14094a8393"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 7,
+          "total": 12,
+          "pass_rate": 0.416667,
+          "avg_run_seconds": 7,
+          "estimate": {
+            "input_tokens": 16387,
+            "input_cost_usd": 0.016387
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:43:10Z",
+        "executed": true,
+        "content_hash": "fccad3fa7e7d282e2be25b80589e1f3534622b608ffc8c14c36e46f9157c663c",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "string-builder",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1383,
+              "input_cost_usd": 0.001383
+            },
+            "measured": {
+              "input_tokens": 24,
+              "cache_read_input_tokens": 80141,
+              "cache_creation_input_tokens": 16234,
+              "output_tokens": 752,
+              "cost_usd": 0.044888
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "BuildSpec.cs",
+                "pattern": "StringBuilder|string\\.Join|string\\.Create",
+                "text": "BuildSpec.cs matches /StringBuilder|string\\.Join|string\\.Create/",
+                "passed": true,
+                "evidence": "StringBuilder",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "BuildSpec.cs",
+                "pattern": "\\+=",
+                "text": "BuildSpec.cs does not match /\\+=/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 97151,
+              "executor_duration_seconds": 12.9
+            },
+            "spec_hash": "21492f7407f06f648e979c770de761fd631431bed3e612f9634d36d9a630400e"
+          },
+          {
+            "id": "sync-over-async",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1377,
+              "input_cost_usd": 0.001377
+            },
+            "measured": {
+              "input_tokens": 24,
+              "cache_read_input_tokens": 80279,
+              "cache_creation_input_tokens": 16148,
+              "output_tokens": 662,
+              "cost_usd": 0.044274
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Worker.cs",
+                "pattern": "async Task",
+                "text": "Worker.cs matches /async Task/",
+                "passed": true,
+                "evidence": "async Task",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "\\.Result\\b",
+                "text": "Worker.cs does not match /\\.Result\\b/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "\\.Wait\\(\\)",
+                "text": "Worker.cs does not match /\\.Wait\\(\\)/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "GetAwaiter\\(\\)\\.GetResult\\(\\)",
+                "text": "Worker.cs does not match /GetAwaiter\\(\\)\\.GetResult\\(\\)/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Edit": 1,
+                "Read": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 97113,
+              "executor_duration_seconds": 16.5
+            },
+            "spec_hash": "b5f933327ff3850762797d9e2b6b256135be2f981c09a19cbc5db166e5c83d3d"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 14.7,
+          "estimate": {
+            "input_tokens": 2760,
+            "input_cost_usd": 0.00276
+          },
+          "measured": {
+            "input_tokens": 48,
+            "cache_read_input_tokens": 160420,
+            "cache_creation_input_tokens": 32382,
+            "output_tokens": 1414,
+            "cost_usd": 0.089162
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T18:43:10Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 12.6,
+            "measured": {
+              "input_tokens": 48,
+              "cache_read_input_tokens": 159459,
+              "cache_creation_input_tokens": 31528,
+              "output_tokens": 1380,
+              "cost_usd": 0.087188
+            }
+          },
+          "results": [
+            {
+              "id": "string-builder",
+              "passed": true,
+              "measured": {
+                "input_tokens": 24,
+                "cache_read_input_tokens": 79751,
+                "cache_creation_input_tokens": 15847,
+                "output_tokens": 746,
+                "cost_usd": 0.044045
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 12.5
+              },
+              "fingerprint": "21492f7407f06f648e979c770de761fd631431bed3e612f9634d36d9a630400e"
+            },
+            {
+              "id": "sync-over-async",
+              "passed": true,
+              "measured": {
+                "input_tokens": 24,
+                "cache_read_input_tokens": 79708,
+                "cache_creation_input_tokens": 15681,
+                "output_tokens": 634,
+                "cost_usd": 0.043143
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 12.7
+              },
+              "fingerprint": "b5f933327ff3850762797d9e2b6b256135be2f981c09a19cbc5db166e5c83d3d"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:48:01Z",
+        "executed": true,
+        "content_hash": "3d8518b12af3a91888fdaa7c1e882370f0105c09b7830fbb7cd94f5387d96de3",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Fix the sync-over-async deadlock in this code",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.5,
+            "estimate": {
+              "input_tokens": 1914,
+              "input_cost_usd": 0.00957
+            },
+            "spec_hash": "87522a37f224ef68dd40153cd37d5f7bea556fa9e179b4b9d6b9bb0847a68b18"
+          },
+          {
+            "query": "Reduce allocations in this hot path",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 1909,
+              "input_cost_usd": 0.009545
+            },
+            "spec_hash": "e6e9c273e50f0fa39f132eaca024c08adf0bc0120529036812076a8763f889ed"
+          },
+          {
+            "query": "This string building in a loop is slow — fix it",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.5,
+            "estimate": {
+              "input_tokens": 1911,
+              "input_cost_usd": 0.009555
+            },
+            "spec_hash": "5b8e2e6f4e0eac2e96df0592011b43ebb4002f7ba0521b2457a87e0334b0e747"
+          },
+          {
+            "query": "Write a BenchmarkDotNet benchmark for this parser",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.1,
+            "estimate": {
+              "input_tokens": 1918,
+              "input_cost_usd": 0.00959
+            },
+            "spec_hash": "1741fce81067e408c99f6bfa47d8ee28fffdfef3df6f0ca51c4ef562011da050"
+          },
+          {
+            "query": "Profile high CPU with the dotnet diagnostic tools",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "estimate": {
+              "input_tokens": 1917,
+              "input_cost_usd": 0.009585
+            },
+            "spec_hash": "5ae540b9e96c84c53141213dd337608a48e9332042237c86d72105053b38dbbe"
+          },
+          {
+            "query": "Use Span to avoid these substring allocations",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 1911,
+              "input_cost_usd": 0.009555
+            },
+            "spec_hash": "f22f60bdfb5a364e04b10e25fd1550e604e268ee48132c748b2fa4f568717048"
+          },
+          {
+            "query": "Reduce GC pressure in this service",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.7,
+            "estimate": {
+              "input_tokens": 1909,
+              "input_cost_usd": 0.009545
+            },
+            "spec_hash": "4bbc01bce0a8dcf699a755a7daddf58e060c8cd0d71eb66004c2378dd6759bbe"
+          },
+          {
+            "query": "Make this method async with a CancellationToken",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.1,
+            "estimate": {
+              "input_tokens": 1910,
+              "input_cost_usd": 0.00955
+            },
+            "spec_hash": "213241f5e591985cdc51d348dc635987f9c427672eb98a45d607904bd8a16b9b"
+          },
+          {
+            "query": "Fix the N+1 query in this EF Core code",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.3,
+            "estimate": {
+              "input_tokens": 1913,
+              "input_cost_usd": 0.009565
+            },
+            "spec_hash": "e36f1da2a112a59d2fb932c5a23f3f42182bf7e8d4739b5c00771ee88cba962b"
+          },
+          {
+            "query": "Write xUnit tests for this method",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.9,
+            "estimate": {
+              "input_tokens": 1908,
+              "input_cost_usd": 0.00954
+            },
+            "spec_hash": "449109a440429ce8ac4e716ddfd99cd42777ff95216b1b7aab2fb51e17f8381e"
+          },
+          {
+            "query": "Refactor this C# exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.1,
+            "estimate": {
+              "input_tokens": 1908,
+              "input_cost_usd": 0.00954
+            },
+            "spec_hash": "1617878c2209865e3cb0490c564ce30eefec23e5eaa4d5482c6f094261df4e71"
+          },
+          {
+            "query": "Optimize my Python loop for speed",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.5,
+            "estimate": {
+              "input_tokens": 1909,
+              "input_cost_usd": 0.009545
+            },
+            "spec_hash": "4c457dd5d5e4abb399390b50f7bf4f57a27fcca4aff0a08e3afbaf14094a8393"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 6,
+          "total": 12,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 11.5,
+          "estimate": {
+            "input_tokens": 22937,
+            "input_cost_usd": 0.114685
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:49:22Z",
+        "executed": true,
+        "content_hash": "fccad3fa7e7d282e2be25b80589e1f3534622b608ffc8c14c36e46f9157c663c",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "string-builder",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1943,
+              "input_cost_usd": 0.009715
+            },
+            "measured": {
+              "input_tokens": 2817,
+              "cache_read_input_tokens": 81780,
+              "cache_creation_input_tokens": 9488,
+              "output_tokens": 1737,
+              "cost_usd": 0.193902
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "BuildSpec.cs",
+                "pattern": "StringBuilder|string\\.Join|string\\.Create",
+                "text": "BuildSpec.cs matches /StringBuilder|string\\.Join|string\\.Create/",
+                "passed": true,
+                "evidence": "string.Join",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "BuildSpec.cs",
+                "pattern": "\\+=",
+                "text": "BuildSpec.cs does not match /\\+=/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 95822,
+              "executor_duration_seconds": 39.3
+            },
+            "spec_hash": "21492f7407f06f648e979c770de761fd631431bed3e612f9634d36d9a630400e"
+          },
+          {
+            "id": "sync-over-async",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1927,
+              "input_cost_usd": 0.009635
+            },
+            "measured": {
+              "input_tokens": 2820,
+              "cache_read_input_tokens": 102003,
+              "cache_creation_input_tokens": 8932,
+              "output_tokens": 1295,
+              "cost_usd": 0.187412
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Worker.cs",
+                "pattern": "async Task",
+                "text": "Worker.cs matches /async Task/",
+                "passed": true,
+                "evidence": "async Task",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "\\.Result\\b",
+                "text": "Worker.cs does not match /\\.Result\\b/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "\\.Wait\\(\\)",
+                "text": "Worker.cs does not match /\\.Wait\\(\\)/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "GetAwaiter\\(\\)\\.GetResult\\(\\)",
+                "text": "Worker.cs does not match /GetAwaiter\\(\\)\\.GetResult\\(\\)/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 115050,
+              "executor_duration_seconds": 39.9
+            },
+            "spec_hash": "b5f933327ff3850762797d9e2b6b256135be2f981c09a19cbc5db166e5c83d3d"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 39.6,
+          "estimate": {
+            "input_tokens": 3870,
+            "input_cost_usd": 0.01935
+          },
+          "measured": {
+            "input_tokens": 5637,
+            "cache_read_input_tokens": 183783,
+            "cache_creation_input_tokens": 18420,
+            "output_tokens": 3032,
+            "cost_usd": 0.381314
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T18:49:22Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 32.3,
+            "measured": {
+              "input_tokens": 5151,
+              "cache_read_input_tokens": 244027,
+              "cache_creation_input_tokens": 14616,
+              "output_tokens": 2798,
+              "cost_usd": 0.365116
+            }
+          },
+          "results": [
+            {
+              "id": "string-builder",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2642,
+                "cache_read_input_tokens": 144474,
+                "cache_creation_input_tokens": 7788,
+                "output_tokens": 1806,
+                "cost_usd": 0.209099
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 41.6
+              },
+              "fingerprint": "21492f7407f06f648e979c770de761fd631431bed3e612f9634d36d9a630400e"
+            },
+            {
+              "id": "sync-over-async",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2509,
+                "cache_read_input_tokens": 99553,
+                "cache_creation_input_tokens": 6828,
+                "output_tokens": 992,
+                "cost_usd": 0.156017
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 22.9
+              },
+              "fingerprint": "b5f933327ff3850762797d9e2b6b256135be2f981c09a19cbc5db166e5c83d3d"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:45:27Z",
+        "executed": true,
+        "content_hash": "3d8518b12af3a91888fdaa7c1e882370f0105c09b7830fbb7cd94f5387d96de3",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Fix the sync-over-async deadlock in this code",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.9,
+            "estimate": {
+              "input_tokens": 1368,
+              "input_cost_usd": 0.004104
+            },
+            "spec_hash": "87522a37f224ef68dd40153cd37d5f7bea556fa9e179b4b9d6b9bb0847a68b18"
+          },
+          {
+            "query": "Reduce allocations in this hot path",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.5,
+            "estimate": {
+              "input_tokens": 1364,
+              "input_cost_usd": 0.004092
+            },
+            "spec_hash": "e6e9c273e50f0fa39f132eaca024c08adf0bc0120529036812076a8763f889ed"
+          },
+          {
+            "query": "This string building in a loop is slow — fix it",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.6,
+            "estimate": {
+              "input_tokens": 1367,
+              "input_cost_usd": 0.004101
+            },
+            "spec_hash": "5b8e2e6f4e0eac2e96df0592011b43ebb4002f7ba0521b2457a87e0334b0e747"
+          },
+          {
+            "query": "Write a BenchmarkDotNet benchmark for this parser",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 45.3,
+            "estimate": {
+              "input_tokens": 1368,
+              "input_cost_usd": 0.004104
+            },
+            "spec_hash": "1741fce81067e408c99f6bfa47d8ee28fffdfef3df6f0ca51c4ef562011da050"
+          },
+          {
+            "query": "Profile high CPU with the dotnet diagnostic tools",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.2,
+            "estimate": {
+              "input_tokens": 1365,
+              "input_cost_usd": 0.004095
+            },
+            "spec_hash": "5ae540b9e96c84c53141213dd337608a48e9332042237c86d72105053b38dbbe"
+          },
+          {
+            "query": "Use Span to avoid these substring allocations",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.9,
+            "estimate": {
+              "input_tokens": 1365,
+              "input_cost_usd": 0.004095
+            },
+            "spec_hash": "f22f60bdfb5a364e04b10e25fd1550e604e268ee48132c748b2fa4f568717048"
+          },
+          {
+            "query": "Reduce GC pressure in this service",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 1364,
+              "input_cost_usd": 0.004092
+            },
+            "spec_hash": "4bbc01bce0a8dcf699a755a7daddf58e060c8cd0d71eb66004c2378dd6759bbe"
+          },
+          {
+            "query": "Make this method async with a CancellationToken",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.1,
+            "estimate": {
+              "input_tokens": 1367,
+              "input_cost_usd": 0.004101
+            },
+            "spec_hash": "213241f5e591985cdc51d348dc635987f9c427672eb98a45d607904bd8a16b9b"
+          },
+          {
+            "query": "Fix the N+1 query in this EF Core code",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 1369,
+              "input_cost_usd": 0.004107
+            },
+            "spec_hash": "e36f1da2a112a59d2fb932c5a23f3f42182bf7e8d4739b5c00771ee88cba962b"
+          },
+          {
+            "query": "Write xUnit tests for this method",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.4,
+            "estimate": {
+              "input_tokens": 1363,
+              "input_cost_usd": 0.004089
+            },
+            "spec_hash": "449109a440429ce8ac4e716ddfd99cd42777ff95216b1b7aab2fb51e17f8381e"
+          },
+          {
+            "query": "Refactor this C# exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 1364,
+              "input_cost_usd": 0.004092
+            },
+            "spec_hash": "1617878c2209865e3cb0490c564ce30eefec23e5eaa4d5482c6f094261df4e71"
+          },
+          {
+            "query": "Optimize my Python loop for speed",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "estimate": {
+              "input_tokens": 1363,
+              "input_cost_usd": 0.004089
+            },
+            "spec_hash": "4c457dd5d5e4abb399390b50f7bf4f57a27fcca4aff0a08e3afbaf14094a8393"
+          }
+        ],
+        "summary": {
+          "passed": 6,
+          "failed": 6,
+          "total": 12,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 11,
+          "estimate": {
+            "input_tokens": 16387,
+            "input_cost_usd": 0.049161
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:46:09Z",
+        "executed": true,
+        "content_hash": "fccad3fa7e7d282e2be25b80589e1f3534622b608ffc8c14c36e46f9157c663c",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "string-builder",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1383,
+              "input_cost_usd": 0.004149
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 112676,
+              "cache_creation_input_tokens": 9832,
+              "output_tokens": 840,
+              "cost_usd": 0.106041
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "BuildSpec.cs",
+                "pattern": "StringBuilder|string\\.Join|string\\.Create",
+                "text": "BuildSpec.cs matches /StringBuilder|string\\.Join|string\\.Create/",
+                "passed": true,
+                "evidence": "string.Join",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "BuildSpec.cs",
+                "pattern": "\\+=",
+                "text": "BuildSpec.cs does not match /\\+=/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 123356,
+              "executor_duration_seconds": 25.9
+            },
+            "spec_hash": "21492f7407f06f648e979c770de761fd631431bed3e612f9634d36d9a630400e"
+          },
+          {
+            "id": "sync-over-async",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1377,
+              "input_cost_usd": 0.004131
+            },
+            "measured": {
+              "input_tokens": 6,
+              "cache_read_input_tokens": 85399,
+              "cache_creation_input_tokens": 8240,
+              "output_tokens": 516,
+              "cost_usd": 0.083434
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Worker.cs",
+                "pattern": "async Task",
+                "text": "Worker.cs matches /async Task/",
+                "passed": true,
+                "evidence": "async Task",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "\\.Result\\b",
+                "text": "Worker.cs does not match /\\.Result\\b/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "\\.Wait\\(\\)",
+                "text": "Worker.cs does not match /\\.Wait\\(\\)/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "GetAwaiter\\(\\)\\.GetResult\\(\\)",
+                "text": "Worker.cs does not match /GetAwaiter\\(\\)\\.GetResult\\(\\)/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1
+              },
+              "total_tool_calls": 3
+            },
+            "timing": {
+              "total_tokens": 94161,
+              "executor_duration_seconds": 15.3
+            },
+            "spec_hash": "b5f933327ff3850762797d9e2b6b256135be2f981c09a19cbc5db166e5c83d3d"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 20.6,
+          "estimate": {
+            "input_tokens": 2760,
+            "input_cost_usd": 0.00828
+          },
+          "measured": {
+            "input_tokens": 14,
+            "cache_read_input_tokens": 198075,
+            "cache_creation_input_tokens": 18072,
+            "output_tokens": 1356,
+            "cost_usd": 0.189475
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T18:46:09Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 18.6,
+            "measured": {
+              "input_tokens": 13,
+              "cache_read_input_tokens": 193329,
+              "cache_creation_input_tokens": 16397,
+              "output_tokens": 1200,
+              "cost_usd": 0.175658
+            }
+          },
+          "results": [
+            {
+              "id": "string-builder",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 84879,
+                "cache_creation_input_tokens": 8180,
+                "output_tokens": 568,
+                "cost_usd": 0.083704
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 16.5
+              },
+              "fingerprint": "21492f7407f06f648e979c770de761fd631431bed3e612f9634d36d9a630400e"
+            },
+            {
+              "id": "sync-over-async",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7,
+                "cache_read_input_tokens": 108450,
+                "cache_creation_input_tokens": 8217,
+                "output_tokens": 632,
+                "cost_usd": 0.091954
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 20.7
+              },
+              "fingerprint": "b5f933327ff3850762797d9e2b6b256135be2f981c09a19cbc5db166e5c83d3d"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:58:54Z",
+        "executed": true,
+        "content_hash": "3d8518b12af3a91888fdaa7c1e882370f0105c09b7830fbb7cd94f5387d96de3",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Fix the sync-over-async deadlock in this code",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 103.1,
+            "estimate": {
+              "input_tokens": 1169,
+              "input_cost_usd": 0.002922
+            },
+            "spec_hash": "87522a37f224ef68dd40153cd37d5f7bea556fa9e179b4b9d6b9bb0847a68b18"
+          },
+          {
+            "query": "Reduce allocations in this hot path",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 93.5,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00291
+            },
+            "spec_hash": "e6e9c273e50f0fa39f132eaca024c08adf0bc0120529036812076a8763f889ed"
+          },
+          {
+            "query": "This string building in a loop is slow — fix it",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 110.5,
+            "estimate": {
+              "input_tokens": 1169,
+              "input_cost_usd": 0.002922
+            },
+            "spec_hash": "5b8e2e6f4e0eac2e96df0592011b43ebb4002f7ba0521b2457a87e0334b0e747"
+          },
+          {
+            "query": "Write a BenchmarkDotNet benchmark for this parser",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 27.7,
+            "estimate": {
+              "input_tokens": 1167,
+              "input_cost_usd": 0.002918
+            },
+            "spec_hash": "1741fce81067e408c99f6bfa47d8ee28fffdfef3df6f0ca51c4ef562011da050"
+          },
+          {
+            "query": "Profile high CPU with the dotnet diagnostic tools",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.8,
+            "estimate": {
+              "input_tokens": 1167,
+              "input_cost_usd": 0.002918
+            },
+            "spec_hash": "5ae540b9e96c84c53141213dd337608a48e9332042237c86d72105053b38dbbe"
+          },
+          {
+            "query": "Use Span to avoid these substring allocations",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 62.5,
+            "estimate": {
+              "input_tokens": 1165,
+              "input_cost_usd": 0.002913
+            },
+            "spec_hash": "f22f60bdfb5a364e04b10e25fd1550e604e268ee48132c748b2fa4f568717048"
+          },
+          {
+            "query": "Reduce GC pressure in this service",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 68.2,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00291
+            },
+            "spec_hash": "4bbc01bce0a8dcf699a755a7daddf58e060c8cd0d71eb66004c2378dd6759bbe"
+          },
+          {
+            "query": "Make this method async with a CancellationToken",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 89.1,
+            "estimate": {
+              "input_tokens": 1166,
+              "input_cost_usd": 0.002915
+            },
+            "spec_hash": "213241f5e591985cdc51d348dc635987f9c427672eb98a45d607904bd8a16b9b"
+          },
+          {
+            "query": "Fix the N+1 query in this EF Core code",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 79.5,
+            "estimate": {
+              "input_tokens": 1169,
+              "input_cost_usd": 0.002922
+            },
+            "spec_hash": "e36f1da2a112a59d2fb932c5a23f3f42182bf7e8d4739b5c00771ee88cba962b"
+          },
+          {
+            "query": "Write xUnit tests for this method",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 50,
+            "estimate": {
+              "input_tokens": 1165,
+              "input_cost_usd": 0.002913
+            },
+            "spec_hash": "449109a440429ce8ac4e716ddfd99cd42777ff95216b1b7aab2fb51e17f8381e"
+          },
+          {
+            "query": "Refactor this C# exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 37.6,
+            "estimate": {
+              "input_tokens": 1165,
+              "input_cost_usd": 0.002913
+            },
+            "spec_hash": "1617878c2209865e3cb0490c564ce30eefec23e5eaa4d5482c6f094261df4e71"
+          },
+          {
+            "query": "Optimize my Python loop for speed",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.6,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00291
+            },
+            "spec_hash": "4c457dd5d5e4abb399390b50f7bf4f57a27fcca4aff0a08e3afbaf14094a8393"
+          }
+        ],
+        "summary": {
+          "passed": 9,
+          "failed": 3,
+          "total": 12,
+          "pass_rate": 0.75,
+          "avg_run_seconds": 61.9,
+          "estimate": {
+            "input_tokens": 13994,
+            "input_cost_usd": 0.034986
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T18:59:57Z",
+        "executed": true,
+        "content_hash": "fccad3fa7e7d282e2be25b80589e1f3534622b608ffc8c14c36e46f9157c663c",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "string-builder",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1181,
+              "input_cost_usd": 0.002953
+            },
+            "measured": {
+              "input_tokens": 21317,
+              "cache_read_input_tokens": 64896,
+              "output_tokens": 1146,
+              "cost_usd": 0.232723
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "BuildSpec.cs",
+                "pattern": "StringBuilder|string\\.Join|string\\.Create",
+                "text": "BuildSpec.cs matches /StringBuilder|string\\.Join|string\\.Create/",
+                "passed": true,
+                "evidence": "string.Join",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "BuildSpec.cs",
+                "pattern": "\\+=",
+                "text": "BuildSpec.cs does not match /\\+=/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 87359,
+              "executor_duration_seconds": 29.4
+            },
+            "spec_hash": "21492f7407f06f648e979c770de761fd631431bed3e612f9634d36d9a630400e"
+          },
+          {
+            "id": "sync-over-async",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1177,
+              "input_cost_usd": 0.002943
+            },
+            "measured": {
+              "input_tokens": 9898,
+              "cache_read_input_tokens": 80768,
+              "output_tokens": 1130,
+              "cost_usd": 0.243615
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Worker.cs",
+                "pattern": "async Task",
+                "text": "Worker.cs matches /async Task/",
+                "passed": true,
+                "evidence": "async Task",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "\\.Result\\b",
+                "text": "Worker.cs does not match /\\.Result\\b/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "\\.Wait\\(\\)",
+                "text": "Worker.cs does not match /\\.Wait\\(\\)/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "GetAwaiter\\(\\)\\.GetResult\\(\\)",
+                "text": "Worker.cs does not match /GetAwaiter\\(\\)\\.GetResult\\(\\)/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 91796,
+              "executor_duration_seconds": 28.2
+            },
+            "spec_hash": "b5f933327ff3850762797d9e2b6b256135be2f981c09a19cbc5db166e5c83d3d"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 28.8,
+          "estimate": {
+            "input_tokens": 2358,
+            "input_cost_usd": 0.005896
+          },
+          "measured": {
+            "input_tokens": 31215,
+            "cache_read_input_tokens": 145664,
+            "output_tokens": 2276,
+            "cost_usd": 0.476338
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T18:59:57Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 30,
+            "measured": {
+              "input_tokens": 26118,
+              "cache_read_input_tokens": 163968,
+              "output_tokens": 2257,
+              "cost_usd": 0.50907
+            }
+          },
+          "results": [
+            {
+              "id": "string-builder",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6592,
+                "cache_read_input_tokens": 99072,
+                "output_tokens": 1287,
+                "cost_usd": 0.283465
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 33.9
+              },
+              "fingerprint": "21492f7407f06f648e979c770de761fd631431bed3e612f9634d36d9a630400e"
+            },
+            {
+              "id": "sync-over-async",
+              "passed": true,
+              "measured": {
+                "input_tokens": 19526,
+                "cache_read_input_tokens": 64896,
+                "output_tokens": 970,
+                "cost_usd": 0.225605
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 26.1
+              },
+              "fingerprint": "b5f933327ff3850762797d9e2b6b256135be2f981c09a19cbc5db166e5c83d3d"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T19:08:00Z",
+        "executed": true,
+        "content_hash": "3d8518b12af3a91888fdaa7c1e882370f0105c09b7830fbb7cd94f5387d96de3",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Fix the sync-over-async deadlock in this code",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 19.3,
+            "estimate": {
+              "input_tokens": 1169,
+              "input_cost_usd": 0.005845
+            },
+            "spec_hash": "87522a37f224ef68dd40153cd37d5f7bea556fa9e179b4b9d6b9bb0847a68b18"
+          },
+          {
+            "query": "Reduce allocations in this hot path",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 38.6,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00582
+            },
+            "spec_hash": "e6e9c273e50f0fa39f132eaca024c08adf0bc0120529036812076a8763f889ed"
+          },
+          {
+            "query": "This string building in a loop is slow — fix it",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 37,
+            "estimate": {
+              "input_tokens": 1169,
+              "input_cost_usd": 0.005845
+            },
+            "spec_hash": "5b8e2e6f4e0eac2e96df0592011b43ebb4002f7ba0521b2457a87e0334b0e747"
+          },
+          {
+            "query": "Write a BenchmarkDotNet benchmark for this parser",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.6,
+            "estimate": {
+              "input_tokens": 1167,
+              "input_cost_usd": 0.005835
+            },
+            "spec_hash": "1741fce81067e408c99f6bfa47d8ee28fffdfef3df6f0ca51c4ef562011da050"
+          },
+          {
+            "query": "Profile high CPU with the dotnet diagnostic tools",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 1167,
+              "input_cost_usd": 0.005835
+            },
+            "spec_hash": "5ae540b9e96c84c53141213dd337608a48e9332042237c86d72105053b38dbbe"
+          },
+          {
+            "query": "Use Span to avoid these substring allocations",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 31,
+            "estimate": {
+              "input_tokens": 1165,
+              "input_cost_usd": 0.005825
+            },
+            "spec_hash": "f22f60bdfb5a364e04b10e25fd1550e604e268ee48132c748b2fa4f568717048"
+          },
+          {
+            "query": "Reduce GC pressure in this service",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 28.2,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00582
+            },
+            "spec_hash": "4bbc01bce0a8dcf699a755a7daddf58e060c8cd0d71eb66004c2378dd6759bbe"
+          },
+          {
+            "query": "Make this method async with a CancellationToken",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 82.5,
+            "estimate": {
+              "input_tokens": 1166,
+              "input_cost_usd": 0.00583
+            },
+            "spec_hash": "213241f5e591985cdc51d348dc635987f9c427672eb98a45d607904bd8a16b9b"
+          },
+          {
+            "query": "Fix the N+1 query in this EF Core code",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 87.3,
+            "estimate": {
+              "input_tokens": 1169,
+              "input_cost_usd": 0.005845
+            },
+            "spec_hash": "e36f1da2a112a59d2fb932c5a23f3f42182bf7e8d4739b5c00771ee88cba962b"
+          },
+          {
+            "query": "Write xUnit tests for this method",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 45.6,
+            "estimate": {
+              "input_tokens": 1165,
+              "input_cost_usd": 0.005825
+            },
+            "spec_hash": "449109a440429ce8ac4e716ddfd99cd42777ff95216b1b7aab2fb51e17f8381e"
+          },
+          {
+            "query": "Refactor this C# exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1165,
+              "input_cost_usd": 0.005825
+            },
+            "spec_hash": "1617878c2209865e3cb0490c564ce30eefec23e5eaa4d5482c6f094261df4e71"
+          },
+          {
+            "query": "Optimize my Python loop for speed",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 57.2,
+            "estimate": {
+              "input_tokens": 1164,
+              "input_cost_usd": 0.00582
+            },
+            "spec_hash": "4c457dd5d5e4abb399390b50f7bf4f57a27fcca4aff0a08e3afbaf14094a8393"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 2,
+          "total": 12,
+          "pass_rate": 0.833333,
+          "avg_run_seconds": 47.4,
+          "estimate": {
+            "input_tokens": 13994,
+            "input_cost_usd": 0.06997
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T19:09:07Z",
+        "executed": true,
+        "content_hash": "fccad3fa7e7d282e2be25b80589e1f3534622b608ffc8c14c36e46f9157c663c",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "string-builder",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1181,
+              "input_cost_usd": 0.005905
+            },
+            "measured": {
+              "input_tokens": 17079,
+              "cache_read_input_tokens": 79232,
+              "output_tokens": 1116,
+              "cost_usd": 0.515035
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "BuildSpec.cs",
+                "pattern": "StringBuilder|string\\.Join|string\\.Create",
+                "text": "BuildSpec.cs matches /StringBuilder|string\\.Join|string\\.Create/",
+                "passed": true,
+                "evidence": "string.Join",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "BuildSpec.cs",
+                "pattern": "\\+=",
+                "text": "BuildSpec.cs does not match /\\+=/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 97427,
+              "executor_duration_seconds": 29.9
+            },
+            "spec_hash": "21492f7407f06f648e979c770de761fd631431bed3e612f9634d36d9a630400e"
+          },
+          {
+            "id": "sync-over-async",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1177,
+              "input_cost_usd": 0.005885
+            },
+            "measured": {
+              "input_tokens": 23721,
+              "cache_read_input_tokens": 73600,
+              "output_tokens": 1030,
+              "cost_usd": 0.517505
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Worker.cs",
+                "pattern": "async Task",
+                "text": "Worker.cs matches /async Task/",
+                "passed": true,
+                "evidence": "async Task",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "\\.Result\\b",
+                "text": "Worker.cs does not match /\\.Result\\b/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "\\.Wait\\(\\)",
+                "text": "Worker.cs does not match /\\.Wait\\(\\)/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Worker.cs",
+                "pattern": "GetAwaiter\\(\\)\\.GetResult\\(\\)",
+                "text": "Worker.cs does not match /GetAwaiter\\(\\)\\.GetResult\\(\\)/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 98351,
+              "executor_duration_seconds": 26.6
+            },
+            "spec_hash": "b5f933327ff3850762797d9e2b6b256135be2f981c09a19cbc5db166e5c83d3d"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 28.3,
+          "estimate": {
+            "input_tokens": 2358,
+            "input_cost_usd": 0.01179
+          },
+          "measured": {
+            "input_tokens": 40800,
+            "cache_read_input_tokens": 152832,
+            "output_tokens": 2146,
+            "cost_usd": 1.03254
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T19:09:07Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 32.1,
+            "measured": {
+              "input_tokens": 16095,
+              "cache_read_input_tokens": 168192,
+              "output_tokens": 2347,
+              "cost_usd": 0.991845
+            }
+          },
+          "results": [
+            {
+              "id": "string-builder",
+              "passed": true,
+              "measured": {
+                "input_tokens": 8336,
+                "cache_read_input_tokens": 84352,
+                "output_tokens": 1351,
+                "cost_usd": 0.50397
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 37.2
+              },
+              "fingerprint": "21492f7407f06f648e979c770de761fd631431bed3e612f9634d36d9a630400e"
+            },
+            {
+              "id": "sync-over-async",
+              "passed": false,
+              "measured": {
+                "input_tokens": 7759,
+                "cache_read_input_tokens": 83840,
+                "output_tokens": 996,
+                "cost_usd": 0.487875
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 27
+              },
+              "fingerprint": "b5f933327ff3850762797d9e2b6b256135be2f981c09a19cbc5db166e5c83d3d"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

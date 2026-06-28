@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "dotnet-web",
+  "triggers": [
+    { "query": "Add a minimal-API POST endpoint for items", "should_trigger": true },
+    { "query": "Group these ASP.NET Core routes with MapGroup", "should_trigger": true },
+    { "query": "Return typed results from this endpoint", "should_trigger": true },
+    { "query": "Register my services in DI with the right lifetime", "should_trigger": true },
+    { "query": "Bind configuration with the options pattern in my API", "should_trigger": true },
+    { "query": "Return ProblemDetails on validation failure", "should_trigger": true },
+    { "query": "Add a health check endpoint to my ASP.NET Core service", "should_trigger": true },
+    { "query": "Add a Blazor component with a form", "should_trigger": false },
+    { "query": "Query the database with EF Core in my service", "should_trigger": false },
+    { "query": "Refactor this C# class's exception handling", "should_trigger": false },
+    { "query": "Add an Express route handler", "should_trigger": false },
+    { "query": "Write a Razor view for this page", "should_trigger": false }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "dotnet-project",
+  "triggers": [
+    { "query": "Scaffold a new .NET solution with src and tests directories", "should_trigger": true },
+    {
+      "query": "Enable nullable reference types and treat warnings as errors across my projects",
+      "should_trigger": true
+    },
+    { "query": "Set up Central Package Management for my solution", "should_trigger": true },
+    { "query": "Add a Directory.Build.props with shared build settings", "should_trigger": true },
+    { "query": "Pin the .NET SDK with a global.json", "should_trigger": true },
+    { "query": "Add an .editorconfig and turn on Roslyn analyzers for my repo", "should_trigger": true },
+    { "query": "Add a dotnet tool manifest pinning dotnet-ef", "should_trigger": true },
+    { "query": "Write XML doc comments for this public API", "should_trigger": false },
+    { "query": "Publish this library to NuGet with trusted publishing", "should_trigger": false },
+    { "query": "Add a [Theory] with InlineData for these cases", "should_trigger": false },
+    { "query": "Refactor this C# method's error handling", "should_trigger": false },
+    { "query": "Scaffold a new Go service with cmd and internal directories", "should_trigger": false }
+  ]
+}

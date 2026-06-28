@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "dotnet-release",
+  "evals": [
+    {
+      "id": "nuget-metadata",
+      "prompt": "Add NuGet packaging metadata (PackageId, an SPDX license expression, RepositoryUrl), SourceLink, and deterministic builds to Lib.csproj so it can ship as a package.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["files/Lib.csproj"],
+      "assertions": [
+        { "type": "regex", "path": "Lib.csproj", "pattern": "<PackageId>" },
+        { "type": "regex", "path": "Lib.csproj", "pattern": "PackageLicenseExpression" },
+        { "type": "regex", "path": "Lib.csproj", "pattern": "RepositoryUrl" },
+        { "type": "regex", "path": "Lib.csproj", "pattern": "SourceLink" },
+        { "type": "regex", "path": "Lib.csproj", "pattern": "ContinuousIntegrationBuild" }
+      ]
+    },
+    {
+      "id": "release-workflow",
+      "prompt": "Write a tag-triggered GitHub Actions release workflow at .github/workflows/release.yaml that packs this project and pushes it to NuGet.org using Trusted Publishing (OIDC) — no stored API key.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["files/Pkg.csproj"],
+      "assertions": [
+        { "type": "file_exists", "path": ".github/workflows/release.yaml" },
+        { "type": "regex", "path": ".github/workflows/release.yaml", "pattern": "id-token: write" },
+        { "type": "regex", "path": ".github/workflows/release.yaml", "pattern": "dotnet nuget push" },
+        { "type": "regex", "path": ".github/workflows/release.yaml", "pattern": "tags:" },
+        { "type": "not_regex", "path": ".github/workflows/release.yaml", "pattern": "secrets\\.NUGET" }
+      ]
+    }
+  ]
+}

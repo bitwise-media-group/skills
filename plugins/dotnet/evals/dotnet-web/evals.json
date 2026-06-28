@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "dotnet-web",
+  "evals": [
+    {
+      "id": "minimal-api-typed",
+      "prompt": "Add GET /items/{id} and POST /items to Program.cs as minimal APIs with typed results and a /items route group, per our web conventions.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["fixtures/webdemo/WebDemo.csproj", "files/Program.cs"],
+      "assertions": [
+        { "type": "regex", "path": "Program.cs", "pattern": "MapGroup" },
+        { "type": "regex", "path": "Program.cs", "pattern": "MapPost" },
+        { "type": "regex", "path": "Program.cs", "pattern": "TypedResults|Results<" },
+        { "type": "not_regex", "path": "Program.cs", "pattern": "\\[ApiController\\]" }
+      ]
+    },
+    {
+      "id": "options-di",
+      "prompt": "Refactor AddMailing in ServiceCollectionExtensions.cs to bind SmtpOptions from configuration with the options pattern and startup validation, and register the Mailer as a scoped service. Stop reading IConfiguration with the indexer.",
+      "allowed_tools": "Read Write Edit Glob Grep Skill Bash(dotnet *) Bash(mkdir *)",
+      "files": ["fixtures/webdemo/WebDemo.csproj", "files/ServiceCollectionExtensions.cs"],
+      "assertions": [
+        { "type": "regex", "path": "ServiceCollectionExtensions.cs", "pattern": "AddOptions<" },
+        { "type": "regex", "path": "ServiceCollectionExtensions.cs", "pattern": "ValidateOnStart" },
+        { "type": "regex", "path": "ServiceCollectionExtensions.cs", "pattern": "AddScoped" },
+        { "type": "not_regex", "path": "ServiceCollectionExtensions.cs", "pattern": "config\\[" }
+      ]
+    }
+  ]
+}

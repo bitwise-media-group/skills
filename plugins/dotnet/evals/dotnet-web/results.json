@@ -1,0 +1,2104 @@
+{
+  "schema": 5,
+  "plugin": "dotnet",
+  "skill": "dotnet-web",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T21:03:52Z",
+        "executed": true,
+        "content_hash": "90e37835b1e486c29cf797bf6b4776be8741d9e64180b0c8de8c460375de9104",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Add a minimal-API POST endpoint for items",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8,
+            "estimate": {
+              "input_tokens": 1403,
+              "input_cost_usd": 0.001403
+            },
+            "spec_hash": "c667e0d09dcc428f275086a4264567287ff49987d6906be28fbce88bc6f7615f"
+          },
+          {
+            "query": "Group these ASP.NET Core routes with MapGroup",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "estimate": {
+              "input_tokens": 1405,
+              "input_cost_usd": 0.001405
+            },
+            "spec_hash": "ca69e6c1f1d4d368e860568ee14968967eae7b28513192785a6259c508c17702"
+          },
+          {
+            "query": "Return typed results from this endpoint",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.6,
+            "estimate": {
+              "input_tokens": 1400,
+              "input_cost_usd": 0.0014
+            },
+            "spec_hash": "2f97522a6cde0535ab55dae52eec4b12d53b3f6b9df74c836be39533692d200c"
+          },
+          {
+            "query": "Register my services in DI with the right lifetime",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.2,
+            "estimate": {
+              "input_tokens": 1404,
+              "input_cost_usd": 0.001404
+            },
+            "spec_hash": "9726dcfee85cf30f86428ab08465b85ccafe8f45ef46cdcf5dba613068f95419"
+          },
+          {
+            "query": "Bind configuration with the options pattern in my API",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1404,
+              "input_cost_usd": 0.001404
+            },
+            "spec_hash": "aa8a88e02a8ba9ae5a86a2e964810d5ccbb66369d2ecbc5ed50ec55da3c24041"
+          },
+          {
+            "query": "Return ProblemDetails on validation failure",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.3,
+            "estimate": {
+              "input_tokens": 1402,
+              "input_cost_usd": 0.001402
+            },
+            "spec_hash": "72db6e1db66d387a1fc9badcbde48aeb77ac5db6db80fdfa37c017b65d8b1aef"
+          },
+          {
+            "query": "Add a health check endpoint to my ASP.NET Core service",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.5,
+            "estimate": {
+              "input_tokens": 1407,
+              "input_cost_usd": 0.001407
+            },
+            "spec_hash": "9d69bc4ff8f2bc07ef85383288e3e655069f3565b5783286c31f9a9ae00d66f1"
+          },
+          {
+            "query": "Add a Blazor component with a form",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 1403,
+              "input_cost_usd": 0.001403
+            },
+            "spec_hash": "056404a07503718d901dfacca2cb70cd004591ed399c526494f12c99e7a053cd"
+          },
+          {
+            "query": "Query the database with EF Core in my service",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 1404,
+              "input_cost_usd": 0.001404
+            },
+            "spec_hash": "09a80895b1da33f3eda71819d4882fc9251b34410962da40a405c3314e7599d8"
+          },
+          {
+            "query": "Refactor this C# class's exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.4,
+            "estimate": {
+              "input_tokens": 1404,
+              "input_cost_usd": 0.001404
+            },
+            "spec_hash": "deba62fcff690950960b2fcdcef0f02ba5d5dd74e82eee5f340232ea7edf00f3"
+          },
+          {
+            "query": "Add an Express route handler",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.6,
+            "estimate": {
+              "input_tokens": 1399,
+              "input_cost_usd": 0.001399
+            },
+            "spec_hash": "c11410434f4aeccb5ee76247de34bb947d545e34ed113d789395b3a35eb7aca1"
+          },
+          {
+            "query": "Write a Razor view for this page",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.4,
+            "estimate": {
+              "input_tokens": 1402,
+              "input_cost_usd": 0.001402
+            },
+            "spec_hash": "5166eb9e9ce55391fcb94471406ab3245d6a37b25d8eeb2c3643315bddf4ebf2"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 7,
+          "total": 12,
+          "pass_rate": 0.416667,
+          "avg_run_seconds": 7.3,
+          "estimate": {
+            "input_tokens": 16837,
+            "input_cost_usd": 0.016837
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T21:04:49Z",
+        "executed": true,
+        "content_hash": "d8806c3dad2110f7668b4f1750be27d23a66ef505f24e620b20b8a164d80e84c",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "minimal-api-typed",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1427,
+              "input_cost_usd": 0.001427
+            },
+            "measured": {
+              "input_tokens": 38,
+              "cache_read_input_tokens": 104284,
+              "cache_creation_input_tokens": 20006,
+              "output_tokens": 2258,
+              "cost_usd": 0.062391
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "MapGroup",
+                "text": "Program.cs matches /MapGroup/",
+                "passed": true,
+                "evidence": "MapGroup",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "MapPost",
+                "text": "Program.cs matches /MapPost/",
+                "passed": true,
+                "evidence": "MapPost",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "TypedResults|Results\u003c",
+                "text": "Program.cs matches /TypedResults|Results\u003c/",
+                "passed": true,
+                "evidence": "Results\u003c",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Program.cs",
+                "pattern": "\\[ApiController\\]",
+                "text": "Program.cs does not match /\\[ApiController\\]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 2,
+                "Skill": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 126586,
+              "executor_duration_seconds": 45.5
+            },
+            "spec_hash": "7aad7580acbba5a73eea78294fc0a528ed799f4bbc73b38dcb99ff6003dee49a"
+          },
+          {
+            "id": "options-di",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1445,
+              "input_cost_usd": 0.001445
+            },
+            "measured": {
+              "input_tokens": 27,
+              "cache_read_input_tokens": 105068,
+              "cache_creation_input_tokens": 16827,
+              "output_tokens": 1255,
+              "cost_usd": 0.051109
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "AddOptions\u003c",
+                "text": "ServiceCollectionExtensions.cs matches /AddOptions\u003c/",
+                "passed": true,
+                "evidence": "AddOptions\u003c",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "ValidateOnStart",
+                "text": "ServiceCollectionExtensions.cs matches /ValidateOnStart/",
+                "passed": true,
+                "evidence": "ValidateOnStart",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "AddScoped",
+                "text": "ServiceCollectionExtensions.cs matches /AddScoped/",
+                "passed": true,
+                "evidence": "AddScoped",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "config\\[",
+                "text": "ServiceCollectionExtensions.cs does not match /config\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 2,
+                "Glob": 1,
+                "Read": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 123177,
+              "executor_duration_seconds": 27
+            },
+            "spec_hash": "62ca18beed502fbf5f6081b2dbafcbff69dfce8be0dda1e0cda1594d4ee359b0"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 36.3,
+          "estimate": {
+            "input_tokens": 2872,
+            "input_cost_usd": 0.002872
+          },
+          "measured": {
+            "input_tokens": 65,
+            "cache_read_input_tokens": 209352,
+            "cache_creation_input_tokens": 36833,
+            "output_tokens": 3513,
+            "cost_usd": 0.1135
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T21:04:49Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 13.6,
+            "measured": {
+              "input_tokens": 43,
+              "cache_read_input_tokens": 135815,
+              "cache_creation_input_tokens": 31924,
+              "output_tokens": 2075,
+              "cost_usd": 0.089102
+            }
+          },
+          "results": [
+            {
+              "id": "minimal-api-typed",
+              "passed": false,
+              "measured": {
+                "input_tokens": 19,
+                "cache_read_input_tokens": 55957,
+                "cache_creation_input_tokens": 15757,
+                "output_tokens": 898,
+                "cost_usd": 0.042227
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 11
+              },
+              "fingerprint": "7aad7580acbba5a73eea78294fc0a528ed799f4bbc73b38dcb99ff6003dee49a"
+            },
+            {
+              "id": "options-di",
+              "passed": false,
+              "measured": {
+                "input_tokens": 24,
+                "cache_read_input_tokens": 79858,
+                "cache_creation_input_tokens": 16167,
+                "output_tokens": 1177,
+                "cost_usd": 0.046875
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 16.1
+              },
+              "fingerprint": "62ca18beed502fbf5f6081b2dbafcbff69dfce8be0dda1e0cda1594d4ee359b0"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T21:11:06Z",
+        "executed": true,
+        "content_hash": "90e37835b1e486c29cf797bf6b4776be8741d9e64180b0c8de8c460375de9104",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Add a minimal-API POST endpoint for items",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 2021,
+              "input_cost_usd": 0.010105
+            },
+            "spec_hash": "c667e0d09dcc428f275086a4264567287ff49987d6906be28fbce88bc6f7615f"
+          },
+          {
+            "query": "Group these ASP.NET Core routes with MapGroup",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.6,
+            "estimate": {
+              "input_tokens": 2024,
+              "input_cost_usd": 0.01012
+            },
+            "spec_hash": "ca69e6c1f1d4d368e860568ee14968967eae7b28513192785a6259c508c17702"
+          },
+          {
+            "query": "Return typed results from this endpoint",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 16.7,
+            "estimate": {
+              "input_tokens": 2016,
+              "input_cost_usd": 0.01008
+            },
+            "spec_hash": "2f97522a6cde0535ab55dae52eec4b12d53b3f6b9df74c836be39533692d200c"
+          },
+          {
+            "query": "Register my services in DI with the right lifetime",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 34.3,
+            "estimate": {
+              "input_tokens": 2019,
+              "input_cost_usd": 0.010095
+            },
+            "spec_hash": "9726dcfee85cf30f86428ab08465b85ccafe8f45ef46cdcf5dba613068f95419"
+          },
+          {
+            "query": "Bind configuration with the options pattern in my API",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.5,
+            "estimate": {
+              "input_tokens": 2020,
+              "input_cost_usd": 0.0101
+            },
+            "spec_hash": "aa8a88e02a8ba9ae5a86a2e964810d5ccbb66369d2ecbc5ed50ec55da3c24041"
+          },
+          {
+            "query": "Return ProblemDetails on validation failure",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.5,
+            "estimate": {
+              "input_tokens": 2019,
+              "input_cost_usd": 0.010095
+            },
+            "spec_hash": "72db6e1db66d387a1fc9badcbde48aeb77ac5db6db80fdfa37c017b65d8b1aef"
+          },
+          {
+            "query": "Add a health check endpoint to my ASP.NET Core service",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.4,
+            "estimate": {
+              "input_tokens": 2025,
+              "input_cost_usd": 0.010125
+            },
+            "spec_hash": "9d69bc4ff8f2bc07ef85383288e3e655069f3565b5783286c31f9a9ae00d66f1"
+          },
+          {
+            "query": "Add a Blazor component with a form",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12,
+            "estimate": {
+              "input_tokens": 2016,
+              "input_cost_usd": 0.01008
+            },
+            "spec_hash": "056404a07503718d901dfacca2cb70cd004591ed399c526494f12c99e7a053cd"
+          },
+          {
+            "query": "Query the database with EF Core in my service",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.8,
+            "estimate": {
+              "input_tokens": 2017,
+              "input_cost_usd": 0.010085
+            },
+            "spec_hash": "09a80895b1da33f3eda71819d4882fc9251b34410962da40a405c3314e7599d8"
+          },
+          {
+            "query": "Refactor this C# class's exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.7,
+            "estimate": {
+              "input_tokens": 2018,
+              "input_cost_usd": 0.01009
+            },
+            "spec_hash": "deba62fcff690950960b2fcdcef0f02ba5d5dd74e82eee5f340232ea7edf00f3"
+          },
+          {
+            "query": "Add an Express route handler",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.5,
+            "estimate": {
+              "input_tokens": 2013,
+              "input_cost_usd": 0.010065
+            },
+            "spec_hash": "c11410434f4aeccb5ee76247de34bb947d545e34ed113d789395b3a35eb7aca1"
+          },
+          {
+            "query": "Write a Razor view for this page",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.4,
+            "estimate": {
+              "input_tokens": 2015,
+              "input_cost_usd": 0.010075
+            },
+            "spec_hash": "5166eb9e9ce55391fcb94471406ab3245d6a37b25d8eeb2c3643315bddf4ebf2"
+          }
+        ],
+        "summary": {
+          "passed": 7,
+          "failed": 5,
+          "total": 12,
+          "pass_rate": 0.583333,
+          "avg_run_seconds": 14.9,
+          "estimate": {
+            "input_tokens": 24223,
+            "input_cost_usd": 0.121115
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T21:13:47Z",
+        "executed": true,
+        "content_hash": "d8806c3dad2110f7668b4f1750be27d23a66ef505f24e620b20b8a164d80e84c",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "minimal-api-typed",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2051,
+              "input_cost_usd": 0.010255
+            },
+            "measured": {
+              "input_tokens": 2940,
+              "cache_read_input_tokens": 161635,
+              "cache_creation_input_tokens": 16043,
+              "output_tokens": 8252,
+              "cost_usd": 0.46287
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "MapGroup",
+                "text": "Program.cs matches /MapGroup/",
+                "passed": true,
+                "evidence": "MapGroup",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "MapPost",
+                "text": "Program.cs matches /MapPost/",
+                "passed": true,
+                "evidence": "MapPost",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "TypedResults|Results\u003c",
+                "text": "Program.cs matches /TypedResults|Results\u003c/",
+                "passed": true,
+                "evidence": "Results\u003c",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Program.cs",
+                "pattern": "\\[ApiController\\]",
+                "text": "Program.cs does not match /\\[ApiController\\]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Glob": 2,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 7
+            },
+            "timing": {
+              "total_tokens": 188870,
+              "executor_duration_seconds": 106.6
+            },
+            "spec_hash": "7aad7580acbba5a73eea78294fc0a528ed799f4bbc73b38dcb99ff6003dee49a"
+          },
+          {
+            "id": "options-di",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2087,
+              "input_cost_usd": 0.010435
+            },
+            "measured": {
+              "input_tokens": 2805,
+              "cache_read_input_tokens": 82292,
+              "cache_creation_input_tokens": 9899,
+              "output_tokens": 2220,
+              "cost_usd": 0.210322
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "AddOptions\u003c",
+                "text": "ServiceCollectionExtensions.cs matches /AddOptions\u003c/",
+                "passed": true,
+                "evidence": "AddOptions\u003c",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "ValidateOnStart",
+                "text": "ServiceCollectionExtensions.cs matches /ValidateOnStart/",
+                "passed": true,
+                "evidence": "ValidateOnStart",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "AddScoped",
+                "text": "ServiceCollectionExtensions.cs matches /AddScoped/",
+                "passed": true,
+                "evidence": "AddScoped",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "config\\[",
+                "text": "ServiceCollectionExtensions.cs does not match /config\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 97216,
+              "executor_duration_seconds": 31.3
+            },
+            "spec_hash": "62ca18beed502fbf5f6081b2dbafcbff69dfce8be0dda1e0cda1594d4ee359b0"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 69,
+          "estimate": {
+            "input_tokens": 4138,
+            "input_cost_usd": 0.02069
+          },
+          "measured": {
+            "input_tokens": 5745,
+            "cache_read_input_tokens": 243927,
+            "cache_creation_input_tokens": 25942,
+            "output_tokens": 10472,
+            "cost_usd": 0.673192
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T21:13:47Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 56.7,
+            "measured": {
+              "input_tokens": 5286,
+              "cache_read_input_tokens": 315358,
+              "cache_creation_input_tokens": 18748,
+              "output_tokens": 7025,
+              "cost_usd": 0.548479
+            }
+          },
+          "results": [
+            {
+              "id": "minimal-api-typed",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2640,
+                "cache_read_input_tokens": 125809,
+                "cache_creation_input_tokens": 9586,
+                "output_tokens": 3753,
+                "cost_usd": 0.266403
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 54.3
+              },
+              "fingerprint": "7aad7580acbba5a73eea78294fc0a528ed799f4bbc73b38dcb99ff6003dee49a"
+            },
+            {
+              "id": "options-di",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2646,
+                "cache_read_input_tokens": 189549,
+                "cache_creation_input_tokens": 9162,
+                "output_tokens": 3272,
+                "cost_usd": 0.282076
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 59.1
+              },
+              "fingerprint": "62ca18beed502fbf5f6081b2dbafcbff69dfce8be0dda1e0cda1594d4ee359b0"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T21:07:16Z",
+        "executed": true,
+        "content_hash": "90e37835b1e486c29cf797bf6b4776be8741d9e64180b0c8de8c460375de9104",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Add a minimal-API POST endpoint for items",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10,
+            "estimate": {
+              "input_tokens": 1403,
+              "input_cost_usd": 0.004209
+            },
+            "spec_hash": "c667e0d09dcc428f275086a4264567287ff49987d6906be28fbce88bc6f7615f"
+          },
+          {
+            "query": "Group these ASP.NET Core routes with MapGroup",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 1405,
+              "input_cost_usd": 0.004215
+            },
+            "spec_hash": "ca69e6c1f1d4d368e860568ee14968967eae7b28513192785a6259c508c17702"
+          },
+          {
+            "query": "Return typed results from this endpoint",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9,
+            "estimate": {
+              "input_tokens": 1400,
+              "input_cost_usd": 0.0042
+            },
+            "spec_hash": "2f97522a6cde0535ab55dae52eec4b12d53b3f6b9df74c836be39533692d200c"
+          },
+          {
+            "query": "Register my services in DI with the right lifetime",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.1,
+            "estimate": {
+              "input_tokens": 1404,
+              "input_cost_usd": 0.004212
+            },
+            "spec_hash": "9726dcfee85cf30f86428ab08465b85ccafe8f45ef46cdcf5dba613068f95419"
+          },
+          {
+            "query": "Bind configuration with the options pattern in my API",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 45.3,
+            "estimate": {
+              "input_tokens": 1404,
+              "input_cost_usd": 0.004212
+            },
+            "spec_hash": "aa8a88e02a8ba9ae5a86a2e964810d5ccbb66369d2ecbc5ed50ec55da3c24041"
+          },
+          {
+            "query": "Return ProblemDetails on validation failure",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 1402,
+              "input_cost_usd": 0.004206
+            },
+            "spec_hash": "72db6e1db66d387a1fc9badcbde48aeb77ac5db6db80fdfa37c017b65d8b1aef"
+          },
+          {
+            "query": "Add a health check endpoint to my ASP.NET Core service",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7,
+            "estimate": {
+              "input_tokens": 1407,
+              "input_cost_usd": 0.004221
+            },
+            "spec_hash": "9d69bc4ff8f2bc07ef85383288e3e655069f3565b5783286c31f9a9ae00d66f1"
+          },
+          {
+            "query": "Add a Blazor component with a form",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.2,
+            "estimate": {
+              "input_tokens": 1403,
+              "input_cost_usd": 0.004209
+            },
+            "spec_hash": "056404a07503718d901dfacca2cb70cd004591ed399c526494f12c99e7a053cd"
+          },
+          {
+            "query": "Query the database with EF Core in my service",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.2,
+            "estimate": {
+              "input_tokens": 1404,
+              "input_cost_usd": 0.004212
+            },
+            "spec_hash": "09a80895b1da33f3eda71819d4882fc9251b34410962da40a405c3314e7599d8"
+          },
+          {
+            "query": "Refactor this C# class's exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.5,
+            "estimate": {
+              "input_tokens": 1404,
+              "input_cost_usd": 0.004212
+            },
+            "spec_hash": "deba62fcff690950960b2fcdcef0f02ba5d5dd74e82eee5f340232ea7edf00f3"
+          },
+          {
+            "query": "Add an Express route handler",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 1399,
+              "input_cost_usd": 0.004197
+            },
+            "spec_hash": "c11410434f4aeccb5ee76247de34bb947d545e34ed113d789395b3a35eb7aca1"
+          },
+          {
+            "query": "Write a Razor view for this page",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 1402,
+              "input_cost_usd": 0.004206
+            },
+            "spec_hash": "5166eb9e9ce55391fcb94471406ab3245d6a37b25d8eeb2c3643315bddf4ebf2"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 7,
+          "total": 12,
+          "pass_rate": 0.416667,
+          "avg_run_seconds": 11.9,
+          "estimate": {
+            "input_tokens": 16837,
+            "input_cost_usd": 0.050511
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T21:08:43Z",
+        "executed": true,
+        "content_hash": "d8806c3dad2110f7668b4f1750be27d23a66ef505f24e620b20b8a164d80e84c",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "minimal-api-typed",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1427,
+              "input_cost_usd": 0.004281
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 112727,
+              "cache_creation_input_tokens": 10814,
+              "output_tokens": 2064,
+              "cost_usd": 0.130299
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "MapGroup",
+                "text": "Program.cs matches /MapGroup/",
+                "passed": true,
+                "evidence": "MapGroup",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "MapPost",
+                "text": "Program.cs matches /MapPost/",
+                "passed": true,
+                "evidence": "MapPost",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "TypedResults|Results\u003c",
+                "text": "Program.cs matches /TypedResults|Results\u003c/",
+                "passed": true,
+                "evidence": "Results\u003c",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Program.cs",
+                "pattern": "\\[ApiController\\]",
+                "text": "Program.cs does not match /\\[ApiController\\]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 125613,
+              "executor_duration_seconds": 38.3
+            },
+            "spec_hash": "7aad7580acbba5a73eea78294fc0a528ed799f4bbc73b38dcb99ff6003dee49a"
+          },
+          {
+            "id": "options-di",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1445,
+              "input_cost_usd": 0.004335
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 110975,
+              "cache_creation_input_tokens": 10963,
+              "output_tokens": 1963,
+              "cost_usd": 0.129186
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "AddOptions\u003c",
+                "text": "ServiceCollectionExtensions.cs matches /AddOptions\u003c/",
+                "passed": true,
+                "evidence": "AddOptions\u003c",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "ValidateOnStart",
+                "text": "ServiceCollectionExtensions.cs matches /ValidateOnStart/",
+                "passed": true,
+                "evidence": "ValidateOnStart",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "AddScoped",
+                "text": "ServiceCollectionExtensions.cs matches /AddScoped/",
+                "passed": true,
+                "evidence": "AddScoped",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "config\\[",
+                "text": "ServiceCollectionExtensions.cs does not match /config\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Glob": 2,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 123909,
+              "executor_duration_seconds": 40.2
+            },
+            "spec_hash": "62ca18beed502fbf5f6081b2dbafcbff69dfce8be0dda1e0cda1594d4ee359b0"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 39.3,
+          "estimate": {
+            "input_tokens": 2872,
+            "input_cost_usd": 0.008616
+          },
+          "measured": {
+            "input_tokens": 16,
+            "cache_read_input_tokens": 223702,
+            "cache_creation_input_tokens": 21777,
+            "output_tokens": 4027,
+            "cost_usd": 0.259485
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T21:08:43Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 45.3,
+            "measured": {
+              "input_tokens": 14,
+              "cache_read_input_tokens": 216944,
+              "cache_creation_input_tokens": 20103,
+              "output_tokens": 5160,
+              "cost_usd": 0.264403
+            }
+          },
+          "results": [
+            {
+              "id": "minimal-api-typed",
+              "passed": true,
+              "measured": {
+                "input_tokens": 8,
+                "cache_read_input_tokens": 131965,
+                "cache_creation_input_tokens": 9955,
+                "output_tokens": 2489,
+                "cost_usd": 0.137292
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 43.8
+              },
+              "fingerprint": "7aad7580acbba5a73eea78294fc0a528ed799f4bbc73b38dcb99ff6003dee49a"
+            },
+            {
+              "id": "options-di",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6,
+                "cache_read_input_tokens": 84979,
+                "cache_creation_input_tokens": 10148,
+                "output_tokens": 2671,
+                "cost_usd": 0.127111
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 46.7
+              },
+              "fingerprint": "62ca18beed502fbf5f6081b2dbafcbff69dfce8be0dda1e0cda1594d4ee359b0"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T21:20:28Z",
+        "executed": true,
+        "content_hash": "90e37835b1e486c29cf797bf6b4776be8741d9e64180b0c8de8c460375de9104",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Add a minimal-API POST endpoint for items",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 48.1,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00294
+            },
+            "spec_hash": "c667e0d09dcc428f275086a4264567287ff49987d6906be28fbce88bc6f7615f"
+          },
+          {
+            "query": "Group these ASP.NET Core routes with MapGroup",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 26.4,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00294
+            },
+            "spec_hash": "ca69e6c1f1d4d368e860568ee14968967eae7b28513192785a6259c508c17702"
+          },
+          {
+            "query": "Return typed results from this endpoint",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 44.4,
+            "estimate": {
+              "input_tokens": 1173,
+              "input_cost_usd": 0.002933
+            },
+            "spec_hash": "2f97522a6cde0535ab55dae52eec4b12d53b3f6b9df74c836be39533692d200c"
+          },
+          {
+            "query": "Register my services in DI with the right lifetime",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 50.3,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00294
+            },
+            "spec_hash": "9726dcfee85cf30f86428ab08465b85ccafe8f45ef46cdcf5dba613068f95419"
+          },
+          {
+            "query": "Bind configuration with the options pattern in my API",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.1,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00294
+            },
+            "spec_hash": "aa8a88e02a8ba9ae5a86a2e964810d5ccbb66369d2ecbc5ed50ec55da3c24041"
+          },
+          {
+            "query": "Return ProblemDetails on validation failure",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 55.9,
+            "estimate": {
+              "input_tokens": 1173,
+              "input_cost_usd": 0.002933
+            },
+            "spec_hash": "72db6e1db66d387a1fc9badcbde48aeb77ac5db6db80fdfa37c017b65d8b1aef"
+          },
+          {
+            "query": "Add a health check endpoint to my ASP.NET Core service",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12,
+            "estimate": {
+              "input_tokens": 1178,
+              "input_cost_usd": 0.002945
+            },
+            "spec_hash": "9d69bc4ff8f2bc07ef85383288e3e655069f3565b5783286c31f9a9ae00d66f1"
+          },
+          {
+            "query": "Add a Blazor component with a form",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 67.9,
+            "estimate": {
+              "input_tokens": 1175,
+              "input_cost_usd": 0.002938
+            },
+            "spec_hash": "056404a07503718d901dfacca2cb70cd004591ed399c526494f12c99e7a053cd"
+          },
+          {
+            "query": "Query the database with EF Core in my service",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 29.7,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00294
+            },
+            "spec_hash": "09a80895b1da33f3eda71819d4882fc9251b34410962da40a405c3314e7599d8"
+          },
+          {
+            "query": "Refactor this C# class's exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 105.6,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00294
+            },
+            "spec_hash": "deba62fcff690950960b2fcdcef0f02ba5d5dd74e82eee5f340232ea7edf00f3"
+          },
+          {
+            "query": "Add an Express route handler",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 34,
+            "estimate": {
+              "input_tokens": 1172,
+              "input_cost_usd": 0.00293
+            },
+            "spec_hash": "c11410434f4aeccb5ee76247de34bb947d545e34ed113d789395b3a35eb7aca1"
+          },
+          {
+            "query": "Write a Razor view for this page",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 28.7,
+            "estimate": {
+              "input_tokens": 1174,
+              "input_cost_usd": 0.002935
+            },
+            "spec_hash": "5166eb9e9ce55391fcb94471406ab3245d6a37b25d8eeb2c3643315bddf4ebf2"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 0,
+          "total": 12,
+          "pass_rate": 1,
+          "avg_run_seconds": 42.9,
+          "estimate": {
+            "input_tokens": 14101,
+            "input_cost_usd": 0.035254
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T21:22:06Z",
+        "executed": true,
+        "content_hash": "d8806c3dad2110f7668b4f1750be27d23a66ef505f24e620b20b8a164d80e84c",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "minimal-api-typed",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1199,
+              "input_cost_usd": 0.002998
+            },
+            "measured": {
+              "input_tokens": 12763,
+              "cache_read_input_tokens": 120960,
+              "output_tokens": 2154,
+              "cost_usd": 0.366618
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "MapGroup",
+                "text": "Program.cs matches /MapGroup/",
+                "passed": true,
+                "evidence": "MapGroup",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "MapPost",
+                "text": "Program.cs matches /MapPost/",
+                "passed": true,
+                "evidence": "MapPost",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "TypedResults|Results\u003c",
+                "text": "Program.cs matches /TypedResults|Results\u003c/",
+                "passed": true,
+                "evidence": "Results\u003c",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Program.cs",
+                "pattern": "\\[ApiController\\]",
+                "text": "Program.cs does not match /\\[ApiController\\]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 135877,
+              "executor_duration_seconds": 49.2
+            },
+            "spec_hash": "7aad7580acbba5a73eea78294fc0a528ed799f4bbc73b38dcb99ff6003dee49a"
+          },
+          {
+            "id": "options-di",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1210,
+              "input_cost_usd": 0.003025
+            },
+            "measured": {
+              "input_tokens": 11892,
+              "cache_read_input_tokens": 120960,
+              "output_tokens": 2144,
+              "cost_usd": 0.36429
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "AddOptions\u003c",
+                "text": "ServiceCollectionExtensions.cs matches /AddOptions\u003c/",
+                "passed": true,
+                "evidence": "AddOptions\u003c",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "ValidateOnStart",
+                "text": "ServiceCollectionExtensions.cs matches /ValidateOnStart/",
+                "passed": true,
+                "evidence": "ValidateOnStart",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "AddScoped",
+                "text": "ServiceCollectionExtensions.cs matches /AddScoped/",
+                "passed": true,
+                "evidence": "AddScoped",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "config\\[",
+                "text": "ServiceCollectionExtensions.cs does not match /config\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 134996,
+              "executor_duration_seconds": 51.5
+            },
+            "spec_hash": "62ca18beed502fbf5f6081b2dbafcbff69dfce8be0dda1e0cda1594d4ee359b0"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 50.4,
+          "estimate": {
+            "input_tokens": 2409,
+            "input_cost_usd": 0.006023
+          },
+          "measured": {
+            "input_tokens": 24655,
+            "cache_read_input_tokens": 241920,
+            "output_tokens": 4298,
+            "cost_usd": 0.730908
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T21:22:06Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 46.9,
+            "measured": {
+              "input_tokens": 21469,
+              "cache_read_input_tokens": 227584,
+              "output_tokens": 3493,
+              "cost_usd": 0.675028
+            }
+          },
+          "results": [
+            {
+              "id": "minimal-api-typed",
+              "passed": true,
+              "measured": {
+                "input_tokens": 14034,
+                "cache_read_input_tokens": 111744,
+                "output_tokens": 1699,
+                "cost_usd": 0.33993
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 48.9
+              },
+              "fingerprint": "7aad7580acbba5a73eea78294fc0a528ed799f4bbc73b38dcb99ff6003dee49a"
+            },
+            {
+              "id": "options-di",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7435,
+                "cache_read_input_tokens": 115840,
+                "output_tokens": 1794,
+                "cost_usd": 0.335098
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 44.9
+              },
+              "fingerprint": "62ca18beed502fbf5f6081b2dbafcbff69dfce8be0dda1e0cda1594d4ee359b0"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T21:32:46Z",
+        "executed": true,
+        "content_hash": "90e37835b1e486c29cf797bf6b4776be8741d9e64180b0c8de8c460375de9104",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Add a minimal-API POST endpoint for items",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.7,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00588
+            },
+            "spec_hash": "c667e0d09dcc428f275086a4264567287ff49987d6906be28fbce88bc6f7615f"
+          },
+          {
+            "query": "Group these ASP.NET Core routes with MapGroup",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 36.9,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00588
+            },
+            "spec_hash": "ca69e6c1f1d4d368e860568ee14968967eae7b28513192785a6259c508c17702"
+          },
+          {
+            "query": "Return typed results from this endpoint",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 31.3,
+            "estimate": {
+              "input_tokens": 1173,
+              "input_cost_usd": 0.005865
+            },
+            "spec_hash": "2f97522a6cde0535ab55dae52eec4b12d53b3f6b9df74c836be39533692d200c"
+          },
+          {
+            "query": "Register my services in DI with the right lifetime",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.1,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00588
+            },
+            "spec_hash": "9726dcfee85cf30f86428ab08465b85ccafe8f45ef46cdcf5dba613068f95419"
+          },
+          {
+            "query": "Bind configuration with the options pattern in my API",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00588
+            },
+            "spec_hash": "aa8a88e02a8ba9ae5a86a2e964810d5ccbb66369d2ecbc5ed50ec55da3c24041"
+          },
+          {
+            "query": "Return ProblemDetails on validation failure",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 63.1,
+            "estimate": {
+              "input_tokens": 1173,
+              "input_cost_usd": 0.005865
+            },
+            "spec_hash": "72db6e1db66d387a1fc9badcbde48aeb77ac5db6db80fdfa37c017b65d8b1aef"
+          },
+          {
+            "query": "Add a health check endpoint to my ASP.NET Core service",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 1178,
+              "input_cost_usd": 0.00589
+            },
+            "spec_hash": "9d69bc4ff8f2bc07ef85383288e3e655069f3565b5783286c31f9a9ae00d66f1"
+          },
+          {
+            "query": "Add a Blazor component with a form",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 38.7,
+            "estimate": {
+              "input_tokens": 1175,
+              "input_cost_usd": 0.005875
+            },
+            "spec_hash": "056404a07503718d901dfacca2cb70cd004591ed399c526494f12c99e7a053cd"
+          },
+          {
+            "query": "Query the database with EF Core in my service",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 72.8,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00588
+            },
+            "spec_hash": "09a80895b1da33f3eda71819d4882fc9251b34410962da40a405c3314e7599d8"
+          },
+          {
+            "query": "Refactor this C# class's exception handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1176,
+              "input_cost_usd": 0.00588
+            },
+            "spec_hash": "deba62fcff690950960b2fcdcef0f02ba5d5dd74e82eee5f340232ea7edf00f3"
+          },
+          {
+            "query": "Add an Express route handler",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 71.2,
+            "estimate": {
+              "input_tokens": 1172,
+              "input_cost_usd": 0.00586
+            },
+            "spec_hash": "c11410434f4aeccb5ee76247de34bb947d545e34ed113d789395b3a35eb7aca1"
+          },
+          {
+            "query": "Write a Razor view for this page",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 69.6,
+            "estimate": {
+              "input_tokens": 1174,
+              "input_cost_usd": 0.00587
+            },
+            "spec_hash": "5166eb9e9ce55391fcb94471406ab3245d6a37b25d8eeb2c3643315bddf4ebf2"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 2,
+          "total": 12,
+          "pass_rate": 0.833333,
+          "avg_run_seconds": 45.5,
+          "estimate": {
+            "input_tokens": 14101,
+            "input_cost_usd": 0.070505
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T21:35:04Z",
+        "executed": true,
+        "content_hash": "d8806c3dad2110f7668b4f1750be27d23a66ef505f24e620b20b8a164d80e84c",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "minimal-api-typed",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1199,
+              "input_cost_usd": 0.005995
+            },
+            "measured": {
+              "input_tokens": 19885,
+              "cache_read_input_tokens": 101120,
+              "output_tokens": 1748,
+              "cost_usd": 0.657465
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "MapGroup",
+                "text": "Program.cs matches /MapGroup/",
+                "passed": true,
+                "evidence": "MapGroup",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "MapPost",
+                "text": "Program.cs matches /MapPost/",
+                "passed": true,
+                "evidence": "MapPost",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Program.cs",
+                "pattern": "TypedResults|Results\u003c",
+                "text": "Program.cs matches /TypedResults|Results\u003c/",
+                "passed": true,
+                "evidence": "Results\u003c",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "Program.cs",
+                "pattern": "\\[ApiController\\]",
+                "text": "Program.cs does not match /\\[ApiController\\]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 122753,
+              "executor_duration_seconds": 41.8
+            },
+            "spec_hash": "7aad7580acbba5a73eea78294fc0a528ed799f4bbc73b38dcb99ff6003dee49a"
+          },
+          {
+            "id": "options-di",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1210,
+              "input_cost_usd": 0.00605
+            },
+            "measured": {
+              "input_tokens": 22490,
+              "cache_read_input_tokens": 140800,
+              "output_tokens": 1966,
+              "cost_usd": 0.87543
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "AddOptions\u003c",
+                "text": "ServiceCollectionExtensions.cs matches /AddOptions\u003c/",
+                "passed": true,
+                "evidence": "AddOptions\u003c",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "ValidateOnStart",
+                "text": "ServiceCollectionExtensions.cs matches /ValidateOnStart/",
+                "passed": true,
+                "evidence": "ValidateOnStart",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "AddScoped",
+                "text": "ServiceCollectionExtensions.cs matches /AddScoped/",
+                "passed": true,
+                "evidence": "AddScoped",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "ServiceCollectionExtensions.cs",
+                "pattern": "config\\[",
+                "text": "ServiceCollectionExtensions.cs does not match /config\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 165256,
+              "executor_duration_seconds": 79.5
+            },
+            "spec_hash": "62ca18beed502fbf5f6081b2dbafcbff69dfce8be0dda1e0cda1594d4ee359b0"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 60.7,
+          "estimate": {
+            "input_tokens": 2409,
+            "input_cost_usd": 0.012045
+          },
+          "measured": {
+            "input_tokens": 42375,
+            "cache_read_input_tokens": 241920,
+            "output_tokens": 3714,
+            "cost_usd": 1.532895
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T21:35:04Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 51.4,
+            "measured": {
+              "input_tokens": 36783,
+              "cache_read_input_tokens": 259712,
+              "output_tokens": 4010,
+              "cost_usd": 1.602775
+            }
+          },
+          "results": [
+            {
+              "id": "minimal-api-typed",
+              "passed": true,
+              "measured": {
+                "input_tokens": 16705,
+                "cache_read_input_tokens": 121984,
+                "output_tokens": 1719,
+                "cost_usd": 0.745015
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 45.5
+              },
+              "fingerprint": "7aad7580acbba5a73eea78294fc0a528ed799f4bbc73b38dcb99ff6003dee49a"
+            },
+            {
+              "id": "options-di",
+              "passed": true,
+              "measured": {
+                "input_tokens": 20078,
+                "cache_read_input_tokens": 137728,
+                "output_tokens": 2291,
+                "cost_usd": 0.85776
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 57.3
+              },
+              "fingerprint": "62ca18beed502fbf5f6081b2dbafcbff69dfce8be0dda1e0cda1594d4ee359b0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2141 @@
+{
+  "schema": 5,
+  "plugin": "dotnet",
+  "skill": "dotnet-testing",
+  "models": {
+    "anthropic/claude-haiku-4-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:35:25Z",
+        "executed": true,
+        "content_hash": "da78d6ee1aa2e42045b270b961ecfbbe29b5b6034d41eff5a6b6d8fa92620e0e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "query": "Write xUnit tests for this Parse method",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.3,
+            "estimate": {
+              "input_tokens": 1416,
+              "input_cost_usd": 0.001416
+            },
+            "spec_hash": "2b3be56f1105ba3f1cd69a4781fe22a2a73da9e307038080a7925bb47b28b343"
+          },
+          {
+            "query": "Add a [Theory] with InlineData for these cases",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.6,
+            "estimate": {
+              "input_tokens": 1420,
+              "input_cost_usd": 0.00142
+            },
+            "spec_hash": "31279861aec2f85a0d7987d7e4c1f5de3c3adba5a8ff5c1c497f863492b576b5"
+          },
+          {
+            "query": "Set up a test fixture shared across the test class",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.8,
+            "estimate": {
+              "input_tokens": 1418,
+              "input_cost_usd": 0.001418
+            },
+            "spec_hash": "ec69fbc62e0f901afdbecd62be0448f73d298d8083e5eae4095ea4af6fb5eb41"
+          },
+          {
+            "query": "Should I use Moq here or a hand-written fake?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 1422,
+              "input_cost_usd": 0.001422
+            },
+            "spec_hash": "f6e8a609e74d7a21a0cad7cba3ea48b7239f7ffe8b3483aa54047d6b8c79d11e"
+          },
+          {
+            "query": "Integration-test this endpoint with WebApplicationFactory",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.9,
+            "estimate": {
+              "input_tokens": 1417,
+              "input_cost_usd": 0.001417
+            },
+            "spec_hash": "62399bdacb8cf2e13c8a8104905224675f0bf34ec837964364cab11fd80370a1"
+          },
+          {
+            "query": "Add MemberData for these object test cases",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.8,
+            "estimate": {
+              "input_tokens": 1417,
+              "input_cost_usd": 0.001417
+            },
+            "spec_hash": "13a62afbbe93b417ea79951d900509e897a554cfa30d61160db831660f66ad20"
+          },
+          {
+            "query": "How do I assert that this async method throws in xUnit?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.1,
+            "estimate": {
+              "input_tokens": 1421,
+              "input_cost_usd": 0.001421
+            },
+            "spec_hash": "4c8e26e069c3325b55dd73aefc4ed48bc70631dc0dde38cbc346ad30cdd38674"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.5,
+            "estimate": {
+              "input_tokens": 1414,
+              "input_cost_usd": 0.001414
+            },
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "Refactor this C# method to be async with a CancellationToken",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "estimate": {
+              "input_tokens": 1425,
+              "input_cost_usd": 0.001425
+            },
+            "spec_hash": "06dffd7a2c407a2253c1fbbdf1f6fa4658acbbaeae106f0862d29bc6b28c55b1"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for my package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.1,
+            "estimate": {
+              "input_tokens": 1418,
+              "input_cost_usd": 0.001418
+            },
+            "spec_hash": "eb703dcf5f25bc411ec26ee8679a0cd116220e352fcdf294271a1282bfa9933f"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.2,
+            "estimate": {
+              "input_tokens": 1419,
+              "input_cost_usd": 0.001419
+            },
+            "spec_hash": "918b0025db78a39b457413652c44684fe509bb385d4226ef947ae6b287e4908e"
+          },
+          {
+            "query": "Add table-driven tests for this Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "estimate": {
+              "input_tokens": 1417,
+              "input_cost_usd": 0.001417
+            },
+            "spec_hash": "5b82a791f5d4949b8a5c08490e2fbf71b67d1ceefb5032d0b42f632423c2cb58"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 7,
+          "total": 12,
+          "pass_rate": 0.416667,
+          "avg_run_seconds": 8,
+          "estimate": {
+            "input_tokens": 17024,
+            "input_cost_usd": 0.017024
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-haiku-4-5",
+        "display": "Claude Haiku 4.5",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:36:29Z",
+        "executed": true,
+        "content_hash": "75b10cb1001c0d9268d44337d496afcd3049769974e52f3ab84016551ad008ba",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 5
+        },
+        "results": [
+          {
+            "id": "theory-table",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1447,
+              "input_cost_usd": 0.001447
+            },
+            "measured": {
+              "input_tokens": 34,
+              "cache_read_input_tokens": 103959,
+              "cache_creation_input_tokens": 19665,
+              "output_tokens": 1255,
+              "cost_usd": 0.056664
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "ClampTests.cs",
+                "text": "file ClampTests.cs exists",
+                "passed": true,
+                "evidence": "ClampTests.cs exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "\\[Theory\\]",
+                "text": "ClampTests.cs matches /\\[Theory\\]/",
+                "passed": true,
+                "evidence": "[Theory]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "InlineData",
+                "text": "ClampTests.cs matches /InlineData/",
+                "passed": true,
+                "evidence": "InlineData",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "Assert\\.",
+                "text": "ClampTests.cs matches /Assert\\./",
+                "passed": true,
+                "evidence": "Assert.",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "ClampTests.cs",
+                "pattern": "FluentAssertions|Moq|Shouldly",
+                "text": "ClampTests.cs does not match /FluentAssertions|Moq|Shouldly/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 124913,
+              "executor_duration_seconds": 30.4
+            },
+            "spec_hash": "3cdaf4649f928894ba7b1a3a1cebeaec993569f52a3b9dd10016bb2bedea637d"
+          },
+          {
+            "id": "fake-over-mock",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1456,
+              "input_cost_usd": 0.001456
+            },
+            "measured": {
+              "input_tokens": 29,
+              "cache_read_input_tokens": 104440,
+              "cache_creation_input_tokens": 16865,
+              "output_tokens": 1571,
+              "cost_usd": 0.052706
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "BrokerTests.cs",
+                "text": "file BrokerTests.cs exists",
+                "passed": true,
+                "evidence": "BrokerTests.cs exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "BrokerTests.cs",
+                "pattern": "\\[Fact\\]|\\[Theory\\]",
+                "text": "BrokerTests.cs matches /\\[Fact\\]|\\[Theory\\]/",
+                "passed": true,
+                "evidence": "[Fact]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "BrokerTests.cs",
+                "pattern": "IClock",
+                "text": "BrokerTests.cs matches /IClock/",
+                "passed": true,
+                "evidence": "IClock",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "BrokerTests.cs",
+                "pattern": "Moq|NSubstitute|FluentAssertions",
+                "text": "BrokerTests.cs does not match /Moq|NSubstitute|FluentAssertions/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Glob": 1,
+                "Read": 2,
+                "Write": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 122905,
+              "executor_duration_seconds": 17.1
+            },
+            "spec_hash": "f8366a6b02f1fac0e5b55b279e1a2296e0b354db140e576b60f151b3669a5015"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 23.8,
+          "estimate": {
+            "input_tokens": 2903,
+            "input_cost_usd": 0.002903
+          },
+          "measured": {
+            "input_tokens": 63,
+            "cache_read_input_tokens": 208399,
+            "cache_creation_input_tokens": 36530,
+            "output_tokens": 2826,
+            "cost_usd": 0.10937
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T20:36:29Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 25.1,
+            "measured": {
+              "input_tokens": 72,
+              "cache_read_input_tokens": 343627,
+              "cache_creation_input_tokens": 37874,
+              "output_tokens": 3499,
+              "cost_usd": 0.12894
+            }
+          },
+          "results": [
+            {
+              "id": "fake-over-mock",
+              "passed": true,
+              "measured": {
+                "input_tokens": 25,
+                "cache_read_input_tokens": 80221,
+                "cache_creation_input_tokens": 16827,
+                "output_tokens": 1736,
+                "cost_usd": 0.051014
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 16.9
+              },
+              "fingerprint": "f8366a6b02f1fac0e5b55b279e1a2296e0b354db140e576b60f151b3669a5015"
+            },
+            {
+              "id": "theory-table",
+              "passed": true,
+              "measured": {
+                "input_tokens": 47,
+                "cache_read_input_tokens": 263406,
+                "cache_creation_input_tokens": 21047,
+                "output_tokens": 1763,
+                "cost_usd": 0.077926
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 33.3
+              },
+              "fingerprint": "3cdaf4649f928894ba7b1a3a1cebeaec993569f52a3b9dd10016bb2bedea637d"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-opus-4-8": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:43:01Z",
+        "executed": true,
+        "content_hash": "da78d6ee1aa2e42045b270b961ecfbbe29b5b6034d41eff5a6b6d8fa92620e0e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Write xUnit tests for this Parse method",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 14.7,
+            "estimate": {
+              "input_tokens": 1984,
+              "input_cost_usd": 0.00992
+            },
+            "spec_hash": "2b3be56f1105ba3f1cd69a4781fe22a2a73da9e307038080a7925bb47b28b343"
+          },
+          {
+            "query": "Add a [Theory] with InlineData for these cases",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.7,
+            "estimate": {
+              "input_tokens": 1987,
+              "input_cost_usd": 0.009935
+            },
+            "spec_hash": "31279861aec2f85a0d7987d7e4c1f5de3c3adba5a8ff5c1c497f863492b576b5"
+          },
+          {
+            "query": "Set up a test fixture shared across the test class",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1984,
+              "input_cost_usd": 0.00992
+            },
+            "spec_hash": "ec69fbc62e0f901afdbecd62be0448f73d298d8083e5eae4095ea4af6fb5eb41"
+          },
+          {
+            "query": "Should I use Moq here or a hand-written fake?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 1987,
+              "input_cost_usd": 0.009935
+            },
+            "spec_hash": "f6e8a609e74d7a21a0cad7cba3ea48b7239f7ffe8b3483aa54047d6b8c79d11e"
+          },
+          {
+            "query": "Integration-test this endpoint with WebApplicationFactory",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.6,
+            "estimate": {
+              "input_tokens": 1990,
+              "input_cost_usd": 0.00995
+            },
+            "spec_hash": "62399bdacb8cf2e13c8a8104905224675f0bf34ec837964364cab11fd80370a1"
+          },
+          {
+            "query": "Add MemberData for these object test cases",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.4,
+            "estimate": {
+              "input_tokens": 1982,
+              "input_cost_usd": 0.00991
+            },
+            "spec_hash": "13a62afbbe93b417ea79951d900509e897a554cfa30d61160db831660f66ad20"
+          },
+          {
+            "query": "How do I assert that this async method throws in xUnit?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.2,
+            "estimate": {
+              "input_tokens": 1987,
+              "input_cost_usd": 0.009935
+            },
+            "spec_hash": "4c8e26e069c3325b55dd73aefc4ed48bc70631dc0dde38cbc346ad30cdd38674"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.8,
+            "estimate": {
+              "input_tokens": 1980,
+              "input_cost_usd": 0.0099
+            },
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "Refactor this C# method to be async with a CancellationToken",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18.1,
+            "estimate": {
+              "input_tokens": 1989,
+              "input_cost_usd": 0.009945
+            },
+            "spec_hash": "06dffd7a2c407a2253c1fbbdf1f6fa4658acbbaeae106f0862d29bc6b28c55b1"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for my package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.8,
+            "estimate": {
+              "input_tokens": 1988,
+              "input_cost_usd": 0.00994
+            },
+            "spec_hash": "eb703dcf5f25bc411ec26ee8679a0cd116220e352fcdf294271a1282bfa9933f"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.3,
+            "estimate": {
+              "input_tokens": 1987,
+              "input_cost_usd": 0.009935
+            },
+            "spec_hash": "918b0025db78a39b457413652c44684fe509bb385d4226ef947ae6b287e4908e"
+          },
+          {
+            "query": "Add table-driven tests for this Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 33.3,
+            "estimate": {
+              "input_tokens": 1983,
+              "input_cost_usd": 0.009915
+            },
+            "spec_hash": "5b82a791f5d4949b8a5c08490e2fbf71b67d1ceefb5032d0b42f632423c2cb58"
+          }
+        ],
+        "summary": {
+          "passed": 7,
+          "failed": 5,
+          "total": 12,
+          "pass_rate": 0.583333,
+          "avg_run_seconds": 13.6,
+          "estimate": {
+            "input_tokens": 23828,
+            "input_cost_usd": 0.11914
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-4-8",
+        "display": "Claude Opus 4.8",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:45:02Z",
+        "executed": true,
+        "content_hash": "75b10cb1001c0d9268d44337d496afcd3049769974e52f3ab84016551ad008ba",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "theory-table",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2027,
+              "input_cost_usd": 0.010135
+            },
+            "measured": {
+              "input_tokens": 2928,
+              "cache_read_input_tokens": 185349,
+              "cache_creation_input_tokens": 12322,
+              "output_tokens": 2846,
+              "cost_usd": 0.302313
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "ClampTests.cs",
+                "text": "file ClampTests.cs exists",
+                "passed": true,
+                "evidence": "ClampTests.cs exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "\\[Theory\\]",
+                "text": "ClampTests.cs matches /\\[Theory\\]/",
+                "passed": true,
+                "evidence": "[Theory]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "InlineData",
+                "text": "ClampTests.cs matches /InlineData/",
+                "passed": true,
+                "evidence": "InlineData",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "Assert\\.",
+                "text": "ClampTests.cs matches /Assert\\./",
+                "passed": true,
+                "evidence": "Assert.",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "ClampTests.cs",
+                "pattern": "FluentAssertions|Moq|Shouldly",
+                "text": "ClampTests.cs does not match /FluentAssertions|Moq|Shouldly/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 3,
+                "Glob": 3,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 10
+            },
+            "timing": {
+              "total_tokens": 203445,
+              "executor_duration_seconds": 55.5
+            },
+            "spec_hash": "3cdaf4649f928894ba7b1a3a1cebeaec993569f52a3b9dd10016bb2bedea637d"
+          },
+          {
+            "id": "fake-over-mock",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2036,
+              "input_cost_usd": 0.01018
+            },
+            "measured": {
+              "input_tokens": 2930,
+              "cache_read_input_tokens": 202201,
+              "cache_creation_input_tokens": 12589,
+              "output_tokens": 3474,
+              "cost_usd": 0.329123
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "BrokerTests.cs",
+                "text": "file BrokerTests.cs exists",
+                "passed": true,
+                "evidence": "BrokerTests.cs exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "BrokerTests.cs",
+                "pattern": "\\[Fact\\]|\\[Theory\\]",
+                "text": "BrokerTests.cs matches /\\[Fact\\]|\\[Theory\\]/",
+                "passed": true,
+                "evidence": "[Fact]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "BrokerTests.cs",
+                "pattern": "IClock",
+                "text": "BrokerTests.cs matches /IClock/",
+                "passed": true,
+                "evidence": "IClock",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "BrokerTests.cs",
+                "pattern": "Moq|NSubstitute|FluentAssertions",
+                "text": "BrokerTests.cs does not match /Moq|NSubstitute|FluentAssertions/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Glob": 2,
+                "Grep": 1,
+                "Read": 3,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 10
+            },
+            "timing": {
+              "total_tokens": 221194,
+              "executor_duration_seconds": 62.9
+            },
+            "spec_hash": "f8366a6b02f1fac0e5b55b279e1a2296e0b354db140e576b60f151b3669a5015"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 59.2,
+          "estimate": {
+            "input_tokens": 4063,
+            "input_cost_usd": 0.020315
+          },
+          "measured": {
+            "input_tokens": 5858,
+            "cache_read_input_tokens": 387550,
+            "cache_creation_input_tokens": 24911,
+            "output_tokens": 6320,
+            "cost_usd": 0.631436
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T20:45:02Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 58.9,
+            "measured": {
+              "input_tokens": 5284,
+              "cache_read_input_tokens": 299330,
+              "cache_creation_input_tokens": 20133,
+              "output_tokens": 5630,
+              "cost_usd": 0.519427
+            }
+          },
+          "results": [
+            {
+              "id": "fake-over-mock",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2642,
+                "cache_read_input_tokens": 150670,
+                "cache_creation_input_tokens": 10337,
+                "output_tokens": 3004,
+                "cost_usd": 0.267648
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 57.4
+              },
+              "fingerprint": "f8366a6b02f1fac0e5b55b279e1a2296e0b354db140e576b60f151b3669a5015"
+            },
+            {
+              "id": "theory-table",
+              "passed": false,
+              "measured": {
+                "input_tokens": 2642,
+                "cache_read_input_tokens": 148660,
+                "cache_creation_input_tokens": 9796,
+                "output_tokens": 2626,
+                "cost_usd": 0.251779
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 0.8
+              },
+              "timing": {
+                "executor_duration_seconds": 60.3
+              },
+              "fingerprint": "3cdaf4649f928894ba7b1a3a1cebeaec993569f52a3b9dd10016bb2bedea637d"
+            }
+          ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-4-6": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:38:21Z",
+        "executed": true,
+        "content_hash": "da78d6ee1aa2e42045b270b961ecfbbe29b5b6034d41eff5a6b6d8fa92620e0e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Write xUnit tests for this Parse method",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 11.1,
+            "estimate": {
+              "input_tokens": 1416,
+              "input_cost_usd": 0.004248
+            },
+            "spec_hash": "2b3be56f1105ba3f1cd69a4781fe22a2a73da9e307038080a7925bb47b28b343"
+          },
+          {
+            "query": "Add a [Theory] with InlineData for these cases",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.5,
+            "estimate": {
+              "input_tokens": 1420,
+              "input_cost_usd": 0.00426
+            },
+            "spec_hash": "31279861aec2f85a0d7987d7e4c1f5de3c3adba5a8ff5c1c497f863492b576b5"
+          },
+          {
+            "query": "Set up a test fixture shared across the test class",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 1418,
+              "input_cost_usd": 0.004254
+            },
+            "spec_hash": "ec69fbc62e0f901afdbecd62be0448f73d298d8083e5eae4095ea4af6fb5eb41"
+          },
+          {
+            "query": "Should I use Moq here or a hand-written fake?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 1422,
+              "input_cost_usd": 0.004266
+            },
+            "spec_hash": "f6e8a609e74d7a21a0cad7cba3ea48b7239f7ffe8b3483aa54047d6b8c79d11e"
+          },
+          {
+            "query": "Integration-test this endpoint with WebApplicationFactory",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 26.8,
+            "estimate": {
+              "input_tokens": 1417,
+              "input_cost_usd": 0.004251
+            },
+            "spec_hash": "62399bdacb8cf2e13c8a8104905224675f0bf34ec837964364cab11fd80370a1"
+          },
+          {
+            "query": "Add MemberData for these object test cases",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 1417,
+              "input_cost_usd": 0.004251
+            },
+            "spec_hash": "13a62afbbe93b417ea79951d900509e897a554cfa30d61160db831660f66ad20"
+          },
+          {
+            "query": "How do I assert that this async method throws in xUnit?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.1,
+            "estimate": {
+              "input_tokens": 1421,
+              "input_cost_usd": 0.004263
+            },
+            "spec_hash": "4c8e26e069c3325b55dd73aefc4ed48bc70631dc0dde38cbc346ad30cdd38674"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.5,
+            "estimate": {
+              "input_tokens": 1414,
+              "input_cost_usd": 0.004242
+            },
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "Refactor this C# method to be async with a CancellationToken",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.1,
+            "estimate": {
+              "input_tokens": 1425,
+              "input_cost_usd": 0.004275
+            },
+            "spec_hash": "06dffd7a2c407a2253c1fbbdf1f6fa4658acbbaeae106f0862d29bc6b28c55b1"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for my package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18.5,
+            "estimate": {
+              "input_tokens": 1418,
+              "input_cost_usd": 0.004254
+            },
+            "spec_hash": "eb703dcf5f25bc411ec26ee8679a0cd116220e352fcdf294271a1282bfa9933f"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18.7,
+            "estimate": {
+              "input_tokens": 1419,
+              "input_cost_usd": 0.004257
+            },
+            "spec_hash": "918b0025db78a39b457413652c44684fe509bb385d4226ef947ae6b287e4908e"
+          },
+          {
+            "query": "Add table-driven tests for this Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.5,
+            "estimate": {
+              "input_tokens": 1417,
+              "input_cost_usd": 0.004251
+            },
+            "spec_hash": "5b82a791f5d4949b8a5c08490e2fbf71b67d1ceefb5032d0b42f632423c2cb58"
+          }
+        ],
+        "summary": {
+          "passed": 5,
+          "failed": 7,
+          "total": 12,
+          "pass_rate": 0.416667,
+          "avg_run_seconds": 11.6,
+          "estimate": {
+            "input_tokens": 17024,
+            "input_cost_usd": 0.051072
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6",
+        "display": "Claude Sonnet 4.6",
+        "harness": "claude",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:40:13Z",
+        "executed": true,
+        "content_hash": "75b10cb1001c0d9268d44337d496afcd3049769974e52f3ab84016551ad008ba",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "theory-table",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1447,
+              "input_cost_usd": 0.004341
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 110328,
+              "cache_creation_input_tokens": 9943,
+              "output_tokens": 893,
+              "cost_usd": 0.106804
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "ClampTests.cs",
+                "text": "file ClampTests.cs exists",
+                "passed": true,
+                "evidence": "ClampTests.cs exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "\\[Theory\\]",
+                "text": "ClampTests.cs matches /\\[Theory\\]/",
+                "passed": true,
+                "evidence": "[Theory]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "InlineData",
+                "text": "ClampTests.cs matches /InlineData/",
+                "passed": true,
+                "evidence": "InlineData",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "Assert\\.",
+                "text": "ClampTests.cs matches /Assert\\./",
+                "passed": true,
+                "evidence": "Assert.",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "ClampTests.cs",
+                "pattern": "FluentAssertions|Moq|Shouldly",
+                "text": "ClampTests.cs does not match /FluentAssertions|Moq|Shouldly/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 121172,
+              "executor_duration_seconds": 24.5
+            },
+            "spec_hash": "3cdaf4649f928894ba7b1a3a1cebeaec993569f52a3b9dd10016bb2bedea637d"
+          },
+          {
+            "id": "fake-over-mock",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1456,
+              "input_cost_usd": 0.004368
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 110662,
+              "cache_creation_input_tokens": 10163,
+              "output_tokens": 1129,
+              "cost_usd": 0.111769
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "BrokerTests.cs",
+                "text": "file BrokerTests.cs exists",
+                "passed": true,
+                "evidence": "BrokerTests.cs exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "BrokerTests.cs",
+                "pattern": "\\[Fact\\]|\\[Theory\\]",
+                "text": "BrokerTests.cs matches /\\[Fact\\]|\\[Theory\\]/",
+                "passed": true,
+                "evidence": "[Theory]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "BrokerTests.cs",
+                "pattern": "IClock",
+                "text": "BrokerTests.cs matches /IClock/",
+                "passed": true,
+                "evidence": "IClock",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "BrokerTests.cs",
+                "pattern": "Moq|NSubstitute|FluentAssertions",
+                "text": "BrokerTests.cs does not match /Moq|NSubstitute|FluentAssertions/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Glob": 1,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 121962,
+              "executor_duration_seconds": 27.6
+            },
+            "spec_hash": "f8366a6b02f1fac0e5b55b279e1a2296e0b354db140e576b60f151b3669a5015"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 26.1,
+          "estimate": {
+            "input_tokens": 2903,
+            "input_cost_usd": 0.008709
+          },
+          "measured": {
+            "input_tokens": 16,
+            "cache_read_input_tokens": 220990,
+            "cache_creation_input_tokens": 20106,
+            "output_tokens": 2022,
+            "cost_usd": 0.218573
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T20:40:13Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 69.3,
+            "measured": {
+              "input_tokens": 23,
+              "cache_read_input_tokens": 461020,
+              "cache_creation_input_tokens": 24559,
+              "output_tokens": 4386,
+              "cost_usd": 0.37865
+            }
+          },
+          "results": [
+            {
+              "id": "fake-over-mock",
+              "passed": true,
+              "measured": {
+                "input_tokens": 11,
+                "cache_read_input_tokens": 209024,
+                "cache_creation_input_tokens": 10843,
+                "output_tokens": 2087,
+                "cost_usd": 0.159736
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 51.2
+              },
+              "fingerprint": "f8366a6b02f1fac0e5b55b279e1a2296e0b354db140e576b60f151b3669a5015"
+            },
+            {
+              "id": "theory-table",
+              "passed": true,
+              "measured": {
+                "input_tokens": 12,
+                "cache_read_input_tokens": 251996,
+                "cache_creation_input_tokens": 13716,
+                "output_tokens": 2299,
+                "cost_usd": 0.218914
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 87.3
+              },
+              "fingerprint": "3cdaf4649f928894ba7b1a3a1cebeaec993569f52a3b9dd10016bb2bedea637d"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:52:27Z",
+        "executed": true,
+        "content_hash": "da78d6ee1aa2e42045b270b961ecfbbe29b5b6034d41eff5a6b6d8fa92620e0e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Write xUnit tests for this Parse method",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 22.3,
+            "estimate": {
+              "input_tokens": 1209,
+              "input_cost_usd": 0.003023
+            },
+            "spec_hash": "2b3be56f1105ba3f1cd69a4781fe22a2a73da9e307038080a7925bb47b28b343"
+          },
+          {
+            "query": "Add a [Theory] with InlineData for these cases",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 31.4,
+            "estimate": {
+              "input_tokens": 1212,
+              "input_cost_usd": 0.00303
+            },
+            "spec_hash": "31279861aec2f85a0d7987d7e4c1f5de3c3adba5a8ff5c1c497f863492b576b5"
+          },
+          {
+            "query": "Set up a test fixture shared across the test class",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 88.8,
+            "estimate": {
+              "input_tokens": 1211,
+              "input_cost_usd": 0.003028
+            },
+            "spec_hash": "ec69fbc62e0f901afdbecd62be0448f73d298d8083e5eae4095ea4af6fb5eb41"
+          },
+          {
+            "query": "Should I use Moq here or a hand-written fake?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.3,
+            "estimate": {
+              "input_tokens": 1213,
+              "input_cost_usd": 0.003033
+            },
+            "spec_hash": "f6e8a609e74d7a21a0cad7cba3ea48b7239f7ffe8b3483aa54047d6b8c79d11e"
+          },
+          {
+            "query": "Integration-test this endpoint with WebApplicationFactory",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 33,
+            "estimate": {
+              "input_tokens": 1209,
+              "input_cost_usd": 0.003023
+            },
+            "spec_hash": "62399bdacb8cf2e13c8a8104905224675f0bf34ec837964364cab11fd80370a1"
+          },
+          {
+            "query": "Add MemberData for these object test cases",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 70.7,
+            "estimate": {
+              "input_tokens": 1209,
+              "input_cost_usd": 0.003023
+            },
+            "spec_hash": "13a62afbbe93b417ea79951d900509e897a554cfa30d61160db831660f66ad20"
+          },
+          {
+            "query": "How do I assert that this async method throws in xUnit?",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.3,
+            "estimate": {
+              "input_tokens": 1214,
+              "input_cost_usd": 0.003035
+            },
+            "spec_hash": "4c8e26e069c3325b55dd73aefc4ed48bc70631dc0dde38cbc346ad30cdd38674"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 53.1,
+            "estimate": {
+              "input_tokens": 1207,
+              "input_cost_usd": 0.003018
+            },
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "Refactor this C# method to be async with a CancellationToken",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 46.2,
+            "estimate": {
+              "input_tokens": 1214,
+              "input_cost_usd": 0.003035
+            },
+            "spec_hash": "06dffd7a2c407a2253c1fbbdf1f6fa4658acbbaeae106f0862d29bc6b28c55b1"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for my package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 58.8,
+            "estimate": {
+              "input_tokens": 1212,
+              "input_cost_usd": 0.00303
+            },
+            "spec_hash": "eb703dcf5f25bc411ec26ee8679a0cd116220e352fcdf294271a1282bfa9933f"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 90,
+            "estimate": {
+              "input_tokens": 1212,
+              "input_cost_usd": 0.00303
+            },
+            "spec_hash": "918b0025db78a39b457413652c44684fe509bb385d4226ef947ae6b287e4908e"
+          },
+          {
+            "query": "Add table-driven tests for this Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 60.7,
+            "estimate": {
+              "input_tokens": 1209,
+              "input_cost_usd": 0.003023
+            },
+            "spec_hash": "5b82a791f5d4949b8a5c08490e2fbf71b67d1ceefb5032d0b42f632423c2cb58"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 2,
+          "total": 12,
+          "pass_rate": 0.833333,
+          "avg_run_seconds": 48,
+          "estimate": {
+            "input_tokens": 14531,
+            "input_cost_usd": 0.036331
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4",
+        "display": "GPT-5.4",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T20:54:03Z",
+        "executed": true,
+        "content_hash": "75b10cb1001c0d9268d44337d496afcd3049769974e52f3ab84016551ad008ba",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "theory-table",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1231,
+              "input_cost_usd": 0.003078
+            },
+            "measured": {
+              "input_tokens": 21994,
+              "cache_read_input_tokens": 115328,
+              "output_tokens": 1865,
+              "cost_usd": 0.37128
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "ClampTests.cs",
+                "text": "file ClampTests.cs exists",
+                "passed": true,
+                "evidence": "ClampTests.cs exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "\\[Theory\\]",
+                "text": "ClampTests.cs matches /\\[Theory\\]/",
+                "passed": true,
+                "evidence": "[Theory]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "InlineData",
+                "text": "ClampTests.cs matches /InlineData/",
+                "passed": true,
+                "evidence": "InlineData",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "Assert\\.",
+                "text": "ClampTests.cs matches /Assert\\./",
+                "passed": true,
+                "evidence": "Assert.",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "ClampTests.cs",
+                "pattern": "FluentAssertions|Moq|Shouldly",
+                "text": "ClampTests.cs does not match /FluentAssertions|Moq|Shouldly/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 139187,
+              "executor_duration_seconds": 44.8
+            },
+            "spec_hash": "3cdaf4649f928894ba7b1a3a1cebeaec993569f52a3b9dd10016bb2bedea637d"
+          },
+          {
+            "id": "fake-over-mock",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1238,
+              "input_cost_usd": 0.003095
+            },
+            "measured": {
+              "input_tokens": 12623,
+              "cache_read_input_tokens": 121472,
+              "output_tokens": 1938,
+              "cost_usd": 0.364307
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "BrokerTests.cs",
+                "text": "file BrokerTests.cs exists",
+                "passed": true,
+                "evidence": "BrokerTests.cs exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "BrokerTests.cs",
+                "pattern": "\\[Fact\\]|\\[Theory\\]",
+                "text": "BrokerTests.cs matches /\\[Fact\\]|\\[Theory\\]/",
+                "passed": true,
+                "evidence": "[Theory]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "BrokerTests.cs",
+                "pattern": "IClock",
+                "text": "BrokerTests.cs matches /IClock/",
+                "passed": true,
+                "evidence": "IClock",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "BrokerTests.cs",
+                "pattern": "Moq|NSubstitute|FluentAssertions",
+                "text": "BrokerTests.cs does not match /Moq|NSubstitute|FluentAssertions/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 136033,
+              "executor_duration_seconds": 45.6
+            },
+            "spec_hash": "f8366a6b02f1fac0e5b55b279e1a2296e0b354db140e576b60f151b3669a5015"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 45.2,
+          "estimate": {
+            "input_tokens": 2469,
+            "input_cost_usd": 0.006173
+          },
+          "measured": {
+            "input_tokens": 34617,
+            "cache_read_input_tokens": 236800,
+            "output_tokens": 3803,
+            "cost_usd": 0.735587
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T20:54:03Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 43.7,
+            "measured": {
+              "input_tokens": 28925,
+              "cache_read_input_tokens": 223488,
+              "output_tokens": 3129,
+              "cost_usd": 0.677968
+            }
+          },
+          "results": [
+            {
+              "id": "fake-over-mock",
+              "passed": true,
+              "measured": {
+                "input_tokens": 22120,
+                "cache_read_input_tokens": 102016,
+                "output_tokens": 1780,
+                "cost_usd": 0.33704
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 49.5
+              },
+              "fingerprint": "f8366a6b02f1fac0e5b55b279e1a2296e0b354db140e576b60f151b3669a5015"
+            },
+            {
+              "id": "theory-table",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6805,
+                "cache_read_input_tokens": 121472,
+                "output_tokens": 1349,
+                "cost_usd": 0.340928
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 37.9
+              },
+              "fingerprint": "3cdaf4649f928894ba7b1a3a1cebeaec993569f52a3b9dd10016bb2bedea637d"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.5": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T21:00:44Z",
+        "executed": true,
+        "content_hash": "da78d6ee1aa2e42045b270b961ecfbbe29b5b6034d41eff5a6b6d8fa92620e0e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Write xUnit tests for this Parse method",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.1,
+            "estimate": {
+              "input_tokens": 1209,
+              "input_cost_usd": 0.006045
+            },
+            "spec_hash": "2b3be56f1105ba3f1cd69a4781fe22a2a73da9e307038080a7925bb47b28b343"
+          },
+          {
+            "query": "Add a [Theory] with InlineData for these cases",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 1212,
+              "input_cost_usd": 0.00606
+            },
+            "spec_hash": "31279861aec2f85a0d7987d7e4c1f5de3c3adba5a8ff5c1c497f863492b576b5"
+          },
+          {
+            "query": "Set up a test fixture shared across the test class",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.3,
+            "estimate": {
+              "input_tokens": 1211,
+              "input_cost_usd": 0.006055
+            },
+            "spec_hash": "ec69fbc62e0f901afdbecd62be0448f73d298d8083e5eae4095ea4af6fb5eb41"
+          },
+          {
+            "query": "Should I use Moq here or a hand-written fake?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.2,
+            "estimate": {
+              "input_tokens": 1213,
+              "input_cost_usd": 0.006065
+            },
+            "spec_hash": "f6e8a609e74d7a21a0cad7cba3ea48b7239f7ffe8b3483aa54047d6b8c79d11e"
+          },
+          {
+            "query": "Integration-test this endpoint with WebApplicationFactory",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 1209,
+              "input_cost_usd": 0.006045
+            },
+            "spec_hash": "62399bdacb8cf2e13c8a8104905224675f0bf34ec837964364cab11fd80370a1"
+          },
+          {
+            "query": "Add MemberData for these object test cases",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14,
+            "estimate": {
+              "input_tokens": 1209,
+              "input_cost_usd": 0.006045
+            },
+            "spec_hash": "13a62afbbe93b417ea79951d900509e897a554cfa30d61160db831660f66ad20"
+          },
+          {
+            "query": "How do I assert that this async method throws in xUnit?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "estimate": {
+              "input_tokens": 1214,
+              "input_cost_usd": 0.00607
+            },
+            "spec_hash": "4c8e26e069c3325b55dd73aefc4ed48bc70631dc0dde38cbc346ad30cdd38674"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 89.7,
+            "estimate": {
+              "input_tokens": 1207,
+              "input_cost_usd": 0.006035
+            },
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "Refactor this C# method to be async with a CancellationToken",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 94.3,
+            "estimate": {
+              "input_tokens": 1214,
+              "input_cost_usd": 0.00607
+            },
+            "spec_hash": "06dffd7a2c407a2253c1fbbdf1f6fa4658acbbaeae106f0862d29bc6b28c55b1"
+          },
+          {
+            "query": "Set up the GitHub Actions release workflow for my package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1212,
+              "input_cost_usd": 0.00606
+            },
+            "spec_hash": "eb703dcf5f25bc411ec26ee8679a0cd116220e352fcdf294271a1282bfa9933f"
+          },
+          {
+            "query": "Scaffold a new .NET solution with src and tests",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 98.4,
+            "estimate": {
+              "input_tokens": 1212,
+              "input_cost_usd": 0.00606
+            },
+            "spec_hash": "918b0025db78a39b457413652c44684fe509bb385d4226ef947ae6b287e4908e"
+          },
+          {
+            "query": "Add table-driven tests for this Go function",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 39,
+            "estimate": {
+              "input_tokens": 1209,
+              "input_cost_usd": 0.006045
+            },
+            "spec_hash": "5b82a791f5d4949b8a5c08490e2fbf71b67d1ceefb5032d0b42f632423c2cb58"
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 1,
+          "total": 12,
+          "pass_rate": 0.916667,
+          "avg_run_seconds": 43.6,
+          "estimate": {
+            "input_tokens": 14531,
+            "input_cost_usd": 0.072655
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.5",
+        "display": "GPT-5.5",
+        "harness": "codex",
+        "tool_version": "v0.3.0-1-g6687789-dirty",
+        "ran_at": "2026-06-24T21:02:39Z",
+        "executed": true,
+        "content_hash": "75b10cb1001c0d9268d44337d496afcd3049769974e52f3ab84016551ad008ba",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "theory-table",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1231,
+              "input_cost_usd": 0.006155
+            },
+            "measured": {
+              "input_tokens": 32599,
+              "cache_read_input_tokens": 158592,
+              "output_tokens": 1991,
+              "cost_usd": 1.015685
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "ClampTests.cs",
+                "text": "file ClampTests.cs exists",
+                "passed": true,
+                "evidence": "ClampTests.cs exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "\\[Theory\\]",
+                "text": "ClampTests.cs matches /\\[Theory\\]/",
+                "passed": true,
+                "evidence": "[Theory]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "InlineData",
+                "text": "ClampTests.cs matches /InlineData/",
+                "passed": true,
+                "evidence": "InlineData",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "ClampTests.cs",
+                "pattern": "Assert\\.",
+                "text": "ClampTests.cs matches /Assert\\./",
+                "passed": true,
+                "evidence": "Assert.",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "ClampTests.cs",
+                "pattern": "FluentAssertions|Moq|Shouldly",
+                "text": "ClampTests.cs does not match /FluentAssertions|Moq|Shouldly/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 193182,
+              "executor_duration_seconds": 61.2
+            },
+            "spec_hash": "3cdaf4649f928894ba7b1a3a1cebeaec993569f52a3b9dd10016bb2bedea637d"
+          },
+          {
+            "id": "fake-over-mock",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1238,
+              "input_cost_usd": 0.00619
+            },
+            "measured": {
+              "input_tokens": 19658,
+              "cache_read_input_tokens": 100608,
+              "output_tokens": 1539,
+              "cost_usd": 0.6475
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "BrokerTests.cs",
+                "text": "file BrokerTests.cs exists",
+                "passed": true,
+                "evidence": "BrokerTests.cs exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "BrokerTests.cs",
+                "pattern": "\\[Fact\\]|\\[Theory\\]",
+                "text": "BrokerTests.cs matches /\\[Fact\\]|\\[Theory\\]/",
+                "passed": true,
+                "evidence": "[Theory]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "BrokerTests.cs",
+                "pattern": "IClock",
+                "text": "BrokerTests.cs matches /IClock/",
+                "passed": true,
+                "evidence": "IClock",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "BrokerTests.cs",
+                "pattern": "Moq|NSubstitute|FluentAssertions",
+                "text": "BrokerTests.cs does not match /Moq|NSubstitute|FluentAssertions/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 121805,
+              "executor_duration_seconds": 41.2
+            },
+            "spec_hash": "f8366a6b02f1fac0e5b55b279e1a2296e0b354db140e576b60f151b3669a5015"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 51.2,
+          "estimate": {
+            "input_tokens": 2469,
+            "input_cost_usd": 0.012345
+          },
+          "measured": {
+            "input_tokens": 52257,
+            "cache_read_input_tokens": 259200,
+            "output_tokens": 3530,
+            "cost_usd": 1.663185
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-06-24T21:02:39Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 47.8,
+            "measured": {
+              "input_tokens": 31116,
+              "cache_read_input_tokens": 195584,
+              "output_tokens": 3229,
+              "cost_usd": 1.23037
+            }
+          },
+          "results": [
+            {
+              "id": "fake-over-mock",
+              "passed": true,
+              "measured": {
+                "input_tokens": 13943,
+                "cache_read_input_tokens": 99072,
+                "output_tokens": 1645,
+                "cost_usd": 0.614425
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 41.8
+              },
+              "fingerprint": "f8366a6b02f1fac0e5b55b279e1a2296e0b354db140e576b60f151b3669a5015"
+            },
+            {
+              "id": "theory-table",
+              "passed": false,
+              "measured": {
+                "input_tokens": 17173,
+                "cache_read_input_tokens": 96512,
+                "output_tokens": 1584,
+                "cost_usd": 0.615945
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 0.8
+              },
+              "timing": {
+                "executor_duration_seconds": 53.7
+              },
+              "fingerprint": "3cdaf4649f928894ba7b1a3a1cebeaec993569f52a3b9dd10016bb2bedea637d"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

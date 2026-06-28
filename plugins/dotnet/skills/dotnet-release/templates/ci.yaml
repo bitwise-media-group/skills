@@ -1,0 +1,37 @@
+# Continuous integration — save as .github/workflows/ci.yaml. Restores, builds,
+# verifies formatting, and tests on every push and pull request. The SDK version
+# comes from global.json, never the workflow.
+#
+# Every action is pinned to a full commit SHA (tag in the comment) so a moved tag
+# can never change what runs; Dependabot keeps the pins fresh.
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+
+      - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4.3.1
+        with:
+          global-json-file: global.json
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --no-restore --configuration Release
+
+      - name: Format
+        run: dotnet format --verify-no-changes
+
+      - name: Test
+        run: dotnet test --no-build --configuration Release
