@@ -1,0 +1,6 @@
+# Eval sweep output — large, machine-generated artifacts (evolve writes them; never
+# hand-edited). Suppress their content diffs locally and collapse them in GitHub's
+# review UI; they are still committed, just not rendered line-by-line.
+results.json -diff linguist-generated=true
+EVALUATION.json -diff linguist-generated=true
+EVALUATION.md -diff linguist-generated=true

@@ -8,4 +8,4 @@
 name: "skills CodeQL config"
 
 queries:
-    - uses: security-extended
+  - uses: security-extended

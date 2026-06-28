@@ -2,24 +2,25 @@
 # SPDX-License-Identifier: MIT
 
 config:
-    default: true
-    # Keep prose readable in terminals and diffs; tables are exempt.
-    MD013:
-        line_length: 120
-        tables: false
-    # Skill bodies legitimately repeat heading text across sections.
-    MD024:
-        siblings_only: true
-    # gofmt mandates hard tabs, so Go examples in code fences keep them; prose stays tab-free.
-    MD010:
-        code_blocks: false
-    # Allow bare fenced-code style choices used by templates.
-    MD046:
-        style: fenced
+  default: true
+  # Keep prose readable in terminals and diffs; tables are exempt.
+  MD013:
+    line_length: 120
+    tables: false
+  # Skill bodies legitimately repeat heading text across sections.
+  MD024:
+    siblings_only: true
+  # gofmt mandates hard tabs, so Go examples in code fences keep them; prose stays tab-free.
+  MD010:
+    code_blocks: false
+  # Allow bare fenced-code style choices used by templates.
+  MD046:
+    style: fenced
 
 globs:
-    - "**/*.md"
+  - "**/*.md"
 
 ignores:
-    - "node_modules/**"
-    - ".claude/**"
+  - "node_modules/**"
+  - ".claude/**"
+  - "**/EVALUATION.md"

@@ -31,25 +31,25 @@ name: Auto-merge
 # before a merge; ff-merge re-verifies all checks regardless. None of these run PR
 # code; the reusable workflow only mints a token and calls the API.
 on:
-    issue_comment:
-        types: [created]
-    pull_request:
-        types: [labeled]
-    pull_request_review:
-        types: [submitted]
-    workflow_run:
-        workflows: [ci]
-        types: [completed]
+  issue_comment:
+    types: [created]
+  pull_request:
+    types: [labeled]
+  pull_request_review:
+    types: [submitted]
+  workflow_run:
+    workflows: [ci]
+    types: [completed]
 
 # the App token does the privileged work; the caller grants nothing
 permissions: {}
 
 jobs:
-    auto-merge:
-        uses: bitwise-media-group/github-workflows/.github/workflows/auto-merge.yaml@077a003a620f49bd0062c73fc761dbea05d7fb70 # v1.1.0
-        with:
-            app-client-id: ${{ vars.FF_MERGE_CLIENT_ID }}
-            # label: auto-merge    # default — the label that arms auto-merge
-            # command: /auto-merge # default — the comment that arms auto-merge
-        secrets:
-            app-private-key: ${{ secrets.FF_MERGE_PRIVATE_KEY }}
+  auto-merge:
+    uses: bitwise-media-group/github-workflows/.github/workflows/auto-merge.yaml@077a003a620f49bd0062c73fc761dbea05d7fb70 # v1.1.0
+    with:
+      app-client-id: ${{ vars.FF_MERGE_CLIENT_ID }}
+      # label: auto-merge    # default — the label that arms auto-merge
+      # command: /auto-merge # default — the comment that arms auto-merge
+    secrets:
+      app-private-key: ${{ secrets.FF_MERGE_PRIVATE_KEY }}

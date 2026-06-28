@@ -10,38 +10,43 @@
 # untracked.
 version: 2
 updates:
-    - package-ecosystem: github-actions
-      directory: /
-      schedule:
-          interval: daily
-      cooldown:
-          default-days: 7
-      groups:
-          actions:
-              patterns:
-                  - actions/*
-          bitwise-media-group:
-              patterns:
-                  - bitwise-media-group/*
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        patterns:
+          - actions/*
+      bitwise-media-group:
+        patterns:
+          - bitwise-media-group/*
 
-    - package-ecosystem: npm
-      directory: /
-      schedule:
-          interval: daily
-      cooldown:
-          default-days: 7
-      groups:
-          npm:
-              patterns:
-                  - "*"
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 7
+    groups:
+      npm:
+        patterns:
+          - "*"
 
-    - package-ecosystem: gomod
-      directory: /tools
-      schedule:
-          interval: daily
-      cooldown:
-          default-days: 7
-      groups:
-          tools:
-              patterns:
-                  - "*"
+  - package-ecosystem: gomod
+    directory: /tools
+    schedule:
+      interval: daily
+    cooldown:
+      default-days: 7
+    # tools/go.mod is a Go `tool` module: the pinned CLIs and everything they
+    # pull in are recorded as `// indirect` requires, so the default direct-only
+    # allow filter skips the entire 'tools' group. Opt indirect deps back in.
+    allow:
+      - dependency-type: all
+    groups:
+      tools:
+        patterns:
+          - "*"
