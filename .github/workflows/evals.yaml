@@ -26,6 +26,11 @@ on:
         default: anthropic
         type: string
 
+# the job only checks out the repo and uploads an artifact; neither needs write
+# scope, so pin the token to the read-only minimum
+permissions:
+  contents: read
+
 jobs:
   evals:
     runs-on: ubuntu-latest
@@ -40,7 +45,7 @@ jobs:
       - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
-          node-version: 22
+          node-version-file: .node-version
       - uses: bitwise-media-group/setup-evolve@c1355d0d46a9ade667bd40c64e45ea838ab4daf8 # v1
       - run: npm install -g @anthropic-ai/claude-code @openai/codex @google/gemini-cli
       - name: Install terraform + tflint for deterministic grading
