@@ -1,13 +1,19 @@
 {
   "name": "terraform",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Terraform style conventions, module scaffolding, and fmt/validate/tflint workflows for authoring reusable modules.",
   "author": {
     "name": "Bitwise Media Group",
     "email": "deavon@bitwisemedia.co.uk"
   },
   "license": "MIT",
-  "keywords": ["terraform", "hcl", "iac", "modules", "tflint"],
+  "keywords": [
+    "terraform",
+    "hcl",
+    "iac",
+    "modules",
+    "tflint"
+  ],
   "interface": {
     "displayName": "Terraform",
     "shortDescription": "Terraform style, module scaffolding, and validation workflows."

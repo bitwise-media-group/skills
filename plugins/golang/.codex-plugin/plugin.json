@@ -1,13 +1,23 @@
 {
   "name": "golang",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Modern Go development — stdlib-first code style with cobra/viper CLIs, table-driven tests and native fuzzing, canonical project layout with pinned tooling, documentation conventions with LLM-ready CLI references, and GoReleaser-based release engineering.",
   "author": {
     "name": "Bitwise Media Group",
     "email": "deavon@bitwisemedia.co.uk"
   },
   "license": "MIT",
-  "keywords": ["go", "golang", "slog", "testing", "fuzzing", "goreleaser", "cobra", "viper", "godoc"],
+  "keywords": [
+    "go",
+    "golang",
+    "slog",
+    "testing",
+    "fuzzing",
+    "goreleaser",
+    "cobra",
+    "viper",
+    "godoc"
+  ],
   "interface": {
     "displayName": "Go",
     "shortDescription": "Modern Go style, testing, docs, project layout, and release engineering."

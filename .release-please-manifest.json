@@ -1,4 +1,7 @@
 {
-  "plugins/golang": "0.2.0",
-  "plugins/terraform": "0.1.0"
+  "plugins/golang": "0.3.0",
+  "plugins/terraform": "0.2.0",
+  "plugins/actions": "1.0.0",
+  "plugins/python": "1.0.0",
+  "plugins/workflow": "1.0.0"
 }
