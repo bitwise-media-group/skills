@@ -13,7 +13,7 @@ require (
 	charm.land/lipgloss/v2 v2.0.4 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bitwise-media-group/evolve v0.5.0 // indirect
-	github.com/bmatcuk/doublestar/v4 v4.0.2 // indirect
+	github.com/bmatcuk/doublestar/v4 v4.10.0 // indirect
 	github.com/cenkalti/backoff/v5 v5.0.3 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/charmbracelet/colorprofile v0.4.3 // indirect
