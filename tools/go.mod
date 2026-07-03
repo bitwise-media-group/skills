@@ -10,7 +10,7 @@ tool (
 require (
 	charm.land/bubbles/v2 v2.1.0 // indirect
 	charm.land/bubbletea/v2 v2.0.7 // indirect
-	charm.land/lipgloss/v2 v2.0.4 // indirect
+	charm.land/lipgloss/v2 v2.0.5 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bitwise-media-group/evolve v0.5.0 // indirect
 	github.com/bmatcuk/doublestar/v4 v4.10.0 // indirect
