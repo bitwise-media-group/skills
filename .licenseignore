@@ -2,4 +2,6 @@
 node_modules/**
 .claude/**
 plugins/**
+make/**
+.bin/**
 commit.sh

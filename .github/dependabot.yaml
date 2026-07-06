@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MIT
 
 # Opens the dependency PRs that dependabot-merge.yml fast-forwards once CI is green.
-# Unlike the github-workflows repo (workflow YAML only), this repo has three real
-# ecosystems: the SHA/tag-pinned actions in the workflow callers, the npm
-# lint/format toolchain (package.json), and the pinned Go developer CLIs
-# (tools/go.mod — the only module in go.work). The many go.mod files under
+# Three ecosystems: the SHA/tag-pinned actions in the workflow callers, the npm
+# lint/format toolchain (package.json), and the shared Makefile library submodule
+# (make/) — which carries the pinned Go CLIs (addlicense + the evolve eval CLI),
+# replacing the old tools/go.mod + go.work. The many go.mod files under
 # plugins/*/evals are intentionally pinned test fixtures and are deliberately left
 # untracked.
 version: 2
@@ -35,18 +35,19 @@ updates:
         patterns:
           - "*"
 
-  - package-ecosystem: gomod
-    directory: /tools
+  # The pinned Go CLIs (addlicense, evolve) no longer live in a tools/go.mod —
+  # they come from the make/ submodule's .<tool>-version pins. Track the submodule
+  # so a library release (a new `release` branch head) flows here as a bump.
+  - package-ecosystem: gitsubmodule
+    directory: /
     schedule:
       interval: daily
     cooldown:
       default-days: 7
-    # tools/go.mod is a Go `tool` module: the pinned CLIs and everything they
-    # pull in are recorded as `// indirect` requires, so the default direct-only
-    # allow filter skips the entire 'tools' group. Opt indirect deps back in.
-    allow:
-      - dependency-type: all
-    groups:
-      tools:
-        patterns:
-          - "*"
+      # our own make/ submodule ships straight through — no cooldown wait
+      exclude:
+        - make
+    commit-message:
+      include: scope
+      prefix: build
+      prefix-development: build

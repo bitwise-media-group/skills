@@ -4,6 +4,7 @@
 # tooling
 node_modules/
 .venv/
+.bin/
 
 # terraform provider/module caches (eval `command` assertions run terraform)
 .terraform/

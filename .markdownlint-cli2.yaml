@@ -26,3 +26,5 @@ ignores:
   - "**/EVALUATION.md"
   - "CHANGELOG.md"
   - "**/CHANGELOG.md"
+  # shared Makefile library submodule — linted in its own repo
+  - "make/**"

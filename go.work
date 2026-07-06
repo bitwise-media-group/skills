@@ -1,6 +1,0 @@
-// Anchors the go command at the repo root so the pinned developer CLIs in
-// tools/go.mod run as plain `go tool <name>` (there is no root Go module for
-// -modfile to attach to).
-go 1.26.4
-
-use ./tools

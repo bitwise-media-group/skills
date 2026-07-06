@@ -44,7 +44,7 @@ jobs:
   merge:
     # The reusable workflow gates on a /merge comment from a maintainer and
     # re-verifies write access authoritatively, so no per-repo gate is needed.
-    uses: bitwise-media-group/github-workflows/.github/workflows/merge.yaml@27fe5361320037b035595ecbeefe64b06fd54178 # v4.0.4
+    uses: bitwise-media-group/github-workflows/.github/workflows/merge.yaml@a28e6738bc4f912322f9e66e9e90e7de789c4ad3 # v4.3.1
     with:
       app-client-id: ${{ vars.FF_MERGE_CLIENT_ID }}
       # merge-command: /merge     # default — the comment that merges now

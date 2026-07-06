@@ -1,69 +1,60 @@
-# Developer tasks. `make help` lists targets.
+# Copyright 2026 Bitwise Media Group
+# SPDX-License-Identifier: MIT
+
+# skills — the Claude skill/plugin marketplace and its evaluation suite.
 #
-# Node CLIs run straight from node_modules so package-lock.json is the source
-# of truth (no npx, no globals). Go developer CLIs are pinned in tools/go.mod
-# and run via `go tool` (see tools/README.md). Evals run through the evolve
-# CLI (github.com/bitwise-media-group/evolve); EVOLVE points at a sibling
-# checkout's binary for now and will become a pinned go-tool later.
+# The reusable helpers come from the shared Makefile library
+# (bitwise-media-group/make), consumed as the make/ submodule: help/commit from
+# common.mk, the SHA-pinned Go CLIs (addlicense + the evolve eval CLI) from
+# gotools.mk, license headers from license.mk, and the node_modules sentinel +
+# prose format/lint from node.mk. skills composes the fragments directly rather
+# than including a whole archetype, because its `test` is real (evolve eval
+# thresholds) and `lint` needs the claude CLI plus the evolve/JSON/shell checks.
+include make/fragments/common.mk
+include make/fragments/gotools.mk
+include make/fragments/license.mk
+include make/fragments/node.mk
 
-# one -ignore flag per non-empty line in .licenseignore (quoted to avoid shell globbing)
-LICENSE_HOLDER := 'Bitwise Media Group Ltd'
-LICENSE_IGNORE := $(foreach pattern,$(shell cat .licenseignore 2>/dev/null),-ignore '$(pattern)')
+.PHONY: fmt lint build test e2e ci pr triggers evals all report evolve-checks
 
-.PHONY: help
-help: ## list targets
-	@ awk -F": .*## " "/^[a-z-]+:.*## /{printf \"  %-14s %s\\n\", \$$1, \$$2}" $(MAKEFILE_LIST)
+fmt:  fmt-prose license   ## auto-format prose + inject license headers
+# Order matters: install the claude CLI (npm run lint's plugin-validate needs it)
+# before lint-prose runs it, then the evolve/JSON/shell checks after.
+lint: license-check node_modules/.claude-cli lint-prose evolve-checks ## all check-mode static analysis
+build: ## no-op build gate (nothing to compile) so the reusable CI `make build` job passes
+	@ :
+test: $(EVOLVE) ## validate the plugins and that eval results meet the minimum thresholds
+	@ $(EVOLVE) run checks
+	@ $(EVOLVE) report --check --junit=coverage/junit.xml --cobertura=coverage/cobertura-coverage.xml
+e2e: ## no-op: no end-to-end tests
+	@ :
+ci:   lint build test            ## the gates the reusable CI workflow runs
+pr:   fmt lint build test commit ## full local gate before a pull request
 
-.PHONY: pr
-pr: fmt lint ## prepare a pull request
-
-.PHONY: ci
-ci: lint ## run the continuous integration checks
-
-.PHONY: fmt
-fmt: node_modules ## auto-format the repo with prettier (pinned in package.json)
-	@ npm run format
-	@ npm run lint:fix
-	@ go tool addlicense -l mit -c $(LICENSE_HOLDER) -s=only $(LICENSE_IGNORE) .
-
-.PHONY: lint
-lint: node_modules ## markdownlint all markdown (config: .markdownlint-cli2.yaml)
-	@ npm run lint
-	@ go tool evolve run checks --strict
+# The extra check-mode analysis folded into `lint`: evolve's own checks, the eval
+# fixtures' JSON validity, and the installer's shell syntax.
+evolve-checks: node_modules $(EVOLVE)
+	@ $(EVOLVE) run checks --strict
 	@ for f in plugins/*/evals/*/*.json; do \
 		jq -e . "$$f" >/dev/null || { echo "invalid JSON: $$f"; exit 1; }; \
 	done
-	@ go tool addlicense -l mit -check -c $(LICENSE_HOLDER) -s=only $(LICENSE_IGNORE) .
 	@ sh -n install.sh
 
-.PHONY: build
-build: ## no-op build gate (nothing to compile) so the reusable CI `make build` job passes
-	@ :
+triggers: $(EVOLVE) ## Tier 1 - trigger accuracy + token usage
+	@ $(EVOLVE) run triggers --new --modified
 
-.PHONY: test
-test: ## ensures that the plugins are valid and the evaluation results meet minimum thresholds
-	@ go tool evolve run checks
-	@ go tool evolve report --check --junit=coverage/junit.xml --cobertura=coverage/cobertura-coverage.xml
+evals: $(EVOLVE) ## Tier 2 - behavioral evals + token usage
+	@ $(EVOLVE) run evals --new --modified
 
-.PHONY: triggers
-triggers: ## Tier 1 - trigger accuracy + token usage
-	@ go tool evolve run triggers --new --modified
+all: $(EVOLVE) ## all three tiers, then regenerate reports
+	@ $(EVOLVE) run all --new --modified
 
-.PHONY: evals
-evals: ## Tier 2 - behavioral evals + token usage
-	@ go tool evolve run evals --new --modified
+report: $(EVOLVE) ## regenerate the EVALUATION files from stored results
+	@ $(EVOLVE) report
 
-.PHONY: all
-all: ## all three tiers, then regenerate reports
-	@ go tool evolve run all --new --modified
-
-.PHONY: report
-report: ## regenerate the EVALUATION files from stored results
-	@ go tool evolve report
-
-# Install the pinned npm dev tools (prettier, markdownlint) exactly as locked
-# in package-lock.json. Re-runs only when package.json / package-lock.json change.
-node_modules: package.json package-lock.json
-	@ npm ci --ignore-scripts --no-fund
+# `npm run lint` runs `claude plugin validate`, which needs the claude-code CLI.
+# npm ci --ignore-scripts skips the package's own install step, so run it here once.
+# The sentinel lives under node_modules/ (git-ignored, wiped whenever npm ci re-runs).
+node_modules/.claude-cli: node_modules
 	@ node node_modules/@anthropic-ai/claude-code/install.cjs
-	@ touch node_modules
+	@ touch node_modules/.claude-cli

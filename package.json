@@ -6,6 +6,7 @@
   "license": "MIT",
   "scripts": {
     "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "lint": "npm run lint:md && npm run lint:plugin",
     "lint:md": "markdownlint-cli2 '**/*.md'",
     "lint:plugin": "claude plugin validate .",
