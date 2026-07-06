@@ -3,6 +3,436 @@
   "plugin": "actions",
   "skill": "actions-security",
   "models": {
+    "anthropic/claude-fable-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-fable-5",
+        "display": "Claude Fable 5",
+        "harness": "claude",
+        "tool_version": "v0.5.0-6-g47ca9ac",
+        "ran_at": "2026-07-02T18:41:27Z",
+        "executed": true,
+        "content_hash": "a44bd2fafb2e0ce9edb5adffc1a1050f34f1b4e418e82403ace1b8183677750b",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 10,
+          "output_per_mtok": 50
+        },
+        "results": [
+          {
+            "query": "Harden this GitHub Actions workflow and lock down its permissions",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.3,
+            "estimate": {
+              "input_tokens": 1958,
+              "input_cost_usd": 0.01958
+            },
+            "spec_hash": "bffbcca9b21232fd9bdb0b14ca7f16aa221dc645117ccc5e970c181c230e06cb"
+          },
+          {
+            "query": "Pin all the actions in our workflows to commit SHAs",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9,
+            "estimate": {
+              "input_tokens": 1955,
+              "input_cost_usd": 0.01955
+            },
+            "spec_hash": "4b6e2969975a7c2ddb228399cf8226750398ea194352b31c2a4584e99c7ab392"
+          },
+          {
+            "query": "Is it safe to use pull_request_target here, or will a fork PR steal our secrets?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 1965,
+              "input_cost_usd": 0.01965
+            },
+            "spec_hash": "d25cfa9414bbb0d45b31d1a36f9bcd39d2e509217ef4633674f66811722b4be4"
+          },
+          {
+            "query": "This workflow echoes a PR title into a run step — is that a script-injection risk?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 1962,
+              "input_cost_usd": 0.01962
+            },
+            "spec_hash": "b907d640bedd42d63b74d7515472a5b48752184dea1555a19f2583efd454c50a"
+          },
+          {
+            "query": "Set least-privilege permissions for this CI job",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.7,
+            "estimate": {
+              "input_tokens": 1951,
+              "input_cost_usd": 0.01951
+            },
+            "spec_hash": "f0e82f5275cd912b88dfbe72975c3fe46cedc0a5e69ddd67eb50f67793cf2824"
+          },
+          {
+            "query": "Review .github/workflows for security issues",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.6,
+            "estimate": {
+              "input_tokens": 1948,
+              "input_cost_usd": 0.01948
+            },
+            "spec_hash": "8678fe94efe564308fc91817554fa607450d2719d0b6adc0b8f90da1fea015ae"
+          },
+          {
+            "query": "Should we use OIDC instead of storing long-lived AWS keys as secrets?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.9,
+            "estimate": {
+              "input_tokens": 1963,
+              "input_cost_usd": 0.01963
+            },
+            "spec_hash": "56aa9353e8530803169126f8e5db94c31769196692c1f1de2a3aafc2cbe8a839"
+          },
+          {
+            "query": "A fork PR workflow needs to label the PR — how do I do that without exposing the write token?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.2,
+            "estimate": {
+              "input_tokens": 1965,
+              "input_cost_usd": 0.01965
+            },
+            "spec_hash": "33b7c4966780af80f0182152af3769f0d32c110d9d41d4ad5258235fce07d85f"
+          },
+          {
+            "query": "Add a matrix across Python versions to this workflow",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 21.9,
+            "estimate": {
+              "input_tokens": 1952,
+              "input_cost_usd": 0.01952
+            },
+            "spec_hash": "077e407f7d207ffd68469af82610b2856e786fcb9cf640283aa388d3f1523c8b"
+          },
+          {
+            "query": "Run actionlint and zizmor and fix the findings",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.6,
+            "estimate": {
+              "input_tokens": 1953,
+              "input_cost_usd": 0.01953
+            },
+            "spec_hash": "fc94905a243650a18d9835dd6853493d568c1cc42b0f8948e9cefc7870bc97c8"
+          },
+          {
+            "query": "Wire up the reusable CI workflow for this repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.8,
+            "estimate": {
+              "input_tokens": 1953,
+              "input_cost_usd": 0.01953
+            },
+            "spec_hash": "6b8cadf86bd43250f1eff852b65a1efc041df6077ff9de47ff86e517fae8cec4"
+          },
+          {
+            "query": "Write a Dockerfile that runs as a non-root user",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.5,
+            "estimate": {
+              "input_tokens": 1954,
+              "input_cost_usd": 0.01954
+            },
+            "spec_hash": "a36a1e747758fb7f6dad6d1fbb60999170e8485db53799f85e137e138a3fb728"
+          },
+          {
+            "query": "How do I manage secrets in Terraform?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 29.8,
+            "estimate": {
+              "input_tokens": 1950,
+              "input_cost_usd": 0.0195
+            },
+            "spec_hash": "addbe6e88d30993e1c4b32240ba7331e53e3f38be8eab0f960e73da961ad9074"
+          },
+          {
+            "query": "Format this YAML file with prettier",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18,
+            "estimate": {
+              "input_tokens": 1947,
+              "input_cost_usd": 0.01947
+            },
+            "spec_hash": "90ba576a5e4e61fdc255d28446d5b649d26d71d4d24b0d33774a060167c2e7e9"
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 13.7,
+          "estimate": {
+            "input_tokens": 27376,
+            "input_cost_usd": 0.27376
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-fable-5",
+        "display": "Claude Fable 5",
+        "harness": "claude",
+        "tool_version": "v0.5.0-6-g47ca9ac",
+        "ran_at": "2026-07-02T18:44:00Z",
+        "executed": true,
+        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 10,
+          "output_per_mtok": 50
+        },
+        "results": [
+          {
+            "id": "remove-pull-request-target",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2001,
+              "input_cost_usd": 0.02001
+            },
+            "measured": {
+              "input_tokens": 4324,
+              "cache_read_input_tokens": 208018,
+              "cache_creation_input_tokens": 13836,
+              "output_tokens": 2987,
+              "cost_usd": 0.677966
+            },
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/pr-build.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/pr-build.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/pr-build.yaml",
+                "pattern": "pull_request:",
+                "text": ".github/workflows/pr-build.yaml matches /pull_request:/",
+                "passed": true,
+                "evidence": "pull_request:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/pr-build.yaml",
+                "pattern": "permissions:",
+                "text": ".github/workflows/pr-build.yaml matches /permissions:/",
+                "passed": true,
+                "evidence": "permissions:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Edit": 2,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 7
+            },
+            "timing": {
+              "total_tokens": 229165,
+              "executor_duration_seconds": 71.5
+            },
+            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+          },
+          {
+            "id": "fix-expression-injection",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1991,
+              "input_cost_usd": 0.01991
+            },
+            "measured": {
+              "input_tokens": 4189,
+              "cache_read_input_tokens": 120201,
+              "cache_creation_input_tokens": 11907,
+              "output_tokens": 1091,
+              "cost_usd": 0.455414
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": ".github/workflows/echo-title.yaml",
+                "pattern": "env:",
+                "text": ".github/workflows/echo-title.yaml matches /env:/",
+                "passed": true,
+                "evidence": "env:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/echo-title.yaml",
+                "pattern": "run:.*\\$\\{\\{",
+                "text": ".github/workflows/echo-title.yaml does not match /run:.*\\$\\{\\{/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Edit": 1,
+                "Glob": 1,
+                "Grep": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 137388,
+              "executor_duration_seconds": 33.2
+            },
+            "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 52.4,
+          "estimate": {
+            "input_tokens": 3992,
+            "input_cost_usd": 0.03992
+          },
+          "measured": {
+            "input_tokens": 8513,
+            "cache_read_input_tokens": 328219,
+            "cache_creation_input_tokens": 25743,
+            "output_tokens": 4078,
+            "cost_usd": 1.13338
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-02T18:44:00Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 55.7,
+            "measured": {
+              "input_tokens": 8061,
+              "cache_read_input_tokens": 314458,
+              "cache_creation_input_tokens": 22806,
+              "output_tokens": 4903,
+              "cost_usd": 1.097629
+            }
+          },
+          "results": [
+            {
+              "id": "remove-pull-request-target",
+              "passed": true,
+              "measured": {
+                "input_tokens": 4100,
+                "cache_read_input_tokens": 226273,
+                "cache_creation_input_tokens": 13003,
+                "output_tokens": 3698,
+                "cost_usd": 0.712896
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 81.1
+              },
+              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            },
+            {
+              "id": "fix-expression-injection",
+              "passed": true,
+              "measured": {
+                "input_tokens": 3961,
+                "cache_read_input_tokens": 88185,
+                "cache_creation_input_tokens": 9803,
+                "output_tokens": 1205,
+                "cost_usd": 0.384733
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 30.2
+              },
+              "fingerprint": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
+            }
+          ]
+        }
+      }
+    },
     "anthropic/claude-haiku-4-5": {
       "triggers": {
         "provider": "anthropic",
@@ -2091,19 +2521,22 @@
         }
       }
     },
-    "google/gemini-3.1-pro": {
+    "anthropic/claude-sonnet-5": {
       "triggers": {
-        "provider": "google",
-        "model": "gemini-3.1-pro",
-        "display": "Gemini 3.1 Pro",
-        "harness": "antigravity",
-        "tool_version": "v0.2.1-55-g27c5e17-dirty",
-        "ran_at": "2026-06-23T00:44:27Z",
+        "provider": "anthropic",
+        "model": "claude-sonnet-5",
+        "display": "Claude Sonnet 5",
+        "harness": "claude",
+        "tool_version": "v0.5.0-6-g47ca9ac",
+        "ran_at": "2026-07-02T18:37:12Z",
         "executed": true,
         "content_hash": "a44bd2fafb2e0ce9edb5adffc1a1050f34f1b4e418e82403ace1b8183677750b",
         "runs_per_query": 3,
         "timeout_seconds": 120,
-        "pricing": null,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
         "results": [
           {
             "query": "Harden this GitHub Actions workflow and lock down its permissions",
@@ -2111,7 +2544,11 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 4.7,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 1958,
+              "input_cost_usd": 0.005874
+            },
             "spec_hash": "bffbcca9b21232fd9bdb0b14ca7f16aa221dc645117ccc5e970c181c230e06cb"
           },
           {
@@ -2120,25 +2557,37 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 4.8,
+            "avg_run_seconds": 8.1,
+            "estimate": {
+              "input_tokens": 1955,
+              "input_cost_usd": 0.005865
+            },
             "spec_hash": "4b6e2969975a7c2ddb228399cf8226750398ea194352b31c2a4584e99c7ab392"
           },
           {
             "query": "Is it safe to use pull_request_target here, or will a fork PR steal our secrets?",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5,
+            "passed": true,
+            "avg_run_seconds": 3.7,
+            "estimate": {
+              "input_tokens": 1965,
+              "input_cost_usd": 0.005895
+            },
             "spec_hash": "d25cfa9414bbb0d45b31d1a36f9bcd39d2e509217ef4633674f66811722b4be4"
           },
           {
             "query": "This workflow echoes a PR title into a run step — is that a script-injection risk?",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 4.5,
+            "passed": true,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 1962,
+              "input_cost_usd": 0.005886
+            },
             "spec_hash": "b907d640bedd42d63b74d7515472a5b48752184dea1555a19f2583efd454c50a"
           },
           {
@@ -2147,7 +2596,11 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 4.9,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 1951,
+              "input_cost_usd": 0.005853
+            },
             "spec_hash": "f0e82f5275cd912b88dfbe72975c3fe46cedc0a5e69ddd67eb50f67793cf2824"
           },
           {
@@ -2156,25 +2609,37 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 4.9,
+            "avg_run_seconds": 8.9,
+            "estimate": {
+              "input_tokens": 1948,
+              "input_cost_usd": 0.005844
+            },
             "spec_hash": "8678fe94efe564308fc91817554fa607450d2719d0b6adc0b8f90da1fea015ae"
           },
           {
             "query": "Should we use OIDC instead of storing long-lived AWS keys as secrets?",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 4.4,
+            "passed": true,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 1963,
+              "input_cost_usd": 0.005889
+            },
             "spec_hash": "56aa9353e8530803169126f8e5db94c31769196692c1f1de2a3aafc2cbe8a839"
           },
           {
             "query": "A fork PR workflow needs to label the PR — how do I do that without exposing the write token?",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 4.7,
+            "passed": true,
+            "avg_run_seconds": 8.1,
+            "estimate": {
+              "input_tokens": 1965,
+              "input_cost_usd": 0.005895
+            },
             "spec_hash": "33b7c4966780af80f0182152af3769f0d32c110d9d41d4ad5258235fce07d85f"
           },
           {
@@ -2183,7 +2648,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 5,
+            "avg_run_seconds": 10,
+            "estimate": {
+              "input_tokens": 1952,
+              "input_cost_usd": 0.005856
+            },
             "spec_hash": "077e407f7d207ffd68469af82610b2856e786fcb9cf640283aa388d3f1523c8b"
           },
           {
@@ -2192,7 +2661,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 4.9,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 1953,
+              "input_cost_usd": 0.005859
+            },
             "spec_hash": "fc94905a243650a18d9835dd6853493d568c1cc42b0f8948e9cefc7870bc97c8"
           },
           {
@@ -2201,7 +2674,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 4.7,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 1953,
+              "input_cost_usd": 0.005859
+            },
             "spec_hash": "6b8cadf86bd43250f1eff852b65a1efc041df6077ff9de47ff86e517fae8cec4"
           },
           {
@@ -2210,7 +2687,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 4.9,
+            "avg_run_seconds": 13.8,
+            "estimate": {
+              "input_tokens": 1954,
+              "input_cost_usd": 0.005862
+            },
             "spec_hash": "a36a1e747758fb7f6dad6d1fbb60999170e8485db53799f85e137e138a3fb728"
           },
           {
@@ -2219,7 +2700,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 4.6,
+            "avg_run_seconds": 19.3,
+            "estimate": {
+              "input_tokens": 1950,
+              "input_cost_usd": 0.00585
+            },
             "spec_hash": "addbe6e88d30993e1c4b32240ba7331e53e3f38be8eab0f960e73da961ad9074"
           },
           {
@@ -2228,157 +2713,55 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 4.7,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 1947,
+              "input_cost_usd": 0.005841
+            },
             "spec_hash": "90ba576a5e4e61fdc255d28446d5b649d26d71d4d24b0d33774a060167c2e7e9"
           }
         ],
         "summary": {
-          "passed": 6,
-          "failed": 8,
+          "passed": 10,
+          "failed": 4,
           "total": 14,
-          "pass_rate": 0.428571,
-          "avg_run_seconds": 4.8
-        },
-        "previous": {
-          "ran_at": "2026-06-22T22:21:25Z",
-          "summary": {
-            "passed": 6,
-            "failed": 8,
-            "total": 14,
-            "pass_rate": 0.428571,
-            "avg_run_seconds": 5
-          },
-          "results": [
-            {
-              "query": "A fork PR workflow needs to label the PR — how do I do that without exposing the write token?",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 4.9
-            },
-            {
-              "query": "Add a matrix across Python versions to this workflow",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 5
-            },
-            {
-              "query": "Format this YAML file with prettier",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 4.7
-            },
-            {
-              "query": "Harden this GitHub Actions workflow and lock down its permissions",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 5
-            },
-            {
-              "query": "How do I manage secrets in Terraform?",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 4.6
-            },
-            {
-              "query": "Is it safe to use pull_request_target here, or will a fork PR steal our secrets?",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 5.2
-            },
-            {
-              "query": "Pin all the actions in our workflows to commit SHAs",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 5.1
-            },
-            {
-              "query": "Review .github/workflows for security issues",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 5.3
-            },
-            {
-              "query": "Run actionlint and zizmor and fix the findings",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 4.9
-            },
-            {
-              "query": "Set least-privilege permissions for this CI job",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 5.4
-            },
-            {
-              "query": "Should we use OIDC instead of storing long-lived AWS keys as secrets?",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 5.1
-            },
-            {
-              "query": "This workflow echoes a PR title into a run step — is that a script-injection risk?",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 4.9
-            },
-            {
-              "query": "Wire up the reusable CI workflow for this repo",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 4.7
-            },
-            {
-              "query": "Write a Dockerfile that runs as a non-root user",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 4.9
-            }
-          ]
+          "pass_rate": 0.714286,
+          "avg_run_seconds": 9.7,
+          "estimate": {
+            "input_tokens": 27376,
+            "input_cost_usd": 0.082128
+          }
         }
       },
       "evals": {
-        "provider": "google",
-        "model": "gemini-3.1-pro",
-        "display": "Gemini 3.1 Pro",
-        "harness": "antigravity",
-        "tool_version": "v0.2.1-63-g50671ce",
-        "ran_at": "2026-06-23T14:07:20Z",
+        "provider": "anthropic",
+        "model": "claude-sonnet-5",
+        "display": "Claude Sonnet 5",
+        "harness": "claude",
+        "tool_version": "v0.5.0-6-g47ca9ac",
+        "ran_at": "2026-07-02T18:38:47Z",
         "executed": true,
         "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
         "timeout_seconds": 600,
-        "pricing": null,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
         "results": [
           {
             "id": "remove-pull-request-target",
             "passed": true,
+            "estimate": {
+              "input_tokens": 2001,
+              "input_cost_usd": 0.006003
+            },
+            "measured": {
+              "input_tokens": 4509,
+              "cache_read_input_tokens": 195728,
+              "cache_creation_input_tokens": 15972,
+              "output_tokens": 2278,
+              "cost_usd": 0.202885
+            },
             "expectations": [
               {
                 "type": "not_regex",
@@ -2414,14 +2797,35 @@
               "total": 3,
               "pass_rate": 1
             },
-            "timing": {
-              "executor_duration_seconds": 25.5
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Edit": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 5
             },
-            "spec_hash": "c6ab7750738d5c1d30f00ef8cc0c393c072f3882e0d8644b36e4859764d0f7cc"
+            "timing": {
+              "total_tokens": 218487,
+              "executor_duration_seconds": 44.1
+            },
+            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
           },
           {
             "id": "fix-expression-injection",
             "passed": true,
+            "estimate": {
+              "input_tokens": 1991,
+              "input_cost_usd": 0.005973
+            },
+            "measured": {
+              "input_tokens": 4510,
+              "cache_read_input_tokens": 233659,
+              "cache_creation_input_tokens": 14514,
+              "output_tokens": 919,
+              "cost_usd": 0.18512
+            },
             "expectations": [
               {
                 "type": "regex",
@@ -2448,10 +2852,21 @@
               "total": 2,
               "pass_rate": 1
             },
-            "timing": {
-              "executor_duration_seconds": 27.2
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Edit": 1,
+                "Glob": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 6
             },
-            "spec_hash": "6f19b2c133e2bea8abc533427c3a6d17195dbcf07a7de717e61c6e5aeebaa705"
+            "timing": {
+              "total_tokens": 253602,
+              "executor_duration_seconds": 18.6
+            },
+            "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
           }
         ],
         "summary": {
@@ -2459,491 +2874,77 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 26.4
+          "avg_run_seconds": 31.4,
+          "estimate": {
+            "input_tokens": 3992,
+            "input_cost_usd": 0.011976
+          },
+          "measured": {
+            "input_tokens": 9019,
+            "cache_read_input_tokens": 429387,
+            "cache_creation_input_tokens": 30486,
+            "output_tokens": 3197,
+            "cost_usd": 0.388005
+          }
         },
         "baseline": {
-          "ran_at": "2026-06-22T22:21:35Z",
+          "ran_at": "2026-07-02T18:38:47Z",
           "summary": {
-            "passed": 0,
+            "passed": 2,
             "failed": 0,
-            "errored": 2,
             "total": 2,
-            "avg_run_seconds": 5.2
+            "pass_rate": 1,
+            "avg_run_seconds": 34.4,
+            "measured": {
+              "input_tokens": 8566,
+              "cache_read_input_tokens": 417563,
+              "cache_creation_input_tokens": 26661,
+              "output_tokens": 3169,
+              "cost_usd": 0.359759
+            }
           },
           "results": [
-            {
-              "id": "fix-expression-injection",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5.3
-              },
-              "fingerprint": "6f19b2c133e2bea8abc533427c3a6d17195dbcf07a7de717e61c6e5aeebaa705"
-            },
             {
               "id": "remove-pull-request-target",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5.1
+              "passed": true,
+              "measured": {
+                "input_tokens": 4286,
+                "cache_read_input_tokens": 263053,
+                "cache_creation_input_tokens": 14359,
+                "output_tokens": 2350,
+                "cost_usd": 0.213841
               },
-              "fingerprint": "c6ab7750738d5c1d30f00ef8cc0c393c072f3882e0d8644b36e4859764d0f7cc"
-            }
-          ]
-        },
-        "previous": {
-          "ran_at": "2026-06-23T01:12:20Z",
-          "summary": {
-            "passed": 0,
-            "failed": 0,
-            "errored": 2,
-            "total": 2,
-            "avg_run_seconds": 5.2
-          },
-          "results": [
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 51
+              },
+              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            },
             {
               "id": "fix-expression-injection",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5.4
-              }
-            },
-            {
-              "id": "remove-pull-request-target",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 4.9
-              }
-            }
-          ]
-        }
-      }
-    },
-    "google/gemini-3.5-flash": {
-      "triggers": {
-        "provider": "google",
-        "model": "gemini-3.5-flash",
-        "display": "Gemini 3.5 Flash",
-        "harness": "antigravity",
-        "tool_version": "v0.2.1-55-g27c5e17-dirty",
-        "ran_at": "2026-06-23T00:43:54Z",
-        "executed": true,
-        "content_hash": "a44bd2fafb2e0ce9edb5adffc1a1050f34f1b4e418e82403ace1b8183677750b",
-        "runs_per_query": 3,
-        "timeout_seconds": 120,
-        "pricing": {
-          "input_per_mtok": 1.5,
-          "output_per_mtok": 9
-        },
-        "results": [
-          {
-            "query": "Harden this GitHub Actions workflow and lock down its permissions",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.5,
-            "spec_hash": "bffbcca9b21232fd9bdb0b14ca7f16aa221dc645117ccc5e970c181c230e06cb"
-          },
-          {
-            "query": "Pin all the actions in our workflows to commit SHAs",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.4,
-            "spec_hash": "4b6e2969975a7c2ddb228399cf8226750398ea194352b31c2a4584e99c7ab392"
-          },
-          {
-            "query": "Is it safe to use pull_request_target here, or will a fork PR steal our secrets?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5,
-            "spec_hash": "d25cfa9414bbb0d45b31d1a36f9bcd39d2e509217ef4633674f66811722b4be4"
-          },
-          {
-            "query": "This workflow echoes a PR title into a run step — is that a script-injection risk?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.2,
-            "spec_hash": "b907d640bedd42d63b74d7515472a5b48752184dea1555a19f2583efd454c50a"
-          },
-          {
-            "query": "Set least-privilege permissions for this CI job",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5,
-            "spec_hash": "f0e82f5275cd912b88dfbe72975c3fe46cedc0a5e69ddd67eb50f67793cf2824"
-          },
-          {
-            "query": "Review .github/workflows for security issues",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 4.8,
-            "spec_hash": "8678fe94efe564308fc91817554fa607450d2719d0b6adc0b8f90da1fea015ae"
-          },
-          {
-            "query": "Should we use OIDC instead of storing long-lived AWS keys as secrets?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 4.9,
-            "spec_hash": "56aa9353e8530803169126f8e5db94c31769196692c1f1de2a3aafc2cbe8a839"
-          },
-          {
-            "query": "A fork PR workflow needs to label the PR — how do I do that without exposing the write token?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.2,
-            "spec_hash": "33b7c4966780af80f0182152af3769f0d32c110d9d41d4ad5258235fce07d85f"
-          },
-          {
-            "query": "Add a matrix across Python versions to this workflow",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 5,
-            "spec_hash": "077e407f7d207ffd68469af82610b2856e786fcb9cf640283aa388d3f1523c8b"
-          },
-          {
-            "query": "Run actionlint and zizmor and fix the findings",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 4.9,
-            "spec_hash": "fc94905a243650a18d9835dd6853493d568c1cc42b0f8948e9cefc7870bc97c8"
-          },
-          {
-            "query": "Wire up the reusable CI workflow for this repo",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 4.9,
-            "spec_hash": "6b8cadf86bd43250f1eff852b65a1efc041df6077ff9de47ff86e517fae8cec4"
-          },
-          {
-            "query": "Write a Dockerfile that runs as a non-root user",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 4.6,
-            "spec_hash": "a36a1e747758fb7f6dad6d1fbb60999170e8485db53799f85e137e138a3fb728"
-          },
-          {
-            "query": "How do I manage secrets in Terraform?",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 4.9,
-            "spec_hash": "addbe6e88d30993e1c4b32240ba7331e53e3f38be8eab0f960e73da961ad9074"
-          },
-          {
-            "query": "Format this YAML file with prettier",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 4.8,
-            "spec_hash": "90ba576a5e4e61fdc255d28446d5b649d26d71d4d24b0d33774a060167c2e7e9"
-          }
-        ],
-        "summary": {
-          "passed": 6,
-          "failed": 8,
-          "total": 14,
-          "pass_rate": 0.428571,
-          "avg_run_seconds": 5
-        },
-        "previous": {
-          "ran_at": "2026-06-22T22:20:21Z",
-          "summary": {
-            "passed": 6,
-            "failed": 8,
-            "total": 14,
-            "pass_rate": 0.428571,
-            "avg_run_seconds": 5
-          },
-          "results": [
-            {
-              "query": "A fork PR workflow needs to label the PR — how do I do that without exposing the write token?",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 5
-            },
-            {
-              "query": "Add a matrix across Python versions to this workflow",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
               "passed": true,
-              "avg_run_seconds": 5
-            },
-            {
-              "query": "Format this YAML file with prettier",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 4.8
-            },
-            {
-              "query": "Harden this GitHub Actions workflow and lock down its permissions",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 5.6
-            },
-            {
-              "query": "How do I manage secrets in Terraform?",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 4.9
-            },
-            {
-              "query": "Is it safe to use pull_request_target here, or will a fork PR steal our secrets?",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 5.3
-            },
-            {
-              "query": "Pin all the actions in our workflows to commit SHAs",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 5
-            },
-            {
-              "query": "Review .github/workflows for security issues",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 5.4
-            },
-            {
-              "query": "Run actionlint and zizmor and fix the findings",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 4.9
-            },
-            {
-              "query": "Set least-privilege permissions for this CI job",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 5
-            },
-            {
-              "query": "Should we use OIDC instead of storing long-lived AWS keys as secrets?",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 4.7
-            },
-            {
-              "query": "This workflow echoes a PR title into a run step — is that a script-injection risk?",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 5
-            },
-            {
-              "query": "Wire up the reusable CI workflow for this repo",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 4.9
-            },
-            {
-              "query": "Write a Dockerfile that runs as a non-root user",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 4.6
-            }
-          ]
-        }
-      },
-      "evals": {
-        "provider": "google",
-        "model": "gemini-3.5-flash",
-        "display": "Gemini 3.5 Flash",
-        "harness": "antigravity",
-        "tool_version": "v0.2.1-63-g50671ce",
-        "ran_at": "2026-06-23T14:06:53Z",
-        "executed": true,
-        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
-        "timeout_seconds": 600,
-        "pricing": {
-          "input_per_mtok": 1.5,
-          "output_per_mtok": 9
-        },
-        "results": [
-          {
-            "id": "remove-pull-request-target",
-            "passed": true,
-            "expectations": [
-              {
-                "type": "not_regex",
-                "path": ".github/workflows/pr-build.yaml",
-                "pattern": "pull_request_target",
-                "text": ".github/workflows/pr-build.yaml does not match /pull_request_target/",
-                "passed": true,
-                "evidence": "no match",
-                "source": "assertion"
+              "measured": {
+                "input_tokens": 4280,
+                "cache_read_input_tokens": 154510,
+                "cache_creation_input_tokens": 12302,
+                "output_tokens": 819,
+                "cost_usd": 0.145918
               },
-              {
-                "type": "regex",
-                "path": ".github/workflows/pr-build.yaml",
-                "pattern": "pull_request:",
-                "text": ".github/workflows/pr-build.yaml matches /pull_request:/",
-                "passed": true,
-                "evidence": "pull_request:",
-                "source": "assertion"
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
               },
-              {
-                "type": "regex",
-                "path": ".github/workflows/pr-build.yaml",
-                "pattern": "permissions:",
-                "text": ".github/workflows/pr-build.yaml matches /permissions:/",
-                "passed": true,
-                "evidence": "permissions:",
-                "source": "assertion"
-              }
-            ],
-            "summary": {
-              "passed": 3,
-              "failed": 0,
-              "total": 3,
-              "pass_rate": 1
-            },
-            "timing": {
-              "executor_duration_seconds": 67.3
-            },
-            "spec_hash": "c6ab7750738d5c1d30f00ef8cc0c393c072f3882e0d8644b36e4859764d0f7cc"
-          },
-          {
-            "id": "fix-expression-injection",
-            "passed": true,
-            "expectations": [
-              {
-                "type": "regex",
-                "path": ".github/workflows/echo-title.yaml",
-                "pattern": "env:",
-                "text": ".github/workflows/echo-title.yaml matches /env:/",
-                "passed": true,
-                "evidence": "env:",
-                "source": "assertion"
+              "timing": {
+                "executor_duration_seconds": 17.8
               },
-              {
-                "type": "not_regex",
-                "path": ".github/workflows/echo-title.yaml",
-                "pattern": "run:.*\\$\\{\\{",
-                "text": ".github/workflows/echo-title.yaml does not match /run:.*\\$\\{\\{/",
-                "passed": true,
-                "evidence": "no match",
-                "source": "assertion"
-              }
-            ],
-            "summary": {
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1
-            },
-            "timing": {
-              "executor_duration_seconds": 33.3
-            },
-            "spec_hash": "6f19b2c133e2bea8abc533427c3a6d17195dbcf07a7de717e61c6e5aeebaa705"
-          }
-        ],
-        "summary": {
-          "passed": 2,
-          "failed": 0,
-          "total": 2,
-          "pass_rate": 1,
-          "avg_run_seconds": 50.3
-        },
-        "baseline": {
-          "ran_at": "2026-06-22T22:20:31Z",
-          "summary": {
-            "passed": 0,
-            "failed": 0,
-            "errored": 2,
-            "total": 2,
-            "avg_run_seconds": 5
-          },
-          "results": [
-            {
-              "id": "fix-expression-injection",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 4.9
-              },
-              "fingerprint": "6f19b2c133e2bea8abc533427c3a6d17195dbcf07a7de717e61c6e5aeebaa705"
-            },
-            {
-              "id": "remove-pull-request-target",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5
-              },
-              "fingerprint": "c6ab7750738d5c1d30f00ef8cc0c393c072f3882e0d8644b36e4859764d0f7cc"
-            }
-          ]
-        },
-        "previous": {
-          "ran_at": "2026-06-23T01:12:14Z",
-          "summary": {
-            "passed": 0,
-            "failed": 0,
-            "errored": 2,
-            "total": 2,
-            "avg_run_seconds": 5.1
-          },
-          "results": [
-            {
-              "id": "fix-expression-injection",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5.1
-              }
-            },
-            {
-              "id": "remove-pull-request-target",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5
-              }
+              "fingerprint": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
             }
           ]
         }

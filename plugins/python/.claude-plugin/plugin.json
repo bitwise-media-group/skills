@@ -7,15 +7,5 @@
     "email": "deavon@bitwisemedia.co.uk"
   },
   "license": "MIT",
-  "keywords": [
-    "python",
-    "uv",
-    "ruff",
-    "ty",
-    "pyright",
-    "pytest",
-    "hypothesis",
-    "typing",
-    "pyproject"
-  ]
+  "keywords": ["python", "uv", "ruff", "ty", "pyright", "pytest", "hypothesis", "typing", "pyproject"]
 }

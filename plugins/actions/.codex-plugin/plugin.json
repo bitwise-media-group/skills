@@ -7,14 +7,7 @@
     "email": "deavon@bitwisemedia.co.uk"
   },
   "license": "MIT",
-  "keywords": [
-    "github-actions",
-    "ci",
-    "workflows",
-    "security",
-    "actionlint",
-    "zizmor"
-  ],
+  "keywords": ["github-actions", "ci", "workflows", "security", "actionlint", "zizmor"],
   "interface": {
     "displayName": "GitHub Actions",
     "shortDescription": "Workflow style, security hardening, reusable workflows, and an actionlint/zizmor loop."

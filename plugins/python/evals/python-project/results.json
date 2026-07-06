@@ -3,6 +3,548 @@
   "plugin": "python",
   "skill": "python-project",
   "models": {
+    "anthropic/claude-fable-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-fable-5",
+        "display": "Claude Fable 5",
+        "harness": "claude",
+        "tool_version": "v0.5.0-8-g3a3098d-dirty",
+        "ran_at": "2026-07-02T23:45:38Z",
+        "executed": true,
+        "content_hash": "890e1700515e610088fd34e4a3126f6a1f8efb4cf7956e43414139bfc441b38e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 10,
+          "output_per_mtok": 50
+        },
+        "results": [
+          {
+            "query": "Set up a new Python project with uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.8,
+            "estimate": {
+              "input_tokens": 1947,
+              "input_cost_usd": 0.01947
+            },
+            "spec_hash": "13a6171cc487ad8fa11e4996eb6292aea11ce1279c6447dbefc461c98b68a48b"
+          },
+          {
+            "query": "Create a pyproject.toml for my package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.5,
+            "estimate": {
+              "input_tokens": 1949,
+              "input_cost_usd": 0.01949
+            },
+            "spec_hash": "b28d5fe339b02848dbf810db86b027ff03e3daf97239df74c7ef975e79748ad4"
+          },
+          {
+            "query": "What build backend should I use for my Python library?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 1949,
+              "input_cost_usd": 0.01949
+            },
+            "spec_hash": "4500a3bb85cc2d7a4038d3f0d63ae18f603008b99b9126f457794a0bb29a2145"
+          },
+          {
+            "query": "Restructure my Python repo to the src layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.2,
+            "estimate": {
+              "input_tokens": 1950,
+              "input_cost_usd": 0.0195
+            },
+            "spec_hash": "a1ccccd244a8a11e2ead5ddd7df5143f05e8b1d410dd243311dc96bf1e19d0e9"
+          },
+          {
+            "query": "Pin ruff and ty as dev dependencies with uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.4,
+            "estimate": {
+              "input_tokens": 1955,
+              "input_cost_usd": 0.01955
+            },
+            "spec_hash": "46d755a5bab15ba99d106d05a01d4f1635d63e9b1d24afe02bea54df3038af26"
+          },
+          {
+            "query": "Add a Makefile with a pr gate for my Python project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7,
+            "estimate": {
+              "input_tokens": 1954,
+              "input_cost_usd": 0.01954
+            },
+            "spec_hash": "d6ba66f284c46649bc68296084974592e5f3e9bdd485c962285cd7f81c1d8322"
+          },
+          {
+            "query": "Initialize a uv-managed Python CLI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.8,
+            "estimate": {
+              "input_tokens": 1951,
+              "input_cost_usd": 0.01951
+            },
+            "spec_hash": "16ef7be6be8331c3947dfcb4824aa6fa91d7e0c05a36c4c066348f51cbb772a8"
+          },
+          {
+            "query": "How should I lay out a new Python package?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.8,
+            "estimate": {
+              "input_tokens": 1948,
+              "input_cost_usd": 0.01948
+            },
+            "spec_hash": "2b11dce2cff4d3ff30b155fe37d5604f12047b61f00c8cc6b2dab1e37f73eb2f"
+          },
+          {
+            "query": "Set up a dev dependency group for my Python tooling",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.8,
+            "estimate": {
+              "input_tokens": 1953,
+              "input_cost_usd": 0.01953
+            },
+            "spec_hash": "6fa685a77cef4f4905678fe8aac03b437afeb0cd267c62ba1cef7fc6797166e4"
+          },
+          {
+            "query": "Migrate my project from pip and requirements.txt to uv",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.8,
+            "estimate": {
+              "input_tokens": 1955,
+              "input_cost_usd": 0.01955
+            },
+            "spec_hash": "a5d4f660ca15ccc3d1f59500a3128bc208203be57251250c20165aa27f00ff20"
+          },
+          {
+            "query": "Scaffold a new Go service with cmd and internal directories",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 25,
+            "estimate": {
+              "input_tokens": 1955,
+              "input_cost_usd": 0.01955
+            },
+            "spec_hash": "b2fab86692276ed81805084745a25ead15e3b67da06a145b8b02ff92f10e0ec6"
+          },
+          {
+            "query": "Write pytest tests for this module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 21,
+            "estimate": {
+              "input_tokens": 1946,
+              "input_cost_usd": 0.01946
+            },
+            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
+          },
+          {
+            "query": "How should I handle errors in this Python function?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 25.4,
+            "estimate": {
+              "input_tokens": 1949,
+              "input_cost_usd": 0.01949
+            },
+            "spec_hash": "61bbc9422ddeeae97df71d5dcd9338837c669fdecf8d6a89c65a414ed725d43d"
+          },
+          {
+            "query": "Add type hints to this Python function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18.2,
+            "estimate": {
+              "input_tokens": 1946,
+              "input_cost_usd": 0.01946
+            },
+            "spec_hash": "2bcb7d7ab874cc070837d3286dcb618aa8bcbbfe41cef28892ffde7459a15166"
+          },
+          {
+            "query": "Publish my Python package to PyPI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.9,
+            "estimate": {
+              "input_tokens": 1948,
+              "input_cost_usd": 0.01948
+            },
+            "spec_hash": "4181d3bf1d554a149420d4bacc47cc4fc084c365072797d0e5ca7fe748294788"
+          },
+          {
+            "query": "Set up a new Node project with npm",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.1,
+            "estimate": {
+              "input_tokens": 1947,
+              "input_cost_usd": 0.01947
+            },
+            "spec_hash": "5545b7ee3fa5ddc6f6737f8224d631f658419130fa38f2547405fdb648741ec6"
+          }
+        ],
+        "summary": {
+          "passed": 16,
+          "failed": 0,
+          "total": 16,
+          "pass_rate": 1,
+          "avg_run_seconds": 12.2,
+          "estimate": {
+            "input_tokens": 31202,
+            "input_cost_usd": 0.31202
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-fable-5",
+        "display": "Claude Fable 5",
+        "harness": "claude",
+        "tool_version": "v0.5.0-8-g3a3098d-dirty",
+        "ran_at": "2026-07-02T23:48:40Z",
+        "executed": true,
+        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 10,
+          "output_per_mtok": 50
+        },
+        "results": [
+          {
+            "id": "configure-pyproject",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2017,
+              "input_cost_usd": 0.02017
+            },
+            "measured": {
+              "input_tokens": 4320,
+              "cache_read_input_tokens": 93460,
+              "cache_creation_input_tokens": 12878,
+              "output_tokens": 1469,
+              "cost_usd": 0.468342
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "build-backend = \"uv_build\"",
+                "text": "pyproject.toml matches /build-backend = \"uv_build\"/",
+                "passed": true,
+                "evidence": "build-backend = \"uv_build\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "uv_build\u003e=",
+                "text": "pyproject.toml matches /uv_build\u003e=/",
+                "passed": true,
+                "evidence": "uv_build\u003e=",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[dependency-groups\\]",
+                "text": "pyproject.toml matches /\\[dependency-groups\\]/",
+                "passed": true,
+                "evidence": "[dependency-groups]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "ruff",
+                "text": "pyproject.toml matches /ruff/",
+                "passed": true,
+                "evidence": "ruff",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"ty",
+                "text": "pyproject.toml matches /\"ty/",
+                "passed": true,
+                "evidence": "\"ty",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pytest",
+                "text": "pyproject.toml matches /pytest/",
+                "passed": true,
+                "evidence": "pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "requires-python",
+                "text": "pyproject.toml matches /requires-python/",
+                "passed": true,
+                "evidence": "requires-python",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "hatchling|setuptools|poetry",
+                "text": "pyproject.toml does not match /hatchling|setuptools|poetry/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 0,
+              "total": 8,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 112127,
+              "executor_duration_seconds": 31.6
+            },
+            "spec_hash": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+          },
+          {
+            "id": "makefile-gate",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1996,
+              "input_cost_usd": 0.01996
+            },
+            "measured": {
+              "input_tokens": 4453,
+              "cache_read_input_tokens": 152040,
+              "cache_creation_input_tokens": 14461,
+              "output_tokens": 3128,
+              "cost_usd": 0.642838
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "Makefile",
+                "text": "file Makefile exists",
+                "passed": true,
+                "evidence": "Makefile exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff format",
+                "text": "Makefile matches /uv run ruff format/",
+                "passed": true,
+                "evidence": "uv run ruff format",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff check",
+                "text": "Makefile matches /uv run ruff check/",
+                "passed": true,
+                "evidence": "uv run ruff check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ty check",
+                "text": "Makefile matches /uv run ty check/",
+                "passed": true,
+                "evidence": "uv run ty check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run pytest",
+                "text": "Makefile matches /uv run pytest/",
+                "passed": true,
+                "evidence": "uv run pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv build",
+                "text": "Makefile matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "pr:",
+                "text": "Makefile matches /pr:/",
+                "passed": true,
+                "evidence": "pr:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Read": 2,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 174082,
+              "executor_duration_seconds": 60
+            },
+            "spec_hash": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 45.8,
+          "estimate": {
+            "input_tokens": 4013,
+            "input_cost_usd": 0.04013
+          },
+          "measured": {
+            "input_tokens": 8773,
+            "cache_read_input_tokens": 245500,
+            "cache_creation_input_tokens": 27339,
+            "output_tokens": 4597,
+            "cost_usd": 1.11118
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-02T23:48:40Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 74.2,
+            "measured": {
+              "input_tokens": 8059,
+              "cache_read_input_tokens": 303744,
+              "cache_creation_input_tokens": 25986,
+              "output_tokens": 7755,
+              "cost_usd": 1.293139
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": true,
+              "measured": {
+                "input_tokens": 3959,
+                "cache_read_input_tokens": 62788,
+                "cache_creation_input_tokens": 9813,
+                "output_tokens": 1374,
+                "cost_usd": 0.368025
+              },
+              "summary": {
+                "passed": 8,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 26.8
+              },
+              "fingerprint": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
+            },
+            {
+              "id": "makefile-gate",
+              "passed": false,
+              "measured": {
+                "input_tokens": 4100,
+                "cache_read_input_tokens": 240956,
+                "cache_creation_input_tokens": 16173,
+                "output_tokens": 6381,
+                "cost_usd": 0.925114
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 1,
+                "total": 7,
+                "pass_rate": 0.857143
+              },
+              "timing": {
+                "executor_duration_seconds": 121.6
+              },
+              "fingerprint": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+            }
+          ]
+        }
+      }
+    },
     "anthropic/claude-haiku-4-5": {
       "triggers": {
         "provider": "anthropic",
@@ -2465,54 +3007,73 @@
         }
       }
     },
-    "google/gemini-3.1-pro": {
+    "anthropic/claude-sonnet-5": {
       "triggers": {
-        "provider": "google",
-        "model": "gemini-3.1-pro",
-        "display": "Gemini 3.1 Pro",
-        "harness": "antigravity",
-        "tool_version": "v0.2.1-63-g50671ce",
-        "ran_at": "2026-06-23T14:37:58Z",
+        "provider": "anthropic",
+        "model": "claude-sonnet-5",
+        "display": "Claude Sonnet 5",
+        "harness": "claude",
+        "tool_version": "v0.5.0-8-g3a3098d-dirty",
+        "ran_at": "2026-07-02T23:40:41Z",
         "executed": true,
-        "content_hash": "a966180910292b766be49ab3736c5986772e7006ea67a1fba6fe698cb4c51599",
+        "content_hash": "890e1700515e610088fd34e4a3126f6a1f8efb4cf7956e43414139bfc441b38e",
         "runs_per_query": 3,
         "timeout_seconds": 120,
-        "pricing": null,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
         "results": [
           {
             "query": "Set up a new Python project with uv",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.8,
+            "passed": true,
+            "avg_run_seconds": 3.9,
+            "estimate": {
+              "input_tokens": 1947,
+              "input_cost_usd": 0.005841
+            },
             "spec_hash": "13a6171cc487ad8fa11e4996eb6292aea11ce1279c6447dbefc461c98b68a48b"
           },
           {
             "query": "Create a pyproject.toml for my package",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 6,
+            "passed": true,
+            "avg_run_seconds": 5.8,
+            "estimate": {
+              "input_tokens": 1949,
+              "input_cost_usd": 0.005847
+            },
             "spec_hash": "b28d5fe339b02848dbf810db86b027ff03e3daf97239df74c7ef975e79748ad4"
           },
           {
             "query": "What build backend should I use for my Python library?",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.5,
+            "passed": true,
+            "avg_run_seconds": 6.8,
+            "estimate": {
+              "input_tokens": 1949,
+              "input_cost_usd": 0.005847
+            },
             "spec_hash": "4500a3bb85cc2d7a4038d3f0d63ae18f603008b99b9126f457794a0bb29a2145"
           },
           {
             "query": "Restructure my Python repo to the src layout",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 1,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 6.9,
+            "avg_run_seconds": 10.7,
+            "estimate": {
+              "input_tokens": 1950,
+              "input_cost_usd": 0.00585
+            },
             "spec_hash": "a1ccccd244a8a11e2ead5ddd7df5143f05e8b1d410dd243311dc96bf1e19d0e9"
           },
           {
@@ -2521,43 +3082,63 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 5.5,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 1955,
+              "input_cost_usd": 0.005865
+            },
             "spec_hash": "46d755a5bab15ba99d106d05a01d4f1635d63e9b1d24afe02bea54df3038af26"
           },
           {
             "query": "Add a Makefile with a pr gate for my Python project",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 1,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 5.4,
+            "avg_run_seconds": 8.1,
+            "estimate": {
+              "input_tokens": 1954,
+              "input_cost_usd": 0.005862
+            },
             "spec_hash": "d6ba66f284c46649bc68296084974592e5f3e9bdd485c962285cd7f81c1d8322"
           },
           {
             "query": "Initialize a uv-managed Python CLI",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.5,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "estimate": {
+              "input_tokens": 1951,
+              "input_cost_usd": 0.005853
+            },
             "spec_hash": "16ef7be6be8331c3947dfcb4824aa6fa91d7e0c05a36c4c066348f51cbb772a8"
           },
           {
             "query": "How should I lay out a new Python package?",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.4,
+            "passed": true,
+            "avg_run_seconds": 3.8,
+            "estimate": {
+              "input_tokens": 1948,
+              "input_cost_usd": 0.005844
+            },
             "spec_hash": "2b11dce2cff4d3ff30b155fe37d5604f12047b61f00c8cc6b2dab1e37f73eb2f"
           },
           {
             "query": "Set up a dev dependency group for my Python tooling",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 2,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.1,
+            "passed": true,
+            "avg_run_seconds": 10.2,
+            "estimate": {
+              "input_tokens": 1953,
+              "input_cost_usd": 0.005859
+            },
             "spec_hash": "6fa685a77cef4f4905678fe8aac03b437afeb0cd267c62ba1cef7fc6797166e4"
           },
           {
@@ -2566,7 +3147,11 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 5.1,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 1955,
+              "input_cost_usd": 0.005865
+            },
             "spec_hash": "a5d4f660ca15ccc3d1f59500a3128bc208203be57251250c20165aa27f00ff20"
           },
           {
@@ -2575,7 +3160,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 5.5,
+            "avg_run_seconds": 17.2,
+            "estimate": {
+              "input_tokens": 1955,
+              "input_cost_usd": 0.005865
+            },
             "spec_hash": "b2fab86692276ed81805084745a25ead15e3b67da06a145b8b02ff92f10e0ec6"
           },
           {
@@ -2584,7 +3173,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 5.2,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 1946,
+              "input_cost_usd": 0.005838
+            },
             "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
           },
           {
@@ -2593,7 +3186,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 5.6,
+            "avg_run_seconds": 11.9,
+            "estimate": {
+              "input_tokens": 1949,
+              "input_cost_usd": 0.005847
+            },
             "spec_hash": "61bbc9422ddeeae97df71d5dcd9338837c669fdecf8d6a89c65a414ed725d43d"
           },
           {
@@ -2602,7 +3199,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 5.4,
+            "avg_run_seconds": 8,
+            "estimate": {
+              "input_tokens": 1946,
+              "input_cost_usd": 0.005838
+            },
             "spec_hash": "2bcb7d7ab874cc070837d3286dcb618aa8bcbbfe41cef28892ffde7459a15166"
           },
           {
@@ -2611,7 +3212,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 5,
+            "avg_run_seconds": 8.9,
+            "estimate": {
+              "input_tokens": 1948,
+              "input_cost_usd": 0.005844
+            },
             "spec_hash": "4181d3bf1d554a149420d4bacc47cc4fc084c365072797d0e5ca7fe748294788"
           },
           {
@@ -2620,316 +3225,324 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 5.1,
+            "avg_run_seconds": 11.3,
+            "estimate": {
+              "input_tokens": 1947,
+              "input_cost_usd": 0.005841
+            },
             "spec_hash": "5545b7ee3fa5ddc6f6737f8224d631f658419130fa38f2547405fdb648741ec6"
           }
         ],
         "summary": {
-          "passed": 6,
-          "failed": 10,
+          "passed": 12,
+          "failed": 4,
           "total": 16,
-          "pass_rate": 0.375,
-          "avg_run_seconds": 5.5
+          "pass_rate": 0.75,
+          "avg_run_seconds": 9,
+          "estimate": {
+            "input_tokens": 31202,
+            "input_cost_usd": 0.093606
+          }
         }
       },
       "evals": {
-        "provider": "google",
-        "model": "gemini-3.1-pro",
-        "display": "Gemini 3.1 Pro",
-        "harness": "antigravity",
-        "tool_version": "v0.2.1-63-g50671ce",
-        "ran_at": "2026-06-23T14:38:09Z",
+        "provider": "anthropic",
+        "model": "claude-sonnet-5",
+        "display": "Claude Sonnet 5",
+        "harness": "claude",
+        "tool_version": "v0.5.0-8-g3a3098d-dirty",
+        "ran_at": "2026-07-02T23:43:04Z",
         "executed": true,
-        "content_hash": "d962cde207cfb8ab1962a5d7664c410effbffb2c4caf21f2ac270c7b4acd3a00",
+        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
         "timeout_seconds": 600,
-        "pricing": null,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
         "results": [
           {
             "id": "configure-pyproject",
-            "runtime_error": "empty CLI output",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2017,
+              "input_cost_usd": 0.006051
+            },
+            "measured": {
+              "input_tokens": 4639,
+              "cache_read_input_tokens": 163304,
+              "cache_creation_input_tokens": 16262,
+              "output_tokens": 1662,
+              "cost_usd": 0.186102
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "build-backend = \"uv_build\"",
+                "text": "pyproject.toml matches /build-backend = \"uv_build\"/",
+                "passed": true,
+                "evidence": "build-backend = \"uv_build\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "uv_build\u003e=",
+                "text": "pyproject.toml matches /uv_build\u003e=/",
+                "passed": true,
+                "evidence": "uv_build\u003e=",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[dependency-groups\\]",
+                "text": "pyproject.toml matches /\\[dependency-groups\\]/",
+                "passed": true,
+                "evidence": "[dependency-groups]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "ruff",
+                "text": "pyproject.toml matches /ruff/",
+                "passed": true,
+                "evidence": "ruff",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"ty",
+                "text": "pyproject.toml matches /\"ty/",
+                "passed": true,
+                "evidence": "\"ty",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pytest",
+                "text": "pyproject.toml matches /pytest/",
+                "passed": true,
+                "evidence": "pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "requires-python",
+                "text": "pyproject.toml matches /requires-python/",
+                "passed": true,
+                "evidence": "requires-python",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "hatchling|setuptools|poetry",
+                "text": "pyproject.toml does not match /hatchling|setuptools|poetry/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 0,
+              "total": 8,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Edit": 1,
+                "Read": 2,
+                "Skill": 1
+              },
+              "total_tool_calls": 5
+            },
             "timing": {
-              "executor_duration_seconds": 4.5
+              "total_tokens": 185867,
+              "executor_duration_seconds": 24.9
             },
             "spec_hash": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
           },
           {
             "id": "makefile-gate",
-            "runtime_error": "empty CLI output",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1996,
+              "input_cost_usd": 0.005988
+            },
+            "measured": {
+              "input_tokens": 4637,
+              "cache_read_input_tokens": 126110,
+              "cache_creation_input_tokens": 16351,
+              "output_tokens": 2208,
+              "cost_usd": 0.183618
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "Makefile",
+                "text": "file Makefile exists",
+                "passed": true,
+                "evidence": "Makefile exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff format",
+                "text": "Makefile matches /uv run ruff format/",
+                "passed": true,
+                "evidence": "uv run ruff format",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff check",
+                "text": "Makefile matches /uv run ruff check/",
+                "passed": true,
+                "evidence": "uv run ruff check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ty check",
+                "text": "Makefile matches /uv run ty check/",
+                "passed": true,
+                "evidence": "uv run ty check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run pytest",
+                "text": "Makefile matches /uv run pytest/",
+                "passed": true,
+                "evidence": "uv run pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv build",
+                "text": "Makefile matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "pr:",
+                "text": "Makefile matches /pr:/",
+                "passed": true,
+                "evidence": "pr:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 4
+            },
             "timing": {
-              "executor_duration_seconds": 5.3
+              "total_tokens": 149306,
+              "executor_duration_seconds": 30.4
             },
             "spec_hash": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
           }
         ],
         "summary": {
-          "passed": 0,
+          "passed": 2,
           "failed": 0,
-          "errored": 2,
           "total": 2,
-          "avg_run_seconds": 4.9
+          "pass_rate": 1,
+          "avg_run_seconds": 27.7,
+          "estimate": {
+            "input_tokens": 4013,
+            "input_cost_usd": 0.012039
+          },
+          "measured": {
+            "input_tokens": 9276,
+            "cache_read_input_tokens": 289414,
+            "cache_creation_input_tokens": 32613,
+            "output_tokens": 3870,
+            "cost_usd": 0.36972
+          }
         },
         "baseline": {
-          "ran_at": "2026-06-23T14:38:09Z",
+          "ran_at": "2026-07-02T23:43:04Z",
           "summary": {
-            "passed": 0,
-            "failed": 0,
-            "errored": 2,
+            "passed": 1,
+            "failed": 1,
             "total": 2,
-            "avg_run_seconds": 5.4
-          },
-          "results": [
-            {
-              "id": "configure-pyproject",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5.4
-              },
-              "fingerprint": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
-            },
-            {
-              "id": "makefile-gate",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5.3
-              },
-              "fingerprint": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
+            "pass_rate": 0.5,
+            "avg_run_seconds": 62.5,
+            "measured": {
+              "input_tokens": 8838,
+              "cache_read_input_tokens": 713704,
+              "cache_creation_input_tokens": 35190,
+              "output_tokens": 7814,
+              "cost_usd": 0.570315
             }
-          ]
-        }
-      }
-    },
-    "google/gemini-3.5-flash": {
-      "triggers": {
-        "provider": "google",
-        "model": "gemini-3.5-flash",
-        "display": "Gemini 3.5 Flash",
-        "harness": "antigravity",
-        "tool_version": "v0.2.1-63-g50671ce",
-        "ran_at": "2026-06-23T14:36:39Z",
-        "executed": true,
-        "content_hash": "a966180910292b766be49ab3736c5986772e7006ea67a1fba6fe698cb4c51599",
-        "runs_per_query": 3,
-        "timeout_seconds": 120,
-        "pricing": {
-          "input_per_mtok": 1.5,
-          "output_per_mtok": 9
-        },
-        "results": [
-          {
-            "query": "Set up a new Python project with uv",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.5,
-            "spec_hash": "13a6171cc487ad8fa11e4996eb6292aea11ce1279c6447dbefc461c98b68a48b"
-          },
-          {
-            "query": "Create a pyproject.toml for my package",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.6,
-            "spec_hash": "b28d5fe339b02848dbf810db86b027ff03e3daf97239df74c7ef975e79748ad4"
-          },
-          {
-            "query": "What build backend should I use for my Python library?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.8,
-            "spec_hash": "4500a3bb85cc2d7a4038d3f0d63ae18f603008b99b9126f457794a0bb29a2145"
-          },
-          {
-            "query": "Restructure my Python repo to the src layout",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.8,
-            "spec_hash": "a1ccccd244a8a11e2ead5ddd7df5143f05e8b1d410dd243311dc96bf1e19d0e9"
-          },
-          {
-            "query": "Pin ruff and ty as dev dependencies with uv",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.5,
-            "spec_hash": "46d755a5bab15ba99d106d05a01d4f1635d63e9b1d24afe02bea54df3038af26"
-          },
-          {
-            "query": "Add a Makefile with a pr gate for my Python project",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.6,
-            "spec_hash": "d6ba66f284c46649bc68296084974592e5f3e9bdd485c962285cd7f81c1d8322"
-          },
-          {
-            "query": "Initialize a uv-managed Python CLI",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.6,
-            "spec_hash": "16ef7be6be8331c3947dfcb4824aa6fa91d7e0c05a36c4c066348f51cbb772a8"
-          },
-          {
-            "query": "How should I lay out a new Python package?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.6,
-            "spec_hash": "2b11dce2cff4d3ff30b155fe37d5604f12047b61f00c8cc6b2dab1e37f73eb2f"
-          },
-          {
-            "query": "Set up a dev dependency group for my Python tooling",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 6.2,
-            "spec_hash": "6fa685a77cef4f4905678fe8aac03b437afeb0cd267c62ba1cef7fc6797166e4"
-          },
-          {
-            "query": "Migrate my project from pip and requirements.txt to uv",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.3,
-            "spec_hash": "a5d4f660ca15ccc3d1f59500a3128bc208203be57251250c20165aa27f00ff20"
-          },
-          {
-            "query": "Scaffold a new Go service with cmd and internal directories",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 5.3,
-            "spec_hash": "b2fab86692276ed81805084745a25ead15e3b67da06a145b8b02ff92f10e0ec6"
-          },
-          {
-            "query": "Write pytest tests for this module",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 5.1,
-            "spec_hash": "4926eba9caa13afeb2dd2f13b5ab1eab8860f6f05cf08d004cc8d088a7791754"
-          },
-          {
-            "query": "How should I handle errors in this Python function?",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 5.5,
-            "spec_hash": "61bbc9422ddeeae97df71d5dcd9338837c669fdecf8d6a89c65a414ed725d43d"
-          },
-          {
-            "query": "Add type hints to this Python function",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 5.1,
-            "spec_hash": "2bcb7d7ab874cc070837d3286dcb618aa8bcbbfe41cef28892ffde7459a15166"
-          },
-          {
-            "query": "Publish my Python package to PyPI",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 5.2,
-            "spec_hash": "4181d3bf1d554a149420d4bacc47cc4fc084c365072797d0e5ca7fe748294788"
-          },
-          {
-            "query": "Set up a new Node project with npm",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 5.2,
-            "spec_hash": "5545b7ee3fa5ddc6f6737f8224d631f658419130fa38f2547405fdb648741ec6"
-          }
-        ],
-        "summary": {
-          "passed": 6,
-          "failed": 10,
-          "total": 16,
-          "pass_rate": 0.375,
-          "avg_run_seconds": 5.5
-        }
-      },
-      "evals": {
-        "provider": "google",
-        "model": "gemini-3.5-flash",
-        "display": "Gemini 3.5 Flash",
-        "harness": "antigravity",
-        "tool_version": "v0.2.1-63-g50671ce",
-        "ran_at": "2026-06-23T14:36:49Z",
-        "executed": true,
-        "content_hash": "d962cde207cfb8ab1962a5d7664c410effbffb2c4caf21f2ac270c7b4acd3a00",
-        "timeout_seconds": 600,
-        "pricing": {
-          "input_per_mtok": 1.5,
-          "output_per_mtok": 9
-        },
-        "results": [
-          {
-            "id": "configure-pyproject",
-            "runtime_error": "empty CLI output",
-            "timing": {
-              "executor_duration_seconds": 4.8
-            },
-            "spec_hash": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
-          },
-          {
-            "id": "makefile-gate",
-            "runtime_error": "empty CLI output",
-            "timing": {
-              "executor_duration_seconds": 5.2
-            },
-            "spec_hash": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
-          }
-        ],
-        "summary": {
-          "passed": 0,
-          "failed": 0,
-          "errored": 2,
-          "total": 2,
-          "avg_run_seconds": 5
-        },
-        "baseline": {
-          "ran_at": "2026-06-23T14:36:49Z",
-          "summary": {
-            "passed": 0,
-            "failed": 0,
-            "errored": 2,
-            "total": 2,
-            "avg_run_seconds": 5.7
           },
           "results": [
             {
               "id": "configure-pyproject",
-              "runtime_error": "errored",
+              "passed": true,
+              "measured": {
+                "input_tokens": 4278,
+                "cache_read_input_tokens": 120149,
+                "cache_creation_input_tokens": 12050,
+                "output_tokens": 593,
+                "cost_usd": 0.130766
+              },
+              "summary": {
+                "passed": 8,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 1
+              },
               "timing": {
-                "executor_duration_seconds": 5.7
+                "executor_duration_seconds": 12.6
               },
               "fingerprint": "4b7bc1954e561f6007498ba1b6e44636bce610b1f829312a45a0629dbe9bf7ef"
             },
             {
               "id": "makefile-gate",
-              "runtime_error": "errored",
+              "passed": false,
+              "measured": {
+                "input_tokens": 4560,
+                "cache_read_input_tokens": 593555,
+                "cache_creation_input_tokens": 23140,
+                "output_tokens": 7221,
+                "cost_usd": 0.439549
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 1,
+                "total": 7,
+                "pass_rate": 0.857143
+              },
               "timing": {
-                "executor_duration_seconds": 5.7
+                "executor_duration_seconds": 112.3
               },
               "fingerprint": "9700819c60c0219d4190686aa6a8f5d7f91ed9b1a62926d582fb96ba5269a797"
             }

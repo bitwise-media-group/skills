@@ -3,6 +3,859 @@
   "plugin": "golang",
   "skill": "go-style",
   "models": {
+    "anthropic/claude-fable-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-fable-5",
+        "display": "Claude Fable 5",
+        "harness": "claude",
+        "tool_version": "v0.5.0-6-g47ca9ac",
+        "ran_at": "2026-07-02T20:06:02Z",
+        "executed": true,
+        "content_hash": "10969ed93efaf506e80ceb1ee26ff3ab9824368ff1c7a328c2b4a0cd28ec55b8",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 10,
+          "output_per_mtok": 50
+        },
+        "results": [
+          {
+            "query": "Refactor this Go code to wrap errors properly",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9,
+            "estimate": {
+              "input_tokens": 3512,
+              "input_cost_usd": 0.03512
+            },
+            "spec_hash": "01a47b6b908ee5baac3b27cef80d5bb2f7a8655278dea76e4106c033b67e28fa"
+          },
+          {
+            "query": "Add structured logging to my Go service",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 3507,
+              "input_cost_usd": 0.03507
+            },
+            "spec_hash": "f14d66cd6d1b3145d81d9507162d243278abfe083f225f0cab81bc84bd169a94"
+          },
+          {
+            "query": "Review this Go package for idiomatic style",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 3509,
+              "input_cost_usd": 0.03509
+            },
+            "spec_hash": "87f6e2117ed7f76dea6d9a75c5a51ea01f67d578e3a8724907dda502199f7a57"
+          },
+          {
+            "query": "How should I handle errors in this Go function?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "estimate": {
+              "input_tokens": 3509,
+              "input_cost_usd": 0.03509
+            },
+            "spec_hash": "b51a99b07b84964fc3fd31466a11ab349dccbf0f645965a521840a7de6b56cdc"
+          },
+          {
+            "query": "Add a POST endpoint to my Go server using the stdlib router",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7,
+            "estimate": {
+              "input_tokens": 3517,
+              "input_cost_usd": 0.03517
+            },
+            "spec_hash": "e9c2a67d15c2168ccc0dee86d8f614aeba13a00b0f2652597af2529d08e19f16"
+          },
+          {
+            "query": "Convert these log.Printf calls to slog",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.1,
+            "estimate": {
+              "input_tokens": 3510,
+              "input_cost_usd": 0.0351
+            },
+            "spec_hash": "734f39c62ea7b9cc6f9c16788b800ec5efe611a44fb49e78d69da7611082bd77"
+          },
+          {
+            "query": "Should this Go interface live in the consumer or the producer package?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.7,
+            "estimate": {
+              "input_tokens": 3515,
+              "input_cost_usd": 0.03515
+            },
+            "spec_hash": "34393bde2ae57ffa5b1890921a22fc0ed7bb834df74a041ecb10692a8553314a"
+          },
+          {
+            "query": "Build a Go CLI tool with subcommands — which framework should I use?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.4,
+            "estimate": {
+              "input_tokens": 3519,
+              "input_cost_usd": 0.03519
+            },
+            "spec_hash": "d155316f65507dcc46bfc0636cf7c92aa83468a38a55b07f49c414083eb14f12"
+          },
+          {
+            "query": "Add a serve subcommand to my Go CLI",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 3512,
+              "input_cost_usd": 0.03512
+            },
+            "spec_hash": "731990fb2eb88830b55c0a7d80d0036bfb2e2aff072ada4b13431252bb2047cc"
+          },
+          {
+            "query": "How do I bind environment variables to flags in my Go CLI's configuration?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 3520,
+              "input_cost_usd": 0.0352
+            },
+            "spec_hash": "75b6c1fd3f6c0beffc062cdc1d29fe8f4f1414d148b58e6fb63a26bb920173a6"
+          },
+          {
+            "query": "Generate markdown documentation for my cobra CLI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18.9,
+            "estimate": {
+              "input_tokens": 3513,
+              "input_cost_usd": 0.03513
+            },
+            "spec_hash": "f6de23ebd6cf8143d073091e7c5aeb88bbc76fb8ed2cafb815281aa350c7ace8"
+          },
+          {
+            "query": "Write table-driven tests for this Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18.9,
+            "estimate": {
+              "input_tokens": 3509,
+              "input_cost_usd": 0.03509
+            },
+            "spec_hash": "75eb0dbf254924451b3ba9562e2d05c52624dc6eeb199474803d2bfe8fb6b39c"
+          },
+          {
+            "query": "Set up GoReleaser for my Go project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.6,
+            "estimate": {
+              "input_tokens": 3510,
+              "input_cost_usd": 0.0351
+            },
+            "spec_hash": "498375d63ad5581474777653823abc18417a49120785e9bd82d6edcf271f13b0"
+          },
+          {
+            "query": "Scaffold a new Go service with cmd and internal directories",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.7,
+            "estimate": {
+              "input_tokens": 3515,
+              "input_cost_usd": 0.03515
+            },
+            "spec_hash": "b2fab86692276ed81805084745a25ead15e3b67da06a145b8b02ff92f10e0ec6"
+          },
+          {
+            "query": "Refactor this Rust code to use idiomatic error handling",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17,
+            "estimate": {
+              "input_tokens": 3515,
+              "input_cost_usd": 0.03515
+            },
+            "spec_hash": "e2ccd9208ba50594554ac36f79be814835d40cb8eeeed33655cfbed9f07fc22a"
+          },
+          {
+            "query": "What's new in the latest Go release?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 22.2,
+            "estimate": {
+              "input_tokens": 3507,
+              "input_cost_usd": 0.03507
+            },
+            "spec_hash": "82702b0d45fd5982d9001cb0159ac5b2fec66fc9b2c161afa8dec7c99abc85ba"
+          },
+          {
+            "query": "Add structured logging to my Express app",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.8,
+            "estimate": {
+              "input_tokens": 3507,
+              "input_cost_usd": 0.03507
+            },
+            "spec_hash": "0521e2a539bc28c86cf3bad0f2f1b6d9bc1332f1720da35af682b25dc73306bf"
+          }
+        ],
+        "summary": {
+          "passed": 17,
+          "failed": 0,
+          "total": 17,
+          "pass_rate": 1,
+          "avg_run_seconds": 12.9,
+          "estimate": {
+            "input_tokens": 59706,
+            "input_cost_usd": 0.59706
+          }
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-fable-5",
+        "display": "Claude Fable 5",
+        "harness": "claude",
+        "tool_version": "v0.5.0-6-g47ca9ac",
+        "ran_at": "2026-07-02T20:06:43Z",
+        "executed": true,
+        "content_hash": "59d6bd90a3acaf7ba0b994e2579ff0c674a8937a2d3e97f4466010e51b59a528",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 10,
+          "output_per_mtok": 50
+        },
+        "results": [
+          {
+            "id": "wrap-errors-slog",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 3526,
+              "input_cost_usd": 0.03526
+            },
+            "measured": {
+              "input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cache_creation_input_tokens": 0,
+              "output_tokens": 0,
+              "cost_usd": 0
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "internal/config/config.go",
+                "pattern": "%w",
+                "text": "internal/config/config.go matches /%w/",
+                "passed": true,
+                "evidence": "%w",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/config/config.go",
+                "pattern": "Failed to",
+                "text": "internal/config/config.go does not match /Failed to/",
+                "passed": false,
+                "evidence": "Failed to",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/config/config.go",
+                "pattern": "log\\.Printf",
+                "text": "internal/config/config.go does not match /log\\.Printf/",
+                "passed": false,
+                "evidence": "log.Printf",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/config/config.go",
+                "pattern": "log/slog",
+                "text": "internal/config/config.go matches /log/slog/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l .)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l .)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 3,
+              "total": 6,
+              "pass_rate": 0.5
+            },
+            "execution_metrics": {
+              "total_tool_calls": 0
+            },
+            "timing": {
+              "total_tokens": 0,
+              "executor_duration_seconds": 1.8
+            },
+            "spec_hash": "1836f752ef04a6c1322b7cb67538e785d323bd5f1e4bc6fa12e89a689556de89"
+          },
+          {
+            "id": "stdlib-handler",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 3549,
+              "input_cost_usd": 0.03549
+            },
+            "measured": {
+              "input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cache_creation_input_tokens": 0,
+              "output_tokens": 0,
+              "cost_usd": 0
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "cmd/api/main.go",
+                "pattern": "NewServeMux",
+                "text": "cmd/api/main.go matches /NewServeMux/",
+                "passed": true,
+                "evidence": "NewServeMux",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "cmd/api/main.go",
+                "pattern": "POST /items",
+                "text": "cmd/api/main.go matches /POST /items/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "cmd/api/main.go",
+                "pattern": "slog",
+                "text": "cmd/api/main.go matches /slog/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "cmd/api/main.go",
+                "pattern": "gorilla|go-chi|gin-gonic|httprouter",
+                "text": "cmd/api/main.go does not match /gorilla|go-chi|gin-gonic|httprouter/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l .)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l .)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 2,
+              "total": 6,
+              "pass_rate": 0.666667
+            },
+            "execution_metrics": {
+              "total_tool_calls": 0
+            },
+            "timing": {
+              "total_tokens": 0,
+              "executor_duration_seconds": 1.5
+            },
+            "spec_hash": "20b220df3174993ca7f0051a48a12588e370630d691753842fb8bf0a309b5bb1"
+          },
+          {
+            "id": "cli-subcommand",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 3592,
+              "input_cost_usd": 0.03592
+            },
+            "measured": {
+              "input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cache_creation_input_tokens": 0,
+              "output_tokens": 0,
+              "cost_usd": 0
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "internal/cli/serve.go",
+                "text": "file internal/cli/serve.go exists",
+                "passed": false,
+                "evidence": "internal/cli/serve.go missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/cli/serve.go",
+                "pattern": "cobra\\.Command",
+                "text": "internal/cli/serve.go matches /cobra\\.Command/",
+                "passed": false,
+                "evidence": "internal/cli/serve.go missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/cli/serve.go",
+                "pattern": "RunE",
+                "text": "internal/cli/serve.go matches /RunE/",
+                "passed": false,
+                "evidence": "internal/cli/serve.go missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/cli/serve.go",
+                "pattern": "viper",
+                "text": "internal/cli/serve.go matches /viper/",
+                "passed": false,
+                "evidence": "internal/cli/serve.go missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/cli/serve.go",
+                "pattern": "port",
+                "text": "internal/cli/serve.go matches /port/",
+                "passed": false,
+                "evidence": "internal/cli/serve.go missing",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/cli/serve.go",
+                "pattern": "os\\.Exit",
+                "text": "internal/cli/serve.go does not match /os\\.Exit/",
+                "passed": false,
+                "evidence": "internal/cli/serve.go missing",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 0,
+              "failed": 6,
+              "total": 6,
+              "pass_rate": 0
+            },
+            "execution_metrics": {
+              "total_tool_calls": 0
+            },
+            "timing": {
+              "total_tokens": 0,
+              "executor_duration_seconds": 1.5
+            },
+            "spec_hash": "6447489d12568fa0ca3f0e91691f6d7582c9b23c0b9cffd7c2f06a1f40b1835a"
+          },
+          {
+            "id": "string-builder-loop",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 3531,
+              "input_cost_usd": 0.03531
+            },
+            "measured": {
+              "input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cache_creation_input_tokens": 0,
+              "output_tokens": 0,
+              "cost_usd": 0
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "internal/spec/spec.go",
+                "pattern": "strings\\.(Builder|Join)",
+                "text": "internal/spec/spec.go matches /strings\\.(Builder|Join)/",
+                "passed": true,
+                "evidence": "strings.Builder",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/spec/spec.go",
+                "pattern": "strings\\.FieldsSeq",
+                "text": "internal/spec/spec.go matches /strings\\.FieldsSeq/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/spec/spec.go",
+                "pattern": "slices\\.Contains",
+                "text": "internal/spec/spec.go matches /slices\\.Contains/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/spec/spec.go",
+                "pattern": "spec \\+=",
+                "text": "internal/spec/spec.go does not match /spec \\+=/",
+                "passed": false,
+                "evidence": "spec +=",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/spec/spec.go",
+                "pattern": "WriteString\\([^)]*\\+",
+                "text": "internal/spec/spec.go does not match /WriteString\\([^)]*\\+/",
+                "passed": false,
+                "evidence": "WriteString(prefix + l +",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/spec/spec.go",
+                "pattern": "range strings\\.Fields\\(",
+                "text": "internal/spec/spec.go does not match /range strings\\.Fields\\(/",
+                "passed": false,
+                "evidence": "range strings.Fields(",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l .)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l .)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 5,
+              "total": 8,
+              "pass_rate": 0.375
+            },
+            "execution_metrics": {
+              "total_tool_calls": 0
+            },
+            "timing": {
+              "total_tokens": 0,
+              "executor_duration_seconds": 1.6
+            },
+            "spec_hash": "c679b8334155766245991c3a670939f34fb44b88c9f00538c90d3281c8d1f515"
+          },
+          {
+            "id": "minmax-clamp",
+            "passed": false,
+            "estimate": {
+              "input_tokens": 3541,
+              "input_cost_usd": 0.03541
+            },
+            "measured": {
+              "input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cache_creation_input_tokens": 0,
+              "output_tokens": 0,
+              "cost_usd": 0
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "internal/layout/layout.go",
+                "pattern": "max\\(",
+                "text": "internal/layout/layout.go matches /max\\(/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/layout/layout.go",
+                "pattern": "min\\(",
+                "text": "internal/layout/layout.go matches /min\\(/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/layout/layout.go",
+                "pattern": "if paneH \u003c 3",
+                "text": "internal/layout/layout.go does not match /if paneH \u003c 3/",
+                "passed": false,
+                "evidence": "if paneH \u003c 3",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/layout/layout.go",
+                "pattern": "if v \u003c lo",
+                "text": "internal/layout/layout.go does not match /if v \u003c lo/",
+                "passed": false,
+                "evidence": "if v \u003c lo",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l .)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l .)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 4,
+              "total": 6,
+              "pass_rate": 0.333333
+            },
+            "execution_metrics": {
+              "total_tool_calls": 0
+            },
+            "timing": {
+              "total_tokens": 0,
+              "executor_duration_seconds": 2
+            },
+            "spec_hash": "8b673cd91041d4e92679fc1a73d07256da9b664bda6e4cbb87ef170bc0b4bc0c"
+          }
+        ],
+        "summary": {
+          "passed": 0,
+          "failed": 5,
+          "total": 5,
+          "pass_rate": 0,
+          "avg_run_seconds": 1.7,
+          "estimate": {
+            "input_tokens": 17739,
+            "input_cost_usd": 0.17739
+          },
+          "measured": {
+            "input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "cache_creation_input_tokens": 0,
+            "output_tokens": 0,
+            "cost_usd": 0
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-02T20:06:43Z",
+          "summary": {
+            "passed": 0,
+            "failed": 5,
+            "total": 5,
+            "pass_rate": 0,
+            "avg_run_seconds": 24.5,
+            "measured": {
+              "input_tokens": 15836,
+              "cache_read_input_tokens": 252229,
+              "cache_creation_input_tokens": 39246,
+              "output_tokens": 5096,
+              "cost_usd": 1.452864
+            }
+          },
+          "results": [
+            {
+              "id": "wrap-errors-slog",
+              "passed": false,
+              "measured": {
+                "input_tokens": 3959,
+                "cache_read_input_tokens": 63136,
+                "cache_creation_input_tokens": 9968,
+                "output_tokens": 1037,
+                "cost_usd": 0.354566
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 3,
+                "total": 6,
+                "pass_rate": 0.5
+              },
+              "timing": {
+                "executor_duration_seconds": 30.2
+              },
+              "fingerprint": "1836f752ef04a6c1322b7cb67538e785d323bd5f1e4bc6fa12e89a689556de89"
+            },
+            {
+              "id": "stdlib-handler",
+              "passed": false,
+              "measured": {
+                "input_tokens": 3959,
+                "cache_read_input_tokens": 63054,
+                "cache_creation_input_tokens": 9756,
+                "output_tokens": 891,
+                "cost_usd": 0.342948
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 2,
+                "total": 6,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 26.4
+              },
+              "fingerprint": "20b220df3174993ca7f0051a48a12588e370630d691753842fb8bf0a309b5bb1"
+            },
+            {
+              "id": "cli-subcommand",
+              "passed": false,
+              "measured": {
+                "input_tokens": 3959,
+                "cache_read_input_tokens": 62918,
+                "cache_creation_input_tokens": 9820,
+                "output_tokens": 1109,
+                "cost_usd": 0.355023
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 6,
+                "total": 6,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 25.9
+              },
+              "fingerprint": "6447489d12568fa0ca3f0e91691f6d7582c9b23c0b9cffd7c2f06a1f40b1835a"
+            },
+            {
+              "id": "string-builder-loop",
+              "passed": false,
+              "measured": {
+                "input_tokens": 3959,
+                "cache_read_input_tokens": 63121,
+                "cache_creation_input_tokens": 9702,
+                "output_tokens": 2059,
+                "cost_usd": 0.400327
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 1,
+                "total": 8,
+                "pass_rate": 0.875
+              },
+              "timing": {
+                "executor_duration_seconds": 38.1
+              },
+              "fingerprint": "c679b8334155766245991c3a670939f34fb44b88c9f00538c90d3281c8d1f515"
+            },
+            {
+              "id": "minmax-clamp",
+              "passed": false,
+              "measured": {
+                "input_tokens": 0,
+                "cache_read_input_tokens": 0,
+                "cache_creation_input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 4,
+                "total": 6,
+                "pass_rate": 0.333333
+              },
+              "timing": {
+                "executor_duration_seconds": 1.7
+              },
+              "fingerprint": "8b673cd91041d4e92679fc1a73d07256da9b664bda6e4cbb87ef170bc0b4bc0c"
+            }
+          ]
+        }
+      }
+    },
     "anthropic/claude-haiku-4-5": {
       "triggers": {
         "provider": "anthropic",
@@ -3603,36 +4456,47 @@
         }
       }
     },
-    "google/gemini-3.1-pro": {
+    "anthropic/claude-sonnet-5": {
       "triggers": {
-        "provider": "google",
-        "model": "gemini-3.1-pro",
-        "display": "Gemini 3.1 Pro",
-        "harness": "antigravity",
-        "tool_version": "v0.2.1-63-g50671ce",
-        "ran_at": "2026-06-23T14:30:32Z",
+        "provider": "anthropic",
+        "model": "claude-sonnet-5",
+        "display": "Claude Sonnet 5",
+        "harness": "claude",
+        "tool_version": "v0.5.0-6-g47ca9ac",
+        "ran_at": "2026-07-02T19:59:59Z",
         "executed": true,
         "content_hash": "10969ed93efaf506e80ceb1ee26ff3ab9824368ff1c7a328c2b4a0cd28ec55b8",
         "runs_per_query": 3,
         "timeout_seconds": 120,
-        "pricing": null,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
         "results": [
           {
             "query": "Refactor this Go code to wrap errors properly",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.2,
+            "passed": true,
+            "avg_run_seconds": 6.5,
+            "estimate": {
+              "input_tokens": 3512,
+              "input_cost_usd": 0.010536
+            },
             "spec_hash": "01a47b6b908ee5baac3b27cef80d5bb2f7a8655278dea76e4106c033b67e28fa"
           },
           {
             "query": "Add structured logging to my Go service",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 2,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.1,
+            "passed": true,
+            "avg_run_seconds": 7.2,
+            "estimate": {
+              "input_tokens": 3507,
+              "input_cost_usd": 0.010521
+            },
             "spec_hash": "f14d66cd6d1b3145d81d9507162d243278abfe083f225f0cab81bc84bd169a94"
           },
           {
@@ -3641,70 +4505,102 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 3509,
+              "input_cost_usd": 0.010527
+            },
+            "spec_hash": "87f6e2117ed7f76dea6d9a75c5a51ea01f67d578e3a8724907dda502199f7a57"
+          },
+          {
+            "query": "How should I handle errors in this Go function?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.8,
+            "estimate": {
+              "input_tokens": 3509,
+              "input_cost_usd": 0.010527
+            },
+            "spec_hash": "b51a99b07b84964fc3fd31466a11ab349dccbf0f645965a521840a7de6b56cdc"
+          },
+          {
+            "query": "Add a POST endpoint to my Go server using the stdlib router",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.9,
+            "estimate": {
+              "input_tokens": 3517,
+              "input_cost_usd": 0.010551
+            },
+            "spec_hash": "e9c2a67d15c2168ccc0dee86d8f614aeba13a00b0f2652597af2529d08e19f16"
+          },
+          {
+            "query": "Convert these log.Printf calls to slog",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.7,
+            "estimate": {
+              "input_tokens": 3510,
+              "input_cost_usd": 0.01053
+            },
+            "spec_hash": "734f39c62ea7b9cc6f9c16788b800ec5efe611a44fb49e78d69da7611082bd77"
+          },
+          {
+            "query": "Should this Go interface live in the consumer or the producer package?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.1,
+            "estimate": {
+              "input_tokens": 3515,
+              "input_cost_usd": 0.010545
+            },
+            "spec_hash": "34393bde2ae57ffa5b1890921a22fc0ed7bb834df74a041ecb10692a8553314a"
+          },
+          {
+            "query": "Build a Go CLI tool with subcommands — which framework should I use?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 3519,
+              "input_cost_usd": 0.010557
+            },
+            "spec_hash": "d155316f65507dcc46bfc0636cf7c92aa83468a38a55b07f49c414083eb14f12"
+          },
+          {
+            "query": "Add a serve subcommand to my Go CLI",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 3512,
+              "input_cost_usd": 0.010536
+            },
+            "spec_hash": "731990fb2eb88830b55c0a7d80d0036bfb2e2aff072ada4b13431252bb2047cc"
+          },
+          {
+            "query": "How do I bind environment variables to flags in my Go CLI's configuration?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
             "avg_run_seconds": 4.8,
-            "spec_hash": "87f6e2117ed7f76dea6d9a75c5a51ea01f67d578e3a8724907dda502199f7a57"
-          },
-          {
-            "query": "How should I handle errors in this Go function?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.3,
-            "spec_hash": "b51a99b07b84964fc3fd31466a11ab349dccbf0f645965a521840a7de6b56cdc"
-          },
-          {
-            "query": "Add a POST endpoint to my Go server using the stdlib router",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.5,
-            "spec_hash": "e9c2a67d15c2168ccc0dee86d8f614aeba13a00b0f2652597af2529d08e19f16"
-          },
-          {
-            "query": "Convert these log.Printf calls to slog",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.3,
-            "spec_hash": "734f39c62ea7b9cc6f9c16788b800ec5efe611a44fb49e78d69da7611082bd77"
-          },
-          {
-            "query": "Should this Go interface live in the consumer or the producer package?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.7,
-            "spec_hash": "34393bde2ae57ffa5b1890921a22fc0ed7bb834df74a041ecb10692a8553314a"
-          },
-          {
-            "query": "Build a Go CLI tool with subcommands — which framework should I use?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 6.4,
-            "spec_hash": "d155316f65507dcc46bfc0636cf7c92aa83468a38a55b07f49c414083eb14f12"
-          },
-          {
-            "query": "Add a serve subcommand to my Go CLI",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.9,
-            "spec_hash": "731990fb2eb88830b55c0a7d80d0036bfb2e2aff072ada4b13431252bb2047cc"
-          },
-          {
-            "query": "How do I bind environment variables to flags in my Go CLI's configuration?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.5,
+            "estimate": {
+              "input_tokens": 3520,
+              "input_cost_usd": 0.01056
+            },
             "spec_hash": "75b6c1fd3f6c0beffc062cdc1d29fe8f4f1414d148b58e6fb63a26bb920173a6"
           },
           {
@@ -3713,7 +4609,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 5.4,
+            "avg_run_seconds": 10.2,
+            "estimate": {
+              "input_tokens": 3513,
+              "input_cost_usd": 0.010539
+            },
             "spec_hash": "f6de23ebd6cf8143d073091e7c5aeb88bbc76fb8ed2cafb815281aa350c7ace8"
           },
           {
@@ -3722,7 +4622,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 5.7,
+            "avg_run_seconds": 8.5,
+            "estimate": {
+              "input_tokens": 3509,
+              "input_cost_usd": 0.010527
+            },
             "spec_hash": "75eb0dbf254924451b3ba9562e2d05c52624dc6eeb199474803d2bfe8fb6b39c"
           },
           {
@@ -3731,7 +4635,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 4.9,
+            "avg_run_seconds": 10,
+            "estimate": {
+              "input_tokens": 3510,
+              "input_cost_usd": 0.01053
+            },
             "spec_hash": "498375d63ad5581474777653823abc18417a49120785e9bd82d6edcf271f13b0"
           },
           {
@@ -3740,7 +4648,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 5.3,
+            "avg_run_seconds": 8.8,
+            "estimate": {
+              "input_tokens": 3515,
+              "input_cost_usd": 0.010545
+            },
             "spec_hash": "b2fab86692276ed81805084745a25ead15e3b67da06a145b8b02ff92f10e0ec6"
           },
           {
@@ -3749,7 +4661,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 5.6,
+            "avg_run_seconds": 7.4,
+            "estimate": {
+              "input_tokens": 3515,
+              "input_cost_usd": 0.010545
+            },
             "spec_hash": "e2ccd9208ba50594554ac36f79be814835d40cb8eeeed33655cfbed9f07fc22a"
           },
           {
@@ -3758,7 +4674,11 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 5.5,
+            "avg_run_seconds": 17.8,
+            "estimate": {
+              "input_tokens": 3507,
+              "input_cost_usd": 0.010521
+            },
             "spec_hash": "82702b0d45fd5982d9001cb0159ac5b2fec66fc9b2c161afa8dec7c99abc85ba"
           },
           {
@@ -3767,470 +4687,654 @@
             "hits": 0,
             "runs": 3,
             "passed": true,
-            "avg_run_seconds": 5.5,
+            "avg_run_seconds": 9.9,
+            "estimate": {
+              "input_tokens": 3507,
+              "input_cost_usd": 0.010521
+            },
             "spec_hash": "0521e2a539bc28c86cf3bad0f2f1b6d9bc1332f1720da35af682b25dc73306bf"
           }
         ],
         "summary": {
-          "passed": 7,
-          "failed": 10,
+          "passed": 13,
+          "failed": 4,
           "total": 17,
-          "pass_rate": 0.411765,
-          "avg_run_seconds": 5.4
+          "pass_rate": 0.764706,
+          "avg_run_seconds": 8.6,
+          "estimate": {
+            "input_tokens": 59706,
+            "input_cost_usd": 0.179118
+          }
         }
       },
       "evals": {
-        "provider": "google",
-        "model": "gemini-3.1-pro",
-        "display": "Gemini 3.1 Pro",
-        "harness": "antigravity",
-        "tool_version": "v0.2.1-63-g50671ce",
-        "ran_at": "2026-06-23T14:30:53Z",
+        "provider": "anthropic",
+        "model": "claude-sonnet-5",
+        "display": "Claude Sonnet 5",
+        "harness": "claude",
+        "tool_version": "v0.5.0-6-g47ca9ac",
+        "ran_at": "2026-07-02T20:03:14Z",
         "executed": true,
         "content_hash": "59d6bd90a3acaf7ba0b994e2579ff0c674a8937a2d3e97f4466010e51b59a528",
         "timeout_seconds": 600,
-        "pricing": null,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
         "results": [
           {
             "id": "wrap-errors-slog",
-            "runtime_error": "empty CLI output",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 3526,
+              "input_cost_usd": 0.010578
+            },
+            "measured": {
+              "input_tokens": 4537,
+              "cache_read_input_tokens": 281924,
+              "cache_creation_input_tokens": 18421,
+              "output_tokens": 3249,
+              "cost_usd": 0.258079
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "internal/config/config.go",
+                "pattern": "%w",
+                "text": "internal/config/config.go matches /%w/",
+                "passed": true,
+                "evidence": "%w",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/config/config.go",
+                "pattern": "Failed to",
+                "text": "internal/config/config.go does not match /Failed to/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/config/config.go",
+                "pattern": "log\\.Printf",
+                "text": "internal/config/config.go does not match /log\\.Printf/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/config/config.go",
+                "pattern": "log/slog",
+                "text": "internal/config/config.go matches /log/slog/",
+                "passed": true,
+                "evidence": "log/slog",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l .)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l .)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Edit": 1,
+                "Grep": 1,
+                "Read": 2,
+                "Skill": 1
+              },
+              "total_tool_calls": 7
+            },
             "timing": {
-              "executor_duration_seconds": 5.4
+              "total_tokens": 308131,
+              "executor_duration_seconds": 40.6
             },
             "spec_hash": "1836f752ef04a6c1322b7cb67538e785d323bd5f1e4bc6fa12e89a689556de89"
           },
           {
             "id": "stdlib-handler",
-            "runtime_error": "empty CLI output",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 3549,
+              "input_cost_usd": 0.010647
+            },
+            "measured": {
+              "input_tokens": 4669,
+              "cache_read_input_tokens": 450591,
+              "cache_creation_input_tokens": 34899,
+              "output_tokens": 9044,
+              "cost_usd": 0.494872
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "cmd/api/main.go",
+                "pattern": "NewServeMux",
+                "text": "cmd/api/main.go matches /NewServeMux/",
+                "passed": true,
+                "evidence": "NewServeMux",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "cmd/api/main.go",
+                "pattern": "POST /items",
+                "text": "cmd/api/main.go matches /POST /items/",
+                "passed": true,
+                "evidence": "POST /items",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "cmd/api/main.go",
+                "pattern": "slog",
+                "text": "cmd/api/main.go matches /slog/",
+                "passed": true,
+                "evidence": "slog",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "cmd/api/main.go",
+                "pattern": "gorilla|go-chi|gin-gonic|httprouter",
+                "text": "cmd/api/main.go does not match /gorilla|go-chi|gin-gonic|httprouter/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l .)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l .)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 5,
+                "Read": 2,
+                "Skill": 2,
+                "Write": 1
+              },
+              "total_tool_calls": 10
+            },
             "timing": {
-              "executor_duration_seconds": 5.2
+              "total_tokens": 499203,
+              "executor_duration_seconds": 98.8
             },
             "spec_hash": "20b220df3174993ca7f0051a48a12588e370630d691753842fb8bf0a309b5bb1"
           },
           {
             "id": "cli-subcommand",
-            "runtime_error": "empty CLI output",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 3592,
+              "input_cost_usd": 0.010776
+            },
+            "measured": {
+              "input_tokens": 4535,
+              "cache_read_input_tokens": 244175,
+              "cache_creation_input_tokens": 22072,
+              "output_tokens": 6707,
+              "cost_usd": 0.32056
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "internal/cli/serve.go",
+                "text": "file internal/cli/serve.go exists",
+                "passed": true,
+                "evidence": "internal/cli/serve.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/cli/serve.go",
+                "pattern": "cobra\\.Command",
+                "text": "internal/cli/serve.go matches /cobra\\.Command/",
+                "passed": true,
+                "evidence": "cobra.Command",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/cli/serve.go",
+                "pattern": "RunE",
+                "text": "internal/cli/serve.go matches /RunE/",
+                "passed": true,
+                "evidence": "RunE",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/cli/serve.go",
+                "pattern": "viper",
+                "text": "internal/cli/serve.go matches /viper/",
+                "passed": true,
+                "evidence": "viper",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/cli/serve.go",
+                "pattern": "port",
+                "text": "internal/cli/serve.go matches /port/",
+                "passed": true,
+                "evidence": "port",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/cli/serve.go",
+                "pattern": "os\\.Exit",
+                "text": "internal/cli/serve.go does not match /os\\.Exit/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Read": 3,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 7
+            },
             "timing": {
-              "executor_duration_seconds": 5.7
+              "total_tokens": 277489,
+              "executor_duration_seconds": 69.3
             },
             "spec_hash": "6447489d12568fa0ca3f0e91691f6d7582c9b23c0b9cffd7c2f06a1f40b1835a"
           },
           {
             "id": "string-builder-loop",
-            "runtime_error": "empty CLI output",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 3531,
+              "input_cost_usd": 0.010593
+            },
+            "measured": {
+              "input_tokens": 4533,
+              "cache_read_input_tokens": 202834,
+              "cache_creation_input_tokens": 18125,
+              "output_tokens": 2863,
+              "cost_usd": 0.226775
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "internal/spec/spec.go",
+                "pattern": "strings\\.(Builder|Join)",
+                "text": "internal/spec/spec.go matches /strings\\.(Builder|Join)/",
+                "passed": true,
+                "evidence": "strings.Join",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/spec/spec.go",
+                "pattern": "strings\\.FieldsSeq",
+                "text": "internal/spec/spec.go matches /strings\\.FieldsSeq/",
+                "passed": true,
+                "evidence": "strings.FieldsSeq",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/spec/spec.go",
+                "pattern": "slices\\.Contains",
+                "text": "internal/spec/spec.go matches /slices\\.Contains/",
+                "passed": true,
+                "evidence": "slices.Contains",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/spec/spec.go",
+                "pattern": "spec \\+=",
+                "text": "internal/spec/spec.go does not match /spec \\+=/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/spec/spec.go",
+                "pattern": "WriteString\\([^)]*\\+",
+                "text": "internal/spec/spec.go does not match /WriteString\\([^)]*\\+/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/spec/spec.go",
+                "pattern": "range strings\\.Fields\\(",
+                "text": "internal/spec/spec.go does not match /range strings\\.Fields\\(/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l .)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l .)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 0,
+              "total": 8,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Edit": 1,
+                "Read": 1,
+                "Skill": 1
+              },
+              "total_tool_calls": 5
+            },
             "timing": {
-              "executor_duration_seconds": 5
+              "total_tokens": 228355,
+              "executor_duration_seconds": 36.4
             },
             "spec_hash": "c679b8334155766245991c3a670939f34fb44b88c9f00538c90d3281c8d1f515"
           },
           {
             "id": "minmax-clamp",
-            "runtime_error": "empty CLI output",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 3541,
+              "input_cost_usd": 0.010623
+            },
+            "measured": {
+              "input_tokens": 4535,
+              "cache_read_input_tokens": 238031,
+              "cache_creation_input_tokens": 17370,
+              "output_tokens": 1853,
+              "cost_usd": 0.217671
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "internal/layout/layout.go",
+                "pattern": "max\\(",
+                "text": "internal/layout/layout.go matches /max\\(/",
+                "passed": true,
+                "evidence": "max(",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/layout/layout.go",
+                "pattern": "min\\(",
+                "text": "internal/layout/layout.go matches /min\\(/",
+                "passed": true,
+                "evidence": "min(",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/layout/layout.go",
+                "pattern": "if paneH \u003c 3",
+                "text": "internal/layout/layout.go does not match /if paneH \u003c 3/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/layout/layout.go",
+                "pattern": "if v \u003c lo",
+                "text": "internal/layout/layout.go does not match /if v \u003c lo/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l .)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l .)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Edit": 1,
+                "Read": 2,
+                "Skill": 1
+              },
+              "total_tool_calls": 6
+            },
             "timing": {
-              "executor_duration_seconds": 5.1
+              "total_tokens": 261789,
+              "executor_duration_seconds": 30.1
             },
             "spec_hash": "8b673cd91041d4e92679fc1a73d07256da9b664bda6e4cbb87ef170bc0b4bc0c"
           }
         ],
         "summary": {
-          "passed": 0,
+          "passed": 5,
           "failed": 0,
-          "errored": 5,
           "total": 5,
-          "avg_run_seconds": 5.3
+          "pass_rate": 1,
+          "avg_run_seconds": 55,
+          "estimate": {
+            "input_tokens": 17739,
+            "input_cost_usd": 0.053217
+          },
+          "measured": {
+            "input_tokens": 22809,
+            "cache_read_input_tokens": 1417555,
+            "cache_creation_input_tokens": 110887,
+            "output_tokens": 23716,
+            "cost_usd": 1.517957
+          }
         },
         "baseline": {
-          "ran_at": "2026-06-23T14:30:53Z",
+          "ran_at": "2026-07-02T20:03:14Z",
           "summary": {
-            "passed": 0,
-            "failed": 0,
-            "errored": 5,
+            "passed": 3,
+            "failed": 2,
             "total": 5,
-            "avg_run_seconds": 5.4
+            "pass_rate": 0.6,
+            "avg_run_seconds": 56.4,
+            "measured": {
+              "input_tokens": 21736,
+              "cache_read_input_tokens": 1559378,
+              "cache_creation_input_tokens": 80393,
+              "output_tokens": 20661,
+              "cost_usd": 1.328501
+            }
           },
           "results": [
             {
-              "id": "cli-subcommand",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5.4
+              "id": "wrap-errors-slog",
+              "passed": false,
+              "measured": {
+                "input_tokens": 4286,
+                "cache_read_input_tokens": 261848,
+                "cache_creation_input_tokens": 14145,
+                "output_tokens": 2715,
+                "cost_usd": 0.217637
               },
-              "fingerprint": "6447489d12568fa0ca3f0e91691f6d7582c9b23c0b9cffd7c2f06a1f40b1835a"
-            },
-            {
-              "id": "minmax-clamp",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5.6
+              "summary": {
+                "passed": 5,
+                "failed": 1,
+                "total": 6,
+                "pass_rate": 0.833333
               },
-              "fingerprint": "8b673cd91041d4e92679fc1a73d07256da9b664bda6e4cbb87ef170bc0b4bc0c"
+              "timing": {
+                "executor_duration_seconds": 39
+              },
+              "fingerprint": "1836f752ef04a6c1322b7cb67538e785d323bd5f1e4bc6fa12e89a689556de89"
             },
             {
               "id": "stdlib-handler",
-              "runtime_error": "errored",
+              "passed": true,
+              "measured": {
+                "input_tokens": 4431,
+                "cache_read_input_tokens": 575454,
+                "cache_creation_input_tokens": 19780,
+                "output_tokens": 7057,
+                "cost_usd": 0.411098
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
               "timing": {
-                "executor_duration_seconds": 5.2
+                "executor_duration_seconds": 95.4
               },
               "fingerprint": "20b220df3174993ca7f0051a48a12588e370630d691753842fb8bf0a309b5bb1"
             },
             {
-              "id": "string-builder-loop",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5.4
-              },
-              "fingerprint": "c679b8334155766245991c3a670939f34fb44b88c9f00538c90d3281c8d1f515"
-            },
-            {
-              "id": "wrap-errors-slog",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5.4
-              },
-              "fingerprint": "1836f752ef04a6c1322b7cb67538e785d323bd5f1e4bc6fa12e89a689556de89"
-            }
-          ]
-        }
-      }
-    },
-    "google/gemini-3.5-flash": {
-      "triggers": {
-        "provider": "google",
-        "model": "gemini-3.5-flash",
-        "display": "Gemini 3.5 Flash",
-        "harness": "antigravity",
-        "tool_version": "v0.2.1-63-g50671ce",
-        "ran_at": "2026-06-23T14:29:01Z",
-        "executed": true,
-        "content_hash": "10969ed93efaf506e80ceb1ee26ff3ab9824368ff1c7a328c2b4a0cd28ec55b8",
-        "runs_per_query": 3,
-        "timeout_seconds": 120,
-        "pricing": {
-          "input_per_mtok": 1.5,
-          "output_per_mtok": 9
-        },
-        "results": [
-          {
-            "query": "Refactor this Go code to wrap errors properly",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.7,
-            "spec_hash": "01a47b6b908ee5baac3b27cef80d5bb2f7a8655278dea76e4106c033b67e28fa"
-          },
-          {
-            "query": "Add structured logging to my Go service",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.5,
-            "spec_hash": "f14d66cd6d1b3145d81d9507162d243278abfe083f225f0cab81bc84bd169a94"
-          },
-          {
-            "query": "Review this Go package for idiomatic style",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.4,
-            "spec_hash": "87f6e2117ed7f76dea6d9a75c5a51ea01f67d578e3a8724907dda502199f7a57"
-          },
-          {
-            "query": "How should I handle errors in this Go function?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.4,
-            "spec_hash": "b51a99b07b84964fc3fd31466a11ab349dccbf0f645965a521840a7de6b56cdc"
-          },
-          {
-            "query": "Add a POST endpoint to my Go server using the stdlib router",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.1,
-            "spec_hash": "e9c2a67d15c2168ccc0dee86d8f614aeba13a00b0f2652597af2529d08e19f16"
-          },
-          {
-            "query": "Convert these log.Printf calls to slog",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5,
-            "spec_hash": "734f39c62ea7b9cc6f9c16788b800ec5efe611a44fb49e78d69da7611082bd77"
-          },
-          {
-            "query": "Should this Go interface live in the consumer or the producer package?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 4.7,
-            "spec_hash": "34393bde2ae57ffa5b1890921a22fc0ed7bb834df74a041ecb10692a8553314a"
-          },
-          {
-            "query": "Build a Go CLI tool with subcommands — which framework should I use?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5.1,
-            "spec_hash": "d155316f65507dcc46bfc0636cf7c92aa83468a38a55b07f49c414083eb14f12"
-          },
-          {
-            "query": "Add a serve subcommand to my Go CLI",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5,
-            "spec_hash": "731990fb2eb88830b55c0a7d80d0036bfb2e2aff072ada4b13431252bb2047cc"
-          },
-          {
-            "query": "How do I bind environment variables to flags in my Go CLI's configuration?",
-            "should_trigger": true,
-            "hits": 0,
-            "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 5,
-            "spec_hash": "75b6c1fd3f6c0beffc062cdc1d29fe8f4f1414d148b58e6fb63a26bb920173a6"
-          },
-          {
-            "query": "Generate markdown documentation for my cobra CLI",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 4.9,
-            "spec_hash": "f6de23ebd6cf8143d073091e7c5aeb88bbc76fb8ed2cafb815281aa350c7ace8"
-          },
-          {
-            "query": "Write table-driven tests for this Go function",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 5.1,
-            "spec_hash": "75eb0dbf254924451b3ba9562e2d05c52624dc6eeb199474803d2bfe8fb6b39c"
-          },
-          {
-            "query": "Set up GoReleaser for my Go project",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 5.5,
-            "spec_hash": "498375d63ad5581474777653823abc18417a49120785e9bd82d6edcf271f13b0"
-          },
-          {
-            "query": "Scaffold a new Go service with cmd and internal directories",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 5.4,
-            "spec_hash": "b2fab86692276ed81805084745a25ead15e3b67da06a145b8b02ff92f10e0ec6"
-          },
-          {
-            "query": "Refactor this Rust code to use idiomatic error handling",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 5.2,
-            "spec_hash": "e2ccd9208ba50594554ac36f79be814835d40cb8eeeed33655cfbed9f07fc22a"
-          },
-          {
-            "query": "What's new in the latest Go release?",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 5.2,
-            "spec_hash": "82702b0d45fd5982d9001cb0159ac5b2fec66fc9b2c161afa8dec7c99abc85ba"
-          },
-          {
-            "query": "Add structured logging to my Express app",
-            "should_trigger": false,
-            "hits": 0,
-            "runs": 3,
-            "passed": true,
-            "avg_run_seconds": 5.1,
-            "spec_hash": "0521e2a539bc28c86cf3bad0f2f1b6d9bc1332f1720da35af682b25dc73306bf"
-          }
-        ],
-        "summary": {
-          "passed": 7,
-          "failed": 10,
-          "total": 17,
-          "pass_rate": 0.411765,
-          "avg_run_seconds": 5.2
-        }
-      },
-      "evals": {
-        "provider": "google",
-        "model": "gemini-3.5-flash",
-        "display": "Gemini 3.5 Flash",
-        "harness": "antigravity",
-        "tool_version": "v0.3.0-dirty",
-        "ran_at": "2026-06-23T15:29:50Z",
-        "executed": true,
-        "content_hash": "59d6bd90a3acaf7ba0b994e2579ff0c674a8937a2d3e97f4466010e51b59a528",
-        "timeout_seconds": 600,
-        "pricing": {
-          "input_per_mtok": 1.5,
-          "output_per_mtok": 9
-        },
-        "results": [
-          {
-            "id": "wrap-errors-slog",
-            "runtime_error": "empty CLI output",
-            "timing": {
-              "executor_duration_seconds": 5.9
-            },
-            "spec_hash": "1836f752ef04a6c1322b7cb67538e785d323bd5f1e4bc6fa12e89a689556de89"
-          },
-          {
-            "id": "stdlib-handler",
-            "runtime_error": "empty CLI output",
-            "timing": {
-              "executor_duration_seconds": 5.8
-            },
-            "spec_hash": "20b220df3174993ca7f0051a48a12588e370630d691753842fb8bf0a309b5bb1"
-          },
-          {
-            "id": "cli-subcommand",
-            "runtime_error": "empty CLI output",
-            "timing": {
-              "executor_duration_seconds": 6.1
-            },
-            "spec_hash": "6447489d12568fa0ca3f0e91691f6d7582c9b23c0b9cffd7c2f06a1f40b1835a"
-          },
-          {
-            "id": "string-builder-loop",
-            "runtime_error": "empty CLI output",
-            "timing": {
-              "executor_duration_seconds": 5.9
-            },
-            "spec_hash": "c679b8334155766245991c3a670939f34fb44b88c9f00538c90d3281c8d1f515"
-          },
-          {
-            "id": "minmax-clamp",
-            "runtime_error": "empty CLI output",
-            "timing": {
-              "executor_duration_seconds": 5.9
-            },
-            "spec_hash": "8b673cd91041d4e92679fc1a73d07256da9b664bda6e4cbb87ef170bc0b4bc0c"
-          }
-        ],
-        "summary": {
-          "passed": 0,
-          "failed": 0,
-          "errored": 5,
-          "total": 5,
-          "avg_run_seconds": 5.9
-        },
-        "baseline": {
-          "ran_at": "2026-06-23T14:29:21Z",
-          "summary": {
-            "passed": 0,
-            "failed": 0,
-            "errored": 5,
-            "total": 5,
-            "avg_run_seconds": 5.2
-          },
-          "results": [
-            {
               "id": "cli-subcommand",
-              "runtime_error": "errored",
+              "passed": true,
+              "measured": {
+                "input_tokens": 4449,
+                "cache_read_input_tokens": 230754,
+                "cache_creation_input_tokens": 16805,
+                "output_tokens": 4648,
+                "cost_usd": 0.253788
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
               "timing": {
-                "executor_duration_seconds": 6
+                "executor_duration_seconds": 65.6
               },
               "fingerprint": "6447489d12568fa0ca3f0e91691f6d7582c9b23c0b9cffd7c2f06a1f40b1835a"
             },
             {
-              "id": "minmax-clamp",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5
-              },
-              "fingerprint": "8b673cd91041d4e92679fc1a73d07256da9b664bda6e4cbb87ef170bc0b4bc0c"
-            },
-            {
-              "id": "stdlib-handler",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5
-              },
-              "fingerprint": "20b220df3174993ca7f0051a48a12588e370630d691753842fb8bf0a309b5bb1"
-            },
-            {
               "id": "string-builder-loop",
-              "runtime_error": "errored",
+              "passed": false,
+              "measured": {
+                "input_tokens": 4284,
+                "cache_read_input_tokens": 229625,
+                "cache_creation_input_tokens": 16055,
+                "output_tokens": 4444,
+                "cost_usd": 0.245366
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 1,
+                "total": 8,
+                "pass_rate": 0.875
+              },
               "timing": {
-                "executor_duration_seconds": 4.6
+                "executor_duration_seconds": 52.8
               },
               "fingerprint": "c679b8334155766245991c3a670939f34fb44b88c9f00538c90d3281c8d1f515"
             },
             {
-              "id": "wrap-errors-slog",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5.2
-              },
-              "fingerprint": "1836f752ef04a6c1322b7cb67538e785d323bd5f1e4bc6fa12e89a689556de89"
-            }
-          ]
-        },
-        "previous": {
-          "ran_at": "2026-06-23T14:29:21Z",
-          "summary": {
-            "passed": 0,
-            "failed": 0,
-            "errored": 5,
-            "total": 5,
-            "avg_run_seconds": 5
-          },
-          "results": [
-            {
-              "id": "cli-subcommand",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5.1
-              }
-            },
-            {
               "id": "minmax-clamp",
-              "runtime_error": "errored",
+              "passed": true,
+              "measured": {
+                "input_tokens": 4286,
+                "cache_read_input_tokens": 261697,
+                "cache_creation_input_tokens": 13608,
+                "output_tokens": 1797,
+                "cost_usd": 0.200612
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
               "timing": {
-                "executor_duration_seconds": 5.3
-              }
-            },
-            {
-              "id": "stdlib-handler",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 4.8
-              }
-            },
-            {
-              "id": "string-builder-loop",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 5.3
-              }
-            },
-            {
-              "id": "wrap-errors-slog",
-              "runtime_error": "errored",
-              "timing": {
-                "executor_duration_seconds": 4.6
-              }
+                "executor_duration_seconds": 29.3
+              },
+              "fingerprint": "8b673cd91041d4e92679fc1a73d07256da9b664bda6e4cbb87ef170bc0b4bc0c"
             }
           ]
         }

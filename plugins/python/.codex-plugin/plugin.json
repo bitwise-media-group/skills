@@ -7,17 +7,7 @@
     "email": "deavon@bitwisemedia.co.uk"
   },
   "license": "MIT",
-  "keywords": [
-    "python",
-    "uv",
-    "ruff",
-    "ty",
-    "pyright",
-    "pytest",
-    "hypothesis",
-    "typing",
-    "pyproject"
-  ],
+  "keywords": ["python", "uv", "ruff", "ty", "pyright", "pytest", "hypothesis", "typing", "pyproject"],
   "interface": {
     "displayName": "Python",
     "shortDescription": "Modern Python style, typing, testing, docs, project layout, and release engineering."

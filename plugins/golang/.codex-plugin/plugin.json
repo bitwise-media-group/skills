@@ -7,17 +7,7 @@
     "email": "deavon@bitwisemedia.co.uk"
   },
   "license": "MIT",
-  "keywords": [
-    "go",
-    "golang",
-    "slog",
-    "testing",
-    "fuzzing",
-    "goreleaser",
-    "cobra",
-    "viper",
-    "godoc"
-  ],
+  "keywords": ["go", "golang", "slog", "testing", "fuzzing", "goreleaser", "cobra", "viper", "godoc"],
   "interface": {
     "displayName": "Go",
     "shortDescription": "Modern Go style, testing, docs, project layout, and release engineering."

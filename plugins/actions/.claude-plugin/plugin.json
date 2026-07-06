@@ -7,12 +7,5 @@
     "email": "deavon@bitwisemedia.co.uk"
   },
   "license": "MIT",
-  "keywords": [
-    "github-actions",
-    "ci",
-    "workflows",
-    "security",
-    "actionlint",
-    "zizmor"
-  ]
+  "keywords": ["github-actions", "ci", "workflows", "security", "actionlint", "zizmor"]
 }

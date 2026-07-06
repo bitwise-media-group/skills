@@ -1,10 +1,23 @@
 {
   "schema": 3,
-  "tool_version": "0.4.0",
-  "latest_run": "2026-06-28T06:52:05Z",
+  "tool_version": "v0.5.0-8-g3a3098d-dirty",
+  "latest_run": "2026-07-02T23:48:40Z",
   "plugins": {
     "actions": {
       "triggers": {
+        "anthropic/claude-fable-5": {
+          "provider": "anthropic",
+          "display": "Claude Fable 5",
+          "passed": 54,
+          "failed": 1,
+          "total": 55,
+          "pass_rate": 0.981818,
+          "avg_run_seconds": 15.1,
+          "estimate": {
+            "input_tokens": 108338,
+            "input_cost_usd": 1.08338
+          }
+        },
         "anthropic/claude-haiku-4-5": {
           "provider": "anthropic",
           "display": "Claude Haiku 4.5",
@@ -62,6 +75,19 @@
             "cost_usd": 0
           }
         },
+        "anthropic/claude-sonnet-5": {
+          "provider": "anthropic",
+          "display": "Claude Sonnet 5",
+          "passed": 38,
+          "failed": 17,
+          "total": 55,
+          "pass_rate": 0.690909,
+          "avg_run_seconds": 9.8,
+          "estimate": {
+            "input_tokens": 108338,
+            "input_cost_usd": 0.325014
+          }
+        },
         "openai/gpt-5.4": {
           "provider": "openai",
           "display": "GPT-5.4",
@@ -102,6 +128,47 @@
         }
       },
       "evals": {
+        "anthropic/claude-fable-5": {
+          "provider": "anthropic",
+          "display": "Claude Fable 5",
+          "passed": 8,
+          "failed": 1,
+          "total": 9,
+          "pass_rate": 0.888889,
+          "avg_run_seconds": 58.2,
+          "estimate": {
+            "input_tokens": 18594,
+            "input_cost_usd": 0.18594
+          },
+          "measured": {
+            "input_tokens": 38029,
+            "cache_read_input_tokens": 1364229,
+            "cache_creation_input_tokens": 121119,
+            "output_tokens": 21316,
+            "cost_usd": 5.238407
+          },
+          "baseline": {
+            "passed": 7,
+            "failed": 2,
+            "total": 9,
+            "pass_rate": 0.777778,
+            "avg_run_seconds": 122.9,
+            "measured": {
+              "input_tokens": 36793,
+              "cache_read_input_tokens": 2654366,
+              "cache_creation_input_tokens": 209196,
+              "output_tokens": 49385,
+              "cost_usd": 9.681219
+            }
+          },
+          "baseline_delta": {
+            "rate": 0.111111,
+            "avg_run_seconds": -64.7,
+            "input_tokens": 1236,
+            "output_tokens": -28069,
+            "cost_usd": -4.442812
+          }
+        },
         "anthropic/claude-haiku-4-5": {
           "provider": "anthropic",
           "display": "Claude Haiku 4.5",
@@ -246,6 +313,48 @@
             "cost_usd": 0.280724
           }
         },
+        "anthropic/claude-sonnet-5": {
+          "provider": "anthropic",
+          "display": "Claude Sonnet 5",
+          "passed": 8,
+          "failed": 1,
+          "total": 9,
+          "pass_rate": 0.888889,
+          "avg_run_seconds": 50.9,
+          "estimate": {
+            "input_tokens": 18594,
+            "input_cost_usd": 0.055782
+          },
+          "measured": {
+            "input_tokens": 40853,
+            "cache_read_input_tokens": 2019858,
+            "cache_creation_input_tokens": 146095,
+            "output_tokens": 18502,
+            "cost_usd": 1.888313
+          },
+          "baseline": {
+            "passed": 5,
+            "failed": 2,
+            "errored": 2,
+            "total": 9,
+            "pass_rate": 0.714286,
+            "avg_run_seconds": 91.6,
+            "measured": {
+              "input_tokens": 30258,
+              "cache_read_input_tokens": 1817998,
+              "cache_creation_input_tokens": 143749,
+              "output_tokens": 18806,
+              "cost_usd": 1.790612
+            }
+          },
+          "baseline_delta": {
+            "rate": 0.174603,
+            "avg_run_seconds": -40.7,
+            "input_tokens": 10595,
+            "output_tokens": -304,
+            "cost_usd": 0.097701
+          }
+        },
         "openai/gpt-5.4": {
           "provider": "openai",
           "display": "GPT-5.4",
@@ -342,6 +451,19 @@
       "skills": {
         "actions-reusable-workflows": {
           "triggers": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 14,
+              "failed": 0,
+              "total": 14,
+              "pass_rate": 1,
+              "avg_run_seconds": 14.8,
+              "estimate": {
+                "input_tokens": 35952,
+                "input_cost_usd": 0.35952
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -399,6 +521,19 @@
                 "cost_usd": 0
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 11,
+              "failed": 3,
+              "total": 14,
+              "pass_rate": 0.785714,
+              "avg_run_seconds": 9.2,
+              "estimate": {
+                "input_tokens": 35952,
+                "input_cost_usd": 0.107856
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -439,6 +574,47 @@
             }
           },
           "evals": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1,
+              "avg_run_seconds": 60.7,
+              "estimate": {
+                "input_tokens": 7812,
+                "input_cost_usd": 0.07812
+              },
+              "measured": {
+                "input_tokens": 12582,
+                "cache_read_input_tokens": 469576,
+                "cache_creation_input_tokens": 43983,
+                "output_tokens": 8813,
+                "cost_usd": 1.917593
+              },
+              "baseline": {
+                "passed": 2,
+                "failed": 1,
+                "total": 3,
+                "pass_rate": 0.666667,
+                "avg_run_seconds": 228.6,
+                "measured": {
+                  "input_tokens": 12610,
+                  "cache_read_input_tokens": 1676765,
+                  "cache_creation_input_tokens": 136178,
+                  "output_tokens": 31049,
+                  "cost_usd": 6.080777
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.333333,
+                "avg_run_seconds": -167.9,
+                "input_tokens": -28,
+                "output_tokens": -22236,
+                "cost_usd": -4.163184
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -583,6 +759,48 @@
                 "cost_usd": 0.174712
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1,
+              "avg_run_seconds": 37.6,
+              "estimate": {
+                "input_tokens": 7812,
+                "input_cost_usd": 0.023436
+              },
+              "measured": {
+                "input_tokens": 13533,
+                "cache_read_input_tokens": 614037,
+                "cache_creation_input_tokens": 51340,
+                "output_tokens": 7024,
+                "cost_usd": 0.640092
+              },
+              "baseline": {
+                "passed": 0,
+                "failed": 1,
+                "errored": 2,
+                "total": 3,
+                "pass_rate": 0,
+                "avg_run_seconds": 126.6,
+                "measured": {
+                  "input_tokens": 4280,
+                  "cache_read_input_tokens": 156417,
+                  "cache_creation_input_tokens": 13847,
+                  "output_tokens": 2810,
+                  "cost_usd": 0.185632
+                }
+              },
+              "baseline_delta": {
+                "rate": 1,
+                "avg_run_seconds": -89,
+                "input_tokens": 9253,
+                "output_tokens": 4214,
+                "cost_usd": 0.45446
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -679,6 +897,19 @@
         },
         "actions-security": {
           "triggers": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 14,
+              "failed": 0,
+              "total": 14,
+              "pass_rate": 1,
+              "avg_run_seconds": 13.7,
+              "estimate": {
+                "input_tokens": 27376,
+                "input_cost_usd": 0.27376
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -736,6 +967,19 @@
                 "cost_usd": 0
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 10,
+              "failed": 4,
+              "total": 14,
+              "pass_rate": 0.714286,
+              "avg_run_seconds": 9.7,
+              "estimate": {
+                "input_tokens": 27376,
+                "input_cost_usd": 0.082128
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -770,6 +1014,47 @@
             }
           },
           "evals": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 52.4,
+              "estimate": {
+                "input_tokens": 3992,
+                "input_cost_usd": 0.03992
+              },
+              "measured": {
+                "input_tokens": 8513,
+                "cache_read_input_tokens": 328219,
+                "cache_creation_input_tokens": 25743,
+                "output_tokens": 4078,
+                "cost_usd": 1.13338
+              },
+              "baseline": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1,
+                "avg_run_seconds": 55.7,
+                "measured": {
+                  "input_tokens": 8061,
+                  "cache_read_input_tokens": 314458,
+                  "cache_creation_input_tokens": 22806,
+                  "output_tokens": 4903,
+                  "cost_usd": 1.097629
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": -3.3,
+                "input_tokens": 452,
+                "output_tokens": -825,
+                "cost_usd": 0.035751
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -914,6 +1199,47 @@
                 "cost_usd": 0.008764
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 31.4,
+              "estimate": {
+                "input_tokens": 3992,
+                "input_cost_usd": 0.011976
+              },
+              "measured": {
+                "input_tokens": 9019,
+                "cache_read_input_tokens": 429387,
+                "cache_creation_input_tokens": 30486,
+                "output_tokens": 3197,
+                "cost_usd": 0.388005
+              },
+              "baseline": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1,
+                "avg_run_seconds": 34.4,
+                "measured": {
+                  "input_tokens": 8566,
+                  "cache_read_input_tokens": 417563,
+                  "cache_creation_input_tokens": 26661,
+                  "output_tokens": 3169,
+                  "cost_usd": 0.359759
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": -3,
+                "input_tokens": 453,
+                "output_tokens": 28,
+                "cost_usd": 0.028246
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -1010,6 +1336,19 @@
         },
         "actions-style": {
           "triggers": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 13,
+              "failed": 1,
+              "total": 14,
+              "pass_rate": 0.928571,
+              "avg_run_seconds": 19,
+              "estimate": {
+                "input_tokens": 28851,
+                "input_cost_usd": 0.28851
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -1067,6 +1406,19 @@
                 "cost_usd": 0
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 8,
+              "failed": 6,
+              "total": 14,
+              "pass_rate": 0.571429,
+              "avg_run_seconds": 11.2,
+              "estimate": {
+                "input_tokens": 28851,
+                "input_cost_usd": 0.086553
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -1101,6 +1453,47 @@
             }
           },
           "evals": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 46.2,
+              "estimate": {
+                "input_tokens": 4251,
+                "input_cost_usd": 0.04251
+              },
+              "measured": {
+                "input_tokens": 8363,
+                "cache_read_input_tokens": 214333,
+                "cache_creation_input_tokens": 24996,
+                "output_tokens": 3670,
+                "cost_usd": 0.982696
+              },
+              "baseline": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1,
+                "avg_run_seconds": 26.9,
+                "measured": {
+                  "input_tokens": 7916,
+                  "cache_read_input_tokens": 100264,
+                  "cache_creation_input_tokens": 18815,
+                  "output_tokens": 2346,
+                  "cost_usd": 0.674342
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": 19.3,
+                "input_tokens": 447,
+                "output_tokens": 1324,
+                "cost_usd": 0.308354
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -1245,6 +1638,47 @@
                 "cost_usd": 0.054864
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 35.4,
+              "estimate": {
+                "input_tokens": 4251,
+                "input_cost_usd": 0.012753
+              },
+              "measured": {
+                "input_tokens": 9002,
+                "cache_read_input_tokens": 396606,
+                "cache_creation_input_tokens": 31886,
+                "output_tokens": 4003,
+                "cost_usd": 0.398661
+              },
+              "baseline": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1,
+                "avg_run_seconds": 35.1,
+                "measured": {
+                  "input_tokens": 8568,
+                  "cache_read_input_tokens": 456943,
+                  "cache_creation_input_tokens": 27560,
+                  "output_tokens": 4235,
+                  "cost_usd": 0.39298
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": 0.3,
+                "input_tokens": 434,
+                "output_tokens": -232,
+                "cost_usd": 0.005681
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -1341,6 +1775,19 @@
         },
         "actions-validate": {
           "triggers": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 13,
+              "failed": 0,
+              "total": 13,
+              "pass_rate": 1,
+              "avg_run_seconds": 12.6,
+              "estimate": {
+                "input_tokens": 16159,
+                "input_cost_usd": 0.16159
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -1398,6 +1845,19 @@
                 "cost_usd": 0
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 9,
+              "failed": 4,
+              "total": 13,
+              "pass_rate": 0.692308,
+              "avg_run_seconds": 9,
+              "estimate": {
+                "input_tokens": 16159,
+                "input_cost_usd": 0.048477
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -1438,6 +1898,47 @@
             }
           },
           "evals": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 1,
+              "failed": 1,
+              "total": 2,
+              "pass_rate": 0.5,
+              "avg_run_seconds": 72.4,
+              "estimate": {
+                "input_tokens": 2539,
+                "input_cost_usd": 0.02539
+              },
+              "measured": {
+                "input_tokens": 8571,
+                "cache_read_input_tokens": 352101,
+                "cache_creation_input_tokens": 26397,
+                "output_tokens": 4755,
+                "cost_usd": 1.204738
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 1,
+                "total": 2,
+                "pass_rate": 0.5,
+                "avg_run_seconds": 127.5,
+                "measured": {
+                  "input_tokens": 8206,
+                  "cache_read_input_tokens": 562879,
+                  "cache_creation_input_tokens": 31397,
+                  "output_tokens": 11087,
+                  "cost_usd": 1.828471
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": -55.1,
+                "input_tokens": 365,
+                "output_tokens": -6332,
+                "cost_usd": -0.623733
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -1582,6 +2083,47 @@
                 "cost_usd": 0.042384
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 1,
+              "failed": 1,
+              "total": 2,
+              "pass_rate": 0.5,
+              "avg_run_seconds": 105.8,
+              "estimate": {
+                "input_tokens": 2539,
+                "input_cost_usd": 0.007617
+              },
+              "measured": {
+                "input_tokens": 9299,
+                "cache_read_input_tokens": 579828,
+                "cache_creation_input_tokens": 32383,
+                "output_tokens": 4278,
+                "cost_usd": 0.461555
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 1,
+                "total": 2,
+                "pass_rate": 0.5,
+                "avg_run_seconds": 153,
+                "measured": {
+                  "input_tokens": 8844,
+                  "cache_read_input_tokens": 787075,
+                  "cache_creation_input_tokens": 75681,
+                  "output_tokens": 8592,
+                  "cost_usd": 0.852241
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": -47.2,
+                "input_tokens": 455,
+                "output_tokens": -4314,
+                "cost_usd": -0.390686
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -1678,2528 +2220,21 @@
         }
       }
     },
-    "dotnet": {
-      "triggers": {
-        "anthropic/claude-haiku-4-5": {
-          "provider": "anthropic",
-          "display": "Claude Haiku 4.5",
-          "passed": 45,
-          "failed": 51,
-          "total": 96,
-          "pass_rate": 0.46875,
-          "avg_run_seconds": 7.5,
-          "estimate": {
-            "input_tokens": 133625,
-            "input_cost_usd": 0.133625
-          }
-        },
-        "anthropic/claude-opus-4-8": {
-          "provider": "anthropic",
-          "display": "Claude Opus 4.8",
-          "passed": 64,
-          "failed": 32,
-          "total": 96,
-          "pass_rate": 0.666667,
-          "avg_run_seconds": 12.7,
-          "estimate": {
-            "input_tokens": 186312,
-            "input_cost_usd": 0.93156
-          }
-        },
-        "anthropic/claude-sonnet-4-6": {
-          "provider": "anthropic",
-          "display": "Claude Sonnet 4.6",
-          "passed": 62,
-          "failed": 34,
-          "total": 96,
-          "pass_rate": 0.645833,
-          "avg_run_seconds": 11.9,
-          "estimate": {
-            "input_tokens": 133625,
-            "input_cost_usd": 0.400875
-          }
-        },
-        "openai/gpt-5.4": {
-          "provider": "openai",
-          "display": "GPT-5.4",
-          "passed": 90,
-          "failed": 6,
-          "total": 96,
-          "pass_rate": 0.9375,
-          "avg_run_seconds": 45.8,
-          "estimate": {
-            "input_tokens": 113739,
-            "input_cost_usd": 0.284361
-          }
-        },
-        "openai/gpt-5.5": {
-          "provider": "openai",
-          "display": "GPT-5.5",
-          "passed": 89,
-          "failed": 7,
-          "total": 96,
-          "pass_rate": 0.927083,
-          "avg_run_seconds": 40.3,
-          "estimate": {
-            "input_tokens": 113739,
-            "input_cost_usd": 0.568695
-          }
-        }
-      },
-      "evals": {
-        "anthropic/claude-haiku-4-5": {
-          "provider": "anthropic",
-          "display": "Claude Haiku 4.5",
-          "passed": 14,
-          "failed": 2,
-          "total": 16,
-          "pass_rate": 0.875,
-          "avg_run_seconds": 20.9,
-          "estimate": {
-            "input_tokens": 22713,
-            "input_cost_usd": 0.022713
-          },
-          "measured": {
-            "input_tokens": 471,
-            "cache_read_input_tokens": 1552840,
-            "cache_creation_input_tokens": 276519,
-            "output_tokens": 19303,
-            "cost_usd": 0.815452
-          },
-          "baseline": {
-            "passed": 12,
-            "failed": 4,
-            "total": 16,
-            "pass_rate": 0.75,
-            "avg_run_seconds": 17.3,
-            "measured": {
-              "input_tokens": 429,
-              "cache_read_input_tokens": 1641136,
-              "cache_creation_input_tokens": 264267,
-              "output_tokens": 18103,
-              "cost_usd": 0.793662
-            }
-          },
-          "previous_delta": {
-            "rate": 0.375,
-            "avg_run_seconds": -11.2,
-            "input_tokens": 401,
-            "output_tokens": 16346,
-            "cost_usd": 0.704179
-          },
-          "baseline_delta": {
-            "rate": 0.125,
-            "avg_run_seconds": 3.6,
-            "input_tokens": 42,
-            "output_tokens": 1200,
-            "cost_usd": 0.02179
-          }
-        },
-        "anthropic/claude-opus-4-8": {
-          "provider": "anthropic",
-          "display": "Claude Opus 4.8",
-          "passed": 16,
-          "failed": 0,
-          "total": 16,
-          "pass_rate": 1,
-          "avg_run_seconds": 60.3,
-          "estimate": {
-            "input_tokens": 31675,
-            "input_cost_usd": 0.158375
-          },
-          "measured": {
-            "input_tokens": 45495,
-            "cache_read_input_tokens": 1998184,
-            "cache_creation_input_tokens": 197165,
-            "output_tokens": 63510,
-            "cost_usd": 4.796031
-          },
-          "baseline": {
-            "passed": 14,
-            "failed": 2,
-            "total": 16,
-            "pass_rate": 0.875,
-            "avg_run_seconds": 47.7,
-            "measured": {
-              "input_tokens": 41095,
-              "cache_read_input_tokens": 2170435,
-              "cache_creation_input_tokens": 139103,
-              "output_tokens": 41943,
-              "cost_usd": 3.740387
-            }
-          },
-          "previous_delta": {
-            "rate": 0,
-            "avg_run_seconds": -42,
-            "input_tokens": 39588,
-            "output_tokens": 52489,
-            "cost_usd": 4.019697
-          },
-          "baseline_delta": {
-            "rate": 0.125,
-            "avg_run_seconds": 12.6,
-            "input_tokens": 4400,
-            "output_tokens": 21567,
-            "cost_usd": 1.055644
-          }
-        },
-        "anthropic/claude-sonnet-4-6": {
-          "provider": "anthropic",
-          "display": "Claude Sonnet 4.6",
-          "passed": 16,
-          "failed": 0,
-          "total": 16,
-          "pass_rate": 1,
-          "avg_run_seconds": 31,
-          "estimate": {
-            "input_tokens": 22713,
-            "input_cost_usd": 0.068139
-          },
-          "measured": {
-            "input_tokens": 840,
-            "cache_read_input_tokens": 1799770,
-            "cache_creation_input_tokens": 161669,
-            "output_tokens": 20821,
-            "cost_usd": 1.878144
-          },
-          "baseline": {
-            "passed": 16,
-            "failed": 0,
-            "total": 16,
-            "pass_rate": 1,
-            "avg_run_seconds": 42.1,
-            "measured": {
-              "input_tokens": 116,
-              "cache_read_input_tokens": 1875846,
-              "cache_creation_input_tokens": 156608,
-              "output_tokens": 30633,
-              "cost_usd": 2.024172
-            }
-          },
-          "previous_delta": {
-            "rate": 0,
-            "avg_run_seconds": -16.9,
-            "input_tokens": 823,
-            "output_tokens": 16841,
-            "cost_usd": 1.591922
-          },
-          "baseline_delta": {
-            "rate": 0,
-            "avg_run_seconds": -11.1,
-            "input_tokens": 724,
-            "output_tokens": -9812,
-            "cost_usd": -0.146028
-          }
-        },
-        "openai/gpt-5.4": {
-          "provider": "openai",
-          "display": "GPT-5.4",
-          "passed": 16,
-          "failed": 0,
-          "total": 16,
-          "pass_rate": 1,
-          "avg_run_seconds": 39.5,
-          "estimate": {
-            "input_tokens": 19322,
-            "input_cost_usd": 0.048308
-          },
-          "measured": {
-            "input_tokens": 248361,
-            "cache_read_input_tokens": 1401984,
-            "output_tokens": 24926,
-            "cost_usd": 4.499754
-          },
-          "baseline": {
-            "passed": 13,
-            "failed": 3,
-            "total": 16,
-            "pass_rate": 0.8125,
-            "avg_run_seconds": 40.6,
-            "measured": {
-              "input_tokens": 241727,
-              "cache_read_input_tokens": 1431552,
-              "output_tokens": 25357,
-              "cost_usd": 4.563555
-            }
-          },
-          "previous_delta": {
-            "rate": 0,
-            "avg_run_seconds": -23.6,
-            "input_tokens": 205875,
-            "output_tokens": 20370,
-            "cost_usd": 3.773839
-          },
-          "baseline_delta": {
-            "rate": 0.1875,
-            "avg_run_seconds": -1.1,
-            "input_tokens": 6634,
-            "output_tokens": -431,
-            "cost_usd": -0.063801
-          }
-        },
-        "openai/gpt-5.5": {
-          "provider": "openai",
-          "display": "GPT-5.5",
-          "passed": 16,
-          "failed": 0,
-          "total": 16,
-          "pass_rate": 1,
-          "avg_run_seconds": 47.1,
-          "estimate": {
-            "input_tokens": 19322,
-            "input_cost_usd": 0.09661
-          },
-          "measured": {
-            "input_tokens": 333788,
-            "cache_read_input_tokens": 1698560,
-            "output_tokens": 28073,
-            "cost_usd": 11.00393
-          },
-          "baseline": {
-            "passed": 13,
-            "failed": 3,
-            "total": 16,
-            "pass_rate": 0.8125,
-            "avg_run_seconds": 47.7,
-            "measured": {
-              "input_tokens": 294744,
-              "cache_read_input_tokens": 1804928,
-              "output_tokens": 28710,
-              "cost_usd": 11.35966
-            }
-          },
-          "previous_delta": {
-            "rate": 0,
-            "avg_run_seconds": -39,
-            "input_tokens": 265165,
-            "output_tokens": 20615,
-            "cost_usd": 8.815955
-          },
-          "baseline_delta": {
-            "rate": 0.1875,
-            "avg_run_seconds": -0.6,
-            "input_tokens": 39044,
-            "output_tokens": -637,
-            "cost_usd": -0.35573
-          }
-        }
-      },
-      "skills": {
-        "dotnet-data": {
-          "triggers": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 5,
-              "failed": 7,
-              "total": 12,
-              "pass_rate": 0.416667,
-              "avg_run_seconds": 7.1,
-              "estimate": {
-                "input_tokens": 15900,
-                "input_cost_usd": 0.0159
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 10,
-              "failed": 2,
-              "total": 12,
-              "pass_rate": 0.833333,
-              "avg_run_seconds": 12.9,
-              "estimate": {
-                "input_tokens": 22149,
-                "input_cost_usd": 0.110745
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 10,
-              "failed": 2,
-              "total": 12,
-              "pass_rate": 0.833333,
-              "avg_run_seconds": 16.2,
-              "estimate": {
-                "input_tokens": 15900,
-                "input_cost_usd": 0.0477
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 12,
-              "failed": 0,
-              "total": 12,
-              "pass_rate": 1,
-              "avg_run_seconds": 40.4,
-              "estimate": {
-                "input_tokens": 13843,
-                "input_cost_usd": 0.034605
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 11,
-              "failed": 1,
-              "total": 12,
-              "pass_rate": 0.916667,
-              "avg_run_seconds": 32,
-              "estimate": {
-                "input_tokens": 13843,
-                "input_cost_usd": 0.069215
-              }
-            }
-          },
-          "evals": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 14.4,
-              "estimate": {
-                "input_tokens": 2717,
-                "input_cost_usd": 0.002717
-              },
-              "measured": {
-                "input_tokens": 48,
-                "cache_read_input_tokens": 160183,
-                "cache_creation_input_tokens": 32377,
-                "output_tokens": 1837,
-                "cost_usd": 0.091302
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 13.9,
-                "measured": {
-                  "input_tokens": 48,
-                  "cache_read_input_tokens": 159685,
-                  "cache_creation_input_tokens": 31760,
-                  "output_tokens": 1579,
-                  "cost_usd": 0.088719
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 0.5,
-                "input_tokens": 0,
-                "output_tokens": 258,
-                "cost_usd": 0.002583
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 37.3,
-              "estimate": {
-                "input_tokens": 3778,
-                "input_cost_usd": 0.01889
-              },
-              "measured": {
-                "input_tokens": 5681,
-                "cache_read_input_tokens": 210227,
-                "cache_creation_input_tokens": 20265,
-                "output_tokens": 4713,
-                "cost_usd": 0.455265
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 31.3,
-                "measured": {
-                  "input_tokens": 5022,
-                  "cache_read_input_tokens": 242999,
-                  "cache_creation_input_tokens": 14709,
-                  "output_tokens": 2761,
-                  "cost_usd": 0.364011
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 6,
-                "input_tokens": 659,
-                "output_tokens": 1952,
-                "cost_usd": 0.091254
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 20,
-              "estimate": {
-                "input_tokens": 2717,
-                "input_cost_usd": 0.008151
-              },
-              "measured": {
-                "input_tokens": 16,
-                "cache_read_input_tokens": 224895,
-                "cache_creation_input_tokens": 19389,
-                "output_tokens": 1551,
-                "cost_usd": 0.208398
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 23.2,
-                "measured": {
-                  "input_tokens": 12,
-                  "cache_read_input_tokens": 169766,
-                  "cache_creation_input_tokens": 16811,
-                  "output_tokens": 1786,
-                  "cost_usd": 0.179899
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": -3.2,
-                "input_tokens": 4,
-                "output_tokens": -235,
-                "cost_usd": 0.028499
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 27.2,
-              "estimate": {
-                "input_tokens": 2364,
-                "input_cost_usd": 0.005911
-              },
-              "measured": {
-                "input_tokens": 22914,
-                "cache_read_input_tokens": 132992,
-                "output_tokens": 2113,
-                "cost_usd": 0.42146
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 27.2,
-                "measured": {
-                  "input_tokens": 15598,
-                  "cache_read_input_tokens": 118784,
-                  "output_tokens": 2039,
-                  "cost_usd": 0.366541
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 0,
-                "input_tokens": 7316,
-                "output_tokens": 74,
-                "cost_usd": 0.054919
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 42.6,
-              "estimate": {
-                "input_tokens": 2364,
-                "input_cost_usd": 0.01182
-              },
-              "measured": {
-                "input_tokens": 37388,
-                "cache_read_input_tokens": 183936,
-                "output_tokens": 3347,
-                "cost_usd": 1.20703
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 37.9,
-                "measured": {
-                  "input_tokens": 22790,
-                  "cache_read_input_tokens": 200704,
-                  "output_tokens": 2795,
-                  "cost_usd": 1.20132
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 4.7,
-                "input_tokens": 14598,
-                "output_tokens": 552,
-                "cost_usd": 0.00571
-              }
-            }
-          }
-        },
-        "dotnet-docs": {
-          "triggers": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 6,
-              "failed": 6,
-              "total": 12,
-              "pass_rate": 0.5,
-              "avg_run_seconds": 7.6,
-              "estimate": {
-                "input_tokens": 11075,
-                "input_cost_usd": 0.011075
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 7,
-              "failed": 5,
-              "total": 12,
-              "pass_rate": 0.583333,
-              "avg_run_seconds": 10.6,
-              "estimate": {
-                "input_tokens": 14975,
-                "input_cost_usd": 0.074875
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 8,
-              "failed": 4,
-              "total": 12,
-              "pass_rate": 0.666667,
-              "avg_run_seconds": 14.4,
-              "estimate": {
-                "input_tokens": 11075,
-                "input_cost_usd": 0.033225
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 12,
-              "failed": 0,
-              "total": 12,
-              "pass_rate": 1,
-              "avg_run_seconds": 53.2,
-              "estimate": {
-                "input_tokens": 9624,
-                "input_cost_usd": 0.024063
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 11,
-              "failed": 1,
-              "total": 12,
-              "pass_rate": 0.916667,
-              "avg_run_seconds": 39.2,
-              "estimate": {
-                "input_tokens": 9624,
-                "input_cost_usd": 0.04812
-              }
-            }
-          },
-          "evals": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 15.9,
-              "estimate": {
-                "input_tokens": 1882,
-                "input_cost_usd": 0.001882
-              },
-              "measured": {
-                "input_tokens": 62,
-                "cache_read_input_tokens": 208993,
-                "cache_creation_input_tokens": 32836,
-                "output_tokens": 1969,
-                "cost_usd": 0.097699
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 18.5,
-                "measured": {
-                  "input_tokens": 55,
-                  "cache_read_input_tokens": 208432,
-                  "cache_creation_input_tokens": 32507,
-                  "output_tokens": 2081,
-                  "cost_usd": 0.097528
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": -2.6,
-                "input_tokens": 7,
-                "output_tokens": -112,
-                "cost_usd": 0.000171
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 28.7,
-              "estimate": {
-                "input_tokens": 2546,
-                "input_cost_usd": 0.01273
-              },
-              "measured": {
-                "input_tokens": 5460,
-                "cache_read_input_tokens": 184161,
-                "cache_creation_input_tokens": 17388,
-                "output_tokens": 3370,
-                "cost_usd": 0.378717
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 27.5,
-                "measured": {
-                  "input_tokens": 5020,
-                  "cache_read_input_tokens": 220812,
-                  "cache_creation_input_tokens": 14195,
-                  "output_tokens": 2664,
-                  "cost_usd": 0.345297
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 1.2,
-                "input_tokens": 440,
-                "output_tokens": 706,
-                "cost_usd": 0.03342
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 18.6,
-              "estimate": {
-                "input_tokens": 1882,
-                "input_cost_usd": 0.005646
-              },
-              "measured": {
-                "input_tokens": 16,
-                "cache_read_input_tokens": 221472,
-                "cache_creation_input_tokens": 18348,
-                "output_tokens": 1312,
-                "cost_usd": 0.197469
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 21.4,
-                "measured": {
-                  "input_tokens": 12,
-                  "cache_read_input_tokens": 169612,
-                  "cache_creation_input_tokens": 16565,
-                  "output_tokens": 1565,
-                  "cost_usd": 0.17502
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": -2.8,
-                "input_tokens": 4,
-                "output_tokens": -253,
-                "cost_usd": 0.022449
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 34,
-              "estimate": {
-                "input_tokens": 1638,
-                "input_cost_usd": 0.004095
-              },
-              "measured": {
-                "input_tokens": 37984,
-                "cache_read_input_tokens": 134912,
-                "output_tokens": 2032,
-                "cost_usd": 0.462721
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 25.5,
-                "measured": {
-                  "input_tokens": 23418,
-                  "cache_read_input_tokens": 126848,
-                  "output_tokens": 1785,
-                  "cost_usd": 0.40244
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 8.5,
-                "input_tokens": 14566,
-                "output_tokens": 247,
-                "cost_usd": 0.060281
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 36.9,
-              "estimate": {
-                "input_tokens": 1638,
-                "input_cost_usd": 0.00819
-              },
-              "measured": {
-                "input_tokens": 40391,
-                "cache_read_input_tokens": 152320,
-                "output_tokens": 2778,
-                "cost_usd": 1.046895
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 35.8,
-                "measured": {
-                  "input_tokens": 23274,
-                  "cache_read_input_tokens": 179840,
-                  "output_tokens": 2535,
-                  "cost_usd": 1.09162
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 1.1,
-                "input_tokens": 17117,
-                "output_tokens": 243,
-                "cost_usd": -0.044725
-              }
-            }
-          }
-        },
-        "dotnet-perf": {
-          "triggers": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 5,
-              "failed": 7,
-              "total": 12,
-              "pass_rate": 0.416667,
-              "avg_run_seconds": 7,
-              "estimate": {
-                "input_tokens": 16387,
-                "input_cost_usd": 0.016387
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 6,
-              "failed": 6,
-              "total": 12,
-              "pass_rate": 0.5,
-              "avg_run_seconds": 11.5,
-              "estimate": {
-                "input_tokens": 22937,
-                "input_cost_usd": 0.114685
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 6,
-              "failed": 6,
-              "total": 12,
-              "pass_rate": 0.5,
-              "avg_run_seconds": 11,
-              "estimate": {
-                "input_tokens": 16387,
-                "input_cost_usd": 0.049161
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 9,
-              "failed": 3,
-              "total": 12,
-              "pass_rate": 0.75,
-              "avg_run_seconds": 61.9,
-              "estimate": {
-                "input_tokens": 13994,
-                "input_cost_usd": 0.034986
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 10,
-              "failed": 2,
-              "total": 12,
-              "pass_rate": 0.833333,
-              "avg_run_seconds": 47.4,
-              "estimate": {
-                "input_tokens": 13994,
-                "input_cost_usd": 0.06997
-              }
-            }
-          },
-          "evals": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 14.7,
-              "estimate": {
-                "input_tokens": 2760,
-                "input_cost_usd": 0.00276
-              },
-              "measured": {
-                "input_tokens": 48,
-                "cache_read_input_tokens": 160420,
-                "cache_creation_input_tokens": 32382,
-                "output_tokens": 1414,
-                "cost_usd": 0.089162
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 12.6,
-                "measured": {
-                  "input_tokens": 48,
-                  "cache_read_input_tokens": 159459,
-                  "cache_creation_input_tokens": 31528,
-                  "output_tokens": 1380,
-                  "cost_usd": 0.087188
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 2.1,
-                "input_tokens": 0,
-                "output_tokens": 34,
-                "cost_usd": 0.001974
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 39.6,
-              "estimate": {
-                "input_tokens": 3870,
-                "input_cost_usd": 0.01935
-              },
-              "measured": {
-                "input_tokens": 5637,
-                "cache_read_input_tokens": 183783,
-                "cache_creation_input_tokens": 18420,
-                "output_tokens": 3032,
-                "cost_usd": 0.381314
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 32.3,
-                "measured": {
-                  "input_tokens": 5151,
-                  "cache_read_input_tokens": 244027,
-                  "cache_creation_input_tokens": 14616,
-                  "output_tokens": 2798,
-                  "cost_usd": 0.365116
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 7.3,
-                "input_tokens": 486,
-                "output_tokens": 234,
-                "cost_usd": 0.016198
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 20.6,
-              "estimate": {
-                "input_tokens": 2760,
-                "input_cost_usd": 0.00828
-              },
-              "measured": {
-                "input_tokens": 14,
-                "cache_read_input_tokens": 198075,
-                "cache_creation_input_tokens": 18072,
-                "output_tokens": 1356,
-                "cost_usd": 0.189475
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 18.6,
-                "measured": {
-                  "input_tokens": 13,
-                  "cache_read_input_tokens": 193329,
-                  "cache_creation_input_tokens": 16397,
-                  "output_tokens": 1200,
-                  "cost_usd": 0.175658
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 2,
-                "input_tokens": 1,
-                "output_tokens": 156,
-                "cost_usd": 0.013817
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 28.8,
-              "estimate": {
-                "input_tokens": 2358,
-                "input_cost_usd": 0.005896
-              },
-              "measured": {
-                "input_tokens": 31215,
-                "cache_read_input_tokens": 145664,
-                "output_tokens": 2276,
-                "cost_usd": 0.476338
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 30,
-                "measured": {
-                  "input_tokens": 26118,
-                  "cache_read_input_tokens": 163968,
-                  "output_tokens": 2257,
-                  "cost_usd": 0.50907
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": -1.2,
-                "input_tokens": 5097,
-                "output_tokens": 19,
-                "cost_usd": -0.032732
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 28.3,
-              "estimate": {
-                "input_tokens": 2358,
-                "input_cost_usd": 0.01179
-              },
-              "measured": {
-                "input_tokens": 40800,
-                "cache_read_input_tokens": 152832,
-                "output_tokens": 2146,
-                "cost_usd": 1.03254
-              },
-              "baseline": {
-                "passed": 1,
-                "failed": 1,
-                "total": 2,
-                "pass_rate": 0.5,
-                "avg_run_seconds": 32.1,
-                "measured": {
-                  "input_tokens": 16095,
-                  "cache_read_input_tokens": 168192,
-                  "output_tokens": 2347,
-                  "cost_usd": 0.991845
-                }
-              },
-              "baseline_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": -3.8,
-                "input_tokens": 24705,
-                "output_tokens": -201,
-                "cost_usd": 0.040695
-              }
-            }
-          }
-        },
-        "dotnet-project": {
-          "triggers": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 7,
-              "failed": 5,
-              "total": 12,
-              "pass_rate": 0.583333,
-              "avg_run_seconds": 7.8,
-              "estimate": {
-                "input_tokens": 17882,
-                "input_cost_usd": 0.017882
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 11,
-              "failed": 1,
-              "total": 12,
-              "pass_rate": 0.916667,
-              "avg_run_seconds": 13.4,
-              "estimate": {
-                "input_tokens": 25183,
-                "input_cost_usd": 0.125915
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 12,
-              "failed": 0,
-              "total": 12,
-              "pass_rate": 1,
-              "avg_run_seconds": 7.1,
-              "estimate": {
-                "input_tokens": 17882,
-                "input_cost_usd": 0.053646
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 11,
-              "failed": 1,
-              "total": 12,
-              "pass_rate": 0.916667,
-              "avg_run_seconds": 36.5,
-              "estimate": {
-                "input_tokens": 15197,
-                "input_cost_usd": 0.037993
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 12,
-              "failed": 0,
-              "total": 12,
-              "pass_rate": 1,
-              "avg_run_seconds": 37.8,
-              "estimate": {
-                "input_tokens": 15197,
-                "input_cost_usd": 0.075985
-              }
-            }
-          },
-          "evals": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 1,
-              "failed": 1,
-              "total": 2,
-              "pass_rate": 0.5,
-              "avg_run_seconds": 17.5,
-              "estimate": {
-                "input_tokens": 3033,
-                "input_cost_usd": 0.003033
-              },
-              "measured": {
-                "input_tokens": 71,
-                "cache_read_input_tokens": 259319,
-                "cache_creation_input_tokens": 33253,
-                "output_tokens": 2118,
-                "cost_usd": 0.104354
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 18.8,
-                "measured": {
-                  "input_tokens": 53,
-                  "cache_read_input_tokens": 209224,
-                  "cache_creation_input_tokens": 32319,
-                  "output_tokens": 1955,
-                  "cost_usd": 0.096623
-                }
-              },
-              "baseline_delta": {
-                "rate": -0.5,
-                "avg_run_seconds": -1.3,
-                "input_tokens": 18,
-                "output_tokens": 163,
-                "cost_usd": 0.007731
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 47.6,
-              "estimate": {
-                "input_tokens": 4270,
-                "input_cost_usd": 0.02135
-              },
-              "measured": {
-                "input_tokens": 5684,
-                "cache_read_input_tokens": 247098,
-                "cache_creation_input_tokens": 23357,
-                "output_tokens": 6952,
-                "cost_usd": 0.560574
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 43.4,
-                "measured": {
-                  "input_tokens": 5020,
-                  "cache_read_input_tokens": 226066,
-                  "cache_creation_input_tokens": 15584,
-                  "output_tokens": 3621,
-                  "cost_usd": 0.385723
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 4.2,
-                "input_tokens": 664,
-                "output_tokens": 3331,
-                "cost_usd": 0.174851
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 33.6,
-              "estimate": {
-                "input_tokens": 3033,
-                "input_cost_usd": 0.009099
-              },
-              "measured": {
-                "input_tokens": 12,
-                "cache_read_input_tokens": 174916,
-                "cache_creation_input_tokens": 18034,
-                "output_tokens": 2095,
-                "cost_usd": 0.215869
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 41.6,
-                "measured": {
-                  "input_tokens": 13,
-                  "cache_read_input_tokens": 197430,
-                  "cache_creation_input_tokens": 17662,
-                  "output_tokens": 2268,
-                  "cost_usd": 0.226467
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": -8,
-                "input_tokens": -1,
-                "output_tokens": -173,
-                "cost_usd": -0.010598
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 37.2,
-              "estimate": {
-                "input_tokens": 2575,
-                "input_cost_usd": 0.006438
-              },
-              "measured": {
-                "input_tokens": 39255,
-                "cache_read_input_tokens": 145152,
-                "output_tokens": 3131,
-                "cost_usd": 0.507982
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 34.9,
-                "measured": {
-                  "input_tokens": 32424,
-                  "cache_read_input_tokens": 140544,
-                  "output_tokens": 2908,
-                  "cost_usd": 0.47604
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 2.3,
-                "input_tokens": 6831,
-                "output_tokens": 223,
-                "cost_usd": 0.031942
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 45,
-              "estimate": {
-                "input_tokens": 2575,
-                "input_cost_usd": 0.012875
-              },
-              "measured": {
-                "input_tokens": 37034,
-                "cache_read_input_tokens": 202240,
-                "output_tokens": 3830,
-                "cost_usd": 1.31127
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 35.5,
-                "measured": {
-                  "input_tokens": 19342,
-                  "cache_read_input_tokens": 204288,
-                  "output_tokens": 2788,
-                  "cost_usd": 1.20179
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 9.5,
-                "input_tokens": 17692,
-                "output_tokens": 1042,
-                "cost_usd": 0.10948
-              }
-            }
-          }
-        },
-        "dotnet-release": {
-          "triggers": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 7,
-              "failed": 5,
-              "total": 12,
-              "pass_rate": 0.583333,
-              "avg_run_seconds": 8,
-              "estimate": {
-                "input_tokens": 15949,
-                "input_cost_usd": 0.015949
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 10,
-              "failed": 2,
-              "total": 12,
-              "pass_rate": 0.833333,
-              "avg_run_seconds": 11.7,
-              "estimate": {
-                "input_tokens": 22459,
-                "input_cost_usd": 0.112295
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 11,
-              "failed": 1,
-              "total": 12,
-              "pass_rate": 0.916667,
-              "avg_run_seconds": 10.7,
-              "estimate": {
-                "input_tokens": 15949,
-                "input_cost_usd": 0.047847
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 12,
-              "failed": 0,
-              "total": 12,
-              "pass_rate": 1,
-              "avg_run_seconds": 34.6,
-              "estimate": {
-                "input_tokens": 13133,
-                "input_cost_usd": 0.032836
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 12,
-              "failed": 0,
-              "total": 12,
-              "pass_rate": 1,
-              "avg_run_seconds": 38.3,
-              "estimate": {
-                "input_tokens": 13133,
-                "input_cost_usd": 0.065665
-              }
-            }
-          },
-          "evals": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 1,
-              "failed": 1,
-              "total": 2,
-              "pass_rate": 0.5,
-              "avg_run_seconds": 17.7,
-              "estimate": {
-                "input_tokens": 2734,
-                "input_cost_usd": 0.002734
-              },
-              "measured": {
-                "input_tokens": 56,
-                "cache_read_input_tokens": 162171,
-                "cache_creation_input_tokens": 35624,
-                "output_tokens": 2825,
-                "cost_usd": 0.102952
-              },
-              "baseline": {
-                "passed": 1,
-                "failed": 1,
-                "total": 2,
-                "pass_rate": 0.5,
-                "avg_run_seconds": 22.9,
-                "measured": {
-                  "input_tokens": 62,
-                  "cache_read_input_tokens": 289024,
-                  "cache_creation_input_tokens": 35103,
-                  "output_tokens": 4281,
-                  "cost_usd": 0.121876
-                }
-              },
-              "previous_delta": {
-                "rate": 0,
-                "avg_run_seconds": -14.4,
-                "input_tokens": -14,
-                "output_tokens": -132,
-                "cost_usd": -0.008321
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": -5.2,
-                "input_tokens": -6,
-                "output_tokens": -1456,
-                "cost_usd": -0.018924
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 80.2,
-              "estimate": {
-                "input_tokens": 3850,
-                "input_cost_usd": 0.01925
-              },
-              "measured": {
-                "input_tokens": 5767,
-                "cache_read_input_tokens": 196452,
-                "cache_creation_input_tokens": 30115,
-                "output_tokens": 11642,
-                "cost_usd": 0.720557
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 78.3,
-                "measured": {
-                  "input_tokens": 5153,
-                  "cache_read_input_tokens": 285353,
-                  "cache_creation_input_tokens": 22537,
-                  "output_tokens": 10572,
-                  "cost_usd": 0.659412
-                }
-              },
-              "previous_delta": {
-                "rate": 0,
-                "avg_run_seconds": -22.1,
-                "input_tokens": -140,
-                "output_tokens": 621,
-                "cost_usd": -0.055777
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 1.9,
-                "input_tokens": 614,
-                "output_tokens": 1070,
-                "cost_usd": 0.061145
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 47.9,
-              "estimate": {
-                "input_tokens": 2734,
-                "input_cost_usd": 0.008202
-              },
-              "measured": {
-                "input_tokens": 732,
-                "cache_read_input_tokens": 253246,
-                "cache_creation_input_tokens": 22784,
-                "output_tokens": 4217,
-                "cost_usd": 0.300238
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 86.3,
-                "measured": {
-                  "input_tokens": 13,
-                  "cache_read_input_tokens": 202216,
-                  "cache_creation_input_tokens": 26499,
-                  "output_tokens": 11621,
-                  "cost_usd": 0.395309
-                }
-              },
-              "previous_delta": {
-                "rate": 0,
-                "avg_run_seconds": 0,
-                "input_tokens": 715,
-                "output_tokens": 237,
-                "cost_usd": 0.014016
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": -38.4,
-                "input_tokens": 719,
-                "output_tokens": -7404,
-                "cost_usd": -0.095071
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 57.9,
-              "estimate": {
-                "input_tokens": 2247,
-                "input_cost_usd": 0.005617
-              },
-              "measured": {
-                "input_tokens": 36927,
-                "cache_read_input_tokens": 181632,
-                "output_tokens": 4239,
-                "cost_usd": 0.609983
-              },
-              "baseline": {
-                "passed": 0,
-                "failed": 2,
-                "total": 2,
-                "pass_rate": 0,
-                "avg_run_seconds": 68.2,
-                "measured": {
-                  "input_tokens": 67839,
-                  "cache_read_input_tokens": 210944,
-                  "output_tokens": 5629,
-                  "cost_usd": 0.781393
-                }
-              },
-              "previous_delta": {
-                "rate": 0,
-                "avg_run_seconds": -5.2,
-                "input_tokens": -5559,
-                "output_tokens": -317,
-                "cost_usd": -0.115932
-              },
-              "baseline_delta": {
-                "rate": 1,
-                "avg_run_seconds": -10.3,
-                "input_tokens": -30912,
-                "output_tokens": -1390,
-                "cost_usd": -0.17141
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 57.8,
-              "estimate": {
-                "input_tokens": 2247,
-                "input_cost_usd": 0.011235
-              },
-              "measured": {
-                "input_tokens": 35342,
-                "cache_read_input_tokens": 218880,
-                "output_tokens": 4450,
-                "cost_usd": 1.40461
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 89.1,
-                "measured": {
-                  "input_tokens": 101113,
-                  "cache_read_input_tokens": 328832,
-                  "output_tokens": 6796,
-                  "cost_usd": 2.353605
-                }
-              },
-              "previous_delta": {
-                "rate": 0,
-                "avg_run_seconds": -28.3,
-                "input_tokens": -33281,
-                "output_tokens": -3008,
-                "cost_usd": -0.783365
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": -31.3,
-                "input_tokens": -65771,
-                "output_tokens": -2346,
-                "cost_usd": -0.948995
-              }
-            }
-          }
-        },
-        "dotnet-style": {
-          "triggers": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 5,
-              "failed": 7,
-              "total": 12,
-              "pass_rate": 0.416667,
-              "avg_run_seconds": 7.4,
-              "estimate": {
-                "input_tokens": 22571,
-                "input_cost_usd": 0.022571
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 6,
-              "failed": 6,
-              "total": 12,
-              "pass_rate": 0.5,
-              "avg_run_seconds": 13.4,
-              "estimate": {
-                "input_tokens": 30558,
-                "input_cost_usd": 0.15279
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 5,
-              "failed": 7,
-              "total": 12,
-              "pass_rate": 0.416667,
-              "avg_run_seconds": 11.9,
-              "estimate": {
-                "input_tokens": 22571,
-                "input_cost_usd": 0.067713
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 12,
-              "failed": 0,
-              "total": 12,
-              "pass_rate": 1,
-              "avg_run_seconds": 49.2,
-              "estimate": {
-                "input_tokens": 19316,
-                "input_cost_usd": 0.048293
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 12,
-              "failed": 0,
-              "total": 12,
-              "pass_rate": 1,
-              "avg_run_seconds": 38.7,
-              "estimate": {
-                "input_tokens": 19316,
-                "input_cost_usd": 0.09658
-              }
-            }
-          },
-          "evals": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 26.5,
-              "estimate": {
-                "input_tokens": 3812,
-                "input_cost_usd": 0.003812
-              },
-              "measured": {
-                "input_tokens": 58,
-                "cache_read_input_tokens": 184003,
-                "cache_creation_input_tokens": 36684,
-                "output_tokens": 2801,
-                "cost_usd": 0.107113
-              },
-              "baseline": {
-                "passed": 1,
-                "failed": 1,
-                "total": 2,
-                "pass_rate": 0.5,
-                "avg_run_seconds": 13,
-                "measured": {
-                  "input_tokens": 48,
-                  "cache_read_input_tokens": 135870,
-                  "cache_creation_input_tokens": 31252,
-                  "output_tokens": 1253,
-                  "cost_usd": 0.083686
-                }
-              },
-              "baseline_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": 13.5,
-                "input_tokens": 10,
-                "output_tokens": 1548,
-                "cost_usd": 0.023427
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 120.6,
-              "estimate": {
-                "input_tokens": 5160,
-                "input_cost_usd": 0.0258
-              },
-              "measured": {
-                "input_tokens": 5663,
-                "cache_read_input_tokens": 344986,
-                "cache_creation_input_tokens": 36767,
-                "output_tokens": 17009,
-                "cost_usd": 0.994976
-              },
-              "baseline": {
-                "passed": 1,
-                "failed": 1,
-                "total": 2,
-                "pass_rate": 0.5,
-                "avg_run_seconds": 53.5,
-                "measured": {
-                  "input_tokens": 5159,
-                  "cache_read_input_tokens": 336490,
-                  "cache_creation_input_tokens": 18581,
-                  "output_tokens": 6872,
-                  "cost_usd": 0.552922
-                }
-              },
-              "baseline_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": 67.1,
-                "input_tokens": 504,
-                "output_tokens": 10137,
-                "cost_usd": 0.442054
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 41.8,
-              "estimate": {
-                "input_tokens": 3812,
-                "input_cost_usd": 0.011436
-              },
-              "measured": {
-                "input_tokens": 18,
-                "cache_read_input_tokens": 282474,
-                "cache_creation_input_tokens": 23159,
-                "output_tokens": 4241,
-                "cost_usd": 0.288637
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 31.2,
-                "measured": {
-                  "input_tokens": 16,
-                  "cache_read_input_tokens": 265529,
-                  "cache_creation_input_tokens": 18012,
-                  "output_tokens": 2647,
-                  "cost_usd": 0.228766
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 10.6,
-                "input_tokens": 2,
-                "output_tokens": 1594,
-                "cost_usd": 0.059871
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 35.4,
-              "estimate": {
-                "input_tokens": 3262,
-                "input_cost_usd": 0.008155
-              },
-              "measured": {
-                "input_tokens": 20794,
-                "cache_read_input_tokens": 182912,
-                "output_tokens": 3034,
-                "cost_usd": 0.554775
-              },
-              "baseline": {
-                "passed": 1,
-                "failed": 1,
-                "total": 2,
-                "pass_rate": 0.5,
-                "avg_run_seconds": 48.2,
-                "measured": {
-                  "input_tokens": 25936,
-                  "cache_read_input_tokens": 219392,
-                  "output_tokens": 4117,
-                  "cost_usd": 0.675075
-                }
-              },
-              "baseline_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": -12.8,
-                "input_tokens": -5142,
-                "output_tokens": -1083,
-                "cost_usd": -0.1203
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 54,
-              "estimate": {
-                "input_tokens": 3262,
-                "input_cost_usd": 0.01631
-              },
-              "measured": {
-                "input_tokens": 48201,
-                "cache_read_input_tokens": 287232,
-                "output_tokens": 4278,
-                "cost_usd": 1.805505
-              },
-              "baseline": {
-                "passed": 1,
-                "failed": 1,
-                "total": 2,
-                "pass_rate": 0.5,
-                "avg_run_seconds": 52.2,
-                "measured": {
-                  "input_tokens": 44231,
-                  "cache_read_input_tokens": 267776,
-                  "output_tokens": 4210,
-                  "cost_usd": 1.686335
-                }
-              },
-              "baseline_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": 1.8,
-                "input_tokens": 3970,
-                "output_tokens": 68,
-                "cost_usd": 0.11917
-              }
-            }
-          }
-        },
-        "dotnet-testing": {
-          "triggers": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 5,
-              "failed": 7,
-              "total": 12,
-              "pass_rate": 0.416667,
-              "avg_run_seconds": 8,
-              "estimate": {
-                "input_tokens": 17024,
-                "input_cost_usd": 0.017024
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 7,
-              "failed": 5,
-              "total": 12,
-              "pass_rate": 0.583333,
-              "avg_run_seconds": 13.6,
-              "estimate": {
-                "input_tokens": 23828,
-                "input_cost_usd": 0.11914
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 5,
-              "failed": 7,
-              "total": 12,
-              "pass_rate": 0.416667,
-              "avg_run_seconds": 11.6,
-              "estimate": {
-                "input_tokens": 17024,
-                "input_cost_usd": 0.051072
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 10,
-              "failed": 2,
-              "total": 12,
-              "pass_rate": 0.833333,
-              "avg_run_seconds": 48,
-              "estimate": {
-                "input_tokens": 14531,
-                "input_cost_usd": 0.036331
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 11,
-              "failed": 1,
-              "total": 12,
-              "pass_rate": 0.916667,
-              "avg_run_seconds": 43.6,
-              "estimate": {
-                "input_tokens": 14531,
-                "input_cost_usd": 0.072655
-              }
-            }
-          },
-          "evals": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 23.8,
-              "estimate": {
-                "input_tokens": 2903,
-                "input_cost_usd": 0.002903
-              },
-              "measured": {
-                "input_tokens": 63,
-                "cache_read_input_tokens": 208399,
-                "cache_creation_input_tokens": 36530,
-                "output_tokens": 2826,
-                "cost_usd": 0.10937
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 25.1,
-                "measured": {
-                  "input_tokens": 72,
-                  "cache_read_input_tokens": 343627,
-                  "cache_creation_input_tokens": 37874,
-                  "output_tokens": 3499,
-                  "cost_usd": 0.12894
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": -1.3,
-                "input_tokens": -9,
-                "output_tokens": -673,
-                "cost_usd": -0.01957
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 59.2,
-              "estimate": {
-                "input_tokens": 4063,
-                "input_cost_usd": 0.020315
-              },
-              "measured": {
-                "input_tokens": 5858,
-                "cache_read_input_tokens": 387550,
-                "cache_creation_input_tokens": 24911,
-                "output_tokens": 6320,
-                "cost_usd": 0.631436
-              },
-              "baseline": {
-                "passed": 1,
-                "failed": 1,
-                "total": 2,
-                "pass_rate": 0.5,
-                "avg_run_seconds": 58.9,
-                "measured": {
-                  "input_tokens": 5284,
-                  "cache_read_input_tokens": 299330,
-                  "cache_creation_input_tokens": 20133,
-                  "output_tokens": 5630,
-                  "cost_usd": 0.519427
-                }
-              },
-              "baseline_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": 0.3,
-                "input_tokens": 574,
-                "output_tokens": 690,
-                "cost_usd": 0.112009
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 26.1,
-              "estimate": {
-                "input_tokens": 2903,
-                "input_cost_usd": 0.008709
-              },
-              "measured": {
-                "input_tokens": 16,
-                "cache_read_input_tokens": 220990,
-                "cache_creation_input_tokens": 20106,
-                "output_tokens": 2022,
-                "cost_usd": 0.218573
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 69.3,
-                "measured": {
-                  "input_tokens": 23,
-                  "cache_read_input_tokens": 461020,
-                  "cache_creation_input_tokens": 24559,
-                  "output_tokens": 4386,
-                  "cost_usd": 0.37865
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": -43.2,
-                "input_tokens": -7,
-                "output_tokens": -2364,
-                "cost_usd": -0.160077
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 45.2,
-              "estimate": {
-                "input_tokens": 2469,
-                "input_cost_usd": 0.006173
-              },
-              "measured": {
-                "input_tokens": 34617,
-                "cache_read_input_tokens": 236800,
-                "output_tokens": 3803,
-                "cost_usd": 0.735587
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 43.7,
-                "measured": {
-                  "input_tokens": 28925,
-                  "cache_read_input_tokens": 223488,
-                  "output_tokens": 3129,
-                  "cost_usd": 0.677968
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 1.5,
-                "input_tokens": 5692,
-                "output_tokens": 674,
-                "cost_usd": 0.057619
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 51.2,
-              "estimate": {
-                "input_tokens": 2469,
-                "input_cost_usd": 0.012345
-              },
-              "measured": {
-                "input_tokens": 52257,
-                "cache_read_input_tokens": 259200,
-                "output_tokens": 3530,
-                "cost_usd": 1.663185
-              },
-              "baseline": {
-                "passed": 1,
-                "failed": 1,
-                "total": 2,
-                "pass_rate": 0.5,
-                "avg_run_seconds": 47.8,
-                "measured": {
-                  "input_tokens": 31116,
-                  "cache_read_input_tokens": 195584,
-                  "output_tokens": 3229,
-                  "cost_usd": 1.23037
-                }
-              },
-              "baseline_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": 3.4,
-                "input_tokens": 21141,
-                "output_tokens": 301,
-                "cost_usd": 0.432815
-              }
-            }
-          }
-        },
-        "dotnet-web": {
-          "triggers": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 5,
-              "failed": 7,
-              "total": 12,
-              "pass_rate": 0.416667,
-              "avg_run_seconds": 7.3,
-              "estimate": {
-                "input_tokens": 16837,
-                "input_cost_usd": 0.016837
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 7,
-              "failed": 5,
-              "total": 12,
-              "pass_rate": 0.583333,
-              "avg_run_seconds": 14.9,
-              "estimate": {
-                "input_tokens": 24223,
-                "input_cost_usd": 0.121115
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 5,
-              "failed": 7,
-              "total": 12,
-              "pass_rate": 0.416667,
-              "avg_run_seconds": 11.9,
-              "estimate": {
-                "input_tokens": 16837,
-                "input_cost_usd": 0.050511
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 12,
-              "failed": 0,
-              "total": 12,
-              "pass_rate": 1,
-              "avg_run_seconds": 42.9,
-              "estimate": {
-                "input_tokens": 14101,
-                "input_cost_usd": 0.035254
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 10,
-              "failed": 2,
-              "total": 12,
-              "pass_rate": 0.833333,
-              "avg_run_seconds": 45.5,
-              "estimate": {
-                "input_tokens": 14101,
-                "input_cost_usd": 0.070505
-              }
-            }
-          },
-          "evals": {
-            "anthropic/claude-haiku-4-5": {
-              "provider": "anthropic",
-              "display": "Claude Haiku 4.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 36.3,
-              "estimate": {
-                "input_tokens": 2872,
-                "input_cost_usd": 0.002872
-              },
-              "measured": {
-                "input_tokens": 65,
-                "cache_read_input_tokens": 209352,
-                "cache_creation_input_tokens": 36833,
-                "output_tokens": 3513,
-                "cost_usd": 0.1135
-              },
-              "baseline": {
-                "passed": 0,
-                "failed": 2,
-                "total": 2,
-                "pass_rate": 0,
-                "avg_run_seconds": 13.6,
-                "measured": {
-                  "input_tokens": 43,
-                  "cache_read_input_tokens": 135815,
-                  "cache_creation_input_tokens": 31924,
-                  "output_tokens": 2075,
-                  "cost_usd": 0.089102
-                }
-              },
-              "baseline_delta": {
-                "rate": 1,
-                "avg_run_seconds": 22.7,
-                "input_tokens": 22,
-                "output_tokens": 1438,
-                "cost_usd": 0.024398
-              }
-            },
-            "anthropic/claude-opus-4-8": {
-              "provider": "anthropic",
-              "display": "Claude Opus 4.8",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 69,
-              "estimate": {
-                "input_tokens": 4138,
-                "input_cost_usd": 0.02069
-              },
-              "measured": {
-                "input_tokens": 5745,
-                "cache_read_input_tokens": 243927,
-                "cache_creation_input_tokens": 25942,
-                "output_tokens": 10472,
-                "cost_usd": 0.673192
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 56.7,
-                "measured": {
-                  "input_tokens": 5286,
-                  "cache_read_input_tokens": 315358,
-                  "cache_creation_input_tokens": 18748,
-                  "output_tokens": 7025,
-                  "cost_usd": 0.548479
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 12.3,
-                "input_tokens": 459,
-                "output_tokens": 3447,
-                "cost_usd": 0.124713
-              }
-            },
-            "anthropic/claude-sonnet-4-6": {
-              "provider": "anthropic",
-              "display": "Claude Sonnet 4.6",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 39.3,
-              "estimate": {
-                "input_tokens": 2872,
-                "input_cost_usd": 0.008616
-              },
-              "measured": {
-                "input_tokens": 16,
-                "cache_read_input_tokens": 223702,
-                "cache_creation_input_tokens": 21777,
-                "output_tokens": 4027,
-                "cost_usd": 0.259485
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 45.3,
-                "measured": {
-                  "input_tokens": 14,
-                  "cache_read_input_tokens": 216944,
-                  "cache_creation_input_tokens": 20103,
-                  "output_tokens": 5160,
-                  "cost_usd": 0.264403
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": -6,
-                "input_tokens": 2,
-                "output_tokens": -1133,
-                "cost_usd": -0.004918
-              }
-            },
-            "openai/gpt-5.4": {
-              "provider": "openai",
-              "display": "GPT-5.4",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 50.4,
-              "estimate": {
-                "input_tokens": 2409,
-                "input_cost_usd": 0.006023
-              },
-              "measured": {
-                "input_tokens": 24655,
-                "cache_read_input_tokens": 241920,
-                "output_tokens": 4298,
-                "cost_usd": 0.730908
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 46.9,
-                "measured": {
-                  "input_tokens": 21469,
-                  "cache_read_input_tokens": 227584,
-                  "output_tokens": 3493,
-                  "cost_usd": 0.675028
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 3.5,
-                "input_tokens": 3186,
-                "output_tokens": 805,
-                "cost_usd": 0.05588
-              }
-            },
-            "openai/gpt-5.5": {
-              "provider": "openai",
-              "display": "GPT-5.5",
-              "passed": 2,
-              "failed": 0,
-              "total": 2,
-              "pass_rate": 1,
-              "avg_run_seconds": 60.7,
-              "estimate": {
-                "input_tokens": 2409,
-                "input_cost_usd": 0.012045
-              },
-              "measured": {
-                "input_tokens": 42375,
-                "cache_read_input_tokens": 241920,
-                "output_tokens": 3714,
-                "cost_usd": 1.532895
-              },
-              "baseline": {
-                "passed": 2,
-                "failed": 0,
-                "total": 2,
-                "pass_rate": 1,
-                "avg_run_seconds": 51.4,
-                "measured": {
-                  "input_tokens": 36783,
-                  "cache_read_input_tokens": 259712,
-                  "output_tokens": 4010,
-                  "cost_usd": 1.602775
-                }
-              },
-              "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 9.3,
-                "input_tokens": 5592,
-                "output_tokens": -296,
-                "cost_usd": -0.06988
-              }
-            }
-          }
-        }
-      }
-    },
     "golang": {
       "triggers": {
+        "anthropic/claude-fable-5": {
+          "provider": "anthropic",
+          "display": "Claude Fable 5",
+          "passed": 63,
+          "failed": 7,
+          "total": 70,
+          "pass_rate": 0.9,
+          "avg_run_seconds": 11.5,
+          "estimate": {
+            "input_tokens": 149755,
+            "input_cost_usd": 1.49755
+          }
+        },
         "anthropic/claude-haiku-4-5": {
           "provider": "anthropic",
           "display": "Claude Haiku 4.5",
@@ -4257,6 +2292,19 @@
             "cost_usd": 0.047913
           }
         },
+        "anthropic/claude-sonnet-5": {
+          "provider": "anthropic",
+          "display": "Claude Sonnet 5",
+          "passed": 51,
+          "failed": 19,
+          "total": 70,
+          "pass_rate": 0.728571,
+          "avg_run_seconds": 7.9,
+          "estimate": {
+            "input_tokens": 149755,
+            "input_cost_usd": 0.449265
+          }
+        },
         "openai/gpt-5.4": {
           "provider": "openai",
           "display": "GPT-5.4",
@@ -4297,6 +2345,47 @@
         }
       },
       "evals": {
+        "anthropic/claude-fable-5": {
+          "provider": "anthropic",
+          "display": "Claude Fable 5",
+          "passed": 6,
+          "failed": 8,
+          "total": 14,
+          "pass_rate": 0.428571,
+          "avg_run_seconds": 71.9,
+          "estimate": {
+            "input_tokens": 33132,
+            "input_cost_usd": 0.33132
+          },
+          "measured": {
+            "input_tokens": 31066,
+            "cache_read_input_tokens": 2072768,
+            "cache_creation_input_tokens": 145642,
+            "output_tokens": 44052,
+            "cost_usd": 7.503405
+          },
+          "baseline": {
+            "passed": 2,
+            "failed": 12,
+            "total": 14,
+            "pass_rate": 0.142857,
+            "avg_run_seconds": 95,
+            "measured": {
+              "input_tokens": 49756,
+              "cache_read_input_tokens": 2520906,
+              "cache_creation_input_tokens": 185054,
+              "output_tokens": 74206,
+              "cost_usd": 10.436908
+            }
+          },
+          "baseline_delta": {
+            "rate": 0.285714,
+            "avg_run_seconds": -23.1,
+            "input_tokens": -18690,
+            "output_tokens": -30154,
+            "cost_usd": -2.933503
+          }
+        },
         "anthropic/claude-haiku-4-5": {
           "provider": "anthropic",
           "display": "Claude Haiku 4.5",
@@ -4442,6 +2531,56 @@
             "cost_usd": -0.335003
           }
         },
+        "anthropic/claude-sonnet-5": {
+          "provider": "anthropic",
+          "display": "Claude Sonnet 5",
+          "passed": 10,
+          "failed": 2,
+          "errored": 2,
+          "total": 14,
+          "pass_rate": 0.833333,
+          "avg_run_seconds": 58,
+          "estimate": {
+            "input_tokens": 33132,
+            "input_cost_usd": 0.099396
+          },
+          "measured": {
+            "input_tokens": 46168,
+            "cache_read_input_tokens": 3064755,
+            "cache_creation_input_tokens": 199977,
+            "output_tokens": 37502,
+            "cost_usd": 2.826706
+          },
+          "baseline": {
+            "passed": 6,
+            "failed": 5,
+            "errored": 3,
+            "total": 14,
+            "pass_rate": 0.545455,
+            "avg_run_seconds": 82.1,
+            "measured": {
+              "input_tokens": 39464,
+              "cache_read_input_tokens": 2853814,
+              "cache_creation_input_tokens": 154971,
+              "output_tokens": 45366,
+              "cost_usd": 2.590594
+            }
+          },
+          "previous_delta": {
+            "rate": -0.166667,
+            "avg_run_seconds": -51.4,
+            "input_tokens": 36818,
+            "output_tokens": 30520,
+            "cost_usd": 2.19109
+          },
+          "baseline_delta": {
+            "rate": 0.287878,
+            "avg_run_seconds": -24.1,
+            "input_tokens": 6704,
+            "output_tokens": -7864,
+            "cost_usd": 0.236112
+          }
+        },
         "openai/gpt-5.4": {
           "provider": "openai",
           "display": "GPT-5.4",
@@ -4538,6 +2677,19 @@
       "skills": {
         "go-docs": {
           "triggers": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 14,
+              "failed": 0,
+              "total": 14,
+              "pass_rate": 1,
+              "avg_run_seconds": 14.1,
+              "estimate": {
+                "input_tokens": 19520,
+                "input_cost_usd": 0.1952
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -4595,6 +2747,19 @@
                 "cost_usd": 0
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 10,
+              "failed": 4,
+              "total": 14,
+              "pass_rate": 0.714286,
+              "avg_run_seconds": 8.3,
+              "estimate": {
+                "input_tokens": 19520,
+                "input_cost_usd": 0.05856
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -4635,6 +2800,47 @@
             }
           },
           "evals": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1,
+              "avg_run_seconds": 55.6,
+              "estimate": {
+                "input_tokens": 4270,
+                "input_cost_usd": 0.0427
+              },
+              "measured": {
+                "input_tokens": 12717,
+                "cache_read_input_tokens": 442115,
+                "cache_creation_input_tokens": 39702,
+                "output_tokens": 7408,
+                "cost_usd": 1.735616
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 2,
+                "total": 3,
+                "pass_rate": 0.333333,
+                "avg_run_seconds": 106.6,
+                "measured": {
+                  "input_tokens": 12292,
+                  "cache_read_input_tokens": 600671,
+                  "cache_creation_input_tokens": 46878,
+                  "output_tokens": 18367,
+                  "cost_usd": 2.581362
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.666667,
+                "avg_run_seconds": -51,
+                "input_tokens": 425,
+                "output_tokens": -10959,
+                "cost_usd": -0.845746
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -4779,6 +2985,47 @@
                 "cost_usd": -0.15794
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1,
+              "avg_run_seconds": 38.7,
+              "estimate": {
+                "input_tokens": 4270,
+                "input_cost_usd": 0.01281
+              },
+              "measured": {
+                "input_tokens": 14009,
+                "cache_read_input_tokens": 786004,
+                "cache_creation_input_tokens": 48564,
+                "output_tokens": 6804,
+                "cost_usd": 0.673133
+              },
+              "baseline": {
+                "passed": 2,
+                "failed": 1,
+                "total": 3,
+                "pass_rate": 0.666667,
+                "avg_run_seconds": 80,
+                "measured": {
+                  "input_tokens": 13315,
+                  "cache_read_input_tokens": 1055915,
+                  "cache_creation_input_tokens": 53621,
+                  "output_tokens": 17279,
+                  "cost_usd": 0.939497
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.333333,
+                "avg_run_seconds": -41.3,
+                "input_tokens": 694,
+                "output_tokens": -10475,
+                "cost_usd": -0.266364
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -4875,6 +3122,19 @@
         },
         "go-project": {
           "triggers": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 13,
+              "failed": 0,
+              "total": 13,
+              "pass_rate": 1,
+              "avg_run_seconds": 14.3,
+              "estimate": {
+                "input_tokens": 24366,
+                "input_cost_usd": 0.24366
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -4932,6 +3192,19 @@
                 "cost_usd": 0
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 11,
+              "failed": 2,
+              "total": 13,
+              "pass_rate": 0.846154,
+              "avg_run_seconds": 11.6,
+              "estimate": {
+                "input_tokens": 24366,
+                "input_cost_usd": 0.073098
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -4966,6 +3239,47 @@
             }
           },
           "evals": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 1,
+              "failed": 1,
+              "total": 2,
+              "pass_rate": 0.5,
+              "avg_run_seconds": 198.5,
+              "estimate": {
+                "input_tokens": 3887,
+                "input_cost_usd": 0.03887
+              },
+              "measured": {
+                "input_tokens": 9442,
+                "cache_read_input_tokens": 763967,
+                "cache_creation_input_tokens": 53917,
+                "output_tokens": 13395,
+                "cost_usd": 2.607808
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 1,
+                "total": 2,
+                "pass_rate": 0.5,
+                "avg_run_seconds": 162.3,
+                "measured": {
+                  "input_tokens": 13105,
+                  "cache_read_input_tokens": 629419,
+                  "cache_creation_input_tokens": 43799,
+                  "output_tokens": 18867,
+                  "cost_usd": 2.58113
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": 36.2,
+                "input_tokens": -3663,
+                "output_tokens": -5472,
+                "cost_usd": 0.026678
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -5111,6 +3425,56 @@
                 "cost_usd": -0.152405
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 1,
+              "failed": 0,
+              "errored": 1,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 105.6,
+              "estimate": {
+                "input_tokens": 3887,
+                "input_cost_usd": 0.011661
+              },
+              "measured": {
+                "input_tokens": 4682,
+                "cache_read_input_tokens": 399818,
+                "cache_creation_input_tokens": 19579,
+                "output_tokens": 3246,
+                "cost_usd": 0.300824
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 0,
+                "errored": 1,
+                "total": 2,
+                "pass_rate": 1,
+                "avg_run_seconds": 93.6,
+                "measured": {
+                  "input_tokens": 4413,
+                  "cache_read_input_tokens": 238521,
+                  "cache_creation_input_tokens": 20957,
+                  "output_tokens": 7426,
+                  "cost_usd": 0.322596
+                }
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -6.8,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": 12,
+                "input_tokens": 269,
+                "output_tokens": -4180,
+                "cost_usd": -0.021772
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -5207,6 +3571,19 @@
         },
         "go-release": {
           "triggers": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 13,
+              "failed": 0,
+              "total": 13,
+              "pass_rate": 1,
+              "avg_run_seconds": 13.7,
+              "estimate": {
+                "input_tokens": 22249,
+                "input_cost_usd": 0.22249
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -5258,6 +3635,19 @@
                 "input_cost_usd": 0.047913
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 11,
+              "failed": 2,
+              "total": 13,
+              "pass_rate": 0.846154,
+              "avg_run_seconds": 8.7,
+              "estimate": {
+                "input_tokens": 22249,
+                "input_cost_usd": 0.066747
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -5292,6 +3682,47 @@
             }
           },
           "evals": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 215.4,
+              "estimate": {
+                "input_tokens": 3517,
+                "input_cost_usd": 0.03517
+              },
+              "measured": {
+                "input_tokens": 8907,
+                "cache_read_input_tokens": 866686,
+                "cache_creation_input_tokens": 52023,
+                "output_tokens": 23249,
+                "cost_usd": 3.159981
+              },
+              "baseline": {
+                "passed": 0,
+                "failed": 2,
+                "total": 2,
+                "pass_rate": 0,
+                "avg_run_seconds": 280.3,
+                "measured": {
+                  "input_tokens": 8523,
+                  "cache_read_input_tokens": 1038587,
+                  "cache_creation_input_tokens": 55131,
+                  "output_tokens": 31876,
+                  "cost_usd": 3.821552
+                }
+              },
+              "baseline_delta": {
+                "rate": 1,
+                "avg_run_seconds": -64.9,
+                "input_tokens": 384,
+                "output_tokens": -8627,
+                "cost_usd": -0.661571
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -5436,6 +3867,43 @@
                 "cost_usd": -0.022932
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 1,
+              "failed": 0,
+              "errored": 1,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 103,
+              "estimate": {
+                "input_tokens": 3517,
+                "input_cost_usd": 0.010551
+              },
+              "measured": {
+                "input_tokens": 4668,
+                "cache_read_input_tokens": 461378,
+                "cache_creation_input_tokens": 20947,
+                "output_tokens": 3736,
+                "cost_usd": 0.334792
+              },
+              "baseline": {
+                "passed": 0,
+                "errored": 2,
+                "total": 2,
+                "avg_run_seconds": 218.5
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -3.3,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              },
+              "baseline_delta": {
+                "avg_run_seconds": -115.5
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -5532,6 +4000,19 @@
         },
         "go-style": {
           "triggers": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 17,
+              "failed": 0,
+              "total": 17,
+              "pass_rate": 1,
+              "avg_run_seconds": 12.9,
+              "estimate": {
+                "input_tokens": 59706,
+                "input_cost_usd": 0.59706
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -5589,6 +4070,19 @@
                 "cost_usd": 0
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 13,
+              "failed": 4,
+              "total": 17,
+              "pass_rate": 0.764706,
+              "avg_run_seconds": 8.6,
+              "estimate": {
+                "input_tokens": 59706,
+                "input_cost_usd": 0.179118
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -5629,6 +4123,47 @@
             }
           },
           "evals": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 0,
+              "failed": 5,
+              "total": 5,
+              "pass_rate": 0,
+              "avg_run_seconds": 1.7,
+              "estimate": {
+                "input_tokens": 17739,
+                "input_cost_usd": 0.17739
+              },
+              "measured": {
+                "input_tokens": 0,
+                "cache_read_input_tokens": 0,
+                "cache_creation_input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              },
+              "baseline": {
+                "passed": 0,
+                "failed": 5,
+                "total": 5,
+                "pass_rate": 0,
+                "avg_run_seconds": 24.5,
+                "measured": {
+                  "input_tokens": 15836,
+                  "cache_read_input_tokens": 252229,
+                  "cache_creation_input_tokens": 39246,
+                  "output_tokens": 5096,
+                  "cost_usd": 1.452864
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": -22.8,
+                "input_tokens": -15836,
+                "output_tokens": -5096,
+                "cost_usd": -1.452864
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -5773,6 +4308,47 @@
                 "cost_usd": -0.031713
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1,
+              "avg_run_seconds": 55,
+              "estimate": {
+                "input_tokens": 17739,
+                "input_cost_usd": 0.053217
+              },
+              "measured": {
+                "input_tokens": 22809,
+                "cache_read_input_tokens": 1417555,
+                "cache_creation_input_tokens": 110887,
+                "output_tokens": 23716,
+                "cost_usd": 1.517957
+              },
+              "baseline": {
+                "passed": 3,
+                "failed": 2,
+                "total": 5,
+                "pass_rate": 0.6,
+                "avg_run_seconds": 56.4,
+                "measured": {
+                  "input_tokens": 21736,
+                  "cache_read_input_tokens": 1559378,
+                  "cache_creation_input_tokens": 80393,
+                  "output_tokens": 20661,
+                  "cost_usd": 1.328501
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.4,
+                "avg_run_seconds": -1.4,
+                "input_tokens": 1073,
+                "output_tokens": 3055,
+                "cost_usd": 0.189456
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -5869,6 +4445,19 @@
         },
         "go-testing": {
           "triggers": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 6,
+              "failed": 7,
+              "total": 13,
+              "pass_rate": 0.461538,
+              "avg_run_seconds": 1.7,
+              "estimate": {
+                "input_tokens": 23914,
+                "input_cost_usd": 0.23914
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -5926,6 +4515,19 @@
                 "cost_usd": 0
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 6,
+              "failed": 7,
+              "total": 13,
+              "pass_rate": 0.461538,
+              "avg_run_seconds": 1.8,
+              "estimate": {
+                "input_tokens": 23914,
+                "input_cost_usd": 0.071742
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -5966,6 +4568,47 @@
             }
           },
           "evals": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 0,
+              "failed": 2,
+              "total": 2,
+              "pass_rate": 0,
+              "avg_run_seconds": 1.8,
+              "estimate": {
+                "input_tokens": 3719,
+                "input_cost_usd": 0.03719
+              },
+              "measured": {
+                "input_tokens": 0,
+                "cache_read_input_tokens": 0,
+                "cache_creation_input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              },
+              "baseline": {
+                "passed": 0,
+                "failed": 2,
+                "total": 2,
+                "pass_rate": 0,
+                "avg_run_seconds": 1.5,
+                "measured": {
+                  "input_tokens": 0,
+                  "cache_read_input_tokens": 0,
+                  "cache_creation_input_tokens": 0,
+                  "output_tokens": 0,
+                  "cost_usd": 0
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": 0.3,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -6110,6 +4753,47 @@
                 "cost_usd": 0.029987
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 0,
+              "failed": 2,
+              "total": 2,
+              "pass_rate": 0,
+              "avg_run_seconds": 1.6,
+              "estimate": {
+                "input_tokens": 3719,
+                "input_cost_usd": 0.011157
+              },
+              "measured": {
+                "input_tokens": 0,
+                "cache_read_input_tokens": 0,
+                "cache_creation_input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              },
+              "baseline": {
+                "passed": 0,
+                "failed": 2,
+                "total": 2,
+                "pass_rate": 0,
+                "avg_run_seconds": 1.6,
+                "measured": {
+                  "input_tokens": 0,
+                  "cache_read_input_tokens": 0,
+                  "cache_creation_input_tokens": 0,
+                  "output_tokens": 0,
+                  "cost_usd": 0
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": 0,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -6208,6 +4892,19 @@
     },
     "python": {
       "triggers": {
+        "anthropic/claude-fable-5": {
+          "provider": "anthropic",
+          "display": "Claude Fable 5",
+          "passed": 30,
+          "failed": 1,
+          "total": 31,
+          "pass_rate": 0.967742,
+          "avg_run_seconds": 11.5,
+          "estimate": {
+            "input_tokens": 49909,
+            "input_cost_usd": 0.49909
+          }
+        },
         "anthropic/claude-haiku-4-5": {
           "provider": "anthropic",
           "display": "Claude Haiku 4.5",
@@ -6265,6 +4962,19 @@
             "cost_usd": 0.027393
           }
         },
+        "anthropic/claude-sonnet-5": {
+          "provider": "anthropic",
+          "display": "Claude Sonnet 5",
+          "passed": 17,
+          "failed": 14,
+          "total": 31,
+          "pass_rate": 0.548387,
+          "avg_run_seconds": 5.5,
+          "estimate": {
+            "input_tokens": 49909,
+            "input_cost_usd": 0.149727
+          }
+        },
         "openai/gpt-5.4": {
           "provider": "openai",
           "display": "GPT-5.4",
@@ -6305,6 +5015,47 @@
         }
       },
       "evals": {
+        "anthropic/claude-fable-5": {
+          "provider": "anthropic",
+          "display": "Claude Fable 5",
+          "passed": 4,
+          "failed": 0,
+          "total": 4,
+          "pass_rate": 1,
+          "avg_run_seconds": 51.5,
+          "estimate": {
+            "input_tokens": 6627,
+            "input_cost_usd": 0.06627
+          },
+          "measured": {
+            "input_tokens": 17061,
+            "cache_read_input_tokens": 577721,
+            "cache_creation_input_tokens": 56848,
+            "output_tokens": 11328,
+            "cost_usd": 2.454328
+          },
+          "baseline": {
+            "passed": 3,
+            "failed": 1,
+            "total": 4,
+            "pass_rate": 0.75,
+            "avg_run_seconds": 75.8,
+            "measured": {
+              "input_tokens": 15987,
+              "cache_read_input_tokens": 534609,
+              "cache_creation_input_tokens": 85852,
+              "output_tokens": 17363,
+              "cost_usd": 3.282316
+            }
+          },
+          "baseline_delta": {
+            "rate": 0.25,
+            "avg_run_seconds": -24.3,
+            "input_tokens": 1074,
+            "output_tokens": -6035,
+            "cost_usd": -0.827988
+          }
+        },
         "anthropic/claude-haiku-4-5": {
           "provider": "anthropic",
           "display": "Claude Haiku 4.5",
@@ -6449,6 +5200,47 @@
             "cost_usd": -0.124298
           }
         },
+        "anthropic/claude-sonnet-5": {
+          "provider": "anthropic",
+          "display": "Claude Sonnet 5",
+          "passed": 2,
+          "failed": 2,
+          "total": 4,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 14.7,
+          "estimate": {
+            "input_tokens": 6627,
+            "input_cost_usd": 0.019881
+          },
+          "measured": {
+            "input_tokens": 9276,
+            "cache_read_input_tokens": 289414,
+            "cache_creation_input_tokens": 32613,
+            "output_tokens": 3870,
+            "cost_usd": 0.36972
+          },
+          "baseline": {
+            "passed": 1,
+            "failed": 3,
+            "total": 4,
+            "pass_rate": 0.25,
+            "avg_run_seconds": 32.2,
+            "measured": {
+              "input_tokens": 8838,
+              "cache_read_input_tokens": 713704,
+              "cache_creation_input_tokens": 35190,
+              "output_tokens": 7814,
+              "cost_usd": 0.570315
+            }
+          },
+          "baseline_delta": {
+            "rate": 0.25,
+            "avg_run_seconds": -17.5,
+            "input_tokens": 438,
+            "output_tokens": -3944,
+            "cost_usd": -0.200595
+          }
+        },
         "openai/gpt-5.4": {
           "provider": "openai",
           "display": "GPT-5.4",
@@ -6545,6 +5337,19 @@
       "skills": {
         "python-docs": {
           "triggers": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 14,
+              "failed": 1,
+              "total": 15,
+              "pass_rate": 0.933333,
+              "avg_run_seconds": 10.8,
+              "estimate": {
+                "input_tokens": 18707,
+                "input_cost_usd": 0.18707
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -6602,6 +5407,19 @@
                 "cost_usd": 0
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 5,
+              "failed": 10,
+              "total": 15,
+              "pass_rate": 0.333333,
+              "avg_run_seconds": 1.8,
+              "estimate": {
+                "input_tokens": 18707,
+                "input_cost_usd": 0.056121
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -6642,6 +5460,47 @@
             }
           },
           "evals": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 57.1,
+              "estimate": {
+                "input_tokens": 2614,
+                "input_cost_usd": 0.02614
+              },
+              "measured": {
+                "input_tokens": 8288,
+                "cache_read_input_tokens": 332221,
+                "cache_creation_input_tokens": 29509,
+                "output_tokens": 6731,
+                "cost_usd": 1.343148
+              },
+              "baseline": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1,
+                "avg_run_seconds": 77.3,
+                "measured": {
+                  "input_tokens": 7928,
+                  "cache_read_input_tokens": 230865,
+                  "cache_creation_input_tokens": 59866,
+                  "output_tokens": 9608,
+                  "cost_usd": 1.989177
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": -20.2,
+                "input_tokens": 360,
+                "output_tokens": -2877,
+                "cost_usd": -0.646029
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -6786,6 +5645,47 @@
                 "cost_usd": -0.110072
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 0,
+              "failed": 2,
+              "total": 2,
+              "pass_rate": 0,
+              "avg_run_seconds": 1.7,
+              "estimate": {
+                "input_tokens": 2614,
+                "input_cost_usd": 0.007842
+              },
+              "measured": {
+                "input_tokens": 0,
+                "cache_read_input_tokens": 0,
+                "cache_creation_input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              },
+              "baseline": {
+                "passed": 0,
+                "failed": 2,
+                "total": 2,
+                "pass_rate": 0,
+                "avg_run_seconds": 1.9,
+                "measured": {
+                  "input_tokens": 0,
+                  "cache_read_input_tokens": 0,
+                  "cache_creation_input_tokens": 0,
+                  "output_tokens": 0,
+                  "cost_usd": 0
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": -0.2,
+                "input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -6882,6 +5782,19 @@
         },
         "python-project": {
           "triggers": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 16,
+              "failed": 0,
+              "total": 16,
+              "pass_rate": 1,
+              "avg_run_seconds": 12.2,
+              "estimate": {
+                "input_tokens": 31202,
+                "input_cost_usd": 0.31202
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -6939,6 +5852,19 @@
                 "cost_usd": 0.002832
               }
             },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 12,
+              "failed": 4,
+              "total": 16,
+              "pass_rate": 0.75,
+              "avg_run_seconds": 9,
+              "estimate": {
+                "input_tokens": 31202,
+                "input_cost_usd": 0.093606
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -6967,6 +5893,47 @@
             }
           },
           "evals": {
+            "anthropic/claude-fable-5": {
+              "provider": "anthropic",
+              "display": "Claude Fable 5",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 45.8,
+              "estimate": {
+                "input_tokens": 4013,
+                "input_cost_usd": 0.04013
+              },
+              "measured": {
+                "input_tokens": 8773,
+                "cache_read_input_tokens": 245500,
+                "cache_creation_input_tokens": 27339,
+                "output_tokens": 4597,
+                "cost_usd": 1.11118
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 1,
+                "total": 2,
+                "pass_rate": 0.5,
+                "avg_run_seconds": 74.2,
+                "measured": {
+                  "input_tokens": 8059,
+                  "cache_read_input_tokens": 303744,
+                  "cache_creation_input_tokens": 25986,
+                  "output_tokens": 7755,
+                  "cost_usd": 1.293139
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.5,
+                "avg_run_seconds": -28.4,
+                "input_tokens": 714,
+                "output_tokens": -3158,
+                "cost_usd": -0.181959
+              }
+            },
             "anthropic/claude-haiku-4-5": {
               "provider": "anthropic",
               "display": "Claude Haiku 4.5",
@@ -7109,6 +6076,47 @@
                 "input_tokens": 3,
                 "output_tokens": 509,
                 "cost_usd": 0.038748
+              }
+            },
+            "anthropic/claude-sonnet-5": {
+              "provider": "anthropic",
+              "display": "Claude Sonnet 5",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 27.7,
+              "estimate": {
+                "input_tokens": 4013,
+                "input_cost_usd": 0.012039
+              },
+              "measured": {
+                "input_tokens": 9276,
+                "cache_read_input_tokens": 289414,
+                "cache_creation_input_tokens": 32613,
+                "output_tokens": 3870,
+                "cost_usd": 0.36972
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 1,
+                "total": 2,
+                "pass_rate": 0.5,
+                "avg_run_seconds": 62.5,
+                "measured": {
+                  "input_tokens": 8838,
+                  "cache_read_input_tokens": 713704,
+                  "cache_creation_input_tokens": 35190,
+                  "output_tokens": 7814,
+                  "cost_usd": 0.570315
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.5,
+                "avg_run_seconds": -34.8,
+                "input_tokens": 438,
+                "output_tokens": -3944,
+                "cost_usd": -0.200595
               }
             },
             "openai/gpt-5.4": {
