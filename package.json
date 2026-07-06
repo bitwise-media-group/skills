@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "markdownlint-cli2": "^0.22.1",
-    "prettier": "^3.8.5",
+    "prettier": "^3.9.3",
     "@anthropic-ai/claude-code": "^2.1.195"
   }
 }
