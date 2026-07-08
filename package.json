@@ -13,8 +13,8 @@
     "lint:fix": "markdownlint-cli2 --fix '**/*.md'"
   },
   "devDependencies": {
-    "markdownlint-cli2": "^0.22.1",
+    "markdownlint-cli2": "^0.23.0",
     "prettier": "^3.9.4",
-    "@anthropic-ai/claude-code": "^2.1.197"
+    "@anthropic-ai/claude-code": "^2.1.198"
   }
 }
