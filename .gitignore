@@ -16,3 +16,6 @@ node_modules/
 
 # python build artifacts
 __pycache__/
+
+# eval/test reports (evolve report --check writes junit/cobertura here)
+coverage/

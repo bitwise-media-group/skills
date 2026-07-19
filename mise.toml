@@ -1,0 +1,12 @@
+# Copyright 2026 Bitwise Media Group
+# SPDX-License-Identifier: MIT
+#
+# skills — the Claude skill/plugin marketplace and its evaluation suite.
+# The build surface comes from the toolchain library (the .mise/ submodule):
+# the agent-plugins archetype provides fmt/lint/test/ci/pr plus the evolve
+# eval tiers (triggers/evals/all/report), reading .evolve.json at the root.
+# tasks.toml is included after the archetype so its lint redefinition (which
+# layers the repo-local plugin/fixture/installer checks onto the archetype
+# gate) wins the name collision.
+[task_config]
+includes = [".mise/tasks/agent-plugins.toml", "tasks.toml"]

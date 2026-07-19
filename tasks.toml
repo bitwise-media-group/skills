@@ -1,0 +1,65 @@
+# Copyright 2026 Bitwise Media Group
+# SPDX-License-Identifier: MIT
+#
+# Repo-local tasks layered on the agent-plugins archetype (included after it
+# from the root mise.toml, so the lint redefinition below wins). The helpers
+# port the old Makefile's extras: `claude plugin validate` needs the claude
+# CLI installed out of node_modules (npm ci --ignore-scripts skips the
+# package's own install step, so it runs here once behind a sentinel), the
+# eval fixtures must be valid JSON (checked with the pinned node — no jq
+# dependency), and the installer must parse.
+
+[node-modules]
+hide = true
+dir = "{{config_root}}"
+sources = ["package.json", "package-lock.json"]
+outputs = ["node_modules/.package-lock.json"]
+run = "npm ci --ignore-scripts"
+
+[claude-cli]
+hide = true
+dir = "{{config_root}}"
+depends = ["node-modules"]
+sources = ["package-lock.json"]
+outputs = ["node_modules/.claude-cli"]
+run = [
+  "node node_modules/@anthropic-ai/claude-code/install.cjs",
+  "touch node_modules/.claude-cli"
+]
+
+[plugin-validate]
+hide = true
+dir = "{{config_root}}"
+depends = ["claude-cli"]
+run = "npm run lint:plugin"
+
+[fixture-json]
+hide = true
+dir = "{{config_root}}"
+run = """
+set -eu
+for f in plugins/*/evals/*/*.json; do
+  [ -e "$f" ] || continue
+  node -e 'JSON.parse(require("fs").readFileSync(process.argv[1]))' "$f" \
+    || { echo "invalid JSON: $f"; exit 1; }
+done
+"""
+
+[installer-syntax]
+hide = true
+dir = "{{config_root}}"
+run = "sh -n install.sh"
+
+# The archetype gate plus the repo-local checks above.
+[lint]
+description = "prose lint + license check + evolve checks + plugin validate + fixture/installer checks"
+run = [
+  { task = "license-check" },
+  { task = "lint-containers" },
+  { task = "lint-shell" },
+  { task = "lint-prose" },
+  { task = "evolve-checks" },
+  { task = "plugin-validate" },
+  { task = "fixture-json" },
+  { task = "installer-syntax" }
+]

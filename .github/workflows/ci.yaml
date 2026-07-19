@@ -1,13 +1,13 @@
 # Copyright 2026 Bitwise Media Group
 # SPDX-License-Identifier: MIT
 
-# Caller for the reusable CI workflow. It owns the push/pull_request triggers; the
-# reusable workflow runs the canonical Makefile gates (lint, build, test) as one
-# job each and sets up only the toolchains this repo has — setup-go from go.work
-# (the tools-only module `make lint` drives via `go tool`) and setup-node from
-# package.json (.node-version pins the version). `make build` is a no-op here; the
-# real work is `make lint` (markdownlint + evolve Tier 0 --strict + eval-JSON +
-# license + install.sh parse) and `make test` (evolve checks + report --check).
+# Caller for the reusable CI workflow. It owns the push/pull_request triggers;
+# the reusable workflow discovers which canonical mise tasks this repo defines
+# (`mise tasks ls --name-only`) and runs each as one job. The tasks come from
+# the toolchain submodule's agent-plugins archetype plus tasks.toml: `lint`
+# (prose + evolve Tier 0 --strict + eval-JSON + license + plugin validate +
+# install.sh parse) and `test` (evolve checks + report --check); there is no
+# build task, so that leg is skipped.
 #
 # coverage: false — this is a skills library, it emits no coverage, so the Codecov
 # upload job is skipped.
@@ -27,6 +27,6 @@ permissions:
 
 jobs:
   ci:
-    uses: bitwise-media-group/github-workflows/.github/workflows/ci.yaml@176732b8b8ef2598ae0593db728b4415bcc86888 # v4.4.0
+    uses: bitwise-media-group/github-workflows/.github/workflows/ci.yaml@3636c830f0b00c591f8b27401c45786d08466f18 # v6.0.0
     with:
       coverage: false # skills library — no coverage to upload
