@@ -34,7 +34,7 @@ permissions: {}
 
 jobs:
   auto-merge:
-    uses: bitwise-media-group/github-workflows/.github/workflows/dependabot-merge.yaml@176732b8b8ef2598ae0593db728b4415bcc86888 # v4.4.0
+    uses: bitwise-media-group/github-workflows/.github/workflows/dependabot-merge.yaml@b9c031429f149794bedb5411b08d5a787b8d9959 # v6.0.1
     with:
       app-client-id: ${{ vars.FF_MERGE_CLIENT_ID }}
       # update-types: '["version-update:semver-patch", "version-update:semver-minor"]' # default
