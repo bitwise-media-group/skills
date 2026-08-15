@@ -13,6 +13,7 @@
 | Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 3/3 | +0% | 3.5s | 673 | $0.0007 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 5.3s | 923 | $0.0046 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 6.8s | 673 | $0.0020 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | — | 3.6s | — | — |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | — | 15.1s | 594 | $0.0015 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 11.3s | 594 | $0.0030 |
 
@@ -23,6 +24,7 @@
 | Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 3/3 | +0% | 4.0s | 673 | $0.0007 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 3.6s | 925 | $0.0046 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 4.6s | 673 | $0.0020 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | — | 3.3s | — | — |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | — | 12.9s | 595 | $0.0015 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 11.4s | 595 | $0.0030 |
 
@@ -30,9 +32,10 @@
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 1/3 | +33% | 9.1s | 673 | $0.0007 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 3/3 | +67% | 3.5s | 673 | $0.0007 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +67% | 7.8s | 922 | $0.0046 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 12.6s | 673 | $0.0020 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | — | 3.1s | — | — |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | — | 16.3s | 594 | $0.0015 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 12.6s | 594 | $0.0030 |
 
@@ -40,9 +43,10 @@
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 8.4s | 673 | $0.0007 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 7.3s | 673 | $0.0007 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 2/3 | +0% | 12.7s | 922 | $0.0046 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 11.7s | 673 | $0.0020 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | — | 3.5s | — | — |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | — | 14.8s | 593 | $0.0015 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 10.5s | 593 | $0.0030 |
 
@@ -53,6 +57,7 @@
 | Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 3/3 | +0% | 3.7s | 677 | $0.0007 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 6.4s | 929 | $0.0046 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 4.1s | 677 | $0.0020 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | — | 3.0s | — | — |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | — | 15.7s | 599 | $0.0015 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 9.2s | 599 | $0.0030 |
 
@@ -63,6 +68,7 @@
 | Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 9.9s | 672 | $0.0007 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 17.9s | 920 | $0.0046 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 9.1s | 672 | $0.0020 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | — | 7.9s | — | — |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | — | 68.4s | 594 | $0.0015 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 53.0s | 594 | $0.0030 |
 
@@ -73,6 +79,7 @@
 | Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 5.9s | 669 | $0.0007 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 11.0s | 914 | $0.0046 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 33.3s | 669 | $0.0020 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | — | 7.1s | — | — |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | — | 39.0s | 591 | $0.0015 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 74.6s | 591 | $0.0030 |
 
@@ -83,6 +90,7 @@
 | Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 6.5s | 669 | $0.0007 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 12.1s | 917 | $0.0046 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 8.8s | 669 | $0.0020 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | — | 6.9s | — | — |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | — | 49.7s | 591 | $0.0015 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 93.0s | 591 | $0.0030 |
 
@@ -93,6 +101,7 @@
 | Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 9.1s | 675 | $0.0007 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 16.0s | 924 | $0.0046 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 5.3s | 675 | $0.0020 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | — | 8.5s | — | — |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 1/3 | — | 19.5s | 595 | $0.0015 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 7.4s | 595 | $0.0030 |
 
@@ -103,6 +112,7 @@
 | Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 7.2s | 670 | $0.0007 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 10.5s | 916 | $0.0046 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 11.2s | 670 | $0.0020 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | — | 8.0s | — | — |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | — | 50.4s | 591 | $0.0015 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 72.9s | 591 | $0.0030 |
 
@@ -122,15 +132,11 @@
 
 | Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | -14% | +0% | 51.1s | 684 | $0.0007 | 65/2,701 | 383,272/21,601 | $0.0957 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +29% | +29% | 41.1s | 684 | $0.0007 | 94/3,264 | 402,914/16,647 | $0.0906 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +29% | 104.4s | 940 | $0.0047 | 2,872/6,017 | 320,960/15,684 | $0.4827 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +29% | 106.4s | 684 | $0.0021 | 15/3,589 | 295,256/14,450 | $0.2415 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +29% | 94.9s | 604 | $0.0015 | 21,179/3,484 | 165,632/— | $0.5193 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +29% | 93.7s | 604 | $0.0030 | 24,597/3,658 | 190,592/— | $1.1857 |
-
-- `claude-haiku-4-5` failed `file modules/legacy/versions.tf is absent`: modules/legacy/versions.tf exists
-
-- `claude-haiku-4-5` failed `command `terraform init -backend=false -input=false >/dev/null && terraform validate` exits 0`: exit 1: , in terraform: │    4:   required_providers { │  │ A module may have only one required providers configuration. The required │ providers were p…
 
 ## terraform-style
 
@@ -140,7 +146,7 @@
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 10.0s | 1,485 | $0.0015 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 5.5s | 1,485 | $0.0015 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 11.9s | 1,974 | $0.0099 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 9.8s | 1,485 | $0.0045 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 2/3 | +0% | 59.9s | 1,237 | $0.0031 |
@@ -150,7 +156,7 @@
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 5.6s | 1,482 | $0.0015 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 6.5s | 1,482 | $0.0015 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 11.5s | 1,969 | $0.0098 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 2/3 | +33% | 7.3s | 1,482 | $0.0044 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 12.2s | 1,236 | $0.0031 |
@@ -160,7 +166,7 @@
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 7.7s | 1,484 | $0.0015 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 1/3 | +33% | 6.3s | 1,484 | $0.0015 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 7.6s | 1,968 | $0.0098 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 4.8s | 1,484 | $0.0045 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 2/3 | +0% | 19.1s | 1,237 | $0.0031 |
@@ -170,7 +176,7 @@
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 11.1s | 1,483 | $0.0015 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 7.1s | 1,483 | $0.0015 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 15.8s | 1,972 | $0.0099 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 38.5s | 1,483 | $0.0044 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 30.1s | 1,238 | $0.0031 |
@@ -190,7 +196,7 @@
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 6.4s | 1,478 | $0.0015 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 5.1s | 1,478 | $0.0015 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 18.4s | 1,967 | $0.0098 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 11.0s | 1,478 | $0.0044 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 28.4s | 1,233 | $0.0031 |
@@ -200,7 +206,7 @@
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 11.4s | 1,488 | $0.0015 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 5.4s | 1,488 | $0.0015 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 25.6s | 1,979 | $0.0099 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 11.8s | 1,488 | $0.0045 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 17.3s | 1,241 | $0.0031 |
@@ -210,7 +216,7 @@
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 9.9s | 1,482 | $0.0015 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 6.1s | 1,482 | $0.0015 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 11.5s | 1,969 | $0.0098 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 9.7s | 1,482 | $0.0044 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 21.1s | 1,237 | $0.0031 |
@@ -316,7 +322,7 @@
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | +33% | 7.6s | 585 | $0.0006 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | +0% | 7.6s | 585 | $0.0006 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 8.9s | 822 | $0.0041 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 4.5s | 585 | $0.0018 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 13.5s | 524 | $0.0013 |
@@ -336,7 +342,7 @@
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 11.7s | 592 | $0.0006 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 7.8s | 592 | $0.0006 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 1/3 | +33% | 25.3s | 833 | $0.0042 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | -33% | 17.8s | 592 | $0.0018 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | +0% | 16.1s | 531 | $0.0013 |
@@ -346,7 +352,7 @@
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 8.0s | 586 | $0.0006 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 1/3 | +33% | 5.6s | 586 | $0.0006 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 13.3s | 825 | $0.0041 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 0/3 | +0% | 11.7s | 586 | $0.0018 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 2/3 | +0% | 22.8s | 525 | $0.0013 |

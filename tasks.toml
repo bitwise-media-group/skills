@@ -1,22 +1,39 @@
 # Copyright 2026 Bitwise Media Group
 # SPDX-License-Identifier: MIT
 #
-# Repo-local tasks layered on the agent-plugins archetype (included after it
-# from the root mise.toml, so the lint redefinition below wins). The helpers
-# port the old Makefile's extras: `claude plugin validate` runs the claude
+# Repo-local tasks layered on the toolchain library's universal license/
+# prose/container/shell lint tasks (the .mise/ submodule). This file supplies
+# everything specific to a plugin/marketplace repo: the evolve eval suite
+# (reading .evolve.json at the root) and the plugin/marketplace checks
+# ported from the old Makefile — `claude plugin validate` runs the claude
 # CLI as a task-scoped mise tool (a native release binary from the aqua
-# registry, checksum-verified — no npm, no node_modules; task-scoped like
-# dotty/evolve so it never shadows a developer's own claude on the activated
-# PATH), the eval fixtures must be valid JSON (checked with the pinned node —
-# no jq dependency), and the installer must parse. The claude pin is exact
-# and bumped by hand: task-scoped tools sit outside mise.lock and
-# `mise upgrade --bump`, and dependabot no longer sees it without a
-# package.json.
+# registry, checksum-verified — no npm, no node_modules; task-scoped so it
+# never shadows a developer's own claude on the activated PATH), the eval
+# fixtures must be valid JSON (checked with the pinned node — no jq
+# dependency), and the installer must parse.
+#
+# The eval tiers keep their old Makefile names (triggers/evals/all/report)
+# and default to --new --modified: full runs are LLM-priced, so the sweep is
+# opt-in via `evolve` directly rather than a task default.
+#
+# evolve is pinned in the root mise.toml [tools] (see that file's header), so
+# every task below can just call it directly. claude-code stays task-scoped:
+# its pin is exact and bumped by hand, since task-scoped tools sit outside
+# mise.lock and `mise upgrade --bump`, and dependabot doesn't see it without
+# a package.json. mise only resolves a task's `tools` when that task is
+# depended on or invoked directly, not when it's reached through a
+# `{ task = "..." }` entry in another task's `run` list, so `lint` reaches
+# plugin-validate via a real nested `mise run plugin-validate` invocation
+# instead of a `{ task = ... }` entry.
+
+[evolve-checks]
+hide = true
+dir = "{{config_root}}"
+run = "evolve run checks --strict"
 
 [plugin-validate]
 hide = true
 dir = "{{config_root}}"
-tools = { "aqua:anthropics/claude-code" = "2.1.224" }
 run = "claude plugin validate ."
 
 [fixture-json]
@@ -36,7 +53,10 @@ hide = true
 dir = "{{config_root}}"
 run = "sh -n install.sh"
 
-# The archetype gate plus the repo-local checks above.
+[fmt]
+description = "format prose, inject license headers"
+run = [{ task = "fmt-prose" }, { task = "license" }]
+
 [lint]
 description = "prose lint + license check + evolve checks + plugin validate + fixture/installer checks"
 run = [
@@ -48,4 +68,45 @@ run = [
   { task = "plugin-validate" },
   { task = "fixture-json" },
   { task = "installer-syntax" }
+]
+
+[test]
+description = "validate the plugins and that eval results meet the minimum thresholds"
+dir = "{{config_root}}"
+run = [
+  "evolve run checks",
+  "evolve report --check --junit=coverage/junit.xml --cobertura=coverage/cobertura-coverage.xml"
+]
+
+[triggers]
+description = "tier 1 — trigger accuracy + token usage (new/modified)"
+dir = "{{config_root}}"
+run = "evolve run triggers --new --modified"
+
+[evals]
+description = "tier 2 — behavioral evals + token usage (new/modified)"
+dir = "{{config_root}}"
+run = "evolve run evals --new --modified"
+
+[all]
+description = "all eval tiers, then regenerate reports"
+dir = "{{config_root}}"
+run = "evolve run all --new --modified"
+
+[report]
+description = "regenerate the EVALUATION files from stored results"
+dir = "{{config_root}}"
+run = "evolve report"
+
+[ci]
+description = "the gates the reusable CI workflow runs"
+run = [{ task = "lint" }, { task = "test" }]
+
+[pr]
+description = "full local gate before a pull request"
+run = [
+  { task = "fmt" },
+  { task = "lint" },
+  { task = "test" },
+  { task = "commit" }
 ]

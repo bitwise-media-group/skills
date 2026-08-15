@@ -220,8 +220,8 @@
         "model": "claude-fable-5",
         "display": "Claude Fable 5",
         "harness": "claude",
-        "tool_version": "v0.5.0-6-g47ca9ac",
-        "ran_at": "2026-07-02T18:44:00Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T06:15:40Z",
         "executed": true,
         "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
         "timeout_seconds": 600,
@@ -238,11 +238,11 @@
               "input_cost_usd": 0.02001
             },
             "measured": {
-              "input_tokens": 4324,
-              "cache_read_input_tokens": 208018,
-              "cache_creation_input_tokens": 13836,
-              "output_tokens": 2987,
-              "cost_usd": 0.677966
+              "input_tokens": 11,
+              "cache_read_input_tokens": 140067,
+              "cache_creation_input_tokens": 10114,
+              "output_tokens": 1931,
+              "cost_usd": 0.439645
             },
             "expectations": [
               {
@@ -281,19 +281,18 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 2,
-                "Edit": 2,
-                "Glob": 1,
+                "Bash": 3,
                 "Read": 1,
-                "Skill": 1
+                "Skill": 1,
+                "Write": 1
               },
-              "total_tool_calls": 7
+              "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 229165,
-              "executor_duration_seconds": 71.5
+              "total_tokens": 152123,
+              "executor_duration_seconds": 32.8
             },
-            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
@@ -357,33 +356,33 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 52.4,
+          "avg_run_seconds": 33,
           "estimate": {
             "input_tokens": 3992,
             "input_cost_usd": 0.03992
           },
           "measured": {
-            "input_tokens": 8513,
-            "cache_read_input_tokens": 328219,
-            "cache_creation_input_tokens": 25743,
-            "output_tokens": 4078,
-            "cost_usd": 1.13338
+            "input_tokens": 4200,
+            "cache_read_input_tokens": 260268,
+            "cache_creation_input_tokens": 22021,
+            "output_tokens": 3022,
+            "cost_usd": 0.895059
           }
         },
         "baseline": {
-          "ran_at": "2026-07-02T18:44:00Z",
+          "ran_at": "2026-08-15T06:15:40Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 55.7,
+            "avg_run_seconds": 38.1,
             "measured": {
-              "input_tokens": 8061,
-              "cache_read_input_tokens": 314458,
-              "cache_creation_input_tokens": 22806,
-              "output_tokens": 4903,
-              "cost_usd": 1.097629
+              "input_tokens": 3975,
+              "cache_read_input_tokens": 245460,
+              "cache_creation_input_tokens": 19158,
+              "output_tokens": 4233,
+              "cost_usd": 0.881291
             }
           },
           "results": [
@@ -391,11 +390,11 @@
               "id": "remove-pull-request-target",
               "passed": true,
               "measured": {
-                "input_tokens": 4100,
-                "cache_read_input_tokens": 226273,
-                "cache_creation_input_tokens": 13003,
-                "output_tokens": 3698,
-                "cost_usd": 0.712896
+                "input_tokens": 14,
+                "cache_read_input_tokens": 157275,
+                "cache_creation_input_tokens": 9355,
+                "output_tokens": 3028,
+                "cost_usd": 0.496558
               },
               "summary": {
                 "passed": 3,
@@ -404,9 +403,9 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 81.1
+                "executor_duration_seconds": 46
               },
-              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+              "fingerprint": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
             },
             {
               "id": "fix-expression-injection",
@@ -430,6 +429,77 @@
               "fingerprint": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
             }
           ]
+        },
+        "previous": {
+          "ran_at": "2026-07-02T18:44:00Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 52.4,
+            "estimate": {
+              "input_tokens": 3992,
+              "input_cost_usd": 0.03992
+            },
+            "measured": {
+              "input_tokens": 8513,
+              "cache_read_input_tokens": 328219,
+              "cache_creation_input_tokens": 25743,
+              "output_tokens": 4078,
+              "cost_usd": 1.13338
+            }
+          },
+          "results": [
+            {
+              "id": "remove-pull-request-target",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 2001,
+                "input_cost_usd": 0.02001
+              },
+              "measured": {
+                "input_tokens": 4324,
+                "cache_read_input_tokens": 208018,
+                "cache_creation_input_tokens": 13836,
+                "output_tokens": 2987,
+                "cost_usd": 0.677966
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 71.5
+              }
+            },
+            {
+              "id": "fix-expression-injection",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1991,
+                "input_cost_usd": 0.01991
+              },
+              "measured": {
+                "input_tokens": 4189,
+                "cache_read_input_tokens": 120201,
+                "cache_creation_input_tokens": 11907,
+                "output_tokens": 1091,
+                "cost_usd": 0.455414
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 33.2
+              }
+            }
+          ]
         }
       }
     },
@@ -439,8 +509,8 @@
         "model": "claude-haiku-4-5",
         "display": "Claude Haiku 4.5",
         "harness": "claude",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:15:21Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T13:31:22Z",
         "executed": true,
         "content_hash": "a44bd2fafb2e0ce9edb5adffc1a1050f34f1b4e418e82403ace1b8183677750b",
         "runs_per_query": 3,
@@ -456,7 +526,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 7.5,
+            "avg_run_seconds": 8.4,
             "estimate": {
               "input_tokens": 1399,
               "input_cost_usd": 0.001399
@@ -466,10 +536,10 @@
           {
             "query": "Pin all the actions in our workflows to commit SHAs",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 2,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 8.1,
+            "passed": true,
+            "avg_run_seconds": 4.9,
             "estimate": {
               "input_tokens": 1399,
               "input_cost_usd": 0.001399
@@ -492,10 +562,10 @@
           {
             "query": "This workflow echoes a PR title into a run step — is that a script-injection risk?",
             "should_trigger": true,
-            "hits": 1,
+            "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 8.4,
+            "avg_run_seconds": 13,
             "estimate": {
               "input_tokens": 1407,
               "input_cost_usd": 0.001407
@@ -508,7 +578,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 9.6,
+            "avg_run_seconds": 7.9,
             "estimate": {
               "input_tokens": 1396,
               "input_cost_usd": 0.001396
@@ -521,7 +591,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 9.6,
+            "avg_run_seconds": 8.7,
             "estimate": {
               "input_tokens": 1395,
               "input_cost_usd": 0.001395
@@ -634,10 +704,10 @@
           }
         ],
         "summary": {
-          "passed": 9,
-          "failed": 5,
+          "passed": 10,
+          "failed": 4,
           "total": 14,
-          "pass_rate": 0.642857,
+          "pass_rate": 0.714286,
           "avg_run_seconds": 9.2,
           "estimate": {
             "input_tokens": 19600,
@@ -645,13 +715,13 @@
           }
         },
         "previous": {
-          "ran_at": "2026-07-31T19:58:08Z",
+          "ran_at": "2026-07-31T21:15:21Z",
           "summary": {
             "passed": 9,
             "failed": 5,
             "total": 14,
             "pass_rate": 0.642857,
-            "avg_run_seconds": 9.1,
+            "avg_run_seconds": 9.2,
             "estimate": {
               "input_tokens": 19600,
               "input_cost_usd": 0.0196
@@ -664,7 +734,7 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 7.2,
+              "avg_run_seconds": 7.5,
               "estimate": {
                 "input_tokens": 1399,
                 "input_cost_usd": 0.001399
@@ -674,10 +744,10 @@
             {
               "query": "Pin all the actions in our workflows to commit SHAs",
               "should_trigger": true,
-              "hits": 1,
+              "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 7.3,
+              "avg_run_seconds": 8.1,
               "estimate": {
                 "input_tokens": 1399,
                 "input_cost_usd": 0.001399
@@ -703,7 +773,7 @@
               "hits": 1,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 9.3,
+              "avg_run_seconds": 8.4,
               "estimate": {
                 "input_tokens": 1407,
                 "input_cost_usd": 0.001407
@@ -716,7 +786,7 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 8.9,
+              "avg_run_seconds": 9.6,
               "estimate": {
                 "input_tokens": 1396,
                 "input_cost_usd": 0.001396
@@ -729,7 +799,7 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 9.1,
+              "avg_run_seconds": 9.6,
               "estimate": {
                 "input_tokens": 1395,
                 "input_cost_usd": 0.001395
@@ -848,8 +918,8 @@
         "model": "claude-haiku-4-5",
         "display": "Claude Haiku 4.5",
         "harness": "claude",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-27T20:40:23Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T06:12:01Z",
         "executed": true,
         "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
         "timeout_seconds": 600,
@@ -866,11 +936,11 @@
               "input_cost_usd": 0.001439
             },
             "measured": {
-              "input_tokens": 34,
-              "cache_read_input_tokens": 103903,
-              "cache_creation_input_tokens": 19754,
-              "output_tokens": 1541,
-              "cost_usd": 0.058259
+              "input_tokens": 43,
+              "cache_read_input_tokens": 121851,
+              "cache_creation_input_tokens": 10096,
+              "output_tokens": 1645,
+              "cost_usd": 0.041298
             },
             "expectations": [
               {
@@ -909,18 +979,18 @@
             },
             "execution_metrics": {
               "tool_calls": {
+                "Bash": 1,
                 "Edit": 1,
-                "Glob": 1,
                 "Read": 1,
                 "Skill": 1
               },
               "total_tool_calls": 4
             },
             "timing": {
-              "total_tokens": 125232,
-              "executor_duration_seconds": 21.5
+              "total_tokens": 133635,
+              "executor_duration_seconds": 22.8
             },
-            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
@@ -982,33 +1052,33 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 16.6,
+          "avg_run_seconds": 17.2,
           "estimate": {
             "input_tokens": 2863,
             "input_cost_usd": 0.002863
           },
           "measured": {
-            "input_tokens": 62,
-            "cache_read_input_tokens": 184101,
-            "cache_creation_input_tokens": 35885,
-            "output_tokens": 2306,
-            "cost_usd": 0.103006
+            "input_tokens": 71,
+            "cache_read_input_tokens": 202049,
+            "cache_creation_input_tokens": 26227,
+            "output_tokens": 2410,
+            "cost_usd": 0.086045
           }
         },
         "baseline": {
-          "ran_at": "2026-06-27T20:40:23Z",
+          "ran_at": "2026-08-15T06:12:01Z",
           "summary": {
             "passed": 1,
             "failed": 1,
             "total": 2,
             "pass_rate": 0.5,
-            "avg_run_seconds": 13.8,
+            "avg_run_seconds": 23.5,
             "measured": {
-              "input_tokens": 48,
-              "cache_read_input_tokens": 159561,
-              "cache_creation_input_tokens": 31746,
-              "output_tokens": 1793,
-              "cost_usd": 0.089715
+              "input_tokens": 90,
+              "cache_read_input_tokens": 282372,
+              "cache_creation_input_tokens": 25942,
+              "output_tokens": 3339,
+              "cost_usd": 0.098156
             }
           },
           "results": [
@@ -1016,22 +1086,22 @@
               "id": "remove-pull-request-target",
               "passed": false,
               "measured": {
-                "input_tokens": 24,
-                "cache_read_input_tokens": 79828,
-                "cache_creation_input_tokens": 16041,
-                "output_tokens": 1112,
-                "cost_usd": 0.046291
+                "input_tokens": 66,
+                "cache_read_input_tokens": 202639,
+                "cache_creation_input_tokens": 10237,
+                "output_tokens": 2658,
+                "cost_usd": 0.054732
               },
               "summary": {
-                "passed": 0,
-                "failed": 3,
+                "passed": 2,
+                "failed": 1,
                 "total": 3,
-                "pass_rate": 0
+                "pass_rate": 0.666667
               },
               "timing": {
-                "executor_duration_seconds": 16.6
+                "executor_duration_seconds": 35.9
               },
-              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+              "fingerprint": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
             },
             {
               "id": "fix-expression-injection",
@@ -1057,23 +1127,23 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-06-22T16:34:27Z",
+          "ran_at": "2026-06-27T20:40:23Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 16.2,
+            "avg_run_seconds": 16.6,
             "estimate": {
               "input_tokens": 2863,
               "input_cost_usd": 0.002863
             },
             "measured": {
-              "input_tokens": 99,
-              "cache_read_input_tokens": 159090,
-              "cache_creation_input_tokens": 70351,
-              "output_tokens": 2607,
-              "cost_usd": 0.170994
+              "input_tokens": 62,
+              "cache_read_input_tokens": 184101,
+              "cache_creation_input_tokens": 35885,
+              "output_tokens": 2306,
+              "cost_usd": 0.103006
             }
           },
           "results": [
@@ -1085,11 +1155,11 @@
                 "input_cost_usd": 0.001439
               },
               "measured": {
-                "input_tokens": 38,
-                "cache_read_input_tokens": 92010,
-                "cache_creation_input_tokens": 37122,
-                "output_tokens": 1760,
-                "cost_usd": 0.09291
+                "input_tokens": 34,
+                "cache_read_input_tokens": 103903,
+                "cache_creation_input_tokens": 19754,
+                "output_tokens": 1541,
+                "cost_usd": 0.058259
               },
               "summary": {
                 "passed": 3,
@@ -1098,7 +1168,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 20.3
+                "executor_duration_seconds": 21.5
               }
             },
             {
@@ -1109,11 +1179,11 @@
                 "input_cost_usd": 0.001424
               },
               "measured": {
-                "input_tokens": 61,
-                "cache_read_input_tokens": 67080,
-                "cache_creation_input_tokens": 33229,
-                "output_tokens": 847,
-                "cost_usd": 0.078084
+                "input_tokens": 28,
+                "cache_read_input_tokens": 80198,
+                "cache_creation_input_tokens": 16131,
+                "output_tokens": 765,
+                "cost_usd": 0.044747
               },
               "summary": {
                 "passed": 2,
@@ -1122,7 +1192,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 12
+                "executor_duration_seconds": 11.6
               }
             }
           ]
@@ -2240,8 +2310,8 @@
         "model": "claude-opus-5",
         "display": "Claude Opus 5",
         "harness": "claude",
-        "tool_version": "v0.6.0-14-ga373d30-dirty",
-        "ran_at": "2026-07-31T19:59:48Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T06:14:21Z",
         "executed": true,
         "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
         "timeout_seconds": 600,
@@ -2259,10 +2329,10 @@
             },
             "measured": {
               "input_tokens": 14,
-              "cache_read_input_tokens": 156922,
-              "cache_creation_input_tokens": 10425,
-              "output_tokens": 2501,
-              "cost_usd": 0.245969
+              "cache_read_input_tokens": 163396,
+              "cache_creation_input_tokens": 10975,
+              "output_tokens": 2617,
+              "cost_usd": 0.257606
             },
             "expectations": [
               {
@@ -2309,10 +2379,10 @@
               "total_tool_calls": 7
             },
             "timing": {
-              "total_tokens": 169862,
-              "executor_duration_seconds": 40.2
+              "total_tokens": 177002,
+              "executor_duration_seconds": 44.5
             },
-            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
@@ -2375,33 +2445,33 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 29.8,
+          "avg_run_seconds": 31.9,
           "estimate": {
             "input_tokens": 3992,
             "input_cost_usd": 0.01996
           },
           "measured": {
             "input_tokens": 22,
-            "cache_read_input_tokens": 246211,
-            "cache_creation_input_tokens": 19140,
-            "output_tokens": 3565,
-            "cost_usd": 0.405042
+            "cache_read_input_tokens": 252685,
+            "cache_creation_input_tokens": 19690,
+            "output_tokens": 3681,
+            "cost_usd": 0.416679
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T17:14:18Z",
+          "ran_at": "2026-08-15T06:14:21Z",
           "summary": {
             "passed": 1,
             "failed": 1,
             "total": 2,
             "pass_rate": 0.5,
-            "avg_run_seconds": 37.3,
+            "avg_run_seconds": 37.7,
             "measured": {
-              "input_tokens": 18,
-              "cache_read_input_tokens": 196703,
-              "cache_creation_input_tokens": 16252,
-              "output_tokens": 3612,
-              "cost_usd": 0.352538
+              "input_tokens": 24,
+              "cache_read_input_tokens": 269816,
+              "cache_creation_input_tokens": 16771,
+              "output_tokens": 4177,
+              "cost_usd": 0.408444
             }
           },
           "results": [
@@ -2409,11 +2479,11 @@
               "id": "remove-pull-request-target",
               "passed": false,
               "measured": {
-                "input_tokens": 10,
-                "cache_read_input_tokens": 111203,
-                "cache_creation_input_tokens": 9414,
-                "output_tokens": 2657,
-                "cost_usd": 0.216855
+                "input_tokens": 16,
+                "cache_read_input_tokens": 184316,
+                "cache_creation_input_tokens": 9933,
+                "output_tokens": 3222,
+                "cost_usd": 0.272761
               },
               "summary": {
                 "passed": 2,
@@ -2422,9 +2492,9 @@
                 "pass_rate": 0.666667
               },
               "timing": {
-                "executor_duration_seconds": 49.7
+                "executor_duration_seconds": 50.4
               },
-              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+              "fingerprint": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
             },
             {
               "id": "fix-expression-injection",
@@ -2450,48 +2520,48 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T17:14:18Z",
+          "ran_at": "2026-07-31T19:59:48Z",
           "summary": {
-            "passed": 1,
-            "failed": 1,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 28.9,
+            "pass_rate": 1,
+            "avg_run_seconds": 29.8,
             "estimate": {
               "input_tokens": 3992,
               "input_cost_usd": 0.01996
             },
             "measured": {
-              "input_tokens": 18,
-              "cache_read_input_tokens": 204050,
-              "cache_creation_input_tokens": 18565,
-              "output_tokens": 3491,
-              "cost_usd": 0.376327
+              "input_tokens": 22,
+              "cache_read_input_tokens": 246211,
+              "cache_creation_input_tokens": 19140,
+              "output_tokens": 3565,
+              "cost_usd": 0.405042
             }
           },
           "results": [
             {
               "id": "remove-pull-request-target",
-              "passed": false,
+              "passed": true,
               "estimate": {
                 "input_tokens": 2001,
                 "input_cost_usd": 0.010005
               },
               "measured": {
-                "input_tokens": 10,
-                "cache_read_input_tokens": 114761,
-                "cache_creation_input_tokens": 9850,
-                "output_tokens": 2427,
-                "cost_usd": 0.217254
+                "input_tokens": 14,
+                "cache_read_input_tokens": 156922,
+                "cache_creation_input_tokens": 10425,
+                "output_tokens": 2501,
+                "cost_usd": 0.245969
               },
               "summary": {
-                "passed": 2,
-                "failed": 1,
+                "passed": 3,
+                "failed": 0,
                 "total": 3,
-                "pass_rate": 0.666667
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 38.4
+                "executor_duration_seconds": 40.2
               }
             },
             {
@@ -3633,8 +3703,8 @@
         "model": "claude-sonnet-5",
         "display": "Claude Sonnet 5",
         "harness": "claude",
-        "tool_version": "v0.5.0-6-g47ca9ac",
-        "ran_at": "2026-07-02T18:38:47Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T06:12:46Z",
         "executed": true,
         "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
         "timeout_seconds": 600,
@@ -3651,11 +3721,11 @@
               "input_cost_usd": 0.006003
             },
             "measured": {
-              "input_tokens": 4509,
-              "cache_read_input_tokens": 195728,
-              "cache_creation_input_tokens": 15972,
-              "output_tokens": 2278,
-              "cost_usd": 0.202885
+              "input_tokens": 11,
+              "cache_read_input_tokens": 200725,
+              "cache_creation_input_tokens": 12410,
+              "output_tokens": 1449,
+              "cost_usd": 0.157088
             },
             "expectations": [
               {
@@ -3694,18 +3764,18 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 2,
+                "Bash": 1,
                 "Edit": 1,
-                "Read": 1,
+                "Read": 2,
                 "Skill": 1
               },
               "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 218487,
-              "executor_duration_seconds": 44.1
+              "total_tokens": 214595,
+              "executor_duration_seconds": 19.5
             },
-            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
@@ -3769,33 +3839,33 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 31.4,
+          "avg_run_seconds": 19.1,
           "estimate": {
             "input_tokens": 3992,
             "input_cost_usd": 0.011976
           },
           "measured": {
-            "input_tokens": 9019,
-            "cache_read_input_tokens": 429387,
-            "cache_creation_input_tokens": 30486,
-            "output_tokens": 3197,
-            "cost_usd": 0.388005
+            "input_tokens": 4521,
+            "cache_read_input_tokens": 434384,
+            "cache_creation_input_tokens": 26924,
+            "output_tokens": 2368,
+            "cost_usd": 0.342208
           }
         },
         "baseline": {
-          "ran_at": "2026-07-02T18:38:47Z",
+          "ran_at": "2026-08-15T06:12:46Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 34.4,
+            "avg_run_seconds": 21.2,
             "measured": {
-              "input_tokens": 8566,
-              "cache_read_input_tokens": 417563,
-              "cache_creation_input_tokens": 26661,
-              "output_tokens": 3169,
-              "cost_usd": 0.359759
+              "input_tokens": 4290,
+              "cache_read_input_tokens": 313204,
+              "cache_creation_input_tokens": 22864,
+              "output_tokens": 2742,
+              "cost_usd": 0.286411
             }
           },
           "results": [
@@ -3803,11 +3873,11 @@
               "id": "remove-pull-request-target",
               "passed": true,
               "measured": {
-                "input_tokens": 4286,
-                "cache_read_input_tokens": 263053,
-                "cache_creation_input_tokens": 14359,
-                "output_tokens": 2350,
-                "cost_usd": 0.213841
+                "input_tokens": 10,
+                "cache_read_input_tokens": 158694,
+                "cache_creation_input_tokens": 10562,
+                "output_tokens": 1923,
+                "cost_usd": 0.140493
               },
               "summary": {
                 "passed": 3,
@@ -3816,9 +3886,9 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 51
+                "executor_duration_seconds": 24.6
               },
-              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+              "fingerprint": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
             },
             {
               "id": "fix-expression-injection",
@@ -3842,6 +3912,77 @@
               "fingerprint": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
             }
           ]
+        },
+        "previous": {
+          "ran_at": "2026-07-02T18:38:47Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 31.4,
+            "estimate": {
+              "input_tokens": 3992,
+              "input_cost_usd": 0.011976
+            },
+            "measured": {
+              "input_tokens": 9019,
+              "cache_read_input_tokens": 429387,
+              "cache_creation_input_tokens": 30486,
+              "output_tokens": 3197,
+              "cost_usd": 0.388005
+            }
+          },
+          "results": [
+            {
+              "id": "remove-pull-request-target",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 2001,
+                "input_cost_usd": 0.006003
+              },
+              "measured": {
+                "input_tokens": 4509,
+                "cache_read_input_tokens": 195728,
+                "cache_creation_input_tokens": 15972,
+                "output_tokens": 2278,
+                "cost_usd": 0.202885
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 44.1
+              }
+            },
+            {
+              "id": "fix-expression-injection",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1991,
+                "input_cost_usd": 0.005973
+              },
+              "measured": {
+                "input_tokens": 4510,
+                "cache_read_input_tokens": 233659,
+                "cache_creation_input_tokens": 14514,
+                "output_tokens": 919,
+                "cost_usd": 0.18512
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 18.6
+              }
+            }
+          ]
         }
       }
     },
@@ -3852,7 +3993,7 @@
         "display": "GPT-5.3 Codex Spark",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T01:43:12Z",
+        "ran_at": "2026-08-15T13:47:36Z",
         "executed": true,
         "content_hash": "a44bd2fafb2e0ce9edb5adffc1a1050f34f1b4e418e82403ace1b8183677750b",
         "runs_per_query": 3,
@@ -3883,16 +4024,16 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 6.8,
+            "avg_run_seconds": 13.3,
             "spec_hash": "d25cfa9414bbb0d45b31d1a36f9bcd39d2e509217ef4633674f66811722b4be4"
           },
           {
             "query": "This workflow echoes a PR title into a run step — is that a script-injection risk?",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 1,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 8.3,
+            "avg_run_seconds": 12.8,
             "spec_hash": "b907d640bedd42d63b74d7515472a5b48752184dea1555a19f2583efd454c50a"
           },
           {
@@ -3910,7 +4051,7 @@
             "hits": 1,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 9.6,
+            "avg_run_seconds": 19.7,
             "spec_hash": "8678fe94efe564308fc91817554fa607450d2719d0b6adc0b8f90da1fea015ae"
           },
           {
@@ -3919,7 +4060,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 3.7,
+            "avg_run_seconds": 5,
             "spec_hash": "56aa9353e8530803169126f8e5db94c31769196692c1f1de2a3aafc2cbe8a839"
           },
           {
@@ -3928,7 +4069,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 5.7,
+            "avg_run_seconds": 14,
             "spec_hash": "33b7c4966780af80f0182152af3769f0d32c110d9d41d4ad5258235fce07d85f"
           },
           {
@@ -3991,16 +4132,16 @@
           "failed": 5,
           "total": 14,
           "pass_rate": 0.642857,
-          "avg_run_seconds": 11.6
+          "avg_run_seconds": 13.8
         },
         "previous": {
-          "ran_at": "2026-07-31T21:20:49Z",
+          "ran_at": "2026-08-15T01:43:12Z",
           "summary": {
             "passed": 9,
             "failed": 5,
             "total": 14,
             "pass_rate": 0.642857,
-            "avg_run_seconds": 11.9
+            "avg_run_seconds": 11.6
           },
           "results": [
             {
@@ -4027,7 +4168,7 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 9.3,
+              "avg_run_seconds": 6.8,
               "spec_hash": "d25cfa9414bbb0d45b31d1a36f9bcd39d2e509217ef4633674f66811722b4be4"
             },
             {
@@ -4036,7 +4177,7 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 7.4,
+              "avg_run_seconds": 8.3,
               "spec_hash": "b907d640bedd42d63b74d7515472a5b48752184dea1555a19f2583efd454c50a"
             },
             {
@@ -4054,7 +4195,7 @@
               "hits": 1,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 9.2,
+              "avg_run_seconds": 9.6,
               "spec_hash": "8678fe94efe564308fc91817554fa607450d2719d0b6adc0b8f90da1fea015ae"
             },
             {
@@ -4063,7 +4204,7 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 5,
+              "avg_run_seconds": 3.7,
               "spec_hash": "56aa9353e8530803169126f8e5db94c31769196692c1f1de2a3aafc2cbe8a839"
             },
             {
@@ -4072,7 +4213,7 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 8.2,
+              "avg_run_seconds": 5.7,
               "spec_hash": "33b7c4966780af80f0182152af3769f0d32c110d9d41d4ad5258235fce07d85f"
             },
             {

@@ -9,8 +9,8 @@
         "model": "claude-haiku-4-5",
         "display": "Claude Haiku 4.5",
         "harness": "claude",
-        "tool_version": "v0.2.1-63-g50671ce",
-        "ran_at": "2026-06-23T05:52:14Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T13:42:04Z",
         "executed": true,
         "content_hash": "cf719c8c3bf7b96937a74e693226021c18af7547eed21f0b969307d8c947b0fb",
         "runs_per_query": 3,
@@ -47,10 +47,10 @@
           {
             "query": "Add a new module under modules/ for managing IAM roles",
             "should_trigger": true,
-            "hits": 1,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 9.1,
+            "passed": true,
+            "avg_run_seconds": 3.5,
             "estimate": {
               "input_tokens": 673,
               "input_cost_usd": 0.000673
@@ -63,7 +63,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 8.4,
+            "avg_run_seconds": 7.3,
             "estimate": {
               "input_tokens": 673,
               "input_cost_usd": 0.000673
@@ -144,24 +144,24 @@
           }
         ],
         "summary": {
-          "passed": 8,
-          "failed": 2,
+          "passed": 9,
+          "failed": 1,
           "total": 10,
-          "pass_rate": 0.8,
-          "avg_run_seconds": 6.7,
+          "pass_rate": 0.9,
+          "avg_run_seconds": 6.1,
           "estimate": {
             "input_tokens": 6724,
             "input_cost_usd": 0.006724
           }
         },
         "previous": {
-          "ran_at": "2026-06-20T14:50:14Z",
+          "ran_at": "2026-06-23T05:52:14Z",
           "summary": {
             "passed": 8,
             "failed": 2,
             "total": 10,
             "pass_rate": 0.8,
-            "avg_run_seconds": 6.5,
+            "avg_run_seconds": 6.7,
             "estimate": {
               "input_tokens": 6724,
               "input_cost_usd": 0.006724
@@ -169,32 +169,8 @@
           },
           "results": [
             {
-              "query": "Add a new module to this Python project",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 5.9,
-              "estimate": {
-                "input_tokens": 669,
-                "input_cost_usd": 0.000669
-              }
-            },
-            {
-              "query": "Add a new module under modules/ for managing IAM roles",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 8.6,
-              "estimate": {
-                "input_tokens": 673,
-                "input_cost_usd": 0.000673
-              }
-            },
-            {
               "query": "Create a new Terraform module for an ECR registry mirror",
-              "should_trigger": false,
+              "should_trigger": true,
               "hits": 3,
               "runs": 3,
               "passed": true,
@@ -205,15 +181,53 @@
               }
             },
             {
-              "query": "Restructure this Terraform module to follow our standard layout",
-              "should_trigger": false,
-              "hits": 0,
+              "query": "Scaffold modules/eks-cluster with the standard file layout",
+              "should_trigger": true,
+              "hits": 3,
               "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 6.2,
+              "passed": true,
+              "avg_run_seconds": 4,
               "estimate": {
                 "input_tokens": 673,
                 "input_cost_usd": 0.000673
+              }
+            },
+            {
+              "query": "Add a new module under modules/ for managing IAM roles",
+              "should_trigger": true,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.1,
+              "estimate": {
+                "input_tokens": 673,
+                "input_cost_usd": 0.000673
+              },
+              "spec_hash": "06b372c564501bf4d59881f3a5044b7db4952cc2fd3ae8519e6a31e2c6b38811"
+            },
+            {
+              "query": "Restructure this Terraform module to follow our standard layout",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.4,
+              "estimate": {
+                "input_tokens": 673,
+                "input_cost_usd": 0.000673
+              },
+              "spec_hash": "165aaf8ff6e94c9a61f0c10099547bd908dbeca7bbf85d69d6dee8b346d049a9"
+            },
+            {
+              "query": "Start a terraform module for the VPC — just the skeleton, no resources yet",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.7,
+              "estimate": {
+                "input_tokens": 677,
+                "input_cost_usd": 0.000677
               }
             },
             {
@@ -229,39 +243,15 @@
               }
             },
             {
-              "query": "Scaffold modules/eks-cluster with the standard file layout",
-              "should_trigger": false,
-              "hits": 3,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 4,
-              "estimate": {
-                "input_tokens": 673,
-                "input_cost_usd": 0.000673
-              }
-            },
-            {
-              "query": "Start a terraform module for the VPC — just the skeleton, no resources yet",
-              "should_trigger": false,
-              "hits": 3,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 3.7,
-              "estimate": {
-                "input_tokens": 677,
-                "input_cost_usd": 0.000677
-              }
-            },
-            {
-              "query": "What's the right type for a variable holding unique subnet IDs?",
+              "query": "Add a new module to this Python project",
               "should_trigger": false,
               "hits": 0,
               "runs": 3,
               "passed": true,
-              "avg_run_seconds": 9.1,
+              "avg_run_seconds": 5.9,
               "estimate": {
-                "input_tokens": 675,
-                "input_cost_usd": 0.000675
+                "input_tokens": 669,
+                "input_cost_usd": 0.000669
               }
             },
             {
@@ -274,6 +264,18 @@
               "estimate": {
                 "input_tokens": 669,
                 "input_cost_usd": 0.000669
+              }
+            },
+            {
+              "query": "What's the right type for a variable holding unique subnet IDs?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.1,
+              "estimate": {
+                "input_tokens": 675,
+                "input_cost_usd": 0.000675
               }
             },
             {
@@ -296,8 +298,8 @@
         "model": "claude-haiku-4-5",
         "display": "Claude Haiku 4.5",
         "harness": "claude",
-        "tool_version": "v0.2.1-63-g50671ce",
-        "ran_at": "2026-06-23T05:53:05Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T13:42:58Z",
         "executed": true,
         "content_hash": "76786ec6cb91f034448e41e951835c5f8b502fe6a3ff63fb872d3dee4fde42f7",
         "timeout_seconds": 600,
@@ -420,17 +422,17 @@
           },
           {
             "id": "module-restructure",
-            "passed": false,
+            "passed": true,
             "estimate": {
               "input_tokens": 684,
               "input_cost_usd": 0.000684
             },
             "measured": {
-              "input_tokens": 65,
-              "cache_read_input_tokens": 383272,
-              "cache_creation_input_tokens": 21601,
-              "output_tokens": 2701,
-              "cost_usd": 0.095702
+              "input_tokens": 94,
+              "cache_read_input_tokens": 402914,
+              "cache_creation_input_tokens": 16647,
+              "output_tokens": 3264,
+              "cost_usd": 0.090618
             },
             "expectations": [
               {
@@ -445,8 +447,8 @@
                 "type": "file_absent",
                 "path": "modules/legacy/versions.tf",
                 "text": "file modules/legacy/versions.tf is absent",
-                "passed": false,
-                "evidence": "modules/legacy/versions.tf exists",
+                "passed": true,
+                "evidence": "modules/legacy/versions.tf missing",
                 "source": "assertion"
               },
               {
@@ -489,40 +491,50 @@
                 "cwd": "modules/legacy",
                 "requires": "terraform",
                 "text": "command `terraform init -backend=false -input=false \u003e/dev/null \u0026\u0026 terraform validate` exits 0",
-                "passed": false,
-                "evidence": "exit 1: , in terraform:\n│    4:   required_providers {\n│ \n│ A module may have only one required providers configuration. The required\n│ providers were previously configured at terraform.tf:4,3-21.\n╵",
+                "passed": true,
+                "evidence": "exit 0: Success! The configuration is valid.\n\n",
                 "source": "assertion"
               }
             ],
             "summary": {
-              "passed": 5,
-              "failed": 2,
+              "passed": 7,
+              "failed": 0,
               "total": 7,
-              "pass_rate": 0.714286
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 4,
+                "Edit": 2,
+                "Read": 9,
+                "Skill": 1,
+                "Write": 3
+              },
+              "total_tool_calls": 19
             },
             "timing": {
-              "total_tokens": 407639,
-              "executor_duration_seconds": 51.1
+              "total_tokens": 422919,
+              "executor_duration_seconds": 41.1
             },
             "spec_hash": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
           }
         ],
         "summary": {
-          "passed": 1,
-          "failed": 1,
+          "passed": 2,
+          "failed": 0,
           "total": 2,
-          "pass_rate": 0.5,
-          "avg_run_seconds": 42,
+          "pass_rate": 1,
+          "avg_run_seconds": 37,
           "estimate": {
             "input_tokens": 1395,
             "input_cost_usd": 0.001395
           },
           "measured": {
-            "input_tokens": 112,
-            "cache_read_input_tokens": 521041,
-            "cache_creation_input_tokens": 42544,
-            "output_tokens": 5724,
-            "cost_usd": 0.167157
+            "input_tokens": 141,
+            "cache_read_input_tokens": 540683,
+            "cache_creation_input_tokens": 37590,
+            "output_tokens": 6287,
+            "cost_usd": 0.162073
           }
         },
         "baseline": {
@@ -543,27 +555,6 @@
           },
           "results": [
             {
-              "id": "module-restructure",
-              "passed": false,
-              "measured": {
-                "input_tokens": 42,
-                "cache_read_input_tokens": 135439,
-                "cache_creation_input_tokens": 16896,
-                "output_tokens": 1344,
-                "cost_usd": 0.054706
-              },
-              "summary": {
-                "passed": 0,
-                "failed": 0,
-                "total": 0,
-                "pass_rate": 0.714286
-              },
-              "timing": {
-                "executor_duration_seconds": 16.7
-              },
-              "fingerprint": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
-            },
-            {
               "id": "module-scaffold",
               "passed": false,
               "measured": {
@@ -583,54 +574,51 @@
                 "executor_duration_seconds": 30.2
               },
               "fingerprint": "8ff2e56ce9a09d5b8c75fdb8f7ce17aa527b35c73575b1e0f1e9633573f36054"
+            },
+            {
+              "id": "module-restructure",
+              "passed": false,
+              "measured": {
+                "input_tokens": 42,
+                "cache_read_input_tokens": 135439,
+                "cache_creation_input_tokens": 16896,
+                "output_tokens": 1344,
+                "cost_usd": 0.054706
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.714286
+              },
+              "timing": {
+                "executor_duration_seconds": 16.7
+              },
+              "fingerprint": "a9843225419f8ffb3c0b18a29d909c50e13d056cfdfa51355ac9a0bbb1af82f3"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-06-21T17:38:11Z",
+          "ran_at": "2026-06-23T05:53:05Z",
           "summary": {
             "passed": 1,
             "failed": 1,
             "total": 2,
             "pass_rate": 0.5,
-            "avg_run_seconds": 42.3,
+            "avg_run_seconds": 42,
             "estimate": {
               "input_tokens": 1395,
               "input_cost_usd": 0.001395
             },
             "measured": {
-              "input_tokens": 106,
-              "cache_read_input_tokens": 518607,
-              "cache_creation_input_tokens": 41651,
-              "output_tokens": 5589,
-              "cost_usd": 0.164452
+              "input_tokens": 112,
+              "cache_read_input_tokens": 521041,
+              "cache_creation_input_tokens": 42544,
+              "output_tokens": 5724,
+              "cost_usd": 0.167157
             }
           },
           "results": [
-            {
-              "id": "module-restructure",
-              "passed": false,
-              "estimate": {
-                "input_tokens": 684,
-                "input_cost_usd": 0.000684
-              },
-              "measured": {
-                "input_tokens": 59,
-                "cache_read_input_tokens": 380838,
-                "cache_creation_input_tokens": 20708,
-                "output_tokens": 2566,
-                "cost_usd": 0.092997
-              },
-              "summary": {
-                "passed": 6,
-                "failed": 0,
-                "total": 7,
-                "pass_rate": 0.857143
-              },
-              "timing": {
-                "executor_duration_seconds": 51.8
-              }
-            },
             {
               "id": "module-scaffold",
               "passed": true,
@@ -653,6 +641,30 @@
               },
               "timing": {
                 "executor_duration_seconds": 32.9
+              }
+            },
+            {
+              "id": "module-restructure",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 684,
+                "input_cost_usd": 0.000684
+              },
+              "measured": {
+                "input_tokens": 65,
+                "cache_read_input_tokens": 383272,
+                "cache_creation_input_tokens": 21601,
+                "output_tokens": 2701,
+                "cost_usd": 0.095702
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 2,
+                "total": 7,
+                "pass_rate": 0.714286
+              },
+              "timing": {
+                "executor_duration_seconds": 51.1
               }
             }
           ]
@@ -1965,6 +1977,123 @@
               }
             }
           ]
+        }
+      }
+    },
+    "anthropic/claude-sonnet-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-sonnet-5",
+        "display": "Claude Sonnet 5",
+        "harness": "claude",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T12:55:38Z",
+        "executed": true,
+        "content_hash": "cf719c8c3bf7b96937a74e693226021c18af7547eed21f0b969307d8c947b0fb",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 3,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Create a new Terraform module for an ECR registry mirror",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.6,
+            "spec_hash": "687d5e41e9eaca04c4779583d492eb5d97af9116fc9d53de040b71aee40fe390"
+          },
+          {
+            "query": "Scaffold modules/eks-cluster with the standard file layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.3,
+            "spec_hash": "f5ce9c28913384b12445e5152416890990d6c1e39f9b05dac1d76717d4b5e5ac"
+          },
+          {
+            "query": "Add a new module under modules/ for managing IAM roles",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.1,
+            "spec_hash": "06b372c564501bf4d59881f3a5044b7db4952cc2fd3ae8519e6a31e2c6b38811"
+          },
+          {
+            "query": "Restructure this Terraform module to follow our standard layout",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.5,
+            "spec_hash": "165aaf8ff6e94c9a61f0c10099547bd908dbeca7bbf85d69d6dee8b346d049a9"
+          },
+          {
+            "query": "Start a terraform module for the VPC — just the skeleton, no resources yet",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3,
+            "spec_hash": "0b05abc0e79593daa3b55200ed34561dd6d4747adefbe02258ad521105641b3d"
+          },
+          {
+            "query": "Scaffold a new npm package with the usual project files",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.9,
+            "spec_hash": "abfe1a218d2de2b83a4c9a565295a366cdc2acfa7b083b31478d05195fee972b"
+          },
+          {
+            "query": "Add a new module to this Python project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.1,
+            "spec_hash": "2cb2aa945f73c083a104675e682926261004deaeb6636e9b149a26b6845c03de"
+          },
+          {
+            "query": "Why does my terraform module fail validation?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "spec_hash": "f1b6e3ca701001f03ccb300c28793b14530400c5ed628083b98cf9e90a9ddc49"
+          },
+          {
+            "query": "What's the right type for a variable holding unique subnet IDs?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "spec_hash": "c20bf9745fdb74c7062da935e3506cc8c3c43edd0dab0e520885a6362b185eef"
+          },
+          {
+            "query": "Write a docker-compose file for local development",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8,
+            "spec_hash": "8483e1253292aae1d714e8036e5b239a0b03f6adcd53a1ddd8822dd9579ddf36"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 0,
+          "total": 10,
+          "pass_rate": 1,
+          "avg_run_seconds": 5.5
         }
       }
     },

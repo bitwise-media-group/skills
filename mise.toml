@@ -2,11 +2,28 @@
 # SPDX-License-Identifier: MIT
 #
 # skills — the Claude skill/plugin marketplace and its evaluation suite.
-# The build surface comes from the toolchain library (the .mise/ submodule):
-# the agent-plugins archetype provides fmt/lint/test/ci/pr plus the evolve
-# eval tiers (triggers/evals/all/report), reading .evolve.json at the root.
-# tasks.toml is included after the archetype so its lint redefinition (which
-# layers the repo-local plugin/fixture/installer checks onto the archetype
-# gate) wins the name collision.
+# The toolchain library (the .mise/ submodule) supplies pinned developer
+# tools, [settings], and the universal license/prose/container/shell lint
+# tasks (markdown-lib's surface); tasks.toml adds this repo's own
+# fmt/lint/test/ci/pr gates plus the evolve eval tiers (triggers/evals/all/
+# report), reading .evolve.json at the root.
+#
+# evolve is pinned directly below rather than task-scoped: it's a first-party
+# CLI, but this repo is its only consumer, so there's no reuse-across-repos
+# case for keeping it out of [tools] the way the toolchain library's
+# task-scoped tools (e.g. dotty) are. See tasks.toml for the bump process.
+#
+# lockfile = true is already inherited from .mise/config.toml, but this repo
+# now has its own [tools] entry to lock, so it's set explicitly here too:
+# mise writes per-platform checksums for evolve into this repo's own
+# mise.lock (`mise lock` regenerates it), independent of the toolchain
+# library's own mise.lock for its shared [tools].
+[settings]
+lockfile = true
+
 [task_config]
-includes = [".mise/tasks/agent-plugins.toml", "tasks.toml"]
+includes = ["tasks.toml"]
+
+[tools]
+"github:bitwise-media-group/evolve" = "0.7.0"
+"aqua:anthropics/claude-code" = "2.1.224"

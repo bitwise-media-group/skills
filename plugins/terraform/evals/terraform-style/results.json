@@ -9,8 +9,8 @@
         "model": "claude-haiku-4-5",
         "display": "Claude Haiku 4.5",
         "harness": "claude",
-        "tool_version": "v0.2.1-63-g50671ce",
-        "ran_at": "2026-06-23T05:54:33Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T13:43:31Z",
         "executed": true,
         "content_hash": "7ea2d8a3ef4aaff3df5c08e353509de6c9615436c329acdea224404f5107ced2",
         "runs_per_query": 3,
@@ -26,7 +26,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 10,
+            "avg_run_seconds": 5.5,
             "estimate": {
               "input_tokens": 1485,
               "input_cost_usd": 0.001485
@@ -39,7 +39,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 5.6,
+            "avg_run_seconds": 6.5,
             "estimate": {
               "input_tokens": 1482,
               "input_cost_usd": 0.001482
@@ -49,10 +49,10 @@
           {
             "query": "Should this be a list(string) or set(string) in Terraform?",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 1,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 7.7,
+            "avg_run_seconds": 6.3,
             "estimate": {
               "input_tokens": 1484,
               "input_cost_usd": 0.001484
@@ -65,7 +65,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 11.1,
+            "avg_run_seconds": 7.1,
             "estimate": {
               "input_tokens": 1483,
               "input_cost_usd": 0.001483
@@ -91,7 +91,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 6.4,
+            "avg_run_seconds": 5.1,
             "estimate": {
               "input_tokens": 1478,
               "input_cost_usd": 0.001478
@@ -104,7 +104,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 11.4,
+            "avg_run_seconds": 5.4,
             "estimate": {
               "input_tokens": 1488,
               "input_cost_usd": 0.001488
@@ -117,7 +117,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 9.9,
+            "avg_run_seconds": 6.1,
             "estimate": {
               "input_tokens": 1482,
               "input_cost_usd": 0.001482
@@ -208,20 +208,20 @@
           "failed": 7,
           "total": 14,
           "pass_rate": 0.5,
-          "avg_run_seconds": 8.5,
+          "avg_run_seconds": 7,
           "estimate": {
             "input_tokens": 20746,
             "input_cost_usd": 0.020746
           }
         },
         "previous": {
-          "ran_at": "2026-06-21T17:57:27Z",
+          "ran_at": "2026-06-23T05:54:33Z",
           "summary": {
             "passed": 7,
             "failed": 7,
             "total": 14,
             "pass_rate": 0.5,
-            "avg_run_seconds": 7.7,
+            "avg_run_seconds": 8.5,
             "estimate": {
               "input_tokens": 20746,
               "input_cost_usd": 0.020746
@@ -229,140 +229,60 @@
           },
           "results": [
             {
-              "query": "Add an optional proxy configuration input to our Terraform module",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 6.9,
-              "estimate": {
-                "input_tokens": 1478,
-                "input_cost_usd": 0.001478
-              }
-            },
-            {
               "query": "Add outputs for the OIDC provider ARN and URL to my Terraform module",
-              "should_trigger": false,
+              "should_trigger": true,
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 6.3,
+              "avg_run_seconds": 10,
               "estimate": {
                 "input_tokens": 1485,
                 "input_cost_usd": 0.001485
-              }
-            },
-            {
-              "query": "Clean up main.tf in the eks module — it gates everything with count",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 6.9,
-              "estimate": {
-                "input_tokens": 1482,
-                "input_cost_usd": 0.001482
-              }
-            },
-            {
-              "query": "Explain the difference between terraform plan and terraform apply",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 7.7,
-              "estimate": {
-                "input_tokens": 1477,
-                "input_cost_usd": 0.001477
-              }
-            },
-            {
-              "query": "How do I migrate Terraform state from a local backend to S3?",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 12,
-              "estimate": {
-                "input_tokens": 1482,
-                "input_cost_usd": 0.001482
-              }
-            },
-            {
-              "query": "Refactor modules/vpc so its outputs are easier to consume from the root",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 6.4,
-              "estimate": {
-                "input_tokens": 1483,
-                "input_cost_usd": 0.001483
-              }
+              },
+              "spec_hash": "8bdd9ff4f2cb29773d17cd65f3ebbf7725935ebc23a2ed6ef6ddab6339fd361a"
             },
             {
               "query": "Review this variables.tf — anything you'd change about the variable types?",
-              "should_trigger": false,
+              "should_trigger": true,
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 8,
+              "avg_run_seconds": 5.6,
               "estimate": {
                 "input_tokens": 1482,
                 "input_cost_usd": 0.001482
-              }
-            },
-            {
-              "query": "Run terraform fmt and tflint over the repo before I commit",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 8.7,
-              "estimate": {
-                "input_tokens": 1480,
-                "input_cost_usd": 0.00148
-              }
-            },
-            {
-              "query": "Scaffold a brand new Terraform module called ecr-mirror with the standard files",
-              "should_trigger": false,
-              "hits": 0,
-              "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 9.9,
-              "estimate": {
-                "input_tokens": 1484,
-                "input_cost_usd": 0.001484
-              }
+              },
+              "spec_hash": "b4447e1b9c0ced8f63943f20eee42f3d324412533858e12694c9b49665578605"
             },
             {
               "query": "Should this be a list(string) or set(string) in Terraform?",
-              "should_trigger": false,
+              "should_trigger": true,
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 9.4,
+              "avg_run_seconds": 7.7,
               "estimate": {
                 "input_tokens": 1484,
                 "input_cost_usd": 0.001484
-              }
+              },
+              "spec_hash": "b5f31d9ce36ca92ad720c1b69f9692bd9552c17d92922b658c912a769481c67f"
             },
             {
-              "query": "Standing up a second copy of this Terraform stack fails with IAM name collisions — fix the module",
-              "should_trigger": false,
+              "query": "Refactor modules/vpc so its outputs are easier to consume from the root",
+              "should_trigger": true,
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 7.5,
+              "avg_run_seconds": 11.1,
               "estimate": {
-                "input_tokens": 1488,
-                "input_cost_usd": 0.001488
-              }
+                "input_tokens": 1483,
+                "input_cost_usd": 0.001483
+              },
+              "spec_hash": "f12da1920d3e2f7a9731b17552356c50d242e340e3b8604a4750ab01792cfabf"
             },
             {
               "query": "What should I name the aws_iam_role resource inside my module?",
-              "should_trigger": false,
+              "should_trigger": true,
               "hits": 3,
               "runs": 3,
               "passed": true,
@@ -370,19 +290,47 @@
               "estimate": {
                 "input_tokens": 1483,
                 "input_cost_usd": 0.001483
-              }
+              },
+              "spec_hash": "275d5a70bcea064e1dc802d8cfc9d9588b43736e56ec572b2060330756c35696"
             },
             {
-              "query": "Why is my Packer HCL template failing to parse?",
-              "should_trigger": false,
+              "query": "Add an optional proxy configuration input to our Terraform module",
+              "should_trigger": true,
               "hits": 0,
               "runs": 3,
-              "passed": true,
-              "avg_run_seconds": 6.5,
+              "passed": false,
+              "avg_run_seconds": 6.4,
               "estimate": {
-                "input_tokens": 1481,
-                "input_cost_usd": 0.001481
-              }
+                "input_tokens": 1478,
+                "input_cost_usd": 0.001478
+              },
+              "spec_hash": "4df689263acfdde3e5ab9b3af43db65976a0ff950bf7fba3e343d9fac66666dc"
+            },
+            {
+              "query": "Standing up a second copy of this Terraform stack fails with IAM name collisions — fix the module",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.4,
+              "estimate": {
+                "input_tokens": 1488,
+                "input_cost_usd": 0.001488
+              },
+              "spec_hash": "1a40dc11d3d0b8950f494ca1e404e8238a62ccfcea9e41efd5cf3a196581c6b9"
+            },
+            {
+              "query": "Clean up main.tf in the eks module — it gates everything with count",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.9,
+              "estimate": {
+                "input_tokens": 1482,
+                "input_cost_usd": 0.001482
+              },
+              "spec_hash": "9c19d578ddd487863fcd7806ea0f5e3458e1c5b085bcda68c3a52c0c66cc9395"
             },
             {
               "query": "Write a Kubernetes deployment manifest for the runner controller",
@@ -394,7 +342,73 @@
               "estimate": {
                 "input_tokens": 1477,
                 "input_cost_usd": 0.001477
-              }
+              },
+              "spec_hash": "c9dc9bba868d492541faecb100b40afaee86a5968327aa7d14ad4dd9cebdf2d0"
+            },
+            {
+              "query": "Why is my Packer HCL template failing to parse?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.5,
+              "estimate": {
+                "input_tokens": 1481,
+                "input_cost_usd": 0.001481
+              },
+              "spec_hash": "e43a28d51fefc076e6378f6ee1b87ab7298f466dae5ea765025209be9aa99d73"
+            },
+            {
+              "query": "Run terraform fmt and tflint over the repo before I commit",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.7,
+              "estimate": {
+                "input_tokens": 1480,
+                "input_cost_usd": 0.00148
+              },
+              "spec_hash": "eeeda58056a3e64c20f7103bcc5c2f0b9895435a9fb491f66303184a628787fc"
+            },
+            {
+              "query": "Scaffold a brand new Terraform module called ecr-mirror with the standard files",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.9,
+              "estimate": {
+                "input_tokens": 1484,
+                "input_cost_usd": 0.001484
+              },
+              "spec_hash": "450ba76456b08f0cb9b8b61e8d26d514999511869eec4913514c170a2179dd68"
+            },
+            {
+              "query": "How do I migrate Terraform state from a local backend to S3?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12,
+              "estimate": {
+                "input_tokens": 1482,
+                "input_cost_usd": 0.001482
+              },
+              "spec_hash": "25f3edcfd7c4f94d3e6874c11783e9bee2e79172e3ebaaa90fc874b64b03100a"
+            },
+            {
+              "query": "Explain the difference between terraform plan and terraform apply",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.7,
+              "estimate": {
+                "input_tokens": 1477,
+                "input_cost_usd": 0.001477
+              },
+              "spec_hash": "fb98a3c131e58d1b7a558aaf89359f9c78a959572d8ca9eaa30c95aff56df797"
             }
           ]
         }

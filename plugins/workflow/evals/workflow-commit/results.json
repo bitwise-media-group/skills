@@ -9,8 +9,8 @@
         "model": "claude-haiku-4-5",
         "display": "Claude Haiku 4.5",
         "harness": "claude",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-25T16:17:14Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T13:44:10Z",
         "executed": true,
         "content_hash": "3a7a68d9afb65d698e53d4405fa74da2cd8028c47329e85dd9245d807a3eb578",
         "runs_per_query": 3,
@@ -26,16 +26,16 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 6.9,
+            "avg_run_seconds": 6.4,
             "spec_hash": "840476f60123653c3f8f1990f75e4e60b216c130e781eba5b51ce6e8e6175968"
           },
           {
             "query": "Create a commit for my staged files with a conventional commit message",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 8.1,
+            "passed": true,
+            "avg_run_seconds": 4.3,
             "spec_hash": "0a4e79ef312d4de2a1e192ac32b8e6d4a6cf67c399cec0c9aef2e5f6f6a54c72"
           },
           {
@@ -44,16 +44,16 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 8,
+            "avg_run_seconds": 6.6,
             "spec_hash": "b69c1b69d3db730929dd7fdd15b1bf59eb549a0a2e13513bf5140969e4b020b9"
           },
           {
             "query": "I'm working in an agent worktree — commit your changes and prepare the script to re-sign them",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 7.8,
+            "passed": true,
+            "avg_run_seconds": 4.4,
             "spec_hash": "1eef6dc0573919b1aec3cc3c8300d312d17680f4fdfa466259ca3d4f17281256"
           },
           {
@@ -62,7 +62,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 9.1,
+            "avg_run_seconds": 5.6,
             "spec_hash": "43edad994eb962511d4ca5e467a80566116206391e15c531362b54e3513b8339"
           },
           {
@@ -71,7 +71,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 7.3,
+            "avg_run_seconds": 6.5,
             "spec_hash": "a81f316f5781298a991a22abc363532993ebd9dc3fc78327ea6d1398db2a3abb"
           },
           {
@@ -130,11 +130,131 @@
           }
         ],
         "summary": {
-          "passed": 6,
-          "failed": 6,
+          "passed": 8,
+          "failed": 4,
           "total": 12,
-          "pass_rate": 0.5,
-          "avg_run_seconds": 7.8
+          "pass_rate": 0.666667,
+          "avg_run_seconds": 6.6
+        },
+        "previous": {
+          "ran_at": "2026-06-25T16:17:14Z",
+          "summary": {
+            "passed": 6,
+            "failed": 6,
+            "total": 12,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 7.8
+          },
+          "results": [
+            {
+              "query": "Commit these changes",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.9,
+              "spec_hash": "840476f60123653c3f8f1990f75e4e60b216c130e781eba5b51ce6e8e6175968"
+            },
+            {
+              "query": "Create a commit for my staged files with a conventional commit message",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.1,
+              "spec_hash": "0a4e79ef312d4de2a1e192ac32b8e6d4a6cf67c399cec0c9aef2e5f6f6a54c72"
+            },
+            {
+              "query": "Stage and commit the work you just did",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8,
+              "spec_hash": "b69c1b69d3db730929dd7fdd15b1bf59eb549a0a2e13513bf5140969e4b020b9"
+            },
+            {
+              "query": "I'm working in an agent worktree — commit your changes and prepare the script to re-sign them",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.8,
+              "spec_hash": "1eef6dc0573919b1aec3cc3c8300d312d17680f4fdfa466259ca3d4f17281256"
+            },
+            {
+              "query": "Split this diff into a few logical commits and commit them",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.1,
+              "spec_hash": "43edad994eb962511d4ca5e467a80566116206391e15c531362b54e3513b8339"
+            },
+            {
+              "query": "Write a commit message for this change and commit it",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.3,
+              "spec_hash": "a81f316f5781298a991a22abc363532993ebd9dc3fc78327ea6d1398db2a3abb"
+            },
+            {
+              "query": "Push my branch to origin",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.3,
+              "spec_hash": "2367af4237ab762e0cdb0986e31d8332a9a4a5a4d9e624d04366f40e4fbf7a96"
+            },
+            {
+              "query": "Open a pull request for these changes",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.9,
+              "spec_hash": "6917d8ef46329bb589063bcabe6f78f8c35a786a2ac19319497e5d66d02d3fab"
+            },
+            {
+              "query": "Rebase my last three commits onto main",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6,
+              "spec_hash": "734a34c1734c7bcd2f6707092f14ea9a98737ff5be4297893aee1fc221bfbec7"
+            },
+            {
+              "query": "Amend the message on my last commit",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.6,
+              "spec_hash": "9b9d8c83ad4eea6bac7ab33ea65fadba626086c0f0b5b284ef86d5fc2e8b3396"
+            },
+            {
+              "query": "Set up commit signing with a GPG key",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.1,
+              "spec_hash": "82c7994d5aa596bdfda333f06cc9acbab8c0f569e1b8951ac5a7db70cb306aef"
+            },
+            {
+              "query": "Squash the last two commits into one",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.1,
+              "spec_hash": "982bb03b5c6784df0a464a28f159257aa95729aa257ace8555e57413f7fcd60f"
+            }
+          ]
         }
       },
       "evals": {
@@ -142,8 +262,8 @@
         "model": "claude-haiku-4-5",
         "display": "Claude Haiku 4.5",
         "harness": "claude",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-25T16:17:43Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T13:44:27Z",
         "executed": true,
         "content_hash": "1a8b4052d4fe4f58cd74d11647ad79af56276f53d1e8d4242414b434ffc8bf4d",
         "timeout_seconds": 600,
@@ -156,11 +276,11 @@
             "id": "handoff-main-checkout",
             "passed": false,
             "measured": {
-              "input_tokens": 29,
-              "cache_read_input_tokens": 79750,
-              "cache_creation_input_tokens": 15576,
-              "output_tokens": 716,
-              "cost_usd": 0.043406
+              "input_tokens": 35,
+              "cache_read_input_tokens": 117699,
+              "cache_creation_input_tokens": 12228,
+              "output_tokens": 1092,
+              "cost_usd": 0.042407
             },
             "expectations": [
               {
@@ -225,13 +345,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 3
+                "Bash": 3,
+                "Skill": 1
               },
-              "total_tool_calls": 3
+              "total_tool_calls": 4
             },
             "timing": {
-              "total_tokens": 96071,
-              "executor_duration_seconds": 19
+              "total_tokens": 131054,
+              "executor_duration_seconds": 16.5
             },
             "spec_hash": "5dee980807d7d94b5b1345580eb0b935b04ad6ffdc3fd9e9509e7dd4b0c2ce83"
           },
@@ -297,13 +418,13 @@
           "failed": 1,
           "total": 2,
           "pass_rate": 0.5,
-          "avg_run_seconds": 13.6,
+          "avg_run_seconds": 12.4,
           "measured": {
-            "input_tokens": 44,
-            "cache_read_input_tokens": 111974,
-            "cache_creation_input_tokens": 30948,
-            "output_tokens": 1174,
-            "cost_usd": 0.080319
+            "input_tokens": 50,
+            "cache_read_input_tokens": 149923,
+            "cache_creation_input_tokens": 27600,
+            "output_tokens": 1550,
+            "cost_usd": 0.07932
           }
         },
         "baseline": {
@@ -364,6 +485,65 @@
                 "executor_duration_seconds": 10.2
               },
               "fingerprint": "12a5ce833b67c1f4906ba13e3dfa9585fea6a44903363c6d0e5041d119cfd46f"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-25T16:17:43Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 13.6,
+            "measured": {
+              "input_tokens": 44,
+              "cache_read_input_tokens": 111974,
+              "cache_creation_input_tokens": 30948,
+              "output_tokens": 1174,
+              "cost_usd": 0.080319
+            }
+          },
+          "results": [
+            {
+              "id": "handoff-main-checkout",
+              "passed": false,
+              "measured": {
+                "input_tokens": 29,
+                "cache_read_input_tokens": 79750,
+                "cache_creation_input_tokens": 15576,
+                "output_tokens": 716,
+                "cost_usd": 0.043406
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 6,
+                "total": 6,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 19
+              }
+            },
+            {
+              "id": "conventional-fix-type",
+              "passed": true,
+              "measured": {
+                "input_tokens": 15,
+                "cache_read_input_tokens": 32224,
+                "cache_creation_input_tokens": 15372,
+                "output_tokens": 458,
+                "cost_usd": 0.036913
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 8.2
+              }
             }
           ]
         }

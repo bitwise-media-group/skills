@@ -9,8 +9,8 @@
         "model": "claude-haiku-4-5",
         "display": "Claude Haiku 4.5",
         "harness": "claude",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-28T05:18:33Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T13:46:04Z",
         "executed": true,
         "content_hash": "c825040b9ce82e4eb0e99f8a2895232c3472671a653afe7614a3aa40fb27a8cb",
         "runs_per_query": 3,
@@ -26,7 +26,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 6.9,
+            "avg_run_seconds": 7.8,
             "estimate": {
               "input_tokens": 2349,
               "input_cost_usd": 0.002349
@@ -52,7 +52,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 6.4,
+            "avg_run_seconds": 6.2,
             "estimate": {
               "input_tokens": 2355,
               "input_cost_usd": 0.002355
@@ -62,10 +62,10 @@
           {
             "query": "Scaffold trigger-accuracy tests so I can measure whether my skill activates",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 2,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 10.1,
+            "passed": true,
+            "avg_run_seconds": 5.7,
             "estimate": {
               "input_tokens": 2354,
               "input_cost_usd": 0.002354
@@ -78,7 +78,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 11.2,
+            "avg_run_seconds": 11.3,
             "estimate": {
               "input_tokens": 2351,
               "input_cost_usd": 0.002351
@@ -91,7 +91,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 7.7,
+            "avg_run_seconds": 7.4,
             "estimate": {
               "input_tokens": 2354,
               "input_cost_usd": 0.002354
@@ -101,10 +101,10 @@
           {
             "query": "How should I evaluate whether my agent skill fires on the right prompts?",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 2,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 12.7,
+            "passed": true,
+            "avg_run_seconds": 8.6,
             "estimate": {
               "input_tokens": 2354,
               "input_cost_usd": 0.002354
@@ -217,24 +217,28 @@
           }
         ],
         "summary": {
-          "passed": 9,
-          "failed": 6,
+          "passed": 11,
+          "failed": 4,
           "total": 15,
-          "pass_rate": 0.6,
-          "avg_run_seconds": 9.2,
+          "pass_rate": 0.733333,
+          "avg_run_seconds": 8.7,
           "estimate": {
             "input_tokens": 35289,
             "input_cost_usd": 0.035289
           }
         },
         "previous": {
-          "ran_at": "2026-06-27T11:22:40Z",
+          "ran_at": "2026-06-28T05:18:33Z",
           "summary": {
-            "passed": 8,
-            "failed": 7,
+            "passed": 9,
+            "failed": 6,
             "total": 15,
-            "pass_rate": 0.533333,
-            "avg_run_seconds": 8.7
+            "pass_rate": 0.6,
+            "avg_run_seconds": 9.2,
+            "estimate": {
+              "input_tokens": 35289,
+              "input_cost_usd": 0.035289
+            }
           },
           "results": [
             {
@@ -243,16 +247,24 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 8.6,
+              "avg_run_seconds": 6.9,
+              "estimate": {
+                "input_tokens": 2349,
+                "input_cost_usd": 0.002349
+              },
               "spec_hash": "5bfcc3cf77a1d577766e46fc2b04cd9f3dfc2a46dc28c3b6219948f09ad03078"
             },
             {
               "query": "Write triggers and behavioral evals for the terraform-style skill",
               "should_trigger": true,
-              "hits": 0,
+              "hits": 2,
               "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 10.4,
+              "passed": true,
+              "avg_run_seconds": 8.9,
+              "estimate": {
+                "input_tokens": 2351,
+                "input_cost_usd": 0.002351
+              },
               "spec_hash": "dd523dca2d9c8e03a95b75e2ac999764eb0c2d708c80e17c9d6f6354ae7d4bf2"
             },
             {
@@ -261,7 +273,11 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 6.1,
+              "avg_run_seconds": 6.4,
+              "estimate": {
+                "input_tokens": 2355,
+                "input_cost_usd": 0.002355
+              },
               "spec_hash": "1f95b5d8dbfc7383c969c6f3082cee37fdcf15e2d926213067bb07df2032b7ce"
             },
             {
@@ -270,7 +286,11 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 9,
+              "avg_run_seconds": 10.1,
+              "estimate": {
+                "input_tokens": 2354,
+                "input_cost_usd": 0.002354
+              },
               "spec_hash": "d5a5f82331944106d74a64120ed185e6a41eccbc1d6a4fd3e46a441ab4cdcd5a"
             },
             {
@@ -279,7 +299,11 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 9.9,
+              "avg_run_seconds": 11.2,
+              "estimate": {
+                "input_tokens": 2351,
+                "input_cost_usd": 0.002351
+              },
               "spec_hash": "fdda3bbd9da55f1dfe925abe94efd0429467285b1df0f2e4827471be545a566d"
             },
             {
@@ -288,7 +312,11 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 9.4,
+              "avg_run_seconds": 7.7,
+              "estimate": {
+                "input_tokens": 2354,
+                "input_cost_usd": 0.002354
+              },
               "spec_hash": "c75aba2259ccfdb50af1999ac876ba3659adfa428f9bbd012f9a52028399cc94"
             },
             {
@@ -297,7 +325,11 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 12,
+              "avg_run_seconds": 12.7,
+              "estimate": {
+                "input_tokens": 2354,
+                "input_cost_usd": 0.002354
+              },
               "spec_hash": "4406bc8b0211af50dbbcf653fa95b756fe029841def11b62c1dcd22bc8782047"
             },
             {
@@ -306,7 +338,11 @@
               "hits": 0,
               "runs": 3,
               "passed": true,
-              "avg_run_seconds": 7.3,
+              "avg_run_seconds": 6.6,
+              "estimate": {
+                "input_tokens": 2351,
+                "input_cost_usd": 0.002351
+              },
               "spec_hash": "f7c21b487c67584c62e712ff0831cc4f79bb73a5039df74184636e93a278163a"
             },
             {
@@ -315,7 +351,11 @@
               "hits": 0,
               "runs": 3,
               "passed": true,
-              "avg_run_seconds": 7.4,
+              "avg_run_seconds": 10.5,
+              "estimate": {
+                "input_tokens": 2354,
+                "input_cost_usd": 0.002354
+              },
               "spec_hash": "b36af525147d7ae4e40089f3bca19d548ef3bbe4e8e0d050f82be6547bf01790"
             },
             {
@@ -324,7 +364,11 @@
               "hits": 0,
               "runs": 3,
               "passed": true,
-              "avg_run_seconds": 7.5,
+              "avg_run_seconds": 9.3,
+              "estimate": {
+                "input_tokens": 2354,
+                "input_cost_usd": 0.002354
+              },
               "spec_hash": "761d960171cceba8fa6218e9317f52852281b01125f654f4d70f91fe9d47cabe"
             },
             {
@@ -333,7 +377,11 @@
               "hits": 0,
               "runs": 3,
               "passed": true,
-              "avg_run_seconds": 9.5,
+              "avg_run_seconds": 9.9,
+              "estimate": {
+                "input_tokens": 2354,
+                "input_cost_usd": 0.002354
+              },
               "spec_hash": "660b9166c3cf8887d70395ec2ba2dc1fa61f5a544fe35137ffce9b450617a42f"
             },
             {
@@ -342,7 +390,11 @@
               "hits": 0,
               "runs": 3,
               "passed": true,
-              "avg_run_seconds": 5.6,
+              "avg_run_seconds": 5.3,
+              "estimate": {
+                "input_tokens": 2352,
+                "input_cost_usd": 0.002352
+              },
               "spec_hash": "c3d1656b0a4293dc15d9eb232735a9eb08b613c98c29cbedebd24fc06ae60f9a"
             },
             {
@@ -351,7 +403,11 @@
               "hits": 0,
               "runs": 3,
               "passed": true,
-              "avg_run_seconds": 6.5,
+              "avg_run_seconds": 8.2,
+              "estimate": {
+                "input_tokens": 2353,
+                "input_cost_usd": 0.002353
+              },
               "spec_hash": "def37b0aff68f9a1795b186d04fc7bcf50fbcebcaebf5280c1e2ca2ac1f03c39"
             },
             {
@@ -360,7 +416,11 @@
               "hits": 0,
               "runs": 3,
               "passed": true,
-              "avg_run_seconds": 14.8,
+              "avg_run_seconds": 17.2,
+              "estimate": {
+                "input_tokens": 2352,
+                "input_cost_usd": 0.002352
+              },
               "spec_hash": "862654ab7d95b74769c36da8e3c1f6d2fa625dab4dbf3d266b9795229a89ee24"
             },
             {
@@ -369,7 +429,11 @@
               "hits": 0,
               "runs": 3,
               "passed": true,
-              "avg_run_seconds": 6.3,
+              "avg_run_seconds": 7.2,
+              "estimate": {
+                "input_tokens": 2351,
+                "input_cost_usd": 0.002351
+              },
               "spec_hash": "7182b960bf74ef26854006cdf7ce97c63f4a7e583d5af02db69a8473cd13dca6"
             }
           ]

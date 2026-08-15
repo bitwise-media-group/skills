@@ -220,8 +220,8 @@
         "model": "claude-fable-5",
         "display": "Claude Fable 5",
         "harness": "claude",
-        "tool_version": "v0.6.0-14-ga373d30-dirty",
-        "ran_at": "2026-07-31T20:50:53Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T06:32:36Z",
         "executed": true,
         "content_hash": "df4bcb0a1a0fe916fe054c07c5aab7db223f83b42414a1aead73fbcc59eaefe3",
         "timeout_seconds": 600,
@@ -463,11 +463,11 @@
               "input_cost_usd": 0.01462
             },
             "measured": {
-              "input_tokens": 10,
-              "cache_read_input_tokens": 134071,
-              "cache_creation_input_tokens": 12585,
-              "output_tokens": 3548,
-              "cost_usd": 0.563931
+              "input_tokens": 7,
+              "cache_read_input_tokens": 89317,
+              "cache_creation_input_tokens": 13060,
+              "output_tokens": 3816,
+              "cost_usd": 0.542037
             },
             "expectations": [
               {
@@ -541,10 +541,10 @@
               "total_tool_calls": 10
             },
             "timing": {
-              "total_tokens": 150214,
-              "executor_duration_seconds": 44
+              "total_tokens": 106200,
+              "executor_duration_seconds": 47.5
             },
-            "spec_hash": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+            "spec_hash": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
           }
         ],
         "summary": {
@@ -552,33 +552,33 @@
           "failed": 0,
           "total": 3,
           "pass_rate": 1,
-          "avg_run_seconds": 33.4,
+          "avg_run_seconds": 34.6,
           "estimate": {
             "input_tokens": 4270,
             "input_cost_usd": 0.0427
           },
           "measured": {
-            "input_tokens": 35,
-            "cache_read_input_tokens": 417815,
-            "cache_creation_input_tokens": 30610,
-            "output_tokens": 6454,
-            "cost_usd": 1.354936
+            "input_tokens": 32,
+            "cache_read_input_tokens": 373061,
+            "cache_creation_input_tokens": 31085,
+            "output_tokens": 6722,
+            "cost_usd": 1.333042
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T20:50:53Z",
+          "ran_at": "2026-08-15T06:32:36Z",
           "summary": {
             "passed": 1,
             "failed": 2,
             "total": 3,
             "pass_rate": 0.333333,
-            "avg_run_seconds": 53.8,
+            "avg_run_seconds": 54.5,
             "measured": {
-              "input_tokens": 40,
-              "cache_read_input_tokens": 431000,
-              "cache_creation_input_tokens": 29251,
-              "output_tokens": 10659,
-              "cost_usd": 1.551236
+              "input_tokens": 38,
+              "cache_read_input_tokens": 416055,
+              "cache_creation_input_tokens": 29963,
+              "output_tokens": 11098,
+              "cost_usd": 1.572471
             }
           },
           "results": [
@@ -628,11 +628,11 @@
               "id": "cobra-docgen",
               "passed": false,
               "measured": {
-                "input_tokens": 14,
-                "cache_read_input_tokens": 158144,
-                "cache_creation_input_tokens": 13534,
-                "output_tokens": 7290,
-                "cost_usd": 0.794114
+                "input_tokens": 12,
+                "cache_read_input_tokens": 143199,
+                "cache_creation_input_tokens": 14246,
+                "output_tokens": 7729,
+                "cost_usd": 0.815349
               },
               "summary": {
                 "passed": 3,
@@ -641,30 +641,30 @@
                 "pass_rate": 0.5
               },
               "timing": {
-                "executor_duration_seconds": 89.3
+                "executor_duration_seconds": 91.4
               },
-              "fingerprint": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+              "fingerprint": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-07-02T19:19:00Z",
+          "ran_at": "2026-07-31T20:50:53Z",
           "summary": {
             "passed": 3,
             "failed": 0,
             "total": 3,
             "pass_rate": 1,
-            "avg_run_seconds": 55.6,
+            "avg_run_seconds": 33.4,
             "estimate": {
               "input_tokens": 4270,
               "input_cost_usd": 0.0427
             },
             "measured": {
-              "input_tokens": 12717,
-              "cache_read_input_tokens": 442115,
-              "cache_creation_input_tokens": 39702,
-              "output_tokens": 7408,
-              "cost_usd": 1.735616
+              "input_tokens": 35,
+              "cache_read_input_tokens": 417815,
+              "cache_creation_input_tokens": 30610,
+              "output_tokens": 6454,
+              "cost_usd": 1.354936
             }
           },
           "results": [
@@ -676,11 +676,11 @@
                 "input_cost_usd": 0.01405
               },
               "measured": {
-                "input_tokens": 4196,
-                "cache_read_input_tokens": 146580,
-                "cache_creation_input_tokens": 12025,
-                "output_tokens": 1567,
-                "cost_usd": 0.508001
+                "input_tokens": 12,
+                "cache_read_input_tokens": 129964,
+                "cache_creation_input_tokens": 8913,
+                "output_tokens": 1192,
+                "cost_usd": 0.368555
               },
               "summary": {
                 "passed": 10,
@@ -689,7 +689,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 46.2
+                "executor_duration_seconds": 20.9
               }
             },
             {
@@ -700,11 +700,11 @@
                 "input_cost_usd": 0.01403
               },
               "measured": {
-                "input_tokens": 4198,
-                "cache_read_input_tokens": 173444,
-                "cache_creation_input_tokens": 11904,
-                "output_tokens": 1884,
-                "cost_usd": 0.548309
+                "input_tokens": 13,
+                "cache_read_input_tokens": 153780,
+                "cache_creation_input_tokens": 9112,
+                "output_tokens": 1714,
+                "cost_usd": 0.42245
               },
               "summary": {
                 "passed": 7,
@@ -713,7 +713,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 54.6
+                "executor_duration_seconds": 35.3
               }
             },
             {
@@ -724,11 +724,11 @@
                 "input_cost_usd": 0.01462
               },
               "measured": {
-                "input_tokens": 4323,
-                "cache_read_input_tokens": 122091,
-                "cache_creation_input_tokens": 15773,
-                "output_tokens": 3957,
-                "cost_usd": 0.679306
+                "input_tokens": 10,
+                "cache_read_input_tokens": 134071,
+                "cache_creation_input_tokens": 12585,
+                "output_tokens": 3548,
+                "cost_usd": 0.563931
               },
               "summary": {
                 "passed": 6,
@@ -737,7 +737,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 66
+                "executor_duration_seconds": 44
               }
             }
           ]
@@ -750,8 +750,8 @@
         "model": "claude-haiku-4-5",
         "display": "Claude Haiku 4.5",
         "harness": "claude",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:04:36Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T13:33:00Z",
         "executed": true,
         "content_hash": "a1e2d73405336dfc12e64a56ca3b24e0ddc9010d2d5c91f52db3e2de05b9748f",
         "runs_per_query": 3,
@@ -767,7 +767,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 6.3,
+            "avg_run_seconds": 6,
             "estimate": {
               "input_tokens": 1029,
               "input_cost_usd": 0.001029
@@ -780,7 +780,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 6.4,
+            "avg_run_seconds": 7.6,
             "estimate": {
               "input_tokens": 1027,
               "input_cost_usd": 0.001027
@@ -806,7 +806,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 7.2,
+            "avg_run_seconds": 8.1,
             "estimate": {
               "input_tokens": 1026,
               "input_cost_usd": 0.001026
@@ -819,7 +819,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 7.7,
+            "avg_run_seconds": 9.2,
             "estimate": {
               "input_tokens": 1026,
               "input_cost_usd": 0.001026
@@ -845,7 +845,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 7.8,
+            "avg_run_seconds": 5.4,
             "estimate": {
               "input_tokens": 1027,
               "input_cost_usd": 0.001027
@@ -858,7 +858,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 5.7,
+            "avg_run_seconds": 5.6,
             "estimate": {
               "input_tokens": 1026,
               "input_cost_usd": 0.001026
@@ -949,20 +949,20 @@
           "failed": 6,
           "total": 14,
           "pass_rate": 0.571429,
-          "avg_run_seconds": 6.8,
+          "avg_run_seconds": 6.9,
           "estimate": {
             "input_tokens": 14388,
             "input_cost_usd": 0.014388
           }
         },
         "previous": {
-          "ran_at": "2026-07-31T20:35:42Z",
+          "ran_at": "2026-07-31T22:04:36Z",
           "summary": {
-            "passed": 7,
-            "failed": 7,
+            "passed": 8,
+            "failed": 6,
             "total": 14,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 7.2,
+            "pass_rate": 0.571429,
+            "avg_run_seconds": 6.8,
             "estimate": {
               "input_tokens": 14388,
               "input_cost_usd": 0.014388
@@ -988,7 +988,7 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 8.1,
+              "avg_run_seconds": 6.4,
               "estimate": {
                 "input_tokens": 1027,
                 "input_cost_usd": 0.001027
@@ -1014,7 +1014,7 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 7,
+              "avg_run_seconds": 7.2,
               "estimate": {
                 "input_tokens": 1026,
                 "input_cost_usd": 0.001026
@@ -1027,7 +1027,7 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 9.8,
+              "avg_run_seconds": 7.7,
               "estimate": {
                 "input_tokens": 1026,
                 "input_cost_usd": 0.001026
@@ -1037,10 +1037,10 @@
             {
               "query": "Make my Go CLI's documentation consumable by LLMs",
               "should_trigger": true,
-              "hits": 1,
+              "hits": 2,
               "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 8.2,
+              "passed": true,
+              "avg_run_seconds": 7.5,
               "estimate": {
                 "input_tokens": 1030,
                 "input_cost_usd": 0.00103
@@ -1053,7 +1053,7 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 8,
+              "avg_run_seconds": 7.8,
               "estimate": {
                 "input_tokens": 1027,
                 "input_cost_usd": 0.001027
@@ -1066,7 +1066,7 @@
               "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 6.2,
+              "avg_run_seconds": 5.7,
               "estimate": {
                 "input_tokens": 1026,
                 "input_cost_usd": 0.001026
@@ -1159,8 +1159,8 @@
         "model": "claude-haiku-4-5",
         "display": "Claude Haiku 4.5",
         "harness": "claude",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:04:53Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T13:33:16Z",
         "executed": true,
         "content_hash": "df4bcb0a1a0fe916fe054c07c5aab7db223f83b42414a1aead73fbcc59eaefe3",
         "timeout_seconds": 600,
@@ -1298,17 +1298,17 @@
           },
           {
             "id": "doc-single-file-package",
-            "passed": false,
+            "passed": true,
             "estimate": {
               "input_tokens": 1032,
               "input_cost_usd": 0.001032
             },
             "measured": {
-              "input_tokens": 36,
-              "cache_read_input_tokens": 114965,
-              "cache_creation_input_tokens": 12452,
-              "output_tokens": 1097,
-              "cost_usd": 0.042527
+              "input_tokens": 37,
+              "cache_read_input_tokens": 115739,
+              "cache_creation_input_tokens": 13026,
+              "output_tokens": 1228,
+              "cost_usd": 0.044408
             },
             "expectations": [
               {
@@ -1369,16 +1369,16 @@
                 "run": "test -z \"$(gofmt -l .)\"",
                 "requires": "gofmt",
                 "text": "command `test -z \"$(gofmt -l .)\"` exits 0",
-                "passed": false,
-                "evidence": "exit 1: ",
+                "passed": true,
+                "evidence": "exit 0: ",
                 "source": "assertion"
               }
             ],
             "summary": {
-              "passed": 6,
-              "failed": 1,
+              "passed": 7,
+              "failed": 0,
               "total": 7,
-              "pass_rate": 0.857143
+              "pass_rate": 1
             },
             "execution_metrics": {
               "tool_calls": {
@@ -1390,8 +1390,8 @@
               "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 128550,
-              "executor_duration_seconds": 16.2
+              "total_tokens": 130030,
+              "executor_duration_seconds": 16
             },
             "spec_hash": "3a05689cd57f1ff4001f3985dd250543a60bf8b7fb88cd47bec3166d978ec55f"
           },
@@ -1403,11 +1403,11 @@
               "input_cost_usd": 0.001072
             },
             "measured": {
-              "input_tokens": 76,
-              "cache_read_input_tokens": 300179,
-              "cache_creation_input_tokens": 14122,
-              "output_tokens": 2468,
-              "cost_usd": 0.071328
+              "input_tokens": 99,
+              "cache_read_input_tokens": 315833,
+              "cache_creation_input_tokens": 11851,
+              "output_tokens": 3008,
+              "cost_usd": 0.071069
             },
             "expectations": [
               {
@@ -1472,53 +1472,53 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 3,
+                "Bash": 2,
                 "Edit": 2,
                 "Read": 4,
                 "Skill": 1,
-                "Write": 1
+                "Write": 2
               },
               "total_tool_calls": 11
             },
             "timing": {
-              "total_tokens": 316845,
-              "executor_duration_seconds": 35.8
+              "total_tokens": 330791,
+              "executor_duration_seconds": 37.6
             },
-            "spec_hash": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+            "spec_hash": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
           }
         ],
         "summary": {
-          "passed": 2,
-          "failed": 1,
+          "passed": 3,
+          "failed": 0,
           "total": 3,
-          "pass_rate": 0.666667,
-          "avg_run_seconds": 27.4,
+          "pass_rate": 1,
+          "avg_run_seconds": 27.9,
           "estimate": {
             "input_tokens": 3137,
             "input_cost_usd": 0.003137
           },
           "measured": {
-            "input_tokens": 180,
-            "cache_read_input_tokens": 689819,
-            "cache_creation_input_tokens": 40564,
-            "output_tokens": 5663,
-            "cost_usd": 0.180472
+            "input_tokens": 204,
+            "cache_read_input_tokens": 706247,
+            "cache_creation_input_tokens": 38867,
+            "output_tokens": 6334,
+            "cost_usd": 0.182094
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T20:37:04Z",
+          "ran_at": "2026-08-15T06:23:37Z",
           "summary": {
             "passed": 1,
             "failed": 2,
             "total": 3,
             "pass_rate": 0.333333,
-            "avg_run_seconds": 28,
+            "avg_run_seconds": 29.1,
             "measured": {
-              "input_tokens": 129,
-              "cache_read_input_tokens": 470581,
-              "cache_creation_input_tokens": 33817,
-              "output_tokens": 5956,
-              "cost_usd": 0.146473
+              "input_tokens": 193,
+              "cache_read_input_tokens": 644576,
+              "cache_creation_input_tokens": 32948,
+              "output_tokens": 6292,
+              "cost_usd": 0.163873
             }
           },
           "results": [
@@ -1568,11 +1568,11 @@
               "id": "cobra-docgen",
               "passed": false,
               "measured": {
-                "input_tokens": 50,
-                "cache_read_input_tokens": 194807,
-                "cache_creation_input_tokens": 13079,
-                "output_tokens": 3963,
-                "cost_usd": 0.066159
+                "input_tokens": 114,
+                "cache_read_input_tokens": 368802,
+                "cache_creation_input_tokens": 12210,
+                "output_tokens": 4299,
+                "cost_usd": 0.083559
               },
               "summary": {
                 "passed": 0,
@@ -1581,30 +1581,30 @@
                 "pass_rate": 0
               },
               "timing": {
-                "executor_duration_seconds": 46.3
+                "executor_duration_seconds": 49.5
               },
-              "fingerprint": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+              "fingerprint": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T20:37:04Z",
+          "ran_at": "2026-08-15T06:23:37Z",
           "summary": {
             "passed": 2,
             "failed": 1,
             "total": 3,
             "pass_rate": 0.666667,
-            "avg_run_seconds": 28.5,
+            "avg_run_seconds": 28,
             "estimate": {
               "input_tokens": 3137,
               "input_cost_usd": 0.003137
             },
             "measured": {
-              "input_tokens": 180,
-              "cache_read_input_tokens": 689488,
-              "cache_creation_input_tokens": 40473,
-              "output_tokens": 5585,
-              "cost_usd": 0.179866
+              "input_tokens": 203,
+              "cache_read_input_tokens": 705473,
+              "cache_creation_input_tokens": 38293,
+              "output_tokens": 6203,
+              "cost_usd": 0.180213
             }
           },
           "results": [
@@ -1641,10 +1641,10 @@
               },
               "measured": {
                 "input_tokens": 36,
-                "cache_read_input_tokens": 114634,
-                "cache_creation_input_tokens": 12361,
-                "output_tokens": 1019,
-                "cost_usd": 0.041921
+                "cache_read_input_tokens": 114965,
+                "cache_creation_input_tokens": 12452,
+                "output_tokens": 1097,
+                "cost_usd": 0.042527
               },
               "summary": {
                 "passed": 6,
@@ -1653,7 +1653,7 @@
                 "pass_rate": 0.857143
               },
               "timing": {
-                "executor_duration_seconds": 19.4
+                "executor_duration_seconds": 16.2
               }
             },
             {
@@ -1664,11 +1664,11 @@
                 "input_cost_usd": 0.001072
               },
               "measured": {
-                "input_tokens": 76,
-                "cache_read_input_tokens": 300179,
-                "cache_creation_input_tokens": 14122,
-                "output_tokens": 2468,
-                "cost_usd": 0.071328
+                "input_tokens": 99,
+                "cache_read_input_tokens": 315833,
+                "cache_creation_input_tokens": 11851,
+                "output_tokens": 3008,
+                "cost_usd": 0.071069
               },
               "summary": {
                 "passed": 6,
@@ -1677,7 +1677,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 35.8
+                "executor_duration_seconds": 37.6
               }
             }
           ]
@@ -2995,8 +2995,8 @@
         "model": "claude-opus-5",
         "display": "Claude Opus 5",
         "harness": "claude",
-        "tool_version": "v0.6.0-14-ga373d30-dirty",
-        "ran_at": "2026-07-31T20:48:40Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T06:30:17Z",
         "executed": true,
         "content_hash": "df4bcb0a1a0fe916fe054c07c5aab7db223f83b42414a1aead73fbcc59eaefe3",
         "timeout_seconds": 600,
@@ -3239,11 +3239,11 @@
               "input_cost_usd": 0.00731
             },
             "measured": {
-              "input_tokens": 13,
-              "cache_read_input_tokens": 165189,
-              "cache_creation_input_tokens": 12324,
-              "output_tokens": 3621,
-              "cost_usd": 0.29708
+              "input_tokens": 12,
+              "cache_read_input_tokens": 141586,
+              "cache_creation_input_tokens": 12626,
+              "output_tokens": 3842,
+              "cost_usd": 0.293813
             },
             "expectations": [
               {
@@ -3308,19 +3308,19 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 1,
+                "Bash": 2,
                 "Edit": 1,
-                "Read": 4,
+                "Read": 3,
                 "Skill": 1,
-                "Write": 3
+                "Write": 2
               },
-              "total_tool_calls": 10
+              "total_tool_calls": 9
             },
             "timing": {
-              "total_tokens": 181147,
-              "executor_duration_seconds": 49.2
+              "total_tokens": 158066,
+              "executor_duration_seconds": 53.9
             },
-            "spec_hash": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+            "spec_hash": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
           }
         ],
         "summary": {
@@ -3328,33 +3328,33 @@
           "failed": 0,
           "total": 3,
           "pass_rate": 1,
-          "avg_run_seconds": 43.3,
+          "avg_run_seconds": 44.9,
           "estimate": {
             "input_tokens": 4270,
             "input_cost_usd": 0.02135
           },
           "measured": {
-            "input_tokens": 42,
-            "cache_read_input_tokens": 497743,
-            "cache_creation_input_tokens": 32149,
-            "output_tokens": 8207,
-            "cost_usd": 0.777613
+            "input_tokens": 41,
+            "cache_read_input_tokens": 474140,
+            "cache_creation_input_tokens": 32451,
+            "output_tokens": 8428,
+            "cost_usd": 0.774346
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T20:48:40Z",
+          "ran_at": "2026-08-15T06:30:17Z",
           "summary": {
             "passed": 1,
             "failed": 2,
             "total": 3,
             "pass_rate": 0.333333,
-            "avg_run_seconds": 87.1,
+            "avg_run_seconds": 114.3,
             "measured": {
-              "input_tokens": 55,
-              "cache_read_input_tokens": 705506,
-              "cache_creation_input_tokens": 40200,
-              "output_tokens": 19361,
-              "cost_usd": 1.240915
+              "input_tokens": 397,
+              "cache_read_input_tokens": 1021385,
+              "cache_creation_input_tokens": 49271,
+              "output_tokens": 26073,
+              "cost_usd": 1.659079
             }
           },
           "results": [
@@ -3404,22 +3404,117 @@
               "id": "cobra-docgen",
               "passed": false,
               "measured": {
-                "input_tokens": 27,
-                "cache_read_input_tokens": 376521,
-                "cache_creation_input_tokens": 19759,
-                "output_tokens": 12631,
-                "cost_usd": 0.702411
+                "input_tokens": 369,
+                "cache_read_input_tokens": 692400,
+                "cache_creation_input_tokens": 28830,
+                "output_tokens": 19343,
+                "cost_usd": 1.120575
               },
               "summary": {
-                "passed": 2,
-                "failed": 4,
+                "passed": 4,
+                "failed": 2,
                 "total": 6,
-                "pass_rate": 0.333333
+                "pass_rate": 0.666667
               },
               "timing": {
-                "executor_duration_seconds": 158
+                "executor_duration_seconds": 239.8
               },
-              "fingerprint": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+              "fingerprint": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T20:48:40Z",
+          "summary": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 43.3,
+            "estimate": {
+              "input_tokens": 4270,
+              "input_cost_usd": 0.02135
+            },
+            "measured": {
+              "input_tokens": 42,
+              "cache_read_input_tokens": 497743,
+              "cache_creation_input_tokens": 32149,
+              "output_tokens": 8207,
+              "cost_usd": 0.777613
+            }
+          },
+          "results": [
+            {
+              "id": "doc-multi-file-package",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1405,
+                "input_cost_usd": 0.007025
+              },
+              "measured": {
+                "input_tokens": 13,
+                "cache_read_input_tokens": 154884,
+                "cache_creation_input_tokens": 9959,
+                "output_tokens": 2187,
+                "cost_usd": 0.232383
+              },
+              "summary": {
+                "passed": 10,
+                "failed": 0,
+                "total": 10,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 40.6
+              }
+            },
+            {
+              "id": "doc-single-file-package",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1403,
+                "input_cost_usd": 0.007015
+              },
+              "measured": {
+                "input_tokens": 16,
+                "cache_read_input_tokens": 177670,
+                "cache_creation_input_tokens": 9866,
+                "output_tokens": 2399,
+                "cost_usd": 0.24815
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 40.2
+              }
+            },
+            {
+              "id": "cobra-docgen",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1462,
+                "input_cost_usd": 0.00731
+              },
+              "measured": {
+                "input_tokens": 13,
+                "cache_read_input_tokens": 165189,
+                "cache_creation_input_tokens": 12324,
+                "output_tokens": 3621,
+                "cost_usd": 0.29708
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 49.2
+              }
             }
           ]
         }
@@ -4736,8 +4831,8 @@
         "model": "claude-sonnet-5",
         "display": "Claude Sonnet 5",
         "harness": "claude",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:05:27Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T06:25:23Z",
         "executed": true,
         "content_hash": "df4bcb0a1a0fe916fe054c07c5aab7db223f83b42414a1aead73fbcc59eaefe3",
         "timeout_seconds": 600,
@@ -4979,11 +5074,11 @@
               "input_cost_usd": 0.004386
             },
             "measured": {
-              "input_tokens": 23,
-              "cache_read_input_tokens": 424168,
-              "cache_creation_input_tokens": 17080,
-              "output_tokens": 4011,
-              "cost_usd": 0.290624
+              "input_tokens": 20,
+              "cache_read_input_tokens": 354814,
+              "cache_creation_input_tokens": 15569,
+              "output_tokens": 3836,
+              "cost_usd": 0.258118
             },
             "expectations": [
               {
@@ -5048,19 +5143,19 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 5,
+                "Bash": 3,
                 "Edit": 2,
-                "Read": 2,
+                "Read": 5,
                 "Skill": 1,
                 "Write": 1
               },
-              "total_tool_calls": 11
+              "total_tool_calls": 12
             },
             "timing": {
-              "total_tokens": 445282,
-              "executor_duration_seconds": 172.1
+              "total_tokens": 374239,
+              "executor_duration_seconds": 42.9
             },
-            "spec_hash": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+            "spec_hash": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
           }
         ],
         "summary": {
@@ -5068,33 +5163,33 @@
           "failed": 1,
           "total": 3,
           "pass_rate": 0.666667,
-          "avg_run_seconds": 68.7,
+          "avg_run_seconds": 25.7,
           "estimate": {
             "input_tokens": 4270,
             "input_cost_usd": 0.01281
           },
           "measured": {
-            "input_tokens": 43,
-            "cache_read_input_tokens": 774038,
-            "cache_creation_input_tokens": 39217,
-            "output_tokens": 5777,
-            "cost_usd": 0.556173
+            "input_tokens": 40,
+            "cache_read_input_tokens": 704684,
+            "cache_creation_input_tokens": 37706,
+            "output_tokens": 5602,
+            "cost_usd": 0.523667
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T20:43:33Z",
+          "ran_at": "2026-08-15T06:25:23Z",
           "summary": {
-            "passed": 1,
-            "failed": 2,
+            "passed": 2,
+            "failed": 1,
             "total": 3,
-            "pass_rate": 0.333333,
-            "avg_run_seconds": 81.6,
+            "pass_rate": 0.666667,
+            "avg_run_seconds": 38.2,
             "measured": {
-              "input_tokens": 60,
-              "cache_read_input_tokens": 992398,
-              "cache_creation_input_tokens": 37726,
-              "output_tokens": 8493,
-              "cost_usd": 0.653526
+              "input_tokens": 54,
+              "cache_read_input_tokens": 893040,
+              "cache_creation_input_tokens": 36706,
+              "output_tokens": 8628,
+              "cost_usd": 0.619601
             }
           },
           "results": [
@@ -5142,45 +5237,45 @@
             },
             {
               "id": "cobra-docgen",
-              "passed": false,
+              "passed": true,
               "measured": {
-                "input_tokens": 28,
-                "cache_read_input_tokens": 485070,
-                "cache_creation_input_tokens": 16117,
-                "output_tokens": 5338,
-                "cost_usd": 0.323037
+                "input_tokens": 22,
+                "cache_read_input_tokens": 385712,
+                "cache_creation_input_tokens": 15097,
+                "output_tokens": 5473,
+                "cost_usd": 0.289112
               },
               "summary": {
-                "passed": 4,
-                "failed": 2,
+                "passed": 6,
+                "failed": 0,
                 "total": 6,
-                "pass_rate": 0.666667
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 192.7
+                "executor_duration_seconds": 62.4
               },
-              "fingerprint": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+              "fingerprint": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T20:43:33Z",
+          "ran_at": "2026-07-31T22:05:27Z",
           "summary": {
             "passed": 2,
             "failed": 1,
             "total": 3,
             "pass_rate": 0.666667,
-            "avg_run_seconds": 68.9,
+            "avg_run_seconds": 68.7,
             "estimate": {
               "input_tokens": 4270,
               "input_cost_usd": 0.01281
             },
             "measured": {
               "input_tokens": 43,
-              "cache_read_input_tokens": 773444,
-              "cache_creation_input_tokens": 39121,
-              "output_tokens": 5815,
-              "cost_usd": 0.555989
+              "cache_read_input_tokens": 774038,
+              "cache_creation_input_tokens": 39217,
+              "output_tokens": 5777,
+              "cost_usd": 0.556173
             }
           },
           "results": [
@@ -5217,10 +5312,10 @@
               },
               "measured": {
                 "input_tokens": 11,
-                "cache_read_input_tokens": 191615,
-                "cache_creation_input_tokens": 10842,
-                "output_tokens": 945,
-                "cost_usd": 0.13735
+                "cache_read_input_tokens": 192209,
+                "cache_creation_input_tokens": 10938,
+                "output_tokens": 907,
+                "cost_usd": 0.137534
               },
               "summary": {
                 "passed": 4,
@@ -5229,7 +5324,7 @@
                 "pass_rate": 0.571429
               },
               "timing": {
-                "executor_duration_seconds": 18.5
+                "executor_duration_seconds": 18
               }
             },
             {
@@ -5267,7 +5362,7 @@
         "display": "GPT-5.3 Codex Spark",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T02:38:25Z",
+        "ran_at": "2026-08-15T13:52:15Z",
         "executed": true,
         "content_hash": "a1e2d73405336dfc12e64a56ca3b24e0ddc9010d2d5c91f52db3e2de05b9748f",
         "runs_per_query": 3,
@@ -5286,10 +5381,10 @@
           {
             "query": "Write a package comment for internal/clientmap",
             "should_trigger": true,
-            "hits": 0,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 41.5,
+            "passed": true,
+            "avg_run_seconds": 11,
             "spec_hash": "bcab40145d7e8ef9d8fed39ebc78f7c5279fbbc0ee252571c6eb986f87ebfcb2"
           },
           {
@@ -5402,20 +5497,20 @@
           }
         ],
         "summary": {
-          "passed": 13,
-          "failed": 1,
+          "passed": 14,
+          "failed": 0,
           "total": 14,
-          "pass_rate": 0.928571,
-          "avg_run_seconds": 16.6
+          "pass_rate": 1,
+          "avg_run_seconds": 14.4
         },
         "previous": {
-          "ran_at": "2026-07-31T22:20:46Z",
+          "ran_at": "2026-08-15T02:38:25Z",
           "summary": {
-            "passed": 12,
-            "failed": 2,
+            "passed": 13,
+            "failed": 1,
             "total": 14,
-            "pass_rate": 0.857143,
-            "avg_run_seconds": 15.3
+            "pass_rate": 0.928571,
+            "avg_run_seconds": 16.6
           },
           "results": [
             {
@@ -5430,10 +5525,10 @@
             {
               "query": "Write a package comment for internal/clientmap",
               "should_trigger": true,
-              "hits": 1,
+              "hits": 0,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 14.3,
+              "avg_run_seconds": 41.5,
               "spec_hash": "bcab40145d7e8ef9d8fed39ebc78f7c5279fbbc0ee252571c6eb986f87ebfcb2"
             },
             {
@@ -5484,10 +5579,10 @@
             {
               "query": "Add a doc.go to this package",
               "should_trigger": true,
-              "hits": 1,
+              "hits": 3,
               "runs": 3,
-              "passed": false,
-              "avg_run_seconds": 14.1,
+              "passed": true,
+              "avg_run_seconds": 4.1,
               "spec_hash": "334c2e07db702839b14329a28522b2e3f403a4529ee419e259257dff9851577b"
             },
             {
