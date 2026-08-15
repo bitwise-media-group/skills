@@ -46,7 +46,7 @@
         {
           "type": "not_regex",
           "path": "Makefile",
-          "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN"
+          "pattern": "^[^#\\n]*(?:-C tools tool|TOOLBIN|tools/\\.bin|GOBIN)"
         },
         {
           "type": "regex",
@@ -84,7 +84,7 @@
         {
           "type": "not_regex",
           "path": "Makefile",
-          "pattern": "-C tools tool|TOOLBIN|tools/\\.bin|GOBIN"
+          "pattern": "^[^#\\n]*(?:-C tools tool|TOOLBIN|tools/\\.bin|GOBIN)"
         },
         {
           "type": "not_regex",

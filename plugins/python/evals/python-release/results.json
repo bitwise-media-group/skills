@@ -3918,6 +3918,293 @@
           ]
         }
       }
+    },
+    "xai/grok-4.5": {
+      "evals": {
+        "provider": "xai",
+        "model": "grok-4.5",
+        "display": "Grok 4.5",
+        "harness": "grok",
+        "tool_version": "v0.6.0-14-ga373d30",
+        "ran_at": "2026-07-31T19:17:01Z",
+        "executed": true,
+        "content_hash": "e06011c2f2338a52746d1877d60a693eef47a6fdc28850986ebe73332b62ea46",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "id": "ci-workflow",
+            "passed": true,
+            "measured": {
+              "input_tokens": 3895,
+              "cache_read_input_tokens": 61696,
+              "output_tokens": 1210,
+              "cost_usd": 0.033559
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "astral-sh/setup-uv@[0-9a-f]{40}",
+                "text": ".github/workflows/ci.yaml matches /astral-sh/setup-uv@[0-9a-f]{40}/",
+                "passed": true,
+                "evidence": "astral-sh/setup-uv@fac544c07dec837d0ccb6301d7b5580bf5edae39",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "actions/checkout@[0-9a-f]{40}",
+                "text": ".github/workflows/ci.yaml matches /actions/checkout@[0-9a-f]{40}/",
+                "passed": true,
+                "evidence": "actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "ruff format --check",
+                "text": ".github/workflows/ci.yaml matches /ruff format --check/",
+                "passed": true,
+                "evidence": "ruff format --check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "ty check",
+                "text": ".github/workflows/ci.yaml matches /ty check/",
+                "passed": true,
+                "evidence": "ty check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "pytest",
+                "text": ".github/workflows/ci.yaml matches /pytest/",
+                "passed": true,
+                "evidence": "pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "contents: read",
+                "text": ".github/workflows/ci.yaml matches /contents: read/",
+                "passed": true,
+                "evidence": "contents: read",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 66801,
+              "executor_duration_seconds": 17.1
+            },
+            "spec_hash": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+          },
+          {
+            "id": "trusted-publishing",
+            "passed": true,
+            "measured": {
+              "input_tokens": 3531,
+              "cache_read_input_tokens": 60800,
+              "output_tokens": 1052,
+              "cost_usd": 0.031614
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "id-token: write",
+                "text": ".github/workflows/release.yaml matches /id-token: write/",
+                "passed": true,
+                "evidence": "id-token: write",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "uv build",
+                "text": ".github/workflows/release.yaml matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "uv publish",
+                "text": ".github/workflows/release.yaml matches /uv publish/",
+                "passed": true,
+                "evidence": "uv publish",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "tags:",
+                "text": ".github/workflows/release.yaml matches /tags:/",
+                "passed": true,
+                "evidence": "tags:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "PYPI_API_TOKEN|password:",
+                "text": ".github/workflows/release.yaml does not match /PYPI_API_TOKEN|password:/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 65383,
+              "executor_duration_seconds": 15.4
+            },
+            "spec_hash": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+          },
+          {
+            "id": "dependabot",
+            "passed": true,
+            "measured": {
+              "input_tokens": 3651,
+              "cache_read_input_tokens": 61056,
+              "output_tokens": 937,
+              "cost_usd": 0.031241
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/dependabot.yaml",
+                "text": "file .github/dependabot.yaml exists",
+                "passed": true,
+                "evidence": ".github/dependabot.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "ecosystem:.*uv",
+                "text": ".github/dependabot.yaml matches /ecosystem:.*uv/",
+                "passed": true,
+                "evidence": "ecosystem: uv",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "ecosystem:.*github-actions",
+                "text": ".github/dependabot.yaml matches /ecosystem:.*github-actions/",
+                "passed": true,
+                "evidence": "ecosystem: github-actions",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "cooldown",
+                "text": ".github/dependabot.yaml matches /cooldown/",
+                "passed": true,
+                "evidence": "cooldown",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 65644,
+              "executor_duration_seconds": 15.2
+            },
+            "spec_hash": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 15.9,
+          "measured": {
+            "input_tokens": 11077,
+            "cache_read_input_tokens": 183552,
+            "output_tokens": 3199,
+            "cost_usd": 0.096414
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-31T19:17:01Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 3,
+            "total": 3,
+            "avg_run_seconds": 40.4
+          },
+          "results": [
+            {
+              "id": "ci-workflow",
+              "runtime_error": "grok session cancelled (headless permission prompt)",
+              "timing": {
+                "executor_duration_seconds": 40.5
+              },
+              "fingerprint": "6ae368a3ea95b4e66f057389a3092d219c2644be4880e2c4066ef6c99a385cb7"
+            },
+            {
+              "id": "trusted-publishing",
+              "runtime_error": "grok session cancelled (headless permission prompt)",
+              "timing": {
+                "executor_duration_seconds": 26.6
+              },
+              "fingerprint": "611b9b209646e6270a351c366d48dfd12b64efbfc1cc1c8c0a38d73cfdf8421f"
+            },
+            {
+              "id": "dependabot",
+              "runtime_error": "grok session cancelled (headless permission prompt)",
+              "timing": {
+                "executor_duration_seconds": 54
+              },
+              "fingerprint": "4486cf30eebaf3e7a9e948309ec2e4959f5ed67f457ddecf012b87b97db9ed8b"
+            }
+          ]
+        }
+      }
     }
   }
 }

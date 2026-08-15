@@ -4647,6 +4647,296 @@
           ]
         }
       }
+    },
+    "xai/grok-4.5": {
+      "evals": {
+        "provider": "xai",
+        "model": "grok-4.5",
+        "display": "Grok 4.5",
+        "harness": "grok",
+        "tool_version": "v0.6.0-14-ga373d30-dirty",
+        "ran_at": "2026-07-31T19:37:53Z",
+        "executed": true,
+        "content_hash": "7c549643b4f1faf4242f6be7fd2eab0c0790017ae19bef7f3190bcdc78e76422",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "id": "google-docstrings",
+            "passed": true,
+            "measured": {
+              "input_tokens": 3695,
+              "cache_read_input_tokens": 61824,
+              "output_tokens": 1304,
+              "cost_usd": 0.033761
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "\"\"\"",
+                "text": "src/myapp/kv.py matches /\"\"\"/",
+                "passed": true,
+                "evidence": "\"\"\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "Args:",
+                "text": "src/myapp/kv.py matches /Args:/",
+                "passed": true,
+                "evidence": "Args:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/kv.py",
+                "pattern": "Returns:",
+                "text": "src/myapp/kv.py matches /Returns:/",
+                "passed": true,
+                "evidence": "Returns:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "convention = \"google\"",
+                "text": "pyproject.toml matches /convention = \"google\"/",
+                "passed": true,
+                "evidence": "convention = \"google\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"D\"",
+                "text": "pyproject.toml matches /\"D\"/",
+                "passed": true,
+                "evidence": "\"D\"",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/kv.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/kv.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 66823,
+              "executor_duration_seconds": 18
+            },
+            "spec_hash": "da101b91c0064b952b7c8c63828f1b9e9a51ea4dbba94a36a487f3c731b47c88"
+          },
+          {
+            "id": "cli-docgen",
+            "passed": true,
+            "measured": {
+              "input_tokens": 6814,
+              "cache_read_input_tokens": 63360,
+              "output_tokens": 3109,
+              "cost_usd": 0.05129
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "src/myapp/tools/docgen.py",
+                "text": "file src/myapp/tools/docgen.py exists",
+                "passed": true,
+                "evidence": "src/myapp/tools/docgen.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/tools/docgen.py",
+                "pattern": "click",
+                "text": "src/myapp/tools/docgen.py matches /click/",
+                "passed": true,
+                "evidence": "click",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/tools/docgen.py",
+                "pattern": "get_help|format_help|get_short_help|CliRunner",
+                "text": "src/myapp/tools/docgen.py matches /get_help|format_help|get_short_help|CliRunner/",
+                "passed": true,
+                "evidence": "get_short_help",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "docgen",
+                "text": "Makefile matches /docgen/",
+                "passed": true,
+                "evidence": "docgen",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run|python3? -m",
+                "text": "Makefile matches /uv run|python3? -m/",
+                "passed": true,
+                "evidence": "uv run",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 73283,
+              "executor_duration_seconds": 34.7
+            },
+            "spec_hash": "2bb5d361dee336b1342cb44b5374f732f081fbdacb61419072da089b8571058a"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 26.4,
+          "measured": {
+            "input_tokens": 10509,
+            "cache_read_input_tokens": 125184,
+            "output_tokens": 4413,
+            "cost_usd": 0.085051
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-31T19:37:53Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 59,
+            "measured": {
+              "input_tokens": 47648,
+              "cache_read_input_tokens": 538880,
+              "output_tokens": 8513,
+              "cost_usd": 0.308038
+            }
+          },
+          "results": [
+            {
+              "id": "google-docstrings",
+              "passed": true,
+              "measured": {
+                "input_tokens": 3944,
+                "cache_read_input_tokens": 111104,
+                "output_tokens": 2570,
+                "cost_usd": 0.056639
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 40.4
+              },
+              "fingerprint": "da101b91c0064b952b7c8c63828f1b9e9a51ea4dbba94a36a487f3c731b47c88"
+            },
+            {
+              "id": "cli-docgen",
+              "passed": true,
+              "measured": {
+                "input_tokens": 43704,
+                "cache_read_input_tokens": 427776,
+                "output_tokens": 5943,
+                "cost_usd": 0.251399
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 77.6
+              },
+              "fingerprint": "2bb5d361dee336b1342cb44b5374f732f081fbdacb61419072da089b8571058a"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T19:14:44Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 27,
+            "measured": {
+              "input_tokens": 10297,
+              "cache_read_input_tokens": 123648,
+              "output_tokens": 4137,
+              "cost_usd": 0.082511
+            }
+          },
+          "results": [
+            {
+              "id": "google-docstrings",
+              "passed": true,
+              "measured": {
+                "input_tokens": 3679,
+                "cache_read_input_tokens": 75392,
+                "output_tokens": 1250,
+                "cost_usd": 0.037476
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 19.7
+              }
+            },
+            {
+              "id": "cli-docgen",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6618,
+                "cache_read_input_tokens": 48256,
+                "output_tokens": 2887,
+                "cost_usd": 0.045035
+              },
+              "summary": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 34.3
+              }
+            }
+          ]
+        }
+      }
     }
   }
 }

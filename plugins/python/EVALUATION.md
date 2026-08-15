@@ -199,6 +199,7 @@
 | Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | FAIL | +0% (vs base) | +0% | 1.7s | 1,302 | $0.0039 | 0/0 | 0/0 | $0.0000 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 47.8s | 898 | $0.0022 | 22,284/2,116 | 110,976/— | $0.3649 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 136.6s | 898 | $0.0045 | 31,473/2,902 | 164,096/— | $1.0649 |
+| xAI | Grok 4.5 (`grok-4.5`) | PASS | +0% | +0% | 18.0s | — | — | 3,695/1,304 | 61,824/— | $0.0338 |
 
 - `claude-sonnet-5` failed `src/myapp/kv.py matches /"""/`: no match
 
@@ -221,6 +222,7 @@
 | Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | FAIL | +0% (vs base) | +0% | 1.7s | 1,312 | $0.0039 | 0/0 | 0/0 | $0.0000 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +40% | 77.5s | 901 | $0.0023 | 13,496/3,663 | 113,792/— | $0.3732 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 71.5s | 901 | $0.0045 | 34,761/3,456 | 61,824/— | $0.5866 |
+| xAI | Grok 4.5 (`grok-4.5`) | PASS | +0% | +0% | 34.7s | — | — | 6,814/3,109 | 63,360/— | $0.0513 |
 
 - `claude-haiku-4-5` failed `src/myapp/tools/docgen.py matches /get_help|format_help|get_short_help|CliRunner/`: no match
 
@@ -443,6 +445,7 @@
 | Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | +0% (vs base) | +0% | 24.9s | 2,017 | $0.0061 | 4,639/1,662 | 163,304/16,262 | $0.1861 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +12% | +0% | 25.0s | 1,340 | $0.0034 | 9,591/954 | 80,768/— | $0.2402 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 25.2s | 1,340 | $0.0067 | 25,047/1,015 | 73,088/— | $0.5211 |
+| xAI | Grok 4.5 (`grok-4.5`) | PASS | +0% | +0% | 14.9s | — | — | 13,732/1,008 | 39,040/— | $0.0452 |
 
 - `claude-haiku-4-5` failed `pyproject.toml matches /build-backend = "uv_build"/`: no match
 
@@ -461,6 +464,7 @@
 | Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | +14% (vs base) | +14% | 30.4s | 1,996 | $0.0060 | 4,637/2,208 | 126,110/16,351 | $0.1836 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +14% | +57% | 42.2s | 1,330 | $0.0033 | 19,979/1,540 | 110,208/— | $0.3486 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +14% | 37.7s | 1,330 | $0.0066 | 11,735/1,724 | 89,984/— | $0.5603 |
+| xAI | Grok 4.5 (`grok-4.5`) | PASS | +0% | +0% | 12.9s | — | — | 3,925/718 | 48,640/— | $0.0267 |
 
 - `claude-haiku-4-5` failed `Makefile matches /uv run ty check/`: no match
 
@@ -619,6 +623,7 @@
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +100% | 32.7s | 1,049 | $0.0031 | 9/1,314 | 138,163/10,332 | $0.1238 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +100% | 112.4s | 928 | $0.0023 | 23,450/3,676 | 153,856/— | $0.4984 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +100% | 136.8s | 928 | $0.0046 | 29,557/4,489 | 248,576/— | $1.5253 |
+| xAI | Grok 4.5 (`grok-4.5`) | PASS | — (vs base) | — | 17.1s | — | — | 3,895/1,210 | 61,696/— | $0.0336 |
 
 - `claude-haiku-4-5` failed `file .github/workflows/ci.yaml exists`: .github/workflows/ci.yaml missing
 
@@ -643,6 +648,7 @@
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +100% | 31.2s | 1,040 | $0.0031 | 9/1,358 | 137,934/10,160 | $0.1233 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +100% | 54.6s | 921 | $0.0023 | 12,238/2,325 | 104,576/— | $0.3269 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +100% | 52.6s | 921 | $0.0046 | 10,937/2,106 | 95,488/— | $0.5953 |
+| xAI | Grok 4.5 (`grok-4.5`) | PASS | — (vs base) | — | 15.4s | — | — | 3,531/1,052 | 60,800/— | $0.0316 |
 
 - `claude-haiku-4-5` failed `.github/workflows/release.yaml matches /uv publish/`: no match
 
@@ -655,6 +661,7 @@
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +100% | 20.2s | 1,041 | $0.0031 | 8/965 | 112,422/9,800 | $0.1076 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +100% | +0% | 40.7s | 921 | $0.0023 | 10,384/1,507 | 84,224/— | $0.2591 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +100% | 70.0s | 921 | $0.0046 | 17,544/1,848 | 87,296/— | $0.5796 |
+| xAI | Grok 4.5 (`grok-4.5`) | PASS | — (vs base) | — | 15.2s | — | — | 3,651/937 | 61,056/— | $0.0312 |
 
 - `claude-haiku-4-5` failed `file .github/dependabot.yaml exists`: .github/dependabot.yaml missing
 
@@ -839,6 +846,7 @@
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 20.0s | 1,238 | $0.0037 | 8/775 | 117,107/9,486 | $0.1043 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 67.0s | 1,111 | $0.0028 | 3,813/1,447 | 90,880/— | $0.2584 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 37.9s | 1,111 | $0.0056 | 10,542/1,368 | 112,256/— | $0.6550 |
+| xAI | Grok 4.5 (`grok-4.5`) | PASS | +0% (vs base) | +0% | 16.3s | — | — | 4,523/1,235 | 48,256/— | $0.0309 |
 
 #### modernize-io
 
@@ -849,6 +857,7 @@
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +33% | 34.8s | 1,223 | $0.0037 | 7/1,909 | 91,677/10,695 | $0.1210 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 49.5s | 1,092 | $0.0027 | 19,235/2,213 | 168,064/— | $0.5014 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 92.8s | 1,092 | $0.0055 | 23,134/3,997 | 165,632/— | $1.0637 |
+| xAI | Grok 4.5 (`grok-4.5`) | PASS | +0% (vs base) | +0% | 95.9s | — | — | 27,795/7,237 | 228,736/— | $0.1676 |
 
 ## python-testing
 
@@ -1015,6 +1024,9 @@
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 46.7s | 1,131 | $0.0034 | 12/2,215 | 222,989/10,861 | $0.1659 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 36.8s | 997 | $0.0025 | 10,130/1,555 | 91,392/— | $0.2771 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 96.1s | 997 | $0.0050 | 11,966/1,929 | 144,384/— | $0.8396 |
+| xAI | Grok 4.5 (`grok-4.5`) | ERROR | — (vs base) | — | 14.8s | — | — | — | — | — |
+
+- `grok-4.5` runtime error: grok session cancelled (headless permission prompt)
 
 #### hypothesis-property
 
@@ -1025,6 +1037,7 @@
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 57.9s | 1,140 | $0.0034 | 16/1,799 | 330,459/11,548 | $0.1961 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 50.2s | 1,005 | $0.0025 | 18,519/1,932 | 121,344/— | $0.3786 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 53.7s | 1,005 | $0.0050 | 10,788/1,656 | 118,912/— | $0.6982 |
+| xAI | Grok 4.5 (`grok-4.5`) | PASS | — (vs base) | — | 24.3s | — | — | 4,233/1,155 | 117,504/— | $0.0506 |
 
 ## python-typing
 
@@ -1231,6 +1244,7 @@
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 19.7s | 1,387 | $0.0042 | 7/998 | 88,117/10,003 | $0.1021 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +20% | +0% | 89.0s | 1,251 | $0.0031 | 15,550/3,829 | 186,624/— | $0.5629 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +20% | +0% | 76.6s | 1,251 | $0.0063 | 33,432/3,356 | 165,632/— | $1.0960 |
+| xAI | Grok 4.5 (`grok-4.5`) | PASS | — (vs base) | — | 19.8s | — | — | 3,797/1,342 | 34,816/— | $0.0261 |
 
 #### configure-pyright
 
@@ -1241,6 +1255,7 @@
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 32.2s | 1,385 | $0.0042 | 7/1,926 | 88,169/10,902 | $0.1214 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +20% | +0% | 75.2s | 1,249 | $0.0031 | 24,461/3,450 | 133,120/— | $0.4457 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +20% | +0% | 62.1s | 1,249 | $0.0062 | 35,862/2,465 | 120,832/— | $0.8574 |
+| xAI | Grok 4.5 (`grok-4.5`) | PASS | — (vs base) | — | 24.6s | — | — | 4,486/1,619 | 107,008/— | $0.0508 |
 
 #### modernize-hints
 
@@ -1251,3 +1266,4 @@
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 18.6s | 1,363 | $0.0041 | 7/631 | 87,828/9,562 | $0.0938 |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 40.8s | 1,227 | $0.0031 | 15,949/1,740 | 96,512/— | $0.3073 |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 32.9s | 1,227 | $0.0061 | 10,750/1,222 | 68,608/— | $0.4335 |
+| xAI | Grok 4.5 (`grok-4.5`) | PASS | +0% (vs base) | +0% | 14.0s | — | — | 3,472/862 | 48,128/— | $0.0266 |

@@ -2169,6 +2169,836 @@
         }
       }
     },
+    "anthropic/claude-opus-5": {
+      "triggers": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "display": "Claude Opus 5",
+        "harness": "claude",
+        "tool_version": "v0.6.0-11-gb4f1b21-dirty",
+        "ran_at": "2026-07-31T17:08:50Z",
+        "executed": true,
+        "content_hash": "10b3ec42c24ca2ff04794196edbab5d7581eb6304cdb9e6335cd6fd517b7ce0e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "query": "Set up CI for this repo using our shared reusable workflows",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "estimate": {
+              "input_tokens": 2568,
+              "input_cost_usd": 0.01284
+            },
+            "spec_hash": "320f320512f9143130c52a604daddd27fac3a4f7f18afd6783f49d187831bdb3"
+          },
+          {
+            "query": "Add the reusable CodeQL workflow to this project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.8,
+            "estimate": {
+              "input_tokens": 2566,
+              "input_cost_usd": 0.01283
+            },
+            "spec_hash": "8ee27dc415a7150bdab80f3abb5c195467439088d24633062b7c71de22836ef1"
+          },
+          {
+            "query": "Wire up releases using the bitwise release workflow with vanity tags",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.3,
+            "estimate": {
+              "input_tokens": 2571,
+              "input_cost_usd": 0.012855
+            },
+            "spec_hash": "f256cf7aa4d1638693b913aa181c2e42ce4cb0d2693b571a577d317f2dd2da27"
+          },
+          {
+            "query": "Add Dependabot auto-merge using our shared workflow",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.4,
+            "estimate": {
+              "input_tokens": 2568,
+              "input_cost_usd": 0.01284
+            },
+            "spec_hash": "cf684d7e5ec81b27aa0b953b049e58941fc238174465414f0b14681bee5d56be"
+          },
+          {
+            "query": "Enable the /merge fast-forward flow in this repo",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.6,
+            "estimate": {
+              "input_tokens": 2567,
+              "input_cost_usd": 0.012835
+            },
+            "spec_hash": "87f4391520459668f339bd3de590f9dcb1bb63eca575fc6f133d9c73b503a78e"
+          },
+          {
+            "query": "Scaffold .github/ with our standard CI and release automation",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4,
+            "estimate": {
+              "input_tokens": 2568,
+              "input_cost_usd": 0.01284
+            },
+            "spec_hash": "5e899976e6d1c4565bbd650a6e315d6d65e5813be1e4f2caa6ae8a9bd4ba8269"
+          },
+          {
+            "query": "Which reusable workflow do I call for releases, and what permissions does the caller grant?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.3,
+            "estimate": {
+              "input_tokens": 2576,
+              "input_cost_usd": 0.01288
+            },
+            "spec_hash": "e0a1764a66b989f1d216e9d370022843eb7f8dc010c03004a6931fdee3a917e4"
+          },
+          {
+            "query": "Add a caller that uses bitwise-media-group/github-workflows ci.yaml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.5,
+            "estimate": {
+              "input_tokens": 2577,
+              "input_cost_usd": 0.012885
+            },
+            "spec_hash": "002699295a3ee5874a6d4503de62bd2a73f9a6a56120917806fe7842ba0041a1"
+          },
+          {
+            "query": "Write a CI workflow from scratch with a custom build matrix",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 0.8,
+            "estimate": {
+              "input_tokens": 2569,
+              "input_cost_usd": 0.012845
+            },
+            "spec_hash": "aa250b879dca2af0fd3a750490892073567f72a4bab7ec41e7b14d6ae3f4d346"
+          },
+          {
+            "query": "Harden the permissions in this workflow",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 0.7,
+            "estimate": {
+              "input_tokens": 2561,
+              "input_cost_usd": 0.012805
+            },
+            "spec_hash": "d12d38176d3dc7ca3069dea8b9f97138dd23e4bc39b07c63a9248ab22ce89ca0"
+          },
+          {
+            "query": "Run actionlint over the workflows and fix the errors",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 0.8,
+            "estimate": {
+              "input_tokens": 2566,
+              "input_cost_usd": 0.01283
+            },
+            "spec_hash": "9993cb755a2d5a9c0ee7922565368a91d38e2a901694725571be3ff6660003c2"
+          },
+          {
+            "query": "Create a Terraform module for an ECR registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 0.8,
+            "estimate": {
+              "input_tokens": 2564,
+              "input_cost_usd": 0.01282
+            },
+            "spec_hash": "b5a62a4ed47c5fda195379552c0094fb98df1b3ef93c2125b9cc5a3f18ee84ac"
+          },
+          {
+            "query": "Add a Jenkins pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 0.8,
+            "estimate": {
+              "input_tokens": 2564,
+              "input_cost_usd": 0.01282
+            },
+            "spec_hash": "451f823d6a21e0444ff7d6c147a6f339628de7a7b144e2648a950423377ec58b"
+          },
+          {
+            "query": "Explain how GitHub Actions expression truthiness works",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 0.8,
+            "estimate": {
+              "input_tokens": 2567,
+              "input_cost_usd": 0.012835
+            },
+            "spec_hash": "472d4cd80b97c7e0807da4dcc99ade6051e259200824571d5879f14186180fc4"
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 2.9,
+          "estimate": {
+            "input_tokens": 35952,
+            "input_cost_usd": 0.17976
+          }
+        },
+        "previous": {
+          "ran_at": "2026-07-31T16:41:17Z",
+          "summary": {
+            "passed": 6,
+            "failed": 8,
+            "total": 14,
+            "pass_rate": 0.428571,
+            "avg_run_seconds": 0.8,
+            "estimate": {
+              "input_tokens": 35952,
+              "input_cost_usd": 0.17976
+            }
+          },
+          "results": [
+            {
+              "query": "Set up CI for this repo using our shared reusable workflows",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 0.8,
+              "estimate": {
+                "input_tokens": 2568,
+                "input_cost_usd": 0.01284
+              },
+              "spec_hash": "320f320512f9143130c52a604daddd27fac3a4f7f18afd6783f49d187831bdb3"
+            },
+            {
+              "query": "Add the reusable CodeQL workflow to this project",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 0.9,
+              "estimate": {
+                "input_tokens": 2566,
+                "input_cost_usd": 0.01283
+              },
+              "spec_hash": "8ee27dc415a7150bdab80f3abb5c195467439088d24633062b7c71de22836ef1"
+            },
+            {
+              "query": "Wire up releases using the bitwise release workflow with vanity tags",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 0.8,
+              "estimate": {
+                "input_tokens": 2571,
+                "input_cost_usd": 0.012855
+              },
+              "spec_hash": "f256cf7aa4d1638693b913aa181c2e42ce4cb0d2693b571a577d317f2dd2da27"
+            },
+            {
+              "query": "Add Dependabot auto-merge using our shared workflow",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 0.8,
+              "estimate": {
+                "input_tokens": 2568,
+                "input_cost_usd": 0.01284
+              },
+              "spec_hash": "cf684d7e5ec81b27aa0b953b049e58941fc238174465414f0b14681bee5d56be"
+            },
+            {
+              "query": "Enable the /merge fast-forward flow in this repo",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 0.8,
+              "estimate": {
+                "input_tokens": 2567,
+                "input_cost_usd": 0.012835
+              },
+              "spec_hash": "87f4391520459668f339bd3de590f9dcb1bb63eca575fc6f133d9c73b503a78e"
+            },
+            {
+              "query": "Scaffold .github/ with our standard CI and release automation",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 0.8,
+              "estimate": {
+                "input_tokens": 2568,
+                "input_cost_usd": 0.01284
+              },
+              "spec_hash": "5e899976e6d1c4565bbd650a6e315d6d65e5813be1e4f2caa6ae8a9bd4ba8269"
+            },
+            {
+              "query": "Which reusable workflow do I call for releases, and what permissions does the caller grant?",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 0.8,
+              "estimate": {
+                "input_tokens": 2576,
+                "input_cost_usd": 0.01288
+              },
+              "spec_hash": "e0a1764a66b989f1d216e9d370022843eb7f8dc010c03004a6931fdee3a917e4"
+            },
+            {
+              "query": "Add a caller that uses bitwise-media-group/github-workflows ci.yaml",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 0.8,
+              "estimate": {
+                "input_tokens": 2577,
+                "input_cost_usd": 0.012885
+              },
+              "spec_hash": "002699295a3ee5874a6d4503de62bd2a73f9a6a56120917806fe7842ba0041a1"
+            },
+            {
+              "query": "Write a CI workflow from scratch with a custom build matrix",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 0.8,
+              "estimate": {
+                "input_tokens": 2569,
+                "input_cost_usd": 0.012845
+              },
+              "spec_hash": "aa250b879dca2af0fd3a750490892073567f72a4bab7ec41e7b14d6ae3f4d346"
+            },
+            {
+              "query": "Harden the permissions in this workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 0.7,
+              "estimate": {
+                "input_tokens": 2561,
+                "input_cost_usd": 0.012805
+              },
+              "spec_hash": "d12d38176d3dc7ca3069dea8b9f97138dd23e4bc39b07c63a9248ab22ce89ca0"
+            },
+            {
+              "query": "Run actionlint over the workflows and fix the errors",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 0.8,
+              "estimate": {
+                "input_tokens": 2566,
+                "input_cost_usd": 0.01283
+              },
+              "spec_hash": "9993cb755a2d5a9c0ee7922565368a91d38e2a901694725571be3ff6660003c2"
+            },
+            {
+              "query": "Create a Terraform module for an ECR registry",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 0.8,
+              "estimate": {
+                "input_tokens": 2564,
+                "input_cost_usd": 0.01282
+              },
+              "spec_hash": "b5a62a4ed47c5fda195379552c0094fb98df1b3ef93c2125b9cc5a3f18ee84ac"
+            },
+            {
+              "query": "Add a Jenkins pipeline for this project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 0.8,
+              "estimate": {
+                "input_tokens": 2564,
+                "input_cost_usd": 0.01282
+              },
+              "spec_hash": "451f823d6a21e0444ff7d6c147a6f339628de7a7b144e2648a950423377ec58b"
+            },
+            {
+              "query": "Explain how GitHub Actions expression truthiness works",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 0.8,
+              "estimate": {
+                "input_tokens": 2567,
+                "input_cost_usd": 0.012835
+              },
+              "spec_hash": "472d4cd80b97c7e0807da4dcc99ade6051e259200824571d5879f14186180fc4"
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "anthropic",
+        "model": "claude-opus-5",
+        "display": "Claude Opus 5",
+        "harness": "claude",
+        "tool_version": "v0.6.0-11-gb4f1b21-dirty",
+        "ran_at": "2026-07-31T17:09:25Z",
+        "executed": true,
+        "content_hash": "649650c6a88e07a34fb6e4a7acb7295990c5dc3b8c3aa71f805c720481dabaee",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 25
+        },
+        "results": [
+          {
+            "id": "wire-ci",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2611,
+              "input_cost_usd": 0.013055
+            },
+            "measured": {
+              "input_tokens": 10,
+              "cache_read_input_tokens": 117140,
+              "cache_creation_input_tokens": 10741,
+              "output_tokens": 2332,
+              "cost_usd": 0.224966
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@",
+                "text": ".github/workflows/ci.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/ci.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "contents:\\s*read",
+                "text": ".github/workflows/ci.yaml matches /contents:\\s*read/",
+                "passed": true,
+                "evidence": "contents:read",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/ci.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 130223,
+              "executor_duration_seconds": 35.1
+            },
+            "spec_hash": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+          },
+          {
+            "id": "wire-release-vanity",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2613,
+              "input_cost_usd": 0.013065
+            },
+            "measured": {
+              "input_tokens": 8,
+              "cache_read_input_tokens": 91388,
+              "cache_creation_input_tokens": 10762,
+              "output_tokens": 1780,
+              "cost_usd": 0.198489
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@",
+                "text": ".github/workflows/release.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/release.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "vanity-tags:\\s*true",
+                "text": ".github/workflows/release.yaml matches /vanity-tags:\\s*true/",
+                "passed": true,
+                "evidence": "vanity-tags: true",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "contents:\\s*write",
+                "text": ".github/workflows/release.yaml matches /contents:\\s*write/",
+                "passed": true,
+                "evidence": "contents: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 1,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 103938,
+              "executor_duration_seconds": 27.9
+            },
+            "spec_hash": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+          },
+          {
+            "id": "wire-codeql",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 2588,
+              "input_cost_usd": 0.01294
+            },
+            "measured": {
+              "input_tokens": 10,
+              "cache_read_input_tokens": 117123,
+              "cache_creation_input_tokens": 10548,
+              "output_tokens": 1809,
+              "cost_usd": 0.209937
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/codeql.yaml",
+                "text": "file .github/workflows/codeql.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/codeql.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@",
+                "text": ".github/workflows/codeql.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/codeql.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "security-events:\\s*write",
+                "text": ".github/workflows/codeql.yaml matches /security-events:\\s*write/",
+                "passed": true,
+                "evidence": "security-events: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "Bash": 2,
+                "Read": 1,
+                "Skill": 1,
+                "Write": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 129490,
+              "executor_duration_seconds": 30.3
+            },
+            "spec_hash": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 31.1,
+          "estimate": {
+            "input_tokens": 7812,
+            "input_cost_usd": 0.03906
+          },
+          "measured": {
+            "input_tokens": 28,
+            "cache_read_input_tokens": 325651,
+            "cache_creation_input_tokens": 32051,
+            "output_tokens": 5921,
+            "cost_usd": 0.633392
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-31T16:41:19Z",
+          "summary": {
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "pass_rate": 0,
+            "avg_run_seconds": 0.9,
+            "measured": {
+              "input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cache_creation_input_tokens": 0,
+              "output_tokens": 0,
+              "cost_usd": 0
+            }
+          },
+          "results": [
+            {
+              "id": "wire-ci",
+              "passed": false,
+              "measured": {
+                "input_tokens": 0,
+                "cache_read_input_tokens": 0,
+                "cache_creation_input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 4,
+                "total": 4,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 0.9
+              },
+              "fingerprint": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+            },
+            {
+              "id": "wire-release-vanity",
+              "passed": false,
+              "measured": {
+                "input_tokens": 0,
+                "cache_read_input_tokens": 0,
+                "cache_creation_input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 4,
+                "total": 4,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 0.8
+              },
+              "fingerprint": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+            },
+            {
+              "id": "wire-codeql",
+              "passed": false,
+              "measured": {
+                "input_tokens": 0,
+                "cache_read_input_tokens": 0,
+                "cache_creation_input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 3,
+                "total": 3,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 0.9
+              },
+              "fingerprint": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T16:41:19Z",
+          "summary": {
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "pass_rate": 0,
+            "avg_run_seconds": 0.8,
+            "estimate": {
+              "input_tokens": 7812,
+              "input_cost_usd": 0.03906
+            },
+            "measured": {
+              "input_tokens": 0,
+              "cache_read_input_tokens": 0,
+              "cache_creation_input_tokens": 0,
+              "output_tokens": 0,
+              "cost_usd": 0
+            }
+          },
+          "results": [
+            {
+              "id": "wire-ci",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 2611,
+                "input_cost_usd": 0.013055
+              },
+              "measured": {
+                "input_tokens": 0,
+                "cache_read_input_tokens": 0,
+                "cache_creation_input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 4,
+                "total": 4,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 0.8
+              }
+            },
+            {
+              "id": "wire-release-vanity",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 2613,
+                "input_cost_usd": 0.013065
+              },
+              "measured": {
+                "input_tokens": 0,
+                "cache_read_input_tokens": 0,
+                "cache_creation_input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 4,
+                "total": 4,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 0.9
+              }
+            },
+            {
+              "id": "wire-codeql",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 2588,
+                "input_cost_usd": 0.01294
+              },
+              "measured": {
+                "input_tokens": 0,
+                "cache_read_input_tokens": 0,
+                "cache_creation_input_tokens": 0,
+                "output_tokens": 0,
+                "cost_usd": 0
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 3,
+                "total": 3,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 0.8
+              }
+            }
+          ]
+        }
+      }
+    },
     "anthropic/claude-sonnet-4-6": {
       "triggers": {
         "provider": "anthropic",
@@ -2991,8 +3821,8 @@
         "model": "claude-sonnet-5",
         "display": "Claude Sonnet 5",
         "harness": "claude",
-        "tool_version": "v0.5.0-6-g47ca9ac",
-        "ran_at": "2026-07-02T18:24:04Z",
+        "tool_version": "v0.6.0-11-gb4f1b21-dirty",
+        "ran_at": "2026-07-31T17:08:20Z",
         "executed": true,
         "content_hash": "10b3ec42c24ca2ff04794196edbab5d7581eb6304cdb9e6335cd6fd517b7ce0e",
         "runs_per_query": 3,
@@ -3018,10 +3848,10 @@
           {
             "query": "Add the reusable CodeQL workflow to this project",
             "should_trigger": true,
-            "hits": 1,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 8.7,
+            "passed": true,
+            "avg_run_seconds": 4.3,
             "estimate": {
               "input_tokens": 2566,
               "input_cost_usd": 0.007698
@@ -3057,10 +3887,10 @@
           {
             "query": "Enable the /merge fast-forward flow in this repo",
             "should_trigger": true,
-            "hits": 1,
+            "hits": 2,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 11.5,
+            "passed": true,
+            "avg_run_seconds": 5.7,
             "estimate": {
               "input_tokens": 2567,
               "input_cost_usd": 0.007701
@@ -3070,10 +3900,10 @@
           {
             "query": "Scaffold .github/ with our standard CI and release automation",
             "should_trigger": true,
-            "hits": 1,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 9.5,
+            "passed": true,
+            "avg_run_seconds": 3.4,
             "estimate": {
               "input_tokens": 2568,
               "input_cost_usd": 0.007704
@@ -3186,15 +4016,213 @@
           }
         ],
         "summary": {
-          "passed": 11,
-          "failed": 3,
+          "passed": 14,
+          "failed": 0,
           "total": 14,
-          "pass_rate": 0.785714,
-          "avg_run_seconds": 9.2,
+          "pass_rate": 1,
+          "avg_run_seconds": 8,
           "estimate": {
             "input_tokens": 35952,
             "input_cost_usd": 0.107856
           }
+        },
+        "previous": {
+          "ran_at": "2026-07-31T16:41:08Z",
+          "summary": {
+            "passed": 11,
+            "failed": 3,
+            "total": 14,
+            "pass_rate": 0.785714,
+            "avg_run_seconds": 7.2,
+            "estimate": {
+              "input_tokens": 35952,
+              "input_cost_usd": 0.107856
+            }
+          },
+          "results": [
+            {
+              "query": "Set up CI for this repo using our shared reusable workflows",
+              "should_trigger": true,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.5,
+              "estimate": {
+                "input_tokens": 2568,
+                "input_cost_usd": 0.007704
+              },
+              "spec_hash": "320f320512f9143130c52a604daddd27fac3a4f7f18afd6783f49d187831bdb3"
+            },
+            {
+              "query": "Add the reusable CodeQL workflow to this project",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 0.9,
+              "estimate": {
+                "input_tokens": 2566,
+                "input_cost_usd": 0.007698
+              },
+              "spec_hash": "8ee27dc415a7150bdab80f3abb5c195467439088d24633062b7c71de22836ef1"
+            },
+            {
+              "query": "Wire up releases using the bitwise release workflow with vanity tags",
+              "should_trigger": true,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.2,
+              "estimate": {
+                "input_tokens": 2571,
+                "input_cost_usd": 0.007713
+              },
+              "spec_hash": "f256cf7aa4d1638693b913aa181c2e42ce4cb0d2693b571a577d317f2dd2da27"
+            },
+            {
+              "query": "Add Dependabot auto-merge using our shared workflow",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.5,
+              "estimate": {
+                "input_tokens": 2568,
+                "input_cost_usd": 0.007704
+              },
+              "spec_hash": "cf684d7e5ec81b27aa0b953b049e58941fc238174465414f0b14681bee5d56be"
+            },
+            {
+              "query": "Enable the /merge fast-forward flow in this repo",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 0.9,
+              "estimate": {
+                "input_tokens": 2567,
+                "input_cost_usd": 0.007701
+              },
+              "spec_hash": "87f4391520459668f339bd3de590f9dcb1bb63eca575fc6f133d9c73b503a78e"
+            },
+            {
+              "query": "Scaffold .github/ with our standard CI and release automation",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 0.8,
+              "estimate": {
+                "input_tokens": 2568,
+                "input_cost_usd": 0.007704
+              },
+              "spec_hash": "5e899976e6d1c4565bbd650a6e315d6d65e5813be1e4f2caa6ae8a9bd4ba8269"
+            },
+            {
+              "query": "Which reusable workflow do I call for releases, and what permissions does the caller grant?",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.6,
+              "estimate": {
+                "input_tokens": 2576,
+                "input_cost_usd": 0.007728
+              },
+              "spec_hash": "e0a1764a66b989f1d216e9d370022843eb7f8dc010c03004a6931fdee3a917e4"
+            },
+            {
+              "query": "Add a caller that uses bitwise-media-group/github-workflows ci.yaml",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.2,
+              "estimate": {
+                "input_tokens": 2577,
+                "input_cost_usd": 0.007731
+              },
+              "spec_hash": "002699295a3ee5874a6d4503de62bd2a73f9a6a56120917806fe7842ba0041a1"
+            },
+            {
+              "query": "Write a CI workflow from scratch with a custom build matrix",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 18.5,
+              "estimate": {
+                "input_tokens": 2569,
+                "input_cost_usd": 0.007707
+              },
+              "spec_hash": "aa250b879dca2af0fd3a750490892073567f72a4bab7ec41e7b14d6ae3f4d346"
+            },
+            {
+              "query": "Harden the permissions in this workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.7,
+              "estimate": {
+                "input_tokens": 2561,
+                "input_cost_usd": 0.007683
+              },
+              "spec_hash": "d12d38176d3dc7ca3069dea8b9f97138dd23e4bc39b07c63a9248ab22ce89ca0"
+            },
+            {
+              "query": "Run actionlint over the workflows and fix the errors",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.9,
+              "estimate": {
+                "input_tokens": 2566,
+                "input_cost_usd": 0.007698
+              },
+              "spec_hash": "9993cb755a2d5a9c0ee7922565368a91d38e2a901694725571be3ff6660003c2"
+            },
+            {
+              "query": "Create a Terraform module for an ECR registry",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.4,
+              "estimate": {
+                "input_tokens": 2564,
+                "input_cost_usd": 0.007692
+              },
+              "spec_hash": "b5a62a4ed47c5fda195379552c0094fb98df1b3ef93c2125b9cc5a3f18ee84ac"
+            },
+            {
+              "query": "Add a Jenkins pipeline for this project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.5,
+              "estimate": {
+                "input_tokens": 2564,
+                "input_cost_usd": 0.007692
+              },
+              "spec_hash": "451f823d6a21e0444ff7d6c147a6f339628de7a7b144e2648a950423377ec58b"
+            },
+            {
+              "query": "Explain how GitHub Actions expression truthiness works",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.4,
+              "estimate": {
+                "input_tokens": 2567,
+                "input_cost_usd": 0.007701
+              },
+              "spec_hash": "472d4cd80b97c7e0807da4dcc99ade6051e259200824571d5879f14186180fc4"
+            }
+          ]
         }
       },
       "evals": {
@@ -3490,6 +4518,438 @@
               "runtime_error": "claude run error (error_max_turns): Reached maximum number of turns (20)",
               "timing": {
                 "executor_duration_seconds": 177.5
+              },
+              "fingerprint": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.3-codex-spark": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.3-codex-spark",
+        "display": "GPT-5.3 Codex Spark",
+        "harness": "codex",
+        "tool_version": "v0.6.0-18-g123cd4d-dirty",
+        "ran_at": "2026-07-31T21:00:02Z",
+        "executed": true,
+        "content_hash": "10b3ec42c24ca2ff04794196edbab5d7581eb6304cdb9e6335cd6fd517b7ce0e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "Set up CI for this repo using our shared reusable workflows",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.6,
+            "spec_hash": "320f320512f9143130c52a604daddd27fac3a4f7f18afd6783f49d187831bdb3"
+          },
+          {
+            "query": "Add the reusable CodeQL workflow to this project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "spec_hash": "8ee27dc415a7150bdab80f3abb5c195467439088d24633062b7c71de22836ef1"
+          },
+          {
+            "query": "Wire up releases using the bitwise release workflow with vanity tags",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13,
+            "spec_hash": "f256cf7aa4d1638693b913aa181c2e42ce4cb0d2693b571a577d317f2dd2da27"
+          },
+          {
+            "query": "Add Dependabot auto-merge using our shared workflow",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6,
+            "spec_hash": "cf684d7e5ec81b27aa0b953b049e58941fc238174465414f0b14681bee5d56be"
+          },
+          {
+            "query": "Enable the /merge fast-forward flow in this repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.6,
+            "spec_hash": "87f4391520459668f339bd3de590f9dcb1bb63eca575fc6f133d9c73b503a78e"
+          },
+          {
+            "query": "Scaffold .github/ with our standard CI and release automation",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.8,
+            "spec_hash": "5e899976e6d1c4565bbd650a6e315d6d65e5813be1e4f2caa6ae8a9bd4ba8269"
+          },
+          {
+            "query": "Which reusable workflow do I call for releases, and what permissions does the caller grant?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.4,
+            "spec_hash": "e0a1764a66b989f1d216e9d370022843eb7f8dc010c03004a6931fdee3a917e4"
+          },
+          {
+            "query": "Add a caller that uses bitwise-media-group/github-workflows ci.yaml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "002699295a3ee5874a6d4503de62bd2a73f9a6a56120917806fe7842ba0041a1"
+          },
+          {
+            "query": "Write a CI workflow from scratch with a custom build matrix",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.1,
+            "spec_hash": "aa250b879dca2af0fd3a750490892073567f72a4bab7ec41e7b14d6ae3f4d346"
+          },
+          {
+            "query": "Harden the permissions in this workflow",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.1,
+            "spec_hash": "d12d38176d3dc7ca3069dea8b9f97138dd23e4bc39b07c63a9248ab22ce89ca0"
+          },
+          {
+            "query": "Run actionlint over the workflows and fix the errors",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.4,
+            "spec_hash": "9993cb755a2d5a9c0ee7922565368a91d38e2a901694725571be3ff6660003c2"
+          },
+          {
+            "query": "Create a Terraform module for an ECR registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 21.7,
+            "spec_hash": "b5a62a4ed47c5fda195379552c0094fb98df1b3ef93c2125b9cc5a3f18ee84ac"
+          },
+          {
+            "query": "Add a Jenkins pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.9,
+            "spec_hash": "451f823d6a21e0444ff7d6c147a6f339628de7a7b144e2648a950423377ec58b"
+          },
+          {
+            "query": "Explain how GitHub Actions expression truthiness works",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 23.5,
+            "spec_hash": "472d4cd80b97c7e0807da4dcc99ade6051e259200824571d5879f14186180fc4"
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 12
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.3-codex-spark",
+        "display": "GPT-5.3 Codex Spark",
+        "harness": "codex",
+        "tool_version": "v0.6.0-18-g123cd4d-dirty",
+        "ran_at": "2026-07-31T21:02:05Z",
+        "executed": true,
+        "content_hash": "649650c6a88e07a34fb6e4a7acb7295990c5dc3b8c3aa71f805c720481dabaee",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "wire-ci",
+            "passed": true,
+            "measured": {
+              "input_tokens": 6869,
+              "cache_read_input_tokens": 88832,
+              "output_tokens": 1866
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@",
+                "text": ".github/workflows/ci.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/ci.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "contents:\\s*read",
+                "text": ".github/workflows/ci.yaml matches /contents:\\s*read/",
+                "passed": true,
+                "evidence": "contents: read",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/ci.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 5,
+                "file_change": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 97567,
+              "executor_duration_seconds": 17
+            },
+            "spec_hash": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+          },
+          {
+            "id": "wire-release-vanity",
+            "passed": true,
+            "measured": {
+              "input_tokens": 21478,
+              "cache_read_input_tokens": 257408,
+              "output_tokens": 7109
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@",
+                "text": ".github/workflows/release.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/release.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "vanity-tags:\\s*true",
+                "text": ".github/workflows/release.yaml matches /vanity-tags:\\s*true/",
+                "passed": true,
+                "evidence": "vanity-tags: true",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "contents:\\s*write",
+                "text": ".github/workflows/release.yaml matches /contents:\\s*write/",
+                "passed": true,
+                "evidence": "contents: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 13,
+                "file_change": 1
+              },
+              "total_tool_calls": 14
+            },
+            "timing": {
+              "total_tokens": 285995,
+              "executor_duration_seconds": 31.7
+            },
+            "spec_hash": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+          },
+          {
+            "id": "wire-codeql",
+            "passed": true,
+            "measured": {
+              "input_tokens": 7186,
+              "cache_read_input_tokens": 48256,
+              "output_tokens": 2188
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/codeql.yaml",
+                "text": "file .github/workflows/codeql.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/codeql.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@",
+                "text": ".github/workflows/codeql.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/codeql.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "security-events:\\s*write",
+                "text": ".github/workflows/codeql.yaml matches /security-events:\\s*write/",
+                "passed": true,
+                "evidence": "security-events: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 5
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 57630,
+              "executor_duration_seconds": 14.3
+            },
+            "spec_hash": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 21,
+          "measured": {
+            "input_tokens": 35533,
+            "cache_read_input_tokens": 394496,
+            "output_tokens": 11163
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-31T21:02:05Z",
+          "summary": {
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "pass_rate": 0.333333,
+            "avg_run_seconds": 74.7,
+            "measured": {
+              "input_tokens": 278495,
+              "cache_read_input_tokens": 2016384,
+              "output_tokens": 36869
+            }
+          },
+          "results": [
+            {
+              "id": "wire-ci",
+              "passed": false,
+              "measured": {
+                "input_tokens": 92715,
+                "cache_read_input_tokens": 1072896,
+                "output_tokens": 10829
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 2,
+                "total": 4,
+                "pass_rate": 0.5
+              },
+              "timing": {
+                "executor_duration_seconds": 100.1
+              },
+              "fingerprint": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+            },
+            {
+              "id": "wire-release-vanity",
+              "passed": true,
+              "measured": {
+                "input_tokens": 82393,
+                "cache_read_input_tokens": 486912,
+                "output_tokens": 10249
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 56.2
+              },
+              "fingerprint": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+            },
+            {
+              "id": "wire-codeql",
+              "passed": false,
+              "measured": {
+                "input_tokens": 103387,
+                "cache_read_input_tokens": 456576,
+                "output_tokens": 15791
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 1,
+                "total": 3,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 67.9
               },
               "fingerprint": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
             }
@@ -3897,8 +5357,8 @@
         "model": "gpt-5.4",
         "display": "GPT-5.4",
         "harness": "codex",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-27T20:38:42Z",
+        "tool_version": "v0.6.0-18-g123cd4d-dirty",
+        "ran_at": "2026-07-31T21:13:49Z",
         "executed": true,
         "content_hash": "649650c6a88e07a34fb6e4a7acb7295990c5dc3b8c3aa71f805c720481dabaee",
         "timeout_seconds": 600,
@@ -3978,24 +5438,24 @@
           },
           {
             "id": "wire-release-vanity",
-            "passed": false,
+            "passed": true,
             "estimate": {
               "input_tokens": 1668,
               "input_cost_usd": 0.00417
             },
             "measured": {
-              "input_tokens": 21205,
-              "cache_read_input_tokens": 202880,
-              "output_tokens": 3970,
-              "cost_usd": 0.619763
+              "input_tokens": 9198,
+              "cache_read_input_tokens": 81152,
+              "output_tokens": 1738,
+              "cost_usd": 0.251945
             },
             "expectations": [
               {
                 "type": "file_exists",
                 "path": ".github/workflows/release.yaml",
                 "text": "file .github/workflows/release.yaml exists",
-                "passed": false,
-                "evidence": ".github/workflows/release.yaml missing",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
                 "source": "assertion"
               },
               {
@@ -4003,8 +5463,8 @@
                 "path": ".github/workflows/release.yaml",
                 "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@",
                 "text": ".github/workflows/release.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@/",
-                "passed": false,
-                "evidence": ".github/workflows/release.yaml missing",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/release.yaml@",
                 "source": "assertion"
               },
               {
@@ -4012,8 +5472,8 @@
                 "path": ".github/workflows/release.yaml",
                 "pattern": "vanity-tags:\\s*true",
                 "text": ".github/workflows/release.yaml matches /vanity-tags:\\s*true/",
-                "passed": false,
-                "evidence": ".github/workflows/release.yaml missing",
+                "passed": true,
+                "evidence": "vanity-tags: true",
                 "source": "assertion"
               },
               {
@@ -4021,49 +5481,50 @@
                 "path": ".github/workflows/release.yaml",
                 "pattern": "contents:\\s*write",
                 "text": ".github/workflows/release.yaml matches /contents:\\s*write/",
-                "passed": false,
-                "evidence": ".github/workflows/release.yaml missing",
+                "passed": true,
+                "evidence": "contents: write",
                 "source": "assertion"
               }
             ],
             "summary": {
-              "passed": 0,
-              "failed": 4,
+              "passed": 4,
+              "failed": 0,
               "total": 4,
-              "pass_rate": 0
+              "pass_rate": 1
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 23
+                "command_execution": 10,
+                "file_change": 1
               },
-              "total_tool_calls": 23
+              "total_tool_calls": 11
             },
             "timing": {
-              "total_tokens": 228055,
-              "executor_duration_seconds": 88.1
+              "total_tokens": 92088,
+              "executor_duration_seconds": 42.2
             },
             "spec_hash": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
           },
           {
             "id": "wire-codeql",
-            "passed": false,
+            "passed": true,
             "estimate": {
               "input_tokens": 1651,
               "input_cost_usd": 0.004128
             },
             "measured": {
-              "input_tokens": 40882,
-              "cache_read_input_tokens": 150784,
-              "output_tokens": 4339,
-              "cost_usd": 0.54425
+              "input_tokens": 14410,
+              "cache_read_input_tokens": 90880,
+              "output_tokens": 1497,
+              "cost_usd": 0.28568
             },
             "expectations": [
               {
                 "type": "file_exists",
                 "path": ".github/workflows/codeql.yaml",
                 "text": "file .github/workflows/codeql.yaml exists",
-                "passed": false,
-                "evidence": ".github/workflows/codeql.yaml missing",
+                "passed": true,
+                "evidence": ".github/workflows/codeql.yaml exists",
                 "source": "assertion"
               },
               {
@@ -4071,8 +5532,8 @@
                 "path": ".github/workflows/codeql.yaml",
                 "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@",
                 "text": ".github/workflows/codeql.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@/",
-                "passed": false,
-                "evidence": ".github/workflows/codeql.yaml missing",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/codeql.yaml@",
                 "source": "assertion"
               },
               {
@@ -4080,45 +5541,46 @@
                 "path": ".github/workflows/codeql.yaml",
                 "pattern": "security-events:\\s*write",
                 "text": ".github/workflows/codeql.yaml matches /security-events:\\s*write/",
-                "passed": false,
-                "evidence": ".github/workflows/codeql.yaml missing",
+                "passed": true,
+                "evidence": "security-events: write",
                 "source": "assertion"
               }
             ],
             "summary": {
-              "passed": 0,
-              "failed": 3,
+              "passed": 3,
+              "failed": 0,
               "total": 3,
-              "pass_rate": 0
+              "pass_rate": 1
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 26
+                "command_execution": 9,
+                "file_change": 1
               },
-              "total_tool_calls": 26
+              "total_tool_calls": 10
             },
             "timing": {
-              "total_tokens": 196005,
-              "executor_duration_seconds": 95.8
+              "total_tokens": 106787,
+              "executor_duration_seconds": 38.7
             },
             "spec_hash": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
           }
         ],
         "summary": {
-          "passed": 1,
-          "failed": 2,
+          "passed": 3,
+          "failed": 0,
           "total": 3,
-          "pass_rate": 0.333333,
-          "avg_run_seconds": 75.4,
+          "pass_rate": 1,
+          "avg_run_seconds": 41.1,
           "estimate": {
             "input_tokens": 4986,
             "input_cost_usd": 0.012466
           },
           "measured": {
-            "input_tokens": 92735,
-            "cache_read_input_tokens": 441344,
-            "output_tokens": 10081,
-            "cost_usd": 1.486413
+            "input_tokens": 54256,
+            "cache_read_input_tokens": 259712,
+            "output_tokens": 5007,
+            "cost_usd": 0.860025
           }
         },
         "baseline": {
@@ -4200,22 +5662,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-06-22T19:17:52Z",
+          "ran_at": "2026-06-27T20:38:42Z",
           "summary": {
-            "passed": 3,
-            "failed": 0,
+            "passed": 1,
+            "failed": 2,
             "total": 3,
-            "pass_rate": 1,
-            "avg_run_seconds": 40.2,
+            "pass_rate": 0.333333,
+            "avg_run_seconds": 75.4,
             "estimate": {
               "input_tokens": 4986,
               "input_cost_usd": 0.012466
             },
             "measured": {
-              "input_tokens": 38367,
-              "cache_read_input_tokens": 309888,
-              "output_tokens": 5025,
-              "cost_usd": 0.946013
+              "input_tokens": 92735,
+              "cache_read_input_tokens": 441344,
+              "output_tokens": 10081,
+              "cost_usd": 1.486413
             }
           },
           "results": [
@@ -4227,10 +5689,10 @@
                 "input_cost_usd": 0.004168
               },
               "measured": {
-                "input_tokens": 10460,
-                "cache_read_input_tokens": 76672,
-                "output_tokens": 1272,
-                "cost_usd": 0.23691
+                "input_tokens": 30648,
+                "cache_read_input_tokens": 87680,
+                "output_tokens": 1772,
+                "cost_usd": 0.3224
               },
               "summary": {
                 "passed": 4,
@@ -4239,54 +5701,577 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 31.2
+                "executor_duration_seconds": 42.3
               }
             },
             {
               "id": "wire-release-vanity",
-              "passed": true,
+              "passed": false,
               "estimate": {
                 "input_tokens": 1668,
                 "input_cost_usd": 0.00417
               },
               "measured": {
-                "input_tokens": 10576,
-                "cache_read_input_tokens": 81280,
-                "output_tokens": 1238,
-                "cost_usd": 0.24821
+                "input_tokens": 21205,
+                "cache_read_input_tokens": 202880,
+                "output_tokens": 3970,
+                "cost_usd": 0.619763
               },
               "summary": {
-                "passed": 4,
-                "failed": 0,
+                "passed": 0,
+                "failed": 4,
                 "total": 4,
-                "pass_rate": 1
+                "pass_rate": 0
               },
               "timing": {
-                "executor_duration_seconds": 31.6
+                "executor_duration_seconds": 88.1
               }
             },
             {
               "id": "wire-codeql",
-              "passed": true,
+              "passed": false,
               "estimate": {
                 "input_tokens": 1651,
                 "input_cost_usd": 0.004128
               },
               "measured": {
-                "input_tokens": 17331,
-                "cache_read_input_tokens": 151936,
-                "output_tokens": 2515,
-                "cost_usd": 0.460893
+                "input_tokens": 40882,
+                "cache_read_input_tokens": 150784,
+                "output_tokens": 4339,
+                "cost_usd": 0.54425
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 3,
+                "total": 3,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 95.8
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4-mini": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4-mini",
+        "display": "GPT-5.4 Mini",
+        "harness": "codex",
+        "tool_version": "v0.6.0-18-g123cd4d-dirty",
+        "ran_at": "2026-07-31T21:09:40Z",
+        "executed": true,
+        "content_hash": "10b3ec42c24ca2ff04794196edbab5d7581eb6304cdb9e6335cd6fd517b7ce0e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 0.75,
+          "output_per_mtok": 4.5
+        },
+        "results": [
+          {
+            "query": "Set up CI for this repo using our shared reusable workflows",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.1,
+            "estimate": {
+              "input_tokens": 1642,
+              "input_cost_usd": 0.001232
+            },
+            "spec_hash": "320f320512f9143130c52a604daddd27fac3a4f7f18afd6783f49d187831bdb3"
+          },
+          {
+            "query": "Add the reusable CodeQL workflow to this project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.4,
+            "estimate": {
+              "input_tokens": 1640,
+              "input_cost_usd": 0.00123
+            },
+            "spec_hash": "8ee27dc415a7150bdab80f3abb5c195467439088d24633062b7c71de22836ef1"
+          },
+          {
+            "query": "Wire up releases using the bitwise release workflow with vanity tags",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.4,
+            "estimate": {
+              "input_tokens": 1643,
+              "input_cost_usd": 0.001232
+            },
+            "spec_hash": "f256cf7aa4d1638693b913aa181c2e42ce4cb0d2693b571a577d317f2dd2da27"
+          },
+          {
+            "query": "Add Dependabot auto-merge using our shared workflow",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.2,
+            "estimate": {
+              "input_tokens": 1641,
+              "input_cost_usd": 0.001231
+            },
+            "spec_hash": "cf684d7e5ec81b27aa0b953b049e58941fc238174465414f0b14681bee5d56be"
+          },
+          {
+            "query": "Enable the /merge fast-forward flow in this repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.7,
+            "estimate": {
+              "input_tokens": 1641,
+              "input_cost_usd": 0.001231
+            },
+            "spec_hash": "87f4391520459668f339bd3de590f9dcb1bb63eca575fc6f133d9c73b503a78e"
+          },
+          {
+            "query": "Scaffold .github/ with our standard CI and release automation",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.1,
+            "estimate": {
+              "input_tokens": 1643,
+              "input_cost_usd": 0.001232
+            },
+            "spec_hash": "5e899976e6d1c4565bbd650a6e315d6d65e5813be1e4f2caa6ae8a9bd4ba8269"
+          },
+          {
+            "query": "Which reusable workflow do I call for releases, and what permissions does the caller grant?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.4,
+            "estimate": {
+              "input_tokens": 1648,
+              "input_cost_usd": 0.001236
+            },
+            "spec_hash": "e0a1764a66b989f1d216e9d370022843eb7f8dc010c03004a6931fdee3a917e4"
+          },
+          {
+            "query": "Add a caller that uses bitwise-media-group/github-workflows ci.yaml",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 48.1,
+            "estimate": {
+              "input_tokens": 1645,
+              "input_cost_usd": 0.001234
+            },
+            "spec_hash": "002699295a3ee5874a6d4503de62bd2a73f9a6a56120917806fe7842ba0041a1"
+          },
+          {
+            "query": "Write a CI workflow from scratch with a custom build matrix",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1642,
+              "input_cost_usd": 0.001232
+            },
+            "spec_hash": "aa250b879dca2af0fd3a750490892073567f72a4bab7ec41e7b14d6ae3f4d346"
+          },
+          {
+            "query": "Harden the permissions in this workflow",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 44,
+            "estimate": {
+              "input_tokens": 1638,
+              "input_cost_usd": 0.001229
+            },
+            "spec_hash": "d12d38176d3dc7ca3069dea8b9f97138dd23e4bc39b07c63a9248ab22ce89ca0"
+          },
+          {
+            "query": "Run actionlint over the workflows and fix the errors",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 35.5,
+            "estimate": {
+              "input_tokens": 1641,
+              "input_cost_usd": 0.001231
+            },
+            "spec_hash": "9993cb755a2d5a9c0ee7922565368a91d38e2a901694725571be3ff6660003c2"
+          },
+          {
+            "query": "Create a Terraform module for an ECR registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 107.6,
+            "estimate": {
+              "input_tokens": 1640,
+              "input_cost_usd": 0.00123
+            },
+            "spec_hash": "b5a62a4ed47c5fda195379552c0094fb98df1b3ef93c2125b9cc5a3f18ee84ac"
+          },
+          {
+            "query": "Add a Jenkins pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 97.6,
+            "estimate": {
+              "input_tokens": 1638,
+              "input_cost_usd": 0.001229
+            },
+            "spec_hash": "451f823d6a21e0444ff7d6c147a6f339628de7a7b144e2648a950423377ec58b"
+          },
+          {
+            "query": "Explain how GitHub Actions expression truthiness works",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 25,
+            "estimate": {
+              "input_tokens": 1640,
+              "input_cost_usd": 0.00123
+            },
+            "spec_hash": "472d4cd80b97c7e0807da4dcc99ade6051e259200824571d5879f14186180fc4"
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 39.5,
+          "estimate": {
+            "input_tokens": 22982,
+            "input_cost_usd": 0.017239
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4-mini",
+        "display": "GPT-5.4 Mini",
+        "harness": "codex",
+        "tool_version": "v0.6.0-18-g123cd4d-dirty",
+        "ran_at": "2026-07-31T21:13:07Z",
+        "executed": true,
+        "content_hash": "649650c6a88e07a34fb6e4a7acb7295990c5dc3b8c3aa71f805c720481dabaee",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 0.75,
+          "output_per_mtok": 4.5
+        },
+        "results": [
+          {
+            "id": "wire-ci",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1667,
+              "input_cost_usd": 0.00125
+            },
+            "measured": {
+              "input_tokens": 9783,
+              "cache_read_input_tokens": 107008,
+              "output_tokens": 1867,
+              "cost_usd": 0.095995
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@",
+                "text": ".github/workflows/ci.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/ci.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "contents:\\s*read",
+                "text": ".github/workflows/ci.yaml matches /contents:\\s*read/",
+                "passed": true,
+                "evidence": "contents: read",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/ci.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 8,
+                "file_change": 1
+              },
+              "total_tool_calls": 9
+            },
+            "timing": {
+              "total_tokens": 118658,
+              "executor_duration_seconds": 38.2
+            },
+            "spec_hash": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+          },
+          {
+            "id": "wire-release-vanity",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1668,
+              "input_cost_usd": 0.001251
+            },
+            "measured": {
+              "input_tokens": 13958,
+              "cache_read_input_tokens": 100864,
+              "output_tokens": 2501,
+              "cost_usd": 0.097371
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@",
+                "text": ".github/workflows/release.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/release.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "vanity-tags:\\s*true",
+                "text": ".github/workflows/release.yaml matches /vanity-tags:\\s*true/",
+                "passed": true,
+                "evidence": "vanity-tags: true",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "contents:\\s*write",
+                "text": ".github/workflows/release.yaml matches /contents:\\s*write/",
+                "passed": true,
+                "evidence": "contents: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 6,
+                "file_change": 1
+              },
+              "total_tool_calls": 7
+            },
+            "timing": {
+              "total_tokens": 117323,
+              "executor_duration_seconds": 53.1
+            },
+            "spec_hash": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+          },
+          {
+            "id": "wire-codeql",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1651,
+              "input_cost_usd": 0.001238
+            },
+            "measured": {
+              "input_tokens": 11336,
+              "cache_read_input_tokens": 71424,
+              "output_tokens": 1588,
+              "cost_usd": 0.069216
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/codeql.yaml",
+                "text": "file .github/workflows/codeql.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/codeql.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@",
+                "text": ".github/workflows/codeql.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/codeql.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "security-events:\\s*write",
+                "text": ".github/workflows/codeql.yaml matches /security-events:\\s*write/",
+                "passed": true,
+                "evidence": "security-events: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 6,
+                "file_change": 1
+              },
+              "total_tool_calls": 7
+            },
+            "timing": {
+              "total_tokens": 84348,
+              "executor_duration_seconds": 34.2
+            },
+            "spec_hash": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 41.8,
+          "estimate": {
+            "input_tokens": 4986,
+            "input_cost_usd": 0.003739
+          },
+          "measured": {
+            "input_tokens": 35077,
+            "cache_read_input_tokens": 279296,
+            "output_tokens": 5956,
+            "cost_usd": 0.262582
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-31T21:13:07Z",
+          "summary": {
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "pass_rate": 0,
+            "avg_run_seconds": 100.8,
+            "measured": {
+              "input_tokens": 168356,
+              "cache_read_input_tokens": 443392,
+              "output_tokens": 14980,
+              "cost_usd": 0.526221
+            }
+          },
+          "results": [
+            {
+              "id": "wire-ci",
+              "passed": false,
+              "measured": {
+                "input_tokens": 69214,
+                "cache_read_input_tokens": 142464,
+                "output_tokens": 4047,
+                "cost_usd": 0.17697
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 2,
+                "total": 4,
+                "pass_rate": 0.5
+              },
+              "timing": {
+                "executor_duration_seconds": 87.3
+              },
+              "fingerprint": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+            },
+            {
+              "id": "wire-release-vanity",
+              "passed": false,
+              "measured": {
+                "input_tokens": 90020,
+                "cache_read_input_tokens": 214272,
+                "output_tokens": 7524,
+                "cost_usd": 0.262077
               },
               "summary": {
                 "passed": 3,
-                "failed": 0,
-                "total": 3,
-                "pass_rate": 1
+                "failed": 1,
+                "total": 4,
+                "pass_rate": 0.75
               },
               "timing": {
-                "executor_duration_seconds": 57.9
-              }
+                "executor_duration_seconds": 153.9
+              },
+              "fingerprint": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+            },
+            {
+              "id": "wire-codeql",
+              "passed": false,
+              "measured": {
+                "input_tokens": 9122,
+                "cache_read_input_tokens": 86656,
+                "output_tokens": 3409,
+                "cost_usd": 0.087174
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 1,
+                "total": 3,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 61.2
+              },
+              "fingerprint": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
             }
           ]
         }
@@ -4692,8 +6677,8 @@
         "model": "gpt-5.5",
         "display": "GPT-5.5",
         "harness": "codex",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-27T20:39:45Z",
+        "tool_version": "v0.6.0-18-g123cd4d-dirty",
+        "ran_at": "2026-07-31T21:14:44Z",
         "executed": true,
         "content_hash": "649650c6a88e07a34fb6e4a7acb7295990c5dc3b8c3aa71f805c720481dabaee",
         "timeout_seconds": 600,
@@ -4773,24 +6758,24 @@
           },
           {
             "id": "wire-release-vanity",
-            "passed": false,
+            "passed": true,
             "estimate": {
               "input_tokens": 1668,
               "input_cost_usd": 0.00834
             },
             "measured": {
-              "input_tokens": 34092,
-              "cache_read_input_tokens": 99456,
-              "output_tokens": 2460,
-              "cost_usd": 0.74154
+              "input_tokens": 20777,
+              "cache_read_input_tokens": 79104,
+              "output_tokens": 2138,
+              "cost_usd": 0.563545
             },
             "expectations": [
               {
                 "type": "file_exists",
                 "path": ".github/workflows/release.yaml",
                 "text": "file .github/workflows/release.yaml exists",
-                "passed": false,
-                "evidence": ".github/workflows/release.yaml missing",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
                 "source": "assertion"
               },
               {
@@ -4798,8 +6783,8 @@
                 "path": ".github/workflows/release.yaml",
                 "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@",
                 "text": ".github/workflows/release.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@/",
-                "passed": false,
-                "evidence": ".github/workflows/release.yaml missing",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/release.yaml@",
                 "source": "assertion"
               },
               {
@@ -4807,8 +6792,8 @@
                 "path": ".github/workflows/release.yaml",
                 "pattern": "vanity-tags:\\s*true",
                 "text": ".github/workflows/release.yaml matches /vanity-tags:\\s*true/",
-                "passed": false,
-                "evidence": ".github/workflows/release.yaml missing",
+                "passed": true,
+                "evidence": "vanity-tags: true",
                 "source": "assertion"
               },
               {
@@ -4816,26 +6801,27 @@
                 "path": ".github/workflows/release.yaml",
                 "pattern": "contents:\\s*write",
                 "text": ".github/workflows/release.yaml matches /contents:\\s*write/",
-                "passed": false,
-                "evidence": ".github/workflows/release.yaml missing",
+                "passed": true,
+                "evidence": "contents: write",
                 "source": "assertion"
               }
             ],
             "summary": {
-              "passed": 0,
-              "failed": 4,
+              "passed": 4,
+              "failed": 0,
               "total": 4,
-              "pass_rate": 0
+              "pass_rate": 1
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 16
+                "command_execution": 10,
+                "file_change": 1
               },
-              "total_tool_calls": 16
+              "total_tool_calls": 11
             },
             "timing": {
-              "total_tokens": 136008,
-              "executor_duration_seconds": 63
+              "total_tokens": 102019,
+              "executor_duration_seconds": 55.1
             },
             "spec_hash": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
           },
@@ -4901,20 +6887,20 @@
           }
         ],
         "summary": {
-          "passed": 2,
-          "failed": 1,
+          "passed": 3,
+          "failed": 0,
           "total": 3,
-          "pass_rate": 0.666667,
-          "avg_run_seconds": 52.8,
+          "pass_rate": 1,
+          "avg_run_seconds": 50.2,
           "estimate": {
             "input_tokens": 4986,
             "input_cost_usd": 0.02493
           },
           "measured": {
-            "input_tokens": 68599,
-            "cache_read_input_tokens": 384512,
-            "output_tokens": 6076,
-            "cost_usd": 2.447835
+            "input_tokens": 55284,
+            "cache_read_input_tokens": 364160,
+            "output_tokens": 5754,
+            "cost_usd": 2.26984
           }
         },
         "baseline": {
@@ -4996,22 +6982,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-06-22T13:52:45Z",
+          "ran_at": "2026-06-27T20:39:45Z",
           "summary": {
-            "passed": 3,
-            "failed": 0,
+            "passed": 2,
+            "failed": 1,
             "total": 3,
-            "pass_rate": 1,
-            "avg_run_seconds": 63.9,
+            "pass_rate": 0.666667,
+            "avg_run_seconds": 52.8,
             "estimate": {
               "input_tokens": 4986,
               "input_cost_usd": 0.02493
             },
             "measured": {
-              "input_tokens": 81824,
-              "cache_read_input_tokens": 374528,
-              "output_tokens": 7578,
-              "cost_usd": 2.5091
+              "input_tokens": 68599,
+              "cache_read_input_tokens": 384512,
+              "output_tokens": 6076,
+              "cost_usd": 2.447835
             }
           },
           "results": [
@@ -5023,10 +7009,10 @@
                 "input_cost_usd": 0.008335
               },
               "measured": {
-                "input_tokens": 32687,
-                "cache_read_input_tokens": 190720,
-                "output_tokens": 3880,
-                "cost_usd": 1.233435
+                "input_tokens": 12956,
+                "cache_read_input_tokens": 158080,
+                "output_tokens": 1555,
+                "cost_usd": 0.90183
               },
               "summary": {
                 "passed": 4,
@@ -5035,30 +7021,30 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 98.2
+                "executor_duration_seconds": 44
               }
             },
             {
               "id": "wire-release-vanity",
-              "passed": true,
+              "passed": false,
               "estimate": {
                 "input_tokens": 1668,
                 "input_cost_usd": 0.00834
               },
               "measured": {
-                "input_tokens": 29942,
-                "cache_read_input_tokens": 86272,
-                "output_tokens": 1830,
-                "cost_usd": 0.63597
+                "input_tokens": 34092,
+                "cache_read_input_tokens": 99456,
+                "output_tokens": 2460,
+                "cost_usd": 0.74154
               },
               "summary": {
-                "passed": 4,
-                "failed": 0,
+                "passed": 0,
+                "failed": 4,
                 "total": 4,
-                "pass_rate": 1
+                "pass_rate": 0
               },
               "timing": {
-                "executor_duration_seconds": 43.9
+                "executor_duration_seconds": 63
               }
             },
             {
@@ -5069,10 +7055,10 @@
                 "input_cost_usd": 0.008255
               },
               "measured": {
-                "input_tokens": 19195,
-                "cache_read_input_tokens": 97536,
-                "output_tokens": 1868,
-                "cost_usd": 0.639695
+                "input_tokens": 21551,
+                "cache_read_input_tokens": 126976,
+                "output_tokens": 2061,
+                "cost_usd": 0.804465
               },
               "summary": {
                 "passed": 3,
@@ -5081,7 +7067,2162 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 49.6
+                "executor_duration_seconds": 51.4
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.6-luna": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.6-luna",
+        "display": "GPT-5.6 Luna",
+        "harness": "codex",
+        "tool_version": "v0.6.0-11-gb4f1b21-dirty",
+        "ran_at": "2026-07-31T17:03:30Z",
+        "executed": true,
+        "content_hash": "10b3ec42c24ca2ff04794196edbab5d7581eb6304cdb9e6335cd6fd517b7ce0e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "query": "Set up CI for this repo using our shared reusable workflows",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "estimate": {
+              "input_tokens": 1642,
+              "input_cost_usd": 0.001642
+            },
+            "spec_hash": "320f320512f9143130c52a604daddd27fac3a4f7f18afd6783f49d187831bdb3"
+          },
+          {
+            "query": "Add the reusable CodeQL workflow to this project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.5,
+            "estimate": {
+              "input_tokens": 1640,
+              "input_cost_usd": 0.00164
+            },
+            "spec_hash": "8ee27dc415a7150bdab80f3abb5c195467439088d24633062b7c71de22836ef1"
+          },
+          {
+            "query": "Wire up releases using the bitwise release workflow with vanity tags",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.9,
+            "estimate": {
+              "input_tokens": 1643,
+              "input_cost_usd": 0.001643
+            },
+            "spec_hash": "f256cf7aa4d1638693b913aa181c2e42ce4cb0d2693b571a577d317f2dd2da27"
+          },
+          {
+            "query": "Add Dependabot auto-merge using our shared workflow",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "estimate": {
+              "input_tokens": 1641,
+              "input_cost_usd": 0.001641
+            },
+            "spec_hash": "cf684d7e5ec81b27aa0b953b049e58941fc238174465414f0b14681bee5d56be"
+          },
+          {
+            "query": "Enable the /merge fast-forward flow in this repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.7,
+            "estimate": {
+              "input_tokens": 1641,
+              "input_cost_usd": 0.001641
+            },
+            "spec_hash": "87f4391520459668f339bd3de590f9dcb1bb63eca575fc6f133d9c73b503a78e"
+          },
+          {
+            "query": "Scaffold .github/ with our standard CI and release automation",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.2,
+            "estimate": {
+              "input_tokens": 1643,
+              "input_cost_usd": 0.001643
+            },
+            "spec_hash": "5e899976e6d1c4565bbd650a6e315d6d65e5813be1e4f2caa6ae8a9bd4ba8269"
+          },
+          {
+            "query": "Which reusable workflow do I call for releases, and what permissions does the caller grant?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "estimate": {
+              "input_tokens": 1648,
+              "input_cost_usd": 0.001648
+            },
+            "spec_hash": "e0a1764a66b989f1d216e9d370022843eb7f8dc010c03004a6931fdee3a917e4"
+          },
+          {
+            "query": "Add a caller that uses bitwise-media-group/github-workflows ci.yaml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.3,
+            "estimate": {
+              "input_tokens": 1645,
+              "input_cost_usd": 0.001645
+            },
+            "spec_hash": "002699295a3ee5874a6d4503de62bd2a73f9a6a56120917806fe7842ba0041a1"
+          },
+          {
+            "query": "Write a CI workflow from scratch with a custom build matrix",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 49.1,
+            "estimate": {
+              "input_tokens": 1642,
+              "input_cost_usd": 0.001642
+            },
+            "spec_hash": "aa250b879dca2af0fd3a750490892073567f72a4bab7ec41e7b14d6ae3f4d346"
+          },
+          {
+            "query": "Harden the permissions in this workflow",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 42.8,
+            "estimate": {
+              "input_tokens": 1638,
+              "input_cost_usd": 0.001638
+            },
+            "spec_hash": "d12d38176d3dc7ca3069dea8b9f97138dd23e4bc39b07c63a9248ab22ce89ca0"
+          },
+          {
+            "query": "Run actionlint over the workflows and fix the errors",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 35,
+            "estimate": {
+              "input_tokens": 1641,
+              "input_cost_usd": 0.001641
+            },
+            "spec_hash": "9993cb755a2d5a9c0ee7922565368a91d38e2a901694725571be3ff6660003c2"
+          },
+          {
+            "query": "Create a Terraform module for an ECR registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 107.7,
+            "estimate": {
+              "input_tokens": 1640,
+              "input_cost_usd": 0.00164
+            },
+            "spec_hash": "b5a62a4ed47c5fda195379552c0094fb98df1b3ef93c2125b9cc5a3f18ee84ac"
+          },
+          {
+            "query": "Add a Jenkins pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 59.8,
+            "estimate": {
+              "input_tokens": 1638,
+              "input_cost_usd": 0.001638
+            },
+            "spec_hash": "451f823d6a21e0444ff7d6c147a6f339628de7a7b144e2648a950423377ec58b"
+          },
+          {
+            "query": "Explain how GitHub Actions expression truthiness works",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 23.6,
+            "estimate": {
+              "input_tokens": 1640,
+              "input_cost_usd": 0.00164
+            },
+            "spec_hash": "472d4cd80b97c7e0807da4dcc99ade6051e259200824571d5879f14186180fc4"
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 27.7,
+          "estimate": {
+            "input_tokens": 22982,
+            "input_cost_usd": 0.022982
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.6-luna",
+        "display": "GPT-5.6 Luna",
+        "harness": "codex",
+        "tool_version": "v0.6.0-11-gb4f1b21-dirty",
+        "ran_at": "2026-07-31T17:06:22Z",
+        "executed": true,
+        "content_hash": "649650c6a88e07a34fb6e4a7acb7295990c5dc3b8c3aa71f805c720481dabaee",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "id": "wire-ci",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1667,
+              "input_cost_usd": 0.001667
+            },
+            "measured": {
+              "input_tokens": 14024,
+              "cache_read_input_tokens": 81408,
+              "output_tokens": 1241,
+              "cost_usd": 0.102878
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@",
+                "text": ".github/workflows/ci.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/ci.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "contents:\\s*read",
+                "text": ".github/workflows/ci.yaml matches /contents:\\s*read/",
+                "passed": true,
+                "evidence": "contents: read",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/ci.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 4,
+                "file_change": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 96673,
+              "executor_duration_seconds": 32.8
+            },
+            "spec_hash": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+          },
+          {
+            "id": "wire-release-vanity",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1668,
+              "input_cost_usd": 0.001668
+            },
+            "measured": {
+              "input_tokens": 12446,
+              "cache_read_input_tokens": 83456,
+              "output_tokens": 1324,
+              "cost_usd": 0.103846
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@",
+                "text": ".github/workflows/release.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/release.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "vanity-tags:\\s*true",
+                "text": ".github/workflows/release.yaml matches /vanity-tags:\\s*true/",
+                "passed": true,
+                "evidence": "vanity-tags: true",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "contents:\\s*write",
+                "text": ".github/workflows/release.yaml matches /contents:\\s*write/",
+                "passed": true,
+                "evidence": "contents: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 4,
+                "file_change": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 97226,
+              "executor_duration_seconds": 34.1
+            },
+            "spec_hash": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+          },
+          {
+            "id": "wire-codeql",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1651,
+              "input_cost_usd": 0.001651
+            },
+            "measured": {
+              "input_tokens": 12748,
+              "cache_read_input_tokens": 98560,
+              "output_tokens": 1672,
+              "cost_usd": 0.12134
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/codeql.yaml",
+                "text": "file .github/workflows/codeql.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/codeql.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@",
+                "text": ".github/workflows/codeql.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/codeql.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "security-events:\\s*write",
+                "text": ".github/workflows/codeql.yaml matches /security-events:\\s*write/",
+                "passed": true,
+                "evidence": "security-events: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 5,
+                "file_change": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 112980,
+              "executor_duration_seconds": 41.1
+            },
+            "spec_hash": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 36,
+          "estimate": {
+            "input_tokens": 4986,
+            "input_cost_usd": 0.004986
+          },
+          "measured": {
+            "input_tokens": 39218,
+            "cache_read_input_tokens": 263424,
+            "output_tokens": 4237,
+            "cost_usd": 0.328064
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-31T17:06:22Z",
+          "summary": {
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "pass_rate": 0.333333,
+            "avg_run_seconds": 75,
+            "measured": {
+              "input_tokens": 87765,
+              "cache_read_input_tokens": 832768,
+              "output_tokens": 8535,
+              "cost_usd": 0.971743
+            }
+          },
+          "results": [
+            {
+              "id": "wire-ci",
+              "passed": true,
+              "measured": {
+                "input_tokens": 12180,
+                "cache_read_input_tokens": 94464,
+                "output_tokens": 1264,
+                "cost_usd": 0.114228
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 40.5
+              },
+              "fingerprint": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+            },
+            {
+              "id": "wire-release-vanity",
+              "passed": false,
+              "measured": {
+                "input_tokens": 18778,
+                "cache_read_input_tokens": 157184,
+                "output_tokens": 1911,
+                "cost_usd": 0.187428
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 1,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 53.9
+              },
+              "fingerprint": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+            },
+            {
+              "id": "wire-codeql",
+              "passed": false,
+              "measured": {
+                "input_tokens": 56807,
+                "cache_read_input_tokens": 581120,
+                "output_tokens": 5360,
+                "cost_usd": 0.670087
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 1,
+                "total": 3,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 130.6
+              },
+              "fingerprint": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.6-sol": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "display": "GPT-5.6 Sol",
+        "harness": "codex",
+        "tool_version": "v0.6.0-11-gb4f1b21-dirty",
+        "ran_at": "2026-07-31T16:47:43Z",
+        "executed": true,
+        "content_hash": "10b3ec42c24ca2ff04794196edbab5d7581eb6304cdb9e6335cd6fd517b7ce0e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Set up CI for this repo using our shared reusable workflows",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.8,
+            "estimate": {
+              "input_tokens": 1642,
+              "input_cost_usd": 0.00821
+            },
+            "spec_hash": "320f320512f9143130c52a604daddd27fac3a4f7f18afd6783f49d187831bdb3"
+          },
+          {
+            "query": "Add the reusable CodeQL workflow to this project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.3,
+            "estimate": {
+              "input_tokens": 1640,
+              "input_cost_usd": 0.0082
+            },
+            "spec_hash": "8ee27dc415a7150bdab80f3abb5c195467439088d24633062b7c71de22836ef1"
+          },
+          {
+            "query": "Wire up releases using the bitwise release workflow with vanity tags",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.1,
+            "estimate": {
+              "input_tokens": 1643,
+              "input_cost_usd": 0.008215
+            },
+            "spec_hash": "f256cf7aa4d1638693b913aa181c2e42ce4cb0d2693b571a577d317f2dd2da27"
+          },
+          {
+            "query": "Add Dependabot auto-merge using our shared workflow",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.4,
+            "estimate": {
+              "input_tokens": 1641,
+              "input_cost_usd": 0.008205
+            },
+            "spec_hash": "cf684d7e5ec81b27aa0b953b049e58941fc238174465414f0b14681bee5d56be"
+          },
+          {
+            "query": "Enable the /merge fast-forward flow in this repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14,
+            "estimate": {
+              "input_tokens": 1641,
+              "input_cost_usd": 0.008205
+            },
+            "spec_hash": "87f4391520459668f339bd3de590f9dcb1bb63eca575fc6f133d9c73b503a78e"
+          },
+          {
+            "query": "Scaffold .github/ with our standard CI and release automation",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.1,
+            "estimate": {
+              "input_tokens": 1643,
+              "input_cost_usd": 0.008215
+            },
+            "spec_hash": "5e899976e6d1c4565bbd650a6e315d6d65e5813be1e4f2caa6ae8a9bd4ba8269"
+          },
+          {
+            "query": "Which reusable workflow do I call for releases, and what permissions does the caller grant?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.7,
+            "estimate": {
+              "input_tokens": 1648,
+              "input_cost_usd": 0.00824
+            },
+            "spec_hash": "e0a1764a66b989f1d216e9d370022843eb7f8dc010c03004a6931fdee3a917e4"
+          },
+          {
+            "query": "Add a caller that uses bitwise-media-group/github-workflows ci.yaml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.8,
+            "estimate": {
+              "input_tokens": 1645,
+              "input_cost_usd": 0.008225
+            },
+            "spec_hash": "002699295a3ee5874a6d4503de62bd2a73f9a6a56120917806fe7842ba0041a1"
+          },
+          {
+            "query": "Write a CI workflow from scratch with a custom build matrix",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 74.5,
+            "estimate": {
+              "input_tokens": 1642,
+              "input_cost_usd": 0.00821
+            },
+            "spec_hash": "aa250b879dca2af0fd3a750490892073567f72a4bab7ec41e7b14d6ae3f4d346"
+          },
+          {
+            "query": "Harden the permissions in this workflow",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 62.4,
+            "estimate": {
+              "input_tokens": 1638,
+              "input_cost_usd": 0.00819
+            },
+            "spec_hash": "d12d38176d3dc7ca3069dea8b9f97138dd23e4bc39b07c63a9248ab22ce89ca0"
+          },
+          {
+            "query": "Run actionlint over the workflows and fix the errors",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 61.3,
+            "estimate": {
+              "input_tokens": 1641,
+              "input_cost_usd": 0.008205
+            },
+            "spec_hash": "9993cb755a2d5a9c0ee7922565368a91d38e2a901694725571be3ff6660003c2"
+          },
+          {
+            "query": "Create a Terraform module for an ECR registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "estimate": {
+              "input_tokens": 1640,
+              "input_cost_usd": 0.0082
+            },
+            "spec_hash": "b5a62a4ed47c5fda195379552c0094fb98df1b3ef93c2125b9cc5a3f18ee84ac"
+          },
+          {
+            "query": "Add a Jenkins pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 46.2,
+            "estimate": {
+              "input_tokens": 1638,
+              "input_cost_usd": 0.00819
+            },
+            "spec_hash": "451f823d6a21e0444ff7d6c147a6f339628de7a7b144e2648a950423377ec58b"
+          },
+          {
+            "query": "Explain how GitHub Actions expression truthiness works",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 28.5,
+            "estimate": {
+              "input_tokens": 1640,
+              "input_cost_usd": 0.0082
+            },
+            "spec_hash": "472d4cd80b97c7e0807da4dcc99ade6051e259200824571d5879f14186180fc4"
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 35,
+          "estimate": {
+            "input_tokens": 22982,
+            "input_cost_usd": 0.11491
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "display": "GPT-5.6 Sol",
+        "harness": "codex",
+        "tool_version": "v0.6.0-11-gb4f1b21-dirty",
+        "ran_at": "2026-07-31T16:50:59Z",
+        "executed": true,
+        "content_hash": "649650c6a88e07a34fb6e4a7acb7295990c5dc3b8c3aa71f805c720481dabaee",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "wire-ci",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1667,
+              "input_cost_usd": 0.008335
+            },
+            "measured": {
+              "input_tokens": 8720,
+              "cache_read_input_tokens": 73472,
+              "output_tokens": 912,
+              "cost_usd": 0.43832
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@",
+                "text": ".github/workflows/ci.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/ci.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "contents:\\s*read",
+                "text": ".github/workflows/ci.yaml matches /contents:\\s*read/",
+                "passed": true,
+                "evidence": "contents: read",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/ci.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 3,
+                "file_change": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 83104,
+              "executor_duration_seconds": 40.7
+            },
+            "spec_hash": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+          },
+          {
+            "id": "wire-release-vanity",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1668,
+              "input_cost_usd": 0.00834
+            },
+            "measured": {
+              "input_tokens": 16245,
+              "cache_read_input_tokens": 66304,
+              "output_tokens": 970,
+              "cost_usd": 0.441845
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@",
+                "text": ".github/workflows/release.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/release.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "vanity-tags:\\s*true",
+                "text": ".github/workflows/release.yaml matches /vanity-tags:\\s*true/",
+                "passed": true,
+                "evidence": "vanity-tags: true",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "contents:\\s*write",
+                "text": ".github/workflows/release.yaml matches /contents:\\s*write/",
+                "passed": true,
+                "evidence": "contents: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 3,
+                "file_change": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 83519,
+              "executor_duration_seconds": 32.2
+            },
+            "spec_hash": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+          },
+          {
+            "id": "wire-codeql",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1651,
+              "input_cost_usd": 0.008255
+            },
+            "measured": {
+              "input_tokens": 15443,
+              "cache_read_input_tokens": 84480,
+              "output_tokens": 1258,
+              "cost_usd": 0.537355
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/codeql.yaml",
+                "text": "file .github/workflows/codeql.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/codeql.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@",
+                "text": ".github/workflows/codeql.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/codeql.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "security-events:\\s*write",
+                "text": ".github/workflows/codeql.yaml matches /security-events:\\s*write/",
+                "passed": true,
+                "evidence": "security-events: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 4,
+                "file_change": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 101181,
+              "executor_duration_seconds": 38.9
+            },
+            "spec_hash": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 37.3,
+          "estimate": {
+            "input_tokens": 4986,
+            "input_cost_usd": 0.02493
+          },
+          "measured": {
+            "input_tokens": 40408,
+            "cache_read_input_tokens": 224256,
+            "output_tokens": 3140,
+            "cost_usd": 1.41752
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-31T16:50:59Z",
+          "summary": {
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "pass_rate": 0.333333,
+            "avg_run_seconds": 98.8,
+            "measured": {
+              "input_tokens": 107636,
+              "cache_read_input_tokens": 1097728,
+              "output_tokens": 6757,
+              "cost_usd": 6.22953
+            }
+          },
+          "results": [
+            {
+              "id": "wire-ci",
+              "passed": false,
+              "measured": {
+                "input_tokens": 9297,
+                "cache_read_input_tokens": 49152,
+                "output_tokens": 775,
+                "cost_usd": 0.315495
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 4,
+                "total": 4,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 32.6
+              },
+              "fingerprint": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+            },
+            {
+              "id": "wire-release-vanity",
+              "passed": true,
+              "measured": {
+                "input_tokens": 66594,
+                "cache_read_input_tokens": 793600,
+                "output_tokens": 3547,
+                "cost_usd": 4.40738
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 162.8
+              },
+              "fingerprint": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+            },
+            {
+              "id": "wire-codeql",
+              "passed": false,
+              "measured": {
+                "input_tokens": 31745,
+                "cache_read_input_tokens": 254976,
+                "output_tokens": 2435,
+                "cost_usd": 1.506655
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 1,
+                "total": 3,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 100.9
+              },
+              "fingerprint": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.6-terra": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.6-terra",
+        "display": "GPT-5.6 Terra",
+        "harness": "codex",
+        "tool_version": "v0.6.0-11-gb4f1b21-dirty",
+        "ran_at": "2026-07-31T16:56:35Z",
+        "executed": true,
+        "content_hash": "10b3ec42c24ca2ff04794196edbab5d7581eb6304cdb9e6335cd6fd517b7ce0e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Set up CI for this repo using our shared reusable workflows",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.7,
+            "estimate": {
+              "input_tokens": 1642,
+              "input_cost_usd": 0.004105
+            },
+            "spec_hash": "320f320512f9143130c52a604daddd27fac3a4f7f18afd6783f49d187831bdb3"
+          },
+          {
+            "query": "Add the reusable CodeQL workflow to this project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 13.8,
+            "estimate": {
+              "input_tokens": 1640,
+              "input_cost_usd": 0.0041
+            },
+            "spec_hash": "8ee27dc415a7150bdab80f3abb5c195467439088d24633062b7c71de22836ef1"
+          },
+          {
+            "query": "Wire up releases using the bitwise release workflow with vanity tags",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.4,
+            "estimate": {
+              "input_tokens": 1643,
+              "input_cost_usd": 0.004108
+            },
+            "spec_hash": "f256cf7aa4d1638693b913aa181c2e42ce4cb0d2693b571a577d317f2dd2da27"
+          },
+          {
+            "query": "Add Dependabot auto-merge using our shared workflow",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 20.5,
+            "estimate": {
+              "input_tokens": 1641,
+              "input_cost_usd": 0.004103
+            },
+            "spec_hash": "cf684d7e5ec81b27aa0b953b049e58941fc238174465414f0b14681bee5d56be"
+          },
+          {
+            "query": "Enable the /merge fast-forward flow in this repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.6,
+            "estimate": {
+              "input_tokens": 1641,
+              "input_cost_usd": 0.004103
+            },
+            "spec_hash": "87f4391520459668f339bd3de590f9dcb1bb63eca575fc6f133d9c73b503a78e"
+          },
+          {
+            "query": "Scaffold .github/ with our standard CI and release automation",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.3,
+            "estimate": {
+              "input_tokens": 1643,
+              "input_cost_usd": 0.004108
+            },
+            "spec_hash": "5e899976e6d1c4565bbd650a6e315d6d65e5813be1e4f2caa6ae8a9bd4ba8269"
+          },
+          {
+            "query": "Which reusable workflow do I call for releases, and what permissions does the caller grant?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11,
+            "estimate": {
+              "input_tokens": 1648,
+              "input_cost_usd": 0.00412
+            },
+            "spec_hash": "e0a1764a66b989f1d216e9d370022843eb7f8dc010c03004a6931fdee3a917e4"
+          },
+          {
+            "query": "Add a caller that uses bitwise-media-group/github-workflows ci.yaml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.4,
+            "estimate": {
+              "input_tokens": 1645,
+              "input_cost_usd": 0.004113
+            },
+            "spec_hash": "002699295a3ee5874a6d4503de62bd2a73f9a6a56120917806fe7842ba0041a1"
+          },
+          {
+            "query": "Write a CI workflow from scratch with a custom build matrix",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 69.1,
+            "estimate": {
+              "input_tokens": 1642,
+              "input_cost_usd": 0.004105
+            },
+            "spec_hash": "aa250b879dca2af0fd3a750490892073567f72a4bab7ec41e7b14d6ae3f4d346"
+          },
+          {
+            "query": "Harden the permissions in this workflow",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 41.2,
+            "estimate": {
+              "input_tokens": 1638,
+              "input_cost_usd": 0.004095
+            },
+            "spec_hash": "d12d38176d3dc7ca3069dea8b9f97138dd23e4bc39b07c63a9248ab22ce89ca0"
+          },
+          {
+            "query": "Run actionlint over the workflows and fix the errors",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 49.6,
+            "estimate": {
+              "input_tokens": 1641,
+              "input_cost_usd": 0.004103
+            },
+            "spec_hash": "9993cb755a2d5a9c0ee7922565368a91d38e2a901694725571be3ff6660003c2"
+          },
+          {
+            "query": "Create a Terraform module for an ECR registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 104.7,
+            "estimate": {
+              "input_tokens": 1640,
+              "input_cost_usd": 0.0041
+            },
+            "spec_hash": "b5a62a4ed47c5fda195379552c0094fb98df1b3ef93c2125b9cc5a3f18ee84ac"
+          },
+          {
+            "query": "Add a Jenkins pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 37.5,
+            "estimate": {
+              "input_tokens": 1638,
+              "input_cost_usd": 0.004095
+            },
+            "spec_hash": "451f823d6a21e0444ff7d6c147a6f339628de7a7b144e2648a950423377ec58b"
+          },
+          {
+            "query": "Explain how GitHub Actions expression truthiness works",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.5,
+            "estimate": {
+              "input_tokens": 1640,
+              "input_cost_usd": 0.0041
+            },
+            "spec_hash": "472d4cd80b97c7e0807da4dcc99ade6051e259200824571d5879f14186180fc4"
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 31,
+          "estimate": {
+            "input_tokens": 22982,
+            "input_cost_usd": 0.057458
+          }
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.6-terra",
+        "display": "GPT-5.6 Terra",
+        "harness": "codex",
+        "tool_version": "v0.6.0-11-gb4f1b21-dirty",
+        "ran_at": "2026-07-31T16:58:26Z",
+        "executed": true,
+        "content_hash": "649650c6a88e07a34fb6e4a7acb7295990c5dc3b8c3aa71f805c720481dabaee",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "wire-ci",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1667,
+              "input_cost_usd": 0.004168
+            },
+            "measured": {
+              "input_tokens": 28993,
+              "cache_read_input_tokens": 108800,
+              "output_tokens": 1324,
+              "cost_usd": 0.364342
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@",
+                "text": ".github/workflows/ci.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/ci.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "contents:\\s*read",
+                "text": ".github/workflows/ci.yaml matches /contents:\\s*read/",
+                "passed": true,
+                "evidence": "contents: read",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/ci.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 5,
+                "file_change": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 139117,
+              "executor_duration_seconds": 34.5
+            },
+            "spec_hash": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+          },
+          {
+            "id": "wire-release-vanity",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1668,
+              "input_cost_usd": 0.00417
+            },
+            "measured": {
+              "input_tokens": 12532,
+              "cache_read_input_tokens": 90624,
+              "output_tokens": 1040,
+              "cost_usd": 0.27349
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@",
+                "text": ".github/workflows/release.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/release.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "vanity-tags:\\s*true",
+                "text": ".github/workflows/release.yaml matches /vanity-tags:\\s*true/",
+                "passed": true,
+                "evidence": "vanity-tags: true",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "contents:\\s*write",
+                "text": ".github/workflows/release.yaml matches /contents:\\s*write/",
+                "passed": true,
+                "evidence": "contents: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 4,
+                "file_change": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 104196,
+              "executor_duration_seconds": 28.5
+            },
+            "spec_hash": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+          },
+          {
+            "id": "wire-codeql",
+            "passed": true,
+            "estimate": {
+              "input_tokens": 1651,
+              "input_cost_usd": 0.004128
+            },
+            "measured": {
+              "input_tokens": 8508,
+              "cache_read_input_tokens": 73472,
+              "output_tokens": 1003,
+              "cost_usd": 0.219995
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/codeql.yaml",
+                "text": "file .github/workflows/codeql.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/codeql.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@",
+                "text": ".github/workflows/codeql.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/codeql.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "security-events:\\s*write",
+                "text": ".github/workflows/codeql.yaml matches /security-events:\\s*write/",
+                "passed": true,
+                "evidence": "security-events: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 3,
+                "file_change": 1
+              },
+              "total_tool_calls": 4
+            },
+            "timing": {
+              "total_tokens": 82983,
+              "executor_duration_seconds": 26.3
+            },
+            "spec_hash": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 29.8,
+          "estimate": {
+            "input_tokens": 4986,
+            "input_cost_usd": 0.012466
+          },
+          "measured": {
+            "input_tokens": 50033,
+            "cache_read_input_tokens": 272896,
+            "output_tokens": 3367,
+            "cost_usd": 0.857827
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-31T16:58:26Z",
+          "summary": {
+            "passed": 0,
+            "failed": 3,
+            "total": 3,
+            "pass_rate": 0,
+            "avg_run_seconds": 59.3,
+            "measured": {
+              "input_tokens": 66855,
+              "cache_read_input_tokens": 411904,
+              "output_tokens": 7331,
+              "cost_usd": 1.306864
+            }
+          },
+          "results": [
+            {
+              "id": "wire-ci",
+              "passed": false,
+              "measured": {
+                "input_tokens": 22819,
+                "cache_read_input_tokens": 100608,
+                "output_tokens": 2168,
+                "cost_usd": 0.341088
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 4,
+                "total": 4,
+                "pass_rate": 0
+              },
+              "timing": {
+                "executor_duration_seconds": 53.3
+              },
+              "fingerprint": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+            },
+            {
+              "id": "wire-release-vanity",
+              "passed": false,
+              "measured": {
+                "input_tokens": 27551,
+                "cache_read_input_tokens": 236800,
+                "output_tokens": 3289,
+                "cost_usd": 0.710213
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 1,
+                "total": 4,
+                "pass_rate": 0.75
+              },
+              "timing": {
+                "executor_duration_seconds": 81.2
+              },
+              "fingerprint": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+            },
+            {
+              "id": "wire-codeql",
+              "passed": false,
+              "measured": {
+                "input_tokens": 16485,
+                "cache_read_input_tokens": 74496,
+                "output_tokens": 1874,
+                "cost_usd": 0.255563
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 1,
+                "total": 3,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 43.3
+              },
+              "fingerprint": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
+            }
+          ]
+        }
+      }
+    },
+    "xai/grok-4.5": {
+      "triggers": {
+        "provider": "xai",
+        "model": "grok-4.5",
+        "display": "Grok 4.5",
+        "harness": "grok",
+        "tool_version": "v0.6.0-11-gb4f1b21-dirty",
+        "ran_at": "2026-07-31T17:09:26Z",
+        "executed": true,
+        "content_hash": "10b3ec42c24ca2ff04794196edbab5d7581eb6304cdb9e6335cd6fd517b7ce0e",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "query": "Set up CI for this repo using our shared reusable workflows",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "320f320512f9143130c52a604daddd27fac3a4f7f18afd6783f49d187831bdb3"
+          },
+          {
+            "query": "Add the reusable CodeQL workflow to this project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.3,
+            "spec_hash": "8ee27dc415a7150bdab80f3abb5c195467439088d24633062b7c71de22836ef1"
+          },
+          {
+            "query": "Wire up releases using the bitwise release workflow with vanity tags",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "f256cf7aa4d1638693b913aa181c2e42ce4cb0d2693b571a577d317f2dd2da27"
+          },
+          {
+            "query": "Add Dependabot auto-merge using our shared workflow",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5,
+            "spec_hash": "cf684d7e5ec81b27aa0b953b049e58941fc238174465414f0b14681bee5d56be"
+          },
+          {
+            "query": "Enable the /merge fast-forward flow in this repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.5,
+            "spec_hash": "87f4391520459668f339bd3de590f9dcb1bb63eca575fc6f133d9c73b503a78e"
+          },
+          {
+            "query": "Scaffold .github/ with our standard CI and release automation",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.4,
+            "spec_hash": "5e899976e6d1c4565bbd650a6e315d6d65e5813be1e4f2caa6ae8a9bd4ba8269"
+          },
+          {
+            "query": "Which reusable workflow do I call for releases, and what permissions does the caller grant?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.8,
+            "spec_hash": "e0a1764a66b989f1d216e9d370022843eb7f8dc010c03004a6931fdee3a917e4"
+          },
+          {
+            "query": "Add a caller that uses bitwise-media-group/github-workflows ci.yaml",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 3.4,
+            "spec_hash": "002699295a3ee5874a6d4503de62bd2a73f9a6a56120917806fe7842ba0041a1"
+          },
+          {
+            "query": "Write a CI workflow from scratch with a custom build matrix",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 1.3,
+            "spec_hash": "aa250b879dca2af0fd3a750490892073567f72a4bab7ec41e7b14d6ae3f4d346"
+          },
+          {
+            "query": "Harden the permissions in this workflow",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.6,
+            "spec_hash": "d12d38176d3dc7ca3069dea8b9f97138dd23e4bc39b07c63a9248ab22ce89ca0"
+          },
+          {
+            "query": "Run actionlint over the workflows and fix the errors",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.7,
+            "spec_hash": "9993cb755a2d5a9c0ee7922565368a91d38e2a901694725571be3ff6660003c2"
+          },
+          {
+            "query": "Create a Terraform module for an ECR registry",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.9,
+            "spec_hash": "b5a62a4ed47c5fda195379552c0094fb98df1b3ef93c2125b9cc5a3f18ee84ac"
+          },
+          {
+            "query": "Add a Jenkins pipeline for this project",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.1,
+            "spec_hash": "451f823d6a21e0444ff7d6c147a6f339628de7a7b144e2648a950423377ec58b"
+          },
+          {
+            "query": "Explain how GitHub Actions expression truthiness works",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.3,
+            "spec_hash": "472d4cd80b97c7e0807da4dcc99ade6051e259200824571d5879f14186180fc4"
+          }
+        ],
+        "summary": {
+          "passed": 14,
+          "failed": 0,
+          "total": 14,
+          "pass_rate": 1,
+          "avg_run_seconds": 5.3
+        },
+        "previous": {
+          "ran_at": "2026-07-31T17:07:25Z",
+          "summary": {
+            "passed": 13,
+            "failed": 1,
+            "total": 14,
+            "pass_rate": 0.928571,
+            "avg_run_seconds": 5.7
+          },
+          "results": [
+            {
+              "query": "Set up CI for this repo using our shared reusable workflows",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.6,
+              "spec_hash": "320f320512f9143130c52a604daddd27fac3a4f7f18afd6783f49d187831bdb3"
+            },
+            {
+              "query": "Add the reusable CodeQL workflow to this project",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.3,
+              "spec_hash": "8ee27dc415a7150bdab80f3abb5c195467439088d24633062b7c71de22836ef1"
+            },
+            {
+              "query": "Wire up releases using the bitwise release workflow with vanity tags",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.9,
+              "spec_hash": "f256cf7aa4d1638693b913aa181c2e42ce4cb0d2693b571a577d317f2dd2da27"
+            },
+            {
+              "query": "Add Dependabot auto-merge using our shared workflow",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5,
+              "spec_hash": "cf684d7e5ec81b27aa0b953b049e58941fc238174465414f0b14681bee5d56be"
+            },
+            {
+              "query": "Enable the /merge fast-forward flow in this repo",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.5,
+              "spec_hash": "87f4391520459668f339bd3de590f9dcb1bb63eca575fc6f133d9c73b503a78e"
+            },
+            {
+              "query": "Scaffold .github/ with our standard CI and release automation",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.4,
+              "spec_hash": "5e899976e6d1c4565bbd650a6e315d6d65e5813be1e4f2caa6ae8a9bd4ba8269"
+            },
+            {
+              "query": "Which reusable workflow do I call for releases, and what permissions does the caller grant?",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.8,
+              "spec_hash": "e0a1764a66b989f1d216e9d370022843eb7f8dc010c03004a6931fdee3a917e4"
+            },
+            {
+              "query": "Add a caller that uses bitwise-media-group/github-workflows ci.yaml",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.4,
+              "spec_hash": "002699295a3ee5874a6d4503de62bd2a73f9a6a56120917806fe7842ba0041a1"
+            },
+            {
+              "query": "Write a CI workflow from scratch with a custom build matrix",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 6.4,
+              "spec_hash": "aa250b879dca2af0fd3a750490892073567f72a4bab7ec41e7b14d6ae3f4d346"
+            },
+            {
+              "query": "Harden the permissions in this workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.6,
+              "spec_hash": "d12d38176d3dc7ca3069dea8b9f97138dd23e4bc39b07c63a9248ab22ce89ca0"
+            },
+            {
+              "query": "Run actionlint over the workflows and fix the errors",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.7,
+              "spec_hash": "9993cb755a2d5a9c0ee7922565368a91d38e2a901694725571be3ff6660003c2"
+            },
+            {
+              "query": "Create a Terraform module for an ECR registry",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.9,
+              "spec_hash": "b5a62a4ed47c5fda195379552c0094fb98df1b3ef93c2125b9cc5a3f18ee84ac"
+            },
+            {
+              "query": "Add a Jenkins pipeline for this project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.1,
+              "spec_hash": "451f823d6a21e0444ff7d6c147a6f339628de7a7b144e2648a950423377ec58b"
+            },
+            {
+              "query": "Explain how GitHub Actions expression truthiness works",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.3,
+              "spec_hash": "472d4cd80b97c7e0807da4dcc99ade6051e259200824571d5879f14186180fc4"
+            }
+          ]
+        }
+      },
+      "evals": {
+        "provider": "xai",
+        "model": "grok-4.5",
+        "display": "Grok 4.5",
+        "harness": "grok",
+        "tool_version": "v0.6.0-14-ga373d30-dirty",
+        "ran_at": "2026-07-31T19:23:06Z",
+        "executed": true,
+        "content_hash": "649650c6a88e07a34fb6e4a7acb7295990c5dc3b8c3aa71f805c720481dabaee",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "id": "wire-ci",
+            "passed": true,
+            "measured": {
+              "input_tokens": 4981,
+              "cache_read_input_tokens": 63232,
+              "output_tokens": 1192,
+              "cost_usd": 0.036084
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@",
+                "text": ".github/workflows/ci.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/ci.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "contents:\\s*read",
+                "text": ".github/workflows/ci.yaml matches /contents:\\s*read/",
+                "passed": true,
+                "evidence": "contents:read",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/ci.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 69405,
+              "executor_duration_seconds": 18.5
+            },
+            "spec_hash": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+          },
+          {
+            "id": "wire-release-vanity",
+            "passed": true,
+            "measured": {
+              "input_tokens": 5773,
+              "cache_read_input_tokens": 79104,
+              "output_tokens": 2014,
+              "cost_usd": 0.047361
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/release.yaml",
+                "text": "file .github/workflows/release.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/release.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@",
+                "text": ".github/workflows/release.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/release.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "vanity-tags:\\s*true",
+                "text": ".github/workflows/release.yaml matches /vanity-tags:\\s*true/",
+                "passed": true,
+                "evidence": "vanity-tags: true",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/release.yaml",
+                "pattern": "contents:\\s*write",
+                "text": ".github/workflows/release.yaml matches /contents:\\s*write/",
+                "passed": true,
+                "evidence": "contents: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 86891,
+              "executor_duration_seconds": 29.6
+            },
+            "spec_hash": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+          },
+          {
+            "id": "wire-codeql",
+            "passed": true,
+            "measured": {
+              "input_tokens": 3953,
+              "cache_read_input_tokens": 48896,
+              "output_tokens": 635,
+              "cost_usd": 0.026385
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/codeql.yaml",
+                "text": "file .github/workflows/codeql.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/codeql.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@",
+                "text": ".github/workflows/codeql.yaml matches /bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@/",
+                "passed": true,
+                "evidence": "bitwise-media-group/github-workflows/.github/workflows/codeql.yaml@",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/codeql.yaml",
+                "pattern": "security-events:\\s*write",
+                "text": ".github/workflows/codeql.yaml matches /security-events:\\s*write/",
+                "passed": true,
+                "evidence": "security-events: write",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 53484,
+              "executor_duration_seconds": 12
+            },
+            "spec_hash": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 20,
+          "measured": {
+            "input_tokens": 14707,
+            "cache_read_input_tokens": 191232,
+            "output_tokens": 3841,
+            "cost_usd": 0.10983
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-31T17:07:28Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 3,
+            "total": 3,
+            "avg_run_seconds": 1.6
+          },
+          "results": [
+            {
+              "id": "wire-ci",
+              "runtime_error": "grok run error: Not signed in. To authenticate without a browser, run:\n  grok login --device-code\n\nAlternatively, set the XAI_API_KEY environment variable or run `grok login` on a machine with a browser.",
+              "timing": {
+                "executor_duration_seconds": 1.6
+              },
+              "fingerprint": "6c79e6ea46586d0acd2423448f6c8255e970f8f1cafc21dbb43602d4b57377ea"
+            },
+            {
+              "id": "wire-release-vanity",
+              "runtime_error": "grok run error: Not signed in. To authenticate without a browser, run:\n  grok login --device-code\n\nAlternatively, set the XAI_API_KEY environment variable or run `grok login` on a machine with a browser.",
+              "timing": {
+                "executor_duration_seconds": 1.6
+              },
+              "fingerprint": "18ca80710dee7aa89af059dcea97e527e4b50b56cee87cc45739d612a7014dc9"
+            },
+            {
+              "id": "wire-codeql",
+              "runtime_error": "grok run error: Not signed in. To authenticate without a browser, run:\n  grok login --device-code\n\nAlternatively, set the XAI_API_KEY environment variable or run `grok login` on a machine with a browser.",
+              "timing": {
+                "executor_duration_seconds": 1.5
+              },
+              "fingerprint": "843a6cf7a96366ee60b7b12a735dee289f89944ad2a71fecea4bc23ea80e026c"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T19:09:36Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "errored": 1,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 20.7,
+            "measured": {
+              "input_tokens": 10754,
+              "cache_read_input_tokens": 142336,
+              "output_tokens": 3206,
+              "cost_usd": 0.083445
+            }
+          },
+          "results": [
+            {
+              "id": "wire-ci",
+              "passed": true,
+              "measured": {
+                "input_tokens": 4981,
+                "cache_read_input_tokens": 63232,
+                "output_tokens": 1192,
+                "cost_usd": 0.036084
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 18.5
+              }
+            },
+            {
+              "id": "wire-release-vanity",
+              "passed": true,
+              "measured": {
+                "input_tokens": 5773,
+                "cache_read_input_tokens": 79104,
+                "output_tokens": 2014,
+                "cost_usd": 0.047361
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 29.6
+              }
+            },
+            {
+              "id": "wire-codeql",
+              "runtime_error": "grok session cancelled (headless permission prompt)",
+              "timing": {
+                "executor_duration_seconds": 14.1
               }
             }
           ]

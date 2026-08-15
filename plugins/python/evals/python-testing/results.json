@@ -3674,6 +3674,142 @@
           ]
         }
       }
+    },
+    "xai/grok-4.5": {
+      "evals": {
+        "provider": "xai",
+        "model": "grok-4.5",
+        "display": "Grok 4.5",
+        "harness": "grok",
+        "tool_version": "v0.6.0-14-ga373d30",
+        "ran_at": "2026-07-31T19:20:01Z",
+        "executed": true,
+        "content_hash": "47cd454ff56ce4ac8e9bd9761b888ad3d59cb1e2fac68b6806c80b71cbda9602",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "id": "parametrize",
+            "runtime_error": "grok session cancelled (headless permission prompt)",
+            "timing": {
+              "executor_duration_seconds": 14.8
+            },
+            "spec_hash": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+          },
+          {
+            "id": "hypothesis-property",
+            "passed": true,
+            "measured": {
+              "input_tokens": 4233,
+              "cache_read_input_tokens": 117504,
+              "output_tokens": 1155,
+              "cost_usd": 0.050647
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "tests/test_kv_props.py",
+                "text": "file tests/test_kv_props.py exists",
+                "passed": true,
+                "evidence": "tests/test_kv_props.py exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "from hypothesis",
+                "text": "tests/test_kv_props.py matches /from hypothesis/",
+                "passed": true,
+                "evidence": "from hypothesis",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "@given",
+                "text": "tests/test_kv_props.py matches /@given/",
+                "passed": true,
+                "evidence": "@given",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "tests/test_kv_props.py",
+                "pattern": "strategies|st\\.",
+                "text": "tests/test_kv_props.py matches /strategies|st\\./",
+                "passed": true,
+                "evidence": "strategies",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile tests/test_kv_props.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile tests/test_kv_props.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 122892,
+              "executor_duration_seconds": 24.3
+            },
+            "spec_hash": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 0,
+          "errored": 1,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 19.6,
+          "measured": {
+            "input_tokens": 4233,
+            "cache_read_input_tokens": 117504,
+            "output_tokens": 1155,
+            "cost_usd": 0.050647
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-31T19:20:01Z",
+          "summary": {
+            "passed": 0,
+            "failed": 0,
+            "errored": 2,
+            "total": 2,
+            "avg_run_seconds": 28.5
+          },
+          "results": [
+            {
+              "id": "parametrize",
+              "runtime_error": "grok session cancelled (headless permission prompt)",
+              "timing": {
+                "executor_duration_seconds": 44.4
+              },
+              "fingerprint": "3abbcbc92c9acefca556b99e44187459f1a7fb36a6745814ad608f97e7ed5155"
+            },
+            {
+              "id": "hypothesis-property",
+              "runtime_error": "grok session cancelled (headless permission prompt)",
+              "timing": {
+                "executor_duration_seconds": 12.5
+              },
+              "fingerprint": "2a76496e02e511f00ed9ea11976fc9af37d5b3b8543992ee42c6fb2557d5c02b"
+            }
+          ]
+        }
+      }
     }
   }
 }

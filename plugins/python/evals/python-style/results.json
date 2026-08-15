@@ -3947,6 +3947,268 @@
           ]
         }
       }
+    },
+    "xai/grok-4.5": {
+      "evals": {
+        "provider": "xai",
+        "model": "grok-4.5",
+        "display": "Grok 4.5",
+        "harness": "grok",
+        "tool_version": "v0.6.0-14-ga373d30",
+        "ran_at": "2026-07-31T19:19:02Z",
+        "executed": true,
+        "content_hash": "02537a66dbdbe4ed41948f5422755b4e1b061f604e14f0cccd5a9a65d8c5cdcc",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "id": "ruff-config",
+            "passed": true,
+            "measured": {
+              "input_tokens": 4523,
+              "cache_read_input_tokens": 48256,
+              "output_tokens": 1235,
+              "cost_usd": 0.030933
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.ruff\\.lint\\]",
+                "text": "pyproject.toml matches /\\[tool\\.ruff\\.lint\\]/",
+                "passed": true,
+                "evidence": "[tool.ruff.lint]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "select",
+                "text": "pyproject.toml matches /select/",
+                "passed": true,
+                "evidence": "select",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"E\"",
+                "text": "pyproject.toml matches /\"E\"/",
+                "passed": true,
+                "evidence": "\"E\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"F\"",
+                "text": "pyproject.toml matches /\"F\"/",
+                "passed": true,
+                "evidence": "\"F\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"I\"",
+                "text": "pyproject.toml matches /\"I\"/",
+                "passed": true,
+                "evidence": "\"I\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"UP\"",
+                "text": "pyproject.toml matches /\"UP\"/",
+                "passed": true,
+                "evidence": "\"UP\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "target-version",
+                "text": "pyproject.toml matches /target-version/",
+                "passed": true,
+                "evidence": "target-version",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.(black|isort|flake8|pylint)\\]",
+                "text": "pyproject.toml does not match /\\[tool\\.(black|isort|flake8|pylint)\\]/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 0,
+              "total": 8,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 54014,
+              "executor_duration_seconds": 16.3
+            },
+            "spec_hash": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+          },
+          {
+            "id": "modernize-io",
+            "passed": true,
+            "measured": {
+              "input_tokens": 27795,
+              "cache_read_input_tokens": 228736,
+              "output_tokens": 7237,
+              "cost_usd": 0.167633
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "Path",
+                "text": "src/myapp/io.py matches /Path/",
+                "passed": true,
+                "evidence": "Path",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/io.py",
+                "pattern": "os\\.path",
+                "text": "src/myapp/io.py does not match /os\\.path/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/io.py",
+                "pattern": "print\\(",
+                "text": "src/myapp/io.py does not match /print\\(/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "getLogger|logging\\.",
+                "text": "src/myapp/io.py matches /getLogger|logging\\./",
+                "passed": true,
+                "evidence": "logging.",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/io.py",
+                "pattern": "with open|with Path|read_text",
+                "text": "src/myapp/io.py matches /with open|with Path|read_text/",
+                "passed": true,
+                "evidence": "read_text",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/io.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/io.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 263768,
+              "executor_duration_seconds": 95.9
+            },
+            "spec_hash": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 56.1,
+          "measured": {
+            "input_tokens": 32318,
+            "cache_read_input_tokens": 276992,
+            "output_tokens": 8472,
+            "cost_usd": 0.198566
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-31T19:19:02Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 27.8,
+            "measured": {
+              "input_tokens": 19289,
+              "cache_read_input_tokens": 197248,
+              "output_tokens": 3799,
+              "cost_usd": 0.120546
+            }
+          },
+          "results": [
+            {
+              "id": "ruff-config",
+              "passed": true,
+              "measured": {
+                "input_tokens": 16922,
+                "cache_read_input_tokens": 153600,
+                "output_tokens": 2071,
+                "cost_usd": 0.09235
+              },
+              "summary": {
+                "passed": 8,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 31
+              },
+              "fingerprint": "cf7bd87ada57559c4ad212640f37d00f320fcde134e73e3e63ba80c83bdcdf22"
+            },
+            {
+              "id": "modernize-io",
+              "passed": true,
+              "measured": {
+                "input_tokens": 2367,
+                "cache_read_input_tokens": 43648,
+                "output_tokens": 1728,
+                "cost_usd": 0.028196
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 24.6
+              },
+              "fingerprint": "e013f44f3a7552544d07e1a01ddbbe7e28da7abbd9e91c9796b3bde27eaee6e2"
+            }
+          ]
+        }
+      }
     }
   }
 }

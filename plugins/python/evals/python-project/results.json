@@ -4687,6 +4687,332 @@
           ]
         }
       }
+    },
+    "xai/grok-4.5": {
+      "evals": {
+        "provider": "xai",
+        "model": "grok-4.5",
+        "display": "Grok 4.5",
+        "harness": "grok",
+        "tool_version": "v0.6.0-14-ga373d30-dirty",
+        "ran_at": "2026-07-31T19:39:09Z",
+        "executed": true,
+        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "id": "configure-pyproject",
+            "passed": true,
+            "measured": {
+              "input_tokens": 13732,
+              "cache_read_input_tokens": 39040,
+              "output_tokens": 1008,
+              "cost_usd": 0.045224
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "build-backend = \"uv_build\"",
+                "text": "pyproject.toml matches /build-backend = \"uv_build\"/",
+                "passed": true,
+                "evidence": "build-backend = \"uv_build\"",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "uv_build\u003e=",
+                "text": "pyproject.toml matches /uv_build\u003e=/",
+                "passed": true,
+                "evidence": "uv_build\u003e=",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[dependency-groups\\]",
+                "text": "pyproject.toml matches /\\[dependency-groups\\]/",
+                "passed": true,
+                "evidence": "[dependency-groups]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "ruff",
+                "text": "pyproject.toml matches /ruff/",
+                "passed": true,
+                "evidence": "ruff",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\"ty",
+                "text": "pyproject.toml matches /\"ty/",
+                "passed": true,
+                "evidence": "\"ty",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pytest",
+                "text": "pyproject.toml matches /pytest/",
+                "passed": true,
+                "evidence": "pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "requires-python",
+                "text": "pyproject.toml matches /requires-python/",
+                "passed": true,
+                "evidence": "requires-python",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "pyproject.toml",
+                "pattern": "hatchling|setuptools|poetry",
+                "text": "pyproject.toml does not match /hatchling|setuptools|poetry/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 0,
+              "total": 8,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 53780,
+              "executor_duration_seconds": 14.9
+            },
+            "spec_hash": "38801d5c3ba67af857ed90573108fc112429908a8703a4278cff1a4a200558d6"
+          },
+          {
+            "id": "makefile-gate",
+            "passed": true,
+            "measured": {
+              "input_tokens": 3925,
+              "cache_read_input_tokens": 48640,
+              "output_tokens": 718,
+              "cost_usd": 0.02675
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "Makefile",
+                "text": "file Makefile exists",
+                "passed": true,
+                "evidence": "Makefile exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff format",
+                "text": "Makefile matches /uv run ruff format/",
+                "passed": true,
+                "evidence": "uv run ruff format",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ruff check",
+                "text": "Makefile matches /uv run ruff check/",
+                "passed": true,
+                "evidence": "uv run ruff check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run ty check",
+                "text": "Makefile matches /uv run ty check/",
+                "passed": true,
+                "evidence": "uv run ty check",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv run pytest",
+                "text": "Makefile matches /uv run pytest/",
+                "passed": true,
+                "evidence": "uv run pytest",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "uv build",
+                "text": "Makefile matches /uv build/",
+                "passed": true,
+                "evidence": "uv build",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "pr:",
+                "text": "Makefile matches /pr:/",
+                "passed": true,
+                "evidence": "pr:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 53283,
+              "executor_duration_seconds": 12.9
+            },
+            "spec_hash": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 13.9,
+          "measured": {
+            "input_tokens": 17657,
+            "cache_read_input_tokens": 87680,
+            "output_tokens": 1726,
+            "cost_usd": 0.071974
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-31T19:39:09Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 38.3,
+            "measured": {
+              "input_tokens": 56857,
+              "cache_read_input_tokens": 626432,
+              "output_tokens": 5385,
+              "cost_usd": 0.333953
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": true,
+              "measured": {
+                "input_tokens": 1317,
+                "cache_read_input_tokens": 32128,
+                "output_tokens": 911,
+                "cost_usd": 0.017738
+              },
+              "summary": {
+                "passed": 8,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 13
+              },
+              "fingerprint": "38801d5c3ba67af857ed90573108fc112429908a8703a4278cff1a4a200558d6"
+            },
+            {
+              "id": "makefile-gate",
+              "passed": true,
+              "measured": {
+                "input_tokens": 55540,
+                "cache_read_input_tokens": 594304,
+                "output_tokens": 4474,
+                "cost_usd": 0.316215
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 63.5
+              },
+              "fingerprint": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T19:15:52Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 15.4,
+            "measured": {
+              "input_tokens": 8003,
+              "cache_read_input_tokens": 110976,
+              "output_tokens": 2059,
+              "cost_usd": 0.061653
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": true,
+              "measured": {
+                "input_tokens": 3981,
+                "cache_read_input_tokens": 48512,
+                "output_tokens": 967,
+                "cost_usd": 0.028318
+              },
+              "summary": {
+                "passed": 8,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 14.3
+              }
+            },
+            {
+              "id": "makefile-gate",
+              "passed": true,
+              "measured": {
+                "input_tokens": 4022,
+                "cache_read_input_tokens": 62464,
+                "output_tokens": 1092,
+                "cost_usd": 0.033335
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 16.5
+              }
+            }
+          ]
+        }
+      }
     }
   }
 }

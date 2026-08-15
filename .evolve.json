@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/refs/heads/main/docs/config/config.schema.json",
   "layout": "marketplace",
-  "harnesses": ["claude", "codex"],
-  "models": ["anthropic", "openai/gpt-5.4", "openai/gpt-5.5"],
+  "harnesses": ["claude", "codex", "grok"],
+  "models": ["anthropic", "openai", "xai"],
   "checks": {
     "license": "MIT"
   },

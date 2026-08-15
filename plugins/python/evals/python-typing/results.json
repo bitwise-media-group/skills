@@ -4718,6 +4718,315 @@
           ]
         }
       }
+    },
+    "xai/grok-4.5": {
+      "evals": {
+        "provider": "xai",
+        "model": "grok-4.5",
+        "display": "Grok 4.5",
+        "harness": "grok",
+        "tool_version": "v0.6.0-14-ga373d30",
+        "ran_at": "2026-07-31T19:22:13Z",
+        "executed": true,
+        "content_hash": "54b3b3d8570181fa3810a1cf6ecd90222883b1af9285143eaeaa383379b52ef1",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "id": "annotate-and-configure",
+            "passed": true,
+            "measured": {
+              "input_tokens": 3797,
+              "cache_read_input_tokens": 34816,
+              "output_tokens": 1342,
+              "cost_usd": 0.026091
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:",
+                "text": "src/myapp/calc.py matches /def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:/",
+                "passed": true,
+                "evidence": "def add(a:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "-\u003e ",
+                "text": "src/myapp/calc.py matches /-\u003e /",
+                "passed": true,
+                "evidence": "-\u003e ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.ty\\.environment\\]",
+                "text": "pyproject.toml matches /\\[tool\\.ty\\.environment\\]/",
+                "passed": true,
+                "evidence": "[tool.ty.environment]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "python-version",
+                "text": "pyproject.toml matches /python-version/",
+                "passed": true,
+                "evidence": "python-version",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/calc.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/calc.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 39955,
+              "executor_duration_seconds": 19.8
+            },
+            "spec_hash": "5cc61cc72f2e7f5798ead7ca89d976714ae6c1af7e9879fe04db7b66fe526a12"
+          },
+          {
+            "id": "configure-pyright",
+            "passed": true,
+            "measured": {
+              "input_tokens": 4486,
+              "cache_read_input_tokens": 107008,
+              "output_tokens": 1619,
+              "cost_usd": 0.050788
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:",
+                "text": "src/myapp/calc.py matches /def add(?:\\[[^\\]]*\\])?\\(\\s*[a-z_]+:/",
+                "passed": true,
+                "evidence": "def add(a:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/calc.py",
+                "pattern": "-\u003e ",
+                "text": "src/myapp/calc.py matches /-\u003e /",
+                "passed": true,
+                "evidence": "-\u003e ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "\\[tool\\.pyright\\]",
+                "text": "pyproject.toml matches /\\[tool\\.pyright\\]/",
+                "passed": true,
+                "evidence": "[tool.pyright]",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "pyproject.toml",
+                "pattern": "pythonVersion",
+                "text": "pyproject.toml matches /pythonVersion/",
+                "passed": true,
+                "evidence": "pythonVersion",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/calc.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/calc.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 113113,
+              "executor_duration_seconds": 24.6
+            },
+            "spec_hash": "82fc925f92e7acfab76808b7a18080c1ec68a4ddcf5086b85ec39e8db7e25ca0"
+          },
+          {
+            "id": "modernize-hints",
+            "passed": true,
+            "measured": {
+              "input_tokens": 3472,
+              "cache_read_input_tokens": 48128,
+              "output_tokens": 862,
+              "cost_usd": 0.026554
+            },
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Optional\\[",
+                "text": "src/myapp/legacy.py does not match /Optional\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Union\\[",
+                "text": "src/myapp/legacy.py does not match /Union\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "List\\[",
+                "text": "src/myapp/legacy.py does not match /List\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "Dict\\[",
+                "text": "src/myapp/legacy.py does not match /Dict\\[/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "\\| None",
+                "text": "src/myapp/legacy.py matches /\\| None/",
+                "passed": true,
+                "evidence": "| None",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "src/myapp/legacy.py",
+                "pattern": "list\\[|dict\\[",
+                "text": "src/myapp/legacy.py matches /list\\[|dict\\[/",
+                "passed": true,
+                "evidence": "dict[",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "python3 -m py_compile src/myapp/legacy.py",
+                "requires": "python3",
+                "text": "command `python3 -m py_compile src/myapp/legacy.py` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 52462,
+              "executor_duration_seconds": 14
+            },
+            "spec_hash": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 19.5,
+          "measured": {
+            "input_tokens": 11755,
+            "cache_read_input_tokens": 189952,
+            "output_tokens": 3823,
+            "cost_usd": 0.103433
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-07-31T19:22:13Z",
+          "summary": {
+            "passed": 1,
+            "failed": 0,
+            "errored": 2,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 67.5,
+            "measured": {
+              "input_tokens": 1124,
+              "cache_read_input_tokens": 43392,
+              "output_tokens": 597,
+              "cost_usd": 0.018848
+            }
+          },
+          "results": [
+            {
+              "id": "annotate-and-configure",
+              "runtime_error": "grok session cancelled (headless permission prompt)",
+              "timing": {
+                "executor_duration_seconds": 111.6
+              },
+              "fingerprint": "5cc61cc72f2e7f5798ead7ca89d976714ae6c1af7e9879fe04db7b66fe526a12"
+            },
+            {
+              "id": "configure-pyright",
+              "runtime_error": "grok session cancelled (headless permission prompt)",
+              "timing": {
+                "executor_duration_seconds": 79.5
+              },
+              "fingerprint": "82fc925f92e7acfab76808b7a18080c1ec68a4ddcf5086b85ec39e8db7e25ca0"
+            },
+            {
+              "id": "modernize-hints",
+              "passed": true,
+              "measured": {
+                "input_tokens": 1124,
+                "cache_read_input_tokens": 43392,
+                "output_tokens": 597,
+                "cost_usd": 0.018848
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 11.5
+              },
+              "fingerprint": "a55efb443adb09f928e972e3e00543176554fe739b1a0ce038cabd472bbdb4a8"
+            }
+          ]
+        }
+      }
     }
   }
 }
