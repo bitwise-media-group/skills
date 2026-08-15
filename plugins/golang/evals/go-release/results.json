@@ -3041,6 +3041,426 @@
         }
       }
     },
+    "openai/gpt-5.3-codex-spark": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.3-codex-spark",
+        "display": "GPT-5.3 Codex Spark",
+        "harness": "codex",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T04:33:39Z",
+        "executed": true,
+        "content_hash": "8bb133ff128e7c59e779f0244c8dd771cb304a5e4e3d1a47daa373881a66cbe8",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": null,
+        "results": [
+          {
+            "query": "Set up GoReleaser for this Go project",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 14.5,
+            "spec_hash": "a2e34ca0f5878384098e54db004ff59834eb1d02fe8e151c6c85d3f5bac92ca0"
+          },
+          {
+            "query": "Add a release workflow that publishes binaries and container images for our Go service",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.6,
+            "spec_hash": "0bf123081c14f86829a1b3256af8509469b19f4655eec48169b2f459440a9582"
+          },
+          {
+            "query": "Stamp the version and commit into the Go binary at build time",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 27.5,
+            "spec_hash": "1005d24775da8628f8b6d6f5e4299ac254058e3a6639584f5a22215c02cb01ff"
+          },
+          {
+            "query": "Add GitHub Actions CI for this Go repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "9bb53c3e17752eef2cdb7ca163102023e0c5e27e2d4c86b12adff0fefd569000"
+          },
+          {
+            "query": "Configure Dependabot for our Go modules and GitHub Actions",
+            "should_trigger": true,
+            "hits": 0,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 12.6,
+            "spec_hash": "790b0f637d2e0fa0ea7e8357d66036a0a6b0179336d15d4db813e1324619f24b"
+          },
+          {
+            "query": "Publish multi-arch Docker images from our Go release pipeline",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 18.8,
+            "spec_hash": "03e2bd07706fcd66514852eaf4fa0b4e24a7dd4446d40877e89edf6731134234"
+          },
+          {
+            "query": "Add SBOM generation to the Go release build",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.4,
+            "spec_hash": "a74e5fc7c62fb8794df796cc5fb98e5a05fa8951e0219b9d79d8c772c2ea44cc"
+          },
+          {
+            "query": "Set up semantic-release for my npm package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 36.5,
+            "spec_hash": "fd7d8393bebd71750305eee8448a2b0e4b4bb2597c97e61403707c479b469276"
+          },
+          {
+            "query": "Write a Dockerfile for my Python app",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "spec_hash": "e5a37a363d6ad3ea1dc218f0651e55641a3575f05d9671a847e9302fb7ce23d4"
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 28.2,
+            "spec_hash": "6af28e494a63e5752b3acc22c4aa9ecca9e9511d024e55bc1f975adbfbf50551"
+          },
+          {
+            "query": "Fix the failing Go unit test in CI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 30.2,
+            "spec_hash": "1b0492906d7612869843defe575e281ba02fdac6996b394188601c20fe90688a"
+          },
+          {
+            "query": "Write table-driven tests before we cut the release",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 27.2,
+            "spec_hash": "258e36cb6934241f8f276a9481f7642dc295a9f5cf0798a067737cbc4d5d7508"
+          },
+          {
+            "query": "Set up release-please for this TypeScript repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 28.2,
+            "spec_hash": "22d4c4cd6e32ba1e6ac5e8ec8c6452cee4516275e55f42ab310d83856f93b9e3"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 3,
+          "total": 13,
+          "pass_rate": 0.769231,
+          "avg_run_seconds": 19.8
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.3-codex-spark",
+        "display": "GPT-5.3 Codex Spark",
+        "harness": "codex",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T04:34:57Z",
+        "executed": true,
+        "content_hash": "ce53f68df3c7767d1a9be1b84eb44e24b4bbd8209132ea5cc10f4dc882c9a367",
+        "timeout_seconds": 600,
+        "pricing": null,
+        "results": [
+          {
+            "id": "goreleaser-setup",
+            "passed": true,
+            "measured": {
+              "input_tokens": 43395,
+              "cache_read_input_tokens": 591104,
+              "output_tokens": 15747
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".goreleaser.yaml",
+                "text": "file .goreleaser.yaml exists",
+                "passed": true,
+                "evidence": ".goreleaser.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "CGO_ENABLED=0",
+                "text": ".goreleaser.yaml matches /CGO_ENABLED=0/",
+                "passed": true,
+                "evidence": "CGO_ENABLED=0",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "-trimpath",
+                "text": ".goreleaser.yaml matches /-trimpath/",
+                "passed": true,
+                "evidence": "-trimpath",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "internal/version\\.Version=",
+                "text": ".goreleaser.yaml matches /internal/version\\.Version=/",
+                "passed": true,
+                "evidence": "internal/version.Version=",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "sboms:",
+                "text": ".goreleaser.yaml matches /sboms:/",
+                "passed": true,
+                "evidence": "sboms:",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "internal/version/version.go",
+                "text": "file internal/version/version.go exists",
+                "passed": true,
+                "evidence": "internal/version/version.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/version/version.go",
+                "pattern": "BuildDate",
+                "text": "internal/version/version.go matches /BuildDate/",
+                "passed": true,
+                "evidence": "BuildDate",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "goreleaser check",
+                "requires": "goreleaser",
+                "text": "command `goreleaser check` exits 0",
+                "passed": true,
+                "evidence": "exit 0: • checking                                  path=.goreleaser.yaml\n  • 1 configuration file(s) validated\n  • thanks for using GoReleaser!",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 9,
+              "failed": 0,
+              "total": 9,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 23,
+                "file_change": 7
+              },
+              "total_tool_calls": 30
+            },
+            "timing": {
+              "total_tokens": 650246,
+              "executor_duration_seconds": 57.5
+            },
+            "spec_hash": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
+          },
+          {
+            "id": "ci-dependabot",
+            "passed": false,
+            "measured": {
+              "input_tokens": 24096,
+              "cache_read_input_tokens": 160512,
+              "output_tokens": 6397
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "go-version-file: go.mod",
+                "text": ".github/workflows/ci.yaml matches /go-version-file: go.mod/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "go test -race",
+                "text": ".github/workflows/ci.yaml matches /go test -race/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "govulncheck",
+                "text": ".github/workflows/ci.yaml matches /govulncheck/",
+                "passed": true,
+                "evidence": "govulncheck",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": ".github/dependabot.yaml",
+                "text": "file .github/dependabot.yaml exists",
+                "passed": true,
+                "evidence": ".github/dependabot.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "package-ecosystem: gomod",
+                "text": ".github/dependabot.yaml matches /package-ecosystem: gomod/",
+                "passed": true,
+                "evidence": "package-ecosystem: gomod",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "directory: /tools",
+                "text": ".github/dependabot.yaml matches /directory: /tools/",
+                "passed": false,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 3,
+              "total": 7,
+              "pass_rate": 0.571429
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 11,
+                "file_change": 2
+              },
+              "total_tool_calls": 13
+            },
+            "timing": {
+              "total_tokens": 191005,
+              "executor_duration_seconds": 20.9
+            },
+            "spec_hash": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 39.2,
+          "measured": {
+            "input_tokens": 67491,
+            "cache_read_input_tokens": 751616,
+            "output_tokens": 22144
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-08-15T04:34:57Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 19.8,
+            "measured": {
+              "input_tokens": 17108,
+              "cache_read_input_tokens": 217984,
+              "output_tokens": 11561
+            }
+          },
+          "results": [
+            {
+              "id": "goreleaser-setup",
+              "passed": false,
+              "measured": {
+                "input_tokens": 9504,
+                "cache_read_input_tokens": 125568,
+                "output_tokens": 6813
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 7,
+                "total": 9,
+                "pass_rate": 0.222222
+              },
+              "timing": {
+                "executor_duration_seconds": 19.6
+              },
+              "fingerprint": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
+            },
+            {
+              "id": "ci-dependabot",
+              "passed": false,
+              "measured": {
+                "input_tokens": 7604,
+                "cache_read_input_tokens": 92416,
+                "output_tokens": 4748
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 5,
+                "total": 7,
+                "pass_rate": 0.285714
+              },
+              "timing": {
+                "executor_duration_seconds": 19.9
+              },
+              "fingerprint": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
+            }
+          ]
+        }
+      }
+    },
     "openai/gpt-5.4": {
       "triggers": {
         "provider": "openai",
@@ -3404,8 +3824,8 @@
         "model": "gpt-5.4",
         "display": "GPT-5.4",
         "harness": "codex",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-27T23:35:14Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T05:03:39Z",
         "executed": true,
         "content_hash": "ce53f68df3c7767d1a9be1b84eb44e24b4bbd8209132ea5cc10f4dc882c9a367",
         "timeout_seconds": 600,
@@ -3416,16 +3836,16 @@
         "results": [
           {
             "id": "goreleaser-setup",
-            "passed": true,
+            "passed": false,
             "estimate": {
               "input_tokens": 1111,
               "input_cost_usd": 0.002778
             },
             "measured": {
-              "input_tokens": 35358,
-              "cache_read_input_tokens": 594560,
-              "output_tokens": 10937,
-              "cost_usd": 1.73885
+              "input_tokens": 49976,
+              "cache_read_input_tokens": 520960,
+              "output_tokens": 7964,
+              "cost_usd": 1.5468
             },
             "expectations": [
               {
@@ -3503,42 +3923,546 @@
                 "run": "goreleaser check",
                 "requires": "goreleaser",
                 "text": "command `goreleaser check` exits 0",
-                "passed": true,
-                "evidence": "exit 0: • checking                                  path=.goreleaser.yaml\n  • 1 configuration file(s) validated\n  • thanks for using GoReleaser!",
+                "passed": false,
+                "evidence": "exit 1:           error=configuration is invalid: scm releases: no remote configured to list refs from\n  ⨯ check failed                                     error=1 out of 1 configuration file(s) have issues",
                 "source": "assertion"
               }
             ],
             "summary": {
-              "passed": 9,
-              "failed": 0,
+              "passed": 8,
+              "failed": 1,
               "total": 9,
-              "pass_rate": 1
+              "pass_rate": 0.888889
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 41,
-                "file_change": 5
+                "command_execution": 31,
+                "file_change": 1
               },
-              "total_tool_calls": 46
+              "total_tool_calls": 32
             },
             "timing": {
-              "total_tokens": 640855,
-              "executor_duration_seconds": 298.6
+              "total_tokens": 578900,
+              "executor_duration_seconds": 261.9
             },
-            "spec_hash": "9d33e883d043938306b2e1bedbcf8077133ae0becdf06b38b68a44fe3eb789ae"
+            "spec_hash": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
           },
           {
             "id": "ci-dependabot",
-            "passed": false,
+            "passed": true,
             "estimate": {
               "input_tokens": 1122,
               "input_cost_usd": 0.002805
             },
             "measured": {
-              "input_tokens": 16617,
-              "cache_read_input_tokens": 127488,
-              "output_tokens": 4123,
-              "cost_usd": 0.422107
+              "input_tokens": 12962,
+              "cache_read_input_tokens": 98944,
+              "output_tokens": 3271,
+              "cost_usd": 0.32883
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "go-version-file: go.mod",
+                "text": ".github/workflows/ci.yaml matches /go-version-file: go.mod/",
+                "passed": true,
+                "evidence": "go-version-file: go.mod",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "go test -race",
+                "text": ".github/workflows/ci.yaml matches /go test -race/",
+                "passed": true,
+                "evidence": "go test -race",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "govulncheck",
+                "text": ".github/workflows/ci.yaml matches /govulncheck/",
+                "passed": true,
+                "evidence": "govulncheck",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": ".github/dependabot.yaml",
+                "text": "file .github/dependabot.yaml exists",
+                "passed": true,
+                "evidence": ".github/dependabot.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "package-ecosystem: gomod",
+                "text": ".github/dependabot.yaml matches /package-ecosystem: gomod/",
+                "passed": true,
+                "evidence": "package-ecosystem: gomod",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "directory: /tools",
+                "text": ".github/dependabot.yaml matches /directory: /tools/",
+                "passed": true,
+                "evidence": "directory: /tools",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 14,
+                "file_change": 1
+              },
+              "total_tool_calls": 15
+            },
+            "timing": {
+              "total_tokens": 115177,
+              "executor_duration_seconds": 72.9
+            },
+            "spec_hash": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 167.4,
+          "estimate": {
+            "input_tokens": 2233,
+            "input_cost_usd": 0.005583
+          },
+          "measured": {
+            "input_tokens": 62938,
+            "cache_read_input_tokens": 619904,
+            "output_tokens": 11235,
+            "cost_usd": 1.87563
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-08-15T05:03:39Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 98.3,
+            "measured": {
+              "input_tokens": 54109,
+              "cache_read_input_tokens": 320896,
+              "output_tokens": 8701,
+              "cost_usd": 1.068028
+            }
+          },
+          "results": [
+            {
+              "id": "goreleaser-setup",
+              "passed": false,
+              "measured": {
+                "input_tokens": 45513,
+                "cache_read_input_tokens": 188288,
+                "output_tokens": 4941,
+                "cost_usd": 0.658618
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 2,
+                "total": 9,
+                "pass_rate": 0.777778
+              },
+              "timing": {
+                "executor_duration_seconds": 114.3
+              },
+              "fingerprint": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
+            },
+            {
+              "id": "ci-dependabot",
+              "passed": false,
+              "measured": {
+                "input_tokens": 8596,
+                "cache_read_input_tokens": 132608,
+                "output_tokens": 3760,
+                "cost_usd": 0.40941
+              },
+              "summary": {
+                "passed": 0,
+                "failed": 0,
+                "total": 0,
+                "pass_rate": 0.285714
+              },
+              "timing": {
+                "executor_duration_seconds": 82.2
+              },
+              "fingerprint": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-06-27T23:35:14Z",
+          "summary": {
+            "passed": 1,
+            "failed": 1,
+            "total": 2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 194.2,
+            "estimate": {
+              "input_tokens": 2233,
+              "input_cost_usd": 0.005583
+            },
+            "measured": {
+              "input_tokens": 51975,
+              "cache_read_input_tokens": 722048,
+              "output_tokens": 15060,
+              "cost_usd": 2.160957
+            }
+          },
+          "results": [
+            {
+              "id": "goreleaser-setup",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1111,
+                "input_cost_usd": 0.002778
+              },
+              "measured": {
+                "input_tokens": 35358,
+                "cache_read_input_tokens": 594560,
+                "output_tokens": 10937,
+                "cost_usd": 1.73885
+              },
+              "summary": {
+                "passed": 9,
+                "failed": 0,
+                "total": 9,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 298.6
+              }
+            },
+            {
+              "id": "ci-dependabot",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 1122,
+                "input_cost_usd": 0.002805
+              },
+              "measured": {
+                "input_tokens": 16617,
+                "cache_read_input_tokens": 127488,
+                "output_tokens": 4123,
+                "cost_usd": 0.422107
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 1,
+                "total": 7,
+                "pass_rate": 0.857143
+              },
+              "timing": {
+                "executor_duration_seconds": 89.7
+              }
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.4-mini": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.4-mini",
+        "display": "GPT-5.4 Mini",
+        "harness": "codex",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T04:45:48Z",
+        "executed": true,
+        "content_hash": "8bb133ff128e7c59e779f0244c8dd771cb304a5e4e3d1a47daa373881a66cbe8",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 0.75,
+          "output_per_mtok": 4.5
+        },
+        "results": [
+          {
+            "query": "Set up GoReleaser for this Go project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.9,
+            "spec_hash": "a2e34ca0f5878384098e54db004ff59834eb1d02fe8e151c6c85d3f5bac92ca0"
+          },
+          {
+            "query": "Add a release workflow that publishes binaries and container images for our Go service",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 45.2,
+            "spec_hash": "0bf123081c14f86829a1b3256af8509469b19f4655eec48169b2f459440a9582"
+          },
+          {
+            "query": "Stamp the version and commit into the Go binary at build time",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 17.1,
+            "spec_hash": "1005d24775da8628f8b6d6f5e4299ac254058e3a6639584f5a22215c02cb01ff"
+          },
+          {
+            "query": "Add GitHub Actions CI for this Go repo",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 43.8,
+            "spec_hash": "9bb53c3e17752eef2cdb7ca163102023e0c5e27e2d4c86b12adff0fefd569000"
+          },
+          {
+            "query": "Configure Dependabot for our Go modules and GitHub Actions",
+            "should_trigger": true,
+            "hits": 1,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 44.6,
+            "spec_hash": "790b0f637d2e0fa0ea7e8357d66036a0a6b0179336d15d4db813e1324619f24b"
+          },
+          {
+            "query": "Publish multi-arch Docker images from our Go release pipeline",
+            "should_trigger": true,
+            "hits": 2,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 50.3,
+            "spec_hash": "03e2bd07706fcd66514852eaf4fa0b4e24a7dd4446d40877e89edf6731134234"
+          },
+          {
+            "query": "Add SBOM generation to the Go release build",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.4,
+            "spec_hash": "a74e5fc7c62fb8794df796cc5fb98e5a05fa8951e0219b9d79d8c772c2ea44cc"
+          },
+          {
+            "query": "Set up semantic-release for my npm package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "spec_hash": "fd7d8393bebd71750305eee8448a2b0e4b4bb2597c97e61403707c479b469276"
+          },
+          {
+            "query": "Write a Dockerfile for my Python app",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 27.1,
+            "spec_hash": "e5a37a363d6ad3ea1dc218f0651e55641a3575f05d9671a847e9302fb7ce23d4"
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 88.8,
+            "spec_hash": "6af28e494a63e5752b3acc22c4aa9ecca9e9511d024e55bc1f975adbfbf50551"
+          },
+          {
+            "query": "Fix the failing Go unit test in CI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 118.6,
+            "spec_hash": "1b0492906d7612869843defe575e281ba02fdac6996b394188601c20fe90688a"
+          },
+          {
+            "query": "Write table-driven tests before we cut the release",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "spec_hash": "258e36cb6934241f8f276a9481f7642dc295a9f5cf0798a067737cbc4d5d7508"
+          },
+          {
+            "query": "Set up release-please for this TypeScript repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "spec_hash": "22d4c4cd6e32ba1e6ac5e8ec8c6452cee4516275e55f42ab310d83856f93b9e3"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 1,
+          "total": 13,
+          "pass_rate": 0.923077,
+          "avg_run_seconds": 63
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.4-mini",
+        "display": "GPT-5.4 Mini",
+        "harness": "codex",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T04:57:22Z",
+        "executed": true,
+        "content_hash": "ce53f68df3c7767d1a9be1b84eb44e24b4bbd8209132ea5cc10f4dc882c9a367",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 0.75,
+          "output_per_mtok": 4.5
+        },
+        "results": [
+          {
+            "id": "goreleaser-setup",
+            "passed": false,
+            "measured": {
+              "input_tokens": 154719,
+              "cache_read_input_tokens": 1541760,
+              "output_tokens": 23611,
+              "cost_usd": 1.378609
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".goreleaser.yaml",
+                "text": "file .goreleaser.yaml exists",
+                "passed": true,
+                "evidence": ".goreleaser.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "CGO_ENABLED=0",
+                "text": ".goreleaser.yaml matches /CGO_ENABLED=0/",
+                "passed": true,
+                "evidence": "CGO_ENABLED=0",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "-trimpath",
+                "text": ".goreleaser.yaml matches /-trimpath/",
+                "passed": true,
+                "evidence": "-trimpath",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "internal/version\\.Version=",
+                "text": ".goreleaser.yaml matches /internal/version\\.Version=/",
+                "passed": true,
+                "evidence": "internal/version.Version=",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "sboms:",
+                "text": ".goreleaser.yaml matches /sboms:/",
+                "passed": true,
+                "evidence": "sboms:",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "internal/version/version.go",
+                "text": "file internal/version/version.go exists",
+                "passed": true,
+                "evidence": "internal/version/version.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/version/version.go",
+                "pattern": "BuildDate",
+                "text": "internal/version/version.go matches /BuildDate/",
+                "passed": true,
+                "evidence": "BuildDate",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "goreleaser check",
+                "requires": "goreleaser",
+                "text": "command `goreleaser check` exits 0",
+                "passed": false,
+                "evidence": "exit 1:           error=configuration is invalid: scm releases: no remote configured to list refs from\n  ⨯ check failed                                     error=1 out of 1 configuration file(s) have issues",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 1,
+              "total": 9,
+              "pass_rate": 0.888889
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 25,
+                "file_change": 6
+              },
+              "total_tool_calls": 31
+            },
+            "timing": {
+              "total_tokens": 1720090,
+              "executor_duration_seconds": 476.5
+            },
+            "spec_hash": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
+          },
+          {
+            "id": "ci-dependabot",
+            "passed": false,
+            "measured": {
+              "input_tokens": 36314,
+              "cache_read_input_tokens": 374656,
+              "output_tokens": 13601,
+              "cost_usd": 0.369432
             },
             "expectations": [
               {
@@ -3611,48 +4535,44 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 17,
-                "file_change": 1
+                "command_execution": 27,
+                "file_change": 5
               },
-              "total_tool_calls": 18
+              "total_tool_calls": 32
             },
             "timing": {
-              "total_tokens": 148228,
-              "executor_duration_seconds": 89.7
+              "total_tokens": 424571,
+              "executor_duration_seconds": 215.7
             },
             "spec_hash": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
           }
         ],
         "summary": {
-          "passed": 1,
-          "failed": 1,
+          "passed": 0,
+          "failed": 2,
           "total": 2,
-          "pass_rate": 0.5,
-          "avg_run_seconds": 194.2,
-          "estimate": {
-            "input_tokens": 2233,
-            "input_cost_usd": 0.005583
-          },
+          "pass_rate": 0,
+          "avg_run_seconds": 346.1,
           "measured": {
-            "input_tokens": 51975,
-            "cache_read_input_tokens": 722048,
-            "output_tokens": 15060,
-            "cost_usd": 2.160957
+            "input_tokens": 191033,
+            "cache_read_input_tokens": 1916416,
+            "output_tokens": 37212,
+            "cost_usd": 1.748041
           }
         },
         "baseline": {
-          "ran_at": "2026-06-21T16:09:43Z",
+          "ran_at": "2026-08-15T04:57:22Z",
           "summary": {
             "passed": 0,
             "failed": 2,
             "total": 2,
             "pass_rate": 0,
-            "avg_run_seconds": 119.7,
+            "avg_run_seconds": 141,
             "measured": {
-              "input_tokens": 91405,
-              "cache_read_input_tokens": 472576,
-              "output_tokens": 10738,
-              "cost_usd": 1.571023
+              "input_tokens": 92233,
+              "cache_read_input_tokens": 453248,
+              "output_tokens": 15207,
+              "cost_usd": 0.477542
             }
           },
           "results": [
@@ -3660,109 +4580,41 @@
               "id": "goreleaser-setup",
               "passed": false,
               "measured": {
-                "input_tokens": 82809,
-                "cache_read_input_tokens": 339968,
-                "output_tokens": 6978,
-                "cost_usd": 1.161613
+                "input_tokens": 75308,
+                "cache_read_input_tokens": 383360,
+                "output_tokens": 11318,
+                "cost_usd": 0.394932
               },
               "summary": {
-                "passed": 0,
-                "failed": 0,
-                "total": 0,
-                "pass_rate": 0.777778
+                "passed": 6,
+                "failed": 3,
+                "total": 9,
+                "pass_rate": 0.666667
               },
               "timing": {
-                "executor_duration_seconds": 157.2
+                "executor_duration_seconds": 215.8
               },
-              "fingerprint": "9d33e883d043938306b2e1bedbcf8077133ae0becdf06b38b68a44fe3eb789ae"
+              "fingerprint": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
             },
             {
               "id": "ci-dependabot",
               "passed": false,
               "measured": {
-                "input_tokens": 8596,
-                "cache_read_input_tokens": 132608,
-                "output_tokens": 3760,
-                "cost_usd": 0.40941
+                "input_tokens": 16925,
+                "cache_read_input_tokens": 69888,
+                "output_tokens": 3889,
+                "cost_usd": 0.08261
               },
               "summary": {
-                "passed": 0,
-                "failed": 0,
-                "total": 0,
-                "pass_rate": 0.285714
+                "passed": 4,
+                "failed": 3,
+                "total": 7,
+                "pass_rate": 0.571429
               },
               "timing": {
-                "executor_duration_seconds": 82.2
+                "executor_duration_seconds": 66.2
               },
               "fingerprint": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
-            }
-          ]
-        },
-        "previous": {
-          "ran_at": "2026-06-21T21:10:46Z",
-          "summary": {
-            "passed": 2,
-            "failed": 0,
-            "total": 2,
-            "pass_rate": 1,
-            "avg_run_seconds": 114.2,
-            "estimate": {
-              "input_tokens": 2233,
-              "input_cost_usd": 0.005583
-            },
-            "measured": {
-              "input_tokens": 59755,
-              "cache_read_input_tokens": 504704,
-              "output_tokens": 10509,
-              "cost_usd": 1.568783
-            }
-          },
-          "results": [
-            {
-              "id": "goreleaser-setup",
-              "passed": true,
-              "estimate": {
-                "input_tokens": 1111,
-                "input_cost_usd": 0.002778
-              },
-              "measured": {
-                "input_tokens": 37508,
-                "cache_read_input_tokens": 397568,
-                "output_tokens": 7309,
-                "cost_usd": 1.197325
-              },
-              "summary": {
-                "passed": 9,
-                "failed": 0,
-                "total": 9,
-                "pass_rate": 1
-              },
-              "timing": {
-                "executor_duration_seconds": 160.8
-              }
-            },
-            {
-              "id": "ci-dependabot",
-              "passed": true,
-              "estimate": {
-                "input_tokens": 1122,
-                "input_cost_usd": 0.002805
-              },
-              "measured": {
-                "input_tokens": 22247,
-                "cache_read_input_tokens": 107136,
-                "output_tokens": 3200,
-                "cost_usd": 0.371458
-              },
-              "summary": {
-                "passed": 7,
-                "failed": 0,
-                "total": 7,
-                "pass_rate": 1
-              },
-              "timing": {
-                "executor_duration_seconds": 67.5
-              }
             }
           ]
         }
@@ -3957,8 +4809,8 @@
         "model": "gpt-5.5",
         "display": "GPT-5.5",
         "harness": "codex",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-27T23:40:26Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T05:13:35Z",
         "executed": true,
         "content_hash": "ce53f68df3c7767d1a9be1b84eb44e24b4bbd8209132ea5cc10f4dc882c9a367",
         "timeout_seconds": 600,
@@ -3975,10 +4827,10 @@
               "input_cost_usd": 0.005555
             },
             "measured": {
-              "input_tokens": 34636,
-              "cache_read_input_tokens": 518272,
-              "output_tokens": 7351,
-              "cost_usd": 2.98507
+              "input_tokens": 74209,
+              "cache_read_input_tokens": 547712,
+              "output_tokens": 8197,
+              "cost_usd": 3.355515
             },
             "expectations": [
               {
@@ -4069,16 +4921,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 28,
+                "command_execution": 32,
                 "file_change": 1
               },
-              "total_tool_calls": 29
+              "total_tool_calls": 33
             },
             "timing": {
-              "total_tokens": 560259,
-              "executor_duration_seconds": 311.5
+              "total_tokens": 630118,
+              "executor_duration_seconds": 240
             },
-            "spec_hash": "9d33e883d043938306b2e1bedbcf8077133ae0becdf06b38b68a44fe3eb789ae"
+            "spec_hash": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
           },
           {
             "id": "ci-dependabot",
@@ -4181,31 +5033,31 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 210,
+          "avg_run_seconds": 174.2,
           "estimate": {
             "input_tokens": 2233,
             "input_cost_usd": 0.011165
           },
           "measured": {
-            "input_tokens": 72071,
-            "cache_read_input_tokens": 717952,
-            "output_tokens": 11444,
-            "cost_usd": 4.293435
+            "input_tokens": 111644,
+            "cache_read_input_tokens": 747392,
+            "output_tokens": 12290,
+            "cost_usd": 4.66388
           }
         },
         "baseline": {
-          "ran_at": "2026-06-21T16:15:39Z",
+          "ran_at": "2026-08-15T05:13:35Z",
           "summary": {
             "passed": 0,
             "failed": 2,
             "total": 2,
             "pass_rate": 0,
-            "avg_run_seconds": 147,
+            "avg_run_seconds": 230.8,
             "measured": {
-              "input_tokens": 146516,
-              "cache_read_input_tokens": 812928,
-              "output_tokens": 11651,
-              "cost_usd": 5.14675
+              "input_tokens": 140442,
+              "cache_read_input_tokens": 1212160,
+              "output_tokens": 14635,
+              "cost_usd": 7.20206
             }
           },
           "results": [
@@ -4213,21 +5065,21 @@
               "id": "goreleaser-setup",
               "passed": false,
               "measured": {
-                "input_tokens": 115856,
-                "cache_read_input_tokens": 589824,
-                "output_tokens": 6820,
-                "cost_usd": 3.733
+                "input_tokens": 109782,
+                "cache_read_input_tokens": 989056,
+                "output_tokens": 9804,
+                "cost_usd": 5.78831
               },
               "summary": {
-                "passed": 0,
-                "failed": 0,
-                "total": 0,
+                "passed": 7,
+                "failed": 2,
+                "total": 9,
                 "pass_rate": 0.777778
               },
               "timing": {
-                "executor_duration_seconds": 185.1
+                "executor_duration_seconds": 352.6
               },
-              "fingerprint": "9d33e883d043938306b2e1bedbcf8077133ae0becdf06b38b68a44fe3eb789ae"
+              "fingerprint": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
             },
             {
               "id": "ci-dependabot",
@@ -4252,22 +5104,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-06-21T16:15:39Z",
+          "ran_at": "2026-06-27T23:40:26Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 120.1,
+            "avg_run_seconds": 210,
             "estimate": {
               "input_tokens": 2233,
               "input_cost_usd": 0.011165
             },
             "measured": {
-              "input_tokens": 69559,
-              "cache_read_input_tokens": 487168,
-              "output_tokens": 9101,
-              "cost_usd": 3.056665
+              "input_tokens": 72071,
+              "cache_read_input_tokens": 717952,
+              "output_tokens": 11444,
+              "cost_usd": 4.293435
             }
           },
           "results": [
@@ -4279,10 +5131,10 @@
                 "input_cost_usd": 0.005555
               },
               "measured": {
-                "input_tokens": 46629,
-                "cache_read_input_tokens": 370304,
-                "output_tokens": 5887,
-                "cost_usd": 2.261275
+                "input_tokens": 34636,
+                "cache_read_input_tokens": 518272,
+                "output_tokens": 7351,
+                "cost_usd": 2.98507
               },
               "summary": {
                 "passed": 9,
@@ -4291,7 +5143,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 169.9
+                "executor_duration_seconds": 311.5
               }
             },
             {
@@ -4302,10 +5154,10 @@
                 "input_cost_usd": 0.00561
               },
               "measured": {
-                "input_tokens": 22930,
-                "cache_read_input_tokens": 116864,
-                "output_tokens": 3214,
-                "cost_usd": 0.79539
+                "input_tokens": 37435,
+                "cache_read_input_tokens": 199680,
+                "output_tokens": 4093,
+                "cost_usd": 1.308365
               },
               "summary": {
                 "passed": 7,
@@ -4314,14 +5166,1452 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 70.3
+                "executor_duration_seconds": 108.4
               }
             }
           ]
         }
       }
     },
+    "openai/gpt-5.6-luna": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.6-luna",
+        "display": "GPT-5.6 Luna",
+        "harness": "codex",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T04:26:34Z",
+        "executed": true,
+        "content_hash": "8bb133ff128e7c59e779f0244c8dd771cb304a5e4e3d1a47daa373881a66cbe8",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "query": "Set up GoReleaser for this Go project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.2,
+            "spec_hash": "a2e34ca0f5878384098e54db004ff59834eb1d02fe8e151c6c85d3f5bac92ca0"
+          },
+          {
+            "query": "Add a release workflow that publishes binaries and container images for our Go service",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.1,
+            "spec_hash": "0bf123081c14f86829a1b3256af8509469b19f4655eec48169b2f459440a9582"
+          },
+          {
+            "query": "Stamp the version and commit into the Go binary at build time",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.3,
+            "spec_hash": "1005d24775da8628f8b6d6f5e4299ac254058e3a6639584f5a22215c02cb01ff"
+          },
+          {
+            "query": "Add GitHub Actions CI for this Go repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.4,
+            "spec_hash": "9bb53c3e17752eef2cdb7ca163102023e0c5e27e2d4c86b12adff0fefd569000"
+          },
+          {
+            "query": "Configure Dependabot for our Go modules and GitHub Actions",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.6,
+            "spec_hash": "790b0f637d2e0fa0ea7e8357d66036a0a6b0179336d15d4db813e1324619f24b"
+          },
+          {
+            "query": "Publish multi-arch Docker images from our Go release pipeline",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.5,
+            "spec_hash": "03e2bd07706fcd66514852eaf4fa0b4e24a7dd4446d40877e89edf6731134234"
+          },
+          {
+            "query": "Add SBOM generation to the Go release build",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8,
+            "spec_hash": "a74e5fc7c62fb8794df796cc5fb98e5a05fa8951e0219b9d79d8c772c2ea44cc"
+          },
+          {
+            "query": "Set up semantic-release for my npm package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "spec_hash": "fd7d8393bebd71750305eee8448a2b0e4b4bb2597c97e61403707c479b469276"
+          },
+          {
+            "query": "Write a Dockerfile for my Python app",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 25,
+            "spec_hash": "e5a37a363d6ad3ea1dc218f0651e55641a3575f05d9671a847e9302fb7ce23d4"
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 88,
+            "spec_hash": "6af28e494a63e5752b3acc22c4aa9ecca9e9511d024e55bc1f975adbfbf50551"
+          },
+          {
+            "query": "Fix the failing Go unit test in CI",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 94.5,
+            "spec_hash": "1b0492906d7612869843defe575e281ba02fdac6996b394188601c20fe90688a"
+          },
+          {
+            "query": "Write table-driven tests before we cut the release",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 69.5,
+            "spec_hash": "258e36cb6934241f8f276a9481f7642dc295a9f5cf0798a067737cbc4d5d7508"
+          },
+          {
+            "query": "Set up release-please for this TypeScript repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 120,
+            "spec_hash": "22d4c4cd6e32ba1e6ac5e8ec8c6452cee4516275e55f42ab310d83856f93b9e3"
+          }
+        ],
+        "summary": {
+          "passed": 13,
+          "failed": 0,
+          "total": 13,
+          "pass_rate": 1,
+          "avg_run_seconds": 44.5
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.6-luna",
+        "display": "GPT-5.6 Luna",
+        "harness": "codex",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T04:30:13Z",
+        "executed": true,
+        "content_hash": "ce53f68df3c7767d1a9be1b84eb44e24b4bbd8209132ea5cc10f4dc882c9a367",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 1,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "id": "goreleaser-setup",
+            "passed": true,
+            "measured": {
+              "input_tokens": 24253,
+              "cache_read_input_tokens": 143872,
+              "output_tokens": 5209,
+              "cost_usd": 0.199379
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".goreleaser.yaml",
+                "text": "file .goreleaser.yaml exists",
+                "passed": true,
+                "evidence": ".goreleaser.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "CGO_ENABLED=0",
+                "text": ".goreleaser.yaml matches /CGO_ENABLED=0/",
+                "passed": true,
+                "evidence": "CGO_ENABLED=0",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "-trimpath",
+                "text": ".goreleaser.yaml matches /-trimpath/",
+                "passed": true,
+                "evidence": "-trimpath",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "internal/version\\.Version=",
+                "text": ".goreleaser.yaml matches /internal/version\\.Version=/",
+                "passed": true,
+                "evidence": "internal/version.Version=",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "sboms:",
+                "text": ".goreleaser.yaml matches /sboms:/",
+                "passed": true,
+                "evidence": "sboms:",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "internal/version/version.go",
+                "text": "file internal/version/version.go exists",
+                "passed": true,
+                "evidence": "internal/version/version.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/version/version.go",
+                "pattern": "BuildDate",
+                "text": "internal/version/version.go matches /BuildDate/",
+                "passed": true,
+                "evidence": "BuildDate",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "goreleaser check",
+                "requires": "goreleaser",
+                "text": "command `goreleaser check` exits 0",
+                "passed": true,
+                "evidence": "exit 0: • checking                                  path=.goreleaser.yaml\n  • 1 configuration file(s) validated\n  • thanks for using GoReleaser!",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 9,
+              "failed": 0,
+              "total": 9,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 6,
+                "file_change": 2
+              },
+              "total_tool_calls": 8
+            },
+            "timing": {
+              "total_tokens": 173334,
+              "executor_duration_seconds": 105.6
+            },
+            "spec_hash": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
+          },
+          {
+            "id": "ci-dependabot",
+            "passed": true,
+            "measured": {
+              "input_tokens": 26042,
+              "cache_read_input_tokens": 83456,
+              "output_tokens": 2632,
+              "cost_usd": 0.12529
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "go-version-file: go.mod",
+                "text": ".github/workflows/ci.yaml matches /go-version-file: go.mod/",
+                "passed": true,
+                "evidence": "go-version-file: go.mod",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "go test -race",
+                "text": ".github/workflows/ci.yaml matches /go test -race/",
+                "passed": true,
+                "evidence": "go test -race",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "govulncheck",
+                "text": ".github/workflows/ci.yaml matches /govulncheck/",
+                "passed": true,
+                "evidence": "govulncheck",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": ".github/dependabot.yaml",
+                "text": "file .github/dependabot.yaml exists",
+                "passed": true,
+                "evidence": ".github/dependabot.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "package-ecosystem: gomod",
+                "text": ".github/dependabot.yaml matches /package-ecosystem: gomod/",
+                "passed": true,
+                "evidence": "package-ecosystem: gomod",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "directory: /tools",
+                "text": ".github/dependabot.yaml matches /directory: /tools/",
+                "passed": true,
+                "evidence": "directory: /tools",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 5,
+                "file_change": 1
+              },
+              "total_tool_calls": 6
+            },
+            "timing": {
+              "total_tokens": 112130,
+              "executor_duration_seconds": 57.9
+            },
+            "spec_hash": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 81.8,
+          "measured": {
+            "input_tokens": 50295,
+            "cache_read_input_tokens": 227328,
+            "output_tokens": 7841,
+            "cost_usd": 0.324669
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-08-15T04:30:13Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 90.4,
+            "measured": {
+              "input_tokens": 31093,
+              "cache_read_input_tokens": 314880,
+              "output_tokens": 8220,
+              "cost_usd": 0.395293
+            }
+          },
+          "results": [
+            {
+              "id": "goreleaser-setup",
+              "passed": false,
+              "measured": {
+                "input_tokens": 21841,
+                "cache_read_input_tokens": 211456,
+                "output_tokens": 4997,
+                "cost_usd": 0.263279
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 3,
+                "total": 9,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 111.8
+              },
+              "fingerprint": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
+            },
+            {
+              "id": "ci-dependabot",
+              "passed": false,
+              "measured": {
+                "input_tokens": 9252,
+                "cache_read_input_tokens": 103424,
+                "output_tokens": 3223,
+                "cost_usd": 0.132014
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 3,
+                "total": 7,
+                "pass_rate": 0.571429
+              },
+              "timing": {
+                "executor_duration_seconds": 69
+              },
+              "fingerprint": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.6-sol": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "display": "GPT-5.6 Sol",
+        "harness": "codex",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T04:04:49Z",
+        "executed": true,
+        "content_hash": "8bb133ff128e7c59e779f0244c8dd771cb304a5e4e3d1a47daa373881a66cbe8",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "query": "Set up GoReleaser for this Go project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.2,
+            "spec_hash": "a2e34ca0f5878384098e54db004ff59834eb1d02fe8e151c6c85d3f5bac92ca0"
+          },
+          {
+            "query": "Add a release workflow that publishes binaries and container images for our Go service",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "spec_hash": "0bf123081c14f86829a1b3256af8509469b19f4655eec48169b2f459440a9582"
+          },
+          {
+            "query": "Stamp the version and commit into the Go binary at build time",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.7,
+            "spec_hash": "1005d24775da8628f8b6d6f5e4299ac254058e3a6639584f5a22215c02cb01ff"
+          },
+          {
+            "query": "Add GitHub Actions CI for this Go repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.1,
+            "spec_hash": "9bb53c3e17752eef2cdb7ca163102023e0c5e27e2d4c86b12adff0fefd569000"
+          },
+          {
+            "query": "Configure Dependabot for our Go modules and GitHub Actions",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.2,
+            "spec_hash": "790b0f637d2e0fa0ea7e8357d66036a0a6b0179336d15d4db813e1324619f24b"
+          },
+          {
+            "query": "Publish multi-arch Docker images from our Go release pipeline",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.7,
+            "spec_hash": "03e2bd07706fcd66514852eaf4fa0b4e24a7dd4446d40877e89edf6731134234"
+          },
+          {
+            "query": "Add SBOM generation to the Go release build",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "spec_hash": "a74e5fc7c62fb8794df796cc5fb98e5a05fa8951e0219b9d79d8c772c2ea44cc"
+          },
+          {
+            "query": "Set up semantic-release for my npm package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 18.8,
+            "spec_hash": "fd7d8393bebd71750305eee8448a2b0e4b4bb2597c97e61403707c479b469276"
+          },
+          {
+            "query": "Write a Dockerfile for my Python app",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 46.2,
+            "spec_hash": "e5a37a363d6ad3ea1dc218f0651e55641a3575f05d9671a847e9302fb7ce23d4"
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 111.8,
+            "spec_hash": "6af28e494a63e5752b3acc22c4aa9ecca9e9511d024e55bc1f975adbfbf50551"
+          },
+          {
+            "query": "Fix the failing Go unit test in CI",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 29.7,
+            "spec_hash": "1b0492906d7612869843defe575e281ba02fdac6996b394188601c20fe90688a"
+          },
+          {
+            "query": "Write table-driven tests before we cut the release",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 78.5,
+            "spec_hash": "258e36cb6934241f8f276a9481f7642dc295a9f5cf0798a067737cbc4d5d7508"
+          },
+          {
+            "query": "Set up release-please for this TypeScript repo",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 40.2,
+            "spec_hash": "22d4c4cd6e32ba1e6ac5e8ec8c6452cee4516275e55f42ab310d83856f93b9e3"
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 2,
+          "total": 13,
+          "pass_rate": 0.846154,
+          "avg_run_seconds": 29
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.6-sol",
+        "display": "GPT-5.6 Sol",
+        "harness": "codex",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T04:08:51Z",
+        "executed": true,
+        "content_hash": "ce53f68df3c7767d1a9be1b84eb44e24b4bbd8209132ea5cc10f4dc882c9a367",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 5,
+          "output_per_mtok": 30
+        },
+        "results": [
+          {
+            "id": "goreleaser-setup",
+            "passed": false,
+            "measured": {
+              "input_tokens": 40325,
+              "cache_read_input_tokens": 253184,
+              "output_tokens": 5519,
+              "cost_usd": 1.633115
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".goreleaser.yaml",
+                "text": "file .goreleaser.yaml exists",
+                "passed": true,
+                "evidence": ".goreleaser.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "CGO_ENABLED=0",
+                "text": ".goreleaser.yaml matches /CGO_ENABLED=0/",
+                "passed": true,
+                "evidence": "CGO_ENABLED=0",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "-trimpath",
+                "text": ".goreleaser.yaml matches /-trimpath/",
+                "passed": true,
+                "evidence": "-trimpath",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "internal/version\\.Version=",
+                "text": ".goreleaser.yaml matches /internal/version\\.Version=/",
+                "passed": true,
+                "evidence": "internal/version.Version=",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "sboms:",
+                "text": ".goreleaser.yaml matches /sboms:/",
+                "passed": true,
+                "evidence": "sboms:",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "internal/version/version.go",
+                "text": "file internal/version/version.go exists",
+                "passed": true,
+                "evidence": "internal/version/version.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/version/version.go",
+                "pattern": "BuildDate",
+                "text": "internal/version/version.go matches /BuildDate/",
+                "passed": true,
+                "evidence": "BuildDate",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "goreleaser check",
+                "requires": "goreleaser",
+                "text": "command `goreleaser check` exits 0",
+                "passed": false,
+                "evidence": "exit 1:           error=configuration is invalid: scm releases: no remote configured to list refs from\n  ⨯ check failed                                     error=1 out of 1 configuration file(s) have issues",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 8,
+              "failed": 1,
+              "total": 9,
+              "pass_rate": 0.888889
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 13,
+                "file_change": 1
+              },
+              "total_tool_calls": 14
+            },
+            "timing": {
+              "total_tokens": 299028,
+              "executor_duration_seconds": 133.5
+            },
+            "spec_hash": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
+          },
+          {
+            "id": "ci-dependabot",
+            "passed": true,
+            "measured": {
+              "input_tokens": 15031,
+              "cache_read_input_tokens": 85504,
+              "output_tokens": 2076,
+              "cost_usd": 0.564955
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "go-version-file: go.mod",
+                "text": ".github/workflows/ci.yaml matches /go-version-file: go.mod/",
+                "passed": true,
+                "evidence": "go-version-file: go.mod",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "go test -race",
+                "text": ".github/workflows/ci.yaml matches /go test -race/",
+                "passed": true,
+                "evidence": "go test -race",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "govulncheck",
+                "text": ".github/workflows/ci.yaml matches /govulncheck/",
+                "passed": true,
+                "evidence": "govulncheck",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": ".github/dependabot.yaml",
+                "text": "file .github/dependabot.yaml exists",
+                "passed": true,
+                "evidence": ".github/dependabot.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "package-ecosystem: gomod",
+                "text": ".github/dependabot.yaml matches /package-ecosystem: gomod/",
+                "passed": true,
+                "evidence": "package-ecosystem: gomod",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "directory: /tools",
+                "text": ".github/dependabot.yaml matches /directory: /tools/",
+                "passed": true,
+                "evidence": "directory: /tools",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 4,
+                "file_change": 1
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 102611,
+              "executor_duration_seconds": 53.7
+            },
+            "spec_hash": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
+          }
+        ],
+        "summary": {
+          "passed": 1,
+          "failed": 1,
+          "total": 2,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 93.6,
+          "measured": {
+            "input_tokens": 55356,
+            "cache_read_input_tokens": 338688,
+            "output_tokens": 7595,
+            "cost_usd": 2.19807
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-08-15T04:08:51Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 90,
+            "measured": {
+              "input_tokens": 53239,
+              "cache_read_input_tokens": 319744,
+              "output_tokens": 7895,
+              "cost_usd": 2.101765
+            }
+          },
+          "results": [
+            {
+              "id": "goreleaser-setup",
+              "passed": false,
+              "measured": {
+                "input_tokens": 41836,
+                "cache_read_input_tokens": 204032,
+                "output_tokens": 4770,
+                "cost_usd": 1.37244
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 2,
+                "total": 9,
+                "pass_rate": 0.777778
+              },
+              "timing": {
+                "executor_duration_seconds": 107.9
+              },
+              "fingerprint": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
+            },
+            {
+              "id": "ci-dependabot",
+              "passed": false,
+              "measured": {
+                "input_tokens": 11403,
+                "cache_read_input_tokens": 115712,
+                "output_tokens": 3125,
+                "cost_usd": 0.729325
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 1,
+                "total": 7,
+                "pass_rate": 0.857143
+              },
+              "timing": {
+                "executor_duration_seconds": 72.1
+              },
+              "fingerprint": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
+            }
+          ]
+        }
+      }
+    },
+    "openai/gpt-5.6-terra": {
+      "triggers": {
+        "provider": "openai",
+        "model": "gpt-5.6-terra",
+        "display": "GPT-5.6 Terra",
+        "harness": "codex",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T04:12:47Z",
+        "executed": true,
+        "content_hash": "8bb133ff128e7c59e779f0244c8dd771cb304a5e4e3d1a47daa373881a66cbe8",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "query": "Set up GoReleaser for this Go project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.7,
+            "spec_hash": "a2e34ca0f5878384098e54db004ff59834eb1d02fe8e151c6c85d3f5bac92ca0"
+          },
+          {
+            "query": "Add a release workflow that publishes binaries and container images for our Go service",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7,
+            "spec_hash": "0bf123081c14f86829a1b3256af8509469b19f4655eec48169b2f459440a9582"
+          },
+          {
+            "query": "Stamp the version and commit into the Go binary at build time",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.5,
+            "spec_hash": "1005d24775da8628f8b6d6f5e4299ac254058e3a6639584f5a22215c02cb01ff"
+          },
+          {
+            "query": "Add GitHub Actions CI for this Go repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.8,
+            "spec_hash": "9bb53c3e17752eef2cdb7ca163102023e0c5e27e2d4c86b12adff0fefd569000"
+          },
+          {
+            "query": "Configure Dependabot for our Go modules and GitHub Actions",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.5,
+            "spec_hash": "790b0f637d2e0fa0ea7e8357d66036a0a6b0179336d15d4db813e1324619f24b"
+          },
+          {
+            "query": "Publish multi-arch Docker images from our Go release pipeline",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.1,
+            "spec_hash": "03e2bd07706fcd66514852eaf4fa0b4e24a7dd4446d40877e89edf6731134234"
+          },
+          {
+            "query": "Add SBOM generation to the Go release build",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.4,
+            "spec_hash": "a74e5fc7c62fb8794df796cc5fb98e5a05fa8951e0219b9d79d8c772c2ea44cc"
+          },
+          {
+            "query": "Set up semantic-release for my npm package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 24.4,
+            "spec_hash": "fd7d8393bebd71750305eee8448a2b0e4b4bb2597c97e61403707c479b469276"
+          },
+          {
+            "query": "Write a Dockerfile for my Python app",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 15.6,
+            "spec_hash": "e5a37a363d6ad3ea1dc218f0651e55641a3575f05d9671a847e9302fb7ce23d4"
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 45,
+            "spec_hash": "6af28e494a63e5752b3acc22c4aa9ecca9e9511d024e55bc1f975adbfbf50551"
+          },
+          {
+            "query": "Fix the failing Go unit test in CI",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 56.4,
+            "spec_hash": "1b0492906d7612869843defe575e281ba02fdac6996b394188601c20fe90688a"
+          },
+          {
+            "query": "Write table-driven tests before we cut the release",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 39.9,
+            "spec_hash": "258e36cb6934241f8f276a9481f7642dc295a9f5cf0798a067737cbc4d5d7508"
+          },
+          {
+            "query": "Set up release-please for this TypeScript repo",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 34.4,
+            "spec_hash": "22d4c4cd6e32ba1e6ac5e8ec8c6452cee4516275e55f42ab310d83856f93b9e3"
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 2,
+          "total": 13,
+          "pass_rate": 0.846154,
+          "avg_run_seconds": 22.1
+        }
+      },
+      "evals": {
+        "provider": "openai",
+        "model": "gpt-5.6-terra",
+        "display": "GPT-5.6 Terra",
+        "harness": "codex",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T04:18:50Z",
+        "executed": true,
+        "content_hash": "ce53f68df3c7767d1a9be1b84eb44e24b4bbd8209132ea5cc10f4dc882c9a367",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2.5,
+          "output_per_mtok": 15
+        },
+        "results": [
+          {
+            "id": "goreleaser-setup",
+            "passed": true,
+            "measured": {
+              "input_tokens": 30040,
+              "cache_read_input_tokens": 354048,
+              "output_tokens": 7711,
+              "cost_usd": 1.075885
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".goreleaser.yaml",
+                "text": "file .goreleaser.yaml exists",
+                "passed": true,
+                "evidence": ".goreleaser.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "CGO_ENABLED=0",
+                "text": ".goreleaser.yaml matches /CGO_ENABLED=0/",
+                "passed": true,
+                "evidence": "CGO_ENABLED=0",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "-trimpath",
+                "text": ".goreleaser.yaml matches /-trimpath/",
+                "passed": true,
+                "evidence": "-trimpath",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "internal/version\\.Version=",
+                "text": ".goreleaser.yaml matches /internal/version\\.Version=/",
+                "passed": true,
+                "evidence": "internal/version.Version=",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "sboms:",
+                "text": ".goreleaser.yaml matches /sboms:/",
+                "passed": true,
+                "evidence": "sboms:",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "internal/version/version.go",
+                "text": "file internal/version/version.go exists",
+                "passed": true,
+                "evidence": "internal/version/version.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/version/version.go",
+                "pattern": "BuildDate",
+                "text": "internal/version/version.go matches /BuildDate/",
+                "passed": true,
+                "evidence": "BuildDate",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "goreleaser check",
+                "requires": "goreleaser",
+                "text": "command `goreleaser check` exits 0",
+                "passed": true,
+                "evidence": "exit 0: • checking                                  path=.goreleaser.yaml\n  • 1 configuration file(s) validated\n  • thanks for using GoReleaser!",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 9,
+              "failed": 0,
+              "total": 9,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 13,
+                "file_change": 3
+              },
+              "total_tool_calls": 16
+            },
+            "timing": {
+              "total_tokens": 391799,
+              "executor_duration_seconds": 166.1
+            },
+            "spec_hash": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
+          },
+          {
+            "id": "ci-dependabot",
+            "passed": true,
+            "measured": {
+              "input_tokens": 11413,
+              "cache_read_input_tokens": 89600,
+              "output_tokens": 2474,
+              "cost_usd": 0.289642
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "go-version-file: go.mod",
+                "text": ".github/workflows/ci.yaml matches /go-version-file: go.mod/",
+                "passed": true,
+                "evidence": "go-version-file: go.mod",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "go test -race",
+                "text": ".github/workflows/ci.yaml matches /go test -race/",
+                "passed": true,
+                "evidence": "go test -race",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "govulncheck",
+                "text": ".github/workflows/ci.yaml matches /govulncheck/",
+                "passed": true,
+                "evidence": "govulncheck",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": ".github/dependabot.yaml",
+                "text": "file .github/dependabot.yaml exists",
+                "passed": true,
+                "evidence": ".github/dependabot.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "package-ecosystem: gomod",
+                "text": ".github/dependabot.yaml matches /package-ecosystem: gomod/",
+                "passed": true,
+                "evidence": "package-ecosystem: gomod",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "directory: /tools",
+                "text": ".github/dependabot.yaml matches /directory: /tools/",
+                "passed": true,
+                "evidence": "directory: /tools",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 3,
+                "file_change": 2
+              },
+              "total_tool_calls": 5
+            },
+            "timing": {
+              "total_tokens": 103487,
+              "executor_duration_seconds": 55
+            },
+            "spec_hash": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 110.6,
+          "measured": {
+            "input_tokens": 41453,
+            "cache_read_input_tokens": 443648,
+            "output_tokens": 10185,
+            "cost_usd": 1.365527
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-08-15T04:18:50Z",
+          "summary": {
+            "passed": 0,
+            "failed": 2,
+            "total": 2,
+            "pass_rate": 0,
+            "avg_run_seconds": 128.9,
+            "measured": {
+              "input_tokens": 39657,
+              "cache_read_input_tokens": 479232,
+              "output_tokens": 10690,
+              "cost_usd": 1.457573
+            }
+          },
+          "results": [
+            {
+              "id": "goreleaser-setup",
+              "passed": false,
+              "measured": {
+                "input_tokens": 30502,
+                "cache_read_input_tokens": 380672,
+                "output_tokens": 7945,
+                "cost_usd": 1.14711
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 3,
+                "total": 9,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 196.1
+              },
+              "fingerprint": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
+            },
+            {
+              "id": "ci-dependabot",
+              "passed": false,
+              "measured": {
+                "input_tokens": 9155,
+                "cache_read_input_tokens": 98560,
+                "output_tokens": 2745,
+                "cost_usd": 0.310463
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 3,
+                "total": 7,
+                "pass_rate": 0.571429
+              },
+              "timing": {
+                "executor_duration_seconds": 61.6
+              },
+              "fingerprint": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
+            }
+          ]
+        }
+      }
+    },
     "xai/grok-4.5": {
+      "triggers": {
+        "provider": "xai",
+        "model": "grok-4.5",
+        "display": "Grok 4.5",
+        "harness": "grok",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T05:15:06Z",
+        "executed": true,
+        "content_hash": "8bb133ff128e7c59e779f0244c8dd771cb304a5e4e3d1a47daa373881a66cbe8",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "query": "Set up GoReleaser for this Go project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.7,
+            "spec_hash": "a2e34ca0f5878384098e54db004ff59834eb1d02fe8e151c6c85d3f5bac92ca0"
+          },
+          {
+            "query": "Add a release workflow that publishes binaries and container images for our Go service",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.5,
+            "spec_hash": "0bf123081c14f86829a1b3256af8509469b19f4655eec48169b2f459440a9582"
+          },
+          {
+            "query": "Stamp the version and commit into the Go binary at build time",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.7,
+            "spec_hash": "1005d24775da8628f8b6d6f5e4299ac254058e3a6639584f5a22215c02cb01ff"
+          },
+          {
+            "query": "Add GitHub Actions CI for this Go repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6,
+            "spec_hash": "9bb53c3e17752eef2cdb7ca163102023e0c5e27e2d4c86b12adff0fefd569000"
+          },
+          {
+            "query": "Configure Dependabot for our Go modules and GitHub Actions",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6,
+            "spec_hash": "790b0f637d2e0fa0ea7e8357d66036a0a6b0179336d15d4db813e1324619f24b"
+          },
+          {
+            "query": "Publish multi-arch Docker images from our Go release pipeline",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "03e2bd07706fcd66514852eaf4fa0b4e24a7dd4446d40877e89edf6731134234"
+          },
+          {
+            "query": "Add SBOM generation to the Go release build",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.9,
+            "spec_hash": "a74e5fc7c62fb8794df796cc5fb98e5a05fa8951e0219b9d79d8c772c2ea44cc"
+          },
+          {
+            "query": "Set up semantic-release for my npm package",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.6,
+            "spec_hash": "fd7d8393bebd71750305eee8448a2b0e4b4bb2597c97e61403707c479b469276"
+          },
+          {
+            "query": "Write a Dockerfile for my Python app",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 11.9,
+            "spec_hash": "e5a37a363d6ad3ea1dc218f0651e55641a3575f05d9671a847e9302fb7ce23d4"
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.8,
+            "spec_hash": "6af28e494a63e5752b3acc22c4aa9ecca9e9511d024e55bc1f975adbfbf50551"
+          },
+          {
+            "query": "Fix the failing Go unit test in CI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10.6,
+            "spec_hash": "1b0492906d7612869843defe575e281ba02fdac6996b394188601c20fe90688a"
+          },
+          {
+            "query": "Write table-driven tests before we cut the release",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 12.5,
+            "spec_hash": "258e36cb6934241f8f276a9481f7642dc295a9f5cf0798a067737cbc4d5d7508"
+          },
+          {
+            "query": "Set up release-please for this TypeScript repo",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 16.9,
+            "spec_hash": "22d4c4cd6e32ba1e6ac5e8ec8c6452cee4516275e55f42ab310d83856f93b9e3"
+          }
+        ],
+        "summary": {
+          "passed": 13,
+          "failed": 0,
+          "total": 13,
+          "pass_rate": 1,
+          "avg_run_seconds": 8.9
+        }
+      },
       "evals": {
         "provider": "xai",
         "model": "grok-4.5",
@@ -4618,6 +6908,413 @@
               "timing": {
                 "executor_duration_seconds": 12.6
               }
+            }
+          ]
+        }
+      }
+    },
+    "xai/grok-4.6": {
+      "triggers": {
+        "provider": "xai",
+        "model": "grok-4.6",
+        "display": "Grok 4.6",
+        "harness": "grok",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T05:17:20Z",
+        "executed": true,
+        "content_hash": "8bb133ff128e7c59e779f0244c8dd771cb304a5e4e3d1a47daa373881a66cbe8",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "query": "Set up GoReleaser for this Go project",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.1,
+            "spec_hash": "a2e34ca0f5878384098e54db004ff59834eb1d02fe8e151c6c85d3f5bac92ca0"
+          },
+          {
+            "query": "Add a release workflow that publishes binaries and container images for our Go service",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.1,
+            "spec_hash": "0bf123081c14f86829a1b3256af8509469b19f4655eec48169b2f459440a9582"
+          },
+          {
+            "query": "Stamp the version and commit into the Go binary at build time",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "spec_hash": "1005d24775da8628f8b6d6f5e4299ac254058e3a6639584f5a22215c02cb01ff"
+          },
+          {
+            "query": "Add GitHub Actions CI for this Go repo",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "9bb53c3e17752eef2cdb7ca163102023e0c5e27e2d4c86b12adff0fefd569000"
+          },
+          {
+            "query": "Configure Dependabot for our Go modules and GitHub Actions",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "spec_hash": "790b0f637d2e0fa0ea7e8357d66036a0a6b0179336d15d4db813e1324619f24b"
+          },
+          {
+            "query": "Publish multi-arch Docker images from our Go release pipeline",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.8,
+            "spec_hash": "03e2bd07706fcd66514852eaf4fa0b4e24a7dd4446d40877e89edf6731134234"
+          },
+          {
+            "query": "Add SBOM generation to the Go release build",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "a74e5fc7c62fb8794df796cc5fb98e5a05fa8951e0219b9d79d8c772c2ea44cc"
+          },
+          {
+            "query": "Set up semantic-release for my npm package",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 8.9,
+            "spec_hash": "fd7d8393bebd71750305eee8448a2b0e4b4bb2597c97e61403707c479b469276"
+          },
+          {
+            "query": "Write a Dockerfile for my Python app",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 9.5,
+            "spec_hash": "e5a37a363d6ad3ea1dc218f0651e55641a3575f05d9671a847e9302fb7ce23d4"
+          },
+          {
+            "query": "Scaffold a new Go project with a Makefile",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 10.6,
+            "spec_hash": "6af28e494a63e5752b3acc22c4aa9ecca9e9511d024e55bc1f975adbfbf50551"
+          },
+          {
+            "query": "Fix the failing Go unit test in CI",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "spec_hash": "1b0492906d7612869843defe575e281ba02fdac6996b394188601c20fe90688a"
+          },
+          {
+            "query": "Write table-driven tests before we cut the release",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 32.3,
+            "spec_hash": "258e36cb6934241f8f276a9481f7642dc295a9f5cf0798a067737cbc4d5d7508"
+          },
+          {
+            "query": "Set up release-please for this TypeScript repo",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.6,
+            "spec_hash": "22d4c4cd6e32ba1e6ac5e8ec8c6452cee4516275e55f42ab310d83856f93b9e3"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 3,
+          "total": 13,
+          "pass_rate": 0.769231,
+          "avg_run_seconds": 9.1
+        }
+      },
+      "evals": {
+        "provider": "xai",
+        "model": "grok-4.6",
+        "display": "Grok 4.6",
+        "harness": "grok",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T05:24:11Z",
+        "executed": true,
+        "content_hash": "ce53f68df3c7767d1a9be1b84eb44e24b4bbd8209132ea5cc10f4dc882c9a367",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "id": "goreleaser-setup",
+            "passed": true,
+            "measured": {
+              "input_tokens": 73774,
+              "cache_read_input_tokens": 463872,
+              "output_tokens": 15288,
+              "cost_usd": 0.080106
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".goreleaser.yaml",
+                "text": "file .goreleaser.yaml exists",
+                "passed": true,
+                "evidence": ".goreleaser.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "CGO_ENABLED=0",
+                "text": ".goreleaser.yaml matches /CGO_ENABLED=0/",
+                "passed": true,
+                "evidence": "CGO_ENABLED=0",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "-trimpath",
+                "text": ".goreleaser.yaml matches /-trimpath/",
+                "passed": true,
+                "evidence": "-trimpath",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "internal/version\\.Version=",
+                "text": ".goreleaser.yaml matches /internal/version\\.Version=/",
+                "passed": true,
+                "evidence": "internal/version.Version=",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".goreleaser.yaml",
+                "pattern": "sboms:",
+                "text": ".goreleaser.yaml matches /sboms:/",
+                "passed": true,
+                "evidence": "sboms:",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": "internal/version/version.go",
+                "text": "file internal/version/version.go exists",
+                "passed": true,
+                "evidence": "internal/version/version.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/version/version.go",
+                "pattern": "BuildDate",
+                "text": "internal/version/version.go matches /BuildDate/",
+                "passed": true,
+                "evidence": "BuildDate",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "goreleaser check",
+                "requires": "goreleaser",
+                "text": "command `goreleaser check` exits 0",
+                "passed": true,
+                "evidence": "exit 0: • checking                                  path=.goreleaser.yaml\n  • 1 configuration file(s) validated\n  • thanks for using GoReleaser!",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 9,
+              "failed": 0,
+              "total": 9,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 552934,
+              "executor_duration_seconds": 236.6
+            },
+            "spec_hash": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
+          },
+          {
+            "id": "ci-dependabot",
+            "passed": true,
+            "measured": {
+              "input_tokens": 26836,
+              "cache_read_input_tokens": 45568,
+              "output_tokens": 2568,
+              "cost_usd": 0.015617
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": ".github/workflows/ci.yaml",
+                "text": "file .github/workflows/ci.yaml exists",
+                "passed": true,
+                "evidence": ".github/workflows/ci.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "go-version-file: go.mod",
+                "text": ".github/workflows/ci.yaml matches /go-version-file: go.mod/",
+                "passed": true,
+                "evidence": "go-version-file: go.mod",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "go test -race",
+                "text": ".github/workflows/ci.yaml matches /go test -race/",
+                "passed": true,
+                "evidence": "go test -race",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/ci.yaml",
+                "pattern": "govulncheck",
+                "text": ".github/workflows/ci.yaml matches /govulncheck/",
+                "passed": true,
+                "evidence": "govulncheck",
+                "source": "assertion"
+              },
+              {
+                "type": "file_exists",
+                "path": ".github/dependabot.yaml",
+                "text": "file .github/dependabot.yaml exists",
+                "passed": true,
+                "evidence": ".github/dependabot.yaml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "package-ecosystem: gomod",
+                "text": ".github/dependabot.yaml matches /package-ecosystem: gomod/",
+                "passed": true,
+                "evidence": "package-ecosystem: gomod",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/dependabot.yaml",
+                "pattern": "directory: /tools",
+                "text": ".github/dependabot.yaml matches /directory: /tools/",
+                "passed": true,
+                "evidence": "directory: /tools",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 74972,
+              "executor_duration_seconds": 36.7
+            },
+            "spec_hash": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 136.7,
+          "measured": {
+            "input_tokens": 100610,
+            "cache_read_input_tokens": 509440,
+            "output_tokens": 17856,
+            "cost_usd": 0.095723
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-08-15T05:24:11Z",
+          "summary": {
+            "passed": 1,
+            "failed": 0,
+            "errored": 1,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 152.7,
+            "measured": {
+              "input_tokens": 59974,
+              "cache_read_input_tokens": 621440,
+              "output_tokens": 7088,
+              "cost_usd": 0.080443
+            }
+          },
+          "results": [
+            {
+              "id": "goreleaser-setup",
+              "runtime_error": "grok session cancelled (headless permission prompt)",
+              "timing": {
+                "executor_duration_seconds": 173.8
+              },
+              "fingerprint": "ef32bef7f4d09938e5b7312ea322aa935de96f3d361b463636ca79520b0d5be1"
+            },
+            {
+              "id": "ci-dependabot",
+              "passed": true,
+              "measured": {
+                "input_tokens": 59974,
+                "cache_read_input_tokens": 621440,
+                "output_tokens": 7088,
+                "cost_usd": 0.080443
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 131.5
+              },
+              "fingerprint": "bd740cd75fa4f8745f78894c69ce44feb8777c16fe413069b69ee87fc898e9f1"
             }
           ]
         }

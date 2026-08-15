@@ -12,8 +12,7 @@
   "report": {
     "thresholds": {
       "triggers_min_pass_rate": 0.55,
-      "evals_min_pass_rate": 0.75,
-      "models": ["anthropic/claude-sonnet-4-6", "anthropic/claude-opus-4-8", "openai/gpt-5.4", "openai/gpt-5.5"]
+      "evals_min_pass_rate": 0.75
     }
   }
 }

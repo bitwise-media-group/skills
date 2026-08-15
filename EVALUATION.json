@@ -1,7 +1,7 @@
 {
   "schema": 3,
-  "tool_version": "v0.6.0-18-g123cd4d-dirty",
-  "latest_run": "2026-07-31T22:58:45Z",
+  "tool_version": "0.7.0",
+  "latest_run": "2026-08-15T05:45:41Z",
   "plugins": {
     "actions": {
       "triggers": {
@@ -126,7 +126,11 @@
           "failed": 15,
           "total": 55,
           "pass_rate": 0.727273,
-          "avg_run_seconds": 14.9
+          "avg_run_seconds": 15.6,
+          "previous_delta": {
+            "rate": 0.093127,
+            "avg_run_seconds": -0.3
+          }
         },
         "openai/gpt-5.4": {
           "provider": "openai",
@@ -135,14 +139,14 @@
           "failed": 1,
           "total": 55,
           "pass_rate": 0.981818,
-          "avg_run_seconds": 34.8,
+          "avg_run_seconds": 35.2,
           "estimate": {
             "input_tokens": 69257,
             "input_cost_usd": 0.173155
           },
           "previous_delta": {
             "rate": 0.036363,
-            "avg_run_seconds": 0.4,
+            "avg_run_seconds": 1.4,
             "input_tokens": 0,
             "cost_usd": 0
           }
@@ -154,10 +158,16 @@
           "failed": 2,
           "total": 55,
           "pass_rate": 0.963636,
-          "avg_run_seconds": 33.4,
+          "avg_run_seconds": 32.9,
           "estimate": {
             "input_tokens": 69257,
             "input_cost_usd": 0.05195
+          },
+          "previous_delta": {
+            "rate": 0.03771,
+            "avg_run_seconds": 8.3,
+            "input_tokens": 41422,
+            "cost_usd": 0.031071
           }
         },
         "openai/gpt-5.5": {
@@ -167,14 +177,14 @@
           "failed": 2,
           "total": 55,
           "pass_rate": 0.963636,
-          "avg_run_seconds": 32.4,
+          "avg_run_seconds": 32.9,
           "estimate": {
             "input_tokens": 69257,
             "input_cost_usd": 0.346285
           },
           "previous_delta": {
             "rate": 0.03771,
-            "avg_run_seconds": 1.9,
+            "avg_run_seconds": 3.8,
             "input_tokens": 35856,
             "cost_usd": 0.17928
           }
@@ -182,18 +192,18 @@
         "openai/gpt-5.6-luna": {
           "provider": "openai",
           "display": "GPT-5.6 Luna",
-          "passed": 48,
-          "failed": 7,
+          "passed": 49,
+          "failed": 6,
           "total": 55,
-          "pass_rate": 0.872727,
-          "avg_run_seconds": 19.7,
+          "pass_rate": 0.890909,
+          "avg_run_seconds": 20.7,
           "estimate": {
             "input_tokens": 69257,
             "input_cost_usd": 0.069257
           },
           "previous_delta": {
-            "rate": 0.043459,
-            "avg_run_seconds": 2.8,
+            "rate": 0.061641,
+            "avg_run_seconds": 3.7,
             "input_tokens": 22982,
             "cost_usd": 0.022982
           }
@@ -231,7 +241,7 @@
           },
           "previous_delta": {
             "rate": 0.03725,
-            "avg_run_seconds": 3.9,
+            "avg_run_seconds": 4.2,
             "input_tokens": 22982,
             "cost_usd": 0.057458
           }
@@ -248,6 +258,15 @@
             "rate": 0.321429,
             "avg_run_seconds": 2
           }
+        },
+        "xai/grok-4.6": {
+          "provider": "xai",
+          "display": "Grok 4.6",
+          "passed": 47,
+          "failed": 8,
+          "total": 55,
+          "pass_rate": 0.854545,
+          "avg_run_seconds": 7.7
         }
       },
       "evals": {
@@ -547,29 +566,35 @@
           "failed": 0,
           "total": 9,
           "pass_rate": 1,
-          "avg_run_seconds": 20.8,
+          "avg_run_seconds": 18,
           "measured": {
-            "input_tokens": 101312,
-            "cache_read_input_tokens": 1110400,
-            "output_tokens": 26171
+            "input_tokens": 100370,
+            "cache_read_input_tokens": 1041280,
+            "output_tokens": 27361
           },
           "baseline": {
             "passed": 6,
             "failed": 3,
             "total": 9,
             "pass_rate": 0.666667,
-            "avg_run_seconds": 38.1,
+            "avg_run_seconds": 36.6,
             "measured": {
-              "input_tokens": 371878,
-              "cache_read_input_tokens": 2584064,
-              "output_tokens": 55238
+              "input_tokens": 368437,
+              "cache_read_input_tokens": 2525568,
+              "output_tokens": 53520
             }
+          },
+          "previous_delta": {
+            "rate": 0,
+            "avg_run_seconds": -2.6,
+            "input_tokens": 34591,
+            "output_tokens": 12353
           },
           "baseline_delta": {
             "rate": 0.333333,
-            "avg_run_seconds": -17.3,
-            "input_tokens": -270566,
-            "output_tokens": -29067
+            "avg_run_seconds": -18.6,
+            "input_tokens": -268067,
+            "output_tokens": -26159
           }
         },
         "openai/gpt-5.4": {
@@ -579,43 +604,43 @@
           "failed": 0,
           "total": 9,
           "pass_rate": 1,
-          "avg_run_seconds": 77.8,
+          "avg_run_seconds": 73.5,
           "estimate": {
             "input_tokens": 11893,
             "input_cost_usd": 0.029734
           },
           "measured": {
-            "input_tokens": 146843,
-            "cache_read_input_tokens": 867712,
-            "output_tokens": 15914,
-            "cost_usd": 2.775098
+            "input_tokens": 111399,
+            "cache_read_input_tokens": 825984,
+            "output_tokens": 14141,
+            "cost_usd": 2.555573
           },
           "baseline": {
             "passed": 7,
             "failed": 2,
             "total": 9,
             "pass_rate": 0.777778,
-            "avg_run_seconds": 88.7,
+            "avg_run_seconds": 51.3,
             "measured": {
-              "input_tokens": 117660,
-              "cache_read_input_tokens": 982528,
-              "output_tokens": 18528,
-              "cost_usd": 3.02839
+              "input_tokens": 114776,
+              "cache_read_input_tokens": 936064,
+              "output_tokens": 17668,
+              "cost_usd": 2.892121
             }
           },
           "previous_delta": {
-            "rate": 0.444444,
-            "avg_run_seconds": -74.9,
-            "input_tokens": -12507,
-            "output_tokens": -3019,
-            "cost_usd": -0.320712
+            "rate": 0.222222,
+            "avg_run_seconds": -15.8,
+            "input_tokens": -73923,
+            "output_tokens": -6847,
+            "cost_usd": -0.845913
           },
           "baseline_delta": {
             "rate": 0.222222,
-            "avg_run_seconds": -10.9,
-            "input_tokens": 29183,
-            "output_tokens": -2614,
-            "cost_usd": -0.253292
+            "avg_run_seconds": 22.2,
+            "input_tokens": -3377,
+            "output_tokens": -3527,
+            "cost_usd": -0.336548
           }
         },
         "openai/gpt-5.4-mini": {
@@ -625,36 +650,43 @@
           "failed": 0,
           "total": 9,
           "pass_rate": 1,
-          "avg_run_seconds": 35.3,
+          "avg_run_seconds": 37.5,
           "estimate": {
             "input_tokens": 11893,
             "input_cost_usd": 0.00892
           },
           "measured": {
-            "input_tokens": 91436,
-            "cache_read_input_tokens": 698240,
-            "output_tokens": 14351,
-            "cost_usd": 0.656838
+            "input_tokens": 93621,
+            "cache_read_input_tokens": 795520,
+            "output_tokens": 16617,
+            "cost_usd": 0.741633
           },
           "baseline": {
-            "passed": 4,
-            "failed": 5,
+            "passed": 5,
+            "failed": 4,
             "total": 9,
-            "pass_rate": 0.444444,
-            "avg_run_seconds": 62.2,
+            "pass_rate": 0.555556,
+            "avg_run_seconds": 61.4,
             "measured": {
-              "input_tokens": 268750,
-              "cache_read_input_tokens": 909440,
-              "output_tokens": 26728,
-              "cost_usd": 1.003918
+              "input_tokens": 270650,
+              "cache_read_input_tokens": 893696,
+              "output_tokens": 26584,
+              "cost_usd": 0.992887
             }
           },
+          "previous_delta": {
+            "rate": 0,
+            "avg_run_seconds": 5.5,
+            "input_tokens": 37262,
+            "output_tokens": 8222,
+            "cost_usd": 0.347377
+          },
           "baseline_delta": {
-            "rate": 0.555556,
-            "avg_run_seconds": -26.9,
-            "input_tokens": -177314,
-            "output_tokens": -12377,
-            "cost_usd": -0.34708
+            "rate": 0.444444,
+            "avg_run_seconds": -23.9,
+            "input_tokens": -177029,
+            "output_tokens": -9967,
+            "cost_usd": -0.251254
           }
         },
         "openai/gpt-5.5": {
@@ -670,37 +702,37 @@
             "input_cost_usd": 0.059465
           },
           "measured": {
-            "input_tokens": 196261,
-            "cache_read_input_tokens": 985984,
-            "output_tokens": 16846,
-            "cost_usd": 6.416605
+            "input_tokens": 193686,
+            "cache_read_input_tokens": 977152,
+            "output_tokens": 16873,
+            "cost_usd": 6.36038
           },
           "baseline": {
-            "passed": 6,
-            "failed": 3,
+            "passed": 7,
+            "failed": 2,
             "total": 9,
-            "pass_rate": 0.666667,
-            "avg_run_seconds": 119.4,
+            "pass_rate": 0.777778,
+            "avg_run_seconds": 83.7,
             "measured": {
-              "input_tokens": 129028,
-              "cache_read_input_tokens": 948736,
-              "output_tokens": 16831,
-              "cost_usd": 5.89375
+              "input_tokens": 130236,
+              "cache_read_input_tokens": 928000,
+              "output_tokens": 16701,
+              "cost_usd": 5.79221
             }
           },
           "previous_delta": {
-            "rate": 0.222222,
-            "avg_run_seconds": -0.6,
-            "input_tokens": -4443,
-            "output_tokens": 118,
-            "cost_usd": -0.210675
+            "rate": 0.111111,
+            "avg_run_seconds": -0.9,
+            "input_tokens": -15890,
+            "output_tokens": -295,
+            "cost_usd": -0.23422
           },
           "baseline_delta": {
-            "rate": 0.333333,
-            "avg_run_seconds": -69.5,
-            "input_tokens": 67233,
-            "output_tokens": 15,
-            "cost_usd": 0.522855
+            "rate": 0.222222,
+            "avg_run_seconds": -33.8,
+            "input_tokens": 63450,
+            "output_tokens": 172,
+            "cost_usd": 0.56817
           }
         },
         "openai/gpt-5.6-luna": {
@@ -710,43 +742,43 @@
           "failed": 0,
           "total": 9,
           "pass_rate": 1,
-          "avg_run_seconds": 36.5,
+          "avg_run_seconds": 34.7,
           "estimate": {
             "input_tokens": 11893,
             "input_cost_usd": 0.011893
           },
           "measured": {
-            "input_tokens": 125101,
-            "cache_read_input_tokens": 862976,
-            "output_tokens": 13155,
-            "cost_usd": 1.067007
+            "input_tokens": 99526,
+            "cache_read_input_tokens": 753664,
+            "output_tokens": 12464,
+            "cost_usd": 0.927974
           },
           "baseline": {
-            "passed": 6,
-            "failed": 3,
+            "passed": 7,
+            "failed": 2,
             "total": 9,
-            "pass_rate": 0.666667,
-            "avg_run_seconds": 51.3,
+            "pass_rate": 0.777778,
+            "avg_run_seconds": 48.9,
             "measured": {
-              "input_tokens": 157235,
-              "cache_read_input_tokens": 1366784,
-              "output_tokens": 18029,
-              "cost_usd": 1.632193
+              "input_tokens": 150703,
+              "cache_read_input_tokens": 1345536,
+              "output_tokens": 17168,
+              "cost_usd": 1.599247
             }
           },
           "previous_delta": {
-            "rate": 0.5,
-            "avg_run_seconds": -2.4,
-            "input_tokens": 102621,
-            "output_tokens": 10022,
-            "cost_usd": 0.857025
+            "rate": 0,
+            "avg_run_seconds": -2.1,
+            "input_tokens": 13643,
+            "output_tokens": 3546,
+            "cost_usd": 0.189031
           },
           "baseline_delta": {
-            "rate": 0.333333,
-            "avg_run_seconds": -14.8,
-            "input_tokens": -32134,
-            "output_tokens": -4874,
-            "cost_usd": -0.565186
+            "rate": 0.222222,
+            "avg_run_seconds": -14.2,
+            "input_tokens": -51177,
+            "output_tokens": -4704,
+            "cost_usd": -0.671273
           }
         },
         "openai/gpt-5.6-sol": {
@@ -756,43 +788,43 @@
           "failed": 0,
           "total": 9,
           "pass_rate": 1,
-          "avg_run_seconds": 32.7,
+          "avg_run_seconds": 32.8,
           "estimate": {
             "input_tokens": 11893,
             "input_cost_usd": 0.059465
           },
           "measured": {
-            "input_tokens": 128286,
-            "cache_read_input_tokens": 652544,
-            "output_tokens": 8961,
-            "cost_usd": 4.17298
+            "input_tokens": 126410,
+            "cache_read_input_tokens": 648192,
+            "output_tokens": 9027,
+            "cost_usd": 4.14382
           },
           "baseline": {
-            "passed": 6,
-            "failed": 3,
+            "passed": 7,
+            "failed": 2,
             "total": 9,
-            "pass_rate": 0.666667,
-            "avg_run_seconds": 56.1,
+            "pass_rate": 0.777778,
+            "avg_run_seconds": 56.2,
             "measured": {
-              "input_tokens": 190038,
-              "cache_read_input_tokens": 1655296,
-              "output_tokens": 13110,
-              "cost_usd": 9.61997
+              "input_tokens": 188676,
+              "cache_read_input_tokens": 1634304,
+              "output_tokens": 12888,
+              "cost_usd": 9.50154
             }
           },
           "previous_delta": {
-            "rate": 0.5,
-            "avg_run_seconds": -12.3,
-            "input_tokens": 93624,
-            "output_tokens": 6193,
-            "cost_usd": 2.88623
+            "rate": 0,
+            "avg_run_seconds": 2.4,
+            "input_tokens": 38532,
+            "output_tokens": 3206,
+            "cost_usd": 1.38836
           },
           "baseline_delta": {
-            "rate": 0.333333,
+            "rate": 0.222222,
             "avg_run_seconds": -23.4,
-            "input_tokens": -61752,
-            "output_tokens": -4149,
-            "cost_usd": -5.44699
+            "input_tokens": -62266,
+            "output_tokens": -3861,
+            "cost_usd": -5.35772
           }
         },
         "openai/gpt-5.6-terra": {
@@ -802,43 +834,43 @@
           "failed": 0,
           "total": 9,
           "pass_rate": 1,
-          "avg_run_seconds": 31.6,
+          "avg_run_seconds": 30.9,
           "estimate": {
             "input_tokens": 11893,
             "input_cost_usd": 0.029734
           },
           "measured": {
-            "input_tokens": 123797,
-            "cache_read_input_tokens": 886528,
-            "output_tokens": 10335,
-            "cost_usd": 2.680838
+            "input_tokens": 126335,
+            "cache_read_input_tokens": 847616,
+            "output_tokens": 10280,
+            "cost_usd": 2.589078
           },
           "baseline": {
-            "passed": 5,
-            "failed": 4,
+            "passed": 6,
+            "failed": 3,
             "total": 9,
-            "pass_rate": 0.555556,
-            "avg_run_seconds": 44.5,
+            "pass_rate": 0.666667,
+            "avg_run_seconds": 42.9,
             "measured": {
-              "input_tokens": 157690,
-              "cache_read_input_tokens": 1097472,
-              "output_tokens": 15071,
-              "cost_usd": 3.363972
+              "input_tokens": 149629,
+              "cache_read_input_tokens": 1055744,
+              "output_tokens": 14777,
+              "cost_usd": 3.235089
             }
           },
           "previous_delta": {
-            "rate": 0.5,
-            "avg_run_seconds": -4.7,
-            "input_tokens": 102516,
-            "output_tokens": 7629,
-            "cost_usd": 2.081445
+            "rate": 0,
+            "avg_run_seconds": -1.7,
+            "input_tokens": 52571,
+            "output_tokens": 3312,
+            "cost_usd": 0.766067
           },
           "baseline_delta": {
-            "rate": 0.444444,
-            "avg_run_seconds": -12.9,
-            "input_tokens": -33893,
-            "output_tokens": -4736,
-            "cost_usd": -0.683134
+            "rate": 0.333333,
+            "avg_run_seconds": -12,
+            "input_tokens": -23294,
+            "output_tokens": -4497,
+            "cost_usd": -0.646011
           }
         },
         "xai/grok-4.5": {
@@ -848,40 +880,76 @@
           "failed": 0,
           "total": 9,
           "pass_rate": 1,
-          "avg_run_seconds": 18,
+          "avg_run_seconds": 28.8,
           "measured": {
-            "input_tokens": 55644,
-            "cache_read_input_tokens": 565888,
-            "output_tokens": 9918,
-            "cost_usd": 0.340562
+            "input_tokens": 93071,
+            "cache_read_input_tokens": 906368,
+            "output_tokens": 14055,
+            "cost_usd": 0.32427
           },
           "baseline": {
-            "passed": 1,
-            "failed": 3,
-            "errored": 5,
+            "passed": 3,
+            "failed": 2,
+            "errored": 4,
             "total": 9,
-            "pass_rate": 0.25,
-            "avg_run_seconds": 4,
+            "pass_rate": 0.6,
+            "avg_run_seconds": 22.8,
             "measured": {
-              "input_tokens": 1465,
-              "cache_read_input_tokens": 63616,
-              "output_tokens": 1208,
-              "cost_usd": 0.029262
+              "input_tokens": 94252,
+              "cache_read_input_tokens": 565376,
+              "output_tokens": 9912,
+              "cost_usd": 0.152858
             }
           },
           "previous_delta": {
-            "rate": 0.5,
-            "avg_run_seconds": 0.5,
-            "input_tokens": 23199,
-            "output_tokens": 1360,
-            "cost_usd": 0.090231
+            "rate": 0,
+            "avg_run_seconds": 10.6,
+            "input_tokens": 41380,
+            "output_tokens": 4772,
+            "cost_usd": 0.010093
           },
           "baseline_delta": {
-            "rate": 0.75,
-            "avg_run_seconds": 14,
-            "input_tokens": 54179,
-            "output_tokens": 8710,
-            "cost_usd": 0.3113
+            "rate": 0.4,
+            "avg_run_seconds": 6,
+            "input_tokens": -1181,
+            "output_tokens": 4143,
+            "cost_usd": 0.171412
+          }
+        },
+        "xai/grok-4.6": {
+          "provider": "xai",
+          "display": "Grok 4.6",
+          "passed": 9,
+          "failed": 0,
+          "total": 9,
+          "pass_rate": 1,
+          "avg_run_seconds": 47.4,
+          "measured": {
+            "input_tokens": 114857,
+            "cache_read_input_tokens": 1040384,
+            "output_tokens": 21290,
+            "cost_usd": 0.149199
+          },
+          "baseline": {
+            "passed": 7,
+            "failed": 0,
+            "errored": 2,
+            "total": 9,
+            "pass_rate": 1,
+            "avg_run_seconds": 87.6,
+            "measured": {
+              "input_tokens": 248012,
+              "cache_read_input_tokens": 1837440,
+              "output_tokens": 28130,
+              "cost_usd": 0.2692
+            }
+          },
+          "baseline_delta": {
+            "rate": 0,
+            "avg_run_seconds": -40.2,
+            "input_tokens": -133155,
+            "output_tokens": -6840,
+            "cost_usd": -0.120001
           }
         }
       },
@@ -1107,6 +1175,15 @@
                 "rate": 0.071429,
                 "avg_run_seconds": -0.4
               }
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 13,
+              "failed": 1,
+              "total": 14,
+              "pass_rate": 0.928571,
+              "avg_run_seconds": 6.3
             }
           },
           "evals": {
@@ -1695,6 +1772,42 @@
               "baseline_delta": {
                 "avg_run_seconds": 18.4
               }
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1,
+              "avg_run_seconds": 36.2,
+              "measured": {
+                "input_tokens": 26855,
+                "cache_read_input_tokens": 207616,
+                "output_tokens": 5957,
+                "cost_usd": 0.032854
+              },
+              "baseline": {
+                "passed": 2,
+                "failed": 0,
+                "errored": 1,
+                "total": 3,
+                "pass_rate": 1,
+                "avg_run_seconds": 116.1,
+                "measured": {
+                  "input_tokens": 109947,
+                  "cache_read_input_tokens": 604032,
+                  "output_tokens": 8586,
+                  "cost_usd": 0.097483
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": -79.9,
+                "input_tokens": -83092,
+                "output_tokens": -2629,
+                "cost_usd": -0.064629
+              }
             }
           }
         },
@@ -1815,7 +1928,11 @@
               "failed": 5,
               "total": 14,
               "pass_rate": 0.642857,
-              "avg_run_seconds": 11.9
+              "avg_run_seconds": 11.6,
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -0.3
+              }
             },
             "openai/gpt-5.4": {
               "provider": "openai",
@@ -1847,6 +1964,12 @@
               "estimate": {
                 "input_tokens": 17416,
                 "input_cost_usd": 0.013063
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": 0,
+                "input_tokens": 0,
+                "cost_usd": 0
               }
             },
             "openai/gpt-5.5": {
@@ -1865,18 +1988,18 @@
             "openai/gpt-5.6-luna": {
               "provider": "openai",
               "display": "GPT-5.6 Luna",
-              "passed": 11,
-              "failed": 3,
+              "passed": 12,
+              "failed": 2,
               "total": 14,
-              "pass_rate": 0.785714,
-              "avg_run_seconds": 17,
+              "pass_rate": 0.857143,
+              "avg_run_seconds": 19.2,
               "estimate": {
                 "input_tokens": 17416,
                 "input_cost_usd": 0.017416
               },
               "previous_delta": {
-                "rate": 0,
-                "avg_run_seconds": 1.3,
+                "rate": 0.071429,
+                "avg_run_seconds": 2.2,
                 "input_tokens": 0,
                 "cost_usd": 0
               }
@@ -1888,14 +2011,14 @@
               "failed": 1,
               "total": 14,
               "pass_rate": 0.928571,
-              "avg_run_seconds": 18.7,
+              "avg_run_seconds": 18.8,
               "estimate": {
                 "input_tokens": 17416,
                 "input_cost_usd": 0.08708
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": -0.2,
+                "avg_run_seconds": 0.1,
                 "input_tokens": 0,
                 "cost_usd": 0
               }
@@ -1907,14 +2030,14 @@
               "failed": 3,
               "total": 14,
               "pass_rate": 0.785714,
-              "avg_run_seconds": 13.6,
+              "avg_run_seconds": 13.7,
               "estimate": {
                 "input_tokens": 17416,
                 "input_cost_usd": 0.043544
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": -0.5,
+                "avg_run_seconds": 0.1,
                 "input_tokens": 0,
                 "cost_usd": 0
               }
@@ -1931,6 +2054,15 @@
                 "rate": 0.571429,
                 "avg_run_seconds": 2.7
               }
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 11,
+              "failed": 3,
+              "total": 14,
+              "pass_rate": 0.785714,
+              "avg_run_seconds": 8.9
             }
           },
           "evals": {
@@ -2215,29 +2347,35 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 10.6,
+              "avg_run_seconds": 10.3,
               "measured": {
-                "input_tokens": 10824,
-                "cache_read_input_tokens": 102784,
-                "output_tokens": 3463
+                "input_tokens": 10323,
+                "cache_read_input_tokens": 101632,
+                "output_tokens": 3392
               },
               "baseline": {
                 "passed": 2,
                 "failed": 0,
                 "total": 2,
                 "pass_rate": 1,
-                "avg_run_seconds": 14.5,
+                "avg_run_seconds": 14.6,
                 "measured": {
-                  "input_tokens": 9418,
-                  "cache_read_input_tokens": 98944,
-                  "output_tokens": 4065
+                  "input_tokens": 8973,
+                  "cache_read_input_tokens": 110080,
+                  "output_tokens": 3901
                 }
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -0.3,
+                "input_tokens": -501,
+                "output_tokens": -71
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": -3.9,
-                "input_tokens": 1406,
-                "output_tokens": -602
+                "avg_run_seconds": -4.3,
+                "input_tokens": 1350,
+                "output_tokens": -509
               }
             },
             "openai/gpt-5.4": {
@@ -2247,43 +2385,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 197.5,
+              "avg_run_seconds": 187.8,
               "estimate": {
                 "input_tokens": 2545,
                 "input_cost_usd": 0.006362
               },
               "measured": {
-                "input_tokens": 27288,
-                "cache_read_input_tokens": 181632,
-                "output_tokens": 3157,
-                "cost_usd": 0.569655
+                "input_tokens": 17354,
+                "cache_read_input_tokens": 159744,
+                "output_tokens": 2365,
+                "cost_usd": 0.47822
               },
               "baseline": {
                 "passed": 2,
                 "failed": 0,
                 "total": 2,
                 "pass_rate": 1,
-                "avg_run_seconds": 35,
+                "avg_run_seconds": 27.7,
                 "measured": {
-                  "input_tokens": 20357,
-                  "cache_read_input_tokens": 130304,
-                  "output_tokens": 2468,
-                  "cost_usd": 0.413673
+                  "input_tokens": 18294,
+                  "cache_read_input_tokens": 120064,
+                  "output_tokens": 2253,
+                  "cost_usd": 0.379691
                 }
               },
               "previous_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": -274.6,
-                "input_tokens": 17783,
-                "output_tokens": 1993,
-                "cost_usd": 0.317873
+                "rate": 0,
+                "avg_run_seconds": -9.7,
+                "input_tokens": -9934,
+                "output_tokens": -792,
+                "cost_usd": -0.091435
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": 162.5,
-                "input_tokens": 6931,
-                "output_tokens": 689,
-                "cost_usd": 0.155982
+                "avg_run_seconds": 160.1,
+                "input_tokens": -940,
+                "output_tokens": 112,
+                "cost_usd": 0.098529
               }
             },
             "openai/gpt-5.4-mini": {
@@ -2293,36 +2431,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 24.6,
+              "avg_run_seconds": 23.3,
               "estimate": {
                 "input_tokens": 2545,
                 "input_cost_usd": 0.001909
               },
               "measured": {
-                "input_tokens": 22817,
-                "cache_read_input_tokens": 109824,
-                "output_tokens": 2253,
-                "cost_usd": 0.10962
+                "input_tokens": 14172,
+                "cache_read_input_tokens": 116480,
+                "output_tokens": 2285,
+                "cost_usd": 0.108272
               },
               "baseline": {
-                "passed": 1,
-                "failed": 1,
+                "passed": 2,
+                "failed": 0,
                 "total": 2,
-                "pass_rate": 0.5,
-                "avg_run_seconds": 28.8,
+                "pass_rate": 1,
+                "avg_run_seconds": 29.8,
                 "measured": {
-                  "input_tokens": 22708,
+                  "input_tokens": 23137,
                   "cache_read_input_tokens": 146176,
-                  "output_tokens": 2683,
-                  "cost_usd": 0.138736
+                  "output_tokens": 2873,
+                  "cost_usd": 0.139913
                 }
               },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -1.3,
+                "input_tokens": -8645,
+                "output_tokens": 32,
+                "cost_usd": -0.001348
+              },
               "baseline_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": -4.2,
-                "input_tokens": 109,
-                "output_tokens": -430,
-                "cost_usd": -0.029116
+                "rate": 0,
+                "avg_run_seconds": -6.5,
+                "input_tokens": -8965,
+                "output_tokens": -588,
+                "cost_usd": -0.031641
               }
             },
             "openai/gpt-5.5": {
@@ -2332,43 +2477,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 46.9,
+              "avg_run_seconds": 48.7,
               "estimate": {
                 "input_tokens": 2545,
                 "input_cost_usd": 0.012725
               },
               "measured": {
-                "input_tokens": 43286,
-                "cache_read_input_tokens": 206080,
-                "output_tokens": 3732,
-                "cost_usd": 1.35879
+                "input_tokens": 34319,
+                "cache_read_input_tokens": 233472,
+                "output_tokens": 3920,
+                "cost_usd": 1.456555
               },
               "baseline": {
                 "passed": 2,
                 "failed": 0,
                 "total": 2,
                 "pass_rate": 1,
-                "avg_run_seconds": 364.3,
+                "avg_run_seconds": 207,
                 "measured": {
-                  "input_tokens": 28328,
-                  "cache_read_input_tokens": 133376,
-                  "output_tokens": 2445,
-                  "cost_usd": 0.88187
+                  "input_tokens": 30620,
+                  "cache_read_input_tokens": 137856,
+                  "output_tokens": 3001,
+                  "cost_usd": 0.93241
                 }
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": 5.4,
-                "input_tokens": 13974,
-                "output_tokens": 734,
-                "cost_usd": -0.03355
+                "avg_run_seconds": 1.8,
+                "input_tokens": -8967,
+                "output_tokens": 188,
+                "cost_usd": 0.097765
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": -317.4,
-                "input_tokens": 14958,
-                "output_tokens": 1287,
-                "cost_usd": 0.47692
+                "avg_run_seconds": -158.3,
+                "input_tokens": 3699,
+                "output_tokens": 919,
+                "cost_usd": 0.524145
               }
             },
             "openai/gpt-5.6-luna": {
@@ -2378,36 +2523,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 39.6,
+              "avg_run_seconds": 36.1,
               "estimate": {
                 "input_tokens": 2545,
                 "input_cost_usd": 0.002545
               },
               "measured": {
-                "input_tokens": 32596,
-                "cache_read_input_tokens": 275200,
-                "output_tokens": 3282,
-                "cost_usd": 0.327488
+                "input_tokens": 20186,
+                "cache_read_input_tokens": 192000,
+                "output_tokens": 2990,
+                "cost_usd": 0.230126
               },
               "baseline": {
                 "passed": 2,
                 "failed": 0,
                 "total": 2,
                 "pass_rate": 1,
-                "avg_run_seconds": 44.2,
+                "avg_run_seconds": 39.7,
                 "measured": {
-                  "input_tokens": 25449,
-                  "cache_read_input_tokens": 213760,
-                  "output_tokens": 3191,
-                  "cost_usd": 0.258355
+                  "input_tokens": 22286,
+                  "cache_read_input_tokens": 197632,
+                  "output_tokens": 3186,
+                  "cost_usd": 0.239034
                 }
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -3.5,
+                "input_tokens": -12410,
+                "output_tokens": -292,
+                "cost_usd": -0.097362
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": -4.6,
-                "input_tokens": 7147,
-                "output_tokens": 91,
-                "cost_usd": 0.069133
+                "avg_run_seconds": -3.6,
+                "input_tokens": -2100,
+                "output_tokens": -196,
+                "cost_usd": -0.008908
               }
             },
             "openai/gpt-5.6-sol": {
@@ -2417,36 +2569,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 30.9,
+              "avg_run_seconds": 32.1,
               "estimate": {
                 "input_tokens": 2545,
                 "input_cost_usd": 0.012725
               },
               "measured": {
-                "input_tokens": 28879,
+                "input_tokens": 28462,
                 "cache_read_input_tokens": 146688,
-                "output_tokens": 2002,
-                "cost_usd": 0.937895
+                "output_tokens": 2009,
+                "cost_usd": 0.93602
               },
               "baseline": {
                 "passed": 2,
                 "failed": 0,
                 "total": 2,
                 "pass_rate": 1,
-                "avg_run_seconds": 29.1,
+                "avg_run_seconds": 33.6,
                 "measured": {
-                  "input_tokens": 20642,
-                  "cache_read_input_tokens": 142592,
-                  "output_tokens": 1804,
-                  "cost_usd": 0.87029
+                  "input_tokens": 23064,
+                  "cache_read_input_tokens": 138496,
+                  "output_tokens": 1858,
+                  "cost_usd": 0.86354
                 }
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": 1.2,
+                "input_tokens": -417,
+                "output_tokens": 7,
+                "cost_usd": -0.001875
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": 1.8,
-                "input_tokens": 8237,
-                "output_tokens": 198,
-                "cost_usd": 0.067605
+                "avg_run_seconds": -1.5,
+                "input_tokens": 5398,
+                "output_tokens": 151,
+                "cost_usd": 0.07248
               }
             },
             "openai/gpt-5.6-terra": {
@@ -2456,36 +2615,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 32.8,
+              "avg_run_seconds": 32.3,
               "estimate": {
                 "input_tokens": 2545,
                 "input_cost_usd": 0.006362
               },
               "measured": {
-                "input_tokens": 24938,
-                "cache_read_input_tokens": 207616,
-                "output_tokens": 2326,
-                "cost_usd": 0.616275
+                "input_tokens": 33420,
+                "cache_read_input_tokens": 217600,
+                "output_tokens": 2425,
+                "cost_usd": 0.663925
               },
               "baseline": {
                 "passed": 2,
                 "failed": 0,
                 "total": 2,
                 "pass_rate": 1,
-                "avg_run_seconds": 34.5,
+                "avg_run_seconds": 29.3,
                 "measured": {
-                  "input_tokens": 26279,
-                  "cache_read_input_tokens": 215808,
-                  "output_tokens": 2242,
-                  "cost_usd": 0.638848
+                  "input_tokens": 27401,
+                  "cache_read_input_tokens": 189440,
+                  "output_tokens": 1965,
+                  "cost_usd": 0.571578
                 }
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -0.5,
+                "input_tokens": 8482,
+                "output_tokens": 99,
+                "cost_usd": 0.04765
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": -1.7,
-                "input_tokens": -1341,
-                "output_tokens": 84,
-                "cost_usd": -0.022573
+                "avg_run_seconds": 3,
+                "input_tokens": 6019,
+                "output_tokens": 460,
+                "cost_usd": 0.092347
               }
             },
             "xai/grok-4.5": {
@@ -2495,28 +2661,75 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 21.5,
+              "avg_run_seconds": 28.1,
               "measured": {
-                "input_tokens": 24940,
-                "cache_read_input_tokens": 154112,
-                "output_tokens": 2665,
-                "cost_usd": 0.112103
+                "input_tokens": 25062,
+                "cache_read_input_tokens": 167040,
+                "output_tokens": 2762,
+                "cost_usd": 0.067127
               },
               "baseline": {
-                "passed": 0,
-                "errored": 2,
+                "passed": 1,
+                "failed": 0,
+                "errored": 1,
                 "total": 2,
-                "avg_run_seconds": 1.1
+                "pass_rate": 1,
+                "avg_run_seconds": 17.4,
+                "measured": {
+                  "input_tokens": 15182,
+                  "cache_read_input_tokens": 70400,
+                  "output_tokens": 1632,
+                  "cost_usd": 0.020834
+                }
               },
               "previous_delta": {
-                "rate": 1,
-                "avg_run_seconds": 14.2,
-                "input_tokens": 19220,
-                "output_tokens": 1992,
-                "cost_usd": 0.083838
+                "rate": 0,
+                "avg_run_seconds": 6.6,
+                "input_tokens": 122,
+                "output_tokens": 97,
+                "cost_usd": -0.044976
               },
               "baseline_delta": {
-                "avg_run_seconds": 20.4
+                "rate": 0,
+                "avg_run_seconds": 10.7,
+                "input_tokens": 9880,
+                "output_tokens": 1130,
+                "cost_usd": 0.046293
+              }
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 34.5,
+              "measured": {
+                "input_tokens": 20406,
+                "cache_read_input_tokens": 254336,
+                "output_tokens": 3994,
+                "cost_usd": 0.03263
+              },
+              "baseline": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1,
+                "avg_run_seconds": 59.9,
+                "measured": {
+                  "input_tokens": 25904,
+                  "cache_read_input_tokens": 220288,
+                  "output_tokens": 6807,
+                  "cost_usd": 0.034475
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": -25.4,
+                "input_tokens": -5498,
+                "output_tokens": -2813,
+                "cost_usd": -0.001845
               }
             }
           }
@@ -2644,7 +2857,11 @@
               "failed": 8,
               "total": 14,
               "pass_rate": 0.428571,
-              "avg_run_seconds": 17.6
+              "avg_run_seconds": 19.6,
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": 2
+              }
             },
             "openai/gpt-5.4": {
               "provider": "openai",
@@ -2698,14 +2915,14 @@
               "failed": 2,
               "total": 14,
               "pass_rate": 0.857143,
-              "avg_run_seconds": 23,
+              "avg_run_seconds": 24.4,
               "estimate": {
                 "input_tokens": 18440,
                 "input_cost_usd": 0.01844
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": 0.3,
+                "avg_run_seconds": 1.4,
                 "input_tokens": 0,
                 "cost_usd": 0
               }
@@ -2730,14 +2947,14 @@
               "failed": 2,
               "total": 14,
               "pass_rate": 0.857143,
-              "avg_run_seconds": 16.7,
+              "avg_run_seconds": 16.6,
               "estimate": {
                 "input_tokens": 18440,
                 "input_cost_usd": 0.046102
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": -0.4,
+                "avg_run_seconds": -0.1,
                 "input_tokens": 0,
                 "cost_usd": 0
               }
@@ -2750,6 +2967,15 @@
               "total": 14,
               "pass_rate": 1,
               "avg_run_seconds": 7
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 11,
+              "failed": 3,
+              "total": 14,
+              "pass_rate": 0.785714,
+              "avg_run_seconds": 7.9
             }
           },
           "evals": {
@@ -3027,29 +3253,35 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 13,
+              "avg_run_seconds": 9.1,
               "measured": {
-                "input_tokens": 10951,
-                "cache_read_input_tokens": 127616,
-                "output_tokens": 3840
+                "input_tokens": 9882,
+                "cache_read_input_tokens": 88192,
+                "output_tokens": 3884
               },
               "baseline": {
                 "passed": 2,
                 "failed": 0,
                 "total": 2,
                 "pass_rate": 1,
-                "avg_run_seconds": 15.3,
+                "avg_run_seconds": 9.6,
                 "measured": {
-                  "input_tokens": 10574,
-                  "cache_read_input_tokens": 151808,
-                  "output_tokens": 4377
+                  "input_tokens": 8466,
+                  "cache_read_input_tokens": 97024,
+                  "output_tokens": 3314
                 }
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -3.9,
+                "input_tokens": -1069,
+                "output_tokens": 44
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": -2.3,
-                "input_tokens": 377,
-                "output_tokens": -537
+                "avg_run_seconds": -0.5,
+                "input_tokens": 1416,
+                "output_tokens": 570
               }
             },
             "openai/gpt-5.4": {
@@ -3059,43 +3291,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 32.9,
+              "avg_run_seconds": 28.5,
               "estimate": {
                 "input_tokens": 2723,
                 "input_cost_usd": 0.006808
               },
               "measured": {
-                "input_tokens": 32190,
-                "cache_read_input_tokens": 165888,
-                "output_tokens": 2630,
-                "cost_usd": 0.534645
+                "input_tokens": 17283,
+                "cache_read_input_tokens": 139008,
+                "output_tokens": 2245,
+                "cost_usd": 0.424403
               },
               "baseline": {
                 "passed": 2,
                 "failed": 0,
                 "total": 2,
                 "pass_rate": 1,
-                "avg_run_seconds": 30.8,
+                "avg_run_seconds": 28.7,
                 "measured": {
-                  "input_tokens": 14128,
-                  "cache_read_input_tokens": 122752,
-                  "output_tokens": 2089,
-                  "cost_usd": 0.373535
+                  "input_tokens": 11774,
+                  "cache_read_input_tokens": 116608,
+                  "output_tokens": 1865,
+                  "cost_usd": 0.34893
                 }
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": 0.1,
-                "input_tokens": 9798,
-                "output_tokens": -94,
-                "cost_usd": 0.017645
+                "avg_run_seconds": -4.4,
+                "input_tokens": -14907,
+                "output_tokens": -385,
+                "cost_usd": -0.110242
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": 2.1,
-                "input_tokens": 18062,
-                "output_tokens": 541,
-                "cost_usd": 0.16111
+                "avg_run_seconds": -0.2,
+                "input_tokens": 5509,
+                "output_tokens": 380,
+                "cost_usd": 0.075473
               }
             },
             "openai/gpt-5.4-mini": {
@@ -3105,36 +3337,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 23.1,
+              "avg_run_seconds": 36.8,
               "estimate": {
                 "input_tokens": 2723,
                 "input_cost_usd": 0.002043
               },
               "measured": {
-                "input_tokens": 12994,
-                "cache_read_input_tokens": 93184,
-                "output_tokens": 2068,
-                "cost_usd": 0.08894
+                "input_tokens": 25479,
+                "cache_read_input_tokens": 194944,
+                "output_tokens": 3845,
+                "cost_usd": 0.18262
               },
               "baseline": {
                 "passed": 2,
                 "failed": 0,
                 "total": 2,
                 "pass_rate": 1,
-                "avg_run_seconds": 36.4,
+                "avg_run_seconds": 33.1,
                 "measured": {
-                  "input_tokens": 13763,
-                  "cache_read_input_tokens": 136704,
-                  "output_tokens": 3584,
-                  "cost_usd": 0.128978
+                  "input_tokens": 16299,
+                  "cache_read_input_tokens": 121472,
+                  "output_tokens": 3362,
+                  "cost_usd": 0.118457
                 }
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": 13.7,
+                "input_tokens": 12485,
+                "output_tokens": 1777,
+                "cost_usd": 0.09368
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": -13.3,
-                "input_tokens": -769,
-                "output_tokens": -1516,
-                "cost_usd": -0.040038
+                "avg_run_seconds": 3.7,
+                "input_tokens": 9180,
+                "output_tokens": 483,
+                "cost_usd": 0.064163
               }
             },
             "openai/gpt-5.5": {
@@ -3144,43 +3383,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 44.8,
+              "avg_run_seconds": 39,
               "estimate": {
                 "input_tokens": 2723,
                 "input_cost_usd": 0.013615
               },
               "measured": {
-                "input_tokens": 52756,
-                "cache_read_input_tokens": 193408,
-                "output_tokens": 3642,
-                "cost_usd": 1.34008
+                "input_tokens": 45398,
+                "cache_read_input_tokens": 155776,
+                "output_tokens": 2931,
+                "cost_usd": 1.0938
               },
               "baseline": {
                 "passed": 2,
                 "failed": 0,
                 "total": 2,
                 "pass_rate": 1,
-                "avg_run_seconds": 33.8,
+                "avg_run_seconds": 34.9,
                 "measured": {
-                  "input_tokens": 29384,
-                  "cache_read_input_tokens": 141056,
-                  "output_tokens": 2837,
-                  "cost_usd": 0.93731
+                  "input_tokens": 30914,
+                  "cache_read_input_tokens": 147072,
+                  "output_tokens": 2829,
+                  "cost_usd": 0.9748
                 }
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": -2.6,
-                "input_tokens": 709,
-                "output_tokens": 56,
-                "cost_usd": -0.022935
+                "avg_run_seconds": -5.8,
+                "input_tokens": -7358,
+                "output_tokens": -711,
+                "cost_usd": -0.24628
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": 11,
-                "input_tokens": 23372,
-                "output_tokens": 805,
-                "cost_usd": 0.40277
+                "avg_run_seconds": 4.1,
+                "input_tokens": 14484,
+                "output_tokens": 102,
+                "cost_usd": 0.119
               }
             },
             "openai/gpt-5.6-luna": {
@@ -3190,36 +3429,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 32.3,
+              "avg_run_seconds": 34,
               "estimate": {
                 "input_tokens": 2723,
                 "input_cost_usd": 0.002723
               },
               "measured": {
-                "input_tokens": 22204,
-                "cache_read_input_tokens": 128512,
-                "output_tokens": 2447,
-                "cost_usd": 0.165398
+                "input_tokens": 18432,
+                "cache_read_input_tokens": 147712,
+                "output_tokens": 2657,
+                "cost_usd": 0.182086
               },
               "baseline": {
                 "passed": 2,
                 "failed": 0,
                 "total": 2,
                 "pass_rate": 1,
-                "avg_run_seconds": 33,
+                "avg_run_seconds": 26.7,
                 "measured": {
-                  "input_tokens": 23142,
-                  "cache_read_input_tokens": 139520,
-                  "output_tokens": 2813,
-                  "cost_usd": 0.17954
+                  "input_tokens": 18806,
+                  "cache_read_input_tokens": 105216,
+                  "output_tokens": 2135,
+                  "cost_usd": 0.136832
                 }
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": 1.7,
+                "input_tokens": -3772,
+                "output_tokens": 210,
+                "cost_usd": 0.016688
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": -0.7,
-                "input_tokens": -938,
-                "output_tokens": -366,
-                "cost_usd": -0.014142
+                "avg_run_seconds": 7.3,
+                "input_tokens": -374,
+                "output_tokens": 522,
+                "cost_usd": 0.045254
               }
             },
             "openai/gpt-5.6-sol": {
@@ -3229,36 +3475,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 23.4,
+              "avg_run_seconds": 20.2,
               "estimate": {
                 "input_tokens": 2723,
                 "input_cost_usd": 0.013615
               },
               "measured": {
-                "input_tokens": 25821,
-                "cache_read_input_tokens": 85248,
-                "output_tokens": 1490,
-                "cost_usd": 0.600045
+                "input_tokens": 22245,
+                "cache_read_input_tokens": 72192,
+                "output_tokens": 1370,
+                "cost_usd": 0.513285
               },
               "baseline": {
                 "passed": 2,
                 "failed": 0,
                 "total": 2,
                 "pass_rate": 1,
-                "avg_run_seconds": 30.5,
+                "avg_run_seconds": 27.5,
                 "measured": {
-                  "input_tokens": 23615,
-                  "cache_read_input_tokens": 156928,
-                  "output_tokens": 1869,
-                  "cost_usd": 0.958785
+                  "input_tokens": 20824,
+                  "cache_read_input_tokens": 111360,
+                  "output_tokens": 1498,
+                  "cost_usd": 0.70586
                 }
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -3.2,
+                "input_tokens": -3576,
+                "output_tokens": -120,
+                "cost_usd": -0.08676
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": -7.1,
-                "input_tokens": 2206,
-                "output_tokens": -379,
-                "cost_usd": -0.35874
+                "avg_run_seconds": -7.3,
+                "input_tokens": 1421,
+                "output_tokens": -128,
+                "cost_usd": -0.192575
               }
             },
             "openai/gpt-5.6-terra": {
@@ -3268,36 +3521,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 26.7,
+              "avg_run_seconds": 27,
               "estimate": {
                 "input_tokens": 2723,
                 "input_cost_usd": 0.006808
               },
               "measured": {
-                "input_tokens": 21857,
-                "cache_read_input_tokens": 157952,
-                "output_tokens": 1831,
-                "cost_usd": 0.476988
+                "input_tokens": 19615,
+                "cache_read_input_tokens": 160000,
+                "output_tokens": 1874,
+                "cost_usd": 0.477148
               },
               "baseline": {
                 "passed": 2,
                 "failed": 0,
                 "total": 2,
                 "pass_rate": 1,
-                "avg_run_seconds": 29.5,
+                "avg_run_seconds": 31.4,
                 "measured": {
-                  "input_tokens": 21975,
-                  "cache_read_input_tokens": 139776,
-                  "output_tokens": 2069,
-                  "cost_usd": 0.435413
+                  "input_tokens": 16444,
+                  "cache_read_input_tokens": 165888,
+                  "output_tokens": 2427,
+                  "cost_usd": 0.492235
                 }
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": 0.3,
+                "input_tokens": -2242,
+                "output_tokens": 43,
+                "cost_usd": 0.00016
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": -2.8,
-                "input_tokens": -118,
-                "output_tokens": -238,
-                "cost_usd": 0.041575
+                "avg_run_seconds": -4.4,
+                "input_tokens": 3171,
+                "output_tokens": -553,
+                "cost_usd": -0.015087
               }
             },
             "xai/grok-4.5": {
@@ -3307,39 +3567,75 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 12.4,
+              "avg_run_seconds": 52.7,
               "measured": {
-                "input_tokens": 8283,
-                "cache_read_input_tokens": 98432,
-                "output_tokens": 1403,
-                "cost_usd": 0.054513
+                "input_tokens": 43100,
+                "cache_read_input_tokens": 401280,
+                "output_tokens": 5513,
+                "cost_usd": 0.104881
               },
               "baseline": {
                 "passed": 1,
                 "failed": 1,
                 "total": 2,
                 "pass_rate": 0.5,
-                "avg_run_seconds": 9.2,
+                "avg_run_seconds": 49.6,
                 "measured": {
-                  "input_tokens": 1269,
-                  "cache_read_input_tokens": 42368,
-                  "output_tokens": 830,
-                  "cost_usd": 0.020228
+                  "input_tokens": 45895,
+                  "cache_read_input_tokens": 336256,
+                  "output_tokens": 6059,
+                  "cost_usd": 0.085733
                 }
               },
               "previous_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": 0.1,
-                "input_tokens": 766,
-                "output_tokens": -77,
-                "cost_usd": 0.00994
+                "rate": 0,
+                "avg_run_seconds": 40.3,
+                "input_tokens": 34817,
+                "output_tokens": 4110,
+                "cost_usd": 0.050368
               },
               "baseline_delta": {
                 "rate": 0.5,
-                "avg_run_seconds": 3.2,
-                "input_tokens": 7014,
-                "output_tokens": 573,
-                "cost_usd": 0.034285
+                "avg_run_seconds": 3.1,
+                "input_tokens": -2795,
+                "output_tokens": -546,
+                "cost_usd": 0.019148
+              }
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 102.3,
+              "measured": {
+                "input_tokens": 47487,
+                "cache_read_input_tokens": 423040,
+                "output_tokens": 8697,
+                "cost_usd": 0.060975
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 0,
+                "errored": 1,
+                "total": 2,
+                "pass_rate": 1,
+                "avg_run_seconds": 102.7,
+                "measured": {
+                  "input_tokens": 29616,
+                  "cache_read_input_tokens": 447616,
+                  "output_tokens": 6415,
+                  "cost_usd": 0.05466
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": -0.4,
+                "input_tokens": 17871,
+                "output_tokens": 2282,
+                "cost_usd": 0.006315
               }
             }
           }
@@ -3461,7 +3757,11 @@
               "failed": 2,
               "total": 13,
               "pass_rate": 0.846154,
-              "avg_run_seconds": 18.4
+              "avg_run_seconds": 19.4,
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": 1
+              }
             },
             "openai/gpt-5.4": {
               "provider": "openai",
@@ -3470,14 +3770,14 @@
               "failed": 1,
               "total": 13,
               "pass_rate": 0.923077,
-              "avg_run_seconds": 22.7,
+              "avg_run_seconds": 24.5,
               "estimate": {
                 "input_tokens": 10419,
                 "input_cost_usd": 0.026051
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": -2.7,
+                "avg_run_seconds": 1.8,
                 "input_tokens": 0,
                 "cost_usd": 0
               }
@@ -3489,10 +3789,16 @@
               "failed": 1,
               "total": 13,
               "pass_rate": 0.923077,
-              "avg_run_seconds": 22.5,
+              "avg_run_seconds": 20.6,
               "estimate": {
                 "input_tokens": 10419,
                 "input_cost_usd": 0.007816
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -1.9,
+                "input_tokens": 0,
+                "cost_usd": 0
               }
             },
             "openai/gpt-5.5": {
@@ -3502,14 +3808,14 @@
               "failed": 2,
               "total": 13,
               "pass_rate": 0.846154,
-              "avg_run_seconds": 22.3,
+              "avg_run_seconds": 24.5,
               "estimate": {
                 "input_tokens": 10419,
                 "input_cost_usd": 0.052095
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": -2.8,
+                "avg_run_seconds": 2.2,
                 "input_tokens": 0,
                 "cost_usd": 0
               }
@@ -3521,14 +3827,14 @@
               "failed": 2,
               "total": 13,
               "pass_rate": 0.846154,
-              "avg_run_seconds": 10.6,
+              "avg_run_seconds": 11,
               "estimate": {
                 "input_tokens": 10419,
                 "input_cost_usd": 0.010419
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": -1.2,
+                "avg_run_seconds": 0.4,
                 "input_tokens": 0,
                 "cost_usd": 0
               }
@@ -3540,14 +3846,14 @@
               "failed": 2,
               "total": 13,
               "pass_rate": 0.846154,
-              "avg_run_seconds": 13.7,
+              "avg_run_seconds": 13.5,
               "estimate": {
                 "input_tokens": 10419,
                 "input_cost_usd": 0.052095
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": 0.3,
+                "avg_run_seconds": -0.2,
                 "input_tokens": 0,
                 "cost_usd": 0
               }
@@ -3559,7 +3865,7 @@
               "failed": 1,
               "total": 13,
               "pass_rate": 0.923077,
-              "avg_run_seconds": 12,
+              "avg_run_seconds": 11.9,
               "estimate": {
                 "input_tokens": 10419,
                 "input_cost_usd": 0.026051
@@ -3579,6 +3885,15 @@
               "total": 13,
               "pass_rate": 1,
               "avg_run_seconds": 5.8
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 12,
+              "failed": 1,
+              "total": 13,
+              "pass_rate": 0.923077,
+              "avg_run_seconds": 7.9
             }
           },
           "evals": {
@@ -3877,29 +4192,35 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 38.3,
+              "avg_run_seconds": 30.1,
               "measured": {
-                "input_tokens": 44004,
-                "cache_read_input_tokens": 485504,
-                "output_tokens": 7705
+                "input_tokens": 44632,
+                "cache_read_input_tokens": 456960,
+                "output_tokens": 8922
               },
               "baseline": {
                 "passed": 1,
                 "failed": 1,
                 "total": 2,
                 "pass_rate": 0.5,
-                "avg_run_seconds": 29.5,
+                "avg_run_seconds": 28.3,
                 "measured": {
-                  "input_tokens": 73391,
-                  "cache_read_input_tokens": 316928,
-                  "output_tokens": 9927
+                  "input_tokens": 72503,
+                  "cache_read_input_tokens": 302080,
+                  "output_tokens": 9436
                 }
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -8.2,
+                "input_tokens": 628,
+                "output_tokens": 1217
               },
               "baseline_delta": {
                 "rate": 0.5,
-                "avg_run_seconds": 8.8,
-                "input_tokens": -29387,
-                "output_tokens": -2222
+                "avg_run_seconds": 1.8,
+                "input_tokens": -27871,
+                "output_tokens": -514
               }
             },
             "openai/gpt-5.4": {
@@ -3909,43 +4230,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 58.2,
+              "avg_run_seconds": 52.7,
               "estimate": {
                 "input_tokens": 1639,
                 "input_cost_usd": 0.004098
               },
               "measured": {
-                "input_tokens": 33109,
-                "cache_read_input_tokens": 260480,
-                "output_tokens": 5120,
-                "cost_usd": 0.810773
+                "input_tokens": 22506,
+                "cache_read_input_tokens": 267520,
+                "output_tokens": 4524,
+                "cost_usd": 0.792925
               },
               "baseline": {
                 "passed": 0,
                 "failed": 2,
                 "total": 2,
                 "pass_rate": 0,
-                "avg_run_seconds": 208.6,
+                "avg_run_seconds": 49.6,
                 "measured": {
-                  "input_tokens": 18725,
-                  "cache_read_input_tokens": 252928,
-                  "output_tokens": 4413,
-                  "cost_usd": 0.745327
+                  "input_tokens": 20258,
+                  "cache_read_input_tokens": 222848,
+                  "output_tokens": 3992,
+                  "cost_usd": 0.667645
                 }
               },
               "previous_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": -10.9,
-                "input_tokens": -1609,
-                "output_tokens": 156,
-                "cost_usd": -0.029842
+                "rate": 0,
+                "avg_run_seconds": -5.5,
+                "input_tokens": -10603,
+                "output_tokens": -596,
+                "cost_usd": -0.017848
               },
               "baseline_delta": {
                 "rate": 1,
-                "avg_run_seconds": -150.4,
-                "input_tokens": 14384,
-                "output_tokens": 707,
-                "cost_usd": 0.065446
+                "avg_run_seconds": 3.1,
+                "input_tokens": 2248,
+                "output_tokens": 532,
+                "cost_usd": 0.12528
               }
             },
             "openai/gpt-5.4-mini": {
@@ -3955,36 +4276,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 48.3,
+              "avg_run_seconds": 46,
               "estimate": {
                 "input_tokens": 1639,
                 "input_cost_usd": 0.001229
               },
               "measured": {
-                "input_tokens": 20548,
-                "cache_read_input_tokens": 215936,
-                "output_tokens": 4074,
-                "cost_usd": 0.195696
+                "input_tokens": 18893,
+                "cache_read_input_tokens": 204800,
+                "output_tokens": 4531,
+                "cost_usd": 0.188159
               },
               "baseline": {
                 "passed": 1,
                 "failed": 1,
                 "total": 2,
                 "pass_rate": 0.5,
-                "avg_run_seconds": 63.3,
+                "avg_run_seconds": 62.1,
                 "measured": {
-                  "input_tokens": 63923,
-                  "cache_read_input_tokens": 183168,
-                  "output_tokens": 5481,
-                  "cost_usd": 0.209983
+                  "input_tokens": 62858,
+                  "cache_read_input_tokens": 182656,
+                  "output_tokens": 5369,
+                  "cost_usd": 0.208296
                 }
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -2.3,
+                "input_tokens": -1655,
+                "output_tokens": 457,
+                "cost_usd": -0.007537
               },
               "baseline_delta": {
                 "rate": 0.5,
-                "avg_run_seconds": -15,
-                "input_tokens": -43375,
-                "output_tokens": -1407,
-                "cost_usd": -0.014287
+                "avg_run_seconds": -16.1,
+                "input_tokens": -43965,
+                "output_tokens": -838,
+                "cost_usd": -0.020137
               }
             },
             "openai/gpt-5.5": {
@@ -3994,43 +4322,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 57.6,
+              "avg_run_seconds": 61.7,
               "estimate": {
                 "input_tokens": 1639,
                 "input_cost_usd": 0.008195
               },
               "measured": {
-                "input_tokens": 44935,
-                "cache_read_input_tokens": 222336,
-                "output_tokens": 3718,
-                "cost_usd": 1.447895
+                "input_tokens": 58685,
+                "cache_read_input_tokens": 223744,
+                "output_tokens": 4268,
+                "cost_usd": 1.540185
               },
               "baseline": {
-                "passed": 0,
-                "failed": 2,
+                "passed": 1,
+                "failed": 1,
                 "total": 2,
-                "pass_rate": 0,
-                "avg_run_seconds": 68.2,
+                "pass_rate": 0.5,
+                "avg_run_seconds": 63.9,
                 "measured": {
-                  "input_tokens": 26944,
-                  "cache_read_input_tokens": 314112,
-                  "output_tokens": 5730,
-                  "cost_usd": 1.87718
+                  "input_tokens": 24330,
+                  "cache_read_input_tokens": 282880,
+                  "output_tokens": 5052,
+                  "cost_usd": 1.68761
                 }
               },
               "previous_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": -1.5,
-                "input_tokens": -5811,
-                "output_tokens": -350,
-                "cost_usd": 0.023805
+                "rate": 0,
+                "avg_run_seconds": 4.1,
+                "input_tokens": 13750,
+                "output_tokens": 550,
+                "cost_usd": 0.09229
               },
               "baseline_delta": {
-                "rate": 1,
-                "avg_run_seconds": -10.6,
-                "input_tokens": 17991,
-                "output_tokens": -2012,
-                "cost_usd": -0.429285
+                "rate": 0.5,
+                "avg_run_seconds": -2.2,
+                "input_tokens": 34355,
+                "output_tokens": -784,
+                "cost_usd": -0.147425
               }
             },
             "openai/gpt-5.6-luna": {
@@ -4040,43 +4368,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 38.4,
+              "avg_run_seconds": 31.9,
               "estimate": {
                 "input_tokens": 1639,
                 "input_cost_usd": 0.001639
               },
               "measured": {
-                "input_tokens": 31083,
-                "cache_read_input_tokens": 195840,
-                "output_tokens": 3189,
-                "cost_usd": 0.246057
+                "input_tokens": 21690,
+                "cache_read_input_tokens": 150528,
+                "output_tokens": 2580,
+                "cost_usd": 0.187698
               },
               "baseline": {
-                "passed": 1,
-                "failed": 1,
+                "passed": 2,
+                "failed": 0,
                 "total": 2,
-                "pass_rate": 0.5,
-                "avg_run_seconds": 41.3,
+                "pass_rate": 1,
+                "avg_run_seconds": 41,
                 "measured": {
-                  "input_tokens": 20879,
-                  "cache_read_input_tokens": 180736,
-                  "output_tokens": 3490,
-                  "cost_usd": 0.222555
+                  "input_tokens": 21846,
+                  "cache_read_input_tokens": 209920,
+                  "output_tokens": 3312,
+                  "cost_usd": 0.251638
                 }
               },
               "previous_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": -0.5,
-                "input_tokens": 8603,
-                "output_tokens": 56,
-                "cost_usd": 0.036075
+                "rate": 0,
+                "avg_run_seconds": -6.5,
+                "input_tokens": -9393,
+                "output_tokens": -609,
+                "cost_usd": -0.058359
               },
               "baseline_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": -2.9,
-                "input_tokens": 10204,
-                "output_tokens": -301,
-                "cost_usd": 0.023502
+                "rate": 0,
+                "avg_run_seconds": -9.1,
+                "input_tokens": -156,
+                "output_tokens": -732,
+                "cost_usd": -0.06394
               }
             },
             "openai/gpt-5.6-sol": {
@@ -4086,43 +4414,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 37,
+              "avg_run_seconds": 39.4,
               "estimate": {
                 "input_tokens": 1639,
                 "input_cost_usd": 0.008195
               },
               "measured": {
-                "input_tokens": 33178,
-                "cache_read_input_tokens": 196352,
-                "output_tokens": 2329,
-                "cost_usd": 1.21752
+                "input_tokens": 35295,
+                "cache_read_input_tokens": 205056,
+                "output_tokens": 2508,
+                "cost_usd": 1.276995
               },
               "baseline": {
-                "passed": 1,
-                "failed": 1,
+                "passed": 2,
+                "failed": 0,
                 "total": 2,
-                "pass_rate": 0.5,
-                "avg_run_seconds": 44.5,
+                "pass_rate": 1,
+                "avg_run_seconds": 43.6,
                 "measured": {
-                  "input_tokens": 38145,
-                  "cache_read_input_tokens": 258048,
-                  "output_tokens": 2680,
-                  "cost_usd": 1.561365
+                  "input_tokens": 37152,
+                  "cache_read_input_tokens": 286720,
+                  "output_tokens": 2775,
+                  "cost_usd": 1.70261
                 }
               },
               "previous_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": -8,
-                "input_tokens": -1484,
-                "output_tokens": -439,
-                "cost_usd": -0.06923
+                "rate": 0,
+                "avg_run_seconds": 2.4,
+                "input_tokens": 2117,
+                "output_tokens": 179,
+                "cost_usd": 0.059475
               },
               "baseline_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": -7.5,
-                "input_tokens": -4967,
-                "output_tokens": -351,
-                "cost_usd": -0.343845
+                "rate": 0,
+                "avg_run_seconds": -4.2,
+                "input_tokens": -1857,
+                "output_tokens": -267,
+                "cost_usd": -0.425615
               }
             },
             "openai/gpt-5.6-terra": {
@@ -4132,43 +4460,43 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 38.2,
+              "avg_run_seconds": 35.2,
               "estimate": {
                 "input_tokens": 1639,
                 "input_cost_usd": 0.004098
               },
               "measured": {
-                "input_tokens": 26969,
-                "cache_read_input_tokens": 248064,
-                "output_tokens": 2811,
-                "cost_usd": 0.729748
+                "input_tokens": 23267,
+                "cache_read_input_tokens": 197120,
+                "output_tokens": 2614,
+                "cost_usd": 0.590178
               },
               "baseline": {
-                "passed": 1,
-                "failed": 1,
+                "passed": 2,
+                "failed": 0,
                 "total": 2,
-                "pass_rate": 0.5,
-                "avg_run_seconds": 47.4,
+                "pass_rate": 1,
+                "avg_run_seconds": 43.6,
                 "measured": {
-                  "input_tokens": 42581,
-                  "cache_read_input_tokens": 329984,
-                  "output_tokens": 3429,
-                  "cost_usd": 0.982847
+                  "input_tokens": 38929,
+                  "cache_read_input_tokens": 288512,
+                  "output_tokens": 3054,
+                  "cost_usd": 0.864412
                 }
               },
               "previous_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": 1.9,
-                "input_tokens": 5688,
-                "output_tokens": 105,
-                "cost_usd": 0.130355
+                "rate": 0,
+                "avg_run_seconds": -3,
+                "input_tokens": -3702,
+                "output_tokens": -197,
+                "cost_usd": -0.13957
               },
               "baseline_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": -9.2,
-                "input_tokens": -15612,
-                "output_tokens": -618,
-                "cost_usd": -0.253099
+                "rate": 0,
+                "avg_run_seconds": -8.4,
+                "input_tokens": -15662,
+                "output_tokens": -440,
+                "cost_usd": -0.274234
               }
             },
             "xai/grok-4.5": {
@@ -4178,39 +4506,74 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 16.9,
+              "avg_run_seconds": 18.9,
               "measured": {
-                "input_tokens": 7714,
-                "cache_read_input_tokens": 122112,
-                "output_tokens": 2009,
-                "cost_usd": 0.064116
+                "input_tokens": 10202,
+                "cache_read_input_tokens": 146816,
+                "output_tokens": 1939,
+                "cost_usd": 0.042432
               },
               "baseline": {
-                "passed": 0,
-                "failed": 2,
+                "passed": 1,
+                "failed": 1,
                 "total": 2,
-                "pass_rate": 0,
-                "avg_run_seconds": 5.1,
+                "pass_rate": 0.5,
+                "avg_run_seconds": 33.4,
                 "measured": {
-                  "input_tokens": 196,
-                  "cache_read_input_tokens": 21248,
-                  "output_tokens": 378,
-                  "cost_usd": 0.009034
+                  "input_tokens": 33175,
+                  "cache_read_input_tokens": 158720,
+                  "output_tokens": 2221,
+                  "cost_usd": 0.046291
                 }
               },
               "previous_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": -11,
-                "input_tokens": -740,
-                "output_tokens": -1190,
-                "cost_usd": -0.029932
+                "rate": 0,
+                "avg_run_seconds": 2,
+                "input_tokens": 2488,
+                "output_tokens": -70,
+                "cost_usd": -0.021684
               },
               "baseline_delta": {
-                "rate": 1,
-                "avg_run_seconds": 11.8,
-                "input_tokens": 7518,
-                "output_tokens": 1631,
-                "cost_usd": 0.055082
+                "rate": 0.5,
+                "avg_run_seconds": -14.5,
+                "input_tokens": -22973,
+                "output_tokens": -282,
+                "cost_usd": -0.003859
+              }
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 22.1,
+              "measured": {
+                "input_tokens": 20109,
+                "cache_read_input_tokens": 155392,
+                "output_tokens": 2642,
+                "cost_usd": 0.02274
+              },
+              "baseline": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1,
+                "avg_run_seconds": 57.4,
+                "measured": {
+                  "input_tokens": 82545,
+                  "cache_read_input_tokens": 565504,
+                  "output_tokens": 6322,
+                  "cost_usd": 0.082582
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": -35.3,
+                "input_tokens": -62436,
+                "output_tokens": -3680,
+                "cost_usd": -0.059842
               }
             }
           }
@@ -4330,11 +4693,15 @@
         "openai/gpt-5.3-codex-spark": {
           "provider": "openai",
           "display": "GPT-5.3 Codex Spark",
-          "passed": 12,
-          "failed": 2,
-          "total": 14,
-          "pass_rate": 0.857143,
-          "avg_run_seconds": 15.3
+          "passed": 44,
+          "failed": 13,
+          "total": 57,
+          "pass_rate": 0.77193,
+          "avg_run_seconds": 17.1,
+          "previous_delta": {
+            "rate": -0.085213,
+            "avg_run_seconds": 1.8
+          }
         },
         "openai/gpt-5.4": {
           "provider": "openai",
@@ -4358,11 +4725,11 @@
         "openai/gpt-5.4-mini": {
           "provider": "openai",
           "display": "GPT-5.4 Mini",
-          "passed": 14,
-          "failed": 0,
-          "total": 14,
-          "pass_rate": 1,
-          "avg_run_seconds": 35.9,
+          "passed": 39,
+          "failed": 1,
+          "total": 40,
+          "pass_rate": 0.975,
+          "avg_run_seconds": 46.8,
           "estimate": {
             "input_tokens": 12997,
             "input_cost_usd": 0.009749
@@ -4390,56 +4757,81 @@
         "openai/gpt-5.6-luna": {
           "provider": "openai",
           "display": "GPT-5.6 Luna",
-          "passed": 12,
+          "passed": 55,
           "failed": 2,
-          "total": 14,
-          "pass_rate": 0.857143,
-          "avg_run_seconds": 13.7,
+          "total": 57,
+          "pass_rate": 0.964912,
+          "avg_run_seconds": 23,
           "estimate": {
             "input_tokens": 12997,
             "input_cost_usd": 0.012997
+          },
+          "previous_delta": {
+            "rate": 0.107769,
+            "avg_run_seconds": 9.3,
+            "input_tokens": 0,
+            "cost_usd": 0
           }
         },
         "openai/gpt-5.6-sol": {
           "provider": "openai",
           "display": "GPT-5.6 Sol",
-          "passed": 12,
-          "failed": 2,
-          "total": 14,
-          "pass_rate": 0.857143,
-          "avg_run_seconds": 11.1,
+          "passed": 51,
+          "failed": 6,
+          "total": 57,
+          "pass_rate": 0.894737,
+          "avg_run_seconds": 16.1,
           "estimate": {
-            "input_tokens": 12997,
-            "input_cost_usd": 0.064985
+            "input_tokens": 29363,
+            "input_cost_usd": 0.146815
           },
           "previous_delta": {
-            "rate": 0,
-            "avg_run_seconds": 0,
-            "input_tokens": 0,
-            "cost_usd": 0
+            "rate": 0.037594,
+            "avg_run_seconds": 5,
+            "input_tokens": 16366,
+            "cost_usd": 0.08183
           }
         },
         "openai/gpt-5.6-terra": {
           "provider": "openai",
           "display": "GPT-5.6 Terra",
-          "passed": 13,
-          "failed": 1,
-          "total": 14,
-          "pass_rate": 0.928571,
-          "avg_run_seconds": 13.5,
+          "passed": 50,
+          "failed": 7,
+          "total": 57,
+          "pass_rate": 0.877193,
+          "avg_run_seconds": 15.6,
           "estimate": {
             "input_tokens": 12997,
             "input_cost_usd": 0.032494
+          },
+          "previous_delta": {
+            "rate": -0.051378,
+            "avg_run_seconds": 2.1,
+            "input_tokens": 0,
+            "cost_usd": 0
           }
         },
         "xai/grok-4.5": {
           "provider": "xai",
           "display": "Grok 4.5",
-          "passed": 12,
-          "failed": 2,
-          "total": 14,
-          "pass_rate": 0.857143,
-          "avg_run_seconds": 6.3
+          "passed": 37,
+          "failed": 3,
+          "total": 40,
+          "pass_rate": 0.925,
+          "avg_run_seconds": 7.6,
+          "previous_delta": {
+            "rate": 0.067857,
+            "avg_run_seconds": 1.3
+          }
+        },
+        "xai/grok-4.6": {
+          "provider": "xai",
+          "display": "Grok 4.6",
+          "passed": 32,
+          "failed": 8,
+          "total": 40,
+          "pass_rate": 0.8,
+          "avg_run_seconds": 8
         }
       },
       "evals": {
@@ -4732,33 +5124,39 @@
         "openai/gpt-5.3-codex-spark": {
           "provider": "openai",
           "display": "GPT-5.3 Codex Spark",
-          "passed": 2,
-          "failed": 1,
-          "total": 3,
+          "passed": 8,
+          "failed": 4,
+          "total": 12,
           "pass_rate": 0.666667,
-          "avg_run_seconds": 21.1,
+          "avg_run_seconds": 22.2,
           "measured": {
-            "input_tokens": 21412,
-            "cache_read_input_tokens": 323072,
-            "output_tokens": 9142
+            "input_tokens": 184923,
+            "cache_read_input_tokens": 1947136,
+            "output_tokens": 68212
           },
           "baseline": {
-            "passed": 1,
-            "failed": 2,
-            "total": 3,
-            "pass_rate": 0.333333,
-            "avg_run_seconds": 14.3,
+            "passed": 2,
+            "failed": 10,
+            "total": 12,
+            "pass_rate": 0.166667,
+            "avg_run_seconds": 16,
             "measured": {
-              "input_tokens": 16734,
-              "cache_read_input_tokens": 224128,
-              "output_tokens": 7364
+              "input_tokens": 83818,
+              "cache_read_input_tokens": 1012224,
+              "output_tokens": 50641
             }
           },
+          "previous_delta": {
+            "rate": 0,
+            "avg_run_seconds": 1.1,
+            "input_tokens": 163511,
+            "output_tokens": 59070
+          },
           "baseline_delta": {
-            "rate": 0.333334,
-            "avg_run_seconds": 6.8,
-            "input_tokens": 4678,
-            "output_tokens": 1778
+            "rate": 0.5,
+            "avg_run_seconds": 6.2,
+            "input_tokens": 101105,
+            "output_tokens": 17571
           }
         },
         "openai/gpt-5.4": {
@@ -4768,82 +5166,89 @@
           "failed": 4,
           "total": 14,
           "pass_rate": 0.714286,
-          "avg_run_seconds": 79.5,
+          "avg_run_seconds": 68.4,
           "estimate": {
             "input_tokens": 21489,
             "input_cost_usd": 0.053726
           },
           "measured": {
-            "input_tokens": 245768,
-            "cache_read_input_tokens": 2452352,
-            "output_tokens": 44444,
-            "cost_usd": 7.411962
+            "input_tokens": 225244,
+            "cache_read_input_tokens": 1632128,
+            "output_tokens": 38446,
+            "cost_usd": 5.220123
           },
           "baseline": {
             "passed": 4,
             "failed": 10,
             "total": 14,
             "pass_rate": 0.285714,
-            "avg_run_seconds": 69.7,
+            "avg_run_seconds": 60.1,
             "measured": {
-              "input_tokens": 241331,
-              "cache_read_input_tokens": 2104448,
-              "output_tokens": 37861,
-              "cost_usd": 6.432366
+              "input_tokens": 176542,
+              "cache_read_input_tokens": 1288064,
+              "output_tokens": 33393,
+              "cost_usd": 4.162413
             }
           },
           "previous_delta": {
-            "rate": 0,
-            "avg_run_seconds": -1,
-            "input_tokens": -89661,
-            "output_tokens": 606,
-            "cost_usd": -0.948183
+            "rate": 0.142857,
+            "avg_run_seconds": -23.6,
+            "input_tokens": -24387,
+            "output_tokens": -8117,
+            "cost_usd": -2.428161
           },
           "baseline_delta": {
             "rate": 0.428572,
-            "avg_run_seconds": 9.8,
-            "input_tokens": 4437,
-            "output_tokens": 6583,
-            "cost_usd": 0.979596
+            "avg_run_seconds": 8.3,
+            "input_tokens": 48702,
+            "output_tokens": 5053,
+            "cost_usd": 1.05771
           }
         },
         "openai/gpt-5.4-mini": {
           "provider": "openai",
           "display": "GPT-5.4 Mini",
-          "passed": 1,
-          "failed": 2,
-          "total": 3,
-          "pass_rate": 0.333333,
-          "avg_run_seconds": 86,
+          "passed": 4,
+          "failed": 3,
+          "total": 7,
+          "pass_rate": 0.571429,
+          "avg_run_seconds": 166,
           "estimate": {
             "input_tokens": 2833,
             "input_cost_usd": 0.002125
           },
           "measured": {
-            "input_tokens": 45599,
-            "cache_read_input_tokens": 402560,
-            "output_tokens": 15514,
-            "cost_usd": 0.405932
+            "input_tokens": 339655,
+            "cache_read_input_tokens": 2564352,
+            "output_tokens": 65700,
+            "cost_usd": 2.473656
           },
           "baseline": {
-            "passed": 1,
-            "failed": 2,
-            "total": 3,
-            "pass_rate": 0.333333,
-            "avg_run_seconds": 62.2,
+            "passed": 2,
+            "failed": 5,
+            "total": 7,
+            "pass_rate": 0.285714,
+            "avg_run_seconds": 116,
             "measured": {
-              "input_tokens": 28359,
-              "cache_read_input_tokens": 301184,
-              "output_tokens": 10629,
-              "cost_usd": 0.294988
+              "input_tokens": 253480,
+              "cache_read_input_tokens": 1198720,
+              "output_tokens": 47307,
+              "cost_usd": 1.302031
             }
           },
+          "previous_delta": {
+            "rate": 0.238096,
+            "avg_run_seconds": 80,
+            "input_tokens": 294056,
+            "output_tokens": 50186,
+            "cost_usd": 2.067724
+          },
           "baseline_delta": {
-            "rate": 0,
-            "avg_run_seconds": 23.8,
-            "input_tokens": 17240,
-            "output_tokens": 4885,
-            "cost_usd": 0.110944
+            "rate": 0.285715,
+            "avg_run_seconds": 50,
+            "input_tokens": 86175,
+            "output_tokens": 18393,
+            "cost_usd": 1.171625
           }
         },
         "openai/gpt-5.5": {
@@ -4853,209 +5258,259 @@
           "failed": 3,
           "total": 14,
           "pass_rate": 0.785714,
-          "avg_run_seconds": 86.1,
+          "avg_run_seconds": 75.8,
           "estimate": {
             "input_tokens": 21489,
             "input_cost_usd": 0.107445
           },
           "measured": {
-            "input_tokens": 404674,
-            "cache_read_input_tokens": 2450304,
-            "output_tokens": 43481,
-            "cost_usd": 15.57932
+            "input_tokens": 343436,
+            "cache_read_input_tokens": 2199040,
+            "output_tokens": 42064,
+            "cost_usd": 13.9743
           },
           "baseline": {
             "passed": 7,
             "failed": 7,
             "total": 14,
             "pass_rate": 0.5,
-            "avg_run_seconds": 68.5,
+            "avg_run_seconds": 79.6,
             "measured": {
-              "input_tokens": 346455,
-              "cache_read_input_tokens": 2123136,
-              "output_tokens": 37065,
-              "cost_usd": 13.459905
+              "input_tokens": 345013,
+              "cache_read_input_tokens": 2336768,
+              "output_tokens": 41127,
+              "cost_usd": 14.642715
             }
           },
           "previous_delta": {
             "rate": 0,
-            "avg_run_seconds": 12.7,
-            "input_tokens": 15578,
-            "output_tokens": 3682,
-            "cost_usd": 1.45363
+            "avg_run_seconds": -9,
+            "input_tokens": -55981,
+            "output_tokens": 261,
+            "cost_usd": -1.431755
           },
           "baseline_delta": {
             "rate": 0.285714,
-            "avg_run_seconds": 17.6,
-            "input_tokens": 58219,
-            "output_tokens": 6416,
-            "cost_usd": 2.119415
+            "avg_run_seconds": -3.8,
+            "input_tokens": -1577,
+            "output_tokens": 937,
+            "cost_usd": -0.668415
           }
         },
         "openai/gpt-5.6-luna": {
           "provider": "openai",
           "display": "GPT-5.6 Luna",
-          "passed": 3,
+          "passed": 12,
           "failed": 0,
-          "total": 3,
+          "total": 12,
           "pass_rate": 1,
-          "avg_run_seconds": 45.9,
+          "avg_run_seconds": 56.9,
           "estimate": {
             "input_tokens": 2833,
             "input_cost_usd": 0.002833
           },
           "measured": {
-            "input_tokens": 40448,
-            "cache_read_input_tokens": 246016,
-            "output_tokens": 5763,
-            "cost_usd": 0.321042
+            "input_tokens": 176241,
+            "cache_read_input_tokens": 1246208,
+            "output_tokens": 30784,
+            "cost_usd": 1.607153
           },
           "baseline": {
-            "passed": 1,
-            "failed": 2,
-            "total": 3,
+            "passed": 4,
+            "failed": 8,
+            "total": 12,
             "pass_rate": 0.333333,
-            "avg_run_seconds": 57.8,
+            "avg_run_seconds": 61.6,
             "measured": {
-              "input_tokens": 41673,
-              "cache_read_input_tokens": 314368,
-              "output_tokens": 7302,
-              "cost_usd": 0.399853
+              "input_tokens": 190454,
+              "cache_read_input_tokens": 1408000,
+              "output_tokens": 32801,
+              "cost_usd": 1.79526
             }
+          },
+          "previous_delta": {
+            "rate": 0,
+            "avg_run_seconds": 11,
+            "input_tokens": 135793,
+            "output_tokens": 25021,
+            "cost_usd": 1.286111
           },
           "baseline_delta": {
             "rate": 0.666667,
-            "avg_run_seconds": -11.9,
-            "input_tokens": -1225,
-            "output_tokens": -1539,
-            "cost_usd": -0.078811
+            "avg_run_seconds": -4.7,
+            "input_tokens": -14213,
+            "output_tokens": -2017,
+            "cost_usd": -0.188107
           }
         },
         "openai/gpt-5.6-sol": {
           "provider": "openai",
           "display": "GPT-5.6 Sol",
-          "passed": 3,
-          "failed": 0,
-          "total": 3,
-          "pass_rate": 1,
-          "avg_run_seconds": 40.3,
+          "passed": 11,
+          "failed": 1,
+          "total": 12,
+          "pass_rate": 0.916667,
+          "avg_run_seconds": 59.8,
           "estimate": {
             "input_tokens": 2833,
             "input_cost_usd": 0.014165
           },
           "measured": {
-            "input_tokens": 35196,
-            "cache_read_input_tokens": 226304,
-            "output_tokens": 4059,
-            "cost_usd": 1.42927
+            "input_tokens": 214555,
+            "cache_read_input_tokens": 1423872,
+            "output_tokens": 28482,
+            "cost_usd": 9.046595
           },
           "baseline": {
-            "passed": 2,
-            "failed": 1,
-            "total": 3,
+            "passed": 8,
+            "failed": 4,
+            "total": 12,
             "pass_rate": 0.666667,
-            "avg_run_seconds": 39.4,
+            "avg_run_seconds": 53.4,
             "measured": {
-              "input_tokens": 34513,
-              "cache_read_input_tokens": 250112,
-              "output_tokens": 3939,
-              "cost_usd": 1.541295
+              "input_tokens": 183998,
+              "cache_read_input_tokens": 1296640,
+              "output_tokens": 25285,
+              "cost_usd": 8.16174
             }
           },
           "previous_delta": {
-            "rate": 0.333333,
-            "avg_run_seconds": 2.7,
-            "input_tokens": -584,
-            "output_tokens": 102,
-            "cost_usd": 0.00526
+            "rate": -0.083333,
+            "avg_run_seconds": 19.5,
+            "input_tokens": 179359,
+            "output_tokens": 24423,
+            "cost_usd": 7.617325
           },
           "baseline_delta": {
-            "rate": 0.333333,
-            "avg_run_seconds": 0.9,
-            "input_tokens": 683,
-            "output_tokens": 120,
-            "cost_usd": -0.112025
+            "rate": 0.25,
+            "avg_run_seconds": 6.4,
+            "input_tokens": 30557,
+            "output_tokens": 3197,
+            "cost_usd": 0.884855
           }
         },
         "openai/gpt-5.6-terra": {
           "provider": "openai",
           "display": "GPT-5.6 Terra",
-          "passed": 3,
+          "passed": 12,
           "failed": 0,
-          "total": 3,
+          "total": 12,
           "pass_rate": 1,
-          "avg_run_seconds": 49.4,
+          "avg_run_seconds": 72.8,
           "estimate": {
             "input_tokens": 2833,
             "input_cost_usd": 0.007083
           },
           "measured": {
-            "input_tokens": 51124,
-            "cache_read_input_tokens": 367616,
-            "output_tokens": 5718,
-            "cost_usd": 1.132621
+            "input_tokens": 216853,
+            "cache_read_input_tokens": 1818880,
+            "output_tokens": 38549,
+            "cost_usd": 5.66757
           },
           "baseline": {
-            "passed": 2,
-            "failed": 1,
-            "total": 3,
-            "pass_rate": 0.666667,
-            "avg_run_seconds": 39.6,
+            "passed": 5,
+            "failed": 7,
+            "total": 12,
+            "pass_rate": 0.416667,
+            "avg_run_seconds": 59,
             "measured": {
-              "input_tokens": 41706,
-              "cache_read_input_tokens": 254464,
-              "output_tokens": 4642,
-              "cost_usd": 0.810056
+              "input_tokens": 147990,
+              "cache_read_input_tokens": 1424896,
+              "output_tokens": 29241,
+              "cost_usd": 4.370831
             }
           },
+          "previous_delta": {
+            "rate": 0,
+            "avg_run_seconds": 23.4,
+            "input_tokens": 165729,
+            "output_tokens": 32831,
+            "cost_usd": 4.534949
+          },
           "baseline_delta": {
-            "rate": 0.333333,
-            "avg_run_seconds": 9.8,
-            "input_tokens": 9418,
-            "output_tokens": 1076,
-            "cost_usd": 0.322565
+            "rate": 0.583333,
+            "avg_run_seconds": 13.8,
+            "input_tokens": 68863,
+            "output_tokens": 9308,
+            "cost_usd": 1.296739
           }
         },
         "xai/grok-4.5": {
           "provider": "xai",
           "display": "Grok 4.5",
-          "passed": 13,
-          "failed": 1,
+          "passed": 14,
+          "failed": 0,
           "total": 14,
-          "pass_rate": 0.928571,
-          "avg_run_seconds": 36.4,
+          "pass_rate": 1,
+          "avg_run_seconds": 51,
           "measured": {
-            "input_tokens": 188389,
-            "cache_read_input_tokens": 1270272,
-            "output_tokens": 34969,
-            "cost_usd": 0.967673
+            "input_tokens": 256546,
+            "cache_read_input_tokens": 1652480,
+            "output_tokens": 41044,
+            "cost_usd": 0.92785
           },
           "baseline": {
-            "passed": 11,
-            "failed": 3,
+            "passed": 12,
+            "failed": 2,
             "total": 14,
-            "pass_rate": 0.785714,
-            "avg_run_seconds": 64.5,
+            "pass_rate": 0.857143,
+            "avg_run_seconds": 68.1,
             "measured": {
-              "input_tokens": 466343,
-              "cache_read_input_tokens": 4462464,
-              "output_tokens": 55468,
-              "cost_usd": 2.604232
+              "input_tokens": 531065,
+              "cache_read_input_tokens": 4464512,
+              "output_tokens": 56195,
+              "cost_usd": 2.232088
             }
           },
           "previous_delta": {
-            "rate": -0.071429,
-            "avg_run_seconds": 7.6,
-            "input_tokens": 93246,
-            "output_tokens": 12399,
-            "cost_usd": 0.428464
+            "rate": 0.083333,
+            "avg_run_seconds": 19.2,
+            "input_tokens": 125989,
+            "output_tokens": 12181,
+            "cost_usd": 0.207786
           },
           "baseline_delta": {
             "rate": 0.142857,
-            "avg_run_seconds": -28.1,
-            "input_tokens": -277954,
-            "output_tokens": -20499,
-            "cost_usd": -1.636559
+            "avg_run_seconds": -17.1,
+            "input_tokens": -274519,
+            "output_tokens": -15151,
+            "cost_usd": -1.304238
+          }
+        },
+        "xai/grok-4.6": {
+          "provider": "xai",
+          "display": "Grok 4.6",
+          "passed": 7,
+          "failed": 0,
+          "total": 7,
+          "pass_rate": 1,
+          "avg_run_seconds": 118.9,
+          "measured": {
+            "input_tokens": 234136,
+            "cache_read_input_tokens": 1209472,
+            "output_tokens": 53231,
+            "cost_usd": 0.236706
+          },
+          "baseline": {
+            "passed": 5,
+            "failed": 0,
+            "errored": 2,
+            "total": 7,
+            "pass_rate": 1,
+            "avg_run_seconds": 139.8,
+            "measured": {
+              "input_tokens": 278332,
+              "cache_read_input_tokens": 2182016,
+              "output_tokens": 35681,
+              "cost_usd": 0.316498
+            }
+          },
+          "baseline_delta": {
+            "rate": 0,
+            "avg_run_seconds": -20.9,
+            "input_tokens": -44196,
+            "output_tokens": 17550,
+            "cost_usd": -0.079792
           }
         }
       },
@@ -5173,11 +5628,15 @@
             "openai/gpt-5.3-codex-spark": {
               "provider": "openai",
               "display": "GPT-5.3 Codex Spark",
-              "passed": 12,
-              "failed": 2,
+              "passed": 13,
+              "failed": 1,
               "total": 14,
-              "pass_rate": 0.857143,
-              "avg_run_seconds": 15.3
+              "pass_rate": 0.928571,
+              "avg_run_seconds": 16.6,
+              "previous_delta": {
+                "rate": 0.071428,
+                "avg_run_seconds": 1.3
+              }
             },
             "openai/gpt-5.4": {
               "provider": "openai",
@@ -5233,14 +5692,20 @@
             "openai/gpt-5.6-luna": {
               "provider": "openai",
               "display": "GPT-5.6 Luna",
-              "passed": 12,
-              "failed": 2,
+              "passed": 13,
+              "failed": 1,
               "total": 14,
-              "pass_rate": 0.857143,
-              "avg_run_seconds": 13.7,
+              "pass_rate": 0.928571,
+              "avg_run_seconds": 13.6,
               "estimate": {
                 "input_tokens": 12997,
                 "input_cost_usd": 0.012997
+              },
+              "previous_delta": {
+                "rate": 0.071428,
+                "avg_run_seconds": -0.1,
+                "input_tokens": 0,
+                "cost_usd": 0
               }
             },
             "openai/gpt-5.6-sol": {
@@ -5250,14 +5715,14 @@
               "failed": 2,
               "total": 14,
               "pass_rate": 0.857143,
-              "avg_run_seconds": 11.1,
+              "avg_run_seconds": 10.3,
               "estimate": {
                 "input_tokens": 12997,
                 "input_cost_usd": 0.064985
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": 0,
+                "avg_run_seconds": -0.8,
                 "input_tokens": 0,
                 "cost_usd": 0
               }
@@ -5269,10 +5734,16 @@
               "failed": 1,
               "total": 14,
               "pass_rate": 0.928571,
-              "avg_run_seconds": 13.5,
+              "avg_run_seconds": 13.2,
               "estimate": {
                 "input_tokens": 12997,
                 "input_cost_usd": 0.032494
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -0.3,
+                "input_tokens": 0,
+                "cost_usd": 0
               }
             },
             "xai/grok-4.5": {
@@ -5282,7 +5753,20 @@
               "failed": 2,
               "total": 14,
               "pass_rate": 0.857143,
-              "avg_run_seconds": 6.3
+              "avg_run_seconds": 6.7,
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": 0.4
+              }
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 10,
+              "failed": 4,
+              "total": 14,
+              "pass_rate": 0.714286,
+              "avg_run_seconds": 6.9
             }
           },
           "evals": {
@@ -5570,33 +6054,39 @@
             "openai/gpt-5.3-codex-spark": {
               "provider": "openai",
               "display": "GPT-5.3 Codex Spark",
-              "passed": 2,
-              "failed": 1,
+              "passed": 3,
+              "failed": 0,
               "total": 3,
-              "pass_rate": 0.666667,
-              "avg_run_seconds": 21.1,
+              "pass_rate": 1,
+              "avg_run_seconds": 21.8,
               "measured": {
-                "input_tokens": 21412,
-                "cache_read_input_tokens": 323072,
-                "output_tokens": 9142
+                "input_tokens": 29934,
+                "cache_read_input_tokens": 338688,
+                "output_tokens": 9293
               },
               "baseline": {
                 "passed": 1,
                 "failed": 2,
                 "total": 3,
                 "pass_rate": 0.333333,
-                "avg_run_seconds": 14.3,
+                "avg_run_seconds": 14.8,
                 "measured": {
-                  "input_tokens": 16734,
-                  "cache_read_input_tokens": 224128,
-                  "output_tokens": 7364
+                  "input_tokens": 17498,
+                  "cache_read_input_tokens": 248192,
+                  "output_tokens": 8474
                 }
               },
+              "previous_delta": {
+                "rate": 0.333333,
+                "avg_run_seconds": 0.7,
+                "input_tokens": 8522,
+                "output_tokens": 151
+              },
               "baseline_delta": {
-                "rate": 0.333334,
-                "avg_run_seconds": 6.8,
-                "input_tokens": 4678,
-                "output_tokens": 1778
+                "rate": 0.666667,
+                "avg_run_seconds": 7,
+                "input_tokens": 12436,
+                "output_tokens": 819
               }
             },
             "openai/gpt-5.4": {
@@ -5606,82 +6096,89 @@
               "failed": 1,
               "total": 3,
               "pass_rate": 0.666667,
-              "avg_run_seconds": 35.3,
+              "avg_run_seconds": 38.8,
               "estimate": {
                 "input_tokens": 2833,
                 "input_cost_usd": 0.007083
               },
               "measured": {
-                "input_tokens": 22258,
-                "cache_read_input_tokens": 183424,
-                "output_tokens": 4263,
-                "cost_usd": 0.578151
+                "input_tokens": 23349,
+                "cache_read_input_tokens": 184448,
+                "output_tokens": 5045,
+                "cost_usd": 0.595169
               },
               "baseline": {
                 "passed": 0,
                 "failed": 3,
                 "total": 3,
                 "pass_rate": 0,
-                "avg_run_seconds": 37.2,
+                "avg_run_seconds": 45.8,
                 "measured": {
-                  "input_tokens": 19337,
-                  "cache_read_input_tokens": 173696,
-                  "output_tokens": 4206,
-                  "cost_usd": 0.545674
+                  "input_tokens": 22479,
+                  "cache_read_input_tokens": 217856,
+                  "output_tokens": 5534,
+                  "cost_usd": 0.683849
                 }
               },
               "previous_delta": {
-                "rate": -0.333333,
-                "avg_run_seconds": 0,
-                "input_tokens": -19697,
-                "output_tokens": -181,
-                "cost_usd": -0.076597
+                "rate": 0,
+                "avg_run_seconds": 3.5,
+                "input_tokens": 1091,
+                "output_tokens": 782,
+                "cost_usd": 0.017018
               },
               "baseline_delta": {
                 "rate": 0.666667,
-                "avg_run_seconds": -1.9,
-                "input_tokens": 2921,
-                "output_tokens": 57,
-                "cost_usd": 0.032477
+                "avg_run_seconds": -7,
+                "input_tokens": 870,
+                "output_tokens": -489,
+                "cost_usd": -0.08868
               }
             },
             "openai/gpt-5.4-mini": {
               "provider": "openai",
               "display": "GPT-5.4 Mini",
-              "passed": 1,
-              "failed": 2,
+              "passed": 2,
+              "failed": 1,
               "total": 3,
-              "pass_rate": 0.333333,
-              "avg_run_seconds": 86,
+              "pass_rate": 0.666667,
+              "avg_run_seconds": 65.7,
               "estimate": {
                 "input_tokens": 2833,
                 "input_cost_usd": 0.002125
               },
               "measured": {
-                "input_tokens": 45599,
-                "cache_read_input_tokens": 402560,
-                "output_tokens": 15514,
-                "cost_usd": 0.405932
+                "input_tokens": 30500,
+                "cache_read_input_tokens": 280960,
+                "output_tokens": 11811,
+                "cost_usd": 0.286745
               },
               "baseline": {
                 "passed": 1,
                 "failed": 2,
                 "total": 3,
                 "pass_rate": 0.333333,
-                "avg_run_seconds": 62.2,
+                "avg_run_seconds": 80.8,
                 "measured": {
-                  "input_tokens": 28359,
-                  "cache_read_input_tokens": 301184,
-                  "output_tokens": 10629,
-                  "cost_usd": 0.294988
+                  "input_tokens": 34421,
+                  "cache_read_input_tokens": 395392,
+                  "output_tokens": 14409,
+                  "cost_usd": 0.3872
                 }
               },
+              "previous_delta": {
+                "rate": 0.333334,
+                "avg_run_seconds": -20.3,
+                "input_tokens": -15099,
+                "output_tokens": -3703,
+                "cost_usd": -0.119187
+              },
               "baseline_delta": {
-                "rate": 0,
-                "avg_run_seconds": 23.8,
-                "input_tokens": 17240,
-                "output_tokens": 4885,
-                "cost_usd": 0.110944
+                "rate": 0.333334,
+                "avg_run_seconds": -15.1,
+                "input_tokens": -3921,
+                "output_tokens": -2598,
+                "cost_usd": -0.100455
               }
             },
             "openai/gpt-5.5": {
@@ -5691,43 +6188,43 @@
               "failed": 1,
               "total": 3,
               "pass_rate": 0.666667,
-              "avg_run_seconds": 55.5,
+              "avg_run_seconds": 51.7,
               "estimate": {
                 "input_tokens": 2833,
                 "input_cost_usd": 0.014165
               },
               "measured": {
-                "input_tokens": 47319,
-                "cache_read_input_tokens": 316032,
-                "output_tokens": 6518,
-                "cost_usd": 2.012295
+                "input_tokens": 39014,
+                "cache_read_input_tokens": 275968,
+                "output_tokens": 6553,
+                "cost_usd": 1.7715
               },
               "baseline": {
                 "passed": 2,
                 "failed": 1,
                 "total": 3,
                 "pass_rate": 0.666667,
-                "avg_run_seconds": 56.2,
+                "avg_run_seconds": 58.8,
                 "measured": {
-                  "input_tokens": 32147,
-                  "cache_read_input_tokens": 302336,
-                  "output_tokens": 6904,
-                  "cost_usd": 1.879535
+                  "input_tokens": 42081,
+                  "cache_read_input_tokens": 294144,
+                  "output_tokens": 7671,
+                  "cost_usd": 1.911255
                 }
               },
               "previous_delta": {
-                "rate": -0.333333,
-                "avg_run_seconds": -7,
-                "input_tokens": -26520,
-                "output_tokens": -324,
-                "cost_usd": -0.30232
+                "rate": 0,
+                "avg_run_seconds": -3.8,
+                "input_tokens": -8305,
+                "output_tokens": 35,
+                "cost_usd": -0.240795
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": -0.7,
-                "input_tokens": 15172,
-                "output_tokens": -386,
-                "cost_usd": 0.13276
+                "avg_run_seconds": -7.1,
+                "input_tokens": -3067,
+                "output_tokens": -1118,
+                "cost_usd": -0.139755
               }
             },
             "openai/gpt-5.6-luna": {
@@ -5737,36 +6234,43 @@
               "failed": 0,
               "total": 3,
               "pass_rate": 1,
-              "avg_run_seconds": 45.9,
+              "avg_run_seconds": 41.7,
               "estimate": {
                 "input_tokens": 2833,
                 "input_cost_usd": 0.002833
               },
               "measured": {
-                "input_tokens": 40448,
-                "cache_read_input_tokens": 246016,
-                "output_tokens": 5763,
-                "cost_usd": 0.321042
+                "input_tokens": 35301,
+                "cache_read_input_tokens": 233984,
+                "output_tokens": 5251,
+                "cost_usd": 0.300791
               },
               "baseline": {
-                "passed": 1,
-                "failed": 2,
+                "passed": 2,
+                "failed": 1,
                 "total": 3,
-                "pass_rate": 0.333333,
-                "avg_run_seconds": 57.8,
+                "pass_rate": 0.666667,
+                "avg_run_seconds": 52.5,
                 "measured": {
-                  "input_tokens": 41673,
-                  "cache_read_input_tokens": 314368,
-                  "output_tokens": 7302,
-                  "cost_usd": 0.399853
+                  "input_tokens": 44076,
+                  "cache_read_input_tokens": 347136,
+                  "output_tokens": 6921,
+                  "cost_usd": 0.432738
                 }
               },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": -4.2,
+                "input_tokens": -5147,
+                "output_tokens": -512,
+                "cost_usd": -0.020251
+              },
               "baseline_delta": {
-                "rate": 0.666667,
-                "avg_run_seconds": -11.9,
-                "input_tokens": -1225,
-                "output_tokens": -1539,
-                "cost_usd": -0.078811
+                "rate": 0.333333,
+                "avg_run_seconds": -10.8,
+                "input_tokens": -8775,
+                "output_tokens": -1670,
+                "cost_usd": -0.131947
               }
             },
             "openai/gpt-5.6-sol": {
@@ -5776,43 +6280,43 @@
               "failed": 0,
               "total": 3,
               "pass_rate": 1,
-              "avg_run_seconds": 40.3,
+              "avg_run_seconds": 39.7,
               "estimate": {
                 "input_tokens": 2833,
                 "input_cost_usd": 0.014165
               },
               "measured": {
-                "input_tokens": 35196,
-                "cache_read_input_tokens": 226304,
-                "output_tokens": 4059,
-                "cost_usd": 1.42927
+                "input_tokens": 30783,
+                "cache_read_input_tokens": 224256,
+                "output_tokens": 4186,
+                "cost_usd": 1.400775
               },
               "baseline": {
                 "passed": 2,
                 "failed": 1,
                 "total": 3,
                 "pass_rate": 0.666667,
-                "avg_run_seconds": 39.4,
+                "avg_run_seconds": 39.2,
                 "measured": {
-                  "input_tokens": 34513,
-                  "cache_read_input_tokens": 250112,
-                  "output_tokens": 3939,
-                  "cost_usd": 1.541295
+                  "input_tokens": 37604,
+                  "cache_read_input_tokens": 247040,
+                  "output_tokens": 4039,
+                  "cost_usd": 1.54439
                 }
               },
               "previous_delta": {
-                "rate": 0.333333,
-                "avg_run_seconds": 2.7,
-                "input_tokens": -584,
-                "output_tokens": 102,
-                "cost_usd": 0.00526
+                "rate": 0,
+                "avg_run_seconds": -0.6,
+                "input_tokens": -4413,
+                "output_tokens": 127,
+                "cost_usd": -0.028495
               },
               "baseline_delta": {
                 "rate": 0.333333,
-                "avg_run_seconds": 0.9,
-                "input_tokens": 683,
-                "output_tokens": 120,
-                "cost_usd": -0.112025
+                "avg_run_seconds": 0.5,
+                "input_tokens": -6821,
+                "output_tokens": 147,
+                "cost_usd": -0.143615
               }
             },
             "openai/gpt-5.6-terra": {
@@ -5822,36 +6326,43 @@
               "failed": 0,
               "total": 3,
               "pass_rate": 1,
-              "avg_run_seconds": 49.4,
+              "avg_run_seconds": 51.3,
               "estimate": {
                 "input_tokens": 2833,
                 "input_cost_usd": 0.007083
               },
               "measured": {
-                "input_tokens": 51124,
-                "cache_read_input_tokens": 367616,
-                "output_tokens": 5718,
-                "cost_usd": 1.132621
+                "input_tokens": 45479,
+                "cache_read_input_tokens": 323072,
+                "output_tokens": 6201,
+                "cost_usd": 1.014394
               },
               "baseline": {
                 "passed": 2,
                 "failed": 1,
                 "total": 3,
                 "pass_rate": 0.666667,
-                "avg_run_seconds": 39.6,
+                "avg_run_seconds": 42.3,
                 "measured": {
-                  "input_tokens": 41706,
-                  "cache_read_input_tokens": 254464,
-                  "output_tokens": 4642,
-                  "cost_usd": 0.810056
+                  "input_tokens": 36810,
+                  "cache_read_input_tokens": 257536,
+                  "output_tokens": 5036,
+                  "cost_usd": 0.811406
                 }
+              },
+              "previous_delta": {
+                "rate": 0,
+                "avg_run_seconds": 1.9,
+                "input_tokens": -5645,
+                "output_tokens": 483,
+                "cost_usd": -0.118227
               },
               "baseline_delta": {
                 "rate": 0.333333,
-                "avg_run_seconds": 9.8,
-                "input_tokens": 9418,
-                "output_tokens": 1076,
-                "cost_usd": 0.322565
+                "avg_run_seconds": 9,
+                "input_tokens": 8669,
+                "output_tokens": 1165,
+                "cost_usd": 0.202988
               }
             },
             "xai/grok-4.5": {
@@ -5861,39 +6372,75 @@
               "failed": 0,
               "total": 3,
               "pass_rate": 1,
-              "avg_run_seconds": 28.5,
+              "avg_run_seconds": 32.4,
               "measured": {
-                "input_tokens": 38744,
-                "cache_read_input_tokens": 306432,
-                "output_tokens": 5897,
-                "cost_usd": 0.2048
+                "input_tokens": 45236,
+                "cache_read_input_tokens": 293120,
+                "output_tokens": 5946,
+                "cost_usd": 0.161788
               },
               "baseline": {
                 "passed": 3,
                 "failed": 0,
                 "total": 3,
                 "pass_rate": 1,
-                "avg_run_seconds": 60.8,
+                "avg_run_seconds": 70.1,
                 "measured": {
-                  "input_tokens": 100340,
-                  "cache_read_input_tokens": 1018112,
-                  "output_tokens": 11935,
-                  "cost_usd": 0.577723
+                  "input_tokens": 123406,
+                  "cache_read_input_tokens": 1075328,
+                  "output_tokens": 12082,
+                  "cost_usd": 0.492896
                 }
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": 1.9,
-                "input_tokens": 23940,
-                "output_tokens": 494,
-                "cost_usd": 0.082908
+                "avg_run_seconds": 3.9,
+                "input_tokens": 6492,
+                "output_tokens": 49,
+                "cost_usd": -0.043012
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": -32.3,
-                "input_tokens": -61596,
-                "output_tokens": -6038,
-                "cost_usd": -0.372923
+                "avg_run_seconds": -37.7,
+                "input_tokens": -78170,
+                "output_tokens": -6136,
+                "cost_usd": -0.331108
+              }
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1,
+              "avg_run_seconds": 49.3,
+              "measured": {
+                "input_tokens": 61152,
+                "cache_read_input_tokens": 167936,
+                "output_tokens": 10296,
+                "cost_usd": 0.045567
+              },
+              "baseline": {
+                "passed": 2,
+                "failed": 0,
+                "errored": 1,
+                "total": 3,
+                "pass_rate": 1,
+                "avg_run_seconds": 141.5,
+                "measured": {
+                  "input_tokens": 96337,
+                  "cache_read_input_tokens": 904960,
+                  "output_tokens": 12558,
+                  "cost_usd": 0.122485
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": -92.2,
+                "input_tokens": -35185,
+                "output_tokens": -2262,
+                "cost_usd": -0.076918
               }
             }
           }
@@ -6002,6 +6549,15 @@
                 "cost_usd": 0
               }
             },
+            "openai/gpt-5.3-codex-spark": {
+              "provider": "openai",
+              "display": "GPT-5.3 Codex Spark",
+              "passed": 10,
+              "failed": 3,
+              "total": 13,
+              "pass_rate": 0.769231,
+              "avg_run_seconds": 16.7
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -6021,6 +6577,15 @@
                 "cost_usd": 0.000215
               }
             },
+            "openai/gpt-5.4-mini": {
+              "provider": "openai",
+              "display": "GPT-5.4 Mini",
+              "passed": 13,
+              "failed": 0,
+              "total": 13,
+              "pass_rate": 1,
+              "avg_run_seconds": 42.4
+            },
             "openai/gpt-5.5": {
               "provider": "openai",
               "display": "GPT-5.5",
@@ -6033,6 +6598,55 @@
                 "input_tokens": 15248,
                 "input_cost_usd": 0.07624
               }
+            },
+            "openai/gpt-5.6-luna": {
+              "provider": "openai",
+              "display": "GPT-5.6 Luna",
+              "passed": 13,
+              "failed": 0,
+              "total": 13,
+              "pass_rate": 1,
+              "avg_run_seconds": 20
+            },
+            "openai/gpt-5.6-sol": {
+              "provider": "openai",
+              "display": "GPT-5.6 Sol",
+              "passed": 13,
+              "failed": 0,
+              "total": 13,
+              "pass_rate": 1,
+              "avg_run_seconds": 17.1,
+              "estimate": {
+                "input_tokens": 16366,
+                "input_cost_usd": 0.08183
+              }
+            },
+            "openai/gpt-5.6-terra": {
+              "provider": "openai",
+              "display": "GPT-5.6 Terra",
+              "passed": 12,
+              "failed": 1,
+              "total": 13,
+              "pass_rate": 0.923077,
+              "avg_run_seconds": 15.8
+            },
+            "xai/grok-4.5": {
+              "provider": "xai",
+              "display": "Grok 4.5",
+              "passed": 12,
+              "failed": 1,
+              "total": 13,
+              "pass_rate": 0.923077,
+              "avg_run_seconds": 7.4
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 12,
+              "failed": 1,
+              "total": 13,
+              "pass_rate": 0.923077,
+              "avg_run_seconds": 8
             }
           },
           "evals": {
@@ -6322,6 +6936,38 @@
                 "cost_usd": -0.052557
               }
             },
+            "openai/gpt-5.3-codex-spark": {
+              "provider": "openai",
+              "display": "GPT-5.3 Codex Spark",
+              "passed": 1,
+              "failed": 1,
+              "total": 2,
+              "pass_rate": 0.5,
+              "avg_run_seconds": 28.8,
+              "measured": {
+                "input_tokens": 34386,
+                "cache_read_input_tokens": 437248,
+                "output_tokens": 17607
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 1,
+                "total": 2,
+                "pass_rate": 0.5,
+                "avg_run_seconds": 15.2,
+                "measured": {
+                  "input_tokens": 13574,
+                  "cache_read_input_tokens": 171008,
+                  "output_tokens": 9163
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": 13.6,
+                "input_tokens": 20812,
+                "output_tokens": 8444
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -6329,43 +6975,78 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 152.7,
+              "avg_run_seconds": 96.6,
               "estimate": {
                 "input_tokens": 2607,
                 "input_cost_usd": 0.006518
               },
               "measured": {
-                "input_tokens": 80666,
-                "cache_read_input_tokens": 966400,
-                "output_tokens": 12206,
-                "cost_usd": 2.800755
+                "input_tokens": 48088,
+                "cache_read_input_tokens": 247296,
+                "output_tokens": 9251,
+                "cost_usd": 0.877225
               },
               "baseline": {
                 "passed": 1,
                 "failed": 1,
                 "total": 2,
                 "pass_rate": 0.5,
-                "avg_run_seconds": 123.8,
+                "avg_run_seconds": 65.4,
                 "measured": {
-                  "input_tokens": 82401,
-                  "cache_read_input_tokens": 889600,
-                  "output_tokens": 9450,
-                  "cost_usd": 2.571753
+                  "input_tokens": 51766,
+                  "cache_read_input_tokens": 180736,
+                  "output_tokens": 5691,
+                  "cost_usd": 0.66662
                 }
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": 0.4,
-                "input_tokens": -58321,
-                "output_tokens": -1645,
-                "cost_usd": -1.227438
+                "avg_run_seconds": -56.1,
+                "input_tokens": -32578,
+                "output_tokens": -2955,
+                "cost_usd": -1.92353
               },
               "baseline_delta": {
                 "rate": 0.5,
-                "avg_run_seconds": 28.9,
-                "input_tokens": -1735,
-                "output_tokens": 2756,
-                "cost_usd": 0.229002
+                "avg_run_seconds": 31.2,
+                "input_tokens": -3678,
+                "output_tokens": 3560,
+                "cost_usd": 0.210605
+              }
+            },
+            "openai/gpt-5.4-mini": {
+              "provider": "openai",
+              "display": "GPT-5.4 Mini",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 136.3,
+              "measured": {
+                "input_tokens": 118122,
+                "cache_read_input_tokens": 366976,
+                "output_tokens": 16677,
+                "cost_usd": 0.43887
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 1,
+                "total": 2,
+                "pass_rate": 0.5,
+                "avg_run_seconds": 143.8,
+                "measured": {
+                  "input_tokens": 126826,
+                  "cache_read_input_tokens": 350080,
+                  "output_tokens": 17691,
+                  "cost_usd": 0.437289
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.5,
+                "avg_run_seconds": -7.5,
+                "input_tokens": -8704,
+                "output_tokens": -1014,
+                "cost_usd": 0.001581
               }
             },
             "openai/gpt-5.5": {
@@ -6375,85 +7056,225 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 144,
+              "avg_run_seconds": 112.7,
               "estimate": {
                 "input_tokens": 2607,
                 "input_cost_usd": 0.013035
               },
               "measured": {
-                "input_tokens": 165222,
-                "cache_read_input_tokens": 767872,
-                "output_tokens": 11786,
-                "cost_usd": 5.01905
+                "input_tokens": 72716,
+                "cache_read_input_tokens": 527232,
+                "output_tokens": 9488,
+                "cost_usd": 3.28438
               },
               "baseline": {
                 "passed": 1,
                 "failed": 1,
                 "total": 2,
                 "pass_rate": 0.5,
-                "avg_run_seconds": 100.7,
+                "avg_run_seconds": 90.9,
                 "measured": {
-                  "input_tokens": 38995,
-                  "cache_read_input_tokens": 468992,
-                  "output_tokens": 6847,
-                  "cost_usd": 2.745345
+                  "input_tokens": 33693,
+                  "cache_read_input_tokens": 291584,
+                  "output_tokens": 7158,
+                  "cost_usd": 1.841125
                 }
               },
               "previous_delta": {
-                "rate": 0.5,
-                "avg_run_seconds": 0.9,
-                "input_tokens": 34329,
-                "output_tokens": -15,
-                "cost_usd": 0.345915
+                "rate": 0,
+                "avg_run_seconds": -31.3,
+                "input_tokens": -92506,
+                "output_tokens": -2298,
+                "cost_usd": -1.73467
               },
               "baseline_delta": {
                 "rate": 0.5,
-                "avg_run_seconds": 43.3,
-                "input_tokens": 126227,
-                "output_tokens": 4939,
-                "cost_usd": 2.273705
+                "avg_run_seconds": 21.8,
+                "input_tokens": 39023,
+                "output_tokens": 2330,
+                "cost_usd": 1.443255
+              }
+            },
+            "openai/gpt-5.6-luna": {
+              "provider": "openai",
+              "display": "GPT-5.6 Luna",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 58.9,
+              "measured": {
+                "input_tokens": 21678,
+                "cache_read_input_tokens": 185088,
+                "output_tokens": 5395,
+                "cost_usd": 0.239136
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 1,
+                "total": 2,
+                "pass_rate": 0.5,
+                "avg_run_seconds": 70.9,
+                "measured": {
+                  "input_tokens": 35312,
+                  "cache_read_input_tokens": 283392,
+                  "output_tokens": 6443,
+                  "cost_usd": 0.357362
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.5,
+                "avg_run_seconds": -12,
+                "input_tokens": -13634,
+                "output_tokens": -1048,
+                "cost_usd": -0.118226
+              }
+            },
+            "openai/gpt-5.6-sol": {
+              "provider": "openai",
+              "display": "GPT-5.6 Sol",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 77.5,
+              "measured": {
+                "input_tokens": 49413,
+                "cache_read_input_tokens": 327936,
+                "output_tokens": 6099,
+                "cost_usd": 2.069715
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 1,
+                "total": 2,
+                "pass_rate": 0.5,
+                "avg_run_seconds": 44.5,
+                "measured": {
+                  "input_tokens": 18245,
+                  "cache_read_input_tokens": 164864,
+                  "output_tokens": 3731,
+                  "cost_usd": 1.027475
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.5,
+                "avg_run_seconds": 33,
+                "input_tokens": 31168,
+                "output_tokens": 2368,
+                "cost_usd": 1.04224
+              }
+            },
+            "openai/gpt-5.6-terra": {
+              "provider": "openai",
+              "display": "GPT-5.6 Terra",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 126.6,
+              "measured": {
+                "input_tokens": 58179,
+                "cache_read_input_tokens": 556544,
+                "output_tokens": 11667,
+                "cost_usd": 1.711813
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 1,
+                "total": 2,
+                "pass_rate": 0.5,
+                "avg_run_seconds": 49.1,
+                "measured": {
+                  "input_tokens": 21955,
+                  "cache_read_input_tokens": 217344,
+                  "output_tokens": 4000,
+                  "cost_usd": 0.658247
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.5,
+                "avg_run_seconds": 77.5,
+                "input_tokens": 36224,
+                "output_tokens": 7667,
+                "cost_usd": 1.053566
               }
             },
             "xai/grok-4.5": {
               "provider": "xai",
               "display": "Grok 4.5",
-              "passed": 1,
-              "failed": 1,
+              "passed": 2,
+              "failed": 0,
               "total": 2,
-              "pass_rate": 0.5,
-              "avg_run_seconds": 46.8,
+              "pass_rate": 1,
+              "avg_run_seconds": 142.9,
               "measured": {
-                "input_tokens": 17356,
-                "cache_read_input_tokens": 196864,
-                "output_tokens": 7447,
-                "cost_usd": 0.138453
+                "input_tokens": 79021,
+                "cache_read_input_tokens": 592384,
+                "output_tokens": 13473,
+                "cost_usd": 0.141642
               },
               "baseline": {
-                "passed": 1,
-                "failed": 1,
+                "passed": 2,
+                "failed": 0,
                 "total": 2,
-                "pass_rate": 0.5,
-                "avg_run_seconds": 83.2,
+                "pass_rate": 1,
+                "avg_run_seconds": 94.4,
                 "measured": {
-                  "input_tokens": 108342,
-                  "cache_read_input_tokens": 640512,
-                  "output_tokens": 10446,
-                  "cost_usd": 0.471513
+                  "input_tokens": 149998,
+                  "cache_read_input_tokens": 585344,
+                  "output_tokens": 11026,
+                  "cost_usd": 0.184196
                 }
               },
               "previous_delta": {
-                "rate": -0.5,
-                "avg_run_seconds": 18.6,
-                "input_tokens": 11474,
-                "output_tokens": 5799,
-                "cost_usd": 0.097947
+                "rate": 0.5,
+                "avg_run_seconds": 96.1,
+                "input_tokens": 61665,
+                "output_tokens": 6026,
+                "cost_usd": 0.003189
               },
               "baseline_delta": {
                 "rate": 0,
-                "avg_run_seconds": -36.4,
-                "input_tokens": -90986,
-                "output_tokens": -2999,
-                "cost_usd": -0.33306
+                "avg_run_seconds": 48.5,
+                "input_tokens": -70977,
+                "output_tokens": 2447,
+                "cost_usd": -0.042554
+              }
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 205.6,
+              "measured": {
+                "input_tokens": 72374,
+                "cache_read_input_tokens": 532096,
+                "output_tokens": 25079,
+                "cost_usd": 0.095416
+              },
+              "baseline": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1,
+                "avg_run_seconds": 124.2,
+                "measured": {
+                  "input_tokens": 122021,
+                  "cache_read_input_tokens": 655616,
+                  "output_tokens": 16035,
+                  "cost_usd": 0.11357
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": 81.4,
+                "input_tokens": -49647,
+                "output_tokens": 9044,
+                "cost_usd": -0.018154
               }
             }
           }
@@ -6537,6 +7358,15 @@
                 "input_cost_usd": 0.066747
               }
             },
+            "openai/gpt-5.3-codex-spark": {
+              "provider": "openai",
+              "display": "GPT-5.3 Codex Spark",
+              "passed": 10,
+              "failed": 3,
+              "total": 13,
+              "pass_rate": 0.769231,
+              "avg_run_seconds": 19.8
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -6556,6 +7386,15 @@
                 "cost_usd": 0.000069
               }
             },
+            "openai/gpt-5.4-mini": {
+              "provider": "openai",
+              "display": "GPT-5.4 Mini",
+              "passed": 12,
+              "failed": 1,
+              "total": 13,
+              "pass_rate": 0.923077,
+              "avg_run_seconds": 63
+            },
             "openai/gpt-5.5": {
               "provider": "openai",
               "display": "GPT-5.5",
@@ -6568,6 +7407,51 @@
                 "input_tokens": 13792,
                 "input_cost_usd": 0.06896
               }
+            },
+            "openai/gpt-5.6-luna": {
+              "provider": "openai",
+              "display": "GPT-5.6 Luna",
+              "passed": 13,
+              "failed": 0,
+              "total": 13,
+              "pass_rate": 1,
+              "avg_run_seconds": 44.5
+            },
+            "openai/gpt-5.6-sol": {
+              "provider": "openai",
+              "display": "GPT-5.6 Sol",
+              "passed": 11,
+              "failed": 2,
+              "total": 13,
+              "pass_rate": 0.846154,
+              "avg_run_seconds": 29
+            },
+            "openai/gpt-5.6-terra": {
+              "provider": "openai",
+              "display": "GPT-5.6 Terra",
+              "passed": 11,
+              "failed": 2,
+              "total": 13,
+              "pass_rate": 0.846154,
+              "avg_run_seconds": 22.1
+            },
+            "xai/grok-4.5": {
+              "provider": "xai",
+              "display": "Grok 4.5",
+              "passed": 13,
+              "failed": 0,
+              "total": 13,
+              "pass_rate": 1,
+              "avg_run_seconds": 8.9
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 10,
+              "failed": 3,
+              "total": 13,
+              "pass_rate": 0.769231,
+              "avg_run_seconds": 9.1
             }
           },
           "evals": {
@@ -6793,6 +7677,38 @@
                 "avg_run_seconds": -115.5
               }
             },
+            "openai/gpt-5.3-codex-spark": {
+              "provider": "openai",
+              "display": "GPT-5.3 Codex Spark",
+              "passed": 1,
+              "failed": 1,
+              "total": 2,
+              "pass_rate": 0.5,
+              "avg_run_seconds": 39.2,
+              "measured": {
+                "input_tokens": 67491,
+                "cache_read_input_tokens": 751616,
+                "output_tokens": 22144
+              },
+              "baseline": {
+                "passed": 0,
+                "failed": 2,
+                "total": 2,
+                "pass_rate": 0,
+                "avg_run_seconds": 19.8,
+                "measured": {
+                  "input_tokens": 17108,
+                  "cache_read_input_tokens": 217984,
+                  "output_tokens": 11561
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.5,
+                "avg_run_seconds": 19.4,
+                "input_tokens": 50383,
+                "output_tokens": 10583
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -6800,43 +7716,78 @@
               "failed": 1,
               "total": 2,
               "pass_rate": 0.5,
-              "avg_run_seconds": 194.2,
+              "avg_run_seconds": 167.4,
               "estimate": {
                 "input_tokens": 2233,
                 "input_cost_usd": 0.005583
               },
               "measured": {
-                "input_tokens": 51975,
-                "cache_read_input_tokens": 722048,
-                "output_tokens": 15060,
-                "cost_usd": 2.160957
+                "input_tokens": 62938,
+                "cache_read_input_tokens": 619904,
+                "output_tokens": 11235,
+                "cost_usd": 1.87563
               },
               "baseline": {
                 "passed": 0,
                 "failed": 2,
                 "total": 2,
                 "pass_rate": 0,
-                "avg_run_seconds": 119.7,
+                "avg_run_seconds": 98.3,
                 "measured": {
-                  "input_tokens": 91405,
-                  "cache_read_input_tokens": 472576,
-                  "output_tokens": 10738,
-                  "cost_usd": 1.571023
+                  "input_tokens": 54109,
+                  "cache_read_input_tokens": 320896,
+                  "output_tokens": 8701,
+                  "cost_usd": 1.068028
                 }
               },
               "previous_delta": {
-                "rate": -0.5,
-                "avg_run_seconds": 80,
-                "input_tokens": -7780,
-                "output_tokens": 4551,
-                "cost_usd": 0.592174
+                "rate": 0,
+                "avg_run_seconds": -26.8,
+                "input_tokens": 10963,
+                "output_tokens": -3825,
+                "cost_usd": -0.285327
               },
               "baseline_delta": {
                 "rate": 0.5,
-                "avg_run_seconds": 74.5,
-                "input_tokens": -39430,
-                "output_tokens": 4322,
-                "cost_usd": 0.589934
+                "avg_run_seconds": 69.1,
+                "input_tokens": 8829,
+                "output_tokens": 2534,
+                "cost_usd": 0.807602
+              }
+            },
+            "openai/gpt-5.4-mini": {
+              "provider": "openai",
+              "display": "GPT-5.4 Mini",
+              "passed": 0,
+              "failed": 2,
+              "total": 2,
+              "pass_rate": 0,
+              "avg_run_seconds": 346.1,
+              "measured": {
+                "input_tokens": 191033,
+                "cache_read_input_tokens": 1916416,
+                "output_tokens": 37212,
+                "cost_usd": 1.748041
+              },
+              "baseline": {
+                "passed": 0,
+                "failed": 2,
+                "total": 2,
+                "pass_rate": 0,
+                "avg_run_seconds": 141,
+                "measured": {
+                  "input_tokens": 92233,
+                  "cache_read_input_tokens": 453248,
+                  "output_tokens": 15207,
+                  "cost_usd": 0.477542
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": 205.1,
+                "input_tokens": 98800,
+                "output_tokens": 22005,
+                "cost_usd": 1.270499
               }
             },
             "openai/gpt-5.5": {
@@ -6846,43 +7797,148 @@
               "failed": 0,
               "total": 2,
               "pass_rate": 1,
-              "avg_run_seconds": 210,
+              "avg_run_seconds": 174.2,
               "estimate": {
                 "input_tokens": 2233,
                 "input_cost_usd": 0.011165
               },
               "measured": {
-                "input_tokens": 72071,
-                "cache_read_input_tokens": 717952,
-                "output_tokens": 11444,
-                "cost_usd": 4.293435
+                "input_tokens": 111644,
+                "cache_read_input_tokens": 747392,
+                "output_tokens": 12290,
+                "cost_usd": 4.66388
               },
               "baseline": {
                 "passed": 0,
                 "failed": 2,
                 "total": 2,
                 "pass_rate": 0,
-                "avg_run_seconds": 147,
+                "avg_run_seconds": 230.8,
                 "measured": {
-                  "input_tokens": 146516,
-                  "cache_read_input_tokens": 812928,
-                  "output_tokens": 11651,
-                  "cost_usd": 5.14675
+                  "input_tokens": 140442,
+                  "cache_read_input_tokens": 1212160,
+                  "output_tokens": 14635,
+                  "cost_usd": 7.20206
                 }
               },
               "previous_delta": {
                 "rate": 0,
-                "avg_run_seconds": 89.9,
-                "input_tokens": 2512,
-                "output_tokens": 2343,
-                "cost_usd": 1.23677
+                "avg_run_seconds": -35.8,
+                "input_tokens": 39573,
+                "output_tokens": 846,
+                "cost_usd": 0.370445
               },
               "baseline_delta": {
                 "rate": 1,
-                "avg_run_seconds": 63,
-                "input_tokens": -74445,
-                "output_tokens": -207,
-                "cost_usd": -0.853315
+                "avg_run_seconds": -56.6,
+                "input_tokens": -28798,
+                "output_tokens": -2345,
+                "cost_usd": -2.53818
+              }
+            },
+            "openai/gpt-5.6-luna": {
+              "provider": "openai",
+              "display": "GPT-5.6 Luna",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 81.8,
+              "measured": {
+                "input_tokens": 50295,
+                "cache_read_input_tokens": 227328,
+                "output_tokens": 7841,
+                "cost_usd": 0.324669
+              },
+              "baseline": {
+                "passed": 0,
+                "failed": 2,
+                "total": 2,
+                "pass_rate": 0,
+                "avg_run_seconds": 90.4,
+                "measured": {
+                  "input_tokens": 31093,
+                  "cache_read_input_tokens": 314880,
+                  "output_tokens": 8220,
+                  "cost_usd": 0.395293
+                }
+              },
+              "baseline_delta": {
+                "rate": 1,
+                "avg_run_seconds": -8.6,
+                "input_tokens": 19202,
+                "output_tokens": -379,
+                "cost_usd": -0.070624
+              }
+            },
+            "openai/gpt-5.6-sol": {
+              "provider": "openai",
+              "display": "GPT-5.6 Sol",
+              "passed": 1,
+              "failed": 1,
+              "total": 2,
+              "pass_rate": 0.5,
+              "avg_run_seconds": 93.6,
+              "measured": {
+                "input_tokens": 55356,
+                "cache_read_input_tokens": 338688,
+                "output_tokens": 7595,
+                "cost_usd": 2.19807
+              },
+              "baseline": {
+                "passed": 0,
+                "failed": 2,
+                "total": 2,
+                "pass_rate": 0,
+                "avg_run_seconds": 90,
+                "measured": {
+                  "input_tokens": 53239,
+                  "cache_read_input_tokens": 319744,
+                  "output_tokens": 7895,
+                  "cost_usd": 2.101765
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.5,
+                "avg_run_seconds": 3.6,
+                "input_tokens": 2117,
+                "output_tokens": -300,
+                "cost_usd": 0.096305
+              }
+            },
+            "openai/gpt-5.6-terra": {
+              "provider": "openai",
+              "display": "GPT-5.6 Terra",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 110.6,
+              "measured": {
+                "input_tokens": 41453,
+                "cache_read_input_tokens": 443648,
+                "output_tokens": 10185,
+                "cost_usd": 1.365527
+              },
+              "baseline": {
+                "passed": 0,
+                "failed": 2,
+                "total": 2,
+                "pass_rate": 0,
+                "avg_run_seconds": 128.9,
+                "measured": {
+                  "input_tokens": 39657,
+                  "cache_read_input_tokens": 479232,
+                  "output_tokens": 10690,
+                  "cost_usd": 1.457573
+                }
+              },
+              "baseline_delta": {
+                "rate": 1,
+                "avg_run_seconds": -18.3,
+                "input_tokens": 1796,
+                "output_tokens": -505,
+                "cost_usd": -0.092046
               }
             },
             "xai/grok-4.5": {
@@ -6921,6 +7977,42 @@
                 "input_tokens": -22336,
                 "output_tokens": 1344,
                 "cost_usd": -0.099162
+              }
+            },
+            "xai/grok-4.6": {
+              "provider": "xai",
+              "display": "Grok 4.6",
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1,
+              "avg_run_seconds": 136.7,
+              "measured": {
+                "input_tokens": 100610,
+                "cache_read_input_tokens": 509440,
+                "output_tokens": 17856,
+                "cost_usd": 0.095723
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 0,
+                "errored": 1,
+                "total": 2,
+                "pass_rate": 1,
+                "avg_run_seconds": 152.7,
+                "measured": {
+                  "input_tokens": 59974,
+                  "cache_read_input_tokens": 621440,
+                  "output_tokens": 7088,
+                  "cost_usd": 0.080443
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": -16,
+                "input_tokens": 40636,
+                "output_tokens": 10768,
+                "cost_usd": 0.01528
               }
             }
           }
@@ -7010,6 +8102,15 @@
                 "input_cost_usd": 0.179118
               }
             },
+            "openai/gpt-5.3-codex-spark": {
+              "provider": "openai",
+              "display": "GPT-5.3 Codex Spark",
+              "passed": 11,
+              "failed": 6,
+              "total": 17,
+              "pass_rate": 0.647059,
+              "avg_run_seconds": 15.9
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -7047,6 +8148,33 @@
                 "input_tokens": 26,
                 "cost_usd": 0.00013
               }
+            },
+            "openai/gpt-5.6-luna": {
+              "provider": "openai",
+              "display": "GPT-5.6 Luna",
+              "passed": 16,
+              "failed": 1,
+              "total": 17,
+              "pass_rate": 0.941176,
+              "avg_run_seconds": 16.6
+            },
+            "openai/gpt-5.6-sol": {
+              "provider": "openai",
+              "display": "GPT-5.6 Sol",
+              "passed": 15,
+              "failed": 2,
+              "total": 17,
+              "pass_rate": 0.882353,
+              "avg_run_seconds": 10.4
+            },
+            "openai/gpt-5.6-terra": {
+              "provider": "openai",
+              "display": "GPT-5.6 Terra",
+              "passed": 14,
+              "failed": 3,
+              "total": 17,
+              "pass_rate": 0.823529,
+              "avg_run_seconds": 12.5
             }
           },
           "evals": {
@@ -7276,6 +8404,38 @@
                 "cost_usd": 0.189456
               }
             },
+            "openai/gpt-5.3-codex-spark": {
+              "provider": "openai",
+              "display": "GPT-5.3 Codex Spark",
+              "passed": 3,
+              "failed": 2,
+              "total": 5,
+              "pass_rate": 0.6,
+              "avg_run_seconds": 12.9,
+              "measured": {
+                "input_tokens": 53112,
+                "cache_read_input_tokens": 419584,
+                "output_tokens": 19168
+              },
+              "baseline": {
+                "passed": 0,
+                "failed": 5,
+                "total": 5,
+                "pass_rate": 0,
+                "avg_run_seconds": 15.6,
+                "measured": {
+                  "input_tokens": 35638,
+                  "cache_read_input_tokens": 375040,
+                  "output_tokens": 21443
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.6,
+                "avg_run_seconds": -2.7,
+                "input_tokens": 17474,
+                "output_tokens": -2275
+              }
+            },
             "openai/gpt-5.4": {
               "provider": "openai",
               "display": "GPT-5.4",
@@ -7366,6 +8526,111 @@
                 "input_tokens": -2842,
                 "output_tokens": 1266,
                 "cost_usd": 0.34249
+              }
+            },
+            "openai/gpt-5.6-luna": {
+              "provider": "openai",
+              "display": "GPT-5.6 Luna",
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1,
+              "avg_run_seconds": 55.3,
+              "measured": {
+                "input_tokens": 68967,
+                "cache_read_input_tokens": 599808,
+                "output_tokens": 12297,
+                "cost_usd": 0.742557
+              },
+              "baseline": {
+                "passed": 1,
+                "failed": 4,
+                "total": 5,
+                "pass_rate": 0.2,
+                "avg_run_seconds": 51.9,
+                "measured": {
+                  "input_tokens": 79973,
+                  "cache_read_input_tokens": 462592,
+                  "output_tokens": 11217,
+                  "cost_usd": 0.609867
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.8,
+                "avg_run_seconds": 3.4,
+                "input_tokens": -11006,
+                "output_tokens": 1080,
+                "cost_usd": 0.13269
+              }
+            },
+            "openai/gpt-5.6-sol": {
+              "provider": "openai",
+              "display": "GPT-5.6 Sol",
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1,
+              "avg_run_seconds": 51.2,
+              "measured": {
+                "input_tokens": 79003,
+                "cache_read_input_tokens": 532992,
+                "output_tokens": 10602,
+                "cost_usd": 3.378035
+              },
+              "baseline": {
+                "passed": 5,
+                "failed": 0,
+                "total": 5,
+                "pass_rate": 1,
+                "avg_run_seconds": 50.9,
+                "measured": {
+                  "input_tokens": 74910,
+                  "cache_read_input_tokens": 564992,
+                  "output_tokens": 9620,
+                  "cost_usd": 3.48811
+                }
+              },
+              "baseline_delta": {
+                "rate": 0,
+                "avg_run_seconds": 0.3,
+                "input_tokens": 4093,
+                "output_tokens": 982,
+                "cost_usd": -0.110075
+              }
+            },
+            "openai/gpt-5.6-terra": {
+              "provider": "openai",
+              "display": "GPT-5.6 Terra",
+              "passed": 5,
+              "failed": 0,
+              "total": 5,
+              "pass_rate": 1,
+              "avg_run_seconds": 49,
+              "measured": {
+                "input_tokens": 71742,
+                "cache_read_input_tokens": 495616,
+                "output_tokens": 10496,
+                "cost_usd": 1.575836
+              },
+              "baseline": {
+                "passed": 2,
+                "failed": 3,
+                "total": 5,
+                "pass_rate": 0.4,
+                "avg_run_seconds": 45.1,
+                "measured": {
+                  "input_tokens": 49568,
+                  "cache_read_input_tokens": 470784,
+                  "output_tokens": 9515,
+                  "cost_usd": 1.443605
+                }
+              },
+              "baseline_delta": {
+                "rate": 0.6,
+                "avg_run_seconds": 3.9,
+                "input_tokens": 22174,
+                "output_tokens": 981,
+                "cost_usd": 0.132231
               }
             },
             "xai/grok-4.5": {

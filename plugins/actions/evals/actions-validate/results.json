@@ -3854,8 +3854,8 @@
         "model": "gpt-5.3-codex-spark",
         "display": "GPT-5.3 Codex Spark",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:54:15Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:15:52Z",
         "executed": true,
         "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
         "runs_per_query": 3,
@@ -3883,10 +3883,10 @@
           {
             "query": "Audit our workflows with zizmor",
             "should_trigger": true,
-            "hits": 1,
+            "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 12.4,
+            "avg_run_seconds": 19.3,
             "spec_hash": "c0d5709d1a6beeda8c5de85be691d6663ed25dd5353b65ff8e9f9e27d65ca58c"
           },
           {
@@ -3913,7 +3913,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 30.5,
+            "avg_run_seconds": 36.9,
             "spec_hash": "69effeaa9eb42c7803af52dff6557a4dd321540120c06a303af3a775fe366805"
           },
           {
@@ -3985,7 +3985,136 @@
           "failed": 2,
           "total": 13,
           "pass_rate": 0.846154,
-          "avg_run_seconds": 18.4
+          "avg_run_seconds": 19.4
+        },
+        "previous": {
+          "ran_at": "2026-07-31T21:54:15Z",
+          "summary": {
+            "passed": 11,
+            "failed": 2,
+            "total": 13,
+            "pass_rate": 0.846154,
+            "avg_run_seconds": 18.4
+          },
+          "results": [
+            {
+              "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.2,
+              "spec_hash": "05829f1c5bb8e92e0a6ad585e3ee984fb0bce4775daf84377582c506177fce34"
+            },
+            {
+              "query": "Run actionlint over .github/workflows and fix the errors",
+              "should_trigger": true,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13,
+              "spec_hash": "30ab975d3632c87226f6e2cfbd573785331afa1dcb67b55001ad01568487f346"
+            },
+            {
+              "query": "Audit our workflows with zizmor",
+              "should_trigger": true,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 12.4,
+              "spec_hash": "c0d5709d1a6beeda8c5de85be691d6663ed25dd5353b65ff8e9f9e27d65ca58c"
+            },
+            {
+              "query": "Lint and security-check the workflow I just edited",
+              "should_trigger": true,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.7,
+              "spec_hash": "40b266df18b426d4c9c690cd24dfeb8122f1107796300675b5a3c60eba63e512"
+            },
+            {
+              "query": "Set up actionlint and zizmor for this repository",
+              "should_trigger": true,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10,
+              "spec_hash": "309bf09cdafc4a8bb8ce40cab7a013303ed60d989752c1114886897a402496c9"
+            },
+            {
+              "query": "My workflow fails to parse in CI — check and fix it locally",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 30.5,
+              "spec_hash": "69effeaa9eb42c7803af52dff6557a4dd321540120c06a303af3a775fe366805"
+            },
+            {
+              "query": "Run the workflow linter before I commit these .github/workflows changes",
+              "should_trigger": true,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.1,
+              "spec_hash": "660815d35053929abd51162fcf11f6f11597609ead196d7bf1964a89f14f2af5"
+            },
+            {
+              "query": "Write a new release workflow using the reusable library",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 21.8,
+              "spec_hash": "842d0fd41b94ac2a3bd6bf88bc8fbdad174d36adf47d51fd09f770149312de04"
+            },
+            {
+              "query": "Explain why pull_request_target is dangerous",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.1,
+              "spec_hash": "59a987bb91345cb2550b63e83bc134be94668c3eaf61a235b3e9fde0a0c21f74"
+            },
+            {
+              "query": "Add a build matrix to this workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 50.1,
+              "spec_hash": "529fb7f70dfa2a15940f57777f30e4d91b250e11526ad70cae244b7c6e6dde4c"
+            },
+            {
+              "query": "Validate this Terraform configuration with tflint",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 24.2,
+              "spec_hash": "ad84c344d96ebbd31a49b9822258cc8675546571ea0fc36764747fa199b23159"
+            },
+            {
+              "query": "Run the Go test suite and report failures",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.4,
+              "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+            },
+            {
+              "query": "Lint the markdown files under docs/",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 27.3,
+              "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+            }
+          ]
         }
       },
       "evals": {
@@ -3993,8 +4122,8 @@
         "model": "gpt-5.3-codex-spark",
         "display": "GPT-5.3 Codex Spark",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:55:46Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:16:25Z",
         "executed": true,
         "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
         "timeout_seconds": 600,
@@ -4050,9 +4179,9 @@
             "id": "validate-and-fix",
             "passed": true,
             "measured": {
-              "input_tokens": 7792,
-              "cache_read_input_tokens": 132352,
-              "output_tokens": 2663
+              "input_tokens": 8420,
+              "cache_read_input_tokens": 103808,
+              "output_tokens": 3880
             },
             "expectations": [
               {
@@ -4070,7 +4199,7 @@
                 "requires": "zizmor",
                 "text": "command `zizmor --offline .github/workflows/` exits 0",
                 "passed": true,
-                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.28.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.29.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
                 "source": "assertion"
               },
               {
@@ -4100,16 +4229,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 9,
+                "command_execution": 10,
                 "file_change": 1
               },
-              "total_tool_calls": 10
+              "total_tool_calls": 11
             },
             "timing": {
-              "total_tokens": 142807,
-              "executor_duration_seconds": 34.9
+              "total_tokens": 116108,
+              "executor_duration_seconds": 18.5
             },
-            "spec_hash": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+            "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
         ],
         "summary": {
@@ -4117,25 +4246,25 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 38.3,
+          "avg_run_seconds": 30.1,
           "measured": {
-            "input_tokens": 44004,
-            "cache_read_input_tokens": 485504,
-            "output_tokens": 7705
+            "input_tokens": 44632,
+            "cache_read_input_tokens": 456960,
+            "output_tokens": 8922
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T21:55:46Z",
+          "ran_at": "2026-08-15T02:16:25Z",
           "summary": {
             "passed": 1,
             "failed": 1,
             "total": 2,
             "pass_rate": 0.5,
-            "avg_run_seconds": 29.5,
+            "avg_run_seconds": 28.3,
             "measured": {
-              "input_tokens": 73391,
-              "cache_read_input_tokens": 316928,
-              "output_tokens": 9927
+              "input_tokens": 72503,
+              "cache_read_input_tokens": 302080,
+              "output_tokens": 9436
             }
           },
           "results": [
@@ -4162,9 +4291,9 @@
               "id": "validate-and-fix",
               "passed": false,
               "measured": {
-                "input_tokens": 6037,
-                "cache_read_input_tokens": 94336,
-                "output_tokens": 2823
+                "input_tokens": 5149,
+                "cache_read_input_tokens": 79488,
+                "output_tokens": 2332
               },
               "summary": {
                 "passed": 3,
@@ -4173,9 +4302,62 @@
                 "pass_rate": 0.75
               },
               "timing": {
-                "executor_duration_seconds": 15.9
+                "executor_duration_seconds": 13.5
               },
-              "fingerprint": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+              "fingerprint": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T21:55:46Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 38.3,
+            "measured": {
+              "input_tokens": 44004,
+              "cache_read_input_tokens": 485504,
+              "output_tokens": 7705
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": true,
+              "measured": {
+                "input_tokens": 36212,
+                "cache_read_input_tokens": 353152,
+                "output_tokens": 5042
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 41.6
+              }
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7792,
+                "cache_read_input_tokens": 132352,
+                "output_tokens": 2663
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 34.9
+              }
             }
           ]
         }
@@ -4187,8 +4369,8 @@
         "model": "gpt-5.4",
         "display": "GPT-5.4",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:02:35Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:19:32Z",
         "executed": true,
         "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
         "runs_per_query": 3,
@@ -4288,7 +4470,7 @@
             "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 21,
+            "avg_run_seconds": 43.8,
             "estimate": {
               "input_tokens": 801,
               "input_cost_usd": 0.002003
@@ -4361,20 +4543,20 @@
           "failed": 1,
           "total": 13,
           "pass_rate": 0.923077,
-          "avg_run_seconds": 22.7,
+          "avg_run_seconds": 24.5,
           "estimate": {
             "input_tokens": 10419,
             "input_cost_usd": 0.026051
           }
         },
         "previous": {
-          "ran_at": "2026-06-23T04:30:24Z",
+          "ran_at": "2026-07-31T22:02:35Z",
           "summary": {
             "passed": 12,
             "failed": 1,
             "total": 13,
             "pass_rate": 0.923077,
-            "avg_run_seconds": 25.4,
+            "avg_run_seconds": 22.7,
             "estimate": {
               "input_tokens": 10419,
               "input_cost_usd": 0.026051
@@ -4471,7 +4653,7 @@
               "hits": 3,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 56,
+              "avg_run_seconds": 21,
               "estimate": {
                 "input_tokens": 801,
                 "input_cost_usd": 0.002003
@@ -4546,8 +4728,8 @@
         "model": "gpt-5.4",
         "display": "GPT-5.4",
         "harness": "codex",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-27T23:15:12Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:20:51Z",
         "executed": true,
         "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
         "timeout_seconds": 600,
@@ -4608,10 +4790,10 @@
               "input_cost_usd": 0.002068
             },
             "measured": {
-              "input_tokens": 19375,
-              "cache_read_input_tokens": 96384,
-              "output_tokens": 2432,
-              "cost_usd": 0.325878
+              "input_tokens": 8772,
+              "cache_read_input_tokens": 103424,
+              "output_tokens": 1836,
+              "cost_usd": 0.30803
             },
             "expectations": [
               {
@@ -4629,7 +4811,7 @@
                 "requires": "zizmor",
                 "text": "command `zizmor --offline .github/workflows/` exits 0",
                 "passed": true,
-                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.26.1\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.29.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
                 "source": "assertion"
               },
               {
@@ -4659,16 +4841,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 15,
-                "file_change": 1
+                "command_execution": 9,
+                "file_change": 2
               },
-              "total_tool_calls": 16
+              "total_tool_calls": 11
             },
             "timing": {
-              "total_tokens": 118191,
-              "executor_duration_seconds": 54.4
+              "total_tokens": 114032,
+              "executor_duration_seconds": 43.5
             },
-            "spec_hash": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+            "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
         ],
         "summary": {
@@ -4676,31 +4858,31 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 58.2,
+          "avg_run_seconds": 52.7,
           "estimate": {
             "input_tokens": 1639,
             "input_cost_usd": 0.004098
           },
           "measured": {
-            "input_tokens": 33109,
-            "cache_read_input_tokens": 260480,
-            "output_tokens": 5120,
-            "cost_usd": 0.810773
+            "input_tokens": 22506,
+            "cache_read_input_tokens": 267520,
+            "output_tokens": 4524,
+            "cost_usd": 0.792925
           }
         },
         "baseline": {
-          "ran_at": "2026-06-27T23:15:12Z",
+          "ran_at": "2026-08-15T02:20:51Z",
           "summary": {
             "passed": 0,
             "failed": 2,
             "total": 2,
             "pass_rate": 0,
-            "avg_run_seconds": 208.6,
+            "avg_run_seconds": 49.6,
             "measured": {
-              "input_tokens": 18725,
-              "cache_read_input_tokens": 252928,
-              "output_tokens": 4413,
-              "cost_usd": 0.745327
+              "input_tokens": 20258,
+              "cache_read_input_tokens": 222848,
+              "output_tokens": 3992,
+              "cost_usd": 0.667645
             }
           },
           "results": [
@@ -4728,10 +4910,10 @@
               "id": "validate-and-fix",
               "passed": false,
               "measured": {
-                "input_tokens": 5313,
-                "cache_read_input_tokens": 102016,
-                "output_tokens": 1855,
-                "cost_usd": 0.296147
+                "input_tokens": 6846,
+                "cache_read_input_tokens": 71936,
+                "output_tokens": 1434,
+                "cost_usd": 0.218465
               },
               "summary": {
                 "passed": 3,
@@ -4740,29 +4922,29 @@
                 "pass_rate": 0.75
               },
               "timing": {
-                "executor_duration_seconds": 353.1
+                "executor_duration_seconds": 35.1
               },
-              "fingerprint": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+              "fingerprint": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-06-23T04:31:40Z",
+          "ran_at": "2026-06-27T23:15:12Z",
           "summary": {
-            "passed": 1,
-            "failed": 1,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 69.1,
+            "pass_rate": 1,
+            "avg_run_seconds": 58.2,
             "estimate": {
               "input_tokens": 1639,
               "input_cost_usd": 0.004098
             },
             "measured": {
-              "input_tokens": 34718,
-              "cache_read_input_tokens": 271744,
-              "output_tokens": 4964,
-              "cost_usd": 0.840615
+              "input_tokens": 33109,
+              "cache_read_input_tokens": 260480,
+              "output_tokens": 5120,
+              "cost_usd": 0.810773
             }
           },
           "results": [
@@ -4791,25 +4973,25 @@
             },
             {
               "id": "validate-and-fix",
-              "passed": false,
+              "passed": true,
               "estimate": {
                 "input_tokens": 827,
                 "input_cost_usd": 0.002068
               },
               "measured": {
-                "input_tokens": 20984,
-                "cache_read_input_tokens": 107648,
-                "output_tokens": 2276,
-                "cost_usd": 0.35572
+                "input_tokens": 19375,
+                "cache_read_input_tokens": 96384,
+                "output_tokens": 2432,
+                "cost_usd": 0.325878
               },
               "summary": {
-                "passed": 3,
-                "failed": 1,
+                "passed": 4,
+                "failed": 0,
                 "total": 4,
-                "pass_rate": 0.75
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 76.2
+                "executor_duration_seconds": 54.4
               }
             }
           ]
@@ -4822,8 +5004,8 @@
         "model": "gpt-5.4-mini",
         "display": "GPT-5.4 Mini",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:59:47Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:17:14Z",
         "executed": true,
         "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
         "runs_per_query": 3,
@@ -4927,10 +5109,10 @@
           {
             "query": "Write a new release workflow using the reusable library",
             "should_trigger": false,
-            "hits": 2,
+            "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 66.1,
+            "avg_run_seconds": 41.6,
             "estimate": {
               "input_tokens": 801,
               "input_cost_usd": 0.000601
@@ -5008,11 +5190,196 @@
           "failed": 1,
           "total": 13,
           "pass_rate": 0.923077,
-          "avg_run_seconds": 22.5,
+          "avg_run_seconds": 20.6,
           "estimate": {
             "input_tokens": 10419,
             "input_cost_usd": 0.007816
           }
+        },
+        "previous": {
+          "ran_at": "2026-07-31T21:59:47Z",
+          "summary": {
+            "passed": 12,
+            "failed": 1,
+            "total": 13,
+            "pass_rate": 0.923077,
+            "avg_run_seconds": 22.5,
+            "estimate": {
+              "input_tokens": 10419,
+              "input_cost_usd": 0.007816
+            }
+          },
+          "results": [
+            {
+              "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.4,
+              "estimate": {
+                "input_tokens": 805,
+                "input_cost_usd": 0.000604
+              },
+              "spec_hash": "05829f1c5bb8e92e0a6ad585e3ee984fb0bce4775daf84377582c506177fce34"
+            },
+            {
+              "query": "Run actionlint over .github/workflows and fix the errors",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.7,
+              "estimate": {
+                "input_tokens": 804,
+                "input_cost_usd": 0.000603
+              },
+              "spec_hash": "30ab975d3632c87226f6e2cfbd573785331afa1dcb67b55001ad01568487f346"
+            },
+            {
+              "query": "Audit our workflows with zizmor",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.9,
+              "estimate": {
+                "input_tokens": 798,
+                "input_cost_usd": 0.000599
+              },
+              "spec_hash": "c0d5709d1a6beeda8c5de85be691d6663ed25dd5353b65ff8e9f9e27d65ca58c"
+            },
+            {
+              "query": "Lint and security-check the workflow I just edited",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 12.4,
+              "estimate": {
+                "input_tokens": 801,
+                "input_cost_usd": 0.000601
+              },
+              "spec_hash": "40b266df18b426d4c9c690cd24dfeb8122f1107796300675b5a3c60eba63e512"
+            },
+            {
+              "query": "Set up actionlint and zizmor for this repository",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.2,
+              "estimate": {
+                "input_tokens": 802,
+                "input_cost_usd": 0.000602
+              },
+              "spec_hash": "309bf09cdafc4a8bb8ce40cab7a013303ed60d989752c1114886897a402496c9"
+            },
+            {
+              "query": "My workflow fails to parse in CI — check and fix it locally",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.3,
+              "estimate": {
+                "input_tokens": 805,
+                "input_cost_usd": 0.000604
+              },
+              "spec_hash": "69effeaa9eb42c7803af52dff6557a4dd321540120c06a303af3a775fe366805"
+            },
+            {
+              "query": "Run the workflow linter before I commit these .github/workflows changes",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.8,
+              "estimate": {
+                "input_tokens": 806,
+                "input_cost_usd": 0.000605
+              },
+              "spec_hash": "660815d35053929abd51162fcf11f6f11597609ead196d7bf1964a89f14f2af5"
+            },
+            {
+              "query": "Write a new release workflow using the reusable library",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 66.1,
+              "estimate": {
+                "input_tokens": 801,
+                "input_cost_usd": 0.000601
+              },
+              "spec_hash": "842d0fd41b94ac2a3bd6bf88bc8fbdad174d36adf47d51fd09f770149312de04"
+            },
+            {
+              "query": "Explain why pull_request_target is dangerous",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.6,
+              "estimate": {
+                "input_tokens": 799,
+                "input_cost_usd": 0.000599
+              },
+              "spec_hash": "59a987bb91345cb2550b63e83bc134be94668c3eaf61a235b3e9fde0a0c21f74"
+            },
+            {
+              "query": "Add a build matrix to this workflow",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 37.3,
+              "estimate": {
+                "input_tokens": 799,
+                "input_cost_usd": 0.000599
+              },
+              "spec_hash": "529fb7f70dfa2a15940f57777f30e4d91b250e11526ad70cae244b7c6e6dde4c"
+            },
+            {
+              "query": "Validate this Terraform configuration with tflint",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 45.4,
+              "estimate": {
+                "input_tokens": 800,
+                "input_cost_usd": 0.0006
+              },
+              "spec_hash": "ad84c344d96ebbd31a49b9822258cc8675546571ea0fc36764747fa199b23159"
+            },
+            {
+              "query": "Run the Go test suite and report failures",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 24.1,
+              "estimate": {
+                "input_tokens": 800,
+                "input_cost_usd": 0.0006
+              },
+              "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+            },
+            {
+              "query": "Lint the markdown files under docs/",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 37.7,
+              "estimate": {
+                "input_tokens": 799,
+                "input_cost_usd": 0.000599
+              },
+              "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+            }
+          ]
         }
       },
       "evals": {
@@ -5020,8 +5387,8 @@
         "model": "gpt-5.4-mini",
         "display": "GPT-5.4 Mini",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:02:07Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:18:31Z",
         "executed": true,
         "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
         "timeout_seconds": 600,
@@ -5089,10 +5456,10 @@
               "input_cost_usd": 0.00062
             },
             "measured": {
-              "input_tokens": 10576,
-              "cache_read_input_tokens": 115584,
-              "output_tokens": 1852,
-              "cost_usd": 0.102954
+              "input_tokens": 8921,
+              "cache_read_input_tokens": 104448,
+              "output_tokens": 2309,
+              "cost_usd": 0.095417
             },
             "expectations": [
               {
@@ -5110,7 +5477,7 @@
                 "requires": "zizmor",
                 "text": "command `zizmor --offline .github/workflows/` exits 0",
                 "passed": true,
-                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.28.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.29.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
                 "source": "assertion"
               },
               {
@@ -5140,16 +5507,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 8,
-                "file_change": 1
+                "command_execution": 10,
+                "file_change": 2
               },
-              "total_tool_calls": 9
+              "total_tool_calls": 12
             },
             "timing": {
-              "total_tokens": 128012,
-              "executor_duration_seconds": 47.3
+              "total_tokens": 115678,
+              "executor_duration_seconds": 42.7
             },
-            "spec_hash": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+            "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
         ],
         "summary": {
@@ -5157,31 +5524,31 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 48.3,
+          "avg_run_seconds": 46,
           "estimate": {
             "input_tokens": 1639,
             "input_cost_usd": 0.001229
           },
           "measured": {
-            "input_tokens": 20548,
-            "cache_read_input_tokens": 215936,
-            "output_tokens": 4074,
-            "cost_usd": 0.195696
+            "input_tokens": 18893,
+            "cache_read_input_tokens": 204800,
+            "output_tokens": 4531,
+            "cost_usd": 0.188159
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T22:02:07Z",
+          "ran_at": "2026-08-15T02:18:31Z",
           "summary": {
             "passed": 1,
             "failed": 1,
             "total": 2,
             "pass_rate": 0.5,
-            "avg_run_seconds": 63.3,
+            "avg_run_seconds": 62.1,
             "measured": {
-              "input_tokens": 63923,
-              "cache_read_input_tokens": 183168,
-              "output_tokens": 5481,
-              "cost_usd": 0.209983
+              "input_tokens": 62858,
+              "cache_read_input_tokens": 182656,
+              "output_tokens": 5369,
+              "cost_usd": 0.208296
             }
           },
           "results": [
@@ -5209,10 +5576,10 @@
               "id": "validate-and-fix",
               "passed": false,
               "measured": {
-                "input_tokens": 7213,
-                "cache_read_input_tokens": 69888,
-                "output_tokens": 1951,
-                "cost_usd": 0.066605
+                "input_tokens": 6148,
+                "cache_read_input_tokens": 69376,
+                "output_tokens": 1839,
+                "cost_usd": 0.064918
               },
               "summary": {
                 "passed": 3,
@@ -5221,9 +5588,77 @@
                 "pass_rate": 0.75
               },
               "timing": {
-                "executor_duration_seconds": 36.3
+                "executor_duration_seconds": 33.8
               },
-              "fingerprint": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+              "fingerprint": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T22:02:07Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 48.3,
+            "estimate": {
+              "input_tokens": 1639,
+              "input_cost_usd": 0.001229
+            },
+            "measured": {
+              "input_tokens": 20548,
+              "cache_read_input_tokens": 215936,
+              "output_tokens": 4074,
+              "cost_usd": 0.195696
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 812,
+                "input_cost_usd": 0.000609
+              },
+              "measured": {
+                "input_tokens": 9972,
+                "cache_read_input_tokens": 100352,
+                "output_tokens": 2222,
+                "cost_usd": 0.092742
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 49.3
+              }
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 827,
+                "input_cost_usd": 0.00062
+              },
+              "measured": {
+                "input_tokens": 10576,
+                "cache_read_input_tokens": 115584,
+                "output_tokens": 1852,
+                "cost_usd": 0.102954
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 47.3
+              }
             }
           ]
         }
@@ -5235,8 +5670,8 @@
         "model": "gpt-5.5",
         "display": "GPT-5.5",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:03:16Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:22:39Z",
         "executed": true,
         "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
         "runs_per_query": 3,
@@ -5337,7 +5772,7 @@
             "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 34.9,
+            "avg_run_seconds": 38.4,
             "estimate": {
               "input_tokens": 801,
               "input_cost_usd": 0.004005
@@ -5362,7 +5797,7 @@
             "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 11.8,
+            "avg_run_seconds": 36,
             "estimate": {
               "input_tokens": 799,
               "input_cost_usd": 0.003995
@@ -5411,20 +5846,20 @@
           "failed": 2,
           "total": 13,
           "pass_rate": 0.846154,
-          "avg_run_seconds": 22.3,
+          "avg_run_seconds": 24.5,
           "estimate": {
             "input_tokens": 10419,
             "input_cost_usd": 0.052095
           }
         },
         "previous": {
-          "ran_at": "2026-06-23T04:32:58Z",
+          "ran_at": "2026-07-31T22:03:16Z",
           "summary": {
             "passed": 11,
             "failed": 2,
             "total": 13,
             "pass_rate": 0.846154,
-            "avg_run_seconds": 25.1,
+            "avg_run_seconds": 22.3,
             "estimate": {
               "input_tokens": 10419,
               "input_cost_usd": 0.052095
@@ -5522,7 +5957,7 @@
               "hits": 3,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 65.3,
+              "avg_run_seconds": 34.9,
               "estimate": {
                 "input_tokens": 801,
                 "input_cost_usd": 0.004005
@@ -5547,7 +5982,7 @@
               "hits": 3,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 16.9,
+              "avg_run_seconds": 11.8,
               "estimate": {
                 "input_tokens": 799,
                 "input_cost_usd": 0.003995
@@ -5598,8 +6033,8 @@
         "model": "gpt-5.5",
         "display": "GPT-5.5",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:03:57Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:24:31Z",
         "executed": true,
         "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
         "timeout_seconds": 600,
@@ -5660,10 +6095,10 @@
               "input_cost_usd": 0.004135
             },
             "measured": {
-              "input_tokens": 11699,
-              "cache_read_input_tokens": 116736,
-              "output_tokens": 1389,
-              "cost_usd": 0.683845
+              "input_tokens": 25449,
+              "cache_read_input_tokens": 118144,
+              "output_tokens": 1939,
+              "cost_usd": 0.776135
             },
             "expectations": [
               {
@@ -5681,7 +6116,7 @@
                 "requires": "zizmor",
                 "text": "command `zizmor --offline .github/workflows/` exits 0",
                 "passed": true,
-                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.28.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.29.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
                 "source": "assertion"
               },
               {
@@ -5711,16 +6146,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 13,
+                "command_execution": 12,
                 "file_change": 1
               },
-              "total_tool_calls": 14
+              "total_tool_calls": 13
             },
             "timing": {
-              "total_tokens": 129824,
-              "executor_duration_seconds": 41.2
+              "total_tokens": 145532,
+              "executor_duration_seconds": 49.3
             },
-            "spec_hash": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+            "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
         ],
         "summary": {
@@ -5728,31 +6163,31 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 57.6,
+          "avg_run_seconds": 61.7,
           "estimate": {
             "input_tokens": 1639,
             "input_cost_usd": 0.008195
           },
           "measured": {
-            "input_tokens": 44935,
-            "cache_read_input_tokens": 222336,
-            "output_tokens": 3718,
-            "cost_usd": 1.447895
+            "input_tokens": 58685,
+            "cache_read_input_tokens": 223744,
+            "output_tokens": 4268,
+            "cost_usd": 1.540185
           }
         },
         "baseline": {
-          "ran_at": "2026-06-27T23:17:07Z",
+          "ran_at": "2026-08-15T02:24:31Z",
           "summary": {
-            "passed": 0,
-            "failed": 2,
+            "passed": 1,
+            "failed": 1,
             "total": 2,
-            "pass_rate": 0,
-            "avg_run_seconds": 68.2,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 63.9,
             "measured": {
-              "input_tokens": 26944,
-              "cache_read_input_tokens": 314112,
-              "output_tokens": 5730,
-              "cost_usd": 1.87718
+              "input_tokens": 24330,
+              "cache_read_input_tokens": 282880,
+              "output_tokens": 5052,
+              "cost_usd": 1.68761
             }
           },
           "results": [
@@ -5778,43 +6213,43 @@
             },
             {
               "id": "validate-and-fix",
-              "passed": false,
+              "passed": true,
               "measured": {
-                "input_tokens": 14668,
-                "cache_read_input_tokens": 159616,
-                "output_tokens": 3226,
-                "cost_usd": 0.9682
+                "input_tokens": 12054,
+                "cache_read_input_tokens": 128384,
+                "output_tokens": 2548,
+                "cost_usd": 0.77863
               },
               "summary": {
-                "passed": 0,
-                "failed": 4,
+                "passed": 4,
+                "failed": 0,
                 "total": 4,
-                "pass_rate": 0
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 71.1
+                "executor_duration_seconds": 62.5
               },
-              "fingerprint": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+              "fingerprint": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-06-27T23:17:07Z",
+          "ran_at": "2026-07-31T22:03:57Z",
           "summary": {
-            "passed": 1,
-            "failed": 1,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 59.1,
+            "pass_rate": 1,
+            "avg_run_seconds": 57.6,
             "estimate": {
               "input_tokens": 1639,
               "input_cost_usd": 0.008195
             },
             "measured": {
-              "input_tokens": 50746,
-              "cache_read_input_tokens": 209664,
-              "output_tokens": 4068,
-              "cost_usd": 1.42409
+              "input_tokens": 44935,
+              "cache_read_input_tokens": 222336,
+              "output_tokens": 3718,
+              "cost_usd": 1.447895
             }
           },
           "results": [
@@ -5843,25 +6278,25 @@
             },
             {
               "id": "validate-and-fix",
-              "passed": false,
+              "passed": true,
               "estimate": {
                 "input_tokens": 827,
                 "input_cost_usd": 0.004135
               },
               "measured": {
-                "input_tokens": 17510,
-                "cache_read_input_tokens": 104064,
-                "output_tokens": 1739,
-                "cost_usd": 0.66004
+                "input_tokens": 11699,
+                "cache_read_input_tokens": 116736,
+                "output_tokens": 1389,
+                "cost_usd": 0.683845
               },
               "summary": {
-                "passed": 3,
-                "failed": 1,
+                "passed": 4,
+                "failed": 0,
                 "total": 4,
-                "pass_rate": 0.75
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 44.1
+                "executor_duration_seconds": 41.2
               }
             }
           ]
@@ -5874,8 +6309,8 @@
         "model": "gpt-5.6-luna",
         "display": "GPT-5.6 Luna",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:49:44Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:13:26Z",
         "executed": true,
         "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
         "runs_per_query": 3,
@@ -5982,7 +6417,7 @@
             "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 9.1,
+            "avg_run_seconds": 11.1,
             "estimate": {
               "input_tokens": 801,
               "input_cost_usd": 0.000801
@@ -6005,10 +6440,10 @@
           {
             "query": "Add a build matrix to this workflow",
             "should_trigger": false,
-            "hits": 3,
+            "hits": 2,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 9.5,
+            "avg_run_seconds": 12.6,
             "estimate": {
               "input_tokens": 799,
               "input_cost_usd": 0.000799
@@ -6060,20 +6495,20 @@
           "failed": 2,
           "total": 13,
           "pass_rate": 0.846154,
-          "avg_run_seconds": 10.6,
+          "avg_run_seconds": 11,
           "estimate": {
             "input_tokens": 10419,
             "input_cost_usd": 0.010419
           }
         },
         "previous": {
-          "ran_at": "2026-07-31T20:32:20Z",
+          "ran_at": "2026-07-31T21:49:44Z",
           "summary": {
             "passed": 11,
             "failed": 2,
             "total": 13,
             "pass_rate": 0.846154,
-            "avg_run_seconds": 11.8,
+            "avg_run_seconds": 10.6,
             "estimate": {
               "input_tokens": 10419,
               "input_cost_usd": 0.010419
@@ -6177,7 +6612,7 @@
               "hits": 3,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 23,
+              "avg_run_seconds": 9.1,
               "estimate": {
                 "input_tokens": 801,
                 "input_cost_usd": 0.000801
@@ -6203,7 +6638,7 @@
               "hits": 3,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 10.4,
+              "avg_run_seconds": 9.5,
               "estimate": {
                 "input_tokens": 799,
                 "input_cost_usd": 0.000799
@@ -6257,8 +6692,8 @@
         "model": "gpt-5.6-luna",
         "display": "GPT-5.6 Luna",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:50:27Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:14:49Z",
         "executed": true,
         "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
         "timeout_seconds": 600,
@@ -6326,10 +6761,10 @@
               "input_cost_usd": 0.000827
             },
             "measured": {
-              "input_tokens": 18967,
-              "cache_read_input_tokens": 135680,
-              "output_tokens": 1709,
-              "cost_usd": 0.164901
+              "input_tokens": 9574,
+              "cache_read_input_tokens": 90368,
+              "output_tokens": 1100,
+              "cost_usd": 0.106542
             },
             "expectations": [
               {
@@ -6347,7 +6782,7 @@
                 "requires": "zizmor",
                 "text": "command `zizmor --offline .github/workflows/` exits 0",
                 "passed": true,
-                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.28.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.29.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
                 "source": "assertion"
               },
               {
@@ -6377,16 +6812,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 7,
-                "file_change": 2
+                "command_execution": 5,
+                "file_change": 1
               },
-              "total_tool_calls": 9
+              "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 156356,
-              "executor_duration_seconds": 43
+              "total_tokens": 101042,
+              "executor_duration_seconds": 29.9
             },
-            "spec_hash": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+            "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
         ],
         "summary": {
@@ -6394,31 +6829,31 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 38.4,
+          "avg_run_seconds": 31.9,
           "estimate": {
             "input_tokens": 1639,
             "input_cost_usd": 0.001639
           },
           "measured": {
-            "input_tokens": 31083,
-            "cache_read_input_tokens": 195840,
-            "output_tokens": 3189,
-            "cost_usd": 0.246057
+            "input_tokens": 21690,
+            "cache_read_input_tokens": 150528,
+            "output_tokens": 2580,
+            "cost_usd": 0.187698
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T20:33:58Z",
+          "ran_at": "2026-08-15T02:14:49Z",
           "summary": {
-            "passed": 1,
-            "failed": 1,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 41.3,
+            "pass_rate": 1,
+            "avg_run_seconds": 41,
             "measured": {
-              "input_tokens": 20879,
-              "cache_read_input_tokens": 180736,
-              "output_tokens": 3490,
-              "cost_usd": 0.222555
+              "input_tokens": 21846,
+              "cache_read_input_tokens": 209920,
+              "output_tokens": 3312,
+              "cost_usd": 0.251638
             }
           },
           "results": [
@@ -6444,43 +6879,43 @@
             },
             {
               "id": "validate-and-fix",
-              "passed": false,
+              "passed": true,
               "measured": {
-                "input_tokens": 11381,
-                "cache_read_input_tokens": 117504,
-                "output_tokens": 2323,
-                "cost_usd": 0.142823
+                "input_tokens": 12348,
+                "cache_read_input_tokens": 146688,
+                "output_tokens": 2145,
+                "cost_usd": 0.171906
               },
               "summary": {
-                "passed": 2,
-                "failed": 2,
+                "passed": 4,
+                "failed": 0,
                 "total": 4,
-                "pass_rate": 0.5
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 53.3
+                "executor_duration_seconds": 52.8
               },
-              "fingerprint": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+              "fingerprint": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T20:33:58Z",
+          "ran_at": "2026-07-31T21:50:27Z",
           "summary": {
-            "passed": 1,
-            "failed": 1,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 38.9,
+            "pass_rate": 1,
+            "avg_run_seconds": 38.4,
             "estimate": {
               "input_tokens": 1639,
               "input_cost_usd": 0.001639
             },
             "measured": {
-              "input_tokens": 22480,
-              "cache_read_input_tokens": 168704,
-              "output_tokens": 3133,
-              "cost_usd": 0.209982
+              "input_tokens": 31083,
+              "cache_read_input_tokens": 195840,
+              "output_tokens": 3189,
+              "cost_usd": 0.246057
             }
           },
           "results": [
@@ -6509,25 +6944,25 @@
             },
             {
               "id": "validate-and-fix",
-              "passed": false,
+              "passed": true,
               "estimate": {
                 "input_tokens": 827,
                 "input_cost_usd": 0.000827
               },
               "measured": {
-                "input_tokens": 10364,
-                "cache_read_input_tokens": 108544,
-                "output_tokens": 1653,
-                "cost_usd": 0.128826
+                "input_tokens": 18967,
+                "cache_read_input_tokens": 135680,
+                "output_tokens": 1709,
+                "cost_usd": 0.164901
               },
               "summary": {
-                "passed": 3,
-                "failed": 1,
+                "passed": 4,
+                "failed": 0,
                 "total": 4,
-                "pass_rate": 0.75
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 44
+                "executor_duration_seconds": 43
               }
             }
           ]
@@ -6540,8 +6975,8 @@
         "model": "gpt-5.6-sol",
         "display": "GPT-5.6 Sol",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:47:53Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:10:26Z",
         "executed": true,
         "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
         "runs_per_query": 3,
@@ -6648,7 +7083,7 @@
             "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 13.1,
+            "avg_run_seconds": 14.4,
             "estimate": {
               "input_tokens": 801,
               "input_cost_usd": 0.004005
@@ -6674,7 +7109,7 @@
             "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 17.8,
+            "avg_run_seconds": 14.3,
             "estimate": {
               "input_tokens": 799,
               "input_cost_usd": 0.003995
@@ -6726,20 +7161,20 @@
           "failed": 2,
           "total": 13,
           "pass_rate": 0.846154,
-          "avg_run_seconds": 13.7,
+          "avg_run_seconds": 13.5,
           "estimate": {
             "input_tokens": 10419,
             "input_cost_usd": 0.052095
           }
         },
         "previous": {
-          "ran_at": "2026-07-31T20:25:01Z",
+          "ran_at": "2026-07-31T21:47:53Z",
           "summary": {
             "passed": 11,
             "failed": 2,
             "total": 13,
             "pass_rate": 0.846154,
-            "avg_run_seconds": 13.4,
+            "avg_run_seconds": 13.7,
             "estimate": {
               "input_tokens": 10419,
               "input_cost_usd": 0.052095
@@ -6843,7 +7278,7 @@
               "hits": 3,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 16,
+              "avg_run_seconds": 13.1,
               "estimate": {
                 "input_tokens": 801,
                 "input_cost_usd": 0.004005
@@ -6869,7 +7304,7 @@
               "hits": 3,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 11.8,
+              "avg_run_seconds": 17.8,
               "estimate": {
                 "input_tokens": 799,
                 "input_cost_usd": 0.003995
@@ -6923,8 +7358,8 @@
         "model": "gpt-5.6-sol",
         "display": "GPT-5.6 Sol",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:48:29Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:11:43Z",
         "executed": true,
         "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
         "timeout_seconds": 600,
@@ -6992,10 +7427,10 @@
               "input_cost_usd": 0.004135
             },
             "measured": {
-              "input_tokens": 14474,
-              "cache_read_input_tokens": 120064,
-              "output_tokens": 1129,
-              "cost_usd": 0.70656
+              "input_tokens": 16591,
+              "cache_read_input_tokens": 128768,
+              "output_tokens": 1308,
+              "cost_usd": 0.766035
             },
             "expectations": [
               {
@@ -7013,7 +7448,7 @@
                 "requires": "zizmor",
                 "text": "command `zizmor --offline .github/workflows/` exits 0",
                 "passed": true,
-                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.28.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.29.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
                 "source": "assertion"
               },
               {
@@ -7043,16 +7478,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 5,
+                "command_execution": 7,
                 "file_change": 1
               },
-              "total_tool_calls": 6
+              "total_tool_calls": 8
             },
             "timing": {
-              "total_tokens": 135667,
-              "executor_duration_seconds": 35.6
+              "total_tokens": 146667,
+              "executor_duration_seconds": 40.5
             },
-            "spec_hash": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+            "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
         ],
         "summary": {
@@ -7060,31 +7495,31 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 37,
+          "avg_run_seconds": 39.4,
           "estimate": {
             "input_tokens": 1639,
             "input_cost_usd": 0.008195
           },
           "measured": {
-            "input_tokens": 33178,
-            "cache_read_input_tokens": 196352,
-            "output_tokens": 2329,
-            "cost_usd": 1.21752
+            "input_tokens": 35295,
+            "cache_read_input_tokens": 205056,
+            "output_tokens": 2508,
+            "cost_usd": 1.276995
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T20:26:32Z",
+          "ran_at": "2026-08-15T02:11:43Z",
           "summary": {
-            "passed": 1,
-            "failed": 1,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 44.5,
+            "pass_rate": 1,
+            "avg_run_seconds": 43.6,
             "measured": {
-              "input_tokens": 38145,
-              "cache_read_input_tokens": 258048,
-              "output_tokens": 2680,
-              "cost_usd": 1.561365
+              "input_tokens": 37152,
+              "cache_read_input_tokens": 286720,
+              "output_tokens": 2775,
+              "cost_usd": 1.70261
             }
           },
           "results": [
@@ -7110,43 +7545,43 @@
             },
             {
               "id": "validate-and-fix",
-              "passed": false,
+              "passed": true,
               "measured": {
-                "input_tokens": 17248,
-                "cache_read_input_tokens": 89344,
-                "output_tokens": 1066,
-                "cost_usd": 0.56494
+                "input_tokens": 16255,
+                "cache_read_input_tokens": 118016,
+                "output_tokens": 1161,
+                "cost_usd": 0.706185
               },
               "summary": {
-                "passed": 3,
-                "failed": 1,
+                "passed": 4,
+                "failed": 0,
                 "total": 4,
-                "pass_rate": 0.75
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 38.3
+                "executor_duration_seconds": 36.5
               },
-              "fingerprint": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+              "fingerprint": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T20:26:32Z",
+          "ran_at": "2026-07-31T21:48:29Z",
           "summary": {
-            "passed": 1,
-            "failed": 1,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 45,
+            "pass_rate": 1,
+            "avg_run_seconds": 37,
             "estimate": {
               "input_tokens": 1639,
               "input_cost_usd": 0.008195
             },
             "measured": {
-              "input_tokens": 34662,
-              "cache_read_input_tokens": 206080,
-              "output_tokens": 2768,
-              "cost_usd": 1.28675
+              "input_tokens": 33178,
+              "cache_read_input_tokens": 196352,
+              "output_tokens": 2329,
+              "cost_usd": 1.21752
             }
           },
           "results": [
@@ -7175,25 +7610,25 @@
             },
             {
               "id": "validate-and-fix",
-              "passed": false,
+              "passed": true,
               "estimate": {
                 "input_tokens": 827,
                 "input_cost_usd": 0.004135
               },
               "measured": {
-                "input_tokens": 15958,
-                "cache_read_input_tokens": 129792,
-                "output_tokens": 1568,
-                "cost_usd": 0.77579
+                "input_tokens": 14474,
+                "cache_read_input_tokens": 120064,
+                "output_tokens": 1129,
+                "cost_usd": 0.70656
               },
               "summary": {
-                "passed": 3,
-                "failed": 1,
+                "passed": 4,
+                "failed": 0,
                 "total": 4,
-                "pass_rate": 0.75
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 51.6
+                "executor_duration_seconds": 35.6
               }
             }
           ]
@@ -7206,8 +7641,8 @@
         "model": "gpt-5.6-terra",
         "display": "GPT-5.6 Terra",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:48:43Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:11:55Z",
         "executed": true,
         "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
         "runs_per_query": 3,
@@ -7314,7 +7749,7 @@
             "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 11.9,
+            "avg_run_seconds": 10.7,
             "estimate": {
               "input_tokens": 801,
               "input_cost_usd": 0.002003
@@ -7392,20 +7827,20 @@
           "failed": 1,
           "total": 13,
           "pass_rate": 0.923077,
-          "avg_run_seconds": 12,
+          "avg_run_seconds": 11.9,
           "estimate": {
             "input_tokens": 10419,
             "input_cost_usd": 0.026051
           }
         },
         "previous": {
-          "ran_at": "2026-07-31T20:28:45Z",
+          "ran_at": "2026-07-31T21:48:43Z",
           "summary": {
             "passed": 12,
             "failed": 1,
             "total": 13,
             "pass_rate": 0.923077,
-            "avg_run_seconds": 12.1,
+            "avg_run_seconds": 12,
             "estimate": {
               "input_tokens": 10419,
               "input_cost_usd": 0.026051
@@ -7509,7 +7944,7 @@
               "hits": 3,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 13.4,
+              "avg_run_seconds": 11.9,
               "estimate": {
                 "input_tokens": 801,
                 "input_cost_usd": 0.002003
@@ -7589,8 +8024,8 @@
         "model": "gpt-5.6-terra",
         "display": "GPT-5.6 Terra",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:49:26Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:13:06Z",
         "executed": true,
         "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
         "timeout_seconds": 600,
@@ -7658,10 +8093,10 @@
               "input_cost_usd": 0.002068
             },
             "measured": {
-              "input_tokens": 17810,
-              "cache_read_input_tokens": 163584,
-              "output_tokens": 1522,
-              "cost_usd": 0.476315
+              "input_tokens": 14108,
+              "cache_read_input_tokens": 112640,
+              "output_tokens": 1325,
+              "cost_usd": 0.336745
             },
             "expectations": [
               {
@@ -7679,7 +8114,7 @@
                 "requires": "zizmor",
                 "text": "command `zizmor --offline .github/workflows/` exits 0",
                 "passed": true,
-                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.28.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.29.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
                 "source": "assertion"
               },
               {
@@ -7709,16 +8144,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 6,
+                "command_execution": 5,
                 "file_change": 2
               },
-              "total_tool_calls": 8
+              "total_tool_calls": 7
             },
             "timing": {
-              "total_tokens": 182916,
-              "executor_duration_seconds": 42.1
+              "total_tokens": 128073,
+              "executor_duration_seconds": 36
             },
-            "spec_hash": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+            "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
         ],
         "summary": {
@@ -7726,31 +8161,31 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 38.2,
+          "avg_run_seconds": 35.2,
           "estimate": {
             "input_tokens": 1639,
             "input_cost_usd": 0.004098
           },
           "measured": {
-            "input_tokens": 26969,
-            "cache_read_input_tokens": 248064,
-            "output_tokens": 2811,
-            "cost_usd": 0.729748
+            "input_tokens": 23267,
+            "cache_read_input_tokens": 197120,
+            "output_tokens": 2614,
+            "cost_usd": 0.590178
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T20:30:13Z",
+          "ran_at": "2026-08-15T02:13:06Z",
           "summary": {
-            "passed": 1,
-            "failed": 1,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 47.4,
+            "pass_rate": 1,
+            "avg_run_seconds": 43.6,
             "measured": {
-              "input_tokens": 42581,
-              "cache_read_input_tokens": 329984,
-              "output_tokens": 3429,
-              "cost_usd": 0.982847
+              "input_tokens": 38929,
+              "cache_read_input_tokens": 288512,
+              "output_tokens": 3054,
+              "cost_usd": 0.864412
             }
           },
           "results": [
@@ -7776,43 +8211,43 @@
             },
             {
               "id": "validate-and-fix",
-              "passed": false,
+              "passed": true,
               "measured": {
-                "input_tokens": 14152,
-                "cache_read_input_tokens": 137984,
-                "output_tokens": 1588,
-                "cost_usd": 0.40416
+                "input_tokens": 10500,
+                "cache_read_input_tokens": 96512,
+                "output_tokens": 1213,
+                "cost_usd": 0.285725
               },
               "summary": {
-                "passed": 3,
-                "failed": 1,
+                "passed": 4,
+                "failed": 0,
                 "total": 4,
-                "pass_rate": 0.75
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 42.2
+                "executor_duration_seconds": 34.7
               },
-              "fingerprint": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+              "fingerprint": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T20:30:13Z",
+          "ran_at": "2026-07-31T21:49:26Z",
           "summary": {
-            "passed": 1,
-            "failed": 1,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 36.3,
+            "pass_rate": 1,
+            "avg_run_seconds": 38.2,
             "estimate": {
               "input_tokens": 1639,
               "input_cost_usd": 0.004098
             },
             "measured": {
-              "input_tokens": 21281,
-              "cache_read_input_tokens": 202240,
-              "output_tokens": 2706,
-              "cost_usd": 0.599393
+              "input_tokens": 26969,
+              "cache_read_input_tokens": 248064,
+              "output_tokens": 2811,
+              "cost_usd": 0.729748
             }
           },
           "results": [
@@ -7841,25 +8276,25 @@
             },
             {
               "id": "validate-and-fix",
-              "passed": false,
+              "passed": true,
               "estimate": {
                 "input_tokens": 827,
                 "input_cost_usd": 0.002068
               },
               "measured": {
-                "input_tokens": 12122,
-                "cache_read_input_tokens": 117760,
-                "output_tokens": 1417,
-                "cost_usd": 0.34596
+                "input_tokens": 17810,
+                "cache_read_input_tokens": 163584,
+                "output_tokens": 1522,
+                "cost_usd": 0.476315
               },
               "summary": {
-                "passed": 3,
-                "failed": 1,
+                "passed": 4,
+                "failed": 0,
                 "total": 4,
-                "pass_rate": 0.75
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 38.2
+                "executor_duration_seconds": 42.1
               }
             }
           ]
@@ -8014,8 +8449,8 @@
         "model": "grok-4.5",
         "display": "Grok 4.5",
         "harness": "grok",
-        "tool_version": "v0.6.0-14-ga373d30-dirty",
-        "ran_at": "2026-07-31T19:23:28Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:25:58Z",
         "executed": true,
         "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
         "timeout_seconds": 600,
@@ -8068,10 +8503,10 @@
             "id": "validate-and-fix",
             "passed": true,
             "measured": {
-              "input_tokens": 4483,
-              "cache_read_input_tokens": 75520,
-              "output_tokens": 1233,
-              "cost_usd": 0.03902
+              "input_tokens": 6971,
+              "cache_read_input_tokens": 100224,
+              "output_tokens": 1163,
+              "cost_usd": 0.017336
             },
             "expectations": [
               {
@@ -8089,7 +8524,7 @@
                 "requires": "zizmor",
                 "text": "command `zizmor --offline .github/workflows/` exits 0",
                 "passed": true,
-                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.28.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.29.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
                 "source": "assertion"
               },
               {
@@ -8118,10 +8553,10 @@
               "pass_rate": 1
             },
             "timing": {
-              "total_tokens": 81236,
-              "executor_duration_seconds": 20.7
+              "total_tokens": 108358,
+              "executor_duration_seconds": 24.8
             },
-            "spec_hash": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+            "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
         ],
         "summary": {
@@ -8129,27 +8564,27 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 16.9,
+          "avg_run_seconds": 18.9,
           "measured": {
-            "input_tokens": 7714,
-            "cache_read_input_tokens": 122112,
-            "output_tokens": 2009,
-            "cost_usd": 0.064116
+            "input_tokens": 10202,
+            "cache_read_input_tokens": 146816,
+            "output_tokens": 1939,
+            "cost_usd": 0.042432
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T18:02:45Z",
+          "ran_at": "2026-08-15T02:25:58Z",
           "summary": {
-            "passed": 0,
-            "failed": 2,
+            "passed": 1,
+            "failed": 1,
             "total": 2,
-            "pass_rate": 0,
-            "avg_run_seconds": 5.1,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 33.4,
             "measured": {
-              "input_tokens": 196,
-              "cache_read_input_tokens": 21248,
-              "output_tokens": 378,
-              "cost_usd": 0.009034
+              "input_tokens": 33175,
+              "cache_read_input_tokens": 158720,
+              "output_tokens": 2221,
+              "cost_usd": 0.046291
             }
           },
           "results": [
@@ -8175,39 +8610,39 @@
             },
             {
               "id": "validate-and-fix",
-              "passed": false,
+              "passed": true,
               "measured": {
-                "input_tokens": 105,
-                "cache_read_input_tokens": 10624,
-                "output_tokens": 179,
-                "cost_usd": 0.004471
+                "input_tokens": 33084,
+                "cache_read_input_tokens": 148096,
+                "output_tokens": 2022,
+                "cost_usd": 0.041728
               },
               "summary": {
-                "passed": 0,
-                "failed": 4,
+                "passed": 4,
+                "failed": 0,
                 "total": 4,
-                "pass_rate": 0
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 4.9
+                "executor_duration_seconds": 61.4
               },
-              "fingerprint": "3e10aa70e05d7e4d55868fbf95044bf7e04ffb25e28e80890a257c5ee1b54017"
+              "fingerprint": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T19:11:01Z",
+          "ran_at": "2026-07-31T19:23:28Z",
           "summary": {
-            "passed": 1,
-            "failed": 1,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 27.9,
+            "pass_rate": 1,
+            "avg_run_seconds": 16.9,
             "measured": {
-              "input_tokens": 8454,
-              "cache_read_input_tokens": 193152,
-              "output_tokens": 3199,
-              "cost_usd": 0.094048
+              "input_tokens": 7714,
+              "cache_read_input_tokens": 122112,
+              "output_tokens": 2009,
+              "cost_usd": 0.064116
             }
           },
           "results": [
@@ -8232,22 +8667,353 @@
             },
             {
               "id": "validate-and-fix",
-              "passed": false,
+              "passed": true,
               "measured": {
-                "input_tokens": 5223,
-                "cache_read_input_tokens": 146560,
-                "output_tokens": 2423,
-                "cost_usd": 0.068952
+                "input_tokens": 4483,
+                "cache_read_input_tokens": 75520,
+                "output_tokens": 1233,
+                "cost_usd": 0.03902
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 20.7
+              }
+            }
+          ]
+        }
+      }
+    },
+    "xai/grok-4.6": {
+      "triggers": {
+        "provider": "xai",
+        "model": "grok-4.6",
+        "display": "Grok 4.6",
+        "harness": "grok",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:27:52Z",
+        "executed": true,
+        "content_hash": "94c98abafcaec5a7d3bb553874047f1548fa666da5cf2a3b35c5834132e29aa1",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "query": "Validate the GitHub Actions workflows in this repo and fix what's reported",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.6,
+            "spec_hash": "05829f1c5bb8e92e0a6ad585e3ee984fb0bce4775daf84377582c506177fce34"
+          },
+          {
+            "query": "Run actionlint over .github/workflows and fix the errors",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.4,
+            "spec_hash": "30ab975d3632c87226f6e2cfbd573785331afa1dcb67b55001ad01568487f346"
+          },
+          {
+            "query": "Audit our workflows with zizmor",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.7,
+            "spec_hash": "c0d5709d1a6beeda8c5de85be691d6663ed25dd5353b65ff8e9f9e27d65ca58c"
+          },
+          {
+            "query": "Lint and security-check the workflow I just edited",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.8,
+            "spec_hash": "40b266df18b426d4c9c690cd24dfeb8122f1107796300675b5a3c60eba63e512"
+          },
+          {
+            "query": "Set up actionlint and zizmor for this repository",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.1,
+            "spec_hash": "309bf09cdafc4a8bb8ce40cab7a013303ed60d989752c1114886897a402496c9"
+          },
+          {
+            "query": "My workflow fails to parse in CI — check and fix it locally",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "spec_hash": "69effeaa9eb42c7803af52dff6557a4dd321540120c06a303af3a775fe366805"
+          },
+          {
+            "query": "Run the workflow linter before I commit these .github/workflows changes",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 4.7,
+            "spec_hash": "660815d35053929abd51162fcf11f6f11597609ead196d7bf1964a89f14f2af5"
+          },
+          {
+            "query": "Write a new release workflow using the reusable library",
+            "should_trigger": false,
+            "hits": 1,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 10,
+            "spec_hash": "842d0fd41b94ac2a3bd6bf88bc8fbdad174d36adf47d51fd09f770149312de04"
+          },
+          {
+            "query": "Explain why pull_request_target is dangerous",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.1,
+            "spec_hash": "59a987bb91345cb2550b63e83bc134be94668c3eaf61a235b3e9fde0a0c21f74"
+          },
+          {
+            "query": "Add a build matrix to this workflow",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.8,
+            "spec_hash": "529fb7f70dfa2a15940f57777f30e4d91b250e11526ad70cae244b7c6e6dde4c"
+          },
+          {
+            "query": "Validate this Terraform configuration with tflint",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.8,
+            "spec_hash": "ad84c344d96ebbd31a49b9822258cc8675546571ea0fc36764747fa199b23159"
+          },
+          {
+            "query": "Run the Go test suite and report failures",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7,
+            "spec_hash": "2ef9f07937738c6f47032d024a0dfa71292a6105612e748dbce1e18706eb4806"
+          },
+          {
+            "query": "Lint the markdown files under docs/",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 22.7,
+            "spec_hash": "e3a6717e340fcdd0e08a332a2c8ad2993cb244160c165621a7061c956279e608"
+          }
+        ],
+        "summary": {
+          "passed": 12,
+          "failed": 1,
+          "total": 13,
+          "pass_rate": 0.923077,
+          "avg_run_seconds": 7.9
+        }
+      },
+      "evals": {
+        "provider": "xai",
+        "model": "grok-4.6",
+        "display": "Grok 4.6",
+        "harness": "grok",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:29:18Z",
+        "executed": true,
+        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "id": "seed-zizmor-config",
+            "passed": true,
+            "measured": {
+              "input_tokens": 12254,
+              "cache_read_input_tokens": 39424,
+              "output_tokens": 1094,
+              "cost_usd": 0.008633
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "zizmor.yml",
+                "text": "file zizmor.yml exists",
+                "passed": true,
+                "evidence": "zizmor.yml exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "zizmor.yml",
+                "pattern": "rules:",
+                "text": "zizmor.yml matches /rules:/",
+                "passed": true,
+                "evidence": "rules:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 52772,
+              "executor_duration_seconds": 15.1
+            },
+            "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+          },
+          {
+            "id": "validate-and-fix",
+            "passed": true,
+            "measured": {
+              "input_tokens": 7855,
+              "cache_read_input_tokens": 115968,
+              "output_tokens": 1548,
+              "cost_usd": 0.014107
+            },
+            "expectations": [
+              {
+                "type": "command",
+                "run": "actionlint",
+                "requires": "actionlint",
+                "text": "command `actionlint` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "zizmor --offline .github/workflows/",
+                "requires": "zizmor",
+                "text": "command `zizmor --offline .github/workflows/` exits 0",
+                "passed": true,
+                "evidence": "exit 0: No findings to report. Good job! (2 suppressed)\nINFO zizmor: 🌈 zizmor v1.29.0\n INFO audit: zizmor: 🌈 completed .github/workflows/build.yaml",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "env:",
+                "text": ".github/workflows/build.yaml matches /env:/",
+                "passed": true,
+                "evidence": "env:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/build.yaml",
+                "pattern": "run:.*\\$\\{\\{",
+                "text": ".github/workflows/build.yaml does not match /run:.*\\$\\{\\{/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 4,
+              "failed": 0,
+              "total": 4,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 125371,
+              "executor_duration_seconds": 29.1
+            },
+            "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 22.1,
+          "measured": {
+            "input_tokens": 20109,
+            "cache_read_input_tokens": 155392,
+            "output_tokens": 2642,
+            "cost_usd": 0.02274
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-08-15T02:29:18Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 57.4,
+            "measured": {
+              "input_tokens": 82545,
+              "cache_read_input_tokens": 565504,
+              "output_tokens": 6322,
+              "cost_usd": 0.082582
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": true,
+              "measured": {
+                "input_tokens": 56580,
+                "cache_read_input_tokens": 253056,
+                "output_tokens": 2806,
+                "cost_usd": 0.043609
               },
               "summary": {
                 "passed": 2,
-                "failed": 2,
-                "total": 4,
-                "pass_rate": 0.5
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 42.8
-              }
+                "executor_duration_seconds": 58.3
+              },
+              "fingerprint": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": true,
+              "measured": {
+                "input_tokens": 25965,
+                "cache_read_input_tokens": 312448,
+                "output_tokens": 3516,
+                "cost_usd": 0.038973
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 56.4
+              },
+              "fingerprint": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
             }
           ]
         }

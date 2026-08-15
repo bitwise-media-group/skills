@@ -3851,8 +3851,8 @@
         "model": "gpt-5.3-codex-spark",
         "display": "GPT-5.3 Codex Spark",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:20:49Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:43:12Z",
         "executed": true,
         "content_hash": "a44bd2fafb2e0ce9edb5adffc1a1050f34f1b4e418e82403ace1b8183677750b",
         "runs_per_query": 3,
@@ -3883,7 +3883,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 9.3,
+            "avg_run_seconds": 6.8,
             "spec_hash": "d25cfa9414bbb0d45b31d1a36f9bcd39d2e509217ef4633674f66811722b4be4"
           },
           {
@@ -3892,7 +3892,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 7.4,
+            "avg_run_seconds": 8.3,
             "spec_hash": "b907d640bedd42d63b74d7515472a5b48752184dea1555a19f2583efd454c50a"
           },
           {
@@ -3910,7 +3910,7 @@
             "hits": 1,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 9.2,
+            "avg_run_seconds": 9.6,
             "spec_hash": "8678fe94efe564308fc91817554fa607450d2719d0b6adc0b8f90da1fea015ae"
           },
           {
@@ -3919,7 +3919,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 5,
+            "avg_run_seconds": 3.7,
             "spec_hash": "56aa9353e8530803169126f8e5db94c31769196692c1f1de2a3aafc2cbe8a839"
           },
           {
@@ -3928,7 +3928,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 8.2,
+            "avg_run_seconds": 5.7,
             "spec_hash": "33b7c4966780af80f0182152af3769f0d32c110d9d41d4ad5258235fce07d85f"
           },
           {
@@ -3991,7 +3991,145 @@
           "failed": 5,
           "total": 14,
           "pass_rate": 0.642857,
-          "avg_run_seconds": 11.9
+          "avg_run_seconds": 11.6
+        },
+        "previous": {
+          "ran_at": "2026-07-31T21:20:49Z",
+          "summary": {
+            "passed": 9,
+            "failed": 5,
+            "total": 14,
+            "pass_rate": 0.642857,
+            "avg_run_seconds": 11.9
+          },
+          "results": [
+            {
+              "query": "Harden this GitHub Actions workflow and lock down its permissions",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.1,
+              "spec_hash": "bffbcca9b21232fd9bdb0b14ca7f16aa221dc645117ccc5e970c181c230e06cb"
+            },
+            {
+              "query": "Pin all the actions in our workflows to commit SHAs",
+              "should_trigger": true,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9,
+              "spec_hash": "4b6e2969975a7c2ddb228399cf8226750398ea194352b31c2a4584e99c7ab392"
+            },
+            {
+              "query": "Is it safe to use pull_request_target here, or will a fork PR steal our secrets?",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.3,
+              "spec_hash": "d25cfa9414bbb0d45b31d1a36f9bcd39d2e509217ef4633674f66811722b4be4"
+            },
+            {
+              "query": "This workflow echoes a PR title into a run step — is that a script-injection risk?",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.4,
+              "spec_hash": "b907d640bedd42d63b74d7515472a5b48752184dea1555a19f2583efd454c50a"
+            },
+            {
+              "query": "Set least-privilege permissions for this CI job",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.7,
+              "spec_hash": "f0e82f5275cd912b88dfbe72975c3fe46cedc0a5e69ddd67eb50f67793cf2824"
+            },
+            {
+              "query": "Review .github/workflows for security issues",
+              "should_trigger": true,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 9.2,
+              "spec_hash": "8678fe94efe564308fc91817554fa607450d2719d0b6adc0b8f90da1fea015ae"
+            },
+            {
+              "query": "Should we use OIDC instead of storing long-lived AWS keys as secrets?",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 5,
+              "spec_hash": "56aa9353e8530803169126f8e5db94c31769196692c1f1de2a3aafc2cbe8a839"
+            },
+            {
+              "query": "A fork PR workflow needs to label the PR — how do I do that without exposing the write token?",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.2,
+              "spec_hash": "33b7c4966780af80f0182152af3769f0d32c110d9d41d4ad5258235fce07d85f"
+            },
+            {
+              "query": "Add a matrix across Python versions to this workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 43.7,
+              "spec_hash": "077e407f7d207ffd68469af82610b2856e786fcb9cf640283aa388d3f1523c8b"
+            },
+            {
+              "query": "Run actionlint and zizmor and fix the findings",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.8,
+              "spec_hash": "fc94905a243650a18d9835dd6853493d568c1cc42b0f8948e9cefc7870bc97c8"
+            },
+            {
+              "query": "Wire up the reusable CI workflow for this repo",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 20.6,
+              "spec_hash": "6b8cadf86bd43250f1eff852b65a1efc041df6077ff9de47ff86e517fae8cec4"
+            },
+            {
+              "query": "Write a Dockerfile that runs as a non-root user",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.8,
+              "spec_hash": "a36a1e747758fb7f6dad6d1fbb60999170e8485db53799f85e137e138a3fb728"
+            },
+            {
+              "query": "How do I manage secrets in Terraform?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8,
+              "spec_hash": "addbe6e88d30993e1c4b32240ba7331e53e3f38be8eab0f960e73da961ad9074"
+            },
+            {
+              "query": "Format this YAML file with prettier",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.2,
+              "spec_hash": "90ba576a5e4e61fdc255d28446d5b649d26d71d4d24b0d33774a060167c2e7e9"
+            }
+          ]
         }
       },
       "evals": {
@@ -3999,8 +4137,8 @@
         "model": "gpt-5.3-codex-spark",
         "display": "GPT-5.3 Codex Spark",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:21:21Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:43:34Z",
         "executed": true,
         "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
         "timeout_seconds": 600,
@@ -4010,9 +4148,9 @@
             "id": "remove-pull-request-target",
             "passed": true,
             "measured": {
-              "input_tokens": 6281,
-              "cache_read_input_tokens": 59264,
-              "output_tokens": 2146
+              "input_tokens": 5780,
+              "cache_read_input_tokens": 58112,
+              "output_tokens": 2075
             },
             "expectations": [
               {
@@ -4057,10 +4195,10 @@
               "total_tool_calls": 4
             },
             "timing": {
-              "total_tokens": 67691,
-              "executor_duration_seconds": 11.7
+              "total_tokens": 65967,
+              "executor_duration_seconds": 11.1
             },
-            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
@@ -4115,25 +4253,25 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 10.6,
+          "avg_run_seconds": 10.3,
           "measured": {
-            "input_tokens": 10824,
-            "cache_read_input_tokens": 102784,
-            "output_tokens": 3463
+            "input_tokens": 10323,
+            "cache_read_input_tokens": 101632,
+            "output_tokens": 3392
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T21:21:21Z",
+          "ran_at": "2026-08-15T01:43:34Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 14.5,
+            "avg_run_seconds": 14.6,
             "measured": {
-              "input_tokens": 9418,
-              "cache_read_input_tokens": 98944,
-              "output_tokens": 4065
+              "input_tokens": 8973,
+              "cache_read_input_tokens": 110080,
+              "output_tokens": 3901
             }
           },
           "results": [
@@ -4141,9 +4279,9 @@
               "id": "remove-pull-request-target",
               "passed": true,
               "measured": {
-                "input_tokens": 5335,
-                "cache_read_input_tokens": 55296,
-                "output_tokens": 2540
+                "input_tokens": 4890,
+                "cache_read_input_tokens": 66432,
+                "output_tokens": 2376
               },
               "summary": {
                 "passed": 3,
@@ -4152,9 +4290,9 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 11.4
+                "executor_duration_seconds": 11.7
               },
-              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+              "fingerprint": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
             },
             {
               "id": "fix-expression-injection",
@@ -4174,6 +4312,59 @@
                 "executor_duration_seconds": 17.5
               },
               "fingerprint": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T21:21:21Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 10.6,
+            "measured": {
+              "input_tokens": 10824,
+              "cache_read_input_tokens": 102784,
+              "output_tokens": 3463
+            }
+          },
+          "results": [
+            {
+              "id": "remove-pull-request-target",
+              "passed": true,
+              "measured": {
+                "input_tokens": 6281,
+                "cache_read_input_tokens": 59264,
+                "output_tokens": 2146
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 11.7
+              }
+            },
+            {
+              "id": "fix-expression-injection",
+              "passed": true,
+              "measured": {
+                "input_tokens": 4543,
+                "cache_read_input_tokens": 43520,
+                "output_tokens": 1317
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 9.4
+              }
             }
           ]
         }
@@ -4594,8 +4785,8 @@
         "model": "gpt-5.4",
         "display": "GPT-5.4",
         "harness": "codex",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-28T04:57:32Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:45:54Z",
         "executed": true,
         "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
         "timeout_seconds": 600,
@@ -4612,10 +4803,10 @@
               "input_cost_usd": 0.003195
             },
             "measured": {
-              "input_tokens": 17783,
-              "cache_read_input_tokens": 97408,
-              "output_tokens": 1993,
-              "cost_usd": 0.317873
+              "input_tokens": 7849,
+              "cache_read_input_tokens": 75520,
+              "output_tokens": 1201,
+              "cost_usd": 0.226438
             },
             "expectations": [
               {
@@ -4654,16 +4845,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 10,
+                "command_execution": 5,
                 "file_change": 1
               },
-              "total_tool_calls": 11
+              "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 117184,
-              "executor_duration_seconds": 50.8
+              "total_tokens": 84570,
+              "executor_duration_seconds": 31.3
             },
-            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
@@ -4723,31 +4914,31 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 197.5,
+          "avg_run_seconds": 187.8,
           "estimate": {
             "input_tokens": 2545,
             "input_cost_usd": 0.006362
           },
           "measured": {
-            "input_tokens": 27288,
-            "cache_read_input_tokens": 181632,
-            "output_tokens": 3157,
-            "cost_usd": 0.569655
+            "input_tokens": 17354,
+            "cache_read_input_tokens": 159744,
+            "output_tokens": 2365,
+            "cost_usd": 0.47822
           }
         },
         "baseline": {
-          "ran_at": "2026-06-27T22:04:11Z",
+          "ran_at": "2026-08-15T01:45:54Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 35,
+            "avg_run_seconds": 27.7,
             "measured": {
-              "input_tokens": 20357,
-              "cache_read_input_tokens": 130304,
-              "output_tokens": 2468,
-              "cost_usd": 0.413673
+              "input_tokens": 18294,
+              "cache_read_input_tokens": 120064,
+              "output_tokens": 2253,
+              "cost_usd": 0.379691
             }
           },
           "results": [
@@ -4755,10 +4946,10 @@
               "id": "remove-pull-request-target",
               "passed": true,
               "measured": {
-                "input_tokens": 10330,
-                "cache_read_input_tokens": 65408,
-                "output_tokens": 1437,
-                "cost_usd": 0.2109
+                "input_tokens": 8267,
+                "cache_read_input_tokens": 55168,
+                "output_tokens": 1222,
+                "cost_usd": 0.176918
               },
               "summary": {
                 "passed": 3,
@@ -4767,9 +4958,9 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 44
+                "executor_duration_seconds": 29.4
               },
-              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+              "fingerprint": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
             },
             {
               "id": "fix-expression-injection",
@@ -4794,40 +4985,46 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-06-27T22:04:11Z",
+          "ran_at": "2026-06-28T04:57:32Z",
           "summary": {
-            "passed": 1,
-            "failed": 1,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 472.1,
+            "pass_rate": 1,
+            "avg_run_seconds": 197.5,
             "estimate": {
               "input_tokens": 2545,
               "input_cost_usd": 0.006362
             },
             "measured": {
-              "input_tokens": 9505,
-              "cache_read_input_tokens": 84224,
-              "output_tokens": 1164,
-              "cost_usd": 0.251782
+              "input_tokens": 27288,
+              "cache_read_input_tokens": 181632,
+              "output_tokens": 3157,
+              "cost_usd": 0.569655
             }
           },
           "results": [
             {
               "id": "remove-pull-request-target",
-              "passed": false,
+              "passed": true,
               "estimate": {
                 "input_tokens": 1278,
                 "input_cost_usd": 0.003195
               },
+              "measured": {
+                "input_tokens": 17783,
+                "cache_read_input_tokens": 97408,
+                "output_tokens": 1993,
+                "cost_usd": 0.317873
+              },
               "summary": {
-                "passed": 0,
-                "failed": 3,
+                "passed": 3,
+                "failed": 0,
                 "total": 3,
-                "pass_rate": 0
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 600
+                "executor_duration_seconds": 50.8
               }
             },
             {
@@ -4863,8 +5060,8 @@
         "model": "gpt-5.4-mini",
         "display": "GPT-5.4 Mini",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:26:15Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:43:57Z",
         "executed": true,
         "content_hash": "a44bd2fafb2e0ce9edb5adffc1a1050f34f1b4e418e82403ace1b8183677750b",
         "runs_per_query": 3,
@@ -4958,7 +5155,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 17.9,
+            "avg_run_seconds": 17.5,
             "estimate": {
               "input_tokens": 1247,
               "input_cost_usd": 0.000935
@@ -5067,6 +5264,204 @@
             "input_tokens": 17416,
             "input_cost_usd": 0.013063
           }
+        },
+        "previous": {
+          "ran_at": "2026-07-31T21:26:15Z",
+          "summary": {
+            "passed": 13,
+            "failed": 1,
+            "total": 14,
+            "pass_rate": 0.928571,
+            "avg_run_seconds": 26.5,
+            "estimate": {
+              "input_tokens": 17416,
+              "input_cost_usd": 0.013063
+            }
+          },
+          "results": [
+            {
+              "query": "Harden this GitHub Actions workflow and lock down its permissions",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.5,
+              "estimate": {
+                "input_tokens": 1244,
+                "input_cost_usd": 0.000933
+              },
+              "spec_hash": "bffbcca9b21232fd9bdb0b14ca7f16aa221dc645117ccc5e970c181c230e06cb"
+            },
+            {
+              "query": "Pin all the actions in our workflows to commit SHAs",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.8,
+              "estimate": {
+                "input_tokens": 1243,
+                "input_cost_usd": 0.000932
+              },
+              "spec_hash": "4b6e2969975a7c2ddb228399cf8226750398ea194352b31c2a4584e99c7ab392"
+            },
+            {
+              "query": "Is it safe to use pull_request_target here, or will a fork PR steal our secrets?",
+              "should_trigger": true,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 20.1,
+              "estimate": {
+                "input_tokens": 1251,
+                "input_cost_usd": 0.000938
+              },
+              "spec_hash": "d25cfa9414bbb0d45b31d1a36f9bcd39d2e509217ef4633674f66811722b4be4"
+            },
+            {
+              "query": "This workflow echoes a PR title into a run step — is that a script-injection risk?",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.8,
+              "estimate": {
+                "input_tokens": 1251,
+                "input_cost_usd": 0.000938
+              },
+              "spec_hash": "b907d640bedd42d63b74d7515472a5b48752184dea1555a19f2583efd454c50a"
+            },
+            {
+              "query": "Set least-privilege permissions for this CI job",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.4,
+              "estimate": {
+                "input_tokens": 1242,
+                "input_cost_usd": 0.000932
+              },
+              "spec_hash": "f0e82f5275cd912b88dfbe72975c3fe46cedc0a5e69ddd67eb50f67793cf2824"
+            },
+            {
+              "query": "Review .github/workflows for security issues",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.5,
+              "estimate": {
+                "input_tokens": 1240,
+                "input_cost_usd": 0.00093
+              },
+              "spec_hash": "8678fe94efe564308fc91817554fa607450d2719d0b6adc0b8f90da1fea015ae"
+            },
+            {
+              "query": "Should we use OIDC instead of storing long-lived AWS keys as secrets?",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 17.9,
+              "estimate": {
+                "input_tokens": 1247,
+                "input_cost_usd": 0.000935
+              },
+              "spec_hash": "56aa9353e8530803169126f8e5db94c31769196692c1f1de2a3aafc2cbe8a839"
+            },
+            {
+              "query": "A fork PR workflow needs to label the PR — how do I do that without exposing the write token?",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.8,
+              "estimate": {
+                "input_tokens": 1253,
+                "input_cost_usd": 0.00094
+              },
+              "spec_hash": "33b7c4966780af80f0182152af3769f0d32c110d9d41d4ad5258235fce07d85f"
+            },
+            {
+              "query": "Add a matrix across Python versions to this workflow",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 88.2,
+              "estimate": {
+                "input_tokens": 1241,
+                "input_cost_usd": 0.000931
+              },
+              "spec_hash": "077e407f7d207ffd68469af82610b2856e786fcb9cf640283aa388d3f1523c8b"
+            },
+            {
+              "query": "Run actionlint and zizmor and fix the findings",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 33.7,
+              "estimate": {
+                "input_tokens": 1242,
+                "input_cost_usd": 0.000932
+              },
+              "spec_hash": "fc94905a243650a18d9835dd6853493d568c1cc42b0f8948e9cefc7870bc97c8"
+            },
+            {
+              "query": "Wire up the reusable CI workflow for this repo",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 58,
+              "estimate": {
+                "input_tokens": 1241,
+                "input_cost_usd": 0.000931
+              },
+              "spec_hash": "6b8cadf86bd43250f1eff852b65a1efc041df6077ff9de47ff86e517fae8cec4"
+            },
+            {
+              "query": "Write a Dockerfile that runs as a non-root user",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 31.1,
+              "estimate": {
+                "input_tokens": 1243,
+                "input_cost_usd": 0.000932
+              },
+              "spec_hash": "a36a1e747758fb7f6dad6d1fbb60999170e8485db53799f85e137e138a3fb728"
+            },
+            {
+              "query": "How do I manage secrets in Terraform?",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 34.3,
+              "estimate": {
+                "input_tokens": 1240,
+                "input_cost_usd": 0.00093
+              },
+              "spec_hash": "addbe6e88d30993e1c4b32240ba7331e53e3f38be8eab0f960e73da961ad9074"
+            },
+            {
+              "query": "Format this YAML file with prettier",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 29.4,
+              "estimate": {
+                "input_tokens": 1238,
+                "input_cost_usd": 0.000929
+              },
+              "spec_hash": "90ba576a5e4e61fdc255d28446d5b649d26d71d4d24b0d33774a060167c2e7e9"
+            }
+          ]
         }
       },
       "evals": {
@@ -5074,8 +5469,8 @@
         "model": "gpt-5.4-mini",
         "display": "GPT-5.4 Mini",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:27:11Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:44:53Z",
         "executed": true,
         "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
         "timeout_seconds": 600,
@@ -5092,10 +5487,10 @@
               "input_cost_usd": 0.000959
             },
             "measured": {
-              "input_tokens": 16247,
-              "cache_read_input_tokens": 51584,
-              "output_tokens": 1365,
-              "cost_usd": 0.057016
+              "input_tokens": 7602,
+              "cache_read_input_tokens": 58240,
+              "output_tokens": 1397,
+              "cost_usd": 0.055668
             },
             "expectations": [
               {
@@ -5134,16 +5529,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 4,
+                "command_execution": 3,
                 "file_change": 1
               },
-              "total_tool_calls": 5
+              "total_tool_calls": 4
             },
             "timing": {
-              "total_tokens": 69196,
-              "executor_duration_seconds": 29.3
+              "total_tokens": 67239,
+              "executor_duration_seconds": 26.6
             },
-            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
@@ -5203,53 +5598,53 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 24.6,
+          "avg_run_seconds": 23.3,
           "estimate": {
             "input_tokens": 2545,
             "input_cost_usd": 0.001909
           },
           "measured": {
-            "input_tokens": 22817,
-            "cache_read_input_tokens": 109824,
-            "output_tokens": 2253,
-            "cost_usd": 0.10962
+            "input_tokens": 14172,
+            "cache_read_input_tokens": 116480,
+            "output_tokens": 2285,
+            "cost_usd": 0.108272
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T21:27:11Z",
+          "ran_at": "2026-08-15T01:44:53Z",
           "summary": {
-            "passed": 1,
-            "failed": 1,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 28.8,
+            "pass_rate": 1,
+            "avg_run_seconds": 29.8,
             "measured": {
-              "input_tokens": 22708,
+              "input_tokens": 23137,
               "cache_read_input_tokens": 146176,
-              "output_tokens": 2683,
-              "cost_usd": 0.138736
+              "output_tokens": 2873,
+              "cost_usd": 0.139913
             }
           },
           "results": [
             {
               "id": "remove-pull-request-target",
-              "passed": false,
+              "passed": true,
               "measured": {
-                "input_tokens": 5589,
+                "input_tokens": 6018,
                 "cache_read_input_tokens": 56192,
-                "output_tokens": 1305,
-                "cost_usd": 0.052208
+                "output_tokens": 1495,
+                "cost_usd": 0.053385
               },
               "summary": {
-                "passed": 2,
-                "failed": 1,
+                "passed": 3,
+                "failed": 0,
                 "total": 3,
-                "pass_rate": 0.666667
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 27.2
+                "executor_duration_seconds": 29.1
               },
-              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+              "fingerprint": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
             },
             {
               "id": "fix-expression-injection",
@@ -5270,6 +5665,74 @@
                 "executor_duration_seconds": 30.4
               },
               "fingerprint": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T21:27:11Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 24.6,
+            "estimate": {
+              "input_tokens": 2545,
+              "input_cost_usd": 0.001909
+            },
+            "measured": {
+              "input_tokens": 22817,
+              "cache_read_input_tokens": 109824,
+              "output_tokens": 2253,
+              "cost_usd": 0.10962
+            }
+          },
+          "results": [
+            {
+              "id": "remove-pull-request-target",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1278,
+                "input_cost_usd": 0.000959
+              },
+              "measured": {
+                "input_tokens": 16247,
+                "cache_read_input_tokens": 51584,
+                "output_tokens": 1365,
+                "cost_usd": 0.057016
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 29.3
+              }
+            },
+            {
+              "id": "fix-expression-injection",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1267,
+                "input_cost_usd": 0.00095
+              },
+              "measured": {
+                "input_tokens": 6570,
+                "cache_read_input_tokens": 58240,
+                "output_tokens": 888,
+                "cost_usd": 0.052604
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 19.9
+              }
             }
           ]
         }
@@ -5491,8 +5954,8 @@
         "model": "gpt-5.5",
         "display": "GPT-5.5",
         "harness": "codex",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-27T22:45:32Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:47:36Z",
         "executed": true,
         "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
         "timeout_seconds": 600,
@@ -5509,10 +5972,10 @@
               "input_cost_usd": 0.00639
             },
             "measured": {
-              "input_tokens": 24807,
-              "cache_read_input_tokens": 103040,
-              "output_tokens": 2257,
-              "cost_usd": 0.706945
+              "input_tokens": 15840,
+              "cache_read_input_tokens": 130432,
+              "output_tokens": 2445,
+              "cost_usd": 0.80471
             },
             "expectations": [
               {
@@ -5551,16 +6014,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 11,
-                "file_change": 1
+                "command_execution": 14,
+                "file_change": 2
               },
-              "total_tool_calls": 12
+              "total_tool_calls": 16
             },
             "timing": {
-              "total_tokens": 130104,
-              "executor_duration_seconds": 54.6
+              "total_tokens": 148717,
+              "executor_duration_seconds": 58.3
             },
-            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
@@ -5620,31 +6083,31 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 46.9,
+          "avg_run_seconds": 48.7,
           "estimate": {
             "input_tokens": 2545,
             "input_cost_usd": 0.012725
           },
           "measured": {
-            "input_tokens": 43286,
-            "cache_read_input_tokens": 206080,
-            "output_tokens": 3732,
-            "cost_usd": 1.35879
+            "input_tokens": 34319,
+            "cache_read_input_tokens": 233472,
+            "output_tokens": 3920,
+            "cost_usd": 1.456555
           }
         },
         "baseline": {
-          "ran_at": "2026-06-27T22:45:32Z",
+          "ran_at": "2026-08-15T01:47:36Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 364.3,
+            "avg_run_seconds": 207,
             "measured": {
-              "input_tokens": 28328,
-              "cache_read_input_tokens": 133376,
-              "output_tokens": 2445,
-              "cost_usd": 0.88187
+              "input_tokens": 30620,
+              "cache_read_input_tokens": 137856,
+              "output_tokens": 3001,
+              "cost_usd": 0.93241
             }
           },
           "results": [
@@ -5652,10 +6115,10 @@
               "id": "remove-pull-request-target",
               "passed": true,
               "measured": {
-                "input_tokens": 8683,
-                "cache_read_input_tokens": 72576,
-                "output_tokens": 1221,
-                "cost_usd": 0.442925
+                "input_tokens": 10975,
+                "cache_read_input_tokens": 77056,
+                "output_tokens": 1777,
+                "cost_usd": 0.493465
               },
               "summary": {
                 "passed": 3,
@@ -5664,9 +6127,9 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 358.1
+                "executor_duration_seconds": 43.4
               },
-              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+              "fingerprint": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
             },
             {
               "id": "fix-expression-injection",
@@ -5691,22 +6154,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-06-21T14:32:26Z",
+          "ran_at": "2026-06-27T22:45:32Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 41.5,
+            "avg_run_seconds": 46.9,
             "estimate": {
               "input_tokens": 2545,
               "input_cost_usd": 0.012725
             },
             "measured": {
-              "input_tokens": 29312,
-              "cache_read_input_tokens": 231168,
-              "output_tokens": 2998,
-              "cost_usd": 1.39234
+              "input_tokens": 43286,
+              "cache_read_input_tokens": 206080,
+              "output_tokens": 3732,
+              "cost_usd": 1.35879
             }
           },
           "results": [
@@ -5718,10 +6181,10 @@
                 "input_cost_usd": 0.00639
               },
               "measured": {
-                "input_tokens": 11355,
-                "cache_read_input_tokens": 137728,
-                "output_tokens": 1582,
-                "cost_usd": 0.792875
+                "input_tokens": 24807,
+                "cache_read_input_tokens": 103040,
+                "output_tokens": 2257,
+                "cost_usd": 0.706945
               },
               "summary": {
                 "passed": 3,
@@ -5730,7 +6193,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 47.3
+                "executor_duration_seconds": 54.6
               }
             },
             {
@@ -5741,10 +6204,10 @@
                 "input_cost_usd": 0.006335
               },
               "measured": {
-                "input_tokens": 17957,
-                "cache_read_input_tokens": 93440,
-                "output_tokens": 1416,
-                "cost_usd": 0.599465
+                "input_tokens": 18479,
+                "cache_read_input_tokens": 103040,
+                "output_tokens": 1475,
+                "cost_usd": 0.651845
               },
               "summary": {
                 "passed": 2,
@@ -5753,7 +6216,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 35.7
+                "executor_duration_seconds": 39.1
               }
             }
           ]
@@ -5766,8 +6229,8 @@
         "model": "gpt-5.6-luna",
         "display": "GPT-5.6 Luna",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:18:27Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:41:20Z",
         "executed": true,
         "content_hash": "a44bd2fafb2e0ce9edb5adffc1a1050f34f1b4e418e82403ace1b8183677750b",
         "runs_per_query": 3,
@@ -5884,10 +6347,10 @@
           {
             "query": "Add a matrix across Python versions to this workflow",
             "should_trigger": false,
-            "hits": 2,
+            "hits": 1,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 18.6,
+            "passed": true,
+            "avg_run_seconds": 56.2,
             "estimate": {
               "input_tokens": 1241,
               "input_cost_usd": 0.001241
@@ -5900,7 +6363,7 @@
             "hits": 2,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 25.8,
+            "avg_run_seconds": 26,
             "estimate": {
               "input_tokens": 1242,
               "input_cost_usd": 0.001242
@@ -5913,7 +6376,7 @@
             "hits": 2,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 42,
+            "avg_run_seconds": 36,
             "estimate": {
               "input_tokens": 1241,
               "input_cost_usd": 0.001241
@@ -5961,24 +6424,24 @@
           }
         ],
         "summary": {
-          "passed": 11,
-          "failed": 3,
+          "passed": 12,
+          "failed": 2,
           "total": 14,
-          "pass_rate": 0.785714,
-          "avg_run_seconds": 17,
+          "pass_rate": 0.857143,
+          "avg_run_seconds": 19.2,
           "estimate": {
             "input_tokens": 17416,
             "input_cost_usd": 0.017416
           }
         },
         "previous": {
-          "ran_at": "2026-07-31T20:02:25Z",
+          "ran_at": "2026-07-31T21:18:27Z",
           "summary": {
             "passed": 11,
             "failed": 3,
             "total": 14,
             "pass_rate": 0.785714,
-            "avg_run_seconds": 15.7,
+            "avg_run_seconds": 17,
             "estimate": {
               "input_tokens": 17416,
               "input_cost_usd": 0.017416
@@ -6092,10 +6555,10 @@
             {
               "query": "Add a matrix across Python versions to this workflow",
               "should_trigger": false,
-              "hits": 3,
+              "hits": 2,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 10.5,
+              "avg_run_seconds": 18.6,
               "estimate": {
                 "input_tokens": 1241,
                 "input_cost_usd": 0.001241
@@ -6105,10 +6568,10 @@
             {
               "query": "Run actionlint and zizmor and fix the findings",
               "should_trigger": false,
-              "hits": 3,
+              "hits": 2,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 9.2,
+              "avg_run_seconds": 25.8,
               "estimate": {
                 "input_tokens": 1242,
                 "input_cost_usd": 0.001242
@@ -6121,7 +6584,7 @@
               "hits": 2,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 49.7,
+              "avg_run_seconds": 42,
               "estimate": {
                 "input_tokens": 1241,
                 "input_cost_usd": 0.001241
@@ -6175,8 +6638,8 @@
         "model": "gpt-5.6-luna",
         "display": "GPT-5.6 Luna",
         "harness": "codex",
-        "tool_version": "v0.6.0-11-gb4f1b21-dirty",
-        "ran_at": "2026-07-31T17:27:05Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:42:45Z",
         "executed": true,
         "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
         "timeout_seconds": 600,
@@ -6193,10 +6656,10 @@
               "input_cost_usd": 0.001278
             },
             "measured": {
-              "input_tokens": 21124,
-              "cache_read_input_tokens": 163584,
-              "output_tokens": 1766,
-              "cost_usd": 0.195304
+              "input_tokens": 8714,
+              "cache_read_input_tokens": 80384,
+              "output_tokens": 1474,
+              "cost_usd": 0.097942
             },
             "expectations": [
               {
@@ -6235,16 +6698,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 6,
-                "file_change": 2
+                "command_execution": 5,
+                "file_change": 1
               },
-              "total_tool_calls": 8
+              "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 186474,
-              "executor_duration_seconds": 41.9
+              "total_tokens": 90572,
+              "executor_duration_seconds": 35
             },
-            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
@@ -6304,31 +6767,31 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 39.6,
+          "avg_run_seconds": 36.1,
           "estimate": {
             "input_tokens": 2545,
             "input_cost_usd": 0.002545
           },
           "measured": {
-            "input_tokens": 32596,
-            "cache_read_input_tokens": 275200,
-            "output_tokens": 3282,
-            "cost_usd": 0.327488
+            "input_tokens": 20186,
+            "cache_read_input_tokens": 192000,
+            "output_tokens": 2990,
+            "cost_usd": 0.230126
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T17:27:05Z",
+          "ran_at": "2026-08-15T01:42:45Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 44.2,
+            "avg_run_seconds": 39.7,
             "measured": {
-              "input_tokens": 25449,
-              "cache_read_input_tokens": 213760,
-              "output_tokens": 3191,
-              "cost_usd": 0.258355
+              "input_tokens": 22286,
+              "cache_read_input_tokens": 197632,
+              "output_tokens": 3186,
+              "cost_usd": 0.239034
             }
           },
           "results": [
@@ -6336,10 +6799,10 @@
               "id": "remove-pull-request-target",
               "passed": true,
               "measured": {
-                "input_tokens": 14375,
-                "cache_read_input_tokens": 143616,
-                "output_tokens": 2050,
-                "cost_usd": 0.170291
+                "input_tokens": 11212,
+                "cache_read_input_tokens": 127488,
+                "output_tokens": 2045,
+                "cost_usd": 0.15097
               },
               "summary": {
                 "passed": 3,
@@ -6348,9 +6811,9 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 58.8
+                "executor_duration_seconds": 49.9
               },
-              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+              "fingerprint": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
             },
             {
               "id": "fix-expression-injection",
@@ -6373,6 +6836,74 @@
               "fingerprint": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
             }
           ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T17:27:05Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 39.6,
+            "estimate": {
+              "input_tokens": 2545,
+              "input_cost_usd": 0.002545
+            },
+            "measured": {
+              "input_tokens": 32596,
+              "cache_read_input_tokens": 275200,
+              "output_tokens": 3282,
+              "cost_usd": 0.327488
+            }
+          },
+          "results": [
+            {
+              "id": "remove-pull-request-target",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1278,
+                "input_cost_usd": 0.001278
+              },
+              "measured": {
+                "input_tokens": 21124,
+                "cache_read_input_tokens": 163584,
+                "output_tokens": 1766,
+                "cost_usd": 0.195304
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 41.9
+              }
+            },
+            {
+              "id": "fix-expression-injection",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1267,
+                "input_cost_usd": 0.001267
+              },
+              "measured": {
+                "input_tokens": 11472,
+                "cache_read_input_tokens": 111616,
+                "output_tokens": 1516,
+                "cost_usd": 0.132184
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 37.2
+              }
+            }
+          ]
         }
       }
     },
@@ -6382,8 +6913,8 @@
         "model": "gpt-5.6-sol",
         "display": "GPT-5.6 Sol",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:16:13Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:36:16Z",
         "executed": true,
         "content_hash": "a44bd2fafb2e0ce9edb5adffc1a1050f34f1b4e418e82403ace1b8183677750b",
         "runs_per_query": 3,
@@ -6516,7 +7047,7 @@
             "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 10,
+            "avg_run_seconds": 11.9,
             "estimate": {
               "input_tokens": 1242,
               "input_cost_usd": 0.00621
@@ -6581,20 +7112,20 @@
           "failed": 1,
           "total": 14,
           "pass_rate": 0.928571,
-          "avg_run_seconds": 18.7,
+          "avg_run_seconds": 18.8,
           "estimate": {
             "input_tokens": 17416,
             "input_cost_usd": 0.08708
           }
         },
         "previous": {
-          "ran_at": "2026-07-31T20:00:04Z",
+          "ran_at": "2026-07-31T21:16:13Z",
           "summary": {
             "passed": 13,
             "failed": 1,
             "total": 14,
             "pass_rate": 0.928571,
-            "avg_run_seconds": 18.9,
+            "avg_run_seconds": 18.7,
             "estimate": {
               "input_tokens": 17416,
               "input_cost_usd": 0.08708
@@ -6724,7 +7255,7 @@
               "hits": 3,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 12.9,
+              "avg_run_seconds": 10,
               "estimate": {
                 "input_tokens": 1242,
                 "input_cost_usd": 0.00621
@@ -6791,8 +7322,8 @@
         "model": "gpt-5.6-sol",
         "display": "GPT-5.6 Sol",
         "harness": "codex",
-        "tool_version": "v0.6.0-11-gb4f1b21-dirty",
-        "ran_at": "2026-07-31T17:18:51Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:37:29Z",
         "executed": true,
         "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
         "timeout_seconds": 600,
@@ -6809,10 +7340,10 @@
               "input_cost_usd": 0.00639
             },
             "measured": {
-              "input_tokens": 14731,
+              "input_tokens": 14314,
               "cache_read_input_tokens": 65280,
-              "output_tokens": 1115,
-              "cost_usd": 0.433505
+              "output_tokens": 1122,
+              "cost_usd": 0.43163
             },
             "expectations": [
               {
@@ -6857,10 +7388,10 @@
               "total_tool_calls": 4
             },
             "timing": {
-              "total_tokens": 81126,
-              "executor_duration_seconds": 31.8
+              "total_tokens": 80716,
+              "executor_duration_seconds": 34.3
             },
-            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
@@ -6920,31 +7451,31 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 30.9,
+          "avg_run_seconds": 32.1,
           "estimate": {
             "input_tokens": 2545,
             "input_cost_usd": 0.012725
           },
           "measured": {
-            "input_tokens": 28879,
+            "input_tokens": 28462,
             "cache_read_input_tokens": 146688,
-            "output_tokens": 2002,
-            "cost_usd": 0.937895
+            "output_tokens": 2009,
+            "cost_usd": 0.93602
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T17:18:51Z",
+          "ran_at": "2026-08-15T01:37:29Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 29.1,
+            "avg_run_seconds": 33.6,
             "measured": {
-              "input_tokens": 20642,
-              "cache_read_input_tokens": 142592,
-              "output_tokens": 1804,
-              "cost_usd": 0.87029
+              "input_tokens": 23064,
+              "cache_read_input_tokens": 138496,
+              "output_tokens": 1858,
+              "cost_usd": 0.86354
             }
           },
           "results": [
@@ -6952,10 +7483,10 @@
               "id": "remove-pull-request-target",
               "passed": true,
               "measured": {
-                "input_tokens": 11478,
-                "cache_read_input_tokens": 78336,
-                "output_tokens": 1023,
-                "cost_usd": 0.47976
+                "input_tokens": 13900,
+                "cache_read_input_tokens": 74240,
+                "output_tokens": 1077,
+                "cost_usd": 0.47301
               },
               "summary": {
                 "passed": 3,
@@ -6964,9 +7495,9 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 28.8
+                "executor_duration_seconds": 37.9
               },
-              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+              "fingerprint": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
             },
             {
               "id": "fix-expression-injection",
@@ -6989,6 +7520,74 @@
               "fingerprint": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
             }
           ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T17:18:51Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 30.9,
+            "estimate": {
+              "input_tokens": 2545,
+              "input_cost_usd": 0.012725
+            },
+            "measured": {
+              "input_tokens": 28879,
+              "cache_read_input_tokens": 146688,
+              "output_tokens": 2002,
+              "cost_usd": 0.937895
+            }
+          },
+          "results": [
+            {
+              "id": "remove-pull-request-target",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1278,
+                "input_cost_usd": 0.00639
+              },
+              "measured": {
+                "input_tokens": 14731,
+                "cache_read_input_tokens": 65280,
+                "output_tokens": 1115,
+                "cost_usd": 0.433505
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 31.8
+              }
+            },
+            {
+              "id": "fix-expression-injection",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1267,
+                "input_cost_usd": 0.006335
+              },
+              "measured": {
+                "input_tokens": 14148,
+                "cache_read_input_tokens": 81408,
+                "output_tokens": 887,
+                "cost_usd": 0.50439
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 29.9
+              }
+            }
+          ]
         }
       }
     },
@@ -6998,8 +7597,8 @@
         "model": "gpt-5.6-terra",
         "display": "GPT-5.6 Terra",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T21:16:53Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:38:26Z",
         "executed": true,
         "content_hash": "a44bd2fafb2e0ce9edb5adffc1a1050f34f1b4e418e82403ace1b8183677750b",
         "runs_per_query": 3,
@@ -7119,7 +7718,7 @@
             "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 15.4,
+            "avg_run_seconds": 14,
             "estimate": {
               "input_tokens": 1241,
               "input_cost_usd": 0.003103
@@ -7129,10 +7728,10 @@
           {
             "query": "Run actionlint and zizmor and fix the findings",
             "should_trigger": false,
-            "hits": 2,
+            "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 15.2,
+            "avg_run_seconds": 13.3,
             "estimate": {
               "input_tokens": 1242,
               "input_cost_usd": 0.003105
@@ -7142,10 +7741,10 @@
           {
             "query": "Wire up the reusable CI workflow for this repo",
             "should_trigger": false,
-            "hits": 3,
+            "hits": 2,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 16.4,
+            "avg_run_seconds": 21.3,
             "estimate": {
               "input_tokens": 1241,
               "input_cost_usd": 0.003103
@@ -7197,20 +7796,20 @@
           "failed": 3,
           "total": 14,
           "pass_rate": 0.785714,
-          "avg_run_seconds": 13.6,
+          "avg_run_seconds": 13.7,
           "estimate": {
             "input_tokens": 17416,
             "input_cost_usd": 0.043544
           }
         },
         "previous": {
-          "ran_at": "2026-07-31T20:00:46Z",
+          "ran_at": "2026-07-31T21:16:53Z",
           "summary": {
             "passed": 11,
             "failed": 3,
             "total": 14,
             "pass_rate": 0.785714,
-            "avg_run_seconds": 14.1,
+            "avg_run_seconds": 13.6,
             "estimate": {
               "input_tokens": 17416,
               "input_cost_usd": 0.043544
@@ -7327,7 +7926,7 @@
               "hits": 3,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 19.6,
+              "avg_run_seconds": 15.4,
               "estimate": {
                 "input_tokens": 1241,
                 "input_cost_usd": 0.003103
@@ -7340,7 +7939,7 @@
               "hits": 2,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 21.6,
+              "avg_run_seconds": 15.2,
               "estimate": {
                 "input_tokens": 1242,
                 "input_cost_usd": 0.003105
@@ -7353,7 +7952,7 @@
               "hits": 3,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 12.1,
+              "avg_run_seconds": 16.4,
               "estimate": {
                 "input_tokens": 1241,
                 "input_cost_usd": 0.003103
@@ -7407,8 +8006,8 @@
         "model": "gpt-5.6-terra",
         "display": "GPT-5.6 Terra",
         "harness": "codex",
-        "tool_version": "v0.6.0-11-gb4f1b21-dirty",
-        "ran_at": "2026-07-31T17:22:28Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:39:29Z",
         "executed": true,
         "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
         "timeout_seconds": 600,
@@ -7425,10 +8024,10 @@
               "input_cost_usd": 0.003195
             },
             "measured": {
-              "input_tokens": 9598,
-              "cache_read_input_tokens": 85504,
-              "output_tokens": 1172,
-              "cost_usd": 0.255335
+              "input_tokens": 18080,
+              "cache_read_input_tokens": 95488,
+              "output_tokens": 1271,
+              "cost_usd": 0.302985
             },
             "expectations": [
               {
@@ -7467,16 +8066,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 4,
+                "command_execution": 5,
                 "file_change": 1
               },
-              "total_tool_calls": 5
+              "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 96274,
-              "executor_duration_seconds": 34.6
+              "total_tokens": 114839,
+              "executor_duration_seconds": 33.7
             },
-            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
@@ -7536,31 +8135,31 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 32.8,
+          "avg_run_seconds": 32.3,
           "estimate": {
             "input_tokens": 2545,
             "input_cost_usd": 0.006362
           },
           "measured": {
-            "input_tokens": 24938,
-            "cache_read_input_tokens": 207616,
-            "output_tokens": 2326,
-            "cost_usd": 0.616275
+            "input_tokens": 33420,
+            "cache_read_input_tokens": 217600,
+            "output_tokens": 2425,
+            "cost_usd": 0.663925
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T17:22:28Z",
+          "ran_at": "2026-08-15T01:39:29Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 34.5,
+            "avg_run_seconds": 29.3,
             "measured": {
-              "input_tokens": 26279,
-              "cache_read_input_tokens": 215808,
-              "output_tokens": 2242,
-              "cost_usd": 0.638848
+              "input_tokens": 27401,
+              "cache_read_input_tokens": 189440,
+              "output_tokens": 1965,
+              "cost_usd": 0.571578
             }
           },
           "results": [
@@ -7568,10 +8167,10 @@
               "id": "remove-pull-request-target",
               "passed": true,
               "measured": {
-                "input_tokens": 13279,
-                "cache_read_input_tokens": 115968,
-                "output_tokens": 1248,
-                "cost_usd": 0.341838
+                "input_tokens": 14401,
+                "cache_read_input_tokens": 89600,
+                "output_tokens": 971,
+                "cost_usd": 0.274568
               },
               "summary": {
                 "passed": 3,
@@ -7580,9 +8179,9 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 39.6
+                "executor_duration_seconds": 29.2
               },
-              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+              "fingerprint": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
             },
             {
               "id": "fix-expression-injection",
@@ -7603,6 +8202,74 @@
                 "executor_duration_seconds": 29.3
               },
               "fingerprint": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T17:22:28Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 32.8,
+            "estimate": {
+              "input_tokens": 2545,
+              "input_cost_usd": 0.006362
+            },
+            "measured": {
+              "input_tokens": 24938,
+              "cache_read_input_tokens": 207616,
+              "output_tokens": 2326,
+              "cost_usd": 0.616275
+            }
+          },
+          "results": [
+            {
+              "id": "remove-pull-request-target",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1278,
+                "input_cost_usd": 0.003195
+              },
+              "measured": {
+                "input_tokens": 9598,
+                "cache_read_input_tokens": 85504,
+                "output_tokens": 1172,
+                "cost_usd": 0.255335
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 34.6
+              }
+            },
+            {
+              "id": "fix-expression-injection",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 1267,
+                "input_cost_usd": 0.003167
+              },
+              "measured": {
+                "input_tokens": 15340,
+                "cache_read_input_tokens": 122112,
+                "output_tokens": 1154,
+                "cost_usd": 0.36094
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 30.9
+              }
             }
           ]
         }
@@ -7903,8 +8570,8 @@
         "model": "grok-4.5",
         "display": "Grok 4.5",
         "harness": "grok",
-        "tool_version": "v0.6.0-14-ga373d30",
-        "ran_at": "2026-07-31T19:10:01Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:48:48Z",
         "executed": true,
         "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
         "timeout_seconds": 600,
@@ -7917,10 +8584,10 @@
             "id": "remove-pull-request-target",
             "passed": true,
             "measured": {
-              "input_tokens": 20920,
-              "cache_read_input_tokens": 64384,
-              "output_tokens": 1569,
-              "cost_usd": 0.070569
+              "input_tokens": 21042,
+              "cache_read_input_tokens": 77312,
+              "output_tokens": 1666,
+              "cost_usd": 0.025593
             },
             "expectations": [
               {
@@ -7958,10 +8625,10 @@
               "pass_rate": 1
             },
             "timing": {
-              "total_tokens": 86873,
-              "executor_duration_seconds": 25.2
+              "total_tokens": 100020,
+              "executor_duration_seconds": 38.4
             },
-            "spec_hash": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+            "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
@@ -8010,31 +8677,50 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 21.5,
+          "avg_run_seconds": 28.1,
           "measured": {
-            "input_tokens": 24940,
-            "cache_read_input_tokens": 154112,
-            "output_tokens": 2665,
-            "cost_usd": 0.112103
+            "input_tokens": 25062,
+            "cache_read_input_tokens": 167040,
+            "output_tokens": 2762,
+            "cost_usd": 0.067127
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T17:27:18Z",
+          "ran_at": "2026-08-15T01:48:48Z",
           "summary": {
-            "passed": 0,
+            "passed": 1,
             "failed": 0,
-            "errored": 2,
+            "errored": 1,
             "total": 2,
-            "avg_run_seconds": 1.1
+            "pass_rate": 1,
+            "avg_run_seconds": 17.4,
+            "measured": {
+              "input_tokens": 15182,
+              "cache_read_input_tokens": 70400,
+              "output_tokens": 1632,
+              "cost_usd": 0.020834
+            }
           },
           "results": [
             {
               "id": "remove-pull-request-target",
-              "runtime_error": "grok run error: Not signed in. To authenticate without a browser, run:\n  grok login --device-code\n\nAlternatively, set the XAI_API_KEY environment variable or run `grok login` on a machine with a browser.",
-              "timing": {
-                "executor_duration_seconds": 1
+              "passed": true,
+              "measured": {
+                "input_tokens": 15182,
+                "cache_read_input_tokens": 70400,
+                "output_tokens": 1632,
+                "cost_usd": 0.020834
               },
-              "fingerprint": "2e91cdcfb31e39cc064610ed680c0f7d8b81c16af1e2743830056c46e89e82c2"
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 33.7
+              },
+              "fingerprint": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
             },
             {
               "id": "fix-expression-injection",
@@ -8047,58 +8733,390 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T19:05:32Z",
+          "ran_at": "2026-07-31T19:10:01Z",
           "summary": {
-            "passed": 0,
-            "failed": 2,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0,
-            "avg_run_seconds": 7.3,
+            "pass_rate": 1,
+            "avg_run_seconds": 21.5,
             "measured": {
-              "input_tokens": 5720,
-              "cache_read_input_tokens": 42624,
-              "output_tokens": 673,
-              "cost_usd": 0.028265
+              "input_tokens": 24940,
+              "cache_read_input_tokens": 154112,
+              "output_tokens": 2665,
+              "cost_usd": 0.112103
             }
           },
           "results": [
             {
               "id": "remove-pull-request-target",
-              "passed": false,
+              "passed": true,
               "measured": {
-                "input_tokens": 3053,
-                "cache_read_input_tokens": 21120,
-                "output_tokens": 361,
-                "cost_usd": 0.014608
+                "input_tokens": 20920,
+                "cache_read_input_tokens": 64384,
+                "output_tokens": 1569,
+                "cost_usd": 0.070569
               },
               "summary": {
-                "passed": 0,
-                "failed": 3,
+                "passed": 3,
+                "failed": 0,
                 "total": 3,
-                "pass_rate": 0
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 7.1
+                "executor_duration_seconds": 25.2
               }
             },
             {
               "id": "fix-expression-injection",
-              "passed": false,
+              "passed": true,
               "measured": {
-                "input_tokens": 2667,
-                "cache_read_input_tokens": 21504,
-                "output_tokens": 312,
-                "cost_usd": 0.013657
+                "input_tokens": 4020,
+                "cache_read_input_tokens": 89728,
+                "output_tokens": 1096,
+                "cost_usd": 0.041534
               },
               "summary": {
-                "passed": 0,
-                "failed": 2,
+                "passed": 2,
+                "failed": 0,
                 "total": 2,
-                "pass_rate": 0
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 7.4
+                "executor_duration_seconds": 17.7
               }
+            }
+          ]
+        }
+      }
+    },
+    "xai/grok-4.6": {
+      "triggers": {
+        "provider": "xai",
+        "model": "grok-4.6",
+        "display": "Grok 4.6",
+        "harness": "grok",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:50:39Z",
+        "executed": true,
+        "content_hash": "a44bd2fafb2e0ce9edb5adffc1a1050f34f1b4e418e82403ace1b8183677750b",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "query": "Harden this GitHub Actions workflow and lock down its permissions",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "spec_hash": "bffbcca9b21232fd9bdb0b14ca7f16aa221dc645117ccc5e970c181c230e06cb"
+          },
+          {
+            "query": "Pin all the actions in our workflows to commit SHAs",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "spec_hash": "4b6e2969975a7c2ddb228399cf8226750398ea194352b31c2a4584e99c7ab392"
+          },
+          {
+            "query": "Is it safe to use pull_request_target here, or will a fork PR steal our secrets?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.4,
+            "spec_hash": "d25cfa9414bbb0d45b31d1a36f9bcd39d2e509217ef4633674f66811722b4be4"
+          },
+          {
+            "query": "This workflow echoes a PR title into a run step — is that a script-injection risk?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.9,
+            "spec_hash": "b907d640bedd42d63b74d7515472a5b48752184dea1555a19f2583efd454c50a"
+          },
+          {
+            "query": "Set least-privilege permissions for this CI job",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.7,
+            "spec_hash": "f0e82f5275cd912b88dfbe72975c3fe46cedc0a5e69ddd67eb50f67793cf2824"
+          },
+          {
+            "query": "Review .github/workflows for security issues",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.4,
+            "spec_hash": "8678fe94efe564308fc91817554fa607450d2719d0b6adc0b8f90da1fea015ae"
+          },
+          {
+            "query": "Should we use OIDC instead of storing long-lived AWS keys as secrets?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.5,
+            "spec_hash": "56aa9353e8530803169126f8e5db94c31769196692c1f1de2a3aafc2cbe8a839"
+          },
+          {
+            "query": "A fork PR workflow needs to label the PR — how do I do that without exposing the write token?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.1,
+            "spec_hash": "33b7c4966780af80f0182152af3769f0d32c110d9d41d4ad5258235fce07d85f"
+          },
+          {
+            "query": "Add a matrix across Python versions to this workflow",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.6,
+            "spec_hash": "077e407f7d207ffd68469af82610b2856e786fcb9cf640283aa388d3f1523c8b"
+          },
+          {
+            "query": "Run actionlint and zizmor and fix the findings",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 7.6,
+            "spec_hash": "fc94905a243650a18d9835dd6853493d568c1cc42b0f8948e9cefc7870bc97c8"
+          },
+          {
+            "query": "Wire up the reusable CI workflow for this repo",
+            "should_trigger": false,
+            "hits": 2,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 9.3,
+            "spec_hash": "6b8cadf86bd43250f1eff852b65a1efc041df6077ff9de47ff86e517fae8cec4"
+          },
+          {
+            "query": "Write a Dockerfile that runs as a non-root user",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.5,
+            "spec_hash": "a36a1e747758fb7f6dad6d1fbb60999170e8485db53799f85e137e138a3fb728"
+          },
+          {
+            "query": "How do I manage secrets in Terraform?",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 31.7,
+            "spec_hash": "addbe6e88d30993e1c4b32240ba7331e53e3f38be8eab0f960e73da961ad9074"
+          },
+          {
+            "query": "Format this YAML file with prettier",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "spec_hash": "90ba576a5e4e61fdc255d28446d5b649d26d71d4d24b0d33774a060167c2e7e9"
+          }
+        ],
+        "summary": {
+          "passed": 11,
+          "failed": 3,
+          "total": 14,
+          "pass_rate": 0.785714,
+          "avg_run_seconds": 8.9
+        }
+      },
+      "evals": {
+        "provider": "xai",
+        "model": "grok-4.6",
+        "display": "Grok 4.6",
+        "harness": "grok",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T01:53:02Z",
+        "executed": true,
+        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "id": "remove-pull-request-target",
+            "passed": true,
+            "measured": {
+              "input_tokens": 12711,
+              "cache_read_input_tokens": 155008,
+              "output_tokens": 2699,
+              "cost_usd": 0.02025
+            },
+            "expectations": [
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/pr-build.yaml",
+                "pattern": "pull_request_target",
+                "text": ".github/workflows/pr-build.yaml does not match /pull_request_target/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/pr-build.yaml",
+                "pattern": "pull_request:",
+                "text": ".github/workflows/pr-build.yaml matches /pull_request:/",
+                "passed": true,
+                "evidence": "pull_request:",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": ".github/workflows/pr-build.yaml",
+                "pattern": "permissions:",
+                "text": ".github/workflows/pr-build.yaml matches /permissions:/",
+                "passed": true,
+                "evidence": "permissions:",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 3,
+              "failed": 0,
+              "total": 3,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 170418,
+              "executor_duration_seconds": 46.7
+            },
+            "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
+          },
+          {
+            "id": "fix-expression-injection",
+            "passed": true,
+            "measured": {
+              "input_tokens": 7695,
+              "cache_read_input_tokens": 99328,
+              "output_tokens": 1295,
+              "cost_usd": 0.01238
+            },
+            "expectations": [
+              {
+                "type": "regex",
+                "path": ".github/workflows/echo-title.yaml",
+                "pattern": "env:",
+                "text": ".github/workflows/echo-title.yaml matches /env:/",
+                "passed": true,
+                "evidence": "env:",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": ".github/workflows/echo-title.yaml",
+                "pattern": "run:.*\\$\\{\\{",
+                "text": ".github/workflows/echo-title.yaml does not match /run:.*\\$\\{\\{/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 2,
+              "failed": 0,
+              "total": 2,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 108318,
+              "executor_duration_seconds": 22.3
+            },
+            "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
+          }
+        ],
+        "summary": {
+          "passed": 2,
+          "failed": 0,
+          "total": 2,
+          "pass_rate": 1,
+          "avg_run_seconds": 34.5,
+          "measured": {
+            "input_tokens": 20406,
+            "cache_read_input_tokens": 254336,
+            "output_tokens": 3994,
+            "cost_usd": 0.03263
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-08-15T01:53:02Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 59.9,
+            "measured": {
+              "input_tokens": 25904,
+              "cache_read_input_tokens": 220288,
+              "output_tokens": 6807,
+              "cost_usd": 0.034475
+            }
+          },
+          "results": [
+            {
+              "id": "remove-pull-request-target",
+              "passed": true,
+              "measured": {
+                "input_tokens": 20850,
+                "cache_read_input_tokens": 128256,
+                "output_tokens": 5848,
+                "cost_usd": 0.023956
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 96.3
+              },
+              "fingerprint": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
+            },
+            {
+              "id": "fix-expression-injection",
+              "passed": true,
+              "measured": {
+                "input_tokens": 5054,
+                "cache_read_input_tokens": 92032,
+                "output_tokens": 959,
+                "cost_usd": 0.010519
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 23.5
+              },
+              "fingerprint": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
             }
           ]
         }

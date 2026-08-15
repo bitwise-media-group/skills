@@ -5266,8 +5266,8 @@
         "model": "gpt-5.3-codex-spark",
         "display": "GPT-5.3 Codex Spark",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:20:46Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:38:25Z",
         "executed": true,
         "content_hash": "a1e2d73405336dfc12e64a56ca3b24e0ddc9010d2d5c91f52db3e2de05b9748f",
         "runs_per_query": 3,
@@ -5286,10 +5286,10 @@
           {
             "query": "Write a package comment for internal/clientmap",
             "should_trigger": true,
-            "hits": 1,
+            "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 14.3,
+            "avg_run_seconds": 41.5,
             "spec_hash": "bcab40145d7e8ef9d8fed39ebc78f7c5279fbbc0ee252571c6eb986f87ebfcb2"
           },
           {
@@ -5340,10 +5340,10 @@
           {
             "query": "Add a doc.go to this package",
             "should_trigger": true,
-            "hits": 1,
+            "hits": 3,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 14.1,
+            "passed": true,
+            "avg_run_seconds": 4.1,
             "spec_hash": "334c2e07db702839b14329a28522b2e3f403a4529ee419e259257dff9851577b"
           },
           {
@@ -5402,11 +5402,149 @@
           }
         ],
         "summary": {
-          "passed": 12,
-          "failed": 2,
+          "passed": 13,
+          "failed": 1,
           "total": 14,
-          "pass_rate": 0.857143,
-          "avg_run_seconds": 15.3
+          "pass_rate": 0.928571,
+          "avg_run_seconds": 16.6
+        },
+        "previous": {
+          "ran_at": "2026-07-31T22:20:46Z",
+          "summary": {
+            "passed": 12,
+            "failed": 2,
+            "total": 14,
+            "pass_rate": 0.857143,
+            "avg_run_seconds": 15.3
+          },
+          "results": [
+            {
+              "query": "Add doc comments to the exported functions in this Go package",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.2,
+              "spec_hash": "fd98ae88ad3a25f3fdf34c5e8ca0323cca089e6038e1a2c6d0cb49e2db891be8"
+            },
+            {
+              "query": "Write a package comment for internal/clientmap",
+              "should_trigger": true,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 14.3,
+              "spec_hash": "bcab40145d7e8ef9d8fed39ebc78f7c5279fbbc0ee252571c6eb986f87ebfcb2"
+            },
+            {
+              "query": "Should the package comment go in doc.go or at the top of an existing file?",
+              "should_trigger": true,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.8,
+              "spec_hash": "fe70ba0cd52aa9919c1a91dcb245f0a615480a4f2ea52d020df4526a7b5aa763"
+            },
+            {
+              "query": "Document the exported API of this Go module",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.2,
+              "spec_hash": "8439aeb29e0aa8e97007e2d2fced2d629f2f76b3ff1b1bc45e5ae4aad11f36b7"
+            },
+            {
+              "query": "Generate markdown CLI docs for my cobra tool",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.1,
+              "spec_hash": "e728f225b099fa6af63f008ec0ad69f86aa7829a8045f5100ceb1bf6e69967e5"
+            },
+            {
+              "query": "Make my Go CLI's documentation consumable by LLMs",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.6,
+              "spec_hash": "77cd4d8062f28fa57058dbdbca85ab734c6a09c4121eaca35063e0f5428f6d3e"
+            },
+            {
+              "query": "Review this Go package for missing godoc comments",
+              "should_trigger": true,
+              "hits": 2,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 15.5,
+              "spec_hash": "f52908ad0cc1857a7f97db483c75239b324f9d8b9f54145cb4ff2328f7b61dd2"
+            },
+            {
+              "query": "Add a doc.go to this package",
+              "should_trigger": true,
+              "hits": 1,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 14.1,
+              "spec_hash": "334c2e07db702839b14329a28522b2e3f403a4529ee419e259257dff9851577b"
+            },
+            {
+              "query": "Write a README for this Go project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.9,
+              "spec_hash": "756a0cc1e508c485eba577154206471f1b69bf2c12460ae419ef875d90e13b81"
+            },
+            {
+              "query": "Add inline comments explaining how this Go algorithm works",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.7,
+              "spec_hash": "b5cfd1dd46772595323f8d48ce6d6884d7e25885ad81fdf5cd53e210cb9cda30"
+            },
+            {
+              "query": "Write table-driven tests for this Go function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.4,
+              "spec_hash": "75eb0dbf254924451b3ba9562e2d05c52624dc6eeb199474803d2bfe8fb6b39c"
+            },
+            {
+              "query": "Scaffold a new Go service with cmd and internal layout",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 50.8,
+              "spec_hash": "9eef8ddfa03d8db7007e8bb19541b1d9aea21ebc47de4382be746f6c295d7ab7"
+            },
+            {
+              "query": "Add docstrings to this Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.9,
+              "spec_hash": "45e3584d3534540db1bd7416654885916a01f1587f63152a0dfc4c42d29610a9"
+            },
+            {
+              "query": "Generate OpenAPI docs for my Go REST API",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 35.3,
+              "spec_hash": "4f1002296f70d5bc4826434469e7cbd686caa1a207f72c381c028ae54a2e0052"
+            }
+          ]
         }
       },
       "evals": {
@@ -5414,8 +5552,8 @@
         "model": "gpt-5.3-codex-spark",
         "display": "GPT-5.3 Codex Spark",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:21:33Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:39:05Z",
         "executed": true,
         "content_hash": "df4bcb0a1a0fe916fe054c07c5aab7db223f83b42414a1aead73fbcc59eaefe3",
         "timeout_seconds": 600,
@@ -5632,11 +5770,11 @@
           },
           {
             "id": "cobra-docgen",
-            "passed": false,
+            "passed": true,
             "measured": {
-              "input_tokens": 8799,
-              "cache_read_input_tokens": 139392,
-              "output_tokens": 4889
+              "input_tokens": 17321,
+              "cache_read_input_tokens": 155008,
+              "output_tokens": 5040
             },
             "expectations": [
               {
@@ -5661,8 +5799,8 @@
                 "path": "internal/tools/docgen/main.go",
                 "pattern": "DisableAutoGenTag",
                 "text": "internal/tools/docgen/main.go matches /DisableAutoGenTag/",
-                "passed": false,
-                "evidence": "no match",
+                "passed": true,
+                "evidence": "DisableAutoGenTag",
                 "source": "assertion"
               },
               {
@@ -5679,8 +5817,8 @@
                 "path": "internal/cli/root.go",
                 "pattern": "func Root\\(\\) \\*cobra\\.Command",
                 "text": "internal/cli/root.go matches /func Root\\(\\) \\*cobra\\.Command/",
-                "passed": false,
-                "evidence": "no match",
+                "passed": true,
+                "evidence": "func Root() *cobra.Command",
                 "source": "assertion"
               },
               {
@@ -5694,49 +5832,49 @@
               }
             ],
             "summary": {
-              "passed": 4,
-              "failed": 2,
+              "passed": 6,
+              "failed": 0,
               "total": 6,
-              "pass_rate": 0.666667
+              "pass_rate": 1
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 7,
+                "command_execution": 6,
                 "file_change": 3
               },
-              "total_tool_calls": 10
+              "total_tool_calls": 9
             },
             "timing": {
-              "total_tokens": 153080,
-              "executor_duration_seconds": 19
+              "total_tokens": 177369,
+              "executor_duration_seconds": 21.1
             },
-            "spec_hash": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+            "spec_hash": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
           }
         ],
         "summary": {
-          "passed": 2,
-          "failed": 1,
+          "passed": 3,
+          "failed": 0,
           "total": 3,
-          "pass_rate": 0.666667,
-          "avg_run_seconds": 21.1,
+          "pass_rate": 1,
+          "avg_run_seconds": 21.8,
           "measured": {
-            "input_tokens": 21412,
-            "cache_read_input_tokens": 323072,
-            "output_tokens": 9142
+            "input_tokens": 29934,
+            "cache_read_input_tokens": 338688,
+            "output_tokens": 9293
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T22:21:33Z",
+          "ran_at": "2026-08-15T02:39:05Z",
           "summary": {
             "passed": 1,
             "failed": 2,
             "total": 3,
             "pass_rate": 0.333333,
-            "avg_run_seconds": 14.3,
+            "avg_run_seconds": 14.8,
             "measured": {
-              "input_tokens": 16734,
-              "cache_read_input_tokens": 224128,
-              "output_tokens": 7364
+              "input_tokens": 17498,
+              "cache_read_input_tokens": 248192,
+              "output_tokens": 8474
             }
           },
           "results": [
@@ -5782,9 +5920,9 @@
               "id": "cobra-docgen",
               "passed": false,
               "measured": {
-                "input_tokens": 7179,
-                "cache_read_input_tokens": 97920,
-                "output_tokens": 3818
+                "input_tokens": 7943,
+                "cache_read_input_tokens": 121984,
+                "output_tokens": 4928
               },
               "summary": {
                 "passed": 4,
@@ -5793,9 +5931,80 @@
                 "pass_rate": 0.666667
               },
               "timing": {
-                "executor_duration_seconds": 16.4
+                "executor_duration_seconds": 18.1
               },
-              "fingerprint": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+              "fingerprint": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T22:21:33Z",
+          "summary": {
+            "passed": 2,
+            "failed": 1,
+            "total": 3,
+            "pass_rate": 0.666667,
+            "avg_run_seconds": 21.1,
+            "measured": {
+              "input_tokens": 21412,
+              "cache_read_input_tokens": 323072,
+              "output_tokens": 9142
+            }
+          },
+          "results": [
+            {
+              "id": "doc-multi-file-package",
+              "passed": true,
+              "measured": {
+                "input_tokens": 5338,
+                "cache_read_input_tokens": 59264,
+                "output_tokens": 1484
+              },
+              "summary": {
+                "passed": 10,
+                "failed": 0,
+                "total": 10,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 13.9
+              }
+            },
+            {
+              "id": "doc-single-file-package",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7275,
+                "cache_read_input_tokens": 124416,
+                "output_tokens": 2769
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 30.3
+              }
+            },
+            {
+              "id": "cobra-docgen",
+              "passed": false,
+              "measured": {
+                "input_tokens": 8799,
+                "cache_read_input_tokens": 139392,
+                "output_tokens": 4889
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 2,
+                "total": 6,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 19
+              }
             }
           ]
         }
@@ -6188,8 +6397,8 @@
         "model": "gpt-5.4",
         "display": "GPT-5.4",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:35:17Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:46:25Z",
         "executed": true,
         "content_hash": "df4bcb0a1a0fe916fe054c07c5aab7db223f83b42414a1aead73fbcc59eaefe3",
         "timeout_seconds": 600,
@@ -6329,10 +6538,10 @@
               "input_cost_usd": 0.00233
             },
             "measured": {
-              "input_tokens": 6809,
-              "cache_read_input_tokens": 60288,
-              "output_tokens": 983,
-              "cost_usd": 0.182488
+              "input_tokens": 7045,
+              "cache_read_input_tokens": 60800,
+              "output_tokens": 1243,
+              "cost_usd": 0.188258
             },
             "expectations": [
               {
@@ -6406,14 +6615,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 4,
+                "command_execution": 5,
                 "file_change": 1
               },
-              "total_tool_calls": 5
+              "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 68080,
-              "executor_duration_seconds": 27.5
+              "total_tokens": 69088,
+              "executor_duration_seconds": 30.5
             },
             "spec_hash": "3a05689cd57f1ff4001f3985dd250543a60bf8b7fb88cd47bec3166d978ec55f"
           },
@@ -6425,10 +6634,10 @@
               "input_cost_usd": 0.00242
             },
             "measured": {
-              "input_tokens": 8192,
-              "cache_read_input_tokens": 61824,
-              "output_tokens": 2009,
-              "cost_usd": 0.205175
+              "input_tokens": 9047,
+              "cache_read_input_tokens": 62336,
+              "output_tokens": 2531,
+              "cost_usd": 0.216423
             },
             "expectations": [
               {
@@ -6499,10 +6708,10 @@
               "total_tool_calls": 10
             },
             "timing": {
-              "total_tokens": 72025,
-              "executor_duration_seconds": 46.7
+              "total_tokens": 73914,
+              "executor_duration_seconds": 54.2
             },
-            "spec_hash": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+            "spec_hash": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
           }
         ],
         "summary": {
@@ -6510,31 +6719,31 @@
           "failed": 1,
           "total": 3,
           "pass_rate": 0.666667,
-          "avg_run_seconds": 35.3,
+          "avg_run_seconds": 38.8,
           "estimate": {
             "input_tokens": 2833,
             "input_cost_usd": 0.007083
           },
           "measured": {
-            "input_tokens": 22258,
-            "cache_read_input_tokens": 183424,
-            "output_tokens": 4263,
-            "cost_usd": 0.578151
+            "input_tokens": 23349,
+            "cache_read_input_tokens": 184448,
+            "output_tokens": 5045,
+            "cost_usd": 0.595169
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T22:35:17Z",
+          "ran_at": "2026-08-15T02:46:25Z",
           "summary": {
             "passed": 0,
             "failed": 3,
             "total": 3,
             "pass_rate": 0,
-            "avg_run_seconds": 37.2,
+            "avg_run_seconds": 45.8,
             "measured": {
-              "input_tokens": 19337,
-              "cache_read_input_tokens": 173696,
-              "output_tokens": 4206,
-              "cost_usd": 0.545674
+              "input_tokens": 22479,
+              "cache_read_input_tokens": 217856,
+              "output_tokens": 5534,
+              "cost_usd": 0.683849
             }
           },
           "results": [
@@ -6582,41 +6791,41 @@
               "id": "cobra-docgen",
               "passed": false,
               "measured": {
-                "input_tokens": 6817,
-                "cache_read_input_tokens": 58752,
-                "output_tokens": 2066,
-                "cost_usd": 0.194913
+                "input_tokens": 9959,
+                "cache_read_input_tokens": 102912,
+                "output_tokens": 3394,
+                "cost_usd": 0.333088
               },
               "summary": {
-                "passed": 5,
-                "failed": 1,
+                "passed": 4,
+                "failed": 2,
                 "total": 6,
-                "pass_rate": 0.833333
+                "pass_rate": 0.666667
               },
               "timing": {
-                "executor_duration_seconds": 46.2
+                "executor_duration_seconds": 71.8
               },
-              "fingerprint": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+              "fingerprint": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-06-21T14:41:55Z",
+          "ran_at": "2026-07-31T22:35:17Z",
           "summary": {
-            "passed": 3,
-            "failed": 0,
+            "passed": 2,
+            "failed": 1,
             "total": 3,
-            "pass_rate": 1,
+            "pass_rate": 0.666667,
             "avg_run_seconds": 35.3,
             "estimate": {
               "input_tokens": 2833,
               "input_cost_usd": 0.007083
             },
             "measured": {
-              "input_tokens": 41955,
-              "cache_read_input_tokens": 193280,
-              "output_tokens": 4444,
-              "cost_usd": 0.654748
+              "input_tokens": 22258,
+              "cache_read_input_tokens": 183424,
+              "output_tokens": 4263,
+              "cost_usd": 0.578151
             }
           },
           "results": [
@@ -6628,10 +6837,10 @@
                 "input_cost_usd": 0.002333
               },
               "measured": {
-                "input_tokens": 9094,
-                "cache_read_input_tokens": 74624,
-                "output_tokens": 1189,
-                "cost_usd": 0.22713
+                "input_tokens": 7257,
+                "cache_read_input_tokens": 61312,
+                "output_tokens": 1271,
+                "cost_usd": 0.190488
               },
               "summary": {
                 "passed": 10,
@@ -6640,30 +6849,30 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 31.1
+                "executor_duration_seconds": 31.6
               }
             },
             {
               "id": "doc-single-file-package",
-              "passed": true,
+              "passed": false,
               "estimate": {
                 "input_tokens": 932,
                 "input_cost_usd": 0.00233
               },
               "measured": {
-                "input_tokens": 17762,
-                "cache_read_input_tokens": 66432,
-                "output_tokens": 1082,
-                "cost_usd": 0.226715
+                "input_tokens": 6809,
+                "cache_read_input_tokens": 60288,
+                "output_tokens": 983,
+                "cost_usd": 0.182488
               },
               "summary": {
-                "passed": 7,
-                "failed": 0,
+                "passed": 6,
+                "failed": 1,
                 "total": 7,
-                "pass_rate": 1
+                "pass_rate": 0.857143
               },
               "timing": {
-                "executor_duration_seconds": 28.5
+                "executor_duration_seconds": 27.5
               }
             },
             {
@@ -6674,10 +6883,10 @@
                 "input_cost_usd": 0.00242
               },
               "measured": {
-                "input_tokens": 15099,
-                "cache_read_input_tokens": 52224,
-                "output_tokens": 2173,
-                "cost_usd": 0.200903
+                "input_tokens": 8192,
+                "cache_read_input_tokens": 61824,
+                "output_tokens": 2009,
+                "cost_usd": 0.205175
               },
               "summary": {
                 "passed": 6,
@@ -6686,7 +6895,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 46.2
+                "executor_duration_seconds": 46.7
               }
             }
           ]
@@ -6910,8 +7119,8 @@
         "model": "gpt-5.4-mini",
         "display": "GPT-5.4 Mini",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:33:44Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:44:19Z",
         "executed": true,
         "content_hash": "df4bcb0a1a0fe916fe054c07c5aab7db223f83b42414a1aead73fbcc59eaefe3",
         "timeout_seconds": 600,
@@ -7051,10 +7260,10 @@
               "input_cost_usd": 0.000699
             },
             "measured": {
-              "input_tokens": 7539,
-              "cache_read_input_tokens": 72960,
-              "output_tokens": 1931,
-              "cost_usd": 0.069064
+              "input_tokens": 7229,
+              "cache_read_input_tokens": 71424,
+              "output_tokens": 1296,
+              "cost_usd": 0.064822
             },
             "expectations": [
               {
@@ -7079,8 +7288,8 @@
                 "path": "internal/version/version.go",
                 "pattern": "^[\\t ]*// Version ",
                 "text": "internal/version/version.go matches /^[\\t ]*// Version /",
-                "passed": false,
-                "evidence": "no match",
+                "passed": true,
+                "evidence": "\t// Version ",
                 "source": "assertion"
               },
               {
@@ -7088,8 +7297,8 @@
                 "path": "internal/version/version.go",
                 "pattern": "^[\\t ]*// Commit ",
                 "text": "internal/version/version.go matches /^[\\t ]*// Commit /",
-                "passed": false,
-                "evidence": "no match",
+                "passed": true,
+                "evidence": "\t// Commit ",
                 "source": "assertion"
               },
               {
@@ -7097,8 +7306,8 @@
                 "path": "internal/version/version.go",
                 "pattern": "^[\\t ]*// BuildDate ",
                 "text": "internal/version/version.go matches /^[\\t ]*// BuildDate /",
-                "passed": false,
-                "evidence": "no match",
+                "passed": true,
+                "evidence": "\t// BuildDate ",
                 "source": "assertion"
               },
               {
@@ -7115,42 +7324,42 @@
                 "run": "test -z \"$(gofmt -l .)\"",
                 "requires": "gofmt",
                 "text": "command `test -z \"$(gofmt -l .)\"` exits 0",
-                "passed": true,
-                "evidence": "exit 0: ",
+                "passed": false,
+                "evidence": "exit 1: ",
                 "source": "assertion"
               }
             ],
             "summary": {
-              "passed": 4,
-              "failed": 3,
+              "passed": 6,
+              "failed": 1,
               "total": 7,
-              "pass_rate": 0.571429
+              "pass_rate": 0.857143
             },
             "execution_metrics": {
               "tool_calls": {
                 "command_execution": 5,
-                "file_change": 2
+                "file_change": 1
               },
-              "total_tool_calls": 7
+              "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 82430,
-              "executor_duration_seconds": 36.9
+              "total_tokens": 79949,
+              "executor_duration_seconds": 27.4
             },
             "spec_hash": "3a05689cd57f1ff4001f3985dd250543a60bf8b7fb88cd47bec3166d978ec55f"
           },
           {
             "id": "cobra-docgen",
-            "passed": false,
+            "passed": true,
             "estimate": {
               "input_tokens": 968,
               "input_cost_usd": 0.000726
             },
             "measured": {
-              "input_tokens": 30895,
-              "cache_read_input_tokens": 256640,
-              "output_tokens": 12098,
-              "cost_usd": 0.270092
+              "input_tokens": 16106,
+              "cache_read_input_tokens": 136576,
+              "output_tokens": 9030,
+              "cost_usd": 0.155147
             },
             "expectations": [
               {
@@ -7175,8 +7384,8 @@
                 "path": "internal/tools/docgen/main.go",
                 "pattern": "DisableAutoGenTag",
                 "text": "internal/tools/docgen/main.go matches /DisableAutoGenTag/",
-                "passed": false,
-                "evidence": "no match",
+                "passed": true,
+                "evidence": "DisableAutoGenTag",
                 "source": "assertion"
               },
               {
@@ -7208,55 +7417,55 @@
               }
             ],
             "summary": {
-              "passed": 5,
-              "failed": 1,
+              "passed": 6,
+              "failed": 0,
               "total": 6,
-              "pass_rate": 0.833333
+              "pass_rate": 1
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 9,
-                "file_change": 5
+                "command_execution": 13,
+                "file_change": 3
               },
-              "total_tool_calls": 14
+              "total_tool_calls": 16
             },
             "timing": {
-              "total_tokens": 299633,
-              "executor_duration_seconds": 188.5
+              "total_tokens": 161712,
+              "executor_duration_seconds": 137
             },
-            "spec_hash": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+            "spec_hash": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
           }
         ],
         "summary": {
-          "passed": 1,
-          "failed": 2,
+          "passed": 2,
+          "failed": 1,
           "total": 3,
-          "pass_rate": 0.333333,
-          "avg_run_seconds": 86,
+          "pass_rate": 0.666667,
+          "avg_run_seconds": 65.7,
           "estimate": {
             "input_tokens": 2833,
             "input_cost_usd": 0.002125
           },
           "measured": {
-            "input_tokens": 45599,
-            "cache_read_input_tokens": 402560,
-            "output_tokens": 15514,
-            "cost_usd": 0.405932
+            "input_tokens": 30500,
+            "cache_read_input_tokens": 280960,
+            "output_tokens": 11811,
+            "cost_usd": 0.286745
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T22:33:44Z",
+          "ran_at": "2026-08-15T02:44:19Z",
           "summary": {
             "passed": 1,
             "failed": 2,
             "total": 3,
             "pass_rate": 0.333333,
-            "avg_run_seconds": 62.2,
+            "avg_run_seconds": 80.8,
             "measured": {
-              "input_tokens": 28359,
-              "cache_read_input_tokens": 301184,
-              "output_tokens": 10629,
-              "cost_usd": 0.294988
+              "input_tokens": 34421,
+              "cache_read_input_tokens": 395392,
+              "output_tokens": 14409,
+              "cost_usd": 0.3872
             }
           },
           "results": [
@@ -7304,10 +7513,102 @@
               "id": "cobra-docgen",
               "passed": false,
               "measured": {
-                "input_tokens": 14893,
-                "cache_read_input_tokens": 149760,
-                "output_tokens": 7794,
-                "cost_usd": 0.158563
+                "input_tokens": 20955,
+                "cache_read_input_tokens": 243968,
+                "output_tokens": 11574,
+                "cost_usd": 0.250775
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 2,
+                "total": 6,
+                "pass_rate": 0.666667
+              },
+              "timing": {
+                "executor_duration_seconds": 177.1
+              },
+              "fingerprint": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T22:33:44Z",
+          "summary": {
+            "passed": 1,
+            "failed": 2,
+            "total": 3,
+            "pass_rate": 0.333333,
+            "avg_run_seconds": 86,
+            "estimate": {
+              "input_tokens": 2833,
+              "input_cost_usd": 0.002125
+            },
+            "measured": {
+              "input_tokens": 45599,
+              "cache_read_input_tokens": 402560,
+              "output_tokens": 15514,
+              "cost_usd": 0.405932
+            }
+          },
+          "results": [
+            {
+              "id": "doc-multi-file-package",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 933,
+                "input_cost_usd": 0.0007
+              },
+              "measured": {
+                "input_tokens": 7165,
+                "cache_read_input_tokens": 72960,
+                "output_tokens": 1485,
+                "cost_usd": 0.066776
+              },
+              "summary": {
+                "passed": 10,
+                "failed": 0,
+                "total": 10,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 32.6
+              }
+            },
+            {
+              "id": "doc-single-file-package",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 932,
+                "input_cost_usd": 0.000699
+              },
+              "measured": {
+                "input_tokens": 7539,
+                "cache_read_input_tokens": 72960,
+                "output_tokens": 1931,
+                "cost_usd": 0.069064
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 3,
+                "total": 7,
+                "pass_rate": 0.571429
+              },
+              "timing": {
+                "executor_duration_seconds": 36.9
+              }
+            },
+            {
+              "id": "cobra-docgen",
+              "passed": false,
+              "estimate": {
+                "input_tokens": 968,
+                "input_cost_usd": 0.000726
+              },
+              "measured": {
+                "input_tokens": 30895,
+                "cache_read_input_tokens": 256640,
+                "output_tokens": 12098,
+                "cost_usd": 0.270092
               },
               "summary": {
                 "passed": 5,
@@ -7316,9 +7617,8 @@
                 "pass_rate": 0.833333
               },
               "timing": {
-                "executor_duration_seconds": 121.2
-              },
-              "fingerprint": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+                "executor_duration_seconds": 188.5
+              }
             }
           ]
         }
@@ -7713,8 +8013,8 @@
         "model": "gpt-5.5",
         "display": "GPT-5.5",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:38:23Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:49:25Z",
         "executed": true,
         "content_hash": "df4bcb0a1a0fe916fe054c07c5aab7db223f83b42414a1aead73fbcc59eaefe3",
         "timeout_seconds": 600,
@@ -7854,10 +8154,10 @@
               "input_cost_usd": 0.00466
             },
             "measured": {
-              "input_tokens": 14796,
-              "cache_read_input_tokens": 90752,
-              "output_tokens": 1365,
-              "cost_usd": 0.56869
+              "input_tokens": 15369,
+              "cache_read_input_tokens": 76032,
+              "output_tokens": 1617,
+              "cost_usd": 0.505515
             },
             "expectations": [
               {
@@ -7931,14 +8231,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 10,
+                "command_execution": 11,
                 "file_change": 1
               },
-              "total_tool_calls": 11
+              "total_tool_calls": 12
             },
             "timing": {
-              "total_tokens": 106913,
-              "executor_duration_seconds": 38.8
+              "total_tokens": 93018,
+              "executor_duration_seconds": 42.4
             },
             "spec_hash": "3a05689cd57f1ff4001f3985dd250543a60bf8b7fb88cd47bec3166d978ec55f"
           },
@@ -7950,10 +8250,10 @@
               "input_cost_usd": 0.00484
             },
             "measured": {
-              "input_tokens": 22493,
-              "cache_read_input_tokens": 128384,
-              "output_tokens": 3732,
-              "cost_usd": 0.866345
+              "input_tokens": 13615,
+              "cache_read_input_tokens": 103040,
+              "output_tokens": 3515,
+              "cost_usd": 0.688725
             },
             "expectations": [
               {
@@ -8018,16 +8318,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 10,
-                "file_change": 3
+                "command_execution": 15,
+                "file_change": 1
               },
-              "total_tool_calls": 13
+              "total_tool_calls": 16
             },
             "timing": {
-              "total_tokens": 154609,
-              "executor_duration_seconds": 90.7
+              "total_tokens": 120170,
+              "executor_duration_seconds": 75.8
             },
-            "spec_hash": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+            "spec_hash": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
           }
         ],
         "summary": {
@@ -8035,31 +8335,31 @@
           "failed": 1,
           "total": 3,
           "pass_rate": 0.666667,
-          "avg_run_seconds": 55.5,
+          "avg_run_seconds": 51.7,
           "estimate": {
             "input_tokens": 2833,
             "input_cost_usd": 0.014165
           },
           "measured": {
-            "input_tokens": 47319,
-            "cache_read_input_tokens": 316032,
-            "output_tokens": 6518,
-            "cost_usd": 2.012295
+            "input_tokens": 39014,
+            "cache_read_input_tokens": 275968,
+            "output_tokens": 6553,
+            "cost_usd": 1.7715
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T22:38:23Z",
+          "ran_at": "2026-08-15T02:49:25Z",
           "summary": {
             "passed": 2,
             "failed": 1,
             "total": 3,
             "pass_rate": 0.666667,
-            "avg_run_seconds": 56.2,
+            "avg_run_seconds": 58.8,
             "measured": {
-              "input_tokens": 32147,
-              "cache_read_input_tokens": 302336,
-              "output_tokens": 6904,
-              "cost_usd": 1.879535
+              "input_tokens": 42081,
+              "cache_read_input_tokens": 294144,
+              "output_tokens": 7671,
+              "cost_usd": 1.911255
             }
           },
           "results": [
@@ -8107,41 +8407,41 @@
               "id": "cobra-docgen",
               "passed": false,
               "measured": {
-                "input_tokens": 14775,
-                "cache_read_input_tokens": 148224,
-                "output_tokens": 4236,
-                "cost_usd": 0.942075
+                "input_tokens": 24709,
+                "cache_read_input_tokens": 140032,
+                "output_tokens": 5003,
+                "cost_usd": 0.973795
               },
               "summary": {
-                "passed": 5,
-                "failed": 1,
+                "passed": 2,
+                "failed": 4,
                 "total": 6,
-                "pass_rate": 0.833333
+                "pass_rate": 0.333333
               },
               "timing": {
-                "executor_duration_seconds": 95.7
+                "executor_duration_seconds": 103.7
               },
-              "fingerprint": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+              "fingerprint": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-06-23T04:36:21Z",
+          "ran_at": "2026-07-31T22:38:23Z",
           "summary": {
-            "passed": 3,
-            "failed": 0,
+            "passed": 2,
+            "failed": 1,
             "total": 3,
-            "pass_rate": 1,
-            "avg_run_seconds": 62.5,
+            "pass_rate": 0.666667,
+            "avg_run_seconds": 55.5,
             "estimate": {
               "input_tokens": 2833,
               "input_cost_usd": 0.014165
             },
             "measured": {
-              "input_tokens": 73839,
-              "cache_read_input_tokens": 348032,
-              "output_tokens": 6842,
-              "cost_usd": 2.314615
+              "input_tokens": 47319,
+              "cache_read_input_tokens": 316032,
+              "output_tokens": 6518,
+              "cost_usd": 2.012295
             }
           },
           "results": [
@@ -8153,10 +8453,10 @@
                 "input_cost_usd": 0.004665
               },
               "measured": {
-                "input_tokens": 17372,
-                "cache_read_input_tokens": 96000,
-                "output_tokens": 1437,
-                "cost_usd": 0.60997
+                "input_tokens": 10030,
+                "cache_read_input_tokens": 96896,
+                "output_tokens": 1421,
+                "cost_usd": 0.57726
               },
               "summary": {
                 "passed": 10,
@@ -8165,30 +8465,30 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 60.8
+                "executor_duration_seconds": 37
               }
             },
             {
               "id": "doc-single-file-package",
-              "passed": true,
+              "passed": false,
               "estimate": {
                 "input_tokens": 932,
                 "input_cost_usd": 0.00466
               },
               "measured": {
-                "input_tokens": 12297,
-                "cache_read_input_tokens": 106240,
-                "output_tokens": 1482,
-                "cost_usd": 0.637145
+                "input_tokens": 14796,
+                "cache_read_input_tokens": 90752,
+                "output_tokens": 1365,
+                "cost_usd": 0.56869
               },
               "summary": {
-                "passed": 7,
-                "failed": 0,
+                "passed": 4,
+                "failed": 3,
                 "total": 7,
-                "pass_rate": 1
+                "pass_rate": 0.571429
               },
               "timing": {
-                "executor_duration_seconds": 35
+                "executor_duration_seconds": 38.8
               }
             },
             {
@@ -8199,10 +8499,10 @@
                 "input_cost_usd": 0.00484
               },
               "measured": {
-                "input_tokens": 44170,
-                "cache_read_input_tokens": 145792,
-                "output_tokens": 3923,
-                "cost_usd": 1.0675
+                "input_tokens": 22493,
+                "cache_read_input_tokens": 128384,
+                "output_tokens": 3732,
+                "cost_usd": 0.866345
               },
               "summary": {
                 "passed": 6,
@@ -8211,7 +8511,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 91.6
+                "executor_duration_seconds": 90.7
               }
             }
           ]
@@ -8224,8 +8524,8 @@
         "model": "gpt-5.6-luna",
         "display": "GPT-5.6 Luna",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:14:30Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:34:54Z",
         "executed": true,
         "content_hash": "a1e2d73405336dfc12e64a56ca3b24e0ddc9010d2d5c91f52db3e2de05b9748f",
         "runs_per_query": 3,
@@ -8384,7 +8684,7 @@
             "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 23.6,
+            "avg_run_seconds": 18,
             "estimate": {
               "input_tokens": 930,
               "input_cost_usd": 0.00093
@@ -8407,10 +8707,10 @@
           {
             "query": "Generate OpenAPI docs for my Go REST API",
             "should_trigger": false,
-            "hits": 2,
+            "hits": 0,
             "runs": 3,
-            "passed": false,
-            "avg_run_seconds": 11.5,
+            "passed": true,
+            "avg_run_seconds": 16.5,
             "estimate": {
               "input_tokens": 928,
               "input_cost_usd": 0.000928
@@ -8419,15 +8719,213 @@
           }
         ],
         "summary": {
-          "passed": 12,
-          "failed": 2,
+          "passed": 13,
+          "failed": 1,
           "total": 14,
-          "pass_rate": 0.857143,
-          "avg_run_seconds": 13.7,
+          "pass_rate": 0.928571,
+          "avg_run_seconds": 13.6,
           "estimate": {
             "input_tokens": 12997,
             "input_cost_usd": 0.012997
           }
+        },
+        "previous": {
+          "ran_at": "2026-07-31T22:14:30Z",
+          "summary": {
+            "passed": 12,
+            "failed": 2,
+            "total": 14,
+            "pass_rate": 0.857143,
+            "avg_run_seconds": 13.7,
+            "estimate": {
+              "input_tokens": 12997,
+              "input_cost_usd": 0.012997
+            }
+          },
+          "results": [
+            {
+              "query": "Add doc comments to the exported functions in this Go package",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.4,
+              "estimate": {
+                "input_tokens": 930,
+                "input_cost_usd": 0.00093
+              },
+              "spec_hash": "fd98ae88ad3a25f3fdf34c5e8ca0323cca089e6038e1a2c6d0cb49e2db891be8"
+            },
+            {
+              "query": "Write a package comment for internal/clientmap",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.4,
+              "estimate": {
+                "input_tokens": 927,
+                "input_cost_usd": 0.000927
+              },
+              "spec_hash": "bcab40145d7e8ef9d8fed39ebc78f7c5279fbbc0ee252571c6eb986f87ebfcb2"
+            },
+            {
+              "query": "Should the package comment go in doc.go or at the top of an existing file?",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.6,
+              "estimate": {
+                "input_tokens": 936,
+                "input_cost_usd": 0.000936
+              },
+              "spec_hash": "fe70ba0cd52aa9919c1a91dcb245f0a615480a4f2ea52d020df4526a7b5aa763"
+            },
+            {
+              "query": "Document the exported API of this Go module",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.6,
+              "estimate": {
+                "input_tokens": 927,
+                "input_cost_usd": 0.000927
+              },
+              "spec_hash": "8439aeb29e0aa8e97007e2d2fced2d629f2f76b3ff1b1bc45e5ae4aad11f36b7"
+            },
+            {
+              "query": "Generate markdown CLI docs for my cobra tool",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.6,
+              "estimate": {
+                "input_tokens": 927,
+                "input_cost_usd": 0.000927
+              },
+              "spec_hash": "e728f225b099fa6af63f008ec0ad69f86aa7829a8045f5100ceb1bf6e69967e5"
+            },
+            {
+              "query": "Make my Go CLI's documentation consumable by LLMs",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.5,
+              "estimate": {
+                "input_tokens": 931,
+                "input_cost_usd": 0.000931
+              },
+              "spec_hash": "77cd4d8062f28fa57058dbdbca85ab734c6a09c4121eaca35063e0f5428f6d3e"
+            },
+            {
+              "query": "Review this Go package for missing godoc comments",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 6.5,
+              "estimate": {
+                "input_tokens": 928,
+                "input_cost_usd": 0.000928
+              },
+              "spec_hash": "f52908ad0cc1857a7f97db483c75239b324f9d8b9f54145cb4ff2328f7b61dd2"
+            },
+            {
+              "query": "Add a doc.go to this package",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.4,
+              "estimate": {
+                "input_tokens": 926,
+                "input_cost_usd": 0.000926
+              },
+              "spec_hash": "334c2e07db702839b14329a28522b2e3f403a4529ee419e259257dff9851577b"
+            },
+            {
+              "query": "Write a README for this Go project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 34.6,
+              "estimate": {
+                "input_tokens": 926,
+                "input_cost_usd": 0.000926
+              },
+              "spec_hash": "756a0cc1e508c485eba577154206471f1b69bf2c12460ae419ef875d90e13b81"
+            },
+            {
+              "query": "Add inline comments explaining how this Go algorithm works",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 19,
+              "estimate": {
+                "input_tokens": 928,
+                "input_cost_usd": 0.000928
+              },
+              "spec_hash": "b5cfd1dd46772595323f8d48ce6d6884d7e25885ad81fdf5cd53e210cb9cda30"
+            },
+            {
+              "query": "Write table-driven tests for this Go function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 16.9,
+              "estimate": {
+                "input_tokens": 927,
+                "input_cost_usd": 0.000927
+              },
+              "spec_hash": "75eb0dbf254924451b3ba9562e2d05c52624dc6eeb199474803d2bfe8fb6b39c"
+            },
+            {
+              "query": "Scaffold a new Go service with cmd and internal layout",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 23.6,
+              "estimate": {
+                "input_tokens": 930,
+                "input_cost_usd": 0.00093
+              },
+              "spec_hash": "9eef8ddfa03d8db7007e8bb19541b1d9aea21ebc47de4382be746f6c295d7ab7"
+            },
+            {
+              "query": "Add docstrings to this Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 18.9,
+              "estimate": {
+                "input_tokens": 926,
+                "input_cost_usd": 0.000926
+              },
+              "spec_hash": "45e3584d3534540db1bd7416654885916a01f1587f63152a0dfc4c42d29610a9"
+            },
+            {
+              "query": "Generate OpenAPI docs for my Go REST API",
+              "should_trigger": false,
+              "hits": 2,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 11.5,
+              "estimate": {
+                "input_tokens": 928,
+                "input_cost_usd": 0.000928
+              },
+              "spec_hash": "4f1002296f70d5bc4826434469e7cbd686caa1a207f72c381c028ae54a2e0052"
+            }
+          ]
         }
       },
       "evals": {
@@ -8435,8 +8933,8 @@
         "model": "gpt-5.6-luna",
         "display": "GPT-5.6 Luna",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:17:32Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:37:25Z",
         "executed": true,
         "content_hash": "df4bcb0a1a0fe916fe054c07c5aab7db223f83b42414a1aead73fbcc59eaefe3",
         "timeout_seconds": 600,
@@ -8672,10 +9170,10 @@
               "input_cost_usd": 0.000968
             },
             "measured": {
-              "input_tokens": 18523,
-              "cache_read_input_tokens": 109568,
-              "output_tokens": 3391,
-              "cost_usd": 0.148437
+              "input_tokens": 13376,
+              "cache_read_input_tokens": 97536,
+              "output_tokens": 2879,
+              "cost_usd": 0.128186
             },
             "expectations": [
               {
@@ -8746,10 +9244,10 @@
               "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 131482,
-              "executor_duration_seconds": 74
+              "total_tokens": 113791,
+              "executor_duration_seconds": 61.4
             },
-            "spec_hash": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+            "spec_hash": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
           }
         ],
         "summary": {
@@ -8757,31 +9255,31 @@
           "failed": 0,
           "total": 3,
           "pass_rate": 1,
-          "avg_run_seconds": 45.9,
+          "avg_run_seconds": 41.7,
           "estimate": {
             "input_tokens": 2833,
             "input_cost_usd": 0.002833
           },
           "measured": {
-            "input_tokens": 40448,
-            "cache_read_input_tokens": 246016,
-            "output_tokens": 5763,
-            "cost_usd": 0.321042
+            "input_tokens": 35301,
+            "cache_read_input_tokens": 233984,
+            "output_tokens": 5251,
+            "cost_usd": 0.300791
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T22:17:32Z",
+          "ran_at": "2026-08-15T02:37:25Z",
           "summary": {
-            "passed": 1,
-            "failed": 2,
+            "passed": 2,
+            "failed": 1,
             "total": 3,
-            "pass_rate": 0.333333,
-            "avg_run_seconds": 57.8,
+            "pass_rate": 0.666667,
+            "avg_run_seconds": 52.5,
             "measured": {
-              "input_tokens": 41673,
-              "cache_read_input_tokens": 314368,
-              "output_tokens": 7302,
-              "cost_usd": 0.399853
+              "input_tokens": 44076,
+              "cache_read_input_tokens": 347136,
+              "output_tokens": 6921,
+              "cost_usd": 0.432738
             }
           },
           "results": [
@@ -8827,23 +9325,114 @@
             },
             {
               "id": "cobra-docgen",
-              "passed": false,
+              "passed": true,
               "measured": {
-                "input_tokens": 22178,
-                "cache_read_input_tokens": 153856,
-                "output_tokens": 4566,
-                "cost_usd": 0.20343
+                "input_tokens": 24581,
+                "cache_read_input_tokens": 186624,
+                "output_tokens": 4185,
+                "cost_usd": 0.236315
               },
               "summary": {
-                "passed": 2,
-                "failed": 4,
+                "passed": 6,
+                "failed": 0,
                 "total": 6,
-                "pass_rate": 0.333333
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 105.5
+                "executor_duration_seconds": 89.7
               },
-              "fingerprint": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+              "fingerprint": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T22:17:32Z",
+          "summary": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 45.9,
+            "estimate": {
+              "input_tokens": 2833,
+              "input_cost_usd": 0.002833
+            },
+            "measured": {
+              "input_tokens": 40448,
+              "cache_read_input_tokens": 246016,
+              "output_tokens": 5763,
+              "cost_usd": 0.321042
+            }
+          },
+          "results": [
+            {
+              "id": "doc-multi-file-package",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 933,
+                "input_cost_usd": 0.000933
+              },
+              "measured": {
+                "input_tokens": 14168,
+                "cache_read_input_tokens": 73216,
+                "output_tokens": 1324,
+                "cost_usd": 0.095328
+              },
+              "summary": {
+                "passed": 10,
+                "failed": 0,
+                "total": 10,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 35.5
+              }
+            },
+            {
+              "id": "doc-single-file-package",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 932,
+                "input_cost_usd": 0.000932
+              },
+              "measured": {
+                "input_tokens": 7757,
+                "cache_read_input_tokens": 63232,
+                "output_tokens": 1048,
+                "cost_usd": 0.077277
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 28.2
+              }
+            },
+            {
+              "id": "cobra-docgen",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 968,
+                "input_cost_usd": 0.000968
+              },
+              "measured": {
+                "input_tokens": 18523,
+                "cache_read_input_tokens": 109568,
+                "output_tokens": 3391,
+                "cost_usd": 0.148437
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 74
+              }
             }
           ]
         }
@@ -8855,8 +9444,8 @@
         "model": "gpt-5.6-sol",
         "display": "GPT-5.6 Sol",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:06:34Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:29:43Z",
         "executed": true,
         "content_hash": "a1e2d73405336dfc12e64a56ca3b24e0ddc9010d2d5c91f52db3e2de05b9748f",
         "runs_per_query": 3,
@@ -8973,10 +9562,10 @@
           {
             "query": "Write a README for this Go project",
             "should_trigger": false,
-            "hits": 2,
+            "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 15.8,
+            "avg_run_seconds": 9.1,
             "estimate": {
               "input_tokens": 926,
               "input_cost_usd": 0.00463
@@ -9015,7 +9604,7 @@
             "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 16.8,
+            "avg_run_seconds": 12.8,
             "estimate": {
               "input_tokens": 930,
               "input_cost_usd": 0.00465
@@ -9054,14 +9643,14 @@
           "failed": 2,
           "total": 14,
           "pass_rate": 0.857143,
-          "avg_run_seconds": 11.1,
+          "avg_run_seconds": 10.3,
           "estimate": {
             "input_tokens": 12997,
             "input_cost_usd": 0.064985
           }
         },
         "previous": {
-          "ran_at": "2026-07-31T20:52:54Z",
+          "ran_at": "2026-07-31T22:06:34Z",
           "summary": {
             "passed": 12,
             "failed": 2,
@@ -9184,7 +9773,7 @@
               "hits": 2,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 17.6,
+              "avg_run_seconds": 15.8,
               "estimate": {
                 "input_tokens": 926,
                 "input_cost_usd": 0.00463
@@ -9223,7 +9812,7 @@
               "hits": 3,
               "runs": 3,
               "passed": false,
-              "avg_run_seconds": 15.2,
+              "avg_run_seconds": 16.8,
               "estimate": {
                 "input_tokens": 930,
                 "input_cost_usd": 0.00465
@@ -9264,8 +9853,8 @@
         "model": "gpt-5.6-sol",
         "display": "GPT-5.6 Sol",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:07:11Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:31:29Z",
         "executed": true,
         "content_hash": "df4bcb0a1a0fe916fe054c07c5aab7db223f83b42414a1aead73fbcc59eaefe3",
         "timeout_seconds": 600,
@@ -9501,10 +10090,10 @@
               "input_cost_usd": 0.00484
             },
             "measured": {
-              "input_tokens": 15565,
-              "cache_read_input_tokens": 89600,
-              "output_tokens": 2349,
-              "cost_usd": 0.596295
+              "input_tokens": 11152,
+              "cache_read_input_tokens": 87552,
+              "output_tokens": 2476,
+              "cost_usd": 0.5678
             },
             "expectations": [
               {
@@ -9569,16 +10158,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 4,
+                "command_execution": 5,
                 "file_change": 1
               },
-              "total_tool_calls": 5
+              "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 107514,
-              "executor_duration_seconds": 59.8
+              "total_tokens": 101180,
+              "executor_duration_seconds": 58
             },
-            "spec_hash": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+            "spec_hash": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
           }
         ],
         "summary": {
@@ -9586,31 +10175,31 @@
           "failed": 0,
           "total": 3,
           "pass_rate": 1,
-          "avg_run_seconds": 40.3,
+          "avg_run_seconds": 39.7,
           "estimate": {
             "input_tokens": 2833,
             "input_cost_usd": 0.014165
           },
           "measured": {
-            "input_tokens": 35196,
-            "cache_read_input_tokens": 226304,
-            "output_tokens": 4059,
-            "cost_usd": 1.42927
+            "input_tokens": 30783,
+            "cache_read_input_tokens": 224256,
+            "output_tokens": 4186,
+            "cost_usd": 1.400775
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T20:54:42Z",
+          "ran_at": "2026-08-15T02:31:29Z",
           "summary": {
             "passed": 2,
             "failed": 1,
             "total": 3,
             "pass_rate": 0.666667,
-            "avg_run_seconds": 39.4,
+            "avg_run_seconds": 39.2,
             "measured": {
-              "input_tokens": 34513,
-              "cache_read_input_tokens": 250112,
-              "output_tokens": 3939,
-              "cost_usd": 1.541295
+              "input_tokens": 37604,
+              "cache_read_input_tokens": 247040,
+              "output_tokens": 4039,
+              "cost_usd": 1.54439
             }
           },
           "results": [
@@ -9658,10 +10247,10 @@
               "id": "cobra-docgen",
               "passed": false,
               "measured": {
-                "input_tokens": 9046,
-                "cache_read_input_tokens": 82432,
-                "output_tokens": 1942,
-                "cost_usd": 0.51565
+                "input_tokens": 12137,
+                "cache_read_input_tokens": 79360,
+                "output_tokens": 2042,
+                "cost_usd": 0.518745
               },
               "summary": {
                 "passed": 5,
@@ -9670,29 +10259,29 @@
                 "pass_rate": 0.833333
               },
               "timing": {
-                "executor_duration_seconds": 47.9
+                "executor_duration_seconds": 47.4
               },
-              "fingerprint": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+              "fingerprint": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T20:54:42Z",
+          "ran_at": "2026-07-31T22:07:11Z",
           "summary": {
-            "passed": 2,
-            "failed": 1,
+            "passed": 3,
+            "failed": 0,
             "total": 3,
-            "pass_rate": 0.666667,
-            "avg_run_seconds": 37.6,
+            "pass_rate": 1,
+            "avg_run_seconds": 40.3,
             "estimate": {
               "input_tokens": 2833,
               "input_cost_usd": 0.014165
             },
             "measured": {
-              "input_tokens": 35780,
-              "cache_read_input_tokens": 225280,
-              "output_tokens": 3957,
-              "cost_usd": 1.42401
+              "input_tokens": 35196,
+              "cache_read_input_tokens": 226304,
+              "output_tokens": 4059,
+              "cost_usd": 1.42927
             }
           },
           "results": [
@@ -9721,25 +10310,25 @@
             },
             {
               "id": "doc-single-file-package",
-              "passed": false,
+              "passed": true,
               "estimate": {
                 "input_tokens": 932,
                 "input_cost_usd": 0.00466
               },
               "measured": {
-                "input_tokens": 8436,
-                "cache_read_input_tokens": 69376,
-                "output_tokens": 847,
-                "cost_usd": 0.41447
+                "input_tokens": 7852,
+                "cache_read_input_tokens": 70400,
+                "output_tokens": 949,
+                "cost_usd": 0.41973
               },
               "summary": {
-                "passed": 4,
-                "failed": 3,
+                "passed": 7,
+                "failed": 0,
                 "total": 7,
-                "pass_rate": 0.571429
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 28.2
+                "executor_duration_seconds": 36.2
               }
             },
             {
@@ -9775,8 +10364,8 @@
         "model": "gpt-5.6-terra",
         "display": "GPT-5.6 Terra",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:09:41Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:31:46Z",
         "executed": true,
         "content_hash": "a1e2d73405336dfc12e64a56ca3b24e0ddc9010d2d5c91f52db3e2de05b9748f",
         "runs_per_query": 3,
@@ -9935,7 +10524,7 @@
             "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 18,
+            "avg_run_seconds": 14.4,
             "estimate": {
               "input_tokens": 930,
               "input_cost_usd": 0.002325
@@ -9974,11 +10563,209 @@
           "failed": 1,
           "total": 14,
           "pass_rate": 0.928571,
-          "avg_run_seconds": 13.5,
+          "avg_run_seconds": 13.2,
           "estimate": {
             "input_tokens": 12997,
             "input_cost_usd": 0.032494
           }
+        },
+        "previous": {
+          "ran_at": "2026-07-31T22:09:41Z",
+          "summary": {
+            "passed": 13,
+            "failed": 1,
+            "total": 14,
+            "pass_rate": 0.928571,
+            "avg_run_seconds": 13.5,
+            "estimate": {
+              "input_tokens": 12997,
+              "input_cost_usd": 0.032494
+            }
+          },
+          "results": [
+            {
+              "query": "Add doc comments to the exported functions in this Go package",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.8,
+              "estimate": {
+                "input_tokens": 930,
+                "input_cost_usd": 0.002325
+              },
+              "spec_hash": "fd98ae88ad3a25f3fdf34c5e8ca0323cca089e6038e1a2c6d0cb49e2db891be8"
+            },
+            {
+              "query": "Write a package comment for internal/clientmap",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 11.9,
+              "estimate": {
+                "input_tokens": 927,
+                "input_cost_usd": 0.002318
+              },
+              "spec_hash": "bcab40145d7e8ef9d8fed39ebc78f7c5279fbbc0ee252571c6eb986f87ebfcb2"
+            },
+            {
+              "query": "Should the package comment go in doc.go or at the top of an existing file?",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5,
+              "estimate": {
+                "input_tokens": 936,
+                "input_cost_usd": 0.00234
+              },
+              "spec_hash": "fe70ba0cd52aa9919c1a91dcb245f0a615480a4f2ea52d020df4526a7b5aa763"
+            },
+            {
+              "query": "Document the exported API of this Go module",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.6,
+              "estimate": {
+                "input_tokens": 927,
+                "input_cost_usd": 0.002318
+              },
+              "spec_hash": "8439aeb29e0aa8e97007e2d2fced2d629f2f76b3ff1b1bc45e5ae4aad11f36b7"
+            },
+            {
+              "query": "Generate markdown CLI docs for my cobra tool",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.2,
+              "estimate": {
+                "input_tokens": 927,
+                "input_cost_usd": 0.002318
+              },
+              "spec_hash": "e728f225b099fa6af63f008ec0ad69f86aa7829a8045f5100ceb1bf6e69967e5"
+            },
+            {
+              "query": "Make my Go CLI's documentation consumable by LLMs",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 9.7,
+              "estimate": {
+                "input_tokens": 931,
+                "input_cost_usd": 0.002327
+              },
+              "spec_hash": "77cd4d8062f28fa57058dbdbca85ab734c6a09c4121eaca35063e0f5428f6d3e"
+            },
+            {
+              "query": "Review this Go package for missing godoc comments",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 14.6,
+              "estimate": {
+                "input_tokens": 928,
+                "input_cost_usd": 0.00232
+              },
+              "spec_hash": "f52908ad0cc1857a7f97db483c75239b324f9d8b9f54145cb4ff2328f7b61dd2"
+            },
+            {
+              "query": "Add a doc.go to this package",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.5,
+              "estimate": {
+                "input_tokens": 926,
+                "input_cost_usd": 0.002315
+              },
+              "spec_hash": "334c2e07db702839b14329a28522b2e3f403a4529ee419e259257dff9851577b"
+            },
+            {
+              "query": "Write a README for this Go project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 18.6,
+              "estimate": {
+                "input_tokens": 926,
+                "input_cost_usd": 0.002315
+              },
+              "spec_hash": "756a0cc1e508c485eba577154206471f1b69bf2c12460ae419ef875d90e13b81"
+            },
+            {
+              "query": "Add inline comments explaining how this Go algorithm works",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 20.3,
+              "estimate": {
+                "input_tokens": 928,
+                "input_cost_usd": 0.00232
+              },
+              "spec_hash": "b5cfd1dd46772595323f8d48ce6d6884d7e25885ad81fdf5cd53e210cb9cda30"
+            },
+            {
+              "query": "Write table-driven tests for this Go function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 18.1,
+              "estimate": {
+                "input_tokens": 927,
+                "input_cost_usd": 0.002318
+              },
+              "spec_hash": "75eb0dbf254924451b3ba9562e2d05c52624dc6eeb199474803d2bfe8fb6b39c"
+            },
+            {
+              "query": "Scaffold a new Go service with cmd and internal layout",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 18,
+              "estimate": {
+                "input_tokens": 930,
+                "input_cost_usd": 0.002325
+              },
+              "spec_hash": "9eef8ddfa03d8db7007e8bb19541b1d9aea21ebc47de4382be746f6c295d7ab7"
+            },
+            {
+              "query": "Add docstrings to this Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 16.4,
+              "estimate": {
+                "input_tokens": 926,
+                "input_cost_usd": 0.002315
+              },
+              "spec_hash": "45e3584d3534540db1bd7416654885916a01f1587f63152a0dfc4c42d29610a9"
+            },
+            {
+              "query": "Generate OpenAPI docs for my Go REST API",
+              "should_trigger": false,
+              "hits": 1,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 13.9,
+              "estimate": {
+                "input_tokens": 928,
+                "input_cost_usd": 0.00232
+              },
+              "spec_hash": "4f1002296f70d5bc4826434469e7cbd686caa1a207f72c381c028ae54a2e0052"
+            }
+          ]
         }
       },
       "evals": {
@@ -9986,8 +10773,8 @@
         "model": "gpt-5.6-terra",
         "display": "GPT-5.6 Terra",
         "harness": "codex",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:12:03Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:34:20Z",
         "executed": true,
         "content_hash": "df4bcb0a1a0fe916fe054c07c5aab7db223f83b42414a1aead73fbcc59eaefe3",
         "timeout_seconds": 600,
@@ -10223,10 +11010,10 @@
               "input_cost_usd": 0.00242
             },
             "measured": {
-              "input_tokens": 32026,
-              "cache_read_input_tokens": 214784,
-              "output_tokens": 3785,
-              "cost_usd": 0.6738
+              "input_tokens": 26381,
+              "cache_read_input_tokens": 170240,
+              "output_tokens": 4268,
+              "cost_usd": 0.555573
             },
             "expectations": [
               {
@@ -10291,16 +11078,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 9,
-                "file_change": 2
+                "command_execution": 8,
+                "file_change": 3
               },
               "total_tool_calls": 11
             },
             "timing": {
-              "total_tokens": 250595,
-              "executor_duration_seconds": 86.2
+              "total_tokens": 200889,
+              "executor_duration_seconds": 91.7
             },
-            "spec_hash": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+            "spec_hash": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
           }
         ],
         "summary": {
@@ -10308,31 +11095,31 @@
           "failed": 0,
           "total": 3,
           "pass_rate": 1,
-          "avg_run_seconds": 49.4,
+          "avg_run_seconds": 51.3,
           "estimate": {
             "input_tokens": 2833,
             "input_cost_usd": 0.007083
           },
           "measured": {
-            "input_tokens": 51124,
-            "cache_read_input_tokens": 367616,
-            "output_tokens": 5718,
-            "cost_usd": 1.132621
+            "input_tokens": 45479,
+            "cache_read_input_tokens": 323072,
+            "output_tokens": 6201,
+            "cost_usd": 1.014394
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T22:12:03Z",
+          "ran_at": "2026-08-15T02:34:20Z",
           "summary": {
             "passed": 2,
             "failed": 1,
             "total": 3,
             "pass_rate": 0.666667,
-            "avg_run_seconds": 39.6,
+            "avg_run_seconds": 42.3,
             "measured": {
-              "input_tokens": 41706,
-              "cache_read_input_tokens": 254464,
-              "output_tokens": 4642,
-              "cost_usd": 0.810056
+              "input_tokens": 36810,
+              "cache_read_input_tokens": 257536,
+              "output_tokens": 5036,
+              "cost_usd": 0.811406
             }
           },
           "results": [
@@ -10380,10 +11167,10 @@
               "id": "cobra-docgen",
               "passed": false,
               "measured": {
-                "input_tokens": 16463,
-                "cache_read_input_tokens": 78336,
-                "output_tokens": 2493,
-                "cost_usd": 0.274393
+                "input_tokens": 11567,
+                "cache_read_input_tokens": 81408,
+                "output_tokens": 2887,
+                "cost_usd": 0.275743
               },
               "summary": {
                 "passed": 4,
@@ -10392,9 +11179,100 @@
                 "pass_rate": 0.666667
               },
               "timing": {
-                "executor_duration_seconds": 55
+                "executor_duration_seconds": 62.9
               },
-              "fingerprint": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+              "fingerprint": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-07-31T22:12:03Z",
+          "summary": {
+            "passed": 3,
+            "failed": 0,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 49.4,
+            "estimate": {
+              "input_tokens": 2833,
+              "input_cost_usd": 0.007083
+            },
+            "measured": {
+              "input_tokens": 51124,
+              "cache_read_input_tokens": 367616,
+              "output_tokens": 5718,
+              "cost_usd": 1.132621
+            }
+          },
+          "results": [
+            {
+              "id": "doc-multi-file-package",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 933,
+                "input_cost_usd": 0.002333
+              },
+              "measured": {
+                "input_tokens": 7981,
+                "cache_read_input_tokens": 70400,
+                "output_tokens": 803,
+                "cost_usd": 0.207998
+              },
+              "summary": {
+                "passed": 10,
+                "failed": 0,
+                "total": 10,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 32.3
+              }
+            },
+            {
+              "id": "doc-single-file-package",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 932,
+                "input_cost_usd": 0.00233
+              },
+              "measured": {
+                "input_tokens": 11117,
+                "cache_read_input_tokens": 82432,
+                "output_tokens": 1130,
+                "cost_usd": 0.250823
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 29.8
+              }
+            },
+            {
+              "id": "cobra-docgen",
+              "passed": true,
+              "estimate": {
+                "input_tokens": 968,
+                "input_cost_usd": 0.00242
+              },
+              "measured": {
+                "input_tokens": 32026,
+                "cache_read_input_tokens": 214784,
+                "output_tokens": 3785,
+                "cost_usd": 0.6738
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 86.2
+              }
             }
           ]
         }
@@ -10406,8 +11284,8 @@
         "model": "grok-4.5",
         "display": "Grok 4.5",
         "harness": "grok",
-        "tool_version": "v0.6.0-18-g123cd4d-dirty",
-        "ran_at": "2026-07-31T22:39:32Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:49:46Z",
         "executed": true,
         "content_hash": "a1e2d73405336dfc12e64a56ca3b24e0ddc9010d2d5c91f52db3e2de05b9748f",
         "runs_per_query": 3,
@@ -10459,7 +11337,7 @@
             "hits": 0,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 8.9,
+            "avg_run_seconds": 11.8,
             "spec_hash": "e728f225b099fa6af63f008ec0ad69f86aa7829a8045f5100ceb1bf6e69967e5"
           },
           {
@@ -10522,7 +11400,7 @@
             "hits": 3,
             "runs": 3,
             "passed": false,
-            "avg_run_seconds": 7.2,
+            "avg_run_seconds": 10,
             "spec_hash": "9eef8ddfa03d8db7007e8bb19541b1d9aea21ebc47de4382be746f6c295d7ab7"
           },
           {
@@ -10549,7 +11427,145 @@
           "failed": 2,
           "total": 14,
           "pass_rate": 0.857143,
-          "avg_run_seconds": 6.3
+          "avg_run_seconds": 6.7
+        },
+        "previous": {
+          "ran_at": "2026-07-31T22:39:32Z",
+          "summary": {
+            "passed": 12,
+            "failed": 2,
+            "total": 14,
+            "pass_rate": 0.857143,
+            "avg_run_seconds": 6.3
+          },
+          "results": [
+            {
+              "query": "Add doc comments to the exported functions in this Go package",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.1,
+              "spec_hash": "fd98ae88ad3a25f3fdf34c5e8ca0323cca089e6038e1a2c6d0cb49e2db891be8"
+            },
+            {
+              "query": "Write a package comment for internal/clientmap",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.9,
+              "spec_hash": "bcab40145d7e8ef9d8fed39ebc78f7c5279fbbc0ee252571c6eb986f87ebfcb2"
+            },
+            {
+              "query": "Should the package comment go in doc.go or at the top of an existing file?",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.9,
+              "spec_hash": "fe70ba0cd52aa9919c1a91dcb245f0a615480a4f2ea52d020df4526a7b5aa763"
+            },
+            {
+              "query": "Document the exported API of this Go module",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 4.9,
+              "spec_hash": "8439aeb29e0aa8e97007e2d2fced2d629f2f76b3ff1b1bc45e5ae4aad11f36b7"
+            },
+            {
+              "query": "Generate markdown CLI docs for my cobra tool",
+              "should_trigger": true,
+              "hits": 0,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 8.9,
+              "spec_hash": "e728f225b099fa6af63f008ec0ad69f86aa7829a8045f5100ceb1bf6e69967e5"
+            },
+            {
+              "query": "Make my Go CLI's documentation consumable by LLMs",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.1,
+              "spec_hash": "77cd4d8062f28fa57058dbdbca85ab734c6a09c4121eaca35063e0f5428f6d3e"
+            },
+            {
+              "query": "Review this Go package for missing godoc comments",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.9,
+              "spec_hash": "f52908ad0cc1857a7f97db483c75239b324f9d8b9f54145cb4ff2328f7b61dd2"
+            },
+            {
+              "query": "Add a doc.go to this package",
+              "should_trigger": true,
+              "hits": 3,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 3.8,
+              "spec_hash": "334c2e07db702839b14329a28522b2e3f403a4529ee419e259257dff9851577b"
+            },
+            {
+              "query": "Write a README for this Go project",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 8.5,
+              "spec_hash": "756a0cc1e508c485eba577154206471f1b69bf2c12460ae419ef875d90e13b81"
+            },
+            {
+              "query": "Add inline comments explaining how this Go algorithm works",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7,
+              "spec_hash": "b5cfd1dd46772595323f8d48ce6d6884d7e25885ad81fdf5cd53e210cb9cda30"
+            },
+            {
+              "query": "Write table-driven tests for this Go function",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 7.4,
+              "spec_hash": "75eb0dbf254924451b3ba9562e2d05c52624dc6eeb199474803d2bfe8fb6b39c"
+            },
+            {
+              "query": "Scaffold a new Go service with cmd and internal layout",
+              "should_trigger": false,
+              "hits": 3,
+              "runs": 3,
+              "passed": false,
+              "avg_run_seconds": 7.2,
+              "spec_hash": "9eef8ddfa03d8db7007e8bb19541b1d9aea21ebc47de4382be746f6c295d7ab7"
+            },
+            {
+              "query": "Add docstrings to this Python module",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 5.2,
+              "spec_hash": "45e3584d3534540db1bd7416654885916a01f1587f63152a0dfc4c42d29610a9"
+            },
+            {
+              "query": "Generate OpenAPI docs for my Go REST API",
+              "should_trigger": false,
+              "hits": 0,
+              "runs": 3,
+              "passed": true,
+              "avg_run_seconds": 10.3,
+              "spec_hash": "4f1002296f70d5bc4826434469e7cbd686caa1a207f72c381c028ae54a2e0052"
+            }
+          ]
         }
       },
       "evals": {
@@ -10557,8 +11573,8 @@
         "model": "grok-4.5",
         "display": "Grok 4.5",
         "harness": "grok",
-        "tool_version": "v0.6.0-14-ga373d30-dirty",
-        "ran_at": "2026-07-31T19:25:03Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:51:46Z",
         "executed": true,
         "content_hash": "df4bcb0a1a0fe916fe054c07c5aab7db223f83b42414a1aead73fbcc59eaefe3",
         "timeout_seconds": 600,
@@ -10768,10 +11784,10 @@
             "id": "cobra-docgen",
             "passed": true,
             "measured": {
-              "input_tokens": 15197,
-              "cache_read_input_tokens": 81920,
-              "output_tokens": 2497,
-              "cost_usd": 0.069952
+              "input_tokens": 21689,
+              "cache_read_input_tokens": 68608,
+              "output_tokens": 2546,
+              "cost_usd": 0.02694
             },
             "expectations": [
               {
@@ -10835,10 +11851,10 @@
               "pass_rate": 1
             },
             "timing": {
-              "total_tokens": 99614,
-              "executor_duration_seconds": 30.4
+              "total_tokens": 92843,
+              "executor_duration_seconds": 42.2
             },
-            "spec_hash": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+            "spec_hash": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
           }
         ],
         "summary": {
@@ -10846,27 +11862,27 @@
           "failed": 0,
           "total": 3,
           "pass_rate": 1,
-          "avg_run_seconds": 28.5,
+          "avg_run_seconds": 32.4,
           "measured": {
-            "input_tokens": 38744,
-            "cache_read_input_tokens": 306432,
-            "output_tokens": 5897,
-            "cost_usd": 0.2048
+            "input_tokens": 45236,
+            "cache_read_input_tokens": 293120,
+            "output_tokens": 5946,
+            "cost_usd": 0.161788
           }
         },
         "baseline": {
-          "ran_at": "2026-07-31T19:25:03Z",
+          "ran_at": "2026-08-15T02:51:46Z",
           "summary": {
             "passed": 3,
             "failed": 0,
             "total": 3,
             "pass_rate": 1,
-            "avg_run_seconds": 60.8,
+            "avg_run_seconds": 70.1,
             "measured": {
-              "input_tokens": 100340,
-              "cache_read_input_tokens": 1018112,
-              "output_tokens": 11935,
-              "cost_usd": 0.577723
+              "input_tokens": 123406,
+              "cache_read_input_tokens": 1075328,
+              "output_tokens": 12082,
+              "cost_usd": 0.492896
             }
           },
           "results": [
@@ -10914,10 +11930,10 @@
               "id": "cobra-docgen",
               "passed": true,
               "measured": {
-                "input_tokens": 30498,
-                "cache_read_input_tokens": 249728,
-                "output_tokens": 4279,
-                "cost_usd": 0.161588
+                "input_tokens": 53564,
+                "cache_read_input_tokens": 306944,
+                "output_tokens": 4426,
+                "cost_usd": 0.076761
               },
               "summary": {
                 "passed": 6,
@@ -10926,25 +11942,25 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 49.7
+                "executor_duration_seconds": 77.7
               },
-              "fingerprint": "49a1f42a7fa5f676bafad4210deae7af2d0953fa60046a612739c77e6973dfec"
+              "fingerprint": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T18:03:27Z",
+          "ran_at": "2026-07-31T19:25:03Z",
           "summary": {
             "passed": 3,
             "failed": 0,
             "total": 3,
             "pass_rate": 1,
-            "avg_run_seconds": 26.6,
+            "avg_run_seconds": 28.5,
             "measured": {
-              "input_tokens": 14804,
-              "cache_read_input_tokens": 199552,
-              "output_tokens": 5403,
-              "cost_usd": 0.121892
+              "input_tokens": 38744,
+              "cache_read_input_tokens": 306432,
+              "output_tokens": 5897,
+              "cost_usd": 0.2048
             }
           },
           "results": [
@@ -10952,10 +11968,10 @@
               "id": "doc-multi-file-package",
               "passed": true,
               "measured": {
-                "input_tokens": 5220,
-                "cache_read_input_tokens": 76288,
-                "output_tokens": 1732,
-                "cost_usd": 0.043718
+                "input_tokens": 19813,
+                "cache_read_input_tokens": 163456,
+                "output_tokens": 2307,
+                "cost_usd": 0.102505
               },
               "summary": {
                 "passed": 10,
@@ -10964,17 +11980,17 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 28.5
+                "executor_duration_seconds": 36.2
               }
             },
             {
               "id": "doc-single-file-package",
               "passed": true,
               "measured": {
-                "input_tokens": 3700,
-                "cache_read_input_tokens": 74752,
-                "output_tokens": 1232,
-                "cost_usd": 0.037218
+                "input_tokens": 3734,
+                "cache_read_input_tokens": 61056,
+                "output_tokens": 1093,
+                "cost_usd": 0.032343
               },
               "summary": {
                 "passed": 7,
@@ -10983,17 +11999,17 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 20.2
+                "executor_duration_seconds": 18.9
               }
             },
             {
               "id": "cobra-docgen",
               "passed": true,
               "measured": {
-                "input_tokens": 5884,
-                "cache_read_input_tokens": 48512,
-                "output_tokens": 2439,
-                "cost_usd": 0.040956
+                "input_tokens": 15197,
+                "cache_read_input_tokens": 81920,
+                "output_tokens": 2497,
+                "cost_usd": 0.069952
               },
               "summary": {
                 "passed": 6,
@@ -11002,8 +12018,531 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 31
+                "executor_duration_seconds": 30.4
               }
+            }
+          ]
+        }
+      }
+    },
+    "xai/grok-4.6": {
+      "triggers": {
+        "provider": "xai",
+        "model": "grok-4.6",
+        "display": "Grok 4.6",
+        "harness": "grok",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:53:02Z",
+        "executed": true,
+        "content_hash": "a1e2d73405336dfc12e64a56ca3b24e0ddc9010d2d5c91f52db3e2de05b9748f",
+        "runs_per_query": 3,
+        "timeout_seconds": 120,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "query": "Add doc comments to the exported functions in this Go package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.7,
+            "spec_hash": "fd98ae88ad3a25f3fdf34c5e8ca0323cca089e6038e1a2c6d0cb49e2db891be8"
+          },
+          {
+            "query": "Write a package comment for internal/clientmap",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.9,
+            "spec_hash": "bcab40145d7e8ef9d8fed39ebc78f7c5279fbbc0ee252571c6eb986f87ebfcb2"
+          },
+          {
+            "query": "Should the package comment go in doc.go or at the top of an existing file?",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.3,
+            "spec_hash": "fe70ba0cd52aa9919c1a91dcb245f0a615480a4f2ea52d020df4526a7b5aa763"
+          },
+          {
+            "query": "Document the exported API of this Go module",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.1,
+            "spec_hash": "8439aeb29e0aa8e97007e2d2fced2d629f2f76b3ff1b1bc45e5ae4aad11f36b7"
+          },
+          {
+            "query": "Generate markdown CLI docs for my cobra tool",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "spec_hash": "e728f225b099fa6af63f008ec0ad69f86aa7829a8045f5100ceb1bf6e69967e5"
+          },
+          {
+            "query": "Make my Go CLI's documentation consumable by LLMs",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7.6,
+            "spec_hash": "77cd4d8062f28fa57058dbdbca85ab734c6a09c4121eaca35063e0f5428f6d3e"
+          },
+          {
+            "query": "Review this Go package for missing godoc comments",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 6.5,
+            "spec_hash": "f52908ad0cc1857a7f97db483c75239b324f9d8b9f54145cb4ff2328f7b61dd2"
+          },
+          {
+            "query": "Add a doc.go to this package",
+            "should_trigger": true,
+            "hits": 3,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "334c2e07db702839b14329a28522b2e3f403a4529ee419e259257dff9851577b"
+          },
+          {
+            "query": "Write a README for this Go project",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.5,
+            "spec_hash": "756a0cc1e508c485eba577154206471f1b69bf2c12460ae419ef875d90e13b81"
+          },
+          {
+            "query": "Add inline comments explaining how this Go algorithm works",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 5.4,
+            "spec_hash": "b5cfd1dd46772595323f8d48ce6d6884d7e25885ad81fdf5cd53e210cb9cda30"
+          },
+          {
+            "query": "Write table-driven tests for this Go function",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 8.5,
+            "spec_hash": "75eb0dbf254924451b3ba9562e2d05c52624dc6eeb199474803d2bfe8fb6b39c"
+          },
+          {
+            "query": "Scaffold a new Go service with cmd and internal layout",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 13.5,
+            "spec_hash": "9eef8ddfa03d8db7007e8bb19541b1d9aea21ebc47de4382be746f6c295d7ab7"
+          },
+          {
+            "query": "Add docstrings to this Python module",
+            "should_trigger": false,
+            "hits": 0,
+            "runs": 3,
+            "passed": true,
+            "avg_run_seconds": 7,
+            "spec_hash": "45e3584d3534540db1bd7416654885916a01f1587f63152a0dfc4c42d29610a9"
+          },
+          {
+            "query": "Generate OpenAPI docs for my Go REST API",
+            "should_trigger": false,
+            "hits": 3,
+            "runs": 3,
+            "passed": false,
+            "avg_run_seconds": 6.9,
+            "spec_hash": "4f1002296f70d5bc4826434469e7cbd686caa1a207f72c381c028ae54a2e0052"
+          }
+        ],
+        "summary": {
+          "passed": 10,
+          "failed": 4,
+          "total": 14,
+          "pass_rate": 0.714286,
+          "avg_run_seconds": 6.9
+        }
+      },
+      "evals": {
+        "provider": "xai",
+        "model": "grok-4.6",
+        "display": "Grok 4.6",
+        "harness": "grok",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-15T02:57:32Z",
+        "executed": true,
+        "content_hash": "df4bcb0a1a0fe916fe054c07c5aab7db223f83b42414a1aead73fbcc59eaefe3",
+        "timeout_seconds": 600,
+        "pricing": {
+          "input_per_mtok": 2,
+          "output_per_mtok": 6
+        },
+        "results": [
+          {
+            "id": "doc-multi-file-package",
+            "passed": true,
+            "measured": {
+              "input_tokens": 27970,
+              "cache_read_input_tokens": 59008,
+              "output_tokens": 3849,
+              "cost_usd": 0.018451
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "internal/keyval/doc.go",
+                "text": "file internal/keyval/doc.go exists",
+                "passed": true,
+                "evidence": "internal/keyval/doc.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/keyval/doc.go",
+                "pattern": "^// Package keyval ",
+                "text": "internal/keyval/doc.go matches /^// Package keyval /",
+                "passed": true,
+                "evidence": "// Package keyval ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/keyval/store.go",
+                "pattern": "^// Store ",
+                "text": "internal/keyval/store.go matches /^// Store /",
+                "passed": true,
+                "evidence": "// Store ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/keyval/store.go",
+                "pattern": "^// NewStore ",
+                "text": "internal/keyval/store.go matches /^// NewStore /",
+                "passed": true,
+                "evidence": "// NewStore ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/keyval/store.go",
+                "pattern": "^// Get ",
+                "text": "internal/keyval/store.go matches /^// Get /",
+                "passed": true,
+                "evidence": "// Get ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/keyval/parse.go",
+                "pattern": "^// Parse ",
+                "text": "internal/keyval/parse.go matches /^// Parse /",
+                "passed": true,
+                "evidence": "// Parse ",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/keyval/store.go",
+                "pattern": "^// Package",
+                "text": "internal/keyval/store.go does not match /^// Package/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "not_regex",
+                "path": "internal/keyval/parse.go",
+                "pattern": "^// Package",
+                "text": "internal/keyval/parse.go does not match /^// Package/",
+                "passed": true,
+                "evidence": "no match",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l .)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l .)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 10,
+              "failed": 0,
+              "total": 10,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 90827,
+              "executor_duration_seconds": 58.9
+            },
+            "spec_hash": "7a4c1af7ff09cb1efcba901291cbad770405f31bb4f8acbeaf498e0f875a96a3"
+          },
+          {
+            "id": "doc-single-file-package",
+            "passed": true,
+            "measured": {
+              "input_tokens": 24602,
+              "cache_read_input_tokens": 27520,
+              "output_tokens": 1819,
+              "cost_usd": 0.012559
+            },
+            "expectations": [
+              {
+                "type": "file_absent",
+                "path": "internal/version/doc.go",
+                "text": "file internal/version/doc.go is absent",
+                "passed": true,
+                "evidence": "internal/version/doc.go missing",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/version/version.go",
+                "pattern": "^// Package version ",
+                "text": "internal/version/version.go matches /^// Package version /",
+                "passed": true,
+                "evidence": "// Package version ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/version/version.go",
+                "pattern": "^[\\t ]*// Version ",
+                "text": "internal/version/version.go matches /^[\\t ]*// Version /",
+                "passed": true,
+                "evidence": "\t// Version ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/version/version.go",
+                "pattern": "^[\\t ]*// Commit ",
+                "text": "internal/version/version.go matches /^[\\t ]*// Commit /",
+                "passed": true,
+                "evidence": "\t// Commit ",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/version/version.go",
+                "pattern": "^[\\t ]*// BuildDate ",
+                "text": "internal/version/version.go matches /^[\\t ]*// BuildDate /",
+                "passed": true,
+                "evidence": "\t// BuildDate ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "go vet ./...",
+                "requires": "go",
+                "text": "command `go vet ./...` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              },
+              {
+                "type": "command",
+                "run": "test -z \"$(gofmt -l .)\"",
+                "requires": "gofmt",
+                "text": "command `test -z \"$(gofmt -l .)\"` exits 0",
+                "passed": true,
+                "evidence": "exit 0: ",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 7,
+              "failed": 0,
+              "total": 7,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 53941,
+              "executor_duration_seconds": 25.3
+            },
+            "spec_hash": "3a05689cd57f1ff4001f3985dd250543a60bf8b7fb88cd47bec3166d978ec55f"
+          },
+          {
+            "id": "cobra-docgen",
+            "passed": true,
+            "measured": {
+              "input_tokens": 8580,
+              "cache_read_input_tokens": 81408,
+              "output_tokens": 4628,
+              "cost_usd": 0.014557
+            },
+            "expectations": [
+              {
+                "type": "file_exists",
+                "path": "internal/tools/docgen/main.go",
+                "text": "file internal/tools/docgen/main.go exists",
+                "passed": true,
+                "evidence": "internal/tools/docgen/main.go exists",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/tools/docgen/main.go",
+                "pattern": "spf13/cobra/doc",
+                "text": "internal/tools/docgen/main.go matches /spf13/cobra/doc/",
+                "passed": true,
+                "evidence": "spf13/cobra/doc",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/tools/docgen/main.go",
+                "pattern": "DisableAutoGenTag",
+                "text": "internal/tools/docgen/main.go matches /DisableAutoGenTag/",
+                "passed": true,
+                "evidence": "DisableAutoGenTag",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/tools/docgen/main.go",
+                "pattern": "GenMarkdownTree",
+                "text": "internal/tools/docgen/main.go matches /GenMarkdownTree/",
+                "passed": true,
+                "evidence": "GenMarkdownTree",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "internal/cli/root.go",
+                "pattern": "func Root\\(\\) \\*cobra\\.Command",
+                "text": "internal/cli/root.go matches /func Root\\(\\) \\*cobra\\.Command/",
+                "passed": true,
+                "evidence": "func Root() *cobra.Command",
+                "source": "assertion"
+              },
+              {
+                "type": "regex",
+                "path": "Makefile",
+                "pattern": "go run \\./internal/tools/docgen",
+                "text": "Makefile matches /go run \\./internal/tools/docgen/",
+                "passed": true,
+                "evidence": "go run ./internal/tools/docgen",
+                "source": "assertion"
+              }
+            ],
+            "summary": {
+              "passed": 6,
+              "failed": 0,
+              "total": 6,
+              "pass_rate": 1
+            },
+            "timing": {
+              "total_tokens": 94616,
+              "executor_duration_seconds": 63.7
+            },
+            "spec_hash": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
+          }
+        ],
+        "summary": {
+          "passed": 3,
+          "failed": 0,
+          "total": 3,
+          "pass_rate": 1,
+          "avg_run_seconds": 49.3,
+          "measured": {
+            "input_tokens": 61152,
+            "cache_read_input_tokens": 167936,
+            "output_tokens": 10296,
+            "cost_usd": 0.045567
+          }
+        },
+        "baseline": {
+          "ran_at": "2026-08-15T02:57:32Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "errored": 1,
+            "total": 3,
+            "pass_rate": 1,
+            "avg_run_seconds": 141.5,
+            "measured": {
+              "input_tokens": 96337,
+              "cache_read_input_tokens": 904960,
+              "output_tokens": 12558,
+              "cost_usd": 0.122485
+            }
+          },
+          "results": [
+            {
+              "id": "doc-multi-file-package",
+              "runtime_error": "grok session cancelled (headless permission prompt)",
+              "timing": {
+                "executor_duration_seconds": 109.7
+              },
+              "fingerprint": "7a4c1af7ff09cb1efcba901291cbad770405f31bb4f8acbeaf498e0f875a96a3"
+            },
+            {
+              "id": "doc-single-file-package",
+              "passed": true,
+              "measured": {
+                "input_tokens": 46476,
+                "cache_read_input_tokens": 466688,
+                "output_tokens": 6496,
+                "cost_usd": 0.062096
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 108.6
+              },
+              "fingerprint": "3a05689cd57f1ff4001f3985dd250543a60bf8b7fb88cd47bec3166d978ec55f"
+            },
+            {
+              "id": "cobra-docgen",
+              "passed": true,
+              "measured": {
+                "input_tokens": 49861,
+                "cache_read_input_tokens": 438272,
+                "output_tokens": 6062,
+                "cost_usd": 0.060389
+              },
+              "summary": {
+                "passed": 6,
+                "failed": 0,
+                "total": 6,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 206.2
+              },
+              "fingerprint": "a2e1c4803a39b2207562e7870da819b6081f61b523850b578eb07470d29d848f"
             }
           ]
         }
