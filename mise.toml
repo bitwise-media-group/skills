@@ -26,4 +26,16 @@ includes = ["tasks.toml"]
 
 [tools]
 "github:bitwise-media-group/evolve" = "0.7.0"
-"aqua:anthropics/claude-code" = "2.1.224"
+# claude-code uses the `github:` backend, not `aqua:`: mise <= 2026.8.5 has a
+# bug merging the aqua registry's per-OS `overrides` for this package (the
+# Linux entries only set `variants`, not `format`, and mise fails to inherit
+# the parent `format: tar.gz` -- it installs the raw, unextracted tar.gz
+# renamed to `claude` instead of the binary inside it, so `claude` -- and
+# `mise run plugin-validate` -- fails with "Syntax error" on Linux only,
+# since it's actually being shell-interpreted). The `github:` backend
+# resolves the OS/arch asset directly against the release without going
+# through that override-merge path, and adds attestation/provenance
+# verification on top of the checksum. Fixed upstream by jdx/mise#11925 and
+# jdx/mise#11931 (in mise 2026.8.6), but the CI reusable workflow currently
+# pins an older mise -- switch back to `aqua:` once it's bumped past 2026.8.6.
+"github:anthropics/claude-code" = "2.1.224"

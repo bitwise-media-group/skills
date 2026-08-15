@@ -6,25 +6,20 @@
 # everything specific to a plugin/marketplace repo: the evolve eval suite
 # (reading .evolve.json at the root) and the plugin/marketplace checks
 # ported from the old Makefile — `claude plugin validate` runs the claude
-# CLI as a task-scoped mise tool (a native release binary from the aqua
-# registry, checksum-verified — no npm, no node_modules; task-scoped so it
-# never shadows a developer's own claude on the activated PATH), the eval
-# fixtures must be valid JSON (checked with the pinned node — no jq
-# dependency), and the installer must parse.
+# CLI as a pinned mise tool (a native release binary resolved via mise's
+# `github:` backend directly against the GitHub release, checksum- and
+# attestation-verified — no npm, no node_modules; see mise.toml for why it's
+# `github:anthropics/claude-code` rather than `aqua:`), the eval fixtures
+# must be valid JSON (checked with the pinned node — no jq dependency), and
+# the installer must parse.
 #
 # The eval tiers keep their old Makefile names (triggers/evals/all/report)
 # and default to --new --modified: full runs are LLM-priced, so the sweep is
 # opt-in via `evolve` directly rather than a task default.
 #
-# evolve is pinned in the root mise.toml [tools] (see that file's header), so
-# every task below can just call it directly. claude-code stays task-scoped:
-# its pin is exact and bumped by hand, since task-scoped tools sit outside
-# mise.lock and `mise upgrade --bump`, and dependabot doesn't see it without
-# a package.json. mise only resolves a task's `tools` when that task is
-# depended on or invoked directly, not when it's reached through a
-# `{ task = "..." }` entry in another task's `run` list, so `lint` reaches
-# plugin-validate via a real nested `mise run plugin-validate` invocation
-# instead of a `{ task = ... }` entry.
+# evolve and claude-code are both pinned in the root mise.toml [tools] (see
+# that file's header), so every task below can just call them directly and
+# both pins are covered by mise.lock and `mise upgrade --bump`.
 
 [evolve-checks]
 hide = true
@@ -34,15 +29,7 @@ run = "evolve run checks --strict"
 [plugin-validate]
 hide = true
 dir = "{{config_root}}"
-run = """
-set -x
-df -h
-ls -la "$(command -v claude)"
-file "$(command -v claude)"
-sha256sum "$(command -v claude)"
-set +x
-claude plugin validate .
-"""
+run = "claude plugin validate ."
 
 [fixture-json]
 hide = true
