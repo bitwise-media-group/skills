@@ -2,7 +2,6 @@
 .claude/plans/
 
 # tooling
-node_modules/
 .venv/
 .bin/
 

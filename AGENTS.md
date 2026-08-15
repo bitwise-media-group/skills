@@ -84,11 +84,11 @@ make lint                         # markdownlint + evolve Tier 0 checks + eval J
 Every task is a mise task from the toolchain library (the `.mise/` submodule, agent-plugins archetype plus the
 repo-local `tasks.toml`); the Makefile only forwards, so `make <task>` and `mise run <task>` are interchangeable.
 Developer CLIs (`prettier`, `markdownlint-cli2`, `addlicense`, …) are mise pins from the library; `evolve` is
-task-scoped by the archetype (installed into the task environment, never on the activated PATH) and the claude CLI
-installs out of `node_modules` (locked by `package-lock.json` — no npx, no globals). The behavioral tiers run through
-`evolve` too: `make triggers` (Tier 1), `make evals` (Tier 2), `make all` (all tiers plus reports), and `make report` to
-regenerate the EVALUATION files. Filter or tune a run with evolve's own flags, e.g.
-`evolve run triggers --skill <name> --models <ids> --runs <n> --jobs <n>` (a locally installed evolve, or
+task-scoped by the archetype (installed into the task environment, never on the activated PATH) and the claude CLI is
+task-scoped the same way in `tasks.toml` (`aqua:anthropics/claude-code`, an exact pin — no npm, no package.json, no
+globals). The behavioral tiers run through `evolve` too: `make triggers` (Tier 1), `make evals` (Tier 2), `make all`
+(all tiers plus reports), and `make report` to regenerate the EVALUATION files. Filter or tune a run with evolve's own
+flags, e.g. `evolve run triggers --skill <name> --models <ids> --runs <n> --jobs <n>` (a locally installed evolve, or
 `mise install github:bitwise-media-group/evolve@latest` to get one).
 
 ## Markdown style

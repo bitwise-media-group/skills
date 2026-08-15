@@ -4,9 +4,9 @@
 # Caller for the reusable CodeQL security analysis. This marketplace ships markdown
 # skills + JSON manifests; its only first-class executable surface is the GitHub
 # Actions workflows, so the scan is pinned to the `actions` language (build-free)
-# via the `languages` input. That override skips the reusable's root detection,
-# which would otherwise add an empty javascript-typescript leg for the tooling-only
-# package.json (prettier/markdownlint) — there is no first-party JS/TS to scan. The
+# via the `languages` input. That override skips the reusable's root detection —
+# there is no package.json (all tooling is mise-pinned) and no first-party JS/TS
+# to scan. The
 # Go files under plugins/ are out-of-tree eval fixtures with no root build graph
 # (there is no root go.mod), so no go leg either.
 #

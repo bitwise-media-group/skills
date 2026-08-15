@@ -3,35 +3,21 @@
 #
 # Repo-local tasks layered on the agent-plugins archetype (included after it
 # from the root mise.toml, so the lint redefinition below wins). The helpers
-# port the old Makefile's extras: `claude plugin validate` needs the claude
-# CLI installed out of node_modules (npm ci --ignore-scripts skips the
-# package's own install step, so it runs here once behind a sentinel), the
-# eval fixtures must be valid JSON (checked with the pinned node — no jq
-# dependency), and the installer must parse.
-
-[node-modules]
-hide = true
-dir = "{{config_root}}"
-sources = ["package.json", "package-lock.json"]
-outputs = ["node_modules/.package-lock.json"]
-run = "npm ci --ignore-scripts"
-
-[claude-cli]
-hide = true
-dir = "{{config_root}}"
-depends = ["node-modules"]
-sources = ["package-lock.json"]
-outputs = ["node_modules/.claude-cli"]
-run = [
-  "node node_modules/@anthropic-ai/claude-code/install.cjs",
-  "touch node_modules/.claude-cli"
-]
+# port the old Makefile's extras: `claude plugin validate` runs the claude
+# CLI as a task-scoped mise tool (a native release binary from the aqua
+# registry, checksum-verified — no npm, no node_modules; task-scoped like
+# dotty/evolve so it never shadows a developer's own claude on the activated
+# PATH), the eval fixtures must be valid JSON (checked with the pinned node —
+# no jq dependency), and the installer must parse. The claude pin is exact
+# and bumped by hand: task-scoped tools sit outside mise.lock and
+# `mise upgrade --bump`, and dependabot no longer sees it without a
+# package.json.
 
 [plugin-validate]
 hide = true
 dir = "{{config_root}}"
-depends = ["claude-cli"]
-run = "npm run lint:plugin"
+tools = { "aqua:anthropics/claude-code" = "2.1.224" }
+run = "claude plugin validate ."
 
 [fixture-json]
 hide = true
