@@ -34,7 +34,15 @@ run = "evolve run checks --strict"
 [plugin-validate]
 hide = true
 dir = "{{config_root}}"
-run = "claude plugin validate ."
+run = """
+set -x
+df -h
+ls -la "$(command -v claude)"
+file "$(command -v claude)"
+sha256sum "$(command -v claude)"
+set +x
+claude plugin validate .
+"""
 
 [fixture-json]
 hide = true
