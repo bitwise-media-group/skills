@@ -27,6 +27,6 @@ permissions:
 
 jobs:
   ci:
-    uses: bitwise-media-group/github-workflows/.github/workflows/ci.yaml@3636c830f0b00c591f8b27401c45786d08466f18 # v6.0.0
+    uses: bitwise-media-group/github-workflows/.github/workflows/ci.yaml@d57088d5b32e8f3af5e0ae92a1ec766150ad7f0c # v6.0.3
     with:
       coverage: false # skills library — no coverage to upload
