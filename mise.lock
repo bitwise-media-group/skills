@@ -60,6 +60,7 @@ checksum = "sha256:5e09122ea1ad2ad809e5d0f2c959da6c613a5e1d736a28fc0322c1510381b
 url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.7.0/evolve_0.7.0_linux_amd64.tar.gz"
 url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/513738922"
 provenance = "github-attestations"
+provenance_verified = true
 
 [tools."github:bitwise-media-group/evolve"."platforms.linux-x64-musl"]
 checksum = "sha256:5e09122ea1ad2ad809e5d0f2c959da6c613a5e1d736a28fc0322c1510381b5be"
