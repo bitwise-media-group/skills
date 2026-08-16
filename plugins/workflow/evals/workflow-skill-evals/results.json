@@ -444,8 +444,8 @@
         "model": "claude-haiku-4-5",
         "display": "Claude Haiku 4.5",
         "harness": "claude",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-28T06:47:00Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-16T13:00:55Z",
         "executed": true,
         "content_hash": "249c18cead72479d1c8014bfb25131b7b97689189d9d7bb931c4ecd368291d58",
         "timeout_seconds": 600,
@@ -463,18 +463,18 @@
               "input_cost_usd": 0.002431
             },
             "measured": {
-              "input_tokens": 32,
-              "cache_read_input_tokens": 91295,
-              "cache_creation_input_tokens": 38527,
-              "output_tokens": 2735,
-              "cost_usd": 0.100568
+              "input_tokens": 36,
+              "cache_read_input_tokens": 118877,
+              "cache_creation_input_tokens": 16603,
+              "output_tokens": 2927,
+              "cost_usd": 0.060458
             },
             "expectations": [
               {
                 "type": "llm",
                 "text": "The generated triggers include near-miss negatives that are close to the greeting or messaging domain, not only unrelated prompts.",
                 "passed": true,
-                "evidence": "Near-miss negatives include 'Write a welcome message' (missing name), 'Create a birthday greeting for Alice' (wrong greeting type), 'Generate an apology letter for Bob', 'Write a thank you note to the",
+                "evidence": "triggers.json negatives (should_trigger:false) are all near-miss: 'Greet the user in the console output', 'Create a welcome banner in JSON format', 'Design a welcome card with HTML and CSS', 'Write gr",
                 "source": "expectation"
               },
               {
@@ -545,10 +545,10 @@
               "total_tool_calls": 4
             },
             "timing": {
-              "total_tokens": 132589,
-              "executor_duration_seconds": 35.6
+              "total_tokens": 138443,
+              "executor_duration_seconds": 33.8
             },
-            "spec_hash": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+            "spec_hash": "c136f0ff80211b1e24254adc00ab66194fa8af3e44305ee2699db96456ab0cb8"
           },
           {
             "id": "balance-positives-only-triggers",
@@ -559,11 +559,11 @@
               "input_cost_usd": 0.002413
             },
             "measured": {
-              "input_tokens": 35,
-              "cache_read_input_tokens": 105677,
-              "cache_creation_input_tokens": 17302,
-              "output_tokens": 1559,
-              "cost_usd": 0.053666
+              "input_tokens": 22,
+              "cache_read_input_tokens": 42621,
+              "cache_creation_input_tokens": 32520,
+              "output_tokens": 1097,
+              "cost_usd": 0.075484
             },
             "expectations": [
               {
@@ -593,17 +593,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 1,
                 "Edit": 1,
-                "Read": 4
+                "Read": 2
               },
-              "total_tool_calls": 6
+              "total_tool_calls": 3
             },
             "timing": {
-              "total_tokens": 124573,
-              "executor_duration_seconds": 16.1
+              "total_tokens": 76260,
+              "executor_duration_seconds": 14.2
             },
-            "spec_hash": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+            "spec_hash": "c5e8bd720744f3c80562a00628362a916c3ccdd037a0e351a572e22ec55c5acb"
           }
         ],
         "summary": {
@@ -611,33 +610,33 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 25.9,
+          "avg_run_seconds": 24,
           "estimate": {
             "input_tokens": 4844,
             "input_cost_usd": 0.004844
           },
           "measured": {
-            "input_tokens": 67,
-            "cache_read_input_tokens": 196972,
-            "cache_creation_input_tokens": 55829,
-            "output_tokens": 4294,
-            "cost_usd": 0.154234
+            "input_tokens": 58,
+            "cache_read_input_tokens": 161498,
+            "cache_creation_input_tokens": 49123,
+            "output_tokens": 4024,
+            "cost_usd": 0.135942
           }
         },
         "baseline": {
-          "ran_at": "2026-06-28T06:47:00Z",
+          "ran_at": "2026-08-16T13:00:55Z",
           "summary": {
             "passed": 1,
             "failed": 1,
             "total": 2,
             "pass_rate": 0.5,
-            "avg_run_seconds": 26,
+            "avg_run_seconds": 26.6,
             "measured": {
-              "input_tokens": 60,
-              "cache_read_input_tokens": 244981,
-              "cache_creation_input_tokens": 51580,
-              "output_tokens": 4894,
-              "cost_usd": 0.153524
+              "input_tokens": 65,
+              "cache_read_input_tokens": 233914,
+              "cache_creation_input_tokens": 23922,
+              "output_tokens": 4820,
+              "cost_usd": 0.096769
             }
           },
           "results": [
@@ -645,32 +644,32 @@
               "id": "author-suite-from-skill",
               "passed": false,
               "measured": {
-                "input_tokens": 38,
-                "cache_read_input_tokens": 204683,
-                "cache_creation_input_tokens": 18979,
-                "output_tokens": 3524,
-                "cost_usd": 0.076761
+                "input_tokens": 43,
+                "cache_read_input_tokens": 168346,
+                "cache_creation_input_tokens": 13405,
+                "output_tokens": 3707,
+                "cost_usd": 0.062916
               },
               "summary": {
-                "passed": 6,
-                "failed": 1,
+                "passed": 3,
+                "failed": 4,
                 "total": 7,
-                "pass_rate": 0.857143
+                "pass_rate": 0.428571
               },
               "timing": {
-                "executor_duration_seconds": 37.3
+                "executor_duration_seconds": 39.4
               },
-              "fingerprint": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+              "fingerprint": "c136f0ff80211b1e24254adc00ab66194fa8af3e44305ee2699db96456ab0cb8"
             },
             {
               "id": "balance-positives-only-triggers",
               "passed": true,
               "measured": {
                 "input_tokens": 22,
-                "cache_read_input_tokens": 40298,
-                "cache_creation_input_tokens": 32601,
-                "output_tokens": 1370,
-                "cost_usd": 0.076763
+                "cache_read_input_tokens": 65568,
+                "cache_creation_input_tokens": 10517,
+                "output_tokens": 1113,
+                "cost_usd": 0.033853
               },
               "summary": {
                 "passed": 2,
@@ -679,30 +678,30 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 14.7
+                "executor_duration_seconds": 13.8
               },
-              "fingerprint": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+              "fingerprint": "c5e8bd720744f3c80562a00628362a916c3ccdd037a0e351a572e22ec55c5acb"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-06-28T05:19:21Z",
+          "ran_at": "2026-06-28T06:47:00Z",
           "summary": {
-            "passed": 1,
-            "failed": 1,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0.5,
-            "avg_run_seconds": 24.1,
+            "pass_rate": 1,
+            "avg_run_seconds": 25.9,
             "estimate": {
               "input_tokens": 4844,
               "input_cost_usd": 0.004844
             },
             "measured": {
-              "input_tokens": 54,
-              "cache_read_input_tokens": 131828,
-              "cache_creation_input_tokens": 71560,
-              "output_tokens": 3970,
-              "cost_usd": 0.177543
+              "input_tokens": 67,
+              "cache_read_input_tokens": 196972,
+              "cache_creation_input_tokens": 55829,
+              "output_tokens": 4294,
+              "cost_usd": 0.154234
             }
           },
           "results": [
@@ -732,26 +731,26 @@
             },
             {
               "id": "balance-positives-only-triggers",
-              "passed": false,
+              "passed": true,
               "estimate": {
                 "input_tokens": 2413,
                 "input_cost_usd": 0.002413
               },
               "measured": {
-                "input_tokens": 22,
-                "cache_read_input_tokens": 40533,
-                "cache_creation_input_tokens": 33033,
-                "output_tokens": 1235,
-                "cost_usd": 0.076975
+                "input_tokens": 35,
+                "cache_read_input_tokens": 105677,
+                "cache_creation_input_tokens": 17302,
+                "output_tokens": 1559,
+                "cost_usd": 0.053666
               },
               "summary": {
                 "passed": 2,
-                "failed": 1,
-                "total": 3,
-                "pass_rate": 0.666667
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 12.6
+                "executor_duration_seconds": 16.1
               }
             }
           ]
@@ -2589,8 +2588,8 @@
         "model": "gpt-5.4",
         "display": "GPT-5.4",
         "harness": "codex",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-28T06:50:56Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-16T13:05:27Z",
         "executed": true,
         "content_hash": "249c18cead72479d1c8014bfb25131b7b97689189d9d7bb931c4ecd368291d58",
         "timeout_seconds": 600,
@@ -2608,17 +2607,17 @@
               "input_cost_usd": 0.005368
             },
             "measured": {
-              "input_tokens": 24304,
-              "cache_read_input_tokens": 114944,
-              "output_tokens": 4566,
-              "cost_usd": 0.41661
+              "input_tokens": 39134,
+              "cache_read_input_tokens": 242944,
+              "output_tokens": 5321,
+              "cost_usd": 0.78501
             },
             "expectations": [
               {
                 "type": "llm",
                 "text": "The generated triggers include near-miss negatives that are close to the greeting or messaging domain, not only unrelated prompts.",
                 "passed": true,
-                "evidence": "Near-miss negatives include greeting/messaging-adjacent cases: wrong output medium ('Print a greeting in the terminal'), wrong filename ('Create welcome.txt'), wrong intent ('farewell note'), wrong fi",
+                "evidence": "triggers.json negatives are all near-miss to greeting/messaging domain: 'Draft a short email welcoming Ada Lovelace' (email vs file), 'Generate a colorful greeting card image for Priya' (greeting but ",
                 "source": "expectation"
               },
               {
@@ -2682,16 +2681,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 12,
+                "command_execution": 18,
                 "file_change": 1
               },
-              "total_tool_calls": 13
+              "total_tool_calls": 19
             },
             "timing": {
-              "total_tokens": 143814,
-              "executor_duration_seconds": 121.9
+              "total_tokens": 287399,
+              "executor_duration_seconds": 138.8
             },
-            "spec_hash": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+            "spec_hash": "c136f0ff80211b1e24254adc00ab66194fa8af3e44305ee2699db96456ab0cb8"
           },
           {
             "id": "balance-positives-only-triggers",
@@ -2702,10 +2701,10 @@
               "input_cost_usd": 0.005343
             },
             "measured": {
-              "input_tokens": 16417,
-              "cache_read_input_tokens": 96000,
-              "output_tokens": 1767,
-              "cost_usd": 0.307548
+              "input_tokens": 13136,
+              "cache_read_input_tokens": 73088,
+              "output_tokens": 1425,
+              "cost_usd": 0.236935
             },
             "expectations": [
               {
@@ -2741,10 +2740,10 @@
               "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 114184,
-              "executor_duration_seconds": 43.6
+              "total_tokens": 87649,
+              "executor_duration_seconds": 35.8
             },
-            "spec_hash": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+            "spec_hash": "c5e8bd720744f3c80562a00628362a916c3ccdd037a0e351a572e22ec55c5acb"
           }
         ],
         "summary": {
@@ -2752,31 +2751,31 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 82.8,
+          "avg_run_seconds": 87.3,
           "estimate": {
             "input_tokens": 4284,
             "input_cost_usd": 0.010711
           },
           "measured": {
-            "input_tokens": 40721,
-            "cache_read_input_tokens": 210944,
-            "output_tokens": 6333,
-            "cost_usd": 0.724158
+            "input_tokens": 52270,
+            "cache_read_input_tokens": 316032,
+            "output_tokens": 6746,
+            "cost_usd": 1.021945
           }
         },
         "baseline": {
-          "ran_at": "2026-06-28T06:50:56Z",
+          "ran_at": "2026-08-16T13:05:27Z",
           "summary": {
             "passed": 1,
             "failed": 1,
             "total": 2,
             "pass_rate": 0.5,
-            "avg_run_seconds": 107.5,
+            "avg_run_seconds": 57.5,
             "measured": {
-              "input_tokens": 92213,
-              "cache_read_input_tokens": 566400,
-              "output_tokens": 8614,
-              "cost_usd": 1.775743
+              "input_tokens": 50003,
+              "cache_read_input_tokens": 233600,
+              "output_tokens": 4951,
+              "cost_usd": 0.783273
             }
           },
           "results": [
@@ -2784,10 +2783,10 @@
               "id": "author-suite-from-skill",
               "passed": false,
               "measured": {
-                "input_tokens": 80227,
-                "cache_read_input_tokens": 476544,
-                "output_tokens": 7153,
-                "cost_usd": 1.499223
+                "input_tokens": 42979,
+                "cache_read_input_tokens": 198656,
+                "output_tokens": 3932,
+                "cost_usd": 0.663068
               },
               "summary": {
                 "passed": 5,
@@ -2796,18 +2795,18 @@
                 "pass_rate": 0.714286
               },
               "timing": {
-                "executor_duration_seconds": 175.1
+                "executor_duration_seconds": 84.4
               },
-              "fingerprint": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+              "fingerprint": "c136f0ff80211b1e24254adc00ab66194fa8af3e44305ee2699db96456ab0cb8"
             },
             {
               "id": "balance-positives-only-triggers",
               "passed": true,
               "measured": {
-                "input_tokens": 11986,
-                "cache_read_input_tokens": 89856,
-                "output_tokens": 1461,
-                "cost_usd": 0.27652
+                "input_tokens": 7024,
+                "cache_read_input_tokens": 34944,
+                "output_tokens": 1019,
+                "cost_usd": 0.120205
               },
               "summary": {
                 "passed": 2,
@@ -2816,29 +2815,29 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 39.9
+                "executor_duration_seconds": 30.5
               },
-              "fingerprint": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+              "fingerprint": "c5e8bd720744f3c80562a00628362a916c3ccdd037a0e351a572e22ec55c5acb"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-06-28T05:40:36Z",
+          "ran_at": "2026-06-28T06:50:56Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 85.1,
+            "avg_run_seconds": 82.8,
             "estimate": {
               "input_tokens": 4284,
               "input_cost_usd": 0.010711
             },
             "measured": {
-              "input_tokens": 41012,
-              "cache_read_input_tokens": 219136,
-              "output_tokens": 6701,
-              "cost_usd": 0.750885
+              "input_tokens": 40721,
+              "cache_read_input_tokens": 210944,
+              "output_tokens": 6333,
+              "cost_usd": 0.724158
             }
           },
           "results": [
@@ -2873,19 +2872,19 @@
                 "input_cost_usd": 0.005343
               },
               "measured": {
-                "input_tokens": 16708,
-                "cache_read_input_tokens": 104192,
-                "output_tokens": 2135,
-                "cost_usd": 0.334275
+                "input_tokens": 16417,
+                "cache_read_input_tokens": 96000,
+                "output_tokens": 1767,
+                "cost_usd": 0.307548
               },
               "summary": {
-                "passed": 3,
+                "passed": 2,
                 "failed": 0,
-                "total": 3,
+                "total": 2,
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 48.2
+                "executor_duration_seconds": 43.6
               }
             }
           ]
@@ -3333,8 +3332,8 @@
         "model": "gpt-5.5",
         "display": "GPT-5.5",
         "harness": "codex",
-        "tool_version": "0.4.0",
-        "ran_at": "2026-06-28T06:52:05Z",
+        "tool_version": "0.7.0",
+        "ran_at": "2026-08-16T13:10:00Z",
         "executed": true,
         "content_hash": "249c18cead72479d1c8014bfb25131b7b97689189d9d7bb931c4ecd368291d58",
         "timeout_seconds": 600,
@@ -3352,17 +3351,17 @@
               "input_cost_usd": 0.010735
             },
             "measured": {
-              "input_tokens": 57935,
-              "cache_read_input_tokens": 571136,
-              "output_tokens": 6706,
-              "cost_usd": 3.346535
+              "input_tokens": 37814,
+              "cache_read_input_tokens": 381824,
+              "output_tokens": 7055,
+              "cost_usd": 2.30984
             },
             "expectations": [
               {
                 "type": "llm",
                 "text": "The generated triggers include near-miss negatives that are close to the greeting or messaging domain, not only unrelated prompts.",
                 "passed": true,
-                "evidence": "Near-miss negatives are domain-adjacent: 'Say hello to Ada in the chat, no file needed', 'Draft a welcome email for Priya', 'Write a Python CLI greeter that prints Hello, name', 'Generate a birthday c",
+                "evidence": "triggers.json contains 8 false-trigger cases that are near-misses in the greeting/messaging domain, e.g. 'Write a thank-you note for Ada Lovelace in THANKS.txt.', 'Send Jordan a personalized hello ema",
                 "source": "expectation"
               },
               {
@@ -3426,16 +3425,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 27,
+                "command_execution": 24,
                 "file_change": 2
               },
-              "total_tool_calls": 29
+              "total_tool_calls": 26
             },
             "timing": {
-              "total_tokens": 635777,
-              "executor_duration_seconds": 144.9
+              "total_tokens": 426693,
+              "executor_duration_seconds": 145
             },
-            "spec_hash": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+            "spec_hash": "c136f0ff80211b1e24254adc00ab66194fa8af3e44305ee2699db96456ab0cb8"
           },
           {
             "id": "balance-positives-only-triggers",
@@ -3446,10 +3445,10 @@
               "input_cost_usd": 0.010685
             },
             "measured": {
-              "input_tokens": 22595,
-              "cache_read_input_tokens": 68480,
-              "output_tokens": 1511,
-              "cost_usd": 0.500705
+              "input_tokens": 30705,
+              "cache_read_input_tokens": 106752,
+              "output_tokens": 1210,
+              "cost_usd": 0.723585
             },
             "expectations": [
               {
@@ -3479,16 +3478,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 4,
+                "command_execution": 8,
                 "file_change": 1
               },
-              "total_tool_calls": 5
+              "total_tool_calls": 9
             },
             "timing": {
-              "total_tokens": 92586,
-              "executor_duration_seconds": 37.4
+              "total_tokens": 138667,
+              "executor_duration_seconds": 33.5
             },
-            "spec_hash": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+            "spec_hash": "c5e8bd720744f3c80562a00628362a916c3ccdd037a0e351a572e22ec55c5acb"
           }
         ],
         "summary": {
@@ -3496,62 +3495,62 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 91.2,
+          "avg_run_seconds": 89.3,
           "estimate": {
             "input_tokens": 4284,
             "input_cost_usd": 0.02142
           },
           "measured": {
-            "input_tokens": 80530,
-            "cache_read_input_tokens": 639616,
-            "output_tokens": 8217,
-            "cost_usd": 3.84724
+            "input_tokens": 68519,
+            "cache_read_input_tokens": 488576,
+            "output_tokens": 8265,
+            "cost_usd": 3.033425
           }
         },
         "baseline": {
-          "ran_at": "2026-06-28T06:52:05Z",
+          "ran_at": "2026-08-16T13:10:00Z",
           "summary": {
-            "passed": 2,
-            "failed": 0,
+            "passed": 1,
+            "failed": 1,
             "total": 2,
-            "pass_rate": 1,
-            "avg_run_seconds": 98.5,
+            "pass_rate": 0.5,
+            "avg_run_seconds": 66.9,
             "measured": {
-              "input_tokens": 56576,
-              "cache_read_input_tokens": 549376,
-              "output_tokens": 8534,
-              "cost_usd": 3.28578
+              "input_tokens": 38986,
+              "cache_read_input_tokens": 280832,
+              "output_tokens": 5055,
+              "cost_usd": 1.75074
             }
           },
           "results": [
             {
               "id": "author-suite-from-skill",
-              "passed": true,
+              "passed": false,
               "measured": {
-                "input_tokens": 41970,
-                "cache_read_input_tokens": 482944,
-                "output_tokens": 7282,
-                "cost_usd": 2.84303
+                "input_tokens": 30077,
+                "cache_read_input_tokens": 210304,
+                "output_tokens": 3831,
+                "cost_usd": 1.316835
               },
               "summary": {
-                "passed": 7,
-                "failed": 0,
+                "passed": 6,
+                "failed": 1,
                 "total": 7,
-                "pass_rate": 1
+                "pass_rate": 0.857143
               },
               "timing": {
-                "executor_duration_seconds": 166.5
+                "executor_duration_seconds": 98
               },
-              "fingerprint": "aa61b8fbccc985b0a6ad5a62220f7f3880215af215f0449e1e4906b644b21f13"
+              "fingerprint": "c136f0ff80211b1e24254adc00ab66194fa8af3e44305ee2699db96456ab0cb8"
             },
             {
               "id": "balance-positives-only-triggers",
               "passed": true,
               "measured": {
-                "input_tokens": 14606,
-                "cache_read_input_tokens": 66432,
-                "output_tokens": 1252,
-                "cost_usd": 0.44275
+                "input_tokens": 8909,
+                "cache_read_input_tokens": 70528,
+                "output_tokens": 1224,
+                "cost_usd": 0.433905
               },
               "summary": {
                 "passed": 2,
@@ -3560,29 +3559,29 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 30.5
+                "executor_duration_seconds": 35.7
               },
-              "fingerprint": "78731a2b999dbd956b97360e8a95907eb3ddc3ad9f9ab5d17864464f1348eb44"
+              "fingerprint": "c5e8bd720744f3c80562a00628362a916c3ccdd037a0e351a572e22ec55c5acb"
             }
           ]
         },
         "previous": {
-          "ran_at": "2026-06-28T05:50:00Z",
+          "ran_at": "2026-06-28T06:52:05Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 99.5,
+            "avg_run_seconds": 91.2,
             "estimate": {
               "input_tokens": 4284,
               "input_cost_usd": 0.02142
             },
             "measured": {
-              "input_tokens": 85510,
-              "cache_read_input_tokens": 686464,
-              "output_tokens": 8962,
-              "cost_usd": 4.12873
+              "input_tokens": 80530,
+              "cache_read_input_tokens": 639616,
+              "output_tokens": 8217,
+              "cost_usd": 3.84724
             }
           },
           "results": [
@@ -3617,19 +3616,19 @@
                 "input_cost_usd": 0.010685
               },
               "measured": {
-                "input_tokens": 27575,
-                "cache_read_input_tokens": 115328,
-                "output_tokens": 2256,
-                "cost_usd": 0.782195
+                "input_tokens": 22595,
+                "cache_read_input_tokens": 68480,
+                "output_tokens": 1511,
+                "cost_usd": 0.500705
               },
               "summary": {
-                "passed": 3,
+                "passed": 2,
                 "failed": 0,
-                "total": 3,
+                "total": 2,
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 54
+                "executor_duration_seconds": 37.4
               }
             }
           ]

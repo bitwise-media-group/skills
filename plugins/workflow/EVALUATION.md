@@ -466,18 +466,18 @@
 
 | Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +0% | +14% | 35.6s | 2,431 | $0.0024 | 32/2,735 | 91,295/38,527 | $0.1006 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +0% | +57% | 33.8s | 2,431 | $0.0024 | 36/2,927 | 118,877/16,603 | $0.0605 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +43% | 213.7s | 3,265 | $0.0163 | 3,098/15,127 | 282,103/76,778 | $1.3082 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +0% | 215.0s | 2,431 | $0.0073 | 13/8,390 | 282,647/39,748 | $0.4913 |
-| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +29% | 121.9s | 2,147 | $0.0054 | 24,304/4,566 | 114,944/— | $0.4166 |
-| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 144.9s | 2,147 | $0.0107 | 57,935/6,706 | 571,136/— | $3.3465 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +29% | 138.8s | 2,147 | $0.0054 | 39,134/5,321 | 242,944/— | $0.7850 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +14% | 145.0s | 2,147 | $0.0107 | 37,814/7,055 | 381,824/— | $2.3098 |
 
 #### balance-positives-only-triggers — Balance a positives-only triggers file with near-miss negatives
 
 | Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +33% | +0% | 16.1s | 2,413 | $0.0024 | 35/1,559 | 105,677/17,302 | $0.0537 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +0% | +0% | 14.2s | 2,413 | $0.0024 | 22/1,097 | 42,621/32,520 | $0.0755 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +0% | 67.1s | 3,232 | $0.0162 | 2,828/4,544 | 88,292/13,729 | $0.3098 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +33% | +0% | 23.9s | 2,413 | $0.0072 | 5/1,262 | 62,610/9,212 | $0.0937 |
-| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 43.6s | 2,137 | $0.0053 | 16,417/1,767 | 96,000/— | $0.3075 |
-| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 37.4s | 2,137 | $0.0107 | 22,595/1,511 | 68,480/— | $0.5007 |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 35.8s | 2,137 | $0.0053 | 13,136/1,425 | 73,088/— | $0.2369 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 33.5s | 2,137 | $0.0107 | 30,705/1,210 | 106,752/— | $0.7236 |
