@@ -53,21 +53,21 @@
       ]
     },
     {
-      "id": "wire-codeql",
-      "prompt": "Add the reusable CodeQL analysis caller workflow at .github/workflows/codeql.yaml for this repository.",
+      "id": "wire-security",
+      "prompt": "Add the reusable CodeQL security analysis caller workflow at .github/workflows/security.yaml for this repository.",
       "assertions": [
         {
           "type": "file_exists",
-          "path": ".github/workflows/codeql.yaml"
+          "path": ".github/workflows/security.yaml"
         },
         {
           "type": "regex",
-          "path": ".github/workflows/codeql.yaml",
-          "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/codeql\\.yaml@"
+          "path": ".github/workflows/security.yaml",
+          "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/security\\.yaml@"
         },
         {
           "type": "regex",
-          "path": ".github/workflows/codeql.yaml",
+          "path": ".github/workflows/security.yaml",
           "pattern": "security-events:\\s*write"
         }
       ]

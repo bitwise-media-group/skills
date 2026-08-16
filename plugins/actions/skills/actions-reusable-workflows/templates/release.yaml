@@ -2,15 +2,18 @@
 # the push trigger and grants the release permissions; the reusable release
 # workflow runs release-please (two-pass) then, when a .goreleaser.yaml exists,
 # GoReleaser (archives, checksums, SBOMs, cosign signatures, optional Homebrew
-# cask, SLSA attestation) -- otherwise it rebuilds via `make build` and verifies a
-# committed dist/. With vanity-tags: true it also moves the floating v1 / v1.1
-# tags.
+# cask, SLSA attestation), and when a zensical.toml exists, rebuilds the docs site
+# and publishes it to GitHub Pages -- independent of GoReleaser, so one release can
+# ship both. With vanity-tags: true it also moves the floating v1 / v1.1 tags.
 #
-# The repo must provide release-please-config.json + .release-please-manifest.json
-# and a Makefile `build` target (a no-op is fine). Go repos add a .goreleaser.yaml
-# (release-type: go, draft: true); Actions repos commit dist/.
+# The repo must provide release-please-config.json + .release-please-manifest.json.
+# Go repos add a .goreleaser.yaml (release-type: go, draft: true); Actions repos
+# that commit dist/ set vanity-tags: true; repos publishing docs add a
+# zensical.toml (+ pyproject.toml + uv.lock) and set Pages to "GitHub Actions" in
+# repo settings.
 #
-# Pin @v2 to a release tag or full commit SHA -- see README "Pinning".
+# Pin to a full commit SHA or a release tag -- see README "Pinning". Re-resolve
+# the latest before copying: see the skill's "Pinning" section.
 
 name: Release
 
@@ -18,7 +21,10 @@ on:
   push:
     branches: [main]
 
-# ceiling for the reusable workflow's release-please + goreleaser/publish jobs
+# ceiling for the reusable workflow's release-please + goreleaser/publish/docs
+# jobs. GitHub resolves a reusable workflow's permissions as the union of every
+# job and ignores `if:`, so grant every scope below even without a
+# .goreleaser.yaml or zensical.toml -- a missing scope fails the run at startup.
 permissions:
   # create the release/tag, move vanity tags, and upload assets
   contents: write
@@ -26,20 +32,30 @@ permissions:
   issues: write
   # release-please opens the release pull request
   pull-requests: write
-  # cosign keyless signing -- GoReleaser path only; drop if you have no .goreleaser.yaml
+  # cosign keyless signing (goreleaser) + the docs job's Pages OIDC deploy
   id-token: write
-  # github build-provenance attestation -- GoReleaser path only
+  # github build-provenance attestation -- goreleaser path only
   attestations: write
-  # artifact storage record for the attestation -- GoReleaser path only
+  # artifact storage record for the attestation -- goreleaser path only
   artifact-metadata: write
+  # push container images to ghcr -- goreleaser dockers_v2 path only
+  packages: write
+  # publish the docs site to GitHub Pages -- docs job, when a zensical.toml exists
+  pages: write
 
 jobs:
   release:
-    uses: bitwise-media-group/github-workflows/.github/workflows/release.yaml@v2
+    uses: bitwise-media-group/github-workflows/.github/workflows/release.yaml@1eaff010e2929a3583c50ffa325690216bc70462 # v6.2.0
     with:
       # move the floating v1 / v1.1 tags -- set for Actions/reusable repos whose
       # consumers pin @v1; drop (defaults false) for Go binaries pinned to exact versions.
       vanity-tags: true
+      # optional -- author the release PR as the "FF Merge" App instead of GITHUB_TOKEN.
+      # Needed only if you auto-merge release PRs via merge.yaml: a GITHUB_TOKEN push
+      # emits no workflow_run event, so that auto-merge path never retriggers.
+      # app-client-id: ${{ vars.FF_MERGE_CLIENT_ID }}
     secrets:
       # optional -- only needed if .goreleaser.yaml pushes a Homebrew cask to another repo
       homebrew-tap-token: ${{ secrets.HOMEBREW_TAP_GITHUB_TOKEN }}
+      # optional -- required only when app-client-id is set above
+      # app-private-key: ${{ secrets.FF_MERGE_PRIVATE_KEY }}

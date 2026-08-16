@@ -7,7 +7,8 @@
 # reusable workflow only posts a static comment with a pull-requests:write token,
 # so the elevated context is safe. No secret needed.
 #
-# Pin @v2 to a release tag or full commit SHA — see README "Pinning".
+# Pin to a full commit SHA or a release tag — see README "Pinning". Re-resolve
+# the latest before copying: see the skill's "Pinning" section.
 
 name: Fast-forward merge notice
 
@@ -21,6 +22,6 @@ permissions:
 
 jobs:
   notice:
-    uses: bitwise-media-group/github-workflows/.github/workflows/merge-notice.yaml@v2
+    uses: bitwise-media-group/github-workflows/.github/workflows/merge-notice.yaml@1eaff010e2929a3583c50ffa325690216bc70462 # v6.2.0
     with:
       pr-number: ${{ github.event.pull_request.number }}

@@ -1,0 +1,31 @@
+# Caller workflow -- copy to `.github/workflows/add-to-project.yaml` in any repo
+# (in this org the caller is fanned out to every repo automatically by
+# `org-config.sh workflows-sync` in github-settings, so most repos never need to
+# add this by hand). When an issue is opened it is added to the shared org
+# Projects v2 "Roadmap" board, so every repo's issues collect in one place.
+#
+# Org prerequisites: the "Project Sync" App (organization projects read/write,
+# repository issues + pull-requests read) installed on all repositories, exposed
+# as the ADD_TO_PROJECT_CLIENT_ID variable + ADD_TO_PROJECT_PRIVATE_KEY secret --
+# a separate App from "FF Merge" (see README "Add to Project: org setup").
+#
+# Pin to a full commit SHA or a release tag -- see README "Pinning". Re-resolve
+# the latest before copying: see the skill's "Pinning" section.
+
+name: Add to project
+
+on:
+  issues:
+    types: [opened]
+
+# the App token does the privileged work; the caller grants nothing
+permissions: {}
+
+jobs:
+  add:
+    uses: bitwise-media-group/github-workflows/.github/workflows/add-to-project.yaml@1eaff010e2929a3583c50ffa325690216bc70462 # v6.2.0
+    with:
+      project-url: https://github.com/orgs/bitwise-media-group/projects/1
+      app-client-id: ${{ vars.ADD_TO_PROJECT_CLIENT_ID }}
+    secrets:
+      app-private-key: ${{ secrets.ADD_TO_PROJECT_PRIVATE_KEY }}

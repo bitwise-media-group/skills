@@ -919,9 +919,9 @@
         "display": "Claude Haiku 4.5",
         "harness": "claude",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T06:12:01Z",
+        "ran_at": "2026-08-16T09:28:07Z",
         "executed": true,
-        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
+        "content_hash": "64fbe37d05c129c82f74f713a08129c4eaa759972e306a096482decde84adc19",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 1,
@@ -931,16 +931,12 @@
           {
             "id": "remove-pull-request-target",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1439,
-              "input_cost_usd": 0.001439
-            },
             "measured": {
-              "input_tokens": 43,
-              "cache_read_input_tokens": 121851,
-              "cache_creation_input_tokens": 10096,
-              "output_tokens": 1645,
-              "cost_usd": 0.041298
+              "input_tokens": 36,
+              "cache_read_input_tokens": 115393,
+              "cache_creation_input_tokens": 13634,
+              "output_tokens": 1840,
+              "cost_usd": 0.048681
             },
             "expectations": [
               {
@@ -987,24 +983,20 @@
               "total_tool_calls": 4
             },
             "timing": {
-              "total_tokens": 133635,
-              "executor_duration_seconds": 22.8
+              "total_tokens": 130903,
+              "executor_duration_seconds": 21.5
             },
             "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1424,
-              "input_cost_usd": 0.001424
-            },
             "measured": {
-              "input_tokens": 28,
-              "cache_read_input_tokens": 80198,
-              "cache_creation_input_tokens": 16131,
-              "output_tokens": 765,
-              "cost_usd": 0.044747
+              "input_tokens": 27,
+              "cache_read_input_tokens": 90340,
+              "cache_creation_input_tokens": 10251,
+              "output_tokens": 720,
+              "cost_usd": 0.033791
             },
             "expectations": [
               {
@@ -1034,15 +1026,15 @@
             },
             "execution_metrics": {
               "tool_calls": {
+                "Bash": 1,
                 "Edit": 1,
-                "Glob": 2,
                 "Read": 1
               },
-              "total_tool_calls": 4
+              "total_tool_calls": 3
             },
             "timing": {
-              "total_tokens": 97122,
-              "executor_duration_seconds": 11.6
+              "total_tokens": 101338,
+              "executor_duration_seconds": 9.9
             },
             "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
           }
@@ -1052,17 +1044,13 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 17.2,
-          "estimate": {
-            "input_tokens": 2863,
-            "input_cost_usd": 0.002863
-          },
+          "avg_run_seconds": 15.7,
           "measured": {
-            "input_tokens": 71,
-            "cache_read_input_tokens": 202049,
-            "cache_creation_input_tokens": 26227,
-            "output_tokens": 2410,
-            "cost_usd": 0.086045
+            "input_tokens": 63,
+            "cache_read_input_tokens": 205733,
+            "cache_creation_input_tokens": 23885,
+            "output_tokens": 2560,
+            "cost_usd": 0.082472
           }
         },
         "baseline": {
@@ -1127,23 +1115,23 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-06-27T20:40:23Z",
+          "ran_at": "2026-08-15T06:12:01Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 16.6,
+            "avg_run_seconds": 17.2,
             "estimate": {
               "input_tokens": 2863,
               "input_cost_usd": 0.002863
             },
             "measured": {
-              "input_tokens": 62,
-              "cache_read_input_tokens": 184101,
-              "cache_creation_input_tokens": 35885,
-              "output_tokens": 2306,
-              "cost_usd": 0.103006
+              "input_tokens": 71,
+              "cache_read_input_tokens": 202049,
+              "cache_creation_input_tokens": 26227,
+              "output_tokens": 2410,
+              "cost_usd": 0.086045
             }
           },
           "results": [
@@ -1155,11 +1143,11 @@
                 "input_cost_usd": 0.001439
               },
               "measured": {
-                "input_tokens": 34,
-                "cache_read_input_tokens": 103903,
-                "cache_creation_input_tokens": 19754,
-                "output_tokens": 1541,
-                "cost_usd": 0.058259
+                "input_tokens": 43,
+                "cache_read_input_tokens": 121851,
+                "cache_creation_input_tokens": 10096,
+                "output_tokens": 1645,
+                "cost_usd": 0.041298
               },
               "summary": {
                 "passed": 3,
@@ -1168,7 +1156,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 21.5
+                "executor_duration_seconds": 22.8
               }
             },
             {
@@ -2311,9 +2299,9 @@
         "display": "Claude Opus 5",
         "harness": "claude",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T06:14:21Z",
+        "ran_at": "2026-08-16T09:29:36Z",
         "executed": true,
-        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
+        "content_hash": "64fbe37d05c129c82f74f713a08129c4eaa759972e306a096482decde84adc19",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 5,
@@ -2322,17 +2310,13 @@
         "results": [
           {
             "id": "remove-pull-request-target",
-            "passed": true,
-            "estimate": {
-              "input_tokens": 2001,
-              "input_cost_usd": 0.010005
-            },
+            "passed": false,
             "measured": {
-              "input_tokens": 14,
-              "cache_read_input_tokens": 163396,
-              "cache_creation_input_tokens": 10975,
-              "output_tokens": 2617,
-              "cost_usd": 0.257606
+              "input_tokens": 15,
+              "cache_read_input_tokens": 201080,
+              "cache_creation_input_tokens": 13478,
+              "output_tokens": 3491,
+              "cost_usd": 0.323308
             },
             "expectations": [
               {
@@ -2340,8 +2324,8 @@
                 "path": ".github/workflows/pr-build.yaml",
                 "pattern": "pull_request_target",
                 "text": ".github/workflows/pr-build.yaml does not match /pull_request_target/",
-                "passed": true,
-                "evidence": "no match",
+                "passed": false,
+                "evidence": "pull_request_target",
                 "source": "assertion"
               },
               {
@@ -2364,39 +2348,36 @@
               }
             ],
             "summary": {
-              "passed": 3,
-              "failed": 0,
+              "passed": 2,
+              "failed": 1,
               "total": 3,
-              "pass_rate": 1
+              "pass_rate": 0.666667
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 4,
+                "Bash": 5,
+                "Edit": 1,
                 "Read": 1,
                 "Skill": 1,
                 "Write": 1
               },
-              "total_tool_calls": 7
+              "total_tool_calls": 9
             },
             "timing": {
-              "total_tokens": 177002,
-              "executor_duration_seconds": 44.5
+              "total_tokens": 218064,
+              "executor_duration_seconds": 56.2
             },
             "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1991,
-              "input_cost_usd": 0.009955
-            },
             "measured": {
               "input_tokens": 8,
-              "cache_read_input_tokens": 89289,
-              "cache_creation_input_tokens": 8715,
-              "output_tokens": 1064,
-              "cost_usd": 0.159073
+              "cache_read_input_tokens": 84735,
+              "cache_creation_input_tokens": 8974,
+              "output_tokens": 1001,
+              "cost_usd": 0.157796
             },
             "expectations": [
               {
@@ -2434,28 +2415,24 @@
               "total_tool_calls": 4
             },
             "timing": {
-              "total_tokens": 99076,
-              "executor_duration_seconds": 19.3
+              "total_tokens": 94718,
+              "executor_duration_seconds": 16
             },
             "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
           }
         ],
         "summary": {
-          "passed": 2,
-          "failed": 0,
+          "passed": 1,
+          "failed": 1,
           "total": 2,
-          "pass_rate": 1,
-          "avg_run_seconds": 31.9,
-          "estimate": {
-            "input_tokens": 3992,
-            "input_cost_usd": 0.01996
-          },
+          "pass_rate": 0.5,
+          "avg_run_seconds": 36.1,
           "measured": {
-            "input_tokens": 22,
-            "cache_read_input_tokens": 252685,
-            "cache_creation_input_tokens": 19690,
-            "output_tokens": 3681,
-            "cost_usd": 0.416679
+            "input_tokens": 23,
+            "cache_read_input_tokens": 285815,
+            "cache_creation_input_tokens": 22452,
+            "output_tokens": 4492,
+            "cost_usd": 0.481104
           }
         },
         "baseline": {
@@ -2520,23 +2497,23 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T19:59:48Z",
+          "ran_at": "2026-08-15T06:14:21Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 29.8,
+            "avg_run_seconds": 31.9,
             "estimate": {
               "input_tokens": 3992,
               "input_cost_usd": 0.01996
             },
             "measured": {
               "input_tokens": 22,
-              "cache_read_input_tokens": 246211,
-              "cache_creation_input_tokens": 19140,
-              "output_tokens": 3565,
-              "cost_usd": 0.405042
+              "cache_read_input_tokens": 252685,
+              "cache_creation_input_tokens": 19690,
+              "output_tokens": 3681,
+              "cost_usd": 0.416679
             }
           },
           "results": [
@@ -2549,10 +2526,10 @@
               },
               "measured": {
                 "input_tokens": 14,
-                "cache_read_input_tokens": 156922,
-                "cache_creation_input_tokens": 10425,
-                "output_tokens": 2501,
-                "cost_usd": 0.245969
+                "cache_read_input_tokens": 163396,
+                "cache_creation_input_tokens": 10975,
+                "output_tokens": 2617,
+                "cost_usd": 0.257606
               },
               "summary": {
                 "passed": 3,
@@ -2561,7 +2538,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 40.2
+                "executor_duration_seconds": 44.5
               }
             },
             {
@@ -3704,9 +3681,9 @@
         "display": "Claude Sonnet 5",
         "harness": "claude",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T06:12:46Z",
+        "ran_at": "2026-08-16T09:28:30Z",
         "executed": true,
-        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
+        "content_hash": "64fbe37d05c129c82f74f713a08129c4eaa759972e306a096482decde84adc19",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 3,
@@ -3716,16 +3693,12 @@
           {
             "id": "remove-pull-request-target",
             "passed": true,
-            "estimate": {
-              "input_tokens": 2001,
-              "input_cost_usd": 0.006003
-            },
             "measured": {
               "input_tokens": 11,
-              "cache_read_input_tokens": 200725,
-              "cache_creation_input_tokens": 12410,
-              "output_tokens": 1449,
-              "cost_usd": 0.157088
+              "cache_read_input_tokens": 199786,
+              "cache_creation_input_tokens": 12289,
+              "output_tokens": 1489,
+              "cost_usd": 0.156676
             },
             "expectations": [
               {
@@ -3772,24 +3745,20 @@
               "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 214595,
-              "executor_duration_seconds": 19.5
+              "total_tokens": 213575,
+              "executor_duration_seconds": 20
             },
             "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1991,
-              "input_cost_usd": 0.005973
-            },
             "measured": {
-              "input_tokens": 4510,
-              "cache_read_input_tokens": 233659,
-              "cache_creation_input_tokens": 14514,
-              "output_tokens": 919,
-              "cost_usd": 0.18512
+              "input_tokens": 7,
+              "cache_read_input_tokens": 126480,
+              "cache_creation_input_tokens": 11612,
+              "output_tokens": 741,
+              "cost_usd": 0.11938
             },
             "expectations": [
               {
@@ -3819,17 +3788,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 2,
+                "Bash": 1,
                 "Edit": 1,
-                "Glob": 1,
                 "Read": 1,
                 "Skill": 1
               },
-              "total_tool_calls": 6
+              "total_tool_calls": 4
             },
             "timing": {
-              "total_tokens": 253602,
-              "executor_duration_seconds": 18.6
+              "total_tokens": 138840,
+              "executor_duration_seconds": 13.3
             },
             "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
           }
@@ -3839,17 +3807,13 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 19.1,
-          "estimate": {
-            "input_tokens": 3992,
-            "input_cost_usd": 0.011976
-          },
+          "avg_run_seconds": 16.7,
           "measured": {
-            "input_tokens": 4521,
-            "cache_read_input_tokens": 434384,
-            "cache_creation_input_tokens": 26924,
-            "output_tokens": 2368,
-            "cost_usd": 0.342208
+            "input_tokens": 18,
+            "cache_read_input_tokens": 326266,
+            "cache_creation_input_tokens": 23901,
+            "output_tokens": 2230,
+            "cost_usd": 0.276056
           }
         },
         "baseline": {
@@ -3914,23 +3878,23 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-02T18:38:47Z",
+          "ran_at": "2026-08-15T06:12:46Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 31.4,
+            "avg_run_seconds": 19.1,
             "estimate": {
               "input_tokens": 3992,
               "input_cost_usd": 0.011976
             },
             "measured": {
-              "input_tokens": 9019,
-              "cache_read_input_tokens": 429387,
-              "cache_creation_input_tokens": 30486,
-              "output_tokens": 3197,
-              "cost_usd": 0.388005
+              "input_tokens": 4521,
+              "cache_read_input_tokens": 434384,
+              "cache_creation_input_tokens": 26924,
+              "output_tokens": 2368,
+              "cost_usd": 0.342208
             }
           },
           "results": [
@@ -3942,11 +3906,11 @@
                 "input_cost_usd": 0.006003
               },
               "measured": {
-                "input_tokens": 4509,
-                "cache_read_input_tokens": 195728,
-                "cache_creation_input_tokens": 15972,
-                "output_tokens": 2278,
-                "cost_usd": 0.202885
+                "input_tokens": 11,
+                "cache_read_input_tokens": 200725,
+                "cache_creation_input_tokens": 12410,
+                "output_tokens": 1449,
+                "cost_usd": 0.157088
               },
               "summary": {
                 "passed": 3,
@@ -3955,7 +3919,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 44.1
+                "executor_duration_seconds": 19.5
               }
             },
             {
@@ -4279,9 +4243,9 @@
         "display": "GPT-5.3 Codex Spark",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T01:43:34Z",
+        "ran_at": "2026-08-16T09:32:32Z",
         "executed": true,
-        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
+        "content_hash": "64fbe37d05c129c82f74f713a08129c4eaa759972e306a096482decde84adc19",
         "timeout_seconds": 600,
         "pricing": null,
         "results": [
@@ -4289,9 +4253,9 @@
             "id": "remove-pull-request-target",
             "passed": true,
             "measured": {
-              "input_tokens": 5780,
-              "cache_read_input_tokens": 58112,
-              "output_tokens": 2075
+              "input_tokens": 10485,
+              "cache_read_input_tokens": 116864,
+              "output_tokens": 3017
             },
             "expectations": [
               {
@@ -4330,24 +4294,24 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 3,
+                "command_execution": 8,
                 "file_change": 1
               },
-              "total_tool_calls": 4
+              "total_tool_calls": 9
             },
             "timing": {
-              "total_tokens": 65967,
-              "executor_duration_seconds": 11.1
+              "total_tokens": 130366,
+              "executor_duration_seconds": 26
             },
             "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
-            "passed": true,
+            "passed": false,
             "measured": {
-              "input_tokens": 4543,
-              "cache_read_input_tokens": 43520,
-              "output_tokens": 1317
+              "input_tokens": 4371,
+              "cache_read_input_tokens": 42752,
+              "output_tokens": 1531
             },
             "expectations": [
               {
@@ -4355,8 +4319,8 @@
                 "path": ".github/workflows/echo-title.yaml",
                 "pattern": "env:",
                 "text": ".github/workflows/echo-title.yaml matches /env:/",
-                "passed": true,
-                "evidence": "env:",
+                "passed": false,
+                "evidence": "no match",
                 "source": "assertion"
               },
               {
@@ -4370,10 +4334,10 @@
               }
             ],
             "summary": {
-              "passed": 2,
-              "failed": 0,
+              "passed": 1,
+              "failed": 1,
               "total": 2,
-              "pass_rate": 1
+              "pass_rate": 0.5
             },
             "execution_metrics": {
               "tool_calls": {
@@ -4383,22 +4347,22 @@
               "total_tool_calls": 3
             },
             "timing": {
-              "total_tokens": 49380,
-              "executor_duration_seconds": 9.4
+              "total_tokens": 48654,
+              "executor_duration_seconds": 10.5
             },
             "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
           }
         ],
         "summary": {
-          "passed": 2,
-          "failed": 0,
+          "passed": 1,
+          "failed": 1,
           "total": 2,
-          "pass_rate": 1,
-          "avg_run_seconds": 10.3,
+          "pass_rate": 0.5,
+          "avg_run_seconds": 18.3,
           "measured": {
-            "input_tokens": 10323,
-            "cache_read_input_tokens": 101632,
-            "output_tokens": 3392
+            "input_tokens": 14856,
+            "cache_read_input_tokens": 159616,
+            "output_tokens": 4548
           }
         },
         "baseline": {
@@ -4457,17 +4421,17 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T21:21:21Z",
+          "ran_at": "2026-08-15T01:43:34Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 10.6,
+            "avg_run_seconds": 10.3,
             "measured": {
-              "input_tokens": 10824,
-              "cache_read_input_tokens": 102784,
-              "output_tokens": 3463
+              "input_tokens": 10323,
+              "cache_read_input_tokens": 101632,
+              "output_tokens": 3392
             }
           },
           "results": [
@@ -4475,9 +4439,9 @@
               "id": "remove-pull-request-target",
               "passed": true,
               "measured": {
-                "input_tokens": 6281,
-                "cache_read_input_tokens": 59264,
-                "output_tokens": 2146
+                "input_tokens": 5780,
+                "cache_read_input_tokens": 58112,
+                "output_tokens": 2075
               },
               "summary": {
                 "passed": 3,
@@ -4486,7 +4450,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 11.7
+                "executor_duration_seconds": 11.1
               }
             },
             {
@@ -4927,9 +4891,9 @@
         "display": "GPT-5.4",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T01:45:54Z",
+        "ran_at": "2026-08-16T09:34:05Z",
         "executed": true,
-        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
+        "content_hash": "64fbe37d05c129c82f74f713a08129c4eaa759972e306a096482decde84adc19",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 2.5,
@@ -4939,15 +4903,11 @@
           {
             "id": "remove-pull-request-target",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1278,
-              "input_cost_usd": 0.003195
-            },
             "measured": {
-              "input_tokens": 7849,
-              "cache_read_input_tokens": 75520,
-              "output_tokens": 1201,
-              "cost_usd": 0.226438
+              "input_tokens": 7596,
+              "cache_read_input_tokens": 60800,
+              "output_tokens": 1282,
+              "cost_usd": 0.19022
             },
             "expectations": [
               {
@@ -4992,23 +4952,19 @@
               "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 84570,
-              "executor_duration_seconds": 31.3
+              "total_tokens": 69678,
+              "executor_duration_seconds": 29.3
             },
             "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1267,
-              "input_cost_usd": 0.003167
-            },
             "measured": {
-              "input_tokens": 9505,
-              "cache_read_input_tokens": 84224,
-              "output_tokens": 1164,
-              "cost_usd": 0.251782
+              "input_tokens": 7540,
+              "cache_read_input_tokens": 59776,
+              "output_tokens": 848,
+              "cost_usd": 0.18101
             },
             "expectations": [
               {
@@ -5038,14 +4994,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 6,
+                "command_execution": 4,
                 "file_change": 1
               },
-              "total_tool_calls": 7
+              "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 94893,
-              "executor_duration_seconds": 344.2
+              "total_tokens": 68164,
+              "executor_duration_seconds": 23.5
             },
             "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
           }
@@ -5055,16 +5011,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 187.8,
-          "estimate": {
-            "input_tokens": 2545,
-            "input_cost_usd": 0.006362
-          },
+          "avg_run_seconds": 26.4,
           "measured": {
-            "input_tokens": 17354,
-            "cache_read_input_tokens": 159744,
-            "output_tokens": 2365,
-            "cost_usd": 0.47822
+            "input_tokens": 15136,
+            "cache_read_input_tokens": 120576,
+            "output_tokens": 2130,
+            "cost_usd": 0.37123
           }
         },
         "baseline": {
@@ -5126,22 +5078,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-06-28T04:57:32Z",
+          "ran_at": "2026-08-15T01:45:54Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 197.5,
+            "avg_run_seconds": 187.8,
             "estimate": {
               "input_tokens": 2545,
               "input_cost_usd": 0.006362
             },
             "measured": {
-              "input_tokens": 27288,
-              "cache_read_input_tokens": 181632,
-              "output_tokens": 3157,
-              "cost_usd": 0.569655
+              "input_tokens": 17354,
+              "cache_read_input_tokens": 159744,
+              "output_tokens": 2365,
+              "cost_usd": 0.47822
             }
           },
           "results": [
@@ -5153,10 +5105,10 @@
                 "input_cost_usd": 0.003195
               },
               "measured": {
-                "input_tokens": 17783,
-                "cache_read_input_tokens": 97408,
-                "output_tokens": 1993,
-                "cost_usd": 0.317873
+                "input_tokens": 7849,
+                "cache_read_input_tokens": 75520,
+                "output_tokens": 1201,
+                "cost_usd": 0.226438
               },
               "summary": {
                 "passed": 3,
@@ -5165,7 +5117,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 50.8
+                "executor_duration_seconds": 31.3
               }
             },
             {
@@ -5611,9 +5563,9 @@
         "display": "GPT-5.4 Mini",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T01:44:53Z",
+        "ran_at": "2026-08-16T09:33:32Z",
         "executed": true,
-        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
+        "content_hash": "64fbe37d05c129c82f74f713a08129c4eaa759972e306a096482decde84adc19",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 0.75,
@@ -5623,15 +5575,11 @@
           {
             "id": "remove-pull-request-target",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1278,
-              "input_cost_usd": 0.000959
-            },
             "measured": {
-              "input_tokens": 7602,
-              "cache_read_input_tokens": 58240,
-              "output_tokens": 1397,
-              "cost_usd": 0.055668
+              "input_tokens": 8547,
+              "cache_read_input_tokens": 108416,
+              "output_tokens": 2052,
+              "cost_usd": 0.096956
             },
             "expectations": [
               {
@@ -5670,29 +5618,25 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 3,
+                "command_execution": 7,
                 "file_change": 1
               },
-              "total_tool_calls": 4
+              "total_tool_calls": 8
             },
             "timing": {
-              "total_tokens": 67239,
-              "executor_duration_seconds": 26.6
+              "total_tokens": 119015,
+              "executor_duration_seconds": 50.6
             },
             "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1267,
-              "input_cost_usd": 0.00095
-            },
             "measured": {
-              "input_tokens": 6570,
-              "cache_read_input_tokens": 58240,
-              "output_tokens": 888,
-              "cost_usd": 0.052604
+              "input_tokens": 9253,
+              "cache_read_input_tokens": 98304,
+              "output_tokens": 1688,
+              "cost_usd": 0.088264
             },
             "expectations": [
               {
@@ -5722,14 +5666,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 3,
+                "command_execution": 6,
                 "file_change": 1
               },
-              "total_tool_calls": 4
+              "total_tool_calls": 7
             },
             "timing": {
-              "total_tokens": 65698,
-              "executor_duration_seconds": 19.9
+              "total_tokens": 109245,
+              "executor_duration_seconds": 30.6
             },
             "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
           }
@@ -5739,16 +5683,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 23.3,
-          "estimate": {
-            "input_tokens": 2545,
-            "input_cost_usd": 0.001909
-          },
+          "avg_run_seconds": 40.6,
           "measured": {
-            "input_tokens": 14172,
-            "cache_read_input_tokens": 116480,
-            "output_tokens": 2285,
-            "cost_usd": 0.108272
+            "input_tokens": 17800,
+            "cache_read_input_tokens": 206720,
+            "output_tokens": 3740,
+            "cost_usd": 0.18522
           }
         },
         "baseline": {
@@ -5810,22 +5750,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T21:27:11Z",
+          "ran_at": "2026-08-15T01:44:53Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 24.6,
+            "avg_run_seconds": 23.3,
             "estimate": {
               "input_tokens": 2545,
               "input_cost_usd": 0.001909
             },
             "measured": {
-              "input_tokens": 22817,
-              "cache_read_input_tokens": 109824,
-              "output_tokens": 2253,
-              "cost_usd": 0.10962
+              "input_tokens": 14172,
+              "cache_read_input_tokens": 116480,
+              "output_tokens": 2285,
+              "cost_usd": 0.108272
             }
           },
           "results": [
@@ -5837,10 +5777,10 @@
                 "input_cost_usd": 0.000959
               },
               "measured": {
-                "input_tokens": 16247,
-                "cache_read_input_tokens": 51584,
-                "output_tokens": 1365,
-                "cost_usd": 0.057016
+                "input_tokens": 7602,
+                "cache_read_input_tokens": 58240,
+                "output_tokens": 1397,
+                "cost_usd": 0.055668
               },
               "summary": {
                 "passed": 3,
@@ -5849,7 +5789,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 29.3
+                "executor_duration_seconds": 26.6
               }
             },
             {
@@ -6096,9 +6036,9 @@
         "display": "GPT-5.5",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T01:47:36Z",
+        "ran_at": "2026-08-16T09:35:12Z",
         "executed": true,
-        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
+        "content_hash": "64fbe37d05c129c82f74f713a08129c4eaa759972e306a096482decde84adc19",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 5,
@@ -6108,15 +6048,11 @@
           {
             "id": "remove-pull-request-target",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1278,
-              "input_cost_usd": 0.00639
-            },
             "measured": {
-              "input_tokens": 15840,
-              "cache_read_input_tokens": 130432,
-              "output_tokens": 2445,
-              "cost_usd": 0.80471
+              "input_tokens": 11807,
+              "cache_read_input_tokens": 120832,
+              "output_tokens": 2568,
+              "cost_usd": 0.740235
             },
             "expectations": [
               {
@@ -6156,28 +6092,24 @@
             "execution_metrics": {
               "tool_calls": {
                 "command_execution": 14,
-                "file_change": 2
+                "file_change": 1
               },
-              "total_tool_calls": 16
+              "total_tool_calls": 15
             },
             "timing": {
-              "total_tokens": 148717,
-              "executor_duration_seconds": 58.3
+              "total_tokens": 135207,
+              "executor_duration_seconds": 57.8
             },
             "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1267,
-              "input_cost_usd": 0.006335
-            },
             "measured": {
-              "input_tokens": 18479,
-              "cache_read_input_tokens": 103040,
-              "output_tokens": 1475,
-              "cost_usd": 0.651845
+              "input_tokens": 9948,
+              "cache_read_input_tokens": 80128,
+              "output_tokens": 1165,
+              "cost_usd": 0.48533
             },
             "expectations": [
               {
@@ -6207,14 +6139,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 9,
+                "command_execution": 7,
                 "file_change": 1
               },
-              "total_tool_calls": 10
+              "total_tool_calls": 8
             },
             "timing": {
-              "total_tokens": 122994,
-              "executor_duration_seconds": 39.1
+              "total_tokens": 91241,
+              "executor_duration_seconds": 33.2
             },
             "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
           }
@@ -6224,16 +6156,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 48.7,
-          "estimate": {
-            "input_tokens": 2545,
-            "input_cost_usd": 0.012725
-          },
+          "avg_run_seconds": 45.5,
           "measured": {
-            "input_tokens": 34319,
-            "cache_read_input_tokens": 233472,
-            "output_tokens": 3920,
-            "cost_usd": 1.456555
+            "input_tokens": 21755,
+            "cache_read_input_tokens": 200960,
+            "output_tokens": 3733,
+            "cost_usd": 1.225565
           }
         },
         "baseline": {
@@ -6295,22 +6223,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-06-27T22:45:32Z",
+          "ran_at": "2026-08-15T01:47:36Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 46.9,
+            "avg_run_seconds": 48.7,
             "estimate": {
               "input_tokens": 2545,
               "input_cost_usd": 0.012725
             },
             "measured": {
-              "input_tokens": 43286,
-              "cache_read_input_tokens": 206080,
-              "output_tokens": 3732,
-              "cost_usd": 1.35879
+              "input_tokens": 34319,
+              "cache_read_input_tokens": 233472,
+              "output_tokens": 3920,
+              "cost_usd": 1.456555
             }
           },
           "results": [
@@ -6322,10 +6250,10 @@
                 "input_cost_usd": 0.00639
               },
               "measured": {
-                "input_tokens": 24807,
-                "cache_read_input_tokens": 103040,
-                "output_tokens": 2257,
-                "cost_usd": 0.706945
+                "input_tokens": 15840,
+                "cache_read_input_tokens": 130432,
+                "output_tokens": 2445,
+                "cost_usd": 0.80471
               },
               "summary": {
                 "passed": 3,
@@ -6334,7 +6262,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 54.6
+                "executor_duration_seconds": 58.3
               }
             },
             {
@@ -6780,9 +6708,9 @@
         "display": "GPT-5.6 Luna",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T01:42:45Z",
+        "ran_at": "2026-08-16T09:32:05Z",
         "executed": true,
-        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
+        "content_hash": "64fbe37d05c129c82f74f713a08129c4eaa759972e306a096482decde84adc19",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 1,
@@ -6792,15 +6720,11 @@
           {
             "id": "remove-pull-request-target",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1278,
-              "input_cost_usd": 0.001278
-            },
             "measured": {
-              "input_tokens": 8714,
-              "cache_read_input_tokens": 80384,
-              "output_tokens": 1474,
-              "cost_usd": 0.097942
+              "input_tokens": 11508,
+              "cache_read_input_tokens": 111616,
+              "output_tokens": 1789,
+              "cost_usd": 0.133858
             },
             "expectations": [
               {
@@ -6840,28 +6764,24 @@
             "execution_metrics": {
               "tool_calls": {
                 "command_execution": 5,
-                "file_change": 1
+                "file_change": 2
               },
-              "total_tool_calls": 6
+              "total_tool_calls": 7
             },
             "timing": {
-              "total_tokens": 90572,
-              "executor_duration_seconds": 35
+              "total_tokens": 124913,
+              "executor_duration_seconds": 42.2
             },
             "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1267,
-              "input_cost_usd": 0.001267
-            },
             "measured": {
-              "input_tokens": 11472,
-              "cache_read_input_tokens": 111616,
-              "output_tokens": 1516,
-              "cost_usd": 0.132184
+              "input_tokens": 9311,
+              "cache_read_input_tokens": 93440,
+              "output_tokens": 1217,
+              "cost_usd": 0.110053
             },
             "expectations": [
               {
@@ -6891,14 +6811,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 4,
+                "command_execution": 5,
                 "file_change": 1
               },
-              "total_tool_calls": 5
+              "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 124604,
-              "executor_duration_seconds": 37.2
+              "total_tokens": 103968,
+              "executor_duration_seconds": 34.8
             },
             "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
           }
@@ -6908,16 +6828,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 36.1,
-          "estimate": {
-            "input_tokens": 2545,
-            "input_cost_usd": 0.002545
-          },
+          "avg_run_seconds": 38.5,
           "measured": {
-            "input_tokens": 20186,
-            "cache_read_input_tokens": 192000,
-            "output_tokens": 2990,
-            "cost_usd": 0.230126
+            "input_tokens": 20819,
+            "cache_read_input_tokens": 205056,
+            "output_tokens": 3006,
+            "cost_usd": 0.243911
           }
         },
         "baseline": {
@@ -6979,22 +6895,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T17:27:05Z",
+          "ran_at": "2026-08-15T01:42:45Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 39.6,
+            "avg_run_seconds": 36.1,
             "estimate": {
               "input_tokens": 2545,
               "input_cost_usd": 0.002545
             },
             "measured": {
-              "input_tokens": 32596,
-              "cache_read_input_tokens": 275200,
-              "output_tokens": 3282,
-              "cost_usd": 0.327488
+              "input_tokens": 20186,
+              "cache_read_input_tokens": 192000,
+              "output_tokens": 2990,
+              "cost_usd": 0.230126
             }
           },
           "results": [
@@ -7006,10 +6922,10 @@
                 "input_cost_usd": 0.001278
               },
               "measured": {
-                "input_tokens": 21124,
-                "cache_read_input_tokens": 163584,
-                "output_tokens": 1766,
-                "cost_usd": 0.195304
+                "input_tokens": 8714,
+                "cache_read_input_tokens": 80384,
+                "output_tokens": 1474,
+                "cost_usd": 0.097942
               },
               "summary": {
                 "passed": 3,
@@ -7018,7 +6934,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 41.9
+                "executor_duration_seconds": 35
               }
             },
             {
@@ -7464,9 +7380,9 @@
         "display": "GPT-5.6 Sol",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T01:37:29Z",
+        "ran_at": "2026-08-16T09:30:26Z",
         "executed": true,
-        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
+        "content_hash": "64fbe37d05c129c82f74f713a08129c4eaa759972e306a096482decde84adc19",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 5,
@@ -7476,15 +7392,11 @@
           {
             "id": "remove-pull-request-target",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1278,
-              "input_cost_usd": 0.00639
-            },
             "measured": {
-              "input_tokens": 14314,
-              "cache_read_input_tokens": 65280,
-              "output_tokens": 1122,
-              "cost_usd": 0.43163
+              "input_tokens": 9669,
+              "cache_read_input_tokens": 86528,
+              "output_tokens": 1421,
+              "cost_usd": 0.523615
             },
             "expectations": [
               {
@@ -7523,29 +7435,25 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 3,
+                "command_execution": 4,
                 "file_change": 1
               },
-              "total_tool_calls": 4
+              "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 80716,
-              "executor_duration_seconds": 34.3
+              "total_tokens": 97618,
+              "executor_duration_seconds": 40.4
             },
             "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1267,
-              "input_cost_usd": 0.006335
-            },
             "measured": {
-              "input_tokens": 14148,
+              "input_tokens": 13550,
               "cache_read_input_tokens": 81408,
-              "output_tokens": 887,
-              "cost_usd": 0.50439
+              "output_tokens": 984,
+              "cost_usd": 0.50431
             },
             "expectations": [
               {
@@ -7581,8 +7489,8 @@
               "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 96443,
-              "executor_duration_seconds": 29.9
+              "total_tokens": 95942,
+              "executor_duration_seconds": 29.5
             },
             "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
           }
@@ -7592,16 +7500,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 32.1,
-          "estimate": {
-            "input_tokens": 2545,
-            "input_cost_usd": 0.012725
-          },
+          "avg_run_seconds": 35,
           "measured": {
-            "input_tokens": 28462,
-            "cache_read_input_tokens": 146688,
-            "output_tokens": 2009,
-            "cost_usd": 0.93602
+            "input_tokens": 23219,
+            "cache_read_input_tokens": 167936,
+            "output_tokens": 2405,
+            "cost_usd": 1.027925
           }
         },
         "baseline": {
@@ -7663,22 +7567,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T17:18:51Z",
+          "ran_at": "2026-08-15T01:37:29Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 30.9,
+            "avg_run_seconds": 32.1,
             "estimate": {
               "input_tokens": 2545,
               "input_cost_usd": 0.012725
             },
             "measured": {
-              "input_tokens": 28879,
+              "input_tokens": 28462,
               "cache_read_input_tokens": 146688,
-              "output_tokens": 2002,
-              "cost_usd": 0.937895
+              "output_tokens": 2009,
+              "cost_usd": 0.93602
             }
           },
           "results": [
@@ -7690,10 +7594,10 @@
                 "input_cost_usd": 0.00639
               },
               "measured": {
-                "input_tokens": 14731,
+                "input_tokens": 14314,
                 "cache_read_input_tokens": 65280,
-                "output_tokens": 1115,
-                "cost_usd": 0.433505
+                "output_tokens": 1122,
+                "cost_usd": 0.43163
               },
               "summary": {
                 "passed": 3,
@@ -7702,7 +7606,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 31.8
+                "executor_duration_seconds": 34.3
               }
             },
             {
@@ -8148,9 +8052,9 @@
         "display": "GPT-5.6 Terra",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T01:39:29Z",
+        "ran_at": "2026-08-16T09:31:17Z",
         "executed": true,
-        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
+        "content_hash": "64fbe37d05c129c82f74f713a08129c4eaa759972e306a096482decde84adc19",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 2.5,
@@ -8160,15 +8064,11 @@
           {
             "id": "remove-pull-request-target",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1278,
-              "input_cost_usd": 0.003195
-            },
             "measured": {
-              "input_tokens": 18080,
-              "cache_read_input_tokens": 95488,
-              "output_tokens": 1271,
-              "cost_usd": 0.302985
+              "input_tokens": 24867,
+              "cache_read_input_tokens": 93696,
+              "output_tokens": 1230,
+              "cost_usd": 0.314858
             },
             "expectations": [
               {
@@ -8207,29 +8107,25 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 5,
+                "command_execution": 4,
                 "file_change": 1
               },
-              "total_tool_calls": 6
+              "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 114839,
-              "executor_duration_seconds": 33.7
+              "total_tokens": 119793,
+              "executor_duration_seconds": 40.7
             },
             "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
           {
             "id": "fix-expression-injection",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1267,
-              "input_cost_usd": 0.003167
-            },
             "measured": {
-              "input_tokens": 15340,
-              "cache_read_input_tokens": 122112,
-              "output_tokens": 1154,
-              "cost_usd": 0.36094
+              "input_tokens": 13750,
+              "cache_read_input_tokens": 95744,
+              "output_tokens": 909,
+              "cost_usd": 0.28737
             },
             "expectations": [
               {
@@ -8259,14 +8155,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 5,
+                "command_execution": 4,
                 "file_change": 1
               },
-              "total_tool_calls": 6
+              "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 138606,
-              "executor_duration_seconds": 30.9
+              "total_tokens": 110403,
+              "executor_duration_seconds": 27.9
             },
             "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
           }
@@ -8276,16 +8172,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 32.3,
-          "estimate": {
-            "input_tokens": 2545,
-            "input_cost_usd": 0.006362
-          },
+          "avg_run_seconds": 34.3,
           "measured": {
-            "input_tokens": 33420,
-            "cache_read_input_tokens": 217600,
-            "output_tokens": 2425,
-            "cost_usd": 0.663925
+            "input_tokens": 38617,
+            "cache_read_input_tokens": 189440,
+            "output_tokens": 2139,
+            "cost_usd": 0.602228
           }
         },
         "baseline": {
@@ -8347,22 +8239,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T17:22:28Z",
+          "ran_at": "2026-08-15T01:39:29Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 32.8,
+            "avg_run_seconds": 32.3,
             "estimate": {
               "input_tokens": 2545,
               "input_cost_usd": 0.006362
             },
             "measured": {
-              "input_tokens": 24938,
-              "cache_read_input_tokens": 207616,
-              "output_tokens": 2326,
-              "cost_usd": 0.616275
+              "input_tokens": 33420,
+              "cache_read_input_tokens": 217600,
+              "output_tokens": 2425,
+              "cost_usd": 0.663925
             }
           },
           "results": [
@@ -8374,10 +8266,10 @@
                 "input_cost_usd": 0.003195
               },
               "measured": {
-                "input_tokens": 9598,
-                "cache_read_input_tokens": 85504,
-                "output_tokens": 1172,
-                "cost_usd": 0.255335
+                "input_tokens": 18080,
+                "cache_read_input_tokens": 95488,
+                "output_tokens": 1271,
+                "cost_usd": 0.302985
               },
               "summary": {
                 "passed": 3,
@@ -8386,7 +8278,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 34.6
+                "executor_duration_seconds": 33.7
               }
             },
             {
@@ -9089,9 +8981,9 @@
         "display": "Grok 4.6",
         "harness": "grok",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T01:53:02Z",
+        "ran_at": "2026-08-16T09:35:57Z",
         "executed": true,
-        "content_hash": "223c03128697c62dd52063406f5b14e5d4b5ff5099a3100b01264ee8ab8f88f0",
+        "content_hash": "64fbe37d05c129c82f74f713a08129c4eaa759972e306a096482decde84adc19",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 2,
@@ -9102,10 +8994,10 @@
             "id": "remove-pull-request-target",
             "passed": true,
             "measured": {
-              "input_tokens": 12711,
-              "cache_read_input_tokens": 155008,
-              "output_tokens": 2699,
-              "cost_usd": 0.02025
+              "input_tokens": 20366,
+              "cache_read_input_tokens": 94336,
+              "output_tokens": 2482,
+              "cost_usd": 0.017475
             },
             "expectations": [
               {
@@ -9143,8 +9035,8 @@
               "pass_rate": 1
             },
             "timing": {
-              "total_tokens": 170418,
-              "executor_duration_seconds": 46.7
+              "total_tokens": 117184,
+              "executor_duration_seconds": 34
             },
             "spec_hash": "ad0a2e96c5b644a144eecd5dbed7eccf0d9a2024ebd1bc93b9a1092556f69d6f"
           },
@@ -9152,10 +9044,10 @@
             "id": "fix-expression-injection",
             "passed": true,
             "measured": {
-              "input_tokens": 7695,
-              "cache_read_input_tokens": 99328,
-              "output_tokens": 1295,
-              "cost_usd": 0.01238
+              "input_tokens": 23442,
+              "cache_read_input_tokens": 80896,
+              "output_tokens": 1007,
+              "cost_usd": 0.015874
             },
             "expectations": [
               {
@@ -9184,8 +9076,8 @@
               "pass_rate": 1
             },
             "timing": {
-              "total_tokens": 108318,
-              "executor_duration_seconds": 22.3
+              "total_tokens": 105345,
+              "executor_duration_seconds": 23.7
             },
             "spec_hash": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
           }
@@ -9195,12 +9087,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 34.5,
+          "avg_run_seconds": 28.9,
           "measured": {
-            "input_tokens": 20406,
-            "cache_read_input_tokens": 254336,
-            "output_tokens": 3994,
-            "cost_usd": 0.03263
+            "input_tokens": 43808,
+            "cache_read_input_tokens": 175232,
+            "output_tokens": 3489,
+            "cost_usd": 0.033349
           }
         },
         "baseline": {
@@ -9258,6 +9150,62 @@
                 "executor_duration_seconds": 23.5
               },
               "fingerprint": "9e6008d479b1c97c962e20dd623fb83c1a93b7716649faf6fbcc9e3d292cfd77"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-08-15T01:53:02Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 34.5,
+            "measured": {
+              "input_tokens": 20406,
+              "cache_read_input_tokens": 254336,
+              "output_tokens": 3994,
+              "cost_usd": 0.03263
+            }
+          },
+          "results": [
+            {
+              "id": "remove-pull-request-target",
+              "passed": true,
+              "measured": {
+                "input_tokens": 12711,
+                "cache_read_input_tokens": 155008,
+                "output_tokens": 2699,
+                "cost_usd": 0.02025
+              },
+              "summary": {
+                "passed": 3,
+                "failed": 0,
+                "total": 3,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 46.7
+              }
+            },
+            {
+              "id": "fix-expression-injection",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7695,
+                "cache_read_input_tokens": 99328,
+                "output_tokens": 1295,
+                "cost_usd": 0.01238
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 22.3
+              }
             }
           ]
         }

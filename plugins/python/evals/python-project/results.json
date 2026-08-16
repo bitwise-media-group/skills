@@ -1084,9 +1084,9 @@
         "display": "Claude Haiku 4.5",
         "harness": "claude",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T13:38:50Z",
+        "ran_at": "2026-08-16T12:14:21Z",
         "executed": true,
-        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "content_hash": "e20a8370ad376b0fc07e0f7a39f3e9f0019ed8af46509c86a89a61bef816670f",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 1,
@@ -1096,16 +1096,12 @@
           {
             "id": "configure-pyproject",
             "passed": false,
-            "estimate": {
-              "input_tokens": 1506,
-              "input_cost_usd": 0.001506
-            },
             "measured": {
               "input_tokens": 21,
-              "cache_read_input_tokens": 65372,
-              "cache_creation_input_tokens": 10256,
-              "output_tokens": 563,
-              "cost_usd": 0.030557
+              "cache_read_input_tokens": 65354,
+              "cache_creation_input_tokens": 10273,
+              "output_tokens": 568,
+              "cost_usd": 0.030634
             },
             "expectations": [
               {
@@ -1113,8 +1109,8 @@
                 "path": "pyproject.toml",
                 "pattern": "build-backend = \"uv_build\"",
                 "text": "pyproject.toml matches /build-backend = \"uv_build\"/",
-                "passed": true,
-                "evidence": "build-backend = \"uv_build\"",
+                "passed": false,
+                "evidence": "no match",
                 "source": "assertion"
               },
               {
@@ -1182,10 +1178,10 @@
               }
             ],
             "summary": {
-              "passed": 7,
-              "failed": 1,
+              "passed": 6,
+              "failed": 2,
               "total": 8,
-              "pass_rate": 0.875
+              "pass_rate": 0.75
             },
             "execution_metrics": {
               "tool_calls": {
@@ -1195,24 +1191,20 @@
               "total_tool_calls": 2
             },
             "timing": {
-              "total_tokens": 76212,
-              "executor_duration_seconds": 9.2
+              "total_tokens": 76216,
+              "executor_duration_seconds": 9.8
             },
             "spec_hash": "38801d5c3ba67af857ed90573108fc112429908a8703a4278cff1a4a200558d6"
           },
           {
             "id": "makefile-gate",
             "passed": false,
-            "estimate": {
-              "input_tokens": 1492,
-              "input_cost_usd": 0.001492
-            },
             "measured": {
-              "input_tokens": 27,
-              "cache_read_input_tokens": 90845,
-              "cache_creation_input_tokens": 10484,
-              "output_tokens": 841,
-              "cost_usd": 0.034933
+              "input_tokens": 28,
+              "cache_read_input_tokens": 91383,
+              "cache_creation_input_tokens": 10739,
+              "output_tokens": 946,
+              "cost_usd": 0.036022
             },
             "expectations": [
               {
@@ -1287,14 +1279,14 @@
             "execution_metrics": {
               "tool_calls": {
                 "Bash": 1,
-                "Read": 1,
+                "Read": 2,
                 "Write": 1
               },
-              "total_tool_calls": 3
+              "total_tool_calls": 4
             },
             "timing": {
-              "total_tokens": 102197,
-              "executor_duration_seconds": 13.7
+              "total_tokens": 103096,
+              "executor_duration_seconds": 14.6
             },
             "spec_hash": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
           }
@@ -1304,17 +1296,13 @@
           "failed": 2,
           "total": 2,
           "pass_rate": 0,
-          "avg_run_seconds": 11.5,
-          "estimate": {
-            "input_tokens": 2998,
-            "input_cost_usd": 0.002998
-          },
+          "avg_run_seconds": 12.2,
           "measured": {
-            "input_tokens": 48,
-            "cache_read_input_tokens": 156217,
-            "cache_creation_input_tokens": 20740,
-            "output_tokens": 1404,
-            "cost_usd": 0.06549
+            "input_tokens": 49,
+            "cache_read_input_tokens": 156737,
+            "cache_creation_input_tokens": 21012,
+            "output_tokens": 1514,
+            "cost_usd": 0.066656
           }
         },
         "baseline": {
@@ -1379,23 +1367,23 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-08-15T13:00:47Z",
+          "ran_at": "2026-08-15T13:38:50Z",
           "summary": {
             "passed": 0,
             "failed": 2,
             "total": 2,
             "pass_rate": 0,
-            "avg_run_seconds": 11,
+            "avg_run_seconds": 11.5,
             "estimate": {
               "input_tokens": 2998,
               "input_cost_usd": 0.002998
             },
             "measured": {
-              "input_tokens": 49,
-              "cache_read_input_tokens": 156427,
-              "cache_creation_input_tokens": 20835,
-              "output_tokens": 1338,
-              "cost_usd": 0.065392
+              "input_tokens": 48,
+              "cache_read_input_tokens": 156217,
+              "cache_creation_input_tokens": 20740,
+              "output_tokens": 1404,
+              "cost_usd": 0.06549
             }
           },
           "results": [
@@ -1408,19 +1396,19 @@
               },
               "measured": {
                 "input_tokens": 21,
-                "cache_read_input_tokens": 65347,
-                "cache_creation_input_tokens": 10231,
-                "output_tokens": 557,
-                "cost_usd": 0.030495
+                "cache_read_input_tokens": 65372,
+                "cache_creation_input_tokens": 10256,
+                "output_tokens": 563,
+                "cost_usd": 0.030557
               },
               "summary": {
-                "passed": 6,
-                "failed": 2,
+                "passed": 7,
+                "failed": 1,
                 "total": 8,
-                "pass_rate": 0.75
+                "pass_rate": 0.875
               },
               "timing": {
-                "executor_duration_seconds": 9
+                "executor_duration_seconds": 9.2
               }
             },
             {
@@ -1431,11 +1419,11 @@
                 "input_cost_usd": 0.001492
               },
               "measured": {
-                "input_tokens": 28,
-                "cache_read_input_tokens": 91080,
-                "cache_creation_input_tokens": 10604,
-                "output_tokens": 781,
-                "cost_usd": 0.034897
+                "input_tokens": 27,
+                "cache_read_input_tokens": 90845,
+                "cache_creation_input_tokens": 10484,
+                "output_tokens": 841,
+                "cost_usd": 0.034933
               },
               "summary": {
                 "passed": 6,
@@ -1444,7 +1432,7 @@
                 "pass_rate": 0.857143
               },
               "timing": {
-                "executor_duration_seconds": 13
+                "executor_duration_seconds": 13.7
               }
             }
           ]
@@ -2604,9 +2592,9 @@
         "display": "Claude Opus 5",
         "harness": "claude",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T13:04:43Z",
+        "ran_at": "2026-08-16T12:15:27Z",
         "executed": true,
-        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "content_hash": "e20a8370ad376b0fc07e0f7a39f3e9f0019ed8af46509c86a89a61bef816670f",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 5,
@@ -2618,10 +2606,10 @@
             "passed": true,
             "measured": {
               "input_tokens": 10,
-              "cache_read_input_tokens": 113648,
-              "cache_creation_input_tokens": 10351,
-              "output_tokens": 1609,
-              "cost_usd": 0.201301
+              "cache_read_input_tokens": 113573,
+              "cache_creation_input_tokens": 10215,
+              "output_tokens": 1399,
+              "cost_usd": 0.194634
             },
             "expectations": [
               {
@@ -2713,8 +2701,8 @@
               "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 125618,
-              "executor_duration_seconds": 25.5
+              "total_tokens": 125197,
+              "executor_duration_seconds": 21.2
             },
             "spec_hash": "38801d5c3ba67af857ed90573108fc112429908a8703a4278cff1a4a200558d6"
           },
@@ -2722,11 +2710,11 @@
             "id": "makefile-gate",
             "passed": true,
             "measured": {
-              "input_tokens": 15,
-              "cache_read_input_tokens": 200730,
-              "cache_creation_input_tokens": 13413,
-              "output_tokens": 4933,
-              "cost_usd": 0.358543
+              "input_tokens": 10,
+              "cache_read_input_tokens": 112960,
+              "cache_creation_input_tokens": 10460,
+              "output_tokens": 1920,
+              "cost_usd": 0.209778
             },
             "expectations": [
               {
@@ -2800,16 +2788,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 6,
+                "Bash": 2,
                 "Read": 1,
                 "Skill": 1,
                 "Write": 1
               },
-              "total_tool_calls": 9
+              "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 219091,
-              "executor_duration_seconds": 72.4
+              "total_tokens": 125350,
+              "executor_duration_seconds": 29.8
             },
             "spec_hash": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
           }
@@ -2819,13 +2807,13 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 49,
+          "avg_run_seconds": 25.5,
           "measured": {
-            "input_tokens": 25,
-            "cache_read_input_tokens": 314378,
-            "cache_creation_input_tokens": 23764,
-            "output_tokens": 6542,
-            "cost_usd": 0.559844
+            "input_tokens": 20,
+            "cache_read_input_tokens": 226533,
+            "cache_creation_input_tokens": 20675,
+            "output_tokens": 3319,
+            "cost_usd": 0.404412
           }
         },
         "baseline": {
@@ -2890,60 +2878,60 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-08-15T09:22:08Z",
+          "ran_at": "2026-08-15T13:04:43Z",
           "summary": {
-            "passed": 0,
-            "failed": 2,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0,
-            "avg_run_seconds": 1.5,
+            "pass_rate": 1,
+            "avg_run_seconds": 49,
             "measured": {
-              "input_tokens": 0,
-              "cache_read_input_tokens": 0,
-              "cache_creation_input_tokens": 0,
-              "output_tokens": 0,
-              "cost_usd": 0
+              "input_tokens": 25,
+              "cache_read_input_tokens": 314378,
+              "cache_creation_input_tokens": 23764,
+              "output_tokens": 6542,
+              "cost_usd": 0.559844
             }
           },
           "results": [
             {
               "id": "configure-pyproject",
-              "passed": false,
+              "passed": true,
               "measured": {
-                "input_tokens": 0,
-                "cache_read_input_tokens": 0,
-                "cache_creation_input_tokens": 0,
-                "output_tokens": 0,
-                "cost_usd": 0
+                "input_tokens": 10,
+                "cache_read_input_tokens": 113648,
+                "cache_creation_input_tokens": 10351,
+                "output_tokens": 1609,
+                "cost_usd": 0.201301
               },
               "summary": {
-                "passed": 1,
-                "failed": 7,
+                "passed": 8,
+                "failed": 0,
                 "total": 8,
-                "pass_rate": 0.125
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 1.3
+                "executor_duration_seconds": 25.5
               }
             },
             {
               "id": "makefile-gate",
-              "passed": false,
+              "passed": true,
               "measured": {
-                "input_tokens": 0,
-                "cache_read_input_tokens": 0,
-                "cache_creation_input_tokens": 0,
-                "output_tokens": 0,
-                "cost_usd": 0
+                "input_tokens": 15,
+                "cache_read_input_tokens": 200730,
+                "cache_creation_input_tokens": 13413,
+                "output_tokens": 4933,
+                "cost_usd": 0.358543
               },
               "summary": {
-                "passed": 0,
-                "failed": 7,
+                "passed": 7,
+                "failed": 0,
                 "total": 7,
-                "pass_rate": 0
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 1.6
+                "executor_duration_seconds": 72.4
               }
             }
           ]
@@ -4239,9 +4227,9 @@
         "display": "Claude Sonnet 5",
         "harness": "claude",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T13:02:34Z",
+        "ran_at": "2026-08-16T12:14:52Z",
         "executed": true,
-        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "content_hash": "e20a8370ad376b0fc07e0f7a39f3e9f0019ed8af46509c86a89a61bef816670f",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 3,
@@ -4251,16 +4239,12 @@
           {
             "id": "configure-pyproject",
             "passed": true,
-            "estimate": {
-              "input_tokens": 2017,
-              "input_cost_usd": 0.006051
-            },
             "measured": {
-              "input_tokens": 10,
-              "cache_read_input_tokens": 166820,
-              "cache_creation_input_tokens": 13432,
-              "output_tokens": 1481,
-              "cost_usd": 0.153575
+              "input_tokens": 12,
+              "cache_read_input_tokens": 199073,
+              "cache_creation_input_tokens": 13369,
+              "output_tokens": 1394,
+              "cost_usd": 0.161574
             },
             "expectations": [
               {
@@ -4352,24 +4336,20 @@
               "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 181743,
-              "executor_duration_seconds": 18.2
+              "total_tokens": 213848,
+              "executor_duration_seconds": 23.6
             },
             "spec_hash": "38801d5c3ba67af857ed90573108fc112429908a8703a4278cff1a4a200558d6"
           },
           {
             "id": "makefile-gate",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1996,
-              "input_cost_usd": 0.005988
-            },
             "measured": {
-              "input_tokens": 32,
-              "cache_read_input_tokens": 642899,
-              "cache_creation_input_tokens": 23291,
-              "output_tokens": 7815,
-              "cost_usd": 0.450585
+              "input_tokens": 10,
+              "cache_read_input_tokens": 165427,
+              "cache_creation_input_tokens": 13133,
+              "output_tokens": 1593,
+              "cost_usd": 0.152999
             },
             "expectations": [
               {
@@ -4443,17 +4423,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 10,
-                "Edit": 1,
-                "Read": 5,
+                "Bash": 1,
+                "Read": 2,
                 "Skill": 1,
-                "Write": 8
+                "Write": 1
               },
-              "total_tool_calls": 25
+              "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 674037,
-              "executor_duration_seconds": 89.7
+              "total_tokens": 180163,
+              "executor_duration_seconds": 17.8
             },
             "spec_hash": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
           }
@@ -4463,17 +4442,13 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 54,
-          "estimate": {
-            "input_tokens": 4013,
-            "input_cost_usd": 0.012039
-          },
+          "avg_run_seconds": 20.7,
           "measured": {
-            "input_tokens": 42,
-            "cache_read_input_tokens": 809719,
-            "cache_creation_input_tokens": 36723,
-            "output_tokens": 9296,
-            "cost_usd": 0.60416
+            "input_tokens": 22,
+            "cache_read_input_tokens": 364500,
+            "cache_creation_input_tokens": 26502,
+            "output_tokens": 2987,
+            "cost_usd": 0.314573
           }
         },
         "baseline": {
@@ -4538,72 +4513,72 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-08-15T09:21:54Z",
+          "ran_at": "2026-08-15T13:02:34Z",
           "summary": {
-            "passed": 0,
-            "failed": 2,
+            "passed": 2,
+            "failed": 0,
             "total": 2,
-            "pass_rate": 0,
-            "avg_run_seconds": 1.4,
+            "pass_rate": 1,
+            "avg_run_seconds": 54,
             "estimate": {
               "input_tokens": 4013,
               "input_cost_usd": 0.012039
             },
             "measured": {
-              "input_tokens": 0,
-              "cache_read_input_tokens": 0,
-              "cache_creation_input_tokens": 0,
-              "output_tokens": 0,
-              "cost_usd": 0
+              "input_tokens": 42,
+              "cache_read_input_tokens": 809719,
+              "cache_creation_input_tokens": 36723,
+              "output_tokens": 9296,
+              "cost_usd": 0.60416
             }
           },
           "results": [
             {
               "id": "configure-pyproject",
-              "passed": false,
+              "passed": true,
               "estimate": {
                 "input_tokens": 2017,
                 "input_cost_usd": 0.006051
               },
               "measured": {
-                "input_tokens": 0,
-                "cache_read_input_tokens": 0,
-                "cache_creation_input_tokens": 0,
-                "output_tokens": 0,
-                "cost_usd": 0
+                "input_tokens": 10,
+                "cache_read_input_tokens": 166820,
+                "cache_creation_input_tokens": 13432,
+                "output_tokens": 1481,
+                "cost_usd": 0.153575
               },
               "summary": {
-                "passed": 1,
-                "failed": 7,
+                "passed": 8,
+                "failed": 0,
                 "total": 8,
-                "pass_rate": 0.125
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 1.4
+                "executor_duration_seconds": 18.2
               }
             },
             {
               "id": "makefile-gate",
-              "passed": false,
+              "passed": true,
               "estimate": {
                 "input_tokens": 1996,
                 "input_cost_usd": 0.005988
               },
               "measured": {
-                "input_tokens": 0,
-                "cache_read_input_tokens": 0,
-                "cache_creation_input_tokens": 0,
-                "output_tokens": 0,
-                "cost_usd": 0
+                "input_tokens": 32,
+                "cache_read_input_tokens": 642899,
+                "cache_creation_input_tokens": 23291,
+                "output_tokens": 7815,
+                "cost_usd": 0.450585
               },
               "summary": {
-                "passed": 0,
-                "failed": 7,
+                "passed": 7,
+                "failed": 0,
                 "total": 7,
-                "pass_rate": 0
+                "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 1.4
+                "executor_duration_seconds": 89.7
               }
             }
           ]
@@ -4939,9 +4914,9 @@
         "display": "GPT-5.3 Codex Spark",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T14:05:31Z",
+        "ran_at": "2026-08-16T12:17:58Z",
         "executed": true,
-        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "content_hash": "e20a8370ad376b0fc07e0f7a39f3e9f0019ed8af46509c86a89a61bef816670f",
         "timeout_seconds": 600,
         "pricing": null,
         "results": [
@@ -4949,9 +4924,9 @@
             "id": "configure-pyproject",
             "passed": false,
             "measured": {
-              "input_tokens": 4367,
-              "cache_read_input_tokens": 43520,
-              "output_tokens": 1620
+              "input_tokens": 7817,
+              "cache_read_input_tokens": 27008,
+              "output_tokens": 1308
             },
             "expectations": [
               {
@@ -5035,14 +5010,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 2,
+                "command_execution": 1,
                 "file_change": 1
               },
-              "total_tool_calls": 3
+              "total_tool_calls": 2
             },
             "timing": {
-              "total_tokens": 49507,
-              "executor_duration_seconds": 18.3
+              "total_tokens": 36133,
+              "executor_duration_seconds": 11.5
             },
             "spec_hash": "38801d5c3ba67af857ed90573108fc112429908a8703a4278cff1a4a200558d6"
           },
@@ -5050,9 +5025,9 @@
             "id": "makefile-gate",
             "passed": true,
             "measured": {
-              "input_tokens": 4893,
-              "cache_read_input_tokens": 67456,
-              "output_tokens": 1978
+              "input_tokens": 7138,
+              "cache_read_input_tokens": 39552,
+              "output_tokens": 1807
             },
             "expectations": [
               {
@@ -5126,14 +5101,13 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 3,
-                "file_change": 1
+                "command_execution": 3
               },
-              "total_tool_calls": 4
+              "total_tool_calls": 3
             },
             "timing": {
-              "total_tokens": 74327,
-              "executor_duration_seconds": 14.3
+              "total_tokens": 48497,
+              "executor_duration_seconds": 10.7
             },
             "spec_hash": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
           }
@@ -5143,11 +5117,11 @@
           "failed": 1,
           "total": 2,
           "pass_rate": 0.5,
-          "avg_run_seconds": 16.3,
+          "avg_run_seconds": 11.1,
           "measured": {
-            "input_tokens": 9260,
-            "cache_read_input_tokens": 110976,
-            "output_tokens": 3598
+            "input_tokens": 14955,
+            "cache_read_input_tokens": 66560,
+            "output_tokens": 3115
           }
         },
         "baseline": {
@@ -5206,17 +5180,17 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-08-15T09:38:36Z",
+          "ran_at": "2026-08-15T14:05:31Z",
           "summary": {
             "passed": 1,
             "failed": 1,
             "total": 2,
             "pass_rate": 0.5,
-            "avg_run_seconds": 13.8,
+            "avg_run_seconds": 16.3,
             "measured": {
-              "input_tokens": 8426,
-              "cache_read_input_tokens": 98432,
-              "output_tokens": 3065
+              "input_tokens": 9260,
+              "cache_read_input_tokens": 110976,
+              "output_tokens": 3598
             }
           },
           "results": [
@@ -5224,9 +5198,9 @@
               "id": "configure-pyproject",
               "passed": false,
               "measured": {
-                "input_tokens": 3533,
-                "cache_read_input_tokens": 30976,
-                "output_tokens": 1087
+                "input_tokens": 4367,
+                "cache_read_input_tokens": 43520,
+                "output_tokens": 1620
               },
               "summary": {
                 "passed": 7,
@@ -5235,7 +5209,7 @@
                 "pass_rate": 0.875
               },
               "timing": {
-                "executor_duration_seconds": 13.2
+                "executor_duration_seconds": 18.3
               }
             },
             {
@@ -5486,9 +5460,9 @@
         "display": "GPT-5.4",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T09:49:31Z",
+        "ran_at": "2026-08-16T12:19:24Z",
         "executed": true,
-        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "content_hash": "e20a8370ad376b0fc07e0f7a39f3e9f0019ed8af46509c86a89a61bef816670f",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 2.5,
@@ -5498,15 +5472,11 @@
           {
             "id": "configure-pyproject",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1340,
-              "input_cost_usd": 0.00335
-            },
             "measured": {
-              "input_tokens": 6468,
-              "cache_read_input_tokens": 47616,
-              "output_tokens": 849,
-              "cost_usd": 0.147945
+              "input_tokens": 11260,
+              "cache_read_input_tokens": 42496,
+              "output_tokens": 838,
+              "cost_usd": 0.14696
             },
             "expectations": [
               {
@@ -5596,23 +5566,19 @@
               "total_tool_calls": 4
             },
             "timing": {
-              "total_tokens": 54933,
-              "executor_duration_seconds": 22.3
+              "total_tokens": 54594,
+              "executor_duration_seconds": 23.3
             },
             "spec_hash": "38801d5c3ba67af857ed90573108fc112429908a8703a4278cff1a4a200558d6"
           },
           {
             "id": "makefile-gate",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1330,
-              "input_cost_usd": 0.003325
-            },
             "measured": {
-              "input_tokens": 9867,
-              "cache_read_input_tokens": 93824,
-              "output_tokens": 1911,
-              "cost_usd": 0.287893
+              "input_tokens": 11919,
+              "cache_read_input_tokens": 75008,
+              "output_tokens": 1757,
+              "cost_usd": 0.243673
             },
             "expectations": [
               {
@@ -5692,8 +5658,8 @@
               "total_tool_calls": 9
             },
             "timing": {
-              "total_tokens": 105602,
-              "executor_duration_seconds": 48.3
+              "total_tokens": 88684,
+              "executor_duration_seconds": 39.5
             },
             "spec_hash": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
           }
@@ -5703,16 +5669,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 35.3,
-          "estimate": {
-            "input_tokens": 2670,
-            "input_cost_usd": 0.006675
-          },
+          "avg_run_seconds": 31.4,
           "measured": {
-            "input_tokens": 16335,
-            "cache_read_input_tokens": 141440,
-            "output_tokens": 2760,
-            "cost_usd": 0.435838
+            "input_tokens": 23179,
+            "cache_read_input_tokens": 117504,
+            "output_tokens": 2595,
+            "cost_usd": 0.390633
           }
         },
         "baseline": {
@@ -5774,22 +5736,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-06-24T16:24:34Z",
+          "ran_at": "2026-08-15T09:49:31Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 33.6,
+            "avg_run_seconds": 35.3,
             "estimate": {
               "input_tokens": 2670,
               "input_cost_usd": 0.006675
             },
             "measured": {
-              "input_tokens": 29570,
-              "cache_read_input_tokens": 190976,
-              "output_tokens": 2494,
-              "cost_usd": 0.588776
+              "input_tokens": 16335,
+              "cache_read_input_tokens": 141440,
+              "output_tokens": 2760,
+              "cost_usd": 0.435838
             }
           },
           "results": [
@@ -5801,10 +5763,10 @@
                 "input_cost_usd": 0.00335
               },
               "measured": {
-                "input_tokens": 9591,
-                "cache_read_input_tokens": 80768,
-                "output_tokens": 954,
-                "cost_usd": 0.240208
+                "input_tokens": 6468,
+                "cache_read_input_tokens": 47616,
+                "output_tokens": 849,
+                "cost_usd": 0.147945
               },
               "summary": {
                 "passed": 8,
@@ -5813,7 +5775,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 25
+                "executor_duration_seconds": 22.3
               }
             },
             {
@@ -5824,10 +5786,10 @@
                 "input_cost_usd": 0.003325
               },
               "measured": {
-                "input_tokens": 19979,
-                "cache_read_input_tokens": 110208,
-                "output_tokens": 1540,
-                "cost_usd": 0.348568
+                "input_tokens": 9867,
+                "cache_read_input_tokens": 93824,
+                "output_tokens": 1911,
+                "cost_usd": 0.287893
               },
               "summary": {
                 "passed": 7,
@@ -5836,7 +5798,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 42.2
+                "executor_duration_seconds": 48.3
               }
             }
           ]
@@ -6019,9 +5981,9 @@
         "display": "GPT-5.4 Mini",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T09:48:09Z",
+        "ran_at": "2026-08-16T12:18:40Z",
         "executed": true,
-        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "content_hash": "e20a8370ad376b0fc07e0f7a39f3e9f0019ed8af46509c86a89a61bef816670f",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 0.75,
@@ -6030,12 +5992,12 @@
         "results": [
           {
             "id": "configure-pyproject",
-            "passed": true,
+            "passed": false,
             "measured": {
-              "input_tokens": 7395,
-              "cache_read_input_tokens": 60288,
-              "output_tokens": 1441,
-              "cost_usd": 0.057247
+              "input_tokens": 8862,
+              "cache_read_input_tokens": 100864,
+              "output_tokens": 1974,
+              "cost_usd": 0.091178
             },
             "expectations": [
               {
@@ -6052,8 +6014,8 @@
                 "path": "pyproject.toml",
                 "pattern": "uv_build\u003e=",
                 "text": "pyproject.toml matches /uv_build\u003e=/",
-                "passed": true,
-                "evidence": "uv_build\u003e=",
+                "passed": false,
+                "evidence": "no match",
                 "source": "assertion"
               },
               {
@@ -6112,10 +6074,10 @@
               }
             ],
             "summary": {
-              "passed": 8,
-              "failed": 0,
+              "passed": 7,
+              "failed": 1,
               "total": 8,
-              "pass_rate": 1
+              "pass_rate": 0.875
             },
             "execution_metrics": {
               "tool_calls": {
@@ -6125,19 +6087,19 @@
               "total_tool_calls": 7
             },
             "timing": {
-              "total_tokens": 69124,
-              "executor_duration_seconds": 28.9
+              "total_tokens": 111700,
+              "executor_duration_seconds": 36.9
             },
             "spec_hash": "38801d5c3ba67af857ed90573108fc112429908a8703a4278cff1a4a200558d6"
           },
           {
             "id": "makefile-gate",
-            "passed": true,
+            "passed": false,
             "measured": {
-              "input_tokens": 14886,
-              "cache_read_input_tokens": 147200,
-              "output_tokens": 2614,
-              "cost_usd": 0.133328
+              "input_tokens": 8141,
+              "cache_read_input_tokens": 85120,
+              "output_tokens": 1777,
+              "cost_usd": 0.077942
             },
             "expectations": [
               {
@@ -6171,8 +6133,8 @@
                 "path": "Makefile",
                 "pattern": "uv run ty check",
                 "text": "Makefile matches /uv run ty check/",
-                "passed": true,
-                "evidence": "uv run ty check",
+                "passed": false,
+                "evidence": "no match",
                 "source": "assertion"
               },
               {
@@ -6204,36 +6166,36 @@
               }
             ],
             "summary": {
-              "passed": 7,
-              "failed": 0,
+              "passed": 6,
+              "failed": 1,
               "total": 7,
-              "pass_rate": 1
+              "pass_rate": 0.857143
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 8,
+                "command_execution": 5,
                 "file_change": 1
               },
-              "total_tool_calls": 9
+              "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 164700,
-              "executor_duration_seconds": 51.3
+              "total_tokens": 95038,
+              "executor_duration_seconds": 36.6
             },
             "spec_hash": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
           }
         ],
         "summary": {
-          "passed": 2,
-          "failed": 0,
+          "passed": 0,
+          "failed": 2,
           "total": 2,
-          "pass_rate": 1,
-          "avg_run_seconds": 40.1,
+          "pass_rate": 0,
+          "avg_run_seconds": 36.8,
           "measured": {
-            "input_tokens": 22281,
-            "cache_read_input_tokens": 207488,
-            "output_tokens": 4055,
-            "cost_usd": 0.190575
+            "input_tokens": 17003,
+            "cache_read_input_tokens": 185984,
+            "output_tokens": 3751,
+            "cost_usd": 0.16912
           }
         },
         "baseline": {
@@ -6291,6 +6253,62 @@
                 "executor_duration_seconds": 27.9
               },
               "fingerprint": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-08-15T09:48:09Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 40.1,
+            "measured": {
+              "input_tokens": 22281,
+              "cache_read_input_tokens": 207488,
+              "output_tokens": 4055,
+              "cost_usd": 0.190575
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7395,
+                "cache_read_input_tokens": 60288,
+                "output_tokens": 1441,
+                "cost_usd": 0.057247
+              },
+              "summary": {
+                "passed": 8,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 28.9
+              }
+            },
+            {
+              "id": "makefile-gate",
+              "passed": true,
+              "measured": {
+                "input_tokens": 14886,
+                "cache_read_input_tokens": 147200,
+                "output_tokens": 2614,
+                "cost_usd": 0.133328
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 51.3
+              }
             }
           ]
         }
@@ -6522,9 +6540,9 @@
         "display": "GPT-5.5",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T09:51:01Z",
+        "ran_at": "2026-08-16T12:20:08Z",
         "executed": true,
-        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "content_hash": "e20a8370ad376b0fc07e0f7a39f3e9f0019ed8af46509c86a89a61bef816670f",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 5,
@@ -6534,15 +6552,11 @@
           {
             "id": "configure-pyproject",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1340,
-              "input_cost_usd": 0.0067
-            },
             "measured": {
-              "input_tokens": 8898,
-              "cache_read_input_tokens": 67456,
-              "output_tokens": 1130,
-              "cost_usd": 0.41567
+              "input_tokens": 8558,
+              "cache_read_input_tokens": 66432,
+              "output_tokens": 1074,
+              "cost_usd": 0.40717
             },
             "expectations": [
               {
@@ -6626,29 +6640,25 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 6,
+                "command_execution": 4,
                 "file_change": 1
               },
-              "total_tool_calls": 7
+              "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 77484,
-              "executor_duration_seconds": 29.3
+              "total_tokens": 76064,
+              "executor_duration_seconds": 29.4
             },
             "spec_hash": "38801d5c3ba67af857ed90573108fc112429908a8703a4278cff1a4a200558d6"
           },
           {
             "id": "makefile-gate",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1330,
-              "input_cost_usd": 0.00665
-            },
             "measured": {
-              "input_tokens": 16702,
-              "cache_read_input_tokens": 94848,
-              "output_tokens": 1905,
-              "cost_usd": 0.6149
+              "input_tokens": 10396,
+              "cache_read_input_tokens": 68480,
+              "output_tokens": 1672,
+              "cost_usd": 0.44454
             },
             "expectations": [
               {
@@ -6722,14 +6732,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 10,
+                "command_execution": 9,
                 "file_change": 1
               },
-              "total_tool_calls": 11
+              "total_tool_calls": 10
             },
             "timing": {
-              "total_tokens": 113455,
-              "executor_duration_seconds": 52.6
+              "total_tokens": 80548,
+              "executor_duration_seconds": 41.3
             },
             "spec_hash": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
           }
@@ -6739,16 +6749,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 41,
-          "estimate": {
-            "input_tokens": 2670,
-            "input_cost_usd": 0.01335
-          },
+          "avg_run_seconds": 35.3,
           "measured": {
-            "input_tokens": 25600,
-            "cache_read_input_tokens": 162304,
-            "output_tokens": 3035,
-            "cost_usd": 1.03057
+            "input_tokens": 18954,
+            "cache_read_input_tokens": 134912,
+            "output_tokens": 2746,
+            "cost_usd": 0.85171
           }
         },
         "baseline": {
@@ -6810,22 +6816,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-06-24T16:25:12Z",
+          "ran_at": "2026-08-15T09:51:01Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 31.5,
+            "avg_run_seconds": 41,
             "estimate": {
               "input_tokens": 2670,
               "input_cost_usd": 0.01335
             },
             "measured": {
-              "input_tokens": 36782,
-              "cache_read_input_tokens": 163072,
-              "output_tokens": 2739,
-              "cost_usd": 1.08144
+              "input_tokens": 25600,
+              "cache_read_input_tokens": 162304,
+              "output_tokens": 3035,
+              "cost_usd": 1.03057
             }
           },
           "results": [
@@ -6837,10 +6843,10 @@
                 "input_cost_usd": 0.0067
               },
               "measured": {
-                "input_tokens": 25047,
-                "cache_read_input_tokens": 73088,
-                "output_tokens": 1015,
-                "cost_usd": 0.521125
+                "input_tokens": 8898,
+                "cache_read_input_tokens": 67456,
+                "output_tokens": 1130,
+                "cost_usd": 0.41567
               },
               "summary": {
                 "passed": 8,
@@ -6849,7 +6855,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 25.2
+                "executor_duration_seconds": 29.3
               }
             },
             {
@@ -6860,10 +6866,10 @@
                 "input_cost_usd": 0.00665
               },
               "measured": {
-                "input_tokens": 11735,
-                "cache_read_input_tokens": 89984,
-                "output_tokens": 1724,
-                "cost_usd": 0.560315
+                "input_tokens": 16702,
+                "cache_read_input_tokens": 94848,
+                "output_tokens": 1905,
+                "cost_usd": 0.6149
               },
               "summary": {
                 "passed": 7,
@@ -6872,7 +6878,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 37.7
+                "executor_duration_seconds": 52.6
               }
             }
           ]
@@ -7055,9 +7061,9 @@
         "display": "GPT-5.6 Luna",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T09:34:49Z",
+        "ran_at": "2026-08-16T12:17:46Z",
         "executed": true,
-        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "content_hash": "e20a8370ad376b0fc07e0f7a39f3e9f0019ed8af46509c86a89a61bef816670f",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 1,
@@ -7068,10 +7074,10 @@
             "id": "configure-pyproject",
             "passed": true,
             "measured": {
-              "input_tokens": 9270,
-              "cache_read_input_tokens": 76288,
-              "output_tokens": 1140,
-              "cost_usd": 0.092398
+              "input_tokens": 6529,
+              "cache_read_input_tokens": 50176,
+              "output_tokens": 793,
+              "cost_usd": 0.061463
             },
             "expectations": [
               {
@@ -7155,14 +7161,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 4,
+                "command_execution": 2,
                 "file_change": 1
               },
-              "total_tool_calls": 5
+              "total_tool_calls": 3
             },
             "timing": {
-              "total_tokens": 86698,
-              "executor_duration_seconds": 29
+              "total_tokens": 57498,
+              "executor_duration_seconds": 21
             },
             "spec_hash": "38801d5c3ba67af857ed90573108fc112429908a8703a4278cff1a4a200558d6"
           },
@@ -7170,10 +7176,10 @@
             "id": "makefile-gate",
             "passed": true,
             "measured": {
-              "input_tokens": 8582,
-              "cache_read_input_tokens": 66304,
-              "output_tokens": 1567,
-              "cost_usd": 0.084288
+              "input_tokens": 10007,
+              "cache_read_input_tokens": 81408,
+              "output_tokens": 1755,
+              "cost_usd": 0.101945
             },
             "expectations": [
               {
@@ -7247,14 +7253,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 3,
+                "command_execution": 4,
                 "file_change": 1
               },
-              "total_tool_calls": 4
+              "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 76453,
-              "executor_duration_seconds": 39.2
+              "total_tokens": 93170,
+              "executor_duration_seconds": 44.5
             },
             "spec_hash": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
           }
@@ -7264,12 +7270,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 34.1,
+          "avg_run_seconds": 32.8,
           "measured": {
-            "input_tokens": 17852,
-            "cache_read_input_tokens": 142592,
-            "output_tokens": 2707,
-            "cost_usd": 0.176686
+            "input_tokens": 16536,
+            "cache_read_input_tokens": 131584,
+            "output_tokens": 2548,
+            "cost_usd": 0.163408
           }
         },
         "baseline": {
@@ -7327,6 +7333,62 @@
                 "executor_duration_seconds": 34.7
               },
               "fingerprint": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-08-15T09:34:49Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 34.1,
+            "measured": {
+              "input_tokens": 17852,
+              "cache_read_input_tokens": 142592,
+              "output_tokens": 2707,
+              "cost_usd": 0.176686
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": true,
+              "measured": {
+                "input_tokens": 9270,
+                "cache_read_input_tokens": 76288,
+                "output_tokens": 1140,
+                "cost_usd": 0.092398
+              },
+              "summary": {
+                "passed": 8,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 29
+              }
+            },
+            {
+              "id": "makefile-gate",
+              "passed": true,
+              "measured": {
+                "input_tokens": 8582,
+                "cache_read_input_tokens": 66304,
+                "output_tokens": 1567,
+                "cost_usd": 0.084288
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 39.2
+              }
             }
           ]
         }
@@ -7508,9 +7570,9 @@
         "display": "GPT-5.6 Sol",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T09:26:24Z",
+        "ran_at": "2026-08-16T12:16:07Z",
         "executed": true,
-        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "content_hash": "e20a8370ad376b0fc07e0f7a39f3e9f0019ed8af46509c86a89a61bef816670f",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 5,
@@ -7521,10 +7583,10 @@
             "id": "configure-pyproject",
             "passed": true,
             "measured": {
-              "input_tokens": 18322,
-              "cache_read_input_tokens": 62208,
-              "output_tokens": 801,
-              "cost_usd": 0.42668
+              "input_tokens": 9320,
+              "cache_read_input_tokens": 71424,
+              "output_tokens": 857,
+              "cost_usd": 0.42943
             },
             "expectations": [
               {
@@ -7614,8 +7676,8 @@
               "total_tool_calls": 4
             },
             "timing": {
-              "total_tokens": 81331,
-              "executor_duration_seconds": 28.6
+              "total_tokens": 81601,
+              "executor_duration_seconds": 29.2
             },
             "spec_hash": "38801d5c3ba67af857ed90573108fc112429908a8703a4278cff1a4a200558d6"
           },
@@ -7623,10 +7685,10 @@
             "id": "makefile-gate",
             "passed": true,
             "measured": {
-              "input_tokens": 20480,
-              "cache_read_input_tokens": 77312,
-              "output_tokens": 1298,
-              "cost_usd": 0.5279
+              "input_tokens": 15494,
+              "cache_read_input_tokens": 82432,
+              "output_tokens": 1279,
+              "cost_usd": 0.528
             },
             "expectations": [
               {
@@ -7706,8 +7768,8 @@
               "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 99090,
-              "executor_duration_seconds": 37.4
+              "total_tokens": 99205,
+              "executor_duration_seconds": 36.4
             },
             "spec_hash": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
           }
@@ -7717,12 +7779,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 33,
+          "avg_run_seconds": 32.8,
           "measured": {
-            "input_tokens": 38802,
-            "cache_read_input_tokens": 139520,
-            "output_tokens": 2099,
-            "cost_usd": 0.95458
+            "input_tokens": 24814,
+            "cache_read_input_tokens": 153856,
+            "output_tokens": 2136,
+            "cost_usd": 0.95743
           }
         },
         "baseline": {
@@ -7780,6 +7842,62 @@
                 "executor_duration_seconds": 30.1
               },
               "fingerprint": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-08-15T09:26:24Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 33,
+            "measured": {
+              "input_tokens": 38802,
+              "cache_read_input_tokens": 139520,
+              "output_tokens": 2099,
+              "cost_usd": 0.95458
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": true,
+              "measured": {
+                "input_tokens": 18322,
+                "cache_read_input_tokens": 62208,
+                "output_tokens": 801,
+                "cost_usd": 0.42668
+              },
+              "summary": {
+                "passed": 8,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 28.6
+              }
+            },
+            {
+              "id": "makefile-gate",
+              "passed": true,
+              "measured": {
+                "input_tokens": 20480,
+                "cache_read_input_tokens": 77312,
+                "output_tokens": 1298,
+                "cost_usd": 0.5279
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 37.4
+              }
             }
           ]
         }
@@ -7961,9 +8079,9 @@
         "display": "GPT-5.6 Terra",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T09:30:31Z",
+        "ran_at": "2026-08-16T12:16:58Z",
         "executed": true,
-        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "content_hash": "e20a8370ad376b0fc07e0f7a39f3e9f0019ed8af46509c86a89a61bef816670f",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 2.5,
@@ -7974,10 +8092,10 @@
             "id": "configure-pyproject",
             "passed": true,
             "measured": {
-              "input_tokens": 9965,
-              "cache_read_input_tokens": 87552,
-              "output_tokens": 1020,
-              "cost_usd": 0.259093
+              "input_tokens": 8504,
+              "cache_read_input_tokens": 54272,
+              "output_tokens": 701,
+              "cost_usd": 0.167455
             },
             "expectations": [
               {
@@ -8061,14 +8179,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 4,
+                "command_execution": 2,
                 "file_change": 1
               },
-              "total_tool_calls": 5
+              "total_tool_calls": 3
             },
             "timing": {
-              "total_tokens": 98537,
-              "executor_duration_seconds": 32.8
+              "total_tokens": 63477,
+              "executor_duration_seconds": 24.9
             },
             "spec_hash": "38801d5c3ba67af857ed90573108fc112429908a8703a4278cff1a4a200558d6"
           },
@@ -8076,10 +8194,10 @@
             "id": "makefile-gate",
             "passed": true,
             "measured": {
-              "input_tokens": 10196,
-              "cache_read_input_tokens": 86528,
-              "output_tokens": 1497,
-              "cost_usd": 0.264265
+              "input_tokens": 17759,
+              "cache_read_input_tokens": 133888,
+              "output_tokens": 1843,
+              "cost_usd": 0.406763
             },
             "expectations": [
               {
@@ -8153,14 +8271,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 4,
-                "file_change": 1
+                "command_execution": 6,
+                "file_change": 2
               },
-              "total_tool_calls": 5
+              "total_tool_calls": 8
             },
             "timing": {
-              "total_tokens": 98221,
-              "executor_duration_seconds": 36.9
+              "total_tokens": 153490,
+              "executor_duration_seconds": 43
             },
             "spec_hash": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
           }
@@ -8170,12 +8288,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 34.8,
+          "avg_run_seconds": 34,
           "measured": {
-            "input_tokens": 20161,
-            "cache_read_input_tokens": 174080,
-            "output_tokens": 2517,
-            "cost_usd": 0.523358
+            "input_tokens": 26263,
+            "cache_read_input_tokens": 188160,
+            "output_tokens": 2544,
+            "cost_usd": 0.574218
           }
         },
         "baseline": {
@@ -8233,6 +8351,62 @@
                 "executor_duration_seconds": 44.8
               },
               "fingerprint": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-08-15T09:30:31Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 34.8,
+            "measured": {
+              "input_tokens": 20161,
+              "cache_read_input_tokens": 174080,
+              "output_tokens": 2517,
+              "cost_usd": 0.523358
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": true,
+              "measured": {
+                "input_tokens": 9965,
+                "cache_read_input_tokens": 87552,
+                "output_tokens": 1020,
+                "cost_usd": 0.259093
+              },
+              "summary": {
+                "passed": 8,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 32.8
+              }
+            },
+            {
+              "id": "makefile-gate",
+              "passed": true,
+              "measured": {
+                "input_tokens": 10196,
+                "cache_read_input_tokens": 86528,
+                "output_tokens": 1497,
+                "cost_usd": 0.264265
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 36.9
+              }
             }
           ]
         }
@@ -8740,9 +8914,9 @@
         "display": "Grok 4.6",
         "harness": "grok",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T09:56:22Z",
+        "ran_at": "2026-08-16T12:20:31Z",
         "executed": true,
-        "content_hash": "1e0444377a60279a3b87b61417cec5283efac2bdf313ce6447b41f5ccee3725b",
+        "content_hash": "e20a8370ad376b0fc07e0f7a39f3e9f0019ed8af46509c86a89a61bef816670f",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 2,
@@ -8753,10 +8927,10 @@
             "id": "configure-pyproject",
             "passed": true,
             "measured": {
-              "input_tokens": 16921,
-              "cache_read_input_tokens": 37504,
-              "output_tokens": 2095,
-              "cost_usd": 0.011078
+              "input_tokens": 16546,
+              "cache_read_input_tokens": 37120,
+              "output_tokens": 1382,
+              "cost_usd": 0.01019
             },
             "expectations": [
               {
@@ -8839,8 +9013,8 @@
               "pass_rate": 1
             },
             "timing": {
-              "total_tokens": 56520,
-              "executor_duration_seconds": 31.3
+              "total_tokens": 55048,
+              "executor_duration_seconds": 21.1
             },
             "spec_hash": "38801d5c3ba67af857ed90573108fc112429908a8703a4278cff1a4a200558d6"
           },
@@ -8848,10 +9022,10 @@
             "id": "makefile-gate",
             "passed": true,
             "measured": {
-              "input_tokens": 4403,
-              "cache_read_input_tokens": 62336,
-              "output_tokens": 1141,
-              "cost_usd": 0.007959
+              "input_tokens": 5026,
+              "cache_read_input_tokens": 62976,
+              "output_tokens": 1375,
+              "cost_usd": 0.008464
             },
             "expectations": [
               {
@@ -8924,8 +9098,8 @@
               "pass_rate": 1
             },
             "timing": {
-              "total_tokens": 67880,
-              "executor_duration_seconds": 20.5
+              "total_tokens": 69377,
+              "executor_duration_seconds": 20.8
             },
             "spec_hash": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
           }
@@ -8935,12 +9109,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 25.9,
+          "avg_run_seconds": 21,
           "measured": {
-            "input_tokens": 21324,
-            "cache_read_input_tokens": 99840,
-            "output_tokens": 3236,
-            "cost_usd": 0.019037
+            "input_tokens": 21572,
+            "cache_read_input_tokens": 100096,
+            "output_tokens": 2757,
+            "cost_usd": 0.018654
           }
         },
         "baseline": {
@@ -8998,6 +9172,62 @@
                 "executor_duration_seconds": 191.4
               },
               "fingerprint": "fec67cce9d258713a925c66e538dcd2ee91ccd3daaeb75f8d30b2494d9e245ca"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-08-15T09:56:22Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 25.9,
+            "measured": {
+              "input_tokens": 21324,
+              "cache_read_input_tokens": 99840,
+              "output_tokens": 3236,
+              "cost_usd": 0.019037
+            }
+          },
+          "results": [
+            {
+              "id": "configure-pyproject",
+              "passed": true,
+              "measured": {
+                "input_tokens": 16921,
+                "cache_read_input_tokens": 37504,
+                "output_tokens": 2095,
+                "cost_usd": 0.011078
+              },
+              "summary": {
+                "passed": 8,
+                "failed": 0,
+                "total": 8,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 31.3
+              }
+            },
+            {
+              "id": "makefile-gate",
+              "passed": true,
+              "measured": {
+                "input_tokens": 4403,
+                "cache_read_input_tokens": 62336,
+                "output_tokens": 1141,
+                "cost_usd": 0.007959
+              },
+              "summary": {
+                "passed": 7,
+                "failed": 0,
+                "total": 7,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 20.5
+              }
             }
           ]
         }

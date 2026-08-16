@@ -652,20 +652,22 @@
 | Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | +88% | +88% | 22.7s | 2,017 | $0.0202 | 8/1,289 | 88,307/10,222 | $0.3579 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | +12% | +12% | 9.2s | 1,506 | $0.0015 | 21/563 | 65,372/10,256 | $0.0306 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | -12% | +0% | 9.8s | — | — | 21/568 | 65,354/10,273 | $0.0306 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +0% | 27.6s | 2,017 | $0.0101 | 2,865/1,665 | 67,262/25,598 | $0.3462 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | +88% | +88% | 25.5s | — | — | 10/1,609 | 113,648/10,351 | $0.2013 |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | +0% | +88% | 21.2s | — | — | 10/1,399 | 113,573/10,215 | $0.1946 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | +0% | +0% | 18.0s | 1,506 | $0.0045 | 6/502 | 85,588/8,268 | $0.0835 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | +88% | +88% | 18.2s | 2,017 | $0.0061 | 10/1,481 | 166,820/13,432 | $0.1536 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | +0% | +0% | 18.3s | — | n/a | 4,367/1,620 | 43,520/— | n/a |
-| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 22.3s | 1,340 | $0.0034 | 6,468/849 | 47,616/— | $0.1479 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | +0% (vs base) | +0% | 28.9s | — | — | 7,395/1,441 | 60,288/— | $0.0572 |
-| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 29.3s | 1,340 | $0.0067 | 8,898/1,130 | 67,456/— | $0.4157 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | +0% (vs base) | +0% | 29.0s | — | — | 9,270/1,140 | 76,288/— | $0.0924 |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | +12% (vs base) | +12% | 28.6s | — | — | 18,322/801 | 62,208/— | $0.4267 |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | +12% (vs base) | +12% | 32.8s | — | — | 9,965/1,020 | 87,552/— | $0.2591 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | +0% | +88% | 23.6s | — | — | 12/1,394 | 199,073/13,369 | $0.1616 |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | +0% | +0% | 11.5s | — | n/a | 7,817/1,308 | 27,008/— | n/a |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +0% | 23.3s | — | — | 11,260/838 | 42,496/— | $0.1470 |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | FAIL | -12% | -12% | 36.9s | — | — | 8,862/1,974 | 100,864/— | $0.0912 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +0% | 29.4s | — | — | 8,558/1,074 | 66,432/— | $0.4072 |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | +0% | +0% | 21.0s | — | — | 6,529/793 | 50,176/— | $0.0615 |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | +0% | +12% | 29.2s | — | — | 9,320/857 | 71,424/— | $0.4294 |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | +0% | +12% | 24.9s | — | — | 8,504/701 | 54,272/— | $0.1675 |
 | xAI | Grok 4.5 (`grok-4.5`) | PASS | +0% | +0% | 14.9s | — | — | 13,732/1,008 | 39,040/— | $0.0452 |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | +0% (vs base) | +0% | 31.3s | — | — | 16,921/2,095 | 37,504/— | $0.0111 |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | +0% | +0% | 21.1s | — | — | 16,546/1,382 | 37,120/— | $0.0102 |
+
+- `claude-haiku-4-5` failed `pyproject.toml matches /build-backend = "uv_build"/`: no match
 
 - `claude-haiku-4-5` failed `pyproject.toml matches /uv_build>=/`: no match
 
@@ -673,27 +675,31 @@
 
 - `gpt-5.3-codex-spark` failed `pyproject.toml matches /uv_build>=/`: no match
 
+- `gpt-5.4-mini` failed `pyproject.toml matches /uv_build>=/`: no match
+
 #### makefile-gate
 
 | Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | +100% | +100% | 32.0s | 1,996 | $0.0200 | 12/2,091 | 140,256/10,977 | $0.4651 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | +0% | +86% | 13.7s | 1,492 | $0.0015 | 27/841 | 90,845/10,484 | $0.0349 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | +0% | +86% | 14.6s | — | — | 28/946 | 91,383/10,739 | $0.0360 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +14% | 31.8s | 1,996 | $0.0100 | 2,868/2,146 | 92,467/25,975 | $0.3746 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | +100% | +100% | 72.4s | — | — | 15/4,933 | 200,730/13,413 | $0.3585 |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | +0% | +100% | 29.8s | — | — | 10/1,920 | 112,960/10,460 | $0.2098 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +14% | 22.0s | 1,492 | $0.0045 | 8/1,077 | 114,130/10,510 | $0.1141 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | +100% | +100% | 89.7s | 1,996 | $0.0060 | 32/7,815 | 642,899/23,291 | $0.4506 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | +0% | +71% | 14.3s | — | n/a | 4,893/1,978 | 67,456/— | n/a |
-| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +14% | 48.3s | 1,330 | $0.0033 | 9,867/1,911 | 93,824/— | $0.2879 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | +14% (vs base) | +14% | 51.3s | — | — | 14,886/2,614 | 147,200/— | $0.1333 |
-| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +14% | 52.6s | 1,330 | $0.0066 | 16,702/1,905 | 94,848/— | $0.6149 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | +14% (vs base) | +14% | 39.2s | — | — | 8,582/1,567 | 66,304/— | $0.0843 |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | +14% (vs base) | +14% | 37.4s | — | — | 20,480/1,298 | 77,312/— | $0.5279 |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | +14% (vs base) | +14% | 36.9s | — | — | 10,196/1,497 | 86,528/— | $0.2643 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | +0% | +100% | 17.8s | — | — | 10/1,593 | 165,427/13,133 | $0.1530 |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | +0% | +71% | 10.7s | — | n/a | 7,138/1,807 | 39,552/— | n/a |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +14% | 39.5s | — | — | 11,919/1,757 | 75,008/— | $0.2437 |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | FAIL | -14% | +0% | 36.6s | — | — | 8,141/1,777 | 85,120/— | $0.0779 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +14% | 41.3s | — | — | 10,396/1,672 | 68,480/— | $0.4445 |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | +0% | +14% | 44.5s | — | — | 10,007/1,755 | 81,408/— | $0.1019 |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | +0% | +14% | 36.4s | — | — | 15,494/1,279 | 82,432/— | $0.5280 |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | +0% | +14% | 43.0s | — | — | 17,759/1,843 | 133,888/— | $0.4068 |
 | xAI | Grok 4.5 (`grok-4.5`) | PASS | +0% | +0% | 12.9s | — | — | 3,925/718 | 48,640/— | $0.0267 |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | +0% (vs base) | +0% | 20.5s | — | — | 4,403/1,141 | 62,336/— | $0.0080 |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | +0% | +0% | 20.8s | — | — | 5,026/1,375 | 62,976/— | $0.0085 |
 
 - `claude-haiku-4-5` failed `Makefile matches /uv run ty check/`: no match
+
+- `gpt-5.4-mini` failed `Makefile matches /uv run ty check/`: no match
 
 ## python-release
 
@@ -704,266 +710,257 @@
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 3/3 | +100% | 5.6s | 1,438 | $0.0144 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | +0% | 7.6s | 1,018 | $0.0010 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 3/3 | +33% | 5.2s | — | — |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +33% | 7.1s | 1,438 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | FAIL | 0/3 | +0% | 9.0s | — | — |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | FAIL | 0/3 | +0% | 10.3s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 4.2s | 1,018 | $0.0031 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | +100% | 3.9s | 1,438 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 3/3 | +0% | 8.9s | — | n/a |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 2/3 | -33% | 5.2s | — | — |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | 1/3 | -67% | 33.2s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | — | 16.3s | 826 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 2/3 | — | 44.3s | — | — |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 2/3 | +0% | 53.1s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 8.7s | 826 | $0.0041 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | — | 7.5s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | — | 9.4s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | — | 8.4s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | — | 6.4s | — | — |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | +0% | 7.9s | — | — |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | +0% | 8.8s | — | — |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | +0% | 10.1s | — | — |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | +0% | 5.9s | — | — |
 
 #### Set up uv build and uv publish (expected: yes)
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 3/3 | +100% | 5.0s | 1,437 | $0.0144 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | +0% | 7.9s | 1,019 | $0.0010 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 3/3 | +33% | 5.4s | — | — |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 6.9s | 1,437 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 3/3 | +100% | 9.9s | — | — |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 2/3 | -33% | 7.9s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 2/3 | -33% | 6.1s | 1,019 | $0.0031 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | +100% | 4.7s | 1,437 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 3/3 | +0% | 7.9s | — | n/a |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | +0% | 4.1s | — | — |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 2/3 | -33% | 24.7s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | — | 17.9s | 826 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 2/3 | — | 47.3s | — | — |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 2/3 | +0% | 49.7s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 10.3s | 826 | $0.0041 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | — | 8.0s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | — | 9.2s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | — | 10.2s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | — | 5.4s | — | — |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | +0% | 8.2s | — | — |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | +0% | 9.3s | — | — |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | +0% | 11.4s | — | — |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | +0% | 6.4s | — | — |
 
 #### Write a GitHub Actions CI workflow for my uv project (expected: yes)
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 3/3 | +100% | 5.5s | 1,446 | $0.0145 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 3/3 | +0% | 7.3s | 1,021 | $0.0010 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | -33% | 6.2s | — | — |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 5.5s | 1,446 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 3/3 | +100% | 4.6s | — | — |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 3/3 | +0% | 5.0s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 4.0s | 1,021 | $0.0031 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | +100% | 4.0s | 1,446 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | 0/3 | -33% | 32.4s | — | n/a |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | +0% | 4.0s | — | — |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | 0/3 | +0% | 13.2s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | — | 21.3s | 830 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | FAIL | 0/3 | — | 81.3s | — | — |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | FAIL | 1/3 | +33% | 77.6s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 13.9s | 830 | $0.0042 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | — | 11.0s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | — | 8.6s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | — | 7.5s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | — | 8.4s | — | — |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 2/3 | -33% | 31.7s | — | — |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | +0% | 7.8s | — | — |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | +0% | 12.7s | — | — |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | +0% | 7.0s | — | — |
 
 #### Configure Trusted Publishing for PyPI (expected: yes)
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 3/3 | +100% | 4.9s | 1,442 | $0.0144 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | +0% | 7.4s | 1,017 | $0.0010 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 3/3 | +33% | 4.0s | — | — |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 5.5s | 1,442 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 2/3 | +67% | 9.4s | — | — |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | FAIL | 1/3 | -33% | 10.1s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 3.9s | 1,017 | $0.0031 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | +100% | 3.3s | 1,442 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 3/3 | +0% | 3.8s | — | n/a |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | +0% | 3.3s | — | — |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | 1/3 | -67% | 32.5s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | — | 12.5s | 825 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | FAIL | 1/3 | — | 79.8s | — | — |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 3/3 | +67% | 9.2s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 8.5s | 825 | $0.0041 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | — | 7.6s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | — | 7.5s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | — | 12.1s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | — | 6.3s | — | — |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | +0% | 7.5s | — | — |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | +0% | 8.2s | — | — |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | +0% | 10.2s | — | — |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | +0% | 4.2s | — | — |
 
 #### Add a tag-triggered release workflow for my Python package (expected: yes)
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 3/3 | +100% | 4.8s | 1,444 | $0.0144 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 3/3 | +67% | 4.7s | 1,021 | $0.0010 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | -100% | 10.0s | — | — |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 4.7s | 1,444 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | FAIL | 1/3 | +33% | 8.8s | — | — |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 2/3 | +33% | 6.6s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 3.6s | 1,021 | $0.0031 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | +100% | 3.3s | 1,444 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 3/3 | +0% | 5.7s | — | n/a |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | +0% | 3.4s | — | — |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | 1/3 | -67% | 20.2s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | — | 19.5s | 830 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | FAIL | 1/3 | — | 75.8s | — | — |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | FAIL | 1/3 | +0% | 68.9s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 9.0s | 830 | $0.0042 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | — | 7.8s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | — | 7.7s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | — | 8.8s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | — | 5.4s | — | — |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | +0% | 8.3s | — | — |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | +0% | 7.7s | — | — |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | +0% | 11.7s | — | — |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | +0% | 5.2s | — | — |
 
 #### Set up Dependabot for my Python repo (expected: yes)
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 3/3 | +100% | 4.8s | 1,440 | $0.0144 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 1/3 | +0% | 9.4s | 1,020 | $0.0010 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +33% | 10.0s | 1,440 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 2/3 | +67% | 9.2s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 3.4s | 1,020 | $0.0031 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | FAIL | 0/3 | +0% | 7.6s | 1,440 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | 0/3 | +0% | 22.6s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 2/3 | — | 19.1s | 827 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | FAIL | 1/3 | — | 56.2s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 10.2s | 827 | $0.0041 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | — | 9.5s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | — | 7.1s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | — | 10.9s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | — | 9.9s | — | — |
 
 #### How do I version and release my Python package? (expected: yes)
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 3/3 | +100% | 5.1s | 1,437 | $0.0144 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 3/3 | +0% | 5.7s | 1,020 | $0.0010 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 3/3 | +0% | 6.5s | — | — |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 3/3 | +0% | 4.9s | 1,437 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 3/3 | +100% | 4.0s | — | — |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 3/3 | +0% | 3.8s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 4.2s | 1,020 | $0.0031 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | +100% | 2.9s | 1,437 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 3/3 | +0% | 5.4s | — | n/a |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 3/3 | +0% | 2.9s | — | — |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 2/3 | -33% | 7.2s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | — | 8.6s | 829 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 2/3 | — | 31.1s | — | — |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 2/3 | +0% | 19.1s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 6.0s | 829 | $0.0041 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | — | 5.8s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | — | 6.8s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | — | 6.4s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | — | 7.3s | — | — |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | +0% | 6.8s | — | — |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | +0% | 7.2s | — | — |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | +0% | 6.4s | — | — |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | +0% | 5.6s | — | — |
 
 #### Build a wheel and sdist with uv (expected: yes)
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 3/3 | +100% | 4.9s | 1,439 | $0.0144 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | +67% | 7.5s | 1,019 | $0.0010 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 2/3 | +0% | 4.5s | — | — |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | -33% | 11.6s | 1,439 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | FAIL | 0/3 | +0% | 8.8s | — | — |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 2/3 | +67% | 7.8s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 3/3 | +0% | 3.1s | 1,019 | $0.0031 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | FAIL | 0/3 | +0% | 6.4s | 1,439 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | 0/3 | +0% | 21.6s | — | n/a |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | FAIL | 0/3 | +0% | 7.4s | — | — |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | 1/3 | +33% | 6.8s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | — | 13.1s | 827 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 3/3 | — | 10.3s | — | — |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 2/3 | -33% | 18.3s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 9.6s | 827 | $0.0041 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | — | 8.8s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | — | 7.3s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | — | 8.0s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | — | 4.8s | — | — |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | +0% | 7.4s | — | — |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | +0% | 7.4s | — | — |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | +0% | 7.9s | — | — |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | +0% | 4.6s | — | — |
 
 #### Add CI that runs ruff, ty, and pytest (expected: yes)
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 3/3 | +100% | 5.4s | 1,444 | $0.0144 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 8.4s | 1,021 | $0.0010 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | FAIL | 0/3 | +0% | 7.3s | — | — |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | FAIL | 0/3 | +0% | 10.8s | 1,444 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | FAIL | 1/3 | +33% | 10.0s | — | — |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | FAIL | 0/3 | -33% | 9.4s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | FAIL | 1/3 | +33% | 14.9s | 1,021 | $0.0031 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 2/3 | +67% | 6.9s | 1,444 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | 0/3 | +0% | 29.0s | — | n/a |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 2/3 | +0% | 7.6s | — | — |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | 0/3 | +0% | 19.2s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 3/3 | — | 18.2s | 830 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | FAIL | 1/3 | — | 74.7s | — | — |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | FAIL | 1/3 | +0% | 61.2s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 3/3 | — | 11.9s | 830 | $0.0042 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | — | 11.2s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | — | 8.9s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | — | 10.3s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | — | 13.0s | — | — |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 3/3 | +0% | 8.3s | — | — |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 3/3 | +0% | 10.0s | — | — |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 3/3 | +0% | 11.4s | — | — |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | 3/3 | +0% | 11.4s | — | — |
 
 #### Set up GoReleaser for my Go project (expected: no)
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 0/3 | +0% | 0.8s | 1,440 | $0.0144 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 6.0s | 1,020 | $0.0010 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 8.3s | — | — |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 13.9s | 1,440 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 0/3 | +0% | 0.8s | — | — |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 0/3 | +0% | 9.6s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 9.9s | 1,020 | $0.0031 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | +0% | 0.8s | 1,440 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 0/3 | +0% | 18.9s | — | n/a |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | +0% | 7.1s | — | — |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 0/3 | +0% | 43.6s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | — | 46.4s | 829 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 0/3 | — | 25.0s | — | — |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 0/3 | +0% | 31.0s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 113.7s | 829 | $0.0041 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 0/3 | — | 15.9s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 0/3 | — | 21.7s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 0/3 | — | 13.5s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | FAIL | 2/3 | — | 14.0s | — | — |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 0/3 | +0% | 17.0s | — | — |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 0/3 | +0% | 18.3s | — | — |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 0/3 | +0% | 10.7s | — | — |
+| xAI | Grok 4.6 (`grok-4.6`) | FAIL | 3/3 | -33% | 7.3s | — | — |
 
 #### Write tests for my Python package (expected: no)
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 0/3 | +0% | 0.8s | 1,435 | $0.0143 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 6.9s | 1,016 | $0.0010 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 5.6s | — | — |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 11.6s | 1,435 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 0/3 | +0% | 0.8s | — | — |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 0/3 | +0% | 10.1s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 27.0s | 1,016 | $0.0030 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | +0% | 0.8s | 1,435 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 0/3 | +0% | 14.9s | — | n/a |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | +0% | 9.4s | — | — |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 0/3 | +0% | 31.5s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | — | 98.0s | 825 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 0/3 | — | 72.9s | — | — |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 0/3 | +0% | 96.9s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 59.5s | 825 | $0.0041 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 0/3 | — | 63.5s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 0/3 | — | 22.6s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 0/3 | — | 42.5s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | 0/3 | — | 14.6s | — | — |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 0/3 | +0% | 55.6s | — | — |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 0/3 | +0% | 26.0s | — | — |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 0/3 | +0% | 36.2s | — | — |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | 0/3 | +0% | 13.2s | — | — |
 
 #### Scaffold a new Python project with uv (expected: no)
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 0/3 | +0% | 0.8s | 1,439 | $0.0144 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 9.2s | 1,019 | $0.0010 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 9.3s | — | — |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 13.4s | 1,439 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 0/3 | +0% | 0.8s | — | — |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 0/3 | +0% | 12.1s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 11.0s | 1,019 | $0.0031 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | +0% | 0.8s | 1,439 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 0/3 | +0% | 58.4s | — | n/a |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | +0% | 7.0s | — | — |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 0/3 | +0% | 51.0s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | — | 120.0s | 827 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 0/3 | — | 101.3s | — | — |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 0/3 | +0% | 96.4s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 101.8s | 827 | $0.0041 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 0/3 | — | 53.3s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 0/3 | — | 106.6s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 0/3 | — | 31.4s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | 0/3 | — | 10.6s | — | — |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 0/3 | +0% | 32.0s | — | — |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 0/3 | +0% | 91.5s | — | — |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 0/3 | +0% | 28.8s | — | — |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | 0/3 | +0% | 11.2s | — | — |
 
 #### Publish my npm package to the registry (expected: no)
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 0/3 | +0% | 0.8s | 1,437 | $0.0144 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 10.2s | 1,018 | $0.0010 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 7.2s | — | — |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 11.5s | 1,437 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 0/3 | +0% | 0.8s | — | — |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 0/3 | +0% | 9.7s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 13.2s | 1,018 | $0.0031 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | +0% | 0.8s | 1,437 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 0/3 | +0% | 15.5s | — | n/a |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | +0% | 7.8s | — | — |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 0/3 | +0% | 18.6s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | — | 49.0s | 826 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 0/3 | — | 44.6s | — | — |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 0/3 | +0% | 38.5s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 48.7s | 826 | $0.0041 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 0/3 | — | 13.2s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 0/3 | — | 16.5s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 0/3 | — | 12.5s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | FAIL | 3/3 | — | 11.0s | — | — |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 1/3 | -33% | 16.0s | — | — |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 0/3 | +0% | 15.0s | — | — |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 0/3 | +0% | 15.3s | — | — |
+| xAI | Grok 4.6 (`grok-4.6`) | FAIL | 3/3 | +0% | 5.1s | — | — |
 
 #### Configure ruff in pyproject.toml (expected: no)
 
 | Provider | Model | Result | Rate | Δ rate | Avg run | Input tokens | Est. cost |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | 0/3 | +0% | 0.7s | 1,440 | $0.0144 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 9.1s | 1,019 | $0.0010 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | 0/3 | +0% | 8.7s | — | — |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | 0/3 | +0% | 18.9s | 1,440 | $0.0072 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 0/3 | +0% | 0.8s | — | — |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | 0/3 | +0% | 10.3s | — | — |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | 0/3 | +0% | 7.9s | 1,019 | $0.0031 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | +0% | 0.8s | 1,440 | $0.0043 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 0/3 | +0% | 15.6s | — | n/a |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | 0/3 | +0% | 6.3s | — | — |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | 0/3 | +0% | 28.7s | — | n/a |
 | OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | 0/3 | — | 61.6s | 827 | $0.0021 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 0/3 | — | 60.0s | — | — |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | 0/3 | +0% | 101.6s | — | — |
 | OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | 0/3 | — | 47.5s | 827 | $0.0041 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 0/3 | — | 28.4s | — | — |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 0/3 | — | 31.3s | — | — |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 0/3 | — | 28.2s | — | — |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | 0/3 | — | 11.5s | — | — |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | 0/3 | +0% | 39.2s | — | — |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | 0/3 | +0% | 23.3s | — | — |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | 0/3 | +0% | 27.7s | — | — |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | 0/3 | +0% | 11.8s | — | — |
 
 ### Evals
 
@@ -972,20 +969,20 @@
 | Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | +100% | +100% | 72.3s | 1,479 | $0.0148 | 25/4,467 | 336,554/13,413 | $0.8290 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +100% | +100% | 28.2s | 1,049 | $0.0010 | 56/2,184 | 196,989/15,843 | $0.0630 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +0% | +100% | 25.0s | — | — | 59/1,941 | 227,326/14,132 | $0.0614 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +100% | 49.6s | 1,479 | $0.0074 | 2,809/3,079 | 131,781/10,715 | $0.2647 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | +100% | +100% | 31.5s | — | — | 8/2,236 | 86,331/9,998 | $0.1997 |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | +0% | +100% | 43.2s | — | — | 8/2,732 | 86,981/10,393 | $0.2164 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +100% | 32.7s | 1,049 | $0.0031 | 9/1,314 | 138,163/10,332 | $0.1238 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | +100% | +100% | 34.2s | 1,479 | $0.0044 | 14/2,483 | 237,356/13,395 | $0.1895 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | +0% | +0% | 19.5s | — | n/a | 22,523/5,511 | 82,048/— | n/a |
-| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +100% | 43.5s | 928 | $0.0023 | 8,871/1,920 | 76,032/— | $0.2411 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | +100% (vs base) | +100% | 169.7s | — | — | 42,597/10,081 | 378,240/— | $0.3610 |
-| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +100% | 143.6s | 928 | $0.0046 | 49,488/6,785 | 563,840/— | $3.2702 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | +100% (vs base) | +100% | 37.0s | — | — | 8,131/1,447 | 64,256/— | $0.0811 |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | +100% (vs base) | +100% | 38.7s | — | — | 14,554/1,393 | 82,432/— | $0.5267 |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | +100% (vs base) | +100% | 38.8s | — | — | 8,949/1,518 | 87,552/— | $0.2640 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | +0% | +100% | 31.4s | — | — | 14/2,327 | 238,726/13,611 | $0.1889 |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | +0% | +0% | 11.4s | — | n/a | 7,396/4,906 | 42,496/— | n/a |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +100% | 60.6s | — | — | 9,075/2,185 | 90,752/— | $0.2823 |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | +0% | +100% | 54.8s | — | — | 45,658/2,962 | 92,416/— | $0.1169 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +100% | 143.4s | — | — | 50,615/6,831 | 391,168/— | $2.4138 |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | +0% | +100% | 45.3s | — | — | 8,879/1,924 | 79,360/— | $0.0998 |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | +0% | +100% | 39.0s | — | — | 15,354/1,501 | 82,432/— | $0.5340 |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | +0% | +100% | 40.2s | — | — | 21,925/1,626 | 81,408/— | $0.2827 |
 | xAI | Grok 4.5 (`grok-4.5`) | PASS | — (vs base) | — | 17.1s | — | — | 3,895/1,210 | 61,696/— | $0.0336 |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | — (vs base) | — | 19.7s | — | — | 6,464/1,132 | 64,896/— | $0.0089 |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | +0% | — | 20.9s | — | — | 36,005/1,266 | 37,888/— | $0.0168 |
 
 - `gpt-5.3-codex-spark` failed `file .github/workflows/ci.yaml exists`: .github/workflows/ci.yaml missing
 
@@ -1006,48 +1003,41 @@
 | Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | +100% | +100% | 21.8s | 1,478 | $0.0148 | 8/1,608 | 86,969/9,591 | $0.3599 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +100% | +100% | 21.7s | 1,040 | $0.0010 | 42/1,500 | 143,640/12,484 | $0.0475 |
+| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +0% | +100% | 31.6s | — | — | 59/2,406 | 228,031/14,570 | $0.0647 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +100% | 47.9s | 1,478 | $0.0074 | 2,935/2,690 | 109,704/11,952 | $0.2569 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | +100% | +100% | 28.3s | — | — | 10/1,694 | 111,320/10,836 | $0.2070 |
+| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | +0% | +100% | 33.9s | — | — | 12/2,066 | 138,089/11,212 | $0.2335 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +100% | 31.2s | 1,040 | $0.0031 | 9/1,358 | 137,934/10,160 | $0.1233 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | +100% | +100% | 22.7s | 1,478 | $0.0044 | 11/1,626 | 198,602/11,976 | $0.1565 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | PASS | +100% | +100% | 15.2s | — | n/a | 7,447/2,542 | 98,816/— | n/a |
-| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +100% | 41.4s | 921 | $0.0023 | 8,707/1,566 | 76,032/— | $0.2353 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | +100% (vs base) | +100% | 32.6s | — | — | 8,592/1,672 | 73,472/— | $0.0691 |
-| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +100% | 44.5s | 921 | $0.0046 | 11,322/1,706 | 112,640/— | $0.6710 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | +100% (vs base) | +100% | 38.4s | — | — | 8,931/1,563 | 78,336/— | $0.0966 |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | +100% (vs base) | +100% | 33.2s | — | — | 10,442/1,176 | 68,352/— | $0.4293 |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | +100% (vs base) | +100% | 44.0s | — | — | 8,978/1,376 | 70,400/— | $0.2191 |
+| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | +0% | +100% | 26.7s | — | — | 14/1,776 | 236,280/12,546 | $0.1735 |
+| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | -100% | +0% | 23.7s | — | n/a | 10,814/4,774 | 138,880/— | n/a |
+| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +100% | 36.1s | — | — | 7,826/1,612 | 75,520/— | $0.2325 |
+| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | +0% | +100% | 77.6s | — | — | 20,086/4,644 | 140,160/— | $0.1411 |
+| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +100% | 62.3s | — | — | 14,054/2,406 | 166,016/— | $0.9725 |
+| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | +0% | +100% | 47.7s | — | — | 10,527/1,900 | 94,464/— | $0.1164 |
+| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | +0% | +100% | 40.2s | — | — | 14,758/1,460 | 81,408/— | $0.5246 |
+| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | +0% | +100% | 38.8s | — | — | 8,931/1,451 | 87,552/— | $0.2630 |
 | xAI | Grok 4.5 (`grok-4.5`) | PASS | — (vs base) | — | 15.4s | — | — | 3,531/1,052 | 60,800/— | $0.0316 |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | +0% (vs base) | +0% | 22.5s | — | — | 14,518/1,368 | 53,632/— | $0.0109 |
+| xAI | Grok 4.6 (`grok-4.6`) | PASS | +0% | +0% | 22.4s | — | — | 4,534/1,243 | 63,872/— | $0.0082 |
+
+- `gpt-5.3-codex-spark` failed `file .github/workflows/release.yaml exists`: .github/workflows/release.yaml missing
+
+- `gpt-5.3-codex-spark` failed `.github/workflows/release.yaml matches /id-token: write/`: .github/workflows/release.yaml missing
+
+- `gpt-5.3-codex-spark` failed `.github/workflows/release.yaml matches /uv build/`: .github/workflows/release.yaml missing
+
+- `gpt-5.3-codex-spark` failed `.github/workflows/release.yaml matches /uv publish/`: .github/workflows/release.yaml missing
+
+- `gpt-5.3-codex-spark` failed `.github/workflows/release.yaml matches /tags:/`: .github/workflows/release.yaml missing
+
+- `gpt-5.3-codex-spark` failed `.github/workflows/release.yaml does not match /PYPI_API_TOKEN|password:/`: .github/workflows/release.yaml missing
 
 #### dependabot
 
 | Provider | Model | Result | Δ rate | Lift vs base | Avg run | Input tokens | Est. cost | Measured in/out | Cache rd/wr | Measured cost |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Anthropic | Claude Fable 5 (`claude-fable-5`) | PASS | +100% | +100% | 21.1s | 1,473 | $0.0147 | 8/1,344 | 86,839/9,407 | $0.3429 |
-| Anthropic | Claude Haiku 4.5 (`claude-haiku-4-5`) | PASS | +100% | +100% | 26.6s | 1,041 | $0.0010 | 66/1,872 | 248,219/15,034 | $0.0650 |
 | Anthropic | Claude Opus 4.8 (`claude-opus-4-8`) | PASS | +0% | +100% | 31.7s | 1,473 | $0.0074 | 2,804/2,035 | 83,774/11,262 | $0.2200 |
-| Anthropic | Claude Opus 5 (`claude-opus-5`) | PASS | +100% | +100% | 23.5s | — | — | 8/1,584 | 86,513/9,449 | $0.1780 |
 | Anthropic | Claude Sonnet 4.6 (`claude-sonnet-4-6`) | PASS | +0% | +100% | 20.2s | 1,041 | $0.0031 | 8/965 | 112,422/9,800 | $0.1076 |
-| Anthropic | Claude Sonnet 5 (`claude-sonnet-5`) | PASS | +100% | +100% | 18.6s | 1,473 | $0.0044 | 10/1,461 | 164,355/12,307 | $0.1457 |
-| OpenAI | GPT-5.3 Codex Spark (`gpt-5.3-codex-spark`) | FAIL | +0% | +0% | 26.7s | — | n/a | 5,565/2,840 | 56,448/— | n/a |
-| OpenAI | GPT-5.4 (`gpt-5.4`) | PASS | +0% | +100% | 32.5s | 921 | $0.0023 | 7,835/1,317 | 61,312/— | $0.1926 |
-| OpenAI | GPT-5.4 Mini (`gpt-5.4-mini`) | PASS | +100% (vs base) | +100% | 30.6s | — | — | 8,071/1,426 | 84,608/— | $0.0759 |
-| OpenAI | GPT-5.5 (`gpt-5.5`) | PASS | +0% | +100% | 42.1s | 921 | $0.0046 | 13,062/1,641 | 78,080/— | $0.5049 |
-| OpenAI | GPT-5.6 Luna (`gpt-5.6-luna`) | PASS | +100% (vs base) | +100% | 37.2s | — | — | 10,764/1,507 | 94,464/— | $0.1143 |
-| OpenAI | GPT-5.6 Sol (`gpt-5.6-sol`) | PASS | +100% (vs base) | +100% | 43.7s | — | — | 8,739/1,412 | 87,552/— | $0.5238 |
-| OpenAI | GPT-5.6 Terra (`gpt-5.6-terra`) | PASS | +100% (vs base) | +100% | 46.6s | — | — | 8,176/1,160 | 87,552/— | $0.2567 |
 | xAI | Grok 4.5 (`grok-4.5`) | PASS | — (vs base) | — | 15.2s | — | — | 3,651/937 | 61,056/— | $0.0312 |
-| xAI | Grok 4.6 (`grok-4.6`) | PASS | +0% (vs base) | +0% | 21.7s | — | — | 3,738/796 | 49,408/— | $0.0063 |
-
-- `gpt-5.3-codex-spark` failed `file .github/dependabot.yaml exists`: .github/dependabot.yaml missing
-
-- `gpt-5.3-codex-spark` failed `.github/dependabot.yaml matches /ecosystem:.*uv/`: .github/dependabot.yaml missing
-
-- `gpt-5.3-codex-spark` failed `.github/dependabot.yaml matches /ecosystem:.*github-actions/`: .github/dependabot.yaml missing
-
-- `gpt-5.3-codex-spark` failed `.github/dependabot.yaml matches /cooldown/`: .github/dependabot.yaml missing
 
 ## python-style
 

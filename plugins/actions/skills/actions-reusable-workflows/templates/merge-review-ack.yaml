@@ -1,0 +1,32 @@
+# Caller workflow — copy to `.github/workflows/merge-review-ack.yaml` in a
+# consuming repo. Required companion to merge.yaml: it closes the fork-PR
+# auto-merge gap. An approval on a fork PR carries no secrets, so merge.yaml
+# can't act on the pull_request_review event directly, and if CI was already
+# green the approval is the last event — nothing else fires to finish the merge.
+# This workflow completes on an approving review purely so its
+# workflow_run(completed) fires in the base-repo context, where merge.yaml's
+# merge-on-review-completed job mints the App token and retries the fast-forward.
+# Harmless for same-repo PRs (those merge via the review path directly). It does
+# no privileged work and needs no secrets; ff-merge re-verifies approval, checks,
+# label, and fast-forwardness before moving the ref — this is the only check the
+# merge system adds to a PR.
+#
+# Wire-up: add this workflow's name ("Merge Review Ack") to the
+# workflow_run.workflows list in your merge.yaml caller, alongside your CI
+# workflow name(s).
+#
+# Pin to a full commit SHA or a release tag — see README "Pinning". Re-resolve
+# the latest before copying: see the skill's "Pinning" section.
+
+name: Merge Review Ack
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+# does no privileged work; grants nothing
+permissions: {}
+
+jobs:
+  ack:
+    uses: bitwise-media-group/github-workflows/.github/workflows/merge-review-ack.yaml@1eaff010e2929a3583c50ffa325690216bc70462 # v6.2.0

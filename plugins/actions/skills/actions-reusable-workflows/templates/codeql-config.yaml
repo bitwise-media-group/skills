@@ -1,4 +1,4 @@
-# Copy to `.github/codeql/codeql-config.yaml` and reference it from the codeql
+# Copy to `.github/codeql/codeql-config.yaml` and reference it from the security
 # caller's `config-file` input. Needed for repos with a bundled dist/ (Node
 # actions): its sources are analysed via src/, so scanning the bundle only
 # surfaces false positives from vendored dependencies -- exclude it.

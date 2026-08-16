@@ -11,8 +11,8 @@ Run this loop after editing any workflow and before every commit. Two tools, che
 clean — never commit with failures.
 
 This is the **local** complement to the server-side CodeQL `actions` scan that the
-`actions-reusable-workflows` skill wires (the reusable `codeql.yaml`); run both. zizmor enforces the
-`actions-security` rules mechanically, and authoring conventions live in `actions-style`.
+`actions-reusable-workflows` skill wires (the reusable `security.yaml`); run both. zizmor enforces
+the `actions-security` rules mechanically, and authoring conventions live in `actions-style`.
 
 ## 1. Lint (actionlint)
 
@@ -55,5 +55,5 @@ Notes:
 - Treat a `zizmor` finding as a security violation, not a suggestion — most map directly to an
   `actions-security` rule (unpinned action → SHA-pin; injectable expression → `env:` indirection;
   over-broad token → least-privilege `permissions:`).
-- Wire `actionlint` and `zizmor` into the repo's `make lint` so CI re-runs them; the reusable
-  `ci.yaml` already calls `make lint` (see `actions-reusable-workflows`).
+- Wire `actionlint` and `zizmor` into the repo's `lint` mise task so CI re-runs them; the reusable
+  `ci.yaml` already calls `mise run lint` (see `actions-reusable-workflows`).

@@ -1,15 +1,19 @@
 ---
 name: go-release
-description: Release engineering for Go projects — GoReleaser v2 with version ldflags into an internal/version package, SBOMs and multi-arch container images, tag-triggered GitHub Actions releases, CI running build/vet/test -race/govulncheck with SHA-pinned actions, and Dependabot coverage for gomod, tools, npm, and Actions. Use when adding GitHub Actions CI for a Go repository; writing a release workflow that publishes Go binaries, SBOMs, and multi-arch container images; setting up GoReleaser for a Go project; stamping version metadata into a Go binary at build time; or adding Dependabot coverage to a Go repo. Not for scaffolding a new Go project or its Makefile.
+description: Release engineering for Go projects — GoReleaser v2 with version ldflags into an internal/version package, SBOMs and multi-arch container images, tag-triggered GitHub Actions releases, CI running build/vet/test -race/govulncheck with SHA-pinned actions, and Renovate coverage for gomod, tools, npm, and Actions. Use when adding GitHub Actions CI for a Go repository; writing a release workflow that publishes Go binaries, SBOMs, and multi-arch container images; setting up GoReleaser for a Go project; stamping version metadata into a Go binary at build time; or adding Renovate coverage to a Go repo. Not for scaffolding a new Go project or its Makefile.
 license: MIT
 ---
 
 # Go release engineering
 
 Tag-driven releases: pushing a `vX.Y.Z` tag builds cross-platform archives, checksums, SBOMs, and
-multi-arch container images via GoReleaser. CI gates every push; Dependabot keeps everything —
+multi-arch container images via GoReleaser. CI gates every push; Renovate keeps everything —
 including the action pins — fresh. This layers on the layout and Makefile from the `go-project`
 skill.
+
+For a `bitwise-media-group` repo, prefer the org's centralized, SHA-pinned CI/security/release/merge
+callers over the bespoke `ci.yaml`/`release.yaml` below — see the `actions-reusable-workflows`
+skill. The templates here are for a Go repo outside that org infrastructure.
 
 ## 1. Stamp version metadata into `internal/version`
 
@@ -57,7 +61,7 @@ request runs `go build`, `go vet`, `go test -race`, and `govulncheck`. Conventio
 
 - The Go version comes from `go.mod` (`go-version-file`), never hard-coded in the workflow.
 - Every action is pinned to a full commit SHA with the tag in a trailing comment — a moved tag
-  can never change what runs. Dependabot keeps the pins fresh.
+  can never change what runs. Renovate keeps the pins fresh.
 - `permissions: contents: read` — the default token does nothing else.
 
 ## 4. Release workflow
@@ -69,11 +73,12 @@ changelog), sets up QEMU + buildx for multi-arch images, logs into GHCR with the
 `go tool`, so there is no separate syft install step. Cutting a release is exactly: push a semver
 tag.
 
-## 5. Dependabot
+## 5. Renovate
 
-Copy [templates/dependabot.yaml](templates/dependabot.yaml) to `.github/dependabot.yaml`: daily
-checks with a 7-day cooldown, minor + patch bumps grouped into one PR per ecosystem (majors arrive
-as individual PRs). `tools/go.mod` gets its own `gomod` entry — Dependabot does not descend into
-nested modules — so developer-tool bumps never ride along with application dependency PRs, and the
-`github-actions` entry keeps the workflow SHA pins fresh. For the rationale behind each knob and
+Copy [templates/renovate.json5](templates/renovate.json5) to `.github/renovate.json5`: a 7-day
+cooldown before any update is proposed, minor + patch bumps grouped into one PR per ecosystem
+(majors arrive as individual PRs). `tools/go.mod` gets its own group — Renovate's gomod manager
+finds nested `go.mod` files with no extra config, unlike Dependabot's per-directory ecosystem
+entries — so developer-tool bumps never ride along with application dependency PRs, and the
+`github-actions` rule keeps the workflow SHA pins fresh. For the rationale behind each knob and
 the full ecosystem matrix (`docker`, `docker-compose`, `uv`, …), see [reference.md](reference.md).

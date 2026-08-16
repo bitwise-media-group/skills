@@ -1,0 +1,37 @@
+# Caller workflow -- copy to `.github/workflows/security.yaml` in any repo. It
+# owns the triggers and grants the analyze permissions; the reusable security
+# workflow runs CodeQL, detecting languages at the repo root: actions (build-free)
+# always, plus go (via autobuild) when a root go.mod exists and
+# javascript-typescript (build-free) when package.json exists.
+#
+# Pin to a full commit SHA or a release tag -- see README "Pinning". Re-resolve
+# the latest before copying: see the skill's "Pinning" section.
+
+name: Security analysis
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: ["main", "releases/*"]
+  schedule:
+    - cron: "28 20 * * 4"
+
+# ceiling for the reusable workflow's analyze job
+permissions:
+  # upload analysis results to code scanning
+  security-events: write
+  # fetch internal or private CodeQL packs
+  packages: read
+  # only required for workflows in private repositories
+  actions: read
+  # check out the repository
+  contents: read
+
+jobs:
+  analyze:
+    uses: bitwise-media-group/github-workflows/.github/workflows/security.yaml@1eaff010e2929a3583c50ffa325690216bc70462 # v6.2.0
+    # with:
+    #   go-version-file: go.mod                          # default
+    #   config-file: ./.github/codeql/codeql-config.yaml # a repo with a bundled dist/ should exclude it
+    #   languages: actions,go                             # override auto-detection (e.g. a tooling-only package.json)

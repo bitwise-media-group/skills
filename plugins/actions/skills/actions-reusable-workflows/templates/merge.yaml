@@ -1,55 +1,71 @@
 # Caller workflow — copy to `.github/workflows/merge.yaml` in a consuming repo to
 # enable both fast-forward merge flows: manual `/merge` and set-and-forget
-# auto-merge. `/merge` merges an approved, green PR now; `/auto-merge` (or the
-# `auto-merge` label) arms it to merge automatically once approved and green. Both
-# preserve every commit signature via the same `ff-merge` action.
+# auto-merge. `/merge` merges an approved, green PR now; `/auto-merge` (or adding
+# the `auto-merge` label) arms it to merge automatically once approved and green.
+# Both preserve every commit signature via the same `ff-merge` action.
 #
-# The reusable workflow routes each event to its own job, so the four triggers are
-# all required for full auto-merge; a repo that only wants `/merge` can trigger just
-# `issue_comment`. None of these run PR code, and none use pull_request_target.
+# Every trigger here is one that does NOT attach a check run to the PR's head
+# commit (issue_comment, workflow_run, schedule), so the merge machinery leaves no
+# skipped-job clutter on the PR's checks list. The approval signal is captured
+# separately by the companion merge-review-ack.yaml (whose single job is the only
+# check the system adds to a PR) and re-enters via workflow_run. None of these run
+# PR code or use pull_request_target. A repo that only wants `/merge` can trigger
+# just issue_comment.
 #
-# Fork PRs: only `issue_comment` and `workflow_run` carry base-context secrets on a
-# fork, so the label-arm and review paths are gated to same-repo PRs. Arm a fork PR
-# with `/auto-merge` (it merges via that attempt or `workflow_run` once CI is green),
-# or just use `/merge`.
+# Install the companion templates/merge-review-ack.yaml and keep "Merge Review Ack"
+# in the workflow_run list below — that is what makes approvals (fork and
+# same-repo) complete the merge promptly. The scheduled sweep backstops any missed
+# trigger.
 #
-# Requires branch protection that requires PR review (so the approval sets the review
-# decision).
+# Requires branch protection that requires PR review (so the approval sets the
+# review decision).
+#
+# Renovate PRs ride this same flow: they are never fast-forwardable (Renovate
+# never rebases its branches onto the base), so ff-merge squash-merges them via
+# the API instead — the default `squash-authors: bitwise-renovate[bot]` needs no
+# override. No separate dependency-update caller is needed; the org's self-hosted
+# Renovate bot (bitwise-media-group/renovate-config) autodiscovers the repo and
+# opens its PRs directly.
 #
 # Prerequisites (one-time, org-wide — see bitwise-media-group/ff-merge):
 #   - org variable FF_MERGE_CLIENT_ID and org secret FF_MERGE_PRIVATE_KEY
 #   - the "FF Merge" App installed on this repo and in the ruleset bypass list
 #
-# Pin @v2 to a release tag or full commit SHA — see README "Pinning".
+# Pin to a full commit SHA or a release tag — see README "Pinning". Re-resolve
+# the latest before copying: see the skill's "Pinning" section.
 name: Merge
 
-# All four triggers are required for auto-merge; each is handled by one job in the
-# reusable workflow. issue_comment drives `/merge` and arms `/auto-merge`;
-# pull_request(labeled) arms via label; pull_request_review(submitted) and
-# workflow_run(completed) attempt the auto-merge once the PR is approved and green.
-# List in `workflows:` every workflow that must pass — whichever finishes last
-# triggers the attempt, and ff-merge re-verifies all checks.
+# issue_comment drives `/merge` and arms `/auto-merge`; workflow_run(completed)
+# attempts the auto-merge once the PR is approved and green; the schedule sweeps
+# armed PRs as a backstop. List in `workflows:` every workflow that must pass PLUS
+# "Merge Review Ack" (the companion caller that turns an approval into a merge
+# attempt) — whichever finishes last triggers the attempt, and ff-merge
+# re-verifies all checks.
 on:
   issue_comment:
     types: [created]
-  pull_request:
-    types: [labeled]
-  pull_request_review:
-    types: [submitted]
   workflow_run:
-    workflows: ["CI"] # replace with your CI workflow name(s) — all that must be green
+    # replace "CI" with your CI workflow name(s) — every check that must be green.
+    # Keep "Merge Review Ack" (templates/merge-review-ack.yaml) so an approval
+    # completes the auto-merge — for fork and same-repo PRs alike.
+    workflows: ["CI", "Merge Review Ack"]
     types: [completed]
+  schedule:
+    # backstop sweep of armed PRs for any missed event trigger. Tune the cadence
+    # or remove it if the event paths above are sufficient for your repo.
+    - cron: "17 * * * *"
 
 # the App token does the privileged work; the caller grants nothing
 permissions: {}
 
 jobs:
   merge:
-    uses: bitwise-media-group/github-workflows/.github/workflows/merge.yaml@v2
+    uses: bitwise-media-group/github-workflows/.github/workflows/merge.yaml@1eaff010e2929a3583c50ffa325690216bc70462 # v6.2.0
     with:
       app-client-id: ${{ vars.FF_MERGE_CLIENT_ID }}
-      # merge-command: /merge     # default — the comment that merges now
-      # arm-command: /auto-merge  # default — the comment that arms auto-merge
-      # label: auto-merge         # default — the label that arms auto-merge
+      # merge-command: /merge                  # default — the comment that merges now
+      # arm-command: /auto-merge               # default — the comment that arms auto-merge
+      # label: auto-merge                      # default — the label that arms auto-merge
+      # squash-authors: bitwise-renovate[bot]  # default — authors squash-merged instead of fast-forwarded
     secrets:
       app-private-key: ${{ secrets.FF_MERGE_PRIVATE_KEY }}

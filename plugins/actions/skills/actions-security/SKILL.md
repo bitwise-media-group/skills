@@ -39,15 +39,13 @@ comment — for first-party actions too.
 - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
 ```
 
-Keep pins fresh with Dependabot's `github-actions` ecosystem so updates arrive as reviewable PRs:
+Keep pins fresh with Renovate's `github-actions` manager so updates arrive as reviewable PRs:
 
-```yaml
-version: 2
-updates:
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: daily
+```json5
+{
+  extends: ["config:recommended"],
+  minimumReleaseAge: "7 days",
+}
 ```
 
 ## 3. Avoid `pull_request_target`
@@ -59,8 +57,8 @@ the PR's head code under it and a fork author can exfiltrate those secrets (the 
 - **Test PR code with `pull_request`**, not `pull_request_target`. Fork PRs then get a read-only
   token and no secrets — safe by construction.
 - If you genuinely need base context (label, size, or comment on a PR), run **no** PR-controlled
-  code and never check out the PR head. The org's `merge-notice` and `dependabot-merge` callers use
-  `pull_request_target` safely because they only call the API — they check out and run nothing.
+  code and never check out the PR head. The org's `merge-notice` caller uses `pull_request_target`
+  safely because it only calls the API — it checks out and runs nothing.
 - For privileged build/release jobs that a fork-controllable event could reach, gate them on a
   positive **trusted-event allowlist** so the path fails closed:
 
@@ -102,6 +100,6 @@ same-repo-only logic (label arming, review handling) so fork PRs skip it.
 ## 7. Enforce mechanically
 
 Run the `actions-validate` loop (actionlint + zizmor) locally before committing, and scan `actions`
-with CodeQL in CI (the `actions-reusable-workflows` skill wires the shared `codeql.yaml`). Treat
+with CodeQL in CI (the `actions-reusable-workflows` skill wires the shared `security.yaml`). Treat
 their findings — unpinned actions, injectable expressions, over-broad permissions — as violations,
 not suggestions.

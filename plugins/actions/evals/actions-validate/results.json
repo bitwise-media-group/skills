@@ -888,9 +888,9 @@
         "display": "Claude Haiku 4.5",
         "harness": "claude",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T13:32:26Z",
+        "ran_at": "2026-08-16T09:36:25Z",
         "executed": true,
-        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "content_hash": "4e7a1b76c7cbc293168640cf874876a464abc106d707ffc6b1f6c55d3445997b",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 1,
@@ -900,16 +900,12 @@
           {
             "id": "seed-zizmor-config",
             "passed": false,
-            "estimate": {
-              "input_tokens": 913,
-              "input_cost_usd": 0.000913
-            },
             "measured": {
               "input_tokens": 21,
-              "cache_read_input_tokens": 65359,
-              "cache_creation_input_tokens": 10223,
-              "output_tokens": 861,
-              "cost_usd": 0.031921
+              "cache_read_input_tokens": 65138,
+              "cache_creation_input_tokens": 9985,
+              "output_tokens": 877,
+              "cost_usd": 0.031503
             },
             "expectations": [
               {
@@ -944,24 +940,20 @@
               "total_tool_calls": 2
             },
             "timing": {
-              "total_tokens": 76464,
-              "executor_duration_seconds": 12.4
+              "total_tokens": 76021,
+              "executor_duration_seconds": 11.5
             },
             "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
           },
           {
             "id": "validate-and-fix",
             "passed": true,
-            "estimate": {
-              "input_tokens": 929,
-              "input_cost_usd": 0.000929
-            },
             "measured": {
-              "input_tokens": 131,
-              "cache_read_input_tokens": 433399,
-              "cache_creation_input_tokens": 12290,
-              "output_tokens": 3062,
-              "cost_usd": 0.08398
+              "input_tokens": 60,
+              "cache_read_input_tokens": 223318,
+              "cache_creation_input_tokens": 13665,
+              "output_tokens": 1488,
+              "cost_usd": 0.057781
             },
             "expectations": [
               {
@@ -1009,16 +1001,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 10,
-                "Edit": 2,
-                "Read": 2,
+                "Bash": 5,
+                "Edit": 1,
+                "Read": 1,
                 "Skill": 1
               },
-              "total_tool_calls": 15
+              "total_tool_calls": 8
             },
             "timing": {
-              "total_tokens": 448882,
-              "executor_duration_seconds": 47.9
+              "total_tokens": 238531,
+              "executor_duration_seconds": 22.2
             },
             "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
@@ -1028,17 +1020,13 @@
           "failed": 1,
           "total": 2,
           "pass_rate": 0.5,
-          "avg_run_seconds": 30.2,
-          "estimate": {
-            "input_tokens": 1842,
-            "input_cost_usd": 0.001842
-          },
+          "avg_run_seconds": 16.9,
           "measured": {
-            "input_tokens": 152,
-            "cache_read_input_tokens": 498758,
-            "cache_creation_input_tokens": 22513,
-            "output_tokens": 3923,
-            "cost_usd": 0.115901
+            "input_tokens": 81,
+            "cache_read_input_tokens": 288456,
+            "cache_creation_input_tokens": 23650,
+            "output_tokens": 2365,
+            "cost_usd": 0.089284
           }
         },
         "baseline": {
@@ -1104,23 +1092,23 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-08-15T06:18:56Z",
+          "ran_at": "2026-08-15T13:32:26Z",
           "summary": {
             "passed": 1,
             "failed": 1,
             "total": 2,
             "pass_rate": 0.5,
-            "avg_run_seconds": 29.9,
+            "avg_run_seconds": 30.2,
             "estimate": {
               "input_tokens": 1842,
               "input_cost_usd": 0.001842
             },
             "measured": {
-              "input_tokens": 153,
-              "cache_read_input_tokens": 497119,
-              "cache_creation_input_tokens": 22051,
-              "output_tokens": 3791,
-              "cost_usd": 0.114159
+              "input_tokens": 152,
+              "cache_read_input_tokens": 498758,
+              "cache_creation_input_tokens": 22513,
+              "output_tokens": 3923,
+              "cost_usd": 0.115901
             }
           },
           "results": [
@@ -1132,11 +1120,11 @@
                 "input_cost_usd": 0.000913
               },
               "measured": {
-                "input_tokens": 22,
-                "cache_read_input_tokens": 63720,
-                "cache_creation_input_tokens": 9761,
-                "output_tokens": 729,
-                "cost_usd": 0.030179
+                "input_tokens": 21,
+                "cache_read_input_tokens": 65359,
+                "cache_creation_input_tokens": 10223,
+                "output_tokens": 861,
+                "cost_usd": 0.031921
               },
               "summary": {
                 "passed": 0,
@@ -1145,7 +1133,7 @@
                 "pass_rate": 0
               },
               "timing": {
-                "executor_duration_seconds": 11.8
+                "executor_duration_seconds": 12.4
               }
             },
             {
@@ -2222,9 +2210,9 @@
         "display": "Claude Opus 5",
         "harness": "claude",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T06:21:03Z",
+        "ran_at": "2026-08-16T09:37:36Z",
         "executed": true,
-        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "content_hash": "4e7a1b76c7cbc293168640cf874876a464abc106d707ffc6b1f6c55d3445997b",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 5,
@@ -2234,16 +2222,12 @@
           {
             "id": "seed-zizmor-config",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1258,
-              "input_cost_usd": 0.00629
-            },
             "measured": {
-              "input_tokens": 15,
-              "cache_read_input_tokens": 181048,
-              "cache_creation_input_tokens": 10787,
-              "output_tokens": 3055,
-              "cost_usd": 0.275457
+              "input_tokens": 17,
+              "cache_read_input_tokens": 206259,
+              "cache_creation_input_tokens": 9548,
+              "output_tokens": 2093,
+              "cost_usd": 0.251633
             },
             "expectations": [
               {
@@ -2272,32 +2256,28 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 6,
+                "Bash": 5,
                 "Read": 1,
                 "Skill": 1,
                 "Write": 1
               },
-              "total_tool_calls": 9
+              "total_tool_calls": 8
             },
             "timing": {
-              "total_tokens": 194905,
-              "executor_duration_seconds": 49.7
+              "total_tokens": 217917,
+              "executor_duration_seconds": 32.9
             },
             "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
           },
           {
             "id": "validate-and-fix",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1281,
-              "input_cost_usd": 0.006405
-            },
             "measured": {
-              "input_tokens": 14,
-              "cache_read_input_tokens": 159751,
-              "cache_creation_input_tokens": 9801,
-              "output_tokens": 1950,
-              "cost_usd": 0.227325
+              "input_tokens": 11,
+              "cache_read_input_tokens": 137380,
+              "cache_creation_input_tokens": 10427,
+              "output_tokens": 1943,
+              "cost_usd": 0.222214
             },
             "expectations": [
               {
@@ -2345,16 +2325,16 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 3,
+                "Bash": 4,
                 "Edit": 1,
                 "Read": 1,
                 "Skill": 1
               },
-              "total_tool_calls": 6
+              "total_tool_calls": 7
             },
             "timing": {
-              "total_tokens": 171516,
-              "executor_duration_seconds": 31.8
+              "total_tokens": 149761,
+              "executor_duration_seconds": 34.2
             },
             "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
@@ -2364,17 +2344,13 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 40.8,
-          "estimate": {
-            "input_tokens": 2539,
-            "input_cost_usd": 0.012695
-          },
+          "avg_run_seconds": 33.6,
           "measured": {
-            "input_tokens": 29,
-            "cache_read_input_tokens": 340799,
-            "cache_creation_input_tokens": 20588,
-            "output_tokens": 5005,
-            "cost_usd": 0.502782
+            "input_tokens": 28,
+            "cache_read_input_tokens": 343639,
+            "cache_creation_input_tokens": 19975,
+            "output_tokens": 4036,
+            "cost_usd": 0.473847
           }
         },
         "baseline": {
@@ -2439,23 +2415,23 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T21:46:45Z",
+          "ran_at": "2026-08-15T06:21:03Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 44,
+            "avg_run_seconds": 40.8,
             "estimate": {
               "input_tokens": 2539,
               "input_cost_usd": 0.012695
             },
             "measured": {
-              "input_tokens": 30,
-              "cache_read_input_tokens": 359531,
-              "cache_creation_input_tokens": 21118,
-              "output_tokens": 5358,
-              "cost_usd": 0.526278
+              "input_tokens": 29,
+              "cache_read_input_tokens": 340799,
+              "cache_creation_input_tokens": 20588,
+              "output_tokens": 5005,
+              "cost_usd": 0.502782
             }
           },
           "results": [
@@ -2491,11 +2467,11 @@
                 "input_cost_usd": 0.006405
               },
               "measured": {
-                "input_tokens": 15,
-                "cache_read_input_tokens": 178483,
-                "cache_creation_input_tokens": 10331,
-                "output_tokens": 2303,
-                "cost_usd": 0.250821
+                "input_tokens": 14,
+                "cache_read_input_tokens": 159751,
+                "cache_creation_input_tokens": 9801,
+                "output_tokens": 1950,
+                "cost_usd": 0.227325
               },
               "summary": {
                 "passed": 4,
@@ -2504,7 +2480,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 38.2
+                "executor_duration_seconds": 31.8
               }
             }
           ]
@@ -3559,9 +3535,9 @@
         "display": "Claude Sonnet 5",
         "harness": "claude",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T06:19:49Z",
+        "ran_at": "2026-08-16T09:36:55Z",
         "executed": true,
-        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "content_hash": "4e7a1b76c7cbc293168640cf874876a464abc106d707ffc6b1f6c55d3445997b",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 3,
@@ -3571,16 +3547,12 @@
           {
             "id": "seed-zizmor-config",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1258,
-              "input_cost_usd": 0.003774
-            },
             "measured": {
-              "input_tokens": 4691,
-              "cache_read_input_tokens": 233441,
-              "cache_creation_input_tokens": 15732,
-              "output_tokens": 1906,
-              "cost_usd": 0.207705
+              "input_tokens": 14,
+              "cache_read_input_tokens": 233684,
+              "cache_creation_input_tokens": 12249,
+              "output_tokens": 1401,
+              "cost_usd": 0.165264
             },
             "expectations": [
               {
@@ -3609,33 +3581,28 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "Bash": 4,
-                "Glob": 1,
+                "Bash": 3,
                 "Read": 1,
                 "Skill": 1,
                 "Write": 1
               },
-              "total_tool_calls": 8
+              "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 255770,
-              "executor_duration_seconds": 159.9
+              "total_tokens": 247348,
+              "executor_duration_seconds": 20.3
             },
             "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
           },
           {
             "id": "validate-and-fix",
             "passed": true,
-            "estimate": {
-              "input_tokens": 1281,
-              "input_cost_usd": 0.003843
-            },
             "measured": {
-              "input_tokens": 17,
-              "cache_read_input_tokens": 307755,
-              "cache_creation_input_tokens": 13006,
-              "output_tokens": 1690,
-              "cost_usd": 0.196383
+              "input_tokens": 19,
+              "cache_read_input_tokens": 342247,
+              "cache_creation_input_tokens": 13124,
+              "output_tokens": 1858,
+              "cost_usd": 0.209979
             },
             "expectations": [
               {
@@ -3684,15 +3651,15 @@
             "execution_metrics": {
               "tool_calls": {
                 "Bash": 4,
-                "Edit": 1,
+                "Edit": 2,
                 "Read": 2,
                 "Skill": 1
               },
-              "total_tool_calls": 8
+              "total_tool_calls": 9
             },
             "timing": {
-              "total_tokens": 322468,
-              "executor_duration_seconds": 27.6
+              "total_tokens": 357248,
+              "executor_duration_seconds": 24.7
             },
             "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
@@ -3702,17 +3669,13 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 93.8,
-          "estimate": {
-            "input_tokens": 2539,
-            "input_cost_usd": 0.007617
-          },
+          "avg_run_seconds": 22.5,
           "measured": {
-            "input_tokens": 4708,
-            "cache_read_input_tokens": 541196,
-            "cache_creation_input_tokens": 28738,
-            "output_tokens": 3596,
-            "cost_usd": 0.404088
+            "input_tokens": 33,
+            "cache_read_input_tokens": 575931,
+            "cache_creation_input_tokens": 25373,
+            "output_tokens": 3259,
+            "cost_usd": 0.375243
           }
         },
         "baseline": {
@@ -3777,23 +3740,23 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T21:45:34Z",
+          "ran_at": "2026-08-15T06:19:49Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 95.2,
+            "avg_run_seconds": 93.8,
             "estimate": {
               "input_tokens": 2539,
               "input_cost_usd": 0.007617
             },
             "measured": {
-              "input_tokens": 4706,
-              "cache_read_input_tokens": 496982,
-              "cache_creation_input_tokens": 28461,
-              "output_tokens": 3572,
-              "cost_usd": 0.3888
+              "input_tokens": 4708,
+              "cache_read_input_tokens": 541196,
+              "cache_creation_input_tokens": 28738,
+              "output_tokens": 3596,
+              "cost_usd": 0.404088
             }
           },
           "results": [
@@ -3829,11 +3792,11 @@
                 "input_cost_usd": 0.003843
               },
               "measured": {
-                "input_tokens": 15,
-                "cache_read_input_tokens": 263541,
-                "cache_creation_input_tokens": 12729,
-                "output_tokens": 1666,
-                "cost_usd": 0.181095
+                "input_tokens": 17,
+                "cache_read_input_tokens": 307755,
+                "cache_creation_input_tokens": 13006,
+                "output_tokens": 1690,
+                "cost_usd": 0.196383
               },
               "summary": {
                 "passed": 4,
@@ -3842,7 +3805,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 30.5
+                "executor_duration_seconds": 27.6
               }
             }
           ]
@@ -4124,9 +4087,9 @@
         "display": "GPT-5.3 Codex Spark",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T02:16:25Z",
+        "ran_at": "2026-08-16T09:41:48Z",
         "executed": true,
-        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "content_hash": "4e7a1b76c7cbc293168640cf874876a464abc106d707ffc6b1f6c55d3445997b",
         "timeout_seconds": 600,
         "pricing": null,
         "results": [
@@ -4134,9 +4097,9 @@
             "id": "seed-zizmor-config",
             "passed": true,
             "measured": {
-              "input_tokens": 36212,
-              "cache_read_input_tokens": 353152,
-              "output_tokens": 5042
+              "input_tokens": 12427,
+              "cache_read_input_tokens": 105344,
+              "output_tokens": 2463
             },
             "expectations": [
               {
@@ -4165,14 +4128,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 18,
+                "command_execution": 7,
                 "file_change": 1
               },
-              "total_tool_calls": 19
+              "total_tool_calls": 8
             },
             "timing": {
-              "total_tokens": 394406,
-              "executor_duration_seconds": 41.6
+              "total_tokens": 120234,
+              "executor_duration_seconds": 28.4
             },
             "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
           },
@@ -4180,9 +4143,9 @@
             "id": "validate-and-fix",
             "passed": true,
             "measured": {
-              "input_tokens": 8420,
-              "cache_read_input_tokens": 103808,
-              "output_tokens": 3880
+              "input_tokens": 13666,
+              "cache_read_input_tokens": 173056,
+              "output_tokens": 3809
             },
             "expectations": [
               {
@@ -4230,14 +4193,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 10,
+                "command_execution": 11,
                 "file_change": 1
               },
-              "total_tool_calls": 11
+              "total_tool_calls": 12
             },
             "timing": {
-              "total_tokens": 116108,
-              "executor_duration_seconds": 18.5
+              "total_tokens": 190531,
+              "executor_duration_seconds": 48.3
             },
             "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
@@ -4247,11 +4210,11 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 30.1,
+          "avg_run_seconds": 38.3,
           "measured": {
-            "input_tokens": 44632,
-            "cache_read_input_tokens": 456960,
-            "output_tokens": 8922
+            "input_tokens": 26093,
+            "cache_read_input_tokens": 278400,
+            "output_tokens": 6272
           }
         },
         "baseline": {
@@ -4310,17 +4273,17 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T21:55:46Z",
+          "ran_at": "2026-08-15T02:16:25Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 38.3,
+            "avg_run_seconds": 30.1,
             "measured": {
-              "input_tokens": 44004,
-              "cache_read_input_tokens": 485504,
-              "output_tokens": 7705
+              "input_tokens": 44632,
+              "cache_read_input_tokens": 456960,
+              "output_tokens": 8922
             }
           },
           "results": [
@@ -4346,9 +4309,9 @@
               "id": "validate-and-fix",
               "passed": true,
               "measured": {
-                "input_tokens": 7792,
-                "cache_read_input_tokens": 132352,
-                "output_tokens": 2663
+                "input_tokens": 8420,
+                "cache_read_input_tokens": 103808,
+                "output_tokens": 3880
               },
               "summary": {
                 "passed": 4,
@@ -4357,7 +4320,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 34.9
+                "executor_duration_seconds": 18.5
               }
             }
           ]
@@ -4730,9 +4693,9 @@
         "display": "GPT-5.4",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T02:20:51Z",
+        "ran_at": "2026-08-16T09:43:09Z",
         "executed": true,
-        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "content_hash": "4e7a1b76c7cbc293168640cf874876a464abc106d707ffc6b1f6c55d3445997b",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 2.5,
@@ -4742,15 +4705,11 @@
           {
             "id": "seed-zizmor-config",
             "passed": true,
-            "estimate": {
-              "input_tokens": 812,
-              "input_cost_usd": 0.00203
-            },
             "measured": {
-              "input_tokens": 13734,
-              "cache_read_input_tokens": 164096,
-              "output_tokens": 2688,
-              "cost_usd": 0.484895
+              "input_tokens": 7472,
+              "cache_read_input_tokens": 45568,
+              "output_tokens": 1265,
+              "cost_usd": 0.151575
             },
             "expectations": [
               {
@@ -4777,24 +4736,27 @@
               "total": 2,
               "pass_rate": 1
             },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 5,
+                "file_change": 1
+              },
+              "total_tool_calls": 6
+            },
             "timing": {
-              "total_tokens": 180518,
-              "executor_duration_seconds": 61.9
+              "total_tokens": 54305,
+              "executor_duration_seconds": 32.3
             },
             "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
           },
           {
             "id": "validate-and-fix",
             "passed": true,
-            "estimate": {
-              "input_tokens": 827,
-              "input_cost_usd": 0.002068
-            },
             "measured": {
-              "input_tokens": 8772,
-              "cache_read_input_tokens": 103424,
-              "output_tokens": 1836,
-              "cost_usd": 0.30803
+              "input_tokens": 8747,
+              "cache_read_input_tokens": 73472,
+              "output_tokens": 1367,
+              "cost_usd": 0.226053
             },
             "expectations": [
               {
@@ -4842,14 +4804,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 9,
-                "file_change": 2
+                "command_execution": 7,
+                "file_change": 1
               },
-              "total_tool_calls": 11
+              "total_tool_calls": 8
             },
             "timing": {
-              "total_tokens": 114032,
-              "executor_duration_seconds": 43.5
+              "total_tokens": 83586,
+              "executor_duration_seconds": 34.1
             },
             "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
@@ -4859,16 +4821,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 52.7,
-          "estimate": {
-            "input_tokens": 1639,
-            "input_cost_usd": 0.004098
-          },
+          "avg_run_seconds": 33.2,
           "measured": {
-            "input_tokens": 22506,
-            "cache_read_input_tokens": 267520,
-            "output_tokens": 4524,
-            "cost_usd": 0.792925
+            "input_tokens": 16219,
+            "cache_read_input_tokens": 119040,
+            "output_tokens": 2632,
+            "cost_usd": 0.377628
           }
         },
         "baseline": {
@@ -4930,22 +4888,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-06-27T23:15:12Z",
+          "ran_at": "2026-08-15T02:20:51Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 58.2,
+            "avg_run_seconds": 52.7,
             "estimate": {
               "input_tokens": 1639,
               "input_cost_usd": 0.004098
             },
             "measured": {
-              "input_tokens": 33109,
-              "cache_read_input_tokens": 260480,
-              "output_tokens": 5120,
-              "cost_usd": 0.810773
+              "input_tokens": 22506,
+              "cache_read_input_tokens": 267520,
+              "output_tokens": 4524,
+              "cost_usd": 0.792925
             }
           },
           "results": [
@@ -4980,10 +4938,10 @@
                 "input_cost_usd": 0.002068
               },
               "measured": {
-                "input_tokens": 19375,
-                "cache_read_input_tokens": 96384,
-                "output_tokens": 2432,
-                "cost_usd": 0.325878
+                "input_tokens": 8772,
+                "cache_read_input_tokens": 103424,
+                "output_tokens": 1836,
+                "cost_usd": 0.30803
               },
               "summary": {
                 "passed": 4,
@@ -4992,7 +4950,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 54.4
+                "executor_duration_seconds": 43.5
               }
             }
           ]
@@ -5389,9 +5347,9 @@
         "display": "GPT-5.4 Mini",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T02:18:31Z",
+        "ran_at": "2026-08-16T09:42:31Z",
         "executed": true,
-        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "content_hash": "4e7a1b76c7cbc293168640cf874876a464abc106d707ffc6b1f6c55d3445997b",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 0.75,
@@ -5401,15 +5359,11 @@
           {
             "id": "seed-zizmor-config",
             "passed": true,
-            "estimate": {
-              "input_tokens": 812,
-              "input_cost_usd": 0.000609
-            },
             "measured": {
-              "input_tokens": 9972,
-              "cache_read_input_tokens": 100352,
-              "output_tokens": 2222,
-              "cost_usd": 0.092742
+              "input_tokens": 7639,
+              "cache_read_input_tokens": 70912,
+              "output_tokens": 1805,
+              "cost_usd": 0.067036
             },
             "expectations": [
               {
@@ -5438,29 +5392,25 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 8,
+                "command_execution": 5,
                 "file_change": 1
               },
-              "total_tool_calls": 9
+              "total_tool_calls": 6
             },
             "timing": {
-              "total_tokens": 112546,
-              "executor_duration_seconds": 49.3
+              "total_tokens": 80356,
+              "executor_duration_seconds": 35.9
             },
             "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
           },
           {
             "id": "validate-and-fix",
             "passed": true,
-            "estimate": {
-              "input_tokens": 827,
-              "input_cost_usd": 0.00062
-            },
             "measured": {
-              "input_tokens": 8921,
-              "cache_read_input_tokens": 104448,
-              "output_tokens": 2309,
-              "cost_usd": 0.095417
+              "input_tokens": 8066,
+              "cache_read_input_tokens": 99328,
+              "output_tokens": 1755,
+              "cost_usd": 0.088443
             },
             "expectations": [
               {
@@ -5508,14 +5458,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 10,
-                "file_change": 2
+                "command_execution": 8,
+                "file_change": 1
               },
-              "total_tool_calls": 12
+              "total_tool_calls": 9
             },
             "timing": {
-              "total_tokens": 115678,
-              "executor_duration_seconds": 42.7
+              "total_tokens": 109149,
+              "executor_duration_seconds": 38.1
             },
             "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
@@ -5525,16 +5475,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 46,
-          "estimate": {
-            "input_tokens": 1639,
-            "input_cost_usd": 0.001229
-          },
+          "avg_run_seconds": 37,
           "measured": {
-            "input_tokens": 18893,
-            "cache_read_input_tokens": 204800,
-            "output_tokens": 4531,
-            "cost_usd": 0.188159
+            "input_tokens": 15705,
+            "cache_read_input_tokens": 170240,
+            "output_tokens": 3560,
+            "cost_usd": 0.155479
           }
         },
         "baseline": {
@@ -5596,22 +5542,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T22:02:07Z",
+          "ran_at": "2026-08-15T02:18:31Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 48.3,
+            "avg_run_seconds": 46,
             "estimate": {
               "input_tokens": 1639,
               "input_cost_usd": 0.001229
             },
             "measured": {
-              "input_tokens": 20548,
-              "cache_read_input_tokens": 215936,
-              "output_tokens": 4074,
-              "cost_usd": 0.195696
+              "input_tokens": 18893,
+              "cache_read_input_tokens": 204800,
+              "output_tokens": 4531,
+              "cost_usd": 0.188159
             }
           },
           "results": [
@@ -5646,10 +5592,10 @@
                 "input_cost_usd": 0.00062
               },
               "measured": {
-                "input_tokens": 10576,
-                "cache_read_input_tokens": 115584,
-                "output_tokens": 1852,
-                "cost_usd": 0.102954
+                "input_tokens": 8921,
+                "cache_read_input_tokens": 104448,
+                "output_tokens": 2309,
+                "cost_usd": 0.095417
               },
               "summary": {
                 "passed": 4,
@@ -5658,7 +5604,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 47.3
+                "executor_duration_seconds": 42.7
               }
             }
           ]
@@ -6035,9 +5981,9 @@
         "display": "GPT-5.5",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T02:24:31Z",
+        "ran_at": "2026-08-16T09:43:58Z",
         "executed": true,
-        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "content_hash": "4e7a1b76c7cbc293168640cf874876a464abc106d707ffc6b1f6c55d3445997b",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 5,
@@ -6047,15 +5993,11 @@
           {
             "id": "seed-zizmor-config",
             "passed": true,
-            "estimate": {
-              "input_tokens": 812,
-              "input_cost_usd": 0.00406
-            },
             "measured": {
-              "input_tokens": 33236,
-              "cache_read_input_tokens": 105600,
-              "output_tokens": 2329,
-              "cost_usd": 0.76405
+              "input_tokens": 13931,
+              "cache_read_input_tokens": 60288,
+              "output_tokens": 1350,
+              "cost_usd": 0.411595
             },
             "expectations": [
               {
@@ -6082,24 +6024,27 @@
               "total": 2,
               "pass_rate": 1
             },
+            "execution_metrics": {
+              "tool_calls": {
+                "command_execution": 6,
+                "file_change": 1
+              },
+              "total_tool_calls": 7
+            },
             "timing": {
-              "total_tokens": 141165,
-              "executor_duration_seconds": 74
+              "total_tokens": 75569,
+              "executor_duration_seconds": 33.2
             },
             "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
           },
           {
             "id": "validate-and-fix",
             "passed": true,
-            "estimate": {
-              "input_tokens": 827,
-              "input_cost_usd": 0.004135
-            },
             "measured": {
-              "input_tokens": 25449,
-              "cache_read_input_tokens": 118144,
-              "output_tokens": 1939,
-              "cost_usd": 0.776135
+              "input_tokens": 11810,
+              "cache_read_input_tokens": 111616,
+              "output_tokens": 1775,
+              "cost_usd": 0.67038
             },
             "expectations": [
               {
@@ -6153,8 +6098,8 @@
               "total_tool_calls": 13
             },
             "timing": {
-              "total_tokens": 145532,
-              "executor_duration_seconds": 49.3
+              "total_tokens": 125201,
+              "executor_duration_seconds": 43.7
             },
             "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
@@ -6164,16 +6109,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 61.7,
-          "estimate": {
-            "input_tokens": 1639,
-            "input_cost_usd": 0.008195
-          },
+          "avg_run_seconds": 38.5,
           "measured": {
-            "input_tokens": 58685,
-            "cache_read_input_tokens": 223744,
-            "output_tokens": 4268,
-            "cost_usd": 1.540185
+            "input_tokens": 25741,
+            "cache_read_input_tokens": 171904,
+            "output_tokens": 3125,
+            "cost_usd": 1.081975
           }
         },
         "baseline": {
@@ -6235,22 +6176,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T22:03:57Z",
+          "ran_at": "2026-08-15T02:24:31Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 57.6,
+            "avg_run_seconds": 61.7,
             "estimate": {
               "input_tokens": 1639,
               "input_cost_usd": 0.008195
             },
             "measured": {
-              "input_tokens": 44935,
-              "cache_read_input_tokens": 222336,
-              "output_tokens": 3718,
-              "cost_usd": 1.447895
+              "input_tokens": 58685,
+              "cache_read_input_tokens": 223744,
+              "output_tokens": 4268,
+              "cost_usd": 1.540185
             }
           },
           "results": [
@@ -6285,10 +6226,10 @@
                 "input_cost_usd": 0.004135
               },
               "measured": {
-                "input_tokens": 11699,
-                "cache_read_input_tokens": 116736,
-                "output_tokens": 1389,
-                "cost_usd": 0.683845
+                "input_tokens": 25449,
+                "cache_read_input_tokens": 118144,
+                "output_tokens": 1939,
+                "cost_usd": 0.776135
               },
               "summary": {
                 "passed": 4,
@@ -6297,7 +6238,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 41.2
+                "executor_duration_seconds": 49.3
               }
             }
           ]
@@ -6694,9 +6635,9 @@
         "display": "GPT-5.6 Luna",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T02:14:49Z",
+        "ran_at": "2026-08-16T09:40:54Z",
         "executed": true,
-        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "content_hash": "4e7a1b76c7cbc293168640cf874876a464abc106d707ffc6b1f6c55d3445997b",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 1,
@@ -6706,15 +6647,11 @@
           {
             "id": "seed-zizmor-config",
             "passed": true,
-            "estimate": {
-              "input_tokens": 812,
-              "input_cost_usd": 0.000812
-            },
             "measured": {
-              "input_tokens": 12116,
-              "cache_read_input_tokens": 60160,
-              "output_tokens": 1480,
-              "cost_usd": 0.081156
+              "input_tokens": 13833,
+              "cache_read_input_tokens": 161024,
+              "output_tokens": 2507,
+              "cost_usd": 0.189899
             },
             "expectations": [
               {
@@ -6743,29 +6680,25 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 3,
+                "command_execution": 9,
                 "file_change": 1
               },
-              "total_tool_calls": 4
+              "total_tool_calls": 10
             },
             "timing": {
-              "total_tokens": 73756,
-              "executor_duration_seconds": 33.8
+              "total_tokens": 177364,
+              "executor_duration_seconds": 62.1
             },
             "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
           },
           {
             "id": "validate-and-fix",
             "passed": true,
-            "estimate": {
-              "input_tokens": 827,
-              "input_cost_usd": 0.000827
-            },
             "measured": {
-              "input_tokens": 9574,
-              "cache_read_input_tokens": 90368,
-              "output_tokens": 1100,
-              "cost_usd": 0.106542
+              "input_tokens": 9002,
+              "cache_read_input_tokens": 93440,
+              "output_tokens": 1485,
+              "cost_usd": 0.111352
             },
             "expectations": [
               {
@@ -6813,14 +6746,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 5,
+                "command_execution": 8,
                 "file_change": 1
               },
-              "total_tool_calls": 6
+              "total_tool_calls": 9
             },
             "timing": {
-              "total_tokens": 101042,
-              "executor_duration_seconds": 29.9
+              "total_tokens": 103927,
+              "executor_duration_seconds": 42.9
             },
             "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
@@ -6830,16 +6763,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 31.9,
-          "estimate": {
-            "input_tokens": 1639,
-            "input_cost_usd": 0.001639
-          },
+          "avg_run_seconds": 52.5,
           "measured": {
-            "input_tokens": 21690,
-            "cache_read_input_tokens": 150528,
-            "output_tokens": 2580,
-            "cost_usd": 0.187698
+            "input_tokens": 22835,
+            "cache_read_input_tokens": 254464,
+            "output_tokens": 3992,
+            "cost_usd": 0.301251
           }
         },
         "baseline": {
@@ -6901,22 +6830,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T21:50:27Z",
+          "ran_at": "2026-08-15T02:14:49Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 38.4,
+            "avg_run_seconds": 31.9,
             "estimate": {
               "input_tokens": 1639,
               "input_cost_usd": 0.001639
             },
             "measured": {
-              "input_tokens": 31083,
-              "cache_read_input_tokens": 195840,
-              "output_tokens": 3189,
-              "cost_usd": 0.246057
+              "input_tokens": 21690,
+              "cache_read_input_tokens": 150528,
+              "output_tokens": 2580,
+              "cost_usd": 0.187698
             }
           },
           "results": [
@@ -6951,10 +6880,10 @@
                 "input_cost_usd": 0.000827
               },
               "measured": {
-                "input_tokens": 18967,
-                "cache_read_input_tokens": 135680,
-                "output_tokens": 1709,
-                "cost_usd": 0.164901
+                "input_tokens": 9574,
+                "cache_read_input_tokens": 90368,
+                "output_tokens": 1100,
+                "cost_usd": 0.106542
               },
               "summary": {
                 "passed": 4,
@@ -6963,7 +6892,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 43
+                "executor_duration_seconds": 29.9
               }
             }
           ]
@@ -7360,9 +7289,9 @@
         "display": "GPT-5.6 Sol",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T02:11:43Z",
+        "ran_at": "2026-08-16T09:38:25Z",
         "executed": true,
-        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "content_hash": "4e7a1b76c7cbc293168640cf874876a464abc106d707ffc6b1f6c55d3445997b",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 5,
@@ -7372,15 +7301,11 @@
           {
             "id": "seed-zizmor-config",
             "passed": true,
-            "estimate": {
-              "input_tokens": 812,
-              "input_cost_usd": 0.00406
-            },
             "measured": {
-              "input_tokens": 18704,
-              "cache_read_input_tokens": 76288,
-              "output_tokens": 1200,
-              "cost_usd": 0.51096
+              "input_tokens": 8923,
+              "cache_read_input_tokens": 85504,
+              "output_tokens": 1328,
+              "cost_usd": 0.511975
             },
             "expectations": [
               {
@@ -7415,23 +7340,19 @@
               "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 96192,
-              "executor_duration_seconds": 38.3
+              "total_tokens": 95755,
+              "executor_duration_seconds": 35.7
             },
             "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
           },
           {
             "id": "validate-and-fix",
             "passed": true,
-            "estimate": {
-              "input_tokens": 827,
-              "input_cost_usd": 0.004135
-            },
             "measured": {
-              "input_tokens": 16591,
-              "cache_read_input_tokens": 128768,
-              "output_tokens": 1308,
-              "cost_usd": 0.766035
+              "input_tokens": 20459,
+              "cache_read_input_tokens": 121856,
+              "output_tokens": 1358,
+              "cost_usd": 0.752315
             },
             "expectations": [
               {
@@ -7479,14 +7400,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 7,
+                "command_execution": 6,
                 "file_change": 1
               },
-              "total_tool_calls": 8
+              "total_tool_calls": 7
             },
             "timing": {
-              "total_tokens": 146667,
-              "executor_duration_seconds": 40.5
+              "total_tokens": 143673,
+              "executor_duration_seconds": 38.3
             },
             "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
@@ -7496,16 +7417,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 39.4,
-          "estimate": {
-            "input_tokens": 1639,
-            "input_cost_usd": 0.008195
-          },
+          "avg_run_seconds": 37,
           "measured": {
-            "input_tokens": 35295,
-            "cache_read_input_tokens": 205056,
-            "output_tokens": 2508,
-            "cost_usd": 1.276995
+            "input_tokens": 29382,
+            "cache_read_input_tokens": 207360,
+            "output_tokens": 2686,
+            "cost_usd": 1.26429
           }
         },
         "baseline": {
@@ -7567,22 +7484,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T21:48:29Z",
+          "ran_at": "2026-08-15T02:11:43Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 37,
+            "avg_run_seconds": 39.4,
             "estimate": {
               "input_tokens": 1639,
               "input_cost_usd": 0.008195
             },
             "measured": {
-              "input_tokens": 33178,
-              "cache_read_input_tokens": 196352,
-              "output_tokens": 2329,
-              "cost_usd": 1.21752
+              "input_tokens": 35295,
+              "cache_read_input_tokens": 205056,
+              "output_tokens": 2508,
+              "cost_usd": 1.276995
             }
           },
           "results": [
@@ -7617,10 +7534,10 @@
                 "input_cost_usd": 0.004135
               },
               "measured": {
-                "input_tokens": 14474,
-                "cache_read_input_tokens": 120064,
-                "output_tokens": 1129,
-                "cost_usd": 0.70656
+                "input_tokens": 16591,
+                "cache_read_input_tokens": 128768,
+                "output_tokens": 1308,
+                "cost_usd": 0.766035
               },
               "summary": {
                 "passed": 4,
@@ -7629,7 +7546,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 35.6
+                "executor_duration_seconds": 40.5
               }
             }
           ]
@@ -8026,9 +7943,9 @@
         "display": "GPT-5.6 Terra",
         "harness": "codex",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T02:13:06Z",
+        "ran_at": "2026-08-16T09:39:36Z",
         "executed": true,
-        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "content_hash": "4e7a1b76c7cbc293168640cf874876a464abc106d707ffc6b1f6c55d3445997b",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 2.5,
@@ -8038,15 +7955,11 @@
           {
             "id": "seed-zizmor-config",
             "passed": true,
-            "estimate": {
-              "input_tokens": 812,
-              "input_cost_usd": 0.00203
-            },
             "measured": {
-              "input_tokens": 9159,
+              "input_tokens": 9196,
               "cache_read_input_tokens": 84480,
-              "output_tokens": 1289,
-              "cost_usd": 0.253433
+              "output_tokens": 1330,
+              "cost_usd": 0.25414
             },
             "expectations": [
               {
@@ -8081,23 +7994,19 @@
               "total_tool_calls": 5
             },
             "timing": {
-              "total_tokens": 94928,
-              "executor_duration_seconds": 34.3
+              "total_tokens": 95006,
+              "executor_duration_seconds": 35.1
             },
             "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
           },
           {
             "id": "validate-and-fix",
             "passed": true,
-            "estimate": {
-              "input_tokens": 827,
-              "input_cost_usd": 0.002068
-            },
             "measured": {
-              "input_tokens": 14108,
-              "cache_read_input_tokens": 112640,
-              "output_tokens": 1325,
-              "cost_usd": 0.336745
+              "input_tokens": 24365,
+              "cache_read_input_tokens": 147200,
+              "output_tokens": 1580,
+              "cost_usd": 0.452613
             },
             "expectations": [
               {
@@ -8145,14 +8054,14 @@
             },
             "execution_metrics": {
               "tool_calls": {
-                "command_execution": 5,
+                "command_execution": 6,
                 "file_change": 2
               },
-              "total_tool_calls": 7
+              "total_tool_calls": 8
             },
             "timing": {
-              "total_tokens": 128073,
-              "executor_duration_seconds": 36
+              "total_tokens": 173145,
+              "executor_duration_seconds": 62.7
             },
             "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
@@ -8162,16 +8071,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 35.2,
-          "estimate": {
-            "input_tokens": 1639,
-            "input_cost_usd": 0.004098
-          },
+          "avg_run_seconds": 48.9,
           "measured": {
-            "input_tokens": 23267,
-            "cache_read_input_tokens": 197120,
-            "output_tokens": 2614,
-            "cost_usd": 0.590178
+            "input_tokens": 33561,
+            "cache_read_input_tokens": 231680,
+            "output_tokens": 2910,
+            "cost_usd": 0.706753
           }
         },
         "baseline": {
@@ -8233,22 +8138,22 @@
           ]
         },
         "previous": {
-          "ran_at": "2026-07-31T21:49:26Z",
+          "ran_at": "2026-08-15T02:13:06Z",
           "summary": {
             "passed": 2,
             "failed": 0,
             "total": 2,
             "pass_rate": 1,
-            "avg_run_seconds": 38.2,
+            "avg_run_seconds": 35.2,
             "estimate": {
               "input_tokens": 1639,
               "input_cost_usd": 0.004098
             },
             "measured": {
-              "input_tokens": 26969,
-              "cache_read_input_tokens": 248064,
-              "output_tokens": 2811,
-              "cost_usd": 0.729748
+              "input_tokens": 23267,
+              "cache_read_input_tokens": 197120,
+              "output_tokens": 2614,
+              "cost_usd": 0.590178
             }
           },
           "results": [
@@ -8283,10 +8188,10 @@
                 "input_cost_usd": 0.002068
               },
               "measured": {
-                "input_tokens": 17810,
-                "cache_read_input_tokens": 163584,
-                "output_tokens": 1522,
-                "cost_usd": 0.476315
+                "input_tokens": 14108,
+                "cache_read_input_tokens": 112640,
+                "output_tokens": 1325,
+                "cost_usd": 0.336745
               },
               "summary": {
                 "passed": 4,
@@ -8295,7 +8200,7 @@
                 "pass_rate": 1
               },
               "timing": {
-                "executor_duration_seconds": 42.1
+                "executor_duration_seconds": 36
               }
             }
           ]
@@ -8838,9 +8743,9 @@
         "display": "Grok 4.6",
         "harness": "grok",
         "tool_version": "0.7.0",
-        "ran_at": "2026-08-15T02:29:18Z",
+        "ran_at": "2026-08-16T09:44:44Z",
         "executed": true,
-        "content_hash": "b571aebfd96faf2ac23091a931935e209e57f2b7c5007f8634e9b0111530f266",
+        "content_hash": "4e7a1b76c7cbc293168640cf874876a464abc106d707ffc6b1f6c55d3445997b",
         "timeout_seconds": 600,
         "pricing": {
           "input_per_mtok": 2,
@@ -8851,10 +8756,10 @@
             "id": "seed-zizmor-config",
             "passed": true,
             "measured": {
-              "input_tokens": 12254,
-              "cache_read_input_tokens": 39424,
-              "output_tokens": 1094,
-              "cost_usd": 0.008633
+              "input_tokens": 3611,
+              "cache_read_input_tokens": 48128,
+              "output_tokens": 960,
+              "cost_usd": 0.006298
             },
             "expectations": [
               {
@@ -8882,8 +8787,8 @@
               "pass_rate": 1
             },
             "timing": {
-              "total_tokens": 52772,
-              "executor_duration_seconds": 15.1
+              "total_tokens": 52699,
+              "executor_duration_seconds": 16.8
             },
             "spec_hash": "b13fba1abfece528448ef446c059153480db352b14ac66f8a51d6e45f35e5fb8"
           },
@@ -8891,10 +8796,10 @@
             "id": "validate-and-fix",
             "passed": true,
             "measured": {
-              "input_tokens": 7855,
-              "cache_read_input_tokens": 115968,
-              "output_tokens": 1548,
-              "cost_usd": 0.014107
+              "input_tokens": 8407,
+              "cache_read_input_tokens": 146816,
+              "output_tokens": 1781,
+              "cost_usd": 0.017154
             },
             "expectations": [
               {
@@ -8941,8 +8846,8 @@
               "pass_rate": 1
             },
             "timing": {
-              "total_tokens": 125371,
-              "executor_duration_seconds": 29.1
+              "total_tokens": 157004,
+              "executor_duration_seconds": 41.3
             },
             "spec_hash": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
           }
@@ -8952,12 +8857,12 @@
           "failed": 0,
           "total": 2,
           "pass_rate": 1,
-          "avg_run_seconds": 22.1,
+          "avg_run_seconds": 29.1,
           "measured": {
-            "input_tokens": 20109,
-            "cache_read_input_tokens": 155392,
-            "output_tokens": 2642,
-            "cost_usd": 0.02274
+            "input_tokens": 12018,
+            "cache_read_input_tokens": 194944,
+            "output_tokens": 2741,
+            "cost_usd": 0.023452
           }
         },
         "baseline": {
@@ -9015,6 +8920,62 @@
                 "executor_duration_seconds": 56.4
               },
               "fingerprint": "aff4a1c813797e666d9ce55eaf728aeb28d52cbd52e3b5fc511a0f5867b21860"
+            }
+          ]
+        },
+        "previous": {
+          "ran_at": "2026-08-15T02:29:18Z",
+          "summary": {
+            "passed": 2,
+            "failed": 0,
+            "total": 2,
+            "pass_rate": 1,
+            "avg_run_seconds": 22.1,
+            "measured": {
+              "input_tokens": 20109,
+              "cache_read_input_tokens": 155392,
+              "output_tokens": 2642,
+              "cost_usd": 0.02274
+            }
+          },
+          "results": [
+            {
+              "id": "seed-zizmor-config",
+              "passed": true,
+              "measured": {
+                "input_tokens": 12254,
+                "cache_read_input_tokens": 39424,
+                "output_tokens": 1094,
+                "cost_usd": 0.008633
+              },
+              "summary": {
+                "passed": 2,
+                "failed": 0,
+                "total": 2,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 15.1
+              }
+            },
+            {
+              "id": "validate-and-fix",
+              "passed": true,
+              "measured": {
+                "input_tokens": 7855,
+                "cache_read_input_tokens": 115968,
+                "output_tokens": 1548,
+                "cost_usd": 0.014107
+              },
+              "summary": {
+                "passed": 4,
+                "failed": 0,
+                "total": 4,
+                "pass_rate": 1
+              },
+              "timing": {
+                "executor_duration_seconds": 29.1
+              }
             }
           ]
         }

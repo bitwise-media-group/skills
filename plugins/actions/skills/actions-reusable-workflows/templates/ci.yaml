@@ -1,16 +1,19 @@
 # Caller workflow -- copy to `.github/workflows/ci.yaml` in any repo. It owns the
 # push/pull_request triggers; all the work lives in the reusable ci workflow,
-# which runs the canonical Makefile gates (lint, build, test) as one job each and
+# which runs the canonical mise tasks (lint, build, test) as one job each and
 # sets up only the toolchains the repo has (a root go.mod -> go, package.json ->
-# node).
+# node, pyproject.toml -> Python via uv).
 #
-# The repo must provide a Makefile with targets lint / build / test (test emitting
+# The repo must provide a mise config -- a root mise.toml, or the shared task
+# library (bitwise-media-group/toolchain) mounted at .mise/ -- defining whichever
+# of the tasks lint / build / test do real work there (test emitting
 # coverage/cobertura-coverage.xml, optionally coverage/junit.xml) and -- if you
-# set e2e: true -- e2e. Stub any that don't apply as a no-op (e.g. `build: ; @:`).
-# Add product-specific jobs (integration, ...) alongside the `ci` job here; a
-# caller can mix a reusable-workflow job with normal jobs.
+# set e2e: true -- e2e. Undefined tasks are skipped; no no-op stubs needed. Add
+# product-specific jobs (integration, ...) alongside the `ci` job here; a caller
+# can mix a reusable-workflow job with normal jobs.
 #
-# Pin @v2 to a release tag or full commit SHA -- see README "Pinning".
+# Pin to a full commit SHA or a release tag -- see README "Pinning". Re-resolve
+# the latest before copying: see the skill's "Pinning" section.
 
 name: Continuous integration
 
@@ -26,10 +29,11 @@ permissions:
 
 jobs:
   ci:
-    uses: bitwise-media-group/github-workflows/.github/workflows/ci.yaml@v2
+    uses: bitwise-media-group/github-workflows/.github/workflows/ci.yaml@1eaff010e2929a3583c50ffa325690216bc70462 # v6.2.0
     # with:
     #   go-version-file: go.mod   # default (Go repos)
     #   cache-dependency-path: |  # default is go.sum; list every lockfile that affects the build
     #     go.sum
     #     tools/go.sum
-    #   e2e: true                 # also run the `make e2e` job (off by default)
+    #   e2e: true                 # also run the `e2e` task job (off by default)
+    #   coverage: false           # skip the Codecov upload for repos that emit no coverage/test results
