@@ -15,7 +15,7 @@
       "should_trigger": true
     },
     {
-      "query": "Add Dependabot auto-merge using our shared workflow",
+      "query": "Wire up auto-merge for our Renovate dependency PRs using the shared workflow",
       "should_trigger": true
     },
     {

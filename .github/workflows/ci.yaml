@@ -12,8 +12,9 @@
 # coverage: false — this is a skills library, it emits no coverage, so the Codecov
 # upload job is skipped.
 #
-# Keep `name: ci`: the merge.yaml and dependabot-merge.yaml callers key their
-# workflow_run triggers on this workflow's name.
+# Keep `name: ci`: the merge.yaml caller keys its workflow_run trigger on this
+# workflow's name — dependency PRs now come from the org's self-hosted Renovate
+# bot (bitwise-media-group/renovate-config) and ride the same merge flow.
 name: ci
 
 on:

@@ -3,7 +3,7 @@
 # the interpreter from .python-version; tool versions come from uv.lock.
 #
 # Every action is pinned to a full commit SHA (tag in the comment) so a moved
-# tag can never change what runs; Dependabot keeps the pins fresh.
+# tag can never change what runs; Renovate keeps the pins fresh.
 name: ci
 
 on:

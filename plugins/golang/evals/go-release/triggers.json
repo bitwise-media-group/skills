@@ -19,7 +19,7 @@
       "should_trigger": true
     },
     {
-      "query": "Configure Dependabot for our Go modules and GitHub Actions",
+      "query": "Configure Renovate for our Go modules and GitHub Actions",
       "should_trigger": true
     },
     {

@@ -1,7 +1,7 @@
 # Python release engineering — rationale and full reference config
 
-Companion to the `python-release` skill. Why publishing and Dependabot are set up the way they are, and the full
-ecosystem matrix to grow into.
+Companion to the `python-release` skill. Why publishing and Renovate are set up the way they are, and the full ecosystem
+matrix to grow into.
 
 ## Why Trusted Publishing instead of a token
 
@@ -32,34 +32,34 @@ If you would rather derive the version from the git tag (no manual bump), switch
 `hatch-vcs` and set `[project] dynamic = ["version"]` — more moving parts, in exchange for the tag being the single
 source of truth. The static approach is the simpler default.
 
-## The Dependabot shape
+## The Renovate shape
 
-Every ecosystem entry uses the same three settings — daily checks, a 7-day cooldown, and minor + patch grouped into one
-PR:
+Every packageRule uses the same two settings, on top of a global cooldown — a 7-day wait and minor + patch grouped into
+one PR:
 
-- **Daily checks, 7-day cooldown.** Dependabot looks daily but waits a week after a release before proposing it.
-  Compromised or yanked releases are almost always caught within days, so the cooldown keeps them out of your repo, and
-  a flurry of patch releases collapses into one bump.
-- **Minor + patch grouped per ecosystem.** One reviewable PR a week per ecosystem instead of a stream of single-package
-  bumps. **Majors are deliberately excluded** from the group so a breaking upgrade arrives as its own PR with its own
-  changelog.
+- **7-day cooldown.** Renovate looks continuously but waits a week after a release before proposing it
+  (`minimumReleaseAge`). Compromised or yanked releases are almost always caught within days, so the cooldown keeps them
+  out of your repo, and a flurry of patch releases collapses into one bump.
+- **Minor + patch grouped per manager.** One reviewable PR a week per manager instead of a stream of single-package
+  bumps. **Majors are deliberately excluded** from the group (the rule's `matchUpdateTypes` only matches
+  `minor`/`patch`) so a breaking upgrade arrives as its own PR with its own changelog.
 
-The two baseline entries:
+The two baseline rules:
 
-- **`uv` at `/`** — reads `pyproject.toml` and `uv.lock`, covering both runtime dependencies and the
-  `[dependency-groups] dev` tools (ruff, ty, pytest). One entry keeps the whole resolution fresh.
-- **`github-actions` at `/`** — the CI and release workflows pin every action to a full commit SHA (see the skill's CI
-  conventions). Dependabot understands SHA pins with a version comment and bumps the SHA and comment together, so
-  pinning stays secure _and_ fresh.
+- **`pep621`** — reads `pyproject.toml` and `uv.lock`, covering both runtime dependencies and the
+  `[dependency-groups] dev` tools (ruff, ty, pytest). One rule keeps the whole resolution fresh.
+- **`github-actions`** — the CI and release workflows pin every action to a full commit SHA (see the skill's CI
+  conventions). Renovate understands SHA pins with a version comment and bumps the SHA and comment together, so pinning
+  stays secure _and_ fresh.
 
 ## Ecosystems to add as the repo grows
 
-Same schedule/cooldown/group shape, one entry per artifact type the repo actually contains:
+Same `matchUpdateTypes`/`groupName` shape, one rule per manager the repo actually needs:
 
-| Ecosystem        | When                                      | Covers                       |
+| Manager          | When                                      | Covers                       |
 | ---------------- | ----------------------------------------- | ---------------------------- |
-| `docker`         | a `Dockerfile` with versioned base images | `FROM` image tags            |
+| `dockerfile`     | a `Dockerfile` with versioned base images | `FROM` image tags            |
 | `docker-compose` | a `docker-compose.yaml` for a local stack | `image:` tags in the compose |
 | `npm`            | `package.json` pinning JS/prose tooling   | the pinned Node CLIs         |
 
-Keep each versioned artifact in exactly one Dependabot-visible place — one source of truth, one update PR.
+Keep each versioned artifact in exactly one Renovate-visible place — one source of truth, one update PR.

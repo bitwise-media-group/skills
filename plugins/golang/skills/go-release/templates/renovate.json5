@@ -1,0 +1,38 @@
+// Renovate config — save as .github/renovate.json5. A 7-day cooldown before any
+// update is proposed; minor and patch bumps are grouped into one PR per ecosystem
+// (majors arrive alone, reviewed on their own merits). tools/go.mod gets its own
+// group so developer-tool bumps never ride along with application dependency PRs
+// — Renovate's gomod manager already finds nested go.mod files with no extra
+// config, unlike Dependabot's per-directory ecosystem entries. Add packageRules
+// for docker (and others) as the repo grows those ecosystems.
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: ["config:recommended"],
+  minimumReleaseAge: "7 days",
+  packageRules: [
+    {
+      matchManagers: ["github-actions"],
+      matchUpdateTypes: ["minor", "patch"],
+      groupName: "github-actions",
+    },
+    {
+      matchManagers: ["gomod"],
+      matchFileNames: ["go.mod"],
+      matchUpdateTypes: ["minor", "patch"],
+      groupName: "go dependencies",
+    },
+    // A Go `tool` module's pinned CLIs (and their deps) are grouped separately —
+    // the same isolation the separate tools/go.mod exists to provide.
+    {
+      matchManagers: ["gomod"],
+      matchFileNames: ["tools/go.mod"],
+      matchUpdateTypes: ["minor", "patch"],
+      groupName: "go tools",
+    },
+    {
+      matchManagers: ["npm"],
+      matchUpdateTypes: ["minor", "patch"],
+      groupName: "npm",
+    },
+  ],
+}

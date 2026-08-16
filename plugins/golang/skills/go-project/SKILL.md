@@ -90,5 +90,5 @@ them from `node_modules/.bin` (`$(NPMBIN)/…`).
 
 - Write the first `internal/` package and its tests (`go-style`, `go-testing` skills).
 - Document every package and exported identifier as you go (`go-docs` skill).
-- Wire releases, CI, and Dependabot with the `go-release` skill.
+- Wire releases, CI, and Renovate with the `go-release` skill.
 - Run `make pr` and make sure it passes before committing.

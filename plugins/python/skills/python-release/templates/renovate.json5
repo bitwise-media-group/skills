@@ -1,0 +1,22 @@
+// Renovate config — save as .github/renovate.json5. A 7-day cooldown before any
+// update is proposed; minor and patch bumps are grouped into one PR per manager.
+// `uv` covers pyproject.toml + uv.lock (runtime and dev-group dependencies);
+// `github-actions` keeps the workflow SHA pins fresh. Add packageRules for
+// docker (and others) as the repo grows those ecosystems — see reference.md.
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: ["config:recommended"],
+  minimumReleaseAge: "7 days",
+  packageRules: [
+    {
+      matchManagers: ["github-actions"],
+      matchUpdateTypes: ["minor", "patch"],
+      groupName: "github-actions",
+    },
+    {
+      matchManagers: ["pep621"],
+      matchUpdateTypes: ["minor", "patch"],
+      groupName: "uv",
+    },
+  ],
+}

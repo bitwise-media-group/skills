@@ -32,15 +32,15 @@
       ]
     },
     {
-      "id": "dependabot",
-      "prompt": "Add a Dependabot config for this uv project that keeps both the Python dependencies and the GitHub Actions pins up to date, following our conventions.",
+      "id": "renovate",
+      "prompt": "Add a Renovate config for this uv project that keeps both the Python dependencies and the GitHub Actions pins up to date, following our conventions.",
       "allowed_tools": "Read Write Edit Glob Grep Skill Bash(uv *) Bash(python3 *) Bash(mkdir *)",
       "files": ["fixtures/reldemo/pyproject.toml"],
       "assertions": [
-        { "type": "file_exists", "path": ".github/dependabot.yaml" },
-        { "type": "regex", "path": ".github/dependabot.yaml", "pattern": "ecosystem:.*uv" },
-        { "type": "regex", "path": ".github/dependabot.yaml", "pattern": "ecosystem:.*github-actions" },
-        { "type": "regex", "path": ".github/dependabot.yaml", "pattern": "cooldown" }
+        { "type": "file_exists", "path": ".github/renovate.json5" },
+        { "type": "regex", "path": ".github/renovate.json5", "pattern": "pep621" },
+        { "type": "regex", "path": ".github/renovate.json5", "pattern": "github-actions" },
+        { "type": "regex", "path": ".github/renovate.json5", "pattern": "minimumReleaseAge" }
       ]
     }
   ]

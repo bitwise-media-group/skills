@@ -16,9 +16,9 @@ the broadest job's scopes to every job.
 
 `uses: foo/bar@v1` resolves a tag at run time. Tags are mutable refs: a compromise (or a malicious maintainer) can move
 `v1` to a commit that reads your secrets. A 40-character commit SHA is content- addressed and immutable, so a moved tag
-cannot change what runs. The trade-off — stale pins — is handled by Dependabot's `github-actions` ecosystem, which opens
-a PR when a new version ships; the version comment (`# v6.0.3`) keeps the pin human-readable. This applies to
-first-party `actions/*` too: trust is anchored in the SHA, not the org name.
+cannot change what runs. The trade-off — stale pins — is handled by Renovate's `github-actions` manager, which opens a
+PR when a new version ships; the version comment (`# v6.0.3`) keeps the pin human-readable. This applies to first-party
+`actions/*` too: trust is anchored in the SHA, not the org name.
 
 ## 3. The pwn request, and why the allowlist fails closed
 

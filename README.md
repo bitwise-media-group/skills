@@ -18,7 +18,7 @@ Modern, stdlib-first Go development conventions.
 | `go-docs`    | Doc comments on every exported identifier, package comments in `doc.go`, and LLM-ready CLI reference generation for cobra tools.                  |
 | `go-testing` | Table-driven tests with subtests, stdlib assertions, hand-written fakes, `httptest`, and native fuzz targets with seed corpora.                   |
 | `go-project` | Scaffolds the canonical layout: `cmd/` + `internal/`, a pinned tools module (`go tool -modfile=tools/go.mod`), and a Makefile with the `pr` gate. |
-| `go-release` | GoReleaser v2 with version ldflags, SBOMs, multi-arch images, SHA-pinned CI (`-race`, `govulncheck`), and Dependabot coverage.                    |
+| `go-release` | GoReleaser v2 with version ldflags, SBOMs, multi-arch images, SHA-pinned CI (`-race`, `govulncheck`), and Renovate coverage.                      |
 
 ### terraform
 
@@ -41,7 +41,7 @@ Modern Python on the Astral toolchain (`uv`, `ruff`, `ty`/`pyright`).
 | `python-typing`  | Type every public API and gate it with `ty` or `pyright`: `[tool.ty]`/`[tool.pyright]` config, `X \| None`, PEP 695 generics, `Protocol` over ABCs. |
 | `python-testing` | `pytest` with `@pytest.mark.parametrize`, fixtures, fakes over mocks, and Hypothesis property tests as the fuzzing analogue.                        |
 | `python-docs`    | Google-style docstrings enforced via ruff `D` rules, and LLM-ready CLI reference generation for Typer/Click tools.                                  |
-| `python-release` | `uv build` + `uv publish` via PyPI Trusted Publishing, SHA-pinned CI (`ruff`/`ty`/`pytest`), tag-driven releases, and Dependabot coverage.          |
+| `python-release` | `uv build` + `uv publish` via PyPI Trusted Publishing, SHA-pinned CI (`ruff`/`ty`/`pytest`), tag-driven releases, and Renovate coverage.            |
 
 ### workflow
 

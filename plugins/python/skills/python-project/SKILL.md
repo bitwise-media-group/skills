@@ -87,5 +87,5 @@ script under `[project.scripts]`.
 
 - Write the first module and its tests (`python-style`, `python-typing`, `python-testing` skills).
 - Document modules and public APIs as you go (`python-docs` skill).
-- Wire releases, CI, and Dependabot with the `python-release` skill.
+- Wire releases, CI, and Renovate with the `python-release` skill.
 - Run `make pr` and make sure it passes before committing.
