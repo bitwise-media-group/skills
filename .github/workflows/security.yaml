@@ -34,7 +34,7 @@ permissions:
 
 jobs:
   analyze:
-    uses: bitwise-media-group/github-workflows/.github/workflows/security.yaml@176732b8b8ef2598ae0593db728b4415bcc86888 # v4.4.0
+    uses: bitwise-media-group/github-workflows/.github/workflows/security.yaml@1eaff010e2929a3583c50ffa325690216bc70462 # v6.2.0
     with:
       languages: actions # pin the matrix; skip root detection (no first-party JS/TS or Go)
       config-file: ./.github/codeql/codeql-config.yaml

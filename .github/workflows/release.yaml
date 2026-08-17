@@ -46,12 +46,14 @@ permissions:
   attestations: write
   # artifact storage record for the attestation
   artifact-metadata: write
+  # push container images to ghcr (goreleaser dockers_v2, when configured)
+  packages: write
   # publish the docs site to GitHub Pages (docs job, when a zensical.toml exists)
   pages: write
 
 jobs:
   release:
-    uses: bitwise-media-group/github-workflows/.github/workflows/release.yaml@176732b8b8ef2598ae0593db728b4415bcc86888 # v4.4.0
+    uses: bitwise-media-group/github-workflows/.github/workflows/release.yaml@1eaff010e2929a3583c50ffa325690216bc70462 # v6.2.0
     with:
       # author the release PR as the FF Merge App so `ci` + auto-merge fire on it
       app-client-id: ${{ vars.FF_MERGE_CLIENT_ID }}
