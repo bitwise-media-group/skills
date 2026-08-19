@@ -9,7 +9,7 @@ terraform {
     # Replace with the providers this module actually uses.
     aws = {
       source  = "hashicorp/aws"
-      version = ">= 5.0, < 6.0"
+      version = ">= 5.0, < 6.61"
     }
   }
 }
