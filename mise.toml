@@ -25,7 +25,7 @@ lockfile = true
 includes = ["tasks.toml"]
 
 [tools]
-"github:bitwise-media-group/evolve" = "0.7.0"
+"github:bitwise-media-group/evolve" = "v0.8.1"
 # claude-code uses the `github:` backend, not `aqua:`: mise <= 2026.8.5 has a
 # bug merging the aqua registry's per-OS `overrides` for this package (the
 # Linux entries only set `variants`, not `format`, and mise fails to inherit
