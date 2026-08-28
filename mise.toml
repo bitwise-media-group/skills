@@ -38,4 +38,4 @@ includes = ["tasks.toml"]
 # verification on top of the checksum. Fixed upstream by jdx/mise#11925 and
 # jdx/mise#11931 (in mise 2026.8.6), but the CI reusable workflow currently
 # pins an older mise -- switch back to `aqua:` once it's bumped past 2026.8.6.
-"github:anthropics/claude-code" = "v2.1.241"
+"github:anthropics/claude-code" = "v2.1.245"
