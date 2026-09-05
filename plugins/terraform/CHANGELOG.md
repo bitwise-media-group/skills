@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/bitwise-media-group/skills/compare/terraform--v0.2.0...terraform--v0.2.1) (2026-09-05)
+
+
+### Bug Fixes
+
+* **mise:** bring the evolve/plugin-validate build surface in-house ([67ba88c](https://github.com/bitwise-media-group/skills/commit/67ba88ca7a428163e68bc5c4ed025bc162274f7f))
+
 ## [0.2.0](https://github.com/bitwise-media-group/skills/compare/terraform--v0.1.0...terraform--v0.2.0) (2026-07-01)
 
 

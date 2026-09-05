@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.4.0](https://github.com/bitwise-media-group/skills/compare/golang--v0.3.0...golang--v0.4.0) (2026-09-05)
+
+
+### Features
+
+* **actions:** refresh actions-reusable-workflows for github-workflows v6.2.0 ([3aca11f](https://github.com/bitwise-media-group/skills/commit/3aca11f85eb2cf36e3bf53fc4852742d4dc0eaf0))
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/spf13/cobra to v1.10.2 ([#50](https://github.com/bitwise-media-group/skills/issues/50)) ([14f70fe](https://github.com/bitwise-media-group/skills/commit/14f70fe11797ef0ecff64f07015372a32c44fb48))
+* **mise:** bring the evolve/plugin-validate build surface in-house ([67ba88c](https://github.com/bitwise-media-group/skills/commit/67ba88ca7a428163e68bc5c4ed025bc162274f7f))
+
 ## [0.3.0](https://github.com/bitwise-media-group/skills/compare/golang--v0.2.0...golang--v0.3.0) (2026-07-01)
 
 
