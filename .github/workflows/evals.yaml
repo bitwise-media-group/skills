@@ -43,28 +43,40 @@ jobs:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # nothing here pushes, and the results artifact must never carry a token
+          persist-credentials: false
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
           node-version-file: .node-version
       - uses: bitwise-media-group/setup-evolve@7f828c3b7c00edac7fc60b041440d87846a8856a # v1
-      - run: npm install -g @anthropic-ai/claude-code @openai/codex @google/gemini-cli
+      - name: Install the agent CLIs under evaluation
+        run: npm install -g @anthropic-ai/claude-code @openai/codex @google/gemini-cli # zizmor: ignore[adhoc-packages] -- accepted: the harnesses under evaluation, deliberately latest; manual dispatch only
       - name: Install terraform + tflint for deterministic grading
         if: ${{ inputs.tier != 'triggers' }}
         run: |
           sudo snap install terraform --classic || true
           curl -s https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash || true
+      # the free-text inputs reach the shell as env vars, never as expanded
+      # template text, so a crafted value can't inject commands
       - name: Tier 1 — trigger accuracy
         if: ${{ inputs.tier == 'triggers' || inputs.tier == 'both' }}
+        env:
+          MODELS: ${{ inputs.models }}
+          SKILL: ${{ inputs.skill }}
         run: |
           evolve run triggers \
-            --models '${{ inputs.models }}' \
-            ${{ inputs.skill && format('--skill {0}', inputs.skill) || '' }}
+            --models "$MODELS" \
+            ${SKILL:+--skill "$SKILL"}
       - name: Tier 2 — behavioral evals
         if: ${{ inputs.tier == 'evals' || inputs.tier == 'both' }}
+        env:
+          MODELS: ${{ inputs.models }}
+          SKILL: ${{ inputs.skill }}
         run: |
           evolve run evals \
-            --models '${{ inputs.models }}' \
-            ${{ inputs.skill && format('--skill {0}', inputs.skill) || '' }}
+            --models "$MODELS" \
+            ${SKILL:+--skill "$SKILL"}
       - name: Regenerate reports
         if: always()
         run: evolve report

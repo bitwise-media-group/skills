@@ -27,7 +27,7 @@ name: Fast-forward merge
 # (merge-review-ack.yaml) turns an approval into a merge attempt for fork and
 # same-repo PRs alike. Whichever finishes last triggers the attempt, and ff-merge
 # re-verifies all checks regardless. None of these run PR code.
-on:
+on: # zizmor: ignore[dangerous-triggers] -- required: workflow_run gates auto-merge on CI; no PR code is checked out or run
   issue_comment:
     types: [created]
   workflow_run:
