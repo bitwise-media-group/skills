@@ -2,27 +2,30 @@
 # SPDX-License-Identifier: MIT
 #
 # skills — the Claude skill/plugin marketplace and its evaluation suite.
-# The toolchain library (the .mise/ submodule) supplies pinned developer
-# tools, [settings], and the universal license/prose/container/shell lint
-# tasks (markdown-lib's surface); tasks.toml adds this repo's own
-# fmt/lint/test/ci/pr gates plus the evolve eval tiers (triggers/evals/all/
-# report), reading .evolve.json at the root.
+# The toolchain library (the .mise/ submodule) is loaded natively as
+# .mise/config.toml (pinned developer tools, [settings] and the [vars] knob
+# defaults); this file selects the task files: common/ -- no archetype, there
+# is nothing to compile -- for the license/prose/container/shell/workflow lint,
+# then tasks.toml, which adds this repo's own lint/test/ci/pr gates plus the
+# evolve eval tiers (triggers/evals/all/report), reading .evolve.json at the
+# root. The Makefile is a thin forwarder (.mise/common/include.mk).
 #
-# evolve is pinned directly below rather than task-scoped: it's a first-party
-# CLI, but this repo is its only consumer, so there's no reuse-across-repos
-# case for keeping it out of [tools] the way the toolchain library's
-# task-scoped tools (e.g. dotty) are. See tasks.toml for the bump process.
+# evolve is pinned directly below: it's a first-party CLI, but this repo is
+# its only consumer, so there's no reuse-across-repos case for a shared pin in
+# the toolchain library.
 #
 # lockfile = true is already inherited from .mise/config.toml, but this repo
-# now has its own [tools] entry to lock, so it's set explicitly here too:
-# mise writes per-platform checksums for evolve into this repo's own
-# mise.lock (`mise lock` regenerates it), independent of the toolchain
-# library's own mise.lock for its shared [tools].
+# has its own [tools] entries to lock, so it's set explicitly here too: mise
+# writes per-platform checksums for them into this repo's own mise.lock,
+# independent of the toolchain library's mise.lock for its shared [tools].
+# Regenerate a pin's entries with `mise lock <tool>` -- never a bare
+# `mise lock` or `mise upgrade`, which would also write into the .mise/
+# submodule.
 [settings]
 lockfile = true
 
 [task_config]
-includes = ["tasks.toml"]
+includes = [".mise/common/tasks.toml", "tasks.toml"]
 
 [tools]
 "github:bitwise-media-group/evolve" = "v0.8.1"

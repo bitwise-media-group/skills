@@ -17,6 +17,5 @@ EVALUATION.json
 CHANGELOG.md
 **/CHANGELOG.md
 
-# Shared Makefile library submodule (linted in its own repo) and on-demand tool bin
+# Shared Makefile library submodule (linted in its own repo)
 make/
-.bin/

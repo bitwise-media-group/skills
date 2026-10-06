@@ -3,18 +3,18 @@
 
 # Caller for the reusable CI workflow. It owns the push/pull_request triggers;
 # the reusable workflow discovers which canonical mise tasks this repo defines
-# (`mise tasks ls --name-only`) and runs each as one job. The tasks come from
-# the toolchain submodule's agent-plugins archetype plus tasks.toml: `lint`
-# (prose + evolve Tier 0 --strict + eval-JSON + license + plugin validate +
-# install.sh parse) and `test` (evolve checks + report --check); there is no
-# build task, so that leg is skipped.
+# (`mise tasks ls --name-only`) and runs `mise run <task>` for each as one job.
+# The tasks come from the toolchain submodule's common tasks plus tasks.toml:
+# `lint` (prose + license + workflow lint + evolve Tier 0 --strict + eval-JSON
+# + plugin validate + install.sh parse) and `test` (evolve checks + report
+# --check); there is no build task, so that leg is skipped.
 #
 # coverage: false — this is a skills library, it emits no coverage, so the Codecov
 # upload job is skipped.
 #
 # Keep `name: ci`: the merge.yaml caller keys its workflow_run trigger on this
-# workflow's name — dependency PRs now come from the org's self-hosted Renovate
-# bot (bitwise-media-group/renovate-config) and ride the same merge flow.
+# workflow's name — dependency PRs come from this repo's own Renovate workflow
+# (renovate.yaml) and ride the same merge flow.
 name: ci
 
 on:

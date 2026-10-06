@@ -1,17 +1,20 @@
 # Copyright 2026 Bitwise Media Group
 # SPDX-License-Identifier: MIT
 #
-# Repo-local tasks layered on the toolchain library's universal license/
-# prose/container/shell lint tasks (the .mise/ submodule). This file supplies
-# everything specific to a plugin/marketplace repo: the evolve eval suite
-# (reading .evolve.json at the root) and the plugin/marketplace checks
-# ported from the old Makefile — `claude plugin validate` runs the claude
-# CLI as a pinned mise tool (a native release binary resolved via mise's
-# `github:` backend directly against the GitHub release, checksum- and
-# attestation-verified — no npm, no node_modules; see mise.toml for why it's
-# `github:anthropics/claude-code` rather than `aqua:`), the eval fixtures
-# must be valid JSON (checked with the pinned node — no jq dependency), and
-# the installer must parse.
+# Repo-local tasks, included after the toolchain library's common/tasks.toml
+# (the .mise/ submodule). This file supplies everything specific to a
+# plugin/marketplace repo: the evolve eval suite (reading .evolve.json at the
+# root) and the plugin/marketplace checks ported from the old Makefile —
+# `claude plugin validate` runs the claude CLI as a pinned mise tool (a native
+# release binary resolved via mise's `github:` backend directly against the
+# GitHub release, checksum- and attestation-verified — no npm, no
+# node_modules; see mise.toml for why it's `github:anthropics/claude-code`
+# rather than `aqua:`), the eval fixtures must be valid JSON (checked with the
+# pinned node — no jq dependency), and the installer must parse.
+#
+# Task merging is whole-task replacement with later includes winning, so the
+# lint/ci/pr redefinitions below repeat common's rollups and append this
+# repo's checks; fmt is common's unchanged.
 #
 # The eval tiers keep their old Makefile names (triggers/evals/all/report)
 # and default to --new --modified: full runs are LLM-priced, so the sweep is
@@ -19,7 +22,7 @@
 #
 # evolve and claude-code are both pinned in the root mise.toml [tools] (see
 # that file's header), so every task below can just call them directly and
-# both pins are covered by mise.lock and `mise upgrade --bump`.
+# both pins are covered by the root mise.lock.
 
 [evolve-checks]
 hide = true
@@ -48,21 +51,19 @@ hide = true
 dir = "{{config_root}}"
 run = "sh -n install.sh"
 
-[fmt]
-description = "format prose, inject license headers"
-run = [{ task = "fmt-prose" }, { task = "license" }]
-
+# common's lint rollup, plus the plugin/marketplace checks.
 [lint]
-description = "prose lint + license check + evolve checks + plugin validate + fixture/installer checks"
+description = "prose lint + license, container, shell and workflow checks, plus evolve, plugin, fixture and installer checks"
 run = [
   { task = "license-check" },
   { task = "lint-containers" },
   { task = "lint-shell" },
+  { task = "lint-workflows" },
   { task = "lint-prose" },
   { task = "evolve-checks" },
   { task = "plugin-validate" },
   { task = "fixture-json" },
-  { task = "installer-syntax" }
+  { task = "installer-syntax" },
 ]
 
 [test]
@@ -99,9 +100,4 @@ run = [{ task = "lint" }, { task = "test" }]
 
 [pr]
 description = "full local gate before a pull request"
-run = [
-  { task = "fmt" },
-  { task = "lint" },
-  { task = "test" },
-  { task = "commit" }
-]
+run = [{ task = "fmt" }, { task = "lint" }, { task = "test" }]
