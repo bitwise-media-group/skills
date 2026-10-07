@@ -46,17 +46,27 @@ jobs:
         with:
           # nothing here pushes, and the results artifact must never carry a token
           persist-credentials: false
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+          submodules: true # the toolchain at .mise/, which pins node, terraform and tflint
+      # Every tool comes from a mise pin, verified against mise.lock: evolve and the
+      # agent CLIs under evaluation (claude, codex, gemini) from the root mise.toml,
+      # and node (gemini's runtime) plus terraform + tflint (deterministic grading)
+      # from the toolchain. Same mise as github-workflows v7.0.0's ci job.
+      - name: Install evolve, the agent CLIs and the grading tools
+        uses: jdx/mise-action@7a4e45a543138629540c9a1616d08632b893e492 # v5.0.1
         with:
-          node-version-file: .node-version
-      - uses: bitwise-media-group/setup-evolve@7f828c3b7c00edac7fc60b041440d87846a8856a # v1
-      - name: Install the agent CLIs under evaluation
-        run: npm install -g @anthropic-ai/claude-code @openai/codex @google/gemini-cli # zizmor: ignore[adhoc-packages] -- accepted: the harnesses under evaluation, deliberately latest; manual dispatch only
-      - name: Install terraform + tflint for deterministic grading
-        if: ${{ inputs.tier != 'triggers' }}
-        run: |
-          sudo snap install terraform --classic || true
-          curl -s https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash || true
+          version: v2026.10.1
+          # sha256 of the linux-x64 mise binary for the version above, from the release's
+          # SHASUMS256.txt -- the action verifies the extracted binary, not the archive
+          sha256: 31e6859cf639ed4594906da3fcd0fe2055e9daddae75e9786dbe50b3fb3c0f4a
+          install_args: >-
+            github:bitwise-media-group/evolve
+            github:anthropics/claude-code
+            aqua:openai/codex
+            node
+            npm:@google/gemini-cli
+            aqua:hashicorp/terraform
+            aqua:terraform-linters/tflint
+          cache_key_prefix: mise-evals
       # the free-text inputs reach the shell as env vars, never as expanded
       # template text, so a crafted value can't inject commands
       - name: Tier 1 — trigger accuracy

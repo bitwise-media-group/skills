@@ -12,7 +12,10 @@
 #
 # evolve is pinned directly below: it's a first-party CLI, but this repo is
 # its only consumer, so there's no reuse-across-repos case for a shared pin in
-# the toolchain library.
+# the toolchain library. So are the three agent CLIs the eval tiers drive
+# (claude, codex, gemini): the evals workflow installs exactly these pins, so a
+# CI run and a local `mise run evals` grade the same harness versions, and
+# Renovate bumps them like any other pin.
 #
 # lockfile = true is already inherited from .mise/config.toml, but this repo
 # has its own [tools] entries to lock, so it's set explicitly here too: mise
@@ -42,3 +45,8 @@ includes = [".mise/common/tasks.toml", "tasks.toml"]
 # jdx/mise#11931 (in mise 2026.8.6), but the CI reusable workflow currently
 # pins an older mise -- switch back to `aqua:` once it's bumped past 2026.8.6.
 "github:anthropics/claude-code" = "v2.1.289"
+# codex ships prebuilt release binaries (checksummed via the aqua registry);
+# gemini-cli is a Node bundle with no native binaries, so it installs from npm
+# on the toolchain's shared node.
+"aqua:openai/codex" = "0.160.0"
+"npm:@google/gemini-cli" = "0.62.0"
