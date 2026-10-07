@@ -52,7 +52,7 @@ jobs:
       # and node (gemini's runtime) plus terraform + tflint (deterministic grading)
       # from the toolchain. Same mise as github-workflows v7.0.0's ci job.
       - name: Install evolve, the agent CLIs and the grading tools
-        uses: jdx/mise-action@7a4e45a543138629540c9a1616d08632b893e492 # v5.0.1
+        uses: jdx/mise-action@2d8d4cafcbd33be2ea37d2b6f5ad595363d1f1ca # v5.1.1
         with:
           version: v2026.10.1
           # sha256 of the linux-x64 mise binary for the version above, from the release's
