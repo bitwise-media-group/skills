@@ -44,7 +44,7 @@ includes = [".mise/common/tasks.toml", "tasks.toml"]
 # verification on top of the checksum. Fixed upstream by jdx/mise#11925 and
 # jdx/mise#11931 (in mise 2026.8.6), but the CI reusable workflow currently
 # pins an older mise -- switch back to `aqua:` once it's bumped past 2026.8.6.
-"github:anthropics/claude-code" = "v2.1.289"
+"github:anthropics/claude-code" = "v2.1.291"
 # codex ships prebuilt release binaries (checksummed via the aqua registry);
 # gemini-cli is a Node bundle with no native binaries, so it installs from npm
 # on the toolchain's shared node.
