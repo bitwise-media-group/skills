@@ -40,49 +40,49 @@ url = "https://github.com/openai/codex/releases/download/rust-v0.160.0/codex-pac
 url_api = "https://api.github.com/repos/openai/codex/releases/assets/604049911"
 
 [[tools."github:anthropics/claude-code"]]
-version = "2.1.302"
+version = "2.1.303"
 backend = "github:anthropics/claude-code"
 
 [tools."github:anthropics/claude-code"."platforms.linux-arm64"]
-checksum = "sha256:812a10792bf91bccba6de57b86c2ff055264037b99011cfd558db8e6967760c3"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.302/claude-linux-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/647955914"
+checksum = "sha256:0c219f6d5fadf1ce5771f7976fe18d6a57a9b8267def5198b58d3e121eeb98c1"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.303/claude-linux-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/654495513"
 provenance = "github-attestations"
 
 [tools."github:anthropics/claude-code"."platforms.linux-arm64-musl"]
-checksum = "sha256:6ef0bdc1783e1902de484d0c7f9b46afe0af27872b640404f1b96be82db9ab22"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.302/claude-linux-arm64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/647955922"
+checksum = "sha256:e768f80f177437b7d6686a7fa203ea7a6158e76fb6dab9f0687cebd7e0c8eeaf"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.303/claude-linux-arm64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/654495515"
 provenance = "github-attestations"
 
 [tools."github:anthropics/claude-code"."platforms.linux-x64"]
-checksum = "sha256:0d865f10fe49f2e731ab9d4f7bdcce082cad4f7bbf71d2cbbf7be47b9d8ae5dc"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.302/claude-linux-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/647956172"
+checksum = "sha256:9ef730488e8b75d47f23c156282a73c89db3342aaf756ed7ec0b78a88fb31f3e"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.303/claude-linux-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/654495696"
 provenance = "github-attestations"
 
 [tools."github:anthropics/claude-code"."platforms.linux-x64-musl"]
-checksum = "sha256:7e1c61ffa8100baf8a2978e01fcf5c31efeaa8d8a1cc9c27c80320da2442f436"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.302/claude-linux-x64-musl.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/647955918"
+checksum = "sha256:7a86865a842abe8b6b83b390958c442ce63fa6427ae670a76b8792e379c71bea"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.303/claude-linux-x64-musl.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/654495516"
 provenance = "github-attestations"
 
 [tools."github:anthropics/claude-code"."platforms.macos-arm64"]
-checksum = "sha256:757a3b11dbd1b6881bb513cc50ab7a7fc03d8b77011dde7687152c3b61cc71f3"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.302/claude-darwin-arm64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/647955921"
+checksum = "sha256:cf40802aba7ff81f3c9085b7016e181a9ad2bc2ea9afa0853bff2fd2b496855c"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.303/claude-darwin-arm64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/654495511"
 provenance = "github-attestations"
 
 [tools."github:anthropics/claude-code"."platforms.macos-x64"]
-checksum = "sha256:1f95415b658a290fe9436df85c244ea79586db6f1595928f2e613ac9c9de45d5"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.302/claude-darwin-x64.tar.gz"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/647955923"
+checksum = "sha256:7397e7f71c68524cf9ff947c943378ed9eb48f6d293c101b287b85019e7c18f6"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.303/claude-darwin-x64.tar.gz"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/654495514"
 provenance = "github-attestations"
 
 [tools."github:anthropics/claude-code"."platforms.windows-x64"]
-checksum = "sha256:021e39dbb17ac890d96a416f923bf5ae0f706a8d3c66c3e2be7ecfdbc9ff6d96"
-url = "https://github.com/anthropics/claude-code/releases/download/v2.1.302/claude-win32-x64.zip"
-url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/647956183"
+checksum = "sha256:4a752a7061f629e62928ed34444b1d595d2964b488987dece7b884a2f254d872"
+url = "https://github.com/anthropics/claude-code/releases/download/v2.1.303/claude-win32-x64.zip"
+url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/654495721"
 provenance = "github-attestations"
 
 [[tools."github:bitwise-media-group/evolve"]]
