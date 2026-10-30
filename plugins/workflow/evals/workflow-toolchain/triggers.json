@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "workflow-toolchain",
+  "triggers": [
+    {
+      "query": "Add our shared bitwise toolchain to this repo as the .mise submodule",
+      "should_trigger": true
+    },
+    {
+      "query": "Set up the org's mise tasks for this Go CLI so make lint and make test work",
+      "should_trigger": true
+    },
+    {
+      "query": "Which toolchain archetype should a Terraform module repo include in its mise.toml?",
+      "should_trigger": true
+    },
+    {
+      "query": "Migrate this repo off .mise/tasks/go-cli.toml and mise.mk to the current toolchain layout",
+      "should_trigger": true
+    },
+    {
+      "query": "Bump the .mise toolchain submodule to the latest release",
+      "should_trigger": true
+    },
+    {
+      "query": "Replace this hand-written Makefile with the one-line toolchain include",
+      "should_trigger": true
+    },
+    {
+      "query": "This repo is just Markdown and YAML — wire up the common-only toolchain tasks",
+      "should_trigger": true
+    },
+    {
+      "query": "How do I adopt bitwise-media-group/toolchain in a Python docs site?",
+      "should_trigger": true
+    },
+    {
+      "query": "Add the reusable CI caller workflow to .github/workflows for this repo",
+      "should_trigger": false
+    },
+    {
+      "query": "Create a brand-new repository for a Go CLI called tidyup with CI and releases",
+      "should_trigger": false
+    },
+    {
+      "query": "Install mise on my laptop and activate it in zsh",
+      "should_trigger": false
+    },
+    {
+      "query": "Bump the shared golangci-lint pin in the toolchain library's config.toml and re-lock it",
+      "should_trigger": false
+    },
+    {
+      "query": "Explain how the [env] section works in a mise.toml",
+      "should_trigger": false
+    },
+    {
+      "query": "Upgrade the Go version in go.mod to the latest release",
+      "should_trigger": false
+    }
+  ]
+}

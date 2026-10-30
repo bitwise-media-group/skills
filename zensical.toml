@@ -52,7 +52,7 @@ nav = [
     ] },
     { "actions" = [
       "plugins/actions/index.md",
-      { "actions-reusable-workflows" = "plugins/actions/actions-reusable-workflows/index.md" },
+      { "actions-reusable-workflows" = ["plugins/actions/actions-reusable-workflows/index.md", { "Reference" = "plugins/actions/actions-reusable-workflows/reference.md" }] },
       { "actions-security" = ["plugins/actions/actions-security/index.md", { "Reference" = "plugins/actions/actions-security/reference.md" }] },
       { "actions-style" = ["plugins/actions/actions-style/index.md", { "Reference" = "plugins/actions/actions-style/reference.md" }] },
       { "actions-validate" = "plugins/actions/actions-validate/index.md" },
@@ -71,8 +71,10 @@ nav = [
     { "workflow" = [
       "plugins/workflow/index.md",
       { "workflow-commit" = ["plugins/workflow/workflow-commit/index.md", { "Reference" = "plugins/workflow/workflow-commit/reference.md" }] },
+      { "workflow-new-repository" = "plugins/workflow/workflow-new-repository/index.md" },
       { "workflow-security-report" = ["plugins/workflow/workflow-security-report/index.md", { "Reference" = "plugins/workflow/workflow-security-report/reference.md" }] },
       { "workflow-skill-evals" = ["plugins/workflow/workflow-skill-evals/index.md", { "Reference" = "plugins/workflow/workflow-skill-evals/reference.md" }] },
+      { "workflow-toolchain" = "plugins/workflow/workflow-toolchain/index.md" },
       { "Evaluation" = "plugins/workflow/evaluation.md" },
     ] },
   ] },

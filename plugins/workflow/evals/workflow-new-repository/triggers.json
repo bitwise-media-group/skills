@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/triggers.schema.json",
+  "skill_name": "workflow-new-repository",
+  "triggers": [
+    {
+      "query": "Create a new repository for a Go CLI called tidyup",
+      "should_trigger": true
+    },
+    {
+      "query": "Bootstrap a new org repo for a Terraform module that provisions an S3 bucket",
+      "should_trigger": true
+    },
+    {
+      "query": "Start a new project repo with our standard CI, release and merge automation",
+      "should_trigger": true
+    },
+    {
+      "query": "Scaffold a new repository for a TypeScript GitHub Action",
+      "should_trigger": true
+    },
+    {
+      "query": "I need a fresh repo for some Markdown runbooks — set it up the bitwise way",
+      "should_trigger": true
+    },
+    {
+      "query": "Initialise a new SwiftPM repository with the toolchain and workflows",
+      "should_trigger": true
+    },
+    {
+      "query": "Set up a new repository for me",
+      "should_trigger": true
+    },
+    {
+      "query": "Spin up a new Python package repo called prose-lint with releases",
+      "should_trigger": true
+    },
+    {
+      "query": "Add the toolchain submodule to this existing repo",
+      "should_trigger": false
+    },
+    {
+      "query": "Wire the shared CI and release workflows into this existing repository",
+      "should_trigger": false
+    },
+    {
+      "query": "Add a new Go package under internal/ for config parsing",
+      "should_trigger": false
+    },
+    {
+      "query": "Create a new Terraform module under modules/ in this repo",
+      "should_trigger": false
+    },
+    {
+      "query": "Create a new branch for this feature and push it",
+      "should_trigger": false
+    },
+    {
+      "query": "Transfer this GitHub repository to another organization",
+      "should_trigger": false
+    }
+  ]
+}

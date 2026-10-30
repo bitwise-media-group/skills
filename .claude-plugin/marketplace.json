@@ -10,30 +10,55 @@
       "name": "golang",
       "source": "./plugins/golang",
       "description": "Modern Go development — stdlib-first style, cobra/viper CLIs, table-driven tests and fuzzing, canonical project layout, doc-comment conventions, GoReleaser releases.",
-      "keywords": ["go", "golang", "testing", "goreleaser", "cobra", "godoc"]
+      "keywords": [
+        "go",
+        "golang",
+        "testing",
+        "goreleaser",
+        "cobra",
+        "godoc"
+      ]
     },
     {
       "name": "terraform",
       "source": "./plugins/terraform",
       "description": "Terraform style conventions, module scaffolding, and fmt/validate/tflint workflows.",
-      "keywords": ["terraform", "hcl", "iac", "tflint"]
+      "keywords": [
+        "terraform",
+        "hcl",
+        "iac",
+        "tflint"
+      ]
     },
     {
       "name": "actions",
       "source": "./plugins/actions",
       "description": "GitHub Actions workflow style, security hardening, bitwise reusable-workflow wiring, and an actionlint/zizmor validation loop.",
-      "keywords": ["github-actions", "ci", "workflows", "security"]
+      "keywords": [
+        "github-actions",
+        "ci",
+        "workflows",
+        "security"
+      ]
     },
     {
       "name": "python",
       "source": "./plugins/python",
       "description": "Modern Python on the Astral toolchain — uv project layout, ruff format/lint, ty/pyright type checking, pytest with Hypothesis, Google-style docstrings with CLI references, and trusted-publishing releases.",
-      "keywords": ["python", "uv", "ruff", "ty", "pyright", "pytest", "typing"]
+      "keywords": [
+        "python",
+        "uv",
+        "ruff",
+        "ty",
+        "pyright",
+        "pytest",
+        "typing"
+      ]
     },
     {
       "name": "workflow",
       "source": "./plugins/workflow",
-      "description": "Developer-workflow commands and skills — sandbox-safe Conventional commits with a commit.sh handoff, immutable code-scanning triage reports with SHA-pinned permalinks, and generation of evolve evaluation suites (triggers + behavioral evals) for agent skills.",
+      "description": "Developer-workflow commands and skills — sandbox-safe Conventional commits with a commit.sh handoff, immutable code-scanning triage reports with SHA-pinned permalinks, generation of evolve evaluation suites (triggers + behavioral evals) for agent skills, adoption of the shared mise toolchain, and bootstrapping new repositories with the org's toolchain and reusable workflows.",
       "keywords": [
         "git",
         "commit",
@@ -43,7 +68,11 @@
         "codeql",
         "evals",
         "evolve",
-        "evaluation"
+        "evaluation",
+        "mise",
+        "toolchain",
+        "scaffold",
+        "new-repository"
       ]
     }
   ]

@@ -55,9 +55,11 @@ Developer-workflow commands and skills, layered on the global Conventional-Commi
 | `workflow-commit`          | Conventional Commit messages with a sandbox-safe `commit.sh` handoff: commit unsigned inside a worktree and re-sign via the script, or generate the `git add`/`git commit` script in the main checkout. |
 | `workflow-security-report` | Triage a code-scanning (CodeQL) finding fetched via `gh`: an immutable report and index row with SHA-pinned permalinks, recommending remediation or dismissal.                                          |
 | `workflow-skill-evals`     | Generate an evolve evaluation suite for an agent skill: Tier 1 triggers and Tier 2 behavioral evals under `evals/<skill>/`, deterministic-first, tracking the upstream evolve guide and JSON Schemas.   |
+| `workflow-toolchain`       | Adopt the shared `bitwise-media-group/toolchain` mise task library: the `.mise/` submodule pinned to the latest tag, a root `mise.toml` with one archetype, and a one-line `Makefile`.                  |
+| `workflow-new-repository`  | Bootstrap a new repository for an archetype (asking when none is given): baseline files, the toolchain, the language scaffold, and SHA-pinned reusable workflow callers, with a `commit.sh` handoff.    |
 
-The plugin also ships matching Claude Code commands — `/commit` and `/security-report` — as thin entry points to these
-skills.
+The plugin also ships matching Claude Code commands — `/commit`, `/security-report`, and `/new-repository` — as thin
+entry points to these skills.
 
 ## Installation
 

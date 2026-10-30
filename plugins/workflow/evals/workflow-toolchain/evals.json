@@ -1,0 +1,111 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "workflow-toolchain",
+  "evals": [
+    {
+      "id": "adopt-go",
+      "prompt": "Set up our shared bitwise toolchain in this Go repository so `make lint`, `make build` and `make test` work. The binary is `godemo`, built from ./cmd/godemo. Initialise a git repository first if there isn't one.",
+      "files": ["fixtures/godemo/go.mod", "files/cmd/godemo/main.go"],
+      "assertions": [
+        {
+          "type": "regex",
+          "path": ".gitmodules",
+          "pattern": "path = \\.mise"
+        },
+        {
+          "type": "regex",
+          "path": ".gitmodules",
+          "pattern": "branch = v\\d+\\.\\d+\\.\\d+"
+        },
+        {
+          "type": "regex",
+          "path": "mise.toml",
+          "pattern": "\\.mise/common/tasks\\.toml\"\\s*,\\s*\"\\.mise/archetypes/go/tasks\\.toml"
+        },
+        {
+          "type": "regex",
+          "path": "mise.toml",
+          "pattern": "^go\\s*="
+        },
+        {
+          "type": "regex",
+          "path": "mise.toml",
+          "pattern": "govulncheck"
+        },
+        {
+          "type": "regex",
+          "path": "Makefile",
+          "pattern": "^include \\.mise/archetypes/go/include\\.mk"
+        },
+        {
+          "type": "command",
+          "run": "git ls-files --stage .mise | grep -q '^160000'",
+          "requires": "git"
+        }
+      ]
+    },
+    {
+      "id": "migrate-v2",
+      "prompt": "This Go repo still uses the old toolchain v2 layout (.mise/tasks/go-cli.toml and include .mise/mise.mk). Migrate it to the latest bitwise toolchain release, mounting the submodule if it is missing. Initialise a git repository first if there isn't one.",
+      "files": [
+        "fixtures/godemo/go.mod",
+        "files/cmd/godemo/main.go",
+        "fixtures/legacy/mise.toml",
+        "fixtures/legacy/Makefile"
+      ],
+      "assertions": [
+        {
+          "type": "not_regex",
+          "path": "mise.toml",
+          "pattern": "tasks/go-cli\\.toml"
+        },
+        {
+          "type": "regex",
+          "path": "mise.toml",
+          "pattern": "\\.mise/archetypes/go/tasks\\.toml"
+        },
+        {
+          "type": "not_regex",
+          "path": "Makefile",
+          "pattern": "mise\\.mk"
+        },
+        {
+          "type": "regex",
+          "path": "Makefile",
+          "pattern": "include \\.mise/archetypes/go/include\\.mk"
+        },
+        {
+          "type": "regex",
+          "path": "mise.toml",
+          "pattern": "^go\\s*="
+        }
+      ]
+    },
+    {
+      "id": "common-only",
+      "prompt": "This repository only holds Markdown and YAML — nothing to build or test. Wire in our shared bitwise toolchain so `make lint` checks the prose and workflows. Initialise a git repository first if there isn't one.",
+      "assertions": [
+        {
+          "type": "regex",
+          "path": "mise.toml",
+          "pattern": "\\.mise/common/tasks\\.toml"
+        },
+        {
+          "type": "not_regex",
+          "path": "mise.toml",
+          "pattern": "archetypes/"
+        },
+        {
+          "type": "regex",
+          "path": "Makefile",
+          "pattern": "include \\.mise/common/include\\.mk"
+        },
+        {
+          "type": "regex",
+          "path": ".gitmodules",
+          "pattern": "branch = v\\d+\\.\\d+\\.\\d+"
+        }
+      ]
+    }
+  ]
+}

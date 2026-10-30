@@ -1,0 +1,105 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bitwise-media-group/evolve/main/schemas/evals.schema.json",
+  "skill_name": "workflow-new-repository",
+  "evals": [
+    {
+      "id": "ask-for-archetype",
+      "prompt": "Set up a new repository called widget in ./widget.",
+      "assertions": [
+        {
+          "type": "regex",
+          "pattern": "(?i)archetype"
+        },
+        {
+          "type": "file_absent",
+          "path": "widget/mise.toml"
+        },
+        {
+          "type": "file_absent",
+          "path": "widget/.gitmodules"
+        }
+      ]
+    },
+    {
+      "id": "go-cli",
+      "prompt": "Create a new go archetype repository in ./tidyup for a CLI named tidyup that cuts releases. Do everything locally; don't create the GitHub remote.",
+      "assertions": [
+        {
+          "type": "regex",
+          "path": "tidyup/.gitmodules",
+          "pattern": "path = \\.mise"
+        },
+        {
+          "type": "regex",
+          "path": "tidyup/mise.toml",
+          "pattern": "\\.mise/archetypes/go/tasks\\.toml"
+        },
+        {
+          "type": "regex",
+          "path": "tidyup/Makefile",
+          "pattern": "include \\.mise/archetypes/go/include\\.mk"
+        },
+        {
+          "type": "file_exists",
+          "path": "tidyup/go.mod"
+        },
+        {
+          "type": "regex",
+          "path": "tidyup/release-please-config.json",
+          "pattern": "\"release-type\":\\s*\"go\""
+        },
+        {
+          "type": "regex",
+          "path": "tidyup/.github/workflows/ci.yaml",
+          "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@[0-9a-f]{40}"
+        },
+        {
+          "type": "regex",
+          "path": "tidyup/.github/workflows/merge.yaml",
+          "pattern": "Merge Review Ack"
+        },
+        {
+          "type": "file_exists",
+          "path": "tidyup/.github/workflows/merge-review-ack.yaml"
+        },
+        {
+          "type": "command",
+          "run": "! grep -rq '@0\\{40\\}' tidyup/.github/workflows",
+          "requires": "grep"
+        },
+        {
+          "type": "file_absent",
+          "path": "tidyup/.github/dependabot.yaml"
+        }
+      ]
+    },
+    {
+      "id": "common-docs",
+      "prompt": "Create a new common archetype repository in ./runbooks for Markdown runbooks that are not versioned or released. Do everything locally; don't create the GitHub remote.",
+      "assertions": [
+        {
+          "type": "regex",
+          "path": "runbooks/mise.toml",
+          "pattern": "\\.mise/common/tasks\\.toml"
+        },
+        {
+          "type": "not_regex",
+          "path": "runbooks/mise.toml",
+          "pattern": "archetypes/"
+        },
+        {
+          "type": "file_exists",
+          "path": "runbooks/LICENSE"
+        },
+        {
+          "type": "file_exists",
+          "path": "runbooks/.github/workflows/ci.yaml"
+        },
+        {
+          "type": "file_absent",
+          "path": "runbooks/.github/workflows/release.yaml"
+        }
+      ]
+    }
+  ]
+}
