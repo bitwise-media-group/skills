@@ -1,0 +1,33 @@
+# Reusable workflows: org setup and dependency updates
+
+Companion to the `actions-reusable-workflows` skill: the one-time, org-wide setup behind the App-backed callers, and how
+Renovate covers a repo. Read the github-workflows README at the release you pin for anything this page does not cover.
+
+## Org setup (one-time, not per repo)
+
+Each App-backed caller uses input `app-client-id` from an org variable and secret `app-private-key` from an org secret:
+
+| App          | Callers                   | Variable / secret                                         | Setup                                                                       |
+| ------------ | ------------------------- | --------------------------------------------------------- | --------------------------------------------------------------------------- |
+| FF Merge     | `merge`, `release` (opt.) | `FF_MERGE_CLIENT_ID` / `FF_MERGE_PRIVATE_KEY`             | [`ff-merge`](https://github.com/bitwise-media-group/ff-merge) README        |
+| Project Sync | `add-to-project`          | `ADD_TO_PROJECT_CLIENT_ID` / `ADD_TO_PROJECT_PRIVATE_KEY` | library README, `add-to-project.yaml` section                               |
+| Renovate     | `renovate`                | `RENOVATE_CLIENT_ID` / `RENOVATE_PRIVATE_KEY`             | [`renovate-config`](https://github.com/bitwise-media-group/renovate-config) |
+
+A new repo only needs each App **installed** on it. Older callers using `client-id` / `app-key` names should be aligned
+to these. macOS notarization secrets are org secrets scoped to the notarizing repos — see the library README's "macOS
+notarization: org setup".
+
+## Dependency updates: Renovate, never Dependabot
+
+Do not add `.github/dependabot.yaml` or a Dependabot auto-merge caller. Renovate runs per repo through the
+`renovate.yaml` caller on the org preset with no onboarding file, opens API-created (Verified) commits, and its PRs ride
+`merge.yaml` (`squash-authors` defaults to the Renovate bot, which is squash-merged rather than fast-forwarded). Keep
+the org-wide bot's `autodiscoverFilter` off a repo that runs the caller — two bots on one repo race. Add a
+`.github/renovate.json5` only for a deliberate override:
+
+```json5
+{
+    extends: ["github>bitwise-media-group/renovate-config:default.json5"],
+    // overrides here
+}
+```

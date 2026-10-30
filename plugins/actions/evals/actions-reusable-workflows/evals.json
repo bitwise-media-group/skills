@@ -13,7 +13,7 @@
         {
           "type": "regex",
           "path": ".github/workflows/ci.yaml",
-          "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@"
+          "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/ci\\.yaml@[0-9a-f]{40}"
         },
         {
           "type": "regex",
@@ -24,6 +24,11 @@
           "type": "not_regex",
           "path": ".github/workflows/ci.yaml",
           "pattern": "pull_request_target"
+        },
+        {
+          "type": "not_regex",
+          "path": ".github/workflows/ci.yaml",
+          "pattern": "@0{40}|x-release-please-version"
         }
       ]
     },
@@ -38,7 +43,7 @@
         {
           "type": "regex",
           "path": ".github/workflows/release.yaml",
-          "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@"
+          "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/release\\.yaml@[0-9a-f]{40}"
         },
         {
           "type": "regex",
@@ -49,6 +54,11 @@
           "type": "regex",
           "path": ".github/workflows/release.yaml",
           "pattern": "contents:\\s*write"
+        },
+        {
+          "type": "not_regex",
+          "path": ".github/workflows/release.yaml",
+          "pattern": "@0{40}|x-release-please-version"
         }
       ]
     },
@@ -63,12 +73,55 @@
         {
           "type": "regex",
           "path": ".github/workflows/security.yaml",
-          "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/security\\.yaml@"
+          "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/security\\.yaml@[0-9a-f]{40}"
         },
         {
           "type": "regex",
           "path": ".github/workflows/security.yaml",
           "pattern": "security-events:\\s*write"
+        },
+        {
+          "type": "not_regex",
+          "path": ".github/workflows/security.yaml",
+          "pattern": "@0{40}|x-release-please-version"
+        }
+      ]
+    },
+    {
+      "id": "wire-merge-flow",
+      "prompt": "Enable the shared fast-forward /merge and auto-merge flow in this repository. Our CI caller workflow at .github/workflows/ci.yaml is named \"Build\". Add every caller the merge flow needs.",
+      "files": [
+        "files/.github/workflows/ci.yaml"
+      ],
+      "assertions": [
+        {
+          "type": "regex",
+          "path": ".github/workflows/merge.yaml",
+          "pattern": "bitwise-media-group/github-workflows/\\.github/workflows/merge\\.yaml@[0-9a-f]{40}"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/merge.yaml",
+          "pattern": "workflows:\\s*\\[[^\\]]*\"Build\"[^\\]]*\\]"
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/merge.yaml",
+          "pattern": "\"Merge Review Ack\""
+        },
+        {
+          "type": "regex",
+          "path": ".github/workflows/merge.yaml",
+          "pattern": "permissions:\\s*\\{\\}"
+        },
+        {
+          "type": "file_exists",
+          "path": ".github/workflows/merge-review-ack.yaml"
+        },
+        {
+          "type": "not_regex",
+          "path": ".github/workflows/merge.yaml",
+          "pattern": "workflows:\\s*\\[[^\\]]*\"CI\""
         }
       ]
     }
