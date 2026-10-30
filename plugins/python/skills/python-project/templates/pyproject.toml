@@ -22,7 +22,7 @@ dev = ["hypothesis>=6.100", "pytest>=8.3", "ruff>=0.14", "ty>=0.0.1"]
 # uv's native build backend — fast and zero-config for the src/ layout. The
 # upper bound keeps builds reproducible as the backend evolves.
 [build-system]
-requires = ["uv_build>=0.11.21,<0.12"]
+requires = ["uv_build>=0.13.6,<0.14"]
 build-backend = "uv_build"
 
 # Test discovery. Rationale: python-testing skill.
