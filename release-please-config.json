@@ -8,7 +8,9 @@
       "component": "actions",
       "extra-files": [
         { "type": "json", "path": ".claude-plugin/plugin.json", "jsonpath": "$.version" },
-        { "type": "json", "path": ".codex-plugin/plugin.json", "jsonpath": "$.version" }
+        { "type": "json", "path": ".codex-plugin/plugin.json", "jsonpath": "$.version" },
+        { "type": "generic", "path": "/docs/plugins/actions/index.md" },
+        { "type": "generic", "path": "/overrides/partials/plugins/actions.html" }
       ]
     },
     "plugins/golang": {
@@ -16,7 +18,9 @@
       "component": "golang",
       "extra-files": [
         { "type": "json", "path": ".claude-plugin/plugin.json", "jsonpath": "$.version" },
-        { "type": "json", "path": ".codex-plugin/plugin.json", "jsonpath": "$.version" }
+        { "type": "json", "path": ".codex-plugin/plugin.json", "jsonpath": "$.version" },
+        { "type": "generic", "path": "/docs/plugins/golang/index.md" },
+        { "type": "generic", "path": "/overrides/partials/plugins/golang.html" }
       ]
     },
     "plugins/python": {
@@ -24,7 +28,9 @@
       "component": "python",
       "extra-files": [
         { "type": "json", "path": ".claude-plugin/plugin.json", "jsonpath": "$.version" },
-        { "type": "json", "path": ".codex-plugin/plugin.json", "jsonpath": "$.version" }
+        { "type": "json", "path": ".codex-plugin/plugin.json", "jsonpath": "$.version" },
+        { "type": "generic", "path": "/docs/plugins/python/index.md" },
+        { "type": "generic", "path": "/overrides/partials/plugins/python.html" }
       ]
     },
     "plugins/terraform": {
@@ -32,7 +38,9 @@
       "component": "terraform",
       "extra-files": [
         { "type": "json", "path": ".claude-plugin/plugin.json", "jsonpath": "$.version" },
-        { "type": "json", "path": ".codex-plugin/plugin.json", "jsonpath": "$.version" }
+        { "type": "json", "path": ".codex-plugin/plugin.json", "jsonpath": "$.version" },
+        { "type": "generic", "path": "/docs/plugins/terraform/index.md" },
+        { "type": "generic", "path": "/overrides/partials/plugins/terraform.html" }
       ]
     },
     "plugins/workflow": {
@@ -40,7 +48,9 @@
       "component": "workflow",
       "extra-files": [
         { "type": "json", "path": ".claude-plugin/plugin.json", "jsonpath": "$.version" },
-        { "type": "json", "path": ".codex-plugin/plugin.json", "jsonpath": "$.version" }
+        { "type": "json", "path": ".codex-plugin/plugin.json", "jsonpath": "$.version" },
+        { "type": "generic", "path": "/docs/plugins/workflow/index.md" },
+        { "type": "generic", "path": "/overrides/partials/plugins/workflow.html" }
       ]
     }
   }

@@ -82,9 +82,15 @@ from `bitwise-media-group.github.io`; the design reference is the design-system 
 release workflow builds it at each release tag and publishes it to GitHub Pages.
 
 - **Generated — never edit by hand:** everything under `docs/plugins/`, `docs/evaluation.md`, and the landing's
-  `overrides/partials/plugin-cards.html` + `eval-stats.html`. `scripts/gen-docs.py` renders them from `SKILL.md`,
-  `reference.md`, the manifests, and evolve's reports, rewriting links (sibling pages stay relative, unrendered files
-  such as `templates/` go to GitHub). They are committed because the release build runs only `zensical build`.
+  `overrides/partials/plugin-cards.html`, `plugins/*.html` + `eval-stats.html`. `scripts/gen-docs.py` renders them from
+  `SKILL.md`, `reference.md`, the manifests, and evolve's reports, rewriting links (sibling pages stay relative,
+  unrendered files such as `templates/` go to GitHub). They are committed because the release build runs only
+  `zensical build`.
+- **Versions are bumped by release-please, not the generator.** Each plugin's version badge (its
+  `docs/plugins/<n>/index.md` and its `overrides/partials/plugins/<n>.html` card) carries an `x-release-please-version`
+  marker and is a `generic` extra-file of that plugin's package in `release-please-config.json`, so the release PR stays
+  `docs-check`-clean. One version per file is load-bearing: the generic updater cannot tell plugins apart. A new plugin
+  needs both extra-files — `docs-check` fails until they are listed.
 - **Regenerate** with `make docs-gen` after changing a skill, manifest, or eval results (`make report`, `make all`, and
   `make pr` already run it). `make lint` runs `docs-check`, which fails when the committed output is stale.
 - **A new skill or plugin needs a `nav` entry** in `zensical.toml` — `docs-check` fails until it has one and prints the

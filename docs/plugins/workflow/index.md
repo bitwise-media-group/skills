@@ -10,7 +10,7 @@ description: "Developer-workflow commands and skills — sandbox-safe Convention
 <div class="bw-skillhead">
 <p class="bw-skillhead__desc">Developer-workflow commands and skills — sandbox-safe Conventional commits with a commit.sh handoff, immutable code-scanning triage reports with SHA-pinned permalinks, and generation of evolve evaluation suites (triggers + behavioral evals) for agent skills.</p>
 <div class="bw-skillhead__meta">
-<span class="bw-badge">v1.0.0</span>
+<span class="bw-badge">v1.0.0</span><!-- x-release-please-version -->
 <span class="bw-skillhead__count">3 skills</span>
 <a href="https://github.com/bitwise-media-group/skills/tree/main/plugins/workflow">Browse <code>plugins/workflow/</code> on GitHub</a>
 </div>
