@@ -219,12 +219,15 @@ if paneH < 3 {
 ```
 
 `max(x, lo)` floors `x`, `min(x, hi)` caps it, and `min(max(x, lo), hi)` clamps to a range.
-`gopls`'s `minmax` analyzer flags the guard form.
+The `minmax` modernizer flags the guard form (see §14).
 
-## 14. Keep `go fmt` and `go vet` clean
+## 14. Keep `go fmt`, `go vet`, and `go fix` clean
 
-Code is always `gofmt`-formatted (`go fmt ./...`) and passes `go vet ./...`. Comments state
-constraints and invariants the code cannot express — never what the next line does.
+Code is always `gofmt`-formatted (`go fmt ./...`), passes `go vet ./...`, and leaves
+`go fix -diff ./...` empty. `go fix` runs the modernizers gopls only shows as editor hints
+("for loop can be modernized using range over int"), and plain `go vet` skips them — apply them
+with `go fix ./...`. Comments state constraints and invariants the code cannot express — never
+what the next line does.
 
 For tests and fuzzing see the `go-testing` skill; for project layout and Makefiles see the
 `go-project` skill; for releases and CI see the `go-release` skill; for doc comments and CLI

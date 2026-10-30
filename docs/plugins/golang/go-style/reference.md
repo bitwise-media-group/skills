@@ -283,9 +283,10 @@ That is four lines the reader has to execute mentally to learn one fact — `pan
 - `min(max(x, lo), hi)` — confine to the inclusive range `[lo, hi]`.
 
 They are generic over `cmp.Ordered`, so the same calls work for `int`, `float64`, `time.Duration`, or `string`, and they
-accept more than two arguments (`max(a, b, c)`) when several candidates compete. `gopls`'s `minmax` modernizer rewrites
-the guard form for you — `gopls modernize` or the editor quick-fix applies it across a package, which is the diagnostic
-("if statement can be modernized using max") you see in-editor.
+accept more than two arguments (`max(a, b, c)`) when several candidates compete. The `minmax` modernizer rewrites the
+guard form for you — `go fix ./...` applies it across a module (`go fix -diff ./...` previews it), and it is the same
+analyzer behind the gopls hint ("if statement can be modernized using max") you see in-editor. `go tool fix help` lists
+every modernizer `go fix` runs.
 
 One caveat for floating-point: the builtins follow the Go spec's NaN and signed-zero rules, which can differ in those
 corner cases from a hand-rolled comparison. For integer clamps — the overwhelming majority of real uses — the builtin
