@@ -1,0 +1,323 @@
+<!--
+ Copyright 2026 Bitwise Media Group
+ SPDX-License-Identifier: MIT
+-->
+
+{#- overrides/home.html — the bitwise skills landing ("skills, evaluated"). Injected full-bleed between the
+(terracotta-skinned) Material header and the page body via the `tabs` block; the article `content` block is emptied
+and index.md sets `hide: [navigation, toc]`. Parent brand only (.bw-* in docs/stylesheets/extra.css); the design
+reference is design-system ui_kits/skills/. The plugin grid and the evaluation stat row are GENERATED partials
+(scripts/gen-docs.py → partials/plugin-cards.html, partials/eval-stats.html), so they track the repo. -#}
+{% extends "main.html" %}
+
+{% macro copy_row(prompt, cmd) %}
+<div class="bw-copy">
+    <span class="bw-copy__p" aria-hidden="true">{{ prompt }}</span>
+    <code>{{ cmd }}</code>
+    <div class="md-code__nav">
+        <button
+            class="md-code__button"
+            type="button"
+            data-md-type="copy"
+            title="Copy to clipboard"
+            aria-label="Copy to clipboard"
+        ></button>
+    </div>
+</div>
+{% endmacro %}
+
+{% set arrow %}
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M5 12h14" />
+    <path d="m12 5 7 7-7 7" />
+</svg>
+{% endset %}
+
+{% block tabs %}
+{{ super() }}
+<div class="bw">
+    <!-- HERO -->
+    <header class="bw-hero">
+        <img class="bw-hero__mark" src="{{ 'assets/logo-mark.svg' | url }}" alt="" aria-hidden="true" />
+        <div class="bw-hero__inner">
+            <div class="bw-kicker">
+                <span class="bw-dot"></span>
+                <span class="bw-eyebrow">// Agent skills, evaluated</span>
+            </div>
+            <h1>Skills your agent actually picks up.</h1>
+            <p class="bw-hero__lede">
+                Coding-agent skills written once as <code class="bw-ic">SKILL.md</code>, installed into every harness,
+                and measured — trigger accuracy and behavioral evals, per model — before they ship.
+            </p>
+            <div class="bw-hero__cta">
+                <a class="bw-btn bw-btn--primary bw-btn--lg" href="{{ 'install/' | url }}">
+                    Get started {{ arrow }}
+                </a>
+                <a class="bw-btn bw-btn--secondary bw-btn--lg" href="{{ config.repo_url }}">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path
+                            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 4 5 4 5 4c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 11c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                        />
+                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                    </svg>
+                    Browse the code
+                </a>
+            </div>
+
+            <!-- install panel: CSS-only radio tabs (no JS — survives instant navigation) -->
+            <div class="bw-install">
+                <input type="radio" name="bw-install" id="bw-install-claude" checked />
+                <input type="radio" name="bw-install" id="bw-install-codex" />
+                <input type="radio" name="bw-install" id="bw-install-agents" />
+                <div class="bw-install__bar">
+                    <span class="bw-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <div class="bw-install__tabs">
+                        <label for="bw-install-claude">Claude Code</label>
+                        <label for="bw-install-codex">Codex CLI</label>
+                        <label for="bw-install-agents">OpenCode / Antigravity</label>
+                    </div>
+                </div>
+                <div class="bw-install__panel bw-install__panel--claude">
+                    {{ copy_row(">", "/plugin marketplace add bitwise-media-group/skills") }}
+                    {{ copy_row(">", "/plugin install terraform@bitwise") }}
+                </div>
+                <div class="bw-install__panel bw-install__panel--codex">
+                    {{ copy_row("$", "codex plugin marketplace add bitwise-media-group/skills") }}
+                    {{ copy_row("$", "codex plugin add terraform@bitwise") }}
+                </div>
+                <div class="bw-install__panel bw-install__panel--agents">
+                    {{ copy_row("$", "git clone https://github.com/bitwise-media-group/skills") }}
+                    {{ copy_row("$", "./skills/install.sh --global") }}
+                    <p class="bw-install__note">
+                        Symlinks every skill into <code>~/.agents/skills</code> and <code>~/.gemini/skills</code> —
+                        a <code>git pull</code> updates them.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HARNESS STRIP -->
+    <section class="bw-harnesses" aria-label="Supported harnesses">
+        <div class="bw-harnesses__inner">
+            <span class="bw-harnesses__label">Works with</span>
+            <span class="bw-tag">Claude Code</span>
+            <span class="bw-tag">Codex CLI</span>
+            <span class="bw-tag">Google Antigravity</span>
+            <span class="bw-tag">OpenCode</span>
+        </div>
+    </section>
+
+    <!-- PLUGINS (generated grid) -->
+    <section class="bw-section" id="plugins">
+        <div class="bw-section__inner">
+            <div class="bw-section__head">
+                <div>
+                    <p class="bw-eyebrow">// The marketplace</p>
+                    <h2>Plugins for the stacks we actually ship</h2>
+                </div>
+                <a class="bw-btn bw-btn--ghost" href="{{ config.repo_url }}/tree/main/plugins">
+                    All on GitHub {{ arrow }}
+                </a>
+            </div>
+            {% include "partials/plugin-cards.html" %}
+        </div>
+    </section>
+
+    <!-- ANATOMY OF A SKILL -->
+    <section class="bw-section bw-section--alt" id="anatomy">
+        <div class="bw-section__inner">
+            <div class="bw-section__head">
+                <div>
+                    <p class="bw-eyebrow">// Anatomy of a skill</p>
+                    <h2>One Markdown file, read by every harness</h2>
+                </div>
+            </div>
+            <div class="bw-anatomy">
+                <div class="bw-window" role="img" aria-label="An excerpt of the terraform-style SKILL.md">
+                    <div class="bw-window__bar">
+                        <span class="bw-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                        <div class="bw-window__files">
+                            <span class="bw-window__file bw-window__file--active">
+                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                                    <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                                    <path d="M10 9H8" />
+                                    <path d="M16 13H8" />
+                                    <path d="M16 17H8" />
+                                </svg>
+                                SKILL.md
+                            </span>
+                            <span class="bw-window__file">reference.md</span>
+                            <span class="bw-window__file">templates/</span>
+                        </div>
+                    </div>
+                    <div class="bw-window__body">
+<span class="bw-mute">---</span>
+<span class="bw-hl"><span class="bw-k">name:</span> terraform-style</span>
+<span class="bw-hl"><span class="bw-k">description:</span> Terraform/HCL style conventions for writing readable, reusable modules — … Use when writing, reviewing, or refactoring Terraform code …</span>
+<span><span class="bw-k">license:</span> MIT</span>
+<span class="bw-mute">---</span>
+<span></span>
+<span class="bw-h"># Terraform style conventions</span>
+<span></span>
+<span>Apply these conventions to every module and root configuration …</span>
+<span>For the rationale behind each rule, see reference.md.</span>
+<span></span>
+<span class="bw-h">## 1. Collections: set(string) for unordered, unique items</span>
+                    </div>
+                </div>
+                <ol class="bw-points">
+                    <li>
+                        <span class="bw-points__n">1</span>
+                        <div>
+                            <h3>The description is the trigger</h3>
+                            <p>
+                                Harnesses read only <code class="bw-ic">name</code> and
+                                <code class="bw-ic">description</code> to decide when to load a skill, so every
+                                description is written for recall, with explicit “Use when …” phrases — and Tier 1
+                                evals hold it to that.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="bw-points__n">2</span>
+                        <div>
+                            <h3>Progressive disclosure</h3>
+                            <p>
+                                A compact <code class="bw-ic">SKILL.md</code> body, well inside Codex's ~8 KB budget.
+                                Rationale, extended examples and templates live in companion files the agent opens
+                                only when it needs them.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="bw-points__n">3</span>
+                        <div>
+                            <h3>Written once, linked everywhere</h3>
+                            <p>
+                                Each skill exists exactly once under
+                                <code class="bw-ic">plugins/&lt;plugin&gt;/skills/</code>. The Claude Code and Codex
+                                marketplaces and <code class="bw-ic">install.sh</code> all point at the same tree — no
+                                copies to drift.
+                            </p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVALUATED, NOT VIBES (generated stat row) -->
+    <section class="bw-section" id="evaluated">
+        <div class="bw-section__inner">
+            <div class="bw-section__head">
+                <div>
+                    <p class="bw-eyebrow">// Evaluated, not vibes</p>
+                    <h2>Every skill is measured before it ships</h2>
+                    <p class="bw-section__lede">
+                        <a href="https://oss.bitwisemedia.uk/evolve/">evolve</a> runs three tiers against every
+                        skill, on every model we support. Results and token cost are committed alongside the code.
+                    </p>
+                </div>
+            </div>
+            <div class="bw-tiers">
+                <div class="bw-tier">
+                    <span class="bw-tier__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                            <path d="m9 15 2 2 4-4" />
+                        </svg>
+                    </span>
+                    <p class="bw-eyebrow">Tier 0</p>
+                    <h3>Static checks</h3>
+                    <p>
+                        Frontmatter, manifests, version sync and eval-suite schemas —
+                        <code class="bw-ic">evolve run checks --strict</code> on every push.
+                    </p>
+                </div>
+                <div class="bw-tier">
+                    <span class="bw-tier__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m12 14 4-4" />
+                            <path d="M3.34 19a10 10 0 1 1 17.32 0" />
+                        </svg>
+                    </span>
+                    <p class="bw-eyebrow">Tier 1</p>
+                    <h3>Trigger accuracy</h3>
+                    <p>
+                        Real headless agent sessions: does the skill load for the right prompts — and stay quiet for
+                        near-miss negatives?
+                    </p>
+                </div>
+                <div class="bw-tier">
+                    <span class="bw-tier__icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="m9 12 2 2 4-4" />
+                        </svg>
+                    </span>
+                    <p class="bw-eyebrow">Tier 2</p>
+                    <h3>Behavioral evals</h3>
+                    <p>
+                        Does following the skill produce correct work? Graded deterministically —
+                        <code class="bw-ic">terraform validate</code>, <code class="bw-ic">tflint</code>, file and
+                        regex checks — against a no-skill baseline.
+                    </p>
+                </div>
+            </div>
+            {% include "partials/eval-stats.html" %}
+            <div class="bw-evals__more">
+                <a class="bw-btn bw-btn--ghost" href="{{ 'evaluation/' | url }}">
+                    See the full evaluation {{ arrow }}
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLOSING BAND (always warm-dark) -->
+    <section class="bw-band">
+        <div class="bw-band__inner">
+            <h2>One line to install.</h2>
+            {{ copy_row(">", "/plugin marketplace add bitwise-media-group/skills") }}
+            <a class="bw-band__more" href="{{ 'install/' | url }}">Full install guide {{ arrow }}</a>
+        </div>
+    </section>
+</div>
+<script>
+    // Wire the landing-page copy buttons (dotty's .dt-copy pattern). Delegated on
+    // document so it survives instant navigation; scoped to .bw-copy so it never
+    // touches Zensical's own code-block copy buttons. Copies the <code> text only
+    // (the prompt glyph is a separate span), then reuses Zensical's own snackbar
+    // so the feedback matches the native code-block copy button exactly.
+    if (!window.__bwCopyInit) {
+        window.__bwCopyInit = true;
+        document.addEventListener("click", function (e) {
+            var btn = e.target.closest(".bw-copy .md-code__button");
+            if (!btn) return;
+            var code = btn.closest(".bw-copy").querySelector("code");
+            if (!code || !navigator.clipboard) return;
+            navigator.clipboard.writeText(code.textContent.trim()).then(function () {
+                btn.focus();
+                var dialog = document.querySelector("[data-md-component=dialog]");
+                if (!dialog) return;
+                (dialog.querySelector(".md-dialog__inner") || dialog).textContent = "Copied to clipboard";
+                dialog.classList.add("md-dialog--active");
+                window.clearTimeout(dialog.bwResetTimer);
+                dialog.bwResetTimer = window.setTimeout(function () {
+                    dialog.classList.remove("md-dialog--active");
+                }, 2000);
+            });
+        });
+    }
+</script>
+{% endblock %}
+{% block content %}{% endblock %}

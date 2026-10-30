@@ -4,3 +4,10 @@ node_modules/**
 plugins/**
 make/**
 commit.sh
+.worktrees/**
+site/**
+.venv/**
+.cache/**
+uv.lock
+docs/plugins/**
+docs/evaluation.md

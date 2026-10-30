@@ -16,6 +16,9 @@ signing handoff) applies on top of this file.
 - Skill directory name must equal the frontmatter `name`.
 - Skill names are globally namespaced by prefix (e.g. `terraform-style`, not `style`) because Codex/Antigravity/OpenCode
   install skills into flat shared directories.
+- The docs site (see [Docs site](#docs-site)): `zensical.toml`, `pyproject.toml` + `uv.lock`, hand-written pages in
+  `docs/` (`index.md`, `install.md`, `contributing.md`), theme in `overrides/` + `docs/stylesheets/extra.css`, and the
+  generator `scripts/gen-docs.py`.
 
 ## Dual manifests (Claude + Codex)
 
@@ -72,6 +75,23 @@ evolve is a pin in the root `mise.toml`):
   `evolve report` (`make report`) regenerates the reports from the stored results — never edit them by hand. Token usage
   comes from each provider's token-counting API; `evolve models` prints the model/pricing matrix.
 
+## Docs site
+
+`https://oss.bitwisemedia.uk/skills/` is a [Zensical](https://zensical.org) site in the org's terracotta theme (copied
+from `bitwise-media-group.github.io`; the design reference is the design-system `ui_kits/skills/` kit). The reusable
+release workflow builds it at each release tag and publishes it to GitHub Pages.
+
+- **Generated — never edit by hand:** everything under `docs/plugins/`, `docs/evaluation.md`, and the landing's
+  `overrides/partials/plugin-cards.html` + `eval-stats.html`. `scripts/gen-docs.py` renders them from `SKILL.md`,
+  `reference.md`, the manifests, and evolve's reports, rewriting links (sibling pages stay relative, unrendered files
+  such as `templates/` go to GitHub). They are committed because the release build runs only `zensical build`.
+- **Regenerate** with `make docs-gen` after changing a skill, manifest, or eval results (`make report`, `make all`, and
+  `make pr` already run it). `make lint` runs `docs-check`, which fails when the committed output is stale.
+- **A new skill or plugin needs a `nav` entry** in `zensical.toml` — `docs-check` fails until it has one and prints the
+  expected Plugins section.
+- `make docs` regenerates and builds into `site/` (git-ignored); `make serve` previews at
+  `http://localhost:8002/skills/`. `make build` (the CI build leg) builds the site on every PR.
+
 ## Validation
 
 Run before committing:
@@ -79,16 +99,18 @@ Run before committing:
 ```sh
 make fmt                          # prettier + addlicense SPDX headers (SKILL.md is prettier-ignored)
 make lint                         # markdownlint + license + workflow lint + evolve Tier 0 + eval JSON + plugin validate
+                                  # + docs-check
 ```
 
 Every task is a mise task from the toolchain library (the `.mise/` submodule's `common/tasks.toml`) plus the repo-local
 `tasks.toml`; the Makefile only forwards, so `make <task>` and `mise run <task>` are interchangeable. Developer CLIs
-(`prettier`, `markdownlint-cli2`, `addlicense`, `actionlint`, `zizmor`, …) are mise pins from the library; `evolve` and
-the claude CLI are exact pins in the root `mise.toml` (`github:anthropics/claude-code` — no npm, no package.json, no
-globals), locked in the root `mise.lock`. The behavioral tiers run through `evolve` too: `make triggers` (Tier 1),
-`make evals` (Tier 2), `make all` (all tiers plus reports), and `make report` to regenerate the EVALUATION files. Filter
-or tune a run with evolve's own flags, e.g. `evolve run triggers --skill <name> --models <ids> --runs <n> --jobs <n>` (a
-locally installed evolve, or `mise install github:bitwise-media-group/evolve@latest` to get one).
+(`prettier`, `markdownlint-cli2`, `addlicense`, `actionlint`, `zizmor`, `uv`, …) are mise pins from the library;
+`evolve` and the claude CLI are exact pins in the root `mise.toml` (`github:anthropics/claude-code` — no npm, no
+package.json, no globals), locked in the root `mise.lock`. The behavioral tiers run through `evolve` too:
+`make triggers` (Tier 1), `make evals` (Tier 2), `make all` (all tiers plus reports), and `make report` to regenerate
+the EVALUATION files and docs pages. Filter or tune a run with evolve's own flags, e.g.
+`evolve run triggers --skill <name> --models <ids> --runs <n> --jobs <n>` (a locally installed evolve, or
+`mise install github:bitwise-media-group/evolve@latest` to get one).
 
 ## Markdown style
 

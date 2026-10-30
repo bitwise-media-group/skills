@@ -4,8 +4,11 @@
 # Caller for the reusable release workflow. It owns the push trigger and grants the
 # release permissions; the reusable workflow runs release-please (two-pass) against
 # this repo's release-please-config.json + .release-please-manifest.json. There is
-# no .goreleaser.yaml and no zensical.toml, so the GoReleaser and docs-publish jobs
-# self-skip — but their permissions must still be granted (see below).
+# no .goreleaser.yaml, so the GoReleaser job self-skips. There IS a zensical.toml,
+# so whenever a run cuts a release the docs job checks out the release tag, builds
+# the site (`uv run zensical build` — the generated pages are committed, so no
+# generator runs there) and publishes it to GitHub Pages at
+# https://oss.bitwisemedia.uk/skills/ (Pages source: GitHub Actions).
 #
 # release-please drives per-plugin releases from Conventional Commits: it keeps a
 # single release PR up to date; merging it bumps the changed plugin's version in
@@ -30,9 +33,8 @@ on:
 
 # Ceiling for the reusable workflow's release-please + goreleaser/publish/docs jobs.
 # GitHub resolves a reusable workflow's permissions as the union of every job and
-# ignores `if:`, so grant every scope below even though the goreleaser (no
-# .goreleaser.yaml) and docs (no zensical.toml) jobs skip — a missing scope
-# startup-fails the whole run.
+# ignores `if:`, so grant every scope below even though the goreleaser job (no
+# .goreleaser.yaml) skips — a missing scope startup-fails the whole run.
 permissions:
   # create the release/tag and push the release-PR branch
   contents: write
@@ -40,7 +42,7 @@ permissions:
   issues: write
   # release-please opens the release pull request
   pull-requests: write
-  # cosign keyless signing (goreleaser) + the docs job's Pages OIDC deploy
+  # cosign keyless signing (goreleaser) + the docs job's Pages OIDC deploy (used)
   id-token: write
   # github build-provenance attestation (goreleaser)
   attestations: write
@@ -48,7 +50,7 @@ permissions:
   artifact-metadata: write
   # push container images to ghcr (goreleaser dockers_v2, when configured)
   packages: write
-  # publish the docs site to GitHub Pages (docs job, when a zensical.toml exists)
+  # publish the docs site to GitHub Pages (the docs job, on each release)
   pages: write
 
 jobs:

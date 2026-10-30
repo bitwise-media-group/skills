@@ -6,8 +6,9 @@
 # (`mise tasks ls --name-only`) and runs `mise run <task>` for each as one job.
 # The tasks come from the toolchain submodule's common tasks plus tasks.toml:
 # `lint` (prose + license + workflow lint + evolve Tier 0 --strict + eval-JSON
-# + plugin validate + install.sh parse) and `test` (evolve checks + report
-# --check); there is no build task, so that leg is skipped.
+# + plugin validate + install.sh parse + generated-docs freshness), `test`
+# (evolve checks + report --check), and `build` (renders the Zensical docs
+# site, so a broken site fails the PR rather than the release's Pages deploy).
 #
 # coverage: false — this is a skills library, it emits no coverage, so the Codecov
 # upload job is skipped.

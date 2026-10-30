@@ -1,0 +1,14 @@
+# Copyright 2026 Bitwise Media Group
+# SPDX-License-Identifier: MIT
+
+[project]
+name = "bitwise-skills-docs"
+version = "0.1.0"
+description = "Docs site for the bitwise skills marketplace, built with Zensical."
+requires-python = ">=3.13"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "BitWise Media Group Ltd.", email = "oss@bitwisemedia.uk" }]
+dependencies = [
+  "zensical>=0.0.53",
+]

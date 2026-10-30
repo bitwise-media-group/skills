@@ -23,6 +23,13 @@
 # evolve and claude-code are both pinned in the root mise.toml [tools] (see
 # that file's header), so every task below can just call them directly and
 # both pins are covered by the root mise.lock.
+#
+# The docs site is Zensical via uv (the toolchain library pins uv): sync /
+# docs-build / serve mirror the toolchain archetypes' zensical tasks, and
+# docs-gen renders the plugin, skill and evaluation pages from the repo
+# (scripts/gen-docs.py — stdlib only). `build` is the canonical task the
+# reusable CI discovers, so every PR builds the site; `lint` fails when the
+# generated pages are stale or missing from zensical.toml's nav.
 
 [evolve-checks]
 hide = true
@@ -51,9 +58,46 @@ hide = true
 dir = "{{config_root}}"
 run = "sh -n install.sh"
 
-# common's lint rollup, plus the plugin/marketplace checks.
+# Zensical documentation site (Python via uv). `uv sync` provisions Python +
+# zensical from pyproject.toml / uv.lock; the built site/ is git-ignored.
+[sync]
+hide = true
+dir = "{{config_root}}"
+run = "uv sync"
+
+[docs-gen]
+description = "regenerate the generated docs pages (plugins, skills, evaluation) from the repo"
+dir = "{{config_root}}"
+run = "uv run python scripts/gen-docs.py"
+
+[docs-check]
+hide = true
+dir = "{{config_root}}"
+run = "uv run python scripts/gen-docs.py --check"
+
+[docs-build]
+description = "build the documentation site (zensical)"
+dir = "{{config_root}}"
+depends = ["sync"]
+run = "uv run zensical build"
+
+[serve]
+description = "serve the docs site locally (zensical) at http://localhost:8002/skills/"
+dir = "{{config_root}}"
+depends = ["sync"]
+run = "uv run zensical serve"
+
+[docs]
+description = "regenerate the generated docs pages, then build the site"
+run = [{ task = "docs-gen" }, { task = "docs-build" }]
+
+[build]
+description = "build the documentation site (the reusable CI's build leg)"
+run = [{ task = "docs-build" }]
+
+# common's lint rollup, plus the plugin/marketplace and generated-docs checks.
 [lint]
-description = "prose lint + license, container, shell and workflow checks, plus evolve, plugin, fixture and installer checks"
+description = "prose lint + license, container, shell and workflow checks, plus evolve, plugin, fixture, installer and generated-docs checks"
 run = [
   { task = "license-check" },
   { task = "lint-containers" },
@@ -64,6 +108,7 @@ run = [
   { task = "plugin-validate" },
   { task = "fixture-json" },
   { task = "installer-syntax" },
+  { task = "docs-check" },
 ]
 
 [test]
@@ -85,19 +130,21 @@ dir = "{{config_root}}"
 run = "evolve run evals --new --modified"
 
 [all]
-description = "all eval tiers, then regenerate reports"
+description = "all eval tiers, then regenerate reports and the docs pages"
 dir = "{{config_root}}"
-run = "evolve run all --new --modified"
+run = ["evolve run all --new --modified", { task = "docs-gen" }]
 
+# docs-gen follows so fresh results reach the site's evaluation pages and the
+# landing's stat row.
 [report]
-description = "regenerate the EVALUATION files from stored results"
+description = "regenerate the EVALUATION files from stored results, then the docs pages"
 dir = "{{config_root}}"
-run = "evolve report"
+run = ["evolve report", { task = "docs-gen" }]
 
 [ci]
 description = "the gates the reusable CI workflow runs"
-run = [{ task = "lint" }, { task = "test" }]
+run = [{ task = "lint" }, { task = "test" }, { task = "build" }]
 
 [pr]
 description = "full local gate before a pull request"
-run = [{ task = "fmt" }, { task = "lint" }, { task = "test" }]
+run = [{ task = "docs-gen" }, { task = "fmt" }, { task = "lint" }, { task = "test" }]

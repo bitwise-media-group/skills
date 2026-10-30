@@ -26,5 +26,10 @@ ignores:
   - "**/EVALUATION.md"
   - "CHANGELOG.md"
   - "**/CHANGELOG.md"
-  # shared Makefile library submodule — linted in its own repo
-  - "make/**"
+  # shared toolchain library submodule — linted in its own repo
+  - ".mise/**"
+  # docs site: build output, uv venv, and the pages scripts/gen-docs.py generates
+  - "site/**"
+  - ".venv/**"
+  - "docs/plugins/**"
+  - "docs/evaluation.md"

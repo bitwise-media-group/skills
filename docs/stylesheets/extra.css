@@ -1,0 +1,1122 @@
+/**
+ * Copyright 2026 Bitwise Media Group
+ * SPDX-License-Identifier: MIT
+ */
+
+/* ============================================================
+   bitwise skills — the parent brand's warm "terracotta" theme for
+   Zensical / Material, copied from the org site
+   (bitwise-media-group.github.io docs/stylesheets/extra.css): the token
+   blocks, header, wordmark lockup and .bw-* landing primitives are verbatim;
+   the org-only pieces (section nav, header CTA, sub-brand cards, signup form,
+   podcast avatars) are dropped and the skills landing sections added.
+   Terracotta orange (#D96C36) on warm cream / stone neutrals —
+   Hanken Grotesk + JetBrains Mono.
+   Light -> Material "default" scheme   Dark -> Material "slate" scheme
+   ============================================================ */
+
+/* ---------- LIGHT (default) — cream + terracotta ---------- */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #faf6f1;
+  --md-default-bg-color--light: #f2eae0;
+  --md-default-fg-color: #1c1711;
+  --md-default-fg-color--light: #322920;
+  --md-default-fg-color--lighter: #6a5840;
+  --md-default-fg-color--lightest: rgba(28, 23, 17, 0.1);
+
+  --md-primary-fg-color: #faf6f1;
+  --md-primary-fg-color--light: #f2eae0;
+  --md-primary-fg-color--dark: #e6d9c9;
+  --md-primary-bg-color: #1c1711;
+  --md-primary-bg-color--light: #4d3f2d;
+
+  --md-accent-fg-color: #c25a28;
+  --md-accent-fg-color--transparent: rgba(217, 108, 54, 0.1);
+  --md-typeset-a-color: #a1471f;
+
+  --md-code-bg-color: #f2eae0;
+  --md-code-fg-color: #322920;
+
+  --md-footer-bg-color: #1c1711;
+  --md-footer-bg-color--dark: #15110b;
+
+  /* warm brand ramp */
+  --bw-orange: #d96c36; /* primary — the logo colour */
+  --bw-orange-2: #c25a28; /* hover */
+  --bw-orange-3: #a1471f; /* active */
+  --bw-orange-soft: #fbf1ea;
+  --bw-orange-tint: rgba(217, 108, 54, 0.1);
+  --bw-green: #5e8c4f; /* moss — success / live dot */
+  --bw-amber: #e0a030;
+
+  --bw-bg: #faf6f1; /* page / cream */
+  --bw-surface: #ffffff; /* cards */
+  --bw-sunken: #f2eae0;
+  --bw-fg: #1c1711;
+  --bw-body: #322920;
+  --bw-muted: #6a5840;
+  --bw-faint: #8b7559;
+  --bw-line: #e6d9c9;
+  --bw-line-2: #d4c2ac;
+  --bw-shadow:
+    0 12px 32px rgba(50, 41, 32, 0.12), 0 4px 8px rgba(50, 41, 32, 0.06);
+  --bw-glow: 0 8px 22px rgba(217, 108, 54, 0.3);
+}
+
+/* ---------- DARK (slate) — warm charcoal ---------- */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #1c1711;
+  --md-default-bg-color--light: #322920;
+  --md-default-fg-color: #faf6f1;
+  --md-default-fg-color--light: #e6d9c9;
+  --md-default-fg-color--lighter: #b0997e;
+  --md-default-fg-color--lightest: rgba(250, 246, 241, 0.09);
+
+  --md-primary-fg-color: #1c1711;
+  --md-primary-fg-color--light: #322920;
+  --md-primary-fg-color--dark: #15110b;
+  --md-primary-bg-color: #faf6f1;
+  --md-primary-bg-color--light: #d4c2ac;
+
+  --md-accent-fg-color: #de854f;
+  --md-accent-fg-color--transparent: rgba(222, 133, 79, 0.12);
+  --md-typeset-a-color: #e49e72;
+
+  --md-code-bg-color: #15110b;
+  --md-code-fg-color: #e6d9c9;
+
+  --md-footer-bg-color: #15110b;
+  --md-footer-bg-color--dark: #100d08;
+
+  --bw-orange: #de854f;
+  --bw-orange-2: #e49e72;
+  --bw-orange-3: #edbe9f;
+  --bw-orange-soft: rgba(222, 133, 79, 0.16);
+  --bw-orange-tint: rgba(222, 133, 79, 0.12);
+  --bw-green: #8fb37e;
+  --bw-amber: #e0a030;
+
+  --bw-bg: #1c1711;
+  --bw-surface: #322920;
+  --bw-sunken: #15110b;
+  --bw-fg: #faf6f1;
+  --bw-body: #f2eae0;
+  --bw-muted: #b0997e;
+  --bw-faint: #8b7559;
+  --bw-line: rgba(250, 246, 241, 0.1);
+  --bw-line-2: rgba(250, 246, 241, 0.18);
+  --bw-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  --bw-glow: 0 8px 22px rgba(222, 133, 79, 0.28);
+}
+
+/* ===== Header: flat, with a soft terracotta underline ===== */
+.md-header {
+  box-shadow: none;
+  border-bottom: 1px solid var(--bw-line);
+  position: relative;
+}
+.md-header[data-md-state="shadow"],
+.md-header--shadow {
+  box-shadow: none;
+}
+.md-header__inner {
+  min-height: 3rem;
+}
+.md-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--bw-orange),
+    var(--bw-orange-2) 55%,
+    var(--bw-orange-3)
+  );
+  opacity: 0.9;
+}
+
+/* Header wordmark lockup: logo + stacked "SKILLS / BITWISE MEDIA GROUP" */
+.bw-headmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  line-height: 1;
+}
+.bw-headmark img {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+}
+.bw-headmark__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.bw-headmark__name {
+  font-family: var(--md-text-font-family, "Hanken Grotesk", sans-serif);
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.14em;
+  color: var(--bw-orange);
+}
+.bw-headmark__sub {
+  font-family: var(--md-code-font-family, "JetBrains Mono", monospace);
+  font-size: 8.5px;
+  letter-spacing: 0.34em;
+  color: var(--bw-faint);
+  margin-top: 3px;
+}
+.bw-headmark:hover {
+  opacity: 0.85;
+}
+/* Material lays the header title out for cross-fading page "topics": the title
+   is a fixed 2.4rem-tall cell and .md-header__topic is position:absolute (so it
+   carries no width and pins to the top). We render a single static wordmark, so
+   undo that — let the lockup flow, size the title to its content, and vertically
+   centre it — otherwise it collapses to zero width (the section nav overlaps it)
+   and sits flush to the top of the bar. */
+.md-header__title {
+  flex-grow: 0;
+  height: auto;
+  line-height: 1;
+  margin-right: 0;
+}
+.md-header__title > .md-header__ellipsis {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.md-header .md-header__topic {
+  position: static;
+  align-items: center;
+}
+.md-header .md-ellipsis {
+  flex-grow: 0;
+  overflow: visible;
+}
+
+/* Material collapses to the drawer; reclaim the wordmark's grow */
+@media (max-width: 76.1875em) {
+  .md-header__title {
+    flex-grow: 1;
+  }
+}
+
+/* Active drawer/nav links pick up the terracotta accent */
+.md-nav__link--active,
+.md-nav__item .md-nav__link--active {
+  color: var(--md-accent-fg-color);
+}
+
+/* Inline-code chips (dotty's rule, re-tinted). Material's --md-code-bg-color
+   sits *darker* than the page in dark mode, so a bare inline chip nearly
+   vanishes against it; --bw-ic-bg gives it a raised surface with a hairline
+   border instead. Scoped to inline code (a <code> not inside a <pre>) so fenced
+   blocks keep their own sunken panel (--md-code-bg-color). */
+[data-md-color-scheme="default"] {
+  --bw-ic-bg: var(--bw-sunken);
+  --bw-ic-border: var(--bw-line);
+}
+[data-md-color-scheme="slate"] {
+  --bw-ic-bg: var(--bw-surface);
+  --bw-ic-border: var(--bw-line);
+}
+.md-typeset :not(pre) > code {
+  background-color: var(--bw-ic-bg);
+  border: 1px solid var(--bw-ic-border);
+}
+
+/* ===== Generated skill / plugin pages: description header ===== */
+.md-typeset .bw-skillhead {
+  margin: 0.6em 0 1.6em;
+  padding: 1em 1.2em;
+  border: 1px solid var(--bw-line);
+  border-left: 3px solid var(--bw-orange);
+  border-radius: 10px;
+  background: var(--bw-orange-tint);
+}
+.md-typeset .bw-skillhead__desc {
+  margin: 0 0 0.8em;
+  color: var(--bw-body);
+  text-wrap: pretty;
+}
+.md-typeset .bw-skillhead__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6em 1.1em;
+  font-size: 0.68rem;
+}
+.md-typeset .bw-skillhead__count {
+  font-family: var(--md-code-font-family, "JetBrains Mono", monospace);
+  color: var(--bw-muted);
+}
+.md-typeset .bw-skillhead .bw-tag {
+  font-family: var(--md-code-font-family, "JetBrains Mono", monospace);
+  font-size: 0.6rem;
+  color: var(--bw-muted);
+}
+.md-typeset .bw-skillhead .bw-tag:hover {
+  color: var(--bw-orange-2);
+}
+.md-typeset .bw-skillhead .bw-badge {
+  font-size: 0.62rem;
+}
+
+/* ============================================================
+   LANDING PAGE  (.bw) — injected by overrides/home.html
+   ============================================================ */
+.bw {
+  --bw-mono: var(--md-code-font-family, "JetBrains Mono", monospace);
+  --bw-sans: var(--md-text-font-family, "Hanken Grotesk", sans-serif);
+  font-family: var(--bw-sans);
+  color: var(--bw-body);
+  line-height: 1.55;
+}
+.bw * {
+  box-sizing: border-box;
+}
+.bw a {
+  text-decoration: none;
+}
+
+/* shared eyebrow / button primitives ----------------------- */
+.bw-eyebrow {
+  font-family: var(--bw-mono);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--bw-orange-2);
+  margin: 0;
+}
+.bw-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  font-family: var(--bw-sans);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 13px 22px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s,
+    background 0.15s,
+    border-color 0.15s;
+}
+.bw-btn svg {
+  display: block;
+  flex-shrink: 0;
+}
+.bw-btn--primary {
+  background: var(--bw-orange);
+  color: #fff;
+}
+.bw-btn--primary:hover {
+  background: var(--bw-orange-2);
+  box-shadow: var(--bw-glow);
+  transform: translateY(-1px);
+}
+.bw-btn--secondary {
+  background: var(--bw-surface);
+  color: var(--bw-body);
+  border-color: var(--bw-line-2);
+}
+.bw-btn--secondary:hover {
+  border-color: var(--bw-orange);
+  color: var(--bw-orange-2);
+}
+.bw-btn--ghost {
+  background: transparent;
+  color: var(--bw-muted);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.bw-btn--ghost:hover {
+  color: var(--bw-orange-2);
+}
+.bw-btn--sm {
+  font-size: 14px;
+  padding: 9px 15px;
+}
+.bw-btn--lg {
+  font-size: 16px;
+  padding: 15px 26px;
+}
+
+/* HERO ----------------------------------------------------- */
+.bw-hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--bw-bg);
+}
+.bw-hero__mark {
+  position: absolute;
+  right: -120px;
+  top: -70px;
+  width: 560px;
+  max-width: 70vw;
+  opacity: 0.05;
+  pointer-events: none;
+  user-select: none;
+}
+.bw-hero__inner {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 92px 40px 76px;
+  text-align: center;
+}
+.bw-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 26px;
+}
+.bw-kicker .bw-eyebrow {
+  color: var(--bw-orange-2);
+}
+.bw-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bw-green);
+  box-shadow: 0 0 0 4px color-mix(in oklab, var(--bw-green) 22%, transparent);
+  animation: bw-pulse 1.8s ease-in-out infinite;
+}
+.bw-hero h1 {
+  margin: 0;
+  font-family: var(--bw-sans);
+  font-weight: 800;
+  font-size: clamp(42px, 7vw, 78px);
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  color: var(--bw-fg);
+}
+.bw-hero__lede {
+  max-width: 620px;
+  margin: 24px auto 0;
+  font-size: 19px;
+  line-height: 1.65;
+  color: var(--bw-muted);
+  text-wrap: pretty;
+}
+.bw-hero__cta {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+.bw-badge {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--bw-sans);
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 4px 11px;
+  border-radius: 999px;
+  color: var(--bw-orange-3);
+  background: var(--bw-orange-soft);
+  border: 1px solid color-mix(in oklab, var(--bw-orange) 30%, transparent);
+}
+
+/* PLUGIN GRID / CARDS / TAGS ------------------------------- */
+.bw-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 22px;
+}
+.bw-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  padding: 26px;
+  border: 1px solid var(--bw-line);
+  background: var(--bw-surface);
+  color: var(--bw-body);
+  transition:
+    transform 0.18s,
+    box-shadow 0.18s,
+    border-color 0.18s;
+}
+a.bw-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--bw-shadow);
+}
+.bw-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.bw-card__mark {
+  font-family: var(--bw-mono);
+  font-size: 22px;
+  font-weight: 700;
+}
+.bw-card__go {
+  color: inherit;
+  opacity: 0.55;
+  transition:
+    transform 0.18s,
+    opacity 0.18s;
+}
+a.bw-card:hover .bw-card__go {
+  opacity: 1;
+  transform: translate(3px, -3px);
+}
+.bw-card h3 {
+  margin: 0 0 7px;
+  font-family: var(--bw-sans);
+  font-size: 21px;
+  font-weight: 700;
+}
+.bw-card p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--bw-card-muted, var(--bw-muted));
+  text-wrap: pretty;
+}
+.bw-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+.bw-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--bw-mono);
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 7px;
+  border: 1px solid currentColor;
+  color: var(--bw-card-muted, var(--bw-faint));
+}
+.bw-tag::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--bw-card-accent, var(--bw-orange));
+}
+
+/* HERO: install panel (CSS-only harness tabs) --------------- */
+/* Radio inputs + labels, no JS, so the tabs survive Material's instant
+   navigation. The inputs stay focusable (visually hidden); the matching label
+   picks up the active / focus-visible state via sibling selectors. */
+.bw-install {
+  position: relative;
+  max-width: 660px;
+  margin: 42px auto 0;
+  text-align: left;
+  border: 1px solid var(--bw-line-2);
+  border-radius: 14px;
+  background: var(--bw-surface);
+  box-shadow: var(--bw-shadow);
+  overflow: hidden;
+}
+.bw-install > input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.bw-install__bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 14px;
+  border-bottom: 1px solid var(--bw-line);
+}
+.bw-dots {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.bw-dots i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--bw-line-2);
+}
+.bw-install__tabs {
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.bw-install__tabs label {
+  font-family: var(--bw-mono);
+  font-size: 12.5px;
+  padding: 13px 10px 11px;
+  color: var(--bw-muted);
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    color 0.15s,
+    border-color 0.15s;
+}
+.bw-install__tabs label:hover {
+  color: var(--bw-fg);
+}
+#bw-install-claude:checked ~ .bw-install__bar label[for="bw-install-claude"],
+#bw-install-codex:checked ~ .bw-install__bar label[for="bw-install-codex"],
+#bw-install-agents:checked ~ .bw-install__bar label[for="bw-install-agents"] {
+  color: var(--bw-fg);
+  border-bottom-color: var(--bw-orange);
+}
+#bw-install-claude:focus-visible ~ .bw-install__bar label[for="bw-install-claude"],
+#bw-install-codex:focus-visible ~ .bw-install__bar label[for="bw-install-codex"],
+#bw-install-agents:focus-visible ~ .bw-install__bar label[for="bw-install-agents"] {
+  outline: 2px solid var(--bw-orange);
+  outline-offset: -5px;
+  border-radius: 8px;
+}
+.bw-install__panel {
+  display: none;
+}
+#bw-install-claude:checked ~ .bw-install__panel--claude,
+#bw-install-codex:checked ~ .bw-install__panel--codex,
+#bw-install-agents:checked ~ .bw-install__panel--agents {
+  display: block;
+}
+
+/* a copyable command row (prompt + cmd + Zensical's own copy button; the
+   wiring is the inline script in overrides/home.html, as dotty's .dt-copy) */
+.bw-copy {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 52px 12px 16px;
+  background: var(--bw-sunken);
+}
+.bw-copy + .bw-copy {
+  border-top: 1px solid var(--bw-line);
+}
+.bw-copy__p {
+  font-family: var(--bw-mono);
+  font-size: 13.5px;
+  color: var(--bw-orange);
+  user-select: none;
+}
+.bw-copy code {
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  font-family: var(--bw-mono);
+  font-size: 13.5px;
+  color: var(--bw-fg);
+  background: none;
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bw-copy .md-code__nav {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.bw-install__note {
+  margin: 0;
+  padding: 10px 16px 12px;
+  font-size: 13px;
+  color: var(--bw-faint);
+  border-top: 1px solid var(--bw-line);
+}
+.bw-install__note code {
+  font-family: var(--bw-mono);
+  font-size: 12px;
+}
+
+/* HARNESS STRIP -------------------------------------------- */
+.bw-harnesses {
+  background: var(--bw-surface);
+  border-top: 1px solid var(--bw-line);
+}
+.bw-harnesses__inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 22px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 14px;
+}
+.bw-harnesses__label {
+  font-family: var(--bw-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--bw-faint);
+  margin-right: 6px;
+}
+.bw-harnesses .bw-tag {
+  font-size: 13px;
+  padding: 6px 12px;
+  color: var(--bw-body);
+  border-color: var(--bw-line-2);
+}
+
+/* SECTIONS (shared shell) ---------------------------------- */
+.bw-section {
+  background: var(--bw-bg);
+  border-top: 1px solid var(--bw-line);
+}
+.bw-section--alt {
+  background: var(--bw-surface);
+}
+.bw-section__inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 84px 40px;
+}
+.bw-section__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+.bw-section h2 {
+  margin: 8px 0 0;
+  font-family: var(--bw-sans);
+  font-size: clamp(28px, 4vw, 38px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--bw-fg);
+}
+.bw-section__lede {
+  max-width: 640px;
+  margin: 14px 0 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--bw-muted);
+  text-wrap: pretty;
+}
+
+/* PLUGINS (cards: border AND shadow, per the parent brand) - */
+.bw-plugins .bw-card {
+  box-shadow:
+    0 1px 2px rgba(50, 41, 32, 0.05),
+    0 4px 12px rgba(50, 41, 32, 0.05);
+}
+.bw-plugins .bw-card:hover {
+  border-color: color-mix(in oklab, var(--bw-orange) 45%, var(--bw-line));
+}
+.bw-plugin .bw-card__mark {
+  color: var(--bw-fg);
+}
+.bw-plugin .bw-card__tags {
+  padding-top: 18px;
+}
+.bw-plugin__foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--bw-line);
+  font-family: var(--bw-mono);
+  font-size: 12px;
+  color: var(--bw-faint);
+}
+.bw-plugin__foot .bw-card__go {
+  color: var(--bw-orange-2);
+}
+
+/* ANATOMY: SKILL.md window mock + numbered points ---------- */
+.bw-anatomy {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+.bw-window {
+  border: 1px solid var(--bw-line-2);
+  border-radius: 14px;
+  background: var(--bw-surface);
+  box-shadow: var(--bw-shadow);
+  overflow: hidden;
+}
+.bw-window__bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 14px;
+  border-bottom: 1px solid var(--bw-line);
+}
+.bw-window__files {
+  display: flex;
+  gap: 2px;
+  min-width: 0;
+  overflow: hidden;
+}
+.bw-window__file {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 11px 10px 9px;
+  font-family: var(--bw-mono);
+  font-size: 12px;
+  color: var(--bw-faint);
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+.bw-window__file--active {
+  color: var(--bw-fg);
+  border-bottom-color: var(--bw-orange);
+}
+.bw-window__body {
+  margin: 0;
+  padding: 14px 0;
+  background: var(--bw-sunken);
+  font-family: var(--bw-mono);
+  font-size: 12.5px;
+  line-height: 1.75;
+  color: var(--bw-body);
+  counter-reset: bw-line;
+}
+.bw-window__body > span {
+  display: block;
+  padding: 0 16px 0 48px;
+  text-indent: -32px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  min-height: 1.75em;
+}
+.bw-window__body > span::before {
+  counter-increment: bw-line;
+  content: counter(bw-line);
+  display: inline-block;
+  width: 22px;
+  margin-right: 10px;
+  text-align: right;
+  text-indent: 0;
+  color: var(--bw-faint);
+  opacity: 0.6;
+}
+.bw-window__body .bw-hl {
+  background: var(--bw-orange-tint);
+  box-shadow: inset 2px 0 0 var(--bw-orange);
+}
+.bw-window__body .bw-k {
+  color: var(--bw-orange-2);
+  font-weight: 600;
+}
+.bw-window__body .bw-mute {
+  color: var(--bw-faint);
+}
+.bw-window__body .bw-h {
+  color: var(--bw-fg);
+  font-weight: 700;
+}
+.bw-points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 28px;
+}
+.bw-points li {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 16px;
+}
+.bw-points__n {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  font-family: var(--bw-mono);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--bw-orange-2);
+  background: var(--bw-orange-soft);
+  border: 1px solid color-mix(in oklab, var(--bw-orange) 30%, transparent);
+}
+.bw-points h3 {
+  margin: 4px 0 6px;
+  font-family: var(--bw-sans);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--bw-fg);
+}
+.bw-points p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--bw-muted);
+  text-wrap: pretty;
+}
+.bw code.bw-ic {
+  font-family: var(--bw-mono);
+  font-size: 0.88em;
+  padding: 1px 5px;
+  border-radius: 5px;
+  color: var(--bw-body);
+  background: var(--bw-sunken);
+  border: 1px solid var(--bw-line);
+}
+
+/* EVALUATED: tier cards + generated stat row --------------- */
+.bw-tiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+}
+.bw-tier {
+  border-radius: 16px;
+  padding: 26px;
+  border: 1px solid var(--bw-line);
+  background: var(--bw-bg);
+  box-shadow:
+    0 1px 2px rgba(50, 41, 32, 0.05),
+    0 4px 12px rgba(50, 41, 32, 0.05);
+}
+.bw-tier__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  color: var(--bw-orange-2);
+  background: var(--bw-orange-soft);
+  margin-bottom: 18px;
+}
+.bw-tier .bw-eyebrow {
+  font-size: 11.5px;
+}
+.bw-tier h3 {
+  margin: 6px 0 8px;
+  font-family: var(--bw-sans);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--bw-fg);
+}
+.bw-tier p {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--bw-muted);
+  text-wrap: pretty;
+}
+.bw-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) minmax(0, 2.2fr);
+  margin-top: 28px;
+  border: 1px solid var(--bw-line);
+  border-radius: 16px;
+  background: var(--bw-bg);
+  overflow: hidden;
+}
+.bw-stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding: 24px 26px;
+  border-left: 1px solid var(--bw-line);
+}
+.bw-stat:first-child {
+  border-left: 0;
+}
+.bw-stat__value {
+  font-family: var(--bw-sans);
+  font-size: clamp(30px, 4vw, 40px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--bw-fg);
+  font-variant-numeric: tabular-nums;
+}
+.bw-stat__label {
+  font-family: var(--bw-mono);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--bw-faint);
+}
+.bw-stat--lift {
+  background: var(--bw-orange-tint);
+}
+.bw-stat__compare {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+}
+.bw-stat--lift .bw-stat__value {
+  color: var(--bw-orange-2);
+}
+.bw-stat--lift .bw-stat__value--base {
+  margin-left: 8px;
+  font-size: clamp(22px, 2.6vw, 28px);
+  color: var(--bw-muted);
+}
+.bw-stat__vs {
+  font-size: 14px;
+  color: var(--bw-muted);
+}
+.bw-stat__bar {
+  display: grid;
+  gap: 5px;
+  margin-top: 6px;
+}
+.bw-stat__fill {
+  display: block;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--bw-orange);
+}
+.bw-stat__fill--base {
+  background: var(--bw-line-2);
+}
+.bw-evals__more {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+
+/* CLOSING BAND (always warm-dark, like the org quote band) - */
+.bw-band {
+  background: #1c1711;
+  color: #faf6f1;
+}
+.bw-band__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 84px 40px;
+  text-align: center;
+}
+.bw-band h2 {
+  margin: 0 0 26px;
+  font-family: var(--bw-sans);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #faf6f1;
+}
+.bw-band .bw-copy {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: left;
+  border: 1px solid rgba(250, 246, 241, 0.14);
+  border-radius: 10px;
+  background: #15110b;
+  --md-default-fg-color--lightest: rgba(250, 246, 241, 0.35);
+  --md-default-fg-color--light: rgba(250, 246, 241, 0.7);
+  --md-default-fg-color: #faf6f1;
+  --md-code-bg-color--lighter: transparent;
+  --md-code-bg-color--light: rgba(250, 246, 241, 0.06);
+}
+.bw-band .bw-copy__p {
+  color: #de854f;
+}
+.bw-band .bw-copy code {
+  color: #faf6f1;
+}
+.bw-band__more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 22px;
+  font-family: var(--bw-mono);
+  font-size: 14px;
+  color: #e49e72;
+}
+.bw-band__more:hover {
+  color: #edbe9f;
+}
+
+/* keyframes ----------------------------------------------- */
+@keyframes bw-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bw-dot {
+    animation: none !important;
+  }
+}
+
+/* responsive --------------------------------------------- */
+@media (max-width: 860px) {
+  .bw-anatomy {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .bw-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .bw-stat--lift {
+    grid-column: 1 / -1;
+    border-left: 0;
+    border-top: 1px solid var(--bw-line);
+  }
+}
+@media (max-width: 600px) {
+  .bw-hero__inner,
+  .bw-harnesses__inner,
+  .bw-section__inner,
+  .bw-band__inner {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  .bw-hero__inner {
+    padding-top: 64px;
+    padding-bottom: 56px;
+  }
+  .bw-section__inner,
+  .bw-band__inner {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .bw-stat {
+    padding: 18px 16px;
+  }
+  .bw-hero__cta .bw-btn {
+    flex: 1 1 100%;
+  }
+}
+
+/* The landing is injected above <main> (via the `tabs` block) and the article
+   `content` block is emptied, leaving an empty <main>. Scope off the hero so
+   only this page collapses that empty container — real doc pages (404, …) keep
+   theirs. `body:has(.bw-hero)` matches only the landing. */
+body:has(.bw-hero) .md-content__inner {
+  display: none;
+}
+body:has(.bw-hero) .md-main__inner {
+  margin-top: 0;
+}
+body:has(.bw-hero) .md-main {
+  background: var(--bw-bg);
+}

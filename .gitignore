@@ -15,5 +15,9 @@
 # python build artifacts
 __pycache__/
 
+# docs site: zensical build output and cache
+site/
+.cache/
+
 # eval/test reports (evolve report --check writes junit/cobertura here)
 coverage/

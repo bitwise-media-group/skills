@@ -1,14 +1,16 @@
 # Copyright 2026 Bitwise Media Group
 # SPDX-License-Identifier: MIT
 #
-# skills — the Claude skill/plugin marketplace and its evaluation suite.
-# The toolchain library (the .mise/ submodule) is loaded natively as
-# .mise/config.toml (pinned developer tools, [settings] and the [vars] knob
-# defaults); this file selects the task files: common/ -- no archetype, there
-# is nothing to compile -- for the license/prose/container/shell/workflow lint,
-# then tasks.toml, which adds this repo's own lint/test/ci/pr gates plus the
-# evolve eval tiers (triggers/evals/all/report), reading .evolve.json at the
-# root. The Makefile is a thin forwarder (.mise/common/include.mk).
+# skills — the Claude skill/plugin marketplace, its evaluation suite, and its
+# Zensical docs site. The toolchain library (the .mise/ submodule) is loaded
+# natively as .mise/config.toml (pinned developer tools, [settings] and the
+# [vars] knob defaults); this file selects the task files: common/ -- no
+# archetype, none fits a Markdown/plugin repo -- for the license/prose/
+# container/shell/workflow lint, then tasks.toml, which adds this repo's own
+# lint/test/build/ci/pr gates, the evolve eval tiers (triggers/evals/all/
+# report, reading .evolve.json at the root) and the docs-site tasks (docs-gen/
+# docs-build/serve/docs). The Makefile is a thin forwarder
+# (.mise/common/include.mk).
 #
 # evolve is pinned directly below: it's a first-party CLI, but this repo is
 # its only consumer, so there's no reuse-across-repos case for a shared pin in

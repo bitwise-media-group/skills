@@ -17,5 +17,13 @@ EVALUATION.json
 CHANGELOG.md
 **/CHANGELOG.md
 
-# Shared Makefile library submodule (linted in its own repo)
-make/
+# Docs site: build output, the uv lockfile, and the pages scripts/gen-docs.py
+# generates from the repo (its output is deterministic, like evolve's).
+/site/
+uv.lock
+docs/plugins/
+docs/evaluation.md
+
+# Shared toolchain library submodule (linted in its own repo) and on-demand tool bin
+.mise/
+.bin/

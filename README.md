@@ -3,6 +3,9 @@
 Agent skills and plugins from Bitwise Media Group, packaged as a marketplace for **Claude Code**, **OpenAI Codex CLI**,
 **Google Antigravity**, and **OpenCode**.
 
+**Docs:** [oss.bitwisemedia.uk/skills](https://oss.bitwisemedia.uk/skills/) — every plugin and skill, install guides,
+and per-model evaluation results.
+
 Skills follow the [Agent Skills](https://agentskills.io) open standard (`SKILL.md` with portable frontmatter), live once
 under `plugins/<plugin>/skills/`, and are delivered to each tool through its native mechanism — no duplicated content.
 
