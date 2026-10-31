@@ -51,4 +51,4 @@ includes = [".mise/common/tasks.toml", "tasks.toml"]
 # gemini-cli is a Node bundle with no native binaries, so it installs from npm
 # on the toolchain's shared node.
 "aqua:openai/codex" = "0.160.0"
-"npm:@google/gemini-cli" = "0.65.0"
+"npm:@google/gemini-cli" = "0.66.0"
