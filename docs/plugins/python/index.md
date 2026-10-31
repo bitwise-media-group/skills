@@ -10,7 +10,7 @@ description: "Modern Python on the Astral toolchain — uv project layout, ruff 
 <div class="bw-skillhead">
 <p class="bw-skillhead__desc">Modern Python on the Astral toolchain — uv project layout, ruff format/lint, ty/pyright type checking, pytest with Hypothesis, Google-style docstrings with CLI references, and trusted-publishing releases.</p>
 <div class="bw-skillhead__meta">
-<span class="bw-badge">v1.0.0</span><!-- x-release-please-version -->
+<span class="bw-badge">v1.1.0</span><!-- x-release-please-version -->
 <span class="bw-skillhead__count">6 skills</span>
 <a href="https://github.com/bitwise-media-group/skills/tree/main/plugins/python">Browse <code>plugins/python/</code> on GitHub</a>
 </div>
