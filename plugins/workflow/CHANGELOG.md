@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/bitwise-media-group/skills/compare/workflow--v1.0.0...workflow--v1.0.1) (2026-10-31)
+
+
+### Bug Fixes
+
+* **mise:** bring the evolve/plugin-validate build surface in-house ([67ba88c](https://github.com/bitwise-media-group/skills/commit/67ba88ca7a428163e68bc5c4ed025bc162274f7f))
+* **mise:** install claude-code via the github backend, not aqua ([874a7e4](https://github.com/bitwise-media-group/skills/commit/874a7e481c03ce0ddc7d42caaea924c94e9929da))
+
 ## 1.0.0 (2026-07-01)
 
 
