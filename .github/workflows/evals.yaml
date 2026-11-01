@@ -54,10 +54,10 @@ jobs:
       - name: Install evolve, the agent CLIs and the grading tools
         uses: jdx/mise-action@6be3c7ed4c21d4f76b208d351d95aac273ebb76d # v5.2.4
         with:
-          version: v2026.10.21
+          version: v2026.10.22
           # sha256 of the linux-x64 mise binary for the version above, from the release's
           # SHASUMS256.txt -- the action verifies the extracted binary, not the archive
-          sha256: ccfe12d7a62c6fb9def2a20db1f210f13a51de881f21fd8c85db4b6312405d07
+          sha256: b1a4915ab9497dca0b9e6e29fba148da7d1c0903ca54a3d1f4ab80cb6650cbdc
           install_args: >-
             github:bitwise-media-group/evolve
             github:anthropics/claude-code
