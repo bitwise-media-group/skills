@@ -86,49 +86,49 @@ url_api = "https://api.github.com/repos/anthropics/claude-code/releases/assets/7
 provenance = "github-attestations"
 
 [[tools."github:bitwise-media-group/evolve"]]
-version = "0.8.4"
+version = "0.8.5"
 backend = "github:bitwise-media-group/evolve"
 
 [tools."github:bitwise-media-group/evolve"."platforms.linux-arm64"]
-checksum = "sha256:5be29af90a113a23a5b8cf0d9f56ec2f8419d7988c16535c87682ca59f315fab"
-url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.4/evolve_0.8.4_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/640130024"
+checksum = "sha256:d5a48e9ace896a2e105d07e31c1236d86b756dfda7473a774ccc22114c4ff25d"
+url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.5/evolve_0.8.5_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/738282361"
 provenance = "github-attestations"
 
 [tools."github:bitwise-media-group/evolve"."platforms.linux-arm64-musl"]
-checksum = "sha256:5be29af90a113a23a5b8cf0d9f56ec2f8419d7988c16535c87682ca59f315fab"
-url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.4/evolve_0.8.4_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/640130024"
+checksum = "sha256:d5a48e9ace896a2e105d07e31c1236d86b756dfda7473a774ccc22114c4ff25d"
+url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.5/evolve_0.8.5_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/738282361"
 provenance = "github-attestations"
 
 [tools."github:bitwise-media-group/evolve"."platforms.linux-x64"]
-checksum = "sha256:de297e47a09eb0a5f56b8c00d75576d9ce1318bf487471ef573a76ba485c7023"
-url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.4/evolve_0.8.4_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/640130027"
+checksum = "sha256:6fdd32981c3f5a180aa10e602b9192c743710f3462ffecbe2abe0e21147b1bf4"
+url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.5/evolve_0.8.5_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/738282364"
 provenance = "github-attestations"
 
 [tools."github:bitwise-media-group/evolve"."platforms.linux-x64-musl"]
-checksum = "sha256:de297e47a09eb0a5f56b8c00d75576d9ce1318bf487471ef573a76ba485c7023"
-url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.4/evolve_0.8.4_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/640130027"
+checksum = "sha256:6fdd32981c3f5a180aa10e602b9192c743710f3462ffecbe2abe0e21147b1bf4"
+url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.5/evolve_0.8.5_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/738282364"
 provenance = "github-attestations"
 
 [tools."github:bitwise-media-group/evolve"."platforms.macos-arm64"]
-checksum = "sha256:c8d831055242f5eba36b69e09a9822f2e8a454e82b63a1f366aa6f2b683de6c7"
-url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.4/evolve_0.8.4_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/640130031"
+checksum = "sha256:7e407968b98e1a31697bd379f686000ff304239bb2aa341ee4c53d67638da5ae"
+url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.5/evolve_0.8.5_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/738282413"
 provenance = "github-attestations"
 
 [tools."github:bitwise-media-group/evolve"."platforms.macos-x64"]
-checksum = "sha256:adb991ddf32ec6fe2267f443b772bb27a4670739402a507d1ff7305151edd903"
-url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.4/evolve_0.8.4_darwin_amd64.tar.gz"
-url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/640130025"
+checksum = "sha256:643f1ec14b7fe852c93cbb823ddb9556a323b971d532690a28cd353b6c09b476"
+url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.5/evolve_0.8.5_darwin_amd64.tar.gz"
+url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/738282422"
 provenance = "github-attestations"
 
 [tools."github:bitwise-media-group/evolve"."platforms.windows-x64"]
-checksum = "sha256:8df19641169b6a4bfc1377f596cac90692a9392c470600425d5b6f3840b59f67"
-url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.4/evolve_0.8.4_windows_amd64.zip"
-url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/640130085"
+checksum = "sha256:7fc46fdbe0f18bc03079b778374bbd769ef1a0ad4546eb7daa8904d86bb868e1"
+url = "https://github.com/bitwise-media-group/evolve/releases/download/v0.8.5/evolve_0.8.5_windows_amd64.zip"
+url_api = "https://api.github.com/repos/bitwise-media-group/evolve/releases/assets/738282365"
 provenance = "github-attestations"
 
 [[tools."npm:@google/gemini-cli"]]
