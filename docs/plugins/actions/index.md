@@ -10,7 +10,7 @@ description: "GitHub Actions workflow style, security hardening, bitwise reusabl
 <div class="bw-skillhead">
 <p class="bw-skillhead__desc">GitHub Actions workflow style, security hardening, bitwise reusable-workflow wiring, and an actionlint/zizmor validation loop.</p>
 <div class="bw-skillhead__meta">
-<span class="bw-badge">v1.0.0</span><!-- x-release-please-version -->
+<span class="bw-badge">v1.1.0</span><!-- x-release-please-version -->
 <span class="bw-skillhead__count">4 skills</span>
 <a href="https://github.com/bitwise-media-group/skills/tree/main/plugins/actions">Browse <code>plugins/actions/</code> on GitHub</a>
 </div>

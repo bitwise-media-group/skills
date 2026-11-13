@@ -10,7 +10,7 @@ description: "Modern Go development — stdlib-first style, cobra/viper CLIs, ta
 <div class="bw-skillhead">
 <p class="bw-skillhead__desc">Modern Go development — stdlib-first style, cobra/viper CLIs, table-driven tests and fuzzing, canonical project layout, doc-comment conventions, GoReleaser releases.</p>
 <div class="bw-skillhead__meta">
-<span class="bw-badge">v0.3.0</span><!-- x-release-please-version -->
+<span class="bw-badge">v0.4.0</span><!-- x-release-please-version -->
 <span class="bw-skillhead__count">5 skills</span>
 <a href="https://github.com/bitwise-media-group/skills/tree/main/plugins/golang">Browse <code>plugins/golang/</code> on GitHub</a>
 </div>
