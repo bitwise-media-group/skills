@@ -10,7 +10,7 @@ description: "Terraform style conventions, module scaffolding, and fmt/validate/
 <div class="bw-skillhead">
 <p class="bw-skillhead__desc">Terraform style conventions, module scaffolding, and fmt/validate/tflint workflows.</p>
 <div class="bw-skillhead__meta">
-<span class="bw-badge">v0.2.0</span><!-- x-release-please-version -->
+<span class="bw-badge">v0.2.1</span><!-- x-release-please-version -->
 <span class="bw-skillhead__count">3 skills</span>
 <a href="https://github.com/bitwise-media-group/skills/tree/main/plugins/terraform">Browse <code>plugins/terraform/</code> on GitHub</a>
 </div>
